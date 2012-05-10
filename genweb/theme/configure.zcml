@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="genweb.theme">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <include package=".browser" />
+
+  <cmf:registerDirectory name="genwebtheme_custom" recursive="True" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="genweb.theme"
+      directory="profiles/default"
+      description="Installs the genweb.theme package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <!-- -*- extra stuff goes here -*- -->
+
+</configure>
