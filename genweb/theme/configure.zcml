@@ -12,6 +12,47 @@
 
   <cmf:registerDirectory name="genwebtheme_custom" recursive="True" />
 
+  <include package="plone.resource" file="meta.zcml"/>
+
+  <!-- Resource traversers -->
+  <adapter
+      name="bootstrap"
+      for="* zope.publisher.interfaces.IRequest"
+      provides="zope.traversing.interfaces.ITraversable"
+      factory=".traversal.BootStrapTraverser"
+      />
+
+  <adapter
+      name="genweb"
+      for="* zope.publisher.interfaces.IRequest"
+      provides="zope.traversing.interfaces.ITraversable"
+      factory=".traversal.GenwebTraverser"
+      />
+
+  <plone:static
+      directory="bootstrap/less"
+      type="bootstrap"
+      name="less"
+      />
+
+  <plone:static
+      directory="bootstrap/js"
+      type="bootstrap"
+      name="js"
+      />
+
+  <plone:static
+      directory="bootstrap/img"
+      type="bootstrap"
+      name="img"
+      />
+
+  <plone:static
+      directory="static"
+      type="genweb"
+      name="static"
+      />
+
   <genericsetup:registerProfile
       name="default"
       title="genweb.theme"
@@ -19,6 +60,5 @@
       description="Installs the genweb.theme package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
 
 </configure>
