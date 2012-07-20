@@ -1,0 +1,6 @@
+<layers>
+  <layer
+      name="genweb.theme"
+      interface="genweb.theme.browser.interfaces.IGenwebTheme"
+  />
+</layers>

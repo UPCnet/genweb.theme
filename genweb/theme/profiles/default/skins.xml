@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
 <object name="portal_skins">
+ <object name="genwebtheme_custom"
+    meta_type="Filesystem Directory View"
+    directory="genweb.theme:skins/genwebtheme_custom"/>
 
-<!-- Substituir por los definitivos -->
+ <skin-path name="*">
+  <layer name="genwebtheme_custom" insert-after="custom"/>
+ </skin-path>
 
 </object>

@@ -3,6 +3,7 @@
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="genweb.theme">
 
@@ -52,6 +53,12 @@
       type="genweb"
       name="static"
       />
+
+  <include package="z3c.jbot" file="meta.zcml" />
+
+  <browser:jbot
+      directory="templates"
+      layer=".browser.interfaces.IGenwebTheme" />
 
   <genericsetup:registerProfile
       name="default"
