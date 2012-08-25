@@ -26,7 +26,6 @@ setup(name='genweb.theme',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'collective.lesscss',
           'z3c.jbot'
       ],
       entry_points="""

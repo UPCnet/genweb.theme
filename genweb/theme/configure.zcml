@@ -55,11 +55,18 @@
       name="static"
       />
 
+  <plone:static
+      directory="less"
+      type="genweb"
+      name="less"
+      />
+
   <include package="z3c.jbot" file="meta.zcml" />
 
   <browser:jbot
       directory="templates"
-      layer=".browser.interfaces.IGenwebTheme" />
+      layer=".browser.interfaces.IGenwebTheme"
+  />
 
   <genericsetup:registerProfile
       name="default"
