@@ -45,7 +45,6 @@
         </tal:comment>
         <metal:topslot define-slot="top_slot" />
         <metal:headslot define-slot="head_slot" />
-
         <metal:styleslot define-slot="style_slot" />
 
         <link rel="stylesheet/less" href="++genweb++less/genweb.less">
@@ -67,7 +66,7 @@
 
 <tal:ancientBrowser tal:replace="structure string:&lt;!--[if lt IE 7]&gt;&lt;p class=chromeframe&gt;Your browser is &lt;em&gt;ancient!&lt;/em&gt; &lt;a href='http://browsehappy.com/'&gt;Upgrade to a different browser&lt;/a&gt; or &lt;a href='http://www.google.com/chromeframe/?redirect=true'&gt;install Google Chrome Frame&lt;/a&gt; to experience this site.&lt;/p&gt;&lt;![endif]--&gt;" />
 
-<div id="visual-portal-wrapper">
+<div id="visual-portal-wrapper" class="container">
 
         <div id="portal-top"
             class="row"
@@ -190,6 +189,7 @@
 </div>
 
 <tal:scripts replace="structure provider:plone.resourceregistries.scripts" />
+<metal:javascriptslot define-slot="javascript_head_slot" />
 
 </body>
 </html>
