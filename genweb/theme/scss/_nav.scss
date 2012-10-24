@@ -1,0 +1,133 @@
+// BREADCRUMBS
+// -------------------------
+#portal-breadcrumbs {margin:0 auto; width:940px} /* margin i width provisionals */
+
+
+
+
+// PORTAL NAV
+// -------------------------
+#portal-globalnav {/*margin-top:-22px;*/}
+	#portal-header .container {/*padding-bottom:22px;*/} /* ajusta menu */
+	#portal-globalnav .navbar-inner {padding:0; border-bottom:3px solid #666;}
+		#portal-globalnav .state-published {border-bottom:3px solid $blue;}		
+		#portal-globalnav .state-intranet {border-bottom:3px solid $purple;}
+		#portal-globalnav .state-draft {border-bottom:3px solid $green;}
+		#portal-globalnav .state-pending {border-bottom:3px solid darken($orange,5%);}
+		#portal-globalnav .state-private {border-bottom:3px solid $red;}
+	#portal-globalnav .nav > li > a {font-size:16px;font-weight:bold; border-right:1px solid #bbb;}
+	#portal-globalnav .nav > li:first-child > a {border-radius:0 0 0 3px;}
+
+// PORTAL SUBNAV
+// -------------------------
+.subnavbar {width:220px; margin-bottom:18px;}
+.subnavbar .nav-list {
+	border:1px solid #b2b2b2; box-shadow:0 3px 5px #ccc;
+	@include border-radius(4px);
+	@include box-shadow(0 1px 4px rgba(0,0,0,.1));
+	position:relative;
+
+	& a {
+		background:#f5f5f5;
+		margin-left:  -15px;
+  		margin-right: -15px;
+  		text-shadow: 0 1px 0 rgba(255,255,255,.5) !important;
+  		display:block;
+  		font-weight:bold;
+  		line-height:16px;
+  		color:#444;
+  		border-top:1px solid #b2b2b2 !important;
+  		padding:8px 9px !important;
+  		&:hover {
+  			background:#eee;
+  			color:#111;
+  		}
+  		&:hover:after {
+  			content:"  >";
+  			position:absolute;
+  			background:$blue;
+  			margin-left:5px;
+  			width:20px;
+  			height:20px;
+  			@include border-radius(10px);
+  			right:0;
+  		}
+
+	}
+	& .active a {
+		background: #ddd;
+		color:$grayDarker;
+	}
+	& li:first-child a{
+		border-top:0 !important;
+		@include border-radius(4px 4px 0 0);
+	}
+	& li:last-child a{
+		@include border-radius(0 0 4px 4px);
+	}	
+	& .active ul {
+		margin-left:-15px !important;
+		margin-right:-15px;
+		border-top: 1px solid #b2b2b2;
+		background:#fff;
+		list-style:none;
+		@include box-shadow(inset 0 5px 5px -5px rgba(0,0,0,.25));
+
+		& a {
+			border-top:0 !important;
+			font-size:12px;
+			font-weight:normal;
+			color:$gray;
+			margin-left:0px;
+			margin-right:0px;
+			background: transparent !important;
+			padding:0 !important;
+			border-right: 3px solid $blue;
+			@include border-radius(0 !important);
+			&.state-private {border-right: 3px solid $red; color:$red;}
+			&.state-draft {border-right: 3px solid $green; color:$green;}
+			&.state-pending {border-right: 3px solid darken($orange,5%); color:darken($orange,5%);}
+			&.state-intranet {border-right: 3px solid $purple; color:$purple;}
+			&[class^="state-"]:hover, 
+			&[class*=" state-"]:hover {
+				color:$black;
+				text-decoration:none;
+			}
+
+			& span {
+				border-top:1px solid #d9d9d9 !important;
+				padding:8px 0 !important;
+				display:block;
+				margin-right:24px;
+				margin-left:10px;
+				line-height:15px;
+				&:before {
+					content:".";
+					color:$blue;
+					top:-2px;
+					left:-4px;
+					position:relative;
+					font-size:350%;
+					line-height:0 !important;
+				}
+			}
+			&[class^="contenttype-"] span:after, 
+			&[class*=" contenttype-"] span:after {			
+				    background-image: url("../images/glyphicons-halflings.png");
+    				content: " ";
+    				display: block;
+    				float: right;
+    				height: 20px;
+    				margin-right: -24px;
+    				width: 20px; 
+    				opacity:.8;
+			}
+			&.contenttype-folder span:after {background-position: -384px -120px;}
+			&.contenttype-page span:after {background-position: -24px -24px;}			
+			&.contenttype-link span:after {background-position: -334px -96px;}					
+			&:hover {background-color:rgba(0,123,192,.05) !important;};
+			&:hover span:after {opacity:1;}
+		}
+	}
+
+}

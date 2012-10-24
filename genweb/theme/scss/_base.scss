@@ -1,0 +1,162 @@
+
+
+
+
+
+//
+// Variables
+// --------------------------------------------------
+
+
+// Genweb colors
+// -------------------------
+$genwebPrimary:         #E2AB17 !default;
+$genwebTitles:          #446A8E !default;
+
+
+// Accent colors
+// -------------------------
+$blue:                  #007bc0 !default;
+$blueDark:              #0064cd !default;
+$cyan:					#30a2c3 !default;
+$green:                 #72a31d !default;
+$red:                   #a62e1f !default;
+$yellow:                #bb900d !default;
+$orange:                #f89406 !default;
+$pink:                  #c6218b !default;
+$purple:                #8952ab !default;
+
+
+
+
+// ESTATS
+// -------------------------
+.state-published {color: $blue;}
+.state-intranet {color: $purple;}
+.state-pending {color: darken($orange,5%);}
+.state-draft {color: $green;}
+.state-private {color: $red;} 
+
+
+
+
+// USUARI
+// -------------------------
+#portal-personaltools-wrapper {margin-top:38px;}
+.user {width:26px; height:26px; border:.1em solid darken(adjust-hue($blue, -120),5%); margin: -.55em 0; position: relative; 
+  image-rendering: optimizeQuality; -ms-interpolation-mode: bicubic; left:-6px; top:-1px;}
+.dropdown-menu li > a.btn-danger:hover, .dropdown-menu .active > a.btn-danger:hover {background-color: #BD362F;}
+.userScreen, .userTablet, .userMobile, .userGenweb {background:url(../img/sprite_usuari.png) transparent no-repeat center top; height: 1.5em; width:1.5em;}
+.userScreen {background-position: center -40px;}
+.userTablet {background-position: center -140px;}
+.userMobile {background-position: center -240px;}
+.userGenweb {background-position: 10px -340px; width:2em;}  
+.userScreen:hover {background-position: center 10px;}
+.userTablet:hover {background-position: center -90px;}
+.userMobile:hover {background-position: center -190px;}
+.userGenweb:hover, .open .userGenweb {background-position: 10px -290px;}  
+	.dropdown .userGenweb .caret { margin-left: 24px;}
+#portal-personaltools-wrapper .container {box-shadow: 0 -8px 5px 5px rgba(255, 255, 255, 0.05);}
+#portal-personaltools-wrapper .nav {margin:0!important;}
+#portal-personaltools-wrapper .nav .img_blank {opacity:.7;}
+#portal-personaltools-wrapper .nav a:hover .img_blank {opacity:1;}
+.btn-menu-adjust a {margin:3px 15px !important; width:70%;}
+.btn-menu-adjust  {text-align:center;}
+
+
+
+
+// PORTAL HEADER
+// -------------------------
+#portal-header {background:#f7f7f7; border-bottom:1px solid #d7d5d2; border-top:5px solid desaturate(lighten($genwebPrimary,40%), 85%);
+	background: #fcfcfc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f7f7f7 0%, #ffffff 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(50%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ffffff 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f7f7f7 0%,#ffffff 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f7f7f7 0%,#ffffff 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f7f7f7 0%,#ffffff 50%); /* W3C */
+}
+	#portal-header .container {border-top:5px solid $genwebPrimary; margin-top:-5px; border-bottom:1px solid #796e64; margin-bottom:-1px;}
+		#portal-header .container > div {margin:5px 0 0 !important;}
+
+.titol-espai h1 {font-weight:normal; margin:0;}
+	.titol-espai a {color:#333; text-shadow: 0 1px 1px rgba(0,0,0,.1);}
+	.titol-espai a:hover {color:#000; text-decoration:none;}
+	.logoPropi {margin-top:-12px; margin-bottom:12px; height:49px;}
+
+#eines {margin:15px 0 0 0;}
+	#eines > li > a {
+	  	border-radius: 4px;
+	  	margin-top: 0px;
+	  	padding-bottom: 7px;
+	  	padding-top: 6px;
+	}
+	#eines .input-append {
+	  	border-left: 1px dotted #b2b2b2;
+	  	margin-left: 2px;
+	 	padding-left: 5px;
+	}
+	#eines .adjust-langs {min-width:87px !important;}
+
+
+
+
+
+
+
+
+// CENTRE
+// -------------------------
+#content {padding-bottom:2em;}
+.documentDescription {font-size:14px; font-weight:bold; color:$grayLight;}
+#edit-bar {
+	border-bottom: 1px solid #CCCCCC;
+    box-shadow: 0 -10px 12px -18px black inset;
+    margin-bottom:18px;
+    & .nav-tabs {
+    	border-bottom:0;
+    	box-shadow:none;
+    	margin:0;
+    }
+    & .nav-pills {margin:0;}
+}
+.documentFirstHeading {
+	font-size:20px;
+	color:$genwebTitles;
+	border-bottom:1px solid $tableBorder;
+	@include box-shadow(0 6px 4px -4px rgba(0,0,0,.1));
+	line-height:42px;
+	margin:0 0 18px 0;
+}
+
+
+
+
+// BANDA LOGOS
+// -------------------------
+#bandaLogos {border-top:1px solid desaturate(lighten($genwebPrimary,40%), 85%); box-shadow: 0 -10px 20px rgba(0, 0, 0, .03);}
+	#bandaLogos .container {border-top:1px solid darken($genwebPrimary,25%); margin-top:-1px;}
+.llistatLogos {margin:1.5em auto; list-style:none; text-align:center;}
+	.llistatLogos li {display:inline-block;}
+	.llistatLogos a {margin:0 1.5em;}
+/*falta funcio box shadow*/
+
+
+
+
+// PEU
+// -------------------------
+#peu {background:#f2f2f2; border-top:5px solid desaturate(lighten($genwebPrimary,40%), 85%); font-size:12px;}
+	#peu .container {border-top:5px solid $genwebPrimary; margin-top:-5px;}
+    #peu p {margin:0;}
+	#peu .amunt img {opacity:.67;}
+	#peu .amunt a:hover img {opacity:1;}    
+	#peu address {color: $gray;}
+.sobreElWeb li {display: inline;}
+	.sobreElWeb li:before {
+		content:"."; font-size:400%; position: relative; line-height:0; top:-.045em; left:-1px;
+		color: desaturate($genwebPrimary, 80%);
+	}
+	.sobreElWeb li:first-child:before {content:""; font-size:400%; position: relative; line-height:0; top:.25em;}
+	.sobreElWeb li:last-child:before {content:" __ "; font-size:100%; position: relative; line-height:0; top:-.5em; padding:0 2px 0 3px;}

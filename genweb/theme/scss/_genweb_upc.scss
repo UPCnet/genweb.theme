@@ -1,0 +1,17 @@
+/*!
+ * Genweb UPC v4.0
+ *
+ * Copyright 2012 UPC
+ *
+ */
+
+
+// REPEAT VARIABLES & MIXINS
+// -------------------------
+// Required since we compile the responsive stuff separately
+
+@import "compass";
+
+@import "base";
+@import "nav";
+@import "plantilles";

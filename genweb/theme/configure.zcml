@@ -32,9 +32,9 @@
       />
 
   <plone:static
-      directory="bootstrap/less"
+      directory="bootstrap/scss"
       type="bootstrap"
-      name="less"
+      name="scss"
       />
 
   <plone:static
@@ -56,9 +56,9 @@
       />
 
   <plone:static
-      directory="less"
+      directory="stylesheets"
       type="genweb"
-      name="less"
+      name="stylesheets"
       />
 
   <include package="z3c.jbot" file="meta.zcml" />
