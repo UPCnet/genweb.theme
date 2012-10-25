@@ -27,3 +27,4 @@ pip-log.txt
 .mr.developer.cfg
 
 genweb/theme/.sass-cache
+genweb/theme/fontconfig

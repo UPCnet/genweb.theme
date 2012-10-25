@@ -1,0 +1,51 @@
+<tal:personaltools condition="not: view/anonymous">
+<h1 class="goout"> Usuari </h1>
+<nav id="portal-personaltools-wrapper"
+     i18n:domain="genweb">
+  <div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <h2 class="goout"> Menú d'usuari </h2>
+        <ul class="nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="++genweb++static/images/user.png"
+                   alt=""
+                   class="user" />
+              <tal:username content="view/user_name"> Rafael Ojeda Rojas </tal:username>
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="icon-glass"></i> Escriptori</a></li>
+              <li><a href="#"><i class="icon-user"></i> Perfil</a></li>
+              <li><a href="#"><i class="icon-cog"></i> Preferències d'usuari</a></li>
+              <li class="divider"></li>
+              <li class="btn-menu-adjust"><a class="btn btn-danger" href="#"><i class="icon-off icon-white"></i> Tanca sessió</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Carpeta arrel</a></li>
+          <li><a href="#">Configuració del lloc</a></li>
+          <li><a href="#">Ajuda <img class="img_blank" src="img/blank_blanc.png" alt="(obriu en finestra nova)"></a></li>
+          <li><a href="#">Desfés</a></li>
+        </ul>
+        <h2 class="goout"> Menú d'eines Genweb UPC </h2>
+        <ul class="nav pull-right">
+          <li><a class="userScreen" href="#"><span class="goout">Screen</span></a></li>
+          <li><a class="userTablet" href="#"><span class="goout">Tablet</span></a></li>
+          <li><a class="userMobile" href="#"><span class="goout">Mobile</span></a></li>
+          <li class="divider-vertical"></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle userGenweb" data-toggle="dropdown"><span class="goout">Genweb</span> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="nav-header">Genweb UPC 4.0 - JN12</li>
+              <li><a href="#"><i class="icon-certificate"></i> Novetats de la versió</a></li>
+              <li><a href="#"><i class="icon-certificate"></i> Darrer butlletí</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</nav>
+</tal:personaltools>

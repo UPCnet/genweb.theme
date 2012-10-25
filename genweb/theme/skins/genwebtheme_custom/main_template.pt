@@ -30,7 +30,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <tal:comment replace="nothing"><!-- El requiresActiveX es pq IE10 sapiga que pot haver-hi flash --></tal:comment>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
 
     <metal:baseslot define-slot="base">
         <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
@@ -47,8 +48,7 @@
         <metal:headslot define-slot="head_slot" />
         <metal:styleslot define-slot="style_slot" />
 
-        <link rel="stylesheet/less" href="++genweb++less/genweb.less">
-        <script src="++bootstrap++js/less-1.3.0.min.js"></script>
+        <link rel="stylesheet" href="++genweb++stylesheets/genwebupc.css">
         <script src="++bootstrap++js/modernizr-2.6.1.min.js"></script>
 
         <meta name="viewport" content="width=device-width" />
@@ -66,16 +66,12 @@
 
 <tal:ancientBrowser tal:replace="structure string:&lt;!--[if lt IE 7]&gt;&lt;p class=chromeframe&gt;Your browser is &lt;em&gt;ancient!&lt;/em&gt; &lt;a href='http://browsehappy.com/'&gt;Upgrade to a different browser&lt;/a&gt; or &lt;a href='http://www.google.com/chromeframe/?redirect=true'&gt;install Google Chrome Frame&lt;/a&gt; to experience this site.&lt;/p&gt;&lt;![endif]--&gt;" />
 
-<div id="visual-portal-wrapper" class="container">
-
-        <div id="portal-top"
-            class="row"
-            i18n:domain="plone"
-            tal:condition="not:ajax_load">
-<div class="cell width-full position-0">
-            <div tal:replace="structure provider:plone.portaltop" />
+<div id="portal-top"
+     i18n:domain="plone"
+     tal:condition="not:ajax_load">
+        <div tal:replace="structure provider:plone.portaltop" />
 </div>
-        </div>
+
     <div id="portal-columns" class="row">
 
         <div id="portal-column-content" class="cell" tal:attributes="class python:sunburst_view.getColumnsClass(view)">
@@ -183,10 +179,6 @@
             </div>
         </div>
     </div>
-
-
-
-</div>
 
 <tal:scripts replace="structure provider:plone.resourceregistries.scripts" />
 <metal:javascriptslot define-slot="javascript_head_slot" />

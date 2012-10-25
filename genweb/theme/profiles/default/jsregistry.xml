@@ -4,4 +4,7 @@
  <javascript authenticated="False" bundle="default" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="False"
     expression="" id="modernizr.js" inline="False"/>
+ <javascript authenticated="False" bundle="default" cacheable="True"
+    compression="safe" conditionalcomment="" cookable="False" enabled="True"
+    expression="" id="++bootstrap++js/bootstrap.min.js" inline="False"/>
 </object>

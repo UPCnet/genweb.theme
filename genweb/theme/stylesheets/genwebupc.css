@@ -2177,7 +2177,7 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/static/images/glyphicons-halflings.png?1346050654');
+  background-image: url('++genweb++static/images/glyphicons-halflings.png?1346050654');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2192,7 +2192,7 @@ table .span24 {
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .active > a > [class*=" icon-"] {
-  background-image: url('/static/images/glyphicons-halflings-white.png?1342602226');
+  background-image: url('++genweb++static/images/glyphicons-halflings-white.png?1342602226');
 }
 
 /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -6935,47 +6935,47 @@ També ha de ser aplicable directament al td i a altres elements com les llistes
 
 + extensió de taules: pijama, separadors, colors de fons, etc;
 */
-/* line 10, ../scss/nou.scss */
+/* line 10, ../scss/genwebupc.scss */
 .goout {
   display: none;
 }
 
 /*provisional,  ha de ser amb overflow i no amb display*/
-/* line 12, ../scss/nou.scss */
+/* line 12, ../scss/genwebupc.scss */
 .width100 {
   width: 100% !important;
   -moz-box-sizing: border-box;
 }
 
-/* line 13, ../scss/nou.scss */
+/* line 13, ../scss/genwebupc.scss */
 .img_blank {
   opacity: .7;
 }
 
-/* line 14, ../scss/nou.scss */
+/* line 14, ../scss/genwebupc.scss */
 a:hover .img_blank {
   opacity: 1;
 }
 
 /*ff*/
-/* line 19, ../scss/nou.scss */
+/* line 19, ../scss/genwebupc.scss */
 .titol-espai h1 {
   font-weight: 200;
 }
 
-/* line 24, ../scss/nou.scss */
+/* line 24, ../scss/genwebupc.scss */
 .page-header {
   border-top: 1px solid #CCCCCC !important;
   border-bottom: 0;
   box-shadow: 0 -8px 16px -16px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* line 29, ../scss/nou.scss */
+/* line 29, ../scss/genwebupc.scss */
 .page-header h1 {
   color: #446a8e;
 }
 
-/* line 31, ../scss/nou.scss */
+/* line 31, ../scss/genwebupc.scss */
 [class^="icon-"], [class*=" icon-"] {
-  background-image: url("../images/glyphicons-halflings.png");
+  background-image: url('++genweb++static/images/glyphicons-halflings.png?1346050654');
 }

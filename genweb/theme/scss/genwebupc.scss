@@ -1,4 +1,4 @@
-
+@import "compass";
 @import "compass_twitter_bootstrap";
 @import "genweb_upc";
 
@@ -17,7 +17,7 @@
 
 
 .titol-espai h1 {
-	font-weight:200; 
+	font-weight:200;
 }
 
 
@@ -28,4 +28,4 @@
 	}
 .page-header h1 {color:#446a8e;}
 
-	[class^="icon-"], [class*=" icon-"] {background-image: url("../images/glyphicons-halflings.png");}
+	[class^="icon-"], [class*=" icon-"] {background-image: image-url("glyphicons-halflings.png");}
