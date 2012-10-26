@@ -16,7 +16,7 @@
               <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><a tal:attributes="href view/homelink_url"
+              <li><a tal:attributes="href string:${view/portal_url}/dashboard"
                      i18n:attributes="title genweb-preferencies">
                      <i class="icon-glass"></i>
                      <tal:dashboard i18n:translate="genweb-escriptori">
@@ -53,7 +53,7 @@
                     Root folder</tal:rootFolder>
           </a></li>
           <li><a tal:condition="view/canManageSite"
-                 tal:attributes="href string:${view/portal_url}/plone_control_panel">
+                 tal:attributes="href string:${view/portal_url}/@@overview-controlpanel">
                  <tal:managesite i18n:translate="Site Setup">
                     Site setup</tal:managesite>
           </a></li>

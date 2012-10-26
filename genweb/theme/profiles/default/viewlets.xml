@@ -4,6 +4,9 @@
     <viewlet name="genweb.personalbar"
              insert-before="*"/>
   </order>
+  <hidden manager= "plone.portalheader" skinname="GenwebTheme">
+    <viewlet name="plone.personal_bar"/>
+  </hidden>
 <!--  <order manager="plone.abovecontenttitle" skinname="Tema genwebUPC Neutre2">
   <viewlet name="plone.abovecontenttitle.documentactions"/>
  </order>
