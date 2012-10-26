@@ -35,7 +35,7 @@ $purple:                #8952ab !default;
 .state-intranet {color: $purple;}
 .state-pending {color: darken($orange,5%);}
 .state-draft {color: $green;}
-.state-private {color: $red;} 
+.state-private {color: $red;}
 
 
 
@@ -43,18 +43,18 @@ $purple:                #8952ab !default;
 // USUARI
 // -------------------------
 #portal-personaltools-wrapper {margin-top:38px;}
-.user {width:26px; height:26px; border:.1em solid darken(adjust-hue($blue, -120),5%); margin: -.55em 0; position: relative; 
+.user {width:26px; height:26px; border:.1em solid darken(adjust-hue($blue, -120),5%); margin: -.55em 0; position: relative;
   image-rendering: optimizeQuality; -ms-interpolation-mode: bicubic; left:-6px; top:-1px;}
 .dropdown-menu li > a.btn-danger:hover, .dropdown-menu .active > a.btn-danger:hover {background-color: #BD362F;}
-.userScreen, .userTablet, .userMobile, .userGenweb {background:url(../img/sprite_usuari.png) transparent no-repeat center top; height: 1.5em; width:1.5em;}
+.userScreen, .userTablet, .userMobile, .userGenweb {background:image-url("sprite_usuari.png") transparent no-repeat center top; height: 1.5em; width:1.5em;}
 .userScreen {background-position: center -40px;}
 .userTablet {background-position: center -140px;}
 .userMobile {background-position: center -240px;}
-.userGenweb {background-position: 10px -340px; width:2em;}  
+.userGenweb {background-position: 10px -340px; width:2em;}
 .userScreen:hover {background-position: center 10px;}
 .userTablet:hover {background-position: center -90px;}
 .userMobile:hover {background-position: center -190px;}
-.userGenweb:hover, .open .userGenweb {background-position: 10px -290px;}  
+.userGenweb:hover, .open .userGenweb {background-position: 10px -290px;}
 	.dropdown .userGenweb .caret { margin-left: 24px;}
 #portal-personaltools-wrapper .container {box-shadow: 0 -8px 5px 5px rgba(255, 255, 255, 0.05);}
 #portal-personaltools-wrapper .nav {margin:0!important;}
@@ -151,7 +151,7 @@ $purple:                #8952ab !default;
 	#peu .container {border-top:5px solid $genwebPrimary; margin-top:-5px;}
     #peu p {margin:0;}
 	#peu .amunt img {opacity:.67;}
-	#peu .amunt a:hover img {opacity:1;}    
+	#peu .amunt a:hover img {opacity:1;}
 	#peu address {color: $gray;}
 .sobreElWeb li {display: inline;}
 	.sobreElWeb li:before {

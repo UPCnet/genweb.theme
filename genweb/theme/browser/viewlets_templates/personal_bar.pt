@@ -11,22 +11,60 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="++genweb++static/images/user.png"
                    alt=""
-                   class="user" />
+                   class="user">
               <tal:username content="view/user_name"> Rafael Ojeda Rojas </tal:username>
               <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#"><i class="icon-glass"></i> Escriptori</a></li>
-              <li><a href="#"><i class="icon-user"></i> Perfil</a></li>
-              <li><a href="#"><i class="icon-cog"></i> Preferències d'usuari</a></li>
+              <li><a tal:attributes="href view/homelink_url"
+                     i18n:attributes="title genweb-preferencies">
+                     <i class="icon-glass"></i>
+                     <tal:dashboard i18n:translate="genweb-escriptori">
+                        Dashboard</tal:dashboard>
+              </a></li>
+              <li><a tal:attributes="href string:${view/portal_url}/@@personal-information"
+                     i18n:attributes="title genweb-perfil">
+                     <i class="icon-user"></i>
+                     <tal:profile i18n:translate="genweb-perfil">
+                        Profile</tal:profile>
+              </a></li>
+              <li><a tal:attributes="href string:${view/portal_url}/@@personal-preferences"
+                     i18n:attributes="title genweb-preferencies">
+                     <i class="icon-cog"></i>
+                     <tal:preferences i18n:translate="genweb-preferencies">
+                        Preferències d'usuari</tal:preferences>
+              </a></li>
               <li class="divider"></li>
-              <li class="btn-menu-adjust"><a class="btn btn-danger" href="#"><i class="icon-off icon-white"></i> Tanca sessió</a></li>
+              <li class="btn-menu-adjust">
+                <a tal:attributes="href string:${view/portal_url}/cas_logout"
+                   i18n:attributes="title genweb-logout"
+                   class="btn btn-danger" href="#">
+                  <i class="icon-off icon-white"></i>
+                  <tal:logout i18n:translate="genweb-logout">
+                        Logout</tal:logout>
+                </a>
+              </li>
             </ul>
           </li>
-          <li><a href="#">Carpeta arrel</a></li>
-          <li><a href="#">Configuració del lloc</a></li>
-          <li><a href="#">Ajuda <img class="img_blank" src="img/blank_blanc.png" alt="(obriu en finestra nova)"></a></li>
-          <li><a href="#">Desfés</a></li>
+          <li><a tal:condition="view/showRootFolderLink"
+                 tal:attributes="href string:${view/portal_url}/folder_contents"
+                 i18n:attributes="title genweb-accesarrel">
+                 <tal:rootFolder i18n:translate="genweb-accesarrel">
+                    Root folder</tal:rootFolder>
+          </a></li>
+          <li><a tal:condition="view/canManageSite"
+                 tal:attributes="href string:${view/portal_url}/plone_control_panel">
+                 <tal:managesite i18n:translate="Site Setup">
+                    Site setup</tal:managesite>
+          </a></li>
+          <li><a href="https://www.upc.edu/comunicacio/www/genweb-upc/formacio" target="newwindow"
+                 i18n:attributes="title genweb-ajuda">
+                 <tal:help i18n:translate="genweb-ajuda">
+                    Help</tal:help>
+                 <img tal:attributes="alt view/assignAltAcc"
+                      class="img_blank"
+                      src="++genweb++static/images/blank_blanc.png">
+          </a></li>
         </ul>
         <h2 class="goout"> Menú d'eines Genweb UPC </h2>
         <ul class="nav pull-right">
