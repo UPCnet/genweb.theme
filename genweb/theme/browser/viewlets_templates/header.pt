@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="clearfix"><!-- títol UPC -->
+    <h1 class="pull-left">
+      <a href="http://www.upc.edu">
+        <img tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/logoUPC.png"
+             alt="Universitat Politècnica de Catalunya · BarcelonaTech">
+      </a>
+    </h1>
+    <ul id="eines" class="nav nav-pills pull-right">
+      <li><a href="#">Mapa del lloc</a></li>
+      <li><a href="#">Contacte</a></li>
+      <li><a href="#">Directori UPC</a></li>
+      <li><a href="#">Identifica't</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-globe"></i> Català <b class="caret"></b></a>
+        <ul class="dropdown-menu pull-right adjust-langs"><!--afegit per mi pull-right-->
+          <li><a href="#">Català</a></li>
+          <li><a href="#">Español</a></li>
+          <li><a href="#">English</a></li>
+        </ul>
+      </li>
+      <li class="divider"> </li>
+      <li>
+        <div class="input-append">
+          <input class="span2" id="appendedInputButton" size="16" type="text"><button class="btn" type="button">Cerca</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="titol-espai clearfix"><!-- títol web -->
+    <h1>
+      <a href="#">Servei de <b>Comunicació i Promoció</b>
+      <img alt="" class="logoPropi pull-right"
+           tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/logoPropi.png"></a>
+    </h1>
+  </div>
+</div>

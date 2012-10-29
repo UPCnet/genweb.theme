@@ -8,8 +8,9 @@ from zope.app.component.hooks import getSite
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFCore import permissions
 
-from plone.app.layout.viewlets.common import PersonalBarViewlet
-from plone.app.layout.viewlets.interfaces import IPortalTop
+from plone.app.layout.viewlets.common import PersonalBarViewlet, GlobalSectionsViewlet, PathBarViewlet
+from plone.app.layout.viewlets.common import ManagePortletsFallbackViewlet, ContentViewsViewlet
+from plone.app.layout.viewlets.interfaces import IPortalTop, IPortalHeader, IBelowContent, IContentViews
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 
 from genweb.core.utils import havePermissionAtRoot, assignAltAcc
@@ -23,7 +24,7 @@ class viewletBase(grok.Viewlet):
     grok.baseclass()
 
     def portal_url(self):
-        self.portal().absolute_url()
+        return self.portal().absolute_url()
 
     def portal(self):
         return getSite()
@@ -44,3 +45,26 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
 
     def canManageSite(self):
         return getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
+
+
+class gwHeader(viewletBase):
+    grok.name('genweb.header')
+    grok.template('header')
+    grok.viewletmanager(IPortalHeader)
+    grok.layer(IGenwebTheme)
+
+
+class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
+    grok.name('genweb.globalsections')
+    grok.viewletmanager(IPortalTop)
+    grok.layer(IGenwebTheme)
+
+    index = ViewPageTemplateFile('viewlets_templates/sections.pt')
+
+
+class gwPathBarViewlet(PathBarViewlet, viewletBase):
+    grok.name('genweb.pathbar')
+    grok.viewletmanager(IPortalTop)
+    grok.layer(IGenwebTheme)
+
+    index = ViewPageTemplateFile('viewlets_templates/path_bar.pt')

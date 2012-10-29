@@ -1,0 +1,12 @@
+<div id="portal-breadcrumbs">
+  <ul class="breadcrumb">
+    <li><h2>Sou a:</h2></li>
+    <li>
+      <a href="#">Inici</a> <span class="divider">▶</span>
+    </li>
+    <li>
+      <a href="#">Secció</a> <span class="divider">▶</span>
+    </li>
+    <li class="active">Pàgina Lorem ipsum</li>
+  </ul>
+</div>

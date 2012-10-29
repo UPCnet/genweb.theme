@@ -75,7 +75,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="genweb.theme"
+      title="XXXXXXXXXXXXX genweb.theme"
       directory="profiles/default"
       description="Installs the genweb.theme package"
       provides="Products.GenericSetup.interfaces.EXTENSION"

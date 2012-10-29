@@ -1,0 +1,30 @@
+<nav id="portal-globalnav"><!-- #portal-globalnav -->
+  <h2 class="goout">Navegació</h2>
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle state-published" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="#" class="state-draft">Home</a></li>
+            <li><a href="#" class="state-pending">Link</a></li>
+            <li><a href="#" class="state-private">Link</a></li>
+            <li><a href="#" class="state-intranet">Intranet</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

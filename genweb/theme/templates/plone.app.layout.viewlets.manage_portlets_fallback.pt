@@ -1,0 +1,13 @@
+<div class="container" tal:condition="view/available">
+    <div class="row">
+        <a class="btn btn-small btn-block"
+           tal:attributes="href string:${view/object_url}/@@manage-portlets">
+           <i class="icon-cog"></i>
+           <tal:adminPortlets tal:attributes="href string:${view/object_url}/@@manage-portlets"
+                              i18n:domain="plone"
+                              i18n:translate="manage_portlets_link">
+                                Manage portlets
+           </tal:adminPortlets>
+        </a>
+    </div>
+</div>
