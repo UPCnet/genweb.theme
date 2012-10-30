@@ -10,7 +10,8 @@ from Products.CMFCore import permissions
 
 from plone.app.layout.viewlets.common import PersonalBarViewlet, GlobalSectionsViewlet, PathBarViewlet
 from plone.app.layout.viewlets.common import ManagePortletsFallbackViewlet, ContentViewsViewlet
-from plone.app.layout.viewlets.interfaces import IPortalTop, IPortalHeader, IBelowContent, IContentViews
+from plone.app.layout.viewlets.interfaces import IPortalTop, IPortalHeader, IBelowContent
+from plone.app.layout.viewlets.interfaces import IPortalFooter
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 
 from genweb.core.utils import havePermissionAtRoot, assignAltAcc
@@ -68,3 +69,10 @@ class gwPathBarViewlet(PathBarViewlet, viewletBase):
     grok.layer(IGenwebTheme)
 
     index = ViewPageTemplateFile('viewlets_templates/path_bar.pt')
+
+
+class gwFooter(viewletBase):
+    grok.name('genweb.footer')
+    grok.template('footer')
+    grok.viewletmanager(IPortalFooter)
+    grok.layer(IGenwebTheme)

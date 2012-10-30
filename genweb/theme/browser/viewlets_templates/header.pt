@@ -10,7 +10,13 @@
       <li><a href="#">Mapa del lloc</a></li>
       <li><a href="#">Contacte</a></li>
       <li><a href="#">Directori UPC</a></li>
-      <li><a href="#">Identifica't</a></li>
+      <li><a href=""
+         tal:attributes="href here/cas_login_url"
+         i18n:attributes="title identificat"
+         i18n:domain="genweb"
+         i18n:translate="identificat">
+         Identifica't
+      </a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-globe"></i> Català <b class="caret"></b></a>
         <ul class="dropdown-menu pull-right adjust-langs"><!--afegit per mi pull-right-->

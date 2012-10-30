@@ -10,6 +10,10 @@
     <viewlet name="plone.skip_links"/>
     <viewlet name="genweb.header"/>
   </order>
+  <order manager="plone.portalfooter" skinname="GenwebTheme">
+    <viewlet name="genweb.logosfooter"/>
+    <viewlet name="genweb.footer"/>
+  </order>
 
   <hidden manager= "plone.portalheader" skinname="GenwebTheme">
     <viewlet name="plone.personal_bar"/>
@@ -21,5 +25,9 @@
   <hidden manager= "plone.abovecontent" skinname="GenwebTheme">
     <viewlet name="plone.path_bar"/>
   </hidden>
-
+  <hidden manager= "plone.portalfooter" skinname="GenwebTheme">
+    <viewlet name="plone.footer"/>
+    <viewlet name="plone.colophon"/>
+    <viewlet name="plone.site_actions"/>
+  </hidden>
 </object>

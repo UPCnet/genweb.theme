@@ -2,7 +2,7 @@
     class="nav nav-pills pull-right clearfix"
     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
     xmlns:tal="http://xml.zope.org/namespaces/tal"
-    tal:define="menu view/menu"
+    tal:define="menu view/menu; dummy menu/reverse"
     tal:condition="view/available"
     i18n:domain="plone">
 
@@ -16,8 +16,8 @@
           <a tal:attributes="id menuItem/extra/id;
                              href menuItem/action;
                              title menuItem/description"
+             tal:omit-tag="not:menuItem/action"
              i18n:attributes="title;"
-             tal:define="submenu menuItem/submenu"
              href="#"
              data-toggle="dropdown"
              class="dropdown-toggle">
@@ -83,6 +83,8 @@
                 </tal:block>
             </ul>
       </div>
+
+<tal:comment content="nothing">
 <!--
         <dl class="actionMenu deactivated"
             tal:attributes="id menuItem/extra/id"
@@ -161,6 +163,7 @@
           </dd>
         </dl>
 -->
-    </li>
+</tal:comment>
 
+    </li>
 </ul>
