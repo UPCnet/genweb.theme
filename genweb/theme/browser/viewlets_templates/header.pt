@@ -11,7 +11,7 @@
       <li><a href="#">Contacte</a></li>
       <li><a href="#">Directori UPC</a></li>
       <li><a href=""
-         tal:attributes="href context/cas_login_url"
+         tal:attributes="href context/cas_login_url | nothing"
          i18n:attributes="title identificat"
          i18n:domain="genweb"
          i18n:translate="identificat">
