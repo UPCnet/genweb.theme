@@ -1,4 +1,7 @@
-<nav id="portal-globalnav"><!-- #portal-globalnav -->
+<nav id="portal-globalnav"
+     tal:define="portal_tabs view/portal_tabs"
+     tal:condition="portal_tabs"
+     i18n:domain="plone"><!-- #portal-globalnav -->
   <h2 class="goout">Navegació</h2>
   <div class="container">
     <div class="navbar">
@@ -9,7 +12,8 @@
           <span class="icon-bar"></span>
         </a>
         <div class="nav-collapse">
-          <ul class="nav">
+          <ul class="nav"
+              tal:define="selected_tab python:view.selected_portal_tab">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle state-published" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -22,6 +26,18 @@
             <li><a href="#" class="state-pending">Link</a></li>
             <li><a href="#" class="state-private">Link</a></li>
             <li><a href="#" class="state-intranet">Intranet</a></li>
+            <tal:tabs tal:repeat="tab portal_tabs">
+              <li tal:define="tid tab/id"
+                  tal:attributes="id string:portaltab-${tid};
+                                  class python:selected_tab==tid and 'active' or 'plain'">
+                <a href=""
+                   tal:content="tab/name"
+                   tal:attributes="href tab/url;
+                                   title tab/description|nothing;">
+                   Tab Name
+                </a>
+              </li>
+            </tal:tabs>
           </ul>
         </div>
       </div>
