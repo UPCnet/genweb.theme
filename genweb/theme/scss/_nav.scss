@@ -10,7 +10,7 @@
 #portal-globalnav {/*margin-top:-22px;*/}
 	#portal-header .container {/*padding-bottom:22px;*/} /* ajusta menu */
 	#portal-globalnav .navbar-inner {padding:0; border-bottom:3px solid #666;}
-		#portal-globalnav .state-published {border-bottom:3px solid $blue;}		
+		#portal-globalnav .state-published {border-bottom:3px solid $blue;}
 		#portal-globalnav .state-intranet {border-bottom:3px solid $purple;}
 		#portal-globalnav .state-draft {border-bottom:3px solid $green;}
 		#portal-globalnav .state-pending {border-bottom:3px solid darken($orange,5%);}
@@ -64,7 +64,7 @@
 	}
 	& li:last-child a{
 		@include border-radius(0 0 4px 4px);
-	}	
+	}
 	& .active ul {
 		margin-left:-15px !important;
 		margin-right:-15px;
@@ -88,7 +88,7 @@
 			&.state-draft {border-right: 3px solid $green; color:$green;}
 			&.state-pending {border-right: 3px solid darken($orange,5%); color:darken($orange,5%);}
 			&.state-intranet {border-right: 3px solid $purple; color:$purple;}
-			&[class^="state-"]:hover, 
+			&[class^="state-"]:hover,
 			&[class*=" state-"]:hover {
 				color:$black;
 				text-decoration:none;
@@ -111,20 +111,20 @@
 					line-height:0 !important;
 				}
 			}
-			&[class^="contenttype-"] span:after, 
-			&[class*=" contenttype-"] span:after {			
-				    background-image: url("../images/glyphicons-halflings.png");
+			&[class^="contenttype-"] span:after,
+			&[class*=" contenttype-"] span:after {
+				    background-image: image-url("glyphicons-halflings.png");
     				content: " ";
     				display: block;
     				float: right;
     				height: 20px;
     				margin-right: -24px;
-    				width: 20px; 
+    				width: 20px;
     				opacity:.8;
 			}
 			&.contenttype-folder span:after {background-position: -384px -120px;}
-			&.contenttype-page span:after {background-position: -24px -24px;}			
-			&.contenttype-link span:after {background-position: -334px -96px;}					
+			&.contenttype-document span:after {background-position: -24px -24px;}
+			&.contenttype-link span:after {background-position: -334px -96px;}
 			&:hover {background-color:rgba(0,123,192,.05) !important;};
 			&:hover span:after {opacity:1;}
 		}
