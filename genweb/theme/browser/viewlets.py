@@ -5,6 +5,8 @@ from zope.interface import Interface
 from zope.component import getMultiAdapter
 from zope.app.component.hooks import getSite
 
+from plone.memoize.view import memoize_contextless
+
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFCore import permissions
 
@@ -24,9 +26,11 @@ grok.context(Interface)
 class viewletBase(grok.Viewlet):
     grok.baseclass()
 
+    @memoize_contextless
     def portal_url(self):
         return self.portal().absolute_url()
 
+    @memoize_contextless
     def portal(self):
         return getSite()
 
