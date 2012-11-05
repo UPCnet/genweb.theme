@@ -7,8 +7,14 @@
       </a>
     </h1>
     <ul id="eines" class="nav nav-pills pull-right">
-      <li><a href="#">Mapa del lloc</a></li>
-      <li><a href="#">Contacte</a></li>
+      <li><a accesskey="3" title="Site Map"
+             i18n:translate="Site Map"
+             i18n:attributes="title"
+             tal:attributes="href string:${viewlet/portal_url}/@@sitemap">Site Map</a></li>
+      <li><a accesskey="9" title="Contact"
+             i18n:translate="Contact"
+             i18n:attributes="title"
+             tal:attributes="href string:${viewlet/portal_url}/contact">Site Map</a></li>
       <li><a href="#">Directori UPC</a></li>
       <li><a href=""
          tal:attributes="href context/cas_login_url | nothing"
@@ -36,9 +42,13 @@
 
   <div class="titol-espai clearfix"><!-- títol web -->
     <h1>
-      <a href="#">Servei de <b>Comunicació i Promoció</b>
+      <a href="#"
+         tal:attributes="href string:${viewlet/portal_url}"
+         tal:content="structure python:getattr(viewlet.gw_config, 'html_title_%s' % viewlet.pref_lang(), 'Servei de <b>Comunicació i Promoció</b>')">
+          Servei de <b>Comunicació i Promoció</b>
       <img alt="" class="logoPropi pull-right"
-           tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/logoPropi.png"></a>
+           tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/logoPropi.png">
+      </a>
     </h1>
   </div>
 </div>
