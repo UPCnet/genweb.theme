@@ -10,7 +10,9 @@ from Products.CMFPlone.browser.navigation import get_id, get_view_url
 
 
 class gwCatalogNavigationTabs(CatalogNavigationTabs):
-
+    """ Customized navigation tabs generator to include review_state attribute
+        in results.
+    """
     def topLevelTabs(self, actions=None, category='portal_tabs'):
         context = aq_inner(self.context)
 
