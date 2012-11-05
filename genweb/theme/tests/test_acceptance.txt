@@ -4,7 +4,7 @@ Library  genweb.theme.tests.keywords.PloneLibrary
 Library  Selenium2Library  timeout=10  implicit_wait=0.5
 
 Suite Setup  Start browser
-Suite Teardown  Close All Browsers
+
 
 *** Test Cases ***
 
@@ -29,4 +29,4 @@ Log in as manager
     Input text  __ac_name  ${TEST_USER_NAME}
     Input text  __ac_password  ${TEST_USER_PASSWORD}
     Click Button  Log in
-    Page should contain element  css=#user-name
+    Page should contain element  css=.user

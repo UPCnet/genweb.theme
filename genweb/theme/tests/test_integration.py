@@ -15,10 +15,10 @@ class BasicTest(unittest.TestCase):
         self.request = self.layer['request']
         self.app = self.layer['app']
 
-    def test_sunburst_layers_available(self):
+    def test_genweb_layers_available(self):
         self.failUnless('genwebtheme_custom' in self.portal.portal_skins)
 
-    def test_sunburst_skin_installed(self):
+    def test_genweb_skin_installed(self):
         self.skins = self.portal.portal_skins
         theme = self.skins.getDefaultSkin()
         self.failUnless(theme == 'GenwebTheme', 'Default theme is %s' % theme)
@@ -34,7 +34,7 @@ class BootstrapTraversalTest(unittest.TestCase):
         self.app = self.layer['app']
         self.browser = Browser(self.app)
 
-    def testLESSResourceTraversal(self):
+    def testGWResourceTraversal(self):
         portalURL = self.portal.absolute_url()
-        self.browser.open('%s/++bootstrap++less/alerts.less' % portalURL)
-        self.assertTrue(u"Alerts" in self.browser.contents)
+        self.browser.open('%s/++genweb++stylesheets/genwebupc.css' % portalURL)
+        self.assertTrue(u"Bootstrap" in self.browser.contents)
