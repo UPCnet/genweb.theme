@@ -37,11 +37,14 @@
     <h1>
       <a href="#"
          tal:attributes="href string:${viewlet/portal_url}"
-         tal:content="structure python:getattr(viewlet.gw_config, 'html_title_%s' % viewlet.pref_lang(), 'Servei de <b>Comunicació i Promoció</b>')">
+         tal:content="structure python:getattr(viewlet.genweb_config, 'html_title_%s' % viewlet.pref_lang(), 'Servei de <b>Comunicació i Promoció</b>')">
           Servei de <b>Comunicació i Promoció</b>
       <img alt="" class="logoPropi pull-right"
            tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/logoPropi.png">
       </a>
     </h1>
   </div>
+
+  <div class="header-image l3-image"> </div>
+
 </div>

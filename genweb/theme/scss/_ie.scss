@@ -1,0 +1,17 @@
+/* NOMÉS CORRECCIONS PER A IE SENSE HACKS */
+
+
+/* IE9- */
+html.lt-ie10 #portal-globalnav .nav-collapse {position:relative;}
+html.lt-ie10 #portal-globalnav .navbar .nav {position:absolute;}
+
+/* IE8- */
+html.lt-ie9 .navbar img {max-width:inherit !important;}
+
+/* IE7- */
+/*
+html.lt-ie8 #portal-header,
+html.lt-ie8 #peu {position:relative;}
+html.lt-ie8 #portal-header .container,
+html.lt-ie8 #peu .container {position:relative; top:-5px;}
+*/

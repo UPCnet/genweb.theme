@@ -156,7 +156,7 @@ $wellBackground:                  #f2f2f2 !default;
 
 // Navbar
 // -------------------------
-$navbarCollapseWidth:             979px !default;
+$navbarCollapseWidth:             767px !default;
 
 $navbarHeight:                    36px !default;
 $navbarBackgroundHighlight:       #f7f7f7 !default;
@@ -246,21 +246,22 @@ $popoverArrowOuterColor:  rgba(0,0,0,.25) !default;
 // GRID
 // --------------------------------------------------
 
-// Default 940px grid
+// Default 978px grid
 // -------------------------
 $gridColumns:             12 !default;
 $gridColumnWidth:         54px !default;
 $gridGutterWidth:         30px !default;
 $gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default;
 
+// no n'hi ha, està annul·lat
 // 1200px min
-$gridColumnWidth1200:     70px !default;
+$gridColumnWidth1200:     54px !default;
 $gridGutterWidth1200:     30px !default;
 $gridRowWidth1200:        ($gridColumns * $gridColumnWidth1200) + ($gridGutterWidth1200 * ($gridColumns - 1)) !default;
 
 // 768px-979px
-$gridColumnWidth768:      42px !default;
-$gridGutterWidth768:      20px !default;
+$gridColumnWidth768:      54px !default;
+$gridGutterWidth768:      30px !default;
 $gridRowWidth768:         ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1)) !default;
 
 

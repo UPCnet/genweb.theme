@@ -5,6 +5,7 @@
     define="portal_state context/@@plone_portal_state;
             context_state context/@@plone_context_state;
             plone_view context/@@plone;
+            genweb_config context/@@gwconfig;
             lang portal_state/language;
             view nocall:view | nocall: plone_view;
             dummy python: plone_view.mark_view(view);
@@ -13,12 +14,13 @@
             site_properties context/portal_properties/site_properties;
             ajax_load request/ajax_load | nothing;
             ajax_include_head request/ajax_include_head | nothing;
-            dummy python:request.RESPONSE.setHeader('X-UA-Compatible', 'IE=edge,chrome=1');"
+            dummy python:request.RESPONSE.setHeader('X-UA-Compatible', 'IE=edge,chrome=1,requiresActiveX=true');"
             >
-<tal:IElt7 tal:replace="structure string:&lt;!--[if lt IE 7]&gt; &lt;html xmlns='http://www.w3.org/1999/xhtml' class='no-js lt-ie9 lt-ie8 lt-ie7' lang=${lang}&gt; &lt;![endif]--&gt;" />
-<tal:IE7 tal:replace="structure string:&lt;!--[if IE 7]&gt;    &lt;html xmlns='http://www.w3.org/1999/xhtml' class='no-js lt-ie9 lt-ie8' lang=${lang}&gt; &lt;![endif]--&gt;" />
-<tal:IE8 tal:replace="structure string:&lt;!--[if IE 8]&gt;    &lt;html xmlns='http://www.w3.org/1999/xhtml' class='no-js lt-ie9' lang=${lang}&gt; &lt;![endif]--&gt;" />
-<!--[if gt IE 8]><!-->
+<tal:IElt7 tal:replace="structure string:&lt;!--[if lt IE 7]&gt; &lt;html xmlns='http://www.w3.org/1999/xhtml' class='no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7' lang=${lang}&gt; &lt;![endif]--&gt;" />
+<tal:IE7 tal:replace="structure string:&lt;!--[if IE 7]&gt;    &lt;html xmlns='http://www.w3.org/1999/xhtml' class='no-js lt-ie10 lt-ie9 lt-ie8' lang=${lang}&gt; &lt;![endif]--&gt;" />
+<tal:IE8 tal:replace="structure string:&lt;!--[if IE 8]&gt;    &lt;html xmlns='http://www.w3.org/1999/xhtml' class='no-js lt-ie10 lt-ie9' lang=${lang}&gt; &lt;![endif]--&gt;" />
+<tal:IE9 tal:replace="structure string:&lt;!--[if IE 9]&gt;    &lt;html xmlns='http://www.w3.org/1999/xhtml' class='no-js lt-ie10' lang=${lang}&gt; &lt;![endif]--&gt;" />
+<!--[if gt IE 9]><!-->
 <html xmlns="http://www.w3.org/1999/xhtml"
       class="no-js"
       tal:attributes="lang lang;">
@@ -64,7 +66,7 @@
     tal:attributes="class body_class;
                     dir python:isRTL and 'rtl' or 'ltr'">
 
-<tal:ancientBrowser tal:replace="structure string:&lt;!--[if lt IE 7]&gt;&lt;p class=chromeframe&gt;Your browser is &lt;em&gt;ancient!&lt;/em&gt; &lt;a href='http://browsehappy.com/'&gt;Upgrade to a different browser&lt;/a&gt; or &lt;a href='http://www.google.com/chromeframe/?redirect=true'&gt;install Google Chrome Frame&lt;/a&gt; to experience this site.&lt;/p&gt;&lt;![endif]--&gt;" />
+<tal:ancientBrowser tal:replace="structure string:&lt;!--[if lt IE 8]&gt;&lt;p class=chromeframe&gt;Your browser is &lt;em&gt;ancient!&lt;/em&gt; &lt;a href='http://browsehappy.com/'&gt;Upgrade to a different browser&lt;/a&gt; or &lt;a href='http://www.google.com/chromeframe/?redirect=true'&gt;install Google Chrome Frame&lt;/a&gt; to experience this site.&lt;/p&gt;&lt;![endif]--&gt;" />
 
 <tal:portaltop
              i18n:domain="plone"

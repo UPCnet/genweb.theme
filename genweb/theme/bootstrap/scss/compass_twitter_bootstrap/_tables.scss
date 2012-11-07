@@ -13,6 +13,7 @@ table {
   border-spacing: 0;
 }
 
+
 // BASELINE STYLES
 // ---------------
 
@@ -101,6 +102,7 @@ table {
             border-top-right-radius: 4px;
         -moz-border-radius-topright: 4px;
   }
+  /*
   // For first th or td in the first row in the first thead or tbody
   thead:last-child tr:last-child th:first-child,
   tbody:last-child tr:last-child td:first-child,
@@ -110,6 +112,7 @@ table {
             border-bottom-left-radius: 4px;
         -moz-border-radius-bottomleft: 4px;
   }
+  */
   thead:last-child tr:last-child th:last-child,
   tbody:last-child tr:last-child td:last-child,
   tfoot:last-child tr:last-child td:last-child {
@@ -190,13 +193,46 @@ table {
 // Exact selectors below required to override .table-striped
 
 .table {
-  tbody tr.success td {
-    background-color: $successBackground;
+  tr.success td,
+  td.success,
+  tr.success th,
+  th.success {
+    background-color: $successBackground !important;
+    color:$grayDark;
   }
-  tbody tr.error td {
-    background-color: $errorBackground;
+  tr.error td,
+  td.error,
+  tr.error th,
+  th.error {
+    background-color: $errorBackground !important;
+    color:$grayDark;
   }
-  tbody tr.info td {
-    background-color: $infoBackground;
+  tr.info td,
+  td.info,
+  tr.info th,
+  th.info  {
+    background-color: $infoBackground !important;
+    color:$grayDark;
   }
+  tr.warning td,
+  td.warning,
+  tr.warning th,
+  th.warning {
+    background-color: $warningBackground !important;
+    color:$grayDark;
+  }  
+  tr.inverse td,
+  td.inverse,
+  tr.inverse th,
+  th.inverse {
+    background-color: $black !important;
+    color:$white;
+  }    
+  tr.primary td,
+  td.primary,
+  tr.primary th,
+  th.primary {
+    background-color: $blue !important;
+    color:$white;
+  }      
 }

@@ -1,1 +1,6 @@
 .hiddenStructure { display: none;}
+
+.formTabs {
+    @extend .nav;
+    @extend .nav-pills;
+}

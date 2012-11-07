@@ -1,11 +1,23 @@
+from five import grok
 from Acquisition import aq_inner
-
+from zope.interface import Interface
 from zope.component import getMultiAdapter
 
 from Products.CMFPlone import utils
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.browser.navigation import CatalogNavigationTabs
 from Products.CMFPlone.browser.navigation import get_id, get_view_url
+
+from genweb.core.interfaces import IGenwebLayer
+from genweb.core.utils import genweb_config
+
+
+class GWConfig(grok.View):
+    grok.context(Interface)
+    # grok.layer(IGenwebLayer)
+
+    def render(self):
+        return genweb_config()
 
 
 class gwCatalogNavigationTabs(CatalogNavigationTabs):

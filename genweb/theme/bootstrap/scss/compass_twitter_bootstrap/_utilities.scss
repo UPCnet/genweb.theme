@@ -16,8 +16,8 @@
 }
 
 // Toggling content
-.hide {
-  display: none;
+.hide, .goout {
+  display:none;
 }
 .show {
   display: block;

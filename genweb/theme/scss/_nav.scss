@@ -1,6 +1,5 @@
 // BREADCRUMBS
 // -------------------------
-#portal-breadcrumbs {margin:0 auto; width:940px} /* margin i width provisionals */
 
 
 
@@ -38,22 +37,37 @@
   		color:#444;
   		border-top:1px solid #b2b2b2 !important;
   		padding:8px 9px !important;
+  		position:relative;
   		&:hover {
   			background:#eee;
   			color:#111;
   		}
-  		&:hover:after {
-  			content:"  >";
-  			position:absolute;
-  			background:$blue;
-  			margin-left:5px;
-  			width:20px;
-  			height:20px;
-  			@include border-radius(10px);
-  			right:0;
-  		}
+		& + ul a:after {
+			display:none !important;
+		}
 
 	}
+	& a:hover:after,
+	.active a:after {
+		content:"";
+  		position:absolute;
+  		background-color:$blue;
+  		margin-left:5px;
+  		@include border-radius(10px);
+  		@include box-shadow(0 1px 0 rgba(255,255,255,.5));
+		right: 7px;
+		top: 8px;
+		background-image: image-url("glyphicons-halflings-white.png");
+		background-position:  -455px -71px;
+		background-repeat:no-repeat;
+		width:17px;
+		height:17px;
+
+	}
+	& a.state-private:hover:after, .active .state-private:after {background-color:$red;}
+	& a.state-draft:hover:after, .active .state-draft:after {background-color:$green;}
+	& a.state-pending:hover:after, .active .state-pending:after {background-color:darken($orange,5%);}
+	& a.state-intranet:hover:after, .active .state-intranet:after {background-color:$purple;}
 	& .active a {
 		background: #ddd;
 		color:$grayDarker;
@@ -125,7 +139,7 @@
 			&.contenttype-folder span:after {background-position: -384px -120px;}
 			&.contenttype-document span:after {background-position: -24px -24px;}
 			&.contenttype-link span:after {background-position: -334px -96px;}
-			&:hover {background-color:rgba(0,123,192,.05) !important;};
+			&:hover {background-color:#f2f8fc !important;};
 			&:hover span:after {opacity:1;}
 		}
 	}

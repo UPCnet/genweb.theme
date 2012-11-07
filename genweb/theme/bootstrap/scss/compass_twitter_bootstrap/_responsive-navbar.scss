@@ -39,6 +39,16 @@
     margin: 0 0 0 -5px;
   }
 
+
+  // Negative indent the now static "fixed" navbar
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+
+
   // COLLAPSIBLE NAVBAR
   // ------------------
   // Nav collapse clears brand

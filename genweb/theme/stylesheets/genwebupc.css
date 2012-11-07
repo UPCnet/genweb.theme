@@ -629,11 +629,31 @@ cite {
 }
 
 /* line 29, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-.muted {
+.muted, .box-example:after {
   color: #aaaaaa;
 }
 
-/* line 37, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 32, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+.text-warning {
+  color: #c67605;
+}
+
+/* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+.text-error {
+  color: #a62e1f;
+}
+
+/* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+.text-info {
+  color: #30a2c3;
+}
+
+/* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+.text-success {
+  color: #72a31d;
+}
+
+/* line 52, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 9px 0;
   font-family: inherit;
@@ -642,83 +662,88 @@ h1, h2, h3, h4, h5, h6 {
   color: inherit;
   text-rendering: optimizelegibility;
 }
-/* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 59, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-weight: normal;
   line-height: 1;
   color: #aaaaaa;
 }
 
-/* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 h1 {
-  font-size: 25px;
+  font-size: 192.307692%;
   line-height: 36px;
-}
-
-/* line 51, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-h2 {
-  font-size: 20px;
-  line-height: 36px;
-}
-
-/* line 52, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-h3 {
-  font-size: 17px;
-  line-height: 18px;
-}
-
-/* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-h4 {
-  font-size: 15px;
-  line-height: 18px;
-}
-
-/* line 54, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-h5 {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-/* line 55, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-h6 {
-  font-size: 13px;
-  line-height: 18px;
-}
-
-/* line 57, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-h1 small {
-  font-size: 20px;
-}
-
-/* line 58, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-h2 small {
-  font-size: 17px;
-}
-
-/* line 59, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-h3 small {
-  font-size: 15px;
-}
-
-/* line 60, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-h4 small {
-  font-size: 14px;
 }
 
 /* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+h2 {
+  font-size: 153.846154%;
+  line-height: 36px;
+}
+
+/* line 67, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+h3 {
+  font-size: 130.769231%;
+  line-height: 18px;
+}
+
+/* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+h4 {
+  font-size: 115.384615%;
+  line-height: 18px;
+}
+
+/* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+h5 {
+  font-size: 107.692308%;
+  line-height: 18px;
+}
+
+/* line 70, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+h6 {
+  font-size: 100%;
+  line-height: 18px;
+}
+
+/* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+h1 small {
+  font-size: 153.846154%;
+}
+
+/* line 73, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+h2 small {
+  font-size: 130.769231%;
+}
+
+/* line 74, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+h3 small {
+  font-size: 115.384615%;
+}
+
+/* line 75, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+h4 small {
+  font-size: 107.692308%;
+}
+
+/* line 81, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 .page-header {
   padding-bottom: 8px;
   margin: 18px 0 27px;
   border-bottom: 1px solid #f2f2f2;
 }
 
-/* line 78, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 93, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 ul, ol {
   padding: 0;
   margin: 0 0 9px 25px;
 }
 
-/* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 97, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+ul {
+  list-style: square;
+}
+
+/* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -726,40 +751,40 @@ ol ul {
   margin-bottom: 0;
 }
 
-/* line 88, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 105, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 li {
   line-height: 18px;
 }
 
-/* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 109, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 ul.unstyled,
 ol.unstyled {
   margin-left: 0;
   list-style: none;
 }
 
-/* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 115, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 dl {
   margin-bottom: 18px;
 }
 
-/* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 119, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 dt,
 dd {
   line-height: 18px;
 }
 
-/* line 105, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 122, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 108, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 125, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 dd {
   margin-left: 9px;
 }
 
-/* line 113, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 130, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 .dl-horizontal dt {
   float: left;
   width: 120px;
@@ -769,12 +794,12 @@ dd {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 137, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 .dl-horizontal dd {
   margin-left: 130px;
 }
 
-/* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 146, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 hr {
   margin: 18px 0;
   border: 0;
@@ -782,42 +807,42 @@ hr {
   border-bottom: 1px solid white;
 }
 
-/* line 137, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 154, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #aaaaaa;
 }
 
-/* line 141, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
-/* line 147, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 164, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 18px;
   border-left: 5px solid #d9d9d9;
 }
-/* line 151, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 168, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
   line-height: 22.5px;
 }
-/* line 155, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 172, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote small {
   display: block;
   line-height: 18px;
   color: #aaaaaa;
 }
-/* line 159, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
-/* line 165, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 182, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -825,21 +850,21 @@ blockquote.pull-right {
   border-right: 5px solid #d9d9d9;
   border-left: 0;
 }
-/* line 172, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 189, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
-/* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 193, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote.pull-right small:before {
   content: '';
 }
-/* line 179, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 196, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 190, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 207, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -847,7 +872,7 @@ blockquote:after {
   content: "";
 }
 
-/* line 195, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 212, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 address {
   display: block;
   margin-bottom: 18px;
@@ -1869,12 +1894,12 @@ table {
   border-spacing: 0;
 }
 
-/* line 19, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 20, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table {
   width: 100%;
   margin-bottom: 18px;
 }
-/* line 24, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table th,
 .table td {
   padding: 8px;
@@ -1883,15 +1908,15 @@ table {
   vertical-align: top;
   border-top: 1px solid #b2b2b2;
 }
-/* line 31, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 32, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table th {
   font-weight: bold;
 }
-/* line 35, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table thead th {
   vertical-align: bottom;
 }
-/* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 45, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table caption + thead tr:first-child th,
 .table caption + thead tr:first-child td,
 .table colgroup + thead tr:first-child th,
@@ -1900,18 +1925,18 @@ table {
 .table thead:first-child tr:first-child td {
   border-top: 0;
 }
-/* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table tbody + tbody {
   border-top: 2px solid #b2b2b2;
 }
 
-/* line 60, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table-condensed th,
 .table-condensed td {
   padding: 4px 5px;
 }
 
-/* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 70, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table-bordered {
   border: 1px solid #b2b2b2;
   border-collapse: separate;
@@ -1920,13 +1945,24 @@ table {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  /*
+  // For first th or td in the first row in the first thead or tbody
+  thead:last-child tr:last-child th:first-child,
+  tbody:last-child tr:last-child td:first-child,
+  tfoot:last-child tr:last-child td:first-child {
+    @include border-radius(0 0 0 4px);
+    -webkit-border-bottom-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        -moz-border-radius-bottomleft: 4px;
+  }
+  */
 }
-/* line 76, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 77, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table-bordered th,
 .table-bordered td {
   border-left: 1px solid #b2b2b2;
 }
-/* line 88, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table-bordered caption + thead tr:first-child th,
 .table-bordered caption + tbody tr:first-child th,
 .table-bordered caption + tbody tr:first-child td,
@@ -1938,32 +1974,21 @@ table {
 .table-bordered tbody:first-child tr:first-child td {
   border-top: 0;
 }
-/* line 93, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 94, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table-bordered thead:first-child tr:first-child th:first-child,
 .table-bordered tbody:first-child tr:first-child td:first-child {
   -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
 }
-/* line 99, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table-bordered thead:first-child tr:first-child th:last-child,
 .table-bordered tbody:first-child tr:first-child td:last-child {
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
 }
-/* line 107, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table-bordered thead:last-child tr:last-child th:first-child,
-.table-bordered tbody:last-child tr:last-child td:first-child,
-.table-bordered tfoot:last-child tr:last-child td:first-child {
-  -webkit-border-radius: 0 0 0 4px;
-  -moz-border-radius: 0 0 0 4px;
-  border-radius: 0 0 0 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomleft: 4px;
-}
-/* line 115, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 118, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table-bordered thead:last-child tr:last-child th:last-child,
 .table-bordered tbody:last-child tr:last-child td:last-child,
 .table-bordered tfoot:last-child tr:last-child td:last-child {
@@ -1971,7 +1996,7 @@ table {
   border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
 }
-/* line 125, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 128, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table-bordered caption + thead tr:first-child th:first-child,
 .table-bordered caption + tbody tr:first-child td:first-child,
 .table-bordered colgroup + thead tr:first-child th:first-child,
@@ -1980,7 +2005,7 @@ table {
   border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
 }
-/* line 133, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 136, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table-bordered caption + thead tr:first-child th:last-child,
 .table-bordered caption + tbody tr:first-child td:last-child,
 .table-bordered colgroup + thead tr:first-child th:last-child,
@@ -1990,19 +2015,19 @@ table {
   -moz-border-right-topleft: 4px;
 }
 
-/* line 149, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table-striped tbody tr:nth-child(odd) td,
 .table-striped tbody tr:nth-child(odd) th {
   background-color: #f7f7f7;
 }
 
-/* line 162, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 165, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
   background-color: #f2f2f2;
 }
 
-/* line 174, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 177, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table [class*=span],
 .row-fluid table [class*=span] {
   display: table-cell;
@@ -2010,162 +2035,198 @@ table [class*=span],
   margin-left: 0;
 }
 
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span1 {
   float: none;
   width: 38px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span2 {
   float: none;
   width: 122px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span3 {
   float: none;
   width: 206px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span4 {
   float: none;
   width: 290px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span5 {
   float: none;
   width: 374px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span6 {
   float: none;
   width: 458px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span7 {
   float: none;
   width: 542px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span8 {
   float: none;
   width: 626px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span9 {
   float: none;
   width: 710px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span10 {
   float: none;
   width: 794px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span11 {
   float: none;
   width: 878px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span12 {
   float: none;
   width: 962px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span13 {
   float: none;
   width: 1046px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span14 {
   float: none;
   width: 1130px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span15 {
   float: none;
   width: 1214px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span16 {
   float: none;
   width: 1298px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span17 {
   float: none;
   width: 1382px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span18 {
   float: none;
   width: 1466px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span19 {
   float: none;
   width: 1550px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span20 {
   float: none;
   width: 1634px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span21 {
   float: none;
   width: 1718px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span22 {
   float: none;
   width: 1802px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span23 {
   float: none;
   width: 1886px;
   margin-left: 0;
 }
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table .span24 {
   float: none;
   width: 1970px;
   margin-left: 0;
 }
 
-/* line 193, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table tbody tr.success td {
-  background-color: #e5f5ca;
-}
-/* line 196, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table tbody tr.error td {
-  background-color: #fae6e4;
-}
 /* line 199, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table tbody tr.info td {
-  background-color: #e1f2f8;
+.table tr.success td,
+.table td.success,
+.table tr.success th,
+.table th.success {
+  background-color: #e5f5ca !important;
+  color: #333333;
+}
+/* line 206, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+.table tr.error td,
+.table td.error,
+.table tr.error th,
+.table th.error {
+  background-color: #fae6e4 !important;
+  color: #333333;
+}
+/* line 213, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+.table tr.info td,
+.table td.info,
+.table tr.info th,
+.table th.info {
+  background-color: #e1f2f8 !important;
+  color: #333333;
+}
+/* line 220, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+.table tr.warning td,
+.table td.warning,
+.table tr.warning th,
+.table th.warning {
+  background-color: #fbf0cc !important;
+  color: #333333;
+}
+/* line 227, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+.table tr.inverse td,
+.table td.inverse,
+.table tr.inverse th,
+.table th.inverse {
+  background-color: black !important;
+  color: white;
+}
+/* line 234, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
+.table tr.primary td,
+.table td.primary,
+.table tr.primary th,
+.table th.primary {
+  background-color: #007bc0 !important;
+  color: white;
 }
 
 /* line 18, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2177,7 +2238,7 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/++genweb++static/images/glyphicons-halflings.png?1351539282');
+  background-image: url('/++genweb++static/images/glyphicons-halflings.png?1346050654');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2187,12 +2248,14 @@ table .span24 {
 /* line 38, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-white,
 .nav > .active > a > [class^="icon-"],
+.formTabs > .active > a > [class^="icon-"],
 .nav > .active > a > [class*=" icon-"],
+.formTabs > .active > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .active > a > [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/glyphicons-halflings-white.png?1351539282');
+  background-image: url('/++genweb++static/images/glyphicons-halflings-white.png?1342602226');
 }
 
 /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -3122,7 +3185,7 @@ table .span24 {
 .pull-right .dropdown .dropdown-submenu > .dropdown-menu {right: 100% !important;}
  */
 /* line 7, ../bootstrap/scss/compass_twitter_bootstrap/_wells.scss */
-.well {
+.well, .well-inverse {
   min-height: 20px;
   padding: 18px;
   margin-bottom: 20px;
@@ -3136,7 +3199,7 @@ table .span24 {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_wells.scss */
-.well blockquote {
+.well blockquote, .well-inverse blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
@@ -4000,25 +4063,25 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 9, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav {
+.nav, .formTabs {
   margin-left: 0;
   margin-bottom: 18px;
   list-style: none;
 }
 
 /* line 16, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > li > a {
+.nav > li > a, .formTabs > li > a {
   display: block;
 }
 
 /* line 19, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > li > a:hover {
+.nav > li > a:hover, .formTabs > li > a:hover {
   text-decoration: none;
   background-color: #f2f2f2;
 }
 
 /* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > .pull-right {
+.nav > .pull-right, .formTabs > .pull-right {
   float: right;
 }
 
@@ -4035,7 +4098,7 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 41, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav li + .nav-header {
+.nav li + .nav-header, .formTabs li + .nav-header {
   margin-top: 9px;
 }
 
@@ -4085,32 +4148,38 @@ input[type="submit"].btn::-moz-focus-inner {
 
 /* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .nav-tabs,
-.nav-pills {
+.nav-pills,
+.formTabs {
   *zoom: 1;
 }
 /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .nav-tabs:before, .nav-tabs:after,
 .nav-pills:before,
-.nav-pills:after {
+.formTabs:before,
+.nav-pills:after,
+.formTabs:after {
   display: table;
   content: "";
   line-height: 0;
 }
 /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .nav-tabs:after,
-.nav-pills:after {
+.nav-pills:after,
+.formTabs:after {
   clear: both;
 }
 
 /* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .nav-tabs > li,
-.nav-pills > li {
+.nav-pills > li,
+.formTabs > li {
   float: left;
 }
 
 /* line 93, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .nav-tabs > li > a,
-.nav-pills > li > a {
+.nav-pills > li > a,
+.formTabs > li > a {
   padding-right: 8px;
   padding-left: 8px;
   margin-right: 2px;
@@ -4162,7 +4231,7 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 141, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-pills > li > a {
+.nav-pills > li > a, .formTabs > li > a {
   padding-top: 8px;
   padding-bottom: 8px;
   margin-top: 2px;
@@ -4173,8 +4242,9 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 151, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-pills > .active > a,
-.nav-pills > .active > a:hover {
+.nav-pills > .active > a, .formTabs > .active > a,
+.nav-pills > .active > a:hover,
+.formTabs > .active > a:hover {
   color: white;
   background-color: #007bc0;
 }
@@ -4229,12 +4299,12 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 189, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-pills.nav-stacked > li > a {
+.nav-pills.nav-stacked > li > a, .nav-stacked.formTabs > li > a {
   margin-bottom: 3px;
 }
 
 /* line 192, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-pills.nav-stacked > li:last-child > a {
+.nav-pills.nav-stacked > li:last-child > a, .nav-stacked.formTabs > li:last-child > a {
   margin-bottom: 1px;
 }
 
@@ -4246,21 +4316,21 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 204, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-pills .dropdown-menu {
+.nav-pills .dropdown-menu, .formTabs .dropdown-menu {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
 
 /* line 211, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav .dropdown-toggle .caret {
+.nav .dropdown-toggle .caret, .formTabs .dropdown-toggle .caret {
   border-top-color: #007bc0;
   border-bottom-color: #007bc0;
   margin-top: 6px;
 }
 
 /* line 216, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav .dropdown-toggle:hover .caret {
+.nav .dropdown-toggle:hover .caret, .formTabs .dropdown-toggle:hover .caret {
   border-top-color: #004a74;
   border-bottom-color: #004a74;
 }
@@ -4272,7 +4342,7 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 227, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav .active .dropdown-toggle .caret {
+.nav .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret {
   border-top-color: #333333;
   border-bottom-color: #333333;
 }
@@ -4284,23 +4354,27 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 238, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > .dropdown.active > a:hover {
+.nav > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover {
   cursor: pointer;
 }
 
 /* line 246, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .nav-tabs .open .dropdown-toggle,
 .nav-pills .open .dropdown-toggle,
-.nav > li.dropdown.open.active > a:hover {
+.formTabs .open .dropdown-toggle,
+.nav > li.dropdown.open.active > a:hover,
+.formTabs > li.dropdown.open.active > a:hover {
   color: white;
   background-color: #aaaaaa;
   border-color: #aaaaaa;
 }
 
 /* line 253, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav li.dropdown.open .caret,
+.nav li.dropdown.open .caret, .formTabs li.dropdown.open .caret,
 .nav li.dropdown.open.active .caret,
-.nav li.dropdown.open a:hover .caret {
+.formTabs li.dropdown.open.active .caret,
+.nav li.dropdown.open a:hover .caret,
+.formTabs li.dropdown.open a:hover .caret {
   border-top-color: white;
   border-bottom-color: white;
   opacity: 1;
@@ -4449,12 +4523,12 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 380, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > .disabled > a {
+.nav > .disabled > a, .formTabs > .disabled > a {
   color: #aaaaaa;
 }
 
 /* line 384, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > .disabled > a:hover {
+.nav > .disabled > a:hover, .formTabs > .disabled > a:hover {
   text-decoration: none;
   background-color: transparent;
   cursor: default;
@@ -4690,7 +4764,7 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 215, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav {
+.navbar .nav, .navbar .formTabs {
   position: relative;
   left: 0;
   display: block;
@@ -4699,17 +4773,17 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 222, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav.pull-right {
+.navbar .nav.pull-right, .navbar .pull-right.formTabs {
   float: right;
 }
 
 /* line 225, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > li {
+.navbar .nav > li, .navbar .formTabs > li {
   float: left;
 }
 
 /* line 230, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > li > a {
+.navbar .nav > li > a, .navbar .formTabs > li > a {
   float: none;
   padding: 9px 15px 9px;
   color: #666666;
@@ -4718,22 +4792,25 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 238, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav .dropdown-toggle .caret {
+.navbar .nav .dropdown-toggle .caret, .navbar .formTabs .dropdown-toggle .caret {
   margin-top: 8px;
 }
 
 /* line 244, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover {
+.navbar .nav > li > a:focus, .navbar .formTabs > li > a:focus,
+.navbar .nav > li > a:hover,
+.navbar .formTabs > li > a:hover {
   background-color: #fdfdfd;
   color: #333333;
   text-decoration: none;
 }
 
 /* line 253, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > .active > a,
+.navbar .nav > .active > a, .navbar .formTabs > .active > a,
 .navbar .nav > .active > a:hover,
-.navbar .nav > .active > a:focus {
+.navbar .formTabs > .active > a:hover,
+.navbar .nav > .active > a:focus,
+.navbar .formTabs > .active > a:focus {
   color: #666666;
   text-decoration: none;
   background-color: #fdfdfd;
@@ -4799,7 +4876,7 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 292, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > li > .dropdown-menu:before {
+.navbar .nav > li > .dropdown-menu:before, .navbar .formTabs > li > .dropdown-menu:before {
   content: '';
   display: inline-block;
   border-left: 7px solid transparent;
@@ -4811,7 +4888,7 @@ input[type="submit"].btn::-moz-focus-inner {
   left: 9px;
 }
 /* line 303, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > li > .dropdown-menu:after {
+.navbar .nav > li > .dropdown-menu:after, .navbar .formTabs > li > .dropdown-menu:after {
   content: '';
   display: inline-block;
   border-left: 6px solid transparent;
@@ -4839,48 +4916,56 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 
 /* line 334, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .formTabs li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
-.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+.navbar .formTabs li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar .formTabs li.dropdown.open.active > .dropdown-toggle {
   background-color: #fdfdfd;
   color: #666666;
 }
 
 /* line 338, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav li.dropdown > .dropdown-toggle .caret {
+.navbar .nav li.dropdown > .dropdown-toggle .caret, .navbar .formTabs li.dropdown > .dropdown-toggle .caret {
   border-top-color: #666666;
   border-bottom-color: #666666;
 }
 
 /* line 344, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret, .navbar .formTabs li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
-.navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+.navbar .formTabs li.dropdown.active > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle .caret,
+.navbar .formTabs li.dropdown.open.active > .dropdown-toggle .caret {
   border-top-color: #666666;
   border-bottom-color: #666666;
 }
 
 /* line 351, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu,
-.navbar .nav > li > .dropdown-menu.pull-right {
+.navbar .nav > li > .dropdown-menu.pull-right,
+.navbar .formTabs > li > .dropdown-menu.pull-right {
   left: auto;
   right: 0;
 }
 /* line 354, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu:before,
-.navbar .nav > li > .dropdown-menu.pull-right:before {
+.navbar .nav > li > .dropdown-menu.pull-right:before,
+.navbar .formTabs > li > .dropdown-menu.pull-right:before {
   left: auto;
   right: 12px;
 }
 /* line 358, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu:after,
-.navbar .nav > li > .dropdown-menu.pull-right:after {
+.navbar .nav > li > .dropdown-menu.pull-right:after,
+.navbar .formTabs > li > .dropdown-menu.pull-right:after {
   left: auto;
   right: 13px;
 }
 /* line 362, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
 .navbar .pull-right > li > .dropdown-menu .dropdown-menu,
-.navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu {
+.navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu,
+.navbar .formTabs > li > .dropdown-menu.pull-right .dropdown-menu {
   left: auto;
   right: 100%;
   margin-left: 0;
@@ -4908,25 +4993,30 @@ input[type="submit"].btn::-moz-focus-inner {
 }
 /* line 384, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .brand,
-.navbar-inverse .nav > li > a {
+.navbar-inverse .nav > li > a,
+.navbar-inverse .formTabs > li > a {
   color: #aaaaaa;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 /* line 387, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
 .navbar-inverse .brand:hover,
-.navbar-inverse .nav > li > a:hover {
+.navbar-inverse .nav > li > a:hover,
+.navbar-inverse .formTabs > li > a:hover {
   color: white;
 }
 /* line 393, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav > li > a:focus,
-.navbar-inverse .nav > li > a:hover {
+.navbar-inverse .nav > li > a:focus, .navbar-inverse .formTabs > li > a:focus,
+.navbar-inverse .nav > li > a:hover,
+.navbar-inverse .formTabs > li > a:hover {
   background-color: transparent;
   color: white;
 }
 /* line 400, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav .active > a,
+.navbar-inverse .nav .active > a, .navbar-inverse .formTabs .active > a,
 .navbar-inverse .nav .active > a:hover,
-.navbar-inverse .nav .active > a:focus {
+.navbar-inverse .formTabs .active > a:hover,
+.navbar-inverse .nav .active > a:focus,
+.navbar-inverse .formTabs .active > a:focus {
   color: white;
   background-color: black;
 }
@@ -4944,21 +5034,25 @@ input[type="submit"].btn::-moz-focus-inner {
   border-right-color: #444444;
 }
 /* line 422, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle, .navbar-inverse .formTabs li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
-.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+.navbar-inverse .formTabs li.dropdown.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle {
   background-color: black;
   color: white;
 }
 /* line 426, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
+.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret, .navbar-inverse .formTabs li.dropdown > .dropdown-toggle .caret {
   border-top-color: #aaaaaa;
   border-bottom-color: #aaaaaa;
 }
 /* line 432, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret, .navbar-inverse .formTabs li.dropdown.open > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
-.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret {
+.navbar-inverse .formTabs li.dropdown.active > .dropdown-toggle .caret,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret,
+.navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle .caret {
   border-top-color: white;
   border-bottom-color: white;
 }
@@ -5033,7 +5127,7 @@ input[type="submit"].btn::-moz-focus-inner {
   padding: 0;
   margin: 0 0 18px;
   list-style: none;
-  font-size: 11px;
+  font-size: 84.6153846%;
 }
 /* line 10, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
 .breadcrumb li {
@@ -5046,7 +5140,7 @@ input[type="submit"].btn::-moz-focus-inner {
 .breadcrumb .divider {
   padding: 0 2px;
   color: #63a1c1;
-  font-size: .75em;
+  font-size: 61.5384615%;
   position: relative;
   top: -1px;
 }
@@ -5358,7 +5452,7 @@ input[type="submit"].btn::-moz-focus-inner {
   display: block;
   visibility: visible;
   padding: 5px;
-  font-size: 11px;
+  font-size: 84.6153846%;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -5482,7 +5576,7 @@ input[type="submit"].btn::-moz-focus-inner {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 14px;
+  font-size: 107.692308%;
   font-weight: normal;
   line-height: 18px;
   background-color: #f7f7f7;
@@ -5993,7 +6087,7 @@ a.label:hover, a.badge:hover {
 /* line 12, ../bootstrap/scss/compass_twitter_bootstrap/_accordion.scss */
 .accordion-group {
   margin-bottom: 2px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #d9d9d9;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -6018,7 +6112,7 @@ a.label:hover, a.badge:hover {
 /* line 31, ../bootstrap/scss/compass_twitter_bootstrap/_accordion.scss */
 .accordion-inner {
   padding: 9px 15px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #d9d9d9;
 }
 
 /* line 6, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
@@ -6191,7 +6285,7 @@ a.label:hover, a.badge:hover {
 }
 
 /* line 19, ../bootstrap/scss/compass_twitter_bootstrap/_utilities.scss */
-.hide {
+.hide, .goout {
   display: none;
 }
 
@@ -6245,6 +6339,1427 @@ a.label:hover, a.badge:hover {
 }
 
 /*
+ * Bootstrap Responsive v2.1.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+/*"HelveticaNeue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica LT Std", */
+/* line 8, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 16, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+.visible-phone {
+  display: none !important;
+}
+
+/* line 17, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+.visible-tablet {
+  display: none !important;
+}
+
+/* line 21, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+.hidden-desktop {
+  display: none !important;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 26, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .hidden-desktop {
+    display: inherit !important;
+  }
+
+  /* line 27, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .visible-desktop {
+    display: none !important;
+  }
+
+  /* line 29, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .visible-tablet {
+    display: inherit !important;
+  }
+
+  /* line 31, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 37, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .hidden-desktop {
+    display: inherit !important;
+  }
+
+  /* line 38, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .visible-desktop {
+    display: none !important;
+  }
+
+  /* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .visible-phone {
+    display: inherit !important;
+  }
+
+  /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .hidden-phone {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 10, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 17, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header .container,
+  #bandaLogos .container,
+  #peu .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 21, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header, #bandaLogos, #peu {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  /* line 29, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  /* line 34, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .container-fluid {
+    padding: 0;
+  }
+
+  /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .dl-horizontal dt {
+    float: none;
+    clear: none;
+    width: auto;
+    text-align: left;
+  }
+  /* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .dl-horizontal dd {
+    margin-left: 0;
+  }
+
+  /* line 56, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .container {
+    width: auto;
+  }
+
+  /* line 60, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .row-fluid {
+    width: 100%;
+  }
+
+  /* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .row,
+  .thumbnails {
+    margin-left: 0;
+  }
+
+  /* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .thumbnails > li {
+    float: none;
+    margin-left: 0;
+  }
+
+  /* line 74, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  [class*="span"],
+  .row-fluid [class*="span"] {
+    float: none;
+    display: block;
+    width: auto;
+    margin-left: 0;
+  }
+
+  /* line 81, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .span12,
+  .row-fluid .span12 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 95, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .input-large,
+  .input-xlarge,
+  .input-xxlarge,
+  input[class*="span"],
+  select[class*="span"],
+  textarea[class*="span"],
+  .uneditable-input {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .input-prepend input,
+  .input-append input,
+  .input-prepend input[class*="span"],
+  .input-append input[class*="span"] {
+    display: inline-block;
+    width: auto;
+  }
+
+  /* line 108, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .modal {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    margin: 0;
+  }
+  /* line 115, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .modal.fade.in {
+    top: auto;
+  }
+}
+@media (max-width: 480px) {
+  /* estils meus */
+  /* line 128, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  body {
+    font-size: 16px;
+  }
+
+  /* line 135, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 140, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .page-header h1 small {
+    display: block;
+    line-height: 18px;
+  }
+
+  /* line 147, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  input[type="checkbox"],
+  input[type="radio"] {
+    border: 1px solid #ccc;
+  }
+
+  /* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .control-group > label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left;
+  }
+
+  /* line 159, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .controls {
+    margin-left: 0;
+  }
+
+  /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .control-list {
+    padding-top: 0;
+  }
+
+  /* line 167, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .form-actions {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 173, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .modal {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+  }
+
+  /* line 178, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .modal-header .close {
+    padding: 10px;
+    margin: -10px;
+  }
+
+  /* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .carousel-caption {
+    position: static;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 552, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row {
+    margin-left: -30px;
+    *zoom: 1;
+  }
+  /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row:before, .row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row:after {
+    clear: both;
+  }
+
+  /* line 557, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  [class*="span"] {
+    float: left;
+    margin-left: 30px;
+  }
+
+  /* line 566, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 978px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span12 {
+    width: 978px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span11 {
+    width: 894px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span10 {
+    width: 810px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span9 {
+    width: 726px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span8 {
+    width: 642px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span7 {
+    width: 558px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span6 {
+    width: 474px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span5 {
+    width: 390px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span4 {
+    width: 306px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span3 {
+    width: 222px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span2 {
+    width: 138px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span1 {
+    width: 54px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset12 {
+    margin-left: 1038px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset11 {
+    margin-left: 954px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset10 {
+    margin-left: 870px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset9 {
+    margin-left: 786px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset8 {
+    margin-left: 702px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset7 {
+    margin-left: 618px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset6 {
+    margin-left: 534px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset5 {
+    margin-left: 450px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset4 {
+    margin-left: 366px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset3 {
+    margin-left: 282px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset2 {
+    margin-left: 198px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset1 {
+    margin-left: 114px;
+  }
+
+  /* line 600, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid:before, .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid:after {
+    clear: both;
+  }
+  /* line 603, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 3.06748%;
+    *margin-left: 3.01636%;
+  }
+  /* line 609, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94888%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset12 {
+    margin-left: 106.13497%;
+    *margin-left: 106.03272%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset12:first-child {
+    margin-left: 103.06748%;
+    *margin-left: 102.96524%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span11 {
+    width: 91.41104%;
+    *width: 91.35992%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset11 {
+    margin-left: 97.54601%;
+    *margin-left: 97.44376%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset11:first-child {
+    margin-left: 94.47853%;
+    *margin-left: 94.37628%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span10 {
+    width: 82.82209%;
+    *width: 82.77096%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset10 {
+    margin-left: 88.95706%;
+    *margin-left: 88.85481%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset10:first-child {
+    margin-left: 85.88957%;
+    *margin-left: 85.78732%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span9 {
+    width: 74.23313%;
+    *width: 74.182%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset9 {
+    margin-left: 80.3681%;
+    *margin-left: 80.26585%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset9:first-child {
+    margin-left: 77.30061%;
+    *margin-left: 77.19836%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span8 {
+    width: 65.64417%;
+    *width: 65.59305%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset8 {
+    margin-left: 71.77914%;
+    *margin-left: 71.67689%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset8:first-child {
+    margin-left: 68.71166%;
+    *margin-left: 68.60941%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span7 {
+    width: 57.05521%;
+    *width: 57.00409%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset7 {
+    margin-left: 63.19018%;
+    *margin-left: 63.08793%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset7:first-child {
+    margin-left: 60.1227%;
+    *margin-left: 60.02045%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span6 {
+    width: 48.46626%;
+    *width: 48.41513%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset6 {
+    margin-left: 54.60123%;
+    *margin-left: 54.49898%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset6:first-child {
+    margin-left: 51.53374%;
+    *margin-left: 51.43149%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span5 {
+    width: 39.8773%;
+    *width: 39.82618%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset5 {
+    margin-left: 46.01227%;
+    *margin-left: 45.91002%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset5:first-child {
+    margin-left: 42.94479%;
+    *margin-left: 42.84254%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span4 {
+    width: 31.28834%;
+    *width: 31.23722%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset4 {
+    margin-left: 37.42331%;
+    *margin-left: 37.32106%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset4:first-child {
+    margin-left: 34.35583%;
+    *margin-left: 34.25358%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span3 {
+    width: 22.69939%;
+    *width: 22.64826%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset3 {
+    margin-left: 28.83436%;
+    *margin-left: 28.73211%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset3:first-child {
+    margin-left: 25.76687%;
+    *margin-left: 25.66462%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span2 {
+    width: 14.11043%;
+    *width: 14.0593%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset2 {
+    margin-left: 20.2454%;
+    *margin-left: 20.14315%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset2:first-child {
+    margin-left: 17.17791%;
+    *margin-left: 17.07566%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span1 {
+    width: 5.52147%;
+    *width: 5.47035%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset1 {
+    margin-left: 11.65644%;
+    *margin-left: 11.55419%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset1:first-child {
+    margin-left: 8.58896%;
+    *margin-left: 8.48671%;
+  }
+
+  /* line 637, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input,
+  textarea,
+  .uneditable-input {
+    margin-left: 0;
+  }
+
+  /* line 642, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 30px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span12,
+  textarea.span12,
+  .uneditable-input.span12 {
+    width: 964px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span11,
+  textarea.span11,
+  .uneditable-input.span11 {
+    width: 880px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span10,
+  textarea.span10,
+  .uneditable-input.span10 {
+    width: 796px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span9,
+  textarea.span9,
+  .uneditable-input.span9 {
+    width: 712px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span8,
+  textarea.span8,
+  .uneditable-input.span8 {
+    width: 628px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span7,
+  textarea.span7,
+  .uneditable-input.span7 {
+    width: 544px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span6,
+  textarea.span6,
+  .uneditable-input.span6 {
+    width: 460px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span5,
+  textarea.span5,
+  .uneditable-input.span5 {
+    width: 376px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span4,
+  textarea.span4,
+  .uneditable-input.span4 {
+    width: 292px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span3,
+  textarea.span3,
+  .uneditable-input.span3 {
+    width: 208px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span2,
+  textarea.span2,
+  .uneditable-input.span2 {
+    width: 124px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span1,
+  textarea.span1,
+  .uneditable-input.span1 {
+    width: 40px;
+  }
+
+  /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
+  body {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    font-size: 14.5px !important;
+  }
+
+  /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
+  #portal-header .container,
+  #bandaLogos .container,
+  #peu .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 34, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
+  #portal-header, #bandaLogos, #peu {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  /* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
+  #portal-header, #peu {
+    width: 100% !important;
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 552, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row {
+    margin-left: -30px;
+    *zoom: 1;
+  }
+  /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row:before, .row:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row:after {
+    clear: both;
+  }
+
+  /* line 557, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  [class*="span"] {
+    float: left;
+    margin-left: 30px;
+  }
+
+  /* line 566, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 978px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span12 {
+    width: 978px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span11 {
+    width: 894px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span10 {
+    width: 810px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span9 {
+    width: 726px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span8 {
+    width: 642px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span7 {
+    width: 558px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span6 {
+    width: 474px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span5 {
+    width: 390px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span4 {
+    width: 306px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span3 {
+    width: 222px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span2 {
+    width: 138px;
+  }
+
+  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .span1 {
+    width: 54px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset12 {
+    margin-left: 1038px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset11 {
+    margin-left: 954px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset10 {
+    margin-left: 870px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset9 {
+    margin-left: 786px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset8 {
+    margin-left: 702px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset7 {
+    margin-left: 618px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset6 {
+    margin-left: 534px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset5 {
+    margin-left: 450px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset4 {
+    margin-left: 366px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset3 {
+    margin-left: 282px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset2 {
+    margin-left: 198px;
+  }
+
+  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .offset1 {
+    margin-left: 114px;
+  }
+
+  /* line 600, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid:before, .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid:after {
+    clear: both;
+  }
+  /* line 603, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid [class*="span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 3.06748%;
+    *margin-left: 3.01636%;
+  }
+  /* line 609, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94888%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset12 {
+    margin-left: 106.13497%;
+    *margin-left: 106.03272%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset12:first-child {
+    margin-left: 103.06748%;
+    *margin-left: 102.96524%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span11 {
+    width: 91.41104%;
+    *width: 91.35992%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset11 {
+    margin-left: 97.54601%;
+    *margin-left: 97.44376%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset11:first-child {
+    margin-left: 94.47853%;
+    *margin-left: 94.37628%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span10 {
+    width: 82.82209%;
+    *width: 82.77096%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset10 {
+    margin-left: 88.95706%;
+    *margin-left: 88.85481%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset10:first-child {
+    margin-left: 85.88957%;
+    *margin-left: 85.78732%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span9 {
+    width: 74.23313%;
+    *width: 74.182%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset9 {
+    margin-left: 80.3681%;
+    *margin-left: 80.26585%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset9:first-child {
+    margin-left: 77.30061%;
+    *margin-left: 77.19836%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span8 {
+    width: 65.64417%;
+    *width: 65.59305%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset8 {
+    margin-left: 71.77914%;
+    *margin-left: 71.67689%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset8:first-child {
+    margin-left: 68.71166%;
+    *margin-left: 68.60941%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span7 {
+    width: 57.05521%;
+    *width: 57.00409%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset7 {
+    margin-left: 63.19018%;
+    *margin-left: 63.08793%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset7:first-child {
+    margin-left: 60.1227%;
+    *margin-left: 60.02045%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span6 {
+    width: 48.46626%;
+    *width: 48.41513%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset6 {
+    margin-left: 54.60123%;
+    *margin-left: 54.49898%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset6:first-child {
+    margin-left: 51.53374%;
+    *margin-left: 51.43149%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span5 {
+    width: 39.8773%;
+    *width: 39.82618%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset5 {
+    margin-left: 46.01227%;
+    *margin-left: 45.91002%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset5:first-child {
+    margin-left: 42.94479%;
+    *margin-left: 42.84254%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span4 {
+    width: 31.28834%;
+    *width: 31.23722%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset4 {
+    margin-left: 37.42331%;
+    *margin-left: 37.32106%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset4:first-child {
+    margin-left: 34.35583%;
+    *margin-left: 34.25358%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span3 {
+    width: 22.69939%;
+    *width: 22.64826%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset3 {
+    margin-left: 28.83436%;
+    *margin-left: 28.73211%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset3:first-child {
+    margin-left: 25.76687%;
+    *margin-left: 25.66462%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span2 {
+    width: 14.11043%;
+    *width: 14.0593%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset2 {
+    margin-left: 20.2454%;
+    *margin-left: 20.14315%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset2:first-child {
+    margin-left: 17.17791%;
+    *margin-left: 17.07566%;
+  }
+  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .span1 {
+    width: 5.52147%;
+    *width: 5.47035%;
+  }
+  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset1 {
+    margin-left: 11.65644%;
+    *margin-left: 11.55419%;
+  }
+  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .row-fluid .offset1:first-child {
+    margin-left: 8.58896%;
+    *margin-left: 8.48671%;
+  }
+
+  /* line 637, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input,
+  textarea,
+  .uneditable-input {
+    margin-left: 0;
+  }
+
+  /* line 642, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 30px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span12,
+  textarea.span12,
+  .uneditable-input.span12 {
+    width: 964px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span11,
+  textarea.span11,
+  .uneditable-input.span11 {
+    width: 880px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span10,
+  textarea.span10,
+  .uneditable-input.span10 {
+    width: 796px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span9,
+  textarea.span9,
+  .uneditable-input.span9 {
+    width: 712px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span8,
+  textarea.span8,
+  .uneditable-input.span8 {
+    width: 628px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span7,
+  textarea.span7,
+  .uneditable-input.span7 {
+    width: 544px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span6,
+  textarea.span6,
+  .uneditable-input.span6 {
+    width: 460px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span5,
+  textarea.span5,
+  .uneditable-input.span5 {
+    width: 376px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span4,
+  textarea.span4,
+  .uneditable-input.span4 {
+    width: 292px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span3,
+  textarea.span3,
+  .uneditable-input.span3 {
+    width: 208px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span2,
+  textarea.span2,
+  .uneditable-input.span2 {
+    width: 124px;
+  }
+
+  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  input.span1,
+  textarea.span1,
+  .uneditable-input.span1 {
+    width: 40px;
+  }
+
+  /* line 18, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-1200px-min.scss */
+  .thumbnails {
+    margin-left: -30px;
+  }
+
+  /* line 21, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-1200px-min.scss */
+  .thumbnails > li {
+    margin-left: -30px;
+  }
+
+  /* line 24, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-1200px-min.scss */
+  .row-fluid .thumbnails {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 13, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  body {
+    padding-top: 0;
+  }
+
+  /* line 18, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: static;
+  }
+
+  /* line 21, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .navbar-fixed-top {
+    margin-bottom: 18px;
+  }
+
+  /* line 24, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .navbar-fixed-bottom {
+    margin-top: 18px;
+  }
+
+  /* line 28, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .navbar-fixed-top .navbar-inner,
+  .navbar-fixed-bottom .navbar-inner {
+    padding: 5px;
+  }
+
+  /* line 31, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .navbar .container {
+    width: auto;
+    padding: 0;
+  }
+
+  /* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .navbar .brand {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 0 0 -5px;
+  }
+
+  /* line 45, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  /* line 55, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse {
+    clear: both;
+  }
+
+  /* line 59, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav, .nav-collapse .formTabs {
+    float: none;
+    margin: 0 0 9px;
+  }
+
+  /* line 63, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav > li, .nav-collapse .formTabs > li {
+    float: none;
+  }
+
+  /* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav > li > a, .nav-collapse .formTabs > li > a {
+    margin-bottom: 2px;
+  }
+
+  /* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav > .divider-vertical, .nav-collapse .formTabs > .divider-vertical {
+    display: none;
+  }
+
+  /* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav .nav-header, .nav-collapse .formTabs .nav-header {
+    color: #666666;
+    text-shadow: none;
+  }
+
+  /* line 78, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav > li > a, .nav-collapse .formTabs > li > a,
+  .nav-collapse .dropdown-menu a {
+    padding: 9px 15px;
+    font-weight: bold;
+    color: #666666;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  /* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .btn {
+    padding: 4px 10px 4px;
+    font-weight: normal;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  /* line 90, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .dropdown-menu li + li a {
+    margin-bottom: 2px;
+  }
+
+  /* line 94, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .nav > li > a:hover, .nav-collapse .formTabs > li > a:hover,
+  .nav-collapse .dropdown-menu a:hover {
+    background-color: #e4e4e4;
+  }
+
+  /* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .formTabs > li > a:hover,
+  .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+    background-color: #111111;
+  }
+
+  /* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse.in .btn-group {
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  /* line 107, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .dropdown-menu {
+    position: static;
+    top: auto;
+    left: auto;
+    float: none;
+    display: block;
+    max-width: none;
+    margin: 0 15px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 122, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .dropdown-menu:before,
+  .nav-collapse .dropdown-menu:after {
+    display: none;
+  }
+
+  /* line 125, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .dropdown-menu .divider {
+    display: none;
+  }
+
+  /* line 130, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse .navbar-form,
+  .nav-collapse .navbar-search {
+    float: none;
+    padding: 9px 15px;
+    margin: 9px 0;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .navbar .nav-collapse .nav.pull-right, .navbar .nav-collapse .pull-right.formTabs {
+    float: none;
+    margin-left: 0;
+  }
+
+  /* line 145, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse,
+  .nav-collapse.collapse {
+    overflow: hidden;
+    height: 0;
+  }
+
+  /* line 150, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .navbar .btn-navbar {
+    display: block;
+  }
+
+  /* line 156, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .navbar-static .navbar-inner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 980px) {
+  /* line 171, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+/*
  * Genweb UPC v4.0
  *
  * Copyright 2012 UPC
@@ -6275,12 +7790,12 @@ a.label:hover, a.badge:hover {
   color: #a62e1f;
 }
 
-/* line 45, ../scss/_base.scss */
+/* line 46, ../scss/_base.scss */
 #portal-personaltools-wrapper {
-  margin-top: 38px;
+  margin-top: 38px !important;
 }
 
-/* line 46, ../scss/_base.scss */
+/* line 47, ../scss/_base.scss */
 .user {
   width: 26px;
   height: 26px;
@@ -6293,96 +7808,102 @@ a.label:hover, a.badge:hover {
   top: -1px;
 }
 
-/* line 48, ../scss/_base.scss */
+/* line 49, ../scss/_base.scss */
 .dropdown-menu li > a.btn-danger:hover, .dropdown-menu .active > a.btn-danger:hover {
   background-color: #BD362F;
 }
 
-/* line 49, ../scss/_base.scss */
+/* line 50, ../scss/_base.scss */
 .userScreen, .userTablet, .userMobile, .userGenweb {
-  background: url('/++genweb++static/images/sprite_usuari.png?1351539282') transparent no-repeat center top;
+  background: url('/++genweb++static/images/sprite_usuari.png?1340020615') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em;
 }
 
-/* line 50, ../scss/_base.scss */
+/* line 51, ../scss/_base.scss */
 .userScreen {
   background-position: center -40px;
 }
 
-/* line 51, ../scss/_base.scss */
+/* line 52, ../scss/_base.scss */
 .userTablet {
   background-position: center -140px;
 }
 
-/* line 52, ../scss/_base.scss */
+/* line 53, ../scss/_base.scss */
 .userMobile {
   background-position: center -240px;
 }
 
-/* line 53, ../scss/_base.scss */
+/* line 54, ../scss/_base.scss */
 .userGenweb {
   background-position: 10px -340px;
   width: 2em;
 }
 
-/* line 54, ../scss/_base.scss */
+/* line 55, ../scss/_base.scss */
 .userScreen:hover {
   background-position: center 10px;
 }
 
-/* line 55, ../scss/_base.scss */
+/* line 56, ../scss/_base.scss */
 .userTablet:hover {
   background-position: center -90px;
 }
 
-/* line 56, ../scss/_base.scss */
+/* line 57, ../scss/_base.scss */
 .userMobile:hover {
   background-position: center -190px;
 }
 
-/* line 57, ../scss/_base.scss */
+/* line 58, ../scss/_base.scss */
 .userGenweb:hover, .open .userGenweb {
   background-position: 10px -290px;
 }
 
-/* line 58, ../scss/_base.scss */
+/* line 59, ../scss/_base.scss */
 .dropdown .userGenweb .caret {
   margin-left: 24px;
 }
 
-/* line 59, ../scss/_base.scss */
+/* line 60, ../scss/_base.scss */
 #portal-personaltools-wrapper .container {
   box-shadow: 0 -8px 5px 5px rgba(255, 255, 255, 0.05);
 }
 
-/* line 60, ../scss/_base.scss */
-#portal-personaltools-wrapper .nav {
+/* line 61, ../scss/_base.scss */
+#portal-personaltools-wrapper .nav, #portal-personaltools-wrapper .formTabs {
   margin: 0!important;
 }
 
-/* line 61, ../scss/_base.scss */
-#portal-personaltools-wrapper .nav .img_blank {
+/* line 62, ../scss/_base.scss */
+#portal-personaltools-wrapper .nav .img_blank, #portal-personaltools-wrapper .formTabs .img_blank {
   opacity: .7;
 }
 
-/* line 62, ../scss/_base.scss */
-#portal-personaltools-wrapper .nav a:hover .img_blank {
+/* line 63, ../scss/_base.scss */
+#portal-personaltools-wrapper .nav a:hover .img_blank, #portal-personaltools-wrapper .formTabs a:hover .img_blank {
   opacity: 1;
 }
 
-/* line 63, ../scss/_base.scss */
+/* line 64, ../scss/_base.scss */
 .btn-menu-adjust a {
   margin: 3px 15px !important;
   width: 70%;
 }
 
-/* line 64, ../scss/_base.scss */
+/* line 65, ../scss/_base.scss */
 .btn-menu-adjust {
   text-align: center;
 }
 
-/* line 71, ../scss/_base.scss */
+/*ajusta imatges icos en menús per a hovers */
+/* line 67, ../scss/_base.scss */
+.dropdown-menu a:hover [class^="icon-"], .dropdown-menu a:hover [class*=" icon-"] {
+  background-image: url('/++genweb++static/images/glyphicons-halflings-white.png?1342602226') !important;
+}
+
+/* line 75, ../scss/_base.scss */
 #portal-header {
   background: #f7f7f7;
   border-bottom: 1px solid #d7d5d2;
@@ -6403,7 +7924,7 @@ a.label:hover, a.badge:hover {
   /* W3C */
 }
 
-/* line 80, ../scss/_base.scss */
+/* line 84, ../scss/_base.scss */
 #portal-header .container {
   border-top: 5px solid #e2ab17;
   margin-top: -5px;
@@ -6411,42 +7932,42 @@ a.label:hover, a.badge:hover {
   margin-bottom: -1px;
 }
 
-/* line 81, ../scss/_base.scss */
+/* line 85, ../scss/_base.scss */
 #portal-header .container > div {
   margin: 5px 0 0 !important;
 }
 
-/* line 83, ../scss/_base.scss */
+/* line 87, ../scss/_base.scss */
 .titol-espai h1 {
   font-weight: normal;
   margin: 0;
 }
 
-/* line 84, ../scss/_base.scss */
+/* line 88, ../scss/_base.scss */
 .titol-espai a {
   color: #333;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-/* line 85, ../scss/_base.scss */
+/* line 89, ../scss/_base.scss */
 .titol-espai a:hover {
   color: #000;
   text-decoration: none;
 }
 
-/* line 86, ../scss/_base.scss */
+/* line 90, ../scss/_base.scss */
 .logoPropi {
   margin-top: -12px;
   margin-bottom: 12px;
   height: 49px;
 }
 
-/* line 88, ../scss/_base.scss */
+/* line 92, ../scss/_base.scss */
 #eines {
   margin: 15px 0 0 0;
 }
 
-/* line 89, ../scss/_base.scss */
+/* line 93, ../scss/_base.scss */
 #eines > li > a {
   border-radius: 4px;
   margin-top: 0px;
@@ -6454,50 +7975,102 @@ a.label:hover, a.badge:hover {
   padding-top: 6px;
 }
 
-/* line 95, ../scss/_base.scss */
+/* line 99, ../scss/_base.scss */
 #eines .input-append {
   border-left: 1px dotted #b2b2b2;
   margin-left: 2px;
   padding-left: 5px;
 }
 
-/* line 100, ../scss/_base.scss */
+/* line 104, ../scss/_base.scss */
 #eines .adjust-langs {
   min-width: 87px !important;
 }
 
-/* line 111, ../scss/_base.scss */
+/* line 109, ../scss/_base.scss */
+.header-image {
+  background-image: url("http://www.deshow.net/d/file/cartoon/2009-05/surrealism-painting-568-6.jpg");
+  margin-top: 0 !important;
+  height: 65px;
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+/* L3 */
+/* line 119, ../scss/_base.scss */
+.l3-image {
+  height: 65px;
+}
+
+/* L2 */
+/* line 123, ../scss/_base.scss */
+.l2-image {
+  margin-left: 250px !important;
+  height: 50px;
+}
+
+/* NO-IMG */
+/* line 128, ../scss/_base.scss */
+.no-image .header-image {
+  display: none !important;
+}
+
+/* line 131, ../scss/_base.scss */
+#portal-header.no-image .container {
+  padding-bottom: 20px;
+}
+
+/* line 132, ../scss/_base.scss */
+#portal-header.no-image + #portal-globalnav .navbar-inner {
+  margin-top: -20px;
+}
+
+/* line 133, ../scss/_base.scss */
+#portal-header:not(.no-image) + #portal-globalnav .navbar-inner {
+  border-radius: 0 0 4px 4px !important;
+  margin-top: -1px;
+}
+
+/* line 139, ../scss/_base.scss */
 #content {
   padding-bottom: 2em;
 }
 
-/* line 112, ../scss/_base.scss */
+/* line 140, ../scss/_base.scss */
 .documentDescription {
-  font-size: 14px;
+  font-size: 107.692308%;
   font-weight: bold;
   color: #aaaaaa;
 }
 
-/* line 113, ../scss/_base.scss */
+/* line 141, ../scss/_base.scss */
 #edit-bar {
   border-bottom: 1px solid #CCCCCC;
   box-shadow: 0 -10px 12px -18px black inset;
   margin-bottom: 18px;
 }
-/* line 117, ../scss/_base.scss */
+/* line 145, ../scss/_base.scss */
 #edit-bar .nav-tabs {
   border-bottom: 0;
   box-shadow: none;
   margin: 0;
 }
-/* line 122, ../scss/_base.scss */
-#edit-bar .nav-pills {
+/* line 150, ../scss/_base.scss */
+#edit-bar .nav-pills, #edit-bar .formTabs {
   margin: 0;
 }
 
-/* line 124, ../scss/_base.scss */
+/* line 152, ../scss/_base.scss */
 .documentFirstHeading {
-  font-size: 20px;
+  font-size: 156.84615%;
   color: #446a8e;
   border-bottom: 1px solid #b2b2b2;
   -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.1);
@@ -6507,78 +8080,78 @@ a.label:hover, a.badge:hover {
   margin: 0 0 18px 0;
 }
 
-/* line 138, ../scss/_base.scss */
+/* line 166, ../scss/_base.scss */
 #bandaLogos {
   border-top: 1px solid #e3e3e3;
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.03);
 }
 
-/* line 139, ../scss/_base.scss */
+/* line 167, ../scss/_base.scss */
 #bandaLogos .container {
   border-top: 1px solid #6e530b;
   margin-top: -1px;
 }
 
-/* line 140, ../scss/_base.scss */
+/* line 168, ../scss/_base.scss */
 .llistatLogos {
   margin: 1.5em auto;
   list-style: none;
   text-align: center;
 }
 
-/* line 141, ../scss/_base.scss */
+/* line 169, ../scss/_base.scss */
 .llistatLogos li {
   display: inline-block;
 }
 
-/* line 142, ../scss/_base.scss */
+/* line 170, ../scss/_base.scss */
 .llistatLogos a {
   margin: 0 1.5em;
 }
 
 /*falta funcio box shadow*/
-/* line 150, ../scss/_base.scss */
+/* line 178, ../scss/_base.scss */
 #peu {
   background: #f2f2f2;
   border-top: 5px solid #e3e3e3;
-  font-size: 12px;
+  font-size: 92.3076923%;
 }
 
-/* line 151, ../scss/_base.scss */
+/* line 179, ../scss/_base.scss */
 #peu .container {
   border-top: 5px solid #e2ab17;
   margin-top: -5px;
 }
 
-/* line 152, ../scss/_base.scss */
+/* line 180, ../scss/_base.scss */
 #peu p {
   margin: 0;
 }
 
-/* line 153, ../scss/_base.scss */
+/* line 181, ../scss/_base.scss */
 #peu .amunt img {
   opacity: .67;
 }
 
-/* line 154, ../scss/_base.scss */
+/* line 182, ../scss/_base.scss */
 #peu .amunt a:hover img {
   opacity: 1;
 }
 
-/* line 155, ../scss/_base.scss */
+/* line 183, ../scss/_base.scss */
 #peu address {
   color: #666666;
 }
 
-/* line 156, ../scss/_base.scss */
+/* line 184, ../scss/_base.scss */
 .sobreElWeb li {
   display: inline;
 }
 
-/* line 157, ../scss/_base.scss */
+/* line 185, ../scss/_base.scss */
 .sobreElWeb li:before {
   content: ".";
-  font-size: 400%;
+  font-size: 52px;
   position: relative;
   line-height: 0;
   top: -0.045em;
@@ -6586,93 +8159,92 @@ a.label:hover, a.badge:hover {
   color: #7e7d7b;
 }
 
-/* line 161, ../scss/_base.scss */
+/* line 189, ../scss/_base.scss */
 .sobreElWeb li:first-child:before {
   content: "";
-  font-size: 400%;
+  font-size: 52px;
   position: relative;
   line-height: 0;
   top: .25em;
 }
 
-/* line 162, ../scss/_base.scss */
+/* line 190, ../scss/_base.scss */
 .sobreElWeb li:last-child:before {
   content: " __ ";
-  font-size: 100%;
+  font-size: 13px;
   position: relative;
   line-height: 0;
   top: -0.5em;
   padding: 0 2px 0 3px;
 }
 
-/* line 3, ../scss/_nav.scss */
-#portal-breadcrumbs {
-  margin: 0 auto;
-  width: 940px;
+/* line 191, ../scss/_base.scss */
+.lt-ie9 .amunt {
+  min-width: 30px;
+  display: inline-block !important;
 }
 
-/* margin i width provisionals */
-/* line 10, ../scss/_nav.scss */
+/* line 9, ../scss/_nav.scss */
 #portal-globalnav {
   /*margin-top:-22px;*/
 }
 
-/* line 11, ../scss/_nav.scss */
+/* line 10, ../scss/_nav.scss */
 #portal-header .container {
   /*padding-bottom:22px;*/
 }
 
 /* ajusta menu */
-/* line 12, ../scss/_nav.scss */
+/* line 11, ../scss/_nav.scss */
 #portal-globalnav .navbar-inner {
   padding: 0;
   border-bottom: 3px solid #666;
 }
 
-/* line 13, ../scss/_nav.scss */
+/* line 12, ../scss/_nav.scss */
 #portal-globalnav .state-published {
   border-bottom: 3px solid #007bc0;
 }
 
-/* line 14, ../scss/_nav.scss */
+/* line 13, ../scss/_nav.scss */
 #portal-globalnav .state-intranet {
   border-bottom: 3px solid #8952ab;
 }
 
-/* line 15, ../scss/_nav.scss */
+/* line 14, ../scss/_nav.scss */
 #portal-globalnav .state-draft {
   border-bottom: 3px solid #72a31d;
 }
 
-/* line 16, ../scss/_nav.scss */
+/* line 15, ../scss/_nav.scss */
 #portal-globalnav .state-pending {
   border-bottom: 3px solid #df8505;
 }
 
-/* line 17, ../scss/_nav.scss */
+/* line 16, ../scss/_nav.scss */
 #portal-globalnav .state-private {
   border-bottom: 3px solid #a62e1f;
 }
 
-/* line 18, ../scss/_nav.scss */
-#portal-globalnav .nav > li > a {
+/* line 17, ../scss/_nav.scss */
+#portal-globalnav .nav > li > a, #portal-globalnav .formTabs > li > a {
   font-size: 16px;
   font-weight: bold;
   border-right: 1px solid #bbb;
 }
 
-/* line 19, ../scss/_nav.scss */
-#portal-globalnav .nav > li:first-child > a {
+/* line 18, ../scss/_nav.scss */
+#portal-globalnav .nav > li:first-child > a, #portal-globalnav .formTabs > li:first-child > a {
   border-radius: 0 0 0 3px;
 }
 
-/* line 23, ../scss/_nav.scss */
+/* line 22, ../scss/_nav.scss */
 .subnavbar {
   width: 220px;
   margin-bottom: 18px;
 }
 
-/* line 24, ../scss/_nav.scss */
+/* line 23, ../scss/_nav.scss */
 .subnavbar .nav-list {
   border: 1px solid #b2b2b2;
   box-shadow: 0 3px 5px #ccc;
@@ -6686,7 +8258,7 @@ a.label:hover, a.badge:hover {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-/* line 30, ../scss/_nav.scss */
+/* line 29, ../scss/_nav.scss */
 .subnavbar .nav-list a {
   background: #f5f5f5;
   margin-left: -15px;
@@ -6698,6 +8270,7 @@ a.label:hover, a.badge:hover {
   color: #444;
   border-top: 1px solid #b2b2b2 !important;
   padding: 8px 9px !important;
+  position: relative;
 }
 /* line 41, ../scss/_nav.scss */
 .subnavbar .nav-list a:hover {
@@ -6705,26 +8278,54 @@ a.label:hover, a.badge:hover {
   color: #111;
 }
 /* line 45, ../scss/_nav.scss */
-.subnavbar .nav-list a:hover:after {
-  content: "  >";
+.subnavbar .nav-list a + ul a:after {
+  display: none !important;
+}
+/* line 51, ../scss/_nav.scss */
+.subnavbar .nav-list a:hover:after,
+.subnavbar .nav-list .active a:after {
+  content: "";
   position: absolute;
-  background: #007bc0;
+  background-color: #007bc0;
   margin-left: 5px;
-  width: 20px;
-  height: 20px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  right: 0;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  right: 7px;
+  top: 8px;
+  background-image: url('/++genweb++static/images/glyphicons-halflings-white.png?1342602226');
+  background-position: -455px -71px;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
 }
-/* line 57, ../scss/_nav.scss */
+/* line 67, ../scss/_nav.scss */
+.subnavbar .nav-list a.state-private:hover:after, .subnavbar .nav-list .active .state-private:after {
+  background-color: #a62e1f;
+}
+/* line 68, ../scss/_nav.scss */
+.subnavbar .nav-list a.state-draft:hover:after, .subnavbar .nav-list .active .state-draft:after {
+  background-color: #72a31d;
+}
+/* line 69, ../scss/_nav.scss */
+.subnavbar .nav-list a.state-pending:hover:after, .subnavbar .nav-list .active .state-pending:after {
+  background-color: #df8505;
+}
+/* line 70, ../scss/_nav.scss */
+.subnavbar .nav-list a.state-intranet:hover:after, .subnavbar .nav-list .active .state-intranet:after {
+  background-color: #8952ab;
+}
+/* line 71, ../scss/_nav.scss */
 .subnavbar .nav-list .active a {
   background: #ddd;
   color: #222222;
 }
-/* line 61, ../scss/_nav.scss */
+/* line 75, ../scss/_nav.scss */
 .subnavbar .nav-list li:first-child a {
   border-top: 0 !important;
   -webkit-border-radius: 4px 4px 0 0;
@@ -6733,7 +8334,7 @@ a.label:hover, a.badge:hover {
   -o-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
-/* line 65, ../scss/_nav.scss */
+/* line 79, ../scss/_nav.scss */
 .subnavbar .nav-list li:last-child a {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
@@ -6741,7 +8342,7 @@ a.label:hover, a.badge:hover {
   -o-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
-/* line 68, ../scss/_nav.scss */
+/* line 82, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul {
   margin-left: -15px !important;
   margin-right: -15px;
@@ -6752,7 +8353,7 @@ a.label:hover, a.badge:hover {
   -moz-box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.25);
 }
-/* line 76, ../scss/_nav.scss */
+/* line 90, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a {
   border-top: 0 !important;
   font-size: 12px;
@@ -6769,32 +8370,32 @@ a.label:hover, a.badge:hover {
   -o-border-radius: 0 !important;
   border-radius: 0 !important;
 }
-/* line 87, ../scss/_nav.scss */
+/* line 101, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-private {
   border-right: 3px solid #a62e1f;
   color: #a62e1f;
 }
-/* line 88, ../scss/_nav.scss */
+/* line 102, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-draft {
   border-right: 3px solid #72a31d;
   color: #72a31d;
 }
-/* line 89, ../scss/_nav.scss */
+/* line 103, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-pending {
   border-right: 3px solid #df8505;
   color: #df8505;
 }
-/* line 90, ../scss/_nav.scss */
+/* line 104, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-intranet {
   border-right: 3px solid #8952ab;
   color: #8952ab;
 }
-/* line 92, ../scss/_nav.scss */
+/* line 106, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a[class^="state-"]:hover, .subnavbar .nav-list .active ul a[class*=" state-"]:hover {
   color: black;
   text-decoration: none;
 }
-/* line 97, ../scss/_nav.scss */
+/* line 111, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a span {
   border-top: 1px solid #d9d9d9 !important;
   padding: 8px 0 !important;
@@ -6803,7 +8404,7 @@ a.label:hover, a.badge:hover {
   margin-left: 10px;
   line-height: 15px;
 }
-/* line 104, ../scss/_nav.scss */
+/* line 118, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a span:before {
   content: ".";
   color: #007bc0;
@@ -6813,9 +8414,9 @@ a.label:hover, a.badge:hover {
   font-size: 350%;
   line-height: 0 !important;
 }
-/* line 115, ../scss/_nav.scss */
+/* line 129, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after {
-  background-image: url('/++genweb++static/images/glyphicons-halflings.png?1351539282');
+  background-image: url('/++genweb++static/images/glyphicons-halflings.png?1346050654');
   content: " ";
   display: block;
   float: right;
@@ -6824,31 +8425,111 @@ a.label:hover, a.badge:hover {
   width: 20px;
   opacity: .8;
 }
-/* line 125, ../scss/_nav.scss */
+/* line 139, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-folder span:after {
   background-position: -384px -120px;
 }
-/* line 126, ../scss/_nav.scss */
+/* line 140, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-document span:after {
   background-position: -24px -24px;
 }
-/* line 127, ../scss/_nav.scss */
+/* line 141, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-link span:after {
   background-position: -334px -96px;
 }
-/* line 128, ../scss/_nav.scss */
+/* line 142, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a:hover {
-  background-color: rgba(0, 123, 192, 0.05) !important;
+  background-color: #f2f8fc !important;
 }
-/* line 129, ../scss/_nav.scss */
+/* line 143, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a:hover span:after {
   opacity: 1;
 }
 
-/* line 9, ../scss/_plantilles.scss */
-.lead, .lead-small, .lead-large {
+/* ABANS EREN LI */
+/* line 11, ../scss/_plantilles.scss */
+.success {
+  background-color: #e5f5ca !important;
+  color: #333333;
+}
+
+/* line 15, ../scss/_plantilles.scss */
+.error {
+  background-color: #fae6e4 !important;
+  color: #333333;
+}
+
+/* line 19, ../scss/_plantilles.scss */
+.info {
+  background-color: #e1f2f8 !important;
+  color: #333333;
+}
+
+/* line 23, ../scss/_plantilles.scss */
+.warning {
+  background-color: #fbf0cc !important;
+  color: #333333;
+}
+
+/* line 27, ../scss/_plantilles.scss */
+.inverse {
+  background-color: black !important;
+  color: white;
+}
+
+/* line 31, ../scss/_plantilles.scss */
+.primary {
+  background-color: #007bc0 !important;
+  color: white;
+}
+
+/*links en inverse i primary */
+/* line 37, ../scss/_plantilles.scss */
+a.inverse, .inverse a, a .inverse {
+  color: #3be;
+}
+
+/*sobre blau els links no poden ser blaus */
+/* line 41, ../scss/_plantilles.scss */
+a.primary, .primary a, a .primary {
+  color: #ff0;
+}
+
+/*FAQ*/
+/* line 49, ../scss/_plantilles.scss */
+.accordion.faq .accordion-heading a {
+  position: relative;
+}
+/* line 51, ../scss/_plantilles.scss */
+.accordion.faq .accordion-heading a:after {
+  content: "+";
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  background: #aaaaaa;
+  position: absolute;
+  font-weight: bold;
+  right: 8px;
+  top: 8px;
+  color: white;
+  font-size: 107.692308%;
+  padding: 0px 5px;
+}
+/* line 64, ../scss/_plantilles.scss */
+.accordion.faq .accordion-heading a:hover {
+  background: #f2f8fb;
+}
+/* line 66, ../scss/_plantilles.scss */
+.accordion.faq .accordion-heading a:hover:after {
+  background-color: #007bc0;
+}
+
+/* line 4, ../scss/_leads.scss */
+.lead, .lead-small, .lead-large, .sheet {
   margin-bottom: 18px;
-  font-size: 13px;
+  font-size: 100%;
   font-weight: 200;
   line-height: 18px;
   background: #f2f2f2;
@@ -6864,10 +8545,10 @@ a.label:hover, a.badge:hover {
   padding: 12px;
 }
 
-/* line 21, ../scss/_plantilles.scss */
+/* line 17, ../scss/_leads.scss */
 .lead-small {
   /* abans destacat ratllat */
-  font-size: 11px;
+  font-size: 84.6153846%;
   color: #666666;
   padding: 6px 12px;
   background: white;
@@ -6879,16 +8560,16 @@ a.label:hover, a.badge:hover {
   border: 5px solid #f3d586;
 }
 
-/* line 31, ../scss/_plantilles.scss */
-.lead-large {
+/* line 27, ../scss/_leads.scss */
+.lead-large, .sheet {
   /* abans destacat bandejat */
-  font-size: 15px;
+  font-size: 115.384615%;
   color: #666666;
   background: #fcfcfc;
   border-top: 5px solid #e2ab17;
 }
-/* line 37, ../scss/_plantilles.scss */
-.lead-large:after {
+/* line 33, ../scss/_leads.scss */
+.lead-large:after, .sheet:after {
   background: #e5e5e5;
   display: block;
   margin: 18px 0 -18px;
@@ -6905,7 +8586,323 @@ a.label:hover, a.badge:hover {
   border-radius: 0 0 5px 5px;
 }
 
-/* 
+/* line 3, ../scss/_wells-boxes.scss */
+.well, .well-inverse {
+  min-height: 20px;
+  padding: 18px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+/* line 11, ../scss/_wells-boxes.scss */
+.well blockquote, .well-inverse blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 16, ../scss/_wells-boxes.scss */
+.well-inverse {
+  background: #222222;
+  color: #f2f2f2;
+  border: 1px solid black;
+}
+
+/* line 22, ../scss/_wells-boxes.scss */
+.well-gradient {
+  background-color: #f6f6f6;
+  background-image: -moz-linear-gradient(top, #f2f2f2, white);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(white));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, white);
+  background-image: -o-linear-gradient(top, #f2f2f2, white);
+  background-image: linear-gradient(to bottom, #f2f2f2, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#fcfcfc', GradientType=0);
+}
+/* line 24, ../scss/_wells-boxes.scss */
+.well-gradient.well-inverse {
+  background-color: #191919;
+  background-image: -moz-linear-gradient(top, black, #444444);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(black), to(#444444));
+  background-image: -webkit-linear-gradient(top, black, #444444);
+  background-image: -o-linear-gradient(top, black, #444444);
+  background-image: linear-gradient(to bottom, #000000, #444444);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='black', endColorstr='#414141', GradientType=0);
+}
+
+/* line 32, ../scss/_wells-boxes.scss */
+.box, .box-inverse {
+  min-height: 20px;
+  padding: 18px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-bottom-color: #b2b2b2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+/* line 41, ../scss/_wells-boxes.scss */
+.box blockquote, .box-inverse blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 46, ../scss/_wells-boxes.scss */
+.box-inverse {
+  background: #222222;
+  color: #f2f2f2;
+  border: 1px solid black;
+}
+
+/* line 52, ../scss/_wells-boxes.scss */
+.box-gradient {
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, white, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, white, #f2f2f2);
+  background-image: -o-linear-gradient(top, white, #f2f2f2);
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#efefef', GradientType=0);
+}
+
+/* line 55, ../scss/_wells-boxes.scss */
+.box-example {
+  position: relative;
+  padding-top: 24px;
+}
+/* line 58, ../scss/_wells-boxes.scss */
+.box-example:after {
+  background-color: #f7f7f7;
+  border: 1px solid lightgrey;
+  -webkit-border-radius: 4px 0 4px 0;
+  -moz-border-radius: 4px 0 4px 0;
+  -ms-border-radius: 4px 0 4px 0;
+  -o-border-radius: 4px 0 4px 0;
+  border-radius: 4px 0 4px 0;
+  content: "Exemple";
+  font-size: 92.3076923%;
+  left: -1px;
+  top: -1px;
+  padding: 2px 7px 3px;
+  position: absolute;
+}
+
+/* line 75, ../scss/_wells-boxes.scss */
+.well-large, .box-large {
+  padding: 24px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* line 79, ../scss/_wells-boxes.scss */
+.well-small, .box-small {
+  padding: 9px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 82, ../scss/_wells-boxes.scss */
+.well-small.box-example:after, .box-small.box-example:after {
+  font-size: 84.6153846%;
+  -webkit-border-radius: 2px 0 2px 0;
+  -moz-border-radius: 2px 0 2px 0;
+  -ms-border-radius: 2px 0 2px 0;
+  -o-border-radius: 2px 0 2px 0;
+  border-radius: 2px 0 2px 0;
+  padding: 0 4px 1px;
+}
+
+/* line 93, ../scss/_wells-boxes.scss */
+.sheet {
+  font-size: 100%;
+  background: #fcfcfc;
+  color: #333333;
+  border-top: 1px solid #ddd;
+  border-right: 20px solid #f7e5b4;
+  padding: 8px 12px;
+  position: relative;
+}
+/* line 102, ../scss/_wells-boxes.scss */
+.sheet:before {
+  content: "*";
+  content: url('/++genweb++static/images/sheet.png');
+  font-size: 300%;
+  position: absolute;
+  right: -19px;
+  top: -7px;
+}
+/* line 110, ../scss/_wells-boxes.scss */
+.sheet:after {
+  margin: 0 0 -14px !important;
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  width: 100%;
+}
+
+/* estils heretats
+.unstyled
+.dl-horizontal
+*/
+/* line 9, ../scss/_lists.scss */
+.list-divided li {
+  border-bottom: 1px dotted #aaaaaa;
+}
+/* line 11, ../scss/_lists.scss */
+.list-divided li:first-child {
+  border-top: 1px dotted #aaaaaa;
+}
+
+/* millores al d-horizontal */
+/* line 17, ../scss/_lists.scss */
+.dl-horizontal dt {
+  padding: 0 5px;
+  width: 115px;
+}
+
+/* line 18, ../scss/_lists.scss */
+.dl-horizontal dt:hover {
+  background: #f2f2f2;
+  white-space: normal;
+  position: absolute;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 25, ../scss/_lists.scss */
+.list-striped, .list-hover, .list-bordered, .list-notebook, .list-links, .list-highlighted {
+  margin-left: 0;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+/* line 29, ../scss/_lists.scss */
+.list-striped.list-condensed li, .list-hover.list-condensed li, .list-bordered.list-condensed li, .list-notebook.list-condensed li, .list-links.list-condensed li, .list-highlighted.list-condensed li {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-left: 0;
+}
+/* line 34, ../scss/_lists.scss */
+.list-striped.list-condensed, .list-hover.list-condensed, .list-bordered.list-condensed, .list-notebook.list-condensed, .list-links.list-condensed, .list-highlighted.list-condensed {
+  margin-left: 0;
+}
+
+/* line 38, ../scss/_lists.scss */
+.list-condensed {
+  margin-bottom: 25px;
+  padding-left: 0;
+  margin-left: 20px;
+}
+/* line 42, ../scss/_lists.scss */
+.list-condensed li {
+  padding: 0 0 0 28px !important;
+}
+
+/* line 46, ../scss/_lists.scss */
+.list-striped li, .list-hover li, .list-bordered li, .list-notebook li, .list-condensed li, .list-links li, .list-highlighted li {
+  padding: 8px 0 8px 28px;
+  margin-left: -20px;
+  list-style: none;
+  position: relative;
+}
+/* line 51, ../scss/_lists.scss */
+.list-striped li:before, .list-hover li:before, .list-bordered li:before, .list-notebook li:before, .list-condensed li:before, .list-links li:before, .list-highlighted li:before {
+  content: ".";
+  position: absolute;
+  font-size: 52px;
+  margin-left: -20px;
+  margin-top: -15px;
+  color: #eec558;
+}
+
+/* line 64, ../scss/_lists.scss */
+.list-striped li:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+/* line 71, ../scss/_lists.scss */
+.list-hover li:hover {
+  background-color: #f2f2f2;
+}
+
+/* line 76, ../scss/_lists.scss */
+.list-bordered li {
+  border-bottom: 1px solid #b2b2b2;
+}
+/* line 78, ../scss/_lists.scss */
+.list-bordered li:first-child {
+  border-top: 1px solid #b2b2b2;
+}
+
+/* line 82, ../scss/_lists.scss */
+.list-bordered {
+  border: 1px solid #b2b2b2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 85, ../scss/_lists.scss */
+.list-bordered li:first-child {
+  border-top: 0;
+}
+/* line 88, ../scss/_lists.scss */
+.list-bordered li:last-child {
+  border-bottom: 0;
+}
+
+/* line 93, ../scss/_lists.scss */
+.list-notebook {
+  margin-left: 30px;
+  padding-left: 10px;
+  border-left: 3px double #ffb68d;
+}
+
+/* line 98, ../scss/_lists.scss */
+.list-notebook li {
+  margin-left: -40px;
+  padding-left: 40px;
+  border-bottom: 1px solid #c0e8ff;
+  list-style: none;
+  position: relative;
+}
+/* line 104, ../scss/_lists.scss */
+.list-notebook li:first-child {
+  border-top: 1px solid #c0e8ff;
+}
+/* line 107, ../scss/_lists.scss */
+.list-notebook li:before {
+  content: ".";
+  position: absolute;
+  font-size: 52px;
+  margin-left: -34px;
+  margin-top: -15px;
+}
+
+/*
 > Index contingut = enllaços però amb fons
 > Llistat
 > Enllaços
@@ -6913,12 +8910,228 @@ a.label:hover, a.badge:hover {
 + extensió de llistes: pijama, separadors, colors de fons, etc;
 
 */
-/* 
+/* line 126, ../scss/_lists.scss */
+.list-links li:before {
+  content: url('/++genweb++static/images/arrow.png');
+  margin-left: -15px;
+  margin-top: -13px;
+}
 
-*/
-/* 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  /* line 137, ../scss/_lists.scss */
+  .list-links li {
+    content: url('/++genweb++static/images/arrow@2x.png');
+  }
+}
+/* line 142, ../scss/_lists.scss */
+.list-notebook.list-links li:before {
+  margin-left: -29px;
+}
 
+/* line 145, ../scss/_lists.scss */
+.list-highlighted li:before {
+  content: url('/++genweb++static/images/arrow_hl.png');
+  margin-left: -22px;
+  margin-top: -10px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  /* line 156, ../scss/_lists.scss */
+  .list-highlighted li {
+    content: url('/++genweb++static/images/arrow_hl@2x.png');
+  }
+}
+/* line 162, ../scss/_lists.scss */
+.list-links:before, .list-highlighted:before {
+  content: none;
+}
+
+/* line 3, ../scss/_tables.scss */
+table {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+
+/* line 6, ../scss/_tables.scss */
+caption {
+  color: #666666;
+  font-size: 92.3076923%;
+  text-align: left;
+}
+
+/* line 7, ../scss/_tables.scss */
+tfoot {
+  color: #666666;
+  text-shadow: 0 -1px white;
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 0 8px 4px -8px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 0 8px 4px -8px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 8px 4px -8px rgba(0, 0, 0, 0.25) inset;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+/* line 13, ../scss/_tables.scss */
+tfoot td, tfoot tr {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+
+/* line 17, ../scss/_tables.scss */
+.table tr:first-child td {
+  border-top: 5px solid #ecbd40;
+}
+
+/* line 18, ../scss/_tables.scss */
+.table tfoot tr:first-child td {
+  border-top: 1px solid #8c8c8c;
+}
+
+/* line 22, ../scss/_tables.scss */
+.table-bordered {
+  -webkit-box-shadow: 0 1px 1px #b2b2b2;
+  -moz-box-shadow: 0 1px 1px #b2b2b2;
+  box-shadow: 0 1px 1px #b2b2b2;
+}
+
+/* line 26, ../scss/_tables.scss */
+.table.table-bordered tr:last-child td:first-child {
+  border-radius: 0 0 0 4px;
+}
+
+/* line 29, ../scss/_tables.scss */
+.table.table-bordered tfoot + tbody tr:last-child td:first-child {
+  border-radius: 0 !important;
+}
+
+/*
+INVERSE
+-----------------------
 */
+/* line 37, ../scss/_tables.scss */
+.table-inverse {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: #404040;
+  color: white;
+}
+/* line 41, ../scss/_tables.scss */
+.table-inverse td, .table-inverse th {
+  border-top: 1px solid #666666;
+}
+/* line 42, ../scss/_tables.scss */
+.table-inverse tfoot {
+  color: #f2f2f2;
+  text-shadow: 0 -1px black;
+  background-color: #666666;
+  -webkit-box-shadow: 0 8px 4px -8px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 0 8px 4px -8px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 8px 4px -8px rgba(0, 0, 0, 0.25) inset;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+/* line 48, ../scss/_tables.scss */
+.table-inverse tfoot td, .table-inverse tfoot tr {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+/* line 55, ../scss/_tables.scss */
+.table-inverse.table-striped tbody tr:nth-child(odd) td,
+.table-inverse.table-striped tbody tr:nth-child(odd) th {
+  background-color: #222222;
+}
+/* line 63, ../scss/_tables.scss */
+.table-inverse.table-hover tbody tr:hover td,
+.table-inverse.table-hover tbody tr:hover th {
+  background-color: black;
+}
+/* line 68, ../scss/_tables.scss */
+.table-inverse.table-bordered {
+  border: 1px solid #666666;
+  border-left: 0;
+}
+/* line 72, ../scss/_tables.scss */
+.table-inverse.table-bordered th,
+.table-inverse.table-bordered td {
+  border-left: 1px solid #666666;
+}
+
+/*
+NOTEBOOK
+-----------------------
+*/
+/* line 82, ../scss/_tables.scss */
+.table-notebook {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 84, ../scss/_tables.scss */
+.table-notebook.table-bordered td, .table-notebook.table-bordered th {
+  border-top: 1px solid #c0e8ff;
+  border-left-color: #daf2ff;
+  border-left-style: dotted;
+}
+/* line 88, ../scss/_tables.scss */
+.table-notebook tfoot {
+  color: #666666;
+  text-shadow: 0 -1px white;
+  background-color: #f7f7f7;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 94, ../scss/_tables.scss */
+.table-notebook tfoot td, .table-notebook tfoot tr {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+/* line 99, ../scss/_tables.scss */
+.table-notebook tr:first-child td,
+.table-notebook tr:first-child th {
+  border-top: 3px double #ffb68d;
+}
+/* line 100, ../scss/_tables.scss */
+.table-notebook tbody th {
+  background-color: #f3fbff;
+}
+/* line 101, ../scss/_tables.scss */
+.table-notebook tfoot tr:first-child td {
+  border-top: 1px solid #41bbff;
+}
+/* line 103, ../scss/_tables.scss */
+.table-notebook.table-bordered td:first-child, .table-notebook.table-bordered th:first-child {
+  border-left-color: #b2b2b2 !important;
+  border-left-style: solid;
+}
+
 /* 
 .table
 .table-striped
@@ -6935,17 +9148,37 @@ També ha de ser aplicable directament al td i a altres elements com les llistes
 
 + extensió de taules: pijama, separadors, colors de fons, etc;
 */
+/* NOMÉS CORRECCIONS PER A IE SENSE HACKS */
+/* IE9- */
+/* line 5, ../scss/_ie.scss */
+html.lt-ie10 #portal-globalnav .nav-collapse {
+  position: relative;
+}
+
+/* line 6, ../scss/_ie.scss */
+html.lt-ie10 #portal-globalnav .navbar .nav, html.lt-ie10 #portal-globalnav .navbar .formTabs {
+  position: absolute;
+}
+
+/* IE8- */
+/* line 9, ../scss/_ie.scss */
+html.lt-ie9 .navbar img {
+  max-width: inherit !important;
+}
+
+/* IE7- */
+/*
+html.lt-ie8 #portal-header,
+html.lt-ie8 #peu {position:relative;}
+html.lt-ie8 #portal-header .container,
+html.lt-ie8 #peu .container {position:relative; top:-5px;}
+*/
 /* line 1, ../scss/_upcnet.scss */
 .hiddenStructure {
   display: none;
 }
 
-/* line 11, ../scss/genwebupc.scss */
-.goout {
-  display: none;
-}
-
-/*provisional,  ha de ser amb overflow i no amb display*/
+/*.goout {display:none;} /*provisional,  ha de ser amb overflow i no amb display*/
 /* line 13, ../scss/genwebupc.scss */
 .width100 {
   width: 100% !important;
@@ -6966,21 +9199,22 @@ a:hover .img_blank {
 /* line 20, ../scss/genwebupc.scss */
 .titol-espai h1 {
   font-weight: 200;
+  color: red;
 }
 
-/* line 25, ../scss/genwebupc.scss */
+/* line 26, ../scss/genwebupc.scss */
 .page-header {
   border-top: 1px solid #CCCCCC !important;
   border-bottom: 0;
   box-shadow: 0 -8px 16px -16px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* line 30, ../scss/genwebupc.scss */
+/* line 31, ../scss/genwebupc.scss */
 .page-header h1 {
   color: #446a8e;
 }
 
-/* line 32, ../scss/genwebupc.scss */
+/* line 33, ../scss/genwebupc.scss */
 [class^="icon-"], [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/glyphicons-halflings.png?1351539282');
+  background-image: url('/++genweb++static/images/glyphicons-halflings.png?1346050654');
 }

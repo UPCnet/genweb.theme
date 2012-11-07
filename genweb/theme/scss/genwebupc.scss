@@ -1,5 +1,6 @@
-@import "compass";
+
 @import "compass_twitter_bootstrap";
+@import "compass_twitter_bootstrap_responsive";
 @import "genweb_upc";
 @import "upcnet";
 
@@ -7,8 +8,7 @@
 
 
 
-
-    .goout {display:none;} /*provisional,  ha de ser amb overflow i no amb display*/
+    /*.goout {display:none;} /*provisional,  ha de ser amb overflow i no amb display*/
 
     .width100 {width:100% !important; -moz-box-sizing:border-box;}
     .img_blank {opacity:.7;}
@@ -19,6 +19,7 @@
 
 .titol-espai h1 {
 	font-weight:200;
+    color:red;
 }
 
 

@@ -17,7 +17,7 @@ from plone.app.layout.viewlets.interfaces import IPortalTop, IPortalHeader, IBel
 from plone.app.layout.viewlets.interfaces import IPortalFooter
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 
-from genweb.core.utils import gw_config, havePermissionAtRoot, assignAltAcc
+from genweb.core.utils import genweb_config, havePermissionAtRoot, assignAltAcc
 from genweb.theme.browser.interfaces import IGenwebTheme
 
 
@@ -35,8 +35,8 @@ class viewletBase(grok.Viewlet):
     def portal(self):
         return getSite()
 
-    def gw_config(self):
-        return gw_config()
+    def genweb_config(self):
+        return genweb_config()
 
     def pref_lang(self):
         """Funcio que extreu idioma actiu

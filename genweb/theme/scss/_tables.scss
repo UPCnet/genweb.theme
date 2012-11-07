@@ -1,0 +1,125 @@
+// Taules
+// -------------------------
+table {
+  @include border-radius(0 0 4px 4px);
+}
+caption {color:$gray; font-size:92.3076923%; text-align:left;}
+tfoot {
+  color:$gray; 
+  text-shadow: 0 -1px $white;
+  background-color: $tableBackgroundAccent;
+  @include box-shadow(0 8px 4px -8px rgba(0, 0, 0, 0.25) inset);  
+  @include border-radius(0 0 4px 4px);
+  & td, tr {
+    @include border-radius(0 0 4px 4px)
+  }
+}
+.table tr:first-child td {border-top:5px solid lighten($genwebPrimary, 10%);}
+.table tfoot  tr:first-child td {border-top: 1px solid darken($tableBorder,15%);} 
+
+
+
+.table-bordered {   
+  @include box-shadow(0 1px 1px $btnBorder);
+}
+
+.table.table-bordered tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+}
+.table.table-bordered tfoot+tbody tr:last-child td:first-child {
+    border-radius: 0 !important;
+}
+
+/*
+INVERSE
+-----------------------
+*/
+.table-inverse {
+  @include border-radius(4px);
+  background: lighten($grayDark,5%);
+  color:$white;
+  & td, th { border-top:1px solid $gray;}
+  & tfoot {
+    color:$grayLighter; 
+    text-shadow: 0 -1px $black;
+    background-color: $gray;
+    @include box-shadow(0 8px 4px -8px rgba(0, 0, 0, 0.25) inset);  
+    @include border-radius(0 0 4px 4px);
+    & td, tr {
+      @include border-radius(0 0 4px 4px);
+    }
+  }
+  &.table-striped {
+    tbody {
+      tr:nth-child(odd) td,
+      tr:nth-child(odd) th {
+        background-color: $grayDarker;
+      }
+    }
+  }
+  &.table-hover {
+    tbody {
+      tr:hover td,
+      tr:hover th {
+        background-color: $black;
+      }
+    }
+  }
+  &.table-bordered {
+    border: 1px solid $gray;
+    border-left:0;
+    & th,
+    td {
+      border-left: 1px solid $gray;
+    }
+  }
+}
+
+/*
+NOTEBOOK
+-----------------------
+*/
+.table-notebook {
+  @include border-radius(4px);
+  &.table-bordered td, &.table-bordered th { 
+    border-top:1px solid lighten($blue,50%); 
+    border-left-color: lighten($blue, 55%); 
+    border-left-style:dotted;}
+  & tfoot {
+    color:$gray; 
+    text-shadow: 0 -1px $white;
+    background-color: $tableBackgroundAccent;
+    @include border-radius(0 0 4px 4px);
+    @include box-shadow (none);    
+    & td, tr {
+      @include border-radius(0 0 4px 4px)
+    }
+  }
+  tr:first-child td, 
+  tr:first-child th {border-top:3px double lighten(complement($blue),40%);}
+  & tbody th {background-color: lighten($blue,60%);}
+  & tfoot  tr:first-child td {border-top: 1px solid lighten($blue,25%);} 
+  &.table-bordered td:first-child,
+  &.table-bordered th:first-child {
+    border-left-color: $tableBorder !important;
+    border-left-style:solid;
+  }
+}
+
+
+/* 
+.table
+.table-striped
+.table-bordered
+.table-hover
+.table-condensed
+
+.info, .success, .error, .warning
+++.primary, .inverse
+S'ha destablir aquestes classes de color. També hi ha el pink i el purple entre altres.
+També ha de ser aplicable directament al td i a altres elements com les llistes
+
+
+
++ extensió de taules: pijama, separadors, colors de fons, etc;
+*/

@@ -3,105 +3,67 @@
 // --------------------------------------------------
 
 
-// Destacats
-// -------------------------
 
-.lead {
-  margin-bottom: $baseLineHeight;
-  font-size: 13px;
-  font-weight: 200;
-  line-height: $baseLineHeight;
-  background:$grayLighter;
-  text-shadow:0 1px $white;
-  @include box-shadow(0 1px 1px $btnBorder);
-  @include border-radius(5px);
-  padding: 12px;
+
+
+
+/* ABANS EREN LI */
+.success {
+  background-color: $successBackground !important;
+  color:$grayDark;
+}
+.error {
+  background-color: $errorBackground !important;
+  color:$grayDark;
+}
+.info {
+  background-color: $infoBackground !important;
+  color:$grayDark;
+}
+.warning {
+  background-color: $warningBackground !important;
+  color:$grayDark;
+}
+.inverse {
+  background-color: $black !important;
+  color:$white;
+}
+.primary {
+  background-color: $blue !important;
+  color:$white;
 }
 
-.lead-small { /* abans destacat ratllat */
-  @extend .lead;	
-  font-size: 11px;
-  color:$gray;
-  padding:6px 12px;
-  background:$white;
-  @include border-radius(10px);  
-  border: 5px solid lighten($genwebPrimary, 25%);
+/*links en inverse i primary */
+a.inverse, .inverse a, a .inverse {
+	color:#3be;
 }
-
-.lead-large { /* abans destacat bandejat */
-  @extend .lead;
-  font-size:15px;
-  color:$gray;
-  background:darken($white,1%);
-  border-top:5px solid $genwebPrimary;
-  &:after {
-  	background:#e5e5e5;
-  	display:block;
-  	margin:18px 0 -18px;
-  	height:5px;
-  	content:".";
-  	color:#e5e5e5;
-  	@include box-shadow(0 1px 1px $btnBorder);
-  	@include border-radius(0 0 5px 5px);  	
-  }
+/*sobre blau els links no poden ser blaus */
+a.primary, .primary a, a .primary {
+	color:#ff0;
 }
 
 
-// Llistes
-// -------------------------
-
-/* 
-> Index contingut = enllaços però amb fons
-> Llistat
-> Enllaços
-> Enllaços destacats
-+ extensió de llistes: pijama, separadors, colors de fons, etc;
-
-*/
 
 
+/*FAQ*/
+.accordion.faq .accordion-heading a  {
+	position:relative;
+	&:after {
+		content:"+";
+	  	//@include box-shadow(0 1px 1px $btnBorder);
+	  	@include border-radius(25px);  	
+	  	background: $grayLight;
+	  	position:absolute;
+	  	font-weight:bold;
+	  	right:8px;
+	  	top:8px;
+	  	color: $white;
+	  	font-size:107.692308%;
+	  	padding:0px 5px;
+	  }	
+	&:hover {
+		background:#f2f8fb;
+		&:after {background-color:$blue;}
+	}
 
-// Fitxes
-// -------------------------
-
-/* 
-
-*/
-
-// Contenidors
-// -------------------------
-
-/* 
-
-*/
-
-// Taules
-// -------------------------
-/* 
-.table
-.table-striped
-.table-bordered
-.table-hover
-.table-condensed
-
-.info, .success, .error, .warning
-++.primary, .inverse
-S'ha destablir aquestes classes de color. També hi ha el pink i el purple entre altres.
-També ha de ser aplicable directament al td i a altres elements com les llistes
-
-
-
-+ extensió de taules: pijama, separadors, colors de fons, etc;
-*/
-
-
-
-
-
-
-
-
-
-
-
-
+}
