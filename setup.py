@@ -29,7 +29,9 @@ setup(name='genweb.theme',
       install_requires=[
           'setuptools',
           'five.grok',
-          'z3c.jbot'
+          'z3c.jbot',
+          'genweb.core',
+          'genweb.controlpanel'
       ],
       entry_points="""
       # -*- Entry points: -*-
