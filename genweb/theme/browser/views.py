@@ -1,15 +1,18 @@
 from five import grok
 from Acquisition import aq_inner
 from zope.interface import Interface
-from zope.component import getMultiAdapter
+from zope.component import getMultiAdapter, queryMultiAdapter
+from zope.contentprovider import interfaces
 
 from Products.CMFPlone import utils
 from Products.CMFCore.utils import getToolByName
+from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.CMFPlone.browser.navigation import CatalogNavigationTabs
 from Products.CMFPlone.browser.navigation import get_id, get_view_url
 
-from genweb.core.interfaces import IGenwebLayer
-from genweb.core.utils import genweb_config
+from genweb.core.interfaces import IGenwebLayer, IHomePage
+from genweb.theme.browser.interfaces import IGenwebTheme
+from genweb.core.utils import genweb_config, pref_lang, portal_url
 
 
 class GWConfig(grok.View):
@@ -18,6 +21,37 @@ class GWConfig(grok.View):
 
     def render(self):
         return genweb_config()
+
+
+class homePage(grok.View):
+    """ This is the special view for the homepage containing support for the
+        portlet managers provided by the package genweb.portlets.
+        It's restrained to IGenwebTheme layer to prevent it will interfere with
+        the one defined in the Genweb legacy theme (v4).
+    """
+    grok.context(IPloneSiteRoot)
+    grok.layer(IGenwebTheme)
+
+    def getPortletContainer(self):
+        context = aq_inner(self.context)
+        pc = getToolByName(context, 'portal_catalog')
+        result = pc.searchResults(object_provides=IHomePage.__identifier__,
+                                  Language=pref_lang())
+        if result:
+            # Return the object without forcing a getObject()
+            return getattr(context, result[0].id, context)
+        else:
+            # If this happens, it's bad. Implemented as a fallback
+            return context
+
+    def renderProviderByName(self, provider_name):
+        provider = queryMultiAdapter(
+            (self.getPortletContainer(), self.request, self),
+            interfaces.IContentProvider, provider_name)
+
+        provider.update()
+
+        return provider.render()
 
 
 class gwCatalogNavigationTabs(CatalogNavigationTabs):

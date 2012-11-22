@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="genweb">
+
+<body>
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1)" />
+
+<div metal:fill-slot="main">
+ <metal:main-macro define-macro="main">
+
+	<div class="contingut">
+		<div class="columnaDreta">
+      <div tal:replace="structure python:view.renderProviderByName('genweb.portlets.HomePortletManager3')" />
+		<!-- Columna dreta  -->
+			<div class="controlDreta" tal:condition="python:plone_view.have_portlets('genweb.portlets.HomePortletManager3', view)">
+                <div tal:replace="structure python:view.renderProviderByName('genweb.portlets.HomePortletManager3')" />
+			</div>
+		</div>
+		<div class="columnaEsq">
+			<!-- Columna esquerra  -->
+			<div>
+                <div tal:replace="structure provider:genweb.portlets.HomePortletManager2" />
+			</div>
+    		</div>
+    		<div class="columnaCentre">
+			<table summary="contingut"><caption>Contingut</caption><tr><td>
+				<!-- Columna Central -->
+				<div>
+                    <div tal:replace="structure provider:genweb.portlets.HomePortletManager1" />
+				</div>
+			</td></tr></table>
+		</div>
+	</div>
+ </metal:main-macro>
+</div>
+</body>
+</html>
