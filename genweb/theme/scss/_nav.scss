@@ -1,6 +1,12 @@
-// BREADCRUMBS
+// DROPDOWNS STATES
 // -------------------------
 
+.dropdown-menu a {
+  		&.state-intranet {color:$purple;}
+  		&.state-pending {color:darken($orange,5%);}
+  		&.state-draft {color:$green;}
+  		&.state-private {color:$red;}
+}
 
 
 
@@ -19,7 +25,7 @@
 
 // PORTAL SUBNAV
 // -------------------------
-.subnavbar {width:220px; margin-bottom:18px;}
+.subnavbar {margin-bottom:18px;}
 .subnavbar .nav-list {
 	border:1px solid #b2b2b2; box-shadow:0 3px 5px #ccc;
 	@include border-radius(4px);
@@ -38,6 +44,10 @@
   		border-top:1px solid #b2b2b2 !important;
   		padding:8px 9px !important;
   		position:relative;
+  		&.state-intranet {color:$purple;}
+  		&.state-pending {color:darken($orange,5%);}
+  		&.state-draft {color:$green;}
+  		&.state-private {color:$red;}
   		&:hover {
   			background:#eee;
   			color:#111;
@@ -57,7 +67,7 @@
   		@include box-shadow(0 1px 0 rgba(255,255,255,.5));
 		right: 7px;
 		top: 8px;
-		background-image: image-url("glyphicons-halflings-white.png");
+		background-image: image-url("gh-w.png");
 		background-position:  -455px -71px;
 		background-repeat:no-repeat;
 		width:17px;
@@ -86,7 +96,7 @@
 		background:#fff;
 		list-style:none;
 		@include box-shadow(inset 0 5px 5px -5px rgba(0,0,0,.25));
-
+		display:inline-block;
 		& a {
 			border-top:0 !important;
 			font-size:12px;
@@ -97,6 +107,7 @@
 			background: transparent !important;
 			padding:0 !important;
 			border-right: 3px solid $blue;
+			*border-top:1px solid #fff !important;
 			@include border-radius(0 !important);
 			&.state-private {border-right: 3px solid $red; color:$red;}
 			&.state-draft {border-right: 3px solid $green; color:$green;}
@@ -110,7 +121,7 @@
 
 			& span {
 				border-top:1px solid #d9d9d9 !important;
-				padding:8px 0 !important;
+				padding:8px 0 8px 12px !important;
 				display:block;
 				margin-right:24px;
 				margin-left:10px;
@@ -118,29 +129,40 @@
 				&:before {
 					content:".";
 					color:$blue;
-					top:-2px;
-					left:-4px;
-					position:relative;
+					top:4px;
+					left:7px;
+					position:absolute;
 					font-size:350%;
 					line-height:0 !important;
 				}
 			}
 			&[class^="contenttype-"] span:after,
 			&[class*=" contenttype-"] span:after {
-				    background-image: image-url("glyphicons-halflings.png");
+				    background-image: image-url("gh.png");
+				    background-repeat:no-repeat;
     				content: " ";
     				display: block;
-    				float: right;
+    				right: 22px;
     				height: 20px;
     				margin-right: -24px;
     				width: 20px;
-    				opacity:.8;
+    				@include opacity(80);
+    				top:12px;
+    				position:absolute;
 			}
-			&.contenttype-folder span:after {background-position: -384px -120px;}
-			&.contenttype-document span:after {background-position: -24px -24px;}
-			&.contenttype-link span:after {background-position: -334px -96px;}
+			&.contenttype-folder span:after 		{background-position: -384px 	-120px;}
+			&.contenttype-page span:after 			{background-position: -24px 	-24px;}
+			&.contenttype-link span:after 			{background-position: -72px 	-168px;}
+			&.contenttype-windowztool span:after 	{background-position: -97px 	-168px;}
+			&.contenttype-bannercontainer span:after,
+			&.contenttype-banner span:after 		{background-position: -313px	-25px;}
+			&.contenttype-topic span:after 			{background-position: -72px 	-192px;}
+			&.contenttype-file span:after 			{background-position: -167px	-168px;}
+			&.contenttype-image span:after 			{background-position: -457px	-49px;}
+			&.contenttype-plonepopoll span:after 	{background-position: -457px	-193px;}
+
 			&:hover {background-color:#f2f8fc !important;};
-			&:hover span:after {opacity:1;}
+			&:hover span:after { @include opacity(100);}
 		}
 	}
 

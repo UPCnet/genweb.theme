@@ -40,22 +40,23 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  background: #f2f2f2;
 }
 
-/* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-/* line 54, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 55, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 62, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 63, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 sub,
 sup {
   position: relative;
@@ -64,17 +65,17 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 71, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 78, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 79, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -83,18 +84,18 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 87, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 88, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 #mapCanvas label {
   width: auto;
   display: inline;
 }
 
-/* line 88, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 #mapCanvas img {
   max-width: none;
 }
 
-/* line 97, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 button,
 input,
 select,
@@ -104,21 +105,21 @@ textarea {
   vertical-align: middle;
 }
 
-/* line 103, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 104, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 button,
 input {
   *overflow: visible;
   line-height: normal;
 }
 
-/* line 108, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 109, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 115, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 116, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -127,7 +128,7 @@ input[type="submit"] {
   -webkit-appearance: button;
 }
 
-/* line 119, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 input[type="search"] {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -135,13 +136,13 @@ input[type="search"] {
   -webkit-appearance: textfield;
 }
 
-/* line 126, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 127, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 130, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
@@ -215,9 +216,10 @@ a:hover {
 [class*="span"] {
   float: left;
   margin-left: 30px;
+  margin-bottom: 18px;
 }
 
-/* line 566, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 567, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .container,
 .navbar-static-top .container,
 .navbar-fixed-top .container,
@@ -225,127 +227,127 @@ a:hover {
   width: 978px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span12 {
   width: 978px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span11 {
   width: 894px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span10 {
   width: 810px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span9 {
   width: 726px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span8 {
   width: 642px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span7 {
   width: 558px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span6 {
   width: 474px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span5 {
   width: 390px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span4 {
   width: 306px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span3 {
   width: 222px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span2 {
   width: 138px;
 }
 
-/* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .span1 {
   width: 54px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset12 {
   margin-left: 1038px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset11 {
   margin-left: 954px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset10 {
   margin-left: 870px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset9 {
   margin-left: 786px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset8 {
   margin-left: 702px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset7 {
   margin-left: 618px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset6 {
   margin-left: 534px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset5 {
   margin-left: 450px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset4 {
   margin-left: 366px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset3 {
   margin-left: 282px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset2 {
   margin-left: 198px;
 }
 
-/* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .offset1 {
   margin-left: 114px;
 }
 
-/* line 600, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 601, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid {
   width: 100%;
   *zoom: 1;
@@ -360,7 +362,7 @@ a:hover {
 .row-fluid:after {
   clear: both;
 }
-/* line 603, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 604, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid [class*="span"] {
   display: block;
   width: 100%;
@@ -372,186 +374,186 @@ a:hover {
   margin-left: 3.06748%;
   *margin-left: 3.01636%;
 }
-/* line 609, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 610, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid [class*="span"]:first-child {
   margin-left: 0;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span12 {
   width: 100%;
   *width: 99.94888%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset12 {
   margin-left: 106.13497%;
   *margin-left: 106.03272%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset12:first-child {
   margin-left: 103.06748%;
   *margin-left: 102.96524%;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span11 {
   width: 91.41104%;
   *width: 91.35992%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset11 {
   margin-left: 97.54601%;
   *margin-left: 97.44376%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset11:first-child {
   margin-left: 94.47853%;
   *margin-left: 94.37628%;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span10 {
   width: 82.82209%;
   *width: 82.77096%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset10 {
   margin-left: 88.95706%;
   *margin-left: 88.85481%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset10:first-child {
   margin-left: 85.88957%;
   *margin-left: 85.78732%;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span9 {
   width: 74.23313%;
   *width: 74.182%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset9 {
   margin-left: 80.3681%;
   *margin-left: 80.26585%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset9:first-child {
   margin-left: 77.30061%;
   *margin-left: 77.19836%;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span8 {
   width: 65.64417%;
   *width: 65.59305%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset8 {
   margin-left: 71.77914%;
   *margin-left: 71.67689%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset8:first-child {
   margin-left: 68.71166%;
   *margin-left: 68.60941%;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span7 {
   width: 57.05521%;
   *width: 57.00409%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset7 {
   margin-left: 63.19018%;
   *margin-left: 63.08793%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset7:first-child {
   margin-left: 60.1227%;
   *margin-left: 60.02045%;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span6 {
   width: 48.46626%;
   *width: 48.41513%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset6 {
   margin-left: 54.60123%;
   *margin-left: 54.49898%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset6:first-child {
   margin-left: 51.53374%;
   *margin-left: 51.43149%;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span5 {
   width: 39.8773%;
   *width: 39.82618%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset5 {
   margin-left: 46.01227%;
   *margin-left: 45.91002%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset5:first-child {
   margin-left: 42.94479%;
   *margin-left: 42.84254%;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span4 {
   width: 31.28834%;
   *width: 31.23722%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset4 {
   margin-left: 37.42331%;
   *margin-left: 37.32106%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset4:first-child {
   margin-left: 34.35583%;
   *margin-left: 34.25358%;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span3 {
   width: 22.69939%;
   *width: 22.64826%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset3 {
   margin-left: 28.83436%;
   *margin-left: 28.73211%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset3:first-child {
   margin-left: 25.76687%;
   *margin-left: 25.66462%;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span2 {
   width: 14.11043%;
   *width: 14.0593%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset2 {
   margin-left: 20.2454%;
   *margin-left: 20.14315%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset2:first-child {
   margin-left: 17.17791%;
   *margin-left: 17.07566%;
 }
-/* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .span1 {
   width: 5.52147%;
   *width: 5.47035%;
 }
-/* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset1 {
   margin-left: 11.65644%;
   *margin-left: 11.55419%;
 }
-/* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .row-fluid .offset1:first-child {
   margin-left: 8.58896%;
   *margin-left: 8.48671%;
@@ -609,7 +611,7 @@ p {
 }
 
 /* line 17, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-small {
+small, .smaller {
   font-size: 85%;
 }
 
@@ -672,13 +674,13 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 /* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 h1 {
   font-size: 192.307692%;
-  line-height: 36px;
+  line-height: 27px;
 }
 
 /* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 h2 {
   font-size: 153.846154%;
-  line-height: 36px;
+  line-height: 18px;
 }
 
 /* line 67, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
@@ -799,50 +801,42 @@ dd {
   margin-left: 130px;
 }
 
-/* line 146, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-hr {
-  margin: 18px 0;
-  border: 0;
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid white;
-}
-
-/* line 154, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 148, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #aaaaaa;
 }
 
-/* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
-/* line 164, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 18px;
   border-left: 5px solid #d9d9d9;
 }
-/* line 168, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 162, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
   line-height: 22.5px;
 }
-/* line 172, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 166, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote small {
   display: block;
   line-height: 18px;
   color: #aaaaaa;
 }
-/* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 170, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
-/* line 182, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -850,21 +844,21 @@ blockquote.pull-right {
   border-right: 5px solid #d9d9d9;
   border-left: 0;
 }
-/* line 189, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
-/* line 193, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote.pull-right small:before {
   content: '';
 }
-/* line 196, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 190, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 207, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 201, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -872,7 +866,7 @@ blockquote:after {
   content: "";
 }
 
-/* line 212, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
+/* line 206, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
 address {
   display: block;
   margin-bottom: 18px;
@@ -962,7 +956,7 @@ legend {
   line-height: 36px;
   color: #333333;
   border: 0;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #b2b2b2;
 }
 /* line 33, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 legend small {
@@ -1287,96 +1281,96 @@ textarea[class*="span"],
   display: inline-block;
 }
 
-/* line 637, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 638, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input,
 textarea,
 .uneditable-input {
   margin-left: 0;
 }
 
-/* line 642, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 643, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 .controls-row [class*="span"] + [class*="span"] {
   margin-left: 30px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span12,
 textarea.span12,
 .uneditable-input.span12 {
   width: 964px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span11,
 textarea.span11,
 .uneditable-input.span11 {
   width: 880px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span10,
 textarea.span10,
 .uneditable-input.span10 {
   width: 796px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span9,
 textarea.span9,
 .uneditable-input.span9 {
   width: 712px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span8,
 textarea.span8,
 .uneditable-input.span8 {
   width: 628px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span7,
 textarea.span7,
 .uneditable-input.span7 {
   width: 544px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span6,
 textarea.span6,
 .uneditable-input.span6 {
   width: 460px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span5,
 textarea.span5,
 .uneditable-input.span5 {
   width: 376px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span4,
 textarea.span4,
 .uneditable-input.span4 {
   width: 292px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span3,
 textarea.span3,
 .uneditable-input.span3 {
   width: 208px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span2,
 textarea.span2,
 .uneditable-input.span2 {
   width: 124px;
 }
 
-/* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+/* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
 input.span1,
 textarea.span1,
 .uneditable-input.span1 {
@@ -2238,14 +2232,14 @@ table .span24 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/++genweb++static/images/glyphicons-halflings.png?1346050654');
+  background-image: url('/++genweb++static/images/gh.png?1352977821');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
 }
 
 /* White icons with optional class, or on hover/active states of certain elements */
-/* line 38, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-white,
 .nav > .active > a > [class^="icon-"],
 .formTabs > .active > a > [class^="icon-"],
@@ -2255,709 +2249,948 @@ table .span24 {
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .active > a > [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/glyphicons-halflings-white.png?1342602226');
+  background-image: url('/++genweb++static/images/gh-w.png?1353063332');
 }
 
-/* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 47, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-glass {
   background-position: 0      0;
 }
 
-/* line 43, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-music {
   background-position: -24px 0;
 }
 
-/* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-search {
   background-position: -48px 0;
 }
 
-/* line 45, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-envelope {
   background-position: -72px 0;
 }
 
-/* line 46, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 51, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-heart {
   background-position: -96px 0;
 }
 
-/* line 47, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 52, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-star {
   background-position: -120px 0;
 }
 
-/* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-star-empty {
   background-position: -144px 0;
 }
 
-/* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 54, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-user {
   background-position: -168px 0;
 }
 
-/* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 55, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-film {
   background-position: -192px 0;
 }
 
-/* line 51, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 56, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-th-large {
   background-position: -216px 0;
 }
 
-/* line 52, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 57, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-th {
   background-position: -240px 0;
 }
 
-/* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 58, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-th-list {
   background-position: -264px 0;
 }
 
-/* line 54, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 59, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-ok {
   background-position: -288px 0;
 }
 
-/* line 55, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 60, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-remove {
   background-position: -312px 0;
 }
 
-/* line 56, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-zoom-in {
   background-position: -336px 0;
 }
 
-/* line 57, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 62, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-zoom-out {
   background-position: -360px 0;
 }
 
-/* line 58, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 63, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-off {
   background-position: -384px 0;
 }
 
-/* line 59, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 64, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-signal {
   background-position: -408px 0;
 }
 
-/* line 60, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-cog {
   background-position: -432px 0;
 }
 
-/* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-trash {
   background-position: -456px 0;
 }
 
-/* line 63, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-home {
   background-position: 0 -24px;
 }
 
-/* line 64, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-file {
+/* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-page {
   background-position: -24px -24px;
 }
 
-/* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 70, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-time {
   background-position: -48px -24px;
 }
 
-/* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 71, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-road {
   background-position: -72px -24px;
 }
 
-/* line 67, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-download-alt {
   background-position: -96px -24px;
 }
 
-/* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 73, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-download {
   background-position: -120px -24px;
 }
 
-/* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 74, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-upload {
   background-position: -144px -24px;
 }
 
-/* line 70, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 75, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-inbox {
   background-position: -168px -24px;
 }
 
-/* line 71, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 76, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-play-circle {
   background-position: -192px -24px;
 }
 
-/* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 77, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-repeat {
   background-position: -216px -24px;
 }
 
-/* line 73, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 78, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-refresh {
   background-position: -240px -24px;
 }
 
-/* line 74, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 79, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-list-alt {
   background-position: -264px -24px;
 }
 
-/* line 75, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 80, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-lock {
   background-position: -287px -24px;
 }
 
-/* line 76, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 81, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-flag {
   background-position: -312px -24px;
 }
 
-/* line 77, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 82, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-headphones {
   background-position: -336px -24px;
 }
 
-/* line 78, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 83, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-volume-off {
   background-position: -360px -24px;
 }
 
-/* line 79, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 84, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-volume-down {
   background-position: -384px -24px;
 }
 
-/* line 80, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-volume-up {
   background-position: -408px -24px;
 }
 
-/* line 81, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 86, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-qrcode {
   background-position: -432px -24px;
 }
 
-/* line 82, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 87, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-barcode {
   background-position: -456px -24px;
 }
 
-/* line 84, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-tag {
   background-position: 0 -48px;
 }
 
-/* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 90, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-tags {
   background-position: -25px -48px;
 }
 
-/* line 86, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 91, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-book {
   background-position: -48px -48px;
 }
 
-/* line 87, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-bookmark {
   background-position: -72px -48px;
 }
 
-/* line 88, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 93, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-print {
   background-position: -96px -48px;
 }
 
-/* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 94, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-camera {
   background-position: -120px -48px;
 }
 
-/* line 90, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 95, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-font {
   background-position: -144px -48px;
 }
 
-/* line 91, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 96, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-bold {
   background-position: -167px -48px;
 }
 
-/* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 97, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-italic {
   background-position: -192px -48px;
 }
 
-/* line 93, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-text-height {
   background-position: -216px -48px;
 }
 
-/* line 94, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 99, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-text-width {
   background-position: -240px -48px;
 }
 
-/* line 95, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-align-left {
   background-position: -264px -48px;
 }
 
-/* line 96, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 101, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-align-center {
   background-position: -288px -48px;
 }
 
-/* line 97, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-align-right {
   background-position: -312px -48px;
 }
 
-/* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 103, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-align-justify {
   background-position: -336px -48px;
 }
 
-/* line 99, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 104, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-list {
   background-position: -360px -48px;
 }
 
-/* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 105, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-indent-left {
   background-position: -384px -48px;
 }
 
-/* line 101, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 106, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-indent-right {
   background-position: -408px -48px;
 }
 
-/* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 107, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-facetime-video {
   background-position: -432px -48px;
 }
 
-/* line 103, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 108, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-picture {
   background-position: -456px -48px;
 }
 
-/* line 105, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 110, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-pencil {
   background-position: 0 -72px;
 }
 
-/* line 106, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 111, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-map-marker {
   background-position: -24px -72px;
 }
 
-/* line 107, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 112, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-adjust {
   background-position: -48px -72px;
 }
 
-/* line 108, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 113, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-tint {
   background-position: -72px -72px;
 }
 
-/* line 109, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 114, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-edit {
   background-position: -96px -72px;
 }
 
-/* line 110, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 115, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-share {
   background-position: -120px -72px;
 }
 
-/* line 111, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 116, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-check {
   background-position: -144px -72px;
 }
 
-/* line 112, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 117, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-move {
   background-position: -168px -72px;
 }
 
-/* line 113, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 118, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-step-backward {
   background-position: -192px -72px;
 }
 
-/* line 114, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 119, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-fast-backward {
   background-position: -216px -72px;
 }
 
-/* line 115, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-backward {
   background-position: -240px -72px;
 }
 
-/* line 116, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 121, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-play {
   background-position: -264px -72px;
 }
 
-/* line 117, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 122, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-pause {
   background-position: -288px -72px;
 }
 
-/* line 118, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 123, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-stop {
   background-position: -312px -72px;
 }
 
-/* line 119, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 124, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-forward {
   background-position: -336px -72px;
 }
 
-/* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 125, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-fast-forward {
   background-position: -360px -72px;
 }
 
-/* line 121, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 126, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-step-forward {
   background-position: -384px -72px;
 }
 
-/* line 122, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 127, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-eject {
   background-position: -408px -72px;
 }
 
-/* line 123, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 128, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-chevron-left {
   background-position: -432px -72px;
 }
 
-/* line 124, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-chevron-right {
   background-position: -456px -72px;
 }
 
-/* line 126, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 131, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-plus-sign {
   background-position: 0 -96px;
 }
 
-/* line 127, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 132, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-minus-sign {
   background-position: -24px -96px;
 }
 
-/* line 128, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 133, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-remove-sign {
   background-position: -48px -96px;
 }
 
-/* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 134, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-ok-sign {
   background-position: -72px -96px;
 }
 
-/* line 130, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 135, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-question-sign {
   background-position: -96px -96px;
 }
 
-/* line 131, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 136, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-info-sign {
   background-position: -120px -96px;
 }
 
-/* line 132, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 137, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-screenshot {
   background-position: -144px -96px;
 }
 
-/* line 133, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 138, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-remove-circle {
   background-position: -168px -96px;
 }
 
-/* line 134, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-ok-circle {
   background-position: -192px -96px;
 }
 
-/* line 135, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 140, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-ban-circle {
   background-position: -216px -96px;
 }
 
-/* line 136, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 141, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-arrow-left {
   background-position: -240px -96px;
 }
 
-/* line 137, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 142, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-arrow-right {
   background-position: -264px -96px;
 }
 
-/* line 138, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 143, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-arrow-up {
   background-position: -289px -96px;
 }
 
-/* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-arrow-down {
   background-position: -312px -96px;
 }
 
-/* line 140, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 145, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-share-alt {
   background-position: -336px -96px;
 }
 
-/* line 141, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 146, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-resize-full {
   background-position: -360px -96px;
 }
 
-/* line 142, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 147, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-resize-small {
   background-position: -384px -96px;
 }
 
-/* line 143, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 148, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-plus {
   background-position: -408px -96px;
 }
 
-/* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 149, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-minus {
   background-position: -433px -96px;
 }
 
-/* line 145, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 150, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-asterisk {
   background-position: -456px -96px;
 }
 
-/* line 147, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-exclamation-sign {
   background-position: 0 -120px;
 }
 
-/* line 148, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 153, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-gift {
   background-position: -24px -120px;
 }
 
-/* line 149, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 154, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-leaf {
   background-position: -48px -120px;
 }
 
-/* line 150, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 155, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-fire {
   background-position: -72px -120px;
 }
 
-/* line 151, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 156, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-eye-open {
   background-position: -96px -120px;
 }
 
-/* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 157, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-eye-close {
   background-position: -120px -120px;
 }
 
-/* line 153, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-warning-sign {
   background-position: -144px -120px;
 }
 
-/* line 154, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 159, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-plane {
   background-position: -168px -120px;
 }
 
-/* line 155, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 160, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-calendar {
   background-position: -192px -120px;
 }
 
-/* line 156, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 161, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-random {
   background-position: -216px -120px;
   width: 16px;
 }
 
-/* line 157, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 162, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-comment {
   background-position: -240px -120px;
 }
 
-/* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-magnet {
   background-position: -264px -120px;
 }
 
-/* line 159, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 164, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-chevron-up {
   background-position: -288px -120px;
 }
 
-/* line 160, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 165, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-chevron-down {
   background-position: -313px -119px;
 }
 
-/* line 161, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 166, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-retweet {
   background-position: -336px -120px;
 }
 
-/* line 162, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 167, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-shopping-cart {
   background-position: -360px -120px;
 }
 
-/* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 168, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-folder-close {
   background-position: -384px -120px;
 }
 
-/* line 164, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 169, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-folder-open {
   background-position: -408px -120px;
   width: 16px;
 }
 
-/* line 165, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 170, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-resize-vertical {
   background-position: -432px -119px;
 }
 
-/* line 166, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 171, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-resize-horizontal {
   background-position: -456px -118px;
 }
 
-/* line 168, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 173, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-hdd {
   background-position: 0 -144px;
 }
 
-/* line 169, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 174, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-bullhorn {
   background-position: -24px -144px;
 }
 
-/* line 170, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 175, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-bell {
   background-position: -48px -144px;
 }
 
-/* line 171, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-certificate {
   background-position: -72px -144px;
 }
 
-/* line 172, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 177, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-thumbs-up {
   background-position: -96px -144px;
 }
 
-/* line 173, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 178, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-thumbs-down {
   background-position: -120px -144px;
 }
 
-/* line 174, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 179, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-hand-right {
   background-position: -144px -144px;
 }
 
-/* line 175, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 180, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-hand-left {
   background-position: -168px -144px;
 }
 
-/* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 181, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-hand-up {
   background-position: -192px -144px;
 }
 
-/* line 177, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 182, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-hand-down {
   background-position: -216px -144px;
 }
 
-/* line 178, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-circle-arrow-right {
   background-position: -240px -144px;
 }
 
-/* line 179, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-circle-arrow-left {
   background-position: -264px -144px;
 }
 
-/* line 180, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 185, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-circle-arrow-up {
   background-position: -288px -144px;
 }
 
-/* line 181, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-circle-arrow-down {
   background-position: -312px -144px;
 }
 
-/* line 182, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-globe {
   background-position: -336px -144px;
 }
 
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 188, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-wrench {
   background-position: -360px -144px;
 }
 
-/* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 189, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-tasks {
   background-position: -384px -144px;
 }
 
-/* line 185, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 190, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-filter {
   background-position: -408px -144px;
 }
 
-/* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 191, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-briefcase {
   background-position: -432px -144px;
 }
 
-/* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+/* line 192, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-fullscreen {
   background-position: -456px -144px;
+}
+
+/*afegits per a GW*/
+/* line 197, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-upc {
+  background-position: 0 -169px;
+}
+
+/* line 198, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-news {
+  background-position: -23px -169px;
+}
+
+/* line 199, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-box {
+  background-position: -48px -168px;
+}
+
+/* line 200, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-link {
+  background-position: -72px -169px;
+}
+
+/* line 201, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-iframe {
+  background-position: -96px -169px;
+}
+
+/* line 202, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-desktop {
+  background-position: -120px -169px;
+}
+
+/* line 203, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-logosfooter {
+  background-position: -144px -169px;
+}
+
+/* line 204, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-file {
+  background-position: -168px -169px;
+}
+
+/* line 205, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-paste {
+  background-position: -192px -168px;
+}
+
+/* line 206, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-collage {
+  background-position: -216px -169px;
+}
+
+/* line 207, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-smart-folder {
+  background-position: -240px -169px;
+}
+
+/* line 208, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-copy {
+  background-position: -264px -169px;
+}
+
+/* line 209, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-rename {
+  background-position: -288px -169px;
+}
+
+/* line 210, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-resume-view {
+  background-position: -312px -169px;
+}
+
+/* line 211, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-table-view {
+  background-position: -336px -169px;
+}
+
+/* line 212, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-list-view {
+  background-position: -360px -169px;
+}
+
+/* line 213, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-list-extended-view {
+  background-position: -384px -169px;
+}
+
+/* line 214, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-article-view {
+  background-position: -408px -169px;
+}
+
+/* line 215, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-article-extended-view {
+  background-position: -432px -169px;
+}
+
+/* line 216, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-cut {
+  background-position: -456px -169px;
+}
+
+/* line 218, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-upload {
+  background-position: 0 -192px;
+}
+
+/* line 219, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-rss {
+  background-position: -24px -192px;
+}
+
+/* line 220, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-poll {
+  background-position: -48px -192px;
+}
+
+/* line 221, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-collection {
+  background-position: -72px -192px;
+}
+
+/* line 222, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-caching {
+  background-position: -96px -192px;
+}
+
+/* line 223, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-html {
+  background-position: -120px -192px;
+}
+
+/* line 224, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-language {
+  background-position: -144px -192px;
+}
+
+/* line 225, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-site {
+  background-position: -168px -192px;
+}
+
+/* line 226, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-edit-image {
+  background-position: -192px -192px;
+}
+
+/* line 227, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-navigation {
+  background-position: -216px -192px;
+}
+
+/* line 228, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-content-view {
+  background-position: -240px -192px;
+}
+
+/* line 229, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-genweb {
+  background-position: -264px -192px;
+}
+
+/* line 230, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-captcha {
+  background-position: -288px -192px;
+}
+
+/* line 231, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-users {
+  background-position: -312px -192px;
+}
+
+/* line 232, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-user-news {
+  background-position: -336px -192px;
+}
+
+/* line 233, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-doc {
+  background-position: -360px -192px;
+}
+
+/* line 234, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-xls {
+  background-position: -384px -192px;
+}
+
+/* line 235, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-ppt {
+  background-position: -408px -192px;
+}
+
+/* line 236, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-pdf {
+  background-position: -432px -192px;
+}
+
+/* line 237, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.icon-translate {
+  background-position: -456px -192px;
+}
+
+/* line 241, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.large-icon {
+  background-image: url('/++genweb++static/images/gh-150.png?1352979608');
+  width: 21px;
+  height: 21px;
+  margin-top: -1px;
+  margin-right: -5px;
+}
+/* line 248, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.large-icon.icon-news {
+  background-position: -37px -252px;
+}
+/* line 249, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.large-icon.icon-link {
+  background-position: -108px -252px;
+}
+/* line 250, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.large-icon.icon-upc {
+  background-position: 0 -252px;
+}
+/* line 251, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.large-icon.icon-poll {
+  background-position: -73px -288px;
+}
+/* line 252, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.large-icon.icon-calendar {
+  background-position: -287px -180px;
+}
+/* line 253, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.large-icon.icon-user-news {
+  background-position: -504px -252px;
+}
+
+/* line 257, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
+.large-icon.icon-white {
+  background-image: url('/++genweb++static/images/gh-150-w.png?1352981936');
 }
 
 /* line 8, ../bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
@@ -3010,8 +3243,7 @@ table .span24 {
   background-color: white;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  *border-right-width: 2px;
-  *border-bottom-width: 2px;
+  *border-bottom: 2px inset #ccc;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -4537,7 +4769,7 @@ input[type="submit"].btn::-moz-focus-inner {
 /* line 10, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
 .navbar {
   overflow: visible;
-  margin-bottom: 6px;
+  margin-bottom: 0;
   color: #666666;
   *position: relative;
   *z-index: 2;
@@ -5125,7 +5357,7 @@ input[type="submit"].btn::-moz-focus-inner {
 /* line 5, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
 .breadcrumb {
   padding: 0;
-  margin: 0 0 18px;
+  margin: 6px 0 0;
   list-style: none;
   font-size: 84.6153846%;
 }
@@ -5959,16 +6191,19 @@ a.label:hover, a.badge:hover {
   -moz-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 
-/* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
+/* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
 .progress .bar + .bar {
   -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* line 73, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
+/* line 74, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
 .progress-striped .bar {
   background-color: #149bdf;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
@@ -5982,7 +6217,7 @@ a.label:hover, a.badge:hover {
   background-size: 40px 40px;
 }
 
-/* line 79, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
+/* line 80, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
 .progress.active .bar {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   -moz-animation: progress-bar-stripes 2s linear infinite;
@@ -5991,7 +6226,7 @@ a.label:hover, a.badge:hover {
   animation: progress-bar-stripes 2s linear infinite;
 }
 
-/* line 93, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
+/* line 94, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
 .progress-danger .bar, .progress .bar-danger {
   background-color: #de514c;
   background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
@@ -6003,7 +6238,7 @@ a.label:hover, a.badge:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee5a56', endColorstr='#c03b34', GradientType=0);
 }
 
-/* line 96, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
+/* line 97, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
 .progress-danger.progress-striped .bar, .progress-striped .bar-danger {
   background-color: #ee5f5b;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
@@ -6013,7 +6248,7 @@ a.label:hover, a.badge:hover {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 101, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
+/* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
 .progress-success .bar, .progress .bar-success {
   background-color: #5db95d;
   background-image: -moz-linear-gradient(top, #62c462, #57a957);
@@ -6025,7 +6260,7 @@ a.label:hover, a.badge:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5ec35e', endColorstr='#55a655', GradientType=0);
 }
 
-/* line 104, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
+/* line 105, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
 .progress-success.progress-striped .bar, .progress-striped .bar-success {
   background-color: #62c462;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
@@ -6035,7 +6270,7 @@ a.label:hover, a.badge:hover {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 109, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
+/* line 110, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
 .progress-info .bar, .progress .bar-info {
   background-color: #4cb2d0;
   background-image: -moz-linear-gradient(top, #5bc0de, #339bb9);
@@ -6047,7 +6282,7 @@ a.label:hover, a.badge:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#57bedd', endColorstr='#3298b5', GradientType=0);
 }
 
-/* line 112, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
+/* line 113, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
 .progress-info.progress-striped .bar, .progress-striped .bar-info {
   background-color: #5bc0de;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
@@ -6057,7 +6292,7 @@ a.label:hover, a.badge:hover {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 117, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
+/* line 118, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
 .progress-warning .bar, .progress .bar-warning {
   background-color: #f9a834;
   background-image: -moz-linear-gradient(top, #fbb450, #f89406);
@@ -6069,7 +6304,7 @@ a.label:hover, a.badge:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb24b', endColorstr='#f39106', GradientType=0);
 }
 
-/* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
+/* line 121, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
 .progress-warning.progress-striped .bar, .progress-striped .bar-warning {
   background-color: #fbb450;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
@@ -6118,18 +6353,25 @@ a.label:hover, a.badge:hover {
 /* line 6, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel {
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 36px;
   line-height: 1;
 }
 
-/* line 12, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 13, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel-inner {
   overflow: hidden;
-  width: 100%;
   position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #b2b2b2;
+  border-bottom: 1px solid #8c8c8c;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 20, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel .item {
   display: none;
   position: relative;
@@ -6138,51 +6380,57 @@ a.label:hover, a.badge:hover {
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
-/* line 27, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 32, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel .item > img {
   display: block;
   line-height: 1;
 }
-/* line 34, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+.carousel .active > img {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+/* line 41, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel .active,
 .carousel .next,
 .carousel .prev {
   display: block;
 }
-/* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 43, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel .active {
   left: 0;
 }
-/* line 41, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel .next,
 .carousel .prev {
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 47, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 54, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel .next {
   left: 100%;
 }
-/* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 57, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel .prev {
   left: -100%;
 }
-/* line 54, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel .next.left,
 .carousel .prev.right {
   left: 0;
 }
-/* line 58, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel .active.left {
   left: -100%;
 }
-/* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel .active.right {
   left: 100%;
 }
 
-/* line 70, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 77, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel-control {
   position: absolute;
   top: 40%;
@@ -6193,53 +6441,60 @@ a.label:hover, a.badge:hover {
   font-size: 60px;
   font-weight: 100;
   line-height: 30px;
-  color: white;
+  color: #222222;
   text-align: center;
-  background: #222222;
-  border: 3px solid white;
-  -webkit-border-radius: 23px;
-  -moz-border-radius: 23px;
-  border-radius: 23px;
+  background: white;
+  border: 3px solid #333333;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-/* line 95, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel-control.right {
   left: auto;
   right: 15px;
 }
-/* line 101, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 108, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel-control:hover {
-  color: white;
+  color: #222222;
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
 
-/* line 112, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 119, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel-caption {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   padding: 15px;
-  background: #333333;
-  background: rgba(0, 0, 0, 0.75);
+  background: white;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  border-top: 1px solid #b2b2b2;
+  -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5) inset;
+  -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5) inset;
 }
 
-/* line 122, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 132, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel-caption h4,
 .carousel-caption p {
-  color: white;
+  color: #333333;
   line-height: 18px;
 }
 
-/* line 126, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 136, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel-caption h4 {
   margin: 0 0 5px;
 }
 
-/* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
+/* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel-caption p {
   margin-bottom: 0;
 }
@@ -6286,7 +6541,14 @@ a.label:hover, a.badge:hover {
 
 /* line 19, ../bootstrap/scss/compass_twitter_bootstrap/_utilities.scss */
 .hide, .goout {
-  display: none;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px !important;
+  overflow: hidden;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px;
 }
 
 /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_utilities.scss */
@@ -6369,116 +6631,179 @@ a.label:hover, a.badge:hover {
   display: none !important;
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
-  /* line 26, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+@media only screen and (max-device-width: 864px) and (orientation: portrait), only screen and (max-device-width: 640px) and (orientation: landscape), only screen and (max-device-width: 1728px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-device-width: 1280px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* line 29, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
   .hidden-desktop {
     display: inherit !important;
   }
 
-  /* line 27, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
   .visible-desktop {
     display: none !important;
   }
 
-  /* line 29, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  /* line 32, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
   .visible-tablet {
     display: inherit !important;
   }
 
-  /* line 31, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  /* line 34, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
   .hidden-tablet {
     display: none !important;
   }
 }
-@media (max-width: 767px) {
-  /* line 37, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
   .hidden-desktop {
     display: inherit !important;
   }
 
-  /* line 38, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  /* line 43, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
   .visible-desktop {
     display: none !important;
   }
 
-  /* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  /* line 45, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
   .visible-phone {
     display: inherit !important;
   }
 
-  /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  /* line 47, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
   .hidden-phone {
     display: none !important;
   }
 }
-@media (max-width: 767px) {
-  /* line 10, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+@media only screen and (max-device-width: 864px) and (orientation: portrait), only screen and (max-device-width: 640px) and (orientation: landscape), only screen and (max-device-width: 1728px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-device-width: 1280px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+ /*
   body {
     padding-left: 10px;
     padding-right: 10px;
   }
-
-  /* line 17, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #portal-header .container,
-  #bandaLogos .container,
-  #peu .container {
-    padding-left: 10px;
-    padding-right: 10px;
+*/
+  /* line 38, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  body {
+    font-size: 14.5px !important;
+    padding: 0 10px !important;
   }
 
-  /* line 21, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 39, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .container {
+    width: 100% !important;
+  }
+
+  /* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+    padding: 0 0 5px !important;
+  }
+
+  /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header,
+  #bandaLogos,
+  #peu {
+    padding: 0 10px !important;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+  }
+
+  /* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #canvia-vista {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+  }
+
+  /*
   #portal-header, #bandaLogos, #peu {
-    margin-left: -10px;
-    margin-right: -10px;
+    @include box-sizing(content-box);
+  }
+  */
+  /* line 63, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  nav#portal-personaltools-wrapper {
+    margin-top: 0px !important;
   }
 
-  /* line 29, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 64, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .navbar .btn-navbar {
+    margin-right: 10px !important;
+  }
+
+  /* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .navbar .btn-navbar i {
+    background-image: url('/++genweb++static/images/gh-w.png?1353063332');
+  }
+
+  /* line 67, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .navbar-fixed-top {
+    margin-bottom: 0 !important;
+  }
+
+  /* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-column-one, #portal-column-content {
+    width: 100% !important;
+    margin-left: 0;
+  }
+
+  /* line 71, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  table {
+    display: block;
+    width: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+
+  /* line 82, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     margin-left: -10px;
     margin-right: -10px;
   }
 
-  /* line 34, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 87, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container-fluid {
     padding: 0;
   }
 
-  /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 95, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dt {
     float: none;
     clear: none;
     width: auto;
     text-align: left;
   }
-  /* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 101, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dd {
     margin-left: 0;
   }
 
-  /* line 56, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 109, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container {
     width: auto;
   }
 
-  /* line 60, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 113, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row-fluid {
     width: 100%;
   }
 
-  /* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 118, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row,
   .thumbnails {
     margin-left: 0;
   }
 
-  /* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 121, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .thumbnails > li {
     float: none;
     margin-left: 0;
   }
 
-  /* line 74, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 127, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   [class*="span"],
   .row-fluid [class*="span"] {
     float: none;
@@ -6487,7 +6812,7 @@ a.label:hover, a.badge:hover {
     margin-left: 0;
   }
 
-  /* line 81, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 134, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .span12,
   .row-fluid .span12 {
     width: 100%;
@@ -6496,7 +6821,7 @@ a.label:hover, a.badge:hover {
     box-sizing: border-box;
   }
 
-  /* line 95, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 148, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .input-large,
   .input-xlarge,
   .input-xxlarge,
@@ -6512,7 +6837,7 @@ a.label:hover, a.badge:hover {
     box-sizing: border-box;
   }
 
-  /* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 155, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .input-prepend input,
   .input-append input,
   .input-prepend input[class*="span"],
@@ -6521,7 +6846,7 @@ a.label:hover, a.badge:hover {
     width: auto;
   }
 
-  /* line 108, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 161, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal {
     position: fixed;
     top: 20px;
@@ -6530,36 +6855,282 @@ a.label:hover, a.badge:hover {
     width: auto;
     margin: 0;
   }
-  /* line 115, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 168, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal.fade.in {
     top: auto;
   }
 }
-@media (max-width: 480px) {
-  /* estils meus */
-  /* line 128, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* estils meus **********************************/
+  /* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   body {
-    font-size: 16px;
+    font-size: 14.5px;
   }
 
-  /* line 135, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  body nav#portal-personaltools-wrapper {
+    margin-top: 0 !important;
+  }
+
+  /* line 188, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .navbar-fixed-top {
+    margin-bottom: 0 !important;
+  }
+
+  /* line 189, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .titol-espai:before {
+    position: absolute;
+    border-top: 1px solid #ccc;
+  }
+
+  /* line 190, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .titol-espai h1 {
+    font-size: 138.461538%;
+    line-height: 24px;
+    margin-top: 5px !important;
+  }
+
+  /* line 191, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .titol-espai h1 a {
+    display: block;
+  }
+
+  /* line 193, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header {
+    background: #f7f7f7 !important;
+  }
+
+  /* line 194, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #eines {
+    font-size: 75% !important;
+  }
+
+  /*ajustar eines mòbils*/
+  /* line 197, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .nav-collapse .nav > li > a, .nav-collapse .formTabs > li > a, .nav-collapse .dropdown-menu a {
+    color: #666666 !important;
+  }
+  /* line 199, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .nav-collapse .nav > li > a:active, .nav-collapse .formTabs > li > a:active, .nav-collapse .nav > li > a:hover, .nav-collapse .formTabs > li > a:hover, .nav-collapse .dropdown-menu a:active, .nav-collapse .dropdown-menu a:hover {
+    color: white !important;
+  }
+
+  /* line 203, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .dropdown-toggle {
+    display: none !important;
+  }
+
+  /* line 204, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #eines .adjust-langs {
+    margin: 0 !important;
+  }
+
+  /* line 210, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper {
+    height: 0;
+  }
+
+  /* line 211, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .btn-navbar {
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    margin-right: 55px !important;
+    margin-top: 18px;
+  }
+
+  /* line 213, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .nav-collapse-edit {
+    top: 52px !important;
+    right: 56px !important;
+    background: #222222 !important;
+    color: white !important;
+    position: absolute !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 99999 !important;
+  }
+
+  /* line 222, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .nav-collapse-edit a {
+    color: white !important;
+  }
+
+  /* line 223, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .nav-collapse-edit a i {
+    background-image: url('/++genweb++static/images/gh-w.png?1353063332');
+  }
+
+  /* line 224, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .navbar-inverse .nav-collapse .nav > li > a.btn-danger:hover, .navbar-inverse .nav-collapse .formTabs > li > a.btn-danger:hover, .navbar-inverse .nav-collapse .dropdown-menu a.btn-danger:hover {
+    background-color: #a62e1f !important;
+  }
+
+  /* line 227, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .dropdown-menu {
+    margin: 0 !important;
+  }
+
+  /* line 228, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .nav.pull-right, #portal-personaltools-wrapper .pull-right.formTabs {
+    display: none;
+  }
+
+  /* line 230, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header h1.pull-left {
+    margin-bottom: 7px !important;
+  }
+
+  /* line 231, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header h1.pull-left img {
+    margin-top: -3px;
+    height: 46px;
+  }
+
+  /* line 232, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header .container > div.clearfix {
+    margin: 0 !important;
+  }
+
+  /* line 233, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header .container > div:first-child {
+    margin: 0 -10px !important;
+    padding: 0 10px;
+    background: #eee;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  /* line 234, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header .btn-navbar.pull-right {
+    margin-top: 13px;
+    margin-right: 0 !important;
+    padding: 7px 10px;
+  }
+
+  /* line 236, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .nav-collapse-eines {
+    height: auto;
+    width: 220px;
+    background: white;
+    float: right;
+    top: 0;
+    margin-top: 0;
+    height: auto;
+    float: right;
+    position: absolute !important;
+    top: 52px;
+    right: 10px;
+    z-index: 999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  }
+
+  /* line 253, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .nav-collapse-eines #eines {
+    margin: 0 !important;
+  }
+
+  /* line 256, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #eines .input-append {
+    border-left: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: center;
+  }
+  /* line 261, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #eines .input-append input {
+    min-height: 28px;
+  }
+
+  /* line 266, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #eines > li > a {
+    padding: 9px 15px !important;
+  }
+
+  /* line 268, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .header-image {
+    background-size: 100%;
+    height: 40px !important;
+  }
+
+  /* line 269, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .header-image.l2-image {
+    height: 30px !important;
+    margin-left: 74px !important;
+  }
+  /* line 272, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .header-image.l2-image:before {
+    top: 25px;
+    width: 46px;
+    margin-left: -74px;
+  }
+
+  /* line 279, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-globalnav h2.brand {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+  /* line 284, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-breadcrumbs {
+    display: none;
+  }
+
+  /* line 285, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #content .span3, #edit-bar, .alert {
+    display: none;
+  }
+
+  /* peu i prepeu */
+  /* line 288, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .llistatLogos {
+    margin: 1em auto !important;
+  }
+
+  /* line 289, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #peu {
+    font-size: 84.613846% !important;
+  }
+
+  /* line 290, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #peu .container {
+    padding-top: 5px;
+  }
+
+  /* line 291, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #peu .span4 {
+    display: none;
+  }
+
+  /* line 292, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .img_blank {
+    margin-top: -1px;
+  }
+
+  /* line 299, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
 
-  /* line 140, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 304, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .page-header h1 small {
     display: block;
     line-height: 18px;
   }
 
-  /* line 147, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 311, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   input[type="checkbox"],
   input[type="radio"] {
     border: 1px solid #ccc;
   }
 
-  /* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 316, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-group > label {
     float: none;
     width: auto;
@@ -6567,41 +7138,41 @@ a.label:hover, a.badge:hover {
     text-align: left;
   }
 
-  /* line 159, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 323, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .controls {
     margin-left: 0;
   }
 
-  /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 327, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-list {
     padding-top: 0;
   }
 
-  /* line 167, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 331, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .form-actions {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  /* line 173, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 337, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal {
     top: 10px;
     left: 10px;
     right: 10px;
   }
 
-  /* line 178, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 342, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-header .close {
     padding: 10px;
     margin: -10px;
   }
 
-  /* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 348, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .carousel-caption {
     position: static;
   }
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 799px) and (orientation: portrait) {
   /* line 552, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row {
     margin-left: -30px;
@@ -6622,9 +7193,10 @@ a.label:hover, a.badge:hover {
   [class*="span"] {
     float: left;
     margin-left: 30px;
+    margin-bottom: 18px;
   }
 
-  /* line 566, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 567, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .container,
   .navbar-static-top .container,
   .navbar-fixed-top .container,
@@ -6632,127 +7204,127 @@ a.label:hover, a.badge:hover {
     width: 978px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span12 {
     width: 978px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span11 {
     width: 894px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span10 {
     width: 810px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span9 {
     width: 726px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span8 {
     width: 642px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span7 {
     width: 558px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span6 {
     width: 474px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span5 {
     width: 390px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span4 {
     width: 306px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span3 {
     width: 222px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span2 {
     width: 138px;
   }
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span1 {
     width: 54px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset12 {
     margin-left: 1038px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset11 {
     margin-left: 954px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset10 {
     margin-left: 870px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset9 {
     margin-left: 786px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset8 {
     margin-left: 702px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset7 {
     margin-left: 618px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset6 {
     margin-left: 534px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset5 {
     margin-left: 450px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset4 {
     margin-left: 366px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset3 {
     margin-left: 282px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset2 {
     margin-left: 198px;
   }
 
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset1 {
     margin-left: 114px;
   }
 
-  /* line 600, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 601, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid {
     width: 100%;
     *zoom: 1;
@@ -6767,7 +7339,7 @@ a.label:hover, a.badge:hover {
   .row-fluid:after {
     clear: both;
   }
-  /* line 603, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 604, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid [class*="span"] {
     display: block;
     width: 100%;
@@ -6779,880 +7351,409 @@ a.label:hover, a.badge:hover {
     margin-left: 3.06748%;
     *margin-left: 3.01636%;
   }
-  /* line 609, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 610, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid [class*="span"]:first-child {
     margin-left: 0;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span12 {
     width: 100%;
     *width: 99.94888%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset12 {
     margin-left: 106.13497%;
     *margin-left: 106.03272%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset12:first-child {
     margin-left: 103.06748%;
     *margin-left: 102.96524%;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span11 {
     width: 91.41104%;
     *width: 91.35992%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset11 {
     margin-left: 97.54601%;
     *margin-left: 97.44376%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset11:first-child {
     margin-left: 94.47853%;
     *margin-left: 94.37628%;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span10 {
     width: 82.82209%;
     *width: 82.77096%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset10 {
     margin-left: 88.95706%;
     *margin-left: 88.85481%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset10:first-child {
     margin-left: 85.88957%;
     *margin-left: 85.78732%;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span9 {
     width: 74.23313%;
     *width: 74.182%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset9 {
     margin-left: 80.3681%;
     *margin-left: 80.26585%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset9:first-child {
     margin-left: 77.30061%;
     *margin-left: 77.19836%;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span8 {
     width: 65.64417%;
     *width: 65.59305%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset8 {
     margin-left: 71.77914%;
     *margin-left: 71.67689%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset8:first-child {
     margin-left: 68.71166%;
     *margin-left: 68.60941%;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span7 {
     width: 57.05521%;
     *width: 57.00409%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset7 {
     margin-left: 63.19018%;
     *margin-left: 63.08793%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset7:first-child {
     margin-left: 60.1227%;
     *margin-left: 60.02045%;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span6 {
     width: 48.46626%;
     *width: 48.41513%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset6 {
     margin-left: 54.60123%;
     *margin-left: 54.49898%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset6:first-child {
     margin-left: 51.53374%;
     *margin-left: 51.43149%;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span5 {
     width: 39.8773%;
     *width: 39.82618%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset5 {
     margin-left: 46.01227%;
     *margin-left: 45.91002%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset5:first-child {
     margin-left: 42.94479%;
     *margin-left: 42.84254%;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span4 {
     width: 31.28834%;
     *width: 31.23722%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset4 {
     margin-left: 37.42331%;
     *margin-left: 37.32106%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset4:first-child {
     margin-left: 34.35583%;
     *margin-left: 34.25358%;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span3 {
     width: 22.69939%;
     *width: 22.64826%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset3 {
     margin-left: 28.83436%;
     *margin-left: 28.73211%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset3:first-child {
     margin-left: 25.76687%;
     *margin-left: 25.66462%;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span2 {
     width: 14.11043%;
     *width: 14.0593%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset2 {
     margin-left: 20.2454%;
     *margin-left: 20.14315%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset2:first-child {
     margin-left: 17.17791%;
     *margin-left: 17.07566%;
   }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .span1 {
     width: 5.52147%;
     *width: 5.47035%;
   }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset1 {
     margin-left: 11.65644%;
     *margin-left: 11.55419%;
   }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid .offset1:first-child {
     margin-left: 8.58896%;
     *margin-left: 8.48671%;
   }
 
-  /* line 637, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 638, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input,
   textarea,
   .uneditable-input {
     margin-left: 0;
   }
 
-  /* line 642, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 643, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .controls-row [class*="span"] + [class*="span"] {
     margin-left: 30px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span12,
   textarea.span12,
   .uneditable-input.span12 {
     width: 964px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span11,
   textarea.span11,
   .uneditable-input.span11 {
     width: 880px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span10,
   textarea.span10,
   .uneditable-input.span10 {
     width: 796px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span9,
   textarea.span9,
   .uneditable-input.span9 {
     width: 712px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span8,
   textarea.span8,
   .uneditable-input.span8 {
     width: 628px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span7,
   textarea.span7,
   .uneditable-input.span7 {
     width: 544px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span6,
   textarea.span6,
   .uneditable-input.span6 {
     width: 460px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span5,
   textarea.span5,
   .uneditable-input.span5 {
     width: 376px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span4,
   textarea.span4,
   .uneditable-input.span4 {
     width: 292px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span3,
   textarea.span3,
   .uneditable-input.span3 {
     width: 208px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span2,
   textarea.span2,
   .uneditable-input.span2 {
     width: 124px;
   }
 
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span1,
   textarea.span1,
   .uneditable-input.span1 {
     width: 40px;
-  }
-
-  /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
-  body {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    font-size: 14.5px !important;
-  }
-
-  /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
-  #portal-header .container,
-  #bandaLogos .container,
-  #peu .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  /* line 34, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
-  #portal-header, #bandaLogos, #peu {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-
-  /* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
-  #portal-header, #peu {
-    width: 100% !important;
-    display: block;
   }
 }
+/* No es fa servir
+
 @media (min-width: 1200px) {
-  /* line 552, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row {
-    margin-left: -30px;
-    *zoom: 1;
-  }
-  /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row:before, .row:after {
-    display: table;
-    content: "";
-    line-height: 0;
-  }
-  /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row:after {
-    clear: both;
-  }
 
-  /* line 557, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  [class*="span"] {
-    float: left;
-    margin-left: 30px;
-  }
+  // Fixed grid
+  @include grid-core($gridColumnWidth1200, $gridGutterWidth1200);
 
-  /* line 566, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .container,
-  .navbar-static-top .container,
-  .navbar-fixed-top .container,
-  .navbar-fixed-bottom .container {
-    width: 978px;
-  }
+  // Fluid grid
+  @include grid-fluid($fluidGridColumnWidth1200, $fluidGridGutterWidth1200);
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span12 {
-    width: 978px;
-  }
+  // Input grid
+  @include grid-input($gridColumnWidth1200, $gridGutterWidth1200);
 
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span11 {
-    width: 894px;
-  }
-
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span10 {
-    width: 810px;
-  }
-
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span9 {
-    width: 726px;
-  }
-
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span8 {
-    width: 642px;
-  }
-
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span7 {
-    width: 558px;
-  }
-
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span6 {
-    width: 474px;
-  }
-
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span5 {
-    width: 390px;
-  }
-
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span4 {
-    width: 306px;
-  }
-
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span3 {
-    width: 222px;
-  }
-
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span2 {
-    width: 138px;
-  }
-
-  /* line 573, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span1 {
-    width: 54px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset12 {
-    margin-left: 1038px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset11 {
-    margin-left: 954px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset10 {
-    margin-left: 870px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset9 {
-    margin-left: 786px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset8 {
-    margin-left: 702px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset7 {
-    margin-left: 618px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset6 {
-    margin-left: 534px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset5 {
-    margin-left: 450px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset4 {
-    margin-left: 366px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset3 {
-    margin-left: 282px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset2 {
-    margin-left: 198px;
-  }
-
-  /* line 579, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .offset1 {
-    margin-left: 114px;
-  }
-
-  /* line 600, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid {
-    width: 100%;
-    *zoom: 1;
-  }
-  /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid:before, .row-fluid:after {
-    display: table;
-    content: "";
-    line-height: 0;
-  }
-  /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid:after {
-    clear: both;
-  }
-  /* line 603, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid [class*="span"] {
-    display: block;
-    width: 100%;
-    min-height: 30px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    margin-left: 3.06748%;
-    *margin-left: 3.01636%;
-  }
-  /* line 609, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid [class*="span"]:first-child {
-    margin-left: 0;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span12 {
-    width: 100%;
-    *width: 99.94888%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset12 {
-    margin-left: 106.13497%;
-    *margin-left: 106.03272%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset12:first-child {
-    margin-left: 103.06748%;
-    *margin-left: 102.96524%;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span11 {
-    width: 91.41104%;
-    *width: 91.35992%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset11 {
-    margin-left: 97.54601%;
-    *margin-left: 97.44376%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset11:first-child {
-    margin-left: 94.47853%;
-    *margin-left: 94.37628%;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span10 {
-    width: 82.82209%;
-    *width: 82.77096%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset10 {
-    margin-left: 88.95706%;
-    *margin-left: 88.85481%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset10:first-child {
-    margin-left: 85.88957%;
-    *margin-left: 85.78732%;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span9 {
-    width: 74.23313%;
-    *width: 74.182%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset9 {
-    margin-left: 80.3681%;
-    *margin-left: 80.26585%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset9:first-child {
-    margin-left: 77.30061%;
-    *margin-left: 77.19836%;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span8 {
-    width: 65.64417%;
-    *width: 65.59305%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset8 {
-    margin-left: 71.77914%;
-    *margin-left: 71.67689%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset8:first-child {
-    margin-left: 68.71166%;
-    *margin-left: 68.60941%;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span7 {
-    width: 57.05521%;
-    *width: 57.00409%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset7 {
-    margin-left: 63.19018%;
-    *margin-left: 63.08793%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset7:first-child {
-    margin-left: 60.1227%;
-    *margin-left: 60.02045%;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span6 {
-    width: 48.46626%;
-    *width: 48.41513%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset6 {
-    margin-left: 54.60123%;
-    *margin-left: 54.49898%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset6:first-child {
-    margin-left: 51.53374%;
-    *margin-left: 51.43149%;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span5 {
-    width: 39.8773%;
-    *width: 39.82618%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset5 {
-    margin-left: 46.01227%;
-    *margin-left: 45.91002%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset5:first-child {
-    margin-left: 42.94479%;
-    *margin-left: 42.84254%;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span4 {
-    width: 31.28834%;
-    *width: 31.23722%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset4 {
-    margin-left: 37.42331%;
-    *margin-left: 37.32106%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset4:first-child {
-    margin-left: 34.35583%;
-    *margin-left: 34.25358%;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span3 {
-    width: 22.69939%;
-    *width: 22.64826%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset3 {
-    margin-left: 28.83436%;
-    *margin-left: 28.73211%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset3:first-child {
-    margin-left: 25.76687%;
-    *margin-left: 25.66462%;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span2 {
-    width: 14.11043%;
-    *width: 14.0593%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset2 {
-    margin-left: 20.2454%;
-    *margin-left: 20.14315%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset2:first-child {
-    margin-left: 17.17791%;
-    *margin-left: 17.07566%;
-  }
-  /* line 616, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span1 {
-    width: 5.52147%;
-    *width: 5.47035%;
-  }
-  /* line 619, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset1 {
-    margin-left: 11.65644%;
-    *margin-left: 11.55419%;
-  }
-  /* line 622, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset1:first-child {
-    margin-left: 8.58896%;
-    *margin-left: 8.48671%;
-  }
-
-  /* line 637, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input,
-  textarea,
-  .uneditable-input {
-    margin-left: 0;
-  }
-
-  /* line 642, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .controls-row [class*="span"] + [class*="span"] {
-    margin-left: 30px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span12,
-  textarea.span12,
-  .uneditable-input.span12 {
-    width: 964px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span11,
-  textarea.span11,
-  .uneditable-input.span11 {
-    width: 880px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span10,
-  textarea.span10,
-  .uneditable-input.span10 {
-    width: 796px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span9,
-  textarea.span9,
-  .uneditable-input.span9 {
-    width: 712px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span8,
-  textarea.span8,
-  .uneditable-input.span8 {
-    width: 628px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span7,
-  textarea.span7,
-  .uneditable-input.span7 {
-    width: 544px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span6,
-  textarea.span6,
-  .uneditable-input.span6 {
-    width: 460px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span5,
-  textarea.span5,
-  .uneditable-input.span5 {
-    width: 376px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span4,
-  textarea.span4,
-  .uneditable-input.span4 {
-    width: 292px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span3,
-  textarea.span3,
-  .uneditable-input.span3 {
-    width: 208px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span2,
-  textarea.span2,
-  .uneditable-input.span2 {
-    width: 124px;
-  }
-
-  /* line 651, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span1,
-  textarea.span1,
-  .uneditable-input.span1 {
-    width: 40px;
-  }
-
-  /* line 18, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-1200px-min.scss */
+  // Thumbnails
   .thumbnails {
-    margin-left: -30px;
+    margin-left: -$gridGutterWidth1200;
   }
-
-  /* line 21, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-1200px-min.scss */
   .thumbnails > li {
-    margin-left: -30px;
+    margin-left: -$gridGutterWidth1200;
   }
-
-  /* line 24, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-1200px-min.scss */
   .row-fluid .thumbnails {
     margin-left: 0;
   }
+
 }
-@media (max-width: 767px) {
-  /* line 13, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+
+*/
+@media only screen and (max-device-width: 864px) and (orientation: portrait), only screen and (max-device-width: 640px) and (orientation: landscape), only screen and (max-device-width: 1728px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-device-width: 1280px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+  /*
+  @media only screen and (max-device-width: 599px) and (orientation: landscape) {
+  */
+  /* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   body {
     padding-top: 0;
   }
 
-  /* line 18, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     position: static;
   }
 
-  /* line 21, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 33, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top {
     margin-bottom: 18px;
   }
 
-  /* line 24, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-bottom {
     margin-top: 18px;
   }
 
-  /* line 28, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
     padding: 5px;
   }
 
-  /* line 31, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 43, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .container {
     width: auto;
     padding: 0;
   }
 
-  /* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .brand {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 0 0 -5px;
   }
 
-  /* line 45, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 57, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     margin-left: -10px;
     margin-right: -10px;
   }
 
-  /* line 55, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 67, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse {
     clear: both;
   }
 
-  /* line 59, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 71, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav, .nav-collapse .formTabs {
     float: none;
     margin: 0 0 9px;
   }
 
-  /* line 63, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 75, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li, .nav-collapse .formTabs > li {
     float: none;
   }
 
-  /* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 78, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a, .nav-collapse .formTabs > li > a {
     margin-bottom: 2px;
   }
 
-  /* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 81, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > .divider-vertical, .nav-collapse .formTabs > .divider-vertical {
     display: none;
   }
 
-  /* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 84, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav .nav-header, .nav-collapse .formTabs .nav-header {
     color: #666666;
     text-shadow: none;
   }
 
-  /* line 78, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 90, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a, .nav-collapse .formTabs > li > a,
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
     font-weight: bold;
-    color: #666666;
+    color: white;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
   }
 
-  /* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .btn {
     padding: 4px 10px 4px;
     font-weight: normal;
@@ -7661,30 +7762,30 @@ a.label:hover, a.badge:hover {
     border-radius: 4px;
   }
 
-  /* line 90, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 103, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu li + li a {
     margin-bottom: 2px;
   }
 
-  /* line 94, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 107, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a:hover, .nav-collapse .formTabs > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
     background-color: #e4e4e4;
   }
 
-  /* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 111, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .formTabs > li > a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover {
     background-color: #111111;
   }
 
-  /* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 115, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse.in .btn-group {
     margin-top: 5px;
     padding: 0;
   }
 
-  /* line 107, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu {
     position: static;
     top: auto;
@@ -7704,18 +7805,18 @@ a.label:hover, a.badge:hover {
     box-shadow: none;
   }
 
-  /* line 122, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 135, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu:before,
   .nav-collapse .dropdown-menu:after {
     display: none;
   }
 
-  /* line 125, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 138, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu .divider {
     display: none;
   }
 
-  /* line 130, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 143, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .navbar-form,
   .nav-collapse .navbar-search {
     float: none;
@@ -7728,32 +7829,32 @@ a.label:hover, a.badge:hover {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   }
 
-  /* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .nav-collapse .nav.pull-right, .navbar .nav-collapse .pull-right.formTabs {
     float: none;
     margin-left: 0;
   }
 
-  /* line 145, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse,
   .nav-collapse.collapse {
     overflow: hidden;
     height: 0;
   }
 
-  /* line 150, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .btn-navbar {
     display: block;
   }
 
-  /* line 156, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 169, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-static .navbar-inner {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-@media (min-width: 980px) {
-  /* line 171, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+@media (min-device-width: 1024px) {
+  /* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
@@ -7878,53 +7979,71 @@ a.label:hover, a.badge:hover {
 
 /* line 62, ../scss/_base.scss */
 #portal-personaltools-wrapper .nav .img_blank, #portal-personaltools-wrapper .formTabs .img_blank {
-  opacity: .7;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
 }
 
 /* line 63, ../scss/_base.scss */
 #portal-personaltools-wrapper .nav a:hover .img_blank, #portal-personaltools-wrapper .formTabs a:hover .img_blank {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
 /* line 64, ../scss/_base.scss */
 .btn-menu-adjust a {
   margin: 3px 15px !important;
-  width: 70%;
+  color: white;
 }
 
-/* line 65, ../scss/_base.scss */
+/* line 69, ../scss/_base.scss */
+.dropdown-menu li.btn-menu-adjust > a:hover,
+.dropdown-menu li.btn-menu-adjust > a:focus,
+.dropdown-submenu:hover > a {
+  text-decoration: none;
+  color: white;
+  background-color: #d13a27;
+  background-color: #c83725;
+  background-image: -moz-linear-gradient(top, #d13a27, #bb3423);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d13a27), to(#bb3423));
+  background-image: -webkit-linear-gradient(top, #d13a27, #bb3423);
+  background-image: -o-linear-gradient(top, #d13a27, #bb3423);
+  background-image: linear-gradient(to bottom, #d13a27, #bb3423);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cd3926', endColorstr='#b73322', GradientType=0);
+}
+
+/* line 75, ../scss/_base.scss */
 .btn-menu-adjust {
   text-align: center;
 }
 
 /*ajusta imatges icos en menús per a hovers */
-/* line 67, ../scss/_base.scss */
+/* line 77, ../scss/_base.scss */
 .dropdown-menu a:hover [class^="icon-"], .dropdown-menu a:hover [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/glyphicons-halflings-white.png?1342602226') !important;
+  background-image: url('/++genweb++static/images/gh-w.png?1353063332') !important;
 }
 
-/* line 75, ../scss/_base.scss */
+/* line 85, ../scss/_base.scss */
 #portal-header {
-  background: #f7f7f7;
   border-bottom: 1px solid #d7d5d2;
   border-top: 5px solid #e3e3e3;
   background: #fcfcfc;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #f7f7f7 0%, white 50%);
+  background: -moz-linear-gradient(top, #f7f7f7 0%, white 25%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(50%, white));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(25%, white));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f7f7f7 0%, white 50%);
+  background: -webkit-linear-gradient(top, #f7f7f7 0%, white 25%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #f7f7f7 0%, white 50%);
+  background: -o-linear-gradient(top, #f7f7f7 0%, white 25%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #f7f7f7 0%, white 50%);
+  background: -ms-linear-gradient(top, #f7f7f7 0%, white 25%);
   /* IE10+ */
-  background: linear-gradient(to bottom, #f7f7f7 0%, #ffffff 50%);
+  background: linear-gradient(to bottom, #f7f7f7 0%, #ffffff 25%);
   /* W3C */
 }
 
-/* line 84, ../scss/_base.scss */
+/* line 96, ../scss/_base.scss */
 #portal-header .container {
   border-top: 5px solid #e2ab17;
   margin-top: -5px;
@@ -7932,42 +8051,59 @@ a.label:hover, a.badge:hover {
   margin-bottom: -1px;
 }
 
-/* line 85, ../scss/_base.scss */
-#portal-header .container > div {
-  margin: 5px 0 0 !important;
+/* line 97, ../scss/_base.scss */
+#portal-header h1.pull-left {
+  margin-bottom: 0;
 }
 
-/* line 87, ../scss/_base.scss */
+/* line 99, ../scss/_base.scss */
+.titol-espai {
+  margin-top: 0;
+}
+
+/* line 100, ../scss/_base.scss */
 .titol-espai h1 {
   font-weight: normal;
   margin: 0;
 }
 
-/* line 88, ../scss/_base.scss */
+/* line 101, ../scss/_base.scss */
 .titol-espai a {
   color: #333;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  display: table !important;
+  min-height: 49px;
+  width: 100%;
 }
 
-/* line 89, ../scss/_base.scss */
+/* line 102, ../scss/_base.scss */
+.titol-espai a span {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px 0;
+}
+
+/* line 103, ../scss/_base.scss */
 .titol-espai a:hover {
   color: #000;
   text-decoration: none;
 }
 
-/* line 90, ../scss/_base.scss */
+/* line 104, ../scss/_base.scss */
 .logoPropi {
-  margin-top: -12px;
-  margin-bottom: 12px;
   height: 49px;
+  display: table-cell;
+  vertical-align: middle;
+  min-width: 49px;
+  padding: 5px 0;
 }
 
-/* line 92, ../scss/_base.scss */
+/* line 106, ../scss/_base.scss */
 #eines {
   margin: 15px 0 0 0;
 }
 
-/* line 93, ../scss/_base.scss */
+/* line 107, ../scss/_base.scss */
 #eines > li > a {
   border-radius: 4px;
   margin-top: 0px;
@@ -7975,19 +8111,19 @@ a.label:hover, a.badge:hover {
   padding-top: 6px;
 }
 
-/* line 99, ../scss/_base.scss */
+/* line 113, ../scss/_base.scss */
 #eines .input-append {
   border-left: 1px dotted #b2b2b2;
   margin-left: 2px;
   padding-left: 5px;
 }
 
-/* line 104, ../scss/_base.scss */
+/* line 118, ../scss/_base.scss */
 #eines .adjust-langs {
   min-width: 87px !important;
 }
 
-/* line 109, ../scss/_base.scss */
+/* line 123, ../scss/_base.scss */
 .header-image {
   background-image: url("http://www.deshow.net/d/file/cartoon/2009-05/surrealism-painting-568-6.jpg");
   margin-top: 0 !important;
@@ -8005,161 +8141,163 @@ a.label:hover, a.badge:hover {
 }
 
 /* L3 */
-/* line 119, ../scss/_base.scss */
+/* line 133, ../scss/_base.scss */
 .l3-image {
   height: 65px;
 }
 
 /* L2 */
-/* line 123, ../scss/_base.scss */
+/* line 137, ../scss/_base.scss */
 .l2-image {
   margin-left: 250px !important;
   height: 50px;
+  margin-bottom: -1px;
+  overflow: visible;
+}
+/* line 142, ../scss/_base.scss */
+.l2-image:before {
+  content: " ";
+  background: #e2ab17;
+  height: 5px;
+  margin-left: -250px;
+  position: absolute;
+  top: 45px;
+  width: 222px;
 }
 
 /* NO-IMG */
-/* line 128, ../scss/_base.scss */
+/* line 153, ../scss/_base.scss */
 .no-image .header-image {
   display: none !important;
 }
 
-/* line 131, ../scss/_base.scss */
+/* line 156, ../scss/_base.scss */
 #portal-header.no-image .container {
   padding-bottom: 20px;
 }
 
-/* line 132, ../scss/_base.scss */
+/* line 157, ../scss/_base.scss */
 #portal-header.no-image + #portal-globalnav .navbar-inner {
   margin-top: -20px;
 }
 
-/* line 133, ../scss/_base.scss */
+/* line 158, ../scss/_base.scss */
 #portal-header:not(.no-image) + #portal-globalnav .navbar-inner {
   border-radius: 0 0 4px 4px !important;
   margin-top: -1px;
 }
 
-/* line 139, ../scss/_base.scss */
+/* line 164, ../scss/_base.scss */
 #content {
   padding-bottom: 2em;
+  margin-top: 1.5em;
 }
 
-/* line 140, ../scss/_base.scss */
-.documentDescription {
-  font-size: 107.692308%;
-  font-weight: bold;
-  color: #aaaaaa;
-}
-
-/* line 141, ../scss/_base.scss */
+/* line 166, ../scss/_base.scss */
 #edit-bar {
   border-bottom: 1px solid #CCCCCC;
   box-shadow: 0 -10px 12px -18px black inset;
   margin-bottom: 18px;
 }
-/* line 145, ../scss/_base.scss */
+/* line 170, ../scss/_base.scss */
 #edit-bar .nav-tabs {
   border-bottom: 0;
   box-shadow: none;
   margin: 0;
 }
-/* line 150, ../scss/_base.scss */
+/* line 175, ../scss/_base.scss */
 #edit-bar .nav-pills, #edit-bar .formTabs {
   margin: 0;
 }
-
-/* line 152, ../scss/_base.scss */
-.documentFirstHeading {
-  font-size: 156.84615%;
-  color: #446a8e;
-  border-bottom: 1px solid #b2b2b2;
-  -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.1);
-  line-height: 42px;
-  margin: 0 0 18px 0;
+/* line 177, ../scss/_base.scss */
+#edit-bar .dropdown-toggle .label, #edit-bar .dropdown-toggle .badge {
+  font-size: 100%;
 }
 
-/* line 166, ../scss/_base.scss */
+/* line 187, ../scss/_base.scss */
 #bandaLogos {
   border-top: 1px solid #e3e3e3;
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.03);
 }
 
-/* line 167, ../scss/_base.scss */
+/* line 188, ../scss/_base.scss */
 #bandaLogos .container {
   border-top: 1px solid #6e530b;
   margin-top: -1px;
 }
 
-/* line 168, ../scss/_base.scss */
+/* line 189, ../scss/_base.scss */
 .llistatLogos {
-  margin: 1.5em auto;
+  margin: 0 auto;
   list-style: none;
   text-align: center;
+  padding-top: 1em;
 }
 
-/* line 169, ../scss/_base.scss */
+/* line 190, ../scss/_base.scss */
 .llistatLogos li {
   display: inline-block;
+  margin: 0 .5em 1em;
 }
 
-/* line 170, ../scss/_base.scss */
+/* line 191, ../scss/_base.scss */
 .llistatLogos a {
   margin: 0 1.5em;
 }
 
 /*falta funcio box shadow*/
-/* line 178, ../scss/_base.scss */
+/* line 199, ../scss/_base.scss */
 #peu {
   background: #f2f2f2;
   border-top: 5px solid #e3e3e3;
   font-size: 92.3076923%;
 }
 
-/* line 179, ../scss/_base.scss */
+/* line 200, ../scss/_base.scss */
 #peu .container {
   border-top: 5px solid #e2ab17;
   margin-top: -5px;
 }
 
-/* line 180, ../scss/_base.scss */
+/* line 201, ../scss/_base.scss */
 #peu p {
   margin: 0;
 }
 
-/* line 181, ../scss/_base.scss */
+/* line 202, ../scss/_base.scss */
 #peu .amunt img {
-  opacity: .67;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
 }
 
-/* line 182, ../scss/_base.scss */
+/* line 203, ../scss/_base.scss */
 #peu .amunt a:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 183, ../scss/_base.scss */
+/* line 204, ../scss/_base.scss */
 #peu address {
   color: #666666;
 }
 
-/* line 184, ../scss/_base.scss */
+/* line 205, ../scss/_base.scss */
 .sobreElWeb li {
   display: inline;
 }
 
-/* line 185, ../scss/_base.scss */
+/* line 206, ../scss/_base.scss */
 .sobreElWeb li:before {
   content: ".";
   font-size: 52px;
   position: relative;
   line-height: 0;
-  top: -0.045em;
+  top: -0.025em;
   left: -1px;
   color: #7e7d7b;
 }
 
-/* line 189, ../scss/_base.scss */
+/* line 210, ../scss/_base.scss */
 .sobreElWeb li:first-child:before {
   content: "";
   font-size: 52px;
@@ -8168,7 +8306,7 @@ a.label:hover, a.badge:hover {
   top: .25em;
 }
 
-/* line 190, ../scss/_base.scss */
+/* line 211, ../scss/_base.scss */
 .sobreElWeb li:last-child:before {
   content: " __ ";
   font-size: 13px;
@@ -8178,73 +8316,100 @@ a.label:hover, a.badge:hover {
   padding: 0 2px 0 3px;
 }
 
-/* line 191, ../scss/_base.scss */
-.lt-ie9 .amunt {
-  min-width: 30px;
-  display: inline-block !important;
+/* line 215, ../scss/_base.scss */
+#canvia-vista {
+  background: url('/++genweb++static/images/vistabg.png?1353422673') #666666;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+}
+/* line 221, ../scss/_base.scss */
+#canvia-vista .userScreen {
+  background-position: left 3px;
+  padding: 5px 5px 5px 25px;
+  color: white;
 }
 
-/* line 9, ../scss/_nav.scss */
+/* line 5, ../scss/_nav.scss */
+.dropdown-menu a.state-intranet {
+  color: #8952ab;
+}
+/* line 6, ../scss/_nav.scss */
+.dropdown-menu a.state-pending {
+  color: #df8505;
+}
+/* line 7, ../scss/_nav.scss */
+.dropdown-menu a.state-draft {
+  color: #72a31d;
+}
+/* line 8, ../scss/_nav.scss */
+.dropdown-menu a.state-private {
+  color: #a62e1f;
+}
+
+/* line 15, ../scss/_nav.scss */
 #portal-globalnav {
   /*margin-top:-22px;*/
 }
 
-/* line 10, ../scss/_nav.scss */
+/* line 16, ../scss/_nav.scss */
 #portal-header .container {
   /*padding-bottom:22px;*/
 }
 
 /* ajusta menu */
-/* line 11, ../scss/_nav.scss */
+/* line 17, ../scss/_nav.scss */
 #portal-globalnav .navbar-inner {
   padding: 0;
   border-bottom: 3px solid #666;
 }
 
-/* line 12, ../scss/_nav.scss */
+/* line 18, ../scss/_nav.scss */
 #portal-globalnav .state-published {
   border-bottom: 3px solid #007bc0;
 }
 
-/* line 13, ../scss/_nav.scss */
+/* line 19, ../scss/_nav.scss */
 #portal-globalnav .state-intranet {
   border-bottom: 3px solid #8952ab;
 }
 
-/* line 14, ../scss/_nav.scss */
+/* line 20, ../scss/_nav.scss */
 #portal-globalnav .state-draft {
   border-bottom: 3px solid #72a31d;
 }
 
-/* line 15, ../scss/_nav.scss */
+/* line 21, ../scss/_nav.scss */
 #portal-globalnav .state-pending {
   border-bottom: 3px solid #df8505;
 }
 
-/* line 16, ../scss/_nav.scss */
+/* line 22, ../scss/_nav.scss */
 #portal-globalnav .state-private {
   border-bottom: 3px solid #a62e1f;
 }
 
-/* line 17, ../scss/_nav.scss */
+/* line 23, ../scss/_nav.scss */
 #portal-globalnav .nav > li > a, #portal-globalnav .formTabs > li > a {
   font-size: 16px;
   font-weight: bold;
   border-right: 1px solid #bbb;
 }
 
-/* line 18, ../scss/_nav.scss */
+/* line 24, ../scss/_nav.scss */
 #portal-globalnav .nav > li:first-child > a, #portal-globalnav .formTabs > li:first-child > a {
   border-radius: 0 0 0 3px;
 }
 
-/* line 22, ../scss/_nav.scss */
+/* line 28, ../scss/_nav.scss */
 .subnavbar {
-  width: 220px;
   margin-bottom: 18px;
 }
 
-/* line 23, ../scss/_nav.scss */
+/* line 29, ../scss/_nav.scss */
 .subnavbar .nav-list {
   border: 1px solid #b2b2b2;
   box-shadow: 0 3px 5px #ccc;
@@ -8258,7 +8423,7 @@ a.label:hover, a.badge:hover {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-/* line 29, ../scss/_nav.scss */
+/* line 35, ../scss/_nav.scss */
 .subnavbar .nav-list a {
   background: #f5f5f5;
   margin-left: -15px;
@@ -8272,16 +8437,32 @@ a.label:hover, a.badge:hover {
   padding: 8px 9px !important;
   position: relative;
 }
-/* line 41, ../scss/_nav.scss */
+/* line 47, ../scss/_nav.scss */
+.subnavbar .nav-list a.state-intranet {
+  color: #8952ab;
+}
+/* line 48, ../scss/_nav.scss */
+.subnavbar .nav-list a.state-pending {
+  color: #df8505;
+}
+/* line 49, ../scss/_nav.scss */
+.subnavbar .nav-list a.state-draft {
+  color: #72a31d;
+}
+/* line 50, ../scss/_nav.scss */
+.subnavbar .nav-list a.state-private {
+  color: #a62e1f;
+}
+/* line 51, ../scss/_nav.scss */
 .subnavbar .nav-list a:hover {
   background: #eee;
   color: #111;
 }
-/* line 45, ../scss/_nav.scss */
+/* line 55, ../scss/_nav.scss */
 .subnavbar .nav-list a + ul a:after {
   display: none !important;
 }
-/* line 51, ../scss/_nav.scss */
+/* line 61, ../scss/_nav.scss */
 .subnavbar .nav-list a:hover:after,
 .subnavbar .nav-list .active a:after {
   content: "";
@@ -8298,34 +8479,34 @@ a.label:hover, a.badge:hover {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   right: 7px;
   top: 8px;
-  background-image: url('/++genweb++static/images/glyphicons-halflings-white.png?1342602226');
+  background-image: url('/++genweb++static/images/gh-w.png?1353063332');
   background-position: -455px -71px;
   background-repeat: no-repeat;
   width: 17px;
   height: 17px;
 }
-/* line 67, ../scss/_nav.scss */
+/* line 77, ../scss/_nav.scss */
 .subnavbar .nav-list a.state-private:hover:after, .subnavbar .nav-list .active .state-private:after {
   background-color: #a62e1f;
 }
-/* line 68, ../scss/_nav.scss */
+/* line 78, ../scss/_nav.scss */
 .subnavbar .nav-list a.state-draft:hover:after, .subnavbar .nav-list .active .state-draft:after {
   background-color: #72a31d;
 }
-/* line 69, ../scss/_nav.scss */
+/* line 79, ../scss/_nav.scss */
 .subnavbar .nav-list a.state-pending:hover:after, .subnavbar .nav-list .active .state-pending:after {
   background-color: #df8505;
 }
-/* line 70, ../scss/_nav.scss */
+/* line 80, ../scss/_nav.scss */
 .subnavbar .nav-list a.state-intranet:hover:after, .subnavbar .nav-list .active .state-intranet:after {
   background-color: #8952ab;
 }
-/* line 71, ../scss/_nav.scss */
+/* line 81, ../scss/_nav.scss */
 .subnavbar .nav-list .active a {
   background: #ddd;
   color: #222222;
 }
-/* line 75, ../scss/_nav.scss */
+/* line 85, ../scss/_nav.scss */
 .subnavbar .nav-list li:first-child a {
   border-top: 0 !important;
   -webkit-border-radius: 4px 4px 0 0;
@@ -8334,7 +8515,7 @@ a.label:hover, a.badge:hover {
   -o-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
-/* line 79, ../scss/_nav.scss */
+/* line 89, ../scss/_nav.scss */
 .subnavbar .nav-list li:last-child a {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
@@ -8342,7 +8523,7 @@ a.label:hover, a.badge:hover {
   -o-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
-/* line 82, ../scss/_nav.scss */
+/* line 92, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul {
   margin-left: -15px !important;
   margin-right: -15px;
@@ -8352,8 +8533,9 @@ a.label:hover, a.badge:hover {
   -webkit-box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.25);
+  display: inline-block;
 }
-/* line 90, ../scss/_nav.scss */
+/* line 100, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a {
   border-top: 0 !important;
   font-size: 12px;
@@ -8364,86 +8546,116 @@ a.label:hover, a.badge:hover {
   background: transparent !important;
   padding: 0 !important;
   border-right: 3px solid #007bc0;
+  *border-top: 1px solid #fff !important;
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   -ms-border-radius: 0 !important;
   -o-border-radius: 0 !important;
   border-radius: 0 !important;
 }
-/* line 101, ../scss/_nav.scss */
+/* line 112, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-private {
   border-right: 3px solid #a62e1f;
   color: #a62e1f;
 }
-/* line 102, ../scss/_nav.scss */
+/* line 113, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-draft {
   border-right: 3px solid #72a31d;
   color: #72a31d;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 114, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-pending {
   border-right: 3px solid #df8505;
   color: #df8505;
 }
-/* line 104, ../scss/_nav.scss */
+/* line 115, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-intranet {
   border-right: 3px solid #8952ab;
   color: #8952ab;
 }
-/* line 106, ../scss/_nav.scss */
+/* line 117, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a[class^="state-"]:hover, .subnavbar .nav-list .active ul a[class*=" state-"]:hover {
   color: black;
   text-decoration: none;
 }
-/* line 111, ../scss/_nav.scss */
+/* line 122, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a span {
   border-top: 1px solid #d9d9d9 !important;
-  padding: 8px 0 !important;
+  padding: 8px 0 8px 12px !important;
   display: block;
   margin-right: 24px;
   margin-left: 10px;
   line-height: 15px;
 }
-/* line 118, ../scss/_nav.scss */
+/* line 129, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a span:before {
   content: ".";
   color: #007bc0;
-  top: -2px;
-  left: -4px;
-  position: relative;
+  top: 4px;
+  left: 7px;
+  position: absolute;
   font-size: 350%;
   line-height: 0 !important;
 }
-/* line 129, ../scss/_nav.scss */
+/* line 140, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after {
-  background-image: url('/++genweb++static/images/glyphicons-halflings.png?1346050654');
+  background-image: url('/++genweb++static/images/gh.png?1352977821');
+  background-repeat: no-repeat;
   content: " ";
   display: block;
-  float: right;
+  right: 22px;
   height: 20px;
   margin-right: -24px;
   width: 20px;
-  opacity: .8;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=8000);
+  opacity: 80;
+  top: 12px;
+  position: absolute;
 }
-/* line 139, ../scss/_nav.scss */
+/* line 153, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-folder span:after {
   background-position: -384px -120px;
 }
-/* line 140, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-document span:after {
+/* line 154, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-page span:after {
   background-position: -24px -24px;
 }
-/* line 141, ../scss/_nav.scss */
+/* line 155, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-link span:after {
-  background-position: -334px -96px;
+  background-position: -72px -168px;
 }
-/* line 142, ../scss/_nav.scss */
+/* line 156, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-windowztool span:after {
+  background-position: -97px -168px;
+}
+/* line 158, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .active ul a.contenttype-banner span:after {
+  background-position: -313px -25px;
+}
+/* line 159, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-topic span:after {
+  background-position: -72px -192px;
+}
+/* line 160, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-file span:after {
+  background-position: -167px -168px;
+}
+/* line 161, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-image span:after {
+  background-position: -457px -49px;
+}
+/* line 162, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-plonepopoll span:after {
+  background-position: -457px -193px;
+}
+/* line 164, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a:hover {
   background-color: #f2f8fc !important;
 }
-/* line 143, ../scss/_nav.scss */
+/* line 165, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a:hover span:after {
-  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
+  opacity: 100;
 }
 
 /* ABANS EREN LI */
@@ -8530,7 +8742,6 @@ a.primary, .primary a, a .primary {
 .lead, .lead-small, .lead-large, .sheet {
   margin-bottom: 18px;
   font-size: 100%;
-  font-weight: 200;
   line-height: 18px;
   background: #f2f2f2;
   text-shadow: 0 1px white;
@@ -8545,7 +8756,7 @@ a.primary, .primary a, a .primary {
   padding: 12px;
 }
 
-/* line 17, ../scss/_leads.scss */
+/* line 16, ../scss/_leads.scss */
 .lead-small {
   /* abans destacat ratllat */
   font-size: 84.6153846%;
@@ -8560,7 +8771,7 @@ a.primary, .primary a, a .primary {
   border: 5px solid #f3d586;
 }
 
-/* line 27, ../scss/_leads.scss */
+/* line 26, ../scss/_leads.scss */
 .lead-large, .sheet {
   /* abans destacat bandejat */
   font-size: 115.384615%;
@@ -8568,7 +8779,7 @@ a.primary, .primary a, a .primary {
   background: #fcfcfc;
   border-top: 5px solid #e2ab17;
 }
-/* line 33, ../scss/_leads.scss */
+/* line 32, ../scss/_leads.scss */
 .lead-large:after, .sheet:after {
   background: #e5e5e5;
   display: block;
@@ -8745,7 +8956,7 @@ a.primary, .primary a, a .primary {
 /* line 102, ../scss/_wells-boxes.scss */
 .sheet:before {
   content: "*";
-  content: url('/++genweb++static/images/sheet.png');
+  content: url('/++genweb++static/images/sheet.png?1351079364');
   font-size: 300%;
   position: absolute;
   right: -19px;
@@ -8793,19 +9004,19 @@ a.primary, .primary a, a .primary {
 }
 
 /* line 25, ../scss/_lists.scss */
-.list-striped, .list-hover, .list-bordered, .list-notebook, .list-links, .list-highlighted {
+.list-striped, .list-hover, .list-bordered, .list-notebook, .list-links, .list-highlighted, .list-portlet {
   margin-left: 0;
   padding-left: 20px;
   margin-bottom: 25px;
 }
 /* line 29, ../scss/_lists.scss */
-.list-striped.list-condensed li, .list-hover.list-condensed li, .list-bordered.list-condensed li, .list-notebook.list-condensed li, .list-links.list-condensed li, .list-highlighted.list-condensed li {
+.list-striped.list-condensed li, .list-hover.list-condensed li, .list-bordered.list-condensed li, .list-notebook.list-condensed li, .list-links.list-condensed li, .list-highlighted.list-condensed li, .list-portlet.list-condensed li {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   margin-left: 0;
 }
 /* line 34, ../scss/_lists.scss */
-.list-striped.list-condensed, .list-hover.list-condensed, .list-bordered.list-condensed, .list-notebook.list-condensed, .list-links.list-condensed, .list-highlighted.list-condensed {
+.list-striped.list-condensed, .list-hover.list-condensed, .list-bordered.list-condensed, .list-notebook.list-condensed, .list-links.list-condensed, .list-highlighted.list-condensed, .list-portlet.list-condensed {
   margin-left: 0;
 }
 
@@ -8821,14 +9032,14 @@ a.primary, .primary a, a .primary {
 }
 
 /* line 46, ../scss/_lists.scss */
-.list-striped li, .list-hover li, .list-bordered li, .list-notebook li, .list-condensed li, .list-links li, .list-highlighted li {
+.list-striped li, .list-hover li, .list-bordered li, .list-notebook li, .list-condensed li, .list-links li, .list-highlighted li, .list-portlet li {
   padding: 8px 0 8px 28px;
   margin-left: -20px;
   list-style: none;
   position: relative;
 }
 /* line 51, ../scss/_lists.scss */
-.list-striped li:before, .list-hover li:before, .list-bordered li:before, .list-notebook li:before, .list-condensed li:before, .list-links li:before, .list-highlighted li:before {
+.list-striped li:before, .list-hover li:before, .list-bordered li:before, .list-notebook li:before, .list-condensed li:before, .list-links li:before, .list-highlighted li:before, .list-portlet li:before {
   content: ".";
   position: absolute;
   font-size: 52px;
@@ -8889,11 +9100,11 @@ a.primary, .primary a, a .primary {
   list-style: none;
   position: relative;
 }
-/* line 104, ../scss/_lists.scss */
+/* line 105, ../scss/_lists.scss */
 .list-notebook li:first-child {
   border-top: 1px solid #c0e8ff;
 }
-/* line 107, ../scss/_lists.scss */
+/* line 108, ../scss/_lists.scss */
 .list-notebook li:before {
   content: ".";
   position: absolute;
@@ -8901,6 +9112,22 @@ a.primary, .primary a, a .primary {
   margin-left: -34px;
   margin-top: -15px;
 }
+
+/*.tabs {
+     *zoom: expression(
+          this.runtimeStyle.zoom="1",
+          this.appendChild( document.createElement("small") ).className="after"
+         );
+   }
+
+   .tabs:after,
+   .tabs .after {
+     content: '';
+     display:block;
+     height:10px;
+     width:100%;
+     background:red;
+   }
 
 /*
 > Index contingut = enllaços però amb fons
@@ -8910,38 +9137,38 @@ a.primary, .primary a, a .primary {
 + extensió de llistes: pijama, separadors, colors de fons, etc;
 
 */
-/* line 126, ../scss/_lists.scss */
+/* line 143, ../scss/_lists.scss */
 .list-links li:before {
-  content: url('/++genweb++static/images/arrow.png');
+  content: url('/++genweb++static/images/arrow.png?1351584399');
   margin-left: -15px;
   margin-top: -13px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
-  /* line 137, ../scss/_lists.scss */
+  /* line 154, ../scss/_lists.scss */
   .list-links li {
-    content: url('/++genweb++static/images/arrow@2x.png');
+    content: url('/++genweb++static/images/arrow@2x.png?1351584728');
   }
 }
-/* line 142, ../scss/_lists.scss */
+/* line 159, ../scss/_lists.scss */
 .list-notebook.list-links li:before {
   margin-left: -29px;
 }
 
-/* line 145, ../scss/_lists.scss */
+/* line 162, ../scss/_lists.scss */
 .list-highlighted li:before {
-  content: url('/++genweb++static/images/arrow_hl.png');
+  content: url('/++genweb++static/images/arrow_hl.png?1351586104');
   margin-left: -22px;
   margin-top: -10px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
-  /* line 156, ../scss/_lists.scss */
+  /* line 173, ../scss/_lists.scss */
   .list-highlighted li {
-    content: url('/++genweb++static/images/arrow_hl@2x.png');
+    content: url('/++genweb++static/images/arrow_hl@2x.png?1351586127');
   }
 }
-/* line 162, ../scss/_lists.scss */
+/* line 179, ../scss/_lists.scss */
 .list-links:before, .list-highlighted:before {
   content: none;
 }
@@ -9148,6 +9375,473 @@ També ha de ser aplicable directament al td i a altres elements com les llistes
 
 + extensió de taules: pijama, separadors, colors de fons, etc;
 */
+/* line 5, ../scss/_texts.scss */
+h1, h2, h3 {
+  color: #446a8e;
+}
+
+/* line 7, ../scss/_texts.scss */
+*.xxxl {
+  font-size: 153.846154% !important;
+  line-height: 27px;
+}
+
+/* line 8, ../scss/_texts.scss */
+*.xxl {
+  font-size: 130.769231% !important;
+  line-height: 18px;
+}
+
+/* line 9, ../scss/_texts.scss */
+*.xl {
+  font-size: 115.384615% !important;
+  line-height: 18px;
+}
+
+/* line 10, ../scss/_texts.scss */
+*.l {
+  font-size: 107.692308% !important;
+  line-height: 18px;
+}
+
+/* line 11, ../scss/_texts.scss */
+*.m {
+  font-size: 100% !important;
+  line-height: 18px;
+}
+
+/* line 12, ../scss/_texts.scss */
+*.s {
+  font-size: 92.3076923% !important;
+  line-height: 18px;
+}
+
+/* line 13, ../scss/_texts.scss */
+*.xs {
+  font-size: 84.6153846% !important;
+  line-height: 18px;
+}
+
+/* line 14, ../scss/_texts.scss */
+*.xxs {
+  font-size: 76.9230769% !important;
+  line-height: 18px;
+}
+
+/* line 15, ../scss/_texts.scss */
+*.xxxs {
+  font-size: 69.2307692% !important;
+  line-height: 18px;
+}
+
+/* line 17, ../scss/_texts.scss */
+*.liniaBaix, *.documentFirstHeading {
+  border-bottom: 1px solid #b2b2b2;
+  -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.1);
+  margin: 0 0 18px 0;
+  padding: 0 0 12px;
+}
+
+/* line 23, ../scss/_texts.scss */
+*.liniaDalt {
+  border-top: 1px solid #b2b2b2;
+  -webkit-box-shadow: 0 -6px 4px -4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 -6px 4px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -6px 4px -4px rgba(0, 0, 0, 0.1);
+  margin: 18px 0 0 0;
+  padding: 12px 0 6px;
+}
+
+/* line 37, ../scss/_texts.scss */
+.documentDescription {
+  font-size: 107.692308%;
+  font-weight: bold;
+  color: #aaaaaa;
+}
+
+/* line 42, ../scss/_texts.scss */
+hr {
+  margin: 18px 0;
+  border: 0;
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid white;
+}
+
+/* line 48, ../scss/_texts.scss */
+hr.liniaBaix, hr.documentFirstHeading {
+  height: 0;
+  border-top: 0;
+  -webkit-box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.75);
+}
+
+/* line 53, ../scss/_texts.scss */
+hr.liniaDalt {
+  height: 0;
+  border-bottom: 0;
+  -webkit-box-shadow: 0 -12px 24px -6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 -12px 24px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -12px 24px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* line 62, ../scss/_texts.scss */
+.xafa {
+  margin: auto 2em;
+}
+
+/* line 63, ../scss/_texts.scss */
+.xafa2 {
+  margin: auto 4em;
+}
+
+/* line 64, ../scss/_texts.scss */
+.xafa3 {
+  margin: auto 8em;
+}
+
+/* line 65, ../scss/_texts.scss */
+.pad {
+  padding: 2em;
+}
+
+/* line 66, ../scss/_texts.scss */
+.pad2 {
+  padding: 4em;
+}
+
+/* line 67, ../scss/_texts.scss */
+.pad3 {
+  padding: 8em;
+}
+
+/* line 72, ../scss/_texts.scss */
+.mayus {
+  text-transform: uppercase;
+}
+
+/* line 73, ../scss/_texts.scss */
+.nobg {
+  background: none !important;
+}
+
+/* line 3, ../scss/_portlets.scss */
+.portlet {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #b2b2b2;
+}
+/* line 8, ../scss/_portlets.scss */
+.portlet h2 {
+  margin: 0;
+  font-size: 107%;
+  color: #666666;
+  border-bottom: 5px solid #e2ab17;
+  padding: 10px 15px;
+  line-height: 18px;
+  position: relative;
+}
+/* line 16, ../scss/_portlets.scss */
+.portlet h2 i {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+  *position: absolute;
+  *top: 10px;
+  *right: 15px;
+}
+/* line 23, ../scss/_portlets.scss */
+.portlet ul:last-child {
+  border-bottom: 0 !important;
+}
+
+/* line 27, ../scss/_portlets.scss */
+.list-portlet {
+  margin: 0;
+  padding: 0 5px 0 15px;
+  border-bottom: 1px solid #b2b2b2;
+}
+/* line 31, ../scss/_portlets.scss */
+.list-portlet li {
+  border-top: 1px solid #e5e5e5;
+  *border-top: 1px solid #e5e5e5;
+  margin-left: 0 !important;
+  padding: 8px 0 8px 18px !important;
+  margin-right: 10px;
+  *display: inline-block;
+}
+/* line 38, ../scss/_portlets.scss */
+.list-portlet li:first-child {
+  border-top: 0;
+}
+/* line 41, ../scss/_portlets.scss */
+.list-portlet li .smaller {
+  color: #666666;
+  white-space: nowrap;
+}
+
+/* line 47, ../scss/_portlets.scss */
+.portlet-footer {
+  background: #f2f2f2;
+  display: block;
+  padding: 5px 10px 7px;
+  text-align: center;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  -ms-border-radius: 0 0 6px 6px;
+  -o-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  border-top: 1px solid white;
+  position: relative;
+  font-size: 92.3076923%;
+}
+/* line 56, ../scss/_portlets.scss */
+.portlet-footer i {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  position: absolute;
+  left: 10px;
+}
+
+/* les llistes s'extenen a l'arxiu de llistes*/
+/* line 66, ../scss/_portlets.scss */
+.portlet-baners {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+}
+
+/* line 70, ../scss/_portlets.scss */
+.portlet-baners li {
+  padding: 0 0 1em;
+}
+/* line 72, ../scss/_portlets.scss */
+.portlet-baners li a:hover img {
+  -webkit-box-shadow: 0 0 5px rgba(0, 123, 192, 0.25);
+  -moz-box-shadow: 0 0 5px rgba(0, 123, 192, 0.25);
+  box-shadow: 0 0 5px rgba(0, 123, 192, 0.25);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 80, ../scss/_portlets.scss */
+.portlet-ampliat h3 {
+  padding: 0 15px;
+  text-align: left;
+  color: #666666;
+}
+/* line 85, ../scss/_portlets.scss */
+.portlet-ampliat .content-noticies {
+  padding: 0 15px;
+  margin-bottom: 0;
+  text-align: left;
+}
+/* line 90, ../scss/_portlets.scss */
+.portlet-ampliat li > img {
+  margin: 0 0 10px;
+  -webkit-box-shadow: 0 10px 5px -10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 10px 5px -10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 5px -10px rgba(0, 0, 0, 0.25);
+}
+/* line 94, ../scss/_portlets.scss */
+.portlet-ampliat .list-portlet {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* line 97, ../scss/_portlets.scss */
+.portlet-ampliat .list-portlet:before {
+  content: none;
+}
+/* line 100, ../scss/_portlets.scss */
+.portlet-ampliat .list-portlet li {
+  border-color: #b2b2b2;
+  padding: 0 0 12px 0 !important;
+  margin: 0 !important;
+  text-align: center;
+  -webkit-box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.1);
+}
+/* line 106, ../scss/_portlets.scss */
+.portlet-ampliat .list-portlet li:before {
+  content: none;
+}
+/* line 109, ../scss/_portlets.scss */
+.portlet-ampliat .list-portlet li:first-child {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* adaptació imatge a protlet ample */
+/* line 122, ../scss/_portlets.scss */
+.span6 .portlet-ampliat li > img,
+.span7 .portlet-ampliat li > img,
+.span8 .portlet-ampliat li > img,
+.span9 .portlet-ampliat li > img,
+.span10 .portlet-ampliat li > img,
+.span11 .portlet-ampliat li > img,
+.span12 .portlet-ampliat li > img {
+  margin: 0 10px 5px 15px;
+  max-width: 50%;
+  float: left;
+}
+
+/* line 129, ../scss/_portlets.scss */
+.portlet-esdeveniments ul {
+  margin-bottom: 0;
+  border-bottom: 1px solid #b2b2b2;
+}
+/* line 132, ../scss/_portlets.scss */
+.portlet-esdeveniments ul li {
+  position: relative;
+  border-top: 1px solid #e5e5e5;
+  *border-top: 1px solid #e5e5e5;
+  margin: 0 15px;
+  padding: 15px 0;
+}
+/* line 138, ../scss/_portlets.scss */
+.portlet-esdeveniments ul li:first-child {
+  border-top: 0;
+}
+/* line 142, ../scss/_portlets.scss */
+.portlet-esdeveniments ul a {
+  display: block;
+  padding-left: 40px;
+  border-left: 3px solid #f2f2f2;
+}
+/* line 146, ../scss/_portlets.scss */
+.portlet-esdeveniments ul a:hover {
+  border-color: #007bc0;
+}
+/* line 150, ../scss/_portlets.scss */
+.portlet-esdeveniments ul time {
+  position: absolute;
+  left: 12px;
+  top: 18px;
+  font-size: 153.846154%;
+  color: #aaaaaa;
+  font-weight: bold;
+}
+/* line 157, ../scss/_portlets.scss */
+.portlet-esdeveniments ul time abbr {
+  display: block;
+  font-size: 53.8461538462%;
+  font-weight: normal;
+  text-align: center;
+  color: #666666;
+  margin-top: -3px;
+}
+
+/* line 170, ../scss/_portlets.scss */
+.portlet-enquesta fieldset {
+  margin: 0 15px;
+}
+/* line 173, ../scss/_portlets.scss */
+.portlet-enquesta legend {
+  font-size: 100%;
+  line-height: 18px;
+  padding: 10px 0;
+}
+/* line 178, ../scss/_portlets.scss */
+.portlet-enquesta form {
+  margin: 0 15px 15px;
+}
+/* line 181, ../scss/_portlets.scss */
+.portlet-enquesta .progress {
+  position: relative;
+}
+/* line 183, ../scss/_portlets.scss */
+.portlet-enquesta .progress span {
+  color: black;
+  font-size: 84.6153846%;
+  right: 3px;
+  position: absolute;
+  text-shadow: 0 -1px rgba(255, 255, 255, 0.5);
+}
+/* line 191, ../scss/_portlets.scss */
+.portlet-enquesta > p {
+  margin: 0 15px 18px;
+  border-bottom: 1px solid #b2b2b2;
+  padding: 10px 0;
+}
+/* line 196, ../scss/_portlets.scss */
+.portlet-enquesta > ul {
+  margin: 0 15px;
+}
+
+/* line 202, ../scss/_portlets.scss */
+.portlet-inverse h2 {
+  background: #e2ab17;
+  border: 0;
+  color: #333333;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+/* line 208, ../scss/_portlets.scss */
+.portlet-inverse h2 i {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=9000);
+  opacity: 90;
+}
+
+/* line 212, ../scss/_portlets.scss */
+h2.title-inverse {
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+/* line 215, ../scss/_portlets.scss */
+h2.title-inverse i {
+  background-image: url('/++genweb++static/images/glyphicons-halflings-white.png?1349690720');
+}
+
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* adaptació imatge a protlet ample */
+  /* line 11, ../scss/_mobile.scss */
+  .span6 .portlet-ampliat li > img,
+  .span7 .portlet-ampliat li > img,
+  .span8 .portlet-ampliat li > img,
+  .span9 .portlet-ampliat li > img,
+  .span10 .portlet-ampliat li > img,
+  .span11 .portlet-ampliat li > img,
+  .span12 .portlet-ampliat li > img {
+    margin: 0 0 10px;
+    max-width: 100%;
+    float: none;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 9, ../scss/_retina.scss */
+  #portal-header h1.pull-left img {
+    opacity: 0;
+  }
+
+  /* line 10, ../scss/_retina.scss */
+  #portal-header h1.pull-left {
+    height: 46px;
+    width: 207px;
+    background: url('/++genweb++static/images/logoUPC@2x.png?1352194730') no-repeat;
+    background-size: 100%;
+  }
+}
+/*
+http://coding.smashingmagazine.com/2012/08/20/towards-retina-web/
+*/
 /* NOMÉS CORRECCIONS PER A IE SENSE HACKS */
 /* IE9- */
 /* line 5, ../scss/_ie.scss */
@@ -9162,59 +9856,114 @@ html.lt-ie10 #portal-globalnav .navbar .nav, html.lt-ie10 #portal-globalnav .nav
 
 /* IE8- */
 /* line 9, ../scss/_ie.scss */
+html.lt-ie9 .amunt {
+  min-width: 30px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 10, ../scss/_ie.scss */
 html.lt-ie9 .navbar img {
   max-width: inherit !important;
 }
 
 /* IE7- */
-/*
+/* line 14, ../scss/_ie.scss */
 html.lt-ie8 #portal-header,
-html.lt-ie8 #peu {position:relative;}
+html.lt-ie8 #peu {
+  position: relative;
+}
+
+/* line 16, ../scss/_ie.scss */
 html.lt-ie8 #portal-header .container,
-html.lt-ie8 #peu .container {position:relative; top:-5px;}
-*/
+html.lt-ie8 #peu .container {
+  position: relative;
+  top: -5px;
+  padding-top: 5px;
+}
+
+/* line 17, ../scss/_ie.scss */
+html.lt-ie8 .breadcrumb h2 {
+  margin-right: 5px;
+}
+
+/* line 18, ../scss/_ie.scss */
+html.lt-ie8 .llistatLogos li {
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 19, ../scss/_ie.scss */
+html.lt-ie8 .titol-espai a span {
+  float: left;
+  margin-top: 10px;
+}
+
+/* line 22, ../scss/_ie.scss */
+html.lt-ie8 .header-image,
+html.lt-ie8 .sobreElWeb li {
+  margin-left: 10px;
+}
+
+/* line 23, ../scss/_ie.scss */
+html.lt-ie8 .amunt {
+  min-width: auto !important;
+}
+
+/* line 24, ../scss/_ie.scss */
+html.lt-ie8 .close {
+  position: relative;
+  margin-top: -8px;
+}
+
+/* line 26, ../scss/_ie.scss */
+html.lt-ie8 #portal-header {
+  border-bottom: 0;
+}
+
 /* line 1, ../scss/_upcnet.scss */
 .hiddenStructure {
   display: none;
 }
 
 /*.goout {display:none;} /*provisional,  ha de ser amb overflow i no amb display*/
-/* line 13, ../scss/genwebupc.scss */
+/* line 14, ../scss/genwebupc.scss */
 .width100 {
   width: 100% !important;
   -moz-box-sizing: border-box;
 }
 
-/* line 14, ../scss/genwebupc.scss */
+/* line 15, ../scss/genwebupc.scss */
 .img_blank {
   opacity: .7;
 }
 
-/* line 15, ../scss/genwebupc.scss */
+/* line 16, ../scss/genwebupc.scss */
 a:hover .img_blank {
   opacity: 1;
 }
 
 /*ff*/
-/* line 20, ../scss/genwebupc.scss */
+/* line 19, ../scss/genwebupc.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 21, ../scss/genwebupc.scss */
 .titol-espai h1 {
   font-weight: 200;
   color: red;
 }
 
-/* line 26, ../scss/genwebupc.scss */
+/* line 27, ../scss/genwebupc.scss */
 .page-header {
   border-top: 1px solid #CCCCCC !important;
   border-bottom: 0;
   box-shadow: 0 -8px 16px -16px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* line 31, ../scss/genwebupc.scss */
+/* line 32, ../scss/genwebupc.scss */
 .page-header h1 {
   color: #446a8e;
-}
-
-/* line 33, ../scss/genwebupc.scss */
-[class^="icon-"], [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/glyphicons-halflings.png?1346050654');
 }

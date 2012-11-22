@@ -1,0 +1,73 @@
+/*
+// MIDES SAMARRETA
+// ------------------------- 
+*/
+h1, h2, h3 {color:$genwebTitles;}
+
+*.xxxl 	{	font-size: 153.846154% !important; line-height: ($baseLineHeight / 2 * 3);}
+*.xxl 	{	font-size: 130.769231% !important; line-height: $baseLineHeight;} 
+*.xl 	{	font-size: 115.384615% !important; line-height: $baseLineHeight;} 
+*.l 	{	font-size: 107.692308% !important; line-height: $baseLineHeight;} 
+*.m 	{	font-size: 100% !important;		line-height: $baseLineHeight;} 
+*.s 	{	font-size: 92.3076923% !important; line-height: $baseLineHeight;} 
+*.xs 	{	font-size: 84.6153846% !important; line-height: $baseLineHeight;} 
+*.xxs 	{	font-size: 76.9230769% !important; line-height: $baseLineHeight;} 
+*.xxxs 	{	font-size: 69.2307692% !important; line-height: $baseLineHeight;}
+
+*.liniaBaix {
+	border-bottom:1px solid $tableBorder;
+	@include box-shadow(0 6px 4px -4px rgba(0,0,0,.1));
+	margin:0 0 18px 0;
+    padding: 0 0 12px;	
+}
+*.liniaDalt {
+	border-top:1px solid $tableBorder;
+	@include box-shadow(0 -6px 4px -4px rgba(0,0,0,.1));
+	margin:18px 0 0 0;
+    padding: 12px 0 6px;	
+}
+
+
+
+// CONTENT CAPÇALERA
+// --------------------------
+.documentFirstHeading {
+	@extend .liniaBaix;
+}
+.documentDescription {font-size:107.692308%; font-weight:bold; color:$grayLight;}
+
+
+// SEPARADORS
+// --------------------
+hr {
+  	margin: $baseLineHeight 0;
+  	border: 0;
+  	border-top: 1px solid $tableBorder;
+ 	border-bottom: 1px solid $white;
+}
+hr.liniaBaix {
+    height: 0;
+    border-top: 0;
+    @include box-shadow(0 12px 24px -6px rgba(0,0,0,.75));
+}
+hr.liniaDalt {
+    height: 0;
+    border-bottom: 0;
+	@include box-shadow(0 -12px 24px -6px rgba(0,0,0,.1));    
+}
+
+// PADDINGS I MARGINS
+// ----------------------
+
+.xafa {margin:auto 2em;}
+.xafa2  {margin:auto 4em;}
+.xafa3  {margin:auto 8em;}
+.pad {padding:2em;}
+.pad2 {padding:4em;}
+.pad3 {padding:8em;}
+
+
+// AJUDES
+// ----------------------
+.mayus {text-transform: uppercase;}
+.nobg 	{background:none !important;}

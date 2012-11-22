@@ -1,26 +1,79 @@
 //
 // Responsive: Landscape phone to desktop/tablet
 // --------------------------------------------------
+/*
+@media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+ * nav#portal-personaltools-wrapper {margin-bottom: 36px !important; position:relative;}
+// Unfix the navbar
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: static;
+  }
+  .navbar-fixed-top {
+    margin-bottom: $baseLineHeight;
+  }
+    .navbar-fixed-bottom {
+    margin-top: $baseLineHeight;
+  }
+}
+*/
+
+@media only screen and (max-device-width: 864px) and (orientation: portrait),
+       only screen and (max-device-width: 640px) and (orientation: landscape),
+       only screen and (max-device-width: 1728px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (max-device-width: 1280px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5)   {
+
+//@media only screen and (max-device-width: 799px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
+//       only screen and (max-device-width: 599px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5)   {
 
 
-@media (max-width: 767px) {
 
   // Padding to set content in a bit
-  
+ /*
   body {
     padding-left: 10px;
     padding-right: 10px;
   }
-  
-  #portal-header .container,
-  #bandaLogos .container,
-  #peu .container {
-    padding-left:10px; 
-    padding-right:10px;
+*/
+body {font-size:14.5px !important; padding: 0 10px !important;}
+.container {width:100% !important;}
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {padding:0 0 5px !important;}
+
+  #portal-header,
+  #bandaLogos,
+  #peu {
+    padding:0 10px !important;
+    @include box-sizing(content-box);
+    margin-left: -10px !important;
+    margin-right: -10px !important;
   }
+  #canvia-vista {
+    @include box-sizing(content-box);
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+  }
+  /*
   #portal-header, #bandaLogos, #peu {
-    margin-left:-10px;
-    margin-right:-10px;
+    @include box-sizing(content-box);
+  }
+  */
+
+
+
+nav#portal-personaltools-wrapper {margin-top: 0px !important;}
+.navbar .btn-navbar {margin-right: 10px !important;}
+.navbar .btn-navbar i {background-image: image-url("gh-w.png");}
+
+.navbar-fixed-top {margin-bottom:0 !important;}
+
+  #portal-column-one, #portal-column-content {width:100% !important; margin-left:0;}
+
+  table {
+    display:block;
+    width:100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    max-width:100%;
   }
 
 
@@ -122,12 +175,123 @@
 // UP TO LANDSCAPE PHONE
 // ---------------------
 
-@media (max-width: 480px) {
+//@media (max-width: 480px) {
+@media only screen and (max-device-width: 640px),
+       only screen and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5)  {
+//@media only screen and (max-device-width: 599px) and (-webkit-min-device-pixel-ratio: 1.5) {
 
-  /* estils meus */
+  /* estils meus **********************************/
   body {
-    font-size:16px;
+    font-size:14.5px;
   }
+  body nav#portal-personaltools-wrapper {margin-top:0 !important;}
+  .navbar-fixed-top {margin-bottom:0 !important;}
+  .titol-espai:before {position:absolute; border-top:1px solid #ccc;}
+  .titol-espai h1 {font-size:138.461538%; line-height:24px; margin-top:5px !important;}
+  .titol-espai h1 a {display:block;}
+  .titol-espai h1 img {}
+  #portal-header {background:#f7f7f7 !important;}
+  #eines {font-size: 75% !important;}
+
+  /*ajustar eines mòbils*/
+  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    color:$gray !important;
+    &:active, &:hover {
+      color: $white !important;
+    }
+  }
+  .dropdown-toggle {display:none !important;}
+  #eines .adjust-langs {margin:0 !important;}
+
+
+
+
+
+  #portal-personaltools-wrapper {height:0;}
+  #portal-personaltools-wrapper .btn-navbar {position:absolute; right:0; z-index:9999; margin-right:55px !important;margin-top:18px;}
+  //#portal-personattools-wrapper .navbar-inner  {background:none !important; @include box-shadow(none);}
+  #portal-personaltools-wrapper .nav-collapse-edit  {
+    top: 52px !important;
+    right:56px !important;
+    background: $grayDarker !important;
+    color: $white !important;
+    position:absolute !important;
+    @include border-radius(5px);
+    z-index:99999 !important;
+  }
+  #portal-personaltools-wrapper .nav-collapse-edit a {color: $white !important;}
+  #portal-personaltools-wrapper .nav-collapse-edit a i {background-image: image-url("gh-w.png");}
+  .navbar-inverse .nav-collapse .nav > li > a.btn-danger:hover, .navbar-inverse .nav-collapse .dropdown-menu a.btn-danger:hover {
+    background-color: $red !important;
+  }
+  #portal-personaltools-wrapper .dropdown-menu {margin:0 !important;}
+  #portal-personaltools-wrapper .nav.pull-right {display:none;}
+
+  #portal-header h1.pull-left {margin-bottom:7px !important;}
+  #portal-header h1.pull-left img {margin-top:-3px; height:46px;}
+  #portal-header .container > div.clearfix {margin:0 !important;}
+  #portal-header .container > div:first-child {margin:0 -10px !important; padding:0 10px; background:#eee; box-shadow:0 1px 2px rgba(0,0,0,.25);}
+  #portal-header .btn-navbar.pull-right {margin-top:13px;margin-right:0 !important; padding: 7px 10px;}
+
+  .nav-collapse-eines {
+    height: auto;
+    width: 220px;
+    background: $white;
+    float: right;
+    top: 0;
+    margin-top: 0;
+    height: auto;
+    float: right;
+    position: absolute !important;
+    top: 52px;
+    right: 10px;
+    z-index: 999;
+    @include border-radius(5px);
+    @include box-shadow(0 0 5px rgba(0,0,0,.25));
+
+  }
+  .nav-collapse-eines #eines {
+    margin:0 !important;
+  }
+  #eines .input-append {
+    border-left: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align:center;
+    & input {
+      min-height: 28px;
+    }
+  }
+
+#eines > li > a {padding:9px 15px !important;}
+
+  .header-image {background-size:100%; height:40px !important;}
+  .header-image.l2-image {
+    height:30px !important;
+    margin-left:74px !important;
+    &:before {
+      top:25px;
+      width:46px;
+      margin-left:-74px;
+
+    }
+  }
+  #portal-globalnav h2.brand {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+  #portal-breadcrumbs {display:none;}
+  #content .span3, #edit-bar, .alert {display:none;} //provisional
+
+  /* peu i prepeu */
+  .llistatLogos {margin: 1em auto !important;}
+  #peu {font-size: 84.613846% !important;}
+  #peu .container {padding-top:5px;}
+  #peu .span4 {display:none;}
+  .img_blank {margin-top:-1px;}
+
+
 
 
 

@@ -366,7 +366,7 @@
 
 // Opacity
 @mixin opacity($opacity) {
-  opacity: $opacity / 100;
+  opacity: ($opacity / 100);
   filter: alpha(opacity=$opacity);
 }
 
@@ -557,6 +557,7 @@
   [class*="span"] {
     float: left;
     margin-left: $gutterWidth;
+    margin-bottom: $baseLineHeight;
   }
 
   // Set the container width, and override it for fixed navbars in media queries

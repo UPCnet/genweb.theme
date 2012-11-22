@@ -5,7 +5,19 @@
 
 // TABLETS AND BELOW
 // -----------------
-@media (max-width: $navbarCollapseWidth) {
+//Recordem $navbarCollapseWidth:             799px !default;
+
+
+
+@media only screen and (max-device-width: 864px) and (orientation: portrait),
+       only screen and (max-device-width: 640px) and (orientation: landscape),
+       only screen and (max-device-width: 1728px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (max-device-width: 1280px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+/*
+@media only screen and (max-device-width: 599px) and (orientation: landscape) {
+*/
+
+
 
   // UNFIX THE TOPBAR
   // ----------------
@@ -78,9 +90,10 @@
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
     font-weight: bold;
-    color: $navbarLinkColor;
+    color: $white;
     @include border-radius(3px);
   }
+
   // Buttons
   .nav-collapse .btn {
     padding: 4px 10px 4px;
@@ -165,8 +178,8 @@
 // DEFAULT DESKTOP
 // ---------------
 
-@media (min-width: 980px) {
-
+//@media (min-width: 980px) {
+@media (min-device-width: 1024px) {
   // Required to make the collapsing navbar work on regular desktops
   .nav-collapse.collapse {
     height: auto !important;

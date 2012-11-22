@@ -62,6 +62,12 @@
       />
 
   <plone:static
+      directory="js"
+      type="genweb"
+      name="js"
+      />
+
+  <plone:static
       directory="stylesheets"
       type="genweb"
       name="stylesheets"

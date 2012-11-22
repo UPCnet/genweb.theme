@@ -27,7 +27,7 @@ legend {
   line-height: $baseLineHeight * 2;
   color: $grayDark;
   border: 0;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $tableBorder;
 
   // Small
   small {

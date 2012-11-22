@@ -14,7 +14,7 @@ p {
 // Emphasis & misc
 // -------------------------
 
-small {
+small, .smaller {
   font-size: 85%; // Ex: 14px base font * 85% = about 12px
 }
 strong {
@@ -62,12 +62,12 @@ h1, h2, h3, h4, h5, h6 {
     color: $grayLight;
   }
 }
-h1 { font-size: 192.307692%; line-height: 36px; }
-h2 { font-size: 153.846154%; line-height: 36px; }
-h3 { font-size: 130.769231%; line-height: 18px; }
-h4 { font-size: 115.384615%; line-height: 18px; }
-h5 { font-size: 107.692308%; line-height: 18px; }
-h6 { font-size: 100%; line-height: 18px; }
+h1 { font-size: 192.307692%; line-height: $baseLineHeight / 2 * 3; }
+h2 { font-size: 153.846154%; line-height: $baseLineHeight; }
+h3 { font-size: 130.769231%; line-height: $baseLineHeight; }
+h4 { font-size: 115.384615%; line-height: $baseLineHeight; }
+h5 { font-size: 107.692308%; line-height: $baseLineHeight; }
+h6 { font-size: 100%;        line-height: $baseLineHeight; }
 
 h1 small { font-size: 153.846154%; }
 h2 small { font-size: 130.769231%; }
@@ -142,13 +142,7 @@ dd {
 // MISC
 // ----
 
-// Horizontal rules
-hr {
-  margin: $baseLineHeight 0;
-  border: 0;
-  border-top: 1px solid $hrBorder;
-  border-bottom: 1px solid $white;
-}
+
 
 // Abbreviations and acronyms
 abbr[title] {

@@ -8,6 +8,7 @@
 
 
 
+
     /*.goout {display:none;} /*provisional,  ha de ser amb overflow i no amb display*/
 
     .width100 {width:100% !important; -moz-box-sizing:border-box;}
@@ -15,7 +16,7 @@
     a:hover .img_blank {opacity:1;} /*ff*/
 
 
-
+b, strong {font-weight:bold;}
 
 .titol-espai h1 {
 	font-weight:200;
@@ -30,4 +31,3 @@
 	}
 .page-header h1 {color:#446a8e;}
 
-	[class^="icon-"], [class*=" icon-"] {background-image: image-url("glyphicons-halflings.png");}

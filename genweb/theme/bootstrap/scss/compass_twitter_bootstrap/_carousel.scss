@@ -5,14 +5,19 @@
 
 .carousel {
   position: relative;
-  margin-bottom: $baseLineHeight;
+  margin-bottom: $baseLineHeight*2/1;
   line-height: 1;
+
 }
 
 .carousel-inner {
   overflow: hidden;
-  width: 100%;
+  //width: 100%;
   position: relative;
+  @include border-radius(5px);  
+  border:1px solid $tableBorder;
+  border-bottom:1px solid darken($tableBorder,15%);
+  @include box-shadow(0 1px 3px rgba(0,0,0,.3));
 }
 
 .carousel {
@@ -28,7 +33,9 @@
     display: block;
     line-height: 1;
   }
-
+  .active > img {
+    @include border-radius(0 0 4px 4px);
+  }
   .active,
   .next,
   .prev { display: block; }
@@ -77,11 +84,11 @@
   font-size: 60px;
   font-weight: 100;
   line-height: 30px;
-  color: $white;
+  color: $grayDarker;
   text-align: center;
-  background: $grayDarker;
-  border: 3px solid $white;
-  @include border-radius(23px);
+  background: $white;
+  border: 3px solid $grayDark;
+  @include border-radius(25px);
   @include opacity(50);
 
   // we can't have this transition here
@@ -99,7 +106,7 @@
 
   // Hover state
   &:hover {
-    color: $white;
+    color: $grayDarker;
     text-decoration: none;
     @include opacity(90);
   }
@@ -115,12 +122,15 @@
   right: 0;
   bottom: 0;
   padding: 15px;
-  background: $grayDark;
-  background: rgba(0,0,0,.75);
+  background: $white;
+  background: rgba(255,255,255,.9);
+  @include border-radius(0 0 4px 4px);
+  border-top:1px solid $tableBorder;
+  @include box-shadow(0 5px 5px -5px rgba(0,0,0,.5) inset);
 }
 .carousel-caption h4,
 .carousel-caption p {
-  color: $white;
+  color: $grayDark;
   line-height: $baseLineHeight;
 }
 .carousel-caption h4 {
