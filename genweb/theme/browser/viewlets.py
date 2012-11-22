@@ -12,7 +12,7 @@ from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from plone.app.layout.viewlets.common import PersonalBarViewlet, GlobalSectionsViewlet, PathBarViewlet
-from plone.app.layout.viewlets.common import ManagePortletsFallbackViewlet, ContentViewsViewlet
+from plone.app.layout.viewlets.common import SearchBoxViewlet
 from plone.app.layout.viewlets.interfaces import IPortalTop, IPortalHeader, IBelowContent
 from plone.app.layout.viewlets.interfaces import IPortalFooter
 from Products.CMFPlone.interfaces import IPloneSiteRoot
@@ -90,3 +90,16 @@ class gwFooter(viewletBase):
     grok.template('footer')
     grok.viewletmanager(IPortalFooter)
     grok.layer(IGenwebTheme)
+
+
+class gwSearchViewletManager(grok.ViewletManager):
+    grok.context(Interface)
+    grok.name('genweb.search_manager')
+
+
+class gwSearchViewlet(SearchBoxViewlet, grok.Viewlet):
+    grok.context(Interface)
+    grok.viewletmanager(gwSearchViewletManager)
+    grok.layer(IGenwebTheme)
+
+    render = ViewPageTemplateFile('viewlets_templates/searchbox.pt')

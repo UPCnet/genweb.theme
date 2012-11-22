@@ -26,9 +26,7 @@
       <tal:block replace="structure provider:genweb.language_selector_manager" />
       <li class="divider"> </li>
       <li>
-        <div class="input-append">
-          <input class="span2" id="appendedInputButton" size="16" type="text"><button class="btn" type="button">Cerca</button>
-        </div>
+        <tal:block replace="structure provider:genweb.search_manager" />
       </li>
     </ul>
   </div>
