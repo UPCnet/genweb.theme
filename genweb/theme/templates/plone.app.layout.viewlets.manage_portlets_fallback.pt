@@ -1,5 +1,4 @@
 <div class="container" tal:condition="view/available">
-    <div class="row">
         <a class="btn btn-small btn-block"
            tal:attributes="href string:${view/object_url}/@@manage-portlets">
            <i class="icon-cog"></i>
@@ -8,5 +7,4 @@
                                 Manage portlets
            </tal:adminPortlets>
         </a>
-    </div>
 </div>

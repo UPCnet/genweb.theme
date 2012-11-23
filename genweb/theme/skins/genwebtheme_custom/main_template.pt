@@ -53,7 +53,7 @@
         <link rel="stylesheet" tal:attributes="href string:${portal_url}/++genweb++stylesheets/genwebupc.css">
         <script tal:attributes="src string:${portal_url}/++bootstrap++js/modernizr-2.6.1.min.js"></script>
 
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content="Plone - http://plone.org" />
     </tal:notajax>
 </head>
@@ -69,9 +69,9 @@
 <tal:ancientBrowser tal:replace="structure string:&lt;!--[if lt IE 8]&gt;&lt;p class=chromeframe&gt;Your browser is &lt;em&gt;ancient!&lt;/em&gt; &lt;a href='http://browsehappy.com/'&gt;Upgrade to a different browser&lt;/a&gt; or &lt;a href='http://www.google.com/chromeframe/?redirect=true'&gt;install Google Chrome Frame&lt;/a&gt; to experience this site.&lt;/p&gt;&lt;![endif]--&gt;" />
 
 <tal:portaltop
-             i18n:domain="plone"
-             tal:condition="not:ajax_load">
-                <div tal:replace="structure provider:plone.portaltop" />
+    i18n:domain="plone"
+    tal:condition="not:ajax_load">
+        <div tal:replace="structure provider:plone.portaltop" />
 </tal:portaltop>
 
 <section id="content">
@@ -162,7 +162,7 @@
             </div> <!-- Fi span content -->
 
             <!-- Ojo, a GW no tenim mai columna dreta de portlets! no? -->
-            <tal:notajax>
+            <tal:notajax tal:condition="not:ajax_load">
                 <div id="portal-column-two"
                     class="spanX"
                     metal:define-slot="column_two_slot"
@@ -189,8 +189,10 @@
         </div>
     </div>
 
-<tal:scripts replace="structure provider:plone.resourceregistries.scripts" />
-<metal:javascriptslot define-slot="javascript_head_slot" />
+<tal:notajax tal:condition="not:ajax_load">
+    <tal:scripts replace="structure provider:plone.resourceregistries.scripts" />
+    <metal:javascriptslot define-slot="javascript_head_slot" />
+</tal:notajax>
 
 </body>
 </html>
