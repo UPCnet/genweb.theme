@@ -70,22 +70,22 @@
                         src="++genweb++static/images/blank_blanc.png">
             </a></li>
           </ul>
-        <h2 class="goout"> Menú d'eines Genweb UPC </h2>
-        <ul class="nav pull-right">
-          <li><a class="userScreen" href="#"><span class="goout">Screen</span></a></li>
-          <li><a class="userTablet" href="#"><span class="goout">Tablet</span></a></li>
-          <li><a class="userMobile" href="#"><span class="goout">Mobile</span></a></li>
-          <li class="divider-vertical"></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle userGenweb" data-toggle="dropdown"><span class="goout">Genweb</span> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="nav-header">Genweb UPC 4.0 - JN12</li>
-              <li><a href="#"><i class="icon-certificate"></i> Novetats de la versió</a></li>
-              <li><a href="#"><i class="icon-certificate"></i> Darrer butlletí</a></li>
-            </ul>
-          </li>
-        </ul>
-
+          <h2 class="goout"> Menú d'eines Genweb UPC </h2>
+          <ul class="nav pull-right visible-desktop">
+            <li><a class="userScreen" href="#"><span class="goout">Screen</span></a></li>
+            <li><a class="userTablet" href="#"><span class="goout">Tablet</span></a></li>
+            <li><a class="userMobile" href="#"><span class="goout">Mobile</span></a></li>
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle userGenweb" data-toggle="dropdown"><span class="goout">Genweb</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="nav-header">Genweb UPC 4.0 - JN12</li>
+                <li><a href="#"><i class="icon-certificate"></i> Novetats de la versió</a></li>
+                <li><a href="#"><i class="icon-certificate"></i> Darrer butlletí</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

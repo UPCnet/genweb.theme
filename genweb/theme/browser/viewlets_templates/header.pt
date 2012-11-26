@@ -1,48 +1,54 @@
 <div class="container">
-  <div class="clearfix"><!-- títol UPC -->
+  <div class="clearfix">
     <h1 class="pull-left">
       <a href="http://www.upc.edu">
         <img tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/logoUPC.png"
              alt="Universitat Politècnica de Catalunya · BarcelonaTech">
       </a>
     </h1>
-    <ul id="eines" class="nav nav-pills pull-right">
-      <li><a accesskey="3" title="Site Map"
-             i18n:translate="Site Map"
-             i18n:attributes="title"
-             tal:attributes="href string:${viewlet/portal_url}/@@sitemap">Site Map</a></li>
-      <li><a accesskey="9" title="Contact"
-             i18n:translate="Contact"
-             i18n:attributes="title"
-             tal:attributes="href string:${viewlet/portal_url}/contact">Site Map</a></li>
-      <li><a href="#">Directori UPC</a></li>
-      <li><a href=""
-         tal:attributes="href context/cas_login_url | nothing"
-         i18n:attributes="title identificat"
-         i18n:domain="genweb"
-         i18n:translate="identificat">
-         Identifica't
-      </a></li>
-      <tal:block replace="structure provider:genweb.language_selector_manager" />
-      <li class="divider"> </li>
-      <li>
-        <tal:block replace="structure provider:genweb.search_manager" />
-      </li>
-    </ul>
+    <a class="btn btn-navbar pull-right hidden-desktop" data-toggle="collapse" data-target=".nav-collapse-eines">
+      <i class="icon-wrench"></i>
+    </a>
+    <div class="nav-collapse nav-collapse-eines">
+      <ul id="eines" class="nav nav-pills pull-right">
+        <li><a accesskey="3" title="Site Map"
+               i18n:translate="Site Map"
+               i18n:attributes="title"
+               tal:attributes="href string:${viewlet/portal_url}/@@sitemap">Site Map</a></li>
+        <li><a accesskey="9" title="Contact"
+               i18n:translate="Contact"
+               i18n:attributes="title"
+               tal:attributes="href string:${viewlet/portal_url}/contact">Contact</a></li>
+        <li><a href="#">Directori UPC</a></li>
+        <li><a href=""
+           tal:attributes="href context/cas_login_url | nothing"
+           i18n:attributes="title identificat"
+           i18n:domain="genweb"
+           i18n:translate="identificat">
+           Identifica't
+        </a></li>
+        <tal:block replace="structure provider:genweb.language_selector_manager" />
+        <li class="divider"> </li>
+        <li>
+          <tal:block replace="structure provider:genweb.search_manager" />
+        </li>
+      </ul>
+    </div>
   </div>
 
-  <div class="titol-espai clearfix"><!-- títol web -->
+  <div class="titol-espai clearfix">
     <h1>
       <a href="#"
-         tal:attributes="href string:${viewlet/portal_url}"
-         tal:content="structure python:getattr(viewlet.genweb_config, 'html_title_%s' % viewlet.pref_lang(), 'Servei de <b>Comunicació i Promoció</b>')">
-          Servei de <b>Comunicació i Promoció</b>
-      <img alt="" class="logoPropi pull-right"
-           tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/logoPropi.png">
+         tal:attributes="href string:${viewlet/portal_url}">
+          <span tal:content="structure python:getattr(viewlet.genweb_config, 'html_title_%s' % viewlet.pref_lang(), 'Servei de <b>Comunicació i Promoció</b>')">
+            Servei de <b>Comunicació i Promoció</b>
+          </span>
+          <img alt="" class="logoPropi pull-right"
+               tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/logoPropi.png">
       </a>
     </h1>
   </div>
 
-  <div class="header-image l3-image"> </div>
+  <div class="header-image l3-image"></div>
 
 </div>

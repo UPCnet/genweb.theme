@@ -76,7 +76,7 @@
 
 <section id="content">
   <div class="container">
-        <div class="row">
+        <div class="row-fluid">
             <tal:notajax tal:condition="not:ajax_load">
                 <div id="portal-column-one"
                     class="span3"
@@ -177,17 +177,14 @@
     </div>
 </section>
 
-    <div id="portal-footer-wrapper"
-        class="row"
-        i18n:domain="plone"
-        tal:condition="not:ajax_load">
-        <div class="cell width-full position-0">
-            <div tal:replace="structure provider:plone.portalfooter" />
-            <div id="kss-spinner">
-                <img tal:attributes="src string:${portal_url}/spinner.gif" alt="" />
-            </div>
+<tal:footer
+    i18n:domain="plone"
+    tal:condition="not:ajax_load">
+        <div tal:replace="structure provider:plone.portalfooter" />
+        <div id="kss-spinner">
+            <img tal:attributes="src string:${portal_url}/spinner.gif" alt="" />
         </div>
-    </div>
+</tal:footer>
 
 <tal:notajax tal:condition="not:ajax_load">
     <tal:scripts replace="structure provider:plone.resourceregistries.scripts" />
