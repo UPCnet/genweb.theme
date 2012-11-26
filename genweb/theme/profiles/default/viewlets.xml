@@ -30,4 +30,7 @@
     <viewlet name="plone.colophon"/>
     <viewlet name="plone.site_actions"/>
   </hidden>
+  <hidden manager= "plone.htmlhead.links" skinname="GenwebTheme">
+    <viewlet name="l10n.datepicker"/>
+  </hidden>
 </object>
