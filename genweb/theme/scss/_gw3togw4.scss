@@ -1,0 +1,6 @@
+// EXTENSIÓ DE CLASSES
+// -------------------------
+.taulaRegistres {
+  @extend .table;
+  @extend .table-striped;
+}

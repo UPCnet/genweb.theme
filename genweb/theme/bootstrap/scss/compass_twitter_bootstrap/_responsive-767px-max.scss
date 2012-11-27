@@ -18,10 +18,10 @@
 }
 */
 
-@media only screen and (max-device-width: 864px) and (orientation: portrait),
-       only screen and (max-device-width: 640px) and (orientation: landscape),
+@media only screen and (max-width: 979px) and (orientation: portrait),
+       only screen and (max-width: 979px) and (orientation: landscape)/*,
        only screen and (max-device-width: 1728px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (max-device-width: 1280px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5)   {
+       only screen and (max-device-width: 1280px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5)*/   {
 
 //@media only screen and (max-device-width: 799px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
 //       only screen and (max-device-width: 599px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5)   {
@@ -176,8 +176,8 @@ nav#portal-personaltools-wrapper {margin-top: 0px !important;}
 // ---------------------
 
 //@media (max-width: 480px) {
-@media only screen and (max-device-width: 640px),
-       only screen and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5)  {
+@media only screen and (max-width: 639px)/*,
+       only screen and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5)*/  {
 //@media only screen and (max-device-width: 599px) and (-webkit-min-device-pixel-ratio: 1.5) {
 
   /* estils meus **********************************/

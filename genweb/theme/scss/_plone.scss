@@ -1,0 +1,196 @@
+// EXTENSIÓ CLASSES DE SISTEMA DE PLONE
+// -------------------------
+
+
+
+//taules de SISTEMA
+.listing {
+	@extend .table;
+	@extend .table-condensed;
+	@extend .table-striped;
+	@extend .table-hover;
+}
+
+
+
+// EXTENSIO FROMS
+// ----------------------
+label {
+  font-weight:bold;
+  color: $genwebTitles;
+}
+.formHelp {
+  @extend  .s;
+  @extend .muted;
+  display:block;
+  font-weight:normal;
+}
+.discreet {
+	@extend .muted;
+}
+.visualClear {
+	@extend .clearFix;
+}
+// botons
+.context {
+  @extend .btn;
+  @extend .btn-primary;
+}
+.standalone {
+  @extend .btn;
+}
+
+//formularis
+.selected {
+	@extend .active;
+}
+.fieldRequired {
+	@extend .badge;
+	@extend .badge-important;
+}
+.required {
+	margin-left:-.35em;
+	&:after {
+		color: $red;
+		content: "*";
+		top:.35em;
+		position: relative;
+		font-size:150%;
+	}
+}
+.field {
+	margin-bottom: $baseLineHeight;
+	& input[type="radio"],
+	input[type="checkbox"] {
+		margin:0 0 3px;
+	}
+}
+
+#archetypes-fieldname-title {
+	& label {
+		@extend .xxxl;
+	}
+	& input {
+		@extend .xxxl;
+		@extend .input-xxlarge;
+		height:27px;
+	}
+	& .required:after {
+
+
+	}
+}
+
+// MENUS INTERNS
+.contentViews {
+	@extend .nav;
+	@extend .nav-tabs;
+	& .selected, .selected:hover {
+		@extend .active;
+	}
+}
+#portlet-prefs {
+	border:0;
+	.portletHeader {
+		display:none;
+	}
+	& dd {
+		margin:0;
+	}
+}
+.configlets {
+	@extend .nav;
+	@extend .nav-tabs;
+	@extend .nav-stacked;
+	& img { @extend .pull-right;}
+}
+
+// PORTAL MESSAGE
+// -----------------------
+.portalMessage {
+	@extend .alert;
+	&.info {@extend .alert-info;}
+	&.warning {@extend .alert-warning;}
+	&.error {@extend .alert-error;}
+	& dt, & dd {margin:0; display:inline;}
+}
+
+// SITEMAP
+// -----------------------
+#portal-sitemap {
+	@extend .unstyled;
+	& > li {
+		font-weight: bold;
+		font-size:normal;
+		margin-top:30px;
+		@extend .xxxl;
+		& > div {
+			padding-bottom:10px;
+			border-bottom:1px solid $tableBorder;
+		}
+		& a {
+			color: $blue;
+			&:after{
+				content:" ";
+				position:relative;
+				width:14px;
+				height:14px;
+				display:inline-block;
+				background: image-url("gh.png") -239px -143px no-repeat;
+				margin-left:5px;
+			}
+		}
+	}
+	& ul {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+		-webkit-column-gap: 2em;
+		-moz-column-gap: 2em;
+		column-gap: 2em;
+		-webkit-column-fill: auto;
+		-moz-column-fill: auto;
+		column-fill: auto;
+		margin:0;
+		@extend .unstyled;
+		& > li {
+			@extend .xxs;
+			font-weight: bold;
+			font-size:normal;
+			margin:0 0 5px;
+			padding:5px 0;
+			-webkit-column-break-inside: avoid;
+			-moz-column-break-inside: avoid;
+			column-break-inside: avoid;
+			& > div {
+				padding-bottom:0;
+				padding-top:5px;
+			}
+			& a {
+				color: darken($blue,15%);
+				&:after {
+					content:none;
+				}
+			}
+		}
+		& ul {
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+		}
+		& > li li {
+			padding:5px 9px;
+			line-height:12px;
+			font-weight: normal;
+			font-size:smaller;
+
+
+			& > div {
+				padding-top:0;
+			}
+			& a {
+				color: $gray;
+			}
+		}
+	}
+}

@@ -3,7 +3,9 @@
 // --------------------------------------------------
 
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 799px) and (orientation: portrait) {
+//@media only screen and (min-device-width: 600px) and (max-device-width: 799px) and (orientation: portrait) {
+@media only screen and (min-width: 640px) and (max-width: 979px) and (orientation: portrait)/*,
+	only screen and (min-device-width: 1280px) and (max-device-width: 1728px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5)*/ {
 
   // Fixed grid
   @include grid-core($gridColumnWidth768, $gridGutterWidth768);

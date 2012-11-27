@@ -7,7 +7,16 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
 	#portal-header h1.pull-left img {opacity:0;}
-	#portal-header h1.pull-left {height:46px; width:207px;background: image-url('logoUPC@2x.png') no-repeat; background-size:100%;}
+	#portal-header h1.pull-left {height:46px; width:207px;background:url('../img/logoUPC@2x.png') no-repeat; background-size:100%;}
+
+
+  .list-links li {
+    content: image-url("arrow@2x.png");
+  }
+    .list-highlighted li {
+    content: image-url("arrow_hl@2x.png");
+  }
+
 }
 
 

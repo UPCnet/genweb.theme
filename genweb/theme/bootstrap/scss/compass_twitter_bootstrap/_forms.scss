@@ -53,7 +53,6 @@ textarea {
 
 // Identify controls by their labels
 label {
-  display: block;
   margin-bottom: 5px;
 }
 
@@ -157,6 +156,7 @@ input[type="checkbox"] {
 
 // Set the height of select and file controls to match text inputs
 select,
+select[size="1"],
 input[type="file"] {
   height: 28px; /* In IE7, the height of the select element cannot be changed by height, only font-size */
   *margin-top: 4px; /* For IE7, add top margin to align select with labels */
@@ -175,6 +175,11 @@ select {
 select[multiple],
 select[size] {
   height: auto;
+}
+select[size="1"] { //corregeix bug de select[size] per a 1.
+  height: 28px;
+  *margin-top: 4px;
+  line-height: 28px;
 }
 
 // Focus for file, radio, and checkbox

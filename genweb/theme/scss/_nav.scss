@@ -96,7 +96,6 @@
 		background:#fff;
 		list-style:none;
 		@include box-shadow(inset 0 5px 5px -5px rgba(0,0,0,.25));
-		display:inline-block;
 		& a {
 			border-top:0 !important;
 			font-size:12px;

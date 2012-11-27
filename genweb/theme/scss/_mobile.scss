@@ -1,6 +1,6 @@
 
-@media only screen and (max-device-width: 640px),
-       only screen and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5)  { 
+@media only screen and (max-device-width: 640px)/*,
+       only screen and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) */ { 
 	/* adaptació imatge a protlet ample */
 	.span6 .portlet-ampliat li > img,
 	.span7 .portlet-ampliat li > img,

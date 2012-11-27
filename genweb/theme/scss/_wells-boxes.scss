@@ -51,6 +51,9 @@
 }
 .box-gradient {
   @include gradient-vertical($white, $wellBackground);
+  &.box-inverse {
+    @include gradient-vertical($black, $grayDark);
+  }
 }
 .box-example {
   position:relative;
@@ -60,12 +63,21 @@
     border: 1px solid darken($wellBackground, 12%);
     @include border-radius(4px 0 4px 0);
     @extend .muted; //color gris clar
-    content:"Exemple";
+    content:"?";
     font-size:92.3076923%;
     left:-1px;
     top:-1px;
     padding:2px 7px 3px;
     position:absolute;
+  }
+  &.box-inverse {
+    &:after {
+      background-color:$black;
+      border-color:$gray;
+      border-top:0;
+      border-left:0;
+      color:$white;
+    }
   }
 }
 
@@ -73,7 +85,7 @@
 // MIDES
 // -------------------------
 .well-large, .box-large {
-  padding: 24px;
+  padding: 36px;
   @include border-radius(8px);
 }
 .well-small, .box-small {

@@ -2,7 +2,18 @@
 // -------------------------
 table {
   @include border-radius(0 0 4px 4px);
-}
+  width:100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width:100%;
+  table-layout:fixed;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  }
+
 caption {color:$gray; font-size:92.3076923%; text-align:left;}
 tfoot {
   color:$gray; 

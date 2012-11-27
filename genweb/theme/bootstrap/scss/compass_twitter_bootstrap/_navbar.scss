@@ -78,7 +78,7 @@
 // -------------------------
 .navbar .divider-vertical {
   height: $navbarHeight;
-  margin: 0 9px;
+  margin: 0 1px;
   border-left: 1px solid $navbarBackground;
   border-right: 1px solid $navbarBackgroundHighlight;
 }
@@ -230,7 +230,7 @@
 .navbar .nav > li > a {
   float: none;
   // Vertically center the text given $navbarHeight
-  padding: (($navbarHeight - $baseLineHeight) / 2) 15px (($navbarHeight - $baseLineHeight) / 2);
+  padding: (($navbarHeight - $baseLineHeight) / 2) 12px (($navbarHeight - $baseLineHeight) / 2);
   color: $navbarLinkColor;
   text-decoration: none;
   text-shadow: 0 1px 0 $navbarBackgroundHighlight;
