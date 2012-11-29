@@ -50,21 +50,9 @@
       />
 
   <plone:static
-      directory="bootstrap/img"
-      type="bootstrap"
-      name="images"
-      />
-
-  <plone:static
       directory="static"
       type="genweb"
       name="static"
-      />
-
-  <plone:static
-      directory="js"
-      type="genweb"
-      name="js"
       />
 
   <plone:static
@@ -82,7 +70,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="XXXXXXXXXXXXX genweb.theme"
+      title="genweb.theme"
       directory="profiles/default"
       description="Installs the genweb.theme package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
