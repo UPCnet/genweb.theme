@@ -1,42 +1,99 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
-      xmlns:tal="http://xml.zope.org/namespaces/tal"
+<html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      lang="en"
-      metal:use-macro="here/main_template/macros/master"
-      i18n:domain="genweb">
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="genweb.portlets">
+<head>
+  <div metal:fill-slot="javascript_head_slot" tal:omit-tag="">
+  </div>
+</head>
 
-<body>
-<metal:block fill-slot="top_slot"
-             tal:define="dummy python:request.set('disable_border',1)" />
+<body class="homepage">
 
-<div metal:fill-slot="main">
- <metal:main-macro define-macro="main">
+  <metal:block fill-slot="top_slot"
+                   tal:define="disable_column_one python:request.set('disable_plone.leftcolumn',1);
+                               disable_column_two python:request.set('disable_plone.rightcolumn',1);
+                               dummy python:request.set('disable_border',1)" />
 
-	<div class="contingut">
-		<div class="columnaDreta">
-      <div tal:replace="structure python:view.renderProviderByName('genweb.portlets.HomePortletManager3')" />
-		<!-- Columna dreta  -->
-			<div class="controlDreta" tal:condition="python:plone_view.have_portlets('genweb.portlets.HomePortletManager3', view)">
-                <div tal:replace="structure python:view.renderProviderByName('genweb.portlets.HomePortletManager3')" />
-			</div>
-		</div>
-		<div class="columnaEsq">
-			<!-- Columna esquerra  -->
-			<div>
-                <div tal:replace="structure provider:genweb.portlets.HomePortletManager2" />
-			</div>
-    		</div>
-    		<div class="columnaCentre">
-			<table summary="contingut"><caption>Contingut</caption><tr><td>
-				<!-- Columna Central -->
-				<div>
-                    <div tal:replace="structure provider:genweb.portlets.HomePortletManager1" />
-				</div>
-			</td></tr></table>
-		</div>
-	</div>
- </metal:main-macro>
-</div>
-</body>
+  <div metal:fill-slot="portlets_one_slot">
+      <tal:comment tal:replace="nothing">get rid of the left hand column portlets to avoid confusion</tal:comment>
+  </div>
+
+  <div metal:fill-slot="main">
+
+    <section id="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="row-fluid">
+              <div id="portal-column-one" class="span3">
+                <span tal:replace="structure python:view.renderProviderByName('genweb.portlets.HomePortletManager1')" />
+              </div>
+              <div id="portal-column-content" class="span9">
+                <tal:comment replace="nothing"> Fila 1 </tal:comment>
+                <div class="row-fluid">
+                  <div class="span12">
+                    <span tal:replace="structure python:view.renderProviderByName('genweb.portlets.HomePortletManager2')" />
+                  </div>
+                </div>
+                <tal:comment replace="nothing"> Fila 2 </tal:comment>
+                <div class="row-fluid">
+                  <div class="span3"
+                       tal:define="manager_name string:genweb.portlets.HomePortletManager3"
+                       tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
+                    <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
+                  </div>
+                  <div class="span3"
+                       tal:define="manager_name string:genweb.portlets.HomePortletManager4"
+                       tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
+                    <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
+                  </div>
+                  <div class="span3"
+                       tal:define="manager_name string:genweb.portlets.HomePortletManager5"
+                       tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
+                    <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
+                  </div>
+                  <div class="span3"
+                       tal:define="manager_name string:genweb.portlets.HomePortletManager6"
+                       tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
+                    <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
+                  </div>
+                </div>
+                <tal:comment replace="nothing"> Fila 3 </tal:comment>
+                <div class="row-fluid">
+                  <div class="span3"
+                       tal:define="manager_name string:genweb.portlets.HomePortletManager7"
+                       tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
+                    <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
+                  </div>
+                  <div class="span3"
+                       tal:define="manager_name string:genweb.portlets.HomePortletManager8"
+                       tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
+                    <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
+                  </div>
+                  <div class="span3"
+                       tal:define="manager_name string:genweb.portlets.HomePortletManager9"
+                       tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
+                    <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
+                  </div>
+                  <div class="span3"
+                       tal:define="manager_name string:genweb.portlets.HomePortletManager10"
+                       tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
+                    <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+        <div metal:fill-slot="portlets_two_slot">
+            <tal:comment tal:replace="nothing">get rid of the left hand column portlets to avoid confusion</tal:comment>
+        </div>
+
+    </body>
 </html>

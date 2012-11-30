@@ -1,7 +1,7 @@
 from five import grok
 from Acquisition import aq_inner
 from zope.interface import Interface
-from zope.component import getMultiAdapter, queryMultiAdapter
+from zope.component import getMultiAdapter, queryMultiAdapter, getUtility
 from zope.contentprovider import interfaces
 
 from Products.CMFPlone import utils
@@ -10,9 +10,12 @@ from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.CMFPlone.browser.navigation import CatalogNavigationTabs
 from Products.CMFPlone.browser.navigation import get_id, get_view_url
 
+from plone.portlets.interfaces import IPortletManager
+
 from genweb.core.interfaces import IGenwebLayer, IHomePage
 from genweb.theme.browser.interfaces import IGenwebTheme
 from genweb.core.utils import genweb_config, pref_lang, portal_url
+from genweb.portlets.browser.manager import ISpanStorage
 
 
 class GWConfig(grok.View):
@@ -32,6 +35,9 @@ class homePage(grok.View):
     grok.context(IPloneSiteRoot)
     grok.layer(IGenwebTheme)
 
+    def update(self):
+        self.portlet_container = self.getPortletContainer()
+
     def getPortletContainer(self):
         context = aq_inner(self.context)
         pc = getToolByName(context, 'portal_catalog')
@@ -46,12 +52,21 @@ class homePage(grok.View):
 
     def renderProviderByName(self, provider_name):
         provider = queryMultiAdapter(
-            (self.getPortletContainer(), self.request, self),
+            (self.portlet_container, self.request, self),
             interfaces.IContentProvider, provider_name)
 
         provider.update()
 
         return provider.render()
+
+    def getSpanValueForManager(self, manager):
+        portletManager = getUtility(IPortletManager, manager)
+        spanstorage = getMultiAdapter((self.portlet_container, portletManager), ISpanStorage)
+        span = spanstorage.span
+        if span:
+            return span
+        else:
+            return '4'
 
 
 class gwCatalogNavigationTabs(CatalogNavigationTabs):
