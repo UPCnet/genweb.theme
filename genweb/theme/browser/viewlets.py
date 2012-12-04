@@ -18,7 +18,7 @@ from plone.app.layout.viewlets.interfaces import IPortalFooter
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 
 from genweb.core.interfaces import IHomePage
-from genweb.core.utils import genweb_config, havePermissionAtRoot, assignAltAcc, pref_lang
+from genweb.core.utils import genweb_config, havePermissionAtRoot, pref_lang
 
 from genweb.theme.browser.interfaces import IGenwebTheme
 
@@ -46,9 +46,6 @@ class viewletBase(grok.Viewlet):
         lt = getToolByName(self.portal(), 'portal_languages')
         return lt.getPreferredLanguage()
 
-    def assignAltAcc(self):
-        return assignAltAcc(self)
-
 
 class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
     grok.name('genweb.personalbar')
@@ -70,6 +67,19 @@ class gwHeader(viewletBase):
     grok.viewletmanager(IPortalHeader)
     grok.layer(IGenwebTheme)
 
+    def get_image_class(self):
+        if self.genweb_config().treu_menu_horitzontal:
+            # Is a L2 type
+            return 'l2-image'
+        else:
+            return 'l3-image'
+
+    def show_login(self):
+        return self.genweb_config().amaga_identificacio
+
+    def show_directory(self):
+        return self.genweb_config().directori_upc
+
 
 class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
     grok.name('genweb.globalsections')
@@ -77,6 +87,9 @@ class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
     grok.layer(IGenwebTheme)
 
     index = ViewPageTemplateFile('viewlets_templates/sections.pt')
+
+    def show_menu(self):
+        return self.genweb_config().treu_menu_horitzontal and self.portal_tabs
 
 
 class gwPathBarViewlet(PathBarViewlet, viewletBase):

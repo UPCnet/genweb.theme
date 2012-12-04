@@ -1,6 +1,6 @@
 <nav id="portal-globalnav"
      tal:define="portal_tabs view/portal_tabs"
-     tal:condition="portal_tabs"
+     tal:condition="view/show_menu"
      i18n:domain="plone"><!-- #portal-globalnav -->
   <h2 class="goout">Navegació</h2>
   <div class="container">

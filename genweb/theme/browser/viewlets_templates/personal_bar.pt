@@ -65,7 +65,7 @@
                    i18n:attributes="title genweb-ajuda">
                    <tal:help i18n:translate="genweb-ajuda">
                       Help</tal:help>
-                   <img tal:attributes="alt view/assignAltAcc"
+                   <img i18n:attributes="alt obrir_link_finestra_nova"
                         class="img_blank"
                         src="++genweb++static/images/blank_blanc.png">
             </a></li>

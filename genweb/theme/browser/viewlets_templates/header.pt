@@ -19,13 +19,14 @@
                i18n:translate="Contact"
                i18n:attributes="title"
                tal:attributes="href string:${viewlet/portal_url}/contact">Contact</a></li>
-        <li><a href="#">Directori UPC</a></li>
-        <li><a href=""
-           tal:attributes="href context/cas_login_url | nothing"
-           i18n:attributes="title identificat"
-           i18n:domain="genweb"
-           i18n:translate="identificat">
-           Identifica't
+        <li tal:condition="viewlet/show_directory"><a href="#">Directori UPC</a></li>
+        <li tal:condition="viewlet/show_login">
+            <a href=""
+               tal:attributes="href context/cas_login_url | nothing"
+               i18n:attributes="title identificat"
+               i18n:domain="genweb"
+               i18n:translate="identificat">
+               Identifica't
         </a></li>
         <tal:block replace="structure provider:genweb.language_selector_manager" />
         <li class="divider"> </li>
@@ -49,6 +50,7 @@
     </h1>
   </div>
 
-  <div class="header-image l3-image"></div>
+  <div class="header-image l3-image"
+       tal:attributes="class string:header-image ${viewlet/get_image_class}"></div>
 
 </div>
