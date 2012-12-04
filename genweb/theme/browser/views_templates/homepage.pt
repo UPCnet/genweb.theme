@@ -22,15 +22,19 @@
 
   <div metal:fill-slot="main">
 
-    <section id="content">
+    <section id="content"
+             tal:define="view nocall:view;
+                         have_portlets_slot1 python:view.have_portlets('genweb.portlets.HomePortletManager1', view);">
       <div class="container">
         <div class="row-fluid">
           <div class="span12">
             <div class="row-fluid">
-              <div id="portal-column-one" class="span3">
+              <div id="portal-column-one" class="span3"
+                   tal:condition="have_portlets_slot1">
                 <span tal:replace="structure python:view.renderProviderByName('genweb.portlets.HomePortletManager1')" />
               </div>
-              <div id="portal-column-content" class="span9">
+              <div id="portal-column-content" class="span9"
+                   tal:attributes="class python:have_portlets_slot1 and 'span9' or 'span12'">
                 <tal:comment replace="nothing"> Fila 1 </tal:comment>
                 <div class="row-fluid">
                   <div class="span12">

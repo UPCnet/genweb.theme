@@ -1,7 +1,7 @@
 from five import grok
 from Acquisition import aq_inner
 from zope.interface import Interface
-from zope.component import getMultiAdapter, queryMultiAdapter, getUtility
+from zope.component import getMultiAdapter, queryMultiAdapter, getUtility, queryUtility
 from zope.contentprovider import interfaces
 
 from Products.CMFPlone import utils
@@ -11,6 +11,7 @@ from Products.CMFPlone.browser.navigation import CatalogNavigationTabs
 from Products.CMFPlone.browser.navigation import get_id, get_view_url
 
 from plone.portlets.interfaces import IPortletManager
+from plone.portlets.interfaces import IPortletManagerRenderer
 
 from genweb.core.interfaces import IGenwebLayer, IHomePage
 from genweb.theme.browser.interfaces import IGenwebTheme
@@ -20,7 +21,6 @@ from genweb.portlets.browser.manager import ISpanStorage
 
 class GWConfig(grok.View):
     grok.context(Interface)
-    # grok.layer(IGenwebLayer)
 
     def render(self):
         return genweb_config()
@@ -67,6 +67,28 @@ class homePage(grok.View):
             return span
         else:
             return '4'
+
+    def have_portlets(self, manager_name, view=None):
+        """Determine whether a column should be shown. The left column is called
+        plone.leftcolumn; the right column is called plone.rightcolumn.
+        """
+        force_disable = self.request.get('disable_' + manager_name, None)
+        if force_disable is not None:
+            return not bool(force_disable)
+
+        context = self.portlet_container
+        if view is None:
+            view = self
+
+        manager = queryUtility(IPortletManager, name=manager_name)
+        if manager is None:
+            return False
+
+        renderer = queryMultiAdapter((context, self.request, view, manager), IPortletManagerRenderer)
+        if renderer is None:
+            renderer = getMultiAdapter((context, self.request, self, manager), IPortletManagerRenderer)
+
+        return renderer.visible
 
 
 class gwCatalogNavigationTabs(CatalogNavigationTabs):
