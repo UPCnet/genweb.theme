@@ -12,11 +12,14 @@ from Products.CMFPlone.browser.navigation import get_id, get_view_url
 
 from plone.portlets.interfaces import IPortletManager
 from plone.portlets.interfaces import IPortletManagerRenderer
+from plone.memoize import ram
 
 from genweb.core.interfaces import IGenwebLayer, IHomePage
 from genweb.theme.browser.interfaces import IGenwebTheme
 from genweb.core.utils import genweb_config, pref_lang, portal_url
 from genweb.portlets.browser.manager import ISpanStorage
+
+from scss import Scss
 
 
 class GWConfig(grok.View):
@@ -89,6 +92,28 @@ class homePage(grok.View):
             renderer = getMultiAdapter((context, self.request, self, manager), IPortletManagerRenderer)
 
         return renderer.visible
+
+
+def _render_cachekey(method, self, especific1, especific2):
+    """Cache by the two specific colors"""
+    return (especific1, especific2)
+
+
+class dynamicCSS(grok.View):
+    grok.name('dynamic.css')
+    grok.context(Interface)
+
+    def update(self):
+        self.especific1 = genweb_config().especific1
+        self.especific2 = genweb_config().especific2
+
+    def render(self):
+        return self.compile_scss(self.especific1, self.especific2)
+
+    @ram.cache(_render_cachekey)
+    def compile_scss(self, especific1, especific2):
+        css = Scss()
+        return css.compile("h1 {color:black; &.hover {color:green} a {color:red}}")
 
 
 class gwCatalogNavigationTabs(CatalogNavigationTabs):
