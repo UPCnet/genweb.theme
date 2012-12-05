@@ -31,7 +31,8 @@ setup(name='genweb.theme',
           'five.grok',
           'z3c.jbot',
           'genweb.core',
-          'genweb.controlpanel'
+          'genweb.controlpanel',
+          'pyScss',
       ],
       entry_points="""
       # -*- Entry points: -*-

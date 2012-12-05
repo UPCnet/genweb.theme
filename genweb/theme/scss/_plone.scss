@@ -3,8 +3,8 @@
 
 
 
-//taules de SISTEMA
-.listing {
+//taules de SISTEMA 
+.listing {   
 	@extend .table;
 	@extend .table-condensed;
 	@extend .table-striped;
@@ -17,7 +17,7 @@
 // ----------------------
 label {
   font-weight:bold;
-  color: $genwebTitles;
+  color: $genwebTitles;  
 }
 .formHelp {
   @extend  .s;
@@ -29,7 +29,7 @@ label {
 	@extend .muted;
 }
 .visualClear {
-	@extend .clearFix;
+	@extend .clearfix;
 }
 // botons
 .context {
@@ -55,7 +55,8 @@ label {
 		content: "*";
 		top:.35em;
 		position: relative;
-		font-size:150%;
+		font-size:150%;		
+		line-height: 0;
 	}
 }
 .field {
@@ -102,7 +103,7 @@ label {
 	@extend .nav;
 	@extend .nav-tabs;
 	@extend .nav-stacked;
-	& img { @extend .pull-right;}
+	& img {float:right;}
 }
 
 // PORTAL MESSAGE
@@ -110,18 +111,32 @@ label {
 .portalMessage {
 	@extend .alert;
 	&.info {@extend .alert-info;}
-	&.warning {@extend .alert-warning;}
+	//&.warning  {@extend .alert-warning;}
 	&.error {@extend .alert-error;}
 	& dt, & dd {margin:0; display:inline;}
 }
+
+// CONTACTE
+// -----------------------
+.img-mask {
+	display: block;
+	@include box-shadow(0 2px 5px rgba(0,0,0,.25));
+	margin-top: 6px;
+	width:222px;
+	& iframe {
+		-webkit-mask: image-url("mapa-mask.png") no-repeat center center;
+	}
+
+}
+iframe {border:0 !important; display: block !important;}
 
 // SITEMAP
 // -----------------------
 #portal-sitemap {
 	@extend .unstyled;
 	& > li {
-		font-weight: bold;
-		font-size:normal;
+		font-weight: bold; 
+		font-size:normal; 
 		margin-top:30px;
 		@extend .xxxl;
 		& > div {
@@ -136,7 +151,7 @@ label {
 				width:14px;
 				height:14px;
 				display:inline-block;
-				background: image-url("gh.png") -239px -143px no-repeat;
+				background:image-url("gh.png") -239px -143px no-repeat;
 				margin-left:5px;
 			}
 		}
@@ -152,10 +167,9 @@ label {
 		-moz-column-fill: auto;
 		column-fill: auto;
 		margin:0;
-		@extend .unstyled;
 		& > li {
 			@extend .xxs;
-			font-weight: bold;
+			font-weight: bold; 
 			font-size:normal;
 			margin:0 0 5px;
 			padding:5px 0;
@@ -171,7 +185,7 @@ label {
 				&:after {
 					content:none;
 				}
-			}
+			}	
 		}
 		& ul {
 			-webkit-column-count: 1;
@@ -181,16 +195,16 @@ label {
 		& > li li {
 			padding:5px 9px;
 			line-height:12px;
-			font-weight: normal;
-			font-size:smaller;
+			font-weight: normal; 
+			font-size:smaller; 
 
 
 			& > div {
 				padding-top:0;
-			}
+			} 
 			& a {
 				color: $gray;
-			}
+			}			
 		}
 	}
 }

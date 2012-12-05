@@ -1,8 +1,3 @@
-
-
-
-
-
 //
 // Variables
 // --------------------------------------------------
@@ -27,35 +22,29 @@ $pink:                  #c6218b !default;
 $purple:                #8952ab !default;
 
 
-
-
 // ESTATS
 // -------------------------
 .state-published {color: $blue;}
 .state-intranet {color: $purple;}
 .state-pending {color: darken($orange,5%);}
 .state-draft {color: $green;}
-.state-private {color: $red;}
-
-
-
-
+.state-private {color: $red;} 
 
 // USUARI
 // -------------------------
 #portal-personaltools-wrapper {margin-top:38px !important;}
-.user {width:26px; height:26px; border:.1em solid darken(adjust-hue($blue, -120),5%); margin: -.55em 0; position: relative;
+.user {@include opacity(.8); width:26px; height:26px; border:.1em solid darken(adjust-hue($blue, -120),5%); margin: -.55em 0; position: relative; 
   image-rendering: optimizeQuality; -ms-interpolation-mode: bicubic; left:-6px; top:-1px;}
 .dropdown-menu li > a.btn-danger:hover, .dropdown-menu .active > a.btn-danger:hover {background-color: #BD362F;}
 .userScreen, .userTablet, .userMobile, .userGenweb {background: image-url("sprite_usuari.png") transparent no-repeat center top; height: 1.5em; width:1.5em;}
 .userScreen {background-position: center -40px;}
 .userTablet {background-position: center -140px;}
 .userMobile {background-position: center -240px;}
-.userGenweb {background-position: 10px -340px; width:2em;}
+.userGenweb {background-position: 10px -340px; width:2em;}  
 .userScreen:hover {background-position: center 10px;}
 .userTablet:hover {background-position: center -90px;}
 .userMobile:hover {background-position: center -190px;}
-.userGenweb:hover, .open .userGenweb {background-position: 10px -290px;}
+.userGenweb:hover, .open .userGenweb {background-position: 10px -290px;}  
 	.dropdown .userGenweb .caret { margin-left: 24px;}
 #portal-personaltools-wrapper .container {box-shadow: 0 -8px 5px 5px rgba(255, 255, 255, 0.05);}
 #portal-personaltools-wrapper .nav {margin:0!important;}
@@ -79,11 +68,10 @@ background-image: image-url("gh-w.png") !important;
 }
 
 
-
 // PORTAL HEADER
 // -------------------------
 #portal-header {
-	border-bottom:1px solid #d7d5d2;
+	border-bottom:1px solid #d7d5d2; 
 	border-top:5px solid desaturate(lighten($genwebPrimary,40%), 85%);
 		background: #fcfcfc; /* Old browsers */
 		background: -moz-linear-gradient(top,  #f7f7f7 0%, #ffffff 25%); /* FF3.6+ */
@@ -96,67 +84,67 @@ background-image: image-url("gh-w.png") !important;
 	#portal-header .container {border-top:5px solid $genwebPrimary; margin-top:-5px; border-bottom:1px solid #796e64; margin-bottom:-1px;}
 	#portal-header h1.pull-left {margin-bottom:0;}
 
-.titol-espai {margin-top:0;}
-	.titol-espai h1 {font-weight:normal; margin:0;}
-	.titol-espai a {color:#333; text-shadow: 0 1px 1px rgba(0,0,0,.1); display:table !important; min-height:49px; width:100%;}
-		.titol-espai a span {display:table-cell; vertical-align:middle; padding:5px 0;}
-	.titol-espai a:hover {color:#000; text-decoration:none;}
-	.logoPropi {height:49px;display:table-cell; vertical-align:middle;min-width: 49px; padding:5px 0;}
+.titol-espai {margin-top:0;
+	& h1 {font-weight:normal; margin:0;}
+	& a {color:#333; text-shadow: 0 1px 1px rgba(0,0,0,.1); display:table !important; min-height:49px; width:100%;
+		& span {display:table-cell; vertical-align:middle; padding:5px 0;}
+		&:hover {color:#000; text-decoration:none;}
+	}
+}
+.logoPropi {height:49px;display:table-cell; vertical-align:middle;min-width: 49px; padding:5px 0;}
 
-#eines {margin:15px 0 0 0;}
-	#eines > li > a {
+#eines {margin:15px 0 0 0;
+	& > li > a {
 	  	border-radius: 4px;
 	  	margin-top: 0px;
 	  	padding-bottom: 7px;
 	  	padding-top: 6px;
 	}
-	#eines .input-append {
-	  	border-left: 1px dotted #b2b2b2;
+	& .input-append {
+	  	border-left: 1px dotted $tableBorder;
 	  	margin-left: 2px;
 	 	padding-left: 5px;
 	}
-	#eines .adjust-langs {min-width:87px !important;}
-
+	& .adjust-langs {min-width:87px !important;}
+}
 
 // IMATGE DE CAPCALERA
 // -------------------------
-.header-image {
-	background-image: image-url('capcalera.jpg');
-	margin-top:0 !important;
-	height:65px;
+.header-image { 
+	background-image: image-url("capcalera.jpg");	
+	margin-top:0 !important; 
+	height:65px; 
 	overflow:hidden;
 	position: relative;
 	@include border-radius(5px 5px 0 0);
-	@include box-shadow(0 0 5px rgba(0,0,0,.25));
+	@include box-shadow(0 0 5px rgba(0,0,0,.15));	
 }
 /* L3 */
 .l3-image {
-	height:65px;
+	height:65px; 
 }
 /* L2 */
 .l2-image {
-	margin-left:250px !important;
-	height:50px;
-	margin-bottom:-1px;
+	margin-left:250px !important; 
+	height:50px; 
+	margin-bottom:-1px;	
 	overflow:visible;
 	&:before {
 		content:" ";
-		background:$genwebPrimary;
+		background:$genwebPrimary; 
 		height: 5px;
     	margin-left: -250px;
     	position: absolute;
     	top: 45px;
     	width: 222px;
 	}
-}
+}	
 /* NO-IMG */
 .no-image .header-image { display:none !important;}
-
-
+/* ajusta menú L3*/
 #portal-header.no-image .container {padding-bottom:20px;}
 #portal-header.no-image + #portal-globalnav .navbar-inner {margin-top:-20px;}
-#portal-header:not(.no-image) + #portal-globalnav .navbar-inner {border-radius:0 0 4px 4px !important; margin-top:-1px;}
-
+#portal-header:not(.no-image) + #portal-globalnav .navbar-inner {@include border-radius(0 0 4px 4px !important); margin-top:-1px;}
 
 
 // CENTRE
@@ -180,49 +168,53 @@ background-image: image-url("gh-w.png") !important;
 }
 
 
-
-
 // BANDA LOGOS
 // -------------------------
-#bandaLogos {border-top:1px solid desaturate(lighten($genwebPrimary,40%), 85%); box-shadow: 0 -10px 20px rgba(0, 0, 0, .03);}
-	#bandaLogos .container {border-top:1px solid darken($genwebPrimary,25%); margin-top:-1px;}
-.llistatLogos {margin:0 auto; list-style:none; text-align:center; padding-top: 1em;}
-	.llistatLogos li {display:inline-block; margin:0 .5em 1em;}
-	.llistatLogos a {margin:0 1.5em;}
-/*falta funcio box shadow*/
-
-
+#bandaLogos {border-top:1px solid desaturate(lighten($genwebPrimary,40%), 85%); box-shadow: 0 -10px 20px rgba(0, 0, 0, .03);
+	& .container {border-top:1px solid darken($genwebPrimary,25%); margin-top:-1px;}
+}
+.llistatLogos {margin:0 auto; list-style:none; text-align:center; padding-top: 1em;
+	& li {display:inline-block; margin:0 .5em 1em;}
+	& a {margin:0 1.5em;}
+}
 
 
 // PEU
 // -------------------------
-#peu {background:#f2f2f2; border-top:5px solid desaturate(lighten($genwebPrimary,40%), 85%); font-size:92.3076923%;}
-	#peu .container {border-top:5px solid $genwebPrimary; margin-top:-5px;}
-    #peu p {margin:0;}
-	#peu .amunt img {@include opacity(.7);}
-	#peu .amunt a:hover img {@include opacity(1);}
-	#peu address {color: $gray;}
+#peu {background:#f2f2f2; border-top:5px solid desaturate(lighten($genwebPrimary,40%), 85%); font-size:92.3076923%;
+	& .container {border-top:5px solid $genwebPrimary; margin-top:-5px;}
+    & p {margin:6px 0 0;}
+	& .amunt img {@include opacity(.7);}
+	& .amunt a:hover img {@include opacity(1);}    
+	& address {color: $gray;
+		& p {margin: 0;}
+	}
+}
+
 .sobreElWeb li {display: inline;}
 	.sobreElWeb li:before {
-		content:"."; font-size:52px; position: relative; line-height:0; top:-.025em; left:-1px;
+		content:"."; font-size:52px; position: relative; line-height:0; top:-.01em; left:-1px;
 		color: desaturate($genwebPrimary, 80%);
 	}
 	.sobreElWeb li:first-child:before {content:""; font-size:52px; position: relative; line-height:0; top:.25em;}
-	.sobreElWeb li:last-child:before {content:" __ "; font-size:13px; position: relative; line-height:0; top:-.5em; padding:0 2px 0 3px;}
+	.sobreElWeb li:last-child:before {content:" __ "; font-size:13px; position: relative; line-height:0; top:-.25em; padding:0 2px 0 3px;}
+	#peu .amunt {position:relative; top:-1px;}
+	#peu .amunt div.tooltip {margin-top: -21px !important; margin-left:6px !important;}
+
 
 // VISTA ESCRIPTORI
 // -------------------------
 #canvia-vista {
-  	background: image-url("vistabg.png") #666;
-   	text-align: center;
-   	@include box-shadow(inset 0 10px 10px -5px rgba(0,0,0,.5));
-	padding:12px;
+	padding:0;
 	margin-left:-10px;
 	margin-right:-10px;
-
   	display:block;
+  	& p {margin:0 !important;}
 	& a {
-		padding:5px 5px 5px 25px;
+		background:image-url("vistabg.png") #666;
+   		text-align: center;
+   		@include box-shadow(inset 0 10px 10px -5px rgba(0,0,0,.5));
+		padding:10px;
   		color: $white;
 		height:auto;
 		width:auto;

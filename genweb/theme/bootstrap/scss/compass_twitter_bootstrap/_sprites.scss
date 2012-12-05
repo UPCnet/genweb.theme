@@ -41,7 +41,9 @@
   background-image: image-url('gh-w.png');
 }
 
-
+.icon-color {
+  background-image: image-url('gh-c.png');  
+}
 
 
 .icon-glass              { background-position: 0      0; }
@@ -248,9 +250,9 @@
   &.icon-news            { background-position: -37px  -252px; }
   &.icon-link            { background-position: -108px -252px; }
   &.icon-upc             { background-position: 0      -252px; }
-  &.icon-poll            { background-position: -73px  -288px; }
+  &.icon-poll            { background-position: -73px  -288px; }      
   &.icon-calendar        { background-position: -287px -180px; }
-  &.icon-user-news       { background-position: -504px -252px; }
+  &.icon-user-news       { background-position: -504px -252px; }    
 }
 
 

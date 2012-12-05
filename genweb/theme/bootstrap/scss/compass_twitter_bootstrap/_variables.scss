@@ -135,8 +135,8 @@ $zindexModal:             1050 !default;
 
 // Sprite icons path
 // -------------------------
-$iconSpritePath:          "glyphicons-halflings.png" !default;
-$iconWhiteSpritePath:     "glyphicons-halflings-white.png" !default;
+$iconSpritePath:          "gh.png" !default;
+$iconWhiteSpritePath:     "gh-w.png" !default;
 
 
 // Input placeholder text color
@@ -228,18 +228,18 @@ $infoBorder:              darken($infoBackground, 20) !default;
 // Tooltips and popovers
 // -------------------------
 $tooltipColor:            #fff !default;
-$tooltipBackground:       #000 !default;
+$tooltipBackground:       #111 !default;
 $tooltipArrowWidth:       5px !default;
-$tooltipArrowColor:       $tooltipBackground !default;
+$tooltipArrowColor:       #111 !default;
 
 $popoverBackground:       #fff !default;
-$popoverArrowWidth:       10px !default;
+$popoverArrowWidth:       8px !default;
 $popoverArrowColor:       #fff !default;
 $popoverTitleBackground:  darken($popoverBackground, 3%) !default;
 
 // Special enhancement for popovers
 $popoverArrowOuterWidth:  $popoverArrowWidth + 1 !default;
-$popoverArrowOuterColor:  rgba(0,0,0,.25) !default;
+$popoverArrowOuterColor:  rgba(0,0,0,.15) !default;
 
 
 

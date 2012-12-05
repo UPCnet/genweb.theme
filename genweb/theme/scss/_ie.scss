@@ -4,6 +4,7 @@
 /* IE9- */
 html.lt-ie10 #portal-globalnav .nav-collapse {position:relative;}
 html.lt-ie10 #portal-globalnav .navbar .nav {position:absolute;}
+html.lt-ie10 .dk_container li {display: block; float:none;}
 
 /* IE8- */
 html.lt-ie9 .amunt {min-width:30px; display:inline-block; @include ie7-inline-block();}
@@ -27,4 +28,9 @@ html.lt-ie8 #portal-header {border-bottom:0;}
 
 
 
+html.lt-ie8 .list-portlet li  {
+    position: relative;
+    zoom: expression(this.runtimeStyle.zoom="1", this.prependChild(document.createElement("i")).style.cssText="display:block; width:5px; height:5px; background:#007bc0; position:absolute; color:#007bc0; left:0; top:0; z-index:99999;");
+	zoom: 1;
+}
 

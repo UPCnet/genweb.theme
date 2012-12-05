@@ -21,10 +21,11 @@ fieldset {
 legend {
   display: block;
   width: 100%;
-  padding: 0;
-  margin-bottom: $baseLineHeight;
-  font-size: $baseFontSize * 1.5;
-  line-height: $baseLineHeight * 2;
+  padding: 5px 0;
+  margin-bottom: $baseLineHeight / 2;
+  margin-top: $baseLineHeight / 2;
+  @extend .xxl;
+  line-height: $baseLineHeight;
   color: $grayDark;
   border: 0;
   border-bottom: 1px solid $tableBorder;
@@ -95,9 +96,9 @@ textarea {
 }
 // Reset height since textareas have rows
 textarea {
-  resize:both;
+  resize:vertical;
   height: auto;
-  max-width:98.5%;  
+  max-width:100%;
   min-width:210px;  
 }
 // Everything else

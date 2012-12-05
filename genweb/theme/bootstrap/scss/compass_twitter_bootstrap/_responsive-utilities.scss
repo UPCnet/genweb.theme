@@ -22,9 +22,7 @@
 
 // Tablets & small desktops only
 @media only screen and (max-width: 979px) and (orientation: portrait),
-       only screen and (max-width: 979px) and (orientation: landscape)/*,
-       only screen and (max-device-width: 1728px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (max-device-width: 1280px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5)*/   {
+       only screen and (max-width: 979px) and (orientation: landscape)  {
   // Hide everything else
   .hidden-desktop    { display: inherit !important; }
   .visible-desktop   { display: none !important ; }
@@ -35,9 +33,7 @@
 }
 
 // Phones only
-//@media (max-width: 767px) {
-@media only screen and (max-width: 979px)/*,
-       only screen and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5)*/  {  
+@media only screen and (max-width: 639px)  {  
   // Hide everything else
   .hidden-desktop    { display: inherit !important; }
   .visible-desktop   { display: none !important; }

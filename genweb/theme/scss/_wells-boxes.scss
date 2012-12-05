@@ -17,7 +17,7 @@
   @extend .well;
   background:$grayDarker;
   color:$grayLighter;
-  border: 1px solid $black;
+  border: 1px solid $black; 
 }
 .well-gradient {
   @include gradient-vertical($wellBackground, $white);
@@ -41,7 +41,7 @@
   blockquote {
     border-color: #ddd;
     border-color: rgba(0,0,0,.15);
-  }
+  }  
 }
 .box-inverse {
   @extend .box;
@@ -60,7 +60,7 @@
   padding-top:24px;
   &:after {
     background-color: #f7f7f7;
-    border: 1px solid darken($wellBackground, 12%);
+    border: 1px solid darken($wellBackground, 12%);    
     @include border-radius(4px 0 4px 0);
     @extend .muted; //color gris clar
     content:"?";
@@ -93,7 +93,7 @@
   @include border-radius(2px);
   &.box-example:after {
     font-size:84.6153846%;
-    @include border-radius(2px 0 2px 0);
+    @include border-radius(2px 0 2px 0);    
     padding:0 4px 1px;
   }
 }

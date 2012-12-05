@@ -1,30 +1,30 @@
 /*
 // MIDES SAMARRETA
-// -------------------------
+// ------------------------- 
 */
 h1, h2, h3 {color:$genwebTitles;}
 
 *.xxxl 	{	font-size: 153.846154% !important; line-height: ($baseLineHeight / 2 * 3);}
-*.xxl 	{	font-size: 130.769231% !important; line-height: $baseLineHeight;}
-*.xl 	{	font-size: 115.384615% !important; line-height: $baseLineHeight;}
-*.l 	{	font-size: 107.692308% !important; line-height: $baseLineHeight;}
-*.m 	{	font-size: 100% !important;		line-height: $baseLineHeight;}
-*.s 	{	font-size: 92.3076923% !important; line-height: $baseLineHeight;}
-*.xs 	{	font-size: 84.6153846% !important; line-height: $baseLineHeight;}
-*.xxs 	{	font-size: 76.9230769% !important; line-height: $baseLineHeight;}
+*.xxl 	{	font-size: 130.769231% !important; line-height: $baseLineHeight;} 
+*.xl 	{	font-size: 115.384615% !important; line-height: $baseLineHeight;} 
+*.l 	{	font-size: 107.692308% !important; line-height: $baseLineHeight;} 
+*.m 	{	font-size: 100% !important;		line-height: $baseLineHeight;} 
+*.s 	{	font-size: 92.3076923% !important; line-height: $baseLineHeight;} 
+*.xs 	{	font-size: 84.6153846% !important; line-height: $baseLineHeight;} 
+*.xxs 	{	font-size: 76.9230769% !important; line-height: $baseLineHeight;} 
 *.xxxs 	{	font-size: 69.2307692% !important; line-height: $baseLineHeight;}
 
 *.liniaBaix {
 	border-bottom:1px solid $tableBorder;
 	@include box-shadow(0 6px 4px -4px rgba(0,0,0,.1));
 	margin:0 0 18px 0;
-    padding: 0 0 12px;
+    padding: 0 0 12px;	
 }
 *.liniaDalt {
 	border-top:1px solid $tableBorder;
 	@include box-shadow(0 -6px 4px -4px rgba(0,0,0,.1));
 	margin:18px 0 0 0;
-    padding: 12px 0 6px;
+    padding: 12px 0 6px;	
 }
 
 
@@ -33,8 +33,11 @@ h1, h2, h3 {color:$genwebTitles;}
 // --------------------------
 .documentFirstHeading {
 	@extend .liniaBaix;
+-webkit-mask-image: -webkit-gradient(linear, 0% 0%, 0% 40%, from(rgba(0,0,0,.8)), to(rgba(0,0,0,1)));
+
+
 }
-.documentDescription {font-size:107.692308%; font-weight:bold; color:$grayLight;}
+.documentDescription {font-size:107.692308%; font-weight:bold; color:$grayLight; margin-bottom:$baseLineHeight;}
 
 
 // SEPARADORS
@@ -53,7 +56,7 @@ hr.liniaBaix {
 hr.liniaDalt {
     height: 0;
     border-bottom: 0;
-	@include box-shadow(0 -12px 24px -6px rgba(0,0,0,.1));
+	@include box-shadow(0 -12px 24px -6px rgba(0,0,0,.1));    
 }
 
 // PADDINGS I MARGINS
@@ -68,6 +71,11 @@ hr.liniaDalt {
 .pad3 {padding:8em;}
 .pad4 {padding:16em;}
 
+// ALIGNS
+// ----------------------
+.align-center {text-align: center;}
+.align-left {text-align: left;}
+.align-right {text-align: right;}
 
 // AJUDES
 // ----------------------
@@ -75,7 +83,7 @@ hr.liniaDalt {
   display:block;
   width:14px;
   height:14px;
-  background: image-url("gh.png");
+  background:image-url("gh.png");
 }
 
 // AJUDES
@@ -85,13 +93,36 @@ hr.liniaDalt {
 a { /*fa que les URL llargues es trenquin*/
   word-wrap: break-word;
 }
+.margin0 {margin: 0 !important;}
+.padding0 {padding:0 !important;}
 
 // EXTENSIO  IMATGES
 // ----------------------
 .img-shadowed {
   @include box-shadow(0 1px 3px $gray);
 }
-.img-mask {
-  -webkit-mask: image-url("mapa-mask.png") no-repeat center center;;
-}
 
+
+// ICONES TIPUS ARXIUS
+// ----------------------
+.pdf, .ppt, .xls, .doc, .down, .https, .vid, .img, .txt {
+  &:after {
+    background: image-url("gh-c.png") no-repeat;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    content: " ";
+    margin-left: 3px;
+    top:2px;
+    position: relative;
+  }
+}
+.pdf:after {background-position: -432px -194px;}
+.ppt:after {background-position: -407px -193px;}
+.xls:after {background-position: -384px -193px;}
+.doc:after {background-position: -360px -193px;}
+.down:after {background-position: -95px -26px;}
+.https:after {background-position: -288px -26px;}
+.vid:after {background-position: -192px -2px;}
+.img:after {background-position: -456px -50px;}
+.txt:after {background-position: -24px -26px;}
