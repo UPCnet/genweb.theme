@@ -13,4 +13,12 @@
         layer="genweb.theme.browser.interfaces.IGenwebTheme"
         />
 
+    <plone:portlet
+     name="genweb.portlets.homepage"
+     interface=".homepage.IHomepagePortlet"
+     assignment=".homepage.Assignment"
+     renderer=".homepage.Renderer"
+     addview=".homepage.AddForm"
+     />
+
 </configure>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<portlets>
+    <portlet title="Homepage" addview="genweb.portlets.homepage"
+        description="Pàgina d'inci"/>
+</portlets>
