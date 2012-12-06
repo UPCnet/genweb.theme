@@ -20,6 +20,7 @@ from genweb.core.utils import genweb_config, pref_lang, portal_url
 from genweb.portlets.browser.manager import ISpanStorage
 
 from scss import Scss
+from genweb.theme.scss import dynamic_scss
 
 
 class GWConfig(grok.View):
@@ -113,7 +114,7 @@ class dynamicCSS(grok.View):
     @ram.cache(_render_cachekey)
     def compile_scss(self, especific1, especific2):
         css = Scss()
-        return css.compile("h1 {color:black; &.hover {color:green} a {color:red}}")
+        return css.compile(dynamic_scss % (dict(especific1=especific1, especific2=especific2)))
 
 
 class gwCatalogNavigationTabs(CatalogNavigationTabs):
