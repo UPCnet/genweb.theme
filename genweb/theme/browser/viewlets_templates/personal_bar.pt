@@ -1,5 +1,5 @@
 <tal:personaltools condition="not: view/anonymous">
-<h1 class="goout"> Usuari </h1>
+<h1 class="goout"> Eines d'usuari </h1>
 <nav id="portal-personaltools-wrapper"
      i18n:domain="genweb">
   <div class="navbar navbar-fixed-top navbar-inverse">
@@ -12,7 +12,7 @@
           <h2 class="goout"> Menú d'usuari </h2>
           <ul class="nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle visible-desktop" data-toggle="dropdown">
+              <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
                 <img tal:attributes="src string:${view/portal_url}/++genweb++static/images/user.png"
                      alt=""
                      class="user">
@@ -58,10 +58,10 @@
             </a></li>
             <li class="visible-desktop"><a tal:condition="view/canManageSite"
                    tal:attributes="href string:${view/portal_url}/@@overview-controlpanel">
-                   <tal:managesite i18n:translate="Site Setup">
+                   <tal:managesite i18n:translate="Site setup">
                       Site setup</tal:managesite>
             </a></li>
-            <li class="visible-desktop"><a href="https://www.upc.edu/comunicacio/www/genweb-upc/formacio" target="newwindow"
+            <li class="hidden-phone"><a href="https://www.upc.edu/comunicacio/www/genweb-upc/formacio" target="newwindow" accesskey="6"
                    i18n:attributes="title genweb-ajuda">
                    <tal:help i18n:translate="genweb-ajuda">
                       Help</tal:help>
@@ -71,17 +71,21 @@
             </a></li>
           </ul>
           <h2 class="goout"> Menú d'eines Genweb UPC </h2>
-          <ul class="nav pull-right visible-desktop">
-            <li><a class="userScreen" href="#"><span class="goout">Screen</span></a></li>
-            <li><a class="userTablet" href="#"><span class="goout">Tablet</span></a></li>
-            <li><a class="userMobile" href="#"><span class="goout">Mobile</span></a></li>
-            <li class="divider-vertical"></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle userGenweb" data-toggle="dropdown"><span class="goout">Genweb</span> <b class="caret"></b></a>
+          <ul class="nav pull-right">
+            <!--[if !IE]> -->
+            <li><a class="userScreen visible-desktop" href="javascript:();" rel="tooltip" data-placement="bottom" title="Screenview"><span class="goout">Screen</span></a></li>
+            <li><a class="userTablet visible-desktop" href="javascript:();" rel="tooltip" data-placement="bottom" title="Tabletview"><span class="goout">Tablet</span></a></li>
+            <li><a class="userMobile visible-desktop" href="javascript:();" rel="tooltip" data-placement="bottom" title="Mobileview"><span class="goout">Mobile</span></a></li>
+            <!-- <![endif]-->
+            <li class="divider-vertical hidden-phone"></li>
+            <li class="dropdown hidden-phone pull-right">
+              <a href="#" class="dropdown-toggle userGenweb nou" data-toggle="dropdown"><span class="goout">Genweb UPC</span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="nav-header">Genweb UPC 4.0 - JN12</li>
-                <li><a href="#"><i class="icon-certificate"></i> Novetats de la versió</a></li>
-                <li><a href="#"><i class="icon-certificate"></i> Darrer butlletí</a></li>
+                <li><a href="#"><i class="icon-certificate"></i> Novetats de la versió <span class="badge badge-warning">nou</span></a></li>
+                <li><a href="#"><i class="icon-genweb"></i> Comunitat Genweb  <img class="img_blank" src="++genweb++static/images/blank_gris.png" alt="(obriu en finestra nova)"></a></li>
+                <li><a href="#"><i class="icon-briefcase"></i> Recursos per a editors  <img class="img_blank" src="++genweb++static/images/blank_gris.png" alt="(obriu en finestra nova)"></a></li>
+                <li><a href="#"><i class="icon-bookmark"></i> Darrer butlletí</a></li>
               </ul>
             </li>
           </ul>

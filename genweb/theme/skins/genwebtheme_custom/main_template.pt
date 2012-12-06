@@ -33,7 +33,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <tal:comment replace="nothing"><!-- El requiresActiveX es pq IE10 sapiga que pot haver-hi flash --></tal:comment>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true" />
+    <meta name="generator" content="Plone - http://plone.org" />
+    <meta name="author" content="Servei de Comunicació i Promoció" />
+    <meta name="description" content="Genweb UPC v4.0 - El generador de webs de la UPC" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <tal:comment replace="nothing"><!-- El seguent script ha d'anar seguit del meta del viewport --></tal:comment>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/ReView.js"></script>
 
     <metal:baseslot define-slot="base">
         <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
@@ -50,11 +56,15 @@
         <metal:headslot define-slot="head_slot" />
         <metal:styleslot define-slot="style_slot" />
 
+        <link rel="apple-touch-icon" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-57x57-precomposed.png" /> <!-- iPhone -->
+        <link rel="apple-touch-icon" sizes="72x72" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-72x72-precomposed.png" /> <!-- iPad -->
+        <link rel="apple-touch-icon" sizes="114x114" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-114x114-precomposed.png" /> <!-- iPhone 2x -->
+        <link rel="apple-touch-icon" sizes="144x144" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-144x144-precomposed.png" /> <!-- iPad 2x -->
+
         <link rel="stylesheet" tal:attributes="href string:${portal_url}/++genweb++stylesheets/genwebupc.css">
+        <link rel="stylesheet" tal:attributes="href string:${portal_url}/dynamic.css">
         <script tal:attributes="src string:${portal_url}/++bootstrap++js/modernizr-2.6.1.min.js"></script>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="generator" content="Plone - http://plone.org" />
     </tal:notajax>
 </head>
 

@@ -1,3 +1,9 @@
+<p class="goout">
+    <a accesskey="S" href="#content"
+       i18n:domain="genweb"
+       i18n:translate="">
+        Vés al contingut (premeu Retorn)
+    </a></p>
 <header id="portal-header"
         tal:define="genweb_config context/@@gwconfig;
                     class_show_image python:genweb_config.treu_imatge_capsalera and 'no-image' or None"
