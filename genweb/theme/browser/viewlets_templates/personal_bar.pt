@@ -73,9 +73,9 @@
           <h2 class="goout"> Menú d'eines Genweb UPC </h2>
           <ul class="nav pull-right">
             <!--[if !IE]> -->
-            <li><a class="userScreen visible-desktop" href="javascript:();" rel="tooltip" data-placement="bottom" title="Screenview"><span class="goout">Screen</span></a></li>
-            <li><a class="userTablet visible-desktop" href="javascript:();" rel="tooltip" data-placement="bottom" title="Tabletview"><span class="goout">Tablet</span></a></li>
-            <li><a class="userMobile visible-desktop" href="javascript:();" rel="tooltip" data-placement="bottom" title="Mobileview"><span class="goout">Mobile</span></a></li>
+            <li><a class="userScreen visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Screenview"><span class="goout">Screen</span></a></li>
+            <li><a class="userTablet visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Tabletview"><span class="goout">Tablet</span></a></li>
+            <li><a class="userMobile visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Mobileview"><span class="goout">Mobile</span></a></li>
             <!-- <![endif]-->
             <li class="divider-vertical hidden-phone"></li>
             <li class="dropdown hidden-phone pull-right">

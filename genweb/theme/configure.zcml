@@ -61,6 +61,12 @@
       name="stylesheets"
       />
 
+  <plone:static
+      directory="js"
+      type="genweb"
+      name="js"
+      />
+
   <include package="z3c.jbot" file="meta.zcml" />
 
   <browser:jbot

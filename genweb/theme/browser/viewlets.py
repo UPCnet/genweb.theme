@@ -1,4 +1,7 @@
+# -*- coding: utf-8 -*-
+import re
 from five import grok
+from cgi import escape
 from Acquisition import aq_inner
 from AccessControl import getSecurityManager
 from zope.interface import Interface
@@ -9,11 +12,12 @@ from plone.memoize.view import memoize_contextless
 
 from Products.CMFCore import permissions
 from Products.CMFCore.utils import getToolByName
+from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from plone.app.layout.viewlets.common import PersonalBarViewlet, GlobalSectionsViewlet, PathBarViewlet
-from plone.app.layout.viewlets.common import SearchBoxViewlet, ManagePortletsFallbackViewlet
-from plone.app.layout.viewlets.interfaces import IPortalTop, IPortalHeader, IBelowContent
+from plone.app.layout.viewlets.common import SearchBoxViewlet, TitleViewlet, ManagePortletsFallbackViewlet
+from plone.app.layout.viewlets.interfaces import IHtmlHead, IPortalTop, IPortalHeader, IBelowContent
 from plone.app.layout.viewlets.interfaces import IPortalFooter
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 
@@ -75,7 +79,7 @@ class gwHeader(viewletBase):
             return 'l3-image'
 
     def show_login(self):
-        return self.genweb_config().amaga_identificacio
+        return not self.genweb_config().amaga_identificacio
 
     def show_directory(self):
         return self.genweb_config().directori_upc
@@ -112,7 +116,7 @@ class gwSearchViewletManager(grok.ViewletManager):
     grok.name('genweb.search_manager')
 
 
-class gwSearchViewlet(SearchBoxViewlet, grok.Viewlet):
+class gwSearchViewlet(SearchBoxViewlet, viewletBase):
     grok.context(Interface)
     grok.viewletmanager(gwSearchViewletManager)
     grok.layer(IGenwebTheme)
@@ -120,7 +124,7 @@ class gwSearchViewlet(SearchBoxViewlet, grok.Viewlet):
     render = ViewPageTemplateFile('viewlets_templates/searchbox.pt')
 
 
-class gwManagePortletsFallbackViewlet(ManagePortletsFallbackViewlet, grok.Viewlet):
+class gwManagePortletsFallbackViewlet(ManagePortletsFallbackViewlet, viewletBase):
     """ The override for the manage_portlets_fallback viewlet for IPloneSiteRoot
     """
     grok.context(IPloneSiteRoot)
@@ -130,20 +134,19 @@ class gwManagePortletsFallbackViewlet(ManagePortletsFallbackViewlet, grok.Viewle
 
     render = ViewPageTemplateFile('viewlets_templates/manage_portlets_fallback.pt')
 
-    def getPortletContainer(self):
+    def getPortletContainerPath(self):
         context = aq_inner(self.context)
         pc = getToolByName(context, 'portal_catalog')
         result = pc.searchResults(object_provides=IHomePage.__identifier__,
                                   Language=pref_lang())
         if result:
-            # Return the object without forcing a getObject()
-            return getattr(context, result[0].id, context)
+            return result[0].getURL()
         else:
             # If this happens, it's bad. Implemented as a fallback
-            return context
+            return context.absolute_url()
 
     def managePortletsURL(self):
-        return "%s/%s" % (self.getPortletContainer().absolute_url(), '@@manage-homeportlets')
+        return "%s/%s" % (self.getPortletContainerPath(), '@@manage-homeportlets')
 
     def available(self):
         secman = getSecurityManager()
@@ -151,3 +154,28 @@ class gwManagePortletsFallbackViewlet(ManagePortletsFallbackViewlet, grok.Viewle
             return True
         else:
             return False
+
+
+class TitleViewlet(TitleViewlet, viewletBase):
+    grok.context(Interface)
+    grok.name('plone.htmlhead.title')
+    grok.viewletmanager(IHtmlHead)
+    grok.layer(IGenwebTheme)
+
+    def update(self):
+        portal_state = getMultiAdapter((self.context, self.request),
+                                        name=u'plone_portal_state')
+        context_state = getMultiAdapter((self.context, self.request),
+                                         name=u'plone_context_state')
+        page_title = escape(safe_unicode(context_state.object_title()))
+        portal_title = escape(safe_unicode(portal_state.navigation_root_title()))
+
+        genweb_title = getattr(self.genweb_config(), 'titolespai_%s' % self.pref_lang(), 'Genweb UPC')
+        genweb_title = escape(safe_unicode(re.sub(r'(<.*?>)', r'', genweb_title)))
+
+        marca_UPC = escape(safe_unicode(u"UPC. Universitat Politècnica de Catalunya · BarcelonaTech"))
+
+        if page_title == portal_title:
+            self.site_title = u"%s &mdash; %s" % (genweb_title, marca_UPC)
+        else:
+            self.site_title = u"%s &mdash; %s &mdash; %s" % (page_title, genweb_title, marca_UPC)

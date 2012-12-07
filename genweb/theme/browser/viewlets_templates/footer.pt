@@ -11,11 +11,21 @@
         <h2 class="goout"> Sobre el web </h2>
         <ul class="pull-right sobreElWeb">
           <li><a href="#"><abbr rel="tooltip" data-placement="top" title="Really Simple Sindication">RSS</abbr></a></li>
-          <li><a href="#">Sobre aquest web</a></li>
-          <li><a href="#">Accessibilitat</a></li>
+          <li><a href="#" accesskey="8">Sobre aquest web</a></li>
+          <li><a href="#" accesskey="0">Accessibilitat</a></li>
           <li class="amunt"><a href="#portal-header" rel="tooltip" data-placement="top" title="Inici de la pàgina"><img src="/++genweb++static/images/amunt.png" alt="Inici de la pàgina"></a></li>
         </ul>
       </div>
     </div>
   </div>
 </footer>
+
+<!--[if !IE]> -->
+<footer id="canvia-vista">
+  <p>
+    <a class="reView" data-defaultText="Versi&oacute; m&ograve;bil" data-coreText="Versi&oacute; d&apos;escriptori" href="javascript:void(0)">
+      Versi&oacute; d&apos;escriptori
+    </a>
+  </p>
+</footer>
+<!-- <![endif]-->

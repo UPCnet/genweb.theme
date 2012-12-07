@@ -5,11 +5,5 @@ dynamic_scss = """
 $especific1: %(especific1)s;
 $especific2: %(especific2)s;
 
-h2 {
-    color: $especific1
-
-    a {
-        color:$especific2
-    }}
-
+// ...
 """

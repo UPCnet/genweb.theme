@@ -32,5 +32,7 @@
   </hidden>
   <hidden manager= "plone.htmlhead.links" skinname="GenwebTheme">
     <viewlet name="l10n.datepicker"/>
+    <viewlet name="plone.links.favicon"/>
+
   </hidden>
 </object>

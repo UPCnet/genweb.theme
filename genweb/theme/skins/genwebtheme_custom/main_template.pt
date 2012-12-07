@@ -1,5 +1,4 @@
-<metal:page define-macro="master">
-<tal:doctype tal:replace="structure string:&lt;!DOCTYPE html&gt;" />
+<metal:page define-macro="master"><tal:doctype tal:replace="structure string:&lt;!DOCTYPE html&gt;" />
 
 <tal:maindefines
     define="portal_state context/@@plone_portal_state;
@@ -37,16 +36,14 @@
     <meta name="generator" content="Plone - http://plone.org" />
     <meta name="author" content="Servei de Comunicació i Promoció" />
     <meta name="description" content="Genweb UPC v4.0 - El generador de webs de la UPC" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <tal:comment replace="nothing"><!-- El seguent script ha d'anar seguit del meta del viewport --></tal:comment>
-    <script tal:attributes="src string:${portal_url}/++genweb++static/js/ReView.js"></script>
+
 
     <metal:baseslot define-slot="base">
         <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
     </metal:baseslot>
 
     <tal:notajax tal:condition="python:not ajax_load or ajax_include_head">
-        <div tal:replace="structure provider:plone.htmlhead" />
+        <!-- <div tal:replace="structure provider:plone.htmlhead" /> -->
         <link tal:replace="structure provider:plone.htmlhead.links" />
 
         <tal:comment replace="nothing">
@@ -55,6 +52,10 @@
         <metal:topslot define-slot="top_slot" />
         <metal:headslot define-slot="head_slot" />
         <metal:styleslot define-slot="style_slot" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <tal:comment replace="nothing"><!-- El seguent script ha d'anar seguit del meta del viewport --></tal:comment>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/ReView.js"></script>
 
         <link rel="apple-touch-icon" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-57x57-precomposed.png" /> <!-- iPhone -->
         <link rel="apple-touch-icon" sizes="72x72" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-72x72-precomposed.png" /> <!-- iPad -->
@@ -198,6 +199,14 @@
 <tal:notajax tal:condition="not:ajax_load">
     <tal:scripts replace="structure provider:plone.resourceregistries.scripts" />
     <metal:javascriptslot define-slot="javascript_head_slot" />
+    <tal:comment replace="nothing"> <!-- A partir d'aqui, els JS comuns d'inicialització --> </tal:comment>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/jquery.nicescroll.js"></script>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/dropkick.js"></script>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/scrollability.js"></script>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/fileinput.js"></script>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/customInput.js"></script>
+    <script tal:attributes="src string:${portal_url}/++genweb++js/main.js"></script>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/ios-orientationchange-fix.js"></script>
 </tal:notajax>
 
 </body>

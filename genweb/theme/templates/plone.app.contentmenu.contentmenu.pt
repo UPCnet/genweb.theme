@@ -25,7 +25,7 @@
                       Title
                   </span>
                   <span tal:condition="menuItem/extra/stateTitle | nothing"
-                        tal:attributes="class string:label label-success ${menuItem/extra/class}"
+                        tal:attributes="class string:label label-success"
                         tal:content="menuItem/extra/stateTitle"
                         i18n:translate="">
                       State title
