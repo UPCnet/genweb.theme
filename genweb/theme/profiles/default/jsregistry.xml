@@ -51,7 +51,7 @@
  <javascript id="inline_validation.js" insert-after="dropdown.js"/>
  <javascript id="kss-bbb.js" insert-after="inline_validation.js"/>
 
- <!-- Remove old Tiny init -->
+ <!-- In case we use Tiny 3.x fot removing old Tiny init -->
  <!-- <javascript id="tiny_mce_init.js" remove="True"/> -->
 
  <!-- Add new JS -->
