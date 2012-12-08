@@ -10155,7 +10155,7 @@ a.primary, .primary a, a .primary {
 }
 
 /*.tabs {
-     *zoom: expression( 
+     *zoom: expression(
           this.runtimeStyle.zoom="1",
           this.appendChild( document.createElement("small") ).className="after"
          );
@@ -10170,7 +10170,7 @@ a.primary, .primary a, a .primary {
      background:red;
    }
 
-/* 
+/*
 > Index contingut = enllaços però amb fons
 > Llistat
 > Enllaços
@@ -10401,7 +10401,7 @@ NOTEBOOK
   border-left-style: solid;
 }
 
-/* 
+/*
 .table
 .table-striped
 .table-bordered
@@ -10972,7 +10972,7 @@ select {
   background-image: url('/++genweb++static/images/gh-w.png?1354124662');
 }
 
-/* estils per a checks i radios 
+/* estils per a checks i radios
 Origen JS: http://www.htmldrive.net/items/show/637/CSS-and-jQuery-Custom-Checkbox-and-Radio-Button-Inputs-Styled
 */
 /* line 127, ../scss/_inputs.scss */
