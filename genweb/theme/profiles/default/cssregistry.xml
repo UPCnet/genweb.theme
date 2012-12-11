@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<object name="portal_css" meta_type="Stylesheets Registry">
+ <stylesheet id="member.css" enabled="False" />
+ <stylesheet id="base.css" enabled="False" />
+ <stylesheet id="public.css" enabled="False" />
+ <stylesheet id="columns.css" enabled="False" />
+ <stylesheet id="authoring.css" enabled="False" />
+ <stylesheet id="portlets.css" enabled="False" />
+ <stylesheet id="controlpanel.css" enabled="False" />
+ <stylesheet id="deprecated.css" enabled="False" />
+ <stylesheet id="navtree.css" enabled="False" />
+ <stylesheet id="invisibles.css" enabled="False" />
+ <stylesheet id="forms.css" enabled="False" />
+ <stylesheet id="ploneKss.css" enabled="False" />
+ <stylesheet id="print.css" enabled="False" />
+ <stylesheet id="mobile.css" enabled="False" />
+ <stylesheet id="RTL.css" enabled="False" />
+ <stylesheet id="++resource++plone.app.jquerytools.overlays.css" enabled="False" />
+ <stylesheet id="IEFixes.css" enabled="False" />
+ <stylesheet id="ploneCustom.css" enabled="False" />
+
+<!-- Per deshabilitar/passar a scss:
+collective.js.jqueryui.custom.min.css
+++resource++plone.app.discussion.stylesheets/discussion.css
+++resource++tinymce.stylesheets/tinymce.css
+collage.css
+popoll.css
+ploneboard.css
+++resource++Products.PloneSurvey.images/survey_results.css
+++resource++collective.js.fullcalendar/fullcalendar.css
+++resource++collective.js.fullcalendar/fullcalendar.print.css
+solgema_contextualcontentmenu.css
+++resource++collective.js.colorpicker.css
+solgemafullcalendar.css
+-->
+
+</object>

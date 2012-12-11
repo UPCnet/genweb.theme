@@ -7,3 +7,15 @@
     @extend .nav;
     @extend .nav-pills;
 }
+
+// Revisar - Posat a ull
+#ajax-spinner {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    background-position: center center;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+}
