@@ -16,7 +16,7 @@ from plone.memoize import ram
 
 from genweb.core.interfaces import IGenwebLayer, IHomePage
 from genweb.theme.browser.interfaces import IGenwebTheme
-from genweb.core.utils import genweb_config, pref_lang, portal_url
+from genweb.core.utils import genweb_config, pref_lang
 from genweb.portlets.browser.manager import ISpanStorage
 
 from scss import Scss
