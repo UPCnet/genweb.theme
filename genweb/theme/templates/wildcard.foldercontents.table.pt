@@ -26,17 +26,17 @@
     <div class="visualClear" id="clear-space-before-navigation"><!-- --></div>
 
     <div tal:replace="structure view/batching" tal:condition="not:view/show_all"/>
-    <table class="table table-striped table-bordered table-condensed"
+    <table class="table table-striped table-bordered table-condensed table-hover"
            id="listing-table"
            summary="Content listing"
            i18n:attributes="summary summary_content_listing;"
            tal:condition="view/items">
       <thead>
         <tr i18n:domain="plone" tal:condition="python:view.show_select_column and not view.selectcurrentbatch">
-          <th colspan="6" class="nosort"><span i18n:translate="label_select" tal:omit-tag="">Select:</span> <a i18n:translate="label_all" tal:attributes="href view/selectscreen_url" id="foldercontents-selectall">All</a></th>
+          <th colspan="7" class="nosort"><span i18n:translate="label_select" tal:omit-tag="">Select:</span> <a i18n:translate="label_all" tal:attributes="href view/selectscreen_url" id="foldercontents-selectall">All</a></th>
         </tr>
         <tr i18n:domain="plone" tal:condition="view/show_select_all_items">
-          <th colspan="6" class="nosort">
+          <th colspan="7" class="nosort">
             <span tal:omit-tag="" i18n:translate="tableheading_all_items_selected">
             All <tal:block replace="view/batch/items_on_page" i18n:name="count"/> items on this
             page are selected. 
@@ -70,28 +70,28 @@
               <span class="caret"></span></button>
             <ul class="dropdown-menu" tal:define="baseurl view/sort_base_url">
               <li><a href="#" tal:attributes="href string:${baseurl}">
-                <b tal:condition="python: not sort_on or sort_on == 'getObjPositionInParent'"
-                    class="right-caret"></b>
+                <i tal:condition="python: not sort_on or sort_on == 'getObjPositionInParent'"
+                    class="icon-ok"></i>
                 <tal:select_order i18n:translate="foldercontents_folder_order">Folder Order</tal:select_order>
               </a></li>
               <li><a href="#" tal:attributes="href string:${baseurl}sortable_title">
-                <b tal:condition="python: sort_on == 'sortable_title'"
-                    class="right-caret"></b>
+                <i tal:condition="python: sort_on == 'sortable_title'"
+                    class="icon-ok"></i>
                 <tal:select_order i18n:translate="foldercontents_title_order">Title</tal:select_order>
               </a></li>
               <li><a href="#" tal:attributes="href string:${baseurl}modified">
-                <b tal:condition="python: sort_on == 'modified'"
-                    class="right-caret"></b>
+                <i tal:condition="python: sort_on == 'modified'"
+                    class="icon-ok"></i>
                 <tal:select_order i18n:translate="foldercontents_modification_order">Modification Date</tal:select_order>
               </a></li>
               <li><a href="#" tal:attributes="href string:${baseurl}created">
-                <b tal:condition="python: sort_on == 'created'"
-                    class="right-caret"></b>
+                <i tal:condition="python: sort_on == 'created'"
+                    class="icon-ok"></i>
                   <tal:select_order i18n:translate="foldercontents_creation_order">Creation Date</tal:select_order>
               </a></li>
               <li><a href="#" tal:attributes="href string:${baseurl}effective">
-                <b tal:condition="python: sort_on == 'effective'"
-                    class="right-caret"></b>
+                <i tal:condition="python: sort_on == 'effective'"
+                    class="icon-ok"></i>
                   <tal:select_order i18n:translate="foldercontents_effective_order">Effective Date</tal:select_order>
               </a></li>
               <li class="divider"></li>

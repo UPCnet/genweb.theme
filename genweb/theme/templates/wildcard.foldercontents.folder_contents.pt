@@ -12,9 +12,11 @@
     </metal:block>
     <metal:css fill-slot="style_slot"
       tal:define="resources_url string:${context/portal_url}/++resource++wcfc">
+      <!--
       <link href="++resource++wcfc/bootstrap/bootstrap-fixed.css" 
         tal:attributes="href string:${resources_url}/bootstrap/bootstrap-fixed.css"
         rel="stylesheet" type="text/css"/>
+      -->
       <!-- Bootstrap Image Gallery styles -->
       <link rel="stylesheet"
         href="http://blueimp.github.com/Bootstrap-Image-Gallery/css/bootstrap-image-gallery.min.css"
@@ -24,7 +26,7 @@
         tal:attributes="href string:${resources_url}/jquery-file-upload/css/jquery.fileupload-ui.css" />
       <!-- Shim to make HTML5 elements usable in older Internet Explorer versions -->
       <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
+<!--
       <style>
       .right-caret {
         border-bottom: 4px solid transparent;
@@ -45,7 +47,7 @@
         border-bottom: none;
       }
       </style>
-
+-->
     </metal:css>
     <metal:js fill-slot="javascript_head_slot"
       tal:define="resources_url string:${context/portal_url}/++resource++wcfc">
@@ -141,7 +143,7 @@
               Up one level
           </a>
 
-        <div class="fc">
+        <div>
           <form name="folderContentsForm"
                 method="post"
                 action="folder_object"
