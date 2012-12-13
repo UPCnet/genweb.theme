@@ -58,7 +58,7 @@
             </a></li>
             <li class="visible-desktop"><a tal:condition="view/canManageSite"
                    tal:attributes="href string:${view/portal_url}/@@overview-controlpanel">
-                   <tal:managesite i18n:translate="Site setup">
+                   <tal:managesite i18n:domain="plone" i18n:translate="Site Setup">
                       Site setup</tal:managesite>
             </a></li>
             <li class="hidden-phone"><a href="https://www.upc.edu/comunicacio/www/genweb-upc/formacio" target="newwindow" accesskey="6"
