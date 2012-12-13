@@ -1,0 +1,20 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser">
+
+  <browser:page
+      for="OFS.interfaces.IApplication"
+      name="plone-addsite"
+      class="Products.CMFPlone.browser.admin.AddPloneSite"
+      permission="zope2.ViewManagementScreens"
+      template="browser/views_templates/plone-addsite.pt"
+      />
+
+  <browser:page
+      for="OFS.Folder.Folder"
+      name="plone-addsite"
+      class="Products.CMFPlone.browser.admin.AddPloneSite"
+      permission="zope2.ViewManagementScreens"
+      template="browser/views_templates/plone-addsite.pt"
+      />
+
+</configure>
