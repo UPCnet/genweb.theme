@@ -17,12 +17,11 @@
                                  tag python:context.tag(scale='preview');
                                  webformatimage python:context.content_type in ('image/png', 'image/jpeg', 'image/gif');
                                  fullscreenview python:webformatimage and 'image_view_fullscreen' or 'download'">
-            <a href=""
+            <p><a href="" class="thumbnail inline-block"
 	           tal:attributes="href string:${context_state/object_url}/$fullscreenview">
                 <tal:block condition="size" replace="structure tag" />
-                <br />
-            </a>
-
+            </a></p>
+            <p>
             <span class="discreet visualNoPrint"
                   tal:define="objectsize python:context.getObjSize(here)">
 
@@ -34,24 +33,20 @@
                       tal:content="objectsize">
                     File size
                 </span>
-				&#124;
-	            <a href=""
+				
+	            <a href="" class="btn btn-link"
 	               tal:condition="webformatimage"
 	               tal:attributes="href string:${context_state/object_url}/$fullscreenview">
 	                <span class="visualNoPrint">
-                    <img tal:attributes="src string:${portal_state/portal_url}/search_icon.png"
-                         alt="View image" title="View image"
-                         i18n:attributes="alt; title" />
+                    <i class="icon-zoom-in"></i>
                     <span i18n:translate="">View</span>
                 	</span>
 	            </a>
 
-	            <a href=""
+	            <a href="" class="btn btn-link"
 	               tal:attributes="href string:${context_state/object_url}/download">
 	                <span class="visualNoPrint">
-                    <img tal:attributes="src string:${portal_state/portal_url}/download_icon.png"
-                         alt="Download image" title="Download image"
-                         i18n:attributes="alt; title" />
+                    <i class="icon-download"></i>
                     <span i18n:translate="">Download</span>
                 	</span>
 	            </a>
@@ -62,6 +57,7 @@
                   (No image has been uploaded yet)
               </span>
             </span>
+          </p>
         </metal:block>
     </metal:content-core>
 </body>

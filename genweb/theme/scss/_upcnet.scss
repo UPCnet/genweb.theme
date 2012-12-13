@@ -98,7 +98,11 @@
 
 
 
-
+//FITXERS
+.thumb-img img {
+    @extend .thumbnail;
+    &:hover {@extend .thumbnail:hover;}
+}
 
 
 // VISTES
@@ -107,3 +111,13 @@
 }
 .tileHeadline { @extend .xxl; @extend .liniaDalt;}
 .tileFooter:before { content:"";  @extend [class^="icon-"]; @extend .icon-plus-sign;}
+
+.template-atct_album_view #content-core {@extend .row-fluid;}
+.photoAlbumEntry {@extend .span3;}
+.photoAlbumEntry a {@extend .thumbnail;
+    & img {width:100%;}
+    & .photoAlbumEntryTitle {
+        @extend .caption;
+    }
+}
+

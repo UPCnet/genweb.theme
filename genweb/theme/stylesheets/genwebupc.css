@@ -274,7 +274,7 @@ a:hover {
 }
 
 /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.span3 {
+.span3, .photoAlbumEntry {
   width: 222px;
 }
 
@@ -349,22 +349,22 @@ a:hover {
 }
 
 /* line 601, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid {
+.row-fluid, .template-atct_album_view #content-core {
   width: 100%;
   *zoom: 1;
 }
 /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid:before, .row-fluid:after {
+.row-fluid:before, .template-atct_album_view #content-core:before, .row-fluid:after, .template-atct_album_view #content-core:after {
   display: table;
   content: "";
   line-height: 0;
 }
 /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid:after {
+.row-fluid:after, .template-atct_album_view #content-core:after {
   clear: both;
 }
 /* line 604, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid [class*="span"] {
+.row-fluid [class*="span"], .template-atct_album_view #content-core [class*="span"] {
   display: block;
   width: 100%;
   min-height: 30px;
@@ -376,203 +376,209 @@ a:hover {
   *margin-left: 3.01636%;
 }
 /* line 610, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid [class*="span"]:first-child {
+.row-fluid [class*="span"]:first-child, .template-atct_album_view #content-core [class*="span"]:first-child {
   margin-left: 0;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span12 {
+.row-fluid .span12, .template-atct_album_view #content-core .span12 {
   width: 100%;
   *width: 99.94888%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset12 {
+.row-fluid .offset12, .template-atct_album_view #content-core .offset12 {
   margin-left: 106.13497%;
   *margin-left: 106.03272%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset12:first-child {
+.row-fluid .offset12:first-child, .template-atct_album_view #content-core .offset12:first-child {
   margin-left: 103.06748%;
   *margin-left: 102.96524%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span11 {
+.row-fluid .span11, .template-atct_album_view #content-core .span11 {
   width: 91.41104%;
   *width: 91.35992%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset11 {
+.row-fluid .offset11, .template-atct_album_view #content-core .offset11 {
   margin-left: 97.54601%;
   *margin-left: 97.44376%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset11:first-child {
+.row-fluid .offset11:first-child, .template-atct_album_view #content-core .offset11:first-child {
   margin-left: 94.47853%;
   *margin-left: 94.37628%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span10 {
+.row-fluid .span10, .template-atct_album_view #content-core .span10 {
   width: 82.82209%;
   *width: 82.77096%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset10 {
+.row-fluid .offset10, .template-atct_album_view #content-core .offset10 {
   margin-left: 88.95706%;
   *margin-left: 88.85481%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset10:first-child {
+.row-fluid .offset10:first-child, .template-atct_album_view #content-core .offset10:first-child {
   margin-left: 85.88957%;
   *margin-left: 85.78732%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span9 {
+.row-fluid .span9, .template-atct_album_view #content-core .span9 {
   width: 74.23313%;
   *width: 74.182%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset9 {
+.row-fluid .offset9, .template-atct_album_view #content-core .offset9 {
   margin-left: 80.3681%;
   *margin-left: 80.26585%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset9:first-child {
+.row-fluid .offset9:first-child, .template-atct_album_view #content-core .offset9:first-child {
   margin-left: 77.30061%;
   *margin-left: 77.19836%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span8 {
+.row-fluid .span8, .template-atct_album_view #content-core .span8 {
   width: 65.64417%;
   *width: 65.59305%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset8 {
+.row-fluid .offset8, .template-atct_album_view #content-core .offset8 {
   margin-left: 71.77914%;
   *margin-left: 71.67689%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset8:first-child {
+.row-fluid .offset8:first-child, .template-atct_album_view #content-core .offset8:first-child {
   margin-left: 68.71166%;
   *margin-left: 68.60941%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span7 {
+.row-fluid .span7, .template-atct_album_view #content-core .span7 {
   width: 57.05521%;
   *width: 57.00409%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset7 {
+.row-fluid .offset7, .template-atct_album_view #content-core .offset7 {
   margin-left: 63.19018%;
   *margin-left: 63.08793%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset7:first-child {
+.row-fluid .offset7:first-child, .template-atct_album_view #content-core .offset7:first-child {
   margin-left: 60.1227%;
   *margin-left: 60.02045%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span6 {
+.row-fluid .span6, .template-atct_album_view #content-core .span6 {
   width: 48.46626%;
   *width: 48.41513%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset6 {
+.row-fluid .offset6, .template-atct_album_view #content-core .offset6 {
   margin-left: 54.60123%;
   *margin-left: 54.49898%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset6:first-child {
+.row-fluid .offset6:first-child, .template-atct_album_view #content-core .offset6:first-child {
   margin-left: 51.53374%;
   *margin-left: 51.43149%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span5 {
+.row-fluid .span5, .template-atct_album_view #content-core .span5 {
   width: 39.8773%;
   *width: 39.82618%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset5 {
+.row-fluid .offset5, .template-atct_album_view #content-core .offset5 {
   margin-left: 46.01227%;
   *margin-left: 45.91002%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset5:first-child {
+.row-fluid .offset5:first-child, .template-atct_album_view #content-core .offset5:first-child {
   margin-left: 42.94479%;
   *margin-left: 42.84254%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span4 {
+.row-fluid .span4, .template-atct_album_view #content-core .span4 {
   width: 31.28834%;
   *width: 31.23722%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset4 {
+.row-fluid .offset4, .template-atct_album_view #content-core .offset4 {
   margin-left: 37.42331%;
   *margin-left: 37.32106%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset4:first-child {
+.row-fluid .offset4:first-child, .template-atct_album_view #content-core .offset4:first-child {
   margin-left: 34.35583%;
   *margin-left: 34.25358%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span3 {
+.row-fluid .span3, .template-atct_album_view #content-core .span3, .row-fluid .photoAlbumEntry, .template-atct_album_view #content-core .photoAlbumEntry {
   width: 22.69939%;
   *width: 22.64826%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset3 {
+.row-fluid .offset3, .template-atct_album_view #content-core .offset3 {
   margin-left: 28.83436%;
   *margin-left: 28.73211%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset3:first-child {
+.row-fluid .offset3:first-child, .template-atct_album_view #content-core .offset3:first-child {
   margin-left: 25.76687%;
   *margin-left: 25.66462%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span2 {
+.row-fluid .span2, .template-atct_album_view #content-core .span2 {
   width: 14.11043%;
   *width: 14.0593%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset2 {
+.row-fluid .offset2, .template-atct_album_view #content-core .offset2 {
   margin-left: 20.2454%;
   *margin-left: 20.14315%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset2:first-child {
+.row-fluid .offset2:first-child, .template-atct_album_view #content-core .offset2:first-child {
   margin-left: 17.17791%;
   *margin-left: 17.07566%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span1 {
+.row-fluid .span1, .template-atct_album_view #content-core .span1 {
   width: 5.52147%;
   *width: 5.47035%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset1 {
+.row-fluid .offset1, .template-atct_album_view #content-core .offset1 {
   margin-left: 11.65644%;
   *margin-left: 11.55419%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset1:first-child {
+.row-fluid .offset1:first-child, .template-atct_album_view #content-core .offset1:first-child {
   margin-left: 8.58896%;
   *margin-left: 8.48671%;
 }
 
 /* line 14, ../bootstrap/scss/compass_twitter_bootstrap/_grid.scss */
 [class*="span"].hide,
-.row-fluid [class*="span"].hide {
+.row-fluid [class*="span"].hide,
+.template-atct_album_view #content-core [class*="span"].hide {
   display: none;
 }
 
 /* line 19, ../bootstrap/scss/compass_twitter_bootstrap/_grid.scss */
 [class*="span"].pull-right, .template-personal-information [for="form.portrait"] ~ img[class*="span"], .tileItem img[class*="span"],
 .row-fluid [class*="span"].pull-right,
+.template-atct_album_view #content-core [class*="span"].pull-right,
 .row-fluid .template-personal-information [for="form.portrait"] ~ img[class*="span"],
 .template-personal-information .row-fluid [for="form.portrait"] ~ img[class*="span"],
+.template-atct_album_view #content-core .template-personal-information [for="form.portrait"] ~ img[class*="span"],
+.template-personal-information .template-atct_album_view #content-core [for="form.portrait"] ~ img[class*="span"],
 .row-fluid .tileItem img[class*="span"],
-.tileItem .row-fluid img[class*="span"] {
+.tileItem .row-fluid img[class*="span"],
+.template-atct_album_view #content-core .tileItem img[class*="span"],
+.tileItem .template-atct_album_view #content-core img[class*="span"] {
   float: right;
 }
 
@@ -1278,9 +1284,13 @@ select[class*="span"],
 textarea[class*="span"],
 .uneditable-input[class*="span"],
 .row-fluid input[class*="span"],
+.template-atct_album_view #content-core input[class*="span"],
 .row-fluid select[class*="span"],
+.template-atct_album_view #content-core select[class*="span"],
 .row-fluid textarea[class*="span"],
-.row-fluid .uneditable-input[class*="span"] {
+.template-atct_album_view #content-core textarea[class*="span"],
+.row-fluid .uneditable-input[class*="span"],
+.template-atct_album_view #content-core .uneditable-input[class*="span"] {
   float: none;
   margin-left: 0;
 }
@@ -1291,11 +1301,17 @@ textarea[class*="span"],
 .input-prepend input[class*="span"],
 .input-prepend .uneditable-input[class*="span"],
 .row-fluid input[class*="span"],
+.template-atct_album_view #content-core input[class*="span"],
 .row-fluid select[class*="span"],
+.template-atct_album_view #content-core select[class*="span"],
 .row-fluid textarea[class*="span"],
+.template-atct_album_view #content-core textarea[class*="span"],
 .row-fluid .uneditable-input[class*="span"],
+.template-atct_album_view #content-core .uneditable-input[class*="span"],
 .row-fluid .input-prepend [class*="span"],
-.row-fluid .input-append [class*="span"] {
+.template-atct_album_view #content-core .input-prepend [class*="span"],
+.row-fluid .input-append [class*="span"],
+.template-atct_album_view #content-core .input-append [class*="span"] {
   display: inline-block;
 }
 
@@ -1375,9 +1391,11 @@ textarea.span4,
 }
 
 /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-input.span3,
+input.span3, input.photoAlbumEntry,
 textarea.span3,
-.uneditable-input.span3 {
+textarea.photoAlbumEntry,
+.uneditable-input.span3,
+.uneditable-input.photoAlbumEntry {
   width: 208px;
 }
 
@@ -2009,7 +2027,7 @@ table {
 }
 
 /* line 70, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table-bordered {
+.table-bordered, .listing {
   border: 1px solid #b2b2b2;
   border-collapse: separate;
   *border-collapse: collapse;
@@ -2030,58 +2048,77 @@ table {
   */
 }
 /* line 77, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table-bordered th,
-.table-bordered td {
+.table-bordered th, .listing th,
+.table-bordered td,
+.listing td {
   border-left: 1px solid #b2b2b2;
 }
 /* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + thead tr:first-child th, .listing caption + thead tr:first-child th,
 .table-bordered caption + tbody tr:first-child th,
+.listing caption + tbody tr:first-child th,
 .table-bordered caption + tbody tr:first-child td,
+.listing caption + tbody tr:first-child td,
 .table-bordered colgroup + thead tr:first-child th,
+.listing colgroup + thead tr:first-child th,
 .table-bordered colgroup + tbody tr:first-child th,
+.listing colgroup + tbody tr:first-child th,
 .table-bordered colgroup + tbody tr:first-child td,
+.listing colgroup + tbody tr:first-child td,
 .table-bordered thead:first-child tr:first-child th,
+.listing thead:first-child tr:first-child th,
 .table-bordered tbody:first-child tr:first-child th,
-.table-bordered tbody:first-child tr:first-child td {
+.listing tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td,
+.listing tbody:first-child tr:first-child td {
   border-top: 0;
 }
 /* line 94, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table-bordered thead:first-child tr:first-child th:first-child,
-.table-bordered tbody:first-child tr:first-child td:first-child {
+.table-bordered thead:first-child tr:first-child th:first-child, .listing thead:first-child tr:first-child th:first-child,
+.table-bordered tbody:first-child tr:first-child td:first-child,
+.listing tbody:first-child tr:first-child td:first-child {
   -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
 }
 /* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table-bordered thead:first-child tr:first-child th:last-child,
-.table-bordered tbody:first-child tr:first-child td:last-child {
+.table-bordered thead:first-child tr:first-child th:last-child, .listing thead:first-child tr:first-child th:last-child,
+.table-bordered tbody:first-child tr:first-child td:last-child,
+.listing tbody:first-child tr:first-child td:last-child {
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
 }
 /* line 118, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table-bordered thead:last-child tr:last-child th:last-child,
+.table-bordered thead:last-child tr:last-child th:last-child, .listing thead:last-child tr:last-child th:last-child,
 .table-bordered tbody:last-child tr:last-child td:last-child,
-.table-bordered tfoot:last-child tr:last-child td:last-child {
+.listing tbody:last-child tr:last-child td:last-child,
+.table-bordered tfoot:last-child tr:last-child td:last-child,
+.listing tfoot:last-child tr:last-child td:last-child {
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
 }
 /* line 128, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table-bordered caption + thead tr:first-child th:first-child,
+.table-bordered caption + thead tr:first-child th:first-child, .listing caption + thead tr:first-child th:first-child,
 .table-bordered caption + tbody tr:first-child td:first-child,
+.listing caption + tbody tr:first-child td:first-child,
 .table-bordered colgroup + thead tr:first-child th:first-child,
-.table-bordered colgroup + tbody tr:first-child td:first-child {
+.listing colgroup + thead tr:first-child th:first-child,
+.table-bordered colgroup + tbody tr:first-child td:first-child,
+.listing colgroup + tbody tr:first-child td:first-child {
   -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
 }
 /* line 136, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-.table-bordered caption + thead tr:first-child th:last-child,
+.table-bordered caption + thead tr:first-child th:last-child, .listing caption + thead tr:first-child th:last-child,
 .table-bordered caption + tbody tr:first-child td:last-child,
+.listing caption + tbody tr:first-child td:last-child,
 .table-bordered colgroup + thead tr:first-child th:last-child,
-.table-bordered colgroup + tbody tr:first-child td:last-child {
+.listing colgroup + thead tr:first-child th:last-child,
+.table-bordered colgroup + tbody tr:first-child td:last-child,
+.listing colgroup + tbody tr:first-child td:last-child {
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
   -moz-border-right-topleft: 4px;
@@ -2104,7 +2141,8 @@ table {
 
 /* line 177, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table [class*=span],
-.row-fluid table [class*=span] {
+.row-fluid table [class*=span],
+.template-atct_album_view #content-core table [class*=span] {
   display: table-cell;
   float: none;
   margin-left: 0;
@@ -2123,7 +2161,7 @@ table .span2 {
   margin-left: 0;
 }
 /* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-table .span3 {
+table .span3, table .photoAlbumEntry {
   float: none;
   width: 206px;
   margin-left: 0;
@@ -6768,7 +6806,7 @@ input[type="submit"].link-parent::-moz-focus-inner {
 }
 
 /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_thumbnails.scss */
-.row-fluid .thumbnails {
+.row-fluid .thumbnails, .template-atct_album_view #content-core .thumbnails {
   margin-left: 0;
 }
 
@@ -6780,7 +6818,7 @@ input[type="submit"].link-parent::-moz-focus-inner {
 }
 
 /* line 27, ../bootstrap/scss/compass_twitter_bootstrap/_thumbnails.scss */
-.thumbnail {
+.thumbnail, .thumb-img img, .photoAlbumEntry a {
   display: block;
   padding: 4px;
   line-height: 18px;
@@ -6798,7 +6836,7 @@ input[type="submit"].link-parent::-moz-focus-inner {
 }
 
 /* line 37, ../bootstrap/scss/compass_twitter_bootstrap/_thumbnails.scss */
-a.thumbnail:hover {
+a.thumbnail:hover, .photoAlbumEntry a:hover {
   border-color: #007bc0;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -6806,7 +6844,7 @@ a.thumbnail:hover {
 }
 
 /* line 43, ../bootstrap/scss/compass_twitter_bootstrap/_thumbnails.scss */
-.thumbnail > img {
+.thumbnail > img, .thumb-img img > img, .photoAlbumEntry a > img {
   display: block;
   max-width: 100%;
   margin-left: auto;
@@ -6814,7 +6852,7 @@ a.thumbnail:hover {
 }
 
 /* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_thumbnails.scss */
-.thumbnail .caption {
+.thumbnail .caption, .thumb-img img .caption, .photoAlbumEntry a .caption, .thumbnail .photoAlbumEntry a .photoAlbumEntryTitle, .photoAlbumEntry a .thumbnail .photoAlbumEntryTitle, .thumb-img img .photoAlbumEntry a .photoAlbumEntryTitle, .photoAlbumEntry a .thumb-img img .photoAlbumEntryTitle, .photoAlbumEntry a .photoAlbumEntryTitle {
   padding: 9px;
   color: #666666;
 }
@@ -7717,7 +7755,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 86, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  .row-fluid {
+  .row-fluid, .template-atct_album_view #content-core {
     width: 100%;
   }
 
@@ -7733,7 +7771,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 91, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  .span12, .row-fluid .span12 {
+  .span12, .row-fluid .span12, .template-atct_album_view #content-core .span12 {
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -7915,7 +7953,8 @@ input[value^="Cancel"] .badge,
   /* contingut*/
   /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   [class*="span"],
-  .row-fluid [class*="span"] {
+  .row-fluid [class*="span"],
+  .template-atct_album_view #content-core [class*="span"] {
     float: none;
     display: block;
     width: auto;
@@ -8096,7 +8135,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span3 {
+  .span3, .photoAlbumEntry {
     width: 222px;
   }
 
@@ -8171,22 +8210,22 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 601, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid {
+  .row-fluid, .template-atct_album_view #content-core {
     width: 100%;
     *zoom: 1;
   }
   /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid:before, .row-fluid:after {
+  .row-fluid:before, .template-atct_album_view #content-core:before, .row-fluid:after, .template-atct_album_view #content-core:after {
     display: table;
     content: "";
     line-height: 0;
   }
   /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid:after {
+  .row-fluid:after, .template-atct_album_view #content-core:after {
     clear: both;
   }
   /* line 604, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid [class*="span"] {
+  .row-fluid [class*="span"], .template-atct_album_view #content-core [class*="span"] {
     display: block;
     width: 100%;
     min-height: 30px;
@@ -8198,186 +8237,186 @@ input[value^="Cancel"] .badge,
     *margin-left: 3.01636%;
   }
   /* line 610, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid [class*="span"]:first-child {
+  .row-fluid [class*="span"]:first-child, .template-atct_album_view #content-core [class*="span"]:first-child {
     margin-left: 0;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span12 {
+  .row-fluid .span12, .template-atct_album_view #content-core .span12 {
     width: 100%;
     *width: 99.94888%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset12 {
+  .row-fluid .offset12, .template-atct_album_view #content-core .offset12 {
     margin-left: 106.13497%;
     *margin-left: 106.03272%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset12:first-child {
+  .row-fluid .offset12:first-child, .template-atct_album_view #content-core .offset12:first-child {
     margin-left: 103.06748%;
     *margin-left: 102.96524%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span11 {
+  .row-fluid .span11, .template-atct_album_view #content-core .span11 {
     width: 91.41104%;
     *width: 91.35992%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset11 {
+  .row-fluid .offset11, .template-atct_album_view #content-core .offset11 {
     margin-left: 97.54601%;
     *margin-left: 97.44376%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset11:first-child {
+  .row-fluid .offset11:first-child, .template-atct_album_view #content-core .offset11:first-child {
     margin-left: 94.47853%;
     *margin-left: 94.37628%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span10 {
+  .row-fluid .span10, .template-atct_album_view #content-core .span10 {
     width: 82.82209%;
     *width: 82.77096%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset10 {
+  .row-fluid .offset10, .template-atct_album_view #content-core .offset10 {
     margin-left: 88.95706%;
     *margin-left: 88.85481%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset10:first-child {
+  .row-fluid .offset10:first-child, .template-atct_album_view #content-core .offset10:first-child {
     margin-left: 85.88957%;
     *margin-left: 85.78732%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span9 {
+  .row-fluid .span9, .template-atct_album_view #content-core .span9 {
     width: 74.23313%;
     *width: 74.182%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset9 {
+  .row-fluid .offset9, .template-atct_album_view #content-core .offset9 {
     margin-left: 80.3681%;
     *margin-left: 80.26585%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset9:first-child {
+  .row-fluid .offset9:first-child, .template-atct_album_view #content-core .offset9:first-child {
     margin-left: 77.30061%;
     *margin-left: 77.19836%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span8 {
+  .row-fluid .span8, .template-atct_album_view #content-core .span8 {
     width: 65.64417%;
     *width: 65.59305%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset8 {
+  .row-fluid .offset8, .template-atct_album_view #content-core .offset8 {
     margin-left: 71.77914%;
     *margin-left: 71.67689%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset8:first-child {
+  .row-fluid .offset8:first-child, .template-atct_album_view #content-core .offset8:first-child {
     margin-left: 68.71166%;
     *margin-left: 68.60941%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span7 {
+  .row-fluid .span7, .template-atct_album_view #content-core .span7 {
     width: 57.05521%;
     *width: 57.00409%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset7 {
+  .row-fluid .offset7, .template-atct_album_view #content-core .offset7 {
     margin-left: 63.19018%;
     *margin-left: 63.08793%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset7:first-child {
+  .row-fluid .offset7:first-child, .template-atct_album_view #content-core .offset7:first-child {
     margin-left: 60.1227%;
     *margin-left: 60.02045%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span6 {
+  .row-fluid .span6, .template-atct_album_view #content-core .span6 {
     width: 48.46626%;
     *width: 48.41513%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset6 {
+  .row-fluid .offset6, .template-atct_album_view #content-core .offset6 {
     margin-left: 54.60123%;
     *margin-left: 54.49898%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset6:first-child {
+  .row-fluid .offset6:first-child, .template-atct_album_view #content-core .offset6:first-child {
     margin-left: 51.53374%;
     *margin-left: 51.43149%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span5 {
+  .row-fluid .span5, .template-atct_album_view #content-core .span5 {
     width: 39.8773%;
     *width: 39.82618%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset5 {
+  .row-fluid .offset5, .template-atct_album_view #content-core .offset5 {
     margin-left: 46.01227%;
     *margin-left: 45.91002%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset5:first-child {
+  .row-fluid .offset5:first-child, .template-atct_album_view #content-core .offset5:first-child {
     margin-left: 42.94479%;
     *margin-left: 42.84254%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span4 {
+  .row-fluid .span4, .template-atct_album_view #content-core .span4 {
     width: 31.28834%;
     *width: 31.23722%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset4 {
+  .row-fluid .offset4, .template-atct_album_view #content-core .offset4 {
     margin-left: 37.42331%;
     *margin-left: 37.32106%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset4:first-child {
+  .row-fluid .offset4:first-child, .template-atct_album_view #content-core .offset4:first-child {
     margin-left: 34.35583%;
     *margin-left: 34.25358%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span3 {
+  .row-fluid .span3, .template-atct_album_view #content-core .span3, .row-fluid .photoAlbumEntry, .template-atct_album_view #content-core .photoAlbumEntry {
     width: 22.69939%;
     *width: 22.64826%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset3 {
+  .row-fluid .offset3, .template-atct_album_view #content-core .offset3 {
     margin-left: 28.83436%;
     *margin-left: 28.73211%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset3:first-child {
+  .row-fluid .offset3:first-child, .template-atct_album_view #content-core .offset3:first-child {
     margin-left: 25.76687%;
     *margin-left: 25.66462%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span2 {
+  .row-fluid .span2, .template-atct_album_view #content-core .span2 {
     width: 14.11043%;
     *width: 14.0593%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset2 {
+  .row-fluid .offset2, .template-atct_album_view #content-core .offset2 {
     margin-left: 20.2454%;
     *margin-left: 20.14315%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset2:first-child {
+  .row-fluid .offset2:first-child, .template-atct_album_view #content-core .offset2:first-child {
     margin-left: 17.17791%;
     *margin-left: 17.07566%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span1 {
+  .row-fluid .span1, .template-atct_album_view #content-core .span1 {
     width: 5.52147%;
     *width: 5.47035%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset1 {
+  .row-fluid .offset1, .template-atct_album_view #content-core .offset1 {
     margin-left: 11.65644%;
     *margin-left: 11.55419%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset1:first-child {
+  .row-fluid .offset1:first-child, .template-atct_album_view #content-core .offset1:first-child {
     margin-left: 8.58896%;
     *margin-left: 8.48671%;
   }
@@ -8458,9 +8497,11 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span3,
+  input.span3, input.photoAlbumEntry,
   textarea.span3,
-  .uneditable-input.span3 {
+  textarea.photoAlbumEntry,
+  .uneditable-input.span3,
+  .uneditable-input.photoAlbumEntry {
     width: 208px;
   }
 
@@ -10502,19 +10543,19 @@ tfoot td, tfoot tr {
 }
 
 /* line 35, ../scss/_tables.scss */
-.table-bordered {
+.table-bordered, .listing {
   -webkit-box-shadow: 0 1px 1px #b2b2b2;
   -moz-box-shadow: 0 1px 1px #b2b2b2;
   box-shadow: 0 1px 1px #b2b2b2;
 }
 
 /* line 39, ../scss/_tables.scss */
-.table.table-bordered tr:last-child td:first-child, .table-bordered.listing tr:last-child td:first-child, .table-bordered.taulaRegistres tr:last-child td:first-child {
+.table.table-bordered tr:last-child td:first-child, .listing tr:last-child td:first-child, .table-bordered.taulaRegistres tr:last-child td:first-child {
   border-radius: 0 0 0 4px;
 }
 
 /* line 42, ../scss/_tables.scss */
-.table.table-bordered tfoot + tbody tr:last-child td:first-child, .table-bordered.listing tfoot + tbody tr:last-child td:first-child, .table-bordered.taulaRegistres tfoot + tbody tr:last-child td:first-child {
+.table.table-bordered tfoot + tbody tr:last-child td:first-child, .listing tfoot + tbody tr:last-child td:first-child, .table-bordered.taulaRegistres tfoot + tbody tr:last-child td:first-child {
   border-radius: 0 !important;
 }
 
@@ -10572,13 +10613,14 @@ INVERSE
   background-color: black;
 }
 /* line 81, ../scss/_tables.scss */
-.table-inverse.table-bordered {
+.table-inverse.table-bordered, .table-inverse.listing {
   border: 1px solid #666666;
   border-left: 0;
 }
 /* line 85, ../scss/_tables.scss */
-.table-inverse.table-bordered th,
-.table-inverse.table-bordered td {
+.table-inverse.table-bordered th, .table-inverse.listing th,
+.table-inverse.table-bordered td,
+.table-inverse.listing td {
   border-left: 1px solid #666666;
 }
 
@@ -10595,7 +10637,7 @@ NOTEBOOK
   border-radius: 4px;
 }
 /* line 97, ../scss/_tables.scss */
-.table-notebook.table-bordered td, .table-notebook.table-bordered th {
+.table-notebook.table-bordered td, .table-notebook.listing td, .table-notebook.table-bordered th, .table-notebook.listing th {
   border-top: 1px solid #c0e8ff;
   border-left-color: #daf2ff;
   border-left-style: dotted;
@@ -10636,7 +10678,7 @@ NOTEBOOK
   border-top: 1px solid #41bbff;
 }
 /* line 116, ../scss/_tables.scss */
-.table-notebook.table-bordered td:first-child, .table-notebook.table-bordered th:first-child {
+.table-notebook.table-bordered td:first-child, .table-notebook.listing td:first-child, .table-notebook.table-bordered th:first-child, .table-notebook.listing th:first-child {
   border-left-color: #b2b2b2 !important;
   border-left-style: solid;
 }
@@ -11606,29 +11648,29 @@ h2.title-inverse i {
   background-image: url('/++genweb++static/images/gh-w.png?1354788544');
 }
 
-/* line 18, ../scss/_plone.scss */
+/* line 19, ../scss/_plone.scss */
 label {
   font-weight: bold;
   color: #557c95;
 }
 
-/* line 22, ../scss/_plone.scss */
+/* line 23, ../scss/_plone.scss */
 .formHelp {
   display: block;
   font-weight: normal;
 }
 
-/* line 47, ../scss/_plone.scss */
+/* line 48, ../scss/_plone.scss */
 .fieldRequired {
   font-size: 0;
 }
 
-/* line 48, ../scss/_plone.scss */
+/* line 49, ../scss/_plone.scss */
 .fieldRequired:after {
   font-size: 20px !important;
 }
 
-/* line 51, ../scss/_plone.scss */
+/* line 52, ../scss/_plone.scss */
 .fieldRequired:after,
 .required:after {
   color: #a62e1f;
@@ -11639,27 +11681,27 @@ label {
   line-height: 0;
 }
 
-/* line 60, ../scss/_plone.scss */
+/* line 61, ../scss/_plone.scss */
 .selected.required:after {
   color: white;
 }
 
-/* line 61, ../scss/_plone.scss */
+/* line 62, ../scss/_plone.scss */
 .field {
   margin-bottom: 18px;
 }
-/* line 64, ../scss/_plone.scss */
+/* line 65, ../scss/_plone.scss */
 .field input[type="radio"],
 .field input[type="checkbox"] {
   margin: 0 0 3px;
 }
 
-/* line 73, ../scss/_plone.scss */
+/* line 74, ../scss/_plone.scss */
 #archetypes-fieldname-title input {
   height: 27px;
 }
 
-/* line 84, ../scss/_plone.scss */
+/* line 85, ../scss/_plone.scss */
 .formControls, #actionsView {
   padding-top: 25px;
   -webkit-box-shadow: 0 -15px 15px -15px rgba(0, 0, 0, 0.25);
@@ -11667,7 +11709,7 @@ label {
   box-shadow: 0 -15px 15px -15px rgba(0, 0, 0, 0.25);
 }
 
-/* line 91, ../scss/_plone.scss */
+/* line 92, ../scss/_plone.scss */
 div.label, label *.label {
   background: white;
   text-shadow: none;
@@ -11675,41 +11717,41 @@ div.label, label *.label {
   white-space: normal;
 }
 
-/* line 97, ../scss/_plone.scss */
+/* line 98, ../scss/_plone.scss */
 input#title {
   font-weight: bold;
 }
 
-/* line 112, ../scss/_plone.scss */
+/* line 113, ../scss/_plone.scss */
 #portlet-prefs {
   border: 0;
 }
-/* line 114, ../scss/_plone.scss */
+/* line 115, ../scss/_plone.scss */
 #portlet-prefs .portletHeader {
   display: none;
 }
-/* line 117, ../scss/_plone.scss */
+/* line 118, ../scss/_plone.scss */
 #portlet-prefs dd {
   margin: 0;
 }
 
-/* line 125, ../scss/_plone.scss */
+/* line 126, ../scss/_plone.scss */
 .configlets img {
   float: right;
 }
 
-/* line 127, ../scss/_plone.scss */
+/* line 128, ../scss/_plone.scss */
 .contentActions {
   line-height: 0;
 }
 
-/* line 138, ../scss/_plone.scss */
+/* line 139, ../scss/_plone.scss */
 .portalMessage dt, .portalMessage dd {
   margin: 0;
   display: inline;
 }
 
-/* line 144, ../scss/_plone.scss */
+/* line 145, ../scss/_plone.scss */
 .img-mask {
   display: block;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
@@ -11718,33 +11760,33 @@ input#title {
   margin-top: 6px;
   width: 222px;
 }
-/* line 149, ../scss/_plone.scss */
+/* line 150, ../scss/_plone.scss */
 .img-mask iframe {
   -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1354788544') no-repeat center center;
 }
 
-/* line 154, ../scss/_plone.scss */
+/* line 155, ../scss/_plone.scss */
 iframe {
   border: 0 !important;
   display: block !important;
 }
 
-/* line 160, ../scss/_plone.scss */
+/* line 161, ../scss/_plone.scss */
 #portal-sitemap > li {
   font-weight: bold;
   font-size: normal;
   margin-top: 30px;
 }
-/* line 165, ../scss/_plone.scss */
+/* line 166, ../scss/_plone.scss */
 #portal-sitemap > li > div {
   padding-bottom: 10px;
   border-bottom: 1px solid #b2b2b2;
 }
-/* line 169, ../scss/_plone.scss */
+/* line 170, ../scss/_plone.scss */
 #portal-sitemap > li a {
   color: #007bc0;
 }
-/* line 171, ../scss/_plone.scss */
+/* line 172, ../scss/_plone.scss */
 #portal-sitemap > li a:after {
   content: " ";
   position: relative;
@@ -11754,7 +11796,7 @@ iframe {
   background: url('/++genweb++static/images/gh.png?1354788544') -239px -143px no-repeat;
   margin-left: 5px;
 }
-/* line 182, ../scss/_plone.scss */
+/* line 183, ../scss/_plone.scss */
 #portal-sitemap ul {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -11767,7 +11809,7 @@ iframe {
   column-fill: auto;
   margin: 0;
 }
-/* line 188, ../scss/_plone.scss */
+/* line 189, ../scss/_plone.scss */
 #portal-sitemap ul > li {
   font-weight: bold;
   font-size: normal;
@@ -11778,59 +11820,59 @@ iframe {
   -moz-column-break-inside: avoid;
   column-break-inside: avoid;
 }
-/* line 198, ../scss/_plone.scss */
+/* line 199, ../scss/_plone.scss */
 #portal-sitemap ul > li > div {
   padding-bottom: 0;
   padding-top: 5px;
 }
-/* line 202, ../scss/_plone.scss */
+/* line 203, ../scss/_plone.scss */
 #portal-sitemap ul > li a {
   color: #004a74;
 }
-/* line 204, ../scss/_plone.scss */
+/* line 205, ../scss/_plone.scss */
 #portal-sitemap ul > li a:after {
   content: none;
 }
-/* line 209, ../scss/_plone.scss */
+/* line 210, ../scss/_plone.scss */
 #portal-sitemap ul ul {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   column-count: 1;
 }
-/* line 214, ../scss/_plone.scss */
+/* line 215, ../scss/_plone.scss */
 #portal-sitemap ul > li li {
   padding: 5px 9px;
   line-height: 12px;
   font-weight: normal;
   font-size: smaller;
 }
-/* line 221, ../scss/_plone.scss */
+/* line 222, ../scss/_plone.scss */
 #portal-sitemap ul > li li > div {
   padding-top: 0;
 }
-/* line 224, ../scss/_plone.scss */
+/* line 225, ../scss/_plone.scss */
 #portal-sitemap ul > li li a {
   color: #666666;
 }
 
-/* line 232, ../scss/_plone.scss */
+/* line 233, ../scss/_plone.scss */
 .plone_jscalendar .dk_container {
   display: inline-block;
 }
 
-/* line 233, ../scss/_plone.scss */
+/* line 234, ../scss/_plone.scss */
 .plone_jscalendar .dk_toggle {
   width: 100px !important;
 }
 
-/* line 234, ../scss/_plone.scss */
+/* line 235, ../scss/_plone.scss */
 .plone_jscalendar .dk_options {
   min-width: 128px !important;
   width: 128px !important;
 }
 
 /* The main calendar widget.  DIV containing a table. */
-/* line 239, ../scss/_plone.scss */
+/* line 240, ../scss/_plone.scss */
 .calendar {
   position: relative;
   display: none;
@@ -11838,31 +11880,31 @@ iframe {
   border-radius: 5px;
 }
 
-/* line 240, ../scss/_plone.scss */
+/* line 241, ../scss/_plone.scss */
 .calendar table {
   background: #f2f2f2;
   border-radius: 5px;
   min-width: 222px;
 }
 
-/* line 241, ../scss/_plone.scss */
+/* line 242, ../scss/_plone.scss */
 .calendar .button {
   text-align: center;
   background: #f2f2f2;
 }
 
-/* line 242, ../scss/_plone.scss */
+/* line 243, ../scss/_plone.scss */
 .calendar .nav, .calendar .contentViews, .calendar .configlets, .calendar .formTabs {
   background: #f2f2f2 url(menuarrow.gif) no-repeat 100% 100%;
 }
 
-/* line 243, ../scss/_plone.scss */
+/* line 244, ../scss/_plone.scss */
 .calendar thead .title {
   font-weight: bold;
   text-align: center;
 }
 
-/* line 244, ../scss/_plone.scss */
+/* line 245, ../scss/_plone.scss */
 .calendar thead .name {
   border-bottom: 1px solid #b2b2b2;
   border-top: 1px solid #b2b2b2;
@@ -11870,113 +11912,113 @@ iframe {
   background: #f7f7f7;
 }
 
-/* line 245, ../scss/_plone.scss */
+/* line 246, ../scss/_plone.scss */
 .calendar thead .weekend {
   color: #c00;
 }
 
-/* line 246, ../scss/_plone.scss */
+/* line 247, ../scss/_plone.scss */
 .calendar thead .hilite {
   background: #cef;
 }
 
-/* line 247, ../scss/_plone.scss */
+/* line 248, ../scss/_plone.scss */
 .calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected, .contentViews .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
 
-/* line 248, ../scss/_plone.scss */
+/* line 249, ../scss/_plone.scss */
 .calendar tbody {
   background: #fff;
 }
 
-/* line 249, ../scss/_plone.scss */
+/* line 250, ../scss/_plone.scss */
 .calendar tbody .day {
   width: 2em;
   text-align: center;
   padding: 2px 0px;
 }
 
-/* line 250, ../scss/_plone.scss */
+/* line 251, ../scss/_plone.scss */
 .calendar tbody .day.othermonth {
   font-size: 80%;
   color: #aaa;
 }
 
-/* line 251, ../scss/_plone.scss */
+/* line 252, ../scss/_plone.scss */
 .calendar tbody .day.othermonth.oweekend {
   color: #faa;
 }
 
-/* line 252, ../scss/_plone.scss */
+/* line 253, ../scss/_plone.scss */
 .calendar table .wn {
   border-right: 1px solid #b2b2b2;
   background: #f7f7f7;
 }
 
-/* line 253, ../scss/_plone.scss */
+/* line 254, ../scss/_plone.scss */
 .calendar tbody .rowhilite td {
   background: #cef;
 }
 
-/* line 254, ../scss/_plone.scss */
+/* line 255, ../scss/_plone.scss */
 .calendar tbody td.hilite {
   background: #08c;
   color: white;
 }
 
-/* line 255, ../scss/_plone.scss */
+/* line 256, ../scss/_plone.scss */
 .calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected, .contentViews .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
 
-/* line 256, ../scss/_plone.scss */
+/* line 257, ../scss/_plone.scss */
 .calendar tbody td.selected {
   font-weight: bold;
   background: #08c;
   color: white;
 }
 
-/* line 257, ../scss/_plone.scss */
+/* line 258, ../scss/_plone.scss */
 .calendar tbody td.weekend {
   color: #c00;
 }
 
-/* line 258, ../scss/_plone.scss */
+/* line 259, ../scss/_plone.scss */
 .calendar tbody td.today {
   font-weight: bold;
   color: white;
   border-radius: 3px;
 }
 
-/* line 259, ../scss/_plone.scss */
+/* line 260, ../scss/_plone.scss */
 .calendar tbody td.disabled {
   color: gray;
 }
 
-/* line 261, ../scss/_plone.scss */
+/* line 262, ../scss/_plone.scss */
 .calendar tbody .emptyrow {
   display: none;
 }
 
-/* line 263, ../scss/_plone.scss */
+/* line 264, ../scss/_plone.scss */
 .calendar tfoot .ttip {
   background: #f7f7f7;
   border-top: 1px solid #b2b2b2;
   text-align: center;
 }
 
-/* line 264, ../scss/_plone.scss */
+/* line 265, ../scss/_plone.scss */
 .calendar tfoot .hilite {
   background-color: #cef !important;
 }
 
-/* line 265, ../scss/_plone.scss */
+/* line 266, ../scss/_plone.scss */
 .calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected, .contentViews .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
   background-color: #08c !important;
 }
 
-/* line 267, ../scss/_plone.scss */
+/* line 268, ../scss/_plone.scss */
 .calendar .combo {
   position: absolute;
   display: none;
@@ -11993,7 +12035,7 @@ iframe {
   z-index: 100;
 }
 
-/* line 284, ../scss/_plone.scss */
+/* line 285, ../scss/_plone.scss */
 .calendar .combo .label,
 .calendar .combo .label-IEfix {
   text-align: center;
@@ -12001,24 +12043,24 @@ iframe {
   padding: 1px;
 }
 
-/* line 290, ../scss/_plone.scss */
+/* line 291, ../scss/_plone.scss */
 .calendar .combo .label-IEfix {
   width: 4em;
 }
 
-/* line 294, ../scss/_plone.scss */
+/* line 295, ../scss/_plone.scss */
 .calendar .combo .active, .calendar .combo .selected, .calendar .combo .contentViews .selected, .contentViews .calendar .combo .selected, .calendar .combo .contentViews .selected:hover, .contentViews .calendar .combo .selected:hover {
   padding: 0px;
   border: 1px solid #000;
 }
 
-/* line 299, ../scss/_plone.scss */
+/* line 300, ../scss/_plone.scss */
 .calendar .combo .hilite {
   background: Highlight;
   color: HighlightText;
 }
 
-/* line 304, ../scss/_plone.scss */
+/* line 305, ../scss/_plone.scss */
 .calendar td.time {
   border-top: 1px solid ButtonShadow;
   padding: 1px 0px;
@@ -12026,7 +12068,7 @@ iframe {
   background-color: ButtonFace;
 }
 
-/* line 313, ../scss/_plone.scss */
+/* line 314, ../scss/_plone.scss */
 .calendar td.time .hour,
 .calendar td.time .minute,
 .calendar td.time .ampm {
@@ -12036,25 +12078,25 @@ iframe {
   background-color: Menu;
 }
 
-/* line 320, ../scss/_plone.scss */
+/* line 321, ../scss/_plone.scss */
 .calendar td.time .ampm {
   text-align: center;
 }
 
-/* line 324, ../scss/_plone.scss */
+/* line 325, ../scss/_plone.scss */
 .calendar td.time .colon {
   padding: 0px 2px 0px 3px;
   font-weight: bold;
 }
 
-/* line 329, ../scss/_plone.scss */
+/* line 330, ../scss/_plone.scss */
 .calendar td.time span.hilite {
   border-color: #000;
   background-color: Highlight;
   color: HighlightText;
 }
 
-/* line 335, ../scss/_plone.scss */
+/* line 336, ../scss/_plone.scss */
 .calendar td.time span.active, .calendar td.time span.selected, .calendar td.time .contentViews span.selected, .contentViews .calendar td.time span.selected, .calendar td.time .contentViews span.selected:hover, .contentViews .calendar td.time span.selected:hover {
   border-color: #f00;
   background-color: #000;
@@ -12565,7 +12607,7 @@ html.simulated-mobile-view #portal-column-content {
 }
 
 /* line 28, ../scss/_simulated-views.scss */
-html.simulated-mobile-view #portal-column-content .row-fluid [class*="span"] {
+html.simulated-mobile-view #portal-column-content .row-fluid [class*="span"], html.simulated-mobile-view #portal-column-content .template-atct_album_view #content-core [class*="span"], .template-atct_album_view html.simulated-mobile-view #portal-column-content #content-core [class*="span"] {
   width: 100%;
   margin: 0 !important;
 }
@@ -12882,14 +12924,19 @@ html.lt-ie8 .list-portlet li {
 }
 
 /* això no serveix per res però mira...*/
-/* line 106, ../scss/_upcnet.scss */
+/* line 110, ../scss/_upcnet.scss */
 .tileItem img {
   margin-top: 1em;
 }
 
-/* line 109, ../scss/_upcnet.scss */
+/* line 113, ../scss/_upcnet.scss */
 .tileFooter:before {
   content: "";
+}
+
+/* line 118, ../scss/_upcnet.scss */
+.photoAlbumEntry a img {
+  width: 100%;
 }
 
 /* TINY */
