@@ -1,4 +1,5 @@
-<div class="container">
+<div class="container"
+     i18n:domain="genweb">
   <div class="clearfix">
     <h1 class="pull-left">
       <a href="http://www.upc.edu" accesskey="1">
@@ -12,12 +13,14 @@
     <div class="nav-collapse nav-collapse-eines">
       <ul id="eines" class="nav nav-pills pull-right">
         <li><a accesskey="3" title="Site Map"
+               i18n:domain="plone"
                i18n:translate="Site Map"
                i18n:attributes="title"
-               tal:attributes="href string:${viewlet/portal_url}/@@sitemap">
+               tal:attributes="href string:${viewlet/portal_url}/sitemap">
                Site Map
              </a></li>
         <li><a accesskey="9" title="Contact"
+               i18n:domain="plone"
                i18n:translate="Contact"
                i18n:attributes="title"
                tal:attributes="href string:${viewlet/portal_url}/contact">
