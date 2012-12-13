@@ -27,15 +27,16 @@ h1, h2, h3 {color:$genwebTitles;}
     padding: 12px 0 6px;	
 }
 
-
+// LINKS
+#content-core a:visited {color: lighten($blue, 15%);}
+#content-core a:active {color: $orange; cursor: pointer;}
+//#content-core a:hover { color: $linkColorHover; text-decoration: underline;}
 
 // CONTENT CAPÇALERA
 // --------------------------
 .documentFirstHeading {
 	@extend .liniaBaix;
--webkit-mask-image: -webkit-gradient(linear, 0% 0%, 0% 40%, from(rgba(0,0,0,.8)), to(rgba(0,0,0,1)));
-
-
+  & span {font-weight: normal;}
 }
 .documentDescription {font-size:107.692308%; font-weight:bold; color:$grayLight; margin-bottom:$baseLineHeight;}
 
@@ -126,3 +127,8 @@ a { /*fa que les URL llargues es trenquin*/
 .vid:after {background-position: -192px -2px;}
 .img:after {background-position: -456px -50px;}
 .txt:after {background-position: -24px -26px;}
+
+
+/*alineaments afegit*/
+.align-right {text-align: right;}
+.inline-block {display: inline-block;}

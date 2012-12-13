@@ -1,7 +1,7 @@
 // UPC NET TOQUEU AQUÍ
 // -------------------
 
-.hiddenStructure { display: none;}
+.hiddenStructure { display: none !important;}
 
 .formTabs {
     @extend .nav;
@@ -18,4 +18,22 @@
     left: 50%;
     margin-top: -10px;
     margin-left: -10px;
+}
+
+
+
+
+.link-parent {
+    //icon-chevron-left
+    font-weight: bold;
+    &:before {
+        background: image-url("gh-c.png") no-repeat -241px -98px;
+        content: " ";
+        display: inline-block;
+        height: 14px;
+        margin-right: 3px;
+        position: relative;
+        top: 2px;
+        width: 14px;
+    }
 }

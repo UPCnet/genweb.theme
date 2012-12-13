@@ -36,7 +36,7 @@ label {
   @extend .btn;
   @extend .btn-primary;
 }
-.standalone {
+.standalone, input[value^="Cancel"] {
   @extend .btn;
 }
 
@@ -44,12 +44,10 @@ label {
 .selected {
 	@extend .active;
 }
-.fieldRequired {
-	@extend .badge;
-	@extend .badge-important;
-}
+.fieldRequired {font-size: 0;}
+.fieldRequired:after {font-size: 20px !important;}
+.fieldRequired,
 .required {
-	margin-left:-.35em;
 	&:after {
 		color: $red;
 		content: "*";
@@ -59,6 +57,7 @@ label {
 		line-height: 0;
 	}
 }
+.selected.required:after {color:$white;}
 .field {
 	margin-bottom: $baseLineHeight;
 	& input[type="radio"],
@@ -80,6 +79,26 @@ label {
 
 
 	}
+}
+
+.formControls, #actionsView {
+	padding-top: 25px;
+	@include box-shadow(0 -15px 15px -15px rgba(0,0,0,.25));
+}
+
+.searchButton {@extend .btn;}
+
+div.label, label *.label {
+	background:$white;
+	text-shadow:none;
+	font-size: 100%;
+	white-space: normal;
+}
+input#title {font-weight:bold}
+
+.template-personal-information [for="form.portrait"] ~ img {
+	@extend .pull-right;
+	@extend .img-polaroid;
 }
 
 // MENUS INTERNS
@@ -105,6 +124,9 @@ label {
 	@extend .nav-stacked;
 	& img {float:right;}
 }
+.contentActions {line-height: 0} //per si plone es deixa un espai
+
+
 
 // PORTAL MESSAGE
 // -----------------------
@@ -115,6 +137,7 @@ label {
 	&.error {@extend .alert-error;}
 	& dt, & dd {margin:0; display:inline;}
 }
+
 
 // CONTACTE
 // -----------------------
@@ -157,12 +180,7 @@ iframe {border:0 !important; display: block !important;}
 		}
 	}
 	& ul {
-		-webkit-column-count: 3;
-		-moz-column-count: 3;
-		column-count: 3;
-		-webkit-column-gap: 2em;
-		-moz-column-gap: 2em;
-		column-gap: 2em;
+		@include content-columns(3, 2em);
 		-webkit-column-fill: auto;
 		-moz-column-fill: auto;
 		column-fill: auto;
@@ -171,6 +189,7 @@ iframe {border:0 !important; display: block !important;}
 			@extend .xxs;
 			font-weight: bold; 
 			font-size:normal;
+			list-style: none;
 			margin:0 0 5px;
 			padding:5px 0;
 			-webkit-column-break-inside: avoid;
@@ -207,4 +226,114 @@ iframe {border:0 !important; display: block !important;}
 			}			
 		}
 	}
+}
+
+// plone_jscalendar
+.plone_jscalendar .dk_container {display: inline-block;}
+.plone_jscalendar .dk_toggle {width:100px !important;}
+.plone_jscalendar .dk_options {min-width:128px !important; width:128px !important;}
+
+// calenendar-system.css
+/* The main calendar widget.  DIV containing a table. */
+
+.calendar { position: relative; display: none; box-shadow: 0 0 100px black; border-radius:5px;}
+.calendar table { background: #f2f2f2; border-radius:5px; min-width:222px;}
+.calendar .button { text-align: center; background: #f2f2f2;}
+.calendar .nav { background: #f2f2f2 url(menuarrow.gif) no-repeat 100% 100%;}
+.calendar thead .title { font-weight: bold; text-align: center;}
+.calendar thead .name { border-bottom: 1px solid #b2b2b2; border-top: 1px solid #b2b2b2; text-align: center; background: #f7f7f7;}
+.calendar thead .weekend { color: #c00;}
+.calendar thead .hilite { background: #cef;}
+.calendar thead .active { box-shadow: inset 0 0 3px #08c;}
+.calendar tbody {background: #fff;}
+.calendar tbody .day {width: 2em; text-align: center; padding: 2px 0px;}
+.calendar tbody .day.othermonth {font-size: 80%; color: #aaa;}
+.calendar tbody .day.othermonth.oweekend { color: #faa;}
+.calendar table .wn { border-right: 1px solid #b2b2b2; background: #f7f7f7;}
+.calendar tbody .rowhilite td { background: #cef;}
+.calendar tbody td.hilite { background: #08c; color: white;}
+.calendar tbody td.active { box-shadow: inset 0 0 3px #08c;}
+.calendar tbody td.selected { font-weight: bold; background: #08c; color: white;}
+.calendar tbody td.weekend { color: #c00;}
+.calendar tbody td.today { font-weight: bold; color: white; border-radius: 3px;}
+.calendar tbody td.disabled { color: gray; }
+.calendar tbody .emptycell { }
+.calendar tbody .emptyrow { display: none; }
+
+.calendar tfoot .ttip { background: #f7f7f7; border-top: 1px solid #b2b2b2; text-align: center;}
+.calendar tfoot .hilite { background-color: #cef !important;}
+.calendar tfoot .active { background-color: #08c !important;}
+
+.calendar .combo {
+  position: absolute;
+  display: none;
+  width: 4em;
+  top: 0px;
+  left: 0px;
+  cursor: default;
+  border: 1px solid;
+  border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+  background: Menu;
+  color: MenuText;
+  font-size: 90%;
+  padding: 1px;
+  z-index: 100;
+}
+
+.calendar .combo .label,
+.calendar .combo .label-IEfix {
+  text-align: center;
+  display: block;
+  padding: 1px;
+}
+
+.calendar .combo .label-IEfix {
+  width: 4em;
+}
+
+.calendar .combo .active {
+  padding: 0px;
+  border: 1px solid #000;
+}
+
+.calendar .combo .hilite {
+  background: Highlight;
+  color: HighlightText;
+}
+
+.calendar td.time {
+  border-top: 1px solid ButtonShadow;
+  padding: 1px 0px;
+  text-align: center;
+  background-color: ButtonFace;
+}
+
+.calendar td.time .hour,
+.calendar td.time .minute,
+.calendar td.time .ampm {
+  padding: 0px 3px 0px 4px;
+  border: 1px solid #889;
+  font-weight: bold;
+  background-color: Menu;
+}
+
+.calendar td.time .ampm {
+  text-align: center;
+}
+
+.calendar td.time .colon {
+  padding: 0px 2px 0px 3px;
+  font-weight: bold;
+}
+
+.calendar td.time span.hilite {
+  border-color: #000;
+  background-color: Highlight;
+  color: HighlightText;
+}
+
+.calendar td.time span.active {
+  border-color: #f00;
+  background-color: #000;
+  color: #080;
 }

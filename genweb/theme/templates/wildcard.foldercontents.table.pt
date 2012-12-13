@@ -199,9 +199,9 @@
                 <span tal:condition="not: item/state_title|nothing">&nbsp;</span>
               </td>
               <td tal:condition="not: is_collection">
-                <div class="btn-group">
+                <div class="btn-group pull-right">
                   <button class="btn btn-mini dropdown-toggle" class="allowMultiSubmit"><i class="icon-cog"></i><span class="caret"></span></button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu pull-right">
                       <li><a class="move-top" href="#" i18n:translate="foldercontents_move_top">Move to top</a></li>
                       <li><a class="move-bottom" href="#" i18n:translate="foldercontents_move_bottom">Move to bottom</a></li>
                     </ul>
@@ -228,6 +228,7 @@
         </tfoot>
       </metal:block>
     </table>
+    <div class="btn-toolbar">
     <div tal:replace="structure view/batching" tal:condition="not:view/show_all"/>
     <div class="btn-group">
     <tal:buttons tal:repeat="button view/buttons">
@@ -238,8 +239,11 @@
              i18n:attributes="value"
              tal:attributes="value button/title; name button/url; class string:${button/cssclass|nothing} btn" />
     </tal:buttons>
-    <a tal:condition="not: is_collection" class="btn btn-success" id="upload-files" i18n:translate="foldercontents_uploadfiles">Upload Files</a>
-    <a tal:condition="not: is_collection" class="btn btn-danger" id="sort-folder" i18n:translate="foldercontents_sortby">Sort folder by...</a>
+    </div>
+    <div class="btn-group">
+    <a tal:condition="not: is_collection" class="btn" id="upload-files" i18n:translate="foldercontents_uploadfiles">Upload Files</a>
+    <a tal:condition="not: is_collection" class="btn" id="sort-folder" i18n:translate="foldercontents_sortby">Sort folder by...</a>
   </div>
+</div>
   </metal:listing>
 </div>

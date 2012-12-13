@@ -154,20 +154,20 @@
             tal:attributes="action string:${context/absolute_url}/@@fcjupload"
             style="display:none;">
             <!-- The fileupload-buttonbar contains buttons to add files and start/cancel the upload -->
-            <div class="row fileupload-buttonbar">
-                <div class="span7">
+            <div class="row-fluid fileupload-buttonbar">
+                <div class="span12">
                     <!-- The fileinput-button span is used to style the file input field as button -->
-                    <span class="btn btn-success fileinput-button">
+                    <span class="btn btn-primary fileinput-button">
                         <i class="icon-plus icon-white"></i>
                         <span i18n:translate="foldercontents_add_files">Add files...</span>
                         <input type="file" name="files[]" multiple>
                     </span>
-                    <button type="submit" class="btn btn-primary start">
-                        <i class="icon-upload icon-white"></i>
+                    <button type="submit" class="btn start">
+                        <i class="icon-upload"></i>
                         <span i18n:translate="foldercontents_start_upload">Start upload</span>
                     </button>
-                    <button type="reset" class="btn btn-warning cancel">
-                        <i class="icon-ban-circle icon-white"></i>
+                    <button type="reset" class="btn cancel">
+                        <i class="icon-ban-circle"></i>
                         <span i18n:translate="foldercontents_cancel_upload">Cancel upload</span>
                     </button>
                     <input type="checkbox" class="toggle">
@@ -202,7 +202,7 @@
               <input type="checkbox" name="reversed" />
               <label i18n:translate="foldercontents_reversed_order" class="checkbox">Reversed</label>
               <input tal:replace="structure context/@@authenticator/authenticator" />
-              <button type="submit" class="btn btn-warning" i18n:translate="foldercontents_sort_folder">Sort folder</button>
+              <button type="submit" class="btn btn-primary" i18n:translate="foldercontents_sort_folder">Sort folder</button>
             </form>
           </div>
         </div>

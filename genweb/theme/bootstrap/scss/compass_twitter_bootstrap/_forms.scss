@@ -99,7 +99,10 @@ textarea {
   resize:vertical;
   height: auto;
   max-width:100%;
-  min-width:210px;  
+  min-width:210px;
+  min-height: 30px;
+  width: 100%;
+  @include box-sizing(border-box);
 }
 // Everything else
 textarea,

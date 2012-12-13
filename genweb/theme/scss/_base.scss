@@ -5,8 +5,8 @@
 
 // Genweb colors
 // -------------------------
-$genwebPrimary:         #E2AB17 !default;
-$genwebTitles:          #446A8E !default;
+$genwebPrimary:         #007bc0 !default;
+$genwebTitles:          #557C95 !default; 
 
 
 // Accent colors
@@ -88,7 +88,7 @@ background-image: image-url("gh-w.png") !important;
 	& h1 {font-weight:normal; margin:0;}
 	& a {color:#333; text-shadow: 0 1px 1px rgba(0,0,0,.1); display:table !important; min-height:49px; width:100%;
 		& span {display:table-cell; vertical-align:middle; padding:5px 0;}
-		&:hover {color:#000; text-decoration:none;}
+		&:hover {color:$blue; text-decoration:none;}
 	}
 }
 .logoPropi {height:49px;display:table-cell; vertical-align:middle;min-width: 49px; padding:5px 0;}
@@ -197,7 +197,7 @@ background-image: image-url("gh-w.png") !important;
 		color: desaturate($genwebPrimary, 80%);
 	}
 	.sobreElWeb li:first-child:before {content:""; font-size:52px; position: relative; line-height:0; top:.25em;}
-	.sobreElWeb li:last-child:before {content:" __ "; font-size:13px; position: relative; line-height:0; top:-.25em; padding:0 2px 0 3px;}
+	.sobreElWeb li:last-child:before {content:" __ "; font-size:13px; position: relative; line-height:0; top:-.35em; padding:0 2px 0 3px;}
 	#peu .amunt {position:relative; top:-1px;}
 	#peu .amunt div.tooltip {margin-top: -21px !important; margin-left:6px !important;}
 

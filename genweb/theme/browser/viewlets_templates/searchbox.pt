@@ -1,7 +1,7 @@
 <div class="input-append">
   <input class="span2" accesskey="4" id="appendedInputButton" size="16" type="text"><button class="btn" type="button">Cerca</button>
-  <p class="goout"><a accesskey="5" href="/search_form">Cerca avançada</a></p>
 </div>
+<p class="goout"><a accesskey="5" href="/search_form">Cerca avançada</a></p>
 
 <tal:comment replace="nothing">
 <div id="portal-searchbox"
