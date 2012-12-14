@@ -45,52 +45,63 @@
               <div id="portal-column-content" class="span9"
                    tal:attributes="class python:have_portlets_slot1 and 'span9' or 'span12'">
                 <tal:comment replace="nothing"> Fila 1 </tal:comment>
-                <div class="row-fluid">
+                <div class="row-fluid"
+                     tal:condition="have_portlets_slot2">
                   <div class="span12">
                     <span tal:replace="structure python:view.renderProviderByName('genweb.portlets.HomePortletManager2')" />
                   </div>
                 </div>
                 <tal:comment replace="nothing"> Fila 2 </tal:comment>
-                <div class="row-fluid">
+                <div class="row-fluid"
+                     tal:condition="python:have_portlets_slot3 or have_portlets_slot4 or have_portlets_slot5 or have_portlets_slot6">
                   <div class="span3"
+                       tal:condition="have_portlets_slot3"
                        tal:define="manager_name string:genweb.portlets.HomePortletManager3"
                        tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
                     <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
                   </div>
                   <div class="span3"
+                       tal:condition="have_portlets_slot4"
                        tal:define="manager_name string:genweb.portlets.HomePortletManager4"
                        tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
                     <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
                   </div>
                   <div class="span3"
+                       tal:condition="have_portlets_slot5"
                        tal:define="manager_name string:genweb.portlets.HomePortletManager5"
                        tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
                     <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
                   </div>
                   <div class="span3"
+                       tal:condition="have_portlets_slot6"
                        tal:define="manager_name string:genweb.portlets.HomePortletManager6"
                        tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
                     <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
                   </div>
                 </div>
                 <tal:comment replace="nothing"> Fila 3 </tal:comment>
-                <div class="row-fluid">
+                <div class="row-fluid"
+                     tal:condition="python:have_portlets_slot7 or have_portlets_slot8 or have_portlets_slot9 or have_portlets_slot10">
                   <div class="span3"
+                       tal:condition="have_portlets_slot7"
                        tal:define="manager_name string:genweb.portlets.HomePortletManager7"
                        tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
                     <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
                   </div>
                   <div class="span3"
+                       tal:condition="have_portlets_slot8"
                        tal:define="manager_name string:genweb.portlets.HomePortletManager8"
                        tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
                     <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
                   </div>
                   <div class="span3"
+                       tal:condition="have_portlets_slot9"
                        tal:define="manager_name string:genweb.portlets.HomePortletManager9"
                        tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
                     <span tal:replace="structure python:view.renderProviderByName(manager_name)" />
                   </div>
                   <div class="span3"
+                       tal:condition="have_portlets_slot10"
                        tal:define="manager_name string:genweb.portlets.HomePortletManager10"
                        tal:attributes="class python:'span' + view.getSpanValueForManager(manager_name)">
                     <span tal:replace="structure python:view.renderProviderByName(manager_name)" />

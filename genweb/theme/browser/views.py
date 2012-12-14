@@ -15,7 +15,7 @@ from plone.portlets.interfaces import IPortletManagerRenderer
 from plone.memoize import ram
 
 from genweb.core.interfaces import IGenwebLayer, IHomePage
-from genweb.theme.browser.interfaces import IGenwebTheme
+from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 from genweb.core.utils import genweb_config, pref_lang
 from genweb.portlets.browser.manager import ISpanStorage
 
@@ -36,6 +36,7 @@ class homePage(grok.View):
         It's restrained to IGenwebTheme layer to prevent it will interfere with
         the one defined in the Genweb legacy theme (v4).
     """
+    grok.implements(IHomePageView)
     grok.context(IPloneSiteRoot)
     grok.layer(IGenwebTheme)
 
