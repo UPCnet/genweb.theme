@@ -34,7 +34,8 @@
                   i18n:attributes="alt obrir_link_finestra_nova">
             </a></li>
         <li tal:condition="viewlet/show_login">
-            <a href="#loginModal" data-toggle="modal"
+            <a href="" data-toggle="modal" data-target="#loginModal"
+               tal:attributes="href string:${viewlet/portal_url}/popup_login_form"
                i18n:domain="genweb"
                i18n:attributes="title identificat"
                i18n:translate="identificat">
@@ -73,55 +74,7 @@
     <h3 id="loginModalLabel">Incia la sessió</h3>
   </div>
   <div class="modal-body">
-        <p class="documentDescription">Identifiqueu-vos amb el nom d'usuari de la Intranet UPC.</p>
-        <div class="accordion margin0" id="accordionLogin">
-
-          <div class="accordion-group">
-            <div class="accordion-heading box-gradient">
-              <a class="accordion-toggle" href="http://cas.upc.edu"
-                 tal:attributes="href context/cas_login_url | nothing">
-                <strong>Entra amb la identificació única UPC
-                  <img class="img_blank" src="++genweb++static/images/blank_blau.png"
-                       i18n:attributes="alt obrir_link_finestra_nova">
-                </strong>
-             </a>
-            </div>
-
-          </div>
-
-          <div class="accordion-group">
-            <div class="accordion-heading box-gradient">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionLogin" href="#collapseLogin">
-                <strong>Identifica't només a aquest web</strong>
-             </a>
-            </div>
-            <div id="collapseLogin" class="accordion-body collapse box-gradient">
-              <div class="accordion-inner">
-                <form class="form-horizontal margin0">
-                  <div class="control-group">
-                    <label class="control-label" for="inputEmail">Nom d'usuari</label>
-                    <div class="controls">
-                      <input type="text" id="inputEmail" placeholder="nom.usuari">
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="inputPassword">Contrasenya</label>
-                    <div class="controls">
-                      <input type="password" id="inputPassword" placeholder="contrasenya">
-                    </div>
-                  </div>
-                  <div class="control-group margin0">
-                    <div class="controls">
-                      <button type="submit" class="btn btn-primary">Entra</button>
-                      <h2 class="l">Heu oblidat la contrasenya?</h2>
-                      <p class="s margin0">Si heu oblidat la contrasenya, cliqueu per <a href="#">recuperar-la</a></p>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+    The popup login form
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">Tanca</button>
