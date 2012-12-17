@@ -2,4 +2,6 @@
 <portlets>
     <portlet title="Homepage" addview="genweb.portlets.homepage"
         description="Pàgina d'inci"/>
+    <portlet title="AgendaXXXXXXX" addview="genweb.portlets.esdeveniments"
+        description="Agenda d'esdeveniments"/>
 </portlets>
