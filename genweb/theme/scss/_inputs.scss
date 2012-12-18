@@ -79,7 +79,7 @@ ul.dk_options_inner {margin: 0;}
 
 .dk_options a {cursor: pointer; white-space: normal !important;}
 .dk_options_inner, .dk_touch .dk_options {max-height: 250px; -webkit-overflow-scrolling: touch !important; overflow-x:hidden !important; overflow-y:auto !important;}
-.dk_container {display: none; position: relative;}
+.dk_container {position: relative;}
 .dk_open {position: relative;}
 .dk_open .dk_options {display: block;min-width:248px;}
 .dk_options_inner {overflow: auto;position: relative;}
@@ -91,8 +91,8 @@ select {display:block;}
 
 
 /* Plantilles estilitzades */
-.dk_options a[data-dk-dropdown-value*=a]:before,
-.dk_options a[data-dk-dropdown-value*=i]:before { //busca a i i pq tots ho tenen
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=a]:before,
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=i]:before { //busca a i i pq tots ho tenen
   background: image-url("gh-c.png") no-repeat;
   width: 14px;
   height: 14px;
@@ -103,20 +103,20 @@ select {display:block;}
   position: relative;
   background-position: -24px -26px;
 }
-.dk_options a[data-dk-dropdown-value*=index]:before,
-.dk_options a[data-dk-dropdown-value*=llistat]:before {background-position: -360px -170px;}
-.dk_options a[data-dk-dropdown-value*=text]:before {background-position: -263px -51px;}
-.dk_options a[data-dk-dropdown-value*=column]:before {background-position: 0 0;}
-.dk_options a[data-dk-dropdown-value*=destacat]:before {background-position: -72px -146px;}
-.dk_options a[data-dk-dropdown-value*=enllac]:before {background-position: -72px -170px;}
-.dk_options a[data-dk-dropdown-value*=contenidor]:before {background-position: -312px -74px;}
-.dk_options a[data-dk-dropdown-value*=taula]:before,
-.dk_options a[data-dk-dropdown-value*=calendari]:before {background-position: -336px -170px;}
-.dk_options a[data-dk-dropdown-value*=imatge]:before,
-.dk_options a[data-dk-dropdown-value*=foto]:before {background-position: -456px -50px;}
-.dk_options a[data-dk-dropdown-value*=fitxa]:before {background-position: -72px -50px;}
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=index]:before,
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=llistat]:before {background-position: -360px -170px;}
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=text]:before {background-position: -263px -51px;}
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=column]:before {background-position: 0 0;}
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=destacat]:before {background-position: -72px -146px;}
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=enllac]:before {background-position: -72px -170px;}
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=contenidor]:before {background-position: -312px -74px;}
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=taula]:before,
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=calendari]:before {background-position: -336px -170px;}
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=imatge]:before,
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=foto]:before {background-position: -456px -50px;}
+[for="tpath"] .dk_options a[data-dk-dropdown-value*=fitxa]:before {background-position: -72px -50px;}
 
-.dk_options a[data-dk-dropdown-value]:hover:before { background-image: image-url("gh-w.png");}
+[for="tpath"]  .dk_options a[data-dk-dropdown-value]:hover:before { background-image: image-url("gh-w.png");}
 
 
 

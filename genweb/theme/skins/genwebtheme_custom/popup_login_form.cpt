@@ -58,11 +58,11 @@
             Since cookie authentication is disabled, cookie-based login is not available.
         </div>
 
-        <p class="documentDescription"
+        <p class="documentDescription margin0"
            i18n:translate="genweb-heading_sign_in-v4">
            Please log in using your UPC intranet user.
         </p>
-        <div class="accordion margin0" id="accordionLogin">
+        <div class="accordion pad xafa4" id="accordionLogin">
 
           <div class="accordion-group">
             <div class="accordion-heading box-gradient">

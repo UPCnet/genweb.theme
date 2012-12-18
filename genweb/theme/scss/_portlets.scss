@@ -217,6 +217,15 @@ h2.title-inverse {
   }
 }
 
+// portlets secundaris (no es fan servir pero s'estilen)
+.portletCalendar {
+  & .portletHeader {text-align: center; background: $grayLighter; padding:5px 0; border-bottom:1px solid $white; @include border-radius(5px 5px 0 0);}
+  & .portletItem {margin:0; border-top: 1px solid $tableBorder;
+    & table {text-align: center; font-size: 85%;
+      & strong {color:darken($orange,5%);}
+    }
+  }
+}
 
 // Sistema
 #portlet-prefs {@include box-shadow(none);}
