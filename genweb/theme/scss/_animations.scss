@@ -18,7 +18,7 @@ a.userScreen, a.userTablet, a.userMobile, a.userGenweb {
 body, html {
 	@include transition(background-color .5s ease-out);
 }
-#content, #portal-column-content {
+#content-area, #portal-column-content {
 	@include transition(border .5s ease-out, box-shadow .5s ease-out, width .5s ease-out, height .5s ease-out, box-shadow .5s ease-out);
 }
 
@@ -31,8 +31,8 @@ body, html {
 @keyframes opacitat { 0% {opacity: 0;} 50% {opacity: .01;} 100% {opacity:1;} }
 .simulated-mobile-view #portal-column-content,
 .simulated-tablet-view #portal-column-content,
-html.simulated-mobile-view #content:before,
-html.simulated-tablet-view #content:before  {
+html.simulated-mobile-view #content-area:before,
+html.simulated-tablet-view #content-area:before  {
   -webkit-animation-name: opacitat; -webkit-animation-duration: 1s; -webkit-animation-iteration-count: 1; -webkit-animation-direction: alternate; -webkit-animation-timing-function: ease-out;
   -moz-animation-name: opacitat; -moz-animation-duration: 1s; -moz-animation-iteration-count: 1; -moz-animation-direction: alternate; -moz-animation-timing-function: ease-out;
   -ms-animation-name: opacitat; -ms-animation-duration: 1s; -ms-animation-iteration-count: 1; -ms-animation-direction: alternate; -ms-animation-timing-function: ease-out;

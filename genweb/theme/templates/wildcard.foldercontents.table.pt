@@ -48,7 +48,7 @@
           </th>
         </tr>
         <tr i18n:domain="plone" tal:condition="view/selectall">
-          <th colspan="6" class="nosort">
+          <th colspan="7" class="nosort">
             <span tal:omit-tag="" i18n:translate="tableheading_all_items_selected_in_folder">
             All <tal:block replace="view/batch/size" i18n:name="count"/> items in this folder
             are selected. 
@@ -166,7 +166,7 @@
               </td>
               <td tal:define="sc item/state_class|nothing;
                               tc item/type_class|nothing;">
-                  <img tal:replace="structure item/icon|nothing" />
+                  
                   <a href="#" tal:attributes="href  item/view_url|string:${view/base_url}/${id};
                                               title item/url_href_title|nothing;
                                               class string:${sc} ${tc};">
@@ -212,24 +212,24 @@
         </tbody>
         <tfoot tal:condition="not:view/within_batch_size" i18n:domain="plone">
           <tr tal:condition="not:view/show_all">
-            <th colspan="6" class="nosort">
+            <td colspan="7" class="nosort">
               <a tal:attributes="href view/show_all_url"
                  i18n:translate="label_show_all"
                  id="foldercontents-show-all">Show all items</a>
-            </th>
+            </td>
           </tr>
           <tr tal:condition="view/show_all">
-            <th colspan="6" class="nosort">
+            <td colspan="7" class="nosort">
               <a tal:attributes="href view/view_url"
                  i18n:translate="label_show_batched"
                  id="foldercontents-show-batched">Show batched</a>
-            </th>
+            </td>
           </tr>
         </tfoot>
       </metal:block>
     </table>
-    <div class="btn-toolbar">
     <div tal:replace="structure view/batching" tal:condition="not:view/show_all"/>
+    <div class="btn-toolbar">
     <div class="btn-group">
     <tal:buttons tal:repeat="button view/buttons">
       <input class="context"

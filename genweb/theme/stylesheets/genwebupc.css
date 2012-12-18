@@ -180,7 +180,7 @@ a:hover {
 }
 
 /* line 39, ../bootstrap/scss/compass_twitter_bootstrap/_scaffolding.scss */
-.img-polaroid, .template-personal-information [for="form.portrait"] ~ img, .tileItem img {
+.img-polaroid, .template-personal-information [for="form.portrait"] img, .tileItem img {
   padding: 4px;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -274,7 +274,7 @@ a:hover {
 }
 
 /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.span3, .photoAlbumEntry {
+.span3, #dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3, #dashboard-portlets4, .photoAlbumEntry {
   width: 222px;
 }
 
@@ -349,22 +349,22 @@ a:hover {
 }
 
 /* line 601, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid, .template-atct_album_view #content-core {
+.row-fluid, #dashboard, .template-atct_album_view #content-core {
   width: 100%;
   *zoom: 1;
 }
 /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid:before, .template-atct_album_view #content-core:before, .row-fluid:after, .template-atct_album_view #content-core:after {
+.row-fluid:before, #dashboard:before, .template-atct_album_view #content-core:before, .row-fluid:after, #dashboard:after, .template-atct_album_view #content-core:after {
   display: table;
   content: "";
   line-height: 0;
 }
 /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid:after, .template-atct_album_view #content-core:after {
+.row-fluid:after, #dashboard:after, .template-atct_album_view #content-core:after {
   clear: both;
 }
 /* line 604, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid [class*="span"], .template-atct_album_view #content-core [class*="span"] {
+.row-fluid [class*="span"], #dashboard [class*="span"], .template-atct_album_view #content-core [class*="span"] {
   display: block;
   width: 100%;
   min-height: 30px;
@@ -376,186 +376,186 @@ a:hover {
   *margin-left: 3.01636%;
 }
 /* line 610, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid [class*="span"]:first-child, .template-atct_album_view #content-core [class*="span"]:first-child {
+.row-fluid [class*="span"]:first-child, #dashboard [class*="span"]:first-child, .template-atct_album_view #content-core [class*="span"]:first-child {
   margin-left: 0;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span12, .template-atct_album_view #content-core .span12 {
+.row-fluid .span12, #dashboard .span12, .template-atct_album_view #content-core .span12 {
   width: 100%;
   *width: 99.94888%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset12, .template-atct_album_view #content-core .offset12 {
+.row-fluid .offset12, #dashboard .offset12, .template-atct_album_view #content-core .offset12 {
   margin-left: 106.13497%;
   *margin-left: 106.03272%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset12:first-child, .template-atct_album_view #content-core .offset12:first-child {
+.row-fluid .offset12:first-child, #dashboard .offset12:first-child, .template-atct_album_view #content-core .offset12:first-child {
   margin-left: 103.06748%;
   *margin-left: 102.96524%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span11, .template-atct_album_view #content-core .span11 {
+.row-fluid .span11, #dashboard .span11, .template-atct_album_view #content-core .span11 {
   width: 91.41104%;
   *width: 91.35992%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset11, .template-atct_album_view #content-core .offset11 {
+.row-fluid .offset11, #dashboard .offset11, .template-atct_album_view #content-core .offset11 {
   margin-left: 97.54601%;
   *margin-left: 97.44376%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset11:first-child, .template-atct_album_view #content-core .offset11:first-child {
+.row-fluid .offset11:first-child, #dashboard .offset11:first-child, .template-atct_album_view #content-core .offset11:first-child {
   margin-left: 94.47853%;
   *margin-left: 94.37628%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span10, .template-atct_album_view #content-core .span10 {
+.row-fluid .span10, #dashboard .span10, .template-atct_album_view #content-core .span10 {
   width: 82.82209%;
   *width: 82.77096%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset10, .template-atct_album_view #content-core .offset10 {
+.row-fluid .offset10, #dashboard .offset10, .template-atct_album_view #content-core .offset10 {
   margin-left: 88.95706%;
   *margin-left: 88.85481%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset10:first-child, .template-atct_album_view #content-core .offset10:first-child {
+.row-fluid .offset10:first-child, #dashboard .offset10:first-child, .template-atct_album_view #content-core .offset10:first-child {
   margin-left: 85.88957%;
   *margin-left: 85.78732%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span9, .template-atct_album_view #content-core .span9 {
+.row-fluid .span9, #dashboard .span9, .template-atct_album_view #content-core .span9 {
   width: 74.23313%;
   *width: 74.182%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset9, .template-atct_album_view #content-core .offset9 {
+.row-fluid .offset9, #dashboard .offset9, .template-atct_album_view #content-core .offset9 {
   margin-left: 80.3681%;
   *margin-left: 80.26585%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset9:first-child, .template-atct_album_view #content-core .offset9:first-child {
+.row-fluid .offset9:first-child, #dashboard .offset9:first-child, .template-atct_album_view #content-core .offset9:first-child {
   margin-left: 77.30061%;
   *margin-left: 77.19836%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span8, .template-atct_album_view #content-core .span8 {
+.row-fluid .span8, #dashboard .span8, .template-atct_album_view #content-core .span8 {
   width: 65.64417%;
   *width: 65.59305%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset8, .template-atct_album_view #content-core .offset8 {
+.row-fluid .offset8, #dashboard .offset8, .template-atct_album_view #content-core .offset8 {
   margin-left: 71.77914%;
   *margin-left: 71.67689%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset8:first-child, .template-atct_album_view #content-core .offset8:first-child {
+.row-fluid .offset8:first-child, #dashboard .offset8:first-child, .template-atct_album_view #content-core .offset8:first-child {
   margin-left: 68.71166%;
   *margin-left: 68.60941%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span7, .template-atct_album_view #content-core .span7 {
+.row-fluid .span7, #dashboard .span7, .template-atct_album_view #content-core .span7 {
   width: 57.05521%;
   *width: 57.00409%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset7, .template-atct_album_view #content-core .offset7 {
+.row-fluid .offset7, #dashboard .offset7, .template-atct_album_view #content-core .offset7 {
   margin-left: 63.19018%;
   *margin-left: 63.08793%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset7:first-child, .template-atct_album_view #content-core .offset7:first-child {
+.row-fluid .offset7:first-child, #dashboard .offset7:first-child, .template-atct_album_view #content-core .offset7:first-child {
   margin-left: 60.1227%;
   *margin-left: 60.02045%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span6, .template-atct_album_view #content-core .span6 {
+.row-fluid .span6, #dashboard .span6, .template-atct_album_view #content-core .span6 {
   width: 48.46626%;
   *width: 48.41513%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset6, .template-atct_album_view #content-core .offset6 {
+.row-fluid .offset6, #dashboard .offset6, .template-atct_album_view #content-core .offset6 {
   margin-left: 54.60123%;
   *margin-left: 54.49898%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset6:first-child, .template-atct_album_view #content-core .offset6:first-child {
+.row-fluid .offset6:first-child, #dashboard .offset6:first-child, .template-atct_album_view #content-core .offset6:first-child {
   margin-left: 51.53374%;
   *margin-left: 51.43149%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span5, .template-atct_album_view #content-core .span5 {
+.row-fluid .span5, #dashboard .span5, .template-atct_album_view #content-core .span5 {
   width: 39.8773%;
   *width: 39.82618%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset5, .template-atct_album_view #content-core .offset5 {
+.row-fluid .offset5, #dashboard .offset5, .template-atct_album_view #content-core .offset5 {
   margin-left: 46.01227%;
   *margin-left: 45.91002%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset5:first-child, .template-atct_album_view #content-core .offset5:first-child {
+.row-fluid .offset5:first-child, #dashboard .offset5:first-child, .template-atct_album_view #content-core .offset5:first-child {
   margin-left: 42.94479%;
   *margin-left: 42.84254%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span4, .template-atct_album_view #content-core .span4 {
+.row-fluid .span4, #dashboard .span4, .template-atct_album_view #content-core .span4 {
   width: 31.28834%;
   *width: 31.23722%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset4, .template-atct_album_view #content-core .offset4 {
+.row-fluid .offset4, #dashboard .offset4, .template-atct_album_view #content-core .offset4 {
   margin-left: 37.42331%;
   *margin-left: 37.32106%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset4:first-child, .template-atct_album_view #content-core .offset4:first-child {
+.row-fluid .offset4:first-child, #dashboard .offset4:first-child, .template-atct_album_view #content-core .offset4:first-child {
   margin-left: 34.35583%;
   *margin-left: 34.25358%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span3, .template-atct_album_view #content-core .span3, .row-fluid .photoAlbumEntry, .template-atct_album_view #content-core .photoAlbumEntry {
+.row-fluid .span3, #dashboard .span3, .template-atct_album_view #content-core .span3, .row-fluid #dashboard-portlets1, #dashboard #dashboard-portlets1, .template-atct_album_view #content-core #dashboard-portlets1, .row-fluid #dashboard-portlets2, #dashboard #dashboard-portlets2, .template-atct_album_view #content-core #dashboard-portlets2, .row-fluid #dashboard-portlets3, #dashboard #dashboard-portlets3, .template-atct_album_view #content-core #dashboard-portlets3, .row-fluid #dashboard-portlets4, #dashboard #dashboard-portlets4, .template-atct_album_view #content-core #dashboard-portlets4, .row-fluid .photoAlbumEntry, #dashboard .photoAlbumEntry, .template-atct_album_view #content-core .photoAlbumEntry {
   width: 22.69939%;
   *width: 22.64826%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset3, .template-atct_album_view #content-core .offset3 {
+.row-fluid .offset3, #dashboard .offset3, .template-atct_album_view #content-core .offset3 {
   margin-left: 28.83436%;
   *margin-left: 28.73211%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset3:first-child, .template-atct_album_view #content-core .offset3:first-child {
+.row-fluid .offset3:first-child, #dashboard .offset3:first-child, .template-atct_album_view #content-core .offset3:first-child {
   margin-left: 25.76687%;
   *margin-left: 25.66462%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span2, .template-atct_album_view #content-core .span2 {
+.row-fluid .span2, #dashboard .span2, .template-atct_album_view #content-core .span2 {
   width: 14.11043%;
   *width: 14.0593%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset2, .template-atct_album_view #content-core .offset2 {
+.row-fluid .offset2, #dashboard .offset2, .template-atct_album_view #content-core .offset2 {
   margin-left: 20.2454%;
   *margin-left: 20.14315%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset2:first-child, .template-atct_album_view #content-core .offset2:first-child {
+.row-fluid .offset2:first-child, #dashboard .offset2:first-child, .template-atct_album_view #content-core .offset2:first-child {
   margin-left: 17.17791%;
   *margin-left: 17.07566%;
 }
 /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .span1, .template-atct_album_view #content-core .span1 {
+.row-fluid .span1, #dashboard .span1, .template-atct_album_view #content-core .span1 {
   width: 5.52147%;
   *width: 5.47035%;
 }
 /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset1, .template-atct_album_view #content-core .offset1 {
+.row-fluid .offset1, #dashboard .offset1, .template-atct_album_view #content-core .offset1 {
   margin-left: 11.65644%;
   *margin-left: 11.55419%;
 }
 /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.row-fluid .offset1:first-child, .template-atct_album_view #content-core .offset1:first-child {
+.row-fluid .offset1:first-child, #dashboard .offset1:first-child, .template-atct_album_view #content-core .offset1:first-child {
   margin-left: 8.58896%;
   *margin-left: 8.48671%;
 }
@@ -563,22 +563,22 @@ a:hover {
 /* line 14, ../bootstrap/scss/compass_twitter_bootstrap/_grid.scss */
 [class*="span"].hide,
 .row-fluid [class*="span"].hide,
+#dashboard [class*="span"].hide,
 .template-atct_album_view #content-core [class*="span"].hide {
   display: none;
 }
 
 /* line 19, ../bootstrap/scss/compass_twitter_bootstrap/_grid.scss */
-[class*="span"].pull-right, .template-personal-information [for="form.portrait"] ~ img[class*="span"], .tileItem img[class*="span"],
+[class*="span"].pull-right, .template-personal-information [for="form.portrait"] img[class*="span"],
 .row-fluid [class*="span"].pull-right,
+#dashboard [class*="span"].pull-right,
 .template-atct_album_view #content-core [class*="span"].pull-right,
-.row-fluid .template-personal-information [for="form.portrait"] ~ img[class*="span"],
-.template-personal-information .row-fluid [for="form.portrait"] ~ img[class*="span"],
-.template-atct_album_view #content-core .template-personal-information [for="form.portrait"] ~ img[class*="span"],
-.template-personal-information .template-atct_album_view #content-core [for="form.portrait"] ~ img[class*="span"],
-.row-fluid .tileItem img[class*="span"],
-.tileItem .row-fluid img[class*="span"],
-.template-atct_album_view #content-core .tileItem img[class*="span"],
-.tileItem .template-atct_album_view #content-core img[class*="span"] {
+.row-fluid .template-personal-information [for="form.portrait"] img[class*="span"],
+.template-personal-information [for="form.portrait"] .row-fluid img[class*="span"],
+#dashboard .template-personal-information [for="form.portrait"] img[class*="span"],
+.template-personal-information [for="form.portrait"] #dashboard img[class*="span"],
+.template-atct_album_view #content-core .template-personal-information [for="form.portrait"] img[class*="span"],
+.template-personal-information [for="form.portrait"] .template-atct_album_view #content-core img[class*="span"] {
   float: right;
 }
 
@@ -1284,12 +1284,16 @@ select[class*="span"],
 textarea[class*="span"],
 .uneditable-input[class*="span"],
 .row-fluid input[class*="span"],
+#dashboard input[class*="span"],
 .template-atct_album_view #content-core input[class*="span"],
 .row-fluid select[class*="span"],
+#dashboard select[class*="span"],
 .template-atct_album_view #content-core select[class*="span"],
 .row-fluid textarea[class*="span"],
+#dashboard textarea[class*="span"],
 .template-atct_album_view #content-core textarea[class*="span"],
 .row-fluid .uneditable-input[class*="span"],
+#dashboard .uneditable-input[class*="span"],
 .template-atct_album_view #content-core .uneditable-input[class*="span"] {
   float: none;
   margin-left: 0;
@@ -1301,16 +1305,22 @@ textarea[class*="span"],
 .input-prepend input[class*="span"],
 .input-prepend .uneditable-input[class*="span"],
 .row-fluid input[class*="span"],
+#dashboard input[class*="span"],
 .template-atct_album_view #content-core input[class*="span"],
 .row-fluid select[class*="span"],
+#dashboard select[class*="span"],
 .template-atct_album_view #content-core select[class*="span"],
 .row-fluid textarea[class*="span"],
+#dashboard textarea[class*="span"],
 .template-atct_album_view #content-core textarea[class*="span"],
 .row-fluid .uneditable-input[class*="span"],
+#dashboard .uneditable-input[class*="span"],
 .template-atct_album_view #content-core .uneditable-input[class*="span"],
 .row-fluid .input-prepend [class*="span"],
+#dashboard .input-prepend [class*="span"],
 .template-atct_album_view #content-core .input-prepend [class*="span"],
 .row-fluid .input-append [class*="span"],
+#dashboard .input-append [class*="span"],
 .template-atct_album_view #content-core .input-append [class*="span"] {
   display: inline-block;
 }
@@ -1391,10 +1401,18 @@ textarea.span4,
 }
 
 /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-input.span3, input.photoAlbumEntry,
+input.span3, input#dashboard-portlets1, input#dashboard-portlets2, input#dashboard-portlets3, input#dashboard-portlets4, input.photoAlbumEntry,
 textarea.span3,
+textarea#dashboard-portlets1,
+textarea#dashboard-portlets2,
+textarea#dashboard-portlets3,
+textarea#dashboard-portlets4,
 textarea.photoAlbumEntry,
 .uneditable-input.span3,
+.uneditable-input#dashboard-portlets1,
+.uneditable-input#dashboard-portlets2,
+.uneditable-input#dashboard-portlets3,
+.uneditable-input#dashboard-portlets4,
 .uneditable-input.photoAlbumEntry {
   width: 208px;
 }
@@ -2142,6 +2160,7 @@ table {
 /* line 177, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
 table [class*=span],
 .row-fluid table [class*=span],
+#dashboard table [class*=span],
 .template-atct_album_view #content-core table [class*=span] {
   display: table-cell;
   float: none;
@@ -2161,7 +2180,7 @@ table .span2 {
   margin-left: 0;
 }
 /* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_tables.scss */
-table .span3, table .photoAlbumEntry {
+table .span3, table #dashboard-portlets1, table #dashboard-portlets2, table #dashboard-portlets3, table #dashboard-portlets4, table .photoAlbumEntry {
   float: none;
   width: 206px;
   margin-left: 0;
@@ -3506,7 +3525,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
   background-clip: padding-box;
 }
 /* line 64, ../bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
-.dropdown-menu.pull-right, div.pull-right.dk_options, .template-personal-information [for="form.portrait"] ~ img.dropdown-menu, .tileItem img.dropdown-menu {
+.dropdown-menu.pull-right, div.pull-right.dk_options, .template-personal-information [for="form.portrait"] img.dropdown-menu {
   right: 0;
   left: auto;
 }
@@ -3601,7 +3620,7 @@ div.dk_options .disabled > a:hover {
 }
 
 /* line 136, ../bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
-.pull-right > .dropdown-menu, .template-personal-information [for="form.portrait"] ~ img > .dropdown-menu, .tileItem img > .dropdown-menu, .pull-right > div.dk_options, .template-personal-information [for="form.portrait"] ~ img > div.dk_options, .tileItem img > div.dk_options {
+.pull-right > .dropdown-menu, .template-personal-information [for="form.portrait"] img > .dropdown-menu, .pull-right > div.dk_options, .template-personal-information [for="form.portrait"] img > div.dk_options {
   right: 0;
   left: auto;
 }
@@ -4706,7 +4725,7 @@ input[type="submit"].link-parent::-moz-focus-inner {
 }
 
 /* line 24, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > .pull-right, .contentViews > .pull-right, .configlets > .pull-right, .formTabs > .pull-right, .template-personal-information .nav > [for="form.portrait"] ~ img, .template-personal-information .contentViews > [for="form.portrait"] ~ img, .template-personal-information .configlets > [for="form.portrait"] ~ img, .template-personal-information .formTabs > [for="form.portrait"] ~ img, .tileItem .nav > img, .tileItem .contentViews > img, .tileItem .configlets > img, .tileItem .formTabs > img {
+.nav > .pull-right, .contentViews > .pull-right, .configlets > .pull-right, .formTabs > .pull-right, .template-personal-information [for="form.portrait"] .nav > img, .template-personal-information [for="form.portrait"] .contentViews > img, .template-personal-information [for="form.portrait"] .configlets > img, .template-personal-information [for="form.portrait"] .formTabs > img {
   float: right;
 }
 
@@ -5507,7 +5526,7 @@ input[type="submit"].link-parent::-moz-focus-inner {
 }
 
 /* line 222, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav.pull-right, .navbar .template-personal-information [for="form.portrait"] ~ img.nav, .template-personal-information .navbar [for="form.portrait"] ~ img.nav, .navbar .template-personal-information [for="form.portrait"] ~ img.contentViews, .template-personal-information .navbar [for="form.portrait"] ~ img.contentViews, .navbar .template-personal-information [for="form.portrait"] ~ img.configlets, .template-personal-information .navbar [for="form.portrait"] ~ img.configlets, .navbar .template-personal-information [for="form.portrait"] ~ img.formTabs, .template-personal-information .navbar [for="form.portrait"] ~ img.formTabs, .navbar .pull-right.contentViews, .navbar .tileItem img.contentViews, .tileItem .navbar img.contentViews, .navbar .pull-right.configlets, .navbar .tileItem img.configlets, .tileItem .navbar img.configlets, .navbar .pull-right.formTabs, .navbar .tileItem img.formTabs, .tileItem .navbar img.formTabs, .navbar .tileItem img.nav, .tileItem .navbar img.nav {
+.navbar .nav.pull-right, .navbar .template-personal-information [for="form.portrait"] img.nav, .template-personal-information [for="form.portrait"] .navbar img.nav, .navbar .template-personal-information [for="form.portrait"] img.contentViews, .template-personal-information [for="form.portrait"] .navbar img.contentViews, .navbar .template-personal-information [for="form.portrait"] img.configlets, .template-personal-information [for="form.portrait"] .navbar img.configlets, .navbar .template-personal-information [for="form.portrait"] img.formTabs, .template-personal-information [for="form.portrait"] .navbar img.formTabs, .navbar .pull-right.contentViews, .navbar .pull-right.configlets, .navbar .pull-right.formTabs {
   float: right;
 }
 
@@ -5788,7 +5807,7 @@ input[type="submit"].link-parent::-moz-focus-inner {
 }
 
 /* line 351, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu, .navbar .template-personal-information [for="form.portrait"] ~ img > li > .dropdown-menu, .template-personal-information .navbar [for="form.portrait"] ~ img > li > .dropdown-menu, .navbar .tileItem img > li > .dropdown-menu, .tileItem .navbar img > li > .dropdown-menu, .navbar .pull-right > li > div.dk_options, .navbar .template-personal-information [for="form.portrait"] ~ img > li > div.dk_options, .template-personal-information .navbar [for="form.portrait"] ~ img > li > div.dk_options, .navbar .tileItem img > li > div.dk_options, .tileItem .navbar img > li > div.dk_options,
+.navbar .pull-right > li > .dropdown-menu, .navbar .template-personal-information [for="form.portrait"] img > li > .dropdown-menu, .template-personal-information [for="form.portrait"] .navbar img > li > .dropdown-menu, .navbar .pull-right > li > div.dk_options, .navbar .template-personal-information [for="form.portrait"] img > li > div.dk_options, .template-personal-information [for="form.portrait"] .navbar img > li > div.dk_options,
 .navbar .nav > li > .dropdown-menu.pull-right,
 .navbar .contentViews > li > .dropdown-menu.pull-right,
 .navbar .configlets > li > .dropdown-menu.pull-right,
@@ -5797,27 +5816,19 @@ input[type="submit"].link-parent::-moz-focus-inner {
 .navbar .contentViews > li > div.pull-right.dk_options,
 .navbar .configlets > li > div.pull-right.dk_options,
 .navbar .formTabs > li > div.pull-right.dk_options,
-.navbar .template-personal-information .nav > li > [for="form.portrait"] ~ img.dropdown-menu,
-.template-personal-information .navbar .nav > li > [for="form.portrait"] ~ img.dropdown-menu,
-.navbar .template-personal-information .contentViews > li > [for="form.portrait"] ~ img.dropdown-menu,
-.template-personal-information .navbar .contentViews > li > [for="form.portrait"] ~ img.dropdown-menu,
-.navbar .template-personal-information .configlets > li > [for="form.portrait"] ~ img.dropdown-menu,
-.template-personal-information .navbar .configlets > li > [for="form.portrait"] ~ img.dropdown-menu,
-.navbar .template-personal-information .formTabs > li > [for="form.portrait"] ~ img.dropdown-menu,
-.template-personal-information .navbar .formTabs > li > [for="form.portrait"] ~ img.dropdown-menu,
-.navbar .tileItem .nav > li > img.dropdown-menu,
-.tileItem .navbar .nav > li > img.dropdown-menu,
-.navbar .tileItem .contentViews > li > img.dropdown-menu,
-.tileItem .navbar .contentViews > li > img.dropdown-menu,
-.navbar .tileItem .configlets > li > img.dropdown-menu,
-.tileItem .navbar .configlets > li > img.dropdown-menu,
-.navbar .tileItem .formTabs > li > img.dropdown-menu,
-.tileItem .navbar .formTabs > li > img.dropdown-menu {
+.navbar .template-personal-information [for="form.portrait"] .nav > li > img.dropdown-menu,
+.template-personal-information [for="form.portrait"] .navbar .nav > li > img.dropdown-menu,
+.navbar .template-personal-information [for="form.portrait"] .contentViews > li > img.dropdown-menu,
+.template-personal-information [for="form.portrait"] .navbar .contentViews > li > img.dropdown-menu,
+.navbar .template-personal-information [for="form.portrait"] .configlets > li > img.dropdown-menu,
+.template-personal-information [for="form.portrait"] .navbar .configlets > li > img.dropdown-menu,
+.navbar .template-personal-information [for="form.portrait"] .formTabs > li > img.dropdown-menu,
+.template-personal-information [for="form.portrait"] .navbar .formTabs > li > img.dropdown-menu {
   left: auto !important;
   right: 0 !important;
 }
 /* line 354, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu:before, .navbar .template-personal-information [for="form.portrait"] ~ img > li > .dropdown-menu:before, .template-personal-information .navbar [for="form.portrait"] ~ img > li > .dropdown-menu:before, .navbar .tileItem img > li > .dropdown-menu:before, .tileItem .navbar img > li > .dropdown-menu:before, .navbar .pull-right > li > div.dk_options:before, .navbar .template-personal-information [for="form.portrait"] ~ img > li > div.dk_options:before, .template-personal-information .navbar [for="form.portrait"] ~ img > li > div.dk_options:before, .navbar .tileItem img > li > div.dk_options:before, .tileItem .navbar img > li > div.dk_options:before,
+.navbar .pull-right > li > .dropdown-menu:before, .navbar .template-personal-information [for="form.portrait"] img > li > .dropdown-menu:before, .template-personal-information [for="form.portrait"] .navbar img > li > .dropdown-menu:before, .navbar .pull-right > li > div.dk_options:before, .navbar .template-personal-information [for="form.portrait"] img > li > div.dk_options:before, .template-personal-information [for="form.portrait"] .navbar img > li > div.dk_options:before,
 .navbar .nav > li > .dropdown-menu.pull-right:before,
 .navbar .contentViews > li > .dropdown-menu.pull-right:before,
 .navbar .configlets > li > .dropdown-menu.pull-right:before,
@@ -5826,27 +5837,19 @@ input[type="submit"].link-parent::-moz-focus-inner {
 .navbar .contentViews > li > div.pull-right.dk_options:before,
 .navbar .configlets > li > div.pull-right.dk_options:before,
 .navbar .formTabs > li > div.pull-right.dk_options:before,
-.navbar .template-personal-information .nav > li > [for="form.portrait"] ~ img.dropdown-menu:before,
-.template-personal-information .navbar .nav > li > [for="form.portrait"] ~ img.dropdown-menu:before,
-.navbar .template-personal-information .contentViews > li > [for="form.portrait"] ~ img.dropdown-menu:before,
-.template-personal-information .navbar .contentViews > li > [for="form.portrait"] ~ img.dropdown-menu:before,
-.navbar .template-personal-information .configlets > li > [for="form.portrait"] ~ img.dropdown-menu:before,
-.template-personal-information .navbar .configlets > li > [for="form.portrait"] ~ img.dropdown-menu:before,
-.navbar .template-personal-information .formTabs > li > [for="form.portrait"] ~ img.dropdown-menu:before,
-.template-personal-information .navbar .formTabs > li > [for="form.portrait"] ~ img.dropdown-menu:before,
-.navbar .tileItem .nav > li > img.dropdown-menu:before,
-.tileItem .navbar .nav > li > img.dropdown-menu:before,
-.navbar .tileItem .contentViews > li > img.dropdown-menu:before,
-.tileItem .navbar .contentViews > li > img.dropdown-menu:before,
-.navbar .tileItem .configlets > li > img.dropdown-menu:before,
-.tileItem .navbar .configlets > li > img.dropdown-menu:before,
-.navbar .tileItem .formTabs > li > img.dropdown-menu:before,
-.tileItem .navbar .formTabs > li > img.dropdown-menu:before {
+.navbar .template-personal-information [for="form.portrait"] .nav > li > img.dropdown-menu:before,
+.template-personal-information [for="form.portrait"] .navbar .nav > li > img.dropdown-menu:before,
+.navbar .template-personal-information [for="form.portrait"] .contentViews > li > img.dropdown-menu:before,
+.template-personal-information [for="form.portrait"] .navbar .contentViews > li > img.dropdown-menu:before,
+.navbar .template-personal-information [for="form.portrait"] .configlets > li > img.dropdown-menu:before,
+.template-personal-information [for="form.portrait"] .navbar .configlets > li > img.dropdown-menu:before,
+.navbar .template-personal-information [for="form.portrait"] .formTabs > li > img.dropdown-menu:before,
+.template-personal-information [for="form.portrait"] .navbar .formTabs > li > img.dropdown-menu:before {
   left: auto !important;
   right: 12px !important;
 }
 /* line 358, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu:after, .navbar .template-personal-information [for="form.portrait"] ~ img > li > .dropdown-menu:after, .template-personal-information .navbar [for="form.portrait"] ~ img > li > .dropdown-menu:after, .navbar .tileItem img > li > .dropdown-menu:after, .tileItem .navbar img > li > .dropdown-menu:after, .navbar .pull-right > li > div.dk_options:after, .navbar .template-personal-information [for="form.portrait"] ~ img > li > div.dk_options:after, .template-personal-information .navbar [for="form.portrait"] ~ img > li > div.dk_options:after, .navbar .tileItem img > li > div.dk_options:after, .tileItem .navbar img > li > div.dk_options:after,
+.navbar .pull-right > li > .dropdown-menu:after, .navbar .template-personal-information [for="form.portrait"] img > li > .dropdown-menu:after, .template-personal-information [for="form.portrait"] .navbar img > li > .dropdown-menu:after, .navbar .pull-right > li > div.dk_options:after, .navbar .template-personal-information [for="form.portrait"] img > li > div.dk_options:after, .template-personal-information [for="form.portrait"] .navbar img > li > div.dk_options:after,
 .navbar .nav > li > .dropdown-menu.pull-right:after,
 .navbar .contentViews > li > .dropdown-menu.pull-right:after,
 .navbar .configlets > li > .dropdown-menu.pull-right:after,
@@ -5855,27 +5858,19 @@ input[type="submit"].link-parent::-moz-focus-inner {
 .navbar .contentViews > li > div.pull-right.dk_options:after,
 .navbar .configlets > li > div.pull-right.dk_options:after,
 .navbar .formTabs > li > div.pull-right.dk_options:after,
-.navbar .template-personal-information .nav > li > [for="form.portrait"] ~ img.dropdown-menu:after,
-.template-personal-information .navbar .nav > li > [for="form.portrait"] ~ img.dropdown-menu:after,
-.navbar .template-personal-information .contentViews > li > [for="form.portrait"] ~ img.dropdown-menu:after,
-.template-personal-information .navbar .contentViews > li > [for="form.portrait"] ~ img.dropdown-menu:after,
-.navbar .template-personal-information .configlets > li > [for="form.portrait"] ~ img.dropdown-menu:after,
-.template-personal-information .navbar .configlets > li > [for="form.portrait"] ~ img.dropdown-menu:after,
-.navbar .template-personal-information .formTabs > li > [for="form.portrait"] ~ img.dropdown-menu:after,
-.template-personal-information .navbar .formTabs > li > [for="form.portrait"] ~ img.dropdown-menu:after,
-.navbar .tileItem .nav > li > img.dropdown-menu:after,
-.tileItem .navbar .nav > li > img.dropdown-menu:after,
-.navbar .tileItem .contentViews > li > img.dropdown-menu:after,
-.tileItem .navbar .contentViews > li > img.dropdown-menu:after,
-.navbar .tileItem .configlets > li > img.dropdown-menu:after,
-.tileItem .navbar .configlets > li > img.dropdown-menu:after,
-.navbar .tileItem .formTabs > li > img.dropdown-menu:after,
-.tileItem .navbar .formTabs > li > img.dropdown-menu:after {
+.navbar .template-personal-information [for="form.portrait"] .nav > li > img.dropdown-menu:after,
+.template-personal-information [for="form.portrait"] .navbar .nav > li > img.dropdown-menu:after,
+.navbar .template-personal-information [for="form.portrait"] .contentViews > li > img.dropdown-menu:after,
+.template-personal-information [for="form.portrait"] .navbar .contentViews > li > img.dropdown-menu:after,
+.navbar .template-personal-information [for="form.portrait"] .configlets > li > img.dropdown-menu:after,
+.template-personal-information [for="form.portrait"] .navbar .configlets > li > img.dropdown-menu:after,
+.navbar .template-personal-information [for="form.portrait"] .formTabs > li > img.dropdown-menu:after,
+.template-personal-information [for="form.portrait"] .navbar .formTabs > li > img.dropdown-menu:after {
   left: auto !important;
   right: 13px !important;
 }
 /* line 362, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu .dropdown-menu, .navbar .template-personal-information [for="form.portrait"] ~ img > li > .dropdown-menu .dropdown-menu, .template-personal-information .navbar [for="form.portrait"] ~ img > li > .dropdown-menu .dropdown-menu, .navbar .tileItem img > li > .dropdown-menu .dropdown-menu, .tileItem .navbar img > li > .dropdown-menu .dropdown-menu, .navbar .pull-right > li > div.dk_options .dropdown-menu, .navbar .template-personal-information [for="form.portrait"] ~ img > li > div.dk_options .dropdown-menu, .template-personal-information .navbar [for="form.portrait"] ~ img > li > div.dk_options .dropdown-menu, .navbar .tileItem img > li > div.dk_options .dropdown-menu, .tileItem .navbar img > li > div.dk_options .dropdown-menu, .navbar .pull-right > li > .dropdown-menu div.dk_options, .navbar .template-personal-information [for="form.portrait"] ~ img > li > .dropdown-menu div.dk_options, .template-personal-information .navbar [for="form.portrait"] ~ img > li > .dropdown-menu div.dk_options, .navbar .tileItem img > li > .dropdown-menu div.dk_options, .tileItem .navbar img > li > .dropdown-menu div.dk_options, .navbar .pull-right > li > div.dk_options div.dk_options, .navbar .template-personal-information [for="form.portrait"] ~ img > li > div.dk_options div.dk_options, .template-personal-information .navbar [for="form.portrait"] ~ img > li > div.dk_options div.dk_options, .navbar .tileItem img > li > div.dk_options div.dk_options, .tileItem .navbar img > li > div.dk_options div.dk_options,
+.navbar .pull-right > li > .dropdown-menu .dropdown-menu, .navbar .template-personal-information [for="form.portrait"] img > li > .dropdown-menu .dropdown-menu, .template-personal-information [for="form.portrait"] .navbar img > li > .dropdown-menu .dropdown-menu, .navbar .pull-right > li > div.dk_options .dropdown-menu, .navbar .template-personal-information [for="form.portrait"] img > li > div.dk_options .dropdown-menu, .template-personal-information [for="form.portrait"] .navbar img > li > div.dk_options .dropdown-menu, .navbar .pull-right > li > .dropdown-menu div.dk_options, .navbar .template-personal-information [for="form.portrait"] img > li > .dropdown-menu div.dk_options, .template-personal-information [for="form.portrait"] .navbar img > li > .dropdown-menu div.dk_options, .navbar .pull-right > li > div.dk_options div.dk_options, .navbar .template-personal-information [for="form.portrait"] img > li > div.dk_options div.dk_options, .template-personal-information [for="form.portrait"] .navbar img > li > div.dk_options div.dk_options,
 .navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu,
 .navbar .contentViews > li > .dropdown-menu.pull-right .dropdown-menu,
 .navbar .configlets > li > .dropdown-menu.pull-right .dropdown-menu,
@@ -5884,22 +5879,14 @@ input[type="submit"].link-parent::-moz-focus-inner {
 .navbar .contentViews > li > div.pull-right.dk_options .dropdown-menu,
 .navbar .configlets > li > div.pull-right.dk_options .dropdown-menu,
 .navbar .formTabs > li > div.pull-right.dk_options .dropdown-menu,
-.navbar .template-personal-information .nav > li > [for="form.portrait"] ~ img.dropdown-menu .dropdown-menu,
-.template-personal-information .navbar .nav > li > [for="form.portrait"] ~ img.dropdown-menu .dropdown-menu,
-.navbar .template-personal-information .contentViews > li > [for="form.portrait"] ~ img.dropdown-menu .dropdown-menu,
-.template-personal-information .navbar .contentViews > li > [for="form.portrait"] ~ img.dropdown-menu .dropdown-menu,
-.navbar .template-personal-information .configlets > li > [for="form.portrait"] ~ img.dropdown-menu .dropdown-menu,
-.template-personal-information .navbar .configlets > li > [for="form.portrait"] ~ img.dropdown-menu .dropdown-menu,
-.navbar .template-personal-information .formTabs > li > [for="form.portrait"] ~ img.dropdown-menu .dropdown-menu,
-.template-personal-information .navbar .formTabs > li > [for="form.portrait"] ~ img.dropdown-menu .dropdown-menu,
-.navbar .tileItem .nav > li > img.dropdown-menu .dropdown-menu,
-.tileItem .navbar .nav > li > img.dropdown-menu .dropdown-menu,
-.navbar .tileItem .contentViews > li > img.dropdown-menu .dropdown-menu,
-.tileItem .navbar .contentViews > li > img.dropdown-menu .dropdown-menu,
-.navbar .tileItem .configlets > li > img.dropdown-menu .dropdown-menu,
-.tileItem .navbar .configlets > li > img.dropdown-menu .dropdown-menu,
-.navbar .tileItem .formTabs > li > img.dropdown-menu .dropdown-menu,
-.tileItem .navbar .formTabs > li > img.dropdown-menu .dropdown-menu,
+.navbar .template-personal-information [for="form.portrait"] .nav > li > img.dropdown-menu .dropdown-menu,
+.template-personal-information [for="form.portrait"] .navbar .nav > li > img.dropdown-menu .dropdown-menu,
+.navbar .template-personal-information [for="form.portrait"] .contentViews > li > img.dropdown-menu .dropdown-menu,
+.template-personal-information [for="form.portrait"] .navbar .contentViews > li > img.dropdown-menu .dropdown-menu,
+.navbar .template-personal-information [for="form.portrait"] .configlets > li > img.dropdown-menu .dropdown-menu,
+.template-personal-information [for="form.portrait"] .navbar .configlets > li > img.dropdown-menu .dropdown-menu,
+.navbar .template-personal-information [for="form.portrait"] .formTabs > li > img.dropdown-menu .dropdown-menu,
+.template-personal-information [for="form.portrait"] .navbar .formTabs > li > img.dropdown-menu .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right div.dk_options,
 .navbar .contentViews > li > .dropdown-menu.pull-right div.dk_options,
 .navbar .configlets > li > .dropdown-menu.pull-right div.dk_options,
@@ -5908,22 +5895,14 @@ input[type="submit"].link-parent::-moz-focus-inner {
 .navbar .contentViews > li > div.pull-right.dk_options div.dk_options,
 .navbar .configlets > li > div.pull-right.dk_options div.dk_options,
 .navbar .formTabs > li > div.pull-right.dk_options div.dk_options,
-.navbar .template-personal-information .nav > li > [for="form.portrait"] ~ img.dropdown-menu div.dk_options,
-.template-personal-information .navbar .nav > li > [for="form.portrait"] ~ img.dropdown-menu div.dk_options,
-.navbar .template-personal-information .contentViews > li > [for="form.portrait"] ~ img.dropdown-menu div.dk_options,
-.template-personal-information .navbar .contentViews > li > [for="form.portrait"] ~ img.dropdown-menu div.dk_options,
-.navbar .template-personal-information .configlets > li > [for="form.portrait"] ~ img.dropdown-menu div.dk_options,
-.template-personal-information .navbar .configlets > li > [for="form.portrait"] ~ img.dropdown-menu div.dk_options,
-.navbar .template-personal-information .formTabs > li > [for="form.portrait"] ~ img.dropdown-menu div.dk_options,
-.template-personal-information .navbar .formTabs > li > [for="form.portrait"] ~ img.dropdown-menu div.dk_options,
-.navbar .tileItem .nav > li > img.dropdown-menu div.dk_options,
-.tileItem .navbar .nav > li > img.dropdown-menu div.dk_options,
-.navbar .tileItem .contentViews > li > img.dropdown-menu div.dk_options,
-.tileItem .navbar .contentViews > li > img.dropdown-menu div.dk_options,
-.navbar .tileItem .configlets > li > img.dropdown-menu div.dk_options,
-.tileItem .navbar .configlets > li > img.dropdown-menu div.dk_options,
-.navbar .tileItem .formTabs > li > img.dropdown-menu div.dk_options,
-.tileItem .navbar .formTabs > li > img.dropdown-menu div.dk_options {
+.navbar .template-personal-information [for="form.portrait"] .nav > li > img.dropdown-menu div.dk_options,
+.template-personal-information [for="form.portrait"] .navbar .nav > li > img.dropdown-menu div.dk_options,
+.navbar .template-personal-information [for="form.portrait"] .contentViews > li > img.dropdown-menu div.dk_options,
+.template-personal-information [for="form.portrait"] .navbar .contentViews > li > img.dropdown-menu div.dk_options,
+.navbar .template-personal-information [for="form.portrait"] .configlets > li > img.dropdown-menu div.dk_options,
+.template-personal-information [for="form.portrait"] .navbar .configlets > li > img.dropdown-menu div.dk_options,
+.navbar .template-personal-information [for="form.portrait"] .formTabs > li > img.dropdown-menu div.dk_options,
+.template-personal-information [for="form.portrait"] .navbar .formTabs > li > img.dropdown-menu div.dk_options {
   left: auto !important;
   right: 100% !important;
   margin-left: 0 !important;
@@ -6237,13 +6216,13 @@ input[type="submit"].link-parent::-moz-focus-inner {
 }
 
 /* line 6, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination {
+.pagination, .listingBar {
   height: 36px;
   margin: 18px 0;
 }
 
 /* line 10, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination ul {
+.pagination ul, .listingBar ul {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -6258,13 +6237,14 @@ input[type="submit"].link-parent::-moz-focus-inner {
 }
 
 /* line 18, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination li {
+.pagination li, .listingBar li {
   display: inline;
 }
 
 /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination a,
-.pagination span {
+.pagination a, .listingBar a,
+.pagination span,
+.listingBar span {
   float: left;
   padding: 0 14px;
   line-height: 34px;
@@ -6277,46 +6257,67 @@ input[type="submit"].link-parent::-moz-focus-inner {
 }
 
 /* line 35, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination a:hover,
+.pagination a:hover, .listingBar a:hover,
 .pagination .active a,
+.listingBar .active a,
 .pagination .selected a,
+.listingBar .selected a,
 .pagination .contentViews .selected a,
 .contentViews .pagination .selected a,
+.listingBar .contentViews .selected a,
+.contentViews .listingBar .selected a,
 .pagination .contentViews .selected:hover a,
 .contentViews .pagination .selected:hover a,
+.listingBar .contentViews .selected:hover a,
+.contentViews .listingBar .selected:hover a,
 .pagination .active span,
+.listingBar .active span,
 .pagination .selected span,
+.listingBar .selected span,
 .pagination .contentViews .selected span,
 .contentViews .pagination .selected span,
+.listingBar .contentViews .selected span,
+.contentViews .listingBar .selected span,
 .pagination .contentViews .selected:hover span,
-.contentViews .pagination .selected:hover span {
+.contentViews .pagination .selected:hover span,
+.listingBar .contentViews .selected:hover span,
+.contentViews .listingBar .selected:hover span {
   background-color: #f2f2f2;
 }
 
 /* line 39, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination .active a, .pagination .selected a, .pagination .contentViews .selected a, .contentViews .pagination .selected a, .pagination .contentViews .selected:hover a, .contentViews .pagination .selected:hover a,
+.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a, .pagination .contentViews .selected a, .contentViews .pagination .selected a, .listingBar .contentViews .selected a, .contentViews .listingBar .selected a, .pagination .contentViews .selected:hover a, .contentViews .pagination .selected:hover a, .listingBar .contentViews .selected:hover a, .contentViews .listingBar .selected:hover a,
 .pagination .active span,
+.listingBar .active span,
 .pagination .selected span,
+.listingBar .selected span,
 .pagination .contentViews .selected span,
 .contentViews .pagination .selected span,
+.listingBar .contentViews .selected span,
+.contentViews .listingBar .selected span,
 .pagination .contentViews .selected:hover span,
-.contentViews .pagination .selected:hover span {
+.contentViews .pagination .selected:hover span,
+.listingBar .contentViews .selected:hover span,
+.contentViews .listingBar .selected:hover span {
   color: #666666;
   cursor: default;
 }
 
 /* line 45, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination .disabled span,
+.pagination .disabled span, .listingBar .disabled span,
 .pagination .disabled a,
-.pagination .disabled a:hover {
+.listingBar .disabled a,
+.pagination .disabled a:hover,
+.listingBar .disabled a:hover {
   color: #666666;
   background-color: transparent;
   cursor: default;
 }
 
 /* line 51, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination li:first-child a,
-.pagination li:first-child span {
+.pagination li:first-child a, .listingBar li:first-child a,
+.pagination li:first-child span,
+.listingBar li:first-child span {
   border-left-width: 1px;
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
@@ -6324,8 +6325,9 @@ input[type="submit"].link-parent::-moz-focus-inner {
 }
 
 /* line 56, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination li:last-child a,
-.pagination li:last-child span {
+.pagination li:last-child a, .listingBar li:last-child a,
+.pagination li:last-child span,
+.listingBar li:last-child span {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
@@ -6806,7 +6808,7 @@ input[type="submit"].link-parent::-moz-focus-inner {
 }
 
 /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_thumbnails.scss */
-.row-fluid .thumbnails, .template-atct_album_view #content-core .thumbnails {
+.row-fluid .thumbnails, #dashboard .thumbnails, .template-atct_album_view #content-core .thumbnails {
   margin-left: 0;
 }
 
@@ -7414,7 +7416,7 @@ input[value^="Cancel"] .badge,
 }
 
 /* line 7, ../bootstrap/scss/compass_twitter_bootstrap/_utilities.scss */
-.pull-right, .template-personal-information [for="form.portrait"] ~ img, .tileItem img {
+.pull-right, .template-personal-information [for="form.portrait"] img {
   float: right;
 }
 
@@ -7700,7 +7702,7 @@ input[value^="Cancel"] .badge,
     margin-left: 0;
   }
   /* line 45, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #peu [class*="span"] .pull-right, #peu [class*="span"] .template-personal-information [for="form.portrait"] ~ img, .template-personal-information #peu [class*="span"] [for="form.portrait"] ~ img, #peu [class*="span"] .tileItem img, .tileItem #peu [class*="span"] img {
+  #peu [class*="span"] .pull-right, #peu [class*="span"] .template-personal-information [for="form.portrait"] img, .template-personal-information [for="form.portrait"] #peu [class*="span"] img {
     float: none;
     margin: 0;
   }
@@ -7755,7 +7757,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 86, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  .row-fluid, .template-atct_album_view #content-core {
+  .row-fluid, #dashboard, .template-atct_album_view #content-core {
     width: 100%;
   }
 
@@ -7771,7 +7773,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 91, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  .span12, .row-fluid .span12, .template-atct_album_view #content-core .span12 {
+  .span12, .row-fluid .span12, #dashboard .span12, .template-atct_album_view #content-core .span12 {
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -7884,7 +7886,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 147, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #portal-header .btn-navbar.pull-right, #portal-header .template-personal-information [for="form.portrait"] ~ img.btn-navbar, .template-personal-information #portal-header [for="form.portrait"] ~ img.btn-navbar, #portal-header .tileItem img.btn-navbar, .tileItem #portal-header img.btn-navbar {
+  #portal-header .btn-navbar.pull-right, #portal-header .template-personal-information [for="form.portrait"] img.btn-navbar, .template-personal-information [for="form.portrait"] #portal-header img.btn-navbar {
     margin-top: 12px !important;
   }
 
@@ -7910,7 +7912,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #portal-header .btn-navbar.pull-right, #portal-header .template-personal-information [for="form.portrait"] ~ img.btn-navbar, .template-personal-information #portal-header [for="form.portrait"] ~ img.btn-navbar, #portal-header .tileItem img.btn-navbar, .tileItem #portal-header img.btn-navbar {
+  #portal-header .btn-navbar.pull-right, #portal-header .template-personal-information [for="form.portrait"] img.btn-navbar, .template-personal-information [for="form.portrait"] #portal-header img.btn-navbar {
     margin-top: 13px;
     margin-right: 0 !important;
     padding: 7px 10px;
@@ -7954,6 +7956,7 @@ input[value^="Cancel"] .badge,
   /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   [class*="span"],
   .row-fluid [class*="span"],
+  #dashboard [class*="span"],
   .template-atct_album_view #content-core [class*="span"] {
     float: none;
     display: block;
@@ -8135,7 +8138,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 574, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .span3, .photoAlbumEntry {
+  .span3, #dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3, #dashboard-portlets4, .photoAlbumEntry {
     width: 222px;
   }
 
@@ -8210,22 +8213,22 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 601, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid, .template-atct_album_view #content-core {
+  .row-fluid, #dashboard, .template-atct_album_view #content-core {
     width: 100%;
     *zoom: 1;
   }
   /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid:before, .template-atct_album_view #content-core:before, .row-fluid:after, .template-atct_album_view #content-core:after {
+  .row-fluid:before, #dashboard:before, .template-atct_album_view #content-core:before, .row-fluid:after, #dashboard:after, .template-atct_album_view #content-core:after {
     display: table;
     content: "";
     line-height: 0;
   }
   /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid:after, .template-atct_album_view #content-core:after {
+  .row-fluid:after, #dashboard:after, .template-atct_album_view #content-core:after {
     clear: both;
   }
   /* line 604, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid [class*="span"], .template-atct_album_view #content-core [class*="span"] {
+  .row-fluid [class*="span"], #dashboard [class*="span"], .template-atct_album_view #content-core [class*="span"] {
     display: block;
     width: 100%;
     min-height: 30px;
@@ -8237,186 +8240,186 @@ input[value^="Cancel"] .badge,
     *margin-left: 3.01636%;
   }
   /* line 610, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid [class*="span"]:first-child, .template-atct_album_view #content-core [class*="span"]:first-child {
+  .row-fluid [class*="span"]:first-child, #dashboard [class*="span"]:first-child, .template-atct_album_view #content-core [class*="span"]:first-child {
     margin-left: 0;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span12, .template-atct_album_view #content-core .span12 {
+  .row-fluid .span12, #dashboard .span12, .template-atct_album_view #content-core .span12 {
     width: 100%;
     *width: 99.94888%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset12, .template-atct_album_view #content-core .offset12 {
+  .row-fluid .offset12, #dashboard .offset12, .template-atct_album_view #content-core .offset12 {
     margin-left: 106.13497%;
     *margin-left: 106.03272%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset12:first-child, .template-atct_album_view #content-core .offset12:first-child {
+  .row-fluid .offset12:first-child, #dashboard .offset12:first-child, .template-atct_album_view #content-core .offset12:first-child {
     margin-left: 103.06748%;
     *margin-left: 102.96524%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span11, .template-atct_album_view #content-core .span11 {
+  .row-fluid .span11, #dashboard .span11, .template-atct_album_view #content-core .span11 {
     width: 91.41104%;
     *width: 91.35992%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset11, .template-atct_album_view #content-core .offset11 {
+  .row-fluid .offset11, #dashboard .offset11, .template-atct_album_view #content-core .offset11 {
     margin-left: 97.54601%;
     *margin-left: 97.44376%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset11:first-child, .template-atct_album_view #content-core .offset11:first-child {
+  .row-fluid .offset11:first-child, #dashboard .offset11:first-child, .template-atct_album_view #content-core .offset11:first-child {
     margin-left: 94.47853%;
     *margin-left: 94.37628%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span10, .template-atct_album_view #content-core .span10 {
+  .row-fluid .span10, #dashboard .span10, .template-atct_album_view #content-core .span10 {
     width: 82.82209%;
     *width: 82.77096%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset10, .template-atct_album_view #content-core .offset10 {
+  .row-fluid .offset10, #dashboard .offset10, .template-atct_album_view #content-core .offset10 {
     margin-left: 88.95706%;
     *margin-left: 88.85481%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset10:first-child, .template-atct_album_view #content-core .offset10:first-child {
+  .row-fluid .offset10:first-child, #dashboard .offset10:first-child, .template-atct_album_view #content-core .offset10:first-child {
     margin-left: 85.88957%;
     *margin-left: 85.78732%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span9, .template-atct_album_view #content-core .span9 {
+  .row-fluid .span9, #dashboard .span9, .template-atct_album_view #content-core .span9 {
     width: 74.23313%;
     *width: 74.182%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset9, .template-atct_album_view #content-core .offset9 {
+  .row-fluid .offset9, #dashboard .offset9, .template-atct_album_view #content-core .offset9 {
     margin-left: 80.3681%;
     *margin-left: 80.26585%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset9:first-child, .template-atct_album_view #content-core .offset9:first-child {
+  .row-fluid .offset9:first-child, #dashboard .offset9:first-child, .template-atct_album_view #content-core .offset9:first-child {
     margin-left: 77.30061%;
     *margin-left: 77.19836%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span8, .template-atct_album_view #content-core .span8 {
+  .row-fluid .span8, #dashboard .span8, .template-atct_album_view #content-core .span8 {
     width: 65.64417%;
     *width: 65.59305%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset8, .template-atct_album_view #content-core .offset8 {
+  .row-fluid .offset8, #dashboard .offset8, .template-atct_album_view #content-core .offset8 {
     margin-left: 71.77914%;
     *margin-left: 71.67689%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset8:first-child, .template-atct_album_view #content-core .offset8:first-child {
+  .row-fluid .offset8:first-child, #dashboard .offset8:first-child, .template-atct_album_view #content-core .offset8:first-child {
     margin-left: 68.71166%;
     *margin-left: 68.60941%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span7, .template-atct_album_view #content-core .span7 {
+  .row-fluid .span7, #dashboard .span7, .template-atct_album_view #content-core .span7 {
     width: 57.05521%;
     *width: 57.00409%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset7, .template-atct_album_view #content-core .offset7 {
+  .row-fluid .offset7, #dashboard .offset7, .template-atct_album_view #content-core .offset7 {
     margin-left: 63.19018%;
     *margin-left: 63.08793%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset7:first-child, .template-atct_album_view #content-core .offset7:first-child {
+  .row-fluid .offset7:first-child, #dashboard .offset7:first-child, .template-atct_album_view #content-core .offset7:first-child {
     margin-left: 60.1227%;
     *margin-left: 60.02045%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span6, .template-atct_album_view #content-core .span6 {
+  .row-fluid .span6, #dashboard .span6, .template-atct_album_view #content-core .span6 {
     width: 48.46626%;
     *width: 48.41513%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset6, .template-atct_album_view #content-core .offset6 {
+  .row-fluid .offset6, #dashboard .offset6, .template-atct_album_view #content-core .offset6 {
     margin-left: 54.60123%;
     *margin-left: 54.49898%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset6:first-child, .template-atct_album_view #content-core .offset6:first-child {
+  .row-fluid .offset6:first-child, #dashboard .offset6:first-child, .template-atct_album_view #content-core .offset6:first-child {
     margin-left: 51.53374%;
     *margin-left: 51.43149%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span5, .template-atct_album_view #content-core .span5 {
+  .row-fluid .span5, #dashboard .span5, .template-atct_album_view #content-core .span5 {
     width: 39.8773%;
     *width: 39.82618%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset5, .template-atct_album_view #content-core .offset5 {
+  .row-fluid .offset5, #dashboard .offset5, .template-atct_album_view #content-core .offset5 {
     margin-left: 46.01227%;
     *margin-left: 45.91002%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset5:first-child, .template-atct_album_view #content-core .offset5:first-child {
+  .row-fluid .offset5:first-child, #dashboard .offset5:first-child, .template-atct_album_view #content-core .offset5:first-child {
     margin-left: 42.94479%;
     *margin-left: 42.84254%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span4, .template-atct_album_view #content-core .span4 {
+  .row-fluid .span4, #dashboard .span4, .template-atct_album_view #content-core .span4 {
     width: 31.28834%;
     *width: 31.23722%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset4, .template-atct_album_view #content-core .offset4 {
+  .row-fluid .offset4, #dashboard .offset4, .template-atct_album_view #content-core .offset4 {
     margin-left: 37.42331%;
     *margin-left: 37.32106%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset4:first-child, .template-atct_album_view #content-core .offset4:first-child {
+  .row-fluid .offset4:first-child, #dashboard .offset4:first-child, .template-atct_album_view #content-core .offset4:first-child {
     margin-left: 34.35583%;
     *margin-left: 34.25358%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span3, .template-atct_album_view #content-core .span3, .row-fluid .photoAlbumEntry, .template-atct_album_view #content-core .photoAlbumEntry {
+  .row-fluid .span3, #dashboard .span3, .template-atct_album_view #content-core .span3, .row-fluid #dashboard-portlets1, #dashboard #dashboard-portlets1, .template-atct_album_view #content-core #dashboard-portlets1, .row-fluid #dashboard-portlets2, #dashboard #dashboard-portlets2, .template-atct_album_view #content-core #dashboard-portlets2, .row-fluid #dashboard-portlets3, #dashboard #dashboard-portlets3, .template-atct_album_view #content-core #dashboard-portlets3, .row-fluid #dashboard-portlets4, #dashboard #dashboard-portlets4, .template-atct_album_view #content-core #dashboard-portlets4, .row-fluid .photoAlbumEntry, #dashboard .photoAlbumEntry, .template-atct_album_view #content-core .photoAlbumEntry {
     width: 22.69939%;
     *width: 22.64826%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset3, .template-atct_album_view #content-core .offset3 {
+  .row-fluid .offset3, #dashboard .offset3, .template-atct_album_view #content-core .offset3 {
     margin-left: 28.83436%;
     *margin-left: 28.73211%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset3:first-child, .template-atct_album_view #content-core .offset3:first-child {
+  .row-fluid .offset3:first-child, #dashboard .offset3:first-child, .template-atct_album_view #content-core .offset3:first-child {
     margin-left: 25.76687%;
     *margin-left: 25.66462%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span2, .template-atct_album_view #content-core .span2 {
+  .row-fluid .span2, #dashboard .span2, .template-atct_album_view #content-core .span2 {
     width: 14.11043%;
     *width: 14.0593%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset2, .template-atct_album_view #content-core .offset2 {
+  .row-fluid .offset2, #dashboard .offset2, .template-atct_album_view #content-core .offset2 {
     margin-left: 20.2454%;
     *margin-left: 20.14315%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset2:first-child, .template-atct_album_view #content-core .offset2:first-child {
+  .row-fluid .offset2:first-child, #dashboard .offset2:first-child, .template-atct_album_view #content-core .offset2:first-child {
     margin-left: 17.17791%;
     *margin-left: 17.07566%;
   }
   /* line 617, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .span1, .template-atct_album_view #content-core .span1 {
+  .row-fluid .span1, #dashboard .span1, .template-atct_album_view #content-core .span1 {
     width: 5.52147%;
     *width: 5.47035%;
   }
   /* line 620, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset1, .template-atct_album_view #content-core .offset1 {
+  .row-fluid .offset1, #dashboard .offset1, .template-atct_album_view #content-core .offset1 {
     margin-left: 11.65644%;
     *margin-left: 11.55419%;
   }
   /* line 623, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid .offset1:first-child, .template-atct_album_view #content-core .offset1:first-child {
+  .row-fluid .offset1:first-child, #dashboard .offset1:first-child, .template-atct_album_view #content-core .offset1:first-child {
     margin-left: 8.58896%;
     *margin-left: 8.48671%;
   }
@@ -8497,10 +8500,18 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 652, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  input.span3, input.photoAlbumEntry,
+  input.span3, input#dashboard-portlets1, input#dashboard-portlets2, input#dashboard-portlets3, input#dashboard-portlets4, input.photoAlbumEntry,
   textarea.span3,
+  textarea#dashboard-portlets1,
+  textarea#dashboard-portlets2,
+  textarea#dashboard-portlets3,
+  textarea#dashboard-portlets4,
   textarea.photoAlbumEntry,
   .uneditable-input.span3,
+  .uneditable-input#dashboard-portlets1,
+  .uneditable-input#dashboard-portlets2,
+  .uneditable-input#dashboard-portlets3,
+  .uneditable-input#dashboard-portlets4,
   .uneditable-input.photoAlbumEntry {
     width: 208px;
   }
@@ -8741,7 +8752,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 127, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  #portal-globalnav .navbar .nav-collapse .nav.pull-right, #portal-globalnav .navbar .nav-collapse .template-personal-information [for="form.portrait"] ~ img.nav, .template-personal-information #portal-globalnav .navbar .nav-collapse [for="form.portrait"] ~ img.nav, #portal-globalnav .navbar .nav-collapse .template-personal-information [for="form.portrait"] ~ img.contentViews, .template-personal-information #portal-globalnav .navbar .nav-collapse [for="form.portrait"] ~ img.contentViews, #portal-globalnav .navbar .nav-collapse .template-personal-information [for="form.portrait"] ~ img.configlets, .template-personal-information #portal-globalnav .navbar .nav-collapse [for="form.portrait"] ~ img.configlets, #portal-globalnav .navbar .nav-collapse .template-personal-information [for="form.portrait"] ~ img.formTabs, .template-personal-information #portal-globalnav .navbar .nav-collapse [for="form.portrait"] ~ img.formTabs, #portal-globalnav .navbar .nav-collapse .pull-right.contentViews, #portal-globalnav .navbar .nav-collapse .tileItem img.contentViews, .tileItem #portal-globalnav .navbar .nav-collapse img.contentViews, #portal-globalnav .navbar .nav-collapse .pull-right.configlets, #portal-globalnav .navbar .nav-collapse .tileItem img.configlets, .tileItem #portal-globalnav .navbar .nav-collapse img.configlets, #portal-globalnav .navbar .nav-collapse .pull-right.formTabs, #portal-globalnav .navbar .nav-collapse .tileItem img.formTabs, .tileItem #portal-globalnav .navbar .nav-collapse img.formTabs, #portal-globalnav .navbar .nav-collapse .tileItem img.nav, .tileItem #portal-globalnav .navbar .nav-collapse img.nav {
+  #portal-globalnav .navbar .nav-collapse .nav.pull-right, #portal-globalnav .navbar .nav-collapse .template-personal-information [for="form.portrait"] img.nav, .template-personal-information [for="form.portrait"] #portal-globalnav .navbar .nav-collapse img.nav, #portal-globalnav .navbar .nav-collapse .template-personal-information [for="form.portrait"] img.contentViews, .template-personal-information [for="form.portrait"] #portal-globalnav .navbar .nav-collapse img.contentViews, #portal-globalnav .navbar .nav-collapse .template-personal-information [for="form.portrait"] img.configlets, .template-personal-information [for="form.portrait"] #portal-globalnav .navbar .nav-collapse img.configlets, #portal-globalnav .navbar .nav-collapse .template-personal-information [for="form.portrait"] img.formTabs, .template-personal-information [for="form.portrait"] #portal-globalnav .navbar .nav-collapse img.formTabs, #portal-globalnav .navbar .nav-collapse .pull-right.contentViews, #portal-globalnav .navbar .nav-collapse .pull-right.configlets, #portal-globalnav .navbar .nav-collapse .pull-right.formTabs {
     float: none;
     margin-left: 0;
   }
@@ -8759,7 +8770,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 142, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  #portal-header .btn-navbar.pull-right, #portal-header .template-personal-information [for="form.portrait"] ~ img.btn-navbar, .template-personal-information #portal-header [for="form.portrait"] ~ img.btn-navbar, #portal-header .tileItem img.btn-navbar, .tileItem #portal-header img.btn-navbar {
+  #portal-header .btn-navbar.pull-right, #portal-header .template-personal-information [for="form.portrait"] img.btn-navbar, .template-personal-information [for="form.portrait"] #portal-header img.btn-navbar {
     margin-top: 18px;
   }
 
@@ -9015,7 +9026,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 274, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .navbar .nav-collapse .nav.pull-right, .navbar .nav-collapse .template-personal-information [for="form.portrait"] ~ img.nav, .template-personal-information .navbar .nav-collapse [for="form.portrait"] ~ img.nav, .navbar .nav-collapse .template-personal-information [for="form.portrait"] ~ img.contentViews, .template-personal-information .navbar .nav-collapse [for="form.portrait"] ~ img.contentViews, .navbar .nav-collapse .template-personal-information [for="form.portrait"] ~ img.configlets, .template-personal-information .navbar .nav-collapse [for="form.portrait"] ~ img.configlets, .navbar .nav-collapse .template-personal-information [for="form.portrait"] ~ img.formTabs, .template-personal-information .navbar .nav-collapse [for="form.portrait"] ~ img.formTabs, .navbar .nav-collapse .pull-right.contentViews, .navbar .nav-collapse .tileItem img.contentViews, .tileItem .navbar .nav-collapse img.contentViews, .navbar .nav-collapse .pull-right.configlets, .navbar .nav-collapse .tileItem img.configlets, .tileItem .navbar .nav-collapse img.configlets, .navbar .nav-collapse .pull-right.formTabs, .navbar .nav-collapse .tileItem img.formTabs, .tileItem .navbar .nav-collapse img.formTabs, .navbar .nav-collapse .tileItem img.nav, .tileItem .navbar .nav-collapse img.nav {
+  .navbar .nav-collapse .nav.pull-right, .navbar .nav-collapse .template-personal-information [for="form.portrait"] img.nav, .template-personal-information [for="form.portrait"] .navbar .nav-collapse img.nav, .navbar .nav-collapse .template-personal-information [for="form.portrait"] img.contentViews, .template-personal-information [for="form.portrait"] .navbar .nav-collapse img.contentViews, .navbar .nav-collapse .template-personal-information [for="form.portrait"] img.configlets, .template-personal-information [for="form.portrait"] .navbar .nav-collapse img.configlets, .navbar .nav-collapse .template-personal-information [for="form.portrait"] img.formTabs, .template-personal-information [for="form.portrait"] .navbar .nav-collapse img.formTabs, .navbar .nav-collapse .pull-right.contentViews, .navbar .nav-collapse .pull-right.configlets, .navbar .nav-collapse .pull-right.formTabs {
     float: none;
     margin-left: 0;
   }
@@ -9373,7 +9384,7 @@ div.dk_options li.btn-menu-adjust > a:focus,
 }
 
 /* line 152, ../scss/_base.scss */
-#content {
+#content-area {
   padding-bottom: 2em;
   margin-top: 1.5em;
 }
@@ -9784,31 +9795,35 @@ div.dk_options li.btn-menu-adjust > a:focus,
   border-radius: 0 !important;
 }
 /* line 112, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a:hover, .subnavbar .nav-list .selected ul a:hover, .subnavbar .nav-list .contentViews .selected ul a:hover, .contentViews .subnavbar .nav-list .selected ul a:hover, .subnavbar .nav-list .contentViews .selected:hover ul a:hover, .contentViews .subnavbar .nav-list .selected:hover ul a:hover {
+  background-color: #f2f8fc !important;
+}
+/* line 113, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-private, .subnavbar .nav-list .selected ul a.state-private, .subnavbar .nav-list .contentViews .selected ul a.state-private, .contentViews .subnavbar .nav-list .selected ul a.state-private, .subnavbar .nav-list .contentViews .selected:hover ul a.state-private, .contentViews .subnavbar .nav-list .selected:hover ul a.state-private, .subnavbar .nav-list .active ul a#workflow-transition-hide, .subnavbar .nav-list .selected ul a#workflow-transition-hide, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-hide, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-hide, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-hide, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-hide {
   border-right: 3px solid #a62e1f;
   color: #a62e1f;
 }
-/* line 113, ../scss/_nav.scss */
+/* line 114, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-draft, .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .contentViews .selected ul a.state-draft, .contentViews .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .contentViews .selected:hover ul a.state-draft, .contentViews .subnavbar .nav-list .selected:hover ul a.state-draft, .subnavbar .nav-list .active ul a#workflow-transition-reject, .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-reject, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-reject, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-reject {
   border-right: 3px solid #72a31d;
   color: #72a31d;
 }
-/* line 114, ../scss/_nav.scss */
+/* line 115, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-pending, .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .contentViews .selected ul a.state-pending, .contentViews .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .contentViews .selected:hover ul a.state-pending, .contentViews .subnavbar .nav-list .selected:hover ul a.state-pending {
   border-right: 3px solid #df8505;
   color: #df8505;
 }
-/* line 115, ../scss/_nav.scss */
+/* line 116, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-intranet, .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .contentViews .selected ul a.state-intranet, .contentViews .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .contentViews .selected:hover ul a.state-intranet, .contentViews .subnavbar .nav-list .selected:hover ul a.state-intranet, .subnavbar .nav-list .active ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-publishtointranet, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-publishtointranet, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-publishtointranet {
   border-right: 3px solid #8952ab;
   color: #8952ab;
 }
-/* line 117, ../scss/_nav.scss */
+/* line 118, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a[class^="state-"]:hover, .subnavbar .nav-list .selected ul a[class^="state-"]:hover, .subnavbar .nav-list .contentViews .selected ul a[class^="state-"]:hover, .contentViews .subnavbar .nav-list .selected ul a[class^="state-"]:hover, .subnavbar .nav-list .contentViews .selected:hover ul a[class^="state-"]:hover, .contentViews .subnavbar .nav-list .selected:hover ul a[class^="state-"]:hover, .subnavbar .nav-list .active ul a[class*=" state-"]:hover, .subnavbar .nav-list .selected ul a[class*=" state-"]:hover, .subnavbar .nav-list .contentViews .selected ul a[class*=" state-"]:hover, .contentViews .subnavbar .nav-list .selected ul a[class*=" state-"]:hover, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" state-"]:hover, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" state-"]:hover {
   color: black;
   text-decoration: none;
 }
-/* line 121, ../scss/_nav.scss */
+/* line 122, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a span, .subnavbar .nav-list .selected ul a span, .subnavbar .nav-list .contentViews .selected ul a span, .contentViews .subnavbar .nav-list .selected ul a span, .subnavbar .nav-list .contentViews .selected:hover ul a span, .contentViews .subnavbar .nav-list .selected:hover ul a span {
   border-top: 1px solid #d9d9d9 !important;
   padding: 8px 0 8px 12px !important;
@@ -9817,7 +9832,7 @@ div.dk_options li.btn-menu-adjust > a:focus,
   margin-left: 10px;
   line-height: 15px;
 }
-/* line 128, ../scss/_nav.scss */
+/* line 129, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a span:before, .subnavbar .nav-list .selected ul a span:before, .subnavbar .nav-list .contentViews .selected ul a span:before, .contentViews .subnavbar .nav-list .selected ul a span:before, .subnavbar .nav-list .contentViews .selected:hover ul a span:before, .contentViews .subnavbar .nav-list .selected:hover ul a span:before {
   content: ".";
   color: #007bc0;
@@ -9827,7 +9842,7 @@ div.dk_options li.btn-menu-adjust > a:focus,
   font-size: 350%;
   line-height: 0 !important;
 }
-/* line 139, ../scss/_nav.scss */
+/* line 141, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected ul a[class^="contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class^="contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected ul a[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" contenttype-"] span:after {
   background-image: url('/++genweb++static/images/gh.png?1354788544');
   background-repeat: no-repeat;
@@ -9842,69 +9857,65 @@ div.dk_options li.btn-menu-adjust > a:focus,
   top: 12px;
   position: absolute;
 }
-/* line 152, ../scss/_nav.scss */
+/* line 154, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-folder span:after, .subnavbar .nav-list .selected ul a.contenttype-folder span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-folder span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-folder span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-folder span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-folder span:after {
   background-position: -384px -120px;
 }
-/* line 153, ../scss/_nav.scss */
+/* line 155, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-page span:after, .subnavbar .nav-list .selected ul a.contenttype-page span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-page span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-page span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-page span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-page span:after {
   background-position: -24px -24px;
 }
-/* line 154, ../scss/_nav.scss */
+/* line 156, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-link span:after, .subnavbar .nav-list .selected ul a.contenttype-link span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-link span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-link span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-link span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-link span:after {
   background-position: -72px -168px;
 }
-/* line 155, ../scss/_nav.scss */
+/* line 157, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-windowztool span:after, .subnavbar .nav-list .selected ul a.contenttype-windowztool span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-windowztool span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-windowztool span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-windowztool span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-windowztool span:after {
   background-position: -97px -168px;
 }
-/* line 157, ../scss/_nav.scss */
+/* line 159, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .selected ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-bannercontainer span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-bannercontainer span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .active ul a.contenttype-banner span:after, .subnavbar .nav-list .selected ul a.contenttype-banner span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-banner span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-banner span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-banner span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-banner span:after {
   background-position: -313px -25px;
 }
-/* line 158, ../scss/_nav.scss */
+/* line 160, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-topic span:after, .subnavbar .nav-list .selected ul a.contenttype-topic span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-topic span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-topic span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-topic span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-topic span:after {
   background-position: -72px -192px;
 }
-/* line 159, ../scss/_nav.scss */
+/* line 161, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-file span:after, .subnavbar .nav-list .selected ul a.contenttype-file span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-file span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-file span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-file span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-file span:after {
   background-position: -167px -168px;
 }
-/* line 160, ../scss/_nav.scss */
+/* line 162, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-image span:after, .subnavbar .nav-list .selected ul a.contenttype-image span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-image span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-image span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-image span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-image span:after {
   background-position: -457px -49px;
 }
-/* line 161, ../scss/_nav.scss */
+/* line 163, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .selected ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-plonepopoll span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-plonepopoll span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-plonepopoll span:after {
   background-position: -457px -193px;
 }
-/* line 163, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a:hover, .subnavbar .nav-list .selected ul a:hover, .subnavbar .nav-list .contentViews .selected ul a:hover, .contentViews .subnavbar .nav-list .selected ul a:hover, .subnavbar .nav-list .contentViews .selected:hover ul a:hover, .contentViews .subnavbar .nav-list .selected:hover ul a:hover {
-  background-color: #f2f8fc !important;
-}
-/* line 164, ../scss/_nav.scss */
+/* line 165, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a:hover span:after, .subnavbar .nav-list .selected ul a:hover span:after, .subnavbar .nav-list .contentViews .selected ul a:hover span:after, .contentViews .subnavbar .nav-list .selected ul a:hover span:after, .subnavbar .nav-list .contentViews .selected:hover ul a:hover span:after, .contentViews .subnavbar .nav-list .selected:hover ul a:hover span:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 166, ../scss/_nav.scss */
+/* line 167, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul li:first-child a span, .subnavbar .nav-list .selected ul li:first-child a span, .subnavbar .nav-list .contentViews .selected ul li:first-child a span, .contentViews .subnavbar .nav-list .selected ul li:first-child a span, .subnavbar .nav-list .contentViews .selected:hover ul li:first-child a span, .contentViews .subnavbar .nav-list .selected:hover ul li:first-child a span {
   border-top: 0 !important;
 }
 
-/* line 171, ../scss/_nav.scss */
+/* line 172, ../scss/_nav.scss */
 #portal-personaltools-wrapper .nav a:focus, #portal-personaltools-wrapper .contentViews a:focus, #portal-personaltools-wrapper .configlets a:focus, #portal-personaltools-wrapper .formTabs a:focus {
   background-color: black;
 }
 
-/* line 177, ../scss/_nav.scss */
+/* line 178, ../scss/_nav.scss */
 html * .dropdown-menu a:hover .img_blank, html * div.dk_options a:hover .img_blank {
   content: url('/++genweb++static/images/blank_blanc.png?1354788544');
   width: 10px;
   height: 10px;
 }
 
-/* line 184, ../scss/_nav.scss */
+/* line 185, ../scss/_nav.scss */
 .dropdown.nou::after {
   content: "!";
   border-radius: 500px;
@@ -9921,27 +9932,85 @@ html * .dropdown-menu a:hover .img_blank, html * div.dk_options a:hover .img_bla
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
 }
 
-/* line 199, ../scss/_nav.scss */
-#portal-personaltools-wrapper .pull-right .dropdown.nou::after, #portal-personaltools-wrapper .template-personal-information [for="form.portrait"] ~ img .dropdown.nou::after, .template-personal-information #portal-personaltools-wrapper [for="form.portrait"] ~ img .dropdown.nou::after, #portal-personaltools-wrapper .tileItem img .dropdown.nou::after, .tileItem #portal-personaltools-wrapper img .dropdown.nou::after {
+/* line 200, ../scss/_nav.scss */
+#portal-personaltools-wrapper .pull-right .dropdown.nou::after, #portal-personaltools-wrapper .template-personal-information [for="form.portrait"] img .dropdown.nou::after, .template-personal-information [for="form.portrait"] #portal-personaltools-wrapper img .dropdown.nou::after {
   top: 12px;
 }
 
-/* line 203, ../scss/_nav.scss */
+/* line 204, ../scss/_nav.scss */
 .navbar ul.nav.pull-right > li > .dropdown-menu, .navbar ul.pull-right.contentViews > li > .dropdown-menu, .navbar ul.pull-right.configlets > li > .dropdown-menu, .navbar ul.pull-right.formTabs > li > .dropdown-menu, .navbar ul.nav.pull-right > li > div.dk_options, .navbar ul.pull-right.contentViews > li > div.dk_options, .navbar ul.pull-right.configlets > li > div.dk_options, .navbar ul.pull-right.formTabs > li > div.dk_options {
   right: 0 !important;
   left: auto !important;
 }
 
-/* line 204, ../scss/_nav.scss */
+/* line 205, ../scss/_nav.scss */
 .navbar ul.nav.pull-right > li > .dropdown-menu:before, .navbar ul.pull-right.contentViews > li > .dropdown-menu:before, .navbar ul.pull-right.configlets > li > .dropdown-menu:before, .navbar ul.pull-right.formTabs > li > .dropdown-menu:before, .navbar ul.nav.pull-right > li > div.dk_options:before, .navbar ul.pull-right.contentViews > li > div.dk_options:before, .navbar ul.pull-right.configlets > li > div.dk_options:before, .navbar ul.pull-right.formTabs > li > div.dk_options:before {
   right: 9px !important;
   left: auto !important;
 }
 
-/* line 205, ../scss/_nav.scss */
+/* line 206, ../scss/_nav.scss */
 .navbar ul.nav.pull-right > li > .dropdown-menu:after, .navbar ul.pull-right.contentViews > li > .dropdown-menu:after, .navbar ul.pull-right.configlets > li > .dropdown-menu:after, .navbar ul.pull-right.formTabs > li > .dropdown-menu:after, .navbar ul.nav.pull-right > li > div.dk_options:after, .navbar ul.pull-right.contentViews > li > div.dk_options:after, .navbar ul.pull-right.configlets > li > div.dk_options:after, .navbar ul.pull-right.formTabs > li > div.dk_options:after {
   right: 10px !important;
   left: auto !important;
+}
+
+/* line 211, ../scss/_nav.scss */
+#listing-table a {
+  margin-left: 18px;
+}
+/* line 214, ../scss/_nav.scss */
+#listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before {
+  background-image: url('/++genweb++static/images/gh.png?1354788544');
+  background-repeat: no-repeat;
+  content: " ";
+  display: block;
+  height: 20px;
+  width: 20px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  position: absolute;
+}
+/* line 224, ../scss/_nav.scss */
+#listing-table a.contenttype-folder:before {
+  background-position: -384px -120px;
+}
+/* line 225, ../scss/_nav.scss */
+#listing-table a.contenttype-page:before {
+  background-position: -24px -24px;
+}
+/* line 226, ../scss/_nav.scss */
+#listing-table a.contenttype-link:before {
+  background-position: -72px -168px;
+}
+/* line 227, ../scss/_nav.scss */
+#listing-table a.contenttype-windowztool:before {
+  background-position: -97px -168px;
+}
+/* line 229, ../scss/_nav.scss */
+#listing-table a.contenttype-bannercontainer:before, #listing-table a.contenttype-banner:before {
+  background-position: -313px -25px;
+}
+/* line 230, ../scss/_nav.scss */
+#listing-table a.contenttype-topic:before {
+  background-position: -72px -192px;
+}
+/* line 231, ../scss/_nav.scss */
+#listing-table a.contenttype-file:before {
+  background-position: -167px -168px;
+}
+/* line 232, ../scss/_nav.scss */
+#listing-table a.contenttype-image:before {
+  background-position: -457px -49px;
+}
+/* line 233, ../scss/_nav.scss */
+#listing-table a.contenttype-plonepopoll:before {
+  background-position: -457px -193px;
+}
+/* line 235, ../scss/_nav.scss */
+#listing-table a:hover:before {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
 
 /* ABANS EREN LI */
@@ -11648,6 +11717,13 @@ h2.title-inverse i {
   background-image: url('/++genweb++static/images/gh-w.png?1354788544');
 }
 
+/* line 222, ../scss/_portlets.scss */
+#portlet-prefs {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 /* line 19, ../scss/_plone.scss */
 label {
   font-weight: bold;
@@ -11751,7 +11827,7 @@ input#title {
   display: inline;
 }
 
-/* line 145, ../scss/_plone.scss */
+/* line 149, ../scss/_plone.scss */
 .img-mask {
   display: block;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
@@ -11760,33 +11836,33 @@ input#title {
   margin-top: 6px;
   width: 222px;
 }
-/* line 150, ../scss/_plone.scss */
+/* line 154, ../scss/_plone.scss */
 .img-mask iframe {
   -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1354788544') no-repeat center center;
 }
 
-/* line 155, ../scss/_plone.scss */
+/* line 159, ../scss/_plone.scss */
 iframe {
   border: 0 !important;
   display: block !important;
 }
 
-/* line 161, ../scss/_plone.scss */
+/* line 165, ../scss/_plone.scss */
 #portal-sitemap > li {
   font-weight: bold;
   font-size: normal;
   margin-top: 30px;
 }
-/* line 166, ../scss/_plone.scss */
+/* line 170, ../scss/_plone.scss */
 #portal-sitemap > li > div {
   padding-bottom: 10px;
   border-bottom: 1px solid #b2b2b2;
 }
-/* line 170, ../scss/_plone.scss */
+/* line 174, ../scss/_plone.scss */
 #portal-sitemap > li a {
   color: #007bc0;
 }
-/* line 172, ../scss/_plone.scss */
+/* line 176, ../scss/_plone.scss */
 #portal-sitemap > li a:after {
   content: " ";
   position: relative;
@@ -11796,7 +11872,7 @@ iframe {
   background: url('/++genweb++static/images/gh.png?1354788544') -239px -143px no-repeat;
   margin-left: 5px;
 }
-/* line 183, ../scss/_plone.scss */
+/* line 187, ../scss/_plone.scss */
 #portal-sitemap ul {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -11809,7 +11885,7 @@ iframe {
   column-fill: auto;
   margin: 0;
 }
-/* line 189, ../scss/_plone.scss */
+/* line 193, ../scss/_plone.scss */
 #portal-sitemap ul > li {
   font-weight: bold;
   font-size: normal;
@@ -11820,59 +11896,65 @@ iframe {
   -moz-column-break-inside: avoid;
   column-break-inside: avoid;
 }
-/* line 199, ../scss/_plone.scss */
+/* line 203, ../scss/_plone.scss */
 #portal-sitemap ul > li > div {
   padding-bottom: 0;
   padding-top: 5px;
 }
-/* line 203, ../scss/_plone.scss */
+/* line 207, ../scss/_plone.scss */
 #portal-sitemap ul > li a {
   color: #004a74;
 }
-/* line 205, ../scss/_plone.scss */
+/* line 209, ../scss/_plone.scss */
 #portal-sitemap ul > li a:after {
   content: none;
 }
-/* line 210, ../scss/_plone.scss */
+/* line 214, ../scss/_plone.scss */
 #portal-sitemap ul ul {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   column-count: 1;
 }
-/* line 215, ../scss/_plone.scss */
+/* line 219, ../scss/_plone.scss */
 #portal-sitemap ul > li li {
   padding: 5px 9px;
   line-height: 12px;
   font-weight: normal;
   font-size: smaller;
 }
-/* line 222, ../scss/_plone.scss */
+/* line 226, ../scss/_plone.scss */
 #portal-sitemap ul > li li > div {
   padding-top: 0;
 }
-/* line 225, ../scss/_plone.scss */
+/* line 229, ../scss/_plone.scss */
 #portal-sitemap ul > li li a {
   color: #666666;
 }
 
-/* line 233, ../scss/_plone.scss */
+/* line 238, ../scss/_plone.scss */
+#dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3, #dashboard-portlets4 {
+  float: left;
+  margin-bottom: 18px;
+}
+
+/* line 241, ../scss/_plone.scss */
 .plone_jscalendar .dk_container {
   display: inline-block;
 }
 
-/* line 234, ../scss/_plone.scss */
+/* line 242, ../scss/_plone.scss */
 .plone_jscalendar .dk_toggle {
   width: 100px !important;
 }
 
-/* line 235, ../scss/_plone.scss */
+/* line 243, ../scss/_plone.scss */
 .plone_jscalendar .dk_options {
   min-width: 128px !important;
   width: 128px !important;
 }
 
 /* The main calendar widget.  DIV containing a table. */
-/* line 240, ../scss/_plone.scss */
+/* line 248, ../scss/_plone.scss */
 .calendar {
   position: relative;
   display: none;
@@ -11880,31 +11962,31 @@ iframe {
   border-radius: 5px;
 }
 
-/* line 241, ../scss/_plone.scss */
+/* line 249, ../scss/_plone.scss */
 .calendar table {
   background: #f2f2f2;
   border-radius: 5px;
   min-width: 222px;
 }
 
-/* line 242, ../scss/_plone.scss */
+/* line 250, ../scss/_plone.scss */
 .calendar .button {
   text-align: center;
   background: #f2f2f2;
 }
 
-/* line 243, ../scss/_plone.scss */
+/* line 251, ../scss/_plone.scss */
 .calendar .nav, .calendar .contentViews, .calendar .configlets, .calendar .formTabs {
   background: #f2f2f2 url(menuarrow.gif) no-repeat 100% 100%;
 }
 
-/* line 244, ../scss/_plone.scss */
+/* line 252, ../scss/_plone.scss */
 .calendar thead .title {
   font-weight: bold;
   text-align: center;
 }
 
-/* line 245, ../scss/_plone.scss */
+/* line 253, ../scss/_plone.scss */
 .calendar thead .name {
   border-bottom: 1px solid #b2b2b2;
   border-top: 1px solid #b2b2b2;
@@ -11912,113 +11994,113 @@ iframe {
   background: #f7f7f7;
 }
 
-/* line 246, ../scss/_plone.scss */
+/* line 254, ../scss/_plone.scss */
 .calendar thead .weekend {
   color: #c00;
 }
 
-/* line 247, ../scss/_plone.scss */
+/* line 255, ../scss/_plone.scss */
 .calendar thead .hilite {
   background: #cef;
 }
 
-/* line 248, ../scss/_plone.scss */
+/* line 256, ../scss/_plone.scss */
 .calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected, .contentViews .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
 
-/* line 249, ../scss/_plone.scss */
+/* line 257, ../scss/_plone.scss */
 .calendar tbody {
   background: #fff;
 }
 
-/* line 250, ../scss/_plone.scss */
+/* line 258, ../scss/_plone.scss */
 .calendar tbody .day {
   width: 2em;
   text-align: center;
   padding: 2px 0px;
 }
 
-/* line 251, ../scss/_plone.scss */
+/* line 259, ../scss/_plone.scss */
 .calendar tbody .day.othermonth {
   font-size: 80%;
   color: #aaa;
 }
 
-/* line 252, ../scss/_plone.scss */
+/* line 260, ../scss/_plone.scss */
 .calendar tbody .day.othermonth.oweekend {
   color: #faa;
 }
 
-/* line 253, ../scss/_plone.scss */
+/* line 261, ../scss/_plone.scss */
 .calendar table .wn {
   border-right: 1px solid #b2b2b2;
   background: #f7f7f7;
 }
 
-/* line 254, ../scss/_plone.scss */
+/* line 262, ../scss/_plone.scss */
 .calendar tbody .rowhilite td {
   background: #cef;
 }
 
-/* line 255, ../scss/_plone.scss */
+/* line 263, ../scss/_plone.scss */
 .calendar tbody td.hilite {
   background: #08c;
   color: white;
 }
 
-/* line 256, ../scss/_plone.scss */
+/* line 264, ../scss/_plone.scss */
 .calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected, .contentViews .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
 
-/* line 257, ../scss/_plone.scss */
+/* line 265, ../scss/_plone.scss */
 .calendar tbody td.selected {
   font-weight: bold;
   background: #08c;
   color: white;
 }
 
-/* line 258, ../scss/_plone.scss */
+/* line 266, ../scss/_plone.scss */
 .calendar tbody td.weekend {
   color: #c00;
 }
 
-/* line 259, ../scss/_plone.scss */
+/* line 267, ../scss/_plone.scss */
 .calendar tbody td.today {
   font-weight: bold;
   color: white;
   border-radius: 3px;
 }
 
-/* line 260, ../scss/_plone.scss */
+/* line 268, ../scss/_plone.scss */
 .calendar tbody td.disabled {
   color: gray;
 }
 
-/* line 262, ../scss/_plone.scss */
+/* line 270, ../scss/_plone.scss */
 .calendar tbody .emptyrow {
   display: none;
 }
 
-/* line 264, ../scss/_plone.scss */
+/* line 272, ../scss/_plone.scss */
 .calendar tfoot .ttip {
   background: #f7f7f7;
   border-top: 1px solid #b2b2b2;
   text-align: center;
 }
 
-/* line 265, ../scss/_plone.scss */
+/* line 273, ../scss/_plone.scss */
 .calendar tfoot .hilite {
   background-color: #cef !important;
 }
 
-/* line 266, ../scss/_plone.scss */
+/* line 274, ../scss/_plone.scss */
 .calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected, .contentViews .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
   background-color: #08c !important;
 }
 
-/* line 268, ../scss/_plone.scss */
+/* line 276, ../scss/_plone.scss */
 .calendar .combo {
   position: absolute;
   display: none;
@@ -12035,7 +12117,7 @@ iframe {
   z-index: 100;
 }
 
-/* line 285, ../scss/_plone.scss */
+/* line 293, ../scss/_plone.scss */
 .calendar .combo .label,
 .calendar .combo .label-IEfix {
   text-align: center;
@@ -12043,24 +12125,24 @@ iframe {
   padding: 1px;
 }
 
-/* line 291, ../scss/_plone.scss */
+/* line 299, ../scss/_plone.scss */
 .calendar .combo .label-IEfix {
   width: 4em;
 }
 
-/* line 295, ../scss/_plone.scss */
+/* line 303, ../scss/_plone.scss */
 .calendar .combo .active, .calendar .combo .selected, .calendar .combo .contentViews .selected, .contentViews .calendar .combo .selected, .calendar .combo .contentViews .selected:hover, .contentViews .calendar .combo .selected:hover {
   padding: 0px;
   border: 1px solid #000;
 }
 
-/* line 300, ../scss/_plone.scss */
+/* line 308, ../scss/_plone.scss */
 .calendar .combo .hilite {
   background: Highlight;
   color: HighlightText;
 }
 
-/* line 305, ../scss/_plone.scss */
+/* line 313, ../scss/_plone.scss */
 .calendar td.time {
   border-top: 1px solid ButtonShadow;
   padding: 1px 0px;
@@ -12068,7 +12150,7 @@ iframe {
   background-color: ButtonFace;
 }
 
-/* line 314, ../scss/_plone.scss */
+/* line 322, ../scss/_plone.scss */
 .calendar td.time .hour,
 .calendar td.time .minute,
 .calendar td.time .ampm {
@@ -12078,25 +12160,25 @@ iframe {
   background-color: Menu;
 }
 
-/* line 321, ../scss/_plone.scss */
+/* line 329, ../scss/_plone.scss */
 .calendar td.time .ampm {
   text-align: center;
 }
 
-/* line 325, ../scss/_plone.scss */
+/* line 333, ../scss/_plone.scss */
 .calendar td.time .colon {
   padding: 0px 2px 0px 3px;
   font-weight: bold;
 }
 
-/* line 330, ../scss/_plone.scss */
+/* line 338, ../scss/_plone.scss */
 .calendar td.time span.hilite {
   border-color: #000;
   background-color: Highlight;
   color: HighlightText;
 }
 
-/* line 336, ../scss/_plone.scss */
+/* line 344, ../scss/_plone.scss */
 .calendar td.time span.active, .calendar td.time span.selected, .calendar td.time .contentViews span.selected, .contentViews .calendar td.time span.selected, .calendar td.time .contentViews span.selected:hover, .contentViews .calendar td.time span.selected:hover {
   border-color: #f00;
   background-color: #000;
@@ -12154,7 +12236,7 @@ body, html {
 }
 
 /* line 21, ../scss/_animations.scss */
-#content, #portal-column-content {
+#content-area, #portal-column-content {
   -webkit-transition: border 0.5s ease-out, box-shadow 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out, box-shadow 0.5s ease-out;
   -moz-transition: border 0.5s ease-out, box-shadow 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out, box-shadow 0.5s ease-out;
   -o-transition: border 0.5s ease-out, box-shadow 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out, box-shadow 0.5s ease-out;
@@ -12249,8 +12331,8 @@ body, html {
 /* line 35, ../scss/_animations.scss */
 .simulated-mobile-view #portal-column-content,
 .simulated-tablet-view #portal-column-content,
-html.simulated-mobile-view #content:before,
-html.simulated-tablet-view #content:before {
+html.simulated-mobile-view #content-area:before,
+html.simulated-tablet-view #content-area:before {
   -webkit-animation-name: opacitat;
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
@@ -12564,7 +12646,7 @@ html.simulated-mobile-view #portal-column-one {
 }
 
 /* line 20, ../scss/_simulated-views.scss */
-html.simulated-mobile-view #content {
+html.simulated-mobile-view #content-area {
   margin: 50px auto !important;
   width: 340px;
   border: 2px solid #666666;
@@ -12580,14 +12662,14 @@ html.simulated-mobile-view #content {
 }
 
 /* line 21, ../scss/_simulated-views.scss */
-html.simulated-mobile-view #content .container {
+html.simulated-mobile-view #content-area .container {
   width: auto !important;
 }
 
 /* line 22, ../scss/_simulated-views.scss */
-html.simulated-mobile-view #portal-column-content {
+html.simulated-mobile-view #content {
   margin: 80px 10px 50px !important;
-  width: 320px;
+  width: 300px;
   background: white;
   padding: 10px;
   -webkit-border-radius: 4px;
@@ -12598,8 +12680,8 @@ html.simulated-mobile-view #portal-column-content {
 }
 
 /* line 23, ../scss/_simulated-views.scss */
-html.simulated-mobile-view #portal-column-content {
-  height: 480px;
+html.simulated-mobile-view #content {
+  height: 460px;
   overflow: scroll;
   -webkit-box-shadow: 0 0 1000px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0 0 1000px rgba(0, 0, 0, 0.8);
@@ -12607,13 +12689,13 @@ html.simulated-mobile-view #portal-column-content {
 }
 
 /* line 28, ../scss/_simulated-views.scss */
-html.simulated-mobile-view #portal-column-content .row-fluid [class*="span"], html.simulated-mobile-view #portal-column-content .template-atct_album_view #content-core [class*="span"], .template-atct_album_view html.simulated-mobile-view #portal-column-content #content-core [class*="span"] {
+html.simulated-mobile-view #portal-column-content .row-fluid [class*="span"], html.simulated-mobile-view #portal-column-content #dashboard [class*="span"], html.simulated-mobile-view #portal-column-content .template-atct_album_view #content-core [class*="span"], .template-atct_album_view html.simulated-mobile-view #portal-column-content #content-core [class*="span"] {
   width: 100%;
   margin: 0 !important;
 }
 
 /* line 29, ../scss/_simulated-views.scss */
-html.simulated-mobile-view #content:before {
+html.simulated-mobile-view #content-area:before {
   content: "Simulació bàsica sense capçalera ni peu només del contingut en iPhone.";
   color: white;
   text-shadow: 0 -1px black;
@@ -12628,12 +12710,12 @@ html.simulated-mobile-view #content:before {
 }
 
 /* line 42, ../scss/_simulated-views.scss */
-html[lang="es"].simulated-tablet-view #content:before {
+html[lang="es"].simulated-tablet-view #content-area:before {
   content: "Simulación básica sin cabezera ni pié sólo del contenido en iPhone.";
 }
 
 /* line 43, ../scss/_simulated-views.scss */
-html[lang="en"].simulated-tablet-view #content:before {
+html[lang="en"].simulated-tablet-view #content-area:before {
   content: "Basic simulation without header and footer, just the content in iPhone.";
 }
 
@@ -12672,9 +12754,9 @@ html.simulated-tablet-view #portal-column-one {
 }
 
 /* line 60, ../scss/_simulated-views.scss */
-html.simulated-tablet-view #content {
+html.simulated-tablet-view #content-area {
   margin: 50px auto !important;
-  width: 806px;
+  width: 786px;
   border: 2px solid #666666;
   background: #222222;
   -webkit-border-radius: 20px;
@@ -12688,14 +12770,14 @@ html.simulated-tablet-view #content {
 }
 
 /* line 61, ../scss/_simulated-views.scss */
-html.simulated-tablet-view #content .container {
+html.simulated-tablet-view #content-area .container {
   width: auto !important;
 }
 
 /* line 62, ../scss/_simulated-views.scss */
-html.simulated-tablet-view #portal-column-content {
+html.simulated-tablet-view #content {
   margin: 80px 10px 50px !important;
-  width: 786px;
+  width: 748px;
   background: white;
   padding: 10px;
   -webkit-border-radius: 4px;
@@ -12706,8 +12788,8 @@ html.simulated-tablet-view #portal-column-content {
 }
 
 /* line 63, ../scss/_simulated-views.scss */
-html.simulated-tablet-view #portal-column-content {
-  height: 1024px;
+html.simulated-tablet-view #content {
+  height: 1004px;
   overflow: scroll;
   -webkit-box-shadow: 0 0 1000px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0 0 1000px rgba(0, 0, 0, 0.8);
@@ -12715,7 +12797,7 @@ html.simulated-tablet-view #portal-column-content {
 }
 
 /* line 69, ../scss/_simulated-views.scss */
-html.simulated-tablet-view #content:before {
+html.simulated-tablet-view #content-area:before {
   content: "Simulació bàsica sense capçalera ni peu només del contingut en iPad Portrait.";
   color: white;
   text-shadow: 0 -1px black;
@@ -12729,24 +12811,34 @@ html.simulated-tablet-view #content:before {
 }
 
 /* line 81, ../scss/_simulated-views.scss */
-html[lang="es"].simulated-tablet-view #content:before {
+html[lang="es"].simulated-tablet-view #content-area:before {
   content: "Simulación básica sin cabezera ni pié sólo del contenido en iPad Portrait.";
 }
 
 /* line 82, ../scss/_simulated-views.scss */
-html[lang="en"].simulated-tablet-view #content:before {
+html[lang="en"].simulated-tablet-view #content-area:before {
   content: "Basic simulation without header and footer, just the content in iPad Portrait.";
 }
 
 /* line 87, ../scss/_simulated-views.scss */
-html.simulated-tablet-view #edit-bar, html.simulated-tablet-view .alert, html.simulated-tablet-view .portalMessage, html.simulated-tablet-view .portalMessage,
-html.simulated-mobile-view #edit-bar, html.simulated-mobile-view .alert, html.simulated-mobile-view .portalMessage, html.simulated-mobile-view .portalMessage {
+html.simulated-tablet-view #edit-bar, html.simulated-tablet-view .alert, html.simulated-tablet-view .portalMessage, html.simulated-tablet-view .portalMessage, html.simulated-tablet-view #viewlet-below-content,
+html.simulated-mobile-view #edit-bar, html.simulated-mobile-view .alert, html.simulated-mobile-view .portalMessage, html.simulated-mobile-view .portalMessag, html.simulated-mobile-view #viewlet-below-content {
   display: none;
 }
 
-/* line 94, ../scss/_simulated-views.scss */
-html.simulated-mobile-view #content:after,
-html.simulated-tablet-view #content:after {
+/* line 92, ../scss/_simulated-views.scss */
+html.simulated-mobile-view #content-area > .container > .row-fluid > div[class*="span"], html.simulated-mobile-view #content-area > .container > #dashboard > div[class*="span"], html.simulated-mobile-view .template-atct_album_view #content-area > .container > #content-core > div[class*="span"], .template-atct_album_view html.simulated-mobile-view #content-area > .container > #content-core > div[class*="span"],
+html.simulated-tablet-view #content-area > .container > .row-fluid > div[class*="span"],
+html.simulated-tablet-view #content-area > .container > #dashboard > div[class*="span"],
+html.simulated-tablet-view .template-atct_album_view #content-area > .container > #content-core > div[class*="span"],
+.template-atct_album_view html.simulated-tablet-view #content-area > .container > #content-core > div[class*="span"] {
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+/* line 98, ../scss/_simulated-views.scss */
+html.simulated-mobile-view #content-area:after,
+html.simulated-tablet-view #content-area:after {
   content: "\25A1";
   font-size: 300%;
   color: #aaaaaa;
@@ -12763,19 +12855,23 @@ html.simulated-tablet-view #content:after {
   margin-left: 145px;
 }
 
-/* line 107, ../scss/_simulated-views.scss */
-html.simulated-tablet-view #content:after {
+/* line 111, ../scss/_simulated-views.scss */
+html.simulated-tablet-view #content-area:after {
   margin-left: 350px;
 }
 
 /*
-html.simulated-mobile-view #content:hover:after,
-html.simulated-tablet-view #content:hover:after {
+html.simulated-mobile-view #content-area:hover:after,
+html.simulated-tablet-view #content-area:hover:after {
   background: $grayDark;
   cursor: pointer;
 }
 */
-/* line 116, ../scss/_simulated-views.scss */
+/* line 120, ../scss/_simulated-views.scss */
+div[id^="ascrail"] {
+  z-index: 1000 !important;
+}
+/* line 122, ../scss/_simulated-views.scss */
 div[id^="ascrail"] > div {
   cursor: pointer;
 }
@@ -12897,7 +12993,7 @@ html.lt-ie8 .list-portlet li {
 }
 /* line 33, ../scss/_upcnet.scss */
 .link-parent:before {
-  background: url('/++genweb++static/images/gh-w.png?1354788544') no-repeat -241px -96px;
+  background: url('/++genweb++static/images/gh-w.png?1354788544') no-repeat -290px -95px;
   content: " ";
   display: inline-block;
   height: 14px;
@@ -12924,17 +13020,18 @@ html.lt-ie8 .list-portlet li {
 }
 
 /* això no serveix per res però mira...*/
-/* line 110, ../scss/_upcnet.scss */
+/* line 108, ../scss/_upcnet.scss */
 .tileItem img {
+  float: right;
   margin-top: 1em;
 }
 
-/* line 113, ../scss/_upcnet.scss */
+/* line 111, ../scss/_upcnet.scss */
 .tileFooter:before {
   content: "";
 }
 
-/* line 118, ../scss/_upcnet.scss */
+/* line 116, ../scss/_upcnet.scss */
 .photoAlbumEntry a img {
   width: 100%;
 }

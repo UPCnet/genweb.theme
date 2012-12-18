@@ -17,16 +17,16 @@ html.simulated-mobile-view #bandaLogos,
 html.simulated-mobile-view #peu,
 html.simulated-mobile-view #canvia-vista,
 html.simulated-mobile-view #portal-column-one {display:none !important;}
-html.simulated-mobile-view #content {margin:50px auto !important; width:340px; border:2px solid $gray; background: $grayDarker; @include border-radius(20px);@include box-shadow(0 0 1000px rgba(0,0,0,.8));}
-html.simulated-mobile-view #content .container {width:auto !important;}
-html.simulated-mobile-view #portal-column-content {margin:80px 10px 50px !important; width:320px; background: $white; padding:10px; @include border-radius(4px);}
-html.simulated-mobile-view #portal-column-content {
-  height: 480px;
+html.simulated-mobile-view #content-area {margin:50px auto !important; width:340px; border:2px solid $gray; background: $grayDarker; @include border-radius(20px);@include box-shadow(0 0 1000px rgba(0,0,0,.8));}
+html.simulated-mobile-view #content-area .container {width:auto !important;}
+html.simulated-mobile-view #content {margin:80px 10px 50px !important; width:300px; background: $white; padding:10px; @include border-radius(4px);}
+html.simulated-mobile-view #content {
+  height: 460px;
   overflow: scroll;
   @include box-shadow(0 0 1000px rgba(0,0,0,.8));
 }
 html.simulated-mobile-view #portal-column-content .row-fluid [class*="span"] {width:100%; margin:0 !important;}
-html.simulated-mobile-view #content:before {
+html.simulated-mobile-view #content-area:before {
   content:"Simulació bàsica sense capçalera ni peu només del contingut en iPhone."; 
   color:$white;
   text-shadow:0 -1px black;
@@ -39,8 +39,8 @@ html.simulated-mobile-view #content:before {
   margin-left: 5px;
   margin-top: 10px;
 }
-html[lang="es"].simulated-tablet-view #content:before {content:"Simulación básica sin cabezera ni pié sólo del contenido en iPhone."; }
-html[lang="en"].simulated-tablet-view #content:before {content:"Basic simulation without header and footer, just the content in iPhone."; }
+html[lang="es"].simulated-tablet-view #content-area:before {content:"Simulación básica sin cabezera ni pié sólo del contenido en iPhone."; }
+html[lang="en"].simulated-tablet-view #content-area:before {content:"Basic simulation without header and footer, just the content in iPhone."; }
 
 //TAULETA
 html.simulated-tablet-view {background: $grayDark;}
@@ -57,16 +57,16 @@ html.simulated-tablet-view #bandaLogos,
 html.simulated-tablet-view #peu,
 html.simulated-tablet-view #canvia-vista,
 html.simulated-tablet-view #portal-column-one {display:none !important;}
-html.simulated-tablet-view #content {margin:50px auto !important; width:806px; border:2px solid $gray; background: $grayDarker; @include border-radius(20px);@include box-shadow(0 0 1000px rgba(0,0,0,.8));}
-html.simulated-tablet-view #content .container {width:auto !important;}
-html.simulated-tablet-view #portal-column-content {margin:80px 10px 50px !important; width:786px; background: $white; padding:10px; @include border-radius(4px);}
-html.simulated-tablet-view #portal-column-content {
-  height: 1024px;
+html.simulated-tablet-view #content-area {margin:50px auto !important; width:786px; border:2px solid $gray; background: $grayDarker; @include border-radius(20px);@include box-shadow(0 0 1000px rgba(0,0,0,.8));}
+html.simulated-tablet-view #content-area .container {width:auto !important;}
+html.simulated-tablet-view #content {margin:80px 10px 50px !important; width:748px; background: $white; padding:10px; @include border-radius(4px);}
+html.simulated-tablet-view #content {
+  height: 1004px;
   overflow: scroll;
   @include box-shadow(0 0 1000px rgba(0,0,0,.8));
 }
 //html.simulated-tablet-view #portal-column-content .row-fluid [class*="span"] {width:100%; margin:0 !important;}
-html.simulated-tablet-view #content:before {
+html.simulated-tablet-view #content-area:before {
   content:"Simulació bàsica sense capçalera ni peu només del contingut en iPad Portrait."; 
   color:$white;
   text-shadow:0 -1px black; 
@@ -78,20 +78,24 @@ html.simulated-tablet-view #content:before {
   margin-left: 5px;
   margin-top: 10px;
 }
-html[lang="es"].simulated-tablet-view #content:before {content:"Simulación básica sin cabezera ni pié sólo del contenido en iPad Portrait."; }
-html[lang="en"].simulated-tablet-view #content:before {content:"Basic simulation without header and footer, just the content in iPad Portrait."; }
+html[lang="es"].simulated-tablet-view #content-area:before {content:"Simulación básica sin cabezera ni pié sólo del contenido en iPad Portrait."; }
+html[lang="en"].simulated-tablet-view #content-area:before {content:"Basic simulation without header and footer, just the content in iPad Portrait."; }
 
 
 // ocultar elements d'edició
-html.simulated-tablet-view #edit-bar, html.simulated-tablet-view .alert, html.simulated-tablet-view .portalMessage,
-html.simulated-mobile-view #edit-bar, html.simulated-mobile-view .alert, html.simulated-mobile-view .portalMessage {
+html.simulated-tablet-view #edit-bar, html.simulated-tablet-view .alert, html.simulated-tablet-view .portalMessage, html.simulated-tablet-view #viewlet-below-content,
+html.simulated-mobile-view #edit-bar, html.simulated-mobile-view .alert, html.simulated-mobile-view .portalMessag, html.simulated-mobile-view #viewlet-below-content {
   display: none;
 }
-
+//ajusta posibles span previs
+html.simulated-mobile-view  #content-area > .container > .row-fluid > div[class*="span"],
+html.simulated-tablet-view  #content-area > .container > .row-fluid > div[class*="span"] {
+  margin-left:0 !important; width:100% !important;
+}
 
 // detallet
-html.simulated-mobile-view #content:after,
-html.simulated-tablet-view #content:after {
+html.simulated-mobile-view #content-area:after,
+html.simulated-tablet-view #content-area:after {
   content:"\25A1";
   font-size: 300%;
   color: $grayLight;
@@ -104,15 +108,18 @@ html.simulated-tablet-view #content:after {
   margin-left:145px;
 }
 
-html.simulated-tablet-view #content:after { margin-left:350px;}
+html.simulated-tablet-view #content-area:after { margin-left:350px;}
 /*
-html.simulated-mobile-view #content:hover:after,
-html.simulated-tablet-view #content:hover:after {
+html.simulated-mobile-view #content-area:hover:after,
+html.simulated-tablet-view #content-area:hover:after {
   background: $grayDark;
   cursor: pointer;
 }
 */
 
-div[id^="ascrail"] > div {
+div[id^="ascrail"] {
+  z-index: 1000 !important;
+  & > div {
   cursor: pointer;
+  }
 }
