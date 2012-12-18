@@ -17,7 +17,7 @@
               +34 93 401 63 12
             </tal:tel> -
             <a tal:attributes="href string:mailto:${dades/email|nothing}"
-               tal:content="dades/email">
+               tal:content="dades/email | nothing">
               info.alumni@upc.edu
             </a>
           </p>
