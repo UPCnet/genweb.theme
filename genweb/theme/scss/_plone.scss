@@ -93,12 +93,13 @@ div.label, label *.label {
 	background:$white;
 	text-shadow:none;
 	font-size: 100%;
+	color: $genwebTitles;
 	white-space: normal;
 }
 input#title {font-weight:bold}
 
-.template-personal-information [for="form.portrait"] img {
-	@extend .pull-right;
+.template-personal-information [for="form.portrait"] ~ img {
+	float:right;
 	@extend .img-polaroid;
 }
 
@@ -142,7 +143,7 @@ input#title {font-weight:bold}
 // PAGINATION
 // -----------------------
 .listingBar {@extend .pagination;}
-
+.listingBar li:only-child{ display:none !important;}
 
 // CONTACTE
 // -----------------------
@@ -236,6 +237,7 @@ iframe {border:0 !important; display: block !important;}
 // Dashboard
 #dashboard {@extend .row-fluid;}
 #dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3, #dashboard-portlets4 {@extend .span3; float:left; margin-bottom: $baseLineHeight;}
+#dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3 {margin-right: 30px;}
 
 // plone_jscalendar
 .plone_jscalendar .dk_container {display: inline-block;}

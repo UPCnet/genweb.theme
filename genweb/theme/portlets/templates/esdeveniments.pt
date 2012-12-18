@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+  <div class="portlet portlet-esdeveniments"
+         i18n:domain="plone">
+        <h2>Agenda <i class="icon-calendar large-icon pull-right"></i></h2>
+        <ul class="unstyled">
+            <tal:events tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                                DateTime python:modules['DateTime'].DateTime"
+                        tal:repeat="obj view/published_events">
+                <li tal:define="plone_view context/@@plone;
+                                item_startdate python:toLocalizedTime(obj.start);
+                                startday python:view.getDay(obj.start);
+                                endday python:view.getDay(obj.end);
+                                startmonth python:view.getMonth(obj.start);
+                                endmonth python:view.getMonth(obj.end);
+                                sameday python:view.sameDay(obj)">
+
+                    <a href="#"
+                       tal:attributes="href obj/getURL">
+                        <span tal:replace="obj/pretty_title_or_id">
+                            Some Event
+                        </span>
+                    </a>
+                    <time class="smaller"
+                          tal:attributes="datetime item_startdate">
+                        <span tal:content="startday">28</span>
+                        <abbr rel="tooltip"
+                              data-placement="left"
+                              tal:attributes="data-original-title startmonth">
+                            <span tal:content="startmonth">set.</span>
+                        </abbr>
+                    </time>
+                    <span tal:condition="not: sameday">
+                        <time class="smaller"
+                              tal:attributes="datetime item_startdate">
+                            <span tal:content="python: ' - ' + endday">28</span>
+                            <abbr rel="tooltip"
+                                  data-placement="left"
+                                  tal:attributes="data-original-title endmonth">
+                                <span tal:content="endmonth">set.</span>
+                            </abbr>
+                        </time>
+                    </span>
+                </li>
+            </tal:events>
+        </ul>
+        <a href="" class="portlet-footer" tal:attributes="href view/all_events_link" i18n:translate="XXXXbox_upcoming_events">
+           Més esdeveniments
+        </a>
+  </div>
+</html>

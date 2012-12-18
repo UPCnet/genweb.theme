@@ -9,8 +9,8 @@ $(document).ready(function () {
   if ($(window).width() < 640 ) {
     $(document).scrollTop( $("content").offset().top );
   }
-  $('[type="checkbox"]').customInput();
-  $('[type="radio"]').customInput();
+  $('.custom-chekbox[type="checkbox"]').customInput();
+  $('.custom-radio[type="radio"]').customInput();
 
   // inicialitzacions dels tooltips i popovers
   $('[rel="tooltip"]').tooltip();

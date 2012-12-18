@@ -21,4 +21,13 @@
      addview=".homepage.AddForm"
      />
 
+    <plone:portlet
+     name="genweb.portlets.esdeveniments"
+     interface=".esdeveniments.IEsdevenimentsPortlet"
+     assignment=".esdeveniments.Assignment"
+     renderer=".esdeveniments.Renderer"
+     addview=".esdeveniments.AddForm"
+     editview=".esdeveniments.EditForm"
+     />
+
 </configure>
