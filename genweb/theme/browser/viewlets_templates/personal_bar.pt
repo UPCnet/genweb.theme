@@ -1,3 +1,4 @@
+
 <tal:personaltools condition="not: view/anonymous">
 <h1 class="goout"> Eines d'usuari </h1>
 <nav id="portal-personaltools-wrapper"
@@ -15,7 +16,7 @@
               <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
                 <img tal:attributes="src string:${view/portal_url}/++genweb++static/images/user.png"
                      alt=""
-                     class="user">
+                     class="user" />
                 <tal:username content="view/user_name"> Rafael Ojeda Rojas </tal:username>
                 <b class="caret"></b>
               </a>

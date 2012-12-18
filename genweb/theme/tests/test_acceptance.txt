@@ -25,6 +25,7 @@ Log in as manager
     ${TEST_USER_NAME} =  Get site owner name
     ${TEST_USER_PASSWORD} =  Get site owner password
     Go to  http://localhost:55001/plone/login_form
+    Click Element  link=Log in only in this site
     Page should contain element  __ac_name
     Input text  __ac_name  ${TEST_USER_NAME}
     Input text  __ac_password  ${TEST_USER_PASSWORD}

@@ -84,7 +84,7 @@
         <div tal:replace="structure provider:plone.portaltop" />
 </tal:portaltop>
 
-<section id="content">
+<section id="content-area">
   <div class="container">
         <div class="row-fluid">
             <tal:notajax tal:condition="not:ajax_load">
@@ -99,7 +99,7 @@
             </tal:notajax>
 
             <tal:comment content="nothing"> <!-- Supposing there is no right portlet column --> </tal:comment>
-            <div tal:attributes="class python:sl and 'span9' or 'span12'">
+            <div id="portal-column-content" tal:attributes="class python:sl and 'span9' or 'span12'">
 
                 <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" tal:condition="not:ajax_load" />
 

@@ -1,18 +1,55 @@
-<footer id="peu">
+<footer id="peu"
+        tal:define="dades context/@@genweb.utils/getDadesUnitat"
+        i18n:domain="genweb">
   <div class="container">
     <div class="row-fluid">
       <div class="span8">
         <p>&copy; <a href="http://www.upc.edu"><abbr rel="tooltip" data-placement="top" title="Universitat Politècnica de Catalunya · BarcelonaTech">UPC</abbr> <img class="img_blank" src="/++genweb++static/images/blank_blau.png" alt="(obriu en finestra nova)"></a>. Servei de Comunicació i Promoció</p>
         <address>
-          <p>Edifici Til·lers. Jordi Girona, 31. 08011 Barcelona - <abbr rel="tooltip" data-placement="top" title="Telèfon">Tel.</abbr>: +34 93 401 63 12 - <a href="mailto:info.alumni@upc.edu">info.alumni@upc.edu</a></p>
+          <p>
+            <tal:adreca content="python:dades.get(u'adreça', None)">
+              Edifici Til·lers. Jordi Girona, 31. 08011 Barcelona
+            </tal:adreca> -
+            <abbr rel="tooltip" data-placement="top" title="Telèfon">
+              Tel.
+            </abbr> :
+            <tal:tel content="dades/telefon | nothing">
+              +34 93 401 63 12
+            </tal:tel> -
+            <a tal:attributes="href string:mailto:${dades/email|nothing}"
+               tal:content="dades/email">
+              info.alumni@upc.edu
+            </a>
+          </p>
         </address>
       </div>
       <div class="span4">
         <h2 class="goout"> Sobre el web </h2>
-        <ul class="pull-right sobreElWeb">
-          <li><a href="#"><abbr rel="tooltip" data-placement="top" title="Really Simple Sindication">RSS</abbr></a></li>
-          <li><a href="#" accesskey="8">Sobre aquest web</a></li>
-          <li><a href="#" accesskey="0">Accessibilitat</a></li>
+        <ul class="pull-right sobreElWeb"
+            tal:define="link viewlet/getLinksPeu">
+          <li>
+            <a href="#"
+               tal:attributes="href link/rss">
+              <abbr rel="tooltip" data-placement="top" title="Really Simple Sindication"
+                    i18n:translate="genweb-rss">
+                      RSS
+              </abbr>
+            </a>
+          </li>
+          <li>
+            <a href="#" accesskey="8"
+               tal:attributes="href link/about"
+               i18n:translate="genweb-sobre_aquest_web">
+                Sobre aquest web
+            </a>
+          </li>
+          <li>
+            <a href="#" accesskey="0"
+               tal:attributes="href link/accessibility"
+               i18n:translate="genweb-accessibility">
+                Accessibilitat
+            </a>
+          </li>
           <li class="amunt"><a href="#portal-header" rel="tooltip" data-placement="top" title="Inici de la pàgina"><img src="/++genweb++static/images/amunt.png" alt="Inici de la pàgina"></a></li>
         </ul>
       </div>

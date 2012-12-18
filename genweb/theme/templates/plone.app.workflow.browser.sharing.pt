@@ -43,7 +43,7 @@
 
             <input type="hidden" name="form.submitted:boolean" value="True" />
 
-            <div class="field">
+            <div class="field input-append">
                 <input type="text"
                        id="sharing-user-group-search"
                        size="30"
@@ -163,11 +163,12 @@
                 indicates a global role, which is managed by the site administrator.
             </div>
         </div>
-
+          <div class="formControls">
             <input id="sharing-save-button" class="context allowMultiSubmit" type="submit" name="form.button.Save" value="Save" i18n:attributes="value label_save" />
             <input class="standalone" type="submit" name="form.button.Cancel" value="Cancel" i18n:attributes="value label_cancel"/>
 
             <input tal:replace="structure context/@@authenticator/authenticator" />
+          </div>
 
         </form>
     </div>

@@ -3,7 +3,7 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       metal:use-macro="context/main_template/macros/master"
-      i18n:domain="plone">
+      i18n:domain="genweb">
 
 <head>
     <metal:js fill-slot="javascript_head_slot">
@@ -70,14 +70,18 @@
             Since cookie authentication is disabled, cookie-based login is not available.
         </div>
 
-        <p class="documentDescription">Identifiqueu-vos amb el nom d'usuari de la Intranet UPC.</p>
-        <div class="accordion margin0" id="accordionLogin">
+        <p class="documentDescription margin0"
+           i18n:translate="genweb-heading_sign_in-v4">
+           Please log in using your UPC intranet user.
+        </p>
+        <div class="accordion xafa4 pad" id="accordionLogin">
 
           <div class="accordion-group">
             <div class="accordion-heading box-gradient">
               <a class="accordion-toggle" href="http://cas.upc.edu"
                  tal:attributes="href context/cas_login_url | nothing">
-                <strong>Entra amb la identificació única UPC
+                <strong>
+                  <tal:entra i18n:translate="genweb-single-sign-on-v4">Single sign on log in</tal:entra>
                   <img class="img_blank" src="++genweb++static/images/blank_blau.png"
                        i18n:attributes="alt obrir_link_finestra_nova">
                 </strong>
@@ -89,7 +93,7 @@
           <div class="accordion-group">
             <div class="accordion-heading box-gradient">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionLogin" href="#colapsible-login">
-                <strong>Identifica't només a aquest web</strong>
+                <strong i18n:translate="genweb_loginlocal">Log in only in this site</strong>
              </a>
             </div>
             <div id="colapsible-login" class="accordion-body collapse box-gradient">
@@ -144,7 +148,9 @@
                   <div class="control-group"
                        tal:define="error python:errors.get(ac_name, None);"
                        tal:attributes="class python:test(error, 'control-group error', 'control-group')">
-                    <label class="control-label" for="inputEmail">Nom d'usuari</label>
+                    <label class="control-label" for="inputEmail"
+                           i18n:domain="plone"
+                           i18n:translate="label_login_name">Username</label>
                     <div class="controls">
                       <input type="text" id="inputEmail" placeholder="nom.usuari"
                              tal:attributes="name ac_name;
@@ -157,7 +163,9 @@
                   <div class="control-group"
                        tal:define="error python:errors.get(ac_password, None);"
                        tal:attributes="class python:test(error, 'control-group error', 'control-group')">
-                    <label class="control-label" for="inputPassword">Contrasenya</label>
+                    <label class="control-label" for="inputPassword"
+                           i18n:domain="plone"
+                           i18n:translate="label_password">Password</label>
                     <div class="controls">
                       <input type="password" id="inputPassword" placeholder="contrasenya"
                              tal:attributes="name ac_password">
@@ -169,9 +177,22 @@
                   <div class="control-group margin0">
                     <div class="controls">
                       <button type="submit" name="submit" class="btn btn-primary"
-                              i18n:translate="label_log_in">Entra</button>
-                      <h2 class="l">Heu oblidat la contrasenya?</h2>
-                      <p class="s margin0">Si heu oblidat la contrasenya, cliqueu per <a href="#">recuperar-la</a></p>
+                              i18n:domain="plone"
+                              i18n:translate="label_log_in">Log in</button>
+                      <h2 class="l"
+                          i18n:translate="genweb-si_heu_oblidat_la_contrasenya_question">
+                          Have you forgotten your password?
+                      </h2>
+                      <p class="s margin0"
+                         i18n:translate="genweb-si_heu_oblidat_la_contrasenya">
+                          If you have forgotten your password,
+                          <tal:recuperarla i18n:name="click_here">
+                            <a tal:attributes="href string:${portal_url}/canvidecontrasenya"
+                               i18n:translate="genweb-per_recuperarla">
+                                click here to retrieve it
+                            </a>
+                          </tal:recuperarla>
+                      </p>
                     </div>
                   </div>
                 </form>

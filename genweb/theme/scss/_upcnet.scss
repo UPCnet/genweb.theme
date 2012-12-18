@@ -31,7 +31,7 @@
     font-weight: bold;
     margin-bottom: 1em;
     &:before {
-        background: image-url("gh-w.png") no-repeat -241px -96px;
+        background: image-url("gh-w.png") no-repeat -290px -95px;
         content: " ";
         display: inline-block;
         height: 14px;
@@ -101,14 +101,12 @@
 //FITXERS
 .thumb-img img {
     @extend .thumbnail;
-    &:hover {@extend .thumbnail:hover;}
 }
 
 
 // VISTES
-.tileItem {
-    & img {@extend .img-polaroid; @extend .pull-right; margin-top: 1em;}
-}
+.tileItem img {@extend .img-polaroid; float:right; margin-top: 1em;}
+
 .tileHeadline { @extend .xxl; @extend .liniaDalt;}
 .tileFooter:before { content:"";  @extend [class^="icon-"]; @extend .icon-plus-sign;}
 
