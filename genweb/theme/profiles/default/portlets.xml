@@ -1,12 +1,8 @@
 <?xml version="1.0"?>
 <portlets>
     <portlet title="Homepage" addview="genweb.portlets.homepage"
-<<<<<<< HEAD
-        description="Pàgina d'inci"/>
+       description="Pàgina d'inci"/>
     <portlet title="AgendaXXXXXXX" addview="genweb.portlets.esdeveniments"
         description="Agenda d'esdeveniments"/>
 </portlets>
-=======
-        description="Pàgina principal"/>
-</portlets>
->>>>>>> c5bf404ce2dbde5455efe1b857b2ff7a8f0dbaf3
+
