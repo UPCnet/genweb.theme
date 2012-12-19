@@ -12,13 +12,13 @@
           </a>
             .
             <tal:signatura
-              content="python:getattr(viewlet.genweb_config, 'signatura_unitat_%s' % viewlet.pref_lang(), u'Servei de Comunicació i Promoció.')">
+              content="python:getattr(viewlet.genweb_config(), 'signatura_unitat_%s' % viewlet.pref_lang(), '')">
                 Servei de Comunicació i Promoció
             </tal:signatura>
         </p>
         <address>
-          <p tal:condition="python: dades and not dades.get('error', '')">
-            <tal:adreca content="python:dades.get(u'adreça', None)">
+          <p tal:condition="python:dades and not dades.get('error', '')">
+            <tal:adreca content="python:dades.get(u'adreça', '')">
               Edifici Til·lers. Jordi Girona, 31. 08011 Barcelona
             </tal:adreca> -
             <abbr rel="tooltip" data-placement="top" title="Telèfon">

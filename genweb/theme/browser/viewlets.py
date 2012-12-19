@@ -79,7 +79,8 @@ class gwHeader(viewletBase):
             return 'l3-image'
 
     def show_login(self):
-        return not self.genweb_config().amaga_identificacio
+        isAnon = getMultiAdapter((self.context, self.request), name='plone_portal_state').anonymous()
+        return not self.genweb_config().amaga_identificacio and isAnon
 
     def show_directory(self):
         return self.genweb_config().directori_upc
@@ -93,7 +94,7 @@ class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
     index = ViewPageTemplateFile('viewlets_templates/sections.pt')
 
     def show_menu(self):
-        return self.genweb_config().treu_menu_horitzontal and self.portal_tabs
+        return not self.genweb_config().treu_menu_horitzontal and self.portal_tabs
 
 
 class gwPathBarViewlet(PathBarViewlet, viewletBase):
@@ -198,7 +199,7 @@ class TitleViewlet(TitleViewlet, viewletBase):
         page_title = escape(safe_unicode(context_state.object_title()))
         portal_title = escape(safe_unicode(portal_state.navigation_root_title()))
 
-        genweb_title = getattr(self.genweb_config(), 'titolespai_%s' % self.pref_lang(), 'Genweb UPC')
+        genweb_title = getattr(self.genweb_config(), 'html_title_%s' % self.pref_lang(), 'Genweb UPC')
         genweb_title = escape(safe_unicode(re.sub(r'(<.*?>)', r'', genweb_title)))
 
         marca_UPC = escape(safe_unicode(u"UPC. Universitat Politècnica de Catalunya · BarcelonaTech"))
