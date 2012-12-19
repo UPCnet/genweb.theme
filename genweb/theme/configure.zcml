@@ -18,6 +18,7 @@
   <include package=".browser" />
   <include package=".portlets" />
 
+  <cmf:registerDirectory name="genwebtheme_images" recursive="True" />
   <cmf:registerDirectory name="genwebtheme_custom" recursive="True" />
 
   <include package="plone.resource" file="meta.zcml"/>

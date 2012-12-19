@@ -4,9 +4,20 @@
   <div class="container">
     <div class="row-fluid">
       <div class="span8">
-        <p>&copy; <a href="http://www.upc.edu"><abbr rel="tooltip" data-placement="top" title="Universitat Politècnica de Catalunya · BarcelonaTech">UPC</abbr> <img class="img_blank" src="/++genweb++static/images/blank_blau.png" alt="(obriu en finestra nova)"></a>. Servei de Comunicació i Promoció</p>
+        <p>&copy;
+          <a href="http://www.upc.edu">
+            <abbr rel="tooltip" data-placement="top" title="Universitat Politècnica de Catalunya · BarcelonaTech">UPC</abbr>
+            <img class="img_blank" src="/++genweb++static/images/blank_blau.png"
+                 i18n:attributes="alt obrir_link_finestra_nova">
+          </a>
+            .
+            <tal:signatura
+              content="python:getattr(viewlet.genweb_config, 'signatura_unitat_%s' % viewlet.pref_lang(), u'Servei de Comunicació i Promoció.')">
+                Servei de Comunicació i Promoció
+            </tal:signatura>
+        </p>
         <address>
-          <p>
+          <p tal:condition="python: dades and not dades.get('error', '')">
             <tal:adreca content="python:dades.get(u'adreça', None)">
               Edifici Til·lers. Jordi Girona, 31. 08011 Barcelona
             </tal:adreca> -

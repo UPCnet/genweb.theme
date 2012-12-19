@@ -58,7 +58,9 @@
             Servei de <b>Comunicació i Promoció</b>
           </span>
           <img alt="" class="logoPropi pull-right"
-               tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/logoPropi.png">
+               tal:attributes="src string:${viewlet/portal_url}/logoPropi.png;
+                               alt python:getattr(viewlet.genweb_config, 'signatura_unitat_%s' % viewlet.pref_lang(), u'Servei de Comunicació i Promoció.');
+                               title python:getattr(viewlet.genweb_config, 'signatura_unitat_%s' % viewlet.pref_lang(), u'Servei de Comunicació i Promoció.')">
       </a>
     </h1>
   </div>
