@@ -1,0 +1,160 @@
+# -*- coding: utf-8 -*-
+import re
+from cgi import escape
+from Acquisition import aq_inner
+
+from zope import schema
+from zope.interface import Interface
+from zope.component import getUtility
+from z3c.form import form, field, button
+
+from plone.z3cform.layout import wrap_form, FormWrapper
+
+from Products.statusmessages.interfaces import IStatusMessage
+from Products.CMFCore.utils import getToolByName
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from Products.CMFPlone import PloneMessageFactory as _
+from Products.CMFPlone.utils import safe_unicode
+from Products.CMFCore.interfaces import ISiteRoot
+
+from upc.genweb.recaptcha.widget import ReCaptchaFieldWidget
+
+
+# Define a valiation method for email addresses
+class NotAnEmailAddress(schema.ValidationError):
+    __doc__ = _(u"Invalid email address")
+
+check_email = re.compile(r"[a-zA-Z0-9._%-]+@([a-zA-Z0-9-]+\.)*[a-zA-Z]{2,4}").match
+
+
+def validate_email(value):
+    if not check_email(value):
+        raise NotAnEmailAddress(value)
+    return True
+
+MESSAGE_TEMPLATE = """\
+Enquiry from: %(name)s <%(email_address)s>
+
+%(message)s
+"""
+
+
+class IContactForm(Interface):
+    """Define the fields of our form
+    """
+
+    nombre = schema.TextLine(title=_('label_sender_fullname', default=u"Name"),
+                             description=_("help_sender_fullname", default="Please enter your full name."),
+                             required=True)
+
+    destinatario = schema.TextLine(title=_('label_sender_from_address', default=u"E-Mail"),
+                                   description=_("help_sender_from_address", default="Please enter your e-mail address."),
+                                   required=True,
+                                   constraint=validate_email)
+
+    asunto = schema.TextLine(title=_('label_subject', default="Subject"),
+                             description=_("help_subject", default="Please enter the subject of the message you want to send."),
+                             required=True)
+
+    mensaje = schema.Text(title=_('label_message', default="Message"),
+                          description=_("help_message", default="Please enter the message you want to send."),
+                          required=True)
+
+    captcha = schema.TextLine(title=_('Type the code', default="Type the code"),
+                              description=_('Type the code from the picture shown below', default="Type the code from the picture shown below"),
+                              required=True)
+
+#z3c.form.validator.WidgetValidatorDiscriminators(upc.genweb.recaptcha.validator.ReCaptchaValidator, field=IContactForm['captcha'])
+
+
+class Contact(object):
+    nombre = u""
+    destinatario = u""
+    asunto = u""
+    mensaje = u""
+    captcha = u""
+
+    def __init__(self, context):
+        self.context = context
+
+
+class ContactBaseForm(form.Form):
+    fields = field.Fields(IContactForm)
+    fields['captcha'].widgetFactory = ReCaptchaFieldWidget
+
+    # This trick hides the editable border and tabs in Plone
+    def __call__(self):
+        self.request.set('disable_border', True)
+        return super(ContactForm, self).__call__()
+
+    def get_email_from_name(self):
+        return getUtility(ISiteRoot).email_from_name
+
+    destinatario = property(get_email_from_name)
+
+    @button.buttonAndHandler(_(u"Send"))
+    def action_send(self, action):
+        """Send the email to the configured mail address in properties and redirect to the
+        front page, showing a status message to say the message was received.
+        """
+        data, errors = self.extractData()
+        if 'recaptcha_response_field' in self.request.keys():
+            # Verify the user input against the captcha
+            if self.context.restrictedTraverse('@@recaptcha').verify():
+                pass
+            else:
+                return
+        else:
+            return
+
+        if not 'asunto' in data or \
+           not 'destinatario' in data or \
+           not 'mensaje' in data or \
+           not 'nombre' in data:
+            return
+
+        context = aq_inner(self.context)
+        mailhost = getToolByName(context, 'MailHost')
+        urltool = getToolByName(context, 'portal_url')
+        proptool = getToolByName(context, 'portal_properties')
+        portal = urltool.getPortalObject()
+        email_charset = portal.getProperty('email_charset')
+
+        to_address = portal.getProperty('email_from_address')
+        from_name = portal.getProperty('email_from_name')
+        titulo_web = portal.getProperty('title')
+
+        str = "Heu rebut aquest correu perquè en/na"
+        str1 = "l'espai"
+        source = "%s <%s>" % (escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['destinatario'])))
+        subject = "[Formulari Contacte] %s" % (escape(safe_unicode(data['asunto'])))
+        message = "%s %s %s ha\nenviat comentaris sobre %s Genweb que administreu a\n%s.\n\nEl missatge es:\n\n%s\n--\n%s" % (escape(safe_unicode(str)), escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['destinatario'])), escape(safe_unicode(str1)), portal.absolute_url(), escape(safe_unicode(data['mensaje'])), from_name)
+
+        mailhost.secureSend(message, to_address, source,
+                            subject=subject, subtype='plain',
+                            charset=email_charset, debug=False,
+                            )
+
+        confirm = _(u"Mail sent.")
+        IStatusMessage(self.request).addStatusMessage(confirm, type='info')
+
+        self.request.response.redirect('contact_feedback')
+
+        return ''
+
+
+class ContactForm(FormWrapper):
+    form = ContactBaseForm
+    index = ViewPageTemplateFile('views_templates/contact-info.pt')
+
+    def pref_lang(self):
+        """ Extracts the current language for the current user
+        """
+        lt = getToolByName(self.context, 'portal_languages')
+        return lt.getPreferredLanguage()
+
+    def getURLDirectori(self, codi):
+        return "http://directori.upc.edu/directori/dadesUE.jsp?id=%s" % codi
+
+    def getURLMaps(self, codi):
+        return "http://maps.upc.edu/new/index.php/embed?iu=%s" % codi
