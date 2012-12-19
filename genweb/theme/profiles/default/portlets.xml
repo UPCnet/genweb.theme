@@ -4,5 +4,7 @@
        description="Pàgina d'inci"/>
     <portlet title="AgendaXXXXXXX" addview="genweb.portlets.esdeveniments"
         description="Agenda d'esdeveniments"/>
+    <portlet title="NoticiesPropi" addview="genweb.portlets.news"
+        description="Portlet de Noticies Propi"/>
 </portlets>
 
