@@ -12,7 +12,7 @@
           </a>
             .
             <tal:signatura
-              content="python:getattr(viewlet.genweb_config, 'signatura_unitat_%s' % viewlet.pref_lang(), u'Servei de Comunicació i Promoció.')">
+              content="python:getattr(viewlet.genweb_config(), 'signatura_unitat_%s' % viewlet.pref_lang(), '')">
                 Servei de Comunicació i Promoció
             </tal:signatura>
         </p>
