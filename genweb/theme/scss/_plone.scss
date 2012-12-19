@@ -33,12 +33,14 @@ label {
 	@extend .clearfix;
 }
 // botons
+
+.standalone, button:not(.close), input[value^="Cancel"], [type="submit"] {
+  @extend .btn;
+}
+
 .context {
   @extend .btn;
   @extend .btn-primary;
-}
-.standalone, input[value^="Cancel"] {
-  @extend .btn;
 }
 
 //formularis
@@ -232,6 +234,10 @@ iframe {border:0 !important; display: block !important;}
 			}			
 		}
 	}
+}
+// configuració  de lloc. detallets
+#recordsTable {table-layout: fixed;
+	td {word-break: break-all;}
 }
 
 // Dashboard

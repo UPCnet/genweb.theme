@@ -2,7 +2,9 @@
 // MIDES SAMARRETA
 // ------------------------- 
 */
-h1, h2, h3 {color:$genwebTitles;}
+h1, h2, h3 {color:$genwebTitles; margin-top:$baseLineHeight*3/2;}
+h1:first-child, h2:first-child, h3:first-child {margin-top:$baseLineHeight/2;}
+
 
 *.xxxl 	{	font-size: 153.846154% !important; line-height: ($baseLineHeight / 2 * 3);}
 *.xxl 	{	font-size: 130.769231% !important; line-height: $baseLineHeight;} 

@@ -4,7 +4,7 @@ $(document).ready(function () {
 
   // custom file input, checkboxes i radios
   $('[type=file]').customFileInput();
-  $('select').dropkick();
+  $('select:not([multiple])').dropkick();
   $('ul.dk_options_inner').addClass('scrollable');
   if ($(window).width() < 640 ) {
     $(document).scrollTop( $("content").offset().top );
