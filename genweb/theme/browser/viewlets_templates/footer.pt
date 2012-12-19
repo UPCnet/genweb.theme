@@ -1,6 +1,5 @@
 <footer id="peu"
-        tal:define="utils context/@@genweb.utils;
-                    dades utils/getDadesUnitat"
+        tal:define="dades context/@@genweb.utils/getDadesUnitat"
         i18n:domain="genweb">
   <div class="container">
     <div class="row-fluid">
@@ -18,8 +17,8 @@
             </tal:signatura>
         </p>
         <address>
-          <p tal:condition="python: dades and not dades.get('error', '')">
-            <tal:adreca content="python:dades.get(u'adreça', None)">
+          <p tal:condition="python:dades and not dades.get('error', '')">
+            <tal:adreca content="python:dades.get(u'adreça', '')">
               Edifici Til·lers. Jordi Girona, 31. 08011 Barcelona
             </tal:adreca> -
             <abbr rel="tooltip" data-placement="top" title="Telèfon">
