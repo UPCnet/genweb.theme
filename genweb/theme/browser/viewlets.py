@@ -200,6 +200,8 @@ class TitleViewlet(TitleViewlet, viewletBase):
         portal_title = escape(safe_unicode(portal_state.navigation_root_title()))
 
         genweb_title = getattr(self.genweb_config(), 'html_title_%s' % self.pref_lang(), 'Genweb UPC')
+        if not genweb_title:
+            genweb_title = 'Genweb UPC'
         genweb_title = escape(safe_unicode(re.sub(r'(<.*?>)', r'', genweb_title)))
 
         marca_UPC = escape(safe_unicode(u"UPC. Universitat Politècnica de Catalunya · BarcelonaTech"))

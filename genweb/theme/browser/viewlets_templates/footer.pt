@@ -17,8 +17,8 @@
             </tal:signatura>
         </p>
         <address>
-          <p tal:condition="python:dades and not dades.get('error', '')">
-            <tal:adreca content="python:dades.get(u'adreça', '')">
+          <p tal:condition="python:dades and not dades.get('error', False)">
+            <tal:adreca content="dades/adreca_sencera | nothing">
               Edifici Til·lers. Jordi Girona, 31. 08011 Barcelona
             </tal:adreca> -
             <abbr rel="tooltip" data-placement="top" title="Telèfon">
