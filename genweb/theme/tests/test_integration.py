@@ -2,8 +2,20 @@ import unittest2 as unittest
 
 from plone.testing.z2 import Browser
 
+from plone.app.testing import TEST_USER_ID, TEST_USER_NAME
+from plone.app.testing import login, logout
+from plone.app.testing import setRoles
+
 from genweb.theme.testing import GENWEBTHEME_INTEGRATION_TESTING
 from genweb.theme.testing import GENWEBTHEME_FUNCTIONAL_TESTING
+
+from plone.portlets.interfaces import IPortletType
+from plone.portlets.interfaces import IPortletManager
+from plone.portlets.interfaces import IPortletAssignment
+from plone.portlets.interfaces import IPortletDataProvider
+from plone.portlets.interfaces import IPortletRenderer
+
+from zope.component import getUtility, getMultiAdapter
 
 
 class BasicTest(unittest.TestCase):

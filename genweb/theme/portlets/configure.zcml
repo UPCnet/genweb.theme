@@ -30,4 +30,12 @@
      editview=".esdeveniments.EditForm"
      />
 
+     <plone:portlet
+     name="genweb.portlets.news"
+     interface=".news.INewsPortlet"
+     assignment=".news.Assignment"
+     renderer=".news.Renderer"
+     addview=".news.AddForm"
+     />
+
 </configure>
