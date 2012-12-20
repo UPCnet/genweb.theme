@@ -18,18 +18,4 @@
       layer=".interfaces.IGenwebTheme"
       />
 
-    <browser:page
-      for="*"
-      name="contact"
-      class=".contact.ContactForm"
-      permission="zope.Public"
-      layer=".interfaces.IGenwebTheme"
-      />
-
-    <adapter
-      for="*"
-      provides=".contact.IContactForm"
-      factory=".contact.Contact"
-      />
-
 </configure>
