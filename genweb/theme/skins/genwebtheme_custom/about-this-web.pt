@@ -14,12 +14,12 @@
 <body>
 <div metal:fill-slot="main" class="plain">
 
-    <h1>About this web</h1>
+    <h1 class="documentFirstHeading">About this web</h1>
 
 	<h2>Intellectual property rights of this website</h2>
 	<p>The texts, images, sounds, animation,
         software and other content included in this website are the exclusive property of the Technical
-        University of Catalonia, or UPC.&nbsp;The UPC is suitably authorised to use the material published.
+        University of Catalonia, or UPC. The UPC is suitably authorised to use the material published.
         Total or partial dissemination, distribution, concession, reproduction, commercialisation, storage, public
         communication or modification is dependent upon the explicit written authorisation of UPC.
     </p>

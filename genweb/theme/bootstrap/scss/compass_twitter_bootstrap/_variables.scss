@@ -72,10 +72,10 @@ $tableBorder:                       #b2b2b2 !default; // table and cell border
 // -------------------------
 $btnBackground:                     $white !default;
 $btnBackgroundHighlight:            darken($white, 10%) !default;
-$btnBorder:                         #b2b2b2 !default;
+$btnBorder:                         $tableBorder !default;
 
 $btnPrimaryBackground:              $linkColor !default;
-$btnPrimaryBackgroundHighlight:     darken($btnPrimaryBackground, 10%) !default;
+$btnPrimaryBackgroundHighlight:     darken($blue, 10%) !default;
 
 $btnInfoBackground:                 $cyan !default;
 $btnInfoBackgroundHighlight:        darken($cyan, 10%) !default;
@@ -96,7 +96,7 @@ $btnInverseBackgroundHighlight:     $grayDarker !default;
 // Forms
 // -------------------------
 $inputBackground:               $white !default;
-$inputBorder:                   #b2b2b2 !default;
+$inputBorder:                   rgba($tableBorder, .8) !default;
 $inputBorderRadius:             3px !default;
 $inputDisabledBackground:       $grayLighter !default;
 $formActionsBackground:         #f2f2f2 !default;

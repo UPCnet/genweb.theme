@@ -1,4 +1,4 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:metal="http://xml.zope.org/namespaces/metal"
@@ -15,7 +15,7 @@
 <div metal:fill-slot="main" class="plain">
 
 
-        <h1>Sobre esta web</h1>
+        <h class="documentFirstHeading">Sobre esta web</h1>
 <h2>Derechos de autor de este web</h2>
 <p>Los textos, imágenes, sonidos, animaciones, software y el resto de contenidos incluidos en este web son
 propiedad exclusiva de la Universitat Politècnica de Catalunya (UPC), o bien la UPC está debidamente autorizada para utilizarlos.

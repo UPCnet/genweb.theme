@@ -34,7 +34,7 @@ label {
 }
 // botons
 
-.standalone, button:not(.close), input[value^="Cancel"], [type="submit"] {
+.standalone, input[value^="Cancel"], [type="submit"] {
   @extend .btn;
 }
 
@@ -354,3 +354,15 @@ iframe {border:0 !important; display: block !important;}
   background-color: #000;
   color: #080;
 }
+
+//manage-home-portlets
+.template-manage-homeportlets .portletHeader strong {display: inline-block;padding: 2px 0 0 4px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 34%;}
+.template-manage-homeportlets .portletHeader:hover {@extend .box-inverse;
+	strong {color: $white;}
+	a {color: $cyan;}
+}
+.template-manage-homeportlets .portletHeader strong:hover {overflow: visible;width: 100%; padding-bottom:1px !important;}
+.template-manage-homeportlets .portletHeader strong:hover + span {display:none;}
+
+//spinner
+img[src$="spinner.gif"] {box-shadow: 0 0 250px 250px white;}

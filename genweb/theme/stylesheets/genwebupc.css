@@ -1072,7 +1072,7 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   background-color: white;
-  border: 1px solid #b2b2b2;
+  border: 1px solid rgba(178, 178, 178, 0.8);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1182,7 +1182,7 @@ option {
 .uneditable-textarea {
   color: #aaaaaa;
   background-color: #fcfcfc;
-  border-color: #b2b2b2;
+  border-color: rgba(178, 178, 178, 0.8);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
@@ -1762,7 +1762,6 @@ select:focus:required:invalid:focus {
 .input-append .btn,
 .input-append .dk_container > a,
 .input-append .standalone,
-.input-append button:not(.close),
 .input-append input[value^="Cancel"],
 .input-append [type="submit"],
 .input-append .context,
@@ -1772,7 +1771,6 @@ select:focus:required:invalid:focus {
 .input-prepend .btn,
 .input-prepend .dk_container > a,
 .input-prepend .standalone,
-.input-prepend button:not(.close),
 .input-prepend input[value^="Cancel"],
 .input-prepend [type="submit"],
 .input-prepend .context,
@@ -1801,7 +1799,6 @@ select:focus:required:invalid:focus {
 .input-prepend .btn,
 .input-prepend .dk_container > a,
 .input-prepend .standalone,
-.input-prepend button:not(.close),
 .input-prepend input[value^="Cancel"],
 .input-prepend [type="submit"],
 .input-prepend .context,
@@ -1814,7 +1811,6 @@ select:focus:required:invalid:focus {
 .input-prepend .btn:first-child,
 .input-prepend .dk_container > a:first-child,
 .input-prepend .standalone:first-child,
-.input-prepend button:first-child:not(.close),
 .input-prepend input[value^="Cancel"]:first-child,
 .input-prepend [type="submit"]:first-child,
 .input-prepend .context:first-child,
@@ -1838,7 +1834,6 @@ select:focus:required:invalid:focus {
 .input-append .btn:last-child,
 .input-append .dk_container > a:last-child,
 .input-append .standalone:last-child,
-.input-append button:last-child:not(.close),
 .input-append input[value^="Cancel"]:last-child,
 .input-append [type="submit"]:last-child,
 .input-append .context:last-child,
@@ -1862,7 +1857,6 @@ select:focus:required:invalid:focus {
 .input-prepend.input-append .btn:first-child,
 .input-prepend.input-append .dk_container > a:first-child,
 .input-prepend.input-append .standalone:first-child,
-.input-prepend.input-append button:first-child:not(.close),
 .input-prepend.input-append input[value^="Cancel"]:first-child,
 .input-prepend.input-append [type="submit"]:first-child,
 .input-prepend.input-append .context:first-child,
@@ -1878,7 +1872,6 @@ select:focus:required:invalid:focus {
 .input-prepend.input-append .btn:last-child,
 .input-prepend.input-append .dk_container > a:last-child,
 .input-prepend.input-append .standalone:last-child,
-.input-prepend.input-append button:last-child:not(.close),
 .input-prepend.input-append input[value^="Cancel"]:last-child,
 .input-prepend.input-append [type="submit"]:last-child,
 .input-prepend.input-append .context:last-child,
@@ -1920,7 +1913,7 @@ input.search-query {
 }
 
 /* line 533, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
-.form-search .input-append .btn, .form-search .input-append .dk_container > a, .form-search .input-append .standalone, .form-search .input-append button:not(.close), .form-search .input-append input[value^="Cancel"], .form-search .input-append [type="submit"], .form-search .input-append .context, .form-search .input-append .searchButton, .form-search .input-append .link-parent {
+.form-search .input-append .btn, .form-search .input-append .dk_container > a, .form-search .input-append .standalone, .form-search .input-append input[value^="Cancel"], .form-search .input-append [type="submit"], .form-search .input-append .context, .form-search .input-append .searchButton, .form-search .input-append .link-parent {
   -webkit-border-radius: 0 14px 14px 0;
   -moz-border-radius: 0 14px 14px 0;
   border-radius: 0 14px 14px 0;
@@ -1934,7 +1927,7 @@ input.search-query {
 }
 
 /* line 539, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
-.form-search .input-prepend .btn, .form-search .input-prepend .dk_container > a, .form-search .input-prepend .standalone, .form-search .input-prepend button:not(.close), .form-search .input-prepend input[value^="Cancel"], .form-search .input-prepend [type="submit"], .form-search .input-prepend .context, .form-search .input-prepend .searchButton, .form-search .input-prepend .link-parent {
+.form-search .input-prepend .btn, .form-search .input-prepend .dk_container > a, .form-search .input-prepend .standalone, .form-search .input-prepend input[value^="Cancel"], .form-search .input-prepend [type="submit"], .form-search .input-prepend .context, .form-search .input-prepend .searchButton, .form-search .input-prepend .link-parent {
   -webkit-border-radius: 14px 0 0 14px;
   -moz-border-radius: 14px 0 0 14px;
   border-radius: 14px 0 0 14px;
@@ -3907,7 +3900,7 @@ button.close {
 }
 
 /* line 10, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn, .dk_container > a, .standalone, button:not(.close), input[value^="Cancel"], [type="submit"], .context, .searchButton, .link-parent {
+.btn, .dk_container > a, .standalone, input[value^="Cancel"], [type="submit"], .context, .searchButton, .link-parent {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -3944,21 +3937,21 @@ button.close {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .dk_container > a:hover, .standalone:hover, button:hover:not(.close), input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, .link-parent:hover, .btn:active, .dk_container > a:active, .standalone:active, button:active:not(.close), input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, .link-parent:active, .btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, button.active:not(.close), button.selected:not(.close), .contentViews button.selected:not(.close), .contentViews button.selected:not(.close):hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews .selected.link-parent:hover, .active.link-parent, .btn.disabled, .dk_container > a.disabled, .disabled.standalone, button.disabled:not(.close), input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, .disabled.link-parent, .btn[disabled], .dk_container > a[disabled], [disabled].standalone, button[disabled]:not(.close), input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, [disabled].link-parent {
+.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .dk_container > a:hover, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, .link-parent:hover, .btn:active, .dk_container > a:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, .link-parent:active, .btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews .selected.link-parent:hover, .active.link-parent, .btn.disabled, .dk_container > a.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, .disabled.link-parent, .btn[disabled], .dk_container > a[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, [disabled].link-parent {
   color: #333333;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:active, .dk_container > a:active, .standalone:active, button:active:not(.close), input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, .link-parent:active, .btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, button.active:not(.close), button.selected:not(.close), .contentViews button.selected:not(.close), .contentViews button.selected:not(.close):hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews .selected.link-parent:hover, .active.link-parent {
+.btn:active, .dk_container > a:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, .link-parent:active, .btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews .selected.link-parent:hover, .active.link-parent {
   background-color: #cccccc \9;
 }
 /* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:first-child, .dk_container > a:first-child, .standalone:first-child, button:first-child:not(.close), input[value^="Cancel"]:first-child, [type="submit"]:first-child, .context:first-child, .searchButton:first-child, .link-parent:first-child {
+.btn:first-child, .dk_container > a:first-child, .standalone:first-child, input[value^="Cancel"]:first-child, [type="submit"]:first-child, .context:first-child, .searchButton:first-child, .link-parent:first-child {
   *margin-left: 0;
 }
 /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .dk_container > a:hover, .standalone:hover, button:hover:not(.close), input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, .link-parent:hover {
+.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .dk_container > a:hover, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, .link-parent:hover {
   color: black;
   text-decoration: none;
   border: 1px solid #7f7f7f;
@@ -3974,13 +3967,13 @@ button.close {
   transition: background-position 0.1s linear;
 }
 /* line 47, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn:focus, .dk_container > a:focus, .standalone:focus, button:focus:not(.close), input[value^="Cancel"]:focus, [type="submit"]:focus, .context:focus, .searchButton:focus, .link-parent:focus {
+.btn:focus, .dk_container > a:focus, .standalone:focus, input[value^="Cancel"]:focus, [type="submit"]:focus, .context:focus, .searchButton:focus, .link-parent:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 /* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, button.active:not(.close), button.selected:not(.close), .contentViews button.selected:not(.close), .contentViews button.selected:not(.close):hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews .selected.link-parent:hover, .active.link-parent, .btn:active, .dk_container > a:active, .standalone:active, button:active:not(.close), input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, .link-parent:active {
+.btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews .selected.link-parent:hover, .active.link-parent, .btn:active, .dk_container > a:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, .link-parent:active {
   background-color: #d9d9d9;
   background-color: #cccccc \9;
   background-image: none;
@@ -3990,7 +3983,7 @@ button.close {
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /* line 63, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn.disabled, .dk_container > a.disabled, .disabled.standalone, button.disabled:not(.close), input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, .disabled.link-parent, .btn[disabled], .dk_container > a[disabled], [disabled].standalone, button[disabled]:not(.close), input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, [disabled].link-parent {
+.btn.disabled, .dk_container > a.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, .disabled.link-parent, .btn[disabled], .dk_container > a[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, [disabled].link-parent {
   border: 1px solid #999999;
   border-bottom-color: #8c8c8c;
   cursor: default;
@@ -4004,16 +3997,15 @@ button.close {
 }
 
 /* line 79, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn [class^="icon-"], .dk_container > a [class^="icon-"], .standalone [class^="icon-"], button:not(.close) [class^="icon-"], input[value^="Cancel"] [class^="icon-"], [type="submit"] [class^="icon-"], .context [class^="icon-"], .searchButton [class^="icon-"], .link-parent [class^="icon-"], .btn #category.documentByLine:before, .dk_container > a #category.documentByLine:before, .standalone #category.documentByLine:before, button:not(.close) #category.documentByLine:before, input[value^="Cancel"] #category.documentByLine:before, [type="submit"] #category.documentByLine:before, .context #category.documentByLine:before, .searchButton #category.documentByLine:before, .link-parent #category.documentByLine:before, .btn .tileFooter:before, .dk_container > a .tileFooter:before, .standalone .tileFooter:before, button:not(.close) .tileFooter:before, input[value^="Cancel"] .tileFooter:before, [type="submit"] .tileFooter:before, .context .tileFooter:before, .searchButton .tileFooter:before, .link-parent .tileFooter:before, .btn [class*=" icon-"], .dk_container > a [class*=" icon-"], .standalone [class*=" icon-"], button:not(.close) [class*=" icon-"], input[value^="Cancel"] [class*=" icon-"], [type="submit"] [class*=" icon-"], .context [class*=" icon-"], .searchButton [class*=" icon-"], .link-parent [class*=" icon-"] {
+.btn [class^="icon-"], .dk_container > a [class^="icon-"], .standalone [class^="icon-"], input[value^="Cancel"] [class^="icon-"], [type="submit"] [class^="icon-"], .context [class^="icon-"], .searchButton [class^="icon-"], .link-parent [class^="icon-"], .btn #category.documentByLine:before, .dk_container > a #category.documentByLine:before, .standalone #category.documentByLine:before, input[value^="Cancel"] #category.documentByLine:before, [type="submit"] #category.documentByLine:before, .context #category.documentByLine:before, .searchButton #category.documentByLine:before, .link-parent #category.documentByLine:before, .btn .tileFooter:before, .dk_container > a .tileFooter:before, .standalone .tileFooter:before, input[value^="Cancel"] .tileFooter:before, [type="submit"] .tileFooter:before, .context .tileFooter:before, .searchButton .tileFooter:before, .link-parent .tileFooter:before, .btn [class*=" icon-"], .dk_container > a [class*=" icon-"], .standalone [class*=" icon-"], input[value^="Cancel"] [class*=" icon-"], [type="submit"] [class*=" icon-"], .context [class*=" icon-"], .searchButton [class*=" icon-"], .link-parent [class*=" icon-"] {
   opacity: .85;
 }
 
 /* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn:hover [class^="icon-"], .customfile-hover .customfile-button [class^="icon-"], .customfile-focus .customfile-button [class^="icon-"], .dk_container > a:hover [class^="icon-"], .standalone:hover [class^="icon-"], button:hover:not(.close) [class^="icon-"], input[value^="Cancel"]:hover [class^="icon-"], [type="submit"]:hover [class^="icon-"], .context:hover [class^="icon-"], .searchButton:hover [class^="icon-"], .link-parent:hover [class^="icon-"], .btn:hover #category.documentByLine:before, .customfile-hover .customfile-button #category.documentByLine:before, .customfile-focus .customfile-button #category.documentByLine:before, .dk_container > a:hover #category.documentByLine:before, .standalone:hover #category.documentByLine:before, button:hover:not(.close) #category.documentByLine:before, input[value^="Cancel"]:hover #category.documentByLine:before, [type="submit"]:hover #category.documentByLine:before, .context:hover #category.documentByLine:before, .searchButton:hover #category.documentByLine:before, .link-parent:hover #category.documentByLine:before, .btn:hover .tileFooter:before, .customfile-hover .customfile-button .tileFooter:before, .customfile-focus .customfile-button .tileFooter:before, .dk_container > a:hover .tileFooter:before, .standalone:hover .tileFooter:before, button:hover:not(.close) .tileFooter:before, input[value^="Cancel"]:hover .tileFooter:before, [type="submit"]:hover .tileFooter:before, .context:hover .tileFooter:before, .searchButton:hover .tileFooter:before, .link-parent:hover .tileFooter:before, .btn:hover [class*=" icon-"], .customfile-hover .customfile-button [class*=" icon-"], .customfile-focus .customfile-button [class*=" icon-"], .dk_container > a:hover [class*=" icon-"], .standalone:hover [class*=" icon-"], button:hover:not(.close) [class*=" icon-"], input[value^="Cancel"]:hover [class*=" icon-"], [type="submit"]:hover [class*=" icon-"], .context:hover [class*=" icon-"], .searchButton:hover [class*=" icon-"], .link-parent:hover [class*=" icon-"],
+.btn:hover [class^="icon-"], .customfile-hover .customfile-button [class^="icon-"], .customfile-focus .customfile-button [class^="icon-"], .dk_container > a:hover [class^="icon-"], .standalone:hover [class^="icon-"], input[value^="Cancel"]:hover [class^="icon-"], [type="submit"]:hover [class^="icon-"], .context:hover [class^="icon-"], .searchButton:hover [class^="icon-"], .link-parent:hover [class^="icon-"], .btn:hover #category.documentByLine:before, .customfile-hover .customfile-button #category.documentByLine:before, .customfile-focus .customfile-button #category.documentByLine:before, .dk_container > a:hover #category.documentByLine:before, .standalone:hover #category.documentByLine:before, input[value^="Cancel"]:hover #category.documentByLine:before, [type="submit"]:hover #category.documentByLine:before, .context:hover #category.documentByLine:before, .searchButton:hover #category.documentByLine:before, .link-parent:hover #category.documentByLine:before, .btn:hover .tileFooter:before, .customfile-hover .customfile-button .tileFooter:before, .customfile-focus .customfile-button .tileFooter:before, .dk_container > a:hover .tileFooter:before, .standalone:hover .tileFooter:before, input[value^="Cancel"]:hover .tileFooter:before, [type="submit"]:hover .tileFooter:before, .context:hover .tileFooter:before, .searchButton:hover .tileFooter:before, .link-parent:hover .tileFooter:before, .btn:hover [class*=" icon-"], .customfile-hover .customfile-button [class*=" icon-"], .customfile-focus .customfile-button [class*=" icon-"], .dk_container > a:hover [class*=" icon-"], .standalone:hover [class*=" icon-"], input[value^="Cancel"]:hover [class*=" icon-"], [type="submit"]:hover [class*=" icon-"], .context:hover [class*=" icon-"], .searchButton:hover [class*=" icon-"], .link-parent:hover [class*=" icon-"],
 .btn:focus [class^="icon-"],
 .dk_container > a:focus [class^="icon-"],
 .standalone:focus [class^="icon-"],
-button:focus:not(.close) [class^="icon-"],
 input[value^="Cancel"]:focus [class^="icon-"],
 [type="submit"]:focus [class^="icon-"],
 .context:focus [class^="icon-"],
@@ -4022,7 +4014,6 @@ input[value^="Cancel"]:focus [class^="icon-"],
 .btn:focus #category.documentByLine:before,
 .dk_container > a:focus #category.documentByLine:before,
 .standalone:focus #category.documentByLine:before,
-button:focus:not(.close) #category.documentByLine:before,
 input[value^="Cancel"]:focus #category.documentByLine:before,
 [type="submit"]:focus #category.documentByLine:before,
 .context:focus #category.documentByLine:before,
@@ -4031,16 +4022,14 @@ input[value^="Cancel"]:focus #category.documentByLine:before,
 .btn:focus .tileFooter:before,
 .dk_container > a:focus .tileFooter:before,
 .standalone:focus .tileFooter:before,
-button:focus:not(.close) .tileFooter:before,
 input[value^="Cancel"]:focus .tileFooter:before,
 [type="submit"]:focus .tileFooter:before,
 .context:focus .tileFooter:before,
 .searchButton:focus .tileFooter:before,
-.link-parent:focus .tileFooter:before, .btn:focus [class*=" icon-"], .dk_container > a:focus [class*=" icon-"], .standalone:focus [class*=" icon-"], button:focus:not(.close) [class*=" icon-"], input[value^="Cancel"]:focus [class*=" icon-"], [type="submit"]:focus [class*=" icon-"], .context:focus [class*=" icon-"], .searchButton:focus [class*=" icon-"], .link-parent:focus [class*=" icon-"],
+.link-parent:focus .tileFooter:before, .btn:focus [class*=" icon-"], .dk_container > a:focus [class*=" icon-"], .standalone:focus [class*=" icon-"], input[value^="Cancel"]:focus [class*=" icon-"], [type="submit"]:focus [class*=" icon-"], .context:focus [class*=" icon-"], .searchButton:focus [class*=" icon-"], .link-parent:focus [class*=" icon-"],
 .btn:active [class^="icon-"],
 .dk_container > a:active [class^="icon-"],
 .standalone:active [class^="icon-"],
-button:active:not(.close) [class^="icon-"],
 input[value^="Cancel"]:active [class^="icon-"],
 [type="submit"]:active [class^="icon-"],
 .context:active [class^="icon-"],
@@ -4049,7 +4038,6 @@ input[value^="Cancel"]:active [class^="icon-"],
 .btn:active #category.documentByLine:before,
 .dk_container > a:active #category.documentByLine:before,
 .standalone:active #category.documentByLine:before,
-button:active:not(.close) #category.documentByLine:before,
 input[value^="Cancel"]:active #category.documentByLine:before,
 [type="submit"]:active #category.documentByLine:before,
 .context:active #category.documentByLine:before,
@@ -4058,12 +4046,11 @@ input[value^="Cancel"]:active #category.documentByLine:before,
 .btn:active .tileFooter:before,
 .dk_container > a:active .tileFooter:before,
 .standalone:active .tileFooter:before,
-button:active:not(.close) .tileFooter:before,
 input[value^="Cancel"]:active .tileFooter:before,
 [type="submit"]:active .tileFooter:before,
 .context:active .tileFooter:before,
 .searchButton:active .tileFooter:before,
-.link-parent:active .tileFooter:before, .btn:active [class*=" icon-"], .dk_container > a:active [class*=" icon-"], .standalone:active [class*=" icon-"], button:active:not(.close) [class*=" icon-"], input[value^="Cancel"]:active [class*=" icon-"], [type="submit"]:active [class*=" icon-"], .context:active [class*=" icon-"], .searchButton:active [class*=" icon-"], .link-parent:active [class*=" icon-"] {
+.link-parent:active .tileFooter:before, .btn:active [class*=" icon-"], .dk_container > a:active [class*=" icon-"], .standalone:active [class*=" icon-"], input[value^="Cancel"]:active [class*=" icon-"], [type="submit"]:active [class*=" icon-"], .context:active [class*=" icon-"], .searchButton:active [class*=" icon-"], .link-parent:active [class*=" icon-"] {
   opacity: 1;
 }
 
@@ -4147,7 +4134,7 @@ input[value^="Cancel"]:active .tileFooter:before,
 }
 
 /* line 150, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn, .dk_container > a, .standalone, button:not(.close), input[value^="Cancel"], [type="submit"], .context, .searchButton, .link-parent {
+.btn, .dk_container > a, .standalone, input[value^="Cancel"], [type="submit"], .context, .searchButton, .link-parent {
   border-color: #c5c5c5;
   border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
 }
@@ -4327,7 +4314,7 @@ input[value^="Cancel"]:active .tileFooter:before,
 }
 
 /* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-button.btn, button.standalone, button:not(.close), button[type="submit"], button.context, button.searchButton, button.link-parent,
+button.btn, button.standalone, button[type="submit"], button.context, button.searchButton, button.link-parent,
 input[type="submit"].btn,
 input[type="submit"] {
   /*
@@ -4348,7 +4335,7 @@ input[type="submit"] {
   */
 }
 /* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-button.btn::-moz-focus-inner, button.standalone::-moz-focus-inner, button:not(.close)::-moz-focus-inner, button[type="submit"]::-moz-focus-inner, button.context::-moz-focus-inner, button.searchButton::-moz-focus-inner, button.link-parent::-moz-focus-inner,
+button.btn::-moz-focus-inner, button.standalone::-moz-focus-inner, button[type="submit"]::-moz-focus-inner, button.context::-moz-focus-inner, button.searchButton::-moz-focus-inner, button.link-parent::-moz-focus-inner,
 input[type="submit"].btn::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner {
   padding: 0;
@@ -4412,11 +4399,10 @@ input[type="submit"]::-moz-focus-inner {
   *zoom: 1;
 }
 /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-toolbar .btn + .btn, .btn-toolbar .dk_container > a + .btn, .btn-toolbar .standalone + .btn, .btn-toolbar button:not(.close) + .btn, .btn-toolbar input[value^="Cancel"] + .btn, .btn-toolbar [type="submit"] + .btn, .btn-toolbar .context + .btn, .btn-toolbar .searchButton + .btn, .btn-toolbar .link-parent + .btn, .btn-toolbar .dk_container > .btn + a, .btn-toolbar .dk_container > a + a, .btn-toolbar .dk_container > .standalone + a, .btn-toolbar .dk_container > button:not(.close) + a, .btn-toolbar .dk_container > input[value^="Cancel"] + a, .btn-toolbar .dk_container > [type="submit"] + a, .btn-toolbar .dk_container > .context + a, .btn-toolbar .dk_container > .searchButton + a, .btn-toolbar .dk_container > .link-parent + a, .btn-toolbar .btn + .standalone, .btn-toolbar .dk_container > a + .standalone, .btn-toolbar .standalone + .standalone, .btn-toolbar button:not(.close) + .standalone, .btn-toolbar input[value^="Cancel"] + .standalone, .btn-toolbar [type="submit"] + .standalone, .btn-toolbar .context + .standalone, .btn-toolbar .searchButton + .standalone, .btn-toolbar .link-parent + .standalone, .btn-toolbar .btn + button:not(.close), .btn-toolbar .dk_container > a + button:not(.close), .btn-toolbar .standalone + button:not(.close), .btn-toolbar button:not(.close) + button:not(.close), .btn-toolbar input[value^="Cancel"] + button:not(.close), .btn-toolbar [type="submit"] + button:not(.close), .btn-toolbar .context + button:not(.close), .btn-toolbar .searchButton + button:not(.close), .btn-toolbar .link-parent + button:not(.close), .btn-toolbar .btn + input[value^="Cancel"], .btn-toolbar .dk_container > a + input[value^="Cancel"], .btn-toolbar .standalone + input[value^="Cancel"], .btn-toolbar button:not(.close) + input[value^="Cancel"], .btn-toolbar input[value^="Cancel"] + input[value^="Cancel"], .btn-toolbar [type="submit"] + input[value^="Cancel"], .btn-toolbar .context + input[value^="Cancel"], .btn-toolbar .searchButton + input[value^="Cancel"], .btn-toolbar .link-parent + input[value^="Cancel"], .btn-toolbar .btn + [type="submit"], .btn-toolbar .dk_container > a + [type="submit"], .btn-toolbar .standalone + [type="submit"], .btn-toolbar button:not(.close) + [type="submit"], .btn-toolbar input[value^="Cancel"] + [type="submit"], .btn-toolbar [type="submit"] + [type="submit"], .btn-toolbar .context + [type="submit"], .btn-toolbar .searchButton + [type="submit"], .btn-toolbar .link-parent + [type="submit"], .btn-toolbar .btn + .context, .btn-toolbar .dk_container > a + .context, .btn-toolbar .standalone + .context, .btn-toolbar button:not(.close) + .context, .btn-toolbar input[value^="Cancel"] + .context, .btn-toolbar [type="submit"] + .context, .btn-toolbar .context + .context, .btn-toolbar .searchButton + .context, .btn-toolbar .link-parent + .context, .btn-toolbar .btn + .searchButton, .btn-toolbar .dk_container > a + .searchButton, .btn-toolbar .standalone + .searchButton, .btn-toolbar button:not(.close) + .searchButton, .btn-toolbar input[value^="Cancel"] + .searchButton, .btn-toolbar [type="submit"] + .searchButton, .btn-toolbar .context + .searchButton, .btn-toolbar .searchButton + .searchButton, .btn-toolbar .link-parent + .searchButton, .btn-toolbar .btn + .link-parent, .btn-toolbar .dk_container > a + .link-parent, .btn-toolbar .standalone + .link-parent, .btn-toolbar button:not(.close) + .link-parent, .btn-toolbar input[value^="Cancel"] + .link-parent, .btn-toolbar [type="submit"] + .link-parent, .btn-toolbar .context + .link-parent, .btn-toolbar .searchButton + .link-parent, .btn-toolbar .link-parent + .link-parent,
+.btn-toolbar .btn + .btn, .btn-toolbar .dk_container > a + .btn, .btn-toolbar .standalone + .btn, .btn-toolbar input[value^="Cancel"] + .btn, .btn-toolbar [type="submit"] + .btn, .btn-toolbar .context + .btn, .btn-toolbar .searchButton + .btn, .btn-toolbar .link-parent + .btn, .btn-toolbar .dk_container > .btn + a, .btn-toolbar .dk_container > a + a, .btn-toolbar .dk_container > .standalone + a, .btn-toolbar .dk_container > input[value^="Cancel"] + a, .btn-toolbar .dk_container > [type="submit"] + a, .btn-toolbar .dk_container > .context + a, .btn-toolbar .dk_container > .searchButton + a, .btn-toolbar .dk_container > .link-parent + a, .btn-toolbar .btn + .standalone, .btn-toolbar .dk_container > a + .standalone, .btn-toolbar .standalone + .standalone, .btn-toolbar input[value^="Cancel"] + .standalone, .btn-toolbar [type="submit"] + .standalone, .btn-toolbar .context + .standalone, .btn-toolbar .searchButton + .standalone, .btn-toolbar .link-parent + .standalone, .btn-toolbar .btn + input[value^="Cancel"], .btn-toolbar .dk_container > a + input[value^="Cancel"], .btn-toolbar .standalone + input[value^="Cancel"], .btn-toolbar input[value^="Cancel"] + input[value^="Cancel"], .btn-toolbar [type="submit"] + input[value^="Cancel"], .btn-toolbar .context + input[value^="Cancel"], .btn-toolbar .searchButton + input[value^="Cancel"], .btn-toolbar .link-parent + input[value^="Cancel"], .btn-toolbar .btn + [type="submit"], .btn-toolbar .dk_container > a + [type="submit"], .btn-toolbar .standalone + [type="submit"], .btn-toolbar input[value^="Cancel"] + [type="submit"], .btn-toolbar [type="submit"] + [type="submit"], .btn-toolbar .context + [type="submit"], .btn-toolbar .searchButton + [type="submit"], .btn-toolbar .link-parent + [type="submit"], .btn-toolbar .btn + .context, .btn-toolbar .dk_container > a + .context, .btn-toolbar .standalone + .context, .btn-toolbar input[value^="Cancel"] + .context, .btn-toolbar [type="submit"] + .context, .btn-toolbar .context + .context, .btn-toolbar .searchButton + .context, .btn-toolbar .link-parent + .context, .btn-toolbar .btn + .searchButton, .btn-toolbar .dk_container > a + .searchButton, .btn-toolbar .standalone + .searchButton, .btn-toolbar input[value^="Cancel"] + .searchButton, .btn-toolbar [type="submit"] + .searchButton, .btn-toolbar .context + .searchButton, .btn-toolbar .searchButton + .searchButton, .btn-toolbar .link-parent + .searchButton, .btn-toolbar .btn + .link-parent, .btn-toolbar .dk_container > a + .link-parent, .btn-toolbar .standalone + .link-parent, .btn-toolbar input[value^="Cancel"] + .link-parent, .btn-toolbar [type="submit"] + .link-parent, .btn-toolbar .context + .link-parent, .btn-toolbar .searchButton + .link-parent, .btn-toolbar .link-parent + .link-parent,
 .btn-toolbar .btn-group + .btn,
 .btn-toolbar .dk_container > .btn-group + a,
 .btn-toolbar .btn-group + .standalone,
-.btn-toolbar .btn-group + button:not(.close),
 .btn-toolbar .btn-group + input[value^="Cancel"],
 .btn-toolbar .btn-group + [type="submit"],
 .btn-toolbar .btn-group + .context,
@@ -4425,7 +4411,6 @@ input[type="submit"]::-moz-focus-inner {
 .btn-toolbar .btn + .btn-group,
 .btn-toolbar .dk_container > a + .btn-group,
 .btn-toolbar .standalone + .btn-group,
-.btn-toolbar button:not(.close) + .btn-group,
 .btn-toolbar input[value^="Cancel"] + .btn-group,
 .btn-toolbar [type="submit"] + .btn-group,
 .btn-toolbar .context + .btn-group,
@@ -4435,7 +4420,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn, .dk_container.btn-group > a, .btn-group > .standalone, .btn-group > button:not(.close), .btn-group > input[value^="Cancel"], .btn-group > [type="submit"], .btn-group > .context, .btn-group > .searchButton, .btn-group > .link-parent {
+.btn-group > .btn, .dk_container.btn-group > a, .btn-group > .standalone, .btn-group > input[value^="Cancel"], .btn-group > [type="submit"], .btn-group > .context, .btn-group > .searchButton, .btn-group > .link-parent {
   position: relative;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -4443,12 +4428,12 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn + .btn, .dk_container.btn-group > a + .btn, .btn-group > .standalone + .btn, .btn-group > button:not(.close) + .btn, .btn-group > input[value^="Cancel"] + .btn, .btn-group > [type="submit"] + .btn, .btn-group > .context + .btn, .btn-group > .searchButton + .btn, .btn-group > .link-parent + .btn, .dk_container.btn-group > .btn + a, .dk_container.btn-group > a + a, .dk_container.btn-group > .standalone + a, .dk_container.btn-group > button:not(.close) + a, .dk_container.btn-group > input[value^="Cancel"] + a, .dk_container.btn-group > [type="submit"] + a, .dk_container.btn-group > .context + a, .dk_container.btn-group > .searchButton + a, .dk_container.btn-group > .link-parent + a, .btn-group > .btn + .standalone, .dk_container.btn-group > a + .standalone, .btn-group > .standalone + .standalone, .btn-group > button:not(.close) + .standalone, .btn-group > input[value^="Cancel"] + .standalone, .btn-group > [type="submit"] + .standalone, .btn-group > .context + .standalone, .btn-group > .searchButton + .standalone, .btn-group > .link-parent + .standalone, .btn-group > .btn + button:not(.close), .dk_container.btn-group > a + button:not(.close), .btn-group > .standalone + button:not(.close), .btn-group > button:not(.close) + button:not(.close), .btn-group > input[value^="Cancel"] + button:not(.close), .btn-group > [type="submit"] + button:not(.close), .btn-group > .context + button:not(.close), .btn-group > .searchButton + button:not(.close), .btn-group > .link-parent + button:not(.close), .btn-group > .btn + input[value^="Cancel"], .dk_container.btn-group > a + input[value^="Cancel"], .btn-group > .standalone + input[value^="Cancel"], .btn-group > button:not(.close) + input[value^="Cancel"], .btn-group > input[value^="Cancel"] + input[value^="Cancel"], .btn-group > [type="submit"] + input[value^="Cancel"], .btn-group > .context + input[value^="Cancel"], .btn-group > .searchButton + input[value^="Cancel"], .btn-group > .link-parent + input[value^="Cancel"], .btn-group > .btn + [type="submit"], .dk_container.btn-group > a + [type="submit"], .btn-group > .standalone + [type="submit"], .btn-group > button:not(.close) + [type="submit"], .btn-group > input[value^="Cancel"] + [type="submit"], .btn-group > [type="submit"] + [type="submit"], .btn-group > .context + [type="submit"], .btn-group > .searchButton + [type="submit"], .btn-group > .link-parent + [type="submit"], .btn-group > .btn + .context, .dk_container.btn-group > a + .context, .btn-group > .standalone + .context, .btn-group > button:not(.close) + .context, .btn-group > input[value^="Cancel"] + .context, .btn-group > [type="submit"] + .context, .btn-group > .context + .context, .btn-group > .searchButton + .context, .btn-group > .link-parent + .context, .btn-group > .btn + .searchButton, .dk_container.btn-group > a + .searchButton, .btn-group > .standalone + .searchButton, .btn-group > button:not(.close) + .searchButton, .btn-group > input[value^="Cancel"] + .searchButton, .btn-group > [type="submit"] + .searchButton, .btn-group > .context + .searchButton, .btn-group > .searchButton + .searchButton, .btn-group > .link-parent + .searchButton, .btn-group > .btn + .link-parent, .dk_container.btn-group > a + .link-parent, .btn-group > .standalone + .link-parent, .btn-group > button:not(.close) + .link-parent, .btn-group > input[value^="Cancel"] + .link-parent, .btn-group > [type="submit"] + .link-parent, .btn-group > .context + .link-parent, .btn-group > .searchButton + .link-parent, .btn-group > .link-parent + .link-parent {
+.btn-group > .btn + .btn, .dk_container.btn-group > a + .btn, .btn-group > .standalone + .btn, .btn-group > input[value^="Cancel"] + .btn, .btn-group > [type="submit"] + .btn, .btn-group > .context + .btn, .btn-group > .searchButton + .btn, .btn-group > .link-parent + .btn, .dk_container.btn-group > .btn + a, .dk_container.btn-group > a + a, .dk_container.btn-group > .standalone + a, .dk_container.btn-group > input[value^="Cancel"] + a, .dk_container.btn-group > [type="submit"] + a, .dk_container.btn-group > .context + a, .dk_container.btn-group > .searchButton + a, .dk_container.btn-group > .link-parent + a, .btn-group > .btn + .standalone, .dk_container.btn-group > a + .standalone, .btn-group > .standalone + .standalone, .btn-group > input[value^="Cancel"] + .standalone, .btn-group > [type="submit"] + .standalone, .btn-group > .context + .standalone, .btn-group > .searchButton + .standalone, .btn-group > .link-parent + .standalone, .btn-group > .btn + input[value^="Cancel"], .dk_container.btn-group > a + input[value^="Cancel"], .btn-group > .standalone + input[value^="Cancel"], .btn-group > input[value^="Cancel"] + input[value^="Cancel"], .btn-group > [type="submit"] + input[value^="Cancel"], .btn-group > .context + input[value^="Cancel"], .btn-group > .searchButton + input[value^="Cancel"], .btn-group > .link-parent + input[value^="Cancel"], .btn-group > .btn + [type="submit"], .dk_container.btn-group > a + [type="submit"], .btn-group > .standalone + [type="submit"], .btn-group > input[value^="Cancel"] + [type="submit"], .btn-group > [type="submit"] + [type="submit"], .btn-group > .context + [type="submit"], .btn-group > .searchButton + [type="submit"], .btn-group > .link-parent + [type="submit"], .btn-group > .btn + .context, .dk_container.btn-group > a + .context, .btn-group > .standalone + .context, .btn-group > input[value^="Cancel"] + .context, .btn-group > [type="submit"] + .context, .btn-group > .context + .context, .btn-group > .searchButton + .context, .btn-group > .link-parent + .context, .btn-group > .btn + .searchButton, .dk_container.btn-group > a + .searchButton, .btn-group > .standalone + .searchButton, .btn-group > input[value^="Cancel"] + .searchButton, .btn-group > [type="submit"] + .searchButton, .btn-group > .context + .searchButton, .btn-group > .searchButton + .searchButton, .btn-group > .link-parent + .searchButton, .btn-group > .btn + .link-parent, .dk_container.btn-group > a + .link-parent, .btn-group > .standalone + .link-parent, .btn-group > input[value^="Cancel"] + .link-parent, .btn-group > [type="submit"] + .link-parent, .btn-group > .context + .link-parent, .btn-group > .searchButton + .link-parent, .btn-group > .link-parent + .link-parent {
   margin-left: -1px;
 }
 
 /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn, .dk_container.btn-group > a, .btn-group > .standalone, .btn-group > button:not(.close), .btn-group > input[value^="Cancel"], .btn-group > [type="submit"], .btn-group > .context, .btn-group > .searchButton, .btn-group > .link-parent,
+.btn-group > .btn, .dk_container.btn-group > a, .btn-group > .standalone, .btn-group > input[value^="Cancel"], .btn-group > [type="submit"], .btn-group > .context, .btn-group > .searchButton, .btn-group > .link-parent,
 .btn-group > .dropdown-menu,
 .btn-group > div.dk_options {
   font-size: 13px;
@@ -4470,7 +4455,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 60, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child, .dk_container.btn-group > a:first-child, .btn-group > .standalone:first-child, .btn-group > button:first-child:not(.close), .btn-group > input[value^="Cancel"]:first-child, .btn-group > [type="submit"]:first-child, .btn-group > .context:first-child, .btn-group > .searchButton:first-child, .btn-group > .link-parent:first-child {
+.btn-group > .btn:first-child, .dk_container.btn-group > a:first-child, .btn-group > .standalone:first-child, .btn-group > input[value^="Cancel"]:first-child, .btn-group > [type="submit"]:first-child, .btn-group > .context:first-child, .btn-group > .searchButton:first-child, .btn-group > .link-parent:first-child {
   margin-left: 0;
   -webkit-border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
@@ -4481,7 +4466,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 71, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn:last-child, .dk_container.btn-group > a:last-child, .btn-group > .standalone:last-child, .btn-group > button:last-child:not(.close), .btn-group > input[value^="Cancel"]:last-child, .btn-group > [type="submit"]:last-child, .btn-group > .context:last-child, .btn-group > .searchButton:last-child, .btn-group > .link-parent:last-child,
+.btn-group > .btn:last-child, .dk_container.btn-group > a:last-child, .btn-group > .standalone:last-child, .btn-group > input[value^="Cancel"]:last-child, .btn-group > [type="submit"]:last-child, .btn-group > .context:last-child, .btn-group > .searchButton:last-child, .btn-group > .link-parent:last-child,
 .btn-group > .dropdown-toggle {
   -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
@@ -4492,7 +4477,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 80, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn.large:first-child, .dk_container.btn-group > a.large:first-child, .btn-group > .large.standalone:first-child, .btn-group > button.large:first-child:not(.close), .btn-group > input.large[value^="Cancel"]:first-child, .btn-group > .large[type="submit"]:first-child, .btn-group > .large.context:first-child, .btn-group > .large.searchButton:first-child, .btn-group > .large.link-parent:first-child {
+.btn-group > .btn.large:first-child, .dk_container.btn-group > a.large:first-child, .btn-group > .large.standalone:first-child, .btn-group > input.large[value^="Cancel"]:first-child, .btn-group > .large[type="submit"]:first-child, .btn-group > .large.context:first-child, .btn-group > .large.searchButton:first-child, .btn-group > .large.link-parent:first-child {
   margin-left: 0;
   -webkit-border-top-left-radius: 6px;
   -moz-border-radius-topleft: 6px;
@@ -4503,7 +4488,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 90, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn.large:last-child, .dk_container.btn-group > a.large:last-child, .btn-group > .large.standalone:last-child, .btn-group > button.large:last-child:not(.close), .btn-group > input.large[value^="Cancel"]:last-child, .btn-group > .large[type="submit"]:last-child, .btn-group > .large.context:last-child, .btn-group > .large.searchButton:last-child, .btn-group > .large.link-parent:last-child,
+.btn-group > .btn.large:last-child, .dk_container.btn-group > a.large:last-child, .btn-group > .large.standalone:last-child, .btn-group > input.large[value^="Cancel"]:last-child, .btn-group > .large[type="submit"]:last-child, .btn-group > .large.context:last-child, .btn-group > .large.searchButton:last-child, .btn-group > .large.link-parent:last-child,
 .btn-group > .large.dropdown-toggle {
   -webkit-border-top-right-radius: 6px;
   -moz-border-radius-topright: 6px;
@@ -4514,11 +4499,10 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 103, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn:hover, .customfile-hover .btn-group > .customfile-button, .customfile-focus .btn-group > .customfile-button, .dk_container.btn-group > a:hover, .btn-group > .standalone:hover, .btn-group > button:hover:not(.close), .btn-group > input[value^="Cancel"]:hover, .btn-group > [type="submit"]:hover, .btn-group > .context:hover, .btn-group > .searchButton:hover, .btn-group > .link-parent:hover,
+.btn-group > .btn:hover, .customfile-hover .btn-group > .customfile-button, .customfile-focus .btn-group > .customfile-button, .dk_container.btn-group > a:hover, .btn-group > .standalone:hover, .btn-group > input[value^="Cancel"]:hover, .btn-group > [type="submit"]:hover, .btn-group > .context:hover, .btn-group > .searchButton:hover, .btn-group > .link-parent:hover,
 .btn-group > .btn:focus,
 .dk_container.btn-group > a:focus,
 .btn-group > .standalone:focus,
-.btn-group > button:focus:not(.close),
 .btn-group > input[value^="Cancel"]:focus,
 .btn-group > [type="submit"]:focus,
 .btn-group > .context:focus,
@@ -4527,7 +4511,6 @@ input[type="submit"]::-moz-focus-inner {
 .btn-group > .btn:active,
 .dk_container.btn-group > a:active,
 .btn-group > .standalone:active,
-.btn-group > button:active:not(.close),
 .btn-group > input[value^="Cancel"]:active,
 .btn-group > [type="submit"]:active,
 .btn-group > .context:active,
@@ -4542,10 +4525,6 @@ input[type="submit"]::-moz-focus-inner {
 .btn-group > .standalone.selected,
 .contentViews .btn-group > .standalone.selected,
 .contentViews .btn-group > .standalone.selected:hover,
-.btn-group > button.active:not(.close),
-.btn-group > button.selected:not(.close),
-.contentViews .btn-group > button.selected:not(.close),
-.contentViews .btn-group > button.selected:not(.close):hover,
 .btn-group > input.active[value^="Cancel"],
 .btn-group > input[value^="Cancel"].selected,
 .contentViews .btn-group > input[value^="Cancel"].selected,
@@ -4583,7 +4562,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 119, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn + .dropdown-toggle, .dk_container.btn-group > a + .dropdown-toggle, .btn-group > .standalone + .dropdown-toggle, .btn-group > button:not(.close) + .dropdown-toggle, .btn-group > input[value^="Cancel"] + .dropdown-toggle, .btn-group > [type="submit"] + .dropdown-toggle, .btn-group > .context + .dropdown-toggle, .btn-group > .searchButton + .dropdown-toggle, .btn-group > .link-parent + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .dk_container.btn-group > a + .dropdown-toggle, .btn-group > .standalone + .dropdown-toggle, .btn-group > input[value^="Cancel"] + .dropdown-toggle, .btn-group > [type="submit"] + .dropdown-toggle, .btn-group > .context + .dropdown-toggle, .btn-group > .searchButton + .dropdown-toggle, .btn-group > .link-parent + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
   -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -4613,7 +4592,7 @@ input[type="submit"]::-moz-focus-inner {
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /* line 151, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group.open .btn.dropdown-toggle, .btn-group.open .dk_container > a.dropdown-toggle, .btn-group.open .dropdown-toggle.standalone, .btn-group.open button.dropdown-toggle:not(.close), .btn-group.open input.dropdown-toggle[value^="Cancel"], .btn-group.open .dropdown-toggle[type="submit"], .btn-group.open .dropdown-toggle.context, .btn-group.open .dropdown-toggle.searchButton, .btn-group.open .dropdown-toggle.link-parent {
+.btn-group.open .btn.dropdown-toggle, .btn-group.open .dk_container > a.dropdown-toggle, .btn-group.open .dropdown-toggle.standalone, .btn-group.open input.dropdown-toggle[value^="Cancel"], .btn-group.open .dropdown-toggle[type="submit"], .btn-group.open .dropdown-toggle.context, .btn-group.open .dropdown-toggle.searchButton, .btn-group.open .dropdown-toggle.link-parent {
   background-color: #e6e6e6;
 }
 /* line 154, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
@@ -4642,7 +4621,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn .caret, .dk_container > a .caret, .standalone .caret, button:not(.close) .caret, input[value^="Cancel"] .caret, [type="submit"] .caret, .context .caret, .searchButton .caret, .link-parent .caret {
+.btn .caret, .dk_container > a .caret, .standalone .caret, input[value^="Cancel"] .caret, [type="submit"] .caret, .context .caret, .searchButton .caret, .link-parent .caret {
   margin-top: 8px;
   margin-left: 0;
 }
@@ -4688,7 +4667,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 221, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical .btn, .btn-group-vertical .dk_container > a, .btn-group-vertical .standalone, .btn-group-vertical button:not(.close), .btn-group-vertical input[value^="Cancel"], .btn-group-vertical [type="submit"], .btn-group-vertical .context, .btn-group-vertical .searchButton, .btn-group-vertical .link-parent {
+.btn-group-vertical .btn, .btn-group-vertical .dk_container > a, .btn-group-vertical .standalone, .btn-group-vertical input[value^="Cancel"], .btn-group-vertical [type="submit"], .btn-group-vertical .context, .btn-group-vertical .searchButton, .btn-group-vertical .link-parent {
   display: block;
   float: none;
   width: 100%;
@@ -4698,20 +4677,20 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 227, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical .btn + .btn, .btn-group-vertical .dk_container > a + .btn, .btn-group-vertical .standalone + .btn, .btn-group-vertical button:not(.close) + .btn, .btn-group-vertical input[value^="Cancel"] + .btn, .btn-group-vertical [type="submit"] + .btn, .btn-group-vertical .context + .btn, .btn-group-vertical .searchButton + .btn, .btn-group-vertical .link-parent + .btn, .btn-group-vertical .dk_container > .btn + a, .btn-group-vertical .dk_container > a + a, .btn-group-vertical .dk_container > .standalone + a, .btn-group-vertical .dk_container > button:not(.close) + a, .btn-group-vertical .dk_container > input[value^="Cancel"] + a, .btn-group-vertical .dk_container > [type="submit"] + a, .btn-group-vertical .dk_container > .context + a, .btn-group-vertical .dk_container > .searchButton + a, .btn-group-vertical .dk_container > .link-parent + a, .btn-group-vertical .btn + .standalone, .btn-group-vertical .dk_container > a + .standalone, .btn-group-vertical .standalone + .standalone, .btn-group-vertical button:not(.close) + .standalone, .btn-group-vertical input[value^="Cancel"] + .standalone, .btn-group-vertical [type="submit"] + .standalone, .btn-group-vertical .context + .standalone, .btn-group-vertical .searchButton + .standalone, .btn-group-vertical .link-parent + .standalone, .btn-group-vertical .btn + button:not(.close), .btn-group-vertical .dk_container > a + button:not(.close), .btn-group-vertical .standalone + button:not(.close), .btn-group-vertical button:not(.close) + button:not(.close), .btn-group-vertical input[value^="Cancel"] + button:not(.close), .btn-group-vertical [type="submit"] + button:not(.close), .btn-group-vertical .context + button:not(.close), .btn-group-vertical .searchButton + button:not(.close), .btn-group-vertical .link-parent + button:not(.close), .btn-group-vertical .btn + input[value^="Cancel"], .btn-group-vertical .dk_container > a + input[value^="Cancel"], .btn-group-vertical .standalone + input[value^="Cancel"], .btn-group-vertical button:not(.close) + input[value^="Cancel"], .btn-group-vertical input[value^="Cancel"] + input[value^="Cancel"], .btn-group-vertical [type="submit"] + input[value^="Cancel"], .btn-group-vertical .context + input[value^="Cancel"], .btn-group-vertical .searchButton + input[value^="Cancel"], .btn-group-vertical .link-parent + input[value^="Cancel"], .btn-group-vertical .btn + [type="submit"], .btn-group-vertical .dk_container > a + [type="submit"], .btn-group-vertical .standalone + [type="submit"], .btn-group-vertical button:not(.close) + [type="submit"], .btn-group-vertical input[value^="Cancel"] + [type="submit"], .btn-group-vertical [type="submit"] + [type="submit"], .btn-group-vertical .context + [type="submit"], .btn-group-vertical .searchButton + [type="submit"], .btn-group-vertical .link-parent + [type="submit"], .btn-group-vertical .btn + .context, .btn-group-vertical .dk_container > a + .context, .btn-group-vertical .standalone + .context, .btn-group-vertical button:not(.close) + .context, .btn-group-vertical input[value^="Cancel"] + .context, .btn-group-vertical [type="submit"] + .context, .btn-group-vertical .context + .context, .btn-group-vertical .searchButton + .context, .btn-group-vertical .link-parent + .context, .btn-group-vertical .btn + .searchButton, .btn-group-vertical .dk_container > a + .searchButton, .btn-group-vertical .standalone + .searchButton, .btn-group-vertical button:not(.close) + .searchButton, .btn-group-vertical input[value^="Cancel"] + .searchButton, .btn-group-vertical [type="submit"] + .searchButton, .btn-group-vertical .context + .searchButton, .btn-group-vertical .searchButton + .searchButton, .btn-group-vertical .link-parent + .searchButton, .btn-group-vertical .btn + .link-parent, .btn-group-vertical .dk_container > a + .link-parent, .btn-group-vertical .standalone + .link-parent, .btn-group-vertical button:not(.close) + .link-parent, .btn-group-vertical input[value^="Cancel"] + .link-parent, .btn-group-vertical [type="submit"] + .link-parent, .btn-group-vertical .context + .link-parent, .btn-group-vertical .searchButton + .link-parent, .btn-group-vertical .link-parent + .link-parent {
+.btn-group-vertical .btn + .btn, .btn-group-vertical .dk_container > a + .btn, .btn-group-vertical .standalone + .btn, .btn-group-vertical input[value^="Cancel"] + .btn, .btn-group-vertical [type="submit"] + .btn, .btn-group-vertical .context + .btn, .btn-group-vertical .searchButton + .btn, .btn-group-vertical .link-parent + .btn, .btn-group-vertical .dk_container > .btn + a, .btn-group-vertical .dk_container > a + a, .btn-group-vertical .dk_container > .standalone + a, .btn-group-vertical .dk_container > input[value^="Cancel"] + a, .btn-group-vertical .dk_container > [type="submit"] + a, .btn-group-vertical .dk_container > .context + a, .btn-group-vertical .dk_container > .searchButton + a, .btn-group-vertical .dk_container > .link-parent + a, .btn-group-vertical .btn + .standalone, .btn-group-vertical .dk_container > a + .standalone, .btn-group-vertical .standalone + .standalone, .btn-group-vertical input[value^="Cancel"] + .standalone, .btn-group-vertical [type="submit"] + .standalone, .btn-group-vertical .context + .standalone, .btn-group-vertical .searchButton + .standalone, .btn-group-vertical .link-parent + .standalone, .btn-group-vertical .btn + input[value^="Cancel"], .btn-group-vertical .dk_container > a + input[value^="Cancel"], .btn-group-vertical .standalone + input[value^="Cancel"], .btn-group-vertical input[value^="Cancel"] + input[value^="Cancel"], .btn-group-vertical [type="submit"] + input[value^="Cancel"], .btn-group-vertical .context + input[value^="Cancel"], .btn-group-vertical .searchButton + input[value^="Cancel"], .btn-group-vertical .link-parent + input[value^="Cancel"], .btn-group-vertical .btn + [type="submit"], .btn-group-vertical .dk_container > a + [type="submit"], .btn-group-vertical .standalone + [type="submit"], .btn-group-vertical input[value^="Cancel"] + [type="submit"], .btn-group-vertical [type="submit"] + [type="submit"], .btn-group-vertical .context + [type="submit"], .btn-group-vertical .searchButton + [type="submit"], .btn-group-vertical .link-parent + [type="submit"], .btn-group-vertical .btn + .context, .btn-group-vertical .dk_container > a + .context, .btn-group-vertical .standalone + .context, .btn-group-vertical input[value^="Cancel"] + .context, .btn-group-vertical [type="submit"] + .context, .btn-group-vertical .context + .context, .btn-group-vertical .searchButton + .context, .btn-group-vertical .link-parent + .context, .btn-group-vertical .btn + .searchButton, .btn-group-vertical .dk_container > a + .searchButton, .btn-group-vertical .standalone + .searchButton, .btn-group-vertical input[value^="Cancel"] + .searchButton, .btn-group-vertical [type="submit"] + .searchButton, .btn-group-vertical .context + .searchButton, .btn-group-vertical .searchButton + .searchButton, .btn-group-vertical .link-parent + .searchButton, .btn-group-vertical .btn + .link-parent, .btn-group-vertical .dk_container > a + .link-parent, .btn-group-vertical .standalone + .link-parent, .btn-group-vertical input[value^="Cancel"] + .link-parent, .btn-group-vertical [type="submit"] + .link-parent, .btn-group-vertical .context + .link-parent, .btn-group-vertical .searchButton + .link-parent, .btn-group-vertical .link-parent + .link-parent {
   margin-left: 0;
   margin-top: -1px;
 }
 
 /* line 231, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical .btn:first-child, .btn-group-vertical .dk_container > a:first-child, .btn-group-vertical .standalone:first-child, .btn-group-vertical button:first-child:not(.close), .btn-group-vertical input[value^="Cancel"]:first-child, .btn-group-vertical [type="submit"]:first-child, .btn-group-vertical .context:first-child, .btn-group-vertical .searchButton:first-child, .btn-group-vertical .link-parent:first-child {
+.btn-group-vertical .btn:first-child, .btn-group-vertical .dk_container > a:first-child, .btn-group-vertical .standalone:first-child, .btn-group-vertical input[value^="Cancel"]:first-child, .btn-group-vertical [type="submit"]:first-child, .btn-group-vertical .context:first-child, .btn-group-vertical .searchButton:first-child, .btn-group-vertical .link-parent:first-child {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
 
 /* line 234, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical .btn:last-child, .btn-group-vertical .dk_container > a:last-child, .btn-group-vertical .standalone:last-child, .btn-group-vertical button:last-child:not(.close), .btn-group-vertical input[value^="Cancel"]:last-child, .btn-group-vertical [type="submit"]:last-child, .btn-group-vertical .context:last-child, .btn-group-vertical .searchButton:last-child, .btn-group-vertical .link-parent:last-child {
+.btn-group-vertical .btn:last-child, .btn-group-vertical .dk_container > a:last-child, .btn-group-vertical .standalone:last-child, .btn-group-vertical input[value^="Cancel"]:last-child, .btn-group-vertical [type="submit"]:last-child, .btn-group-vertical .context:last-child, .btn-group-vertical .searchButton:last-child, .btn-group-vertical .link-parent:last-child {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
@@ -5493,13 +5472,13 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .btn, .navbar .dk_container > a, .navbar .standalone, .navbar button:not(.close), .navbar input[value^="Cancel"], .navbar [type="submit"], .navbar .context, .navbar .searchButton, .navbar .link-parent,
+.navbar .btn, .navbar .dk_container > a, .navbar .standalone, .navbar input[value^="Cancel"], .navbar [type="submit"], .navbar .context, .navbar .searchButton, .navbar .link-parent,
 .navbar .btn-group {
   margin-top: 4px;
 }
 
 /* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .btn-group .btn, .navbar .btn-group .dk_container > a, .navbar .btn-group .standalone, .navbar .btn-group button:not(.close), .navbar .btn-group input[value^="Cancel"], .navbar .btn-group [type="submit"], .navbar .btn-group .context, .navbar .btn-group .searchButton, .navbar .btn-group .link-parent {
+.navbar .btn-group .btn, .navbar .btn-group .dk_container > a, .navbar .btn-group .standalone, .navbar .btn-group input[value^="Cancel"], .navbar .btn-group [type="submit"], .navbar .btn-group .context, .navbar .btn-group .searchButton, .navbar .btn-group .link-parent {
   margin: 0;
 }
 
@@ -5531,7 +5510,6 @@ input[type="submit"]::-moz-focus-inner {
 .navbar-form .btn,
 .navbar-form .dk_container > a,
 .navbar-form .standalone,
-.navbar-form button:not(.close),
 .navbar-form input[value^="Cancel"],
 .navbar-form [type="submit"],
 .navbar-form .context,
@@ -6301,7 +6279,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 /* line 26, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
 .breadcrumb h2 {
-  margin: 0;
+  margin: 0 !important;
   font-size: 11px;
   color: #aaaaaa;
   font-weight: normal;
@@ -6630,12 +6608,12 @@ input[type="submit"]::-moz-focus-inner {
   clear: both;
 }
 /* line 95, ../bootstrap/scss/compass_twitter_bootstrap/_modals.scss */
-.modal-footer .btn + .btn, .modal-footer .dk_container > a + .btn, .modal-footer .standalone + .btn, .modal-footer button:not(.close) + .btn, .modal-footer input[value^="Cancel"] + .btn, .modal-footer [type="submit"] + .btn, .modal-footer .context + .btn, .modal-footer .searchButton + .btn, .modal-footer .link-parent + .btn, .modal-footer .dk_container > .btn + a, .modal-footer .dk_container > a + a, .modal-footer .dk_container > .standalone + a, .modal-footer .dk_container > button:not(.close) + a, .modal-footer .dk_container > input[value^="Cancel"] + a, .modal-footer .dk_container > [type="submit"] + a, .modal-footer .dk_container > .context + a, .modal-footer .dk_container > .searchButton + a, .modal-footer .dk_container > .link-parent + a, .modal-footer .btn + .standalone, .modal-footer .dk_container > a + .standalone, .modal-footer .standalone + .standalone, .modal-footer button:not(.close) + .standalone, .modal-footer input[value^="Cancel"] + .standalone, .modal-footer [type="submit"] + .standalone, .modal-footer .context + .standalone, .modal-footer .searchButton + .standalone, .modal-footer .link-parent + .standalone, .modal-footer .btn + button:not(.close), .modal-footer .dk_container > a + button:not(.close), .modal-footer .standalone + button:not(.close), .modal-footer button:not(.close) + button:not(.close), .modal-footer input[value^="Cancel"] + button:not(.close), .modal-footer [type="submit"] + button:not(.close), .modal-footer .context + button:not(.close), .modal-footer .searchButton + button:not(.close), .modal-footer .link-parent + button:not(.close), .modal-footer .btn + input[value^="Cancel"], .modal-footer .dk_container > a + input[value^="Cancel"], .modal-footer .standalone + input[value^="Cancel"], .modal-footer button:not(.close) + input[value^="Cancel"], .modal-footer input[value^="Cancel"] + input[value^="Cancel"], .modal-footer [type="submit"] + input[value^="Cancel"], .modal-footer .context + input[value^="Cancel"], .modal-footer .searchButton + input[value^="Cancel"], .modal-footer .link-parent + input[value^="Cancel"], .modal-footer .btn + [type="submit"], .modal-footer .dk_container > a + [type="submit"], .modal-footer .standalone + [type="submit"], .modal-footer button:not(.close) + [type="submit"], .modal-footer input[value^="Cancel"] + [type="submit"], .modal-footer [type="submit"] + [type="submit"], .modal-footer .context + [type="submit"], .modal-footer .searchButton + [type="submit"], .modal-footer .link-parent + [type="submit"], .modal-footer .btn + .context, .modal-footer .dk_container > a + .context, .modal-footer .standalone + .context, .modal-footer button:not(.close) + .context, .modal-footer input[value^="Cancel"] + .context, .modal-footer [type="submit"] + .context, .modal-footer .context + .context, .modal-footer .searchButton + .context, .modal-footer .link-parent + .context, .modal-footer .btn + .searchButton, .modal-footer .dk_container > a + .searchButton, .modal-footer .standalone + .searchButton, .modal-footer button:not(.close) + .searchButton, .modal-footer input[value^="Cancel"] + .searchButton, .modal-footer [type="submit"] + .searchButton, .modal-footer .context + .searchButton, .modal-footer .searchButton + .searchButton, .modal-footer .link-parent + .searchButton, .modal-footer .btn + .link-parent, .modal-footer .dk_container > a + .link-parent, .modal-footer .standalone + .link-parent, .modal-footer button:not(.close) + .link-parent, .modal-footer input[value^="Cancel"] + .link-parent, .modal-footer [type="submit"] + .link-parent, .modal-footer .context + .link-parent, .modal-footer .searchButton + .link-parent, .modal-footer .link-parent + .link-parent {
+.modal-footer .btn + .btn, .modal-footer .dk_container > a + .btn, .modal-footer .standalone + .btn, .modal-footer input[value^="Cancel"] + .btn, .modal-footer [type="submit"] + .btn, .modal-footer .context + .btn, .modal-footer .searchButton + .btn, .modal-footer .link-parent + .btn, .modal-footer .dk_container > .btn + a, .modal-footer .dk_container > a + a, .modal-footer .dk_container > .standalone + a, .modal-footer .dk_container > input[value^="Cancel"] + a, .modal-footer .dk_container > [type="submit"] + a, .modal-footer .dk_container > .context + a, .modal-footer .dk_container > .searchButton + a, .modal-footer .dk_container > .link-parent + a, .modal-footer .btn + .standalone, .modal-footer .dk_container > a + .standalone, .modal-footer .standalone + .standalone, .modal-footer input[value^="Cancel"] + .standalone, .modal-footer [type="submit"] + .standalone, .modal-footer .context + .standalone, .modal-footer .searchButton + .standalone, .modal-footer .link-parent + .standalone, .modal-footer .btn + input[value^="Cancel"], .modal-footer .dk_container > a + input[value^="Cancel"], .modal-footer .standalone + input[value^="Cancel"], .modal-footer input[value^="Cancel"] + input[value^="Cancel"], .modal-footer [type="submit"] + input[value^="Cancel"], .modal-footer .context + input[value^="Cancel"], .modal-footer .searchButton + input[value^="Cancel"], .modal-footer .link-parent + input[value^="Cancel"], .modal-footer .btn + [type="submit"], .modal-footer .dk_container > a + [type="submit"], .modal-footer .standalone + [type="submit"], .modal-footer input[value^="Cancel"] + [type="submit"], .modal-footer [type="submit"] + [type="submit"], .modal-footer .context + [type="submit"], .modal-footer .searchButton + [type="submit"], .modal-footer .link-parent + [type="submit"], .modal-footer .btn + .context, .modal-footer .dk_container > a + .context, .modal-footer .standalone + .context, .modal-footer input[value^="Cancel"] + .context, .modal-footer [type="submit"] + .context, .modal-footer .context + .context, .modal-footer .searchButton + .context, .modal-footer .link-parent + .context, .modal-footer .btn + .searchButton, .modal-footer .dk_container > a + .searchButton, .modal-footer .standalone + .searchButton, .modal-footer input[value^="Cancel"] + .searchButton, .modal-footer [type="submit"] + .searchButton, .modal-footer .context + .searchButton, .modal-footer .searchButton + .searchButton, .modal-footer .link-parent + .searchButton, .modal-footer .btn + .link-parent, .modal-footer .dk_container > a + .link-parent, .modal-footer .standalone + .link-parent, .modal-footer input[value^="Cancel"] + .link-parent, .modal-footer [type="submit"] + .link-parent, .modal-footer .context + .link-parent, .modal-footer .searchButton + .link-parent, .modal-footer .link-parent + .link-parent {
   margin-left: 5px;
   margin-bottom: 0;
 }
 /* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_modals.scss */
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .dk_container > a + .btn, .modal-footer .btn-group .standalone + .btn, .modal-footer .btn-group button:not(.close) + .btn, .modal-footer .btn-group input[value^="Cancel"] + .btn, .modal-footer .btn-group [type="submit"] + .btn, .modal-footer .btn-group .context + .btn, .modal-footer .btn-group .searchButton + .btn, .modal-footer .btn-group .link-parent + .btn, .modal-footer .btn-group .dk_container > .btn + a, .modal-footer .btn-group .dk_container > a + a, .modal-footer .btn-group .dk_container > .standalone + a, .modal-footer .btn-group .dk_container > button:not(.close) + a, .modal-footer .btn-group .dk_container > input[value^="Cancel"] + a, .modal-footer .btn-group .dk_container > [type="submit"] + a, .modal-footer .btn-group .dk_container > .context + a, .modal-footer .btn-group .dk_container > .searchButton + a, .modal-footer .btn-group .dk_container > .link-parent + a, .modal-footer .btn-group .btn + .standalone, .modal-footer .btn-group .dk_container > a + .standalone, .modal-footer .btn-group .standalone + .standalone, .modal-footer .btn-group button:not(.close) + .standalone, .modal-footer .btn-group input[value^="Cancel"] + .standalone, .modal-footer .btn-group [type="submit"] + .standalone, .modal-footer .btn-group .context + .standalone, .modal-footer .btn-group .searchButton + .standalone, .modal-footer .btn-group .link-parent + .standalone, .modal-footer .btn-group .btn + button:not(.close), .modal-footer .btn-group .dk_container > a + button:not(.close), .modal-footer .btn-group .standalone + button:not(.close), .modal-footer .btn-group button:not(.close) + button:not(.close), .modal-footer .btn-group input[value^="Cancel"] + button:not(.close), .modal-footer .btn-group [type="submit"] + button:not(.close), .modal-footer .btn-group .context + button:not(.close), .modal-footer .btn-group .searchButton + button:not(.close), .modal-footer .btn-group .link-parent + button:not(.close), .modal-footer .btn-group .btn + input[value^="Cancel"], .modal-footer .btn-group .dk_container > a + input[value^="Cancel"], .modal-footer .btn-group .standalone + input[value^="Cancel"], .modal-footer .btn-group button:not(.close) + input[value^="Cancel"], .modal-footer .btn-group input[value^="Cancel"] + input[value^="Cancel"], .modal-footer .btn-group [type="submit"] + input[value^="Cancel"], .modal-footer .btn-group .context + input[value^="Cancel"], .modal-footer .btn-group .searchButton + input[value^="Cancel"], .modal-footer .btn-group .link-parent + input[value^="Cancel"], .modal-footer .btn-group .btn + [type="submit"], .modal-footer .btn-group .dk_container > a + [type="submit"], .modal-footer .btn-group .standalone + [type="submit"], .modal-footer .btn-group button:not(.close) + [type="submit"], .modal-footer .btn-group input[value^="Cancel"] + [type="submit"], .modal-footer .btn-group [type="submit"] + [type="submit"], .modal-footer .btn-group .context + [type="submit"], .modal-footer .btn-group .searchButton + [type="submit"], .modal-footer .btn-group .link-parent + [type="submit"], .modal-footer .btn-group .btn + .context, .modal-footer .btn-group .dk_container > a + .context, .modal-footer .btn-group .standalone + .context, .modal-footer .btn-group button:not(.close) + .context, .modal-footer .btn-group input[value^="Cancel"] + .context, .modal-footer .btn-group [type="submit"] + .context, .modal-footer .btn-group .context + .context, .modal-footer .btn-group .searchButton + .context, .modal-footer .btn-group .link-parent + .context, .modal-footer .btn-group .btn + .searchButton, .modal-footer .btn-group .dk_container > a + .searchButton, .modal-footer .btn-group .standalone + .searchButton, .modal-footer .btn-group button:not(.close) + .searchButton, .modal-footer .btn-group input[value^="Cancel"] + .searchButton, .modal-footer .btn-group [type="submit"] + .searchButton, .modal-footer .btn-group .context + .searchButton, .modal-footer .btn-group .searchButton + .searchButton, .modal-footer .btn-group .link-parent + .searchButton, .modal-footer .btn-group .btn + .link-parent, .modal-footer .btn-group .dk_container > a + .link-parent, .modal-footer .btn-group .standalone + .link-parent, .modal-footer .btn-group button:not(.close) + .link-parent, .modal-footer .btn-group input[value^="Cancel"] + .link-parent, .modal-footer .btn-group [type="submit"] + .link-parent, .modal-footer .btn-group .context + .link-parent, .modal-footer .btn-group .searchButton + .link-parent, .modal-footer .btn-group .link-parent + .link-parent {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .dk_container > a + .btn, .modal-footer .btn-group .standalone + .btn, .modal-footer .btn-group input[value^="Cancel"] + .btn, .modal-footer .btn-group [type="submit"] + .btn, .modal-footer .btn-group .context + .btn, .modal-footer .btn-group .searchButton + .btn, .modal-footer .btn-group .link-parent + .btn, .modal-footer .btn-group .dk_container > .btn + a, .modal-footer .btn-group .dk_container > a + a, .modal-footer .btn-group .dk_container > .standalone + a, .modal-footer .btn-group .dk_container > input[value^="Cancel"] + a, .modal-footer .btn-group .dk_container > [type="submit"] + a, .modal-footer .btn-group .dk_container > .context + a, .modal-footer .btn-group .dk_container > .searchButton + a, .modal-footer .btn-group .dk_container > .link-parent + a, .modal-footer .btn-group .btn + .standalone, .modal-footer .btn-group .dk_container > a + .standalone, .modal-footer .btn-group .standalone + .standalone, .modal-footer .btn-group input[value^="Cancel"] + .standalone, .modal-footer .btn-group [type="submit"] + .standalone, .modal-footer .btn-group .context + .standalone, .modal-footer .btn-group .searchButton + .standalone, .modal-footer .btn-group .link-parent + .standalone, .modal-footer .btn-group .btn + input[value^="Cancel"], .modal-footer .btn-group .dk_container > a + input[value^="Cancel"], .modal-footer .btn-group .standalone + input[value^="Cancel"], .modal-footer .btn-group input[value^="Cancel"] + input[value^="Cancel"], .modal-footer .btn-group [type="submit"] + input[value^="Cancel"], .modal-footer .btn-group .context + input[value^="Cancel"], .modal-footer .btn-group .searchButton + input[value^="Cancel"], .modal-footer .btn-group .link-parent + input[value^="Cancel"], .modal-footer .btn-group .btn + [type="submit"], .modal-footer .btn-group .dk_container > a + [type="submit"], .modal-footer .btn-group .standalone + [type="submit"], .modal-footer .btn-group input[value^="Cancel"] + [type="submit"], .modal-footer .btn-group [type="submit"] + [type="submit"], .modal-footer .btn-group .context + [type="submit"], .modal-footer .btn-group .searchButton + [type="submit"], .modal-footer .btn-group .link-parent + [type="submit"], .modal-footer .btn-group .btn + .context, .modal-footer .btn-group .dk_container > a + .context, .modal-footer .btn-group .standalone + .context, .modal-footer .btn-group input[value^="Cancel"] + .context, .modal-footer .btn-group [type="submit"] + .context, .modal-footer .btn-group .context + .context, .modal-footer .btn-group .searchButton + .context, .modal-footer .btn-group .link-parent + .context, .modal-footer .btn-group .btn + .searchButton, .modal-footer .btn-group .dk_container > a + .searchButton, .modal-footer .btn-group .standalone + .searchButton, .modal-footer .btn-group input[value^="Cancel"] + .searchButton, .modal-footer .btn-group [type="submit"] + .searchButton, .modal-footer .btn-group .context + .searchButton, .modal-footer .btn-group .searchButton + .searchButton, .modal-footer .btn-group .link-parent + .searchButton, .modal-footer .btn-group .btn + .link-parent, .modal-footer .btn-group .dk_container > a + .link-parent, .modal-footer .btn-group .standalone + .link-parent, .modal-footer .btn-group input[value^="Cancel"] + .link-parent, .modal-footer .btn-group [type="submit"] + .link-parent, .modal-footer .btn-group .context + .link-parent, .modal-footer .btn-group .searchButton + .link-parent, .modal-footer .btn-group .link-parent + .link-parent {
   margin-left: -1px;
 }
 
@@ -7053,11 +7031,10 @@ a.label:hover, #listing-table tr td:nth-child(6) a.state-restricted-to-managers:
 }
 
 /* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_labels-badges.scss */
-.btn .label, .dk_container > a .label, .standalone .label, button:not(.close) .label, input[value^="Cancel"] .label, [type="submit"] .label, .context .label, .searchButton .label, .link-parent .label, .btn #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .btn .state-restricted-to-managers, .dk_container > a #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .dk_container > a .state-restricted-to-managers, .standalone #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .standalone .state-restricted-to-managers, button:not(.close) #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) button:not(.close) .state-restricted-to-managers, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-restricted-to-managers, [type="submit"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) [type="submit"] .state-restricted-to-managers, .context #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .context .state-restricted-to-managers, .searchButton #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .searchButton .state-restricted-to-managers, .link-parent #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .link-parent .state-restricted-to-managers, .btn #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .btn .state-visible, .dk_container > a #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .dk_container > a .state-visible, .standalone #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .standalone .state-visible, button:not(.close) #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) button:not(.close) .state-visible, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-visible, [type="submit"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) [type="submit"] .state-visible, .context #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .context .state-visible, .searchButton #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .searchButton .state-visible, .link-parent #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .link-parent .state-visible, .btn #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .btn .state-intranet, .dk_container > a #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .dk_container > a .state-intranet, .standalone #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .standalone .state-intranet, button:not(.close) #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) button:not(.close) .state-intranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-intranet, [type="submit"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) [type="submit"] .state-intranet, .context #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .context .state-intranet, .searchButton #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .searchButton .state-intranet, .link-parent #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .link-parent .state-intranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-publishtointranet, .dk_container > a #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .dk_container > a #workflow-transition-publishtointranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-publishtointranet, button:not(.close) #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) button:not(.close) #workflow-transition-publishtointranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-publishtointranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-publishtointranet, .context #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .context #workflow-transition-publishtointranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-publishtointranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-publishtointranet, .btn #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .btn .state-private, .dk_container > a #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .dk_container > a .state-private, .standalone #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .standalone .state-private, button:not(.close) #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) button:not(.close) .state-private, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-private, [type="submit"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) [type="submit"] .state-private, .context #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .context .state-private, .searchButton #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .searchButton .state-private, .link-parent #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .link-parent .state-private, .btn #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .btn #workflow-transition-hide, .dk_container > a #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .dk_container > a #workflow-transition-hide, .standalone #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .standalone #workflow-transition-hide, button:not(.close) #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) button:not(.close) #workflow-transition-hide, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-hide, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-hide, .context #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .context #workflow-transition-hide, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-hide, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-hide,
+.btn .label, .dk_container > a .label, .standalone .label, input[value^="Cancel"] .label, [type="submit"] .label, .context .label, .searchButton .label, .link-parent .label, .btn #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .btn .state-restricted-to-managers, .dk_container > a #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .dk_container > a .state-restricted-to-managers, .standalone #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .standalone .state-restricted-to-managers, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-restricted-to-managers, [type="submit"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) [type="submit"] .state-restricted-to-managers, .context #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .context .state-restricted-to-managers, .searchButton #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .searchButton .state-restricted-to-managers, .link-parent #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .link-parent .state-restricted-to-managers, .btn #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .btn .state-visible, .dk_container > a #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .dk_container > a .state-visible, .standalone #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .standalone .state-visible, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-visible, [type="submit"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) [type="submit"] .state-visible, .context #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .context .state-visible, .searchButton #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .searchButton .state-visible, .link-parent #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .link-parent .state-visible, .btn #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .btn .state-intranet, .dk_container > a #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .dk_container > a .state-intranet, .standalone #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .standalone .state-intranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-intranet, [type="submit"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) [type="submit"] .state-intranet, .context #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .context .state-intranet, .searchButton #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .searchButton .state-intranet, .link-parent #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .link-parent .state-intranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-publishtointranet, .dk_container > a #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .dk_container > a #workflow-transition-publishtointranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-publishtointranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-publishtointranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-publishtointranet, .context #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .context #workflow-transition-publishtointranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-publishtointranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-publishtointranet, .btn #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .btn .state-private, .dk_container > a #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .dk_container > a .state-private, .standalone #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .standalone .state-private, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-private, [type="submit"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) [type="submit"] .state-private, .context #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .context .state-private, .searchButton #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .searchButton .state-private, .link-parent #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .link-parent .state-private, .btn #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .btn #workflow-transition-hide, .dk_container > a #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .dk_container > a #workflow-transition-hide, .standalone #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .standalone #workflow-transition-hide, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-hide, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-hide, .context #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .context #workflow-transition-hide, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-hide, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-hide,
 .btn .badge,
 .dk_container > a .badge,
 .standalone .badge,
-button:not(.close) .badge,
 input[value^="Cancel"] .badge,
 [type="submit"] .badge,
 .context .badge,
@@ -8790,7 +8767,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  #portal-globalnav .nav-collapse .btn, #portal-globalnav .nav-collapse .dk_container > a, #portal-globalnav .nav-collapse .standalone, #portal-globalnav .nav-collapse button:not(.close), #portal-globalnav .nav-collapse input[value^="Cancel"], #portal-globalnav .nav-collapse [type="submit"], #portal-globalnav .nav-collapse .context, #portal-globalnav .nav-collapse .searchButton, #portal-globalnav .nav-collapse .link-parent {
+  #portal-globalnav .nav-collapse .btn, #portal-globalnav .nav-collapse .dk_container > a, #portal-globalnav .nav-collapse .standalone, #portal-globalnav .nav-collapse input[value^="Cancel"], #portal-globalnav .nav-collapse [type="submit"], #portal-globalnav .nav-collapse .context, #portal-globalnav .nav-collapse .searchButton, #portal-globalnav .nav-collapse .link-parent {
     padding: 4px 10px 4px;
     font-weight: normal;
     -webkit-border-radius: 4px;
@@ -9066,7 +9043,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 220, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .nav-collapse .btn, .nav-collapse .dk_container > a, .nav-collapse .standalone, .nav-collapse button:not(.close), .nav-collapse input[value^="Cancel"], .nav-collapse [type="submit"], .nav-collapse .context, .nav-collapse .searchButton, .nav-collapse .link-parent {
+  .nav-collapse .btn, .nav-collapse .dk_container > a, .nav-collapse .standalone, .nav-collapse input[value^="Cancel"], .nav-collapse [type="submit"], .nav-collapse .context, .nav-collapse .searchButton, .nav-collapse .link-parent {
     padding: 4px 10px 4px;
     font-weight: normal;
     -webkit-border-radius: 4px;
@@ -10383,7 +10360,7 @@ a.primary, .primary a, a .primary {
 }
 
 /* line 32, ../scss/_wells-boxes.scss */
-.box, .box-inverse, .portaltype-packet .estudis .caixa3, #category.documentByLine {
+.box, .box-inverse, .template-manage-homeportlets .portletHeader:hover, .portaltype-packet .estudis .caixa3, #category.documentByLine {
   min-height: 20px;
   padding: 18px;
   margin-bottom: 20px;
@@ -10400,13 +10377,13 @@ a.primary, .primary a, a .primary {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 /* line 41, ../scss/_wells-boxes.scss */
-.box blockquote, .box-inverse blockquote, .portaltype-packet .estudis .caixa3 blockquote, #category.documentByLine blockquote {
+.box blockquote, .box-inverse blockquote, .template-manage-homeportlets .portletHeader:hover blockquote, .portaltype-packet .estudis .caixa3 blockquote, #category.documentByLine blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
 
 /* line 46, ../scss/_wells-boxes.scss */
-.box-inverse {
+.box-inverse, .template-manage-homeportlets .portletHeader:hover {
   background: #222222;
   color: #f2f2f2;
   border: 1px solid black;
@@ -10424,7 +10401,7 @@ a.primary, .primary a, a .primary {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#efefef', GradientType=0);
 }
 /* line 54, ../scss/_wells-boxes.scss */
-.box-gradient.box-inverse {
+.box-gradient.box-inverse, .template-manage-homeportlets .box-gradient.portletHeader:hover {
   background-color: #131313;
   background-image: -moz-linear-gradient(top, black, #333333);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(black), to(#333333));
@@ -10457,7 +10434,7 @@ a.primary, .primary a, a .primary {
   position: absolute;
 }
 /* line 74, ../scss/_wells-boxes.scss */
-.box-example.box-inverse:after {
+.box-example.box-inverse:after, .template-manage-homeportlets .box-example.portletHeader:hover:after {
   background-color: black;
   border-color: #666666;
   border-top: 0;
@@ -12425,6 +12402,42 @@ iframe {
   border-color: #f00;
   background-color: #000;
   color: #080;
+}
+
+/* line 359, ../scss/_plone.scss */
+.template-manage-homeportlets .portletHeader strong {
+  display: inline-block;
+  padding: 2px 0 0 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 34%;
+}
+
+/* line 361, ../scss/_plone.scss */
+.template-manage-homeportlets .portletHeader:hover strong {
+  color: white;
+}
+/* line 362, ../scss/_plone.scss */
+.template-manage-homeportlets .portletHeader:hover a {
+  color: #30a2c3;
+}
+
+/* line 364, ../scss/_plone.scss */
+.template-manage-homeportlets .portletHeader strong:hover {
+  overflow: visible;
+  width: 100%;
+  padding-bottom: 1px !important;
+}
+
+/* line 365, ../scss/_plone.scss */
+.template-manage-homeportlets .portletHeader strong:hover + span {
+  display: none;
+}
+
+/* line 368, ../scss/_plone.scss */
+img[src$="spinner.gif"] {
+  box-shadow: 0 0 250px 250px white;
 }
 
 /* line 10, ../scss/_gw3togw4.scss */

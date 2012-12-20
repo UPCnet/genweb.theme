@@ -9,9 +9,7 @@
             <abbr rel="tooltip" data-placement="top" title="Universitat Politècnica de Catalunya · BarcelonaTech">UPC</abbr>
             <img class="img_blank" src="/++genweb++static/images/blank_blau.png"
                  i18n:attributes="alt obrir_link_finestra_nova">
-          </a>
-            .
-            <tal:signatura
+          </a>. <tal:signatura
               content="python:getattr(viewlet.genweb_config(), 'signatura_unitat_%s' % viewlet.pref_lang(), '')">
                 Servei de Comunicació i Promoció
             </tal:signatura>
