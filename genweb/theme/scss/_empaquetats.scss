@@ -1,5 +1,14 @@
 // ESTUDIS
 // -------------
-.portaltype-packet .estudis .fitxaest {@extend .nav; @extend .nav-tabs;}
+.portaltype-packet .estudis {
+	& *.gris {@extend .muted;}
+	caption {display: none;}
+	table.minimal {@extend .table; @extend .table-condensed; @extend .table-striped;}
+	td:first-child, th:first-child {min-width:150px;}
+	.note {@extend .lead-small;}
+	.right {float: right;}
+	dl.fitxa {@extend .dl-horizontal; @extend .margin0;}
+	.caixa3 {@extend .box; @extend .box-small; @extend .visualClear;}
+	.llistatEnllacos {@extend .list-links; @extend .list-condensed;}
 
-.portaltype-packet .estudis .gris {@extend .muted;}
+}

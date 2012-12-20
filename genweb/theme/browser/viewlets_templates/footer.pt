@@ -3,7 +3,7 @@
         i18n:domain="genweb">
   <div class="container">
     <div class="row-fluid">
-      <div class="span8">
+      <div class="span7">
         <p>&copy;
           <a href="http://www.upc.edu">
             <abbr rel="tooltip" data-placement="top" title="Universitat Politècnica de Catalunya · BarcelonaTech">UPC</abbr>
@@ -12,13 +12,13 @@
           </a>
             .
             <tal:signatura
-              content="python:getattr(viewlet.genweb_config, 'signatura_unitat_%s' % viewlet.pref_lang(), u'Servei de Comunicació i Promoció.')">
+              content="python:getattr(viewlet.genweb_config(), 'signatura_unitat_%s' % viewlet.pref_lang(), '')">
                 Servei de Comunicació i Promoció
             </tal:signatura>
         </p>
         <address>
-          <p tal:condition="python:dades and not dades.get('error', '')">
-            <tal:adreca content="python:dades.get(u'adreça', '')">
+          <p tal:condition="python:dades and not dades.get('error', False)">
+            <tal:adreca content="dades/adreca_sencera | nothing">
               Edifici Til·lers. Jordi Girona, 31. 08011 Barcelona
             </tal:adreca> -
             <abbr rel="tooltip" data-placement="top" title="Telèfon">
@@ -34,9 +34,9 @@
           </p>
         </address>
       </div>
-      <div class="span4">
+      <div class="span5">
         <h2 class="goout"> Sobre el web </h2>
-        <ul class="pull-right sobreElWeb"
+        <ul class="align-right sobreElWeb"
             tal:define="link viewlet/getLinksPeu">
           <li>
             <a href="#"

@@ -29,6 +29,9 @@ $purple:                #8952ab !default;
 .state-pending {color: darken($orange,5%);}
 .state-draft {color: $green;}
 .state-private {color: $red;} 
+	//extends
+	.state-restricted-to-managers {color: $grayDarker;}
+	.state-visible {@extend .state-draft;}
 
 // USUARI
 // -------------------------
