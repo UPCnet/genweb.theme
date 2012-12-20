@@ -10,12 +10,7 @@ from plone.portlets.interfaces import IPortletDataProvider
 from Products.CMFCore.utils import getToolByName
 from genweb.core.adapters import IImportant
 
-# from time import localtime
-# import feedparser
-# from plone.memoize.compress import xhtml_compress
 from plone.app.portlets.portlets.news import Renderer as news_renderer
-# from zope.i18nmessageid import MessageFactory
-# from DateTime import DateTime
 
 
 class INewsPortlet(IPortletDataProvider):
@@ -29,14 +24,6 @@ class INewsPortlet(IPortletDataProvider):
         min=5,
         max=7)
 
-    state = schema.Tuple(title=_(u"Workflow state"),
-                         description=_(u"Items in which workflow state to show."),
-                         default=('published', ),
-                         required=True,
-                         value_type=schema.Choice(
-                             vocabulary="plone.app.vocabularies.WorkflowStates")
-                         )
-
     showdata = schema.Bool(
         title=_(u"Mostra data?"),
         description=_(u"Boolea que indica si s'ha de mostrar la data en les noticies"),
@@ -48,9 +35,8 @@ class INewsPortlet(IPortletDataProvider):
 class Assignment (base.Assignment):
     implements(INewsPortlet)
 
-    def __init__(self, count=5, showdata=True, state=('published',)):
+    def __init__(self, count=5, showdata=True):
         self.count = count
-        self.state = state
         self.showdata = showdata
     title = _(u"Noticies", default=u'Noticies')
 
@@ -70,7 +56,7 @@ class Renderer(news_renderer):
         results = catalog(portal_type=('News Item', 'Link'),
                        review_state=state,
                        is_important=True,
-                       sort_order='reverse',
+                       sort_on="getObjPositionInParent",
                        sort_limit=limit)[:limit]
         important = len(results)
         results2 = catalog(portal_type=('News Item', 'Link'),
@@ -79,6 +65,12 @@ class Renderer(news_renderer):
                        sort_on=('Date'),
                        sort_order='reverse',
                        sort_limit=limit - important)[:limit - important]
+        # for brain in results2:
+        #     obj = brain.getObject()
+        #     import ipdb; ipdb.set_trace()
+        #     if obj.title == "a" or obj.title == "b":
+        #         IImportant(obj).is_important = True
+        #         import transaction; transaction.commit()
         return results + results2
 
 
@@ -88,4 +80,4 @@ class AddForm(base.AddForm):
         description = _(u"Aquest portlet mostra noticies")
 
         def create(self, data):
-            return Assignment(count=data.get('count', 5), state=data.get('state', ('published', )), showdata=data.get('showdata', True))
+            return Assignment(count=data.get('count', 5), showdata=data.get('showdata', True))
