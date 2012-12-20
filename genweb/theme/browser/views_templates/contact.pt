@@ -26,9 +26,7 @@
       </h1>
       <div class="row-fluid">
         <div class="span8">
-          <tal:form tal:replace="structure view/contents">
-            The form
-          </tal:form>
+          <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
         </div>
         <div class="span4"
              tal:define="edifici python:getattr(dades, 'edifici_%s' % view.pref_lang(), u'Edifici Til·lers');

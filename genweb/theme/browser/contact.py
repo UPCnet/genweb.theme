@@ -1,27 +1,42 @@
 # -*- coding: utf-8 -*-
 import re
+from five import grok
 from cgi import escape
 from Acquisition import aq_inner
 
-from zope import schema
-from zope.interface import Interface
-from zope.component import getUtility
-from z3c.form import form, field, button
+from zope.schema import TextLine, Text, ValidationError
+from z3c.form import field, button
+from plone.directives import form
 
-from plone.z3cform.layout import wrap_form, FormWrapper
+from plone.formwidget.recaptcha.widget import ReCaptchaFieldWidget
 
+from Products.CMFPlone.utils import safe_unicode
 from Products.statusmessages.interfaces import IStatusMessage
 from Products.CMFCore.utils import getToolByName
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFPlone import PloneMessageFactory as _
-from Products.CMFPlone.utils import safe_unicode
-from Products.CMFCore.interfaces import ISiteRoot
+from Products.CMFPlone.interfaces import IPloneSiteRoot
 
-from upc.genweb.recaptcha.widget import ReCaptchaFieldWidget
+from genweb.theme.browser.interfaces import IGenwebTheme
+
+grok.templatedir("views_templates")
 
 
-# Define a valiation method for email addresses
-class NotAnEmailAddress(schema.ValidationError):
+MESSAGE_TEMPLATE = u"""\
+Heu rebut aquest correu perquè en/na %(name)s (%(from_address)s) ha enviat \
+comentaris sobre l'espai Genweb que administreu a \
+
+%(genweb)s
+
+El missatge és:
+
+%(message)s
+--
+%(from_name)s
+"""
+
+
+# Define a validation method for email addresses
+class NotAnEmailAddress(ValidationError):
     __doc__ = _(u"Invalid email address")
 
 check_email = re.compile(r"[a-zA-Z0-9._%-]+@([a-zA-Z0-9-]+\.)*[a-zA-Z]{2,4}").match
@@ -32,65 +47,49 @@ def validate_email(value):
         raise NotAnEmailAddress(value)
     return True
 
-MESSAGE_TEMPLATE = """\
-Enquiry from: %(name)s <%(email_address)s>
 
-%(message)s
-"""
-
-
-class IContactForm(Interface):
+class IContactForm(form.Schema):
     """Define the fields of our form
     """
 
-    nombre = schema.TextLine(title=_('label_sender_fullname', default=u"Name"),
+    nombre = TextLine(title=_('label_sender_fullname', default=u"Name"),
                              description=_("help_sender_fullname", default="Please enter your full name."),
                              required=True)
 
-    destinatario = schema.TextLine(title=_('label_sender_from_address', default=u"E-Mail"),
+    from_address = TextLine(title=_('label_sender_from_address', default=u"E-Mail"),
                                    description=_("help_sender_from_address", default="Please enter your e-mail address."),
                                    required=True,
                                    constraint=validate_email)
 
-    asunto = schema.TextLine(title=_('label_subject', default="Subject"),
+    asunto = TextLine(title=_('label_subject', default="Subject"),
                              description=_("help_subject", default="Please enter the subject of the message you want to send."),
                              required=True)
 
-    mensaje = schema.Text(title=_('label_message', default="Message"),
+    mensaje = Text(title=_('label_message', default="Message"),
                           description=_("help_message", default="Please enter the message you want to send."),
                           required=True)
 
-    captcha = schema.TextLine(title=_('Type the code', default="Type the code"),
+    captcha = TextLine(title=_('Type the code', default="Type the code"),
                               description=_('Type the code from the picture shown below', default="Type the code from the picture shown below"),
                               required=True)
 
-#z3c.form.validator.WidgetValidatorDiscriminators(upc.genweb.recaptcha.validator.ReCaptchaValidator, field=IContactForm['captcha'])
 
+class ContactForm(form.Form):
+    grok.name('contact')
+    grok.context(IPloneSiteRoot)
+    grok.template("contact")
+    grok.require('zope2.View')
+    grok.layer(IGenwebTheme)
 
-class Contact(object):
-    nombre = u""
-    destinatario = u""
-    asunto = u""
-    mensaje = u""
-    captcha = u""
+    ignoreContext = True
 
-    def __init__(self, context):
-        self.context = context
-
-
-class ContactBaseForm(form.Form):
     fields = field.Fields(IContactForm)
     fields['captcha'].widgetFactory = ReCaptchaFieldWidget
 
     # This trick hides the editable border and tabs in Plone
-    def __call__(self):
+    def update(self):
         self.request.set('disable_border', True)
-        return super(ContactForm, self).__call__()
-
-    def get_email_from_name(self):
-        return getUtility(ISiteRoot).email_from_name
-
-    destinatario = property(get_email_from_name)
+        super(ContactForm, self).update()
 
     @button.buttonAndHandler(_(u"Send"))
     def action_send(self, action):
@@ -108,7 +107,7 @@ class ContactBaseForm(form.Form):
             return
 
         if not 'asunto' in data or \
-           not 'destinatario' in data or \
+           not 'from_address' in data or \
            not 'mensaje' in data or \
            not 'nombre' in data:
             return
@@ -124,13 +123,15 @@ class ContactBaseForm(form.Form):
         from_name = portal.getProperty('email_from_name')
         titulo_web = portal.getProperty('title')
 
-        str = "Heu rebut aquest correu perquè en/na"
-        str1 = "l'espai"
-        source = "%s <%s>" % (escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['destinatario'])))
+        source = "%s <%s>" % (escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['from_address'])))
         subject = "[Formulari Contacte] %s" % (escape(safe_unicode(data['asunto'])))
-        message = "%s %s %s ha\nenviat comentaris sobre %s Genweb que administreu a\n%s.\n\nEl missatge es:\n\n%s\n--\n%s" % (escape(safe_unicode(str)), escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['destinatario'])), escape(safe_unicode(str1)), portal.absolute_url(), escape(safe_unicode(data['mensaje'])), from_name)
+        message = MESSAGE_TEMPLATE % dict(name=data['nombre'],
+                                          from_address=data['from_address'],
+                                          genweb=portal.absolute_url(),
+                                          message=data['mensaje'],
+                                          from_name=from_name)
 
-        mailhost.secureSend(message, to_address, source,
+        mailhost.secureSend(escape(safe_unicode(message)), to_address, source,
                             subject=subject, subtype='plain',
                             charset=email_charset, debug=False,
                             )
@@ -141,11 +142,6 @@ class ContactBaseForm(form.Form):
         self.request.response.redirect('contact_feedback')
 
         return ''
-
-
-class ContactForm(FormWrapper):
-    form = ContactBaseForm
-    index = ViewPageTemplateFile('views_templates/contact-info.pt')
 
     def pref_lang(self):
         """ Extracts the current language for the current user
