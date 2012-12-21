@@ -64,6 +64,10 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
     def canManageSite(self):
         return getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
 
+    def getPortraitMini(self):
+        pm = getToolByName(self.portal(), 'portal_membership')
+        return pm.getPersonalPortrait().absolute_url()
+
 
 class gwHeader(viewletBase):
     grok.name('genweb.header')

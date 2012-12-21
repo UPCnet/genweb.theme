@@ -14,7 +14,7 @@
           <ul class="nav">
             <li class="dropdown" tal:attributes="id string:${view/user_name}">
               <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
-                <img tal:attributes="src string:${view/portal_url}/++genweb++static/images/user.png"
+                <img tal:attributes="src string:${view/getPortraitMini}"
                      alt=""
                      class="user" />
                 <tal:username content="view/user_name"> Rafael Ojeda Rojas </tal:username>
