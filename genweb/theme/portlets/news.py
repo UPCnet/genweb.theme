@@ -59,19 +59,16 @@ class Renderer(news_renderer):
                        sort_on="getObjPositionInParent",
                        sort_limit=limit)[:limit]
         important = len(results)
-        results2 = catalog(portal_type=('News Item', 'Link'),
+        if important < limit:
+            results2 = catalog(portal_type=('News Item', 'Link'),
                        review_state=state,
                        is_important=False,
                        sort_on=('Date'),
                        sort_order='reverse',
                        sort_limit=limit - important)[:limit - important]
-        # for brain in results2:
-        #     obj = brain.getObject()
-        #     import ipdb; ipdb.set_trace()
-        #     if obj.title == "a" or obj.title == "b":
-        #         IImportant(obj).is_important = True
-        #         import transaction; transaction.commit()
-        return results + results2
+            return results + results2
+        else:
+            return results
 
 
 class AddForm(base.AddForm):

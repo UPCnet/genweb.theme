@@ -18,8 +18,11 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets.common import PersonalBarViewlet, GlobalSectionsViewlet, PathBarViewlet
 from plone.app.layout.viewlets.common import SearchBoxViewlet, TitleViewlet, ManagePortletsFallbackViewlet
 from plone.app.layout.viewlets.interfaces import IHtmlHead, IPortalTop, IPortalHeader, IBelowContent
-from plone.app.layout.viewlets.interfaces import IPortalFooter
+from plone.app.layout.viewlets.interfaces import IPortalFooter, IAboveContentTitle
 from Products.CMFPlone.interfaces import IPloneSiteRoot
+
+from Products.ATContentTypes.interface.news import IATNewsItem
+from genweb.core.adapters import IImportant
 
 from genweb.core.interfaces import IHomePage
 from genweb.core.utils import genweb_config, havePermissionAtRoot, pref_lang
@@ -88,6 +91,23 @@ class gwHeader(viewletBase):
 
     def show_directory(self):
         return self.genweb_config().directori_upc
+
+
+class gwImportantNews(viewletBase):
+    grok.name('genweb.important')
+    grok.context(IATNewsItem)
+    grok.template('important')
+    grok.viewletmanager(IAboveContentTitle)
+    grok.layer(IGenwebTheme)
+
+    def permisos(self):
+        #TODO: Comprovar que l'usuari tingui permisos per a marcar com a important
+        return not IImportant(self.context).is_important and getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
+
+    def update(self):
+        form = self.request.form
+        if 'genweb.theme.viewlet.marcar_important' in form:
+            IImportant(self.context).is_important = True
 
 
 class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
