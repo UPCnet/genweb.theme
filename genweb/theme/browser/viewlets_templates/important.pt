@@ -1,0 +1,25 @@
+<div class="container"
+     i18n:domain="genweb">
+        <form method="get" tal:attributes="action context/absolute_url" tal:condition="viewlet/permisos_important">
+          <div i18n:translate="important_buttons">
+            <input
+                type="submit"
+                name="genweb.theme.viewlet.marcar_important"
+                value="Marcar Important"
+                i18n:attributes="value button_important"
+                i18n:name="important_button"
+            />
+          </div>
+        </form>
+        <form method="get" tal:attributes="action context/absolute_url" tal:condition="viewlet/permisos_notimportant">
+          <div i18n:translate="notimportant_buttons">
+            <input
+                type="submit"
+                name="genweb.theme.viewlet.marcar_notimportant"
+                value="Desmarcar Important"
+                i18n:attributes="value button_notimportant"
+                i18n:name="notimportant_button"
+            />
+          </div>
+        </form>
+</div>
