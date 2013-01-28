@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <portlets>
     <portlet title="Homepage" addview="genweb.portlets.homepage"
-       description="Pàgina d'inci"/>
-    <portlet title="AgendaXXXXXXX" addview="genweb.portlets.esdeveniments"
+       description="Proxy to welcome page"/>
+    <portlet title="AgendaGW" addview="genweb.portlets.esdeveniments"
         description="Agenda d'esdeveniments"/>
     <portlet title="NoticiesPropi" addview="genweb.portlets.news"
-        description="Portlet de Noticies Propi"/>
+        description="Portlet de noticies propi"/>
 </portlets>
 

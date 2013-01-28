@@ -6,7 +6,7 @@ from Acquisition import aq_inner
 from AccessControl import getSecurityManager
 from zope.interface import Interface
 from zope.component import getMultiAdapter
-from zope.app.component.hooks import getSite
+from zope.component.hooks import getSite
 
 from plone.memoize.view import memoize_contextless
 
