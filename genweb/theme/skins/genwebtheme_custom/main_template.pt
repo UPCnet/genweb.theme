@@ -31,7 +31,6 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <tal:comment replace="nothing"><!-- El requiresActiveX es pq IE10 sapiga que pot haver-hi flash --></tal:comment>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true" />
     <meta name="generator" content="Plone - http://plone.org" />
     <meta name="author" content="Servei de Comunicació i Promoció" />
@@ -195,12 +194,25 @@
 
 <tal:notajax tal:condition="not:ajax_load">
     <tal:comment replace="nothing"> <!-- A partir d'aqui, els JS comuns d'inicialització --> </tal:comment>
-    <script tal:attributes="src string:${portal_url}/++genweb++static/js/jquery.nicescroll.js"></script>
+    
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/dropkick.js"></script>
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/scrollability.js"></script>
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/fileinput.js"></script>
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/customInput.js"></script>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/jquery.nicescroll.js"></script>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/prettify.js"></script>
+
+    <!--[if IE 8]>
+    <script type="text/javascript" src="http://malsup.github.com/jquery.corner.js"></script>
+    <script>
+      $('.header-image').corner('top 8px');  
+      $('#portal-globalnav .navbar').corner('bottom 8px');  
+    </script>
+    <![endif]-->
+
     <script tal:attributes="src string:${portal_url}/++genweb++js/main.js"></script>
+
+  
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/ios-orientationchange-fix.js"></script>
     <tal:comment replace="nothing"> <!-- Finalment els que es posen a cada template especificament (per revisar) --> </tal:comment>
     <metal:javascriptslot define-slot="javascript_head_slot" />

@@ -12,4 +12,40 @@
 	  max-width:100%;
 	  float:none;
 	}
+
+	#peu .span4 {display: none;}
+
+  .xafa {margin: 0 1em;}
+  .xafa2 { margin: 0 2em;  }
+  .xafa3 { margin: 0 3em; }
+  .xafa4 { margin: 0 4em; }
+  .pad { padding: 1em;}
+  .pad2 { padding: 2em; }
+  .pad3 { padding: 3em; }
+  .pad4 { padding: 4em;}
+
+  .no-image .header-image { display: none !important;}
+
+  #portal-sitemap ul {-webkit-column-count: 1;-moz-column-count: 1;column-count: 1;}
+
+  #eines input, #eines input:focus {min-width: 65%; max-width:65% !important;}
+  #eines button {width: 34%;line-height: 20px;}
+
+  .portlet-baners {text-align: center;}
+
+
+
+  #dashboard > div  {float:none; width:100%;}
+
+  .btn-toolbar .btn-group {
+  	clear:both;
+  	display: block;
+  	& input {float:left !important; margin-bottom: 1em;}
+  }
+  .btn-group + .btn-group {margin-left:0;}
+
+
+  .portaltype-packet .estudis td:first-child, .portaltype-packet .estudis th:first-child {min-width: auto !important;}
+  .discussion .commentDate {float:none;}
+
 }

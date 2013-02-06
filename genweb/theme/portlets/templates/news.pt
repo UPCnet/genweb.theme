@@ -5,7 +5,6 @@
                tal:condition="news_items"
                i18n:domain="plone">
 
-<div id="contenidor">
     <div class="portlet portlet-noticies">
         <h2>Notícies <i class="icon-news large-icon pull-right"></i></h2>
         <ul class="list-portlet">
@@ -28,5 +27,4 @@
         </ul>
         <a href="#" class="portlet-footer"><i class="icon-rss"></i> Més notícies</a>
     </div>
-</div>
 </tal:newsitems>

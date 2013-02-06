@@ -224,6 +224,9 @@ input[type="submit"].btn {
   cursor: pointer;
   color: $linkColor;
   @include border-radius(0);
+  border: 0 !important;
+  @include box-shadow(none !important);
+  padding: 0 !important;
 }
 .btn-link:hover {
   color: $linkColorHover;

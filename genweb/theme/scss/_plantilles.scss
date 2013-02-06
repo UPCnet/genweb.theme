@@ -69,3 +69,12 @@ a.primary, .primary a, a .primary {
 	}
 
 }
+
+
+/* COLUMNES AUTO */
+.content-columns-3 {
+	@include content-columns(3,20px)
+}
+.content-columns-2 {
+	@include content-columns(2,20px)	
+}

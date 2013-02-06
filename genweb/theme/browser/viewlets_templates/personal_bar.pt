@@ -51,18 +51,18 @@
                 </li>
               </ul>
             </li>
-            <li class="visible-desktop"><a tal:condition="view/showRootFolderLink"
+            <li><a tal:condition="view/showRootFolderLink"
                    tal:attributes="href string:${view/portal_url}/folder_contents"
                    i18n:attributes="title genweb-accesarrel">
                    <tal:rootFolder i18n:translate="genweb-accesarrel">
                       Root folder</tal:rootFolder>
             </a></li>
-            <li class="visible-desktop"><a tal:condition="view/canManageSite"
+            <li><a tal:condition="view/canManageSite"
                    tal:attributes="href string:${view/portal_url}/@@overview-controlpanel">
                    <tal:managesite i18n:domain="plone" i18n:translate="Site Setup">
                       Site setup</tal:managesite>
             </a></li>
-            <li class="hidden-phone"><a href="https://www.upc.edu/comunicacio/www/genweb-upc/formacio" target="newwindow" accesskey="6"
+            <li class="hidden-phone"><a href="https://genweb.upc.edu/formacio-i-ajuda" target="newwindow" accesskey="6"
                    i18n:attributes="title genweb-ajuda">
                    <tal:help i18n:translate="genweb-ajuda">
                       Help</tal:help>
@@ -74,6 +74,7 @@
           <h2 class="goout"> Menú d'eines Genweb UPC </h2>
           <ul class="nav pull-right">
             <!--[if !IE]> -->
+            <li><a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Les vistes pretenen ajudar a fer millors versions de mòbil i de tauleta del vostre web.<br /> Només està disponible per a navegadors moderns i encara en <strong>fase beta</strong>. En cap cas és la versió real de com es veurà el web mobilitzat sinó només una simulació.<br><br><span class='s text-info'>Seleccioneu vista mòbil o tauleta i només heu de clicar a la icona pantalla per tornar a la vista normal</span>" data-original-title="<strong>Vistes</strong> Beta"><span class="label label-important visible-desktop">Vistes Beta</span></a></li>
             <li><a class="userScreen visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Screenview"><span class="goout">Screen</span></a></li>
             <li><a class="userTablet visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Tabletview"><span class="goout">Tablet</span></a></li>
             <li><a class="userMobile visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Mobileview"><span class="goout">Mobile</span></a></li>

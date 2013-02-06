@@ -154,6 +154,7 @@ input#title {font-weight:bold}
 	@include box-shadow(0 2px 5px rgba(0,0,0,.25));
 	margin-top: 6px;
 	width:222px;
+	margin: 0 auto;
 	& iframe {
 		-webkit-mask: image-url("mapa-mask.png") no-repeat center center;
 	}
@@ -253,8 +254,8 @@ iframe {border:0 !important; display: block !important;}
 // calenendar-system.css
 /* The main calendar widget.  DIV containing a table. */
 
-.calendar { position: relative; display: none; box-shadow: 0 0 100px black; border-radius:5px;}
-.calendar table { background: #f2f2f2; border-radius:5px; min-width:222px;}
+.calendar { display: none; margin:0 auto; position:fixed !important; width:100% !important; height:100% !important; margin-top: 50%;}
+.calendar table { background: #f2f2f2; border-radius:5px; width:222px; box-shadow: 0 0 100px black; top:50%; margin-top:-100px !important; margin: 0 auto; }
 .calendar .button { text-align: center; background: #f2f2f2;}
 .calendar .nav { background: #f2f2f2 url(menuarrow.gif) no-repeat 100% 100%;}
 .calendar thead .title { font-weight: bold; text-align: center;}
@@ -366,3 +367,32 @@ iframe {border:0 !important; display: block !important;}
 
 //spinner
 img[src$="spinner.gif"] {box-shadow: 0 0 250px 250px white;}
+
+
+//comments
+.discussion {
+	& .commentImage {
+		position:absolute;
+			& img {width:50px; @include border-radius(4px);}
+		}
+	& .replyTreeLevel0 {margin-top:2em;}
+	& .documentByLine {
+		@extend .muted;
+		& a {font-weight: bold;}
+	}
+	& .commentDate {float:right; @extend .muted; @extend .s;}
+	& .commentBody {color: $grayDark;}
+	& .commentActions {float:right;
+		& .destructive {@extend .btn-mini;}
+	}
+	& .comment {border-left: 1px solid $tableBorder;padding-left: 1em; margin-bottom:.5em;min-height: 50px;}
+	& .comment.replyTreeLevel0 {padding-left:0; border-left:0;}
+	& .reply-to-comment-button {@extend .btn-mini; display: block;}
+	& .documentByLine, .commentBody, .reply-to-comment-button {margin-left:60px;}
+	& .reply {margin-top: 20px;}
+}
+
+//collage
+.collage-row {border-bottom: 1px solid $tableBorder;}
+.collage-row:first-child {border-top: 1px solid $tableBorder; }
+.collage-header {background: #f2f2f2;}

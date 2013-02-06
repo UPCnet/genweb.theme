@@ -94,7 +94,7 @@
     left: 50%;
     margin-left: -$popoverArrowWidth;
     border-width: 0 $popoverArrowWidth $popoverArrowWidth;
-    border-bottom-color: $popoverArrowColor;
+    border-bottom-color: $popoverTitleBackground;
     &:after {
       border-width: 0 $popoverArrowOuterWidth $popoverArrowOuterWidth;
       border-bottom-color: $popoverArrowOuterColor;
