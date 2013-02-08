@@ -109,7 +109,12 @@
 			border-right: 3px solid $blue;
 			*border-top:1px solid #fff !important;
 			@include border-radius(0 !important);
-			&:hover {background-color:#f2f8fc !important;};			
+			&:hover {background-color:#e5f6ff !important;}	
+			&.active {
+				background-color: #f2f8fc !important; color:$grayDarker;
+				&[class*=" contenttype-"] span:after {@include opacity(1);}
+				& span:before {font-size: 525%; top:-2px; left:4px; }
+			}		
 			&.state-private {border-right: 3px solid $red; color:$red;}
 			&.state-draft {border-right: 3px solid $green; color:$green;}
 			&.state-pending {border-right: 3px solid darken($orange,5%); color:darken($orange,5%);}
@@ -147,8 +152,8 @@
     				height: 20px;
     				margin-right: -24px;
     				width: 20px; 
-    				@include opacity(.8);
-    				top:12px;
+    				@include opacity(.75);
+    				top:10px;
     				position:absolute;
 			}
 			&.contenttype-folder span:after 		{background-position: -384px 	-120px;}
@@ -170,6 +175,7 @@
 }
 
 #portal-personaltools-wrapper .nav a:focus {background-color:$black;}
+
 
 
 // AJUSTAMENTS EXTRA

@@ -4,7 +4,7 @@
 */
 h1, h2, h3 {color:$genwebTitles; margin-top:$baseLineHeight*3/2;}
 h1:first-child, h2:first-child, h3:first-child {margin-top:$baseLineHeight/2;}
-
+.popover-title {margin-top:0 !important;}
 
 *.xxxl 	{	font-size: 153.846154% !important; line-height: ($baseLineHeight / 2 * 3);}
 *.xxl 	{	font-size: 130.769231% !important; line-height: $baseLineHeight;} 
@@ -136,3 +136,42 @@ a { /*fa que les URL llargues es trenquin*/
 /*alineaments afegit*/
 .align-right {text-align: right;}
 .inline-block {display: inline-block;}
+
+
+
+//prettify
+  .com { color: $gray; } /*comentari*/
+  .lit { color: $purple; } 
+  .pun, .opn, .clo { color: $blueDark; }
+  .fun { color: $red; }
+  .str, .atv { color: darken($orange, 5%); }
+  .kwd, .prettyprint .tag { color: $pink; } /*codis*/
+  .typ, .atn, .dec, .var { color: $green; }
+  .pln { color: $grayDark; }
+  .prettyprint { background-color: #f5fcff;}
+  .prettyprint-inverse { background-color: #333;border:1px solid #111;}
+  .prettyprint.linenums {
+    -webkit-box-shadow: inset 40px 0 0 #E1F2F8, inset 41px 0 0 #bfced4;
+       -moz-box-shadow: inset 40px 0 0 #E1F2F8, inset 41px 0 0 #bfced4;
+            box-shadow: inset 40px 0 0 #E1F2F8, inset 41px 0 0 #bfced4;
+  }
+  .prettyprint-inverse.prettyprint.linenums {
+    -webkit-box-shadow: inset 40px 0 0 #222, inset 41px 0 0 #111;
+       -moz-box-shadow: inset 40px 0 0 #222, inset 41px 0 0 #111;
+            box-shadow: inset 40px 0 0 #222, inset 41px 0 0 #111;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  }
+  ol.linenums li {
+    padding-left: 12px;
+    color: #2d4360;
+    line-height: 20px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  .prettyprint-inverse ol.linenums li {
+    color:#eee;
+    text-shadow:0 -1px 0 #111;
+  }
+  .prettyprint-inverse .pln { color: #ddd;}

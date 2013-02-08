@@ -1,5 +1,5 @@
 <div class="input-append">
-  <input class="span2" accesskey="4" id="appendedInputButton" size="16" type="text"><button class="btn" type="button">Cerca</button>
+  <label for="cercaCapca" class="goout">Cerca al lloc</label><input class="cercaupc span2" accesskey="4" id="cercaCapca" size="16" type="text"><button class="btn" type="button">Cerca</button>
 </div>
 <p class="goout"><a accesskey="5" href="/search_form">Cerca avançada</a></p>
 

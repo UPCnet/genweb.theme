@@ -40,7 +40,7 @@ $textColor:             $grayDark !default;
 // Links
 // -------------------------
 $linkColor:             #007bc0 !default;
-$linkColorHover:        darken($linkColor, 15%) !default;
+$linkColorHover:        darken($linkColor, 10%) !default;
 
 
 // Typography
@@ -160,15 +160,15 @@ $navbarCollapseWidth:             799px !default;
 
 $navbarHeight:                    36px !default;
 $navbarBackgroundHighlight:       #f7f7f7 !default;
-$navbarBackground:                darken($navbarBackgroundHighlight, 7.5%) !default;
-$navbarBorder:                    darken($navbarBackground, 15%) !default;
+$navbarBackground:                darken($navbarBackgroundHighlight, 9%) !default;
+$navbarBorder:                    darken($navbarBackground, 18%) !default;
 
 $navbarText:                      $gray !default;
 $navbarLinkColor:                 $gray !default;
-$navbarLinkColorHover:            $grayDark !default;
-$navbarLinkColorActive:           $gray !default;
-$navbarLinkBackgroundHover:       lighten($navbarBackground, 10%)  !default;
-$navbarLinkBackgroundActive:      lighten($navbarBackground, 10%) !default;
+$navbarLinkColorHover:            $black !default;
+$navbarLinkColorActive:           $grayDarker !default;
+$navbarLinkBackgroundHover:       darken($navbarBackground, 10%)  !default;
+$navbarLinkBackgroundActive:      lighten($navbarBackground, 100%) !default;
 
 $navbarBrandColor:                $navbarLinkColor !default;
 

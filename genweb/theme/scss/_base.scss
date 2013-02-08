@@ -12,7 +12,7 @@ $genwebTitles:          #557C95 !default;
 // Accent colors
 // -------------------------
 $blue:                  #007bc0 !default;
-$blueDark:              #0064cd !default;
+$blueDark:              #005ea0 !default;
 $cyan:					#30a2c3 !default;
 $green:                 #72a31d !default;
 $red:                   #a62e1f !default;
@@ -88,7 +88,7 @@ background-image: image-url("gh-w.png") !important;
 	#portal-header h1.pull-left {margin-bottom:0;}
 
 .titol-espai {margin-top:0;
-	& h1 {font-weight:normal; margin:0;}
+	& h1 {font-weight:normal; margin:0;}	
 	& a {color:#333; text-shadow: 0 1px 1px rgba(0,0,0,.1); display:table !important; min-height:49px; width:100%;
 		& span {display:table-cell; vertical-align:middle; padding:5px 0;}
 		&:hover {color:$blue; text-decoration:none;}
@@ -109,6 +109,16 @@ background-image: image-url("gh-w.png") !important;
 	 	padding-left: 5px;
 	}
 	& .adjust-langs {min-width:87px !important;}
+}
+
+#eines input.cercaupc {
+  width: 124px !important;
+  @include transition(all 0.5s ease-in-out !important);
+}
+
+#eines input.cercaupc:focus {
+  width: 200px !important;
+  @include transition(all 0.5s in-out !important);
 }
 
 // IMATGE DE CAPCALERA
@@ -195,14 +205,14 @@ background-image: image-url("gh-w.png") !important;
 	}
 }
 
-.sobreElWeb li {display: inline;}
+.sobreElWeb li {display: inline-block; line-height: 0;}
 	.sobreElWeb li:before {
 		content:"."; font-size:52px; position: relative; line-height:0; top:-.01em; left:-1px;
 		color: desaturate($genwebPrimary, 80%);
 	}
 	.sobreElWeb li:first-child:before {content:""; font-size:52px; position: relative; line-height:0; top:.25em;}
 	.sobreElWeb li:last-child:before {content:" __ "; font-size:13px; position: relative; line-height:0; top:-.35em; padding:0 2px 0 3px;}
-	#peu .amunt {position:relative; top:-1px;}
+	#peu .amunt {position:relative; top:3px;}
 	#peu .amunt div.tooltip {margin-top: -21px !important; margin-left:6px !important;}
 
 

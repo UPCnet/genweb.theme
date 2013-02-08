@@ -233,7 +233,7 @@
   padding: (($navbarHeight - $baseLineHeight) / 2) 12px (($navbarHeight - $baseLineHeight) / 2);
   color: $navbarLinkColor;
   text-decoration: none;
-  text-shadow: 0 1px 0 $navbarBackgroundHighlight;
+  text-shadow: 0 1px 1px $navbarBackgroundHighlight;
 }
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
@@ -243,8 +243,16 @@
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
   background-color: $navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
+
   color: $navbarLinkColorHover;
   text-decoration: none;
+}
+
+#portal-globalnav .navbar .nav > li > a:focus,
+#portal-globalnav .navbar .nav > li > a:hover {
+    -webkit-box-shadow: inset 0 20px 20px -10px rgba(255,255,255,.75);
+       -moz-box-shadow: inset 0 20px 20px -10px rgba(255,255,255,.75);
+            box-shadow: inset 0 20px 20px -10px rgba(255,255,255,.75);   
 }
 
 // Active nav items
@@ -253,11 +261,12 @@
 .navbar .nav > .active > a:focus {
   color: $navbarLinkColorActive;
   text-decoration: none;
-  background-color: $navbarLinkBackgroundActive;
-  -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
-     -moz-box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
-          box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
+  background-color: $white;
+  -webkit-box-shadow: inset 0 2px 4px 1px rgba(0, 0, 0, 0.15), inset 0 1px 2px 0px rgba(0, 0, 0, 0.25), inset 0 1px 0px white;
+     -moz-box-shadow: inset 0 2px 4px 1px rgba(0, 0, 0, 0.15), inset 0 1px 2px 0px rgba(0, 0, 0, 0.25), inset 0 1px 0px white;
+          box-shadow: inset 0 2px 4px 1px rgba(0, 0, 0, 0.15), inset 0 1px 2px 0px rgba(0, 0, 0, 0.25), inset 0 1px 0px white;        
 }
+#portal-globalnav .active a.state-published {border-bottom-color: darken($linkColor, 15%);  }
 
 // Navbar button for toggling navbar items in responsive layouts
 // These definitions need to come after '.navbar .btn'
