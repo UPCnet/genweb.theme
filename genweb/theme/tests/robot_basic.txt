@@ -35,7 +35,7 @@ Goto homepage
     Page should contain  Plone site
 
 Log in as manager
-    Go to  http://localhost:55001/plone/login_form
+    Go to  ${PLONE_URL}/login_form
     Click Element  link=Log in only in this site
     Page should contain element  __ac_name
     Input text  __ac_name  ${TEST_USER_NAME}
