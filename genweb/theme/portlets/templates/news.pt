@@ -10,21 +10,14 @@
         <ul class="list-portlet">
         <li tal:repeat="obj news_items">
             <a href=""
-               class="tile"
-               tal:attributes="href obj/getURL;
-                               title obj/Description">
+               tal:attributes="href obj/getURL">
                 <span tal:replace="obj/pretty_title_or_id">
                 Notícies RSS
                 </span>
-                <br/>
             </a>
-            <span tal:condition="data">
-            <p class="small" tal:content="python:toLocalizedTime(obj.Date)">
-                May 5
-            </p>
-          </span>
+            <time class="small" tal:content="python:toLocalizedTime(obj.Date)">May 5</time>
         </li>
         </ul>
-        <a href="#" class="portlet-footer"><i class="icon-rss"></i> Més notícies</a>
+        <a href="#"><i class="icon-rss"></i> Més notícies</a>
     </div>
 </tal:newsitems>
