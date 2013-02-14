@@ -2,6 +2,7 @@
 
 Library  Selenium2Library  timeout=10  implicit_wait=0.5
 Variables  plone/app/testing/interfaces.py
+Variables  saucelabs.py
 
 Suite Setup  Suite Setup
 Suite Teardown  Suite Teardown
@@ -31,7 +32,7 @@ Suite Teardown
     Close All Browsers
 
 Goto homepage
-    Go to  http://localhost:55001/plone/
+    Go to  ${PLONE_URL}
     Page should contain  Plone site
 
 Log in as manager
