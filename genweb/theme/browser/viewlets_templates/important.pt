@@ -5,7 +5,7 @@
             <input
                 type="submit"
                 name="genweb.theme.viewlet.marcar_important"
-                value="Marcar Important"
+                value="Marca Important"
                 i18n:attributes="value button_important"
                 i18n:name="important_button"
             />
@@ -16,7 +16,7 @@
             <input
                 type="submit"
                 name="genweb.theme.viewlet.marcar_notimportant"
-                value="Desmarcar Important"
+                value="Desmarca Important"
                 i18n:attributes="value button_notimportant"
                 i18n:name="notimportant_button"
             />
