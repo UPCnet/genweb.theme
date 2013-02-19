@@ -25,7 +25,7 @@
     id="sarissa.js" inline="False"/>
 
  <!-- Disable KSS-related -->
- <javascript authenticated="False" bundle="default" cacheable="True"
+<!--  <javascript authenticated="False" bundle="default" cacheable="True"
     compression="none" conditionalcomment="" cookable="True" enabled="False"
     expression="" id="++resource++MochiKit.js" inline="False"/>
  <javascript authenticated="False" bundle="default" cacheable="True"
@@ -45,13 +45,13 @@
     expression="" id="++resource++kukit.js" inline="False"/>
  <javascript authenticated="False" bundle="default" cacheable="True"
     compression="none" conditionalcomment="" cookable="True" enabled="False"
-    expression="" id="++resource++kukit-devel.js" inline="False"/>
+    expression="" id="++resource++kukit-devel.js" inline="False"/> -->
 
  <!-- P4.3 KSS-less backport -->
- <javascript id="inline_validation.js" insert-after="dropdown.js"/>
- <javascript id="kss-bbb.js" insert-after="inline_validation.js"/>
+<!--  <javascript id="inline_validation.js" insert-after="dropdown.js"/>
+ <javascript id="kss-bbb.js" insert-after="inline_validation.js"/> -->
 
- <!-- In case we use Tiny 3.x fot removing old Tiny init -->
+ <!-- In case we use Tiny 3.x for removing old Tiny init -->
  <!-- <javascript id="tiny_mce_init.js" remove="True"/> -->
 
  <!-- Add new JS -->
