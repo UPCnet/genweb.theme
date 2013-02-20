@@ -20,9 +20,9 @@
  <javascript authenticated="False" bundle="default" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="False"
     expression="" id="dropdown.js" inline="False"/>
- <javascript authenticated="False" bundle="default" cacheable="True"
+<!--  <javascript authenticated="False" bundle="default" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="False"
-    id="sarissa.js" inline="False"/>
+    id="sarissa.js" inline="False"/> -->
 
  <!-- Disable KSS-related -->
 <!--  <javascript authenticated="False" bundle="default" cacheable="True"

@@ -24,6 +24,7 @@ from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.ATContentTypes.interface.news import IATNewsItem
 from genweb.core.adapters import IImportant
 
+from genweb.core import HAS_CAS
 from genweb.core.interfaces import IHomePage
 from genweb.theme.browser.interfaces import IHomePageView
 from genweb.core.utils import genweb_config, havePermissionAtRoot, pref_lang
@@ -71,6 +72,12 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
     def getPortraitMini(self):
         pm = getToolByName(self.portal(), 'portal_membership')
         return pm.getPersonalPortrait().absolute_url()
+
+    def logout_link(self):
+        if HAS_CAS:
+            return '{}/cas_logout'.format(self.portal_url)
+        else:
+            return '{}/logout'.format(self.portal_url)
 
 
 class gwHeader(viewletBase):
