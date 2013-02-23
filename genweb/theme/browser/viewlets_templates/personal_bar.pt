@@ -41,7 +41,7 @@
                 </a></li>
                 <li class="divider"></li>
                 <li class="btn-menu-adjust">
-                  <a tal:attributes="href string:${view/portal_url}/cas_logout"
+                  <a tal:attributes="href string:${view/logout_link}"
                      i18n:attributes="title genweb-logout"
                      class="btn btn-danger" href="#">
                     <i class="icon-off icon-white"></i>
