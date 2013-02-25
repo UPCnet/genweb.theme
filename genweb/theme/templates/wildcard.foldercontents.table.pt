@@ -23,7 +23,6 @@
   <metal:listing define-macro="folder_listing"
                  tal:define="nosortclass view/get_nosort_class">
     
-    <div class="visualClear" id="clear-space-before-navigation"><!-- --></div>
 
     <div tal:replace="structure view/batching" tal:condition="not:view/show_all"/>
     <table class="table table-striped table-bordered table-condensed table-hover"

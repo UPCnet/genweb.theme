@@ -42,7 +42,7 @@
                   target python:test(target in ('_parent', '_top', '_blank', '_self'), target, None);
                   ztu modules/ZTUtils;">
 
-        <div class="alert alert-error"
+        <div class="alert alert-error" role="alert"
              id="enable_cookies_message"
              style="display:none">
           <button data-dismiss="alert" class="close" type="button">×</button>

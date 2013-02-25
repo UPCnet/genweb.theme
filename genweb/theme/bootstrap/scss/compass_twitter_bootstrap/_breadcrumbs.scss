@@ -3,6 +3,7 @@
 // --------------------------------------------------
 
 .breadcrumb {
+  display: inline-block;
   padding: 0;
   margin: 6px 0 0;
   list-style: none;
@@ -32,3 +33,13 @@
   }
 }
 
+#portal-breadcrumbs h2 {
+    margin:0 !important;
+    font-size:84.6153846%;
+    color: $grayLight;
+    font-weight:normal;
+    line-height:18px;
+    display: inline-block;
+}
+
+//s'ha canviat l'estructura per defecte del breadcrumbs per poc accessible

@@ -1,11 +1,12 @@
-<div class="container"
+<div
      i18n:domain="genweb">
         <form method="get" tal:attributes="action context/absolute_url" tal:condition="viewlet/permisos_important">
           <div i18n:translate="important_buttons">
             <input
                 type="submit"
+                class="btn btn-success"
                 name="genweb.theme.viewlet.marcar_important"
-                value="Marcar Important"
+                value="Marca com a improtant"
                 i18n:attributes="value button_important"
                 i18n:name="important_button"
             />
@@ -15,8 +16,9 @@
           <div i18n:translate="notimportant_buttons">
             <input
                 type="submit"
+                class="btn btn-warning"
                 name="genweb.theme.viewlet.marcar_notimportant"
-                value="Desmarcar Important"
+                value="Desmarca com a important"
                 i18n:attributes="value button_notimportant"
                 i18n:name="notimportant_button"
             />

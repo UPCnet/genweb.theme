@@ -180,7 +180,7 @@ a:hover {
 }
 
 /* line 39, ../bootstrap/scss/compass_twitter_bootstrap/_scaffolding.scss */
-.img-polaroid, .template-personal-information [for="form.portrait"] ~ img, .tileItem img {
+.img-polaroid, .template-personal-information [for="form.portrait"] ~ img, .newsImageContainer, .tileItem img {
   padding: 4px;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -574,11 +574,19 @@ a:hover {
 }
 
 /* line 19, ../bootstrap/scss/compass_twitter_bootstrap/_grid.scss */
-[class*="span"].pull-right, .pull-right.cella,
+[class*="span"].pull-right, [class*="span"].newsImageContainer, .newsImageContainer.cella, .pull-right.cella,
 .row-fluid [class*="span"].pull-right,
 #dashboard [class*="span"].pull-right,
 .fila [class*="span"].pull-right,
 .template-atct_album_view #content-core [class*="span"].pull-right,
+.row-fluid [class*="span"].newsImageContainer,
+#dashboard [class*="span"].newsImageContainer,
+.fila [class*="span"].newsImageContainer,
+.template-atct_album_view #content-core [class*="span"].newsImageContainer,
+.row-fluid .newsImageContainer.cella,
+#dashboard .newsImageContainer.cella,
+.fila .newsImageContainer.cella,
+.template-atct_album_view #content-core .newsImageContainer.cella,
 .row-fluid .pull-right.cella,
 #dashboard .pull-right.cella,
 .fila .pull-right.cella,
@@ -853,7 +861,7 @@ blockquote small:before {
   content: '\2014 \00A0';
 }
 /* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-blockquote.pull-right {
+blockquote.pull-right, blockquote.newsImageContainer {
   float: right;
   padding-right: 15px;
   padding-left: 0;
@@ -861,16 +869,17 @@ blockquote.pull-right {
   border-left: 0;
 }
 /* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-blockquote.pull-right p,
-blockquote.pull-right small {
+blockquote.pull-right p, blockquote.newsImageContainer p,
+blockquote.pull-right small,
+blockquote.newsImageContainer small {
   text-align: right;
 }
 /* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-blockquote.pull-right small:before {
+blockquote.pull-right small:before, blockquote.newsImageContainer small:before {
   content: '';
 }
 /* line 190, ../bootstrap/scss/compass_twitter_bootstrap/_type.scss */
-blockquote.pull-right small:after {
+blockquote.pull-right small:after, blockquote.newsImageContainer small:after {
   content: '\00A0 \2014';
 }
 
@@ -1766,6 +1775,7 @@ select:focus:required:invalid:focus {
 .input-append [type="submit"],
 .input-append .context,
 .input-append .searchButton,
+.input-append button.pfg-draft-save,
 .input-append .link-parent,
 .input-prepend .add-on,
 .input-prepend .btn,
@@ -1775,6 +1785,7 @@ select:focus:required:invalid:focus {
 .input-prepend [type="submit"],
 .input-prepend .context,
 .input-prepend .searchButton,
+.input-prepend button.pfg-draft-save,
 .input-prepend .link-parent {
   margin-left: -1px;
   vertical-align: top;
@@ -1803,6 +1814,7 @@ select:focus:required:invalid:focus {
 .input-prepend [type="submit"],
 .input-prepend .context,
 .input-prepend .searchButton,
+.input-prepend button.pfg-draft-save,
 .input-prepend .link-parent {
   margin-right: -1px;
 }
@@ -1815,6 +1827,7 @@ select:focus:required:invalid:focus {
 .input-prepend [type="submit"]:first-child,
 .input-prepend .context:first-child,
 .input-prepend .searchButton:first-child,
+.input-prepend button.pfg-draft-save:first-child,
 .input-prepend .link-parent:first-child {
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
@@ -1838,6 +1851,7 @@ select:focus:required:invalid:focus {
 .input-append [type="submit"]:last-child,
 .input-append .context:last-child,
 .input-append .searchButton:last-child,
+.input-append button.pfg-draft-save:last-child,
 .input-append .link-parent:last-child {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
@@ -1861,6 +1875,7 @@ select:focus:required:invalid:focus {
 .input-prepend.input-append [type="submit"]:first-child,
 .input-prepend.input-append .context:first-child,
 .input-prepend.input-append .searchButton:first-child,
+.input-prepend.input-append button.pfg-draft-save:first-child,
 .input-prepend.input-append .link-parent:first-child {
   margin-right: -1px;
   -webkit-border-radius: 3px 0 0 3px;
@@ -1876,6 +1891,7 @@ select:focus:required:invalid:focus {
 .input-prepend.input-append [type="submit"]:last-child,
 .input-prepend.input-append .context:last-child,
 .input-prepend.input-append .searchButton:last-child,
+.input-prepend.input-append button.pfg-draft-save:last-child,
 .input-prepend.input-append .link-parent:last-child {
   margin-left: -1px;
   -webkit-border-radius: 0 3px 3px 0;
@@ -1913,7 +1929,7 @@ input.search-query {
 }
 
 /* line 533, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
-.form-search .input-append .btn, .form-search .input-append .dk_container > a, .form-search .input-append .standalone, .form-search .input-append input[value^="Cancel"], .form-search .input-append [type="submit"], .form-search .input-append .context, .form-search .input-append .searchButton, .form-search .input-append .link-parent {
+.form-search .input-append .btn, .form-search .input-append .dk_container > a, .form-search .input-append .standalone, .form-search .input-append input[value^="Cancel"], .form-search .input-append [type="submit"], .form-search .input-append .context, .form-search .input-append .searchButton, .form-search .input-append button.pfg-draft-save, .form-search .input-append .link-parent {
   -webkit-border-radius: 0 14px 14px 0;
   -moz-border-radius: 0 14px 14px 0;
   border-radius: 0 14px 14px 0;
@@ -1927,7 +1943,7 @@ input.search-query {
 }
 
 /* line 539, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
-.form-search .input-prepend .btn, .form-search .input-prepend .dk_container > a, .form-search .input-prepend .standalone, .form-search .input-prepend input[value^="Cancel"], .form-search .input-prepend [type="submit"], .form-search .input-prepend .context, .form-search .input-prepend .searchButton, .form-search .input-prepend .link-parent {
+.form-search .input-prepend .btn, .form-search .input-prepend .dk_container > a, .form-search .input-prepend .standalone, .form-search .input-prepend input[value^="Cancel"], .form-search .input-prepend [type="submit"], .form-search .input-prepend .context, .form-search .input-prepend .searchButton, .form-search .input-prepend button.pfg-draft-save, .form-search .input-prepend .link-parent {
   -webkit-border-radius: 14px 0 0 14px;
   -moz-border-radius: 14px 0 0 14px;
   border-radius: 14px 0 0 14px;
@@ -2622,7 +2638,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 
 /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-color {
-  background-image: url('/++genweb++static/images/gh-c.png?1354788544');
+  background-image: url('/++genweb++static/images/gh-c.png?1360586349');
 }
 
 /* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -3629,7 +3645,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
   background-clip: padding-box;
 }
 /* line 64, ../bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
-.dropdown-menu.pull-right, div.pull-right.dk_options {
+.dropdown-menu.pull-right, div.pull-right.dk_options, div.dk_options.newsImageContainer, .dropdown-menu.newsImageContainer {
   right: 0;
   left: auto;
 }
@@ -3724,7 +3740,7 @@ div.dk_options .disabled > a:hover {
 }
 
 /* line 136, ../bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
-.pull-right > .dropdown-menu, .pull-right > div.dk_options {
+.pull-right > .dropdown-menu, .newsImageContainer > .dropdown-menu, .pull-right > div.dk_options, .newsImageContainer > div.dk_options {
   right: 0;
   left: auto;
 }
@@ -3900,7 +3916,7 @@ button.close {
 }
 
 /* line 10, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn, .dk_container > a, .standalone, input[value^="Cancel"], [type="submit"], .context, .searchButton, .link-parent {
+.btn, .dk_container > a, .standalone, input[value^="Cancel"], [type="submit"], .context, .searchButton, button.pfg-draft-save, .link-parent {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -3937,21 +3953,21 @@ button.close {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .dk_container > a:hover, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, .link-parent:hover, .btn:active, .dk_container > a:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, .link-parent:active, .btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews .selected.link-parent:hover, .active.link-parent, .btn.disabled, .dk_container > a.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, .disabled.link-parent, .btn[disabled], .dk_container > a[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, [disabled].link-parent {
+.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .dk_container > a:hover, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .dk_container > a:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .dk_container > a.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], .dk_container > a[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
   color: #333333;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:active, .dk_container > a:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, .link-parent:active, .btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews .selected.link-parent:hover, .active.link-parent {
+.btn:active, .dk_container > a:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent {
   background-color: #cccccc \9;
 }
 /* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:first-child, .dk_container > a:first-child, .standalone:first-child, input[value^="Cancel"]:first-child, [type="submit"]:first-child, .context:first-child, .searchButton:first-child, .link-parent:first-child {
+.btn:first-child, .dk_container > a:first-child, .standalone:first-child, input[value^="Cancel"]:first-child, [type="submit"]:first-child, .context:first-child, .searchButton:first-child, button.pfg-draft-save:first-child, .link-parent:first-child {
   *margin-left: 0;
 }
 /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .dk_container > a:hover, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, .link-parent:hover {
+.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .dk_container > a:hover, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover {
   color: black;
   text-decoration: none;
   border: 1px solid #7f7f7f;
@@ -3967,13 +3983,13 @@ button.close {
   transition: background-position 0.1s linear;
 }
 /* line 47, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn:focus, .dk_container > a:focus, .standalone:focus, input[value^="Cancel"]:focus, [type="submit"]:focus, .context:focus, .searchButton:focus, .link-parent:focus {
+.btn:focus, .dk_container > a:focus, .standalone:focus, input[value^="Cancel"]:focus, [type="submit"]:focus, .context:focus, .searchButton:focus, button.pfg-draft-save:focus, .link-parent:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 /* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews .selected.link-parent:hover, .active.link-parent, .btn:active, .dk_container > a:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, .link-parent:active {
+.btn.active, .dk_container > a.active, .dk_container > a.selected, .contentViews .dk_container > a.selected, .contentViews .dk_container > a.selected:hover, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn:active, .dk_container > a:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
   background-color: #d9d9d9;
   background-color: #cccccc \9;
   background-image: none;
@@ -3983,7 +3999,7 @@ button.close {
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /* line 63, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn.disabled, .dk_container > a.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, .disabled.link-parent, .btn[disabled], .dk_container > a[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, [disabled].link-parent {
+.btn.disabled, .dk_container > a.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], .dk_container > a[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
   border: 1px solid #999999;
   border-bottom-color: #8c8c8c;
   cursor: default;
@@ -3997,12 +4013,12 @@ button.close {
 }
 
 /* line 79, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn [class^="icon-"], .dk_container > a [class^="icon-"], .standalone [class^="icon-"], input[value^="Cancel"] [class^="icon-"], [type="submit"] [class^="icon-"], .context [class^="icon-"], .searchButton [class^="icon-"], .link-parent [class^="icon-"], .btn #category.documentByLine:before, .dk_container > a #category.documentByLine:before, .standalone #category.documentByLine:before, input[value^="Cancel"] #category.documentByLine:before, [type="submit"] #category.documentByLine:before, .context #category.documentByLine:before, .searchButton #category.documentByLine:before, .link-parent #category.documentByLine:before, .btn .tileFooter:before, .dk_container > a .tileFooter:before, .standalone .tileFooter:before, input[value^="Cancel"] .tileFooter:before, [type="submit"] .tileFooter:before, .context .tileFooter:before, .searchButton .tileFooter:before, .link-parent .tileFooter:before, .btn [class*=" icon-"], .dk_container > a [class*=" icon-"], .standalone [class*=" icon-"], input[value^="Cancel"] [class*=" icon-"], [type="submit"] [class*=" icon-"], .context [class*=" icon-"], .searchButton [class*=" icon-"], .link-parent [class*=" icon-"] {
+.btn [class^="icon-"], .dk_container > a [class^="icon-"], .standalone [class^="icon-"], input[value^="Cancel"] [class^="icon-"], [type="submit"] [class^="icon-"], .context [class^="icon-"], .searchButton [class^="icon-"], button.pfg-draft-save [class^="icon-"], .link-parent [class^="icon-"], .btn #category.documentByLine:before, .dk_container > a #category.documentByLine:before, .standalone #category.documentByLine:before, input[value^="Cancel"] #category.documentByLine:before, [type="submit"] #category.documentByLine:before, .context #category.documentByLine:before, .searchButton #category.documentByLine:before, button.pfg-draft-save #category.documentByLine:before, .link-parent #category.documentByLine:before, .btn .tileFooter:before, .dk_container > a .tileFooter:before, .standalone .tileFooter:before, input[value^="Cancel"] .tileFooter:before, [type="submit"] .tileFooter:before, .context .tileFooter:before, .searchButton .tileFooter:before, button.pfg-draft-save .tileFooter:before, .link-parent .tileFooter:before, .btn [class*=" icon-"], .dk_container > a [class*=" icon-"], .standalone [class*=" icon-"], input[value^="Cancel"] [class*=" icon-"], [type="submit"] [class*=" icon-"], .context [class*=" icon-"], .searchButton [class*=" icon-"], button.pfg-draft-save [class*=" icon-"], .link-parent [class*=" icon-"] {
   opacity: .85;
 }
 
 /* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn:hover [class^="icon-"], .customfile-hover .customfile-button [class^="icon-"], .customfile-focus .customfile-button [class^="icon-"], .dk_container > a:hover [class^="icon-"], .standalone:hover [class^="icon-"], input[value^="Cancel"]:hover [class^="icon-"], [type="submit"]:hover [class^="icon-"], .context:hover [class^="icon-"], .searchButton:hover [class^="icon-"], .link-parent:hover [class^="icon-"], .btn:hover #category.documentByLine:before, .customfile-hover .customfile-button #category.documentByLine:before, .customfile-focus .customfile-button #category.documentByLine:before, .dk_container > a:hover #category.documentByLine:before, .standalone:hover #category.documentByLine:before, input[value^="Cancel"]:hover #category.documentByLine:before, [type="submit"]:hover #category.documentByLine:before, .context:hover #category.documentByLine:before, .searchButton:hover #category.documentByLine:before, .link-parent:hover #category.documentByLine:before, .btn:hover .tileFooter:before, .customfile-hover .customfile-button .tileFooter:before, .customfile-focus .customfile-button .tileFooter:before, .dk_container > a:hover .tileFooter:before, .standalone:hover .tileFooter:before, input[value^="Cancel"]:hover .tileFooter:before, [type="submit"]:hover .tileFooter:before, .context:hover .tileFooter:before, .searchButton:hover .tileFooter:before, .link-parent:hover .tileFooter:before, .btn:hover [class*=" icon-"], .customfile-hover .customfile-button [class*=" icon-"], .customfile-focus .customfile-button [class*=" icon-"], .dk_container > a:hover [class*=" icon-"], .standalone:hover [class*=" icon-"], input[value^="Cancel"]:hover [class*=" icon-"], [type="submit"]:hover [class*=" icon-"], .context:hover [class*=" icon-"], .searchButton:hover [class*=" icon-"], .link-parent:hover [class*=" icon-"],
+.btn:hover [class^="icon-"], .customfile-hover .customfile-button [class^="icon-"], .customfile-focus .customfile-button [class^="icon-"], .dk_container > a:hover [class^="icon-"], .standalone:hover [class^="icon-"], input[value^="Cancel"]:hover [class^="icon-"], [type="submit"]:hover [class^="icon-"], .context:hover [class^="icon-"], .searchButton:hover [class^="icon-"], button.pfg-draft-save:hover [class^="icon-"], .link-parent:hover [class^="icon-"], .btn:hover #category.documentByLine:before, .customfile-hover .customfile-button #category.documentByLine:before, .customfile-focus .customfile-button #category.documentByLine:before, .dk_container > a:hover #category.documentByLine:before, .standalone:hover #category.documentByLine:before, input[value^="Cancel"]:hover #category.documentByLine:before, [type="submit"]:hover #category.documentByLine:before, .context:hover #category.documentByLine:before, .searchButton:hover #category.documentByLine:before, button.pfg-draft-save:hover #category.documentByLine:before, .link-parent:hover #category.documentByLine:before, .btn:hover .tileFooter:before, .customfile-hover .customfile-button .tileFooter:before, .customfile-focus .customfile-button .tileFooter:before, .dk_container > a:hover .tileFooter:before, .standalone:hover .tileFooter:before, input[value^="Cancel"]:hover .tileFooter:before, [type="submit"]:hover .tileFooter:before, .context:hover .tileFooter:before, .searchButton:hover .tileFooter:before, button.pfg-draft-save:hover .tileFooter:before, .link-parent:hover .tileFooter:before, .btn:hover [class*=" icon-"], .customfile-hover .customfile-button [class*=" icon-"], .customfile-focus .customfile-button [class*=" icon-"], .dk_container > a:hover [class*=" icon-"], .standalone:hover [class*=" icon-"], input[value^="Cancel"]:hover [class*=" icon-"], [type="submit"]:hover [class*=" icon-"], .context:hover [class*=" icon-"], .searchButton:hover [class*=" icon-"], button.pfg-draft-save:hover [class*=" icon-"], .link-parent:hover [class*=" icon-"],
 .btn:focus [class^="icon-"],
 .dk_container > a:focus [class^="icon-"],
 .standalone:focus [class^="icon-"],
@@ -4010,6 +4026,7 @@ input[value^="Cancel"]:focus [class^="icon-"],
 [type="submit"]:focus [class^="icon-"],
 .context:focus [class^="icon-"],
 .searchButton:focus [class^="icon-"],
+button.pfg-draft-save:focus [class^="icon-"],
 .link-parent:focus [class^="icon-"],
 .btn:focus #category.documentByLine:before,
 .dk_container > a:focus #category.documentByLine:before,
@@ -4018,6 +4035,7 @@ input[value^="Cancel"]:focus #category.documentByLine:before,
 [type="submit"]:focus #category.documentByLine:before,
 .context:focus #category.documentByLine:before,
 .searchButton:focus #category.documentByLine:before,
+button.pfg-draft-save:focus #category.documentByLine:before,
 .link-parent:focus #category.documentByLine:before,
 .btn:focus .tileFooter:before,
 .dk_container > a:focus .tileFooter:before,
@@ -4026,7 +4044,8 @@ input[value^="Cancel"]:focus .tileFooter:before,
 [type="submit"]:focus .tileFooter:before,
 .context:focus .tileFooter:before,
 .searchButton:focus .tileFooter:before,
-.link-parent:focus .tileFooter:before, .btn:focus [class*=" icon-"], .dk_container > a:focus [class*=" icon-"], .standalone:focus [class*=" icon-"], input[value^="Cancel"]:focus [class*=" icon-"], [type="submit"]:focus [class*=" icon-"], .context:focus [class*=" icon-"], .searchButton:focus [class*=" icon-"], .link-parent:focus [class*=" icon-"],
+button.pfg-draft-save:focus .tileFooter:before,
+.link-parent:focus .tileFooter:before, .btn:focus [class*=" icon-"], .dk_container > a:focus [class*=" icon-"], .standalone:focus [class*=" icon-"], input[value^="Cancel"]:focus [class*=" icon-"], [type="submit"]:focus [class*=" icon-"], .context:focus [class*=" icon-"], .searchButton:focus [class*=" icon-"], button.pfg-draft-save:focus [class*=" icon-"], .link-parent:focus [class*=" icon-"],
 .btn:active [class^="icon-"],
 .dk_container > a:active [class^="icon-"],
 .standalone:active [class^="icon-"],
@@ -4034,6 +4053,7 @@ input[value^="Cancel"]:active [class^="icon-"],
 [type="submit"]:active [class^="icon-"],
 .context:active [class^="icon-"],
 .searchButton:active [class^="icon-"],
+button.pfg-draft-save:active [class^="icon-"],
 .link-parent:active [class^="icon-"],
 .btn:active #category.documentByLine:before,
 .dk_container > a:active #category.documentByLine:before,
@@ -4042,6 +4062,7 @@ input[value^="Cancel"]:active #category.documentByLine:before,
 [type="submit"]:active #category.documentByLine:before,
 .context:active #category.documentByLine:before,
 .searchButton:active #category.documentByLine:before,
+button.pfg-draft-save:active #category.documentByLine:before,
 .link-parent:active #category.documentByLine:before,
 .btn:active .tileFooter:before,
 .dk_container > a:active .tileFooter:before,
@@ -4050,7 +4071,8 @@ input[value^="Cancel"]:active .tileFooter:before,
 [type="submit"]:active .tileFooter:before,
 .context:active .tileFooter:before,
 .searchButton:active .tileFooter:before,
-.link-parent:active .tileFooter:before, .btn:active [class*=" icon-"], .dk_container > a:active [class*=" icon-"], .standalone:active [class*=" icon-"], input[value^="Cancel"]:active [class*=" icon-"], [type="submit"]:active [class*=" icon-"], .context:active [class*=" icon-"], .searchButton:active [class*=" icon-"], .link-parent:active [class*=" icon-"] {
+button.pfg-draft-save:active .tileFooter:before,
+.link-parent:active .tileFooter:before, .btn:active [class*=" icon-"], .dk_container > a:active [class*=" icon-"], .standalone:active [class*=" icon-"], input[value^="Cancel"]:active [class*=" icon-"], [type="submit"]:active [class*=" icon-"], .context:active [class*=" icon-"], .searchButton:active [class*=" icon-"], button.pfg-draft-save:active [class*=" icon-"], .link-parent:active [class*=" icon-"] {
   opacity: 1;
 }
 
@@ -4116,8 +4138,12 @@ input[value^="Cancel"]:active .tileFooter:before,
 .contentViews .btn-danger.selected:hover,
 .btn-success.active,
 .btn-success.selected,
+button.selected.pfg-draft-save,
 .contentViews .btn-success.selected,
+.contentViews button.selected.pfg-draft-save,
 .contentViews .btn-success.selected:hover,
+.contentViews button.selected.pfg-draft-save:hover,
+button.active.pfg-draft-save,
 .btn-info.active,
 .btn-info.selected,
 .selected.link-parent,
@@ -4134,7 +4160,7 @@ input[value^="Cancel"]:active .tileFooter:before,
 }
 
 /* line 150, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn, .dk_container > a, .standalone, input[value^="Cancel"], [type="submit"], .context, .searchButton, .link-parent {
+.btn, .dk_container > a, .standalone, input[value^="Cancel"], [type="submit"], .context, .searchButton, button.pfg-draft-save, .link-parent {
   border-color: #c5c5c5;
   border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
 }
@@ -4227,7 +4253,7 @@ input[value^="Cancel"]:active .tileFooter:before,
 }
 
 /* line 167, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn-success {
+.btn-success, button.pfg-draft-save {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #66921a;
@@ -4245,13 +4271,13 @@ input[value^="Cancel"]:active .tileFooter:before,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-success:hover, .btn-success:active, .btn-success.active, .btn-success.selected, .contentViews .btn-success.selected, .contentViews .btn-success.selected:hover, .btn-success.disabled, .btn-success[disabled] {
+.btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected, .contentViews button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
   color: white;
   background-color: #547815;
   *background-color: #456211;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-success:active, .btn-success.active, .btn-success.selected, .contentViews .btn-success.selected, .contentViews .btn-success.selected:hover {
+.btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected, .contentViews button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save {
   background-color: #354c0e \9;
 }
 
@@ -4314,7 +4340,7 @@ input[value^="Cancel"]:active .tileFooter:before,
 }
 
 /* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-button.btn, button.standalone, button[type="submit"], button.context, button.searchButton, button.link-parent,
+button.btn, button.standalone, button[type="submit"], button.context, button.searchButton, button.pfg-draft-save, button.link-parent,
 input[type="submit"].btn,
 input[type="submit"] {
   /*
@@ -4335,7 +4361,7 @@ input[type="submit"] {
   */
 }
 /* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-button.btn::-moz-focus-inner, button.standalone::-moz-focus-inner, button[type="submit"]::-moz-focus-inner, button.context::-moz-focus-inner, button.searchButton::-moz-focus-inner, button.link-parent::-moz-focus-inner,
+button.btn::-moz-focus-inner, button.standalone::-moz-focus-inner, button[type="submit"]::-moz-focus-inner, button.context::-moz-focus-inner, button.searchButton::-moz-focus-inner, button.pfg-draft-save::-moz-focus-inner, button.link-parent::-moz-focus-inner,
 input[type="submit"].btn::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner {
   padding: 0;
@@ -4404,7 +4430,7 @@ input[type="submit"]::-moz-focus-inner {
   *zoom: 1;
 }
 /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-toolbar .btn + .btn, .btn-toolbar .dk_container > a + .btn, .btn-toolbar .standalone + .btn, .btn-toolbar input[value^="Cancel"] + .btn, .btn-toolbar [type="submit"] + .btn, .btn-toolbar .context + .btn, .btn-toolbar .searchButton + .btn, .btn-toolbar .link-parent + .btn, .btn-toolbar .dk_container > .btn + a, .btn-toolbar .dk_container > a + a, .btn-toolbar .dk_container > .standalone + a, .btn-toolbar .dk_container > input[value^="Cancel"] + a, .btn-toolbar .dk_container > [type="submit"] + a, .btn-toolbar .dk_container > .context + a, .btn-toolbar .dk_container > .searchButton + a, .btn-toolbar .dk_container > .link-parent + a, .btn-toolbar .btn + .standalone, .btn-toolbar .dk_container > a + .standalone, .btn-toolbar .standalone + .standalone, .btn-toolbar input[value^="Cancel"] + .standalone, .btn-toolbar [type="submit"] + .standalone, .btn-toolbar .context + .standalone, .btn-toolbar .searchButton + .standalone, .btn-toolbar .link-parent + .standalone, .btn-toolbar .btn + input[value^="Cancel"], .btn-toolbar .dk_container > a + input[value^="Cancel"], .btn-toolbar .standalone + input[value^="Cancel"], .btn-toolbar input[value^="Cancel"] + input[value^="Cancel"], .btn-toolbar [type="submit"] + input[value^="Cancel"], .btn-toolbar .context + input[value^="Cancel"], .btn-toolbar .searchButton + input[value^="Cancel"], .btn-toolbar .link-parent + input[value^="Cancel"], .btn-toolbar .btn + [type="submit"], .btn-toolbar .dk_container > a + [type="submit"], .btn-toolbar .standalone + [type="submit"], .btn-toolbar input[value^="Cancel"] + [type="submit"], .btn-toolbar [type="submit"] + [type="submit"], .btn-toolbar .context + [type="submit"], .btn-toolbar .searchButton + [type="submit"], .btn-toolbar .link-parent + [type="submit"], .btn-toolbar .btn + .context, .btn-toolbar .dk_container > a + .context, .btn-toolbar .standalone + .context, .btn-toolbar input[value^="Cancel"] + .context, .btn-toolbar [type="submit"] + .context, .btn-toolbar .context + .context, .btn-toolbar .searchButton + .context, .btn-toolbar .link-parent + .context, .btn-toolbar .btn + .searchButton, .btn-toolbar .dk_container > a + .searchButton, .btn-toolbar .standalone + .searchButton, .btn-toolbar input[value^="Cancel"] + .searchButton, .btn-toolbar [type="submit"] + .searchButton, .btn-toolbar .context + .searchButton, .btn-toolbar .searchButton + .searchButton, .btn-toolbar .link-parent + .searchButton, .btn-toolbar .btn + .link-parent, .btn-toolbar .dk_container > a + .link-parent, .btn-toolbar .standalone + .link-parent, .btn-toolbar input[value^="Cancel"] + .link-parent, .btn-toolbar [type="submit"] + .link-parent, .btn-toolbar .context + .link-parent, .btn-toolbar .searchButton + .link-parent, .btn-toolbar .link-parent + .link-parent,
+.btn-toolbar .btn + .btn, .btn-toolbar .dk_container > a + .btn, .btn-toolbar .standalone + .btn, .btn-toolbar input[value^="Cancel"] + .btn, .btn-toolbar [type="submit"] + .btn, .btn-toolbar .context + .btn, .btn-toolbar .searchButton + .btn, .btn-toolbar button.pfg-draft-save + .btn, .btn-toolbar .link-parent + .btn, .btn-toolbar .dk_container > .btn + a, .btn-toolbar .dk_container > a + a, .btn-toolbar .dk_container > .standalone + a, .btn-toolbar .dk_container > input[value^="Cancel"] + a, .btn-toolbar .dk_container > [type="submit"] + a, .btn-toolbar .dk_container > .context + a, .btn-toolbar .dk_container > .searchButton + a, .btn-toolbar .dk_container > button.pfg-draft-save + a, .btn-toolbar .dk_container > .link-parent + a, .btn-toolbar .btn + .standalone, .btn-toolbar .dk_container > a + .standalone, .btn-toolbar .standalone + .standalone, .btn-toolbar input[value^="Cancel"] + .standalone, .btn-toolbar [type="submit"] + .standalone, .btn-toolbar .context + .standalone, .btn-toolbar .searchButton + .standalone, .btn-toolbar button.pfg-draft-save + .standalone, .btn-toolbar .link-parent + .standalone, .btn-toolbar .btn + input[value^="Cancel"], .btn-toolbar .dk_container > a + input[value^="Cancel"], .btn-toolbar .standalone + input[value^="Cancel"], .btn-toolbar input[value^="Cancel"] + input[value^="Cancel"], .btn-toolbar [type="submit"] + input[value^="Cancel"], .btn-toolbar .context + input[value^="Cancel"], .btn-toolbar .searchButton + input[value^="Cancel"], .btn-toolbar button.pfg-draft-save + input[value^="Cancel"], .btn-toolbar .link-parent + input[value^="Cancel"], .btn-toolbar .btn + [type="submit"], .btn-toolbar .dk_container > a + [type="submit"], .btn-toolbar .standalone + [type="submit"], .btn-toolbar input[value^="Cancel"] + [type="submit"], .btn-toolbar [type="submit"] + [type="submit"], .btn-toolbar .context + [type="submit"], .btn-toolbar .searchButton + [type="submit"], .btn-toolbar button.pfg-draft-save + [type="submit"], .btn-toolbar .link-parent + [type="submit"], .btn-toolbar .btn + .context, .btn-toolbar .dk_container > a + .context, .btn-toolbar .standalone + .context, .btn-toolbar input[value^="Cancel"] + .context, .btn-toolbar [type="submit"] + .context, .btn-toolbar .context + .context, .btn-toolbar .searchButton + .context, .btn-toolbar button.pfg-draft-save + .context, .btn-toolbar .link-parent + .context, .btn-toolbar .btn + .searchButton, .btn-toolbar .dk_container > a + .searchButton, .btn-toolbar .standalone + .searchButton, .btn-toolbar input[value^="Cancel"] + .searchButton, .btn-toolbar [type="submit"] + .searchButton, .btn-toolbar .context + .searchButton, .btn-toolbar .searchButton + .searchButton, .btn-toolbar button.pfg-draft-save + .searchButton, .btn-toolbar .link-parent + .searchButton, .btn-toolbar .btn + button.pfg-draft-save, .btn-toolbar .dk_container > a + button.pfg-draft-save, .btn-toolbar .standalone + button.pfg-draft-save, .btn-toolbar input[value^="Cancel"] + button.pfg-draft-save, .btn-toolbar [type="submit"] + button.pfg-draft-save, .btn-toolbar .context + button.pfg-draft-save, .btn-toolbar .searchButton + button.pfg-draft-save, .btn-toolbar button.pfg-draft-save + button.pfg-draft-save, .btn-toolbar .link-parent + button.pfg-draft-save, .btn-toolbar .btn + .link-parent, .btn-toolbar .dk_container > a + .link-parent, .btn-toolbar .standalone + .link-parent, .btn-toolbar input[value^="Cancel"] + .link-parent, .btn-toolbar [type="submit"] + .link-parent, .btn-toolbar .context + .link-parent, .btn-toolbar .searchButton + .link-parent, .btn-toolbar button.pfg-draft-save + .link-parent, .btn-toolbar .link-parent + .link-parent,
 .btn-toolbar .btn-group + .btn,
 .btn-toolbar .dk_container > .btn-group + a,
 .btn-toolbar .btn-group + .standalone,
@@ -4412,6 +4438,7 @@ input[type="submit"]::-moz-focus-inner {
 .btn-toolbar .btn-group + [type="submit"],
 .btn-toolbar .btn-group + .context,
 .btn-toolbar .btn-group + .searchButton,
+.btn-toolbar .btn-group + button.pfg-draft-save,
 .btn-toolbar .btn-group + .link-parent,
 .btn-toolbar .btn + .btn-group,
 .btn-toolbar .dk_container > a + .btn-group,
@@ -4420,12 +4447,13 @@ input[type="submit"]::-moz-focus-inner {
 .btn-toolbar [type="submit"] + .btn-group,
 .btn-toolbar .context + .btn-group,
 .btn-toolbar .searchButton + .btn-group,
+.btn-toolbar button.pfg-draft-save + .btn-group,
 .btn-toolbar .link-parent + .btn-group {
   margin-left: 5px;
 }
 
 /* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn, .dk_container.btn-group > a, .btn-group > .standalone, .btn-group > input[value^="Cancel"], .btn-group > [type="submit"], .btn-group > .context, .btn-group > .searchButton, .btn-group > .link-parent {
+.btn-group > .btn, .dk_container.btn-group > a, .btn-group > .standalone, .btn-group > input[value^="Cancel"], .btn-group > [type="submit"], .btn-group > .context, .btn-group > .searchButton, .btn-group > button.pfg-draft-save, .btn-group > .link-parent {
   position: relative;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -4433,12 +4461,12 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn + .btn, .dk_container.btn-group > a + .btn, .btn-group > .standalone + .btn, .btn-group > input[value^="Cancel"] + .btn, .btn-group > [type="submit"] + .btn, .btn-group > .context + .btn, .btn-group > .searchButton + .btn, .btn-group > .link-parent + .btn, .dk_container.btn-group > .btn + a, .dk_container.btn-group > a + a, .dk_container.btn-group > .standalone + a, .dk_container.btn-group > input[value^="Cancel"] + a, .dk_container.btn-group > [type="submit"] + a, .dk_container.btn-group > .context + a, .dk_container.btn-group > .searchButton + a, .dk_container.btn-group > .link-parent + a, .btn-group > .btn + .standalone, .dk_container.btn-group > a + .standalone, .btn-group > .standalone + .standalone, .btn-group > input[value^="Cancel"] + .standalone, .btn-group > [type="submit"] + .standalone, .btn-group > .context + .standalone, .btn-group > .searchButton + .standalone, .btn-group > .link-parent + .standalone, .btn-group > .btn + input[value^="Cancel"], .dk_container.btn-group > a + input[value^="Cancel"], .btn-group > .standalone + input[value^="Cancel"], .btn-group > input[value^="Cancel"] + input[value^="Cancel"], .btn-group > [type="submit"] + input[value^="Cancel"], .btn-group > .context + input[value^="Cancel"], .btn-group > .searchButton + input[value^="Cancel"], .btn-group > .link-parent + input[value^="Cancel"], .btn-group > .btn + [type="submit"], .dk_container.btn-group > a + [type="submit"], .btn-group > .standalone + [type="submit"], .btn-group > input[value^="Cancel"] + [type="submit"], .btn-group > [type="submit"] + [type="submit"], .btn-group > .context + [type="submit"], .btn-group > .searchButton + [type="submit"], .btn-group > .link-parent + [type="submit"], .btn-group > .btn + .context, .dk_container.btn-group > a + .context, .btn-group > .standalone + .context, .btn-group > input[value^="Cancel"] + .context, .btn-group > [type="submit"] + .context, .btn-group > .context + .context, .btn-group > .searchButton + .context, .btn-group > .link-parent + .context, .btn-group > .btn + .searchButton, .dk_container.btn-group > a + .searchButton, .btn-group > .standalone + .searchButton, .btn-group > input[value^="Cancel"] + .searchButton, .btn-group > [type="submit"] + .searchButton, .btn-group > .context + .searchButton, .btn-group > .searchButton + .searchButton, .btn-group > .link-parent + .searchButton, .btn-group > .btn + .link-parent, .dk_container.btn-group > a + .link-parent, .btn-group > .standalone + .link-parent, .btn-group > input[value^="Cancel"] + .link-parent, .btn-group > [type="submit"] + .link-parent, .btn-group > .context + .link-parent, .btn-group > .searchButton + .link-parent, .btn-group > .link-parent + .link-parent {
+.btn-group > .btn + .btn, .dk_container.btn-group > a + .btn, .btn-group > .standalone + .btn, .btn-group > input[value^="Cancel"] + .btn, .btn-group > [type="submit"] + .btn, .btn-group > .context + .btn, .btn-group > .searchButton + .btn, .btn-group > button.pfg-draft-save + .btn, .btn-group > .link-parent + .btn, .dk_container.btn-group > .btn + a, .dk_container.btn-group > a + a, .dk_container.btn-group > .standalone + a, .dk_container.btn-group > input[value^="Cancel"] + a, .dk_container.btn-group > [type="submit"] + a, .dk_container.btn-group > .context + a, .dk_container.btn-group > .searchButton + a, .dk_container.btn-group > button.pfg-draft-save + a, .dk_container.btn-group > .link-parent + a, .btn-group > .btn + .standalone, .dk_container.btn-group > a + .standalone, .btn-group > .standalone + .standalone, .btn-group > input[value^="Cancel"] + .standalone, .btn-group > [type="submit"] + .standalone, .btn-group > .context + .standalone, .btn-group > .searchButton + .standalone, .btn-group > button.pfg-draft-save + .standalone, .btn-group > .link-parent + .standalone, .btn-group > .btn + input[value^="Cancel"], .dk_container.btn-group > a + input[value^="Cancel"], .btn-group > .standalone + input[value^="Cancel"], .btn-group > input[value^="Cancel"] + input[value^="Cancel"], .btn-group > [type="submit"] + input[value^="Cancel"], .btn-group > .context + input[value^="Cancel"], .btn-group > .searchButton + input[value^="Cancel"], .btn-group > button.pfg-draft-save + input[value^="Cancel"], .btn-group > .link-parent + input[value^="Cancel"], .btn-group > .btn + [type="submit"], .dk_container.btn-group > a + [type="submit"], .btn-group > .standalone + [type="submit"], .btn-group > input[value^="Cancel"] + [type="submit"], .btn-group > [type="submit"] + [type="submit"], .btn-group > .context + [type="submit"], .btn-group > .searchButton + [type="submit"], .btn-group > button.pfg-draft-save + [type="submit"], .btn-group > .link-parent + [type="submit"], .btn-group > .btn + .context, .dk_container.btn-group > a + .context, .btn-group > .standalone + .context, .btn-group > input[value^="Cancel"] + .context, .btn-group > [type="submit"] + .context, .btn-group > .context + .context, .btn-group > .searchButton + .context, .btn-group > button.pfg-draft-save + .context, .btn-group > .link-parent + .context, .btn-group > .btn + .searchButton, .dk_container.btn-group > a + .searchButton, .btn-group > .standalone + .searchButton, .btn-group > input[value^="Cancel"] + .searchButton, .btn-group > [type="submit"] + .searchButton, .btn-group > .context + .searchButton, .btn-group > .searchButton + .searchButton, .btn-group > button.pfg-draft-save + .searchButton, .btn-group > .link-parent + .searchButton, .btn-group > .btn + button.pfg-draft-save, .dk_container.btn-group > a + button.pfg-draft-save, .btn-group > .standalone + button.pfg-draft-save, .btn-group > input[value^="Cancel"] + button.pfg-draft-save, .btn-group > [type="submit"] + button.pfg-draft-save, .btn-group > .context + button.pfg-draft-save, .btn-group > .searchButton + button.pfg-draft-save, .btn-group > button.pfg-draft-save + button.pfg-draft-save, .btn-group > .link-parent + button.pfg-draft-save, .btn-group > .btn + .link-parent, .dk_container.btn-group > a + .link-parent, .btn-group > .standalone + .link-parent, .btn-group > input[value^="Cancel"] + .link-parent, .btn-group > [type="submit"] + .link-parent, .btn-group > .context + .link-parent, .btn-group > .searchButton + .link-parent, .btn-group > button.pfg-draft-save + .link-parent, .btn-group > .link-parent + .link-parent {
   margin-left: -1px;
 }
 
 /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn, .dk_container.btn-group > a, .btn-group > .standalone, .btn-group > input[value^="Cancel"], .btn-group > [type="submit"], .btn-group > .context, .btn-group > .searchButton, .btn-group > .link-parent,
+.btn-group > .btn, .dk_container.btn-group > a, .btn-group > .standalone, .btn-group > input[value^="Cancel"], .btn-group > [type="submit"], .btn-group > .context, .btn-group > .searchButton, .btn-group > button.pfg-draft-save, .btn-group > .link-parent,
 .btn-group > .dropdown-menu,
 .btn-group > div.dk_options {
   font-size: 13px;
@@ -4460,7 +4488,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 60, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child, .dk_container.btn-group > a:first-child, .btn-group > .standalone:first-child, .btn-group > input[value^="Cancel"]:first-child, .btn-group > [type="submit"]:first-child, .btn-group > .context:first-child, .btn-group > .searchButton:first-child, .btn-group > .link-parent:first-child {
+.btn-group > .btn:first-child, .dk_container.btn-group > a:first-child, .btn-group > .standalone:first-child, .btn-group > input[value^="Cancel"]:first-child, .btn-group > [type="submit"]:first-child, .btn-group > .context:first-child, .btn-group > .searchButton:first-child, .btn-group > button.pfg-draft-save:first-child, .btn-group > .link-parent:first-child {
   margin-left: 0;
   -webkit-border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
@@ -4471,7 +4499,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 71, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn:last-child, .dk_container.btn-group > a:last-child, .btn-group > .standalone:last-child, .btn-group > input[value^="Cancel"]:last-child, .btn-group > [type="submit"]:last-child, .btn-group > .context:last-child, .btn-group > .searchButton:last-child, .btn-group > .link-parent:last-child,
+.btn-group > .btn:last-child, .dk_container.btn-group > a:last-child, .btn-group > .standalone:last-child, .btn-group > input[value^="Cancel"]:last-child, .btn-group > [type="submit"]:last-child, .btn-group > .context:last-child, .btn-group > .searchButton:last-child, .btn-group > button.pfg-draft-save:last-child, .btn-group > .link-parent:last-child,
 .btn-group > .dropdown-toggle {
   -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
@@ -4482,7 +4510,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 80, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn.large:first-child, .dk_container.btn-group > a.large:first-child, .btn-group > .large.standalone:first-child, .btn-group > input.large[value^="Cancel"]:first-child, .btn-group > .large[type="submit"]:first-child, .btn-group > .large.context:first-child, .btn-group > .large.searchButton:first-child, .btn-group > .large.link-parent:first-child {
+.btn-group > .btn.large:first-child, .dk_container.btn-group > a.large:first-child, .btn-group > .large.standalone:first-child, .btn-group > input.large[value^="Cancel"]:first-child, .btn-group > .large[type="submit"]:first-child, .btn-group > .large.context:first-child, .btn-group > .large.searchButton:first-child, .btn-group > button.large.pfg-draft-save:first-child, .btn-group > .large.link-parent:first-child {
   margin-left: 0;
   -webkit-border-top-left-radius: 6px;
   -moz-border-radius-topleft: 6px;
@@ -4493,7 +4521,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 90, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn.large:last-child, .dk_container.btn-group > a.large:last-child, .btn-group > .large.standalone:last-child, .btn-group > input.large[value^="Cancel"]:last-child, .btn-group > .large[type="submit"]:last-child, .btn-group > .large.context:last-child, .btn-group > .large.searchButton:last-child, .btn-group > .large.link-parent:last-child,
+.btn-group > .btn.large:last-child, .dk_container.btn-group > a.large:last-child, .btn-group > .large.standalone:last-child, .btn-group > input.large[value^="Cancel"]:last-child, .btn-group > .large[type="submit"]:last-child, .btn-group > .large.context:last-child, .btn-group > .large.searchButton:last-child, .btn-group > button.large.pfg-draft-save:last-child, .btn-group > .large.link-parent:last-child,
 .btn-group > .large.dropdown-toggle {
   -webkit-border-top-right-radius: 6px;
   -moz-border-radius-topright: 6px;
@@ -4504,7 +4532,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 103, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn:hover, .customfile-hover .btn-group > .customfile-button, .customfile-focus .btn-group > .customfile-button, .dk_container.btn-group > a:hover, .btn-group > .standalone:hover, .btn-group > input[value^="Cancel"]:hover, .btn-group > [type="submit"]:hover, .btn-group > .context:hover, .btn-group > .searchButton:hover, .btn-group > .link-parent:hover,
+.btn-group > .btn:hover, .customfile-hover .btn-group > .customfile-button, .customfile-focus .btn-group > .customfile-button, .dk_container.btn-group > a:hover, .btn-group > .standalone:hover, .btn-group > input[value^="Cancel"]:hover, .btn-group > [type="submit"]:hover, .btn-group > .context:hover, .btn-group > .searchButton:hover, .btn-group > button.pfg-draft-save:hover, .btn-group > .link-parent:hover,
 .btn-group > .btn:focus,
 .dk_container.btn-group > a:focus,
 .btn-group > .standalone:focus,
@@ -4512,6 +4540,7 @@ input[type="submit"]::-moz-focus-inner {
 .btn-group > [type="submit"]:focus,
 .btn-group > .context:focus,
 .btn-group > .searchButton:focus,
+.btn-group > button.pfg-draft-save:focus,
 .btn-group > .link-parent:focus,
 .btn-group > .btn:active,
 .dk_container.btn-group > a:active,
@@ -4520,6 +4549,7 @@ input[type="submit"]::-moz-focus-inner {
 .btn-group > [type="submit"]:active,
 .btn-group > .context:active,
 .btn-group > .searchButton:active,
+.btn-group > button.pfg-draft-save:active,
 .btn-group > .link-parent:active,
 .btn-group > .btn.active,
 .dk_container.btn-group > a.active,
@@ -4544,18 +4574,22 @@ input[type="submit"]::-moz-focus-inner {
 .contentViews .btn-group > .context.selected:hover,
 .btn-group > .btn.selected,
 .btn-group > .selected.searchButton,
+.btn-group > button.selected.pfg-draft-save,
 .btn-group > .selected.link-parent,
 .btn-group > .active.searchButton,
 .contentViews .btn-group > .searchButton.selected,
 .contentViews .btn-group > .searchButton.selected:hover,
 .contentViews .btn-group > .btn.selected,
+.contentViews .btn-group > button.selected.pfg-draft-save,
 .contentViews .btn-group > .selected.link-parent,
 .contentViews .btn-group > .btn.selected:hover,
 .contentViews .customfile-hover .btn-group > .selected.customfile-button,
 .customfile-hover .contentViews .btn-group > .selected.customfile-button,
 .contentViews .customfile-focus .btn-group > .selected.customfile-button,
 .customfile-focus .contentViews .btn-group > .selected.customfile-button,
+.contentViews .btn-group > button.selected.pfg-draft-save:hover,
 .contentViews .btn-group > .selected.link-parent:hover,
+.btn-group > button.active.pfg-draft-save,
 .btn-group > .active.link-parent {
   z-index: 2;
 }
@@ -4567,7 +4601,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 119, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group > .btn + .dropdown-toggle, .dk_container.btn-group > a + .dropdown-toggle, .btn-group > .standalone + .dropdown-toggle, .btn-group > input[value^="Cancel"] + .dropdown-toggle, .btn-group > [type="submit"] + .dropdown-toggle, .btn-group > .context + .dropdown-toggle, .btn-group > .searchButton + .dropdown-toggle, .btn-group > .link-parent + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .dk_container.btn-group > a + .dropdown-toggle, .btn-group > .standalone + .dropdown-toggle, .btn-group > input[value^="Cancel"] + .dropdown-toggle, .btn-group > [type="submit"] + .dropdown-toggle, .btn-group > .context + .dropdown-toggle, .btn-group > .searchButton + .dropdown-toggle, .btn-group > button.pfg-draft-save + .dropdown-toggle, .btn-group > .link-parent + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
   -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -4597,7 +4631,7 @@ input[type="submit"]::-moz-focus-inner {
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 /* line 151, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group.open .btn.dropdown-toggle, .btn-group.open .dk_container > a.dropdown-toggle, .btn-group.open .dropdown-toggle.standalone, .btn-group.open input.dropdown-toggle[value^="Cancel"], .btn-group.open .dropdown-toggle[type="submit"], .btn-group.open .dropdown-toggle.context, .btn-group.open .dropdown-toggle.searchButton, .btn-group.open .dropdown-toggle.link-parent {
+.btn-group.open .btn.dropdown-toggle, .btn-group.open .dk_container > a.dropdown-toggle, .btn-group.open .dropdown-toggle.standalone, .btn-group.open input.dropdown-toggle[value^="Cancel"], .btn-group.open .dropdown-toggle[type="submit"], .btn-group.open .dropdown-toggle.context, .btn-group.open .dropdown-toggle.searchButton, .btn-group.open button.dropdown-toggle.pfg-draft-save, .btn-group.open .dropdown-toggle.link-parent {
   background-color: #e6e6e6;
 }
 /* line 154, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
@@ -4613,7 +4647,7 @@ input[type="submit"]::-moz-focus-inner {
   background-color: #a62e1f;
 }
 /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group.open .btn-success.dropdown-toggle {
+.btn-group.open .btn-success.dropdown-toggle, .btn-group.open button.dropdown-toggle.pfg-draft-save {
   background-color: #547815;
 }
 /* line 166, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
@@ -4626,7 +4660,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn .caret, .dk_container > a .caret, .standalone .caret, input[value^="Cancel"] .caret, [type="submit"] .caret, .context .caret, .searchButton .caret, .link-parent .caret {
+.btn .caret, .dk_container > a .caret, .standalone .caret, input[value^="Cancel"] .caret, [type="submit"] .caret, .context .caret, .searchButton .caret, button.pfg-draft-save .caret, .link-parent .caret {
   margin-top: 8px;
   margin-left: 0;
 }
@@ -4659,6 +4693,7 @@ input[type="submit"]::-moz-focus-inner {
 .btn-info .caret,
 .link-parent .caret,
 .btn-success .caret,
+button.pfg-draft-save .caret,
 .btn-inverse .caret {
   border-top-color: white;
   border-bottom-color: white;
@@ -4672,7 +4707,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 221, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical .btn, .btn-group-vertical .dk_container > a, .btn-group-vertical .standalone, .btn-group-vertical input[value^="Cancel"], .btn-group-vertical [type="submit"], .btn-group-vertical .context, .btn-group-vertical .searchButton, .btn-group-vertical .link-parent {
+.btn-group-vertical .btn, .btn-group-vertical .dk_container > a, .btn-group-vertical .standalone, .btn-group-vertical input[value^="Cancel"], .btn-group-vertical [type="submit"], .btn-group-vertical .context, .btn-group-vertical .searchButton, .btn-group-vertical button.pfg-draft-save, .btn-group-vertical .link-parent {
   display: block;
   float: none;
   width: 100%;
@@ -4682,20 +4717,20 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 227, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical .btn + .btn, .btn-group-vertical .dk_container > a + .btn, .btn-group-vertical .standalone + .btn, .btn-group-vertical input[value^="Cancel"] + .btn, .btn-group-vertical [type="submit"] + .btn, .btn-group-vertical .context + .btn, .btn-group-vertical .searchButton + .btn, .btn-group-vertical .link-parent + .btn, .btn-group-vertical .dk_container > .btn + a, .btn-group-vertical .dk_container > a + a, .btn-group-vertical .dk_container > .standalone + a, .btn-group-vertical .dk_container > input[value^="Cancel"] + a, .btn-group-vertical .dk_container > [type="submit"] + a, .btn-group-vertical .dk_container > .context + a, .btn-group-vertical .dk_container > .searchButton + a, .btn-group-vertical .dk_container > .link-parent + a, .btn-group-vertical .btn + .standalone, .btn-group-vertical .dk_container > a + .standalone, .btn-group-vertical .standalone + .standalone, .btn-group-vertical input[value^="Cancel"] + .standalone, .btn-group-vertical [type="submit"] + .standalone, .btn-group-vertical .context + .standalone, .btn-group-vertical .searchButton + .standalone, .btn-group-vertical .link-parent + .standalone, .btn-group-vertical .btn + input[value^="Cancel"], .btn-group-vertical .dk_container > a + input[value^="Cancel"], .btn-group-vertical .standalone + input[value^="Cancel"], .btn-group-vertical input[value^="Cancel"] + input[value^="Cancel"], .btn-group-vertical [type="submit"] + input[value^="Cancel"], .btn-group-vertical .context + input[value^="Cancel"], .btn-group-vertical .searchButton + input[value^="Cancel"], .btn-group-vertical .link-parent + input[value^="Cancel"], .btn-group-vertical .btn + [type="submit"], .btn-group-vertical .dk_container > a + [type="submit"], .btn-group-vertical .standalone + [type="submit"], .btn-group-vertical input[value^="Cancel"] + [type="submit"], .btn-group-vertical [type="submit"] + [type="submit"], .btn-group-vertical .context + [type="submit"], .btn-group-vertical .searchButton + [type="submit"], .btn-group-vertical .link-parent + [type="submit"], .btn-group-vertical .btn + .context, .btn-group-vertical .dk_container > a + .context, .btn-group-vertical .standalone + .context, .btn-group-vertical input[value^="Cancel"] + .context, .btn-group-vertical [type="submit"] + .context, .btn-group-vertical .context + .context, .btn-group-vertical .searchButton + .context, .btn-group-vertical .link-parent + .context, .btn-group-vertical .btn + .searchButton, .btn-group-vertical .dk_container > a + .searchButton, .btn-group-vertical .standalone + .searchButton, .btn-group-vertical input[value^="Cancel"] + .searchButton, .btn-group-vertical [type="submit"] + .searchButton, .btn-group-vertical .context + .searchButton, .btn-group-vertical .searchButton + .searchButton, .btn-group-vertical .link-parent + .searchButton, .btn-group-vertical .btn + .link-parent, .btn-group-vertical .dk_container > a + .link-parent, .btn-group-vertical .standalone + .link-parent, .btn-group-vertical input[value^="Cancel"] + .link-parent, .btn-group-vertical [type="submit"] + .link-parent, .btn-group-vertical .context + .link-parent, .btn-group-vertical .searchButton + .link-parent, .btn-group-vertical .link-parent + .link-parent {
+.btn-group-vertical .btn + .btn, .btn-group-vertical .dk_container > a + .btn, .btn-group-vertical .standalone + .btn, .btn-group-vertical input[value^="Cancel"] + .btn, .btn-group-vertical [type="submit"] + .btn, .btn-group-vertical .context + .btn, .btn-group-vertical .searchButton + .btn, .btn-group-vertical button.pfg-draft-save + .btn, .btn-group-vertical .link-parent + .btn, .btn-group-vertical .dk_container > .btn + a, .btn-group-vertical .dk_container > a + a, .btn-group-vertical .dk_container > .standalone + a, .btn-group-vertical .dk_container > input[value^="Cancel"] + a, .btn-group-vertical .dk_container > [type="submit"] + a, .btn-group-vertical .dk_container > .context + a, .btn-group-vertical .dk_container > .searchButton + a, .btn-group-vertical .dk_container > button.pfg-draft-save + a, .btn-group-vertical .dk_container > .link-parent + a, .btn-group-vertical .btn + .standalone, .btn-group-vertical .dk_container > a + .standalone, .btn-group-vertical .standalone + .standalone, .btn-group-vertical input[value^="Cancel"] + .standalone, .btn-group-vertical [type="submit"] + .standalone, .btn-group-vertical .context + .standalone, .btn-group-vertical .searchButton + .standalone, .btn-group-vertical button.pfg-draft-save + .standalone, .btn-group-vertical .link-parent + .standalone, .btn-group-vertical .btn + input[value^="Cancel"], .btn-group-vertical .dk_container > a + input[value^="Cancel"], .btn-group-vertical .standalone + input[value^="Cancel"], .btn-group-vertical input[value^="Cancel"] + input[value^="Cancel"], .btn-group-vertical [type="submit"] + input[value^="Cancel"], .btn-group-vertical .context + input[value^="Cancel"], .btn-group-vertical .searchButton + input[value^="Cancel"], .btn-group-vertical button.pfg-draft-save + input[value^="Cancel"], .btn-group-vertical .link-parent + input[value^="Cancel"], .btn-group-vertical .btn + [type="submit"], .btn-group-vertical .dk_container > a + [type="submit"], .btn-group-vertical .standalone + [type="submit"], .btn-group-vertical input[value^="Cancel"] + [type="submit"], .btn-group-vertical [type="submit"] + [type="submit"], .btn-group-vertical .context + [type="submit"], .btn-group-vertical .searchButton + [type="submit"], .btn-group-vertical button.pfg-draft-save + [type="submit"], .btn-group-vertical .link-parent + [type="submit"], .btn-group-vertical .btn + .context, .btn-group-vertical .dk_container > a + .context, .btn-group-vertical .standalone + .context, .btn-group-vertical input[value^="Cancel"] + .context, .btn-group-vertical [type="submit"] + .context, .btn-group-vertical .context + .context, .btn-group-vertical .searchButton + .context, .btn-group-vertical button.pfg-draft-save + .context, .btn-group-vertical .link-parent + .context, .btn-group-vertical .btn + .searchButton, .btn-group-vertical .dk_container > a + .searchButton, .btn-group-vertical .standalone + .searchButton, .btn-group-vertical input[value^="Cancel"] + .searchButton, .btn-group-vertical [type="submit"] + .searchButton, .btn-group-vertical .context + .searchButton, .btn-group-vertical .searchButton + .searchButton, .btn-group-vertical button.pfg-draft-save + .searchButton, .btn-group-vertical .link-parent + .searchButton, .btn-group-vertical .btn + button.pfg-draft-save, .btn-group-vertical .dk_container > a + button.pfg-draft-save, .btn-group-vertical .standalone + button.pfg-draft-save, .btn-group-vertical input[value^="Cancel"] + button.pfg-draft-save, .btn-group-vertical [type="submit"] + button.pfg-draft-save, .btn-group-vertical .context + button.pfg-draft-save, .btn-group-vertical .searchButton + button.pfg-draft-save, .btn-group-vertical button.pfg-draft-save + button.pfg-draft-save, .btn-group-vertical .link-parent + button.pfg-draft-save, .btn-group-vertical .btn + .link-parent, .btn-group-vertical .dk_container > a + .link-parent, .btn-group-vertical .standalone + .link-parent, .btn-group-vertical input[value^="Cancel"] + .link-parent, .btn-group-vertical [type="submit"] + .link-parent, .btn-group-vertical .context + .link-parent, .btn-group-vertical .searchButton + .link-parent, .btn-group-vertical button.pfg-draft-save + .link-parent, .btn-group-vertical .link-parent + .link-parent {
   margin-left: 0;
   margin-top: -1px;
 }
 
 /* line 231, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical .btn:first-child, .btn-group-vertical .dk_container > a:first-child, .btn-group-vertical .standalone:first-child, .btn-group-vertical input[value^="Cancel"]:first-child, .btn-group-vertical [type="submit"]:first-child, .btn-group-vertical .context:first-child, .btn-group-vertical .searchButton:first-child, .btn-group-vertical .link-parent:first-child {
+.btn-group-vertical .btn:first-child, .btn-group-vertical .dk_container > a:first-child, .btn-group-vertical .standalone:first-child, .btn-group-vertical input[value^="Cancel"]:first-child, .btn-group-vertical [type="submit"]:first-child, .btn-group-vertical .context:first-child, .btn-group-vertical .searchButton:first-child, .btn-group-vertical button.pfg-draft-save:first-child, .btn-group-vertical .link-parent:first-child {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
 
 /* line 234, ../bootstrap/scss/compass_twitter_bootstrap/_button-groups.scss */
-.btn-group-vertical .btn:last-child, .btn-group-vertical .dk_container > a:last-child, .btn-group-vertical .standalone:last-child, .btn-group-vertical input[value^="Cancel"]:last-child, .btn-group-vertical [type="submit"]:last-child, .btn-group-vertical .context:last-child, .btn-group-vertical .searchButton:last-child, .btn-group-vertical .link-parent:last-child {
+.btn-group-vertical .btn:last-child, .btn-group-vertical .dk_container > a:last-child, .btn-group-vertical .standalone:last-child, .btn-group-vertical input[value^="Cancel"]:last-child, .btn-group-vertical [type="submit"]:last-child, .btn-group-vertical .context:last-child, .btn-group-vertical .searchButton:last-child, .btn-group-vertical button.pfg-draft-save:last-child, .btn-group-vertical .link-parent:last-child {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
@@ -4840,7 +4875,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 24, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > .pull-right, .contentViews > .pull-right, .configlets > .pull-right, .formTabs > .pull-right {
+.nav > .pull-right, .contentViews > .pull-right, .configlets > .pull-right, .formTabs > .pull-right, .nav > .newsImageContainer, .contentViews > .newsImageContainer, .configlets > .newsImageContainer, .formTabs > .newsImageContainer {
   float: right;
 }
 
@@ -5477,13 +5512,13 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .btn, .navbar .dk_container > a, .navbar .standalone, .navbar input[value^="Cancel"], .navbar [type="submit"], .navbar .context, .navbar .searchButton, .navbar .link-parent,
+.navbar .btn, .navbar .dk_container > a, .navbar .standalone, .navbar input[value^="Cancel"], .navbar [type="submit"], .navbar .context, .navbar .searchButton, .navbar button.pfg-draft-save, .navbar .link-parent,
 .navbar .btn-group {
   margin-top: 4px;
 }
 
 /* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .btn-group .btn, .navbar .btn-group .dk_container > a, .navbar .btn-group .standalone, .navbar .btn-group input[value^="Cancel"], .navbar .btn-group [type="submit"], .navbar .btn-group .context, .navbar .btn-group .searchButton, .navbar .btn-group .link-parent {
+.navbar .btn-group .btn, .navbar .btn-group .dk_container > a, .navbar .btn-group .standalone, .navbar .btn-group input[value^="Cancel"], .navbar .btn-group [type="submit"], .navbar .btn-group .context, .navbar .btn-group .searchButton, .navbar .btn-group button.pfg-draft-save, .navbar .btn-group .link-parent {
   margin: 0;
 }
 
@@ -5519,6 +5554,7 @@ input[type="submit"]::-moz-focus-inner {
 .navbar-form [type="submit"],
 .navbar-form .context,
 .navbar-form .searchButton,
+.navbar-form button.pfg-draft-save,
 .navbar-form .link-parent {
   display: inline-block;
   margin-bottom: 0;
@@ -5642,7 +5678,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 222, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav.pull-right, .navbar .pull-right.contentViews, .navbar .pull-right.configlets, .navbar .pull-right.formTabs {
+.navbar .nav.pull-right, .navbar .pull-right.contentViews, .navbar .contentViews.newsImageContainer, .navbar .pull-right.configlets, .navbar .configlets.newsImageContainer, .navbar .nav.newsImageContainer, .navbar .newsImageContainer.formTabs, .navbar .pull-right.formTabs {
   float: right;
 }
 
@@ -5939,7 +5975,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 360, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu, .navbar .pull-right > li > div.dk_options,
+.navbar .pull-right > li > .dropdown-menu, .navbar .newsImageContainer > li > .dropdown-menu, .navbar .pull-right > li > div.dk_options, .navbar .newsImageContainer > li > div.dk_options,
 .navbar .nav > li > .dropdown-menu.pull-right,
 .navbar .contentViews > li > .dropdown-menu.pull-right,
 .navbar .configlets > li > .dropdown-menu.pull-right,
@@ -5947,12 +5983,20 @@ input[type="submit"]::-moz-focus-inner {
 .navbar .nav > li > div.pull-right.dk_options,
 .navbar .contentViews > li > div.pull-right.dk_options,
 .navbar .configlets > li > div.pull-right.dk_options,
-.navbar .formTabs > li > div.pull-right.dk_options {
+.navbar .formTabs > li > div.pull-right.dk_options,
+.navbar .nav > li > div.dk_options.newsImageContainer,
+.navbar .contentViews > li > div.dk_options.newsImageContainer,
+.navbar .configlets > li > div.dk_options.newsImageContainer,
+.navbar .formTabs > li > div.dk_options.newsImageContainer,
+.navbar .nav > li > .dropdown-menu.newsImageContainer,
+.navbar .contentViews > li > .dropdown-menu.newsImageContainer,
+.navbar .configlets > li > .dropdown-menu.newsImageContainer,
+.navbar .formTabs > li > .dropdown-menu.newsImageContainer {
   left: auto !important;
   right: 0 !important;
 }
 /* line 363, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu:before, .navbar .pull-right > li > div.dk_options:before,
+.navbar .pull-right > li > .dropdown-menu:before, .navbar .newsImageContainer > li > .dropdown-menu:before, .navbar .pull-right > li > div.dk_options:before, .navbar .newsImageContainer > li > div.dk_options:before,
 .navbar .nav > li > .dropdown-menu.pull-right:before,
 .navbar .contentViews > li > .dropdown-menu.pull-right:before,
 .navbar .configlets > li > .dropdown-menu.pull-right:before,
@@ -5960,12 +6004,20 @@ input[type="submit"]::-moz-focus-inner {
 .navbar .nav > li > div.pull-right.dk_options:before,
 .navbar .contentViews > li > div.pull-right.dk_options:before,
 .navbar .configlets > li > div.pull-right.dk_options:before,
-.navbar .formTabs > li > div.pull-right.dk_options:before {
+.navbar .formTabs > li > div.pull-right.dk_options:before,
+.navbar .nav > li > div.dk_options.newsImageContainer:before,
+.navbar .contentViews > li > div.dk_options.newsImageContainer:before,
+.navbar .configlets > li > div.dk_options.newsImageContainer:before,
+.navbar .formTabs > li > div.dk_options.newsImageContainer:before,
+.navbar .nav > li > .dropdown-menu.newsImageContainer:before,
+.navbar .contentViews > li > .dropdown-menu.newsImageContainer:before,
+.navbar .configlets > li > .dropdown-menu.newsImageContainer:before,
+.navbar .formTabs > li > .dropdown-menu.newsImageContainer:before {
   left: auto !important;
   right: 12px !important;
 }
 /* line 367, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu:after, .navbar .pull-right > li > div.dk_options:after,
+.navbar .pull-right > li > .dropdown-menu:after, .navbar .newsImageContainer > li > .dropdown-menu:after, .navbar .pull-right > li > div.dk_options:after, .navbar .newsImageContainer > li > div.dk_options:after,
 .navbar .nav > li > .dropdown-menu.pull-right:after,
 .navbar .contentViews > li > .dropdown-menu.pull-right:after,
 .navbar .configlets > li > .dropdown-menu.pull-right:after,
@@ -5973,12 +6025,20 @@ input[type="submit"]::-moz-focus-inner {
 .navbar .nav > li > div.pull-right.dk_options:after,
 .navbar .contentViews > li > div.pull-right.dk_options:after,
 .navbar .configlets > li > div.pull-right.dk_options:after,
-.navbar .formTabs > li > div.pull-right.dk_options:after {
+.navbar .formTabs > li > div.pull-right.dk_options:after,
+.navbar .nav > li > div.dk_options.newsImageContainer:after,
+.navbar .contentViews > li > div.dk_options.newsImageContainer:after,
+.navbar .configlets > li > div.dk_options.newsImageContainer:after,
+.navbar .formTabs > li > div.dk_options.newsImageContainer:after,
+.navbar .nav > li > .dropdown-menu.newsImageContainer:after,
+.navbar .contentViews > li > .dropdown-menu.newsImageContainer:after,
+.navbar .configlets > li > .dropdown-menu.newsImageContainer:after,
+.navbar .formTabs > li > .dropdown-menu.newsImageContainer:after {
   left: auto !important;
   right: 13px !important;
 }
 /* line 371, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .pull-right > li > .dropdown-menu .dropdown-menu, .navbar .pull-right > li > div.dk_options .dropdown-menu, .navbar .pull-right > li > .dropdown-menu div.dk_options, .navbar .pull-right > li > div.dk_options div.dk_options,
+.navbar .pull-right > li > .dropdown-menu .dropdown-menu, .navbar .newsImageContainer > li > .dropdown-menu .dropdown-menu, .navbar .pull-right > li > div.dk_options .dropdown-menu, .navbar .newsImageContainer > li > div.dk_options .dropdown-menu, .navbar .pull-right > li > .dropdown-menu div.dk_options, .navbar .newsImageContainer > li > .dropdown-menu div.dk_options, .navbar .pull-right > li > div.dk_options div.dk_options, .navbar .newsImageContainer > li > div.dk_options div.dk_options,
 .navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu,
 .navbar .contentViews > li > .dropdown-menu.pull-right .dropdown-menu,
 .navbar .configlets > li > .dropdown-menu.pull-right .dropdown-menu,
@@ -5987,6 +6047,14 @@ input[type="submit"]::-moz-focus-inner {
 .navbar .contentViews > li > div.pull-right.dk_options .dropdown-menu,
 .navbar .configlets > li > div.pull-right.dk_options .dropdown-menu,
 .navbar .formTabs > li > div.pull-right.dk_options .dropdown-menu,
+.navbar .nav > li > div.dk_options.newsImageContainer .dropdown-menu,
+.navbar .contentViews > li > div.dk_options.newsImageContainer .dropdown-menu,
+.navbar .configlets > li > div.dk_options.newsImageContainer .dropdown-menu,
+.navbar .formTabs > li > div.dk_options.newsImageContainer .dropdown-menu,
+.navbar .nav > li > .dropdown-menu.newsImageContainer .dropdown-menu,
+.navbar .contentViews > li > .dropdown-menu.newsImageContainer .dropdown-menu,
+.navbar .configlets > li > .dropdown-menu.newsImageContainer .dropdown-menu,
+.navbar .formTabs > li > .dropdown-menu.newsImageContainer .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right div.dk_options,
 .navbar .contentViews > li > .dropdown-menu.pull-right div.dk_options,
 .navbar .configlets > li > .dropdown-menu.pull-right div.dk_options,
@@ -5994,7 +6062,15 @@ input[type="submit"]::-moz-focus-inner {
 .navbar .nav > li > div.pull-right.dk_options div.dk_options,
 .navbar .contentViews > li > div.pull-right.dk_options div.dk_options,
 .navbar .configlets > li > div.pull-right.dk_options div.dk_options,
-.navbar .formTabs > li > div.pull-right.dk_options div.dk_options {
+.navbar .formTabs > li > div.pull-right.dk_options div.dk_options,
+.navbar .nav > li > div.dk_options.newsImageContainer div.dk_options,
+.navbar .contentViews > li > div.dk_options.newsImageContainer div.dk_options,
+.navbar .configlets > li > div.dk_options.newsImageContainer div.dk_options,
+.navbar .formTabs > li > div.dk_options.newsImageContainer div.dk_options,
+.navbar .nav > li > .dropdown-menu.newsImageContainer div.dk_options,
+.navbar .contentViews > li > .dropdown-menu.newsImageContainer div.dk_options,
+.navbar .configlets > li > .dropdown-menu.newsImageContainer div.dk_options,
+.navbar .formTabs > li > .dropdown-menu.newsImageContainer div.dk_options {
   left: auto !important;
   right: 100% !important;
   margin-left: 0 !important;
@@ -6273,19 +6349,20 @@ input[type="submit"]::-moz-focus-inner {
 
 /* line 5, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
 .breadcrumb {
+  display: inline-block;
   padding: 0;
   margin: 6px 0 0;
   list-style: none;
   font-size: 84.6153846%;
 }
-/* line 10, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
+/* line 11, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
 .breadcrumb li {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   text-shadow: 0 1px 0 white;
 }
-/* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
+/* line 16, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
 .breadcrumb .divider {
   padding: 0 2px;
   color: #63a1c1;
@@ -6293,18 +6370,28 @@ input[type="submit"]::-moz-focus-inner {
   position: relative;
   top: -1px;
 }
-/* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
+/* line 23, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
 .breadcrumb .active, .breadcrumb .selected, .breadcrumb .contentViews .selected, .contentViews .breadcrumb .selected, .breadcrumb .contentViews .selected:hover, .contentViews .breadcrumb .selected:hover, .breadcrumb .active a, .breadcrumb .selected a, .breadcrumb .contentViews .selected a, .contentViews .breadcrumb .selected a, .breadcrumb .contentViews .selected:hover a, .contentViews .breadcrumb .selected:hover a {
   color: #666666;
   font-weight: bold;
 }
-/* line 26, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
+/* line 27, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
 .breadcrumb h2 {
   margin: 0 !important;
   font-size: 11px;
   color: #aaaaaa;
   font-weight: normal;
   line-height: 18px;
+}
+
+/* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
+#portal-breadcrumbs h2 {
+  margin: 0 !important;
+  font-size: 84.6153846%;
+  color: #aaaaaa;
+  font-weight: normal;
+  line-height: 18px;
+  display: inline-block;
 }
 
 /* line 6, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
@@ -6497,7 +6584,7 @@ input[type="submit"]::-moz-focus-inner {
   *z-index: 2050;
 }
 /* line 10, ../bootstrap/scss/compass_twitter_bootstrap/_modals.scss */
-.modal-open .popover {
+.modal-open .popover, .modal-open .expandable-content {
   z-index: 2060;
 }
 /* line 11, ../bootstrap/scss/compass_twitter_bootstrap/_modals.scss */
@@ -6629,12 +6716,12 @@ input[type="submit"]::-moz-focus-inner {
   clear: both;
 }
 /* line 95, ../bootstrap/scss/compass_twitter_bootstrap/_modals.scss */
-.modal-footer .btn + .btn, .modal-footer .dk_container > a + .btn, .modal-footer .standalone + .btn, .modal-footer input[value^="Cancel"] + .btn, .modal-footer [type="submit"] + .btn, .modal-footer .context + .btn, .modal-footer .searchButton + .btn, .modal-footer .link-parent + .btn, .modal-footer .dk_container > .btn + a, .modal-footer .dk_container > a + a, .modal-footer .dk_container > .standalone + a, .modal-footer .dk_container > input[value^="Cancel"] + a, .modal-footer .dk_container > [type="submit"] + a, .modal-footer .dk_container > .context + a, .modal-footer .dk_container > .searchButton + a, .modal-footer .dk_container > .link-parent + a, .modal-footer .btn + .standalone, .modal-footer .dk_container > a + .standalone, .modal-footer .standalone + .standalone, .modal-footer input[value^="Cancel"] + .standalone, .modal-footer [type="submit"] + .standalone, .modal-footer .context + .standalone, .modal-footer .searchButton + .standalone, .modal-footer .link-parent + .standalone, .modal-footer .btn + input[value^="Cancel"], .modal-footer .dk_container > a + input[value^="Cancel"], .modal-footer .standalone + input[value^="Cancel"], .modal-footer input[value^="Cancel"] + input[value^="Cancel"], .modal-footer [type="submit"] + input[value^="Cancel"], .modal-footer .context + input[value^="Cancel"], .modal-footer .searchButton + input[value^="Cancel"], .modal-footer .link-parent + input[value^="Cancel"], .modal-footer .btn + [type="submit"], .modal-footer .dk_container > a + [type="submit"], .modal-footer .standalone + [type="submit"], .modal-footer input[value^="Cancel"] + [type="submit"], .modal-footer [type="submit"] + [type="submit"], .modal-footer .context + [type="submit"], .modal-footer .searchButton + [type="submit"], .modal-footer .link-parent + [type="submit"], .modal-footer .btn + .context, .modal-footer .dk_container > a + .context, .modal-footer .standalone + .context, .modal-footer input[value^="Cancel"] + .context, .modal-footer [type="submit"] + .context, .modal-footer .context + .context, .modal-footer .searchButton + .context, .modal-footer .link-parent + .context, .modal-footer .btn + .searchButton, .modal-footer .dk_container > a + .searchButton, .modal-footer .standalone + .searchButton, .modal-footer input[value^="Cancel"] + .searchButton, .modal-footer [type="submit"] + .searchButton, .modal-footer .context + .searchButton, .modal-footer .searchButton + .searchButton, .modal-footer .link-parent + .searchButton, .modal-footer .btn + .link-parent, .modal-footer .dk_container > a + .link-parent, .modal-footer .standalone + .link-parent, .modal-footer input[value^="Cancel"] + .link-parent, .modal-footer [type="submit"] + .link-parent, .modal-footer .context + .link-parent, .modal-footer .searchButton + .link-parent, .modal-footer .link-parent + .link-parent {
+.modal-footer .btn + .btn, .modal-footer .dk_container > a + .btn, .modal-footer .standalone + .btn, .modal-footer input[value^="Cancel"] + .btn, .modal-footer [type="submit"] + .btn, .modal-footer .context + .btn, .modal-footer .searchButton + .btn, .modal-footer button.pfg-draft-save + .btn, .modal-footer .link-parent + .btn, .modal-footer .dk_container > .btn + a, .modal-footer .dk_container > a + a, .modal-footer .dk_container > .standalone + a, .modal-footer .dk_container > input[value^="Cancel"] + a, .modal-footer .dk_container > [type="submit"] + a, .modal-footer .dk_container > .context + a, .modal-footer .dk_container > .searchButton + a, .modal-footer .dk_container > button.pfg-draft-save + a, .modal-footer .dk_container > .link-parent + a, .modal-footer .btn + .standalone, .modal-footer .dk_container > a + .standalone, .modal-footer .standalone + .standalone, .modal-footer input[value^="Cancel"] + .standalone, .modal-footer [type="submit"] + .standalone, .modal-footer .context + .standalone, .modal-footer .searchButton + .standalone, .modal-footer button.pfg-draft-save + .standalone, .modal-footer .link-parent + .standalone, .modal-footer .btn + input[value^="Cancel"], .modal-footer .dk_container > a + input[value^="Cancel"], .modal-footer .standalone + input[value^="Cancel"], .modal-footer input[value^="Cancel"] + input[value^="Cancel"], .modal-footer [type="submit"] + input[value^="Cancel"], .modal-footer .context + input[value^="Cancel"], .modal-footer .searchButton + input[value^="Cancel"], .modal-footer button.pfg-draft-save + input[value^="Cancel"], .modal-footer .link-parent + input[value^="Cancel"], .modal-footer .btn + [type="submit"], .modal-footer .dk_container > a + [type="submit"], .modal-footer .standalone + [type="submit"], .modal-footer input[value^="Cancel"] + [type="submit"], .modal-footer [type="submit"] + [type="submit"], .modal-footer .context + [type="submit"], .modal-footer .searchButton + [type="submit"], .modal-footer button.pfg-draft-save + [type="submit"], .modal-footer .link-parent + [type="submit"], .modal-footer .btn + .context, .modal-footer .dk_container > a + .context, .modal-footer .standalone + .context, .modal-footer input[value^="Cancel"] + .context, .modal-footer [type="submit"] + .context, .modal-footer .context + .context, .modal-footer .searchButton + .context, .modal-footer button.pfg-draft-save + .context, .modal-footer .link-parent + .context, .modal-footer .btn + .searchButton, .modal-footer .dk_container > a + .searchButton, .modal-footer .standalone + .searchButton, .modal-footer input[value^="Cancel"] + .searchButton, .modal-footer [type="submit"] + .searchButton, .modal-footer .context + .searchButton, .modal-footer .searchButton + .searchButton, .modal-footer button.pfg-draft-save + .searchButton, .modal-footer .link-parent + .searchButton, .modal-footer .btn + button.pfg-draft-save, .modal-footer .dk_container > a + button.pfg-draft-save, .modal-footer .standalone + button.pfg-draft-save, .modal-footer input[value^="Cancel"] + button.pfg-draft-save, .modal-footer [type="submit"] + button.pfg-draft-save, .modal-footer .context + button.pfg-draft-save, .modal-footer .searchButton + button.pfg-draft-save, .modal-footer button.pfg-draft-save + button.pfg-draft-save, .modal-footer .link-parent + button.pfg-draft-save, .modal-footer .btn + .link-parent, .modal-footer .dk_container > a + .link-parent, .modal-footer .standalone + .link-parent, .modal-footer input[value^="Cancel"] + .link-parent, .modal-footer [type="submit"] + .link-parent, .modal-footer .context + .link-parent, .modal-footer .searchButton + .link-parent, .modal-footer button.pfg-draft-save + .link-parent, .modal-footer .link-parent + .link-parent {
   margin-left: 5px;
   margin-bottom: 0;
 }
 /* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_modals.scss */
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .dk_container > a + .btn, .modal-footer .btn-group .standalone + .btn, .modal-footer .btn-group input[value^="Cancel"] + .btn, .modal-footer .btn-group [type="submit"] + .btn, .modal-footer .btn-group .context + .btn, .modal-footer .btn-group .searchButton + .btn, .modal-footer .btn-group .link-parent + .btn, .modal-footer .btn-group .dk_container > .btn + a, .modal-footer .btn-group .dk_container > a + a, .modal-footer .btn-group .dk_container > .standalone + a, .modal-footer .btn-group .dk_container > input[value^="Cancel"] + a, .modal-footer .btn-group .dk_container > [type="submit"] + a, .modal-footer .btn-group .dk_container > .context + a, .modal-footer .btn-group .dk_container > .searchButton + a, .modal-footer .btn-group .dk_container > .link-parent + a, .modal-footer .btn-group .btn + .standalone, .modal-footer .btn-group .dk_container > a + .standalone, .modal-footer .btn-group .standalone + .standalone, .modal-footer .btn-group input[value^="Cancel"] + .standalone, .modal-footer .btn-group [type="submit"] + .standalone, .modal-footer .btn-group .context + .standalone, .modal-footer .btn-group .searchButton + .standalone, .modal-footer .btn-group .link-parent + .standalone, .modal-footer .btn-group .btn + input[value^="Cancel"], .modal-footer .btn-group .dk_container > a + input[value^="Cancel"], .modal-footer .btn-group .standalone + input[value^="Cancel"], .modal-footer .btn-group input[value^="Cancel"] + input[value^="Cancel"], .modal-footer .btn-group [type="submit"] + input[value^="Cancel"], .modal-footer .btn-group .context + input[value^="Cancel"], .modal-footer .btn-group .searchButton + input[value^="Cancel"], .modal-footer .btn-group .link-parent + input[value^="Cancel"], .modal-footer .btn-group .btn + [type="submit"], .modal-footer .btn-group .dk_container > a + [type="submit"], .modal-footer .btn-group .standalone + [type="submit"], .modal-footer .btn-group input[value^="Cancel"] + [type="submit"], .modal-footer .btn-group [type="submit"] + [type="submit"], .modal-footer .btn-group .context + [type="submit"], .modal-footer .btn-group .searchButton + [type="submit"], .modal-footer .btn-group .link-parent + [type="submit"], .modal-footer .btn-group .btn + .context, .modal-footer .btn-group .dk_container > a + .context, .modal-footer .btn-group .standalone + .context, .modal-footer .btn-group input[value^="Cancel"] + .context, .modal-footer .btn-group [type="submit"] + .context, .modal-footer .btn-group .context + .context, .modal-footer .btn-group .searchButton + .context, .modal-footer .btn-group .link-parent + .context, .modal-footer .btn-group .btn + .searchButton, .modal-footer .btn-group .dk_container > a + .searchButton, .modal-footer .btn-group .standalone + .searchButton, .modal-footer .btn-group input[value^="Cancel"] + .searchButton, .modal-footer .btn-group [type="submit"] + .searchButton, .modal-footer .btn-group .context + .searchButton, .modal-footer .btn-group .searchButton + .searchButton, .modal-footer .btn-group .link-parent + .searchButton, .modal-footer .btn-group .btn + .link-parent, .modal-footer .btn-group .dk_container > a + .link-parent, .modal-footer .btn-group .standalone + .link-parent, .modal-footer .btn-group input[value^="Cancel"] + .link-parent, .modal-footer .btn-group [type="submit"] + .link-parent, .modal-footer .btn-group .context + .link-parent, .modal-footer .btn-group .searchButton + .link-parent, .modal-footer .btn-group .link-parent + .link-parent {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .dk_container > a + .btn, .modal-footer .btn-group .standalone + .btn, .modal-footer .btn-group input[value^="Cancel"] + .btn, .modal-footer .btn-group [type="submit"] + .btn, .modal-footer .btn-group .context + .btn, .modal-footer .btn-group .searchButton + .btn, .modal-footer .btn-group button.pfg-draft-save + .btn, .modal-footer .btn-group .link-parent + .btn, .modal-footer .btn-group .dk_container > .btn + a, .modal-footer .btn-group .dk_container > a + a, .modal-footer .btn-group .dk_container > .standalone + a, .modal-footer .btn-group .dk_container > input[value^="Cancel"] + a, .modal-footer .btn-group .dk_container > [type="submit"] + a, .modal-footer .btn-group .dk_container > .context + a, .modal-footer .btn-group .dk_container > .searchButton + a, .modal-footer .btn-group .dk_container > button.pfg-draft-save + a, .modal-footer .btn-group .dk_container > .link-parent + a, .modal-footer .btn-group .btn + .standalone, .modal-footer .btn-group .dk_container > a + .standalone, .modal-footer .btn-group .standalone + .standalone, .modal-footer .btn-group input[value^="Cancel"] + .standalone, .modal-footer .btn-group [type="submit"] + .standalone, .modal-footer .btn-group .context + .standalone, .modal-footer .btn-group .searchButton + .standalone, .modal-footer .btn-group button.pfg-draft-save + .standalone, .modal-footer .btn-group .link-parent + .standalone, .modal-footer .btn-group .btn + input[value^="Cancel"], .modal-footer .btn-group .dk_container > a + input[value^="Cancel"], .modal-footer .btn-group .standalone + input[value^="Cancel"], .modal-footer .btn-group input[value^="Cancel"] + input[value^="Cancel"], .modal-footer .btn-group [type="submit"] + input[value^="Cancel"], .modal-footer .btn-group .context + input[value^="Cancel"], .modal-footer .btn-group .searchButton + input[value^="Cancel"], .modal-footer .btn-group button.pfg-draft-save + input[value^="Cancel"], .modal-footer .btn-group .link-parent + input[value^="Cancel"], .modal-footer .btn-group .btn + [type="submit"], .modal-footer .btn-group .dk_container > a + [type="submit"], .modal-footer .btn-group .standalone + [type="submit"], .modal-footer .btn-group input[value^="Cancel"] + [type="submit"], .modal-footer .btn-group [type="submit"] + [type="submit"], .modal-footer .btn-group .context + [type="submit"], .modal-footer .btn-group .searchButton + [type="submit"], .modal-footer .btn-group button.pfg-draft-save + [type="submit"], .modal-footer .btn-group .link-parent + [type="submit"], .modal-footer .btn-group .btn + .context, .modal-footer .btn-group .dk_container > a + .context, .modal-footer .btn-group .standalone + .context, .modal-footer .btn-group input[value^="Cancel"] + .context, .modal-footer .btn-group [type="submit"] + .context, .modal-footer .btn-group .context + .context, .modal-footer .btn-group .searchButton + .context, .modal-footer .btn-group button.pfg-draft-save + .context, .modal-footer .btn-group .link-parent + .context, .modal-footer .btn-group .btn + .searchButton, .modal-footer .btn-group .dk_container > a + .searchButton, .modal-footer .btn-group .standalone + .searchButton, .modal-footer .btn-group input[value^="Cancel"] + .searchButton, .modal-footer .btn-group [type="submit"] + .searchButton, .modal-footer .btn-group .context + .searchButton, .modal-footer .btn-group .searchButton + .searchButton, .modal-footer .btn-group button.pfg-draft-save + .searchButton, .modal-footer .btn-group .link-parent + .searchButton, .modal-footer .btn-group .btn + button.pfg-draft-save, .modal-footer .btn-group .dk_container > a + button.pfg-draft-save, .modal-footer .btn-group .standalone + button.pfg-draft-save, .modal-footer .btn-group input[value^="Cancel"] + button.pfg-draft-save, .modal-footer .btn-group [type="submit"] + button.pfg-draft-save, .modal-footer .btn-group .context + button.pfg-draft-save, .modal-footer .btn-group .searchButton + button.pfg-draft-save, .modal-footer .btn-group button.pfg-draft-save + button.pfg-draft-save, .modal-footer .btn-group .link-parent + button.pfg-draft-save, .modal-footer .btn-group .btn + .link-parent, .modal-footer .btn-group .dk_container > a + .link-parent, .modal-footer .btn-group .standalone + .link-parent, .modal-footer .btn-group input[value^="Cancel"] + .link-parent, .modal-footer .btn-group [type="submit"] + .link-parent, .modal-footer .btn-group .context + .link-parent, .modal-footer .btn-group .searchButton + .link-parent, .modal-footer .btn-group button.pfg-draft-save + .link-parent, .modal-footer .btn-group .link-parent + .link-parent {
   margin-left: -1px;
 }
 
@@ -6736,7 +6823,7 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 6, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover {
+.popover, .expandable-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -6758,24 +6845,24 @@ input[type="submit"]::-moz-focus-inner {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 /* line 24, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.top {
+.popover.top, .top.expandable-content {
   margin-bottom: 10px;
 }
 /* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.right {
+.popover.right, .right.expandable-content {
   margin-left: 10px;
 }
 /* line 26, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.bottom {
+.popover.bottom, .bottom.expandable-content {
   margin-top: 10px;
 }
 /* line 27, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.left {
+.popover.left, .left.expandable-content {
   margin-right: 10px;
 }
 
 /* line 31, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover-title {
+.popover-title, .expandable-content h4 {
   margin: 0;
   padding: 8px 12px;
   font-size: 107.692308%;
@@ -6790,17 +6877,18 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 43, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover-content {
+.popover-content, .expandable-content .inner-content {
   padding: 9px 12px;
 }
 /* line 45, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover-content p, .popover-content ul, .popover-content ol {
+.popover-content p, .expandable-content .inner-content p, .popover-content ul, .expandable-content .inner-content ul, .popover-content ol, .expandable-content .inner-content ol {
   margin-bottom: 0;
 }
 
 /* line 52, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover .arrow,
-.popover .arrow:after {
+.popover .arrow, .expandable-content .arrow,
+.popover .arrow:after,
+.expandable-content .arrow:after {
   position: absolute;
   display: inline-block;
   width: 0;
@@ -6810,13 +6898,13 @@ input[type="submit"]::-moz-focus-inner {
 }
 
 /* line 60, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover .arrow:after {
+.popover .arrow:after, .expandable-content .arrow:after {
   content: "";
   z-index: -1;
 }
 
 /* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.top .arrow {
+.popover.top .arrow, .top.expandable-content .arrow {
   bottom: -8px;
   left: 50%;
   margin-left: -8px;
@@ -6824,14 +6912,14 @@ input[type="submit"]::-moz-focus-inner {
   border-top-color: white;
 }
 /* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.top .arrow:after {
+.popover.top .arrow:after, .top.expandable-content .arrow:after {
   border-width: 9px 9px 0;
   border-top-color: rgba(0, 0, 0, 0.15);
   bottom: -1px;
   left: -9px;
 }
 /* line 79, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.right .arrow {
+.popover.right .arrow, .right.expandable-content .arrow {
   top: 50%;
   left: -8px;
   margin-top: -8px;
@@ -6839,14 +6927,14 @@ input[type="submit"]::-moz-focus-inner {
   border-right-color: white;
 }
 /* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.right .arrow:after {
+.popover.right .arrow:after, .right.expandable-content .arrow:after {
   border-width: 9px 9px 9px 0;
   border-right-color: rgba(0, 0, 0, 0.15);
   bottom: -9px;
   left: -1px;
 }
 /* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.bottom .arrow {
+.popover.bottom .arrow, .bottom.expandable-content .arrow {
   top: -8px;
   left: 50%;
   margin-left: -8px;
@@ -6854,14 +6942,14 @@ input[type="submit"]::-moz-focus-inner {
   border-bottom-color: #f7f7f7;
 }
 /* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.bottom .arrow:after {
+.popover.bottom .arrow:after, .bottom.expandable-content .arrow:after {
   border-width: 0 9px 9px;
   border-bottom-color: rgba(0, 0, 0, 0.15);
   top: -1px;
   left: -9px;
 }
 /* line 105, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.left .arrow {
+.popover.left .arrow, .left.expandable-content .arrow {
   top: 50%;
   right: -8px;
   margin-top: -8px;
@@ -6869,7 +6957,7 @@ input[type="submit"]::-moz-focus-inner {
   border-left-color: white;
 }
 /* line 111, ../bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover.left .arrow:after {
+.popover.left .arrow:after, .left.expandable-content .arrow:after {
   border-width: 9px 0 9px 9px;
   border-left-color: rgba(0, 0, 0, 0.15);
   bottom: -9px;
@@ -7052,7 +7140,7 @@ a.label:hover, #listing-table tr td:nth-child(6) a.state-restricted-to-managers:
 }
 
 /* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_labels-badges.scss */
-.btn .label, .dk_container > a .label, .standalone .label, input[value^="Cancel"] .label, [type="submit"] .label, .context .label, .searchButton .label, .link-parent .label, .btn #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .btn .state-restricted-to-managers, .dk_container > a #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .dk_container > a .state-restricted-to-managers, .standalone #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .standalone .state-restricted-to-managers, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-restricted-to-managers, [type="submit"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) [type="submit"] .state-restricted-to-managers, .context #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .context .state-restricted-to-managers, .searchButton #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .searchButton .state-restricted-to-managers, .link-parent #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .link-parent .state-restricted-to-managers, .btn #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .btn .state-visible, .dk_container > a #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .dk_container > a .state-visible, .standalone #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .standalone .state-visible, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-visible, [type="submit"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) [type="submit"] .state-visible, .context #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .context .state-visible, .searchButton #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .searchButton .state-visible, .link-parent #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .link-parent .state-visible, .btn #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .btn .state-intranet, .dk_container > a #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .dk_container > a .state-intranet, .standalone #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .standalone .state-intranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-intranet, [type="submit"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) [type="submit"] .state-intranet, .context #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .context .state-intranet, .searchButton #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .searchButton .state-intranet, .link-parent #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .link-parent .state-intranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-publishtointranet, .dk_container > a #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .dk_container > a #workflow-transition-publishtointranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-publishtointranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-publishtointranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-publishtointranet, .context #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .context #workflow-transition-publishtointranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-publishtointranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-publishtointranet, .btn #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .btn .state-private, .dk_container > a #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .dk_container > a .state-private, .standalone #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .standalone .state-private, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-private, [type="submit"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) [type="submit"] .state-private, .context #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .context .state-private, .searchButton #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .searchButton .state-private, .link-parent #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .link-parent .state-private, .btn #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .btn #workflow-transition-hide, .dk_container > a #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .dk_container > a #workflow-transition-hide, .standalone #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .standalone #workflow-transition-hide, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-hide, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-hide, .context #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .context #workflow-transition-hide, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-hide, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-hide,
+.btn .label, .dk_container > a .label, .standalone .label, input[value^="Cancel"] .label, [type="submit"] .label, .context .label, .searchButton .label, button.pfg-draft-save .label, .link-parent .label, .btn #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .btn .state-restricted-to-managers, .dk_container > a #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .dk_container > a .state-restricted-to-managers, .standalone #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .standalone .state-restricted-to-managers, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-restricted-to-managers, [type="submit"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) [type="submit"] .state-restricted-to-managers, .context #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .context .state-restricted-to-managers, .searchButton #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .searchButton .state-restricted-to-managers, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-restricted-to-managers, .link-parent #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .link-parent .state-restricted-to-managers, .btn #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .btn .state-visible, .dk_container > a #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .dk_container > a .state-visible, .standalone #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .standalone .state-visible, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-visible, [type="submit"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) [type="submit"] .state-visible, .context #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .context .state-visible, .searchButton #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .searchButton .state-visible, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-visible, .link-parent #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .link-parent .state-visible, .btn #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .btn .state-intranet, .dk_container > a #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .dk_container > a .state-intranet, .standalone #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .standalone .state-intranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-intranet, [type="submit"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) [type="submit"] .state-intranet, .context #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .context .state-intranet, .searchButton #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .searchButton .state-intranet, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-intranet, .link-parent #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .link-parent .state-intranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-publishtointranet, .dk_container > a #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .dk_container > a #workflow-transition-publishtointranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-publishtointranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-publishtointranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-publishtointranet, .context #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .context #workflow-transition-publishtointranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-publishtointranet, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-publishtointranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-publishtointranet, .btn #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .btn .state-private, .dk_container > a #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .dk_container > a .state-private, .standalone #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .standalone .state-private, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-private, [type="submit"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) [type="submit"] .state-private, .context #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .context .state-private, .searchButton #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .searchButton .state-private, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-private, .link-parent #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .link-parent .state-private, .btn #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .btn #workflow-transition-hide, .dk_container > a #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .dk_container > a #workflow-transition-hide, .standalone #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .standalone #workflow-transition-hide, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-hide, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-hide, .context #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .context #workflow-transition-hide, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-hide, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-hide, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-hide,
 .btn .badge,
 .dk_container > a .badge,
 .standalone .badge,
@@ -7060,6 +7148,7 @@ input[value^="Cancel"] .badge,
 [type="submit"] .badge,
 .context .badge,
 .searchButton .badge,
+button.pfg-draft-save .badge,
 .link-parent .badge {
   position: relative;
   top: -1px;
@@ -7524,7 +7613,7 @@ input[value^="Cancel"] .badge,
 }
 
 /* line 7, ../bootstrap/scss/compass_twitter_bootstrap/_utilities.scss */
-.pull-right {
+.pull-right, .newsImageContainer {
   float: right;
 }
 
@@ -7810,7 +7899,7 @@ input[value^="Cancel"] .badge,
     margin-left: 0;
   }
   /* line 45, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #peu [class*="span"] .pull-right, #peu .cella .pull-right {
+  #peu [class*="span"] .pull-right, #peu .cella .pull-right, #peu [class*="span"] .newsImageContainer, #peu .cella .newsImageContainer {
     float: none;
     margin: 0;
   }
@@ -7999,7 +8088,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 147, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #portal-header .btn-navbar.pull-right {
+  #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
     margin-top: 12px !important;
   }
 
@@ -8025,7 +8114,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #portal-header .btn-navbar.pull-right {
+  #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
     margin-top: 13px;
     margin-right: 0 !important;
     padding: 7px 10px;
@@ -8799,7 +8888,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  #portal-globalnav .nav-collapse .btn, #portal-globalnav .nav-collapse .dk_container > a, #portal-globalnav .nav-collapse .standalone, #portal-globalnav .nav-collapse input[value^="Cancel"], #portal-globalnav .nav-collapse [type="submit"], #portal-globalnav .nav-collapse .context, #portal-globalnav .nav-collapse .searchButton, #portal-globalnav .nav-collapse .link-parent {
+  #portal-globalnav .nav-collapse .btn, #portal-globalnav .nav-collapse .dk_container > a, #portal-globalnav .nav-collapse .standalone, #portal-globalnav .nav-collapse input[value^="Cancel"], #portal-globalnav .nav-collapse [type="submit"], #portal-globalnav .nav-collapse .context, #portal-globalnav .nav-collapse .searchButton, #portal-globalnav .nav-collapse button.pfg-draft-save, #portal-globalnav .nav-collapse .link-parent {
     padding: 4px 10px 4px;
     font-weight: normal;
     -webkit-border-radius: 4px;
@@ -8880,7 +8969,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 127, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  #portal-globalnav .navbar .nav-collapse .nav.pull-right, #portal-globalnav .navbar .nav-collapse .pull-right.contentViews, #portal-globalnav .navbar .nav-collapse .pull-right.configlets, #portal-globalnav .navbar .nav-collapse .pull-right.formTabs {
+  #portal-globalnav .navbar .nav-collapse .nav.pull-right, #portal-globalnav .navbar .nav-collapse .pull-right.contentViews, #portal-globalnav .navbar .nav-collapse .contentViews.newsImageContainer, #portal-globalnav .navbar .nav-collapse .pull-right.configlets, #portal-globalnav .navbar .nav-collapse .configlets.newsImageContainer, #portal-globalnav .navbar .nav-collapse .nav.newsImageContainer, #portal-globalnav .navbar .nav-collapse .newsImageContainer.formTabs, #portal-globalnav .navbar .nav-collapse .pull-right.formTabs {
     float: none;
     margin-left: 0;
   }
@@ -8898,7 +8987,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 142, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  #portal-header .btn-navbar.pull-right {
+  #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
     margin-top: 18px;
   }
 
@@ -9075,7 +9164,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 220, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .nav-collapse .btn, .nav-collapse .dk_container > a, .nav-collapse .standalone, .nav-collapse input[value^="Cancel"], .nav-collapse [type="submit"], .nav-collapse .context, .nav-collapse .searchButton, .nav-collapse .link-parent {
+  .nav-collapse .btn, .nav-collapse .dk_container > a, .nav-collapse .standalone, .nav-collapse input[value^="Cancel"], .nav-collapse [type="submit"], .nav-collapse .context, .nav-collapse .searchButton, .nav-collapse button.pfg-draft-save, .nav-collapse .link-parent {
     padding: 4px 10px 4px;
     font-weight: normal;
     -webkit-border-radius: 4px;
@@ -9154,7 +9243,7 @@ input[value^="Cancel"] .badge,
   }
 
   /* line 274, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  .navbar .nav-collapse .nav.pull-right, .navbar .nav-collapse .pull-right.contentViews, .navbar .nav-collapse .pull-right.configlets, .navbar .nav-collapse .pull-right.formTabs {
+  .navbar .nav-collapse .nav.pull-right, .navbar .nav-collapse .pull-right.contentViews, .navbar .nav-collapse .contentViews.newsImageContainer, .navbar .nav-collapse .pull-right.configlets, .navbar .nav-collapse .configlets.newsImageContainer, .navbar .nav-collapse .nav.newsImageContainer, .navbar .nav-collapse .newsImageContainer.formTabs, .navbar .nav-collapse .pull-right.formTabs {
     float: none;
     margin-left: 0;
   }
@@ -9589,6 +9678,7 @@ div.dk_options li.btn-menu-adjust > a:focus,
 /* line 191, ../scss/_base.scss */
 .llistatLogos a {
   margin: 0 1.5em;
+  display: block;
 }
 /* line 192, ../scss/_base.scss */
 .llistatLogos img {
@@ -10107,24 +10197,24 @@ html * .dropdown-menu a:hover .img_blank, html * div.dk_options a:hover .img_bla
 }
 
 /* line 206, ../scss/_nav.scss */
-#portal-personaltools-wrapper .pull-right .dropdown.nou::after {
+#portal-personaltools-wrapper .pull-right .dropdown.nou::after, #portal-personaltools-wrapper .newsImageContainer .dropdown.nou::after {
   top: 12px;
 }
 
 /* line 210, ../scss/_nav.scss */
-.navbar ul.nav.pull-right > li > .dropdown-menu, .navbar ul.pull-right.contentViews > li > .dropdown-menu, .navbar ul.pull-right.configlets > li > .dropdown-menu, .navbar ul.pull-right.formTabs > li > .dropdown-menu, .navbar ul.nav.pull-right > li > div.dk_options, .navbar ul.pull-right.contentViews > li > div.dk_options, .navbar ul.pull-right.configlets > li > div.dk_options, .navbar ul.pull-right.formTabs > li > div.dk_options {
+.navbar ul.nav.pull-right > li > .dropdown-menu, .navbar ul.pull-right.contentViews > li > .dropdown-menu, .navbar ul.contentViews.newsImageContainer > li > .dropdown-menu, .navbar ul.pull-right.configlets > li > .dropdown-menu, .navbar ul.configlets.newsImageContainer > li > .dropdown-menu, .navbar ul.nav.newsImageContainer > li > .dropdown-menu, .navbar ul.newsImageContainer.formTabs > li > .dropdown-menu, .navbar ul.pull-right.formTabs > li > .dropdown-menu, .navbar ul.nav.pull-right > li > div.dk_options, .navbar ul.pull-right.contentViews > li > div.dk_options, .navbar ul.contentViews.newsImageContainer > li > div.dk_options, .navbar ul.pull-right.configlets > li > div.dk_options, .navbar ul.configlets.newsImageContainer > li > div.dk_options, .navbar ul.nav.newsImageContainer > li > div.dk_options, .navbar ul.newsImageContainer.formTabs > li > div.dk_options, .navbar ul.pull-right.formTabs > li > div.dk_options {
   right: 0 !important;
   left: auto !important;
 }
 
 /* line 211, ../scss/_nav.scss */
-.navbar ul.nav.pull-right > li > .dropdown-menu:before, .navbar ul.pull-right.contentViews > li > .dropdown-menu:before, .navbar ul.pull-right.configlets > li > .dropdown-menu:before, .navbar ul.pull-right.formTabs > li > .dropdown-menu:before, .navbar ul.nav.pull-right > li > div.dk_options:before, .navbar ul.pull-right.contentViews > li > div.dk_options:before, .navbar ul.pull-right.configlets > li > div.dk_options:before, .navbar ul.pull-right.formTabs > li > div.dk_options:before {
+.navbar ul.nav.pull-right > li > .dropdown-menu:before, .navbar ul.pull-right.contentViews > li > .dropdown-menu:before, .navbar ul.contentViews.newsImageContainer > li > .dropdown-menu:before, .navbar ul.pull-right.configlets > li > .dropdown-menu:before, .navbar ul.configlets.newsImageContainer > li > .dropdown-menu:before, .navbar ul.nav.newsImageContainer > li > .dropdown-menu:before, .navbar ul.newsImageContainer.formTabs > li > .dropdown-menu:before, .navbar ul.pull-right.formTabs > li > .dropdown-menu:before, .navbar ul.nav.pull-right > li > div.dk_options:before, .navbar ul.pull-right.contentViews > li > div.dk_options:before, .navbar ul.contentViews.newsImageContainer > li > div.dk_options:before, .navbar ul.pull-right.configlets > li > div.dk_options:before, .navbar ul.configlets.newsImageContainer > li > div.dk_options:before, .navbar ul.nav.newsImageContainer > li > div.dk_options:before, .navbar ul.newsImageContainer.formTabs > li > div.dk_options:before, .navbar ul.pull-right.formTabs > li > div.dk_options:before {
   right: 9px !important;
   left: auto !important;
 }
 
 /* line 212, ../scss/_nav.scss */
-.navbar ul.nav.pull-right > li > .dropdown-menu:after, .navbar ul.pull-right.contentViews > li > .dropdown-menu:after, .navbar ul.pull-right.configlets > li > .dropdown-menu:after, .navbar ul.pull-right.formTabs > li > .dropdown-menu:after, .navbar ul.nav.pull-right > li > div.dk_options:after, .navbar ul.pull-right.contentViews > li > div.dk_options:after, .navbar ul.pull-right.configlets > li > div.dk_options:after, .navbar ul.pull-right.formTabs > li > div.dk_options:after {
+.navbar ul.nav.pull-right > li > .dropdown-menu:after, .navbar ul.pull-right.contentViews > li > .dropdown-menu:after, .navbar ul.contentViews.newsImageContainer > li > .dropdown-menu:after, .navbar ul.pull-right.configlets > li > .dropdown-menu:after, .navbar ul.configlets.newsImageContainer > li > .dropdown-menu:after, .navbar ul.nav.newsImageContainer > li > .dropdown-menu:after, .navbar ul.newsImageContainer.formTabs > li > .dropdown-menu:after, .navbar ul.pull-right.formTabs > li > .dropdown-menu:after, .navbar ul.nav.pull-right > li > div.dk_options:after, .navbar ul.pull-right.contentViews > li > div.dk_options:after, .navbar ul.contentViews.newsImageContainer > li > div.dk_options:after, .navbar ul.pull-right.configlets > li > div.dk_options:after, .navbar ul.configlets.newsImageContainer > li > div.dk_options:after, .navbar ul.nav.newsImageContainer > li > div.dk_options:after, .navbar ul.newsImageContainer.formTabs > li > div.dk_options:after, .navbar ul.pull-right.formTabs > li > div.dk_options:after {
   right: 10px !important;
   left: auto !important;
 }
@@ -10450,7 +10540,7 @@ a.primary, .primary a, a .primary {
 }
 
 /* line 32, ../scss/_wells-boxes.scss */
-.box, .box-inverse, .template-manage-homeportlets .portletHeader:hover, .portaltype-packet .estudis .caixa3, #category.documentByLine {
+.box, .box-inverse, .template-manage-homeportlets .portletHeader:hover, .eventDetails.vcard, .portaltype-packet .estudis .caixa3, #category.documentByLine {
   min-height: 20px;
   padding: 18px;
   margin-bottom: 20px;
@@ -10467,7 +10557,7 @@ a.primary, .primary a, a .primary {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 /* line 41, ../scss/_wells-boxes.scss */
-.box blockquote, .box-inverse blockquote, .template-manage-homeportlets .portletHeader:hover blockquote, .portaltype-packet .estudis .caixa3 blockquote, #category.documentByLine blockquote {
+.box blockquote, .box-inverse blockquote, .template-manage-homeportlets .portletHeader:hover blockquote, .eventDetails.vcard blockquote, .portaltype-packet .estudis .caixa3 blockquote, #category.documentByLine blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
@@ -10610,11 +10700,11 @@ ul {
 .dl-horizontal
 */
 /* line 11, ../scss/_lists.scss */
-.list-divided li {
+.list-divided li, ul.collage-content-menu li {
   border-bottom: 1px dotted #aaaaaa;
 }
 /* line 13, ../scss/_lists.scss */
-.list-divided li:first-child {
+.list-divided li:first-child, ul.collage-content-menu li:first-child {
   border-top: 1px dotted #aaaaaa;
 }
 
@@ -11031,7 +11121,7 @@ h1:first-child, h2:first-child, h3:first-child {
 }
 
 /* line 7, ../scss/_texts.scss */
-.popover-title {
+.popover-title, .expandable-content h4 {
   margin-top: 0 !important;
 }
 
@@ -11256,7 +11346,7 @@ a {
 
 /* line 114, ../scss/_texts.scss */
 .pdf:after, .ppt:after, .xls:after, .doc:after, .down:after, .https:after, .vid:after, .img:after, .txt:after {
-  background: url('/++genweb++static/images/gh-c.png?1354788544') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1360586349') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -11467,7 +11557,7 @@ input[type="file"] {
 }
 /* line 17, ../scss/_inputs.scss */
 .customfile-feedback-populated:before {
-  background: url('/++genweb++static/images/gh-c.png?1354788544') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1360586349') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -11634,7 +11724,7 @@ select {
 /* line 95, ../scss/_inputs.scss */
 [for="tpath"] .dk_options a[data-dk-dropdown-value*=a]:before,
 [for="tpath"] .dk_options a[data-dk-dropdown-value*=i]:before {
-  background: url('/++genweb++static/images/gh-c.png?1354788544') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1360586349') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -12715,7 +12805,637 @@ img[src$="spinner.gif"] {
 
 /* line 398, ../scss/_plone.scss */
 .collage-header {
-  background: #f2f2f2;
+  background: #fea;
+}
+
+/* line 400, ../scss/_plone.scss */
+.collage-image {
+  width: 100%;
+}
+
+/* line 403, ../scss/_plone.scss */
+.collage-featured-image {
+  float: right;
+}
+
+/* line 406, ../scss/_plone.scss */
+.featured-document {
+  background: #f3f3f3;
+  padding: 10px;
+}
+
+/* line 410, ../scss/_plone.scss */
+.collage-listitem {
+  margin-bottom: 1em;
+}
+
+/* line 413, ../scss/_plone.scss */
+.collage-item .documentActions {
+  display: none;
+}
+
+/* line 416, ../scss/_plone.scss */
+.collage-header {
+  /*font-size: 0.9em;*/
+  border-bottom: 1px solid White;
+  padding: 2px 0 2px 0!important;
+  position: relative;
+  margin-bottom: 2px !important;
+}
+
+/* line 423, ../scss/_plone.scss */
+.collage-header p.discreet {
+  /*font-size: 0.9em;*/
+}
+
+/* line 426, ../scss/_plone.scss */
+.collage-header span.icon img {
+  padding: 2px;
+}
+
+/* line 429, ../scss/_plone.scss */
+.collage-header span.icon img.alias {
+  padding: 0px;
+  border: 2px solid White;
+}
+
+/* line 433, ../scss/_plone.scss */
+.collage-item div.clickable a {
+  text-decoration: none;
+  border: none;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+/* line 439, ../scss/_plone.scss */
+.collage-header span {
+  color: #007bc0;
+  text-transform: lowercase;
+}
+
+/* line 444, ../scss/_plone.scss */
+.collage-existing-items select {
+  /*font-size: 80%;*/
+}
+
+/* line 447, ../scss/_plone.scss */
+.collage-existing-items .breadcrumbs {
+  background: url(https://gw40.beta.upcnet.es/gw40d/logoIcon.gif) no-repeat left center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  border-bottom: 1px solid White;
+}
+
+/* line 456, ../scss/_plone.scss */
+.collage-existing-items .breadcrumbs a,
+.collage-existing-items .breadcrumbs span {
+  /*font-size: 1.0em !important;*/
+}
+
+/* line 460, ../scss/_plone.scss */
+.collage-existing-items label {
+  display: none;
+}
+
+/* line 463, ../scss/_plone.scss */
+.collage-header a {
+  cursor: pointer;
+}
+
+/* line 468, ../scss/_plone.scss */
+.collage-header a.action,
+.collage-header a.layout,
+.collage-header a.create {
+  text-transform: lowercase;
+  margin-right: 0.2em;
+  text-decoration: none;
+}
+
+/* line 473, ../scss/_plone.scss */
+.collage-header a.delete-confirm {
+  color: red;
+}
+
+/* line 477, ../scss/_plone.scss */
+.collage-header a.action span.inactive,
+.collage-header a.layout span.inactive {
+  text-decoration: underline;
+}
+
+/* line 480, ../scss/_plone.scss */
+.collage-header a.layout span.active, .collage-header a.layout span.selected, .collage-header a.layout .contentViews span.selected, .contentViews .collage-header a.layout span.selected, .collage-header a.layout .contentViews span.selected:hover, .contentViews .collage-header a.layout span.selected:hover {
+  color: Black;
+}
+
+/* line 483, ../scss/_plone.scss */
+.delete-object-icon {
+  float: left;
+  width: 14px;
+  height: 14px;
+  padding-right: 2px;
+  background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-delete.gif) no-repeat top left;
+}
+
+/* line 490, ../scss/_plone.scss */
+.copy-object-icon {
+  float: left;
+  width: 14px;
+  height: 14px;
+  padding-right: 2px;
+  background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-copy.gif) no-repeat top left;
+}
+
+/* line 497, ../scss/_plone.scss */
+.paste-object-icon {
+  float: left;
+  width: 14px;
+  height: 14px;
+  padding-right: 2px;
+  background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-paste.gif) no-repeat top left;
+}
+
+/* line 504, ../scss/_plone.scss */
+.split-column-icon {
+  float: left;
+  width: 14px;
+  height: 14px;
+  padding-right: 2px;
+  background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-split.gif) no-repeat top left;
+}
+
+/* line 511, ../scss/_plone.scss */
+.object-action-generic-icon {
+  float: left;
+  width: 14px;
+  height: 14px;
+  padding-right: 2px;
+  background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-object-action.gif) no-repeat top left;
+}
+
+/* */
+/* line 519, ../scss/_plone.scss */
+.expandable-section .expandable-label .expandable-icon {
+  background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-plusminus.gif) no-repeat top left;
+  float: left;
+  width: 14px;
+  height: 14px;
+  padding-right: 2px;
+  margin-left: 3px;
+}
+
+/* line 527, ../scss/_plone.scss */
+.expandable-section .expandable-label.enabled .expandable-icon {
+  background-position: -20px 0%;
+}
+
+/* line 530, ../scss/_plone.scss */
+.expandable-section .expandable-label {
+  float: left;
+  position: relative;
+}
+
+/* line 534, ../scss/_plone.scss */
+.expandable-content {
+  display: none;
+  top: 35px;
+}
+
+/*
+.expandable-content {
+clear: both;
+display: none;
+background-color: white;
+padding: 0;
+position: absolute;
+z-index: 200;
+margin-top: 3em;
+border: 1px solid #74ae0b;
+}
+#collage .expandable-content h4 {
+margin: 0;
+background: #75AD0A url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/collage_icon.png) no-repeat 3px center;
+color: White;
+display: block;
+padding: 2px 2.2em;
+border-bottom: 1px solid #74ae0b;
+}
+.expandable-content .inner-content {
+margin: 0.5em;
+}
+*/
+/* line 561, ../scss/_plone.scss */
+ul.collage-content-menu {
+  display: block;
+  list-style-image: none !important;
+  list-style-type: none !important;
+  margin-left: 0 !important;
+}
+
+/* line 568, ../scss/_plone.scss */
+ul.collage-content-menu li {
+  display: block;
+}
+
+/* line 571, ../scss/_plone.scss */
+ul.collage-content-menu li a {
+  border: none;
+}
+
+/* */
+/* line 575, ../scss/_plone.scss */
+div.insert-existing-items h4 {
+  line-height: 16px;
+}
+
+/* line 578, ../scss/_plone.scss */
+input#insert-collage-row {
+  margin-top: 1em;
+}
+
+/* */
+/* line 582, ../scss/_plone.scss */
+span.collage-navigation img {
+  width: 9px;
+  height: 9px;
+}
+
+/* line 586, ../scss/_plone.scss */
+span.collage-navigation {
+  margin-left: 4px;
+}
+
+/* line 589, ../scss/_plone.scss */
+span.collage-navigation a {
+  text-decoration: none;
+}
+
+/* */
+/* line 593, ../scss/_plone.scss */
+.display-collagerow_default_view {
+  background-image: url(icon-collagerow_default_view.gif) !important;
+}
+
+/* line 596, ../scss/_plone.scss */
+.display-collagerow_largeleft_view {
+  background-image: url(icon-collagerow_largeleft_view.gif) !important;
+}
+
+/* line 599, ../scss/_plone.scss */
+.display-collagerow_largeright_view {
+  background-image: url(icon-collagerow_largeright_view.gif) !important;
+}
+
+/* line 602, ../scss/_plone.scss */
+.display-collagecolumn_default_view {
+  background-image: url(icon-collagecolumn_default_view.gif) !important;
+}
+
+/* */
+/* line 606, ../scss/_plone.scss */
+.icons-on .collage-content-menu .contenttype-file {
+  background: no-repeat transparent 0px -433px url(contenttypes-sprite.png);
+  padding-left: 20px !important;
+}
+
+/* line 610, ../scss/_plone.scss */
+.icons-on .collage-content-menu .contenttype-image {
+  background: no-repeat transparent 0px -865px url(contenttypes-sprite.png);
+  padding-left: 20px !important;
+}
+
+/* */
+/* line 615, ../scss/_plone.scss */
+.collage-quickedit {
+  float: right;
+}
+
+/* line 618, ../scss/_plone.scss */
+#collage .collage-row {
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  position: relative;
+  width: 100%;
+  clear: both;
+}
+
+/* line 628, ../scss/_plone.scss */
+#collage div.collage-first-object,
+#collage div.collage-first-object div.collage-item {
+  margin-left: 0;
+}
+
+/* line 632, ../scss/_plone.scss */
+#collage div.collage-last-object,
+#collage div.collage-last-object div.collage-item {
+  margin-right: 0;
+}
+
+/* line 635, ../scss/_plone.scss */
+* html #collage .collage-row {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 643, ../scss/_plone.scss */
+#collage .block_1,
+#collage .block_2,
+#collage .block_3,
+#collage .block_4,
+#collage .block_5 {
+  float: left;
+}
+
+/* line 646, ../scss/_plone.scss */
+.collage-item {
+  margin-bottom: 0.5em;
+}
+
+/* */
+/* line 650, ../scss/_plone.scss */
+#collage .one-column .block_1 {
+  width: 100%;
+}
+
+/* line 653, ../scss/_plone.scss */
+#collage .two-columns-equal .block_1 {
+  width: 49.49%;
+}
+
+/* line 656, ../scss/_plone.scss */
+#collage .two-columns-equal .block_2 {
+  width: 49.49%;
+}
+
+/* line 659, ../scss/_plone.scss */
+#collage .three-columns-equal .block_1,
+#collage .three-columns-equal .block_2,
+#collage .three-columns-equal .block_3 {
+  width: 32.5%;
+}
+
+/* line 662, ../scss/_plone.scss */
+#collage .three-columns-equal .block_2 {
+  width: 32.9%;
+}
+
+/* line 666, ../scss/_plone.scss */
+#collage .four-columns-equal .block_1,
+#collage .four-columns-equal .block_2,
+#collage .four-columns-equal .block_3,
+#collage .four-columns-equal .block_4 {
+  width: 24.2%;
+}
+
+/* line 669, ../scss/_plone.scss */
+#collage .four-columns-equal .block_2 {
+  width: 24.4%;
+}
+
+/* line 674, ../scss/_plone.scss */
+#collage .five-columns-equal .block_1,
+#collage .five-columns-equal .block_2,
+#collage .five-columns-equal .block_3,
+#collage .five-columns-equal .block_4,
+#collage .five-columns-equal .block_5 {
+  width: 19.2%;
+}
+
+/* line 677, ../scss/_plone.scss */
+#collage .five-columns-equal .block_2 {
+  width: 19.2%;
+}
+
+/* line 683, ../scss/_plone.scss */
+#collage .block_2,
+#collage .block_4,
+#collage .block_3,
+#collage .block_4,
+#collage .block_5,
+#collage .block_6 {
+  padding-left: 1%;
+}
+
+/* line 686, ../scss/_plone.scss */
+#collage .two-columns-largeleft .block_1 {
+  width: 59%;
+}
+
+/* line 689, ../scss/_plone.scss */
+#collage .two-columns-largeleft .block_2 {
+  width: 40%;
+}
+
+/* line 692, ../scss/_plone.scss */
+#collage .three-columns-largeleft .block_1 {
+  width: 59%;
+}
+
+/* line 695, ../scss/_plone.scss */
+#collage .three-columns-largeleft .block_2 {
+  width: 19%;
+}
+
+/* line 698, ../scss/_plone.scss */
+#collage .three-columns-largeleft .block_3 {
+  width: 20%;
+}
+
+/* line 701, ../scss/_plone.scss */
+#collage .four-columns-largeleft .block_1 {
+  width: 40%;
+}
+
+/* line 706, ../scss/_plone.scss */
+#collage .four-columns-largeleft .block_2,
+#collage .four-columns-largeleft .block_3,
+#collage .four-columns-largeleft .block_4 {
+  width: 19%;
+}
+
+/* line 709, ../scss/_plone.scss */
+#collage .five-columns-largeleft .block_1 {
+  width: 24%;
+}
+
+/* line 715, ../scss/_plone.scss */
+#collage .five-columns-largeleft .block_2,
+#collage .five-columns-largeleft .block_3,
+#collage .five-columns-largeleft .block_4,
+#collage .five-columns-largeleft .block_5 {
+  width: 18%;
+}
+
+/* line 718, ../scss/_plone.scss */
+#collage .two-columns-largeright .block_2 {
+  width: 59%;
+}
+
+/* line 721, ../scss/_plone.scss */
+#collage .two-columns-largeright .block_1 {
+  width: 40%;
+}
+
+/* line 724, ../scss/_plone.scss */
+#collage .three-columns-largeright .block_3 {
+  width: 59%;
+}
+
+/* line 727, ../scss/_plone.scss */
+#collage .three-columns-largeright .block_1 {
+  width: 20%;
+}
+
+/* line 730, ../scss/_plone.scss */
+#collage .three-columns-largeright .block_2 {
+  width: 19%;
+}
+
+/* line 735, ../scss/_plone.scss */
+#collage .four-columns-largeright .block_1,
+#collage .four-columns-largeright .block_2,
+#collage .four-columns-largeright .block_3 {
+  width: 19%;
+}
+
+/* line 738, ../scss/_plone.scss */
+#collage .four-columns-largeright .block_4 {
+  width: 40%;
+}
+
+/* line 744, ../scss/_plone.scss */
+#collage .five-columns-largeright .block_1,
+#collage .five-columns-largeright .block_2,
+#collage .five-columns-largeright .block_3,
+#collage .five-columns-largeright .block_4 {
+  width: 18%;
+}
+
+/* line 747, ../scss/_plone.scss */
+#collage .five-columns-largeright .block_5 {
+  width: 24%;
+}
+
+/* */
+/* line 752, ../scss/_plone.scss */
+#collage .collage-item .documentByLine,
+#collage .collage-item .link-parent {
+  display: none;
+}
+
+/* */
+/* line 756, ../scss/_plone.scss */
+#collage .unbatched-with-1 .column-block {
+  width: 100%;
+}
+
+/* line 757, ../scss/_plone.scss */
+#collage .unbatched-with-2 .column-block {
+  width: 49.5%;
+}
+
+/* line 758, ../scss/_plone.scss */
+#collage .unbatched-with-3 .column-block {
+  width: 32.5%;
+}
+
+/* line 759, ../scss/_plone.scss */
+#collage .unbatched-with-4 .column-block {
+  width: 24.25%;
+}
+
+/* line 760, ../scss/_plone.scss */
+#collage .unbatched-with-5 .column-block {
+  width: 19%;
+}
+
+/* line 761, ../scss/_plone.scss */
+#collage .unbatched-with-6 .column-block {
+  width: 16.5%;
+}
+
+/* */
+/* line 764, ../scss/_plone.scss */
+#collage .collage-portlet-notification dt.portletHeader {
+  background-color: #ffffe3;
+}
+
+/* line 767, ../scss/_plone.scss */
+#collage .collage-portlet-help dt.portletHeader {
+  background-color: #ffffe1;
+}
+
+/* line 770, ../scss/_plone.scss */
+#collage .collage-layout-error {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+/* line 776, ../scss/_plone.scss */
+.collage-header > * {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 783, ../scss/_plone.scss */
+.collage-header > .expandable-section,
+.collage-header > .post {
+  margin-bottom: 2px;
+}
+
+/* line 785, ../scss/_plone.scss */
+.expandable-icon, .split-column-icon, .delete-object-icon, .copy-object-icon,
+.object-action-generic-icon {
+  margin-top: 2px;
+}
+
+/* line 787, ../scss/_plone.scss */
+.collage-header .expandable-content {
+  width: 306px !important;
+}
+
+/* line 788, ../scss/_plone.scss */
+.column-block > .collage-header {
+  background-color: #efa;
+}
+
+/* line 789, ../scss/_plone.scss */
+.collage-item > .collage-header {
+  background-color: #afe;
+}
+
+/* line 791, ../scss/_plone.scss */
+.collage-header .visualIcon img {
+  display: none;
+}
+
+/*
+ESDEVENIMENTS 
+*/
+/*
+FORULARI
+*/
+/* line 803, ../scss/_plone.scss */
+.pfg-drafts-float {
+  position: relative !important;
+  width: auto !important;
+}
+
+/* line 805, ../scss/_plone.scss */
+.standalone + .pfg-draft {
+  display: inline-block;
+}
+
+/*
+NOTICIA
+*/
+/* line 810, ../scss/_plone.scss */
+.newsImageContainer {
+  margin: 0 0 1em 1em;
 }
 
 /* line 10, ../scss/_gw3togw4.scss */
@@ -14954,6 +15674,7 @@ tr.mceLast > td {
   /* line 7, ../scss/_print.scss */
   a {
     color: #08c;
+    text-decoration: underline;
   }
 
   /* line 9, ../scss/_print.scss */

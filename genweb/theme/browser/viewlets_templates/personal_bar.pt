@@ -1,7 +1,7 @@
 
 <tal:personaltools condition="not: view/anonymous">
-<h1 class="goout"> Eines d'usuari </h1>
-<nav id="portal-personaltools-wrapper"
+<h1 class="goout" id="titol-eines-usuari"> Eines d'usuari </h1>
+<nav id="portal-personaltools-wrapper" role="toolbar" aria-labelledby="titol-eines-usuari"
      i18n:domain="genweb">
   <div class="navbar navbar-fixed-top navbar-inverse">
     <div class="navbar-inner">
@@ -10,40 +10,36 @@
           <i class="icon-user icon-white"></i>
         </a>
         <div class="nav-collapse nav-collapse-edit">
-          <h2 class="goout"> Menú d'usuari </h2>
-          <ul class="nav">
-            <li class="dropdown" tal:attributes="id string:${view/user_name}">
+          <h2 class="goout" id="titol-eines-usuari"> Menú d'usuari </h2>
+          <ul class="nav" role="menu" aria-labelledby="titol-menu-usuari">
+            <li class="dropdown" role="menuitem" tal:attributes="id string:${view/user_name}">
               <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
-                <img tal:attributes="src string:${view/getPortraitMini}"
+                <img tal:attributes="src string:${view/getPortraitMini}" aria-hidden="true"
                      alt=""
                      class="user" />
                 <tal:username content="view/user_name"> Rafael Ojeda Rojas </tal:username>
-                <b class="caret"></b>
+                <b aria-hidden="true" class="caret"></b>
               </a>
-              <ul class="dropdown-menu">
-                <li><a tal:attributes="href string:${view/portal_url}/dashboard"
-                       i18n:attributes="title genweb-preferencies">
+              <ul class="dropdown-menu" role="menu">
+                <li role="menuitem"><a tal:attributes="href string:${view/portal_url}/dashboard">
                        <i class="icon-desktop"></i>
                        <tal:dashboard i18n:translate="genweb-escriptori">
                           Dashboard</tal:dashboard>
                 </a></li>
-                <li><a tal:attributes="href string:${view/portal_url}/@@personal-information"
-                       i18n:attributes="title genweb-perfil">
+                <li role="menuitem"><a tal:attributes="href string:${view/portal_url}/@@personal-information">
                        <i class="icon-user"></i>
                        <tal:profile i18n:translate="genweb-perfil">
                           Profile</tal:profile>
                 </a></li>
-                <li><a tal:attributes="href string:${view/portal_url}/@@personal-preferences"
-                       i18n:attributes="title genweb-preferencies">
+                <li role="menuitem"><a tal:attributes="href string:${view/portal_url}/@@personal-preferences">
                        <i class="icon-cog"></i>
                        <tal:preferences i18n:translate="genweb-preferencies">
                           Preferències d'usuari</tal:preferences>
                 </a></li>
-                <li class="divider"></li>
-                <li class="btn-menu-adjust">
+                <li aria-hidden="true" class="divider"></li>
+                <li role="menuitem" class="btn-menu-adjust">
                   <a tal:attributes="href string:${view/portal_url}/cas_logout"
-                     i18n:attributes="title genweb-logout"
-                     class="btn btn-danger" href="#">
+                     class="btn btn-danger" href="#" role="button">
                     <i class="icon-off icon-white"></i>
                     <tal:logout i18n:translate="genweb-logout">
                           Logout</tal:logout>
@@ -51,19 +47,17 @@
                 </li>
               </ul>
             </li>
-            <li><a tal:condition="view/showRootFolderLink"
-                   tal:attributes="href string:${view/portal_url}/folder_contents"
-                   i18n:attributes="title genweb-accesarrel">
+            <li  role="menuitem"><a tal:condition="view/showRootFolderLink"
+                   tal:attributes="href string:${view/portal_url}/folder_contents">
                    <tal:rootFolder i18n:translate="genweb-accesarrel">
                       Root folder</tal:rootFolder>
             </a></li>
-            <li><a tal:condition="view/canManageSite"
+            <li  role="menuitem"><a tal:condition="view/canManageSite"
                    tal:attributes="href string:${view/portal_url}/@@overview-controlpanel">
                    <tal:managesite i18n:domain="plone" i18n:translate="Site Setup">
                       Site setup</tal:managesite>
             </a></li>
-            <li class="hidden-phone"><a href="https://genweb.upc.edu/formacio-i-ajuda" target="newwindow" accesskey="6"
-                   i18n:attributes="title genweb-ajuda">
+            <li  role="menuitem" class="hidden-phone"><a href="https://genweb.upc.edu/formacio-i-ajuda" target="_blank" accesskey="6">
                    <tal:help i18n:translate="genweb-ajuda">
                       Help</tal:help>
                    <img i18n:attributes="alt obrir_link_finestra_nova"
@@ -71,23 +65,23 @@
                         src="++genweb++static/images/blank_blanc.png">
             </a></li>
           </ul>
-          <h2 class="goout"> Menú d'eines Genweb UPC </h2>
-          <ul class="nav pull-right">
+          <h2 class="goout" id="titol-menu-eines-genweb"> Menú d'eines Genweb UPC </h2>
+          <ul class="nav pull-right" role="toolbar" aria-labelledby="titol-menu-eines-genweb">
             <!--[if !IE]> -->
-            <li><a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Les vistes pretenen ajudar a fer millors versions de mòbil i de tauleta del vostre web.<br /> Només està disponible per a navegadors moderns i encara en <strong>fase beta</strong>. En cap cas és la versió real de com es veurà el web mobilitzat sinó només una simulació.<br><br><span class='s text-info'>Seleccioneu vista mòbil o tauleta i només heu de clicar a la icona pantalla per tornar a la vista normal</span>" data-original-title="<strong>Vistes</strong> Beta"><span class="label label-important visible-desktop">Vistes Beta</span></a></li>
-            <li><a class="userScreen visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Screenview"><span class="goout">Screen</span></a></li>
-            <li><a class="userTablet visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Tabletview"><span class="goout">Tablet</span></a></li>
-            <li><a class="userMobile visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Mobileview"><span class="goout">Mobile</span></a></li>
+            <li role="menuitem"><a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Les vistes pretenen ajudar a fer millors versions de mòbil i de tauleta del vostre web.<br /> Només està disponible per a navegadors moderns i encara en <strong>fase beta</strong>. En cap cas és la versió real de com es veurà el web mobilitzat sinó només una simulació.<br><br><span class='s text-info'>Seleccioneu vista mòbil o tauleta i només heu de clicar a la icona pantalla per tornar a la vista normal</span>" data-original-title="<strong>Vistes</strong> Beta"><span class="label label-important visible-desktop">Vistes Beta</span></a></li>
+            <li role="menuitem"><a class="userScreen visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Screenview"><span class="goout">Screen</span></a></li>
+            <li role="menuitem"><a class="userTablet visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Tabletview"><span class="goout">Tablet</span></a></li>
+            <li role="menuitem"><a class="userMobile visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Mobileview"><span class="goout">Mobile</span></a></li>
             <!-- <![endif]-->
-            <li class="divider-vertical hidden-phone"></li>
-            <li class="dropdown hidden-phone pull-right">
+            <li aria-hidden="true" class="divider-vertical hidden-phone"></li>
+            <li role="menuitem" class="dropdown hidden-phone pull-right">
               <a href="#" class="dropdown-toggle userGenweb nou" data-toggle="dropdown"><span class="goout">Genweb UPC</span> <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="nav-header">Genweb UPC 4.0 - JN12</li>
-                <li><a href="#"><i class="icon-certificate"></i> Novetats de la versió <span class="badge badge-warning">nou</span></a></li>
-                <li><a href="#"><i class="icon-genweb"></i> Comunitat Genweb  <img class="img_blank" src="++genweb++static/images/blank_gris.png" alt="(obriu en finestra nova)"></a></li>
-                <li><a href="#"><i class="icon-briefcase"></i> Recursos per a editors  <img class="img_blank" src="++genweb++static/images/blank_gris.png" alt="(obriu en finestra nova)"></a></li>
-                <li><a href="#"><i class="icon-bookmark"></i> Darrer butlletí</a></li>
+              <ul class="dropdown-menu" role="menu">
+                <li role="menuitem" class="nav-header">Genweb UPC 4.0 - JN12</li>
+                <li role="menuitem"><a href="#"><i class="icon-certificate"></i> Novetats de la versió <span class="badge badge-warning">nou</span></a></li>
+                <li role="menuitem"><a href="#"><i class="icon-genweb"></i> Comunitat Genweb  <img class="img_blank" src="++genweb++static/images/blank_gris.png" alt="(obriu en finestra nova)"></a></li>
+                <li role="menuitem"><a href="#"><i class="icon-briefcase"></i> Recursos per a editors  <img class="img_blank" src="++genweb++static/images/blank_gris.png" alt="(obriu en finestra nova)"></a></li>
+                <li role="menuitem"><a href="#"><i class="icon-bookmark"></i> Darrer butlletí</a></li>
               </ul>
             </li>
           </ul>
