@@ -49,4 +49,4 @@ class BootstrapTraversalTest(unittest.TestCase):
     def testGWResourceTraversal(self):
         portalURL = self.portal.absolute_url()
         self.browser.open('%s/++genweb++stylesheets/genwebupc.css' % portalURL)
-        self.assertTrue(u"Bootstrap" in self.browser.contents)
+        self.assertTrue("Bootstrap" in self.browser.contents)

@@ -3,7 +3,7 @@
      i18n:domain="plone"
      tal:define="breadcrumbs view/breadcrumbs;
                  is_rtl view/is_rtl">
- <div class="container">
+ <div class="container" tal:condition="not: view/paginaPrincipal">
   <h2 i18n:translate="you_are_here" id="titol-breadcrumb">You are here:</h2>
   <ol class="breadcrumb" aria-labelledby="titol-breadcrumb">
     <li>

@@ -38,7 +38,8 @@
                 </a></li>
                 <li aria-hidden="true" class="divider"></li>
                 <li role="menuitem" class="btn-menu-adjust">
-                  <a tal:attributes="href string:${view/portal_url}/cas_logout"
+                  <a tal:attributes="href string:${view/logout_link}"
+                     i18n:attributes="title genweb-logout"
                      class="btn btn-danger" href="#" role="button">
                     <i class="icon-off icon-white"></i>
                     <tal:logout i18n:translate="genweb-logout">

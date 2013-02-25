@@ -13,7 +13,7 @@
     <metal:css fill-slot="style_slot"
       tal:define="resources_url string:${context/portal_url}/++resource++wcfc">
       <!--
-      <link href="++resource++wcfc/bootstrap/bootstrap-fixed.css" 
+      <link href="++resource++wcfc/bootstrap/bootstrap-fixed.css"
         tal:attributes="href string:${resources_url}/bootstrap/bootstrap-fixed.css"
         rel="stylesheet" type="text/css"/>
       -->
@@ -53,12 +53,13 @@
       tal:define="resources_url string:${context/portal_url}/++resource++wcfc">
       <!-- The template to display files available for upload -->
       <tal:templates tal:replace="structure view/jstemplates" />
-      <script type="text/javascript" src="++resource++wcfc/jquery.js"
-        tal:attributes="src string:${resources_url}/jquery.js"></script>
-      <script type="text/javascript" src="++resource++wcfc/collective.js.jqueryui.custom.min.js"
-        tal:attributes="src string:${context/portal_url}/collective.js.jqueryui.custom.min.js"></script>
-      <script type="text/javascript" src="++resource++wcfc/bootstrap/bootstrap-dropdown.js"
-        tal:attributes="src string:${resources_url}/bootstrap/bootstrap-dropdown.js"></script>
+<!--       <script type="text/javascript" src="++resource++wcfc/jquery.js"
+        tal:attributes="src string:${resources_url}/jquery.js"></script> -->
+      <script type="text/javascript" src="++resource++wcfc/js/jquery-ui.js"
+        tal:attributes="src string:${resources_url}/jquery-file-upload/js/jquery-ui.js"></script>
+
+<!--       <script type="text/javascript" src="++resource++wcfc/bootstrap/bootstrap.min.js"
+        tal:attributes="src string:${resources_url}/bootstrap/bootstrap.min.js"></script> -->
       <script src="http://blueimp.github.com/JavaScript-Templates/tmpl.min.js"
         tal:attributes="src string:${resources_url}/jquery-file-upload/js/tmpl.min.js"></script>
       <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
@@ -68,8 +69,8 @@
       <script src="http://blueimp.github.com/JavaScript-Canvas-to-Blob/canvas-to-blob.min.js"
         tal:attributes="src string:${resources_url}/jquery-file-upload/js/canvas-to-blob.min.js"></script>
       <!-- Bootstrap JS and Bootstrap Image Gallery are not required, but included for the demo -->
-      <script src="http://blueimp.github.com/cdn/js/bootstrap.min.js"
-        tal:attributes="src string:${resources_url}/jquery-file-upload/js/bootstrap.min.js"></script>
+<!--       <script src="http://blueimp.github.com/cdn/js/bootstrap.min.js"
+        tal:attributes="src string:${resources_url}/jquery-file-upload/js/bootstrap.min.js"></script> -->
       <script src="http://blueimp.github.com/Bootstrap-Image-Gallery/js/bootstrap-image-gallery.min.js"
         tal:attributes="src string:${resources_url}/jquery-file-upload/js/bootstrap-image-gallery.min.js"></script>
       <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
@@ -85,11 +86,8 @@
       <script src="js/jquery.fileupload-ui.js"
         tal:attributes="src string:${resources_url}/jquery-file-upload/js/jquery.fileupload-ui.js"></script>
       <!-- The localization script -->
-      <script src="js/locale.js"
-        tal:attributes="src string:${resources_url}/jquery-file-upload/js/locale.js"></script>
-      <!-- The main application script -->
-      <script src="js/main.js"
-        tal:attributes="src string:${resources_url}/jquery-file-upload/js/main.js"></script>
+      <script src="locale.js"
+        tal:attributes="src string:${resources_url}/locale.js"></script>
       <!-- The XDomainRequest Transport is included for cross-domain file deletion for IE8+ -->
 
       <tal:iefixstart replace="structure string:&lt;!--[if gte IE 8]&gt;" />
@@ -105,7 +103,7 @@
   <body>
 
       <metal:content-title fill-slot="content-title">
-          <h1 class="documentFirstHeading"> 
+          <h1 class="documentFirstHeading">
               <tal:block condition="exists:here/aq_explicit/widget">
                   <metal:field use-macro="python:here.widget('title', mode='view')">
                   Title
@@ -114,9 +112,9 @@
               <tal:block condition="not:exists:here/aq_explicit/widget">
                   <span tal:content="view/title" tal:omit-tag="">Directory Id</span>
               </tal:block>
-          </h1>        
+          </h1>
       </metal:content-title>
-      
+
       <metal:content-description fill-slot="content-description">
           <div class="documentDescription" tal:condition="exists:here/aq_explicit/widget">
               <metal:field use-macro="python:here.widget('description', mode='view')">
@@ -124,9 +122,9 @@
               </metal:field>
           </div>
           <tal:block condition="not:exists:here/aq_explicit/widget">
-              <div class="documentDescription" 
-                         tal:content="context/Description" 
-                         tal:condition="context/Description"> 
+              <div class="documentDescription"
+                         tal:content="context/Description"
+                         tal:condition="context/Description">
                   Description
               </div>
           </tal:block>
@@ -209,6 +207,6 @@
           </div>
         </div>
       </metal:content-core>
-      
+
   </body>
 </html>

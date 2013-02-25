@@ -13,7 +13,7 @@ def test_suite():
     suite.addTests([
         # layered(robotsuite.RobotTestSuite("test_accessibility.txt"),
         #         layer=PLONE_ZSERVER),
-        layered(robotsuite.RobotTestSuite("test_acceptance.txt"),
+        layered(robotsuite.RobotTestSuite("robot_basic.txt"),
                 layer=GENWEBTHEME_ACCEPTANCE_TESTING),
     ])
     return suite

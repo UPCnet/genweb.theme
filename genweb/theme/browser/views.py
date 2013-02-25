@@ -33,15 +33,21 @@ class GWConfig(grok.View):
         return genweb_config()
 
 
-class homePage(grok.View):
-    """ This is the special view for the homepage containing support for the
-        portlet managers provided by the package genweb.portlets.
-        It's restrained to IGenwebTheme layer to prevent it will interfere with
-        the one defined in the Genweb legacy theme (v4).
+class HomePageBase(grok.View):
+    """ Base methods for ease the extension of the genweb homePage view. Just
+        define a new class inheriting from this one and redefine the basic
+        grokkers like:
+
+        class homePage(HomePageBase):
+            grok.implements(IHomePageView)
+            grok.context(IPloneSiteRoot)
+            grok.require('genweb.authenticated')
+            grok.layer(IUlearnTheme)
+
+        Overriding the one in this module (homePage) with a more specific
+        interface.
     """
-    grok.implements(IHomePageView)
-    grok.context(IPloneSiteRoot)
-    grok.layer(IGenwebTheme)
+    grok.baseclass()
 
     def update(self):
         self.portlet_container = self.getPortletContainer()
@@ -97,6 +103,17 @@ class homePage(grok.View):
             renderer = getMultiAdapter((context, self.request, self, manager), IPortletManagerRenderer)
 
         return renderer.visible
+
+
+class homePage(HomePageBase):
+    """ This is the special view for the homepage containing support for the
+        portlet managers provided by the package genweb.portlets.
+        It's restrained to IGenwebTheme layer to prevent it will interfere with
+        the one defined in the Genweb legacy theme (v4).
+    """
+    grok.implements(IHomePageView)
+    grok.context(IPloneSiteRoot)
+    grok.layer(IGenwebTheme)
 
 
 def _render_cachekey(method, self, especific1, especific2):

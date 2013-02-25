@@ -24,7 +24,9 @@ from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.ATContentTypes.interface.news import IATNewsItem
 from genweb.core.adapters import IImportant
 
+from genweb.core import HAS_CAS
 from genweb.core.interfaces import IHomePage
+from genweb.theme.browser.interfaces import IHomePageView
 from genweb.core.utils import genweb_config, havePermissionAtRoot, pref_lang
 
 from genweb.theme.browser.interfaces import IGenwebTheme
@@ -71,6 +73,12 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         pm = getToolByName(self.portal(), 'portal_membership')
         return pm.getPersonalPortrait().absolute_url()
 
+    def logout_link(self):
+        if HAS_CAS:
+            return '{}/cas_logout'.format(self.portal_url)
+        else:
+            return '{}/logout'.format(self.portal_url)
+
 
 class gwHeader(viewletBase):
     grok.name('genweb.header')
@@ -105,7 +113,7 @@ class gwImportantNews(viewletBase):
         return not IImportant(self.context).is_important and getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
 
     def permisos_notimportant(self):
-        #TODO: Comprovar que l'usuari tingui permisos per a marcar com a important
+        #TODO: Comprovar que l'usuari tingui permisos per a marcar com a notimportant
         return IImportant(self.context).is_important and getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
 
     def update(self):
@@ -133,6 +141,10 @@ class gwPathBarViewlet(PathBarViewlet, viewletBase):
     grok.layer(IGenwebTheme)
 
     index = ViewPageTemplateFile('viewlets_templates/path_bar.pt')
+
+    def paginaPrincipal(self):
+        #TODO: Comprovar que no sigui la Pàgina Principal
+        return IHomePageView.providedBy(self.view)
 
 
 class gwFooter(viewletBase):
