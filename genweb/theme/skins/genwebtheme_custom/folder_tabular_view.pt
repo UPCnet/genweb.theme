@@ -14,7 +14,7 @@
 
             <div metal:use-macro="context/batch_macros/macros/navigation" />
 
-            <table class="listing"
+            <table class="listing" role="presentation"
                    summary="Content listing"
                    i18n:attributes="summary summary_content_listing;">
                 <thead>

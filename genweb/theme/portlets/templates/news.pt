@@ -15,9 +15,9 @@
                 Notícies RSS
                 </span>
             </a>
-            <time class="small" tal:content="python:toLocalizedTime(obj.Date)">May 5</time>
+            <time class="smaller" tal:content="python:toLocalizedTime(obj.Date)">May 5</time>
         </li>
         </ul>
-        <a href="#"><i class="icon-rss"></i> Més notícies</a>
+        <a class="portlet-footer" href="#"><i class="icon-rss"></i> Més notícies</a>
     </div>
 </tal:newsitems>

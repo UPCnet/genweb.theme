@@ -11240,42 +11240,42 @@ hr.liniaDalt, hr.tileHeadline {
 
 /* line 68, ../scss/_texts.scss */
 .xafa {
-  margin: auto 2em;
+  margin: auto 1.25em;
 }
 
 /* line 69, ../scss/_texts.scss */
 .xafa2 {
-  margin: auto 4em;
+  margin: auto 2.5em;
 }
 
 /* line 70, ../scss/_texts.scss */
 .xafa3 {
-  margin: auto 8em;
+  margin: auto 5em;
 }
 
 /* line 71, ../scss/_texts.scss */
 .xafa4 {
-  margin: auto 16em;
+  margin: auto 10em;
 }
 
 /* line 72, ../scss/_texts.scss */
 .pad {
-  padding: 2em;
+  padding: 1.25em;
 }
 
 /* line 73, ../scss/_texts.scss */
 .pad2 {
-  padding: 4em;
+  padding: 2.5em;
 }
 
 /* line 74, ../scss/_texts.scss */
 .pad3 {
-  padding: 8em;
+  padding: 5em;
 }
 
 /* line 75, ../scss/_texts.scss */
 .pad4 {
-  padding: 16em;
+  padding: 10em;
 }
 
 /* line 79, ../scss/_texts.scss */
@@ -13438,6 +13438,17 @@ NOTICIA
   margin: 0 0 1em 1em;
 }
 
+/* VISTA MINIATURES*/
+/* line 818, ../scss/_plone.scss */
+html.lt-ie9 .thumbnails li:first-child + li + li + li + li,
+html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li,
+html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li + li + li + li + li
+html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li,
+html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li,
+.thumbnails li:nth-child(4n+1) {
+  margin-left: 0 !important;
+}
+
 /* line 10, ../scss/_gw3togw4.scss */
 div.llistatIndex, div.llistat {
   padding-left: 0;
@@ -13784,42 +13795,42 @@ html {
 
   /* line 18, ../scss/_mobile.scss */
   .xafa {
-    margin: 0 1em;
+    margin: 0 1.25em;
   }
 
   /* line 19, ../scss/_mobile.scss */
   .xafa2 {
-    margin: 0 2em;
+    margin: 0 2.5em;
   }
 
   /* line 20, ../scss/_mobile.scss */
   .xafa3 {
-    margin: 0 3em;
+    margin: 0 3.75em;
   }
 
   /* line 21, ../scss/_mobile.scss */
   .xafa4 {
-    margin: 0 4em;
+    margin: 0 5em;
   }
 
   /* line 22, ../scss/_mobile.scss */
   .pad {
-    padding: 1em;
+    padding: 1.25em;
   }
 
   /* line 23, ../scss/_mobile.scss */
   .pad2 {
-    padding: 2em;
+    padding: 2.5em;
   }
 
   /* line 24, ../scss/_mobile.scss */
   .pad3 {
-    padding: 3em;
+    padding: 3.75em;
   }
 
   /* line 25, ../scss/_mobile.scss */
   .pad4 {
-    padding: 4em;
+    padding: 5em;
   }
 
   /* line 27, ../scss/_mobile.scss */

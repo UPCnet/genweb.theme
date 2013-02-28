@@ -808,3 +808,11 @@ button.pfg-draft-save {@extend .btn; @extend .btn-success;}
 NOTICIA
 */
 .newsImageContainer {@extend .pull-right; @extend .img-polaroid; margin:0 0 1em 1em;}
+
+/* VISTA MINIATURES*/
+html.lt-ie9 .thumbnails li:first-child+li+li+li+li,
+html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li,
+html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li
+html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li +li+li+li+li, 
+html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li +li+li+li+li +li+li+li+li,
+.thumbnails li:nth-child(4n+1) {margin-left:0 !important;}

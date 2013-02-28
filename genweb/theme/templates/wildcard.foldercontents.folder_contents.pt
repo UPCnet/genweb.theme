@@ -26,28 +26,7 @@
         tal:attributes="href string:${resources_url}/jquery-file-upload/css/jquery.fileupload-ui.css" />
       <!-- Shim to make HTML5 elements usable in older Internet Explorer versions -->
       <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<!--
-      <style>
-      .right-caret {
-        border-bottom: 4px solid transparent;
-        border-top: 4px solid transparent;
-        border-left: 4px solid #000000;
-        display: inline-block;
-        height: 0;
-        opacity: 0.3;
-        vertical-align: top;
-        width: 0;
-        margin-top: 4px;
-        margin-right: 4px;
-      }
-      #content ul.dropdown-menu{
-        list-style-type: none;
-      }
-      #content ul.dropdown-menu li a{
-        border-bottom: none;
-      }
-      </style>
--->
+
     </metal:css>
     <metal:js fill-slot="javascript_head_slot"
       tal:define="resources_url string:${context/portal_url}/++resource++wcfc">
@@ -155,13 +134,13 @@
             style="display:none;">
             <!-- The fileupload-buttonbar contains buttons to add files and start/cancel the upload -->
             <div class="row-fluid fileupload-buttonbar">
-                <div class="span12">
+                <div class="span12 well">
                     <!-- The fileinput-button span is used to style the file input field as button -->
-                    <span class="btn btn-primary fileinput-button">
-                        <i class="icon-plus icon-white"></i>
-                        <span i18n:translate="foldercontents_add_files">Add files...</span>
-                        <input type="file" name="files[]" multiple>
-                    </span>
+                    
+                    <label i18n:translate="foldercontents_add_files">Add files...</label>
+                    <div class="inline-block">
+                    <input type="file" name="files[]" multiple>
+                    </div>
                     <button type="submit" class="btn start">
                         <i class="icon-upload"></i>
                         <span i18n:translate="foldercontents_start_upload">Start upload</span>
@@ -172,8 +151,10 @@
                     </button>
                     <input type="checkbox" class="toggle">
                 </div>
+            </div>
+            <div class="row-fluid">
                 <!-- The global progress information -->
-                <div class="span5 fileupload-progress fade">
+                <div class="span12 fileupload-progress fade">
                     <!-- The global progress bar -->
                     <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
                         <div class="bar" style="width:0%;"></div>
@@ -184,21 +165,23 @@
             </div>
             <!-- The loading indicator is shown during file processing -->
             <div class="fileupload-loading"></div>
-            <br>
+            
             <!-- The table listing the files available for upload/download -->
-            <table role="presentation" class="table table-striped"><tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody></table>
+            <table role="presentation" class="table"><tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody></table>
         </form>
           <div id="sort-container" style="display:none">
             <form class="well form-inline" method="POST"
               tal:attributes="action string:${context/absolute_url}/@@wcfcsort">
               <label i18n:translate="foldercontents_sorton">Sort on:</label>
-              <select name="on">
-                <option value="sortable_title" i18n:translate="foldercontents_title_order">Title</option>
-                <option value="id" i18n:translate="foldercontents_id_order">ID</option>
-                <option value="modified" i18n:translate="foldercontents_modification_order">Modification Date</option>
-                <option value="created" i18n:translate="foldercontents_creation_order">Creation Date</option>
-                <option value="effective" i18n:translate="foldercontents_effective_order">Effective Date</option>
-              </select>
+              <div class="inline-block">
+                <select name="on">
+                  <option value="sortable_title" i18n:translate="foldercontents_title_order">Title</option>
+                  <option value="id" i18n:translate="foldercontents_id_order">ID</option>
+                  <option value="modified" i18n:translate="foldercontents_modification_order">Modification Date</option>
+                  <option value="created" i18n:translate="foldercontents_creation_order">Creation Date</option>
+                  <option value="effective" i18n:translate="foldercontents_effective_order">Effective Date</option>
+                </select>
+              </div>
               <input type="checkbox" name="reversed" />
               <label i18n:translate="foldercontents_reversed_order" class="checkbox">Reversed</label>
               <input tal:replace="structure context/@@authenticator/authenticator" />

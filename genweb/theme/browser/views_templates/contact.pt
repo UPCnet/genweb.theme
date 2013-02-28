@@ -25,7 +25,7 @@
           Contacte
       </h1>
       <div class="row-fluid">
-        <div class="span8">
+        <div class="span8 box box-gradient">
           <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
         </div>
         <div class="span4"

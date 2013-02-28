@@ -8,7 +8,7 @@
 
 <body tal:omit-tag="">
 
-    <div class="item visualIEFloatFix"
+    <div
          tal:define="portal_state context/@@plone_portal_state;
                      context_state context/@@plone_context_state;
                      plone_view context/@@plone;
@@ -32,7 +32,7 @@
 
         <div tal:replace="structure provider:plone.abovecontenttitle" />
 
-        <h2 class="headline">
+        <h2>
             <a href="#" class="summary url" tal:content="context/Title"
                tal:attributes="href python:test(item_type in use_view_action, item_url+'/view', item_url);">
                Title or id
@@ -63,15 +63,7 @@
             <!-- Error rendering item macro -->
         </tal:block>
 
-        <p class="more" tal:condition="python:not(item_macro) or rendering_error">
-            <a href=""
-               tal:attributes="href python:test(item_type in use_view_action, item_url+'/view', item_url);"> 
-               <span class="hiddenStructure"><span tal:replace="context/Title" /> - </span> 
-               <span i18n:translate="read_more">Read More&hellip;</span> 
-            </a>
-        </p>
 
-        <div class="visualClear"><!-- --></div>
 
     </div>
 
