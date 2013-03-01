@@ -2,7 +2,7 @@
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       tal:omit-tag="">
-<dl class="portlet portletCalendar"
+<div class="portlet portletCalendar"
     i18n:domain="plone"
     tal:define="navigation_root_url context/@@plone_portal_state/navigation_root_url;
                 query_string view/getQueryString;
@@ -11,11 +11,10 @@
                 showNextMonth view/showNextMonth;
                 year view/year;">
 
-    <dt class="portletHeader">
-        <span class="portletTopLeft"></span>
-        <a href="#" rel="nofollow"
+    <h2 class="align-center">
+        <a href="#" 
            title="Previous month"
-           class="calendarPrev"
+           class="pull-left"
            tal:define="prevMonthMonth view/prevMonthMonth;
                        prevMonthYear view/prevMonthYear"
            tal:attributes="id python:showPrevMonth and 'calendar-previous' or '';
@@ -23,7 +22,8 @@
                            data-year prevMonthYear;
                            data-month prevMonthMonth;"
            tal:condition="showPrevMonth"
-           i18n:attributes="title title_previous_month;">&laquo;</a>
+           rel="tooltip" data-placement="top"
+           i18n:attributes="title title_previous_month;"><i class="icon-chevron-left icon-color"></i></a>
 
         <span i18n:translate="" tal:omit-tag="">
             <span i18n:name="monthname" i18n:translate=""
@@ -34,9 +34,9 @@
                   tal:omit-tag="">year</span>
         </span>
 
-        <a href="#" rel="nofollow"
+        <a href="#" 
            title="Next month"
-           class="calendarNext"
+           class="pull-right"
            tal:define="nextMonthMonth view/nextMonthMonth;
                        nextMonthYear view/nextMonthYear"
            tal:attributes="id python:showNextMonth and 'calendar-next' or '';
@@ -44,11 +44,12 @@
                            data-year nextMonthYear;
                            data-month nextMonthMonth;"
            tal:condition="showNextMonth"
-           i18n:attributes="title title_next_month;">&raquo;</a>
+           rel="tooltip" data-placement="top"
+           i18n:attributes="title title_next_month;"><i class="icon-chevron-right icon-color"></i></a>
         <span class="portletTopRight"></span>
-    </dt>
+    </h2>
 
-    <dd class="portletItem">
+    <div class="pad">
         <table class="ploneCalendar"
                summary="Calendar"
                i18n:domain="plone"
@@ -74,7 +75,7 @@
                                     ><td class="event"
                                         tal:condition="day_event"
                                         tal:attributes="class python:is_today and 'todayevent' or 'event'"
-                                       ><strong><a href=""
+                                       ><strong><a href="" rel="tooltip" data-placement="top"
                                            tal:attributes="href string:${navigation_root_url}/@@search?advanced_search=True&amp;${view/getReviewStateString}start.query:record:list:date=${day/date_string}+23%3A59%3A59&amp;start.range:record=max&amp;end.query:record:list:date=${day/date_string}+00%3A00%3A00&amp;end.range:record=min&amp;Type=Event;
                                                            title day/eventstring;"
                                            tal:content="daynumber">
@@ -99,8 +100,6 @@
             </tbody>
 
         </table>
-        <span class="portletBottomLeft"></span>
-        <span class="portletBottomRight"></span>
-    </dd>
-</dl>
+    </div>
+</div>
 </html>

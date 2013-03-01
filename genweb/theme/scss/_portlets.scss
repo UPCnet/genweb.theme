@@ -219,13 +219,19 @@ h2.title-inverse {
 
 // portlets secundaris (no es fan servir pero s'estilen)
 .portletCalendar {
-  & .portletHeader {text-align: center; background: $grayLighter; padding:5px 0; border-bottom:1px solid $white; @include border-radius(5px 5px 0 0);}
-  & .portletItem {margin:0; border-top: 1px solid $tableBorder;
-    & table {text-align: center; font-size: 85%;
-      & strong {color:darken($orange,5%);}
-    }
+  & .ploneCalendar {
+    text-align: center; font-size: 85%; table-layout: fixed;
+    & td {height: 25px;}
+    & td:not(:empty) {background: #f7f7f7; @include border-radius(50px); @include box-shadow(inset 0 0 0 1px rgba(0,0,0,.15))}
+    & td.event, td.todayevent {background: #0ea8ff;
+      & a {color: #fff;}}
+    & td.todayevent { @include box-shadow(inset 0 0 0 3px rgba(0,0,0,.5));
+      }
+    & td.todaynoevent {background: #ccc; @include box-shadow(inset 0 0 0 3px rgba(0,0,0,.25));
+      & strong {color:#000;}}
   }
 }
 
 // Sistema
 #portlet-prefs {@include box-shadow(none);}
+.portlet > .pad {border-bottom: 1px solid $tableBorder;}

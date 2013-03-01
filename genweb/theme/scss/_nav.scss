@@ -90,6 +90,9 @@
 	& li:last-child a{
 		@include border-radius(0 0 4px 4px);
 	}	
+	& li:first-child:last-child a{
+		@include border-radius(4px);
+	}
 	& .active ul {
 		margin-left:-15px !important;
 		margin-right:-15px;

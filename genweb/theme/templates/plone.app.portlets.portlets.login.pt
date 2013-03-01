@@ -9,17 +9,16 @@
            i18n:translate="box_sign_in">Log in
     </h2>
 
-  <ul class="unstyled">
-    <li
-        tal:define="ac_name view/login_name;
+  <div class="pad">
+    <tal:div
+        define="ac_name view/login_name;
                     ac_password view/login_password">
         <form action="login_form"
-              class="xafa"
               id="loginform"
+              class="margin0"
               method="post"
               tal:attributes="action view/login_form">
 
-            <div>
                 <input type="hidden" name="form.submitted" value="1" />
                 <input type="hidden" name="came_from" value=""
                        tal:attributes="value context/@@plone_context_state/current_page_url" />
@@ -27,16 +26,16 @@
                 <input type="hidden" name="cookies_enabled" id="cookies_enabled" value="" />
                 <input type="hidden" name="login_name" id="login_name" value="" />
                 <input type="hidden" name="pwd_empty" id="pwd_empty" value="0" />
-            </div>
 
-            <div class="field"
-                 tal:define="use_email_as_login context/portal_properties/site_properties/use_email_as_login|nothing;">
+
+            <tal:div
+                 define="use_email_as_login context/portal_properties/site_properties/use_email_as_login|nothing;">
 
               <tal:loginname condition="not:use_email_as_login">
                 <label for=""
                        tal:attributes="for ac_name"
                        i18n:translate="label_login_name">Login Name</label>
-                <input type="text"
+                <input type="text" style="height:28px; width:100%; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;"
                        tal:attributes="name ac_name; id ac_name;
                                        value python:request.get(ac_name, '');"
                        i18n:attributes="alt label_login_name;"/>
@@ -45,21 +44,21 @@
                 <label for=""
                        tal:attributes="for ac_name"
                        i18n:translate="label_email">E-mail</label>
-                <input type="text"
+                <input type="text" style="height:28px; width:100%; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;"
                        tal:attributes="name ac_name; id ac_name;
                                        value python:request.get(ac_name, '');"
                        i18n:attributes="alt label_email;"/>
               </tal:email>
-            </div>
+            </tal:div>
 
-            <div class="field">
+            <tal:div>
                 <label for=""
                        tal:attributes="for ac_password"
                        i18n:translate="label_password">Password</label>
-                <input type="password"
+                <input type="password"  style="height:28px; width:100%; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;"
                        tal:attributes="name ac_password; id ac_password;"
                        i18n:attributes="alt label_password;"/>
-            </div>
+            </tal:div>
 
             <div i18n:translate="enable_cookies_message_before_login"
                  class="cookiesMessage portalMessage"
@@ -68,33 +67,32 @@
                 can log in.
             </div>
 
-            <div class="formControls">
+            
                 <input class="context"
                        type="submit"
                        name="submit"
                        value="Log in"
                        i18n:attributes="value label_log_in;"/>
-            </div>
+    
         </form>
-    </li>
-
-    <li class="portletItem even" tal:condition="view/can_request_password">
+    </tal:div>
+  </div>
+      <tal:div condition="view/can_request_password">
         <a href="mail_password_form"
-           class="tile"
+           class="portlet-footer"
            tal:attributes="href view/mail_password_form">
            <span tal:omit-tag="" i18n:translate="box_forgot_password_option">Forgot your password?</span>
         </a>
-    </li>
+    </tal:div>
 
-    <li class="portletItem lastItem" tal:condition="view/can_register">
+    <tal:div condition="view/can_register">
         <a href=""
-           class="tile"
+           class="portlet-footer"
            tal:attributes="href view/join_action">
             <tal:block replace="structure context/user.png"/>
             <span tal:omit-tag="" i18n:translate="box_new_user_option">New user?</span>
         </a>
-    </li>
-  </ul>
+    </tal:div>
 </div>
 
 <div class="portlet portletLogin"
