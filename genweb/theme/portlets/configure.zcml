@@ -13,6 +13,18 @@
         layer="genweb.theme.browser.interfaces.IGenwebTheme"
         />
 
+    <plone:portletRenderer
+        portlet="plone.app.portlets.portlets.rss.IRSSPortlet"
+        class=".portlets.gwRSS"
+        layer="genweb.theme.browser.interfaces.IGenwebTheme"
+        />
+
+    <plone:portletRenderer
+        portlet="plone.portlet.collection.collection.ICollectionPortlet"
+        class=".portlets.gwCollection"
+        layer="genweb.theme.browser.interfaces.IGenwebTheme"
+        />
+
     <plone:portlet
      name="genweb.portlets.homepage"
      interface=".homepage.IHomepagePortlet"
