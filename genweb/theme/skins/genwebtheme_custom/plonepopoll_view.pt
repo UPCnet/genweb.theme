@@ -105,10 +105,7 @@
                tal:condition="python: here.portal_membership.checkPermission('Popoll: Edit polls', here)" />
       </div>
     </form>
-    <div metal:use-macro="here/document_relateditems/macros/relatedItems">
-      show related items if they exist
-    </div>
-    <div tal:replace="structure provider:plone.belowcontentbody" />
+
     </metal:macro>
 
     </metal:content-core>
