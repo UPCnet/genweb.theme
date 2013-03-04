@@ -21,7 +21,8 @@ class gwRSS(RssRenderer):
 
 
 class gwCollection(CollectionRenderer):
-    """ The standard rss portlet override 'old style'
+    """ The standard collection portlet override 'old style'
         as it doesn't allow to do it jbot way...
     """
     _template = ViewPageTemplateFile('templates/collection.pt')
+    render = _template
