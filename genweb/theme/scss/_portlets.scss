@@ -143,6 +143,7 @@
     display:block;
     padding-left:40px;
     border-left: 3px solid $grayLighter;
+    min-height: 36px;
     &:hover {
       border-color: $blue;
     }
