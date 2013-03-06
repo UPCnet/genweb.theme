@@ -12116,25 +12116,59 @@ label[for] {
   margin-top: -3px;
 }
 
+/* line 169, ../scss/_portlets.scss */
+.portlet-esdeveniments ul time {
+  text-align: center;
+}
+
+/* line 170, ../scss/_portlets.scss */
+.portlet-esdeveniments .multidate-before {
+  padding-left: 60px;
+}
+
 /* line 171, ../scss/_portlets.scss */
+.portlet-esdeveniments .multidate time + time {
+  margin-left: 1.3em !important;
+}
+
+/* line 172, ../scss/_portlets.scss */
+.portlet-esdeveniments .multidate time + time:before {
+  content: "-";
+  font-size: 70%;
+  margin-left: -5px;
+  float: left;
+  margin-top: -2px;
+}
+
+/* line 173, ../scss/_portlets.scss */
+.portlet-esdeveniments .multidate {
+  font-size: 90%;
+}
+
+/* line 174, ../scss/_portlets.scss */
+.portlet-esdeveniments .multidate time abbr {
+  font-size: 48%;
+}
+
+/* line 178, ../scss/_portlets.scss */
 .portlet-enquesta fieldset {
   margin: 0 15px;
 }
-/* line 174, ../scss/_portlets.scss */
+/* line 181, ../scss/_portlets.scss */
 .portlet-enquesta legend {
   font-size: 100%;
   line-height: 18px;
   padding: 10px 0;
 }
-/* line 179, ../scss/_portlets.scss */
+/* line 186, ../scss/_portlets.scss */
 .portlet-enquesta form {
   margin: 0 15px 15px;
 }
-/* line 182, ../scss/_portlets.scss */
+/* line 189, ../scss/_portlets.scss */
 .portlet-enquesta .progress {
   position: relative;
 }
-/* line 184, ../scss/_portlets.scss */
+/* line 191, ../scss/_portlets.scss */
 .portlet-enquesta .progress span {
   color: black;
   font-size: 84.6153846%;
@@ -12142,18 +12176,18 @@ label[for] {
   position: absolute;
   text-shadow: 0 -1px rgba(255, 255, 255, 0.5);
 }
-/* line 192, ../scss/_portlets.scss */
+/* line 199, ../scss/_portlets.scss */
 .portlet-enquesta > p {
   margin: 0 15px 18px;
   border-bottom: 1px solid #b2b2b2;
   padding: 10px 0;
 }
-/* line 197, ../scss/_portlets.scss */
+/* line 204, ../scss/_portlets.scss */
 .portlet-enquesta > ul {
   margin: 0 15px;
 }
 
-/* line 203, ../scss/_portlets.scss */
+/* line 210, ../scss/_portlets.scss */
 .portlet-inverse h2 {
   background: #007bc0;
   border: 0;
@@ -12165,33 +12199,33 @@ label[for] {
   -o-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
 }
-/* line 209, ../scss/_portlets.scss */
+/* line 216, ../scss/_portlets.scss */
 .portlet-inverse h2 i {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=9000);
   opacity: 90;
 }
 
-/* line 213, ../scss/_portlets.scss */
+/* line 220, ../scss/_portlets.scss */
 h2.title-inverse {
   color: white;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
-/* line 216, ../scss/_portlets.scss */
+/* line 223, ../scss/_portlets.scss */
 h2.title-inverse i {
   background-image: url('/++genweb++static/images/gh-w.png?1354788544');
 }
 
-/* line 223, ../scss/_portlets.scss */
+/* line 230, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar {
   text-align: center;
   font-size: 85%;
   table-layout: fixed;
 }
-/* line 225, ../scss/_portlets.scss */
+/* line 232, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar td {
   height: 25px;
 }
-/* line 226, ../scss/_portlets.scss */
+/* line 233, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar td:not(:empty) {
   background: #f2f2f2;
   -webkit-border-radius: 50px;
@@ -12201,32 +12235,32 @@ h2.title-inverse i {
   border-radius: 50px;
   text-shadow: 0 1px #fff;
 }
-/* line 227, ../scss/_portlets.scss */
+/* line 234, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar td.event, .portletCalendar .ploneCalendar td.todayevent {
   background: #08c;
   text-shadow: 0 -1px #0066aa;
 }
-/* line 228, ../scss/_portlets.scss */
+/* line 235, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar td.event a, .portletCalendar .ploneCalendar td.todayevent a {
   color: #fff;
 }
-/* line 231, ../scss/_portlets.scss */
+/* line 238, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar td.todaynoevent {
   background: #ccc;
 }
-/* line 232, ../scss/_portlets.scss */
+/* line 239, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar td.todaynoevent strong {
   color: #000;
 }
 
-/* line 237, ../scss/_portlets.scss */
+/* line 244, ../scss/_portlets.scss */
 #portlet-prefs {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 238, ../scss/_portlets.scss */
+/* line 245, ../scss/_portlets.scss */
 .portlet > .pad {
   border-bottom: 1px solid #b2b2b2;
 }
@@ -14462,34 +14496,15 @@ html.lt-ie8 .list-portlet li {
   width: 100%;
 }
 
-/* line 134, ../scss/_upcnet.scss */
-.portlet-esdeveniments .multidate {
-  font-size: 80%;
-}
-
 /* line 135, ../scss/_upcnet.scss */
-.portlet-esdeveniments .multidate time {
-  margin-left: -8px;
-  margin-top: -1px;
+.plone_jscalendar > * {
+  display: inline-block;
 }
 
 /* line 136, ../scss/_upcnet.scss */
-.portlet-esdeveniments .multidate time + time {
-  margin-left: .9em !important;
-}
-
-/* line 137, ../scss/_upcnet.scss */
-.portlet-esdeveniments .multidate time + time:before {
-  content: "-";
-  font-size: 80%;
-  margin-left: -4px;
-  position: absolute;
-  margin-top: -2px;
-}
-
-/* line 138, ../scss/_upcnet.scss */
-.portlet-esdeveniments .multidate time abbr {
-  margin-top: -5px;
+.plone_jscalendar select {
+  width: auto;
+  display: inline-block;
 }
 
 /* TINY */
