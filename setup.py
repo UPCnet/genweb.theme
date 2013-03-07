@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '4.3b1'
+version = '4.0b1'
 
 setup(name='genweb.theme',
       version=version,
