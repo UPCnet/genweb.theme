@@ -11,7 +11,6 @@ from zope.component.hooks import getSite
 from plone.memoize.view import memoize_contextless
 
 from Products.CMFCore import permissions
-from Products.CMFCore.interfaces import ISiteRoot
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
@@ -213,7 +212,7 @@ class gwManagePortletsFallbackViewlet(ManagePortletsFallbackViewlet, viewletBase
 
         # Portlet container will be in the context,
         # Except in the portal root, when we look for an alternative
-        if ISiteRoot.providedBy(self.context):
+        if IPloneSiteRoot.providedBy(self.context):
             pc = getToolByName(context, 'portal_catalog')
             result = pc.searchResults(object_provides=IHomePage.__identifier__,
                                       Language=pref_lang())
