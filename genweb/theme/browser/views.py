@@ -15,6 +15,7 @@ from plone.portlets.interfaces import IPortletManagerRenderer
 from plone.memoize import ram
 
 from genweb.core.interfaces import IGenwebLayer, IHomePage
+from Products.CMFCore.interfaces import ISiteRoot
 from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 from genweb.core.utils import genweb_config, pref_lang
 from genweb.portlets.browser.manager import ISpanStorage
@@ -54,15 +55,19 @@ class HomePageBase(grok.View):
 
     def getPortletContainer(self):
         context = aq_inner(self.context)
-        pc = getToolByName(context, 'portal_catalog')
-        result = pc.searchResults(object_provides=IHomePage.__identifier__,
-                                  Language=pref_lang())
-        if result:
-            # Return the object without forcing a getObject()
-            return getattr(context, result[0].id, context)
-        else:
-            # If this happens, it's bad. Implemented as a fallback
-            return context
+        container = context
+
+        # Portlet container will be in the context,
+        # Except in the portal root, when we look for an alternative
+        if ISiteRoot.providedBy(self.context):
+            pc = getToolByName(context, 'portal_catalog')
+            result = pc.searchResults(object_provides=IHomePage.__identifier__,
+                                      Language=pref_lang())
+            if result:
+                # Return the object without forcing a getObject()
+                container = getattr(context, result[0].id, context)
+
+        return container
 
     def renderProviderByName(self, provider_name):
         provider = queryMultiAdapter(
