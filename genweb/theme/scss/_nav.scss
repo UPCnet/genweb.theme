@@ -42,7 +42,7 @@
   		line-height:16px;
   		color:#4d4d4d;
   		border-top:1px solid #b2b2b2 !important;
-  		padding:8px 9px !important;
+  		padding: 8px 28px 8px 9px !important;
   		position:relative;
   		&.state-intranet {color:$purple;}
   		&.state-pending {color:darken($orange,5%);}
@@ -88,9 +88,15 @@
 		@include border-radius(4px 4px 0 0);
 	}
 	& li:last-child a{
-		@include border-radius(0 0 4px 4px);
+		@include border-radius(0);
 	}	
-	& li:first-child:last-child a{
+	& li:last-child a:only-child {
+		@include border-radius(0 0 4px 4px);
+	}
+	& li:first-child:last-child a {
+		@include border-radius(4px 4px 0 0);
+	}
+	& li:first-child:last-child a:only-child {
 		@include border-radius(4px);
 	}
 	& .active ul {
@@ -112,7 +118,7 @@
 			border-right: 3px solid $blue;
 			*border-top:1px solid #fff !important;
 			@include border-radius(0 !important);
-			&:hover {background-color:#e5f6ff !important;}	
+			&:hover {background-color:#e5f6ff !important;}
 			&.active {
 				background-color: #f2f8fc !important; color:$grayDarker;
 				&[class*=" contenttype-"] span:after {@include opacity(1);}
@@ -160,15 +166,27 @@
     				position:absolute;
 			}
 			&.contenttype-folder span:after 		{background-position: -384px 	-120px;}
-			&.contenttype-page span:after 			{background-position: -24px 	-24px;}			
+			&.contenttype-page span:after,
+			&.contenttype-document span:after 		{background-position: -24px 	-24px;}			
 			&.contenttype-link span:after 			{background-position: -72px 	-168px;}		
-			&.contenttype-windowztool span:after 	{background-position: -97px 	-168px;}			
+			&.contenttype-windowztool span:after,
+			&.contenttype-window span:after			{background-position: -97px 	-168px;}			
 			&.contenttype-bannercontainer span:after,
 			&.contenttype-banner span:after 		{background-position: -313px	-25px;}	
 			&.contenttype-topic span:after 			{background-position: -72px 	-192px;}	
 			&.contenttype-file span:after 			{background-position: -167px	-168px;}	
 			&.contenttype-image span:after 			{background-position: -457px	-49px;}	
-			&.contenttype-plonepopoll span:after 	{background-position: -457px	-193px;}	
+			&.contenttype-logos_container span:after,
+			&.contenttype-logos_footer span:after 	{background-position: -143px 	-168px;}
+
+			&.contenttype-plonepopoll span:after 	{background-position: -47px		-193px;}	
+			&.contenttype-event span:after 			{background-position: -191px 	-120px;}
+			&.contenttype-news-item span:after 		{background-position: -24px 	-168px;}
+			&.contenttype-packet span:after 		{background-position: -47px 	-168px;}
+			&.contenttype-collage span:after 		{background-position: -216px 	-168px;}
+			&.contenttype-collection span:after 	{background-position: -240px 	-168px;}
+			&.contenttype-survey span:after 		{background-position: -265px 	-23px;}
+			&.contenttype-formfolder span:after 	{background-position: -144px 	-72px;}	
 
 			&:hover span:after { @include opacity(1);}
 		}
@@ -240,7 +258,8 @@ html * .dropdown-menu a:hover .img_blank {
 		&.contenttype-document:before 		{background-position: -24px 	-24px;}			
 		&.contenttype-link:before 			{background-position: -72px 	-168px;}		
 		&.contenttype-windowztool:before,
-		&.contenttype-window:before 	 	{background-position: -97px 	-168px;}			
+		&.contenttype-window:before,
+		&.contenttype-window:before		 	{background-position: -97px 	-168px;}			
 		&.contenttype-bannercontainer:before,
 		&.contenttype-banner:before 		{background-position: -313px	-25px;}	
 		&.contenttype-logos_container:before,
