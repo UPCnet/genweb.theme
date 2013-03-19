@@ -42,7 +42,6 @@
                       i18n:domain="genweb">
                         Folder views
                   </li>
-                  <tal:c content="submenu"></tal:c>
                 <tal:block repeat="subMenuItem submenu">
                   <li class="nav-header actionSeparator"
                       tal:condition="python:subMenuItem['extra']['id'] == 'contextSetDefaultPage'"
