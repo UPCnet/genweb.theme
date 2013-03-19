@@ -10,7 +10,7 @@ from zope.component.hooks import getSite
 
 from plone.memoize.view import memoize_contextless
 
-from Products.CMFCore import permissions
+# from Products.CMFCore import permissions
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
@@ -23,6 +23,8 @@ from Products.CMFPlone.interfaces import IPloneSiteRoot
 
 from Products.ATContentTypes.interface.news import IATNewsItem
 from genweb.core.adapters import IImportant
+
+from Products.ATContentTypes.interfaces.event import IATEvent
 
 from genweb.core import HAS_CAS
 from genweb.core.interfaces import IHomePage
@@ -105,6 +107,29 @@ class gwImportantNews(viewletBase):
     grok.name('genweb.important')
     grok.context(IATNewsItem)
     grok.template('important')
+    grok.viewletmanager(IAboveContentTitle)
+    grok.layer(IGenwebTheme)
+
+    def permisos_important(self):
+        #TODO: Comprovar que l'usuari tingui permisos per a marcar com a important
+        return not IImportant(self.context).is_important and getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
+
+    def permisos_notimportant(self):
+        #TODO: Comprovar que l'usuari tingui permisos per a marcar com a notimportant
+        return IImportant(self.context).is_important and getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
+
+    def update(self):
+        form = self.request.form
+        if 'genweb.theme.viewlet.marcar_important' in form:
+            IImportant(self.context).is_important = True
+        if 'genweb.theme.viewlet.marcar_notimportant' in form:
+            IImportant(self.context).is_important = False
+
+
+class gwSendEvent(viewletBase):
+    grok.name('genweb.sendevent')
+    grok.context(IATEvent)
+    grok.template('send_event')
     grok.viewletmanager(IAboveContentTitle)
     grok.layer(IGenwebTheme)
 
