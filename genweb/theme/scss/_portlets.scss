@@ -165,6 +165,13 @@
     }
   }
 }
+//Multievent
+.portlet-esdeveniments ul time {text-align:center;}
+.portlet-esdeveniments .multidate-before {padding-left:60px;}
+.portlet-esdeveniments .multidate time + time {margin-left:1.3em !important;}
+.portlet-esdeveniments .multidate time + time:before {content:"-";font-size: 70%;margin-left: -5px;float: left; margin-top:-2px;}
+.portlet-esdeveniments .multidate {font-size: 90%; }
+.portlet-esdeveniments .multidate time abbr {font-size:48%;}
 
 // ENQUESTA
 .portlet-enquesta {
@@ -223,12 +230,12 @@ h2.title-inverse {
   & .ploneCalendar {
     text-align: center; font-size: 85%; table-layout: fixed;
     & td {height: 25px;}
-    & td:not(:empty) {background: #f7f7f7; @include border-radius(50px); @include box-shadow(inset 0 0 0 1px rgba(0,0,0,.15))}
-    & td.event, td.todayevent {background: #0ea8ff;
+    & td:not(:empty) {background: #f2f2f2; @include border-radius(50px); text-shadow:0 1px #fff;}
+    & td.event, td.todayevent {background: #08c; text-shadow:0 -1px #06a;
       & a {color: #fff;}}
-    & td.todayevent { @include box-shadow(inset 0 0 0 3px rgba(0,0,0,.5));
+    & td.todayevent { 
       }
-    & td.todaynoevent {background: #ccc; @include box-shadow(inset 0 0 0 3px rgba(0,0,0,.25));
+    & td.todaynoevent {background: #ccc; 
       & strong {color:#000;}}
   }
 }

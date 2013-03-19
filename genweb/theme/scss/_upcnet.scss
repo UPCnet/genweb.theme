@@ -130,9 +130,7 @@
 
 
 
-//Multievent
-.portlet-esdeveniments .multidate {font-size: 80%; }
-.portlet-esdeveniments .multidate time {margin-left:-8px; margin-top:-1px;}
-.portlet-esdeveniments .multidate time + time {margin-left:.9em !important;}
-.portlet-esdeveniments .multidate time + time:before {content:"-";font-size: 80%;margin-left: -4px;position: absolute; margin-top:-2px;}
-.portlet-esdeveniments .multidate time abbr {margin-top: -5px;}
+
+// SELECTS
+.plone_jscalendar > * {display: inline-block;}
+.plone_jscalendar select {width:auto; display: inline-block;}

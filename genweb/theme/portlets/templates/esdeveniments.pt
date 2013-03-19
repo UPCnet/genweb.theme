@@ -17,6 +17,7 @@
                                 startmonth_abbr python:view.getMonthAbbr(obj.start);
                                 startmonth python:view.getMonth(obj.start);
                                 endmonth python:view.getMonth(obj.end);
+<<<<<<< HEAD
                                 endmonth_abbr python:view.getMonthAbbr(obj.end);
                                 sameday python:view.sameDay(obj)"
                     tal:attributes="class python: sameday and '' or 'multidate'"
@@ -24,8 +25,17 @@
                     <a href="#" tal:attributes="href obj/getURL">
                         <tal:repl tal:replace="obj/pretty_title_or_id">Some Event</tal:repl>
                     </a>
+=======
+                                sameday python:view.sameDay(obj)">
+
+
+     
+>>>>>>> 7c9837d07b816771bf2cdd06c0cc28828272b4c9
 
                     <tal:co tal:condition="sameday">
+                        <a href="#" tal:attributes="href obj/getURL">
+                          <tal:repl tal:replace="obj/pretty_title_or_id">Some Event</tal:repl>
+                        </a>
                         <time class="smaller"
                                 tal:attributes="datetime item_startdate">
                             <tal:repl tal:replace="startday">28</tal:repl>
@@ -38,6 +48,13 @@
                     </tal:co>
 
                     <tal:co tal:condition="not: sameday">
+<<<<<<< HEAD
+=======
+                        <a href="#" class="multidate-before" tal:attributes="href obj/getURL">
+                          <tal:repl tal:replace="obj/pretty_title_or_id">Some Event</tal:repl>
+                        </a>
+                        <span class="multidate">
+>>>>>>> 7c9837d07b816771bf2cdd06c0cc28828272b4c9
                             <time class="smaller"
                                     tal:attributes="datetime item_startdate">
                                 <tal:repl tal:replace="startday">28</tal:repl>

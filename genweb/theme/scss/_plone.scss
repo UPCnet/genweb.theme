@@ -816,3 +816,9 @@ html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li
 html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li +li+li+li+li, 
 html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li +li+li+li+li +li+li+li+li,
 .thumbnails li:nth-child(4n+1) {margin-left:0 !important;}
+
+
+/*
+VIEWS
+*/
+body.template-folder_summary_view #content ul li:first-child {border-top:0; @include box-shadow(none);}

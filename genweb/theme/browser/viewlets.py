@@ -232,14 +232,20 @@ class gwManagePortletsFallbackViewlet(ManagePortletsFallbackViewlet, viewletBase
 
     def getPortletContainerPath(self):
         context = aq_inner(self.context)
-        pc = getToolByName(context, 'portal_catalog')
-        result = pc.searchResults(object_provides=IHomePage.__identifier__,
-                                  Language=pref_lang())
-        if result:
-            return result[0].getURL()
-        else:
-            # If this happens, it's bad. Implemented as a fallback
-            return context.absolute_url()
+
+        container_url = context.absolute_url()
+
+        # Portlet container will be in the context,
+        # Except in the portal root, when we look for an alternative
+        if IPloneSiteRoot.providedBy(self.context):
+            pc = getToolByName(context, 'portal_catalog')
+            result = pc.searchResults(object_provides=IHomePage.__identifier__,
+                                      Language=pref_lang())
+            if result:
+                # Return the object without forcing a getObject()
+                container_url = result[0].getURL()
+
+        return container_url
 
     def managePortletsURL(self):
         return "%s/%s" % (self.getPortletContainerPath(), '@@manage-homeportlets')

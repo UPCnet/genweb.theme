@@ -259,3 +259,41 @@
 .large-icon.icon-white {
   background-image: image-url('gh-150-w.png');
 }
+
+
+
+
+
+
+
+
+/*extends icones*/
+.icon-subsurvey {@extend .icon-list-alt;}
+.icon-surveydatequestion {@extend .icon-time;}
+.icon-surveyselectquestion {@extend .icon-ok-circle;}
+.icon-surveymatrix {@extend .icon-th;}
+.icon-plone-contentmenu-settings {@extend .icon-filter;}
+.icon-surveytextquestion {@extend .icon-align-left;}
+
+
+
+.icon-formlabelfield { @extend .icon-tag;}
+.icon-formfilefield {@extend .icon-file;}
+
+
+.icon-formthankspage {@extend .icon-thumbs-up;}
+.icon-formdatefield {@extend .icon-time;}
+.icon-formpasswordfield {@extend .icon-lock;}
+.icon-formtextfield {@extend .icon-font;}
+.icon-formrichtextfield {@extend .icon-bold;}
+.icon-formbooleanfield {@extend .icon-check;}
+.icon-fieldsetfolder {@extend .icon-folder-close;}
+.icon-formrichlabelfield {@extend .icon-tags;}
+.icon-formcustomscriptadapter {@extend .icon-html;}
+.icon-formmaileradapter {@extend .icon-envelope;}
+.icon-formsavedataadapter {@extend .icon-hdd;}
+.icon-fieldsetstart {@extend .icon-step-backward;}
+.icon-fieldsetend {@extend .icon-step-forward;}
+.icon-formlikertfield {@extend .icon-signal;}
+.icon-formstringfield {@extend .icon-edit;}
+.icon-formselectionfield {@extend .icon-ok-circle;}

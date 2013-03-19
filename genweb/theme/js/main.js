@@ -18,6 +18,7 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 'slow');
   });
   $('.dropdown:has(.badge)').addClass('nou');
+  $('ul.dropdown-menu li:has(.actionMenuSelected)').addClass('active');
 
   $('.userScreen').click(function() {
     $('html').removeClass('simulated-mobile-view');
