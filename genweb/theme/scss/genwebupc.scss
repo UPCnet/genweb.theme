@@ -1,7 +1,41 @@
+/*
+
+COM DIVIDIR TOT EL BOOTSTRAP EN 2
+
+1 tot el bootstrap menys els sprites i els següents imports
+@import "_base";
+@import "_empaquetats";
+@import "_gw3togw4";
+@import "_plone";
+@import "_upcnet";
+
+Tot això està per sota el limit per poc, ull a afegir classes aquí
+
+
+2 el que falta en un altre fitxer. 
+És tot el Genweb.CSS menys els fitxers traspassats
+Abans també s'ha de carregar mixins i variables i el sprites
+Ordre:
+ 1 mixins
+ 2 variables
+ 3 sprites
+ 4 genweb menys els 5 fitxers que passem a bootstrap que són els que inclouen @extends
+*/
+
+
+
+
 
 @import "compass_twitter_bootstrap";
 @import "compass_twitter_bootstrap_responsive";
 @import "genweb_upc";
+
+@import "_base";
+@import "_empaquetats";
+@import "_gw3togw4";
+//@import "_inputs";
+@import "_plone";
+@import "_upcnet";
 
 
 

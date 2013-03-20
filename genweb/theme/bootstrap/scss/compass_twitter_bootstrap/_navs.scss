@@ -129,7 +129,6 @@
 .nav-tabs > .active > a:hover {
   color: $gray;
   background-color: $white;
-  //@include gradient-vertical($startColor: #f7f7f7, $endColor: #ffffff);
   @include gradient-vertical-three-colors($startColor: #f7f7f7, $midColor: #ffffff, $colorStop: .5, $endColor: #ffffff);
   border: 1px solid #ccc;
   border-bottom-color: transparent;

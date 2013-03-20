@@ -12,8 +12,6 @@
 
 // PORTAL NAV
 // -------------------------
-#portal-globalnav {/*margin-top:-22px;*/}
-	#portal-header .container {/*padding-bottom:22px;*/} /* ajusta menu */
 	#portal-globalnav .navbar-inner {padding:0; border-bottom:3px solid #666;}
 		#portal-globalnav .state-published {border-bottom:3px solid $blue;}		
 		#portal-globalnav .state-intranet {border-bottom:3px solid $purple;}
@@ -206,7 +204,7 @@ html * .dropdown-menu a:hover .img_blank {
 	content:image-url("blank_blanc.png"); width:10px; height:10px; 
 }
 
-// MARCA NOU AL MENÚ
+// MARCA NOU AL MENU
 // -----------------
 //#portal-personaltools-wrapper .pull-right .dropdown {position: relative;}
 .dropdown.nou::after {

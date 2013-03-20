@@ -32,7 +32,7 @@
   background-color: $blue !important;
   color:$white;
 }
-/*extén error de plone*/
+/*exten error de plone*/
 .field.error {margin: 0 -5px; padding:0 5px; @include border-radius(6px); @include box-shadow (0 0 5px lighten($red,25%));}
 
 /*links en inverse i primary */
