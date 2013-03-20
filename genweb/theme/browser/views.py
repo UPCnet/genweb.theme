@@ -1,5 +1,6 @@
 from five import grok
 from Acquisition import aq_inner
+#from AccessControl import getSecurityManager
 from zope.interface import Interface
 from zope.component import getMultiAdapter, queryMultiAdapter, getUtility, queryUtility
 from zope.contentprovider import interfaces
@@ -10,11 +11,15 @@ from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.CMFPlone.browser.navigation import CatalogNavigationTabs
 from Products.CMFPlone.browser.navigation import get_id, get_view_url
 
+from Products.ATContentTypes.interfaces.event import IATEvent
+#from genweb.core.adapters import IImportant
+
 from plone.portlets.interfaces import IPortletManager
 from plone.portlets.interfaces import IPortletManagerRenderer
 from plone.memoize import ram
 
-from genweb.core.interfaces import IGenwebLayer, IHomePage
+from genweb.core.interfaces import IHomePage
+#, IGenwebLayer
 from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 from genweb.core.utils import genweb_config, pref_lang
 from genweb.portlets.browser.manager import ISpanStorage
@@ -256,3 +261,13 @@ class gwRecaptchaView(RecaptchaView, grok.View):
         use_ssl = self.request['SERVER_URL'].startswith('https://')
         error = IRecaptchaInfo(self.request).error
         return options.get(lang, '') + displayhtml(self.settings.public_key, use_ssl=use_ssl, error=error)
+
+
+class gwSendEventView(grok.View):
+    grok.context(IATEvent)
+    grok.name('send-event')
+    grok.require('zope2.Public')
+    grok.layer(IGenwebTheme)
+
+    def render(self):
+        self.request.response.redirect(self.context.absolute_url())
