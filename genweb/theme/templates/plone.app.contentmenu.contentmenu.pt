@@ -60,9 +60,9 @@
                         <i class="icon-X"
                           tal:attributes="class string:icon-${subMenuItem/extra/id}">
                         </i>
-              <tal:comment replace="nothing"><!-- Shitty solution as something weird happens with the translation of this element --></tal:comment>
+              <tal:comment replace="nothing"><!-- Shitty solution as the translation of this element is fixed pythonically to the i18n domain plone--></tal:comment>
                         <span tal:condition="python:subMenuItem['extra']['id'] == 'contextSetDefaultPage'"
-                              i18n:translate="label_choose_template">
+                              i18n:translate="label_choose_item">
                               The elusive title of the choose menu
                         </span>
                         <span tal:condition="python:subMenuItem['extra']['id'] == 'folderChangeDefaultPage'"
