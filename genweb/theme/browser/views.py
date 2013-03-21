@@ -30,6 +30,12 @@ from genweb.theme.scss import dynamic_scss
 from plone.formwidget.recaptcha.view import RecaptchaView, IRecaptchaInfo
 from recaptcha.client.captcha import displayhtml
 
+from Products.CMFPlone import PloneMessageFactory as _
+from Products.CMFPlone.browser.navtree import getNavigationRoot
+from Products.CMFPlone.utils import safe_unicode
+from Products.PythonScripts.standard import url_quote_plus
+import json
+
 
 class GWConfig(grok.View):
     grok.context(Interface)
@@ -129,6 +135,149 @@ def _render_cachekey(method, self, especific1, especific2):
     """Cache by the two specific colors"""
     return (especific1, especific2)
 
+class typeaheadJson(grok.View):
+    grok.name('typeaheadJson')
+    grok.context(Interface)
+    grok.layer(IGenwebTheme)
+
+    def render(self):
+        # We set the parameters sent in livesearch using the old way.
+        q = self.request['q']
+        limit = 10
+        path = None
+        ploneUtils = getToolByName(self.context, 'plone_utils')
+        portal_url = getToolByName(self.context, 'portal_url')()
+        pretty_title_or_id = ploneUtils.pretty_title_or_id
+        plone_view = self.context.restrictedTraverse('@@plone')
+        portal_state = self.context.restrictedTraverse('@@plone_portal_state')
+
+        portalProperties = getToolByName(self.context, 'portal_properties')
+        siteProperties = getattr(portalProperties, 'site_properties', None)
+        useViewAction = []
+        if siteProperties is not None:
+            useViewAction = siteProperties.getProperty(
+                                'typesUseViewActionInListings', [])
+
+        # SIMPLE CONFIGURATION
+        USE_ICON = True
+        MAX_TITLE = 50
+        MAX_DESCRIPTION = 150
+
+        # generate a result set for the query
+        catalog = self.context.portal_catalog
+
+        friendly_types = ploneUtils.getUserFriendlyTypes()
+
+        def quotestring(s):
+            return '"%s"' % s
+
+        def quote_bad_chars(s):
+            bad_chars = ["(", ")"]
+            for char in bad_chars:
+                s = s.replace(char, quotestring(char))
+            return s
+
+        # for now we just do a full search to prove a point, this is not the
+        # way to do this in the future, we'd use a in-memory probability based
+        # result set.
+        # convert queries to zctextindex
+
+        # XXX really if it contains + * ? or -
+        # it will not be right since the catalog ignores all non-word
+        # characters equally like
+        # so we don't even attept to make that right.
+        # But we strip these and these so that the catalog does
+        # not interpret them as metachars
+        # See http://dev.plone.org/plone/ticket/9422 for an explanation of '\u3000'
+        multispace = u'\u3000'.encode('utf-8')
+        for char in ('?', '-', '+', '*', multispace):
+            q = q.replace(char, ' ')
+        r = q.split()
+        r = " AND ".join(r)
+        r = quote_bad_chars(r) + '*'
+        searchterms = url_quote_plus(r)
+
+        params = {'SearchableText': r,
+                  'portal_type': friendly_types,
+                  'sort_limit': limit + 1}
+
+        if path is None:
+            # useful for subsides
+            params['path'] = getNavigationRoot(self.context)
+        else:
+            params['path'] = path
+
+        # search limit+1 results to know if limit is exceeded
+        results = catalog(**params)
+
+        searchterm_query = '?searchterm=%s' % url_quote_plus(q)
+
+        REQUEST = self.context.REQUEST
+        RESPONSE = REQUEST.RESPONSE
+        RESPONSE.setHeader('Content-Type', 'application/json')
+        # RESPONSE['Content-Disposition'] = 'attachment; filename=data.json'
+
+        # replace named entities with their numbered counterparts, in the xml the named
+        # ones are not correct
+        #   &darr;      --> &#8595;
+        #   &hellip;    --> &#8230;
+        legend_livesearch = _('legend_livesearch', default='LiveSearch &#8595;')
+        label_no_results_found = _('label_no_results_found',
+                                   default='No matching results found.')
+        label_advanced_search = _('label_advanced_search',
+                                  default='Advanced Search&#8230;')
+        label_show_all = _('label_show_all', default='Show all items')
+
+        ts = getToolByName(self.context, 'translation_service')
+
+        output = []
+        queryElements = []
+
+        def write(s):
+            output.append(safe_unicode(s))
+
+        # if not results:
+        #         # TODO: We should return an almost empty JSON, just the advanced search element
+        #         advancedSearch = {'tittle': 'Advanced search','description':'Advanced search','itemUrl': portal_url+'/@@search', 'icon':''}
+        #         queryElements.append(advancedSearch)
+
+        if results:
+                # TODO: We have to build a JSON with the desired parameters.
+                for result in results[:limit]:
+                    icon = result.portal_type.lower()
+                    itemUrl = result.getURL()
+                    if result.portal_type in useViewAction:
+                        itemUrl += '/view'
+
+                    itemUrl = itemUrl + searchterm_query
+                    full_title = safe_unicode(pretty_title_or_id(result))
+                    if len(full_title) > MAX_TITLE:
+                        display_title = ''.join((full_title[:MAX_TITLE], '...'))
+                    else:
+                        display_title = full_title
+
+                    full_title = full_title.replace('"', '&quot;')
+                    klass = 'contenttype-%s' \
+                                % ploneUtils.normalizeString(result.portal_type)
+                    display_description = safe_unicode(result.Description)
+                    if len(display_description) > MAX_DESCRIPTION:
+                        display_description = ''.join(
+                            (display_description[:MAX_DESCRIPTION], '...'))
+
+                    # We build the dictionary element with the desired parameters and we add it to the queryElements array.
+                    queryElement = {'tittle': full_title, 'description': display_description, 'itemUrl': itemUrl , 'icon': icon}
+                    queryElements.append(queryElement)
+                # if len(results) > limit:
+                #     #TODO: We have to add here an element to the JSON in case there is too many elements.
+                #     searchquery = '@@search?SearchableText=%s&path=%s' \
+                #                     % (searchterms, params['path'])
+                #     write('<a href="%s" class="advancedsearchlink">%s</a>' % (
+                #                          searchquery,
+                #                          ts.translate(label_show_all, context=REQUEST)))
+        #TODO: We should return an almost empty JSON, just the advanced search element
+        advancedSearch = {'tittle': 'Advanced search','description':'','itemUrl': portal_url+'/@@search', 'icon':''}
+        queryElements.append(advancedSearch)
+        return json.dumps(queryElements)
 
 class dynamicCSS(grok.View):
     grok.name('dynamic.css')
