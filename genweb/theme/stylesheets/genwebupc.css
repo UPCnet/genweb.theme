@@ -2657,7 +2657,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 52, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-envelope {
+.icon-envelope, .icon-formmaileradapter {
   background-position: -72px 0;
 }
 
@@ -2692,7 +2692,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 59, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-th, .icon-atct_album_view {
+.icon-th, .icon-surveymatrix, .icon-atct_album_view {
   background-position: -240px 0;
 }
 
@@ -2727,7 +2727,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-signal {
+.icon-signal, .icon-formlikertfield {
   background-position: -408px 0;
 }
 
@@ -2752,7 +2752,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-time {
+.icon-time, .icon-surveydatequestion, .icon-formdatefield {
   background-position: -48px -24px;
 }
 
@@ -2797,12 +2797,12 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 81, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-list-alt, .icon-survey {
+.icon-list-alt, .icon-subsurvey, .icon-survey {
   background-position: -264px -24px;
 }
 
 /* line 82, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-lock {
+.icon-lock, .icon-formpasswordfield {
   background-position: -287px -24px;
 }
 
@@ -2842,12 +2842,12 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 91, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-tag {
+.icon-tag, .icon-formlabelfield {
   background-position: 0 -48px;
 }
 
 /* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-tags, #category.documentByLine:before {
+.icon-tags, .icon-formrichlabelfield, #category.documentByLine:before {
   background-position: -25px -48px;
 }
 
@@ -2872,12 +2872,12 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 97, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-font {
+.icon-font, .icon-formtextfield {
   background-position: -144px -48px;
 }
 
 /* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-bold {
+.icon-bold, .icon-formrichtextfield {
   background-position: -167px -48px;
 }
 
@@ -2897,7 +2897,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-align-left {
+.icon-align-left, .icon-surveytextquestion {
   background-position: -264px -48px;
 }
 
@@ -2962,7 +2962,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 116, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-edit {
+.icon-edit, .icon-formstringfield {
   background-position: -96px -72px;
 }
 
@@ -2972,7 +2972,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 118, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-check, .icon-formfolder {
+.icon-check, .icon-formbooleanfield, .icon-formfolder {
   background-position: -144px -72px;
 }
 
@@ -2982,7 +2982,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-step-backward {
+.icon-step-backward, .icon-fieldsetstart {
   background-position: -192px -72px;
 }
 
@@ -3022,7 +3022,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 128, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-step-forward {
+.icon-step-forward, .icon-fieldsetend {
   background-position: -384px -72px;
 }
 
@@ -3082,7 +3082,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 141, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-ok-circle {
+.icon-ok-circle, .icon-surveyselectquestion, .icon-formselectionfield {
   background-position: -192px -96px;
 }
 
@@ -3223,7 +3223,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 170, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-folder-close, .icon-folder {
+.icon-folder-close, .icon-fieldsetfolder, .icon-folder {
   background-position: -384px -120px;
 }
 
@@ -3244,7 +3244,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 175, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-hdd {
+.icon-hdd, .icon-formsavedataadapter {
   background-position: 0 -144px;
 }
 
@@ -3264,7 +3264,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 179, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-thumbs-up {
+.icon-thumbs-up, .icon-formthankspage {
   background-position: -96px -144px;
 }
 
@@ -3329,7 +3329,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 192, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-filter, .icon-settings {
+.icon-filter, .icon-plone-contentmenu-settings, .icon-settings {
   background-position: -408px -144px;
 }
 
@@ -3380,7 +3380,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 206, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-file {
+.icon-file, .icon-formfilefield {
   background-position: -168px -169px;
 }
 
@@ -3470,7 +3470,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
 }
 
 /* line 225, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-html {
+.icon-html, .icon-formcustomscriptadapter {
   background-position: -120px -192px;
 }
 
@@ -3583,6 +3583,7 @@ div.dk_options > .selected > a > [class*=" icon-"],
   background-image: url('/++genweb++static/images/gh-150-w.png?1354788544');
 }
 
+/*extends icones*/
 /* line 8, ../bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
 .dropup,
 .dropdown {
@@ -9906,7 +9907,7 @@ div.dk_options li.btn-menu-adjust > a:focus,
   line-height: 16px;
   color: #4d4d4d;
   border-top: 1px solid #b2b2b2 !important;
-  padding: 8px 9px !important;
+  padding: 8px 28px 8px 9px !important;
   position: relative;
 }
 /* line 47, ../scss/_nav.scss */
@@ -10007,21 +10008,37 @@ div.dk_options li.btn-menu-adjust > a:focus,
 }
 /* line 90, ../scss/_nav.scss */
 .subnavbar .nav-list li:last-child a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 93, ../scss/_nav.scss */
+.subnavbar .nav-list li:last-child a:only-child {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   -ms-border-radius: 0 0 4px 4px;
   -o-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
-/* line 93, ../scss/_nav.scss */
+/* line 96, ../scss/_nav.scss */
 .subnavbar .nav-list li:first-child:last-child a {
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -ms-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+/* line 99, ../scss/_nav.scss */
+.subnavbar .nav-list li:first-child:last-child a:only-child {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 96, ../scss/_nav.scss */
+/* line 102, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul, .subnavbar .nav-list .selected ul, .subnavbar .nav-list .contentViews .selected ul, .contentViews .subnavbar .nav-list .selected ul, .subnavbar .nav-list .contentViews .selected:hover ul, .contentViews .subnavbar .nav-list .selected:hover ul {
   margin-left: -15px !important;
   margin-right: -15px;
@@ -10032,7 +10049,7 @@ div.dk_options li.btn-menu-adjust > a:focus,
   -moz-box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.25);
 }
-/* line 103, ../scss/_nav.scss */
+/* line 109, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a, .subnavbar .nav-list .selected ul a, .subnavbar .nav-list .contentViews .selected ul a, .contentViews .subnavbar .nav-list .selected ul a, .subnavbar .nav-list .contentViews .selected:hover ul a, .contentViews .subnavbar .nav-list .selected:hover ul a {
   border-top: 0 !important;
   font-size: 12px;
@@ -10050,52 +10067,52 @@ div.dk_options li.btn-menu-adjust > a:focus,
   -o-border-radius: 0 !important;
   border-radius: 0 !important;
 }
-/* line 115, ../scss/_nav.scss */
+/* line 121, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a:hover, .subnavbar .nav-list .selected ul a:hover, .subnavbar .nav-list .contentViews .selected ul a:hover, .contentViews .subnavbar .nav-list .selected ul a:hover, .subnavbar .nav-list .contentViews .selected:hover ul a:hover, .contentViews .subnavbar .nav-list .selected:hover ul a:hover {
   background-color: #e5f6ff !important;
 }
-/* line 116, ../scss/_nav.scss */
+/* line 122, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.active, .subnavbar .nav-list .selected ul a.active, .subnavbar .nav-list .contentViews .selected ul a.active, .contentViews .subnavbar .nav-list .selected ul a.active, .subnavbar .nav-list .contentViews .selected:hover ul a.active, .contentViews .subnavbar .nav-list .selected:hover ul a.active, .subnavbar .nav-list .active ul a.selected, .subnavbar .nav-list .selected ul a.selected, .subnavbar .nav-list .contentViews .selected ul a.selected, .contentViews .subnavbar .nav-list .selected ul a.selected, .subnavbar .nav-list .contentViews .selected:hover ul a.selected, .contentViews .subnavbar .nav-list .selected:hover ul a.selected, .subnavbar .nav-list .active ul .contentViews a.selected, .contentViews .subnavbar .nav-list .active ul a.selected, .subnavbar .nav-list .selected ul .contentViews a.selected, .contentViews .subnavbar .nav-list .selected ul a.selected, .subnavbar .nav-list .contentViews .selected ul a.selected, .contentViews .subnavbar .nav-list .selected ul a.selected, .subnavbar .nav-list .contentViews .selected:hover ul a.selected, .contentViews .subnavbar .nav-list .selected:hover ul a.selected, .subnavbar .nav-list .active ul .contentViews a.selected:hover, .contentViews .subnavbar .nav-list .active ul a.selected:hover, .subnavbar .nav-list .selected ul .contentViews a.selected:hover, .contentViews .subnavbar .nav-list .selected ul a.selected:hover, .subnavbar .nav-list .contentViews .selected ul a.selected:hover, .contentViews .subnavbar .nav-list .selected ul a.selected:hover, .subnavbar .nav-list .contentViews .selected:hover ul a.selected:hover, .contentViews .subnavbar .nav-list .selected:hover ul a.selected:hover {
   background-color: #f2f8fc !important;
   color: #222222;
 }
-/* line 118, ../scss/_nav.scss */
+/* line 124, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected ul a.active[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.active[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .contentViews .selected ul a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .active ul .contentViews a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .active ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .selected ul .contentViews a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .contentViews .selected ul a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .active ul .contentViews a[class*=" contenttype-"].selected:hover span:after, .contentViews .subnavbar .nav-list .active ul a[class*=" contenttype-"].selected:hover span:after, .subnavbar .nav-list .selected ul .contentViews a[class*=" contenttype-"].selected:hover span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected:hover span:after, .subnavbar .nav-list .contentViews .selected ul a[class*=" contenttype-"].selected:hover span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected:hover span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" contenttype-"].selected:hover span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" contenttype-"].selected:hover span:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 119, ../scss/_nav.scss */
+/* line 125, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.active span:before, .subnavbar .nav-list .selected ul a.active span:before, .subnavbar .nav-list .contentViews .selected ul a.active span:before, .contentViews .subnavbar .nav-list .selected ul a.active span:before, .subnavbar .nav-list .contentViews .selected:hover ul a.active span:before, .contentViews .subnavbar .nav-list .selected:hover ul a.active span:before, .subnavbar .nav-list .active ul a.selected span:before, .subnavbar .nav-list .selected ul a.selected span:before, .subnavbar .nav-list .contentViews .selected ul a.selected span:before, .contentViews .subnavbar .nav-list .selected ul a.selected span:before, .subnavbar .nav-list .contentViews .selected:hover ul a.selected span:before, .contentViews .subnavbar .nav-list .selected:hover ul a.selected span:before, .subnavbar .nav-list .active ul .contentViews a.selected span:before, .contentViews .subnavbar .nav-list .active ul a.selected span:before, .subnavbar .nav-list .selected ul .contentViews a.selected span:before, .contentViews .subnavbar .nav-list .selected ul a.selected span:before, .subnavbar .nav-list .contentViews .selected ul a.selected span:before, .contentViews .subnavbar .nav-list .selected ul a.selected span:before, .subnavbar .nav-list .contentViews .selected:hover ul a.selected span:before, .contentViews .subnavbar .nav-list .selected:hover ul a.selected span:before, .subnavbar .nav-list .active ul .contentViews a.selected:hover span:before, .contentViews .subnavbar .nav-list .active ul a.selected:hover span:before, .subnavbar .nav-list .selected ul .contentViews a.selected:hover span:before, .contentViews .subnavbar .nav-list .selected ul a.selected:hover span:before, .subnavbar .nav-list .contentViews .selected ul a.selected:hover span:before, .contentViews .subnavbar .nav-list .selected ul a.selected:hover span:before, .subnavbar .nav-list .contentViews .selected:hover ul a.selected:hover span:before, .contentViews .subnavbar .nav-list .selected:hover ul a.selected:hover span:before {
   font-size: 525%;
   top: -2px;
   left: 4px;
 }
-/* line 121, ../scss/_nav.scss */
+/* line 127, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-private, .subnavbar .nav-list .selected ul a.state-private, .subnavbar .nav-list .contentViews .selected ul a.state-private, .contentViews .subnavbar .nav-list .selected ul a.state-private, .subnavbar .nav-list .contentViews .selected:hover ul a.state-private, .contentViews .subnavbar .nav-list .selected:hover ul a.state-private, .subnavbar .nav-list .active ul a#workflow-transition-hide, .subnavbar .nav-list .selected ul a#workflow-transition-hide, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-hide, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-hide, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-hide, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-hide {
   border-right: 3px solid #a62e1f;
   color: #a62e1f;
 }
-/* line 122, ../scss/_nav.scss */
+/* line 128, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-draft, .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .contentViews .selected ul a.state-draft, .contentViews .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .contentViews .selected:hover ul a.state-draft, .contentViews .subnavbar .nav-list .selected:hover ul a.state-draft, .subnavbar .nav-list .active ul a.state-visible, .subnavbar .nav-list .selected ul a.state-visible, .subnavbar .nav-list .contentViews .selected ul a.state-visible, .contentViews .subnavbar .nav-list .selected ul a.state-visible, .subnavbar .nav-list .contentViews .selected:hover ul a.state-visible, .contentViews .subnavbar .nav-list .selected:hover ul a.state-visible, .subnavbar .nav-list .active ul a#workflow-transition-reject, .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-reject, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-reject, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-reject {
   border-right: 3px solid #72a31d;
   color: #72a31d;
 }
-/* line 123, ../scss/_nav.scss */
+/* line 129, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-pending, .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .contentViews .selected ul a.state-pending, .contentViews .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .contentViews .selected:hover ul a.state-pending, .contentViews .subnavbar .nav-list .selected:hover ul a.state-pending {
   border-right: 3px solid #df8505;
   color: #df8505;
 }
-/* line 124, ../scss/_nav.scss */
+/* line 130, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.state-intranet, .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .contentViews .selected ul a.state-intranet, .contentViews .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .contentViews .selected:hover ul a.state-intranet, .contentViews .subnavbar .nav-list .selected:hover ul a.state-intranet, .subnavbar .nav-list .active ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-publishtointranet, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-publishtointranet, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-publishtointranet {
   border-right: 3px solid #8952ab;
   color: #8952ab;
 }
-/* line 126, ../scss/_nav.scss */
+/* line 132, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a[class^="state-"]:hover, .subnavbar .nav-list .selected ul a[class^="state-"]:hover, .subnavbar .nav-list .contentViews .selected ul a[class^="state-"]:hover, .contentViews .subnavbar .nav-list .selected ul a[class^="state-"]:hover, .subnavbar .nav-list .contentViews .selected:hover ul a[class^="state-"]:hover, .contentViews .subnavbar .nav-list .selected:hover ul a[class^="state-"]:hover, .subnavbar .nav-list .active ul a[class*=" state-"]:hover, .subnavbar .nav-list .selected ul a[class*=" state-"]:hover, .subnavbar .nav-list .contentViews .selected ul a[class*=" state-"]:hover, .contentViews .subnavbar .nav-list .selected ul a[class*=" state-"]:hover, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" state-"]:hover, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" state-"]:hover {
   color: black;
   text-decoration: none;
 }
-/* line 130, ../scss/_nav.scss */
+/* line 136, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a span, .subnavbar .nav-list .selected ul a span, .subnavbar .nav-list .contentViews .selected ul a span, .contentViews .subnavbar .nav-list .selected ul a span, .subnavbar .nav-list .contentViews .selected:hover ul a span, .contentViews .subnavbar .nav-list .selected:hover ul a span {
   border-top: 1px solid #d9d9d9 !important;
   padding: 8px 0 8px 12px !important;
@@ -10104,7 +10121,7 @@ div.dk_options li.btn-menu-adjust > a:focus,
   margin-left: 10px;
   line-height: 15px;
 }
-/* line 137, ../scss/_nav.scss */
+/* line 143, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a span:before, .subnavbar .nav-list .selected ul a span:before, .subnavbar .nav-list .contentViews .selected ul a span:before, .contentViews .subnavbar .nav-list .selected ul a span:before, .subnavbar .nav-list .contentViews .selected:hover ul a span:before, .contentViews .subnavbar .nav-list .selected:hover ul a span:before {
   content: ".";
   color: #007bc0;
@@ -10114,7 +10131,7 @@ div.dk_options li.btn-menu-adjust > a:focus,
   font-size: 350%;
   line-height: 0 !important;
 }
-/* line 149, ../scss/_nav.scss */
+/* line 155, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected ul a[class^="contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class^="contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected ul a[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" contenttype-"] span:after {
   background-image: url('/++genweb++static/images/gh.png?1354788544');
   background-repeat: no-repeat;
@@ -10129,65 +10146,97 @@ div.dk_options li.btn-menu-adjust > a:focus,
   top: 10px;
   position: absolute;
 }
-/* line 162, ../scss/_nav.scss */
+/* line 168, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-folder span:after, .subnavbar .nav-list .selected ul a.contenttype-folder span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-folder span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-folder span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-folder span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-folder span:after {
   background-position: -384px -120px;
 }
-/* line 163, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-page span:after, .subnavbar .nav-list .selected ul a.contenttype-page span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-page span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-page span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-page span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-page span:after {
+/* line 170, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-page span:after, .subnavbar .nav-list .selected ul a.contenttype-page span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-page span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-page span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-page span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-page span:after, .subnavbar .nav-list .active ul a.contenttype-document span:after, .subnavbar .nav-list .selected ul a.contenttype-document span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-document span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-document span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-document span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-document span:after {
   background-position: -24px -24px;
 }
-/* line 164, ../scss/_nav.scss */
+/* line 171, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-link span:after, .subnavbar .nav-list .selected ul a.contenttype-link span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-link span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-link span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-link span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-link span:after {
   background-position: -72px -168px;
 }
-/* line 165, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-windowztool span:after, .subnavbar .nav-list .selected ul a.contenttype-windowztool span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-windowztool span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-windowztool span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-windowztool span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-windowztool span:after {
+/* line 173, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-windowztool span:after, .subnavbar .nav-list .selected ul a.contenttype-windowztool span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-windowztool span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-windowztool span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-windowztool span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-windowztool span:after, .subnavbar .nav-list .active ul a.contenttype-window span:after, .subnavbar .nav-list .selected ul a.contenttype-window span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-window span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-window span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-window span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-window span:after {
   background-position: -97px -168px;
 }
-/* line 167, ../scss/_nav.scss */
+/* line 175, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .selected ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-bannercontainer span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-bannercontainer span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .active ul a.contenttype-banner span:after, .subnavbar .nav-list .selected ul a.contenttype-banner span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-banner span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-banner span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-banner span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-banner span:after {
   background-position: -313px -25px;
 }
-/* line 168, ../scss/_nav.scss */
+/* line 176, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-topic span:after, .subnavbar .nav-list .selected ul a.contenttype-topic span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-topic span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-topic span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-topic span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-topic span:after {
   background-position: -72px -192px;
 }
-/* line 169, ../scss/_nav.scss */
+/* line 177, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-file span:after, .subnavbar .nav-list .selected ul a.contenttype-file span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-file span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-file span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-file span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-file span:after {
   background-position: -167px -168px;
 }
-/* line 170, ../scss/_nav.scss */
+/* line 178, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a.contenttype-image span:after, .subnavbar .nav-list .selected ul a.contenttype-image span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-image span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-image span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-image span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-image span:after {
   background-position: -457px -49px;
 }
-/* line 171, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .selected ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-plonepopoll span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-plonepopoll span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-plonepopoll span:after {
-  background-position: -457px -193px;
+/* line 180, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-logos_container span:after, .subnavbar .nav-list .selected ul a.contenttype-logos_container span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-logos_container span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-logos_container span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-logos_container span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-logos_container span:after, .subnavbar .nav-list .active ul a.contenttype-logos_footer span:after, .subnavbar .nav-list .selected ul a.contenttype-logos_footer span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-logos_footer span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-logos_footer span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-logos_footer span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-logos_footer span:after {
+  background-position: -143px -168px;
 }
-/* line 173, ../scss/_nav.scss */
+/* line 182, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .selected ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-plonepopoll span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-plonepopoll span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-plonepopoll span:after {
+  background-position: -47px -193px;
+}
+/* line 183, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-event span:after, .subnavbar .nav-list .selected ul a.contenttype-event span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-event span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-event span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-event span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-event span:after {
+  background-position: -191px -120px;
+}
+/* line 184, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-news-item span:after, .subnavbar .nav-list .selected ul a.contenttype-news-item span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-news-item span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-news-item span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-news-item span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-news-item span:after {
+  background-position: -24px -168px;
+}
+/* line 185, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-packet span:after, .subnavbar .nav-list .selected ul a.contenttype-packet span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-packet span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-packet span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-packet span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-packet span:after {
+  background-position: -47px -168px;
+}
+/* line 186, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-collage span:after, .subnavbar .nav-list .selected ul a.contenttype-collage span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-collage span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-collage span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-collage span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-collage span:after {
+  background-position: -216px -168px;
+}
+/* line 187, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-collection span:after, .subnavbar .nav-list .selected ul a.contenttype-collection span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-collection span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-collection span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-collection span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-collection span:after {
+  background-position: -240px -168px;
+}
+/* line 188, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-survey span:after, .subnavbar .nav-list .selected ul a.contenttype-survey span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-survey span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-survey span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-survey span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-survey span:after {
+  background-position: -265px -23px;
+}
+/* line 189, ../scss/_nav.scss */
+.subnavbar .nav-list .active ul a.contenttype-formfolder span:after, .subnavbar .nav-list .selected ul a.contenttype-formfolder span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-formfolder span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-formfolder span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-formfolder span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-formfolder span:after {
+  background-position: -144px -72px;
+}
+/* line 191, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a:hover span:after, .subnavbar .nav-list .selected ul a:hover span:after, .subnavbar .nav-list .contentViews .selected ul a:hover span:after, .contentViews .subnavbar .nav-list .selected ul a:hover span:after, .subnavbar .nav-list .contentViews .selected:hover ul a:hover span:after, .contentViews .subnavbar .nav-list .selected:hover ul a:hover span:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 175, ../scss/_nav.scss */
+/* line 193, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul li:first-child a span, .subnavbar .nav-list .selected ul li:first-child a span, .subnavbar .nav-list .contentViews .selected ul li:first-child a span, .contentViews .subnavbar .nav-list .selected ul li:first-child a span, .subnavbar .nav-list .contentViews .selected:hover ul li:first-child a span, .contentViews .subnavbar .nav-list .selected:hover ul li:first-child a span {
   border-top: 0 !important;
 }
 
-/* line 180, ../scss/_nav.scss */
+/* line 198, ../scss/_nav.scss */
 #portal-personaltools-wrapper .nav a:focus, #portal-personaltools-wrapper .contentViews a:focus, #portal-personaltools-wrapper .configlets a:focus, #portal-personaltools-wrapper .formTabs a:focus {
   background-color: black;
 }
 
-/* line 187, ../scss/_nav.scss */
+/* line 205, ../scss/_nav.scss */
 html * .dropdown-menu a:hover .img_blank, html * div.dk_options a:hover .img_blank {
   content: url('/++genweb++static/images/blank_blanc.png?1354788544');
   width: 10px;
   height: 10px;
 }
 
-/* line 194, ../scss/_nav.scss */
+/* line 212, ../scss/_nav.scss */
 .dropdown.nou::after {
   content: "!";
   border-radius: 500px;
@@ -10204,36 +10253,36 @@ html * .dropdown-menu a:hover .img_blank, html * div.dk_options a:hover .img_bla
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
 }
 
-/* line 209, ../scss/_nav.scss */
+/* line 227, ../scss/_nav.scss */
 #portal-personaltools-wrapper .pull-right .dropdown.nou::after, #portal-personaltools-wrapper .newsImageContainer .dropdown.nou::after {
   top: 12px;
 }
 
-/* line 213, ../scss/_nav.scss */
+/* line 231, ../scss/_nav.scss */
 .navbar ul.nav.pull-right > li > .dropdown-menu, .navbar ul.pull-right.contentViews > li > .dropdown-menu, .navbar ul.contentViews.newsImageContainer > li > .dropdown-menu, .navbar ul.pull-right.configlets > li > .dropdown-menu, .navbar ul.configlets.newsImageContainer > li > .dropdown-menu, .navbar ul.nav.newsImageContainer > li > .dropdown-menu, .navbar ul.newsImageContainer.formTabs > li > .dropdown-menu, .navbar ul.pull-right.formTabs > li > .dropdown-menu, .navbar ul.nav.pull-right > li > div.dk_options, .navbar ul.pull-right.contentViews > li > div.dk_options, .navbar ul.contentViews.newsImageContainer > li > div.dk_options, .navbar ul.pull-right.configlets > li > div.dk_options, .navbar ul.configlets.newsImageContainer > li > div.dk_options, .navbar ul.nav.newsImageContainer > li > div.dk_options, .navbar ul.newsImageContainer.formTabs > li > div.dk_options, .navbar ul.pull-right.formTabs > li > div.dk_options {
   right: 0 !important;
   left: auto !important;
 }
 
-/* line 214, ../scss/_nav.scss */
+/* line 232, ../scss/_nav.scss */
 .navbar ul.nav.pull-right > li > .dropdown-menu:before, .navbar ul.pull-right.contentViews > li > .dropdown-menu:before, .navbar ul.contentViews.newsImageContainer > li > .dropdown-menu:before, .navbar ul.pull-right.configlets > li > .dropdown-menu:before, .navbar ul.configlets.newsImageContainer > li > .dropdown-menu:before, .navbar ul.nav.newsImageContainer > li > .dropdown-menu:before, .navbar ul.newsImageContainer.formTabs > li > .dropdown-menu:before, .navbar ul.pull-right.formTabs > li > .dropdown-menu:before, .navbar ul.nav.pull-right > li > div.dk_options:before, .navbar ul.pull-right.contentViews > li > div.dk_options:before, .navbar ul.contentViews.newsImageContainer > li > div.dk_options:before, .navbar ul.pull-right.configlets > li > div.dk_options:before, .navbar ul.configlets.newsImageContainer > li > div.dk_options:before, .navbar ul.nav.newsImageContainer > li > div.dk_options:before, .navbar ul.newsImageContainer.formTabs > li > div.dk_options:before, .navbar ul.pull-right.formTabs > li > div.dk_options:before {
   right: 9px !important;
   left: auto !important;
 }
 
-/* line 215, ../scss/_nav.scss */
+/* line 233, ../scss/_nav.scss */
 .navbar ul.nav.pull-right > li > .dropdown-menu:after, .navbar ul.pull-right.contentViews > li > .dropdown-menu:after, .navbar ul.contentViews.newsImageContainer > li > .dropdown-menu:after, .navbar ul.pull-right.configlets > li > .dropdown-menu:after, .navbar ul.configlets.newsImageContainer > li > .dropdown-menu:after, .navbar ul.nav.newsImageContainer > li > .dropdown-menu:after, .navbar ul.newsImageContainer.formTabs > li > .dropdown-menu:after, .navbar ul.pull-right.formTabs > li > .dropdown-menu:after, .navbar ul.nav.pull-right > li > div.dk_options:after, .navbar ul.pull-right.contentViews > li > div.dk_options:after, .navbar ul.contentViews.newsImageContainer > li > div.dk_options:after, .navbar ul.pull-right.configlets > li > div.dk_options:after, .navbar ul.configlets.newsImageContainer > li > div.dk_options:after, .navbar ul.nav.newsImageContainer > li > div.dk_options:after, .navbar ul.newsImageContainer.formTabs > li > div.dk_options:after, .navbar ul.pull-right.formTabs > li > div.dk_options:after {
   right: 10px !important;
   left: auto !important;
 }
 
-/* line 221, ../scss/_nav.scss */
+/* line 239, ../scss/_nav.scss */
 #listing-table a[class^="contenttype-"], #listing-table a[class*=" contenttype-"], .template-folder_tabular_view .listing a[class^="contenttype-"], .template-folder_tabular_view .listing a[class*=" contenttype-"] {
   padding-left: 18px;
   font-weight: bold;
   position: relative;
 }
-/* line 227, ../scss/_nav.scss */
+/* line 245, ../scss/_nav.scss */
 #listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-folder_tabular_view .listing a[class^="contenttype-"]:before, .template-folder_tabular_view .listing a[class*=" contenttype-"]:before {
   background-image: url('/++genweb++static/images/gh.png?1354788544');
   background-repeat: no-repeat;
@@ -10246,75 +10295,75 @@ html * .dropdown-menu a:hover .img_blank, html * div.dk_options a:hover .img_bla
   opacity: 0.8;
   position: absolute;
 }
-/* line 238, ../scss/_nav.scss */
+/* line 256, ../scss/_nav.scss */
 #listing-table a.contenttype-folder:before, .template-folder_tabular_view .listing a.contenttype-folder:before {
   background-position: -384px -120px;
 }
-/* line 240, ../scss/_nav.scss */
+/* line 258, ../scss/_nav.scss */
 #listing-table a.contenttype-page:before, #listing-table a.contenttype-document:before, .template-folder_tabular_view .listing a.contenttype-page:before, .template-folder_tabular_view .listing a.contenttype-document:before {
   background-position: -24px -24px;
 }
-/* line 241, ../scss/_nav.scss */
+/* line 259, ../scss/_nav.scss */
 #listing-table a.contenttype-link:before, .template-folder_tabular_view .listing a.contenttype-link:before {
   background-position: -72px -168px;
 }
-/* line 243, ../scss/_nav.scss */
-#listing-table a.contenttype-windowztool:before, #listing-table a.contenttype-window:before, .template-folder_tabular_view .listing a.contenttype-windowztool:before, .template-folder_tabular_view .listing a.contenttype-window:before {
+/* line 262, ../scss/_nav.scss */
+#listing-table a.contenttype-windowztool:before, #listing-table a.contenttype-window:before, #listing-table a.contenttype-window:before, .template-folder_tabular_view .listing a.contenttype-windowztool:before, .template-folder_tabular_view .listing a.contenttype-window:before, .template-folder_tabular_view .listing a.contenttype-window:before {
   background-position: -97px -168px;
 }
-/* line 245, ../scss/_nav.scss */
+/* line 264, ../scss/_nav.scss */
 #listing-table a.contenttype-bannercontainer:before, #listing-table a.contenttype-banner:before, .template-folder_tabular_view .listing a.contenttype-bannercontainer:before, .template-folder_tabular_view .listing a.contenttype-banner:before {
   background-position: -313px -25px;
 }
-/* line 247, ../scss/_nav.scss */
+/* line 266, ../scss/_nav.scss */
 #listing-table a.contenttype-logos_container:before, #listing-table a.contenttype-logos_footer:before, .template-folder_tabular_view .listing a.contenttype-logos_container:before, .template-folder_tabular_view .listing a.contenttype-logos_footer:before {
   background-position: -143px -168px;
 }
-/* line 248, ../scss/_nav.scss */
+/* line 267, ../scss/_nav.scss */
 #listing-table a.contenttype-topic:before, .template-folder_tabular_view .listing a.contenttype-topic:before {
   background-position: -72px -192px;
 }
-/* line 249, ../scss/_nav.scss */
+/* line 268, ../scss/_nav.scss */
 #listing-table a.contenttype-file:before, .template-folder_tabular_view .listing a.contenttype-file:before {
   background-position: -167px -168px;
 }
-/* line 250, ../scss/_nav.scss */
+/* line 269, ../scss/_nav.scss */
 #listing-table a.contenttype-image:before, .template-folder_tabular_view .listing a.contenttype-image:before {
   background-position: -457px -49px;
 }
-/* line 251, ../scss/_nav.scss */
+/* line 270, ../scss/_nav.scss */
 #listing-table a.contenttype-plonepopoll:before, .template-folder_tabular_view .listing a.contenttype-plonepopoll:before {
   background-position: -47px -193px;
 }
-/* line 252, ../scss/_nav.scss */
+/* line 271, ../scss/_nav.scss */
 #listing-table a.contenttype-event:before, .template-folder_tabular_view .listing a.contenttype-event:before {
   background-position: -191px -120px;
 }
-/* line 253, ../scss/_nav.scss */
+/* line 272, ../scss/_nav.scss */
 #listing-table a.contenttype-news-item:before, .template-folder_tabular_view .listing a.contenttype-news-item:before {
   background-position: -24px -168px;
 }
-/* line 254, ../scss/_nav.scss */
+/* line 273, ../scss/_nav.scss */
 #listing-table a.contenttype-packet:before, .template-folder_tabular_view .listing a.contenttype-packet:before {
   background-position: -47px -168px;
 }
-/* line 255, ../scss/_nav.scss */
+/* line 274, ../scss/_nav.scss */
 #listing-table a.contenttype-collage:before, .template-folder_tabular_view .listing a.contenttype-collage:before {
   background-position: -216px -168px;
 }
-/* line 256, ../scss/_nav.scss */
+/* line 275, ../scss/_nav.scss */
 #listing-table a.contenttype-collection:before, .template-folder_tabular_view .listing a.contenttype-collection:before {
   background-position: -240px -168px;
 }
-/* line 257, ../scss/_nav.scss */
+/* line 276, ../scss/_nav.scss */
 #listing-table a.contenttype-survey:before, .template-folder_tabular_view .listing a.contenttype-survey:before {
   background-position: -265px -23px;
 }
-/* line 258, ../scss/_nav.scss */
+/* line 277, ../scss/_nav.scss */
 #listing-table a.contenttype-formfolder:before, .template-folder_tabular_view .listing a.contenttype-formfolder:before {
   background-position: -144px -72px;
 }
-/* line 260, ../scss/_nav.scss */
+/* line 279, ../scss/_nav.scss */
 #listing-table a:hover:before, .template-folder_tabular_view .listing a:hover:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -13508,6 +13557,17 @@ html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li +
   margin-left: 0 !important;
 }
 
+/*
+VIEWS
+*/
+/* line 824, ../scss/_plone.scss */
+body.template-folder_summary_view #content ul li:first-child {
+  border-top: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 /* line 10, ../scss/_gw3togw4.scss */
 div.llistatIndex, div.llistat {
   padding-left: 0;
@@ -15757,43 +15817,42 @@ tr.mceLast > td {
     width: 100%;
   }
 }
-/*.goout {display:none;} /*provisional,  ha de ser amb overflow i no amb display*/
-/* line 13, ../scss/genwebupc.scss */
+/* line 12, ../scss/genwebupc.scss */
 .width100 {
   width: 100% !important;
   -moz-box-sizing: border-box;
 }
 
-/* line 14, ../scss/genwebupc.scss */
+/* line 13, ../scss/genwebupc.scss */
 .img_blank {
   opacity: .7;
 }
 
-/* line 15, ../scss/genwebupc.scss */
+/* line 14, ../scss/genwebupc.scss */
 a:hover .img_blank {
   opacity: 1;
 }
 
 /*ff*/
-/* line 18, ../scss/genwebupc.scss */
+/* line 17, ../scss/genwebupc.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 20, ../scss/genwebupc.scss */
+/* line 19, ../scss/genwebupc.scss */
 .titol-espai h1 {
   font-weight: 200;
   color: red;
 }
 
-/* line 26, ../scss/genwebupc.scss */
+/* line 25, ../scss/genwebupc.scss */
 .page-header {
   border-top: 1px solid #CCCCCC !important;
   border-bottom: 0;
   box-shadow: 0 -8px 16px -16px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* line 31, ../scss/genwebupc.scss */
+/* line 30, ../scss/genwebupc.scss */
 .page-header h1 {
   color: #446a8e;
 }

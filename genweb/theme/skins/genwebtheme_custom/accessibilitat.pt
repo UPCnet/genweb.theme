@@ -16,9 +16,12 @@
 
 
     <h1 class="documentFirstHeading">Accessibilitat</h1>
-    <p> Aquest lloc web ha estat generat amb el <a target="_blank" href="https://www.upc.edu/comunicacio/www/genweb-upc"><strong>Genweb UPC v3 <img class="img_blank" src="++genweb++static/images/blank_blau.png" alt="(obriu en una finestra nova)"></strong></a>,
-    una eina que permet la creació i gestió de webs segons el llibre d'estil institucional de la UPC.<br /><br />
-    El <a target="_blank" href="https://www.upc.edu/comunicacio/www/genweb-upc"><strong>Genweb UPC v3 <img class="img_blank" src="++genweb++static/images/blank_blau.png" alt="(obriu en una finestra nova)"></strong></a>
+    <p class="documentDescription">
+      Aquest lloc web ha estat generat amb el Genweb UPC v4, una eina que permet la creació i gestió de webs segons el llibre d'estil institucional de la UPC.
+    </p>
+
+
+    <p> El <a target="_blank" href="https://genweb.upc.edu"><strong>Genweb UPC v3 <img class="img_blank" src="++genweb++static/images/blank_blau.png" alt="(obriu en una finestra nova)"></strong></a>
     ha estat desenvolupat conjuntament pel <a target="_blank" href="http://www.upc.edu/comunicacio">Servei de Comunicació i Promoció <img class="img_blank" src="++genweb++static/images/blank_blau.png" alt="(obriu en una finestra nova)"></a>
     de la UPC i <a target="_blank" href="http://www.upcnet.es">UPCnet <img class="img_blank" src="++genweb++static/images/blank_blau.png" alt="(obriu en una finestra nova)"></a>
     utilitzant com a base el sistema de gestió de continguts de programari lliure <a target="_blank" href="http://plone.org">Plone <img class="img_blank" src="++genweb++static/images/blank_blau.png" alt="(obriu en una finestra nova)"></a>.
@@ -27,13 +30,10 @@
 
 
     <h2>Pautes WAI</h2>
-    <p><a title="(obriu en finestra nova)" target="_blank" href="http://www.w3.org/WAI/WCAG2AA-Conformance">
-    <img src="http://www.w3.org/WAI/wcag2AA.gif" alt="validat wai-aa wcag 2.0, (obriu en finestra nova)" class="pull-right"></a> Els continguts del web de la UPC han estat validats amb la certificació Doble-A,
-    segons les recomanacions de la WAI (<span lang="en">Web Accessibility Iniciative</span>), grup de treball internacional que pertany al W3C (<span lang="en">World Wide Web Consortium</span>) , organisme que vetlla perquè cap col·lectiu pateixi discriminacions de cap mena que puguin ser causa de fractures socials en el món virtual.</p>
+    <p>Els continguts del web de la UPC han estat validats amb la certificació WCAG 2.0 (Nivell AA), 
+      segons les recomanacions de la WAI (<span lang="en">Web Accessibility Iniciative</span>), grup de treball internacional que pertany al W3C (<span lang="en">World Wide Web Consortium</span>), organisme que vetlla perquè cap col·lectiu pateixi discriminacions de cap mena que puguin ser causa de fractures socials en el món virtual.</p>
 
-    <p><a title="(obriu en finestra nova)" target="_blank" href="http://jigsaw.w3.org/css-validator/"><img src="http://www.upc.edu/config-ca/imatges/valid-css" alt="validat css, (obriu en finestra nova)" class="pull-right"></a>
-    <a title="(obriu en finestra nova)" target="_blank" href="http://validator.w3.org/check?uri=referer"><img src="http://www.upc.edu/config-ca/imatges/valid-xhtml-1.0" alt="validat xhtml 1.0, (obriu en finestra nova)" class="pull-right"></a>
-    En aquest sentit, les tècniques emprades al  web de la UPC encaixen amb el que la WAI preconitza, tant per al marcat XHTML 1.0 com per al CSS.</p>
+    <p>En aquest sentit, les tècniques emprades al  web de la UPC encaixen amb el que la WAI preconitza, tant per al marcat XHTML 1.0 com per al CSS.</p>
 
     <h2>Mida del text</h2>
     <ul class="list">
@@ -82,32 +82,30 @@
 
 
     <h2>Tecles d'accés</h2>
-    <p>Les tecles d'accés són un dispositiu de navegació que permet visitar aquest web utilitzant el teclat.<br />
-    Més informació sobre les tecles d'accés: <a target="_blank" href="http://www.w3.org/TR/WCAG10-HTML-TECHS/#link-accesskey">Guies d'accessibilitat
-    W3C <img class="img_blank" src="++genweb++static/images/blank_blau.png" alt="(obriu en una finestra nova)"></a>.</p>
+    <p>Les tecles d'accés són dreceres de navegació que permeten navegar per aquest web utilitzant el teclat.</p>
+    <p>Més informació sobre les tecles d'accés:  <a target="_blank" href="http://www.w3.org/TR/WCAG10-HTML-TECHS/#link-accesskey">Guies d'accessibilitat W3C <img class="img_blank" src="++genweb++static/images/blank_blau.png" alt="(obriu en una finestra nova)"></a>.</p>
     <p>Aquest web utilitza una configuració que coincideix amb la majoria de recomanacions d'accessibilitat internacionals.</p>
-
-    <h3 class="prim">Tecles d'accés disponibles</h3>
     <ul class="list list-condensed">
-         <li><code>1</code> &mdash; Pàgina d'inici</li>
-         <li><code>2</code> &mdash; Vés al contingut</li>
+         <li><code>S</code> &mdash; Vés al contingut</li>
+         <li><code>1</code> &mdash; Upc.edu</li>
+         <li><code>2</code> &mdash; Inici d'aquesta pàgina</li>
          <li><code>3</code> &mdash; Mapa del web</li>
          <li><code>4</code> &mdash; Focus al camp de cerca</li>
-         <li><code>6</code> &mdash; Arbre de navegació</li>
-         <li><code>9</code> &mdash; Informació de contacte</li>
+         <li><code>5</code> &mdash; Cerca avançada</li>
+         <li><code>6</code> &mdash; Ajuda (només per a editors)</li>
+         <li><code>7</code> &mdash; Directori UPC</li>
+         <li><code>8</code> &mdash; Sobre aquest web</li>
+         <li><code>9</code> &mdash; Contacte</li>
          <li><code>0</code> &mdash; Consulta accessibilitat</li>
     </ul>
 
     
     <h2>Optimització</h2>
-    <p>El web s'ha optimitzat per visualitzar-lo amb una resolució mínima de 1024 x 768 píxels i, per assegurar-ne la màxima compatibilitat,
-    se n'ha verificat acuradament el comportament amb els principals navegadors d'Internet: <strong>Firefox 3</strong> i posteriors,
-    <strong>Explorer 6</strong> i posteriors, <strong>Safari </strong>4, <strong>Chrome </strong>3 i <strong>Opera </strong>10.</p>
+    <p>El web està optimitzat per assegurar-ne la màxima compatibilitat a tots els dispositius majoritaris. S'han revisat i verificat acuradament en els principals navegadors d'ordinadors de sobretaula -Chrome, Firefox, Safari, Internet Explorer i Opera- i també per a les tauletes i mòbils més comuns -iPhones, iPads i Androids-.</p>
 
 
     <h2>Contacte</h2>
-    <p>Actualment, continuem treballant per mantenir i millorar l'accessibilitat de totes les pàgines del web.
-    Si observeu alguna anomalia, relacionada amb l'accessibilitat, contacteu sisplau amb l'<a href="/contact"
+    <p>Continuem treballant per mantenir i millorar l'accessibilitat de totes les pàgines del web. Si observeu alguna anomalia relacionada amb l'accessibilitat contacteu, si us plau, amb l'<a href="/contact"
        tal:attributes="href string:${portal_url}/contact">Administració del web</a>.</p>
 
 </div>

@@ -70,10 +70,22 @@ class Renderer(base.Renderer):
         return self.data.count > 0 and len(self._data())
 
     def published_events(self):
+        # events_to_publish = self._data()
+        # eventos = set()
+        # import ipdb;ipdb.set_trace()
+        # for evento in events_to_publish:
+        #     event = (evento.pretty_title_or_id(), evento.getURL(), evento.start, evento.end)
+        #     event = set(event)
+        #     eventos.add(event)
+        # print eventos
         return self._data()
 
-    def getMonth(self, data):
+    def getMonthAbbr(self, data):
         month = DateTime.Mon_(data).lower()
+        return month
+
+    def getMonth(self, data):
+        month = DateTime.Month(data).lower()
         return month
 
     def getDay(self, data):
@@ -91,23 +103,18 @@ class Renderer(base.Renderer):
         return 'events' in self.navigation_root_object.objectIds()
 
     def all_events_link(self):
-        navigation_root_url = self.navigation_root_url
-        if self.have_events_folder():
-            return '%s/events' % navigation_root_url
+        if self.have_events_folder:
+            events = self.portal.esdeveniments.getTranslation()
+            return '%s' % events.absolute_url()
         else:
-            return '%s/events_listing' % navigation_root_url
+            return '%s/events_listing' % self.portal_url
 
     def prev_events_link(self):
-        # take care dont use self.portal here since support
-        # of INavigationRoot features likely will breake #9246 #9668
-        if (self.have_events_folder() and
-            'aggregator' in self.navigation_root_object['events'].objectIds() and
-            'previous' in self.navigation_root_object['events']['aggregator'].objectIds()):
-            return '%s/events/aggregator/previous' % self.navigation_root_url
-        elif (self.have_events_folder() and
-            'previous' in self.navigation_root_object['events'].objectIds()):
-            return '%s/events/previous' % self.navigation_root_url
-        return None
+        previous_events = self.portal.esdeveniments.aggregator.anteriors.getTranslation()
+        if self.have_events_folder:
+            return '%s' % previous_events.absolute_url()
+        else:
+            return None
 
     @memoize
     def _data(self):
@@ -115,14 +122,52 @@ class Renderer(base.Renderer):
         catalog = getToolByName(context, 'portal_catalog')
         limit = self.data.count
         state = self.data.state
+        now = DateTime()
+        tomorrow = DateTime.Date(now + 1)
+        yesterday = DateTime.Date(now - 1)
         path = self.navigation_root_path
-        return catalog(portal_type='Event',
+        results = catalog(portal_type='Event',
+                          review_state=state,
+                          end={'query': now,
+                               'range': 'min'
+                               },
+                          start={'query': [yesterday, tomorrow],
+                               'range': 'min:max'
+                               },
+                          path=path,
+                          sort_on='start',
+                          sort_limit=limit)[:limit]
+        count = len(results)
+        if count < limit:
+            results2 = catalog(portal_type=('Event'),
                        review_state=state,
-                       end={'query': DateTime(),
-                            'range': 'min'},
+                       end={'query': now,
+                            'range': 'min'
+                            },
+                       start={'query': yesterday,
+                              'range': 'max'
+                            },
                        path=path,
                        sort_on='start',
-                       sort_limit=limit)[:limit]
+                       sort_limit=limit - count)[:limit - count]
+            count = len(results + results2)
+            if count < limit:
+                results3 = catalog(portal_type=('Event'),
+                           review_state=state,
+                           end={'query': now,
+                                'range': 'min'
+                                },
+                       start={'query': tomorrow,
+                              'range': 'min'
+                            },
+                       path=path,
+                       sort_on='start',
+                       sort_limit=limit - count)[:limit - count]
+                return results + results2 + results3
+            else:
+                return results + results2
+        else:
+            return results
 
 
 class AddForm(base.AddForm):
