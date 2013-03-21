@@ -57,15 +57,14 @@ class Renderer(news_renderer):
                        review_state=state,
                        is_important=True,
                        sort_on="getObjPositionInParent",
-                       sort_limit=limit)[:limit]
-        important = len(results)
+                       sort_limit=limit)
         if important < limit:
             results2 = catalog(portal_type=('News Item', 'Link'),
                        review_state=state,
                        is_important=False,
                        sort_on=('Date'),
                        sort_order='reverse',
-                       sort_limit=limit - important)[:limit - important]
+                       sort_limit=limit - important)
             return results + results2
         else:
             return results

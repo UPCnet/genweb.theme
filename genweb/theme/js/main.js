@@ -54,4 +54,47 @@ $(document).ready(function () {
   if ( prettify ) {
       $.getScript("/++genweb++static/js/prettify.js", function() { prettyPrint() });
   }
+
+ $("#cercaCapca").typeahead({
+   source: function (query, process) {
+      setTimeout(searchElements(query, process) , 300);
+   }
+   , highlighter: function(item){
+      info = items[item.split("#")[0]];
+      var itm = ''
+               + "<div class='typeahead_wrapper'>"
+               + "<i class='icon-"+info.icon+"'> </i>"
+               + "<class='typeahead_primary'>"+info.tittle+"</div>"
+               + "<div class='typeahead_secondary'>"+info.description+"</div>"
+               + "</div>";
+      return itm;
+  }
+  , matcher: function (item) {
+       return ~item.split("#")[0].toLowerCase().indexOf(this.query.toLowerCase()) || item.split("#")[0].toLowerCase() == "advanced search"
+  }
+  , updater: function(item) {
+      window.location.href = item.split("#")[1];
+  }
+  , items: 10
+  , minLength: 2
+  });
+
+ var searchElements = function( query, process ){
+     $.get(document.getElementsByTagName('base')[0].href+"typeaheadJson", { q: query }, function(data) {
+
+          //Reseting containers
+          items = {};
+          info  = [];
+
+          var i = 0
+          $.each(data, function(i) {
+              items[data[i]['tittle']] = {'tittle': data[i]['tittle'], 'description': data[i]['description'], 'itemUrl': data[i]['itemUrl'],  'icon': data[i]['icon']};
+              info.push(data[i]['tittle']+"#"+data[i]['itemUrl']);
+              ++i;
+          });
+          process(info);
+
+    });
+ };
+
 });

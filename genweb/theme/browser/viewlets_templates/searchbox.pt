@@ -1,4 +1,7 @@
 <div class="input-append">
+<!-- Aixo serà necessari quan es passi el "caller" del livesearch del portlet, al search principal
+  <input class="searchField cercaCapca" type="text" placeholder="Cerca en el lloc" title="Cerca al lloc web" size="15" name="SearchableText"><button class="btn" type="button">Cerca</button>
+</div> -->
   <label for="cercaCapca" class="goout">Cerca al lloc</label><input class="cercaupc span2" accesskey="4" id="cercaCapca" size="16" type="text"><button class="btn" type="button" i18n:domain="plone" i18n:translate="text_search">Cerca</button>
 </div>
 <p class="goout"><a accesskey="5" href="/search_form">Cerca avançada</a></p>

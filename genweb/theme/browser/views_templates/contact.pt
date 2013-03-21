@@ -16,7 +16,8 @@
 
 <div metal:fill-slot="main">
   <tal:main-macro metal:define-macro="main"
-            tal:define="dades context/@@genweb.utils/getDadesUnitat;">
+            tal:define="dades context/@@genweb.utils/getDadesUnitat;
+                        genweb_config context/@@gwconfig;">
 
     <tal:block tal:condition="dades">
 
@@ -84,21 +85,23 @@
                 </a>
               </p>
             </li>
-            <li class="divider"></li>
-            <li>
-              <p>
-                <a href="http://maps.upc.edu" class="show" rel="tooltip" data-placement="bottom" title="Clica el marcador per anar a UPCmaps">
-                  <i class="icon-map-marker"></i>
-                  UPCmaps
-                  <img class="img_blank" src="++genweb++static/images/blank_blau.png"
-                       i18n:attributes="alt obrir_link_finestra_nova">
-                  <span class="img-mask">
-                    <iframe tal:attributes="src python:view.getURLMaps(id_scp)" border="0" width="222" height="222">
-                    </iframe>
-                  </span>
-                </a>
-              </p>
-            </li>
+            <tal:maps condition="python:not getattr(genweb_config, 'contacte_no_upcmaps', False)">
+              <li class="divider"></li>
+              <li>
+                <p>
+                  <a href="http://maps.upc.edu" class="show" rel="tooltip" data-placement="bottom" title="Clica el marcador per anar a UPCmaps">
+                    <i class="icon-map-marker"></i>
+                    UPCmaps
+                    <img class="img_blank" src="++genweb++static/images/blank_blau.png"
+                         i18n:attributes="alt obrir_link_finestra_nova">
+                    <span class="img-mask">
+                      <iframe tal:attributes="src python:view.getURLMaps(id_scp)" border="0" width="222" height="222">
+                      </iframe>
+                    </span>
+                  </a>
+                </p>
+              </li>
+            </tal:maps>
           </ul>
         </div>
 

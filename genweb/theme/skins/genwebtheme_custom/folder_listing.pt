@@ -29,11 +29,13 @@
     <metal:listingmacro define-macro="listing">
     <tal:foldercontents define="contentFilter contentFilter|request/contentFilter|nothing;
 	                      contentFilter python:contentFilter and dict(contentFilter) or {};
+                        genwebDummy python:contentFilter.setdefault('exclude_from_nav', False);
                         limit_display limit_display|request/limit_display|nothing;
                         limit_display python:limit_display and int(limit_display) or None;
                         more_url more_url|request/more_url|string:folder_contents;
                         is_a_topic python:context.portal_type=='Topic';
                         folderContents folderContents|nothing; folderContents python:folderContents or is_a_topic and context.queryCatalog(batch=True, **contentFilter) or context.getFolderContents(contentFilter, batch=True, b_size=limit_display or 100);
+                        folderContents python:[i for i in folderContents if i.exclude_from_nav == False];
                         site_properties context/portal_properties/site_properties;
                         use_view_action site_properties/typesUseViewActionInListings|python:();
                         Batch python:modules['Products.CMFPlone'].Batch;
@@ -77,7 +79,7 @@
               </a>
 
 <tal:comment replace="nothing">
-<!--!                   
+<!--
                     <span class="muted s">
                         <tal:span condition="python: item_type == 'Event' and item_sametime"
                               i18n:translate="label_event_byline_onlyfrom">
