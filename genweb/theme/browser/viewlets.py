@@ -143,8 +143,7 @@ class gwPathBarViewlet(PathBarViewlet, viewletBase):
     index = ViewPageTemplateFile('viewlets_templates/path_bar.pt')
 
     def paginaPrincipal(self):
-        #TODO: Comprovar que no sigui la Pàgina Principal
-        return IHomePageView.providedBy(self.view)
+        return IHomePageView.providedBy(self.view) and IPloneSiteRoot.providedBy(self.context)
 
 
 class gwFooter(viewletBase):
