@@ -134,3 +134,18 @@
 // SELECTS
 .plone_jscalendar > * {display: inline-block;}
 .plone_jscalendar select {width:auto; display: inline-block;}
+
+
+
+
+.pb-ajax {
+  @extend .modal;
+}
+
+.pb-ajax .documentFirstHeading {
+  @extend .modal-header; margin:0; font-size: 130.769% !important;
+}
+
+.pb-ajax #content-core, .pb-ajax .documentDescription {
+  @extend .modal-body; margin-bottom:0;
+}

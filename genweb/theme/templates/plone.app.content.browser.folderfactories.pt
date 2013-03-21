@@ -40,21 +40,22 @@
             <form name="quickAdd" method="post" 
                 tal:attributes="action string:${context/absolute_url}/@@folder_factories">
 
-                <dl>
+                <ul class="unstyled">
                     <tal:typelist repeat="item view/addable_types">
-                        <dt>
-                            <input type="radio" name="url"
+                        <p>
+                            <input type="radio" name="url" class="margin0"
                                    tal:attributes="value item/action;
                                                    id string:form-field-${item/extra/id}" />
                             <label tal:attributes="class string:contenttype-${item/extra/id};
                                                    for string:form-field-${item/extra/id};">
-                                <img tal:attributes="src item/icon" alt="" />
+                              
                                 <span tal:replace="item/title">Type title</span>
                             </label>
-                        </dt>
-                        <dd tal:content="item/description">Type description</dd>
+                        
+                        <span class="muted" tal:content="item/description">Type description</span>
+                        </p>
                     </tal:typelist>
-                </dl>
+                </ul>
 
                 <div class="formControls">
                     <input class="standalone"
