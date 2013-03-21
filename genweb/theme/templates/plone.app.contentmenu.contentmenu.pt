@@ -49,7 +49,7 @@
                       i18n:domain="genweb">
                         Select default content
                   </li>
-                  <li>
+                  <li tal:attributes="class python:subMenuItem['extra']['id'] is not 'contextSetDefaultPage' and subMenuItem['extra']['separator'] or ''">
                     <a href="#"
                        tal:condition="subMenuItem/action"
                        tal:attributes="href subMenuItem/action;
