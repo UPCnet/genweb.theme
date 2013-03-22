@@ -80,8 +80,7 @@ $(document).ready(function () {
   });
 
  var searchElements = function( query, process ){
-     $.get(document.getElementsByTagName('base')[0].href+"typeaheadJson", { q: query }, function(data) {
-
+     $.get(document.getElementsByTagName('base')[0].href+"/typeaheadJson", { q: query }, function(data) {
           //Reseting containers
           items = {};
           info  = [];
