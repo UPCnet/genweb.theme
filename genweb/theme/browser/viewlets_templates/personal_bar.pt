@@ -63,7 +63,7 @@
                       Help</tal:help>
                    <img i18n:attributes="alt obrir_link_finestra_nova"
                         class="img_blank"
-                        src="++genweb++static/images/blank_blanc.png">
+                        src="/++genweb++static/images/blank_blanc.png">
             </a></li>
           </ul>
           <h2 class="goout" id="titol-menu-eines-genweb"> Menú d'eines Genweb UPC </h2>
@@ -77,12 +77,34 @@
             <li aria-hidden="true" class="divider-vertical hidden-phone"></li>
             <li role="menuitem" class="dropdown hidden-phone pull-right">
               <a href="#" class="dropdown-toggle userGenweb nou" data-toggle="dropdown"><span class="goout">Genweb UPC</span> <b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu">
-                <li role="menuitem" class="nav-header">Genweb UPC 4.0 - JN12</li>
-                <li role="menuitem"><a href="#"><i class="icon-certificate"></i> Novetats de la versió <span class="badge badge-warning">nou</span></a></li>
+              <ul class="dropdown-menu" role="menu"
+                  tal:define="notificacions view/getNotificacionsGW">
+<!--                 <li role="menuitem" class="nav-header">Genweb UPC 4.0 - JN12</li> -->
+                <tal:notificacionsmenu repeat="notificacio notificacions">
+                  <li role="menuitem"
+                      tal:condition="notificacio/li-class"
+                      tal:attributes="class notificacio/li-class"
+                      tal:content="notificacio/text">
+                        Header de conjunt de notificacions
+                  </li>
+                  <li role="menuitem"
+                      tal:condition="not: notificacio/li-class">
+                        <a tal:attributes="href notificacio/url">
+                          <i tal:attributes="class notificacio/i-class"></i>
+                          <tal:notificacio content="notificacio/text">Notificació</tal:notificacio>
+                          <img class="img_blank"
+                               src="/++genweb++static/images/blank_blanc.png"
+                               tal:condition="notificacio/target-blank"
+                               i18n:attributes="alt obrir_link_finestra_nova">
+                          <span class="badge badge-warning"
+                                tal:condition="notificacio/nou">nou</span>
+                        </a>
+                  </li>
+                </tal:notificacionsmenu>
+<!--                 <li role="menuitem"><a href="#"><i class="icon-certificate"></i> Novetats de la versió <span class="badge badge-warning">nou</span></a></li>
                 <li role="menuitem"><a href="#"><i class="icon-genweb"></i> Comunitat Genweb  <img class="img_blank" src="++genweb++static/images/blank_gris.png" alt="(obriu en finestra nova)"></a></li>
                 <li role="menuitem"><a href="#"><i class="icon-briefcase"></i> Recursos per a editors  <img class="img_blank" src="++genweb++static/images/blank_gris.png" alt="(obriu en finestra nova)"></a></li>
-                <li role="menuitem"><a href="#"><i class="icon-bookmark"></i> Darrer butlletí</a></li>
+                <li role="menuitem"><a href="#"><i class="icon-bookmark"></i> Darrer butlletí</a></li> -->
               </ul>
             </li>
           </ul>
