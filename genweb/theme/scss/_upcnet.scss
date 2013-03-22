@@ -142,10 +142,14 @@
   @extend .modal;
 }
 
-.pb-ajax .documentFirstHeading {
+.pb-ajax .documentFirstHeading, .pb-ajax > div > h2 {
   @extend .modal-header; margin:0; font-size: 130.769% !important;
 }
 
 .pb-ajax #content-core, .pb-ajax .documentDescription {
   @extend .modal-body; margin-bottom:0;
 }
+
+
+input[type="checkbox"].required:after,
+input[type="radio"].required:after { content: none; }

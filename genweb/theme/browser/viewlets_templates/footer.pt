@@ -19,15 +19,10 @@
               Edifici Til·lers. Jordi Girona, 31. 08011 Barcelona
             </tal:adreca> -
             <abbr rel="tooltip" data-placement="top" title="Telèfon">
-              Tel.
-            </abbr> :
+              Tel.</abbr>:
             <tal:tel content="dades/telefon | nothing">
               +34 93 401 63 12
-            </tal:tel> -
-            <a tal:attributes="href string:mailto:${dades/email|nothing}"
-               tal:content="dades/email | nothing">
-              info.alumni@upc.edu
-            </a>
+            </tal:tel>
           </p>
         </address>
       </div>
