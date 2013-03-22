@@ -75,12 +75,15 @@
             <li role="menuitem"><a class="userMobile visible-desktop" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Mobileview"><span class="goout">Mobile</span></a></li>
             <!-- <![endif]-->
             <li aria-hidden="true" class="divider-vertical hidden-phone"></li>
-            <li role="menuitem" class="dropdown hidden-phone pull-right">
-              <a href="#" class="dropdown-toggle userGenweb nou" data-toggle="dropdown"><span class="goout">Genweb UPC</span> <b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu"
-                  tal:define="notificacions view/getNotificacionsGW">
-<!--                 <li role="menuitem" class="nav-header">Genweb UPC 4.0 - JN12</li> -->
-                <tal:notificacionsmenu repeat="notificacio notificacions">
+            <li role="menuitem" class="dropdown hidden-phone pull-right"
+                tal:define="notificacions view/getNotificacionsGW">
+              <a href="#" data-toggle="dropdown"
+                 tal:attributes="class string:dropdown-toggle userGenweb${notificacions/nou}">
+                  <span class="goout">Genweb UPC</span>
+                  <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <tal:notificacionsmenu repeat="notificacio notificacions/elements">
                   <li role="menuitem"
                       tal:condition="notificacio/li-class"
                       tal:attributes="class notificacio/li-class"
@@ -101,10 +104,6 @@
                         </a>
                   </li>
                 </tal:notificacionsmenu>
-<!--                 <li role="menuitem"><a href="#"><i class="icon-certificate"></i> Novetats de la versió <span class="badge badge-warning">nou</span></a></li>
-                <li role="menuitem"><a href="#"><i class="icon-genweb"></i> Comunitat Genweb  <img class="img_blank" src="++genweb++static/images/blank_gris.png" alt="(obriu en finestra nova)"></a></li>
-                <li role="menuitem"><a href="#"><i class="icon-briefcase"></i> Recursos per a editors  <img class="img_blank" src="++genweb++static/images/blank_gris.png" alt="(obriu en finestra nova)"></a></li>
-                <li role="menuitem"><a href="#"><i class="icon-bookmark"></i> Darrer butlletí</a></li> -->
               </ul>
             </li>
           </ul>
