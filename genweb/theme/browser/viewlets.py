@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import re
+import requests
 from five import grok
+from time import time
 from cgi import escape
 from Acquisition import aq_inner
 from AccessControl import getSecurityManager
@@ -8,6 +10,7 @@ from zope.interface import Interface
 from zope.component import getMultiAdapter
 from zope.component.hooks import getSite
 
+from plone.memoize import ram
 from plone.memoize.view import memoize_contextless
 
 # from Products.CMFCore import permissions
@@ -80,6 +83,19 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
             return '{}/cas_logout'.format(self.portal_url)
         else:
             return '{}/logout'.format(self.portal_url)
+
+    @ram.cache(lambda *args: time() // (60 * 60))
+    def getNotificacionsGW(self):
+        results = {}
+        try:
+            r = requests.get('http://www.upc.edu/ws/genweb/EinesGWv1.php', timeout=10)
+            notificacions = r.json().get('items')
+            have_new = [notificacio for notificacio in notificacions if notificacio.get('nou')]
+            results['nou'] = have_new and ' nou' or ''
+            results['elements'] = notificacions
+            return results
+        except:
+            return {}
 
 
 class gwHeader(viewletBase):
