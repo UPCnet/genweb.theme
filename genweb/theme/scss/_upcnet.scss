@@ -96,7 +96,7 @@
         margin-top:5px;
     }
 }
-/* això no serveix per res però mira...*/
+/* aixo no serveix per res pero mira...*/
 #actionMenuContent #more {}
 
 // taules i estats fet maco al folrder_contents
@@ -134,3 +134,22 @@
 // SELECTS
 .plone_jscalendar > * {display: inline-block;}
 .plone_jscalendar select {width:auto; display: inline-block;}
+
+
+
+
+.pb-ajax {
+  @extend .modal;
+}
+
+.pb-ajax .documentFirstHeading, .pb-ajax > div > h2 {
+  @extend .modal-header; margin:0; font-size: 130.769% !important;
+}
+
+.pb-ajax #content-core, .pb-ajax .documentDescription {
+  @extend .modal-body; margin-bottom:0;
+}
+
+
+input[type="checkbox"].required:after,
+input[type="radio"].required:after { content: none; }

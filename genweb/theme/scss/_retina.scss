@@ -21,10 +21,12 @@ only screen and (                min-resolution: 2dppx) {
 
 	.userScreen, .userTablet, .userMobile, .userGenweb {background-image:image-url("sprite_usuari@2x.png"); @include background-size(20px 400px);}
 
+	/*
 	.custom-checkbox label:before, 
 	.custom-radio label:before {
   		background-image:image-url("cbr@2x.png");
   		@include background-size(44px 165px);
 	}
+	*/
 //tanca media
 }

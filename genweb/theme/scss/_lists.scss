@@ -106,11 +106,7 @@ ul {margin-left: 18px;}
   border-bottom: 1px solid lighten($blue,50%);
   list-style:none;
   position:relative;
-  //*zoom: expression( 
-  //        this.runtimeStyle.zoom="1",
-  //        this.appendChild( document.createElement("small") ).className="before"
-  //       );
-  //.before {width:10px; height:10px; backgrund:red;}  
+ 
   &:first-child {
     border-top: 1px solid lighten($blue,50%);
   }
@@ -123,30 +119,7 @@ ul {margin-left: 18px;}
   }
 }
 
-/*.tabs {
-     *zoom: expression( 
-          this.runtimeStyle.zoom="1",
-          this.appendChild( document.createElement("small") ).className="after"
-         );
-   }
 
-   .tabs:after,
-   .tabs .after {
-     content: '';
-     display:block;
-     height:10px;
-     width:100%;
-     background:red;
-   }
-
-/* 
-> Index contingut = enllaços però amb fons
-> Llistat
-> Enllaços
-> Enllaços destacats
-+ extensió de llistes: pijama, separadors, colors de fons, etc;
-
-*/
 
 .list-links li {
   &:before {

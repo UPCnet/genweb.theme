@@ -13,7 +13,7 @@
 }
 
 
-.lead-small { /* abans destacat ratllat */
+.lead-small { 
   @extend .lead;	
   font-size: 84.6153846%;
   color:$gray;
@@ -23,7 +23,7 @@
   border: 5px solid lighten($genwebPrimary, 25%);
 }
 
-.lead-large { /* abans destacat bandejat */
+.lead-large {
   @extend .lead;
   font-size:115.384615%;
   color:$gray;

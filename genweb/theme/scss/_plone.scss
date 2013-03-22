@@ -1,4 +1,4 @@
-// EXTENSIÓ CLASSES DE SISTEMA DE PLONE
+// EXTENSIO CLASSES DE SISTEMA DE PLONE
 // -------------------------
 
 
@@ -822,3 +822,9 @@ html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li +li
 VIEWS
 */
 body.template-folder_summary_view #content ul li:first-child {border-top:0; @include box-shadow(none);}
+
+
+/*
+custom file posat aqui per evitar comptar com a selector en l'altre paquet
+*/
+.customfile-hover .customfile-button, .customfile-focus .customfile-button {@extend .btn:hover;}

@@ -27,11 +27,10 @@ $purple:                #8952ab !default;
 .state-published {color: $blue;}
 .state-intranet {color: $purple;}
 .state-pending {color: darken($orange,5%);}
-.state-draft {color: $green;}
+.state-draft, .state-visible {color: $green;}
 .state-private {color: $red;} 
-	//extends
-	.state-restricted-to-managers {color: $grayDarker;}
-	.state-visible {@extend .state-draft;}
+.state-restricted-to-managers {color: $grayDarker;}
+
 
 // USUARI
 // -------------------------

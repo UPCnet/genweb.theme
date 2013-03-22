@@ -12,8 +12,6 @@
 
 // PORTAL NAV
 // -------------------------
-#portal-globalnav {/*margin-top:-22px;*/}
-	#portal-header .container {/*padding-bottom:22px;*/} /* ajusta menu */
 	#portal-globalnav .navbar-inner {padding:0; border-bottom:3px solid #666;}
 		#portal-globalnav .state-published {border-bottom:3px solid $blue;}		
 		#portal-globalnav .state-intranet {border-bottom:3px solid $purple;}
@@ -121,7 +119,7 @@
 			&:hover {background-color:#e5f6ff !important;}
 			&.active {
 				background-color: #f2f8fc !important; color:$grayDarker;
-				&[class*=" contenttype-"] span:after {@include opacity(1);}
+				&[class*=" contenttype-"] span:after {@include opacity(100);}
 				& span:before {font-size: 525%; top:-2px; left:4px; }
 			}		
 			&.state-private {border-right: 3px solid $red; color:$red;}
@@ -161,7 +159,7 @@
     				height: 20px;
     				margin-right: -24px;
     				width: 20px; 
-    				@include opacity(.75);
+    				@include opacity(75);
     				top:10px;
     				position:absolute;
 			}
@@ -188,7 +186,7 @@
 			&.contenttype-survey span:after 		{background-position: -265px 	-23px;}
 			&.contenttype-formfolder span:after 	{background-position: -144px 	-72px;}	
 
-			&:hover span:after { @include opacity(1);}
+			&:hover span:after { @include opacity(100);}
 		}
 		& li:first-child a span {border-top:0 !important;}
 	}
@@ -206,7 +204,7 @@ html * .dropdown-menu a:hover .img_blank {
 	content:image-url("blank_blanc.png"); width:10px; height:10px; 
 }
 
-// MARCA NOU AL MENÚ
+// MARCA NOU AL MENU
 // -----------------
 //#portal-personaltools-wrapper .pull-right .dropdown {position: relative;}
 .dropdown.nou::after {
@@ -250,7 +248,7 @@ html * .dropdown-menu a:hover .img_blank {
 				height: 14px;
 				width: 14px; 
 				margin-top:2px;
-				@include opacity(.8);
+				@include opacity(75);
 				position:absolute;
 		}
 		&.contenttype-folder:before 		{background-position: -384px 	-120px;}
@@ -276,6 +274,6 @@ html * .dropdown-menu a:hover .img_blank {
 		&.contenttype-survey:before 		{background-position: -265px 	-23px;}
 		&.contenttype-formfolder:before 	{background-position: -144px 	-72px;}
 
-		&:hover:before { @include opacity(1);}
+		&:hover:before { @include opacity(100);}
 	}
 }

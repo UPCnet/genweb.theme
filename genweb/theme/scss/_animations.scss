@@ -19,7 +19,7 @@ body, html {
 	@include transition(background-color .5s ease-out);
 }
 #content-area, #portal-column-content {
-	@include transition(border .5s ease-out, box-shadow .5s ease-out, width .5s ease-out, height .5s ease-out, box-shadow .5s ease-out);
+	@include transition(box-shadow .5s ease-out);
 }
 
 

@@ -51,12 +51,16 @@
 .icon-search             { background-position: -48px  0; }
 .icon-envelope           { background-position: -72px  0; }
 .icon-heart              { background-position: -96px  0; }
-.icon-star               { background-position: -120px 0; }
-.icon-star-empty         { background-position: -144px 0; }
+.icon-star,
+.icon-folderChangeDefaultPage              { background-position: -120px 0; }
+.icon-star-empty,
+.icon-contextSetDefaultPage         { background-position: -144px 0; }
 .icon-user               { background-position: -168px 0; }
 .icon-film               { background-position: -192px 0; }
 .icon-th-large           { background-position: -216px 0; }
-.icon-th                 { background-position: -240px 0; }
+.icon-th ,
+.icon-plone-contentmenu-display-atct_album_view,
+.icon-folder-atct_album_view                { background-position: -240px 0; }
 .icon-th-list            { background-position: -264px 0; }
 .icon-ok                 { background-position: -288px 0; }
 .icon-remove             { background-position: -312px 0; }
@@ -159,7 +163,7 @@
 .icon-eye-close          { background-position: -120px -120px; }
 .icon-warning-sign       { background-position: -144px -120px; }
 .icon-plane              { background-position: -168px -120px; }
-.icon-calendar           { background-position: -192px -120px; }
+.icon-calendar, .icon-event { background-position: -192px -120px; }
 .icon-random             { background-position: -216px -120px; width: 16px; }
 .icon-comment            { background-position: -240px -120px; }
 .icon-magnet             { background-position: -264px -120px; }
@@ -167,7 +171,7 @@
 .icon-chevron-down       { background-position: -313px -119px; } // 1px, 1px off
 .icon-retweet            { background-position: -336px -120px; }
 .icon-shopping-cart      { background-position: -360px -120px; }
-.icon-folder-close       { background-position: -384px -120px; }
+.icon-folder-close, .icon-folder { background-position: -384px -120px; }
 .icon-folder-open        { background-position: -408px -120px; width: 16px; }
 .icon-resize-vertical    { background-position: -432px -119px; } // 1px, 1px off
 .icon-resize-horizontal  { background-position: -456px -118px; } // 1px, 2px off
@@ -198,7 +202,7 @@
 /*afegits per a GW*/
 .icon-upc                     { background-position: 0      -169px; }
 .icon-news                    { background-position: -23px  -169px; }
-.icon-box                     { background-position: -48px  -168px; }
+.icon-box, .icon-packet       { background-position: -48px  -168px; }
 .icon-link                    { background-position: -72px  -169px; }
 .icon-iframe                  { background-position: -96px  -169px; }
 .icon-desktop                 { background-position: -120px -169px; }
@@ -209,10 +213,18 @@
 .icon-smart-folder            { background-position: -240px -169px; }
 .icon-copy                    { background-position: -264px -169px; }
 .icon-rename                  { background-position: -288px -169px; }
-.icon-resume-view             { background-position: -312px -169px; }
-.icon-table-view              { background-position: -336px -169px; }
-.icon-list-view               { background-position: -360px -169px; }
-.icon-list-extended-view      { background-position: -384px -169px; }
+.icon-resume-view,
+.icon-folder-folder_summary_view
+.icon-plone-contentmenu-display-folder_summary_view             { background-position: -312px -169px; }
+.icon-table-view,
+.icon-folder-folder_tabular_view,
+.icon-plone-contentmenu-display-folder_tabular_view             { background-position: -336px -169px; }
+.icon-list-view,
+.icon-plone-contentmenu-display-folder_listing,
+.icon-folder-folder_listing               { background-position: -360px -169px; }
+.icon-list-extended-view,
+.icon-plone-contentmenu-display-folder_extended,
+.icon-folder-folder_extended      { background-position: -384px -169px; }
 .icon-article-view            { background-position: -408px -169px; }
 .icon-article-extended-view   { background-position: -432px -169px; }
 .icon-cut                     { background-position: -456px -169px; }
@@ -227,7 +239,9 @@
 .icon-site                    { background-position: -168px -192px; }
 .icon-edit-image              { background-position: -192px -192px; }
 .icon-navigation              { background-position: -216px -192px; }
-.icon-content-view            { background-position: -240px -192px; }
+.icon-content-view,
+.icon-plone-contentmenu-display-folder_full_view,
+.icon-folder-folder_full_view            { background-position: -240px -192px; }
 .icon-genweb                  { background-position: -264px -192px; }
 .icon-captcha                 { background-position: -288px -192px; }
 .icon-users                   { background-position: -312px -192px; }

@@ -61,7 +61,9 @@
         <link rel="apple-touch-icon" sizes="114x114" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-114x114-precomposed.png" /> <!-- iPhone 2x -->
         <link rel="apple-touch-icon" sizes="144x144" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-144x144-precomposed.png" /> <!-- iPad 2x -->
 
-        <link rel="stylesheet" tal:attributes="href string:${portal_url}/++genweb++stylesheets/genwebupc.css">
+        <!--<link rel="stylesheet" tal:attributes="href string:${portal_url}/++genweb++stylesheets/genwebupc.css">-->
+        <link rel="stylesheet" tal:attributes="href string:${portal_url}/++genweb++stylesheets/reboot.css">
+        <link rel="stylesheet" tal:attributes="href string:${portal_url}/++genweb++stylesheets/genweb.css">
         <link rel="stylesheet" tal:attributes="href string:${portal_url}/dynamic.css">
         <!-- <script tal:attributes="src string:${portal_url}/++bootstrap++js/modernizr-2.6.1.min.js"></script> -->
 
