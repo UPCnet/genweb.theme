@@ -10,6 +10,9 @@ from plone.portlets.interfaces import IPortletDataProvider
 from Products.CMFCore.utils import getToolByName
 from genweb.core.adapters import IImportant
 
+from zope.component import getMultiAdapter
+from plone.app.layout.navigation.root import getNavigationRootObject
+
 from plone.app.portlets.portlets.news import Renderer as news_renderer
 
 
@@ -47,6 +50,15 @@ class Renderer(news_renderer):
     def mostraData(self):
         return self.data.showdata
 
+    def all_news_link(self):
+        context = aq_inner(self.context)
+        portal_state = getMultiAdapter((context, self.request),
+            name=u'plone_portal_state')
+        portal = portal_state.portal()
+        if 'news' in getNavigationRootObject(context, portal).objectIds():
+            return '%s/news' % portal_state.navigation_root_url()
+        return None
+
     @memoize
     def _data(self):
         context = aq_inner(self.context)
@@ -58,6 +70,7 @@ class Renderer(news_renderer):
                        is_important=True,
                        sort_on="getObjPositionInParent",
                        sort_limit=limit)
+        important = len(results)
         if important < limit:
             results2 = catalog(portal_type=('News Item', 'Link'),
                        review_state=state,
