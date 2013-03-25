@@ -40,14 +40,6 @@ puguin ser causa de fractures socials en el món virtual.</p>
 En aquest sentit, les tècniques emprades al  web de la UPC encaixen amb el que la WAI preconitza, tant per al marcat XHTML 1.0 com per al CSS.</p>
 
 
-
-    <h2>Text size</h2>
-    <ul class="list">
-      <li><code class="xl">A</code> &mdash; <a title="Text gran" href="javascript:setBaseFontSize('largeText',1);">Large</a></li>
-      <li><code class="m">A</code> &mdash; <a title="Text normal" href="javascript:setBaseFontSize('',1);">Normal</a></li>
-      <li><code class="xs">A</code> &mdash; <a title="Text petit" href="javascript:setBaseFontSize('smallText',1);">Small</a></li>
-    </ul>
-
 <h3 class="prim">Changing text size in common web browsers</h3>
 <div class="box">
 
@@ -80,7 +72,7 @@ En aquest sentit, les tècniques emprades al  web de la UPC encaixen amb el que 
 	<strong> Decrease text size</strong>: CTRL + mouse wheel down, or View &gt; Zoom &gt; 80% (or less)<br />
 	<strong> Restore default size</strong>: View &gt; Zoom &gt; 100%</p>
 
-		
+
 
 
 </div>

@@ -37,16 +37,6 @@ fracturas  sociales en el mundo virtual.</p>
 En este sentido, las  técnicas empleadas en la web de la UPC encajan con lo que la WAI  preconiza, tanto para el marcado XHTML 1.0 como para el CSS.
 </p>
 
-
-
-    <h2>Tamaño del texto</h2>
-    <ul class="list">
-      <li><code class="xl">A</code> &mdash; <a title="Text gran" href="javascript:setBaseFontSize('largeText',1);">Grande</a></li>
-      <li><code class="m">A</code> &mdash; <a title="Text normal" href="javascript:setBaseFontSize('',1);">Normal</a></li>
-      <li><code class="xs">A</code> &mdash; <a title="Text petit" href="javascript:setBaseFontSize('smallText',1);">Pequeño</a></li>
-    </ul>
-
-
 <h3 class="prim">Cambios de tamaños en los principales navegadores</h3>
 <div class="box">
 	<img height="80" width="80" src="http://www.upc.edu/config-ca/imatges/ch-icon.png" alt="chrome" class="pull-left">

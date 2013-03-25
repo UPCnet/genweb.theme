@@ -30,17 +30,10 @@
 
 
     <h2>Pautes WAI</h2>
-    <p>Els continguts del web de la UPC han estat validats amb la certificació WCAG 2.0 (Nivell AA), 
+    <p>Els continguts del web de la UPC han estat validats amb la certificació WCAG 2.0 (Nivell AA),
       segons les recomanacions de la WAI (<span lang="en">Web Accessibility Iniciative</span>), grup de treball internacional que pertany al W3C (<span lang="en">World Wide Web Consortium</span>), organisme que vetlla perquè cap col·lectiu pateixi discriminacions de cap mena que puguin ser causa de fractures socials en el món virtual.</p>
 
     <p>En aquest sentit, les tècniques emprades al  web de la UPC encaixen amb el que la WAI preconitza, tant per al marcat XHTML 1.0 com per al CSS.</p>
-
-    <h2>Mida del text</h2>
-    <ul class="list">
-      <li><code class="xl">A</code> &mdash; <a title="Text gran" href="javascript:setBaseFontSize('largeText',1);">Gran</a></li>
-      <li><code class="m">A</code> &mdash; <a title="Text normal" href="javascript:setBaseFontSize('',1);">Normal</a></li>
-      <li><code class="xs">A</code> &mdash; <a title="Text petit" href="javascript:setBaseFontSize('smallText',1);">Petit</a></li>
-    </ul>
 
     <h3 class="prim">Canvis de mides als principals navegadors</h3>
       <div class="box">
@@ -99,7 +92,7 @@
          <li><code>0</code> &mdash; Consulta accessibilitat</li>
     </ul>
 
-    
+
     <h2>Optimització</h2>
     <p>El web està optimitzat per assegurar-ne la màxima compatibilitat a tots els dispositius majoritaris. S'han revisat i verificat acuradament en els principals navegadors d'ordinadors de sobretaula -Chrome, Firefox, Safari, Internet Explorer i Opera- i també per a les tauletes i mòbils més comuns -iPhones, iPads i Androids-.</p>
 
