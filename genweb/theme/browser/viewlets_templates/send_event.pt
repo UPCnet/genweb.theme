@@ -11,7 +11,7 @@
                 i18n:name="important_button"
             />
           </div><br />
-          <p> Per enviar el missatge a l'Agenda prem el botó.</p>
+          <p> Per enviar l'esdeveniment a l'Agenda prem el botó.</p>
         </form>
         <form method="post" tal:attributes="action string:${context/absolute_url}/send-event" tal:condition="viewlet/permisos_notimportant">
           <div i18n:translate="notimportant_buttons">
@@ -25,6 +25,6 @@
             />
           </div>
             <br />
-          <p> Aquest missatge ja s'ha enviat a l'Agenda. Si vols tornar a enviar-ho prem el botó.</p>
+          <p> Aquest esdeveniment ja s'ha enviat a l'Agenda. Si vols tornar a enviar-ho prem el botó.</p>
         </form>
 </div>
