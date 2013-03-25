@@ -17,6 +17,11 @@ from plone.app.portlets import PloneMessageFactory as _
 from plone.app.portlets.cache import render_cachekey
 from plone.app.portlets.portlets import base
 
+from zope.i18nmessageid import MessageFactory
+PLMF = MessageFactory('plonelocales')
+
+from genweb.core import GenwebMessageFactory as TAM
+
 
 class IEsdevenimentsPortlet(IPortletDataProvider):
 
@@ -70,23 +75,23 @@ class Renderer(base.Renderer):
         return self.data.count > 0 and len(self._data())
 
     def published_events(self):
-        # events_to_publish = self._data()
-        # eventos = set()
-        # import ipdb;ipdb.set_trace()
-        # for evento in events_to_publish:
-        #     event = (evento.pretty_title_or_id(), evento.getURL(), evento.start, evento.end)
-        #     event = set(event)
-        #     eventos.add(event)
-        # print eventos
         return self._data()
 
     def getMonthAbbr(self, data):
-        month = DateTime.Mon_(data).lower()
-        return month
+        context = aq_inner(self.context)
+        month = DateTime.month(data)
+        self._ts = getToolByName(context, 'translation_service')
+        monthName = TAM(self._ts.month_msgid(month, format='a'),
+                              default=self._ts.month_english(month, format='a'))
+        return monthName
 
     def getMonth(self, data):
-        month = DateTime.Month(data).lower()
-        return month
+        context = aq_inner(self.context)
+        month = DateTime.month(data)
+        self._ts = getToolByName(context, 'translation_service')
+        monthName = PLMF(self._ts.month_msgid(month),
+                              default=self._ts.month_english(month))
+        return monthName
 
     def getDay(self, data):
         day = str(DateTime.day(data))
