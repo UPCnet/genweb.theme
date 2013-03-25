@@ -3,6 +3,7 @@ from Products.Five.browser.pagetemplatefile import ZopeTwoPageTemplateFile
 from plone.app.portlets.portlets.navigation import Renderer as NavigationRenderer
 from plone.app.portlets.portlets.rss import Renderer as RssRenderer
 from plone.portlet.collection.collection import Renderer as CollectionRenderer
+from plone.app.portlets.portlets.recent import Renderer as RecentRenderer
 
 
 class gwNavigation(NavigationRenderer):
@@ -26,3 +27,11 @@ class gwCollection(CollectionRenderer):
     """
     _template = ViewPageTemplateFile('templates/collection.pt')
     render = _template
+
+
+class gwRecent(RecentRenderer):
+    _template = ViewPageTemplateFile('templates/recent.pt')
+
+    @property
+    def available(self):
+        return self.data.count > 0 and len(self._data())

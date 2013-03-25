@@ -23,7 +23,7 @@
 
       <h1 class="documentFirstHeading"
         i18n:translate="genweb_formContacte">
-          Contacte
+          Contact
       </h1>
       <div class="row-fluid">
         <div class="span8 box box-gradient">
@@ -62,7 +62,7 @@
                 93 401 60 54
               </tal:fax>
             </p>
-            <p>
+            <p tal:condition="email">
               <abbr rel="tooltip" data-placement="top" title="Adreça electrònica"
                     i18n:translate="genweb_ae">
                 A/e
@@ -89,7 +89,7 @@
               <li class="divider"></li>
               <li>
                 <p>
-                  <a href="http://maps.upc.edu" class="show" rel="tooltip" data-placement="bottom" title="Clica el marcador per anar a UPCmaps">
+                  <a href="http://maps.upc.edu" class="show" rel="tooltip" data-placement="bottom" title="Clica el marcador per anar a UPCmaps" target="_blank">
                     <i class="icon-map-marker"></i>
                     UPCmaps
                     <img class="img_blank" src="++genweb++static/images/blank_blau.png"
