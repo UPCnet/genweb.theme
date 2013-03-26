@@ -50,13 +50,13 @@
               Campus Diagonal Sud, Edifici H. Av. Diagonal, 647. 08028 Barcelona
             </p>
             <br>
-            <p>
+            <p tal:condition="telefon">
               <tal:telmsg i18n:translate="genweb_telefon">Telèfon</tal:telmsg>
               <tal:telefon content="telefon">
                 Telèfon 93 401 65 83 / 65 85
               </tal:telefon>
             </p>
-            <p>
+            <p tal:condition="fax">
               <tal:faxmsg i18n:translate="genweb_fax">Fax</tal:faxmsg>
               <tal:fax content="fax">
                 93 401 60 54

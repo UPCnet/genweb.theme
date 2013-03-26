@@ -3,8 +3,8 @@
 
 
 
-//taules de SISTEMA 
-.listing {   
+//taules de SISTEMA
+.listing {
 	@extend .table;
 	@extend .table-condensed;
 	@extend .table-striped;
@@ -18,7 +18,7 @@
 // ----------------------
 label {
   font-weight:bold;
-  color: $genwebTitles;  
+  color: $genwebTitles;
 }
 .formHelp {
   @extend  .s;
@@ -56,7 +56,7 @@ label {
 		content: "*";
 		top:.35em;
 		position: relative;
-		font-size:150%;		
+		font-size:150%;
 		line-height: 0;
 	}
 }
@@ -167,8 +167,8 @@ iframe {border:0 !important; display: block !important;}
 #portal-sitemap {
 	@extend .unstyled;
 	& > li {
-		font-weight: bold; 
-		font-size:normal; 
+		font-weight: bold;
+		font-size:normal;
 		margin-top:30px;
 		@extend .xxxl;
 		& > div {
@@ -196,7 +196,7 @@ iframe {border:0 !important; display: block !important;}
 		margin:0;
 		& > li {
 			@extend .xxs;
-			font-weight: bold; 
+			font-weight: bold;
 			font-size:normal;
 			list-style: none;
 			margin:0 0 5px;
@@ -213,7 +213,7 @@ iframe {border:0 !important; display: block !important;}
 				&:after {
 					content:none;
 				}
-			}	
+			}
 		}
 		& ul {
 			-webkit-column-count: 1;
@@ -223,16 +223,16 @@ iframe {border:0 !important; display: block !important;}
 		& > li li {
 			padding:5px 9px;
 			line-height:12px;
-			font-weight: normal; 
-			font-size:smaller; 
+			font-weight: normal;
+			font-size:smaller;
 
 
 			& > div {
 				padding-top:0;
-			} 
+			}
 			& a {
 				color: $gray;
-			}			
+			}
 		}
 	}
 }
@@ -779,7 +779,7 @@ font-weight: bold;
 .expandable-content h4 {@extend .popover-title;}
 .expandable-content .inner-content {@extend .popover-content;}
 
-.collage-header > .expandable-section, 
+.collage-header > .expandable-section,
 .collage-header > .post {margin-bottom: 2px;}
 .expandable-icon, .split-column-icon, .delete-object-icon, .copy-object-icon,
 .object-action-generic-icon {margin-top: 2px;}
@@ -792,7 +792,7 @@ font-weight: bold;
 
 
 /*
-ESDEVENIMENTS 
+ESDEVENIMENTS
 */
 .eventDetails.vcard {@extend .box;}
 
@@ -813,7 +813,7 @@ NOTICIA
 html.lt-ie9 .thumbnails li:first-child+li+li+li+li,
 html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li,
 html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li
-html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li +li+li+li+li, 
+html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li +li+li+li+li,
 html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li +li+li+li+li +li+li+li+li,
 .thumbnails li:nth-child(4n+1) {margin-left:0 !important;}
 
@@ -828,3 +828,9 @@ body.template-folder_summary_view #content ul li:first-child {border-top:0; @inc
 custom file posat aqui per evitar comptar com a selector en l'altre paquet
 */
 .customfile-hover .customfile-button, .customfile-focus .customfile-button {@extend .btn:hover;}
+
+// Fix Plone overlays
+div.overlay {
+    /* initially overlay is hidden */
+    display: none;
+}
