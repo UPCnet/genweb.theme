@@ -53,7 +53,12 @@
                 Accessibilitat
             </a>
           </li>
-          <li role="menuitem" class="amunt"><a href="#portal-header" rel="tooltip" data-placement="top" title="Inici de la pàgina"><img src="/++genweb++static/images/amunt.png" alt="Inici de la pàgina"></a></li>
+          <li role="menuitem" class="amunt">
+            <a rel="tooltip" data-placement="top" title="Inici de la pàgina"
+               tal:attributes="href string:${viewlet/portal_url}/#portal-header">
+              <img src="/++genweb++static/images/amunt.png" alt="Inici de la pàgina">
+            </a>
+          </li>
         </ul>
       </div>
     </div>
