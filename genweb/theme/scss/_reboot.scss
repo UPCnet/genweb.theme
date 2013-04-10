@@ -22,12 +22,12 @@
 @import "compass_twitter_bootstrap/type";
 @import "compass_twitter_bootstrap/code";
 @import "compass_twitter_bootstrap/forms";
-//@import "compass_twitter_bootstrap/tables"; //Albert ho comenta
+@import "compass_twitter_bootstrap/tables"; //Albert ho comenta
 
 // Components: common
-//@import "compass_twitter_bootstrap/sprites"; //Albert ho comenta
+@import "compass_twitter_bootstrap/sprites"; //Albert ho comenta
 @import "compass_twitter_bootstrap/dropdowns";
-//@import "compass_twitter_bootstrap/wells"; //Albert ho comenta
+@import "compass_twitter_bootstrap/wells"; //Albert ho comenta
 @import "compass_twitter_bootstrap/component-animations";
 @import "compass_twitter_bootstrap/close";
 
@@ -67,12 +67,3 @@
 @import "compass_twitter_bootstrap/responsive-768px-979px";
 @import "compass_twitter_bootstrap/responsive-1200px-min";
 @import "compass_twitter_bootstrap/responsive-navbar";
-
-
-
-// Afegits anti IE
-@import "base";
-@import "plone";
-@import "gw3togw4";
-@import "empaquetats";
-@import "upcnet";

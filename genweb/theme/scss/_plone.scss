@@ -445,7 +445,7 @@ text-transform: lowercase;
 /*font-size: 80%;*/
 }
 .collage-existing-items .breadcrumbs {
-background: url(https://gw40.beta.upcnet.es/gw40d/logoIcon.gif) no-repeat left center;
+background: url("logoIcon.gif") no-repeat left center;
 padding-top: 4px;
 padding-bottom: 4px;
 margin-bottom: 8px;
@@ -485,39 +485,39 @@ float: left;
 width: 14px;
 height: 14px;
 padding-right: 2px;
-background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-delete.gif) no-repeat top left;
+background: url("/++resource++collage-resources/icon-delete.gif") no-repeat top left;
 }
 .copy-object-icon {
 float: left;
 width: 14px;
 height: 14px;
 padding-right: 2px;
-background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-copy.gif) no-repeat top left;
+background: url("/++resource++collage-resources/icon-copy.gif") no-repeat top left;
 }
 .paste-object-icon {
 float: left;
 width: 14px;
 height: 14px;
 padding-right: 2px;
-background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-paste.gif) no-repeat top left;
+background: url("/++resource++collage-resources/icon-paste.gif") no-repeat top left;
 }
 .split-column-icon {
 float: left;
 width: 14px;
 height: 14px;
 padding-right: 2px;
-background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-split.gif) no-repeat top left;
+background: url("/++resource++collage-resources/icon-split.gif") no-repeat top left;
 }
 .object-action-generic-icon {
 float: left;
 width: 14px;
 height: 14px;
 padding-right: 2px;
-background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-object-action.gif) no-repeat top left;
+background: url("/++resource++collage-resources/icon-object-action.gif") no-repeat top left;
 }
 /* */
 .expandable-section .expandable-label .expandable-icon {
-background: url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/icon-plusminus.gif) no-repeat top left;
+background: url("/++resource++collage-resources/icon-plusminus.gif") no-repeat top left;
 float: left;
 width: 14px;
 height: 14px;
@@ -548,7 +548,7 @@ border: 1px solid #74ae0b;
 }
 #collage .expandable-content h4 {
 margin: 0;
-background: #75AD0A url(https://gw40.beta.upcnet.es/gw40d/++resource++collage-resources/collage_icon.png) no-repeat 3px center;
+background: #75AD0A url("/++resource++collage-resources/collage_icon.png") no-repeat 3px center;
 color: White;
 display: block;
 padding: 2px 2.2em;

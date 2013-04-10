@@ -1,7 +1,7 @@
 /*!
  * Genweb UPC v4.0
  *
- * Copyright 2012 UPC
+ * Copyright 2012-2013 UPC
  *
  */
 
@@ -9,6 +9,9 @@
 // REPEAT VARIABLES & MIXINS
 // -------------------------
 // Required since we compile the responsive stuff separately
+
+$genwebPrimary:         #007bc0 !default;
+$genwebTitles:          #557C95 !default;
 
 @import "compass";
 

@@ -1,47 +1,5 @@
-/*
-
-COM DIVIDIR TOT EL BOOTSTRAP EN 2 AUTOMÀTICAMENT
-
-FITXER 1
-Tot el bootstrap menys els sprites i els següents imports
-@import "_base";
-@import "_empaquetats";
-@import "_gw3togw4";
-@import "_plone";
-@import "_upcnet";
-
-Tot això està per sota el limit per poc, ull a afegir classes aquí
-
-FITXER 2
-El que falta en un altre fitxer. 
-És tot el Genweb.CSS menys els fitxers traspassats
-Abans també s'ha de carregar mixins i variables i el sprites
-Ordre:
- 1 mixins
- 2 variables
- 3 sprites
- 4 genweb menys els 5 fitxers que passem a bootstrap que són els que inclouen @extends
-*/
-
-
-
-
-
-@import "compass_twitter_bootstrap";
-@import "compass_twitter_bootstrap_responsive";
+@import "reboot";
 @import "genweb_upc";
-
-@import "_base";
-@import "_empaquetats";
-@import "_gw3togw4";
-//@import "_inputs";
-@import "_plone";
-@import "_upcnet";
-
-
-
-
-
 
 
 .width100 {width:100% !important; -moz-box-sizing:border-box;}
@@ -52,7 +10,7 @@ Ordre:
 b, strong {font-weight:bold;}
 
 .titol-espai h1 {
-	font-weight:200; 
+	font-weight:200;
     color:red;
 }
 
@@ -63,4 +21,3 @@ b, strong {font-weight:bold;}
     box-shadow: 0 -8px 16px -16px rgba(0,0,0,.5) !important;
 	}
 .page-header h1 {color:#446a8e;}
-
