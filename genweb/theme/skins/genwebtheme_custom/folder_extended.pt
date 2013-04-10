@@ -73,7 +73,6 @@
                 <li metal:define-macro="listitem">
 
                     <tal:span condition="python:item_type != 'Link'">
-	                        <img tal:replace="structure item_icon/html_tag" />
                         <a href="#"
                            tal:attributes="href python:test(item_type in use_view_action, item_url+'/view', item_url);
                                            class string:$item_wf_state_class url"
@@ -83,19 +82,19 @@
                     </tal:span>
 
                     <tal:span condition="python:item_type == 'Link' and item_finestranova">
-                        <img tal:replace="structure item_icon/html_tag" />
                         <a href="#" target="_newwindow"
                            class="link-plain"
                            tal:attributes="href item/getRemoteUrl;
                                            class string:${item_wf_state_class} link-plain">
                            <span tal:content="item_title_or_id">
                             External Link</span>
-                        <img class="link_blank"  src="icon_blank.gif" i18n:domain="upc.genwebupc" i18n:attributes="alt obrir_link_finestra_nova"></a>
+                        <img class="img_blank" src="/++genweb++static/images/blank_blau.png"
+                             i18n:domain="genweb"
+                             i18n:attributes="alt obrir_link_finestra_nova"></a>
                     </tal:span>
 
                     <span class="summary"
                           tal:condition="python:item_type == 'Link' and not item_finestranova">
-                        <img tal:replace="structure item_icon/html_tag" />
                         <a href="#"
                            tal:attributes="href item/getRemoteUrl;
                                            class string:$item_type_class $item_wf_state_class url link-plain"

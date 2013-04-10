@@ -25,9 +25,9 @@
                         item_class python:'contenttype-' + normalizeString(obj.portal_type);"
             tal:attributes="class python:oddrow and  'portletItem even' or 'portletItem odd'">
             <a href=""
-                tal:attributes="href string:${obj/getURL}/view;
-                                
-                                class string:$item_wf_state_class tile $item_class"><img tal:replace="structure item_icon/html_tag" /><tal:title content="obj/pretty_title_or_id">Title</tal:title></a>             
+               tal:attributes="href string:${obj/getURL}/view;
+                               class string:$item_wf_state_class tile $item_class">
+                  <tal:title content="obj/pretty_title_or_id">Title</tal:title></a>
             <time class="smaller"
                  tal:content="python:toLocalizedTime(obj.ModificationDate)"
             >May 5</time>
