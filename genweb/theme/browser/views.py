@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from five import grok
 from Acquisition import aq_inner
 #from AccessControl import getSecurityManager
@@ -18,11 +20,16 @@ from plone.portlets.interfaces import IPortletManager
 from plone.portlets.interfaces import IPortletManagerRenderer
 from plone.memoize import ram
 
+from DateTime.DateTime import DateTime
+from zope.annotation.interfaces import IAnnotations
+
 from genweb.core.interfaces import IHomePage
 #, IGenwebLayer
 from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 from genweb.core.utils import genweb_config, pref_lang
 from genweb.portlets.browser.manager import ISpanStorage
+
+from Products.statusmessages.interfaces import IStatusMessage
 
 from scss import Scss
 from genweb.theme.scss import dynamic_scss
@@ -35,6 +42,21 @@ from Products.CMFPlone.browser.navtree import getNavigationRoot
 from Products.CMFPlone.utils import safe_unicode
 from Products.PythonScripts.standard import url_quote_plus
 import json
+
+MESSAGE_TEMPLATE = u"""\
+L'usuari %(user_name)s ha creat un nou esdeveniment en l'agenda del GenWeb \
+"%(titolGW)s":
+
+Títol: "%(titleEvent)s"
+Data: %(dayEvent)s-%(monthEvent)s-%(yearEvent)s
+Hora: %(hourEvent)s
+
+i que podreu trobar al següent enllaç:
+
+%(linkEvent)s
+
+Per a la seva publicació a l'Agenda general de la UPC.
+"""
 
 
 class GWConfig(grok.View):
@@ -134,6 +156,7 @@ class homePage(HomePageBase):
 def _render_cachekey(method, self, especific1, especific2):
     """Cache by the two specific colors"""
     return (especific1, especific2)
+
 
 class typeaheadJson(grok.View):
     grok.name('typeaheadJson')
@@ -265,7 +288,7 @@ class typeaheadJson(grok.View):
                             (display_description[:MAX_DESCRIPTION], '...'))
 
                     # We build the dictionary element with the desired parameters and we add it to the queryElements array.
-                    queryElement = {'tittle': full_title, 'description': display_description, 'itemUrl': itemUrl , 'icon': icon}
+                    queryElement = {'tittle': full_title, 'description': display_description, 'itemUrl': itemUrl, 'icon': icon}
                     queryElements.append(queryElement)
                 # if len(results) > limit:
                 #     #TODO: We have to add here an element to the JSON in case there is too many elements.
@@ -275,9 +298,10 @@ class typeaheadJson(grok.View):
                 #                          searchquery,
                 #                          ts.translate(label_show_all, context=REQUEST)))
         #TODO: We should return an almost empty JSON, just the advanced search element
-        advancedSearch = {'tittle': 'Advanced search','description':'','itemUrl': portal_url+'/@@search', 'icon':''}
+        advancedSearch = {'tittle': 'Advanced search', 'description': '', 'itemUrl': portal_url + '/@@search', 'icon': ''}
         queryElements.append(advancedSearch)
         return json.dumps(queryElements)
+
 
 class dynamicCSS(grok.View):
     grok.name('dynamic.css')
@@ -415,8 +439,52 @@ class gwRecaptchaView(RecaptchaView, grok.View):
 class gwSendEventView(grok.View):
     grok.context(IATEvent)
     grok.name('send-event')
-    grok.require('zope2.Public')
+    grok.require('cmf.AddPortalContent')
     grok.layer(IGenwebTheme)
 
     def render(self):
+
+        context = aq_inner(self.context)
+        annotations = IAnnotations(context)
+        event_title = context.Title()
+        event_start = context.startDate
+        event_day = DateTime.day(event_start)
+        event_month = DateTime.month(event_start)
+        event_year = DateTime.year(event_start)
+        event_hour = DateTime.Time(event_start)
+        event_link = context.absolute_url()
+        mailhost = getToolByName(context, 'MailHost')
+        urltool = getToolByName(context, 'portal_url')
+        portal = urltool.getPortalObject()
+        email_charset = portal.getProperty('email_charset')
+        to_address = 'agenda.web@upc.edu'
+        from_name = portal.getProperty('email_from_name')
+        from_address = portal.getProperty('email_from')
+        titulo_web = portal.getProperty('title')
+        mtool = self.context.portal_membership
+        userid = mtool.getAuthenticatedMember().id
+        source = "%s <%s>" % (from_name, from_address)
+        subject = "[Nou esdeveniment] %s" % (titulo_web)
+        message = MESSAGE_TEMPLATE % dict(titolGW=titulo_web,
+                                          titleEvent=event_title,
+                                          dayEvent=event_day,
+                                          monthEvent=event_month,
+                                          yearEvent=event_year,
+                                          hourEvent=event_hour,
+                                          linkEvent=event_link,
+                                          from_address=from_address,
+                                          from_name=from_name,
+                                          user_name=userid)
+
+        mailhost.secureSend(message, to_address, source,
+                            subject=subject, subtype='plain',
+                            charset=email_charset, debug=False,
+                            )
+
+        if 'eventsent' not in annotations:
+            annotations['eventsent'] = True
+
+        # confirm = _(u"Mail sent.")
+        confirm = _(u"Gràcies per la vostra col·laboració. Les dades de l\'activitat s\'han enviat correctament i seran publicades com més aviat millor.")
+        IStatusMessage(self.request).addStatusMessage(confirm, type='info')
         self.request.response.redirect(self.context.absolute_url())
