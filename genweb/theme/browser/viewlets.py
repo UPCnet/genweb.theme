@@ -27,6 +27,7 @@ from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.ATContentTypes.interface.news import IATNewsItem
 from genweb.core.adapters import IImportant
 
+from zope.annotation.interfaces import IAnnotations
 from Products.ATContentTypes.interfaces.event import IATEvent
 
 from genweb.core import HAS_CAS
@@ -149,20 +150,15 @@ class gwSendEvent(viewletBase):
     grok.viewletmanager(IAboveContentTitle)
     grok.layer(IGenwebTheme)
 
-    def permisos_important(self):
-        #TODO: Comprovar que l'usuari tingui permisos per a marcar com a important
-        return not IImportant(self.context).is_important and getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
-
-    def permisos_notimportant(self):
-        #TODO: Comprovar que l'usuari tingui permisos per a marcar com a notimportant
-        return IImportant(self.context).is_important and getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
-
-    def update(self):
-        form = self.request.form
-        if 'genweb.theme.viewlet.marcar_important' in form:
-            IImportant(self.context).is_important = True
-        if 'genweb.theme.viewlet.marcar_notimportant' in form:
-            IImportant(self.context).is_important = False
+    def isEventSent(self):
+        """
+        """
+        context = self.context
+        annotations = IAnnotations(context)
+        if 'eventsent' in annotations:
+            return True
+        else:
+            return False
 
 
 class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
