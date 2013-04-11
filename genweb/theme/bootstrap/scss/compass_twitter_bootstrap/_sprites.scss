@@ -63,7 +63,7 @@
 .icon-folder-atct_album_view                { background-position: -240px 0; }
 .icon-th-list            { background-position: -264px 0; }
 .icon-ok                 { background-position: -288px 0; }
-.icon-remove             { background-position: -312px 0; }
+.icon-remove, .icon-plone-contentmenu-actions-delete             { background-position: -312px 0; }
 .icon-zoom-in            { background-position: -336px 0; }
 .icon-zoom-out           { background-position: -360px 0; }
 .icon-off                { background-position: -384px 0; }
@@ -83,7 +83,7 @@
 .icon-repeat             { background-position: -216px -24px; }
 .icon-refresh            { background-position: -240px -24px; }
 .icon-list-alt           { background-position: -264px -24px; }
-.icon-lock               { background-position: -287px -24px; } // 1px off
+.icon-lock, .icon-workflow-transition-restrict               { background-position: -287px -24px; } // 1px off
 .icon-flag               { background-position: -312px -24px; }
 .icon-headphones         { background-position: -336px -24px; }
 .icon-volume-off         { background-position: -360px -24px; }
@@ -211,10 +211,10 @@
 .icon-paste                   { background-position: -192px -168px; }
 .icon-collage                 { background-position: -216px -169px; }
 .icon-smart-folder            { background-position: -240px -169px; }
-.icon-copy                    { background-position: -264px -169px; }
-.icon-rename                  { background-position: -288px -169px; }
+.icon-copy, .icon-plone-contentmenu-actions-copy                    { background-position: -264px -169px; }
+.icon-rename, .icon-plone-contentmenu-actions-rename                  { background-position: -288px -169px; }
 .icon-resume-view,
-.icon-folder-folder_summary_view
+.icon-folder-folder_summary_view,
 .icon-plone-contentmenu-display-folder_summary_view             { background-position: -312px -169px; }
 .icon-table-view,
 .icon-folder-folder_tabular_view,
@@ -227,7 +227,7 @@
 .icon-folder-folder_extended      { background-position: -384px -169px; }
 .icon-article-view            { background-position: -408px -169px; }
 .icon-article-extended-view   { background-position: -432px -169px; }
-.icon-cut                     { background-position: -456px -169px; }
+.icon-cut, .icon-plone-contentmenu-actions-cut                     { background-position: -456px -169px; }
 
 .icon-upload                  { background-position: 0      -192px; }
 .icon-rss                     { background-position: -24px  -192px; }

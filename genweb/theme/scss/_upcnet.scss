@@ -146,10 +146,14 @@
   @extend .modal-header; margin:0; font-size: 130.769% !important;
 }
 
-.pb-ajax #content-core, .pb-ajax .documentDescription {
+.pb-ajax #content-core, .pb-ajax .documentDescription, .pb-ajax #content-history {
   @extend .modal-body; margin-bottom:0;
+  max-height: 400px;
 }
-
+.pb-ajax .historyRecord {border-bottom: 1px solid #ccc;margin-bottom: 10px;padding-bottom: 10px;}
 
 input[type="checkbox"].required:after,
 input[type="radio"].required:after { content: none; }
+
+
+.recaptchatable {background: #fff;}
