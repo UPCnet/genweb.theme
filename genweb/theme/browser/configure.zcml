@@ -10,12 +10,21 @@
         />
 
     <browser:page
-      for="*"
-      name="portal_tabs_view"
-      class=".views.gwCatalogNavigationTabs"
-      permission="zope.Public"
-      allowed_attributes="topLevelTabs"
-      layer=".interfaces.IGenwebTheme"
-      />
+        for="*"
+        name="portal_tabs_view"
+        class=".views.gwCatalogNavigationTabs"
+        permission="zope.Public"
+        allowed_attributes="topLevelTabs"
+        layer=".interfaces.IGenwebTheme"
+        />
+
+    <browser:page
+        name="plone_layout"
+        for="*"
+        permission="zope.Public"
+        class=".views.gwLayoutPolicy"
+        allowed_interface="plone.app.layout.globals.interfaces.ILayoutPolicy"
+        layer=".interfaces.IGenwebTheme"
+        />
 
 </configure>

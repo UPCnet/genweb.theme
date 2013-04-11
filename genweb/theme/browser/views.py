@@ -2,46 +2,47 @@
 from five import grok
 from Acquisition import aq_inner
 from functools import partial
-#from AccessControl import getSecurityManager
+from DateTime.DateTime import DateTime
+from scss import Scss
+
 from zope.interface import Interface
-from zope.component import getMultiAdapter, queryMultiAdapter, getUtility, queryUtility
 from zope.contentprovider import interfaces
+from zope.annotation.interfaces import IAnnotations
+from zope.component import getMultiAdapter, queryMultiAdapter, getUtility, queryUtility
+from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile as ZopeViewPageTemplateFile
 
-from Products.CMFPlone import utils
-from Products.CMFCore.utils import getToolByName
-from Products.CMFPlone.interfaces import IPloneSiteRoot
-from Products.CMFPlone.browser.navigation import CatalogNavigationTabs
-from Products.CMFPlone.browser.navigation import get_id, get_view_url
-
-from Products.ATContentTypes.interfaces.event import IATEvent
-#from genweb.core.adapters import IImportant
-
+from plone.memoize import ram
+from plone.registry.interfaces import IRegistry
 from plone.portlets.interfaces import IPortletManager
 from plone.portlets.interfaces import IPortletManagerRenderer
-from plone.memoize import ram
+from plone.app.layout.globals.layout import LayoutPolicy
+from plone.i18n.normalizer.interfaces import IIDNormalizer
+from plone.formwidget.recaptcha.view import RecaptchaView, IRecaptchaInfo
 
-from DateTime.DateTime import DateTime
-from zope.annotation.interfaces import IAnnotations
+from Products.CMFPlone import utils
+from Products.CMFPlone.utils import safe_unicode
+from Products.CMFCore.utils import getToolByName
+from Products.CMFPlone import PloneMessageFactory as _
+from Products.CMFPlone.interfaces import IPloneSiteRoot
+from Products.PythonScripts.standard import url_quote_plus
+from Products.statusmessages.interfaces import IStatusMessage
+from Products.ATContentTypes.interfaces.event import IATEvent
+from Products.CMFPlone.browser.navtree import getNavigationRoot
+from Products.CMFPlone.browser.navigation import CatalogNavigationTabs
+from Products.CMFPlone.browser.navigation import get_id, get_view_url
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+
+from recaptcha.client.captcha import displayhtml
+from collective.recaptcha.view import RecaptchaView as CollectiveRecaptchaView
 
 from genweb.core.interfaces import IHomePage
-#, IGenwebLayer
-from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 from genweb.core.utils import genweb_config, pref_lang
+
+from genweb.theme.scss import dynamic_scss
+from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
+
 from genweb.portlets.browser.manager import ISpanStorage
 
-from Products.statusmessages.interfaces import IStatusMessage
-
-from scss import Scss
-from genweb.theme.scss import dynamic_scss
-
-from plone.formwidget.recaptcha.view import RecaptchaView, IRecaptchaInfo
-from collective.recaptcha.view import RecaptchaView as CollectiveRecaptchaView
-from recaptcha.client.captcha import displayhtml
-
-from Products.CMFPlone import PloneMessageFactory as _
-from Products.CMFPlone.browser.navtree import getNavigationRoot
-from Products.CMFPlone.utils import safe_unicode
-from Products.PythonScripts.standard import url_quote_plus
 import json
 import re
 
@@ -358,6 +359,84 @@ class gwCatalogNavigationTabs(CatalogNavigationTabs):
                 result.append(data)
 
         return result
+
+
+class gwLayoutPolicy(LayoutPolicy):
+    """ Customized plone-layout view """
+
+    def bodyClass(self, template, view):
+        """
+        Returns the CSS class to be used on the body tag.
+
+        Included body classes
+        - template name: template-{}
+        - portal type: portaltype-{}
+        - navigation root: site-{}
+        - section: section-{}
+            - only the first section
+        - section structure
+            - a class for every container in the tree
+        - hide icons: icons-on
+        """
+        context = self.context
+        portal_state = getMultiAdapter(
+            (context, self.request), name=u'plone_portal_state')
+        normalizer = queryUtility(IIDNormalizer)
+
+        # template class (required)
+        name = ''
+        if isinstance(template, ViewPageTemplateFile) or \
+           isinstance(template, ZopeViewPageTemplateFile):
+            # Browser view
+            name = view.__name__
+        else:
+            name = template.getId()
+        name = normalizer.normalize(name)
+        body_class = 'template-%s' % name
+
+        # portal type class (optional)
+        portal_type = normalizer.normalize(context.portal_type)
+        if portal_type:
+            body_class += " portaltype-%s" % portal_type
+
+        # section class (optional)
+        navroot = portal_state.navigation_root()
+        body_class += " site-%s" % navroot.getId()
+
+        contentPath = context.getPhysicalPath()[
+            len(navroot.getPhysicalPath()):]
+        if contentPath:
+            body_class += " section-%s" % contentPath[0]
+            # skip first section since we already have that...
+            if len(contentPath) > 1:
+                registry = getUtility(IRegistry)
+                try:
+                    depth = registry[
+                        'plone.app.layout.globals.bodyClass.depth']
+                except KeyError:
+                    depth = 4
+                if depth > 1:
+                    classes = ['subsection-%s' % contentPath[1]]
+                    for section in contentPath[2:depth]:
+                        classes.append('-'.join([classes[-1], section]))
+                    body_class += " %s" % ' '.join(classes)
+
+        # class for hiding icons (optional)
+        if self.icons_visible():
+            body_class += ' icons-on'
+        else:
+            body_class += ' icons-off'
+
+        # class for user roles
+        membership = getToolByName(context, "portal_membership")
+        if membership.isAnonymousUser():
+            body_class += ' userrole-anonymous'
+        else:
+            user = membership.getAuthenticatedMember()
+            for role in user.getRolesInContext(self.context):
+                body_class += ' userrole-' + role.lower()
+
+        return body_class
 
 
 class gwRecaptchaView(RecaptchaView, grok.View):
