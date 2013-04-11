@@ -2,8 +2,13 @@
 dynamic_scss = """
 // Albert, aqui va la part d'scss dinamic amb els colors especifics
 
-$especific1: %(especific1)s;
-$especific2: %(especific2)s;
+$genwebPrimary: %(especific1)s;
+$genwebTitles: %(especific2)s;
+
+
+//BASE
+#portal-header {border-top:5px solid desaturate(lighten($genwebPrimary,40%), 85%);}
+#portal-header .container {border-top:5px solid $genwebPrimary;}
 
 // ...
 """

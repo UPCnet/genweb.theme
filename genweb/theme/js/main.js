@@ -62,7 +62,7 @@ $(document).ready(function () {
    highlighter: function(item){
       var iitem = $("#cercaCapca").get(0).results[item];
       //info = items[item.split("#")[0]];
-      var itm = "<i class='icon-"+iitem.icon+"'></i>" +
+      var itm = "<i class='icon-"+iitem.icon+"'></i> " +
                  iitem.title +
                 "<p class='xs margin0'>"+iitem.description+"</p>";
       return itm;

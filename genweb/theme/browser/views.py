@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-
 from five import grok
 from Acquisition import aq_inner
+from functools import partial
 #from AccessControl import getSecurityManager
 from zope.interface import Interface
 from zope.component import getMultiAdapter, queryMultiAdapter, getUtility, queryUtility
@@ -43,6 +43,7 @@ from Products.CMFPlone.browser.navtree import getNavigationRoot
 from Products.CMFPlone.utils import safe_unicode
 from Products.PythonScripts.standard import url_quote_plus
 import json
+import re
 
 MESSAGE_TEMPLATE = u"""\
 L'usuari %(user_name)s ha creat un nou esdeveniment en l'agenda del GenWeb \
@@ -285,12 +286,17 @@ class dynamicCSS(grok.View):
         self.especific2 = genweb_config().especific2
 
     def render(self):
-        return self.compile_scss(self.especific1, self.especific2)
+        return self.compile_scss(especific1=self.especific1, especific2=self.especific2)
 
     @ram.cache(_render_cachekey)
-    def compile_scss(self, especific1, especific2):
+    def compile_scss(self, **kwargs):
         css = Scss()
-        return css.compile(dynamic_scss % (dict(especific1=especific1, especific2=especific2)))
+
+        def matchdict(params, matchobj):
+            return params.get(matchobj.groups()[0], matchobj.group())
+
+        changed = re.sub(r'%\(([\w\d]+)\)s', partial(matchdict, kwargs), dynamic_scss)
+        return css.compile(changed)
 
 
 class gwCatalogNavigationTabs(CatalogNavigationTabs):

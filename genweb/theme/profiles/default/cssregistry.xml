@@ -18,6 +18,7 @@
  <stylesheet id="++resource++plone.app.jquerytools.overlays.css" enabled="False" />
  <stylesheet id="IEFixes.css" enabled="False" />
  <stylesheet id="ploneCustom.css" enabled="False" />
+ <stylesheet id="collage.css" enabled="False" />
 
 <!-- Per deshabilitar/passar a scss:
 collective.js.jqueryui.custom.min.css
@@ -27,11 +28,6 @@ collage.css
 popoll.css
 ploneboard.css
 ++resource++Products.PloneSurvey.images/survey_results.css
-++resource++collective.js.fullcalendar/fullcalendar.css
-++resource++collective.js.fullcalendar/fullcalendar.print.css
-solgema_contextualcontentmenu.css
-++resource++collective.js.colorpicker.css
-solgemafullcalendar.css
 -->
 
 </object>
