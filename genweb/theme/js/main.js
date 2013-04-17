@@ -55,6 +55,9 @@ $(document).ready(function () {
       $.getScript("/++genweb++static/js/prettify.js", function() {prettyPrint()});
   }
 
+
+// Live search
+
  $("#cercaCapca").typeahead({
    source: function (query, process) {
       setTimeout(searchElements(query, process) , 300);
@@ -89,5 +92,18 @@ $(document).ready(function () {
           process(items);
     });
  };
+
+
+// Favorites
+$('.favorite').on('click', function(event) {
+  event.preventDefault();
+  var community_url = $(this).data()['community'];
+  $.get(community_url + '/toggle-favorite');
+  if ($('i', this).hasClass('fa-icon-star')) {
+    $('i', this).addClass('fa-icon-star-empty').removeClass('fa-icon-star');
+  } else {
+    $('i', this).addClass('fa-icon-star').removeClass('fa-icon-star-empty');
+  }
+});
 
 });
