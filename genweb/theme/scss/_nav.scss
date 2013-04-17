@@ -4,7 +4,7 @@
 .dropdown-menu a {
   		&.state-intranet {color:$purple;}
   		&.state-pending {color:darken($orange,5%);}
-  		&.state-draft {color:$green;}
+  		&.state-draft, &.state-visible {color:$green;}
   		&.state-private {color:$red;}	
 }
 
@@ -15,7 +15,7 @@
 	#portal-globalnav .navbar-inner {padding:0; border-bottom:3px solid #666;}
 		#portal-globalnav .state-published {border-bottom:3px solid $blue;}		
 		#portal-globalnav .state-intranet {border-bottom:3px solid $purple;}
-		#portal-globalnav .state-draft {border-bottom:3px solid $green;}
+		#portal-globalnav .state-draft, #portal-globalnav .state-visible {border-bottom:3px solid $green;}
 		#portal-globalnav .state-pending {border-bottom:3px solid darken($orange,5%);}
 		#portal-globalnav .state-private {border-bottom:3px solid $red;}
 	#portal-globalnav .nav > li > a {font-size:16px;font-weight:bold; border-right:1px solid #bbb;}
@@ -44,7 +44,7 @@
   		position:relative;
   		&.state-intranet {color:$purple;}
   		&.state-pending {color:darken($orange,5%);}
-  		&.state-draft {color:$green;}
+  		&.state-draft, &.state-visible {color:$green;}
   		&.state-private {color:$red;}
   		&:hover {
   			@include gradient-vertical(#eeeeee, #dddddd);
@@ -74,6 +74,7 @@
 
 	& a.state-private:hover:after, .active .state-private:after {background-color:$red;}
 	& a.state-draft:hover:after, .active .state-draft:after {background-color:$green;}
+	& a.state-visible:hover:after, .active .visible-draft:after {background-color:$green;}
 	& a.state-pending:hover:after, .active .state-pending:after {background-color:darken($orange,5%);}
 	& a.state-intranet:hover:after, .active .state-intranet:after {background-color:$purple;}
 	& .active a {
@@ -123,7 +124,7 @@
 				& span:before {font-size: 525%; top:-2px; left:4px; }
 			}		
 			&.state-private {border-right: 3px solid $red; color:$red;}
-			&.state-draft {border-right: 3px solid $green; color:$green;}
+			&.state-draft, &.state-visible {border-right: 3px solid $green; color:$green;}
 			&.state-pending {border-right: 3px solid darken($orange,5%); color:darken($orange,5%);}
 			&.state-intranet {border-right: 3px solid $purple; color:$purple;}
 			&[class^="state-"]:hover, 
