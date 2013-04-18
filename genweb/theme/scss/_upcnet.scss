@@ -79,14 +79,26 @@
 
 
 .icon-workflow-transition-reject {@extend .icon-remove-circle;}
+.icon-workflow-transition-show {@extend .icon-remove-circle;}
 .icon-workflow-transition-hide {@extend  .icon-ban-circle;}
 .icon-workflow-transition-restrict {}
 .icon-workflow-transition-publishtointranet {@extend  .icon-eye-close;}
+.icon-workflow-transition-publicaalaintranet {@extend  .icon-eye-close;}
 .icon-workflow-transition-publish {@extend  .icon-eye-open;}
+.icon-workflow-transition-retracttointranet {@extend  .icon-eye-close;}
+.icon-workflow-transition-retiraalaintranet {@extend  .icon-eye-close;}
+.icon-workflow-transition-submit {@extend  .icon-ok-circle;}
+.icon-workflow-transition-retiraaesborrany {@extend .icon-remove-circle;}
 #workflow-transition-hide {@extend .state-private;}
 #workflow-transition-publishtointranet {@extend .state-intranet;}
+#workflow-transition-publicaalaintranet {@extend .state-intranet;}
 #workflow-transition-publish {@extend .state-published;}
 #workflow-transition-reject {@extend .state-draft;}
+#workflow-transition-retiraaesborrany {@extend .state-draft;}
+#workflow-transition-retracttointranet {@extend .state-intranet;}
+#workflow-transition-retiraalaintranet {@extend .state-intranet;}
+#workflow-transition-show {@extend .state-draft;}
+#workflow-transition-submit {@extend .state-pending;}
 //.icon-policy {@extend  .;}
 .icon-advanced {@extend .icon-wrench;}
 .icon-policy {@extend  .icon-info-sign;}

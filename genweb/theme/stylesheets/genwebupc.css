@@ -44,7 +44,7 @@ html {
 
 /* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 a:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -181,7 +181,7 @@ a:hover {
 .img-polaroid, .template-personal-information [for="form.portrait"] ~ img, .newsImageContainer, .tileItem img {
   padding: 4px;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -933,7 +933,7 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   background-color: #e1f2f8;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1174,7 +1174,7 @@ select[size="1"] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -1762,7 +1762,7 @@ select:focus:required:invalid:focus {
   text-align: center;
   text-shadow: 0 1px 0 white;
   background-color: #f2f2f2;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 /* line 461, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-append .add-on,
@@ -2074,7 +2074,7 @@ legend + .control-group {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/++genweb++static/images/gh.png?1354788544');
+  background-image: url('/++genweb++static/images/gh.png?1355306400');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2161,17 +2161,17 @@ legend + .control-group {
 .dropdown-menu > .selected > a > [class*=" icon-"],
 .contentViews .dropdown-menu > .selected > a > [class*=" icon-"],
 .contentViews .dropdown-menu > .selected:hover > a > [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/gh-w.png?1354788544');
+  background-image: url('/++genweb++static/images/gh-w.png?1355306400');
 }
 
 /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-color {
-  background-image: url('/++genweb++static/images/gh-c.png?1360586349');
+  background-image: url('/++genweb++static/images/gh-c.png?1361785600');
 }
 
 /* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-glass {
-  background-position: 0      0;
+  background-position: 0 0;
 }
 
 /* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2609,12 +2609,12 @@ legend + .control-group {
 }
 
 /* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-remove-circle, .icon-workflow-transition-reject {
+.icon-remove-circle, .icon-workflow-transition-reject, .icon-workflow-transition-show, .icon-workflow-transition-retiraaesborrany {
   background-position: -168px -96px;
 }
 
 /* line 145, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-ok-circle, .icon-surveyselectquestion, .icon-formselectionfield {
+.icon-ok-circle, .icon-surveyselectquestion, .icon-formselectionfield, .icon-workflow-transition-submit {
   background-position: -192px -96px;
 }
 
@@ -2699,7 +2699,7 @@ legend + .control-group {
 }
 
 /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-eye-close, .icon-workflow-transition-publishtointranet {
+.icon-eye-close, .icon-workflow-transition-publishtointranet, .icon-workflow-transition-publicaalaintranet, .icon-workflow-transition-retracttointranet, .icon-workflow-transition-retiraalaintranet {
   background-position: -120px -120px;
 }
 
@@ -3089,7 +3089,7 @@ legend + .control-group {
 
 /* line 257, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon {
-  background-image: url('/++genweb++static/images/gh-150.png?1354788544');
+  background-image: url('/++genweb++static/images/gh-150.png?1355306400');
   width: 21px;
   height: 21px;
   margin-top: -1px;
@@ -3122,7 +3122,7 @@ legend + .control-group {
 
 /* line 273, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon.icon-white {
-  background-image: url('/++genweb++static/images/gh-150-w.png?1354788544');
+  background-image: url('/++genweb++static/images/gh-150-w.png?1355306400');
 }
 
 /*extends icones*/
@@ -3174,9 +3174,9 @@ legend + .control-group {
   margin: 2px 0 0;
   list-style: none;
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  *border-bottom: 2px inset #ccc;
+  *border-bottom: 2px inset #cccccc;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -3482,7 +3482,7 @@ button.close {
 }
 /* line 47, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
 .btn:focus, .standalone:focus, input[value^="Cancel"]:focus, [type="submit"]:focus, .context:focus, .searchButton:focus, button.pfg-draft-save:focus, .link-parent:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #333333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -4470,7 +4470,7 @@ button.pfg-draft-save .caret,
 
 /* line 105, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .nav-tabs, .contentViews, .configlets {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
   -webkit-box-shadow: inset 0 -10px 12px -18px black;
   -moz-box-shadow: inset 0 -10px 12px -18px black;
   box-shadow: inset 0 -10px 12px -18px black;
@@ -4524,7 +4524,7 @@ button.pfg-draft-save .caret,
   background-image: linear-gradient(#f7f7f7, #ffffff 50%, #ffffff);
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#fcfcfc', GradientType=0);
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -4571,7 +4571,7 @@ button.pfg-draft-save .caret,
 
 /* line 175, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .nav-tabs.nav-stacked > li > a, .nav-stacked.contentViews > li > a, .contentViews.configlets > li > a, .configlets > li > a {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
@@ -4771,7 +4771,7 @@ button.pfg-draft-save .caret,
 
 /* line 304, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .tabs-below > .nav-tabs, .tabs-below > .contentViews, .tabs-below > .configlets {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
 }
 
 /* line 307, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
@@ -4803,7 +4803,7 @@ button.pfg-draft-save .caret,
 .contentViews .tabs-below > .configlets > .selected > a:hover,
 .contentViews .tabs-below > .nav-tabs > .selected:hover > a:hover,
 .contentViews .tabs-below > .configlets > .selected:hover > a:hover {
-  border-color: transparent #ccc #ccc #ccc;
+  border-color: transparent #cccccc #cccccc #cccccc;
 }
 
 /* line 328, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
@@ -4828,7 +4828,7 @@ button.pfg-draft-save .caret,
 .tabs-left > .nav-tabs, .tabs-left > .contentViews, .tabs-left > .configlets {
   float: left;
   margin-right: 19px;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #cccccc;
 }
 
 /* line 344, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
@@ -4859,7 +4859,7 @@ button.pfg-draft-save .caret,
 .contentViews .tabs-left > .nav-tabs .selected:hover > a:hover,
 .tabs-left > .configlets .contentViews .selected:hover > a:hover,
 .contentViews .tabs-left > .configlets .selected:hover > a:hover {
-  border-color: #ccc transparent #ccc #ccc;
+  border-color: #cccccc transparent #cccccc #cccccc;
   *border-right-color: white;
 }
 
@@ -4867,7 +4867,7 @@ button.pfg-draft-save .caret,
 .tabs-right > .nav-tabs, .tabs-right > .contentViews, .tabs-right > .configlets {
   float: right;
   margin-left: 19px;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #cccccc;
 }
 
 /* line 363, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
@@ -4898,7 +4898,7 @@ button.pfg-draft-save .caret,
 .contentViews .tabs-right > .nav-tabs .selected:hover > a:hover,
 .tabs-right > .configlets .contentViews .selected:hover > a:hover,
 .contentViews .tabs-right > .configlets .selected:hover > a:hover {
-  border-color: #ccc #ccc #ccc transparent;
+  border-color: #cccccc #cccccc #cccccc transparent;
   *border-left-color: white;
 }
 
@@ -5320,7 +5320,7 @@ button.pfg-draft-save .caret,
   display: inline-block;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-bottom: 7px solid #ccc;
+  border-bottom: 7px solid #cccccc;
   border-bottom-color: rgba(0, 0, 0, 0.25);
   position: absolute;
   top: -7px;
@@ -5340,7 +5340,7 @@ button.pfg-draft-save .caret,
 
 /* line 325, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-bottom .dropdown-menu:before {
-  border-top: 7px solid #ccc;
+  border-top: 7px solid #cccccc;
   border-top-color: rgba(0, 0, 0, 0.25);
   border-bottom: 0;
   bottom: -7px;
@@ -6058,9 +6058,9 @@ button.pfg-draft-save .caret,
   width: 560px;
   margin: -250px 0 0 -280px;
   background-color: white;
-  border: 1px solid #999;
+  border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  *border: 1px solid #999;
+  *border: 1px solid #999999;
   /* IE6-7 */
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -6269,7 +6269,7 @@ button.pfg-draft-save .caret,
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -6432,7 +6432,7 @@ button.pfg-draft-save .caret,
   display: block;
   padding: 4px;
   line-height: 18px;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -6468,7 +6468,7 @@ a.thumbnail:hover, .photoAlbumEntry a:hover {
 }
 
 /* line 8, ../bootstrap/scss/compass_twitter_bootstrap/_labels-badges.scss */
-.label, #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) #workflow-transition-hide,
+.label, #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) #workflow-transition-hide,
 .badge {
   font-size: 10.985px;
   font-weight: bold;
@@ -6481,7 +6481,7 @@ a.thumbnail:hover, .photoAlbumEntry a:hover {
 }
 
 /* line 19, ../bootstrap/scss/compass_twitter_bootstrap/_labels-badges.scss */
-.label, #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) #workflow-transition-hide {
+.label, #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) #workflow-transition-hide {
   padding: 1px 4px 2px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -6497,7 +6497,7 @@ a.thumbnail:hover, .photoAlbumEntry a:hover {
 }
 
 /* line 31, ../bootstrap/scss/compass_twitter_bootstrap/_labels-badges.scss */
-a.label:hover, #listing-table tr td:nth-child(6) a.state-restricted-to-managers:hover, #listing-table tr td:nth-child(6) a.state-visible:hover, #listing-table tr td:nth-child(6) a.state-intranet:hover, #listing-table tr td:nth-child(6) a#workflow-transition-publishtointranet:hover, #listing-table tr td:nth-child(6) a.state-private:hover, #listing-table tr td:nth-child(6) a#workflow-transition-hide:hover, a.badge:hover {
+a.label:hover, #listing-table tr td:nth-child(6) a.state-restricted-to-managers:hover, #listing-table tr td:nth-child(6) a.state-visible:hover, #listing-table tr td:nth-child(6) a.state-intranet:hover, #listing-table tr td:nth-child(6) a#workflow-transition-publishtointranet:hover, #listing-table tr td:nth-child(6) a#workflow-transition-publicaalaintranet:hover, #listing-table tr td:nth-child(6) a#workflow-transition-retracttointranet:hover, #listing-table tr td:nth-child(6) a#workflow-transition-retiraalaintranet:hover, #listing-table tr td:nth-child(6) a.state-private:hover, #listing-table tr td:nth-child(6) a#workflow-transition-hide:hover, a.badge:hover {
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -6564,17 +6564,17 @@ a.label:hover, #listing-table tr td:nth-child(6) a.state-restricted-to-managers:
 }
 
 /* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_labels-badges.scss */
-.label-intranet, #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, .badge-intranet {
+.label-intranet, #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, .badge-intranet {
   background-color: #8952ab;
 }
 
 /* line 62, ../bootstrap/scss/compass_twitter_bootstrap/_labels-badges.scss */
-.label-intranet[href], #listing-table tr td:nth-child(6) [href].state-intranet, #listing-table tr td:nth-child(6) [href]#workflow-transition-publishtointranet, .badge-intranet[href] {
+.label-intranet[href], #listing-table tr td:nth-child(6) [href].state-intranet, #listing-table tr td:nth-child(6) [href]#workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) [href]#workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) [href]#workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) [href]#workflow-transition-retiraalaintranet, .badge-intranet[href] {
   background-color: #6d4189;
 }
 
 /* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_labels-badges.scss */
-.btn .label, .standalone .label, input[value^="Cancel"] .label, [type="submit"] .label, .context .label, .searchButton .label, button.pfg-draft-save .label, .link-parent .label, .btn #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .btn .state-restricted-to-managers, .standalone #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .standalone .state-restricted-to-managers, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-restricted-to-managers, [type="submit"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) [type="submit"] .state-restricted-to-managers, .context #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .context .state-restricted-to-managers, .searchButton #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .searchButton .state-restricted-to-managers, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-restricted-to-managers, .link-parent #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .link-parent .state-restricted-to-managers, .btn #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .btn .state-visible, .standalone #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .standalone .state-visible, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-visible, [type="submit"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) [type="submit"] .state-visible, .context #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .context .state-visible, .searchButton #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .searchButton .state-visible, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-visible, .link-parent #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .link-parent .state-visible, .btn #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .btn .state-intranet, .standalone #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .standalone .state-intranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-intranet, [type="submit"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) [type="submit"] .state-intranet, .context #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .context .state-intranet, .searchButton #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .searchButton .state-intranet, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-intranet, .link-parent #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .link-parent .state-intranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-publishtointranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-publishtointranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-publishtointranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-publishtointranet, .context #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .context #workflow-transition-publishtointranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-publishtointranet, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-publishtointranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-publishtointranet, .btn #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .btn .state-private, .standalone #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .standalone .state-private, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-private, [type="submit"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) [type="submit"] .state-private, .context #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .context .state-private, .searchButton #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .searchButton .state-private, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-private, .link-parent #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .link-parent .state-private, .btn #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .btn #workflow-transition-hide, .standalone #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .standalone #workflow-transition-hide, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-hide, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-hide, .context #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .context #workflow-transition-hide, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-hide, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-hide, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-hide,
+.btn .label, .standalone .label, input[value^="Cancel"] .label, [type="submit"] .label, .context .label, .searchButton .label, button.pfg-draft-save .label, .link-parent .label, .btn #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .btn .state-restricted-to-managers, .standalone #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .standalone .state-restricted-to-managers, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-restricted-to-managers, [type="submit"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) [type="submit"] .state-restricted-to-managers, .context #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .context .state-restricted-to-managers, .searchButton #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .searchButton .state-restricted-to-managers, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-restricted-to-managers, .link-parent #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .link-parent .state-restricted-to-managers, .btn #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .btn .state-visible, .standalone #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .standalone .state-visible, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-visible, [type="submit"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) [type="submit"] .state-visible, .context #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .context .state-visible, .searchButton #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .searchButton .state-visible, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-visible, .link-parent #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .link-parent .state-visible, .btn #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .btn .state-intranet, .standalone #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .standalone .state-intranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-intranet, [type="submit"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) [type="submit"] .state-intranet, .context #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .context .state-intranet, .searchButton #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .searchButton .state-intranet, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-intranet, .link-parent #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .link-parent .state-intranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-publishtointranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-publishtointranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-publishtointranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-publishtointranet, .context #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .context #workflow-transition-publishtointranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-publishtointranet, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-publishtointranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-publishtointranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-publicaalaintranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-publicaalaintranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-publicaalaintranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-publicaalaintranet, .context #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .context #workflow-transition-publicaalaintranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-publicaalaintranet, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-publicaalaintranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-publicaalaintranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-retracttointranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-retracttointranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-retracttointranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-retracttointranet, .context #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .context #workflow-transition-retracttointranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-retracttointranet, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-retracttointranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-retracttointranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-retiraalaintranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-retiraalaintranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-retiraalaintranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-retiraalaintranet, .context #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .context #workflow-transition-retiraalaintranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-retiraalaintranet, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-retiraalaintranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-retiraalaintranet, .btn #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .btn .state-private, .standalone #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .standalone .state-private, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-private, [type="submit"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) [type="submit"] .state-private, .context #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .context .state-private, .searchButton #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .searchButton .state-private, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-private, .link-parent #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .link-parent .state-private, .btn #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .btn #workflow-transition-hide, .standalone #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .standalone #workflow-transition-hide, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-hide, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-hide, .context #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .context #workflow-transition-hide, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-hide, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-hide, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-hide,
 .btn .badge,
 .standalone .badge,
 input[value^="Cancel"] .badge,
@@ -6588,7 +6588,7 @@ button.pfg-draft-save .badge,
 }
 
 /* line 75, ../bootstrap/scss/compass_twitter_bootstrap/_labels-badges.scss */
-.btn-mini .label, .discussion .commentActions .destructive .label, .discussion .reply-to-comment-button .label, .btn-mini #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .btn-mini .state-restricted-to-managers, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-restricted-to-managers, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-restricted-to-managers, .btn-mini #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .btn-mini .state-visible, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-visible, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-visible, .btn-mini #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .btn-mini .state-intranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-intranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-intranet, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-publishtointranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-publishtointranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-publishtointranet, .btn-mini #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .btn-mini .state-private, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-private, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-private, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-hide, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-hide, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-hide,
+.btn-mini .label, .discussion .commentActions .destructive .label, .discussion .reply-to-comment-button .label, .btn-mini #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .btn-mini .state-restricted-to-managers, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-restricted-to-managers, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-restricted-to-managers, .btn-mini #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .btn-mini .state-visible, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-visible, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-visible, .btn-mini #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .btn-mini .state-intranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-intranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-intranet, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-publishtointranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-publishtointranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-publishtointranet, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-publicaalaintranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-publicaalaintranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-publicaalaintranet, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-retracttointranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-retracttointranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-retracttointranet, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-retiraalaintranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-retiraalaintranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-retiraalaintranet, .btn-mini #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .btn-mini .state-private, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-private, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-private, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-hide, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-hide, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-hide,
 .btn-mini .badge,
 .discussion .commentActions .destructive .badge,
 .discussion .reply-to-comment-button .badge {
@@ -7234,7 +7234,7 @@ button.pfg-draft-save .badge,
 
   /* line 16, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar .btn-navbar i {
-    background-image: url('/++genweb++static/images/gh-w.png?1354788544');
+    background-image: url('/++genweb++static/images/gh-w.png?1355306400');
   }
 
   /* line 17, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
@@ -7475,7 +7475,7 @@ button.pfg-draft-save .badge,
   }
   /* line 138, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
-    background-image: url('/++genweb++static/images/gh-w.png?1354788544');
+    background-image: url('/++genweb++static/images/gh-w.png?1355306400');
   }
   /* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
@@ -7490,7 +7490,7 @@ button.pfg-draft-save .badge,
   /* line 143, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai:before {
     position: absolute;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
   }
 
   /* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
@@ -7602,7 +7602,7 @@ button.pfg-draft-save .badge,
 
   /* line 171, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu {
-    font-size: 84.613846% !important;
+    font-size: 84.61385% !important;
   }
 
   /* line 172, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
@@ -7633,7 +7633,7 @@ button.pfg-draft-save .badge,
 
   /* line 181, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   input[type="checkbox"], input[type="radio"] {
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
   }
 
   /* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
@@ -8469,17 +8469,17 @@ button.pfg-draft-save .badge,
   }
 
   /* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  #portal-globalnav .state-draft, #portal-globalnav #workflow-transition-reject {
+  #portal-globalnav .state-draft, #portal-globalnav #workflow-transition-reject, #portal-globalnav #workflow-transition-retiraaesborrany, #portal-globalnav #workflow-transition-show {
     border-right: 3px solid #72a31d !important;
   }
 
   /* line 159, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  #portal-globalnav .state-pending {
+  #portal-globalnav .state-pending, #portal-globalnav #workflow-transition-submit {
     border-right: 3px solid #ad6704 !important;
   }
 
   /* line 160, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
-  #portal-globalnav .state-intranet, #portal-globalnav #workflow-transition-publishtointranet {
+  #portal-globalnav .state-intranet, #portal-globalnav #workflow-transition-publishtointranet, #portal-globalnav #workflow-transition-publicaalaintranet, #portal-globalnav #workflow-transition-retracttointranet, #portal-globalnav #workflow-transition-retiraalaintranet {
     border-right: 3px solid #8952ab !important;
   }
 
@@ -8697,17 +8697,17 @@ button.pfg-draft-save .badge,
 }
 
 /* line 28, ../scss/_base.scss */
-.state-intranet, #workflow-transition-publishtointranet {
+.state-intranet, #workflow-transition-publishtointranet, #workflow-transition-publicaalaintranet, #workflow-transition-retracttointranet, #workflow-transition-retiraalaintranet {
   color: #8952ab;
 }
 
 /* line 29, ../scss/_base.scss */
-.state-pending {
+.state-pending, #workflow-transition-submit {
   color: #df8505;
 }
 
 /* line 30, ../scss/_base.scss */
-.state-draft, #workflow-transition-reject, .state-visible {
+.state-draft, #workflow-transition-reject, #workflow-transition-retiraaesborrany, #workflow-transition-show, .state-visible {
   color: #72a31d;
 }
 
@@ -8748,7 +8748,7 @@ button.pfg-draft-save .badge,
 
 /* line 41, ../scss/_base.scss */
 .userScreen, .userTablet, .userMobile, .userGenweb {
-  background: url('/++genweb++static/images/sprite_usuari.png?1354788544') transparent no-repeat center top;
+  background: url('/++genweb++static/images/sprite_usuari.png?1355306400') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em;
 }
@@ -8852,7 +8852,7 @@ button.pfg-draft-save .badge,
 /*ajusta imatges icos en menús per a hovers */
 /* line 68, ../scss/_base.scss */
 .dropdown-menu a:hover [class^="icon-"], .dropdown-menu a:hover #category.documentByLine:before, .dropdown-menu a:hover .tileFooter:before, .dropdown-menu a:hover [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/gh-w.png?1354788544') !important;
+  background-image: url('/++genweb++static/images/gh-w.png?1355306400') !important;
 }
 
 /* line 75, ../scss/_base.scss */
@@ -8970,7 +8970,7 @@ button.pfg-draft-save .badge,
 
 /* line 125, ../scss/_base.scss */
 .header-image {
-  background-image: url('/++genweb++static/images/capcalera.jpg?1354788544');
+  background-image: url('/++genweb++static/images/capcalera.jpg?1355306400');
   margin-top: 0 !important;
   height: 65px;
   overflow: hidden;
@@ -9045,7 +9045,7 @@ button.pfg-draft-save .badge,
 
 /* line 166, ../scss/_base.scss */
 #edit-bar {
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #cccccc;
   box-shadow: 0 -10px 12px -18px black inset;
   margin-bottom: 18px;
 }
@@ -9060,7 +9060,7 @@ button.pfg-draft-save .badge,
   margin: 0;
 }
 /* line 177, ../scss/_base.scss */
-#edit-bar .dropdown-toggle .label, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-restricted-to-managers, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-visible, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-intranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-publishtointranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-private, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-hide, #edit-bar .dropdown-toggle .badge {
+#edit-bar .dropdown-toggle .label, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-restricted-to-managers, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-visible, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-intranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-publishtointranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-publicaalaintranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-retracttointranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-retiraalaintranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-private, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-hide, #edit-bar .dropdown-toggle .badge {
   font-size: 100%;
 }
 
@@ -9085,7 +9085,7 @@ button.pfg-draft-save .badge,
 /* line 189, ../scss/_base.scss */
 .llistatLogos li {
   display: inline-block;
-  margin: 0 .5em 1em;
+  margin: 0 0.5em 1em;
 }
 /* line 190, ../scss/_base.scss */
 .llistatLogos a {
@@ -9143,7 +9143,7 @@ button.pfg-draft-save .badge,
   font-size: 52px;
   position: relative;
   line-height: 0;
-  top: -0.01em;
+  top: -.01em;
   left: -1px;
   color: #4d6573;
 }
@@ -9163,7 +9163,7 @@ button.pfg-draft-save .badge,
   font-size: 13px;
   position: relative;
   line-height: 0;
-  top: -0.35em;
+  top: -.35em;
   padding: 0 2px 0 3px;
 }
 
@@ -9192,7 +9192,7 @@ button.pfg-draft-save .badge,
 }
 /* line 226, ../scss/_base.scss */
 #canvia-vista a {
-  background: url('/++genweb++static/images/vistabg.png?1354788544') #666666;
+  background: url('/++genweb++static/images/vistabg.png?1355306400') #666666;
   text-align: center;
   -webkit-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
@@ -9211,15 +9211,15 @@ button.pfg-draft-save .badge,
 }
 
 /* line 5, ../scss/_nav.scss */
-.dropdown-menu a.state-intranet, .dropdown-menu a#workflow-transition-publishtointranet {
+.dropdown-menu a.state-intranet, .dropdown-menu a#workflow-transition-publishtointranet, .dropdown-menu a#workflow-transition-publicaalaintranet, .dropdown-menu a#workflow-transition-retracttointranet, .dropdown-menu a#workflow-transition-retiraalaintranet {
   color: #8952ab;
 }
 /* line 6, ../scss/_nav.scss */
-.dropdown-menu a.state-pending {
+.dropdown-menu a.state-pending, .dropdown-menu a#workflow-transition-submit {
   color: #df8505;
 }
 /* line 7, ../scss/_nav.scss */
-.dropdown-menu a.state-draft, .dropdown-menu a#workflow-transition-reject, .dropdown-menu a.state-visible {
+.dropdown-menu a.state-draft, .dropdown-menu a#workflow-transition-reject, .dropdown-menu a#workflow-transition-retiraaesborrany, .dropdown-menu a#workflow-transition-show, .dropdown-menu a.state-visible {
   color: #72a31d;
 }
 /* line 8, ../scss/_nav.scss */
@@ -9230,7 +9230,7 @@ button.pfg-draft-save .badge,
 /* line 15, ../scss/_nav.scss */
 #portal-globalnav .navbar-inner {
   padding: 0;
-  border-bottom: 3px solid #666;
+  border-bottom: 3px solid #666666;
 }
 
 /* line 16, ../scss/_nav.scss */
@@ -9239,17 +9239,17 @@ button.pfg-draft-save .badge,
 }
 
 /* line 17, ../scss/_nav.scss */
-#portal-globalnav .state-intranet, #portal-globalnav #workflow-transition-publishtointranet {
+#portal-globalnav .state-intranet, #portal-globalnav #workflow-transition-publishtointranet, #portal-globalnav #workflow-transition-publicaalaintranet, #portal-globalnav #workflow-transition-retracttointranet, #portal-globalnav #workflow-transition-retiraalaintranet {
   border-bottom: 3px solid #8952ab;
 }
 
 /* line 18, ../scss/_nav.scss */
-#portal-globalnav .state-draft, #portal-globalnav #workflow-transition-reject, #portal-globalnav .state-visible {
+#portal-globalnav .state-draft, #portal-globalnav #workflow-transition-reject, #portal-globalnav #workflow-transition-retiraaesborrany, #portal-globalnav #workflow-transition-show, #portal-globalnav .state-visible {
   border-bottom: 3px solid #72a31d;
 }
 
 /* line 19, ../scss/_nav.scss */
-#portal-globalnav .state-pending {
+#portal-globalnav .state-pending, #portal-globalnav #workflow-transition-submit {
   border-bottom: 3px solid #df8505;
 }
 
@@ -9262,7 +9262,7 @@ button.pfg-draft-save .badge,
 #portal-globalnav .nav > li > a, #portal-globalnav .contentViews > li > a, #portal-globalnav .configlets > li > a, #portal-globalnav .formTabs > li > a {
   font-size: 16px;
   font-weight: bold;
-  border-right: 1px solid #bbb;
+  border-right: 1px solid #bbbbbb;
 }
 
 /* line 22, ../scss/_nav.scss */
@@ -9278,7 +9278,7 @@ button.pfg-draft-save .badge,
 /* line 27, ../scss/_nav.scss */
 .subnavbar .nav-list {
   border: 1px solid #b2b2b2;
-  box-shadow: 0 3px 5px #ccc;
+  box-shadow: 0 3px 5px #cccccc;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -9311,15 +9311,15 @@ button.pfg-draft-save .badge,
   position: relative;
 }
 /* line 45, ../scss/_nav.scss */
-.subnavbar .nav-list a.state-intranet, .subnavbar .nav-list a#workflow-transition-publishtointranet {
+.subnavbar .nav-list a.state-intranet, .subnavbar .nav-list a#workflow-transition-publishtointranet, .subnavbar .nav-list a#workflow-transition-publicaalaintranet, .subnavbar .nav-list a#workflow-transition-retracttointranet, .subnavbar .nav-list a#workflow-transition-retiraalaintranet {
   color: #8952ab;
 }
 /* line 46, ../scss/_nav.scss */
-.subnavbar .nav-list a.state-pending {
+.subnavbar .nav-list a.state-pending, .subnavbar .nav-list a#workflow-transition-submit {
   color: #df8505;
 }
 /* line 47, ../scss/_nav.scss */
-.subnavbar .nav-list a.state-draft, .subnavbar .nav-list a#workflow-transition-reject, .subnavbar .nav-list a.state-visible {
+.subnavbar .nav-list a.state-draft, .subnavbar .nav-list a#workflow-transition-reject, .subnavbar .nav-list a#workflow-transition-retiraaesborrany, .subnavbar .nav-list a#workflow-transition-show, .subnavbar .nav-list a.state-visible {
   color: #72a31d;
 }
 /* line 48, ../scss/_nav.scss */
@@ -9364,7 +9364,7 @@ button.pfg-draft-save .badge,
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   right: 7px;
   top: 8px;
-  background-image: url('/++genweb++static/images/gh-w.png?1354788544');
+  background-image: url('/++genweb++static/images/gh-w.png?1355306400');
   background-position: -455px -71px;
   background-repeat: no-repeat;
   width: 17px;
@@ -9375,7 +9375,7 @@ button.pfg-draft-save .badge,
   background-color: #a62e1f;
 }
 /* line 76, ../scss/_nav.scss */
-.subnavbar .nav-list a.state-draft:hover:after, .subnavbar .nav-list a#workflow-transition-reject:hover:after, .subnavbar .nav-list .active .state-draft:after, .subnavbar .nav-list .selected .state-draft:after, .subnavbar .nav-list .contentViews .selected .state-draft:after, .contentViews .subnavbar .nav-list .selected .state-draft:after, .subnavbar .nav-list .contentViews .selected:hover .state-draft:after, .contentViews .subnavbar .nav-list .selected:hover .state-draft:after, .subnavbar .nav-list .active #workflow-transition-reject:after, .subnavbar .nav-list .selected #workflow-transition-reject:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-reject:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-reject:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-reject:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-reject:after {
+.subnavbar .nav-list a.state-draft:hover:after, .subnavbar .nav-list a#workflow-transition-reject:hover:after, .subnavbar .nav-list a#workflow-transition-retiraaesborrany:hover:after, .subnavbar .nav-list a#workflow-transition-show:hover:after, .subnavbar .nav-list .active .state-draft:after, .subnavbar .nav-list .selected .state-draft:after, .subnavbar .nav-list .contentViews .selected .state-draft:after, .contentViews .subnavbar .nav-list .selected .state-draft:after, .subnavbar .nav-list .contentViews .selected:hover .state-draft:after, .contentViews .subnavbar .nav-list .selected:hover .state-draft:after, .subnavbar .nav-list .active #workflow-transition-reject:after, .subnavbar .nav-list .selected #workflow-transition-reject:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-reject:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-reject:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-reject:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-reject:after, .subnavbar .nav-list .active #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .selected #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-retiraaesborrany:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-retiraaesborrany:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .active #workflow-transition-show:after, .subnavbar .nav-list .selected #workflow-transition-show:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-show:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-show:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-show:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-show:after {
   background-color: #72a31d;
 }
 /* line 77, ../scss/_nav.scss */
@@ -9383,11 +9383,11 @@ button.pfg-draft-save .badge,
   background-color: #72a31d;
 }
 /* line 78, ../scss/_nav.scss */
-.subnavbar .nav-list a.state-pending:hover:after, .subnavbar .nav-list .active .state-pending:after, .subnavbar .nav-list .selected .state-pending:after, .subnavbar .nav-list .contentViews .selected .state-pending:after, .contentViews .subnavbar .nav-list .selected .state-pending:after, .subnavbar .nav-list .contentViews .selected:hover .state-pending:after, .contentViews .subnavbar .nav-list .selected:hover .state-pending:after {
+.subnavbar .nav-list a.state-pending:hover:after, .subnavbar .nav-list a#workflow-transition-submit:hover:after, .subnavbar .nav-list .active .state-pending:after, .subnavbar .nav-list .selected .state-pending:after, .subnavbar .nav-list .contentViews .selected .state-pending:after, .contentViews .subnavbar .nav-list .selected .state-pending:after, .subnavbar .nav-list .contentViews .selected:hover .state-pending:after, .contentViews .subnavbar .nav-list .selected:hover .state-pending:after, .subnavbar .nav-list .active #workflow-transition-submit:after, .subnavbar .nav-list .selected #workflow-transition-submit:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-submit:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-submit:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-submit:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-submit:after {
   background-color: #df8505;
 }
 /* line 79, ../scss/_nav.scss */
-.subnavbar .nav-list a.state-intranet:hover:after, .subnavbar .nav-list a#workflow-transition-publishtointranet:hover:after, .subnavbar .nav-list .active .state-intranet:after, .subnavbar .nav-list .selected .state-intranet:after, .subnavbar .nav-list .contentViews .selected .state-intranet:after, .contentViews .subnavbar .nav-list .selected .state-intranet:after, .subnavbar .nav-list .contentViews .selected:hover .state-intranet:after, .contentViews .subnavbar .nav-list .selected:hover .state-intranet:after, .subnavbar .nav-list .active #workflow-transition-publishtointranet:after, .subnavbar .nav-list .selected #workflow-transition-publishtointranet:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-publishtointranet:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-publishtointranet:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-publishtointranet:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-publishtointranet:after {
+.subnavbar .nav-list a.state-intranet:hover:after, .subnavbar .nav-list a#workflow-transition-publishtointranet:hover:after, .subnavbar .nav-list a#workflow-transition-publicaalaintranet:hover:after, .subnavbar .nav-list a#workflow-transition-retracttointranet:hover:after, .subnavbar .nav-list a#workflow-transition-retiraalaintranet:hover:after, .subnavbar .nav-list .active .state-intranet:after, .subnavbar .nav-list .selected .state-intranet:after, .subnavbar .nav-list .contentViews .selected .state-intranet:after, .contentViews .subnavbar .nav-list .selected .state-intranet:after, .subnavbar .nav-list .contentViews .selected:hover .state-intranet:after, .contentViews .subnavbar .nav-list .selected:hover .state-intranet:after, .subnavbar .nav-list .active #workflow-transition-publishtointranet:after, .subnavbar .nav-list .selected #workflow-transition-publishtointranet:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-publishtointranet:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-publishtointranet:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-publishtointranet:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-publishtointranet:after, .subnavbar .nav-list .active #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .selected #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-publicaalaintranet:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-publicaalaintranet:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .active #workflow-transition-retracttointranet:after, .subnavbar .nav-list .selected #workflow-transition-retracttointranet:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-retracttointranet:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-retracttointranet:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-retracttointranet:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-retracttointranet:after, .subnavbar .nav-list .active #workflow-transition-retiraalaintranet:after, .subnavbar .nav-list .selected #workflow-transition-retiraalaintranet:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-retiraalaintranet:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-retiraalaintranet:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-retiraalaintranet:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-retiraalaintranet:after {
   background-color: #8952ab;
 }
 /* line 80, ../scss/_nav.scss */
@@ -9464,7 +9464,7 @@ button.pfg-draft-save .badge,
   background: transparent !important;
   padding: 0 !important;
   border-right: 3px solid #007bc0;
-  *border-top: 1px solid #fff !important;
+  *border-top: 1px solid white !important;
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   -ms-border-radius: 0 !important;
@@ -9497,17 +9497,17 @@ button.pfg-draft-save .badge,
   color: #a62e1f;
 }
 /* line 127, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.state-draft, .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .contentViews .selected ul a.state-draft, .contentViews .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .contentViews .selected:hover ul a.state-draft, .contentViews .subnavbar .nav-list .selected:hover ul a.state-draft, .subnavbar .nav-list .active ul a#workflow-transition-reject, .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-reject, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-reject, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-reject, .subnavbar .nav-list .active ul a.state-visible, .subnavbar .nav-list .selected ul a.state-visible, .subnavbar .nav-list .contentViews .selected ul a.state-visible, .contentViews .subnavbar .nav-list .selected ul a.state-visible, .subnavbar .nav-list .contentViews .selected:hover ul a.state-visible, .contentViews .subnavbar .nav-list .selected:hover ul a.state-visible {
+.subnavbar .nav-list .active ul a.state-draft, .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .contentViews .selected ul a.state-draft, .contentViews .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .contentViews .selected:hover ul a.state-draft, .contentViews .subnavbar .nav-list .selected:hover ul a.state-draft, .subnavbar .nav-list .active ul a#workflow-transition-reject, .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-reject, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-reject, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-reject, .subnavbar .nav-list .active ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .selected ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-retiraaesborrany, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-retiraaesborrany, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .active ul a#workflow-transition-show, .subnavbar .nav-list .selected ul a#workflow-transition-show, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-show, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-show, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-show, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-show, .subnavbar .nav-list .active ul a.state-visible, .subnavbar .nav-list .selected ul a.state-visible, .subnavbar .nav-list .contentViews .selected ul a.state-visible, .contentViews .subnavbar .nav-list .selected ul a.state-visible, .subnavbar .nav-list .contentViews .selected:hover ul a.state-visible, .contentViews .subnavbar .nav-list .selected:hover ul a.state-visible {
   border-right: 3px solid #72a31d;
   color: #72a31d;
 }
 /* line 128, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.state-pending, .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .contentViews .selected ul a.state-pending, .contentViews .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .contentViews .selected:hover ul a.state-pending, .contentViews .subnavbar .nav-list .selected:hover ul a.state-pending {
+.subnavbar .nav-list .active ul a.state-pending, .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .contentViews .selected ul a.state-pending, .contentViews .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .contentViews .selected:hover ul a.state-pending, .contentViews .subnavbar .nav-list .selected:hover ul a.state-pending, .subnavbar .nav-list .active ul a#workflow-transition-submit, .subnavbar .nav-list .selected ul a#workflow-transition-submit, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-submit, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-submit, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-submit, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-submit {
   border-right: 3px solid #df8505;
   color: #df8505;
 }
 /* line 129, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.state-intranet, .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .contentViews .selected ul a.state-intranet, .contentViews .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .contentViews .selected:hover ul a.state-intranet, .contentViews .subnavbar .nav-list .selected:hover ul a.state-intranet, .subnavbar .nav-list .active ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-publishtointranet, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-publishtointranet, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-publishtointranet {
+.subnavbar .nav-list .active ul a.state-intranet, .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .contentViews .selected ul a.state-intranet, .contentViews .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .contentViews .selected:hover ul a.state-intranet, .contentViews .subnavbar .nav-list .selected:hover ul a.state-intranet, .subnavbar .nav-list .active ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-publishtointranet, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-publishtointranet, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .active ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .selected ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-publicaalaintranet, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-publicaalaintranet, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .active ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .selected ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-retracttointranet, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-retracttointranet, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .active ul a#workflow-transition-retiraalaintranet, .subnavbar .nav-list .selected ul a#workflow-transition-retiraalaintranet, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-retiraalaintranet, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-retiraalaintranet, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-retiraalaintranet, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-retiraalaintranet {
   border-right: 3px solid #8952ab;
   color: #8952ab;
 }
@@ -9537,7 +9537,7 @@ button.pfg-draft-save .badge,
 }
 /* line 154, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected ul a[class^="contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class^="contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected ul a[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" contenttype-"] span:after {
-  background-image: url('/++genweb++static/images/gh.png?1354788544');
+  background-image: url('/++genweb++static/images/gh.png?1355306400');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -9635,7 +9635,7 @@ button.pfg-draft-save .badge,
 
 /* line 204, ../scss/_nav.scss */
 html * .dropdown-menu a:hover .img_blank {
-  content: url('/++genweb++static/images/blank_blanc.png?1354788544');
+  content: url('/++genweb++static/images/blank_blanc.png?1355306400');
   width: 10px;
   height: 10px;
 }
@@ -9688,7 +9688,7 @@ html * .dropdown-menu a:hover .img_blank {
 }
 /* line 244, ../scss/_nav.scss */
 #listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-folder_tabular_view .listing a[class^="contenttype-"]:before, .template-folder_tabular_view .listing a[class*=" contenttype-"]:before {
-  background-image: url('/++genweb++static/images/gh.png?1354788544');
+  background-image: url('/++genweb++static/images/gh.png?1355306400');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -10168,7 +10168,7 @@ html[lang="es"] .box-example:after {
   font-size: 100%;
   background: #fcfcfc;
   color: #333333;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #dddddd;
   border-right: 20px solid #74cdff;
   padding: 8px 12px;
   position: relative;
@@ -10176,7 +10176,7 @@ html[lang="es"] .box-example:after {
 /* line 144, ../scss/_wells-boxes.scss */
 .sheet:before, div.fitxa:before {
   content: "*";
-  content: url('/++genweb++static/images/sheet.png?1354788544');
+  content: url('/++genweb++static/images/sheet.png?1355306400');
   font-size: 300%;
   position: absolute;
   right: -19px;
@@ -10345,7 +10345,7 @@ ul {
 
 /* line 125, ../scss/_lists.scss */
 .list-links li:before, .portaltype-packet .estudis .llistatEnllacos li:before {
-  content: url('/++genweb++static/images/arrow.png?1354788544');
+  content: url('/++genweb++static/images/arrow.png?1355306400');
   margin-left: -15px;
   margin-top: -13px;
 }
@@ -10357,7 +10357,7 @@ ul {
 
 /* line 135, ../scss/_lists.scss */
 .list-highlighted li:before {
-  content: url('/++genweb++static/images/arrow_hl.png?1354788544');
+  content: url('/++genweb++static/images/arrow_hl.png?1355306400');
   margin-left: -22px;
   margin-top: -11px;
 }
@@ -11049,25 +11049,25 @@ h1:first-child, h2:first-child, h3:first-child {
 
 /* line 9, ../scss/_texts.scss */
 *.xxxl, #archetypes-fieldname-title label, #archetypes-fieldname-title input, #portal-sitemap > li {
-  font-size: 153.846154% !important;
+  font-size: 153.84615% !important;
   line-height: 27px;
 }
 
 /* line 10, ../scss/_texts.scss */
 *.xxl, legend, *.tileHeadline {
-  font-size: 130.769231% !important;
+  font-size: 130.76923% !important;
   line-height: 18px;
 }
 
 /* line 11, ../scss/_texts.scss */
 *.xl {
-  font-size: 115.384615% !important;
+  font-size: 115.38462% !important;
   line-height: 18px;
 }
 
 /* line 12, ../scss/_texts.scss */
 *.l {
-  font-size: 107.692308% !important;
+  font-size: 107.69231% !important;
   line-height: 18px;
 }
 
@@ -11079,25 +11079,25 @@ h1:first-child, h2:first-child, h3:first-child {
 
 /* line 14, ../scss/_texts.scss */
 *.s, *.formHelp, .discussion *.commentDate {
-  font-size: 92.3076923% !important;
+  font-size: 92.30769% !important;
   line-height: 18px;
 }
 
 /* line 15, ../scss/_texts.scss */
 *.xs {
-  font-size: 84.6153846% !important;
+  font-size: 84.61538% !important;
   line-height: 18px;
 }
 
 /* line 16, ../scss/_texts.scss */
 *.xxs, #portal-sitemap ul > li {
-  font-size: 76.9230769% !important;
+  font-size: 76.92308% !important;
   line-height: 18px;
 }
 
 /* line 17, ../scss/_texts.scss */
 *.xxxs {
-  font-size: 69.2307692% !important;
+  font-size: 69.23077% !important;
   line-height: 18px;
 }
 
@@ -11220,7 +11220,7 @@ hr.liniaDalt, hr.tileHeadline {
   display: block;
   width: 14px;
   height: 14px;
-  background: url('/++genweb++static/images/gh.png?1354788544');
+  background: url('/++genweb++static/images/gh.png?1355306400');
 }
 
 /* line 94, ../scss/_texts.scss */
@@ -11268,7 +11268,7 @@ a {
 
 /* line 114, ../scss/_texts.scss */
 .pdf:after, .ppt:after, .xls:after, .doc:after, .down:after, .https:after, .vid:after, .img:after, .txt:after {
-  background: url('/++genweb++static/images/gh-c.png?1360586349') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1361785600') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -11384,21 +11384,21 @@ a {
 /* line 152, ../scss/_texts.scss */
 .prettyprint-inverse {
   background-color: #333;
-  border: 1px solid #111;
+  border: 1px solid #111111;
 }
 
 /* line 153, ../scss/_texts.scss */
 .prettyprint.linenums {
-  -webkit-box-shadow: inset 40px 0 0 #E1F2F8, inset 41px 0 0 #bfced4;
-  -moz-box-shadow: inset 40px 0 0 #E1F2F8, inset 41px 0 0 #bfced4;
-  box-shadow: inset 40px 0 0 #E1F2F8, inset 41px 0 0 #bfced4;
+  -webkit-box-shadow: inset 40px 0 0 #e1f2f8, inset 41px 0 0 #bfced4;
+  -moz-box-shadow: inset 40px 0 0 #e1f2f8, inset 41px 0 0 #bfced4;
+  box-shadow: inset 40px 0 0 #e1f2f8, inset 41px 0 0 #bfced4;
 }
 
 /* line 158, ../scss/_texts.scss */
 .prettyprint-inverse.prettyprint.linenums {
-  -webkit-box-shadow: inset 40px 0 0 #222, inset 41px 0 0 #111;
-  -moz-box-shadow: inset 40px 0 0 #222, inset 41px 0 0 #111;
-  box-shadow: inset 40px 0 0 #222, inset 41px 0 0 #111;
+  -webkit-box-shadow: inset 40px 0 0 #222222, inset 41px 0 0 #111111;
+  -moz-box-shadow: inset 40px 0 0 #222222, inset 41px 0 0 #111111;
+  box-shadow: inset 40px 0 0 #222222, inset 41px 0 0 #111111;
 }
 
 /* Specify class=linenums on a pre to get line numbering */
@@ -11413,7 +11413,7 @@ ol.linenums li {
   padding-left: 12px;
   color: #2d4360;
   line-height: 20px;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 0 white;
 }
 
 /* line 173, ../scss/_texts.scss */
@@ -11479,7 +11479,7 @@ input[type="file"] {
 }
 /* line 18, ../scss/_inputs.scss */
 .customfile-feedback-populated:before {
-  background: url('/++genweb++static/images/gh-c.png?1360586349') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1361785600') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -11497,7 +11497,7 @@ input[type="file"] {
 
 /* line 33, ../scss/_inputs.scss */
 .customfile-focus .customfile-button {
-  outline: 1px dotted #ccc;
+  outline: 1px dotted #cccccc;
 }
 
 /*afegeix icona de fitxer a les extensions habituals*/
@@ -11860,7 +11860,7 @@ h2.title-inverse {
 }
 /* line 223, ../scss/_portlets.scss */
 h2.title-inverse i {
-  background-image: url('/++genweb++static/images/gh-w.png?1354788544');
+  background-image: url('/++genweb++static/images/gh-w.png?1355306400');
 }
 
 /* line 230, ../scss/_portlets.scss */
@@ -11881,7 +11881,7 @@ h2.title-inverse i {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
-  text-shadow: 0 1px #fff;
+  text-shadow: 0 1px white;
 }
 /* line 234, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar td.event, .portletCalendar .ploneCalendar td.todayevent {
@@ -11975,7 +11975,7 @@ label {
 }
 
 /* line 94, ../scss/_plone.scss */
-div.label, #listing-table tr td:nth-child(6) div.state-restricted-to-managers, #listing-table tr td:nth-child(6) div.state-visible, #listing-table tr td:nth-child(6) div.state-intranet, #listing-table tr td:nth-child(6) div#workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) div.state-private, #listing-table tr td:nth-child(6) div#workflow-transition-hide, label *.label, label #listing-table tr td:nth-child(6) *.state-restricted-to-managers, #listing-table tr td:nth-child(6) label *.state-restricted-to-managers, label #listing-table tr td:nth-child(6) *.state-visible, #listing-table tr td:nth-child(6) label *.state-visible, label #listing-table tr td:nth-child(6) *.state-intranet, #listing-table tr td:nth-child(6) label *.state-intranet, label #listing-table tr td:nth-child(6) *#workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) label *#workflow-transition-publishtointranet, label #listing-table tr td:nth-child(6) *.state-private, #listing-table tr td:nth-child(6) label *.state-private, label #listing-table tr td:nth-child(6) *#workflow-transition-hide, #listing-table tr td:nth-child(6) label *#workflow-transition-hide {
+div.label, #listing-table tr td:nth-child(6) div.state-restricted-to-managers, #listing-table tr td:nth-child(6) div.state-visible, #listing-table tr td:nth-child(6) div.state-intranet, #listing-table tr td:nth-child(6) div#workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) div#workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) div#workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) div#workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) div.state-private, #listing-table tr td:nth-child(6) div#workflow-transition-hide, label *.label, label #listing-table tr td:nth-child(6) *.state-restricted-to-managers, #listing-table tr td:nth-child(6) label *.state-restricted-to-managers, label #listing-table tr td:nth-child(6) *.state-visible, #listing-table tr td:nth-child(6) label *.state-visible, label #listing-table tr td:nth-child(6) *.state-intranet, #listing-table tr td:nth-child(6) label *.state-intranet, label #listing-table tr td:nth-child(6) *#workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) label *#workflow-transition-publishtointranet, label #listing-table tr td:nth-child(6) *#workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) label *#workflow-transition-publicaalaintranet, label #listing-table tr td:nth-child(6) *#workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) label *#workflow-transition-retracttointranet, label #listing-table tr td:nth-child(6) *#workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) label *#workflow-transition-retiraalaintranet, label #listing-table tr td:nth-child(6) *.state-private, #listing-table tr td:nth-child(6) label *.state-private, label #listing-table tr td:nth-child(6) *#workflow-transition-hide, #listing-table tr td:nth-child(6) label *#workflow-transition-hide {
   background: white;
   text-shadow: none;
   font-size: 100%;
@@ -12039,7 +12039,7 @@ input#title {
 }
 /* line 158, ../scss/_plone.scss */
 .img-mask iframe {
-  -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1354788544') no-repeat center center;
+  -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1355306400') no-repeat center center;
 }
 
 /* line 163, ../scss/_plone.scss */
@@ -12070,7 +12070,7 @@ iframe {
   width: 14px;
   height: 14px;
   display: inline-block;
-  background: url('/++genweb++static/images/gh.png?1354788544') -239px -143px no-repeat;
+  background: url('/++genweb++static/images/gh.png?1355306400') -239px -143px no-repeat;
   margin-left: 5px;
 }
 /* line 191, ../scss/_plone.scss */
@@ -12227,7 +12227,7 @@ iframe {
 
 /* line 265, ../scss/_plone.scss */
 .calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected, .contentViews .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
-  box-shadow: inset 0 0 3px #08c;
+  box-shadow: inset 0 0 3px #0088cc;
 }
 
 /* line 266, ../scss/_plone.scss */
@@ -12272,7 +12272,7 @@ iframe {
 
 /* line 273, ../scss/_plone.scss */
 .calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected, .contentViews .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
-  box-shadow: inset 0 0 3px #08c;
+  box-shadow: inset 0 0 3px #0088cc;
 }
 
 /* line 274, ../scss/_plone.scss */
@@ -12313,12 +12313,12 @@ iframe {
 
 /* line 282, ../scss/_plone.scss */
 .calendar tfoot .hilite {
-  background-color: #cef !important;
+  background-color: #cceeff !important;
 }
 
 /* line 283, ../scss/_plone.scss */
 .calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected, .contentViews .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
-  background-color: #08c !important;
+  background-color: #0088cc !important;
 }
 
 /* line 285, ../scss/_plone.scss */
@@ -12339,7 +12339,7 @@ iframe {
 }
 
 /* line 302, ../scss/_plone.scss */
-.calendar .combo .label, .calendar .combo #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .calendar .combo .state-restricted-to-managers, .calendar .combo #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .calendar .combo .state-visible, .calendar .combo #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .calendar .combo .state-intranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publishtointranet, .calendar .combo #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .calendar .combo .state-private, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-hide,
+.calendar .combo .label, .calendar .combo #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .calendar .combo .state-restricted-to-managers, .calendar .combo #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .calendar .combo .state-visible, .calendar .combo #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .calendar .combo .state-intranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publishtointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publicaalaintranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retracttointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retiraalaintranet, .calendar .combo #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .calendar .combo .state-private, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-hide,
 .calendar .combo .label-IEfix {
   text-align: center;
   display: block;
@@ -12354,7 +12354,7 @@ iframe {
 /* line 312, ../scss/_plone.scss */
 .calendar .combo .active, .calendar .combo .selected, .calendar .combo .contentViews .selected, .contentViews .calendar .combo .selected, .calendar .combo .contentViews .selected:hover, .contentViews .calendar .combo .selected:hover {
   padding: 0px;
-  border: 1px solid #000;
+  border: 1px solid black;
 }
 
 /* line 317, ../scss/_plone.scss */
@@ -12376,7 +12376,7 @@ iframe {
 .calendar td.time .minute,
 .calendar td.time .ampm {
   padding: 0px 3px 0px 4px;
-  border: 1px solid #889;
+  border: 1px solid #888899;
   font-weight: bold;
   background-color: Menu;
 }
@@ -12544,8 +12544,8 @@ img[src$="spinner.gif"] {
 /* line 416, ../scss/_plone.scss */
 .collage-header {
   /*font-size: 0.9em;*/
-  border-bottom: 1px solid White;
-  padding: 2px 0 2px 0!important;
+  border-bottom: 1px solid white;
+  padding: 2px 0 2px 0 !important;
   position: relative;
   margin-bottom: 2px !important;
 }
@@ -12563,7 +12563,7 @@ img[src$="spinner.gif"] {
 /* line 429, ../scss/_plone.scss */
 .collage-header span.icon img.alias {
   padding: 0px;
-  border: 2px solid White;
+  border: 2px solid white;
 }
 
 /* line 433, ../scss/_plone.scss */
@@ -12592,7 +12592,7 @@ img[src$="spinner.gif"] {
   padding-bottom: 4px;
   margin-bottom: 8px;
   padding-left: 20px;
-  border-bottom: 1px solid White;
+  border-bottom: 1px solid white;
 }
 
 /* line 456, ../scss/_plone.scss */
@@ -13627,7 +13627,7 @@ html {
   #portal-header h1.pull-left {
     height: 46px;
     width: 207px;
-    background: url('/++genweb++static/images/logoUPC@2x.png?1354788544') no-repeat;
+    background: url('/++genweb++static/images/logoUPC@2x.png?1355306400') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -13636,7 +13636,7 @@ html {
 
   /* line 12, ../scss/_retina.scss */
   .header-image {
-    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1354788544');
+    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1355306400');
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -13645,12 +13645,12 @@ html {
 
   /* line 14, ../scss/_retina.scss */
   .list-links li, .portaltype-packet .estudis .llistatEnllacos li {
-    content: url('/++genweb++static/images/arrow@2x.png?1354788544');
+    content: url('/++genweb++static/images/arrow@2x.png?1355306400');
   }
 
   /* line 15, ../scss/_retina.scss */
   .list-highlighted li {
-    content: url('/++genweb++static/images/arrow_hl@2x.png?1354788544');
+    content: url('/++genweb++static/images/arrow_hl@2x.png?1355306400');
   }
 
   /* line 17, ../scss/_retina.scss */
@@ -13661,22 +13661,22 @@ html {
 
   /* line 18, ../scss/_retina.scss */
   .img_blank[src*="blank_blau"] {
-    content: url('/++genweb++static/images/blank_blau@2x.png?1354788544');
+    content: url('/++genweb++static/images/blank_blau@2x.png?1355306400');
   }
 
   /* line 19, ../scss/_retina.scss */
   .img_blank[src*="blank_gris"] {
-    content: url('/++genweb++static/images/blank_gris@2x.png?1354788544');
+    content: url('/++genweb++static/images/blank_gris@2x.png?1355306400');
   }
 
   /* line 20, ../scss/_retina.scss */
   .img_blank[src*="blank_blanc"] {
-    content: url('/++genweb++static/images/blank_blanc@2x.png?1354788544');
+    content: url('/++genweb++static/images/blank_blanc@2x.png?1355306400');
   }
 
   /* line 22, ../scss/_retina.scss */
   .userScreen, .userTablet, .userMobile, .userGenweb {
-    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1354788544');
+    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1355306400');
     -webkit-background-size: 20px 400px;
     -moz-background-size: 20px 400px;
     -o-background-size: 20px 400px;
@@ -14098,7 +14098,7 @@ html.lt-ie8 .list-portlet li  {
 }
 /* line 34, ../scss/_upcnet.scss */
 .link-parent:before {
-  background: url('/++genweb++static/images/gh-w.png?1354788544') no-repeat -290px -95px;
+  background: url('/++genweb++static/images/gh-w.png?1355306400') no-repeat -290px -95px;
   content: " ";
   display: inline-block;
   height: 14px;
@@ -14114,70 +14114,70 @@ html.lt-ie8 .list-portlet li  {
   width: 15px;
 }
 
-/* line 94, ../scss/_upcnet.scss */
+/* line 106, ../scss/_upcnet.scss */
 .actionSeparator {
   border-top: 1px solid #b2b2b2;
   margin-top: 5px;
 }
-/* line 95, ../scss/_upcnet.scss */
+/* line 107, ../scss/_upcnet.scss */
 .actionSeparator > a {
   margin-top: 5px;
 }
 
 /* aixo no serveix per res pero mira...*/
-/* line 117, ../scss/_upcnet.scss */
+/* line 129, ../scss/_upcnet.scss */
 .tileItem img {
   float: right;
   margin-top: 1em;
 }
 
-/* line 120, ../scss/_upcnet.scss */
+/* line 132, ../scss/_upcnet.scss */
 .tileFooter:before {
   content: "";
 }
 
-/* line 125, ../scss/_upcnet.scss */
+/* line 137, ../scss/_upcnet.scss */
 .photoAlbumEntry a img {
   width: 100%;
 }
 
-/* line 135, ../scss/_upcnet.scss */
+/* line 147, ../scss/_upcnet.scss */
 .plone_jscalendar > * {
   display: inline-block;
 }
 
-/* line 136, ../scss/_upcnet.scss */
+/* line 148, ../scss/_upcnet.scss */
 .plone_jscalendar select {
   width: auto;
   display: inline-block;
 }
 
-/* line 145, ../scss/_upcnet.scss */
+/* line 157, ../scss/_upcnet.scss */
 .pb-ajax .documentFirstHeading, .pb-ajax > div > h2 {
   margin: 0;
   font-size: 130.769% !important;
 }
 
-/* line 149, ../scss/_upcnet.scss */
+/* line 161, ../scss/_upcnet.scss */
 .pb-ajax #content-core, .pb-ajax .documentDescription, .pb-ajax #content-history {
   margin-bottom: 0;
   max-height: 400px;
 }
 
-/* line 153, ../scss/_upcnet.scss */
+/* line 165, ../scss/_upcnet.scss */
 .pb-ajax .historyRecord {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
 
-/* line 156, ../scss/_upcnet.scss */
+/* line 168, ../scss/_upcnet.scss */
 input[type="checkbox"].required:after,
 input[type="radio"].required:after {
   content: none;
 }
 
-/* line 159, ../scss/_upcnet.scss */
+/* line 171, ../scss/_upcnet.scss */
 .recaptchatable {
   background: #fff;
 }
@@ -14363,7 +14363,7 @@ input[type="radio"].required:after {
 
 /* line 62, ../scss/_ui.scss */
 .ploneSkin table.mceEditorSave .mceIframeContainer {
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
 }
 
 /* line 63, ../scss/_ui.scss */
@@ -14446,7 +14446,7 @@ input[type="radio"].required:after {
 
 /* line 78, ../scss/_ui.scss */
 .ploneSkin a.mceButtonActive, .ploneSkin a.mceButtonSelected {
-  border: 1px solid #08c !important;
+  border: 1px solid #0088cc !important;
   background: #fff;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
 }
@@ -14539,7 +14539,7 @@ input[type="radio"].required:after {
 /* line 95, ../scss/_ui.scss */
 .ploneSkin table.mceListBoxEnabled:hover .mceOpen, .ploneSkin .mceListBoxHover .mceOpen, .ploneSkin .mceListBoxSelected .mceOpen {
   background-color: #ddd;
-  border: 1px solid #444 !important;
+  border: 1px solid #444444 !important;
 }
 
 /* line 96, ../scss/_ui.scss */
@@ -14569,7 +14569,7 @@ input[type="radio"].required:after {
 .ploneSkin select.mceNativeListBox {
   font-size: 7pt;
   background: #444;
-  border: 1px solid #444;
+  border: 1px solid #444444;
   margin-right: 2px;
 }
 
@@ -14590,7 +14590,7 @@ input[type="radio"].required:after {
 /* line 105, ../scss/_ui.scss */
 .ploneSkin .mceSplitButton a.mceAction {
   width: 20px;
-  border: 1px solid #444;
+  border: 1px solid #444444;
   border-right: 0px;
 }
 
@@ -14614,14 +14614,14 @@ input[type="radio"].required:after {
 
 /* line 109, ../scss/_ui.scss */
 .ploneSkin table.mceSplitButtonEnabled:hover a.mceAction, .ploneSkin .mceSplitButtonHover a.mceAction, .ploneSkin .mceSplitButtonSelected a.mceAction {
-  border: 1px solid #444;
+  border: 1px solid #444444;
   border-right: 0;
   background-color: #444;
 }
 
 /* line 110, ../scss/_ui.scss */
 .ploneSkin table.mceSplitButtonEnabled:hover a.mceOpen, .ploneSkin .mceSplitButtonHover a.mceOpen, .ploneSkin .mceSplitButtonSelected a.mceOpen {
-  border: 1px solid #444;
+  border: 1px solid #444444;
 }
 
 /* line 111, ../scss/_ui.scss */
@@ -14637,7 +14637,7 @@ input[type="radio"].required:after {
 
 /* line 113, ../scss/_ui.scss */
 .ploneSkin .mceSplitButtonActive a.mceAction {
-  border: 1px solid #444;
+  border: 1px solid #444444;
   background-color: #444;
 }
 
@@ -14650,7 +14650,7 @@ input[type="radio"].required:after {
 /* line 117, ../scss/_ui.scss */
 .ploneSkin div.mceColorSplitMenu table {
   background: #ddd;
-  border: 1px solid #444;
+  border: 1px solid #444444;
 }
 
 /* line 118, ../scss/_ui.scss */
@@ -14664,7 +14664,7 @@ input[type="radio"].required:after {
   width: 9px;
   height: 9px;
   overflow: hidden;
-  border: 1px solid #444;
+  border: 1px solid #444444;
 }
 
 /* line 120, ../scss/_ui.scss */
@@ -14679,18 +14679,18 @@ input[type="radio"].required:after {
   text-align: center;
   font-size: 100%;
   line-height: 20px;
-  border: 1px solid #444;
+  border: 1px solid #444444;
 }
 
 /* line 122, ../scss/_ui.scss */
 .ploneSkin .mceColorSplitMenu a.mceMoreColors:hover {
-  border: 1px solid #444;
+  border: 1px solid #444444;
   background-color: #444;
 }
 
 /* line 123, ../scss/_ui.scss */
 .ploneSkin a.mceMoreColors:hover {
-  border: 1px solid #444;
+  border: 1px solid #444444;
 }
 
 /* line 124, ../scss/_ui.scss */
@@ -14715,7 +14715,7 @@ input[type="radio"].required:after {
   left: 1px;
   top: 0px;
   z-index: 1000;
-  border: 1px solid #444;
+  border: 1px solid #444444;
 }
 
 /* line 129, ../scss/_ui.scss */
@@ -14797,7 +14797,7 @@ input[type="radio"].required:after {
 
 /* line 142, ../scss/_ui.scss */
 .ploneSkin .mceFirst .mceMenuItemTitle a {
-  border: 1px solid #fff;
+  border: 1px solid white;
   border-style: none none solid;
   background: #ddd;
 }
@@ -14860,7 +14860,7 @@ input[type="radio"].required:after {
 
 /* line 153, ../scss/_ui.scss */
 .ploneSkin .mcePlaceHolder {
-  border: 1px dotted #444;
+  border: 1px dotted #444444;
 }
 
 /* Formats */
@@ -15462,7 +15462,7 @@ b, strong {
 
 /* line 18, ../scss/genwebupc.scss */
 .page-header {
-  border-top: 1px solid #CCCCCC !important;
+  border-top: 1px solid #cccccc !important;
   border-bottom: 0;
   box-shadow: 0 -8px 16px -16px rgba(0, 0, 0, 0.5) !important;
 }
