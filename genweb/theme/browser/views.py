@@ -238,7 +238,8 @@ class typeaheadJson(grok.View):
         if results:
             # TODO: We have to build a JSON with the desired parameters.
             for result in results[:limit]:
-                icon = result.portal_type.lower()
+                # Calculate icon replacing '.' per '-' as '.' in portal_types break CSS
+                icon = result.portal_type.lower().replace(".", "-")
                 itemUrl = result.getURL()
                 if result.portal_type in useViewAction:
                     itemUrl += '/view'
