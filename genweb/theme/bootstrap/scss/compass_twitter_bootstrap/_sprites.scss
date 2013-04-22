@@ -42,7 +42,7 @@
 }
 
 .icon-color {
-  background-image: image-url('gh-c.png');  
+  background-image: image-url('gh-c.png');
 }
 
 
@@ -208,7 +208,7 @@
 .icon-desktop                 { background-position: -120px -169px; }
 .icon-logosfooter             { background-position: -144px -169px; }
 .icon-file                    { background-position: -168px -169px; }
-.icon-paste                   { background-position: -192px -168px; }
+.icon-paste, .icon-plone-contentmenu-actions-paste                   { background-position: -192px -168px; }
 .icon-collage                 { background-position: -216px -169px; }
 .icon-smart-folder            { background-position: -240px -169px; }
 .icon-copy, .icon-plone-contentmenu-actions-copy                    { background-position: -264px -169px; }
@@ -264,9 +264,9 @@
   &.icon-news            { background-position: -37px  -252px; }
   &.icon-link            { background-position: -108px -252px; }
   &.icon-upc             { background-position: 0      -252px; }
-  &.icon-poll            { background-position: -73px  -288px; }      
+  &.icon-poll            { background-position: -73px  -288px; }
   &.icon-calendar        { background-position: -287px -180px; }
-  &.icon-user-news       { background-position: -504px -252px; }    
+  &.icon-user-news       { background-position: -504px -252px; }
 }
 
 
