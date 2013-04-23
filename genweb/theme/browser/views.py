@@ -288,7 +288,11 @@ class dynamicCSS(grok.View):
         self.especific2 = genweb_config().especific2
 
     def render(self):
-        return self.compile_scss(especific1=self.especific1, especific2=self.especific2)
+        self.request.response.setHeader('Content-Type', 'text/css')
+        if self.especific1 and self.especific2:
+            return self.compile_scss(especific1=self.especific1, especific2=self.especific2)
+        else:
+            return ""
 
     @ram.cache(_render_cachekey)
     def compile_scss(self, **kwargs):
