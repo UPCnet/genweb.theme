@@ -292,7 +292,10 @@ class dynamicCSS(grok.View):
 
     @ram.cache(_render_cachekey)
     def compile_scss(self, **kwargs):
-        css = Scss()
+        css = Scss(scss_opts={
+                   'compress': False,
+                   'debug_info': False,
+                   })
 
         def matchdict(params, matchobj):
             return params.get(matchobj.groups()[0], matchobj.group())
