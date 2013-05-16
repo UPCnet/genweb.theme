@@ -8,7 +8,9 @@
 
   <head>
     <metal:block fill-slot="top_slot">
-      <tal:insert tal:replace="nothing" tal:define="dummy python:request.set('enable_border', 1)" />
+      <tal:insert tal:replace="nothing"
+                  tal:define="dummy python:request.set('enable_border', 1);
+                              disable_column_one python:request.set('disable_plone.rightcolumn',1);" />
     </metal:block>
     <metal:css fill-slot="style_slot"
       tal:define="resources_url string:${context/portal_url}/++resource++wcfc">
@@ -136,7 +138,7 @@
             <div class="row-fluid fileupload-buttonbar">
                 <div class="span12 well">
                     <!-- The fileinput-button span is used to style the file input field as button -->
-                    
+
                     <label i18n:translate="foldercontents_add_files">Add files...</label>
                     <div class="inline-block">
                     <input type="file" name="files[]" multiple>
@@ -165,7 +167,7 @@
             </div>
             <!-- The loading indicator is shown during file processing -->
             <div class="fileupload-loading"></div>
-            
+
             <!-- The table listing the files available for upload/download -->
             <table role="presentation" class="table"><tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody></table>
         </form>
