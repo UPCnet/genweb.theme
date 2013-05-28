@@ -1,21 +1,16 @@
 *** Settings ***
 
-Library  Selenium2Library  timeout=10  implicit_wait=0.5
 Variables  plone/app/testing/interfaces.py
-Variables  saucelabs.py
+Variables  genweb/theme/tests/robot/variables.py
+#Variables  saucelabs.py
+
+Library  Selenium2Library  timeout=${SELENIUM_TIMEOUT}  implicit_wait=${SELENIUM_IMPLICIT_WAIT}
+
+# Resource  library-settings.txt
+Resource  genweb/theme/tests/robot/keywords.txt
 
 Suite Setup  Suite Setup
 Suite Teardown  Suite Teardown
-
-*** Variables ***
-
-${ZSERVER_PORT} =  55001
-${ZOPE_URL} =  http://localhost:${ZSERVER_PORT}
-${PLONE_URL} =  ${ZOPE_URL}/plone
-${TEST_FOLDER} =  ${PLONE_URL}/test-folder
-${BROWSER} =  Firefox
-${REMOTE_URL} =
-${DESIRED_CAPABILITIES} =
 
 *** Test Cases ***
 
@@ -24,12 +19,6 @@ Genweb Basic Setup
     Page should contain  You are now logged in
 
 *** Keywords ***
-
-Suite Setup
-    Open browser  ${PLONE_URL}  browser=${BROWSER}  remote_url=${REMOTE_URL}  desired_capabilities=${DESIRED_CAPABILITIES}
-
-Suite Teardown
-    Close All Browsers
 
 Goto homepage
     Go to  ${PLONE_URL}
