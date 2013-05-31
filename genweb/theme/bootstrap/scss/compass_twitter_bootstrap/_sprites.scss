@@ -106,7 +106,7 @@
 .icon-align-left         { background-position: -264px -48px; }
 .icon-align-center       { background-position: -288px -48px; }
 .icon-align-right        { background-position: -312px -48px; }
-.icon-align-justify      { background-position: -336px -48px; }
+.icon-align-justify, .icon-formmultiselectionfield      { background-position: -336px -48px; }
 .icon-list               { background-position: -360px -48px; }
 .icon-indent-left        { background-position: -384px -48px; }
 .icon-indent-right       { background-position: -408px -48px; }
@@ -117,7 +117,7 @@
 .icon-map-marker         { background-position: -24px  -72px; }
 .icon-adjust             { background-position: -48px  -72px; }
 .icon-tint               { background-position: -72px  -72px; }
-.icon-edit               { background-position: -96px  -72px; }
+.icon-edit, .icon-formlinesfield, .icon-formintegerfield, .icon-formfixedpointfield               { background-position: -96px  -72px; }
 .icon-share              { background-position: -120px -72px; }
 .icon-check              { background-position: -144px -72px; }
 .icon-move               { background-position: -168px -72px; }
@@ -137,15 +137,15 @@
 .icon-plus-sign          { background-position: 0      -96px; }
 .icon-minus-sign         { background-position: -24px  -96px; }
 .icon-remove-sign        { background-position: -48px  -96px; }
-.icon-ok-sign            { background-position: -72px  -96px; }
+.icon-ok-sign, .icon-plone-contentmenu-display-fg_base_view_p3            { background-position: -72px  -96px; }
 .icon-question-sign      { background-position: -96px  -96px; }
-.icon-info-sign          { background-position: -120px -96px; }
+.icon-info-sign, .icon-plone-contentmenu-display-pfg_draft_view          { background-position: -120px -96px; }
 .icon-screenshot         { background-position: -144px -96px; }
 .icon-remove-circle      { background-position: -168px -96px; }
 .icon-ok-circle          { background-position: -192px -96px; }
 .icon-ban-circle         { background-position: -216px -96px; }
-.icon-arrow-left         { background-position: -240px -96px; }
-.icon-arrow-right        { background-position: -264px -96px; }
+.icon-arrow-left, .icon-plone-contentmenu-actions-import         { background-position: -240px -96px; }
+.icon-arrow-right, .icon-plone-contentmenu-actions-export         { background-position: -264px -96px; }
 .icon-arrow-up           { background-position: -289px -96px; } // 1px off
 .icon-arrow-down         { background-position: -312px -96px; }
 .icon-share-alt          { background-position: -336px -96px; }
@@ -243,7 +243,7 @@
 .icon-plone-contentmenu-display-folder_full_view,
 .icon-folder-folder_full_view            { background-position: -240px -192px; }
 .icon-genweb                  { background-position: -264px -192px; }
-.icon-captcha                 { background-position: -288px -192px; }
+.icon-captcha, .icon-formcaptchafield                 { background-position: -288px -192px; }
 .icon-users                   { background-position: -312px -192px; }
 .icon-user-news               { background-position: -336px -192px; }
 .icon-doc                     { background-position: -360px -192px; }
