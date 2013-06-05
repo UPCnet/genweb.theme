@@ -73,7 +73,7 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6
 .ploneSkin td.mceRight table {margin:0 0 0 auto;}
 
 /* Button */
-.ploneSkin .mceButton {display:block; border: 1px solid transparent; width:20px; height:20px; padding: 1px;margin: 2px;border-radius: 2px;}
+.ploneSkin .mceButton {display:block; border: 1px solid transparent; width:20px; height:20px; padding: 0;margin:0;border-radius: 2px;}
 .ploneSkin a.mceButtonEnabled:hover {border: 1px solid #b2b2b2; background-color: #fff;box-shadow: 0 1px 2px rgba(0,0,0,.15);}
 .ploneSkin a.mceButtonActive, .ploneSkin a.mceButtonSelected {border: 1px solid #08c !important;background: #fff;box-shadow: inset 0 1px 1px rgba(0,0,0,.15);}
 .ploneSkin .mceButtonDisabled .mceIcon {opacity:0.3; -ms-filter:'alpha(opacity=30)'; filter:alpha(opacity=30)}
@@ -82,8 +82,10 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6
 .ploneSkin span.mceButtonLabel {display:block; font-size:10px; padding:4px 6px 0 22px;}
 .ploneSkin .mceButtonDisabled .mceButtonLabel {color: #444}
 
+
+
 /* Separator */
-.ploneSkin .mceSeparator {display:block; background: url(../../img/icons.gif) -180px 0; width:2px; height:20px; margin:2px 2px 0 4px}
+.ploneSkin .mceSeparator {display:block; background-position: -180px 0 !important; width:2px; height:20px; margin: 2px 0px 0 1px !important;}
 
 /* ListBox */
 .ploneSkin table.mceListBox {direction:ltr; margin-bottom: 0}

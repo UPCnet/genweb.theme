@@ -294,7 +294,7 @@ class dynamicCSS(grok.View):
         else:
             return ""
 
-    @ram.cache(_render_cachekey)
+    #@ram.cache(_render_cachekey)
     def compile_scss(self, **kwargs):
         css = Scss(scss_opts={
                    'compress': False,
