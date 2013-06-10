@@ -1,15 +1,15 @@
 from setuptools import setup, find_packages
 import os
 
-version = '4.0b1'
+version = '1.0b1'
+
+README = open("README.rst").read()
+HISTORY = open(os.path.join("docs", "HISTORY.rst")).read()
 
 setup(name='genweb.theme',
       version=version,
       description="Theme package for GenwebUPC.",
-      long_description=open("README.rst").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from
-      # http://pypi.python.org/pypi?:action=list_classifiers
+      long_description=README + "\n" + HISTORY,
       classifiers=[
           "Environment :: Web Environment",
           "Framework :: Plone",
