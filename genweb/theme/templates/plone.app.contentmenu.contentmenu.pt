@@ -26,7 +26,7 @@
                       Title
                   </span>
                   <span tal:condition="menuItem/extra/stateTitle | nothing"
-                        tal:attributes="class python:'label ' + utils.get_state_label_class_mapping()[menuItem['extra']['state']]"
+                        tal:attributes="class python:'label ' + utils.get_state_label_class_mapping().get(menuItem['extra']['state'], 'default')"
                         tal:content="menuItem/extra/stateTitle"
                         i18n:translate="">
                       State title
