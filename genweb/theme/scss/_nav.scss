@@ -5,7 +5,7 @@
   		&.state-intranet {color:$purple;}
   		&.state-pending {color:darken($orange,5%);}
   		&.state-draft, &.state-visible {color:$green;}
-  		&.state-private {color:$red;}	
+  		&.state-private {color:$red;}
 }
 
 
@@ -13,7 +13,7 @@
 // PORTAL NAV
 // -------------------------
 	#portal-globalnav .navbar-inner {padding:0; border-bottom:3px solid #666;}
-		#portal-globalnav .state-published {border-bottom:3px solid $blue;}		
+		#portal-globalnav .state-published {border-bottom:3px solid $blue;}
 		#portal-globalnav .state-intranet {border-bottom:3px solid $purple;}
 		#portal-globalnav .state-draft, #portal-globalnav .state-visible {border-bottom:3px solid $green;}
 		#portal-globalnav .state-pending {border-bottom:3px solid darken($orange,5%);}
@@ -52,19 +52,19 @@
   		}
 		& + ul a:after {
 			display:none !important;
-		}  		
+		}
 
 	}
-	& a:hover:after, 
+	& a:hover:after,
 	.active a:after {
 		content:"";
   		position:absolute;
   		background-color:$blue;
   		margin-left:5px;
-  		@include border-radius(10px);  		
-  		@include box-shadow(0 1px 0 rgba(255,255,255,.5));   			
+  		@include border-radius(10px);
+  		@include box-shadow(0 1px 0 rgba(255,255,255,.5));
 		right: 7px;
-		top: 8px;  	
+		top: 8px;
 		background-image: image-url("gh-w.png");
 		background-position:  -455px -71px;
 		background-repeat:no-repeat;
@@ -88,7 +88,7 @@
 	}
 	& li:last-child a{
 		@include border-radius(0);
-	}	
+	}
 	& li:last-child a:only-child {
 		@include border-radius(0 0 4px 4px);
 	}
@@ -122,12 +122,12 @@
 				background-color: #f2f8fc !important; color:$grayDarker;
 				&[class*=" contenttype-"] span:after {@include opacity(100);}
 				& span:before {font-size: 525%; top:-2px; left:4px; }
-			}		
+			}
 			&.state-private {border-right: 3px solid $red; color:$red;}
 			&.state-draft, &.state-visible {border-right: 3px solid $green; color:$green;}
 			&.state-pending {border-right: 3px solid darken($orange,5%); color:darken($orange,5%);}
 			&.state-intranet {border-right: 3px solid $purple; color:$purple;}
-			&[class^="state-"]:hover, 
+			&[class^="state-"]:hover,
 			&[class*=" state-"]:hover {
 				color:$black;
 				text-decoration:none;
@@ -150,8 +150,8 @@
 				}
 			}
 
-			&[class^="contenttype-"] span:after, 
-			&[class*=" contenttype-"] span:after {			
+			&[class^="contenttype-"] span:after,
+			&[class*=" contenttype-"] span:after {
 				    background-image: image-url("gh.png");
 				    background-repeat:no-repeat;
     				content: " ";
@@ -159,33 +159,33 @@
     				right: 22px;
     				height: 20px;
     				margin-right: -24px;
-    				width: 20px; 
+    				width: 20px;
     				@include opacity(75);
     				top:10px;
     				position:absolute;
 			}
 			&.contenttype-folder span:after 		{background-position: -384px 	-120px;}
 			&.contenttype-page span:after,
-			&.contenttype-document span:after 		{background-position: -24px 	-24px;}			
-			&.contenttype-link span:after 			{background-position: -72px 	-168px;}		
+			&.contenttype-document span:after 		{background-position: -24px 	-24px;}
+			&.contenttype-link span:after 			{background-position: -72px 	-168px;}
 			&.contenttype-windowztool span:after,
-			&.contenttype-window span:after			{background-position: -97px 	-168px;}			
+			&.contenttype-window span:after			{background-position: -97px 	-168px;}
 			&.contenttype-bannercontainer span:after,
-			&.contenttype-banner span:after 		{background-position: -313px	-25px;}	
-			&.contenttype-topic span:after 			{background-position: -72px 	-192px;}	
-			&.contenttype-file span:after 			{background-position: -167px	-168px;}	
-			&.contenttype-image span:after 			{background-position: -457px	-49px;}	
+			&.contenttype-banner span:after 		{background-position: -313px	-25px;}
+			&.contenttype-topic span:after 			{background-position: -72px 	-192px;}
+			&.contenttype-file span:after 			{background-position: -167px	-168px;}
+			&.contenttype-image span:after 			{background-position: -457px	-49px;}
 			&.contenttype-logos_container span:after,
 			&.contenttype-logos_footer span:after 	{background-position: -143px 	-168px;}
 
-			&.contenttype-plonepopoll span:after 	{background-position: -47px		-193px;}	
+			&.contenttype-plonepopoll span:after 	{background-position: -47px		-193px;}
 			&.contenttype-event span:after 			{background-position: -191px 	-120px;}
 			&.contenttype-news-item span:after 		{background-position: -24px 	-168px;}
 			&.contenttype-packet span:after 		{background-position: -47px 	-168px;}
 			&.contenttype-collage span:after 		{background-position: -216px 	-168px;}
 			&.contenttype-collection span:after 	{background-position: -240px 	-168px;}
 			&.contenttype-survey span:after 		{background-position: -265px 	-23px;}
-			&.contenttype-formfolder span:after 	{background-position: -144px 	-72px;}	
+			&.contenttype-formfolder span:after 	{background-position: -144px 	-72px;}
 
 			&:hover span:after { @include opacity(100);}
 		}
@@ -201,8 +201,8 @@
 // AJUSTAMENTS EXTRA
 // -----------------
 
-html * .dropdown-menu a:hover .img_blank { 
-	content:image-url("blank_blanc.png"); width:10px; height:10px; 
+html * .dropdown-menu a:hover .img_blank {
+	content:image-url("blank_blanc.png"); width:10px; height:10px;
 }
 
 // MARCA NOU AL MENU
@@ -236,37 +236,38 @@ html * .dropdown-menu a:hover .img_blank {
 #listing-table, .template-folder_tabular_view .listing {
 	a {
 		&[class^="contenttype-"], &[class*=" contenttype-"] {
-			padding-left: 18px;
+			padding-left: 8px;
 			font-weight: bold;
 			position: relative;
 		}
-		&[class^="contenttype-"]:before, 
-		&[class*=" contenttype-"]:before {			
+		&[class^="contenttype-"]:before,
+		&[class*=" contenttype-"]:before {
 			    background-image: image-url("gh.png");
 			    background-repeat:no-repeat;
 				content: " ";
 				display: block;
 				height: 14px;
-				width: 14px; 
+				width: 14px;
 				margin-top:2px;
 				@include opacity(75);
-				position:absolute;
+				position:relative;
+                float: left;
 		}
 		&.contenttype-folder:before 		{background-position: -384px 	-120px;}
 		&.contenttype-page:before,
-		&.contenttype-document:before 		{background-position: -24px 	-24px;}			
-		&.contenttype-link:before 			{background-position: -72px 	-168px;}		
+		&.contenttype-document:before 		{background-position: -24px 	-24px;}
+		&.contenttype-link:before 			{background-position: -72px 	-168px;}
 		&.contenttype-windowztool:before,
 		&.contenttype-window:before,
-		&.contenttype-window:before		 	{background-position: -97px 	-168px;}			
+		&.contenttype-window:before		 	{background-position: -97px 	-168px;}
 		&.contenttype-bannercontainer:before,
-		&.contenttype-banner:before 		{background-position: -313px	-25px;}	
+		&.contenttype-banner:before 		{background-position: -313px	-25px;}
 		&.contenttype-logos_container:before,
 		&.contenttype-logos_footer:before 	{background-position: -143px 	-168px;}
-		&.contenttype-topic:before 			{background-position: -72px 	-192px;}	
-		&.contenttype-file:before 			{background-position: -167px	-168px;}	
-		&.contenttype-image:before 			{background-position: -457px	-49px;}	
-		&.contenttype-plonepopoll:before 	{background-position: -47px		-193px;}	
+		&.contenttype-topic:before 			{background-position: -72px 	-192px;}
+		&.contenttype-file:before 			{background-position: -167px	-168px;}
+		&.contenttype-image:before 			{background-position: -457px	-49px;}
+		&.contenttype-plonepopoll:before 	{background-position: -47px		-193px;}
 		&.contenttype-event:before 			{background-position: -191px 	-120px;}
 		&.contenttype-news-item:before 		{background-position: -24px 	-168px;}
 		&.contenttype-packet:before 		{background-position: -47px 	-168px;}
