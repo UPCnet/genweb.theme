@@ -12,7 +12,7 @@ $(document).ready(function () {
   $('.custom-chekbox[type="checkbox"]').customInput();
   $('.custom-radio[type="radio"]').customInput();
 
-  $('[rel="tooltip"]').tooltip();
+  $('[rel="tooltip"]').tooltip({container: 'body'});
   $('[rel="popover"]').popover();
   $(document).on('touchend click', '.amunt a', function() {
     $("html, body").animate({ scrollTop: 0 }, 'slow');
