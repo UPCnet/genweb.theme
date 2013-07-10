@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.0b3 (unreleased)
+1.0b3 (2013-07-10)
 ------------------
 
-- Nothing changed yet.
-
+ * traducciones [Corina Riba]
+ * Update Bootstrap JS to 2.3.2. Fix tooltips instantiation. [Victor Fernandez de Alba]
 
 1.0b2 (2013-07-08)
 ------------------
