@@ -22,7 +22,10 @@
 <!--[if gt IE 9]><!-->
 <html xmlns="http://www.w3.org/1999/xhtml"
       class="no-js"
-      tal:attributes="lang lang;">
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone"
+      tal:attributes="lang lang;"
+      >
 <!--<![endif]-->
 
     <metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
