@@ -90,7 +90,7 @@
                 <a href=""
                    tal:attributes="href python:item_type in use_view_action and item_url+'/view' or item_url;">
                    <span class="hiddenStructure"><span tal:replace="item_title_or_id" /> - </span>
-                   <span i18n:translate="read_more">Read More&hellip;</span>
+                   <span i18n:domain="genweb" i18n:translate="read_more">Read More&hellip;</span>
                 </a>
             </p>
 
