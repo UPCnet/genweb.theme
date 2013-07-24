@@ -32,7 +32,8 @@
                       State title
                   </span>
                 </span>
-                <b class="caret"></b>
+                <b tal:omit-tag="not:menuItem/action"
+                   class="caret"></b>
           </a>
 
           <ul class="dropdown-menu pull-right actionMenuContent"
