@@ -1,11 +1,12 @@
 Changelog
 =========
 
-1.0b4 (unreleased)
+1.0b4 (2013-07-25)
 ------------------
 
-- Nothing changed yet.
-
+ * Fix tokenizer [Victor Fernandez de Alba]
+ * Fix some cases where if the user cannot make any action, then the action appears with the arrow [Victor Fernandez de Alba]
+ * traducciones [Corina Riba]
 
 1.0b3 (2013-07-10)
 ------------------
