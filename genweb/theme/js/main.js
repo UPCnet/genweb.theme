@@ -1,4 +1,4 @@
-// En aquest script agruparem tots els "document ready"
+// En aquest script agruparem tots els "document ready" quan sigui necessari
 
 $(document).ready(function () {
   $('[type=file]').customFileInput();
@@ -93,5 +93,15 @@ $(document).ready(function () {
     });
  };
 
+}); // End of $(document).ready
 
-});
+// Token input z3c.form widget
+function keywordTokenInputActivate(id, newValues, oldValues) {
+  $('#'+id).tokenInput(newValues, {
+      theme: "facebook",
+      tokenDelimiter: "\n",
+      tokenValue: "name",
+      preventDuplicates: true,
+      prePopulate: oldValues
+  });
+}
