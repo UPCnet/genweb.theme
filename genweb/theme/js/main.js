@@ -1,6 +1,12 @@
 // En aquest script agruparem tots els "document ready" quan sigui necessari
 
 $(document).ready(function () {
+  // set a TTL for it (change on production)
+  jarn.i18n.setTTL(1000);
+  // Load the i18n Plone catalog for genweb
+  jarn.i18n.loadCatalog('genweb');
+  _gw_i18n = jarn.i18n.MessageFactory('genweb');
+
   $('[type=file]').customFileInput();
   // $('select:not([multiple])').dropkick();
   $('ul.dk_options_inner').addClass('scrollable');
