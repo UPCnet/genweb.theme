@@ -2,10 +2,11 @@
  * --------------------------------------------------------------------
  * jQuery customfileinput plugin
  * Author: Scott Jehl, scott@filamentgroup.com
- * Copyright (c) 2009 Filament Group 
+ * Copyright (c) 2009 Filament Group
  * licensed under MIT (filamentgroup.com/examples/mit-license.txt)
  * --------------------------------------------------------------------
  */
+
 $.fn.customFileInput = function(){
 	//apply events and styles for file input element
 	var fileInput = $(this)
@@ -13,15 +14,15 @@ $.fn.customFileInput = function(){
 		.mouseover(function(){ upload.addClass('customfile-hover'); })
 		.mouseout(function(){ upload.removeClass('customfile-hover'); })
 		.focus(function(){
-			upload.addClass('customfile-focus'); 
+			upload.addClass('customfile-focus');
 			fileInput.data('val', fileInput.val());
 		})
-		.blur(function(){ 
+		.blur(function(){
 			upload.removeClass('customfile-focus');
 			$(this).trigger('checkChange');
-		 })
-		 .bind('disable',function(){
-		 	fileInput.attr('disabled',true);
+		})
+		.bind('disable',function(){
+			fileInput.attr('disabled',true);
 			upload.addClass('customfile-disabled');
 		})
 		.bind('enable',function(){
@@ -45,8 +46,8 @@ $.fn.customFileInput = function(){
 				.addClass(fileExt) //add file extension class
 				.data('fileExt', fileExt) //store file extension for class removal on next change
 				.addClass('customfile-feedback-populated'); //add class to show populated state
-			//change text of button	
-			uploadButton.text('Canvia…');	
+			//change text of button
+			uploadButton.text(_gw_i18n('canvia'));
 		})
 		.click(function(){ //for IE and Opera, make sure change fires after choosing a file, using an async callback
 			fileInput.data('val', fileInput.val());
@@ -54,23 +55,23 @@ $.fn.customFileInput = function(){
 				fileInput.trigger('checkChange');
 			},100);
 		});
-		
+
 	//create custom control container
 	var upload = $('<div class="customfile well well-small"></div>');
 	//create custom control button
-	var uploadButton = $('<span class="customfile-button btn pull-right" aria-hidden="true"><i class="icon-upload"></i> Navega…</span>').appendTo(upload);
+	var uploadButton = $('<span class="customfile-button btn pull-right" aria-hidden="true"><i class="icon-upload"></i>'+_gw_i18n("navegar")+'</span>').appendTo(upload);
 	//create custom control feedback
-	var uploadFeedback = $('<span class="customfile-feedback" aria-hidden="true">Cap fitxer seleccionat…</span>').appendTo(upload);
-	
+	var uploadFeedback = $('<span class="customfile-feedback" aria-hidden="true">'+_gw_i18n("fitxer_no_seleccionat")+'</span>').appendTo(upload);
+
 	//match disabled state
 	if(fileInput.is('[disabled]')){
 		fileInput.trigger('disable');
 	}
-		
-	
+
+
 	//on mousemove, keep file input under the cursor to steal click
 	upload
-		
+
 		.mousemove(function(e){
 			fileInput.css({
 				/*
@@ -79,13 +80,13 @@ $.fn.customFileInput = function(){
 				*/
 				'left': e.pageX - upload.offset().left - fileInput.outerWidth() + 20, //position right side 20px right of cursor X)
 				'top': fileInput.outerHeight() - 45
-			});	
+			});
 		})
-		
+
 		.insertAfter(fileInput); //insert after the input
-	
+
 	fileInput.appendTo(upload);
-		
+
 	//return jQuery
 	return $(this);
 };
