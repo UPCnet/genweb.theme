@@ -7,7 +7,15 @@ $(document).ready(function () {
   jarn.i18n.loadCatalog('genweb');
   _gw_i18n = jarn.i18n.MessageFactory('genweb');
 
-  $('[type=file]').customFileInput();
+
+  var intervalId = setInterval(function(event) {
+     var traduccion = _gw_i18n("fitxer_no_seleccionat")
+     if (traduccion!="fitxer_no_seleccionat") {
+         $('[type=file]').customFileInput();
+         clearInterval(intervalId)
+     }
+}, 50)
+
   // $('select:not([multiple])').dropkick();
   $('ul.dk_options_inner').addClass('scrollable');
   if ($(window).width() < 640 ) {
