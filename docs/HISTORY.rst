@@ -1,11 +1,12 @@
 Changelog
 =========
 
-1.0b5 (unreleased)
+1.0b5 (2013-08-02)
 ------------------
 
-- Nothing changed yet.
-
+ * Añadir delay para cargar traducciones [Corina Riba]
+ * Traducciones [Corina Riba]
+ * Added jarn.i18n load with the genweb catalog to default main genweb JS [Victor Fernandez de Alba]
 
 1.0b4 (2013-07-25)
 ------------------
