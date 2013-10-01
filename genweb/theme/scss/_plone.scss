@@ -102,6 +102,7 @@ input#title {font-weight:bold}
 
 .template-personal-information [for="form.portrait"] ~ img {
 	float:right;
+    margin-bottom: 5px;
 	@extend .img-polaroid;
 }
 

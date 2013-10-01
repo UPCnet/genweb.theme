@@ -1,4 +1,5 @@
-/*
+@charset "UTF-8";
+/*!
  * Bootstrap v2.1.0
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -1789,9 +1790,11 @@ select:focus:required:invalid:focus {
   border-radius: 0;
 }
 /* line 466, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
-.input-append .active, .input-append .selected,
+.input-append .active, .input-append .selected, .input-append .contentViews .selected:hover, .contentViews .input-append .selected:hover,
 .input-prepend .active,
-.input-prepend .selected {
+.input-prepend .selected,
+.input-prepend .contentViews .selected:hover,
+.contentViews .input-prepend .selected:hover {
   background-color: #bce673;
   border-color: #72a31d;
 }
@@ -2069,7 +2072,7 @@ legend + .control-group {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/++genweb++static/images/gh.png?1370877920');
+  background-image: url('/++genweb++static/images/gh.png?1374690608');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2085,6 +2088,7 @@ legend + .control-group {
 .nav > .selected > a > [class^="icon-"],
 .configlets > .selected > a > [class^="icon-"],
 .formTabs > .selected > a > [class^="icon-"],
+.contentViews > .selected > a > [class^="icon-"],
 .nav > .active > a > #category.documentByLine:before,
 .contentViews > .active > a > #category.documentByLine:before,
 .configlets > .active > a > #category.documentByLine:before,
@@ -2092,6 +2096,7 @@ legend + .control-group {
 .nav > .selected > a > #category.documentByLine:before,
 .configlets > .selected > a > #category.documentByLine:before,
 .formTabs > .selected > a > #category.documentByLine:before,
+.contentViews > .selected > a > #category.documentByLine:before,
 .nav > .active > a > .tileFooter:before,
 .contentViews > .active > a > .tileFooter:before,
 .configlets > .active > a > .tileFooter:before,
@@ -2099,6 +2104,7 @@ legend + .control-group {
 .nav > .selected > a > .tileFooter:before,
 .configlets > .selected > a > .tileFooter:before,
 .formTabs > .selected > a > .tileFooter:before,
+.contentViews > .selected > a > .tileFooter:before,
 .nav > .active > a > [class*=" icon-"],
 .contentViews > .active > a > [class*=" icon-"],
 .configlets > .active > a > [class*=" icon-"],
@@ -2106,6 +2112,7 @@ legend + .control-group {
 .nav > .selected > a > [class*=" icon-"],
 .configlets > .selected > a > [class*=" icon-"],
 .formTabs > .selected > a > [class*=" icon-"],
+.contentViews > .selected > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],
 .dropdown-menu > li > a:hover > #category.documentByLine:before,
 .dropdown-menu > li > a:hover > .tileFooter:before,
@@ -2118,12 +2125,12 @@ legend + .control-group {
 .dropdown-menu > .selected > a > .tileFooter:before,
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-menu > .selected > a > [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/gh-w.png?1370877920');
+  background-image: url('/++genweb++static/images/gh-w.png?1374690608');
 }
 
 /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-color {
-  background-image: url('/++genweb++static/images/gh-c.png?1370877920');
+  background-image: url('/++genweb++static/images/gh-c.png?1374690608');
 }
 
 /* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -3046,7 +3053,7 @@ legend + .control-group {
 
 /* line 257, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon {
-  background-image: url('/++genweb++static/images/gh-150.png?1370877920');
+  background-image: url('/++genweb++static/images/gh-150.png?1374690608');
   width: 21px;
   height: 21px;
   margin-top: -1px;
@@ -3079,7 +3086,7 @@ legend + .control-group {
 
 /* line 273, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon.icon-white {
-  background-image: url('/++genweb++static/images/gh-150-w.png?1370877920');
+  background-image: url('/++genweb++static/images/gh-150-w.png?1374690608');
 }
 
 /*extends icones*/
@@ -3188,7 +3195,7 @@ legend + .control-group {
 }
 
 /* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
-.dropdown-menu .active > a, .dropdown-menu .selected > a,
+.dropdown-menu .active > a, .dropdown-menu .selected > a, .dropdown-menu .contentViews .selected:hover > a, .contentViews .dropdown-menu .selected:hover > a,
 .dropdown-menu .active > a:hover,
 .dropdown-menu .selected > a:hover {
   color: white;
@@ -3404,13 +3411,13 @@ button.close {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
+.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
   color: #333333;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent {
+.btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent {
   background-color: #cccccc \9;
 }
 /* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -3440,7 +3447,7 @@ button.close {
   outline-offset: -2px;
 }
 /* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
+.btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
   background-color: #d9d9d9;
   background-color: #cccccc \9;
   background-image: none;
@@ -3572,21 +3579,26 @@ button.pfg-draft-save:active .tileFooter:before,
 }
 
 /* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn-primary.active, .active.context, .context.selected, .btn-primary.selected,
+.btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover,
 .btn-warning.active,
 .btn-warning.selected,
+.contentViews .btn-warning.selected:hover,
 .btn-danger.active,
 .btn-danger.selected,
+.contentViews .btn-danger.selected:hover,
 .btn-success.active,
 .btn-success.selected,
 button.selected.pfg-draft-save,
+.contentViews .btn-success.selected:hover,
 button.active.pfg-draft-save,
 .btn-info.active,
 .btn-info.selected,
 .selected.link-parent,
+.contentViews .btn-info.selected:hover,
 .active.link-parent,
 .btn-inverse.active,
-.btn-inverse.selected {
+.btn-inverse.selected,
+.contentViews .btn-inverse.selected:hover {
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -3615,13 +3627,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
+.btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
   color: white;
   background-color: #005a8d;
   *background-color: #004a74;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected {
+.btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover {
   background-color: #003a5a \9;
 }
 
@@ -3644,13 +3656,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .btn-warning.disabled, .btn-warning[disabled] {
+.btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected:hover, .btn-warning.disabled, .btn-warning[disabled] {
   color: white;
   background-color: #c67605;
   *background-color: #ad6704;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-warning:active, .btn-warning.active, .btn-warning.selected {
+.btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected:hover {
   background-color: #945904 \9;
 }
 
@@ -3673,13 +3685,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .btn-danger.disabled, .btn-danger[disabled] {
+.btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected:hover, .btn-danger.disabled, .btn-danger[disabled] {
   color: white;
   background-color: #a62e1f;
   *background-color: #91281b;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-danger:active, .btn-danger.active, .btn-danger.selected {
+.btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected:hover {
   background-color: #7b2217 \9;
 }
 
@@ -3702,13 +3714,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
+.btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
   color: white;
   background-color: #547815;
   *background-color: #456211;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, button.active.pfg-draft-save {
+.btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, button.active.pfg-draft-save {
   background-color: #354c0e \9;
 }
 
@@ -3731,13 +3743,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
+.btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected:hover, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
   color: white;
   background-color: #26809a;
   *background-color: #216f86;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .active.link-parent {
+.btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected:hover, .active.link-parent {
   background-color: #1c5e71 \9;
 }
 
@@ -3760,13 +3772,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .btn-inverse.disabled, .btn-inverse[disabled] {
+.btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected:hover, .btn-inverse.disabled, .btn-inverse[disabled] {
   color: white;
   background-color: #222222;
   *background-color: #151515;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-inverse:active, .btn-inverse.active, .btn-inverse.selected {
+.btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected:hover {
   background-color: #090909 \9;
 }
 
@@ -4323,7 +4335,7 @@ button.pfg-draft-save .caret,
 }
 
 /* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-list > .active > a, .nav-list > .selected > a,
+.nav-list > .active > a, .nav-list > .selected > a, .contentViews .nav-list > .selected:hover > a,
 .nav-list > .active > a:hover,
 .nav-list > .selected > a:hover,
 .formTabs > li > a.selected,
@@ -4424,12 +4436,13 @@ button.pfg-draft-save .caret,
 }
 
 /* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a,
+.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .contentViews > .selected > a, .contentViews .nav-tabs > .selected:hover > a,
 .nav-tabs > .active > a:hover,
 .contentViews > .active > a:hover,
 .configlets > .active > a:hover,
 .nav-tabs > .selected > a:hover,
-.configlets > .selected > a:hover {
+.configlets > .selected > a:hover,
+.contentViews > .selected > a:hover {
   color: #666666;
   background-color: white;
   background-color: white;
@@ -4457,7 +4470,7 @@ button.pfg-draft-save .caret,
 }
 
 /* line 153, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a,
+.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a, .contentViews .nav-pills > .selected:hover > a,
 .nav-pills > .active > a:hover,
 .formTabs > .active > a:hover,
 .nav-pills > .selected > a:hover,
@@ -4559,19 +4572,19 @@ button.pfg-draft-save .caret,
 }
 
 /* line 229, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret {
+.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret {
   border-top-color: #333333;
   border-bottom-color: #333333;
 }
 
 /* line 233, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret {
+.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret {
   border-top-color: #666666;
   border-bottom-color: #666666;
 }
 
 /* line 240, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover {
+.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover, .contentViews > .dropdown.selected > a:hover {
   cursor: pointer;
 }
 
@@ -4585,7 +4598,8 @@ button.pfg-draft-save .caret,
 .formTabs > li.dropdown.open.active > a:hover,
 .nav > li.dropdown.open.selected > a:hover,
 .configlets > li.dropdown.open.selected > a:hover,
-.formTabs > li.dropdown.open.selected > a:hover {
+.formTabs > li.dropdown.open.selected > a:hover,
+.contentViews > li.dropdown.open.selected > a:hover {
   color: white;
   background-color: #aaaaaa;
   border-color: #aaaaaa;
@@ -4600,6 +4614,7 @@ button.pfg-draft-save .caret,
 .nav li.dropdown.open.selected .caret,
 .configlets li.dropdown.open.selected .caret,
 .formTabs li.dropdown.open.selected .caret,
+.contentViews li.dropdown.open.selected .caret,
 .nav li.dropdown.open a:hover .caret,
 .contentViews li.dropdown.open a:hover .caret,
 .configlets li.dropdown.open a:hover .caret,
@@ -4653,9 +4668,10 @@ button.pfg-draft-save .caret,
 }
 
 /* line 296, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tab-content > .active, .tab-content > .selected,
+.tab-content > .active, .tab-content > .selected, .contentViews .tab-content > .selected:hover,
 .pill-content > .active,
-.pill-content > .selected {
+.pill-content > .selected,
+.contentViews .pill-content > .selected:hover {
   display: block;
 }
 
@@ -4683,12 +4699,13 @@ button.pfg-draft-save .caret,
 }
 
 /* line 319, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .configlets > .selected > a,
+.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .configlets > .selected > a, .tabs-below > .contentViews > .selected > a,
 .tabs-below > .nav-tabs > .active > a:hover,
 .tabs-below > .contentViews > .active > a:hover,
 .tabs-below > .configlets > .active > a:hover,
 .tabs-below > .nav-tabs > .selected > a:hover,
-.tabs-below > .configlets > .selected > a:hover {
+.tabs-below > .configlets > .selected > a:hover,
+.tabs-below > .contentViews > .selected > a:hover {
   border-color: transparent #ccc #ccc #ccc;
 }
 
@@ -4731,12 +4748,13 @@ button.pfg-draft-save .caret,
 }
 
 /* line 352, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .selected > a,
+.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .selected > a, .tabs-left > .contentViews .selected > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .contentViews .active > a:hover,
 .tabs-left > .configlets .active > a:hover,
 .tabs-left > .nav-tabs .selected > a:hover,
-.tabs-left > .configlets .selected > a:hover {
+.tabs-left > .configlets .selected > a:hover,
+.tabs-left > .contentViews .selected > a:hover {
   border-color: #ccc transparent #ccc #ccc;
   *border-right-color: white;
 }
@@ -4762,12 +4780,13 @@ button.pfg-draft-save .caret,
 }
 
 /* line 371, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .selected > a,
+.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .selected > a, .tabs-right > .contentViews .selected > a,
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .contentViews .active > a:hover,
 .tabs-right > .configlets .active > a:hover,
 .tabs-right > .nav-tabs .selected > a:hover,
-.tabs-right > .configlets .selected > a:hover {
+.tabs-right > .configlets .selected > a:hover,
+.tabs-right > .contentViews .selected > a:hover {
   border-color: #ccc #ccc #ccc transparent;
   *border-left-color: white;
 }
@@ -5076,7 +5095,7 @@ button.pfg-draft-save .caret,
 }
 
 /* line 261, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a,
+.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a, .navbar .contentViews > .selected > a,
 .navbar .nav > .active > a:hover,
 .navbar .contentViews > .active > a:hover,
 .navbar .configlets > .active > a:hover,
@@ -5084,13 +5103,15 @@ button.pfg-draft-save .caret,
 .navbar .nav > .selected > a:hover,
 .navbar .configlets > .selected > a:hover,
 .navbar .formTabs > .selected > a:hover,
+.navbar .contentViews > .selected > a:hover,
 .navbar .nav > .active > a:focus,
 .navbar .contentViews > .active > a:focus,
 .navbar .configlets > .active > a:focus,
 .navbar .formTabs > .active > a:focus,
 .navbar .nav > .selected > a:focus,
 .navbar .configlets > .selected > a:focus,
-.navbar .formTabs > .selected > a:focus {
+.navbar .formTabs > .selected > a:focus,
+.navbar .contentViews > .selected > a:focus {
   color: #222222;
   text-decoration: none;
   background-color: white;
@@ -5209,13 +5230,15 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle,
+.navbar .contentViews li.dropdown.selected > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle,
 .navbar .formTabs li.dropdown.open.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle,
-.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle {
+.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle,
+.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle {
   background-color: white;
   color: #222222;
 }
@@ -5235,13 +5258,15 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle .caret,
+.navbar .contentViews li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret {
+.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle .caret {
   border-top-color: #222222;
   border-bottom-color: #222222;
 }
@@ -5347,7 +5372,7 @@ button.pfg-draft-save .caret,
   color: white;
 }
 /* line 409, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a,
+.navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a, .navbar-inverse .contentViews .selected > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .contentViews .active > a:hover,
 .navbar-inverse .configlets .active > a:hover,
@@ -5355,13 +5380,15 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav .selected > a:hover,
 .navbar-inverse .configlets .selected > a:hover,
 .navbar-inverse .formTabs .selected > a:hover,
+.navbar-inverse .contentViews .selected > a:hover,
 .navbar-inverse .nav .active > a:focus,
 .navbar-inverse .contentViews .active > a:focus,
 .navbar-inverse .configlets .active > a:focus,
 .navbar-inverse .formTabs .active > a:focus,
 .navbar-inverse .nav .selected > a:focus,
 .navbar-inverse .configlets .selected > a:focus,
-.navbar-inverse .formTabs .selected > a:focus {
+.navbar-inverse .formTabs .selected > a:focus,
+.navbar-inverse .contentViews .selected > a:focus {
   color: white;
   background-color: black;
 }
@@ -5387,13 +5414,15 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle,
 .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle,
 .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle,
+.navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
 .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle,
 .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle,
 .navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle,
 .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle,
-.navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle {
+.navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle,
+.navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle {
   background-color: black;
   color: white;
 }
@@ -5411,13 +5440,15 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle .caret,
 .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle .caret,
 .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle .caret,
+.navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle .caret,
 .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret {
+.navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle .caret {
   border-top-color: white;
   border-bottom-color: white;
 }
@@ -5511,7 +5542,7 @@ button.pfg-draft-save .caret,
   top: -1px;
 }
 /* line 23, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
-.breadcrumb .active, .breadcrumb .selected, .breadcrumb .active a, .breadcrumb .selected a {
+.breadcrumb .active, .breadcrumb .selected, .breadcrumb .contentViews .selected:hover, .contentViews .breadcrumb .selected:hover, .breadcrumb .active a, .breadcrumb .selected a, .breadcrumb .contentViews .selected:hover a, .contentViews .breadcrumb .selected:hover a {
   color: #666666;
   font-weight: bold;
 }
@@ -5575,19 +5606,25 @@ button.pfg-draft-save .caret,
 .listingBar .active a,
 .pagination .selected a,
 .listingBar .selected a,
+.pagination .contentViews .selected:hover a,
+.contentViews .pagination .selected:hover a,
 .pagination .active span,
 .listingBar .active span,
 .pagination .selected span,
-.listingBar .selected span {
+.listingBar .selected span,
+.pagination .contentViews .selected:hover span,
+.contentViews .pagination .selected:hover span {
   background-color: #f2f2f2;
 }
 
 /* line 35, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a,
+.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a, .pagination .contentViews .selected:hover a, .contentViews .pagination .selected:hover a,
 .pagination .active span,
 .listingBar .active span,
 .pagination .selected span,
-.listingBar .selected span {
+.listingBar .selected span,
+.pagination .contentViews .selected:hover span,
+.contentViews .pagination .selected:hover span {
   color: #666666;
   cursor: default;
 }
@@ -6589,19 +6626,19 @@ button.pfg-draft-save .badge,
   line-height: 1;
 }
 /* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active > img, .carousel .selected > img {
+.carousel .active > img, .carousel .selected > img, .carousel .contentViews .selected:hover > img, .contentViews .carousel .selected:hover > img {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
 /* line 41, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active, .carousel .selected,
+.carousel .active, .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover,
 .carousel .next,
 .carousel .prev {
   display: block;
 }
 /* line 43, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active, .carousel .selected {
+.carousel .active, .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover {
   left: 0;
 }
 /* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
@@ -6916,7 +6953,7 @@ button.pfg-draft-save .badge,
 
   /* line 16, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar .btn-navbar i {
-    background-image: url('/++genweb++static/images/gh-w.png?1370877920');
+    background-image: url('/++genweb++static/images/gh-w.png?1374690608');
   }
 
   /* line 17, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
@@ -7157,7 +7194,7 @@ button.pfg-draft-save .badge,
   }
   /* line 138, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
-    background-image: url('/++genweb++static/images/gh-w.png?1370877920');
+    background-image: url('/++genweb++static/images/gh-w.png?1374690608');
   }
   /* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
@@ -8367,7 +8404,7 @@ button.pfg-draft-save .badge,
     display: none !important;
   }
 }
-/*
+/*!
  * Genweb UPC v4.0
  *
  * Copyright 2012-2013 UPC
@@ -8430,7 +8467,7 @@ button.pfg-draft-save .badge,
 
 /* line 41, ../scss/_base.scss */
 .userScreen, .userTablet, .userMobile, .userGenweb {
-  background: url('/++genweb++static/images/sprite_usuari.png?1370877920') transparent no-repeat center top;
+  background: url('/++genweb++static/images/sprite_usuari.png?1374690608') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em;
 }
@@ -8534,7 +8571,7 @@ button.pfg-draft-save .badge,
 /*ajusta imatges icos en menús per a hovers */
 /* line 68, ../scss/_base.scss */
 .dropdown-menu a:hover [class^="icon-"], .dropdown-menu a:hover #category.documentByLine:before, .dropdown-menu a:hover .tileFooter:before, .dropdown-menu a:hover [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/gh-w.png?1370877920') !important;
+  background-image: url('/++genweb++static/images/gh-w.png?1374690608') !important;
 }
 
 /* line 75, ../scss/_base.scss */
@@ -8652,7 +8689,7 @@ button.pfg-draft-save .badge,
 
 /* line 125, ../scss/_base.scss */
 .header-image {
-  background-image: url('/++genweb++static/images/capcalera.jpg?1370877920');
+  background-image: url('/++genweb++static/images/capcalera.jpg?1374690608');
   margin-top: 0 !important;
   height: 65px;
   overflow: hidden;
@@ -8874,7 +8911,7 @@ button.pfg-draft-save .badge,
 }
 /* line 226, ../scss/_base.scss */
 #canvia-vista a {
-  background: url('/++genweb++static/images/vistabg.png?1370877920') #666666;
+  background: url('/++genweb++static/images/vistabg.png?1374690608') #666666;
   text-align: center;
   -webkit-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
@@ -9042,7 +9079,7 @@ button.pfg-draft-save .badge,
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   right: 7px;
   top: 8px;
-  background-image: url('/++genweb++static/images/gh-w.png?1370877920');
+  background-image: url('/++genweb++static/images/gh-w.png?1374690608');
   background-position: -455px -71px;
   background-repeat: no-repeat;
   width: 17px;
@@ -9215,7 +9252,7 @@ button.pfg-draft-save .badge,
 }
 /* line 154, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
-  background-image: url('/++genweb++static/images/gh.png?1370877920');
+  background-image: url('/++genweb++static/images/gh.png?1374690608');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -9313,7 +9350,7 @@ button.pfg-draft-save .badge,
 
 /* line 204, ../scss/_nav.scss */
 html * .dropdown-menu a:hover .img_blank {
-  content: url('/++genweb++static/images/blank_blanc.png?1370877920');
+  content: url('/++genweb++static/images/blank_blanc.png?1374690608');
   width: 10px;
   height: 10px;
 }
@@ -9366,7 +9403,7 @@ html * .dropdown-menu a:hover .img_blank {
 }
 /* line 244, ../scss/_nav.scss */
 #listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-folder_tabular_view .listing a[class^="contenttype-"]:before, .template-folder_tabular_view .listing a[class*=" contenttype-"]:before {
-  background-image: url('/++genweb++static/images/gh.png?1370877920');
+  background-image: url('/++genweb++static/images/gh.png?1374690608');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -9855,7 +9892,7 @@ html[lang="es"] .box-example:after {
 /* line 144, ../scss/_wells-boxes.scss */
 .sheet:before, div.fitxa:before {
   content: "*";
-  content: url('/++genweb++static/images/sheet.png?1370877920');
+  content: url('/++genweb++static/images/sheet.png?1374690608');
   font-size: 300%;
   position: absolute;
   right: -19px;
@@ -10024,7 +10061,7 @@ ul {
 
 /* line 125, ../scss/_lists.scss */
 .list-links li:before, .portaltype-packet .estudis .llistatEnllacos li:before {
-  content: url('/++genweb++static/images/arrow.png?1370877920');
+  content: url('/++genweb++static/images/arrow.png?1374690608');
   margin-left: -15px;
   margin-top: -13px;
 }
@@ -10036,7 +10073,7 @@ ul {
 
 /* line 135, ../scss/_lists.scss */
 .list-highlighted li:before {
-  content: url('/++genweb++static/images/arrow_hl.png?1370877920');
+  content: url('/++genweb++static/images/arrow_hl.png?1374690608');
   margin-left: -22px;
   margin-top: -11px;
 }
@@ -10899,7 +10936,7 @@ hr.liniaDalt, hr.tileHeadline {
   display: block;
   width: 14px;
   height: 14px;
-  background: url('/++genweb++static/images/gh.png?1370877920');
+  background: url('/++genweb++static/images/gh.png?1374690608');
 }
 
 /* line 94, ../scss/_texts.scss */
@@ -10947,7 +10984,7 @@ a {
 
 /* line 114, ../scss/_texts.scss */
 .pdf:after, .ppt:after, .xls:after, .doc:after, .down:after, .https:after, .vid:after, .img:after, .txt:after {
-  background: url('/++genweb++static/images/gh-c.png?1370877920') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1374690608') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -11158,7 +11195,7 @@ input[type="file"] {
 }
 /* line 18, ../scss/_inputs.scss */
 .customfile-feedback-populated:before {
-  background: url('/++genweb++static/images/gh-c.png?1370877920') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1374690608') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -11539,7 +11576,7 @@ h2.title-inverse {
 }
 /* line 223, ../scss/_portlets.scss */
 h2.title-inverse i {
-  background-image: url('/++genweb++static/images/gh-w.png?1370877920');
+  background-image: url('/++genweb++static/images/gh-w.png?1374690608');
 }
 
 /* line 230, ../scss/_portlets.scss */
@@ -11670,43 +11707,44 @@ input#title {
 /* line 103, ../scss/_plone.scss */
 .template-personal-information [for="form.portrait"] ~ img {
   float: right;
+  margin-bottom: 5px;
 }
 
-/* line 116, ../scss/_plone.scss */
+/* line 117, ../scss/_plone.scss */
 #portlet-prefs {
   border: 0;
 }
-/* line 118, ../scss/_plone.scss */
+/* line 119, ../scss/_plone.scss */
 #portlet-prefs .portletHeader {
   display: none;
 }
-/* line 121, ../scss/_plone.scss */
+/* line 122, ../scss/_plone.scss */
 #portlet-prefs dd {
   margin: 0;
 }
 
-/* line 129, ../scss/_plone.scss */
+/* line 130, ../scss/_plone.scss */
 .configlets img {
   float: right;
 }
 
-/* line 131, ../scss/_plone.scss */
+/* line 132, ../scss/_plone.scss */
 .contentActions {
   line-height: 0;
 }
 
-/* line 142, ../scss/_plone.scss */
+/* line 143, ../scss/_plone.scss */
 .portalMessage dt, .portalMessage dd {
   margin: 0;
   display: inline;
 }
 
-/* line 148, ../scss/_plone.scss */
+/* line 149, ../scss/_plone.scss */
 .listingBar li:only-child {
   display: none !important;
 }
 
-/* line 152, ../scss/_plone.scss */
+/* line 153, ../scss/_plone.scss */
 .img-mask {
   display: block;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
@@ -11716,43 +11754,43 @@ input#title {
   width: 222px;
   margin: 0 auto;
 }
-/* line 158, ../scss/_plone.scss */
+/* line 159, ../scss/_plone.scss */
 .img-mask iframe {
-  -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1370877920') no-repeat center center;
+  -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1374690608') no-repeat center center;
 }
 
-/* line 163, ../scss/_plone.scss */
+/* line 164, ../scss/_plone.scss */
 iframe {
   border: 0 !important;
   display: block !important;
 }
 
-/* line 169, ../scss/_plone.scss */
+/* line 170, ../scss/_plone.scss */
 #portal-sitemap > li {
   font-weight: bold;
   font-size: normal;
   margin-top: 30px;
 }
-/* line 174, ../scss/_plone.scss */
+/* line 175, ../scss/_plone.scss */
 #portal-sitemap > li > div {
   padding-bottom: 10px;
   border-bottom: 1px solid #b2b2b2;
 }
-/* line 178, ../scss/_plone.scss */
+/* line 179, ../scss/_plone.scss */
 #portal-sitemap > li a {
   color: #007bc0;
 }
-/* line 180, ../scss/_plone.scss */
+/* line 181, ../scss/_plone.scss */
 #portal-sitemap > li a:after {
   content: " ";
   position: relative;
   width: 14px;
   height: 14px;
   display: inline-block;
-  background: url('/++genweb++static/images/gh.png?1370877920') -239px -143px no-repeat;
+  background: url('/++genweb++static/images/gh.png?1374690608') -239px -143px no-repeat;
   margin-left: 5px;
 }
-/* line 191, ../scss/_plone.scss */
+/* line 192, ../scss/_plone.scss */
 #portal-sitemap ul {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -11765,7 +11803,7 @@ iframe {
   column-fill: auto;
   margin: 0;
 }
-/* line 197, ../scss/_plone.scss */
+/* line 198, ../scss/_plone.scss */
 #portal-sitemap ul > li {
   font-weight: bold;
   font-size: normal;
@@ -11776,79 +11814,79 @@ iframe {
   -moz-column-break-inside: avoid;
   column-break-inside: avoid;
 }
-/* line 207, ../scss/_plone.scss */
+/* line 208, ../scss/_plone.scss */
 #portal-sitemap ul > li > div {
   padding-bottom: 0;
   padding-top: 5px;
 }
-/* line 211, ../scss/_plone.scss */
+/* line 212, ../scss/_plone.scss */
 #portal-sitemap ul > li a {
   color: #004a74;
 }
-/* line 213, ../scss/_plone.scss */
+/* line 214, ../scss/_plone.scss */
 #portal-sitemap ul > li a:after {
   content: none;
 }
-/* line 218, ../scss/_plone.scss */
+/* line 219, ../scss/_plone.scss */
 #portal-sitemap ul ul {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   column-count: 1;
 }
-/* line 223, ../scss/_plone.scss */
+/* line 224, ../scss/_plone.scss */
 #portal-sitemap ul > li li {
   padding: 5px 9px;
   line-height: 12px;
   font-weight: normal;
   font-size: smaller;
 }
-/* line 230, ../scss/_plone.scss */
+/* line 231, ../scss/_plone.scss */
 #portal-sitemap ul > li li > div {
   padding-top: 0;
 }
-/* line 233, ../scss/_plone.scss */
+/* line 234, ../scss/_plone.scss */
 #portal-sitemap ul > li li a {
   color: #666666;
 }
 
-/* line 240, ../scss/_plone.scss */
+/* line 241, ../scss/_plone.scss */
 #recordsTable {
   table-layout: fixed;
 }
-/* line 241, ../scss/_plone.scss */
+/* line 242, ../scss/_plone.scss */
 #recordsTable td {
   word-break: break-all;
 }
 
-/* line 246, ../scss/_plone.scss */
+/* line 247, ../scss/_plone.scss */
 #dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3, #dashboard-portlets4 {
   float: left;
   margin-bottom: 18px;
 }
 
-/* line 247, ../scss/_plone.scss */
+/* line 248, ../scss/_plone.scss */
 #dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3 {
   margin-right: 30px;
 }
 
-/* line 250, ../scss/_plone.scss */
+/* line 251, ../scss/_plone.scss */
 .plone_jscalendar .dk_container {
   display: inline-block;
 }
 
-/* line 251, ../scss/_plone.scss */
+/* line 252, ../scss/_plone.scss */
 .plone_jscalendar .dk_toggle {
   width: 100px !important;
 }
 
-/* line 252, ../scss/_plone.scss */
+/* line 253, ../scss/_plone.scss */
 .plone_jscalendar .dk_options {
   min-width: 128px !important;
   width: 128px !important;
 }
 
 /* The main calendar widget.  DIV containing a table. */
-/* line 257, ../scss/_plone.scss */
+/* line 258, ../scss/_plone.scss */
 .calendar {
   display: none;
   margin: 0 auto;
@@ -11858,7 +11896,7 @@ iframe {
   margin-top: 50%;
 }
 
-/* line 258, ../scss/_plone.scss */
+/* line 259, ../scss/_plone.scss */
 .calendar table {
   background: #f2f2f2;
   border-radius: 5px;
@@ -11869,24 +11907,24 @@ iframe {
   margin: 0 auto;
 }
 
-/* line 259, ../scss/_plone.scss */
+/* line 260, ../scss/_plone.scss */
 .calendar .button {
   text-align: center;
   background: #f2f2f2;
 }
 
-/* line 260, ../scss/_plone.scss */
+/* line 261, ../scss/_plone.scss */
 .calendar .nav, .calendar .contentViews, .calendar .configlets, .calendar .formTabs {
   background: #f2f2f2 url(menuarrow.gif) no-repeat 100% 100%;
 }
 
-/* line 261, ../scss/_plone.scss */
+/* line 262, ../scss/_plone.scss */
 .calendar thead .title {
   font-weight: bold;
   text-align: center;
 }
 
-/* line 262, ../scss/_plone.scss */
+/* line 263, ../scss/_plone.scss */
 .calendar thead .name {
   border-bottom: 1px solid #b2b2b2;
   border-top: 1px solid #b2b2b2;
@@ -11894,113 +11932,113 @@ iframe {
   background: #f7f7f7;
 }
 
-/* line 263, ../scss/_plone.scss */
+/* line 264, ../scss/_plone.scss */
 .calendar thead .weekend {
   color: #c00;
 }
 
-/* line 264, ../scss/_plone.scss */
+/* line 265, ../scss/_plone.scss */
 .calendar thead .hilite {
   background: #cef;
 }
 
-/* line 265, ../scss/_plone.scss */
-.calendar thead .active, .calendar thead .selected {
+/* line 266, ../scss/_plone.scss */
+.calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
 
-/* line 266, ../scss/_plone.scss */
+/* line 267, ../scss/_plone.scss */
 .calendar tbody {
   background: #fff;
 }
 
-/* line 267, ../scss/_plone.scss */
+/* line 268, ../scss/_plone.scss */
 .calendar tbody .day {
   width: 2em;
   text-align: center;
   padding: 2px 0px;
 }
 
-/* line 268, ../scss/_plone.scss */
+/* line 269, ../scss/_plone.scss */
 .calendar tbody .day.othermonth {
   font-size: 80%;
   color: #aaa;
 }
 
-/* line 269, ../scss/_plone.scss */
+/* line 270, ../scss/_plone.scss */
 .calendar tbody .day.othermonth.oweekend {
   color: #faa;
 }
 
-/* line 270, ../scss/_plone.scss */
+/* line 271, ../scss/_plone.scss */
 .calendar table .wn {
   border-right: 1px solid #b2b2b2;
   background: #f7f7f7;
 }
 
-/* line 271, ../scss/_plone.scss */
+/* line 272, ../scss/_plone.scss */
 .calendar tbody .rowhilite td {
   background: #cef;
 }
 
-/* line 272, ../scss/_plone.scss */
+/* line 273, ../scss/_plone.scss */
 .calendar tbody td.hilite {
   background: #08c;
   color: white;
 }
 
-/* line 273, ../scss/_plone.scss */
-.calendar tbody td.active, .calendar tbody td.selected {
+/* line 274, ../scss/_plone.scss */
+.calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
 
-/* line 274, ../scss/_plone.scss */
+/* line 275, ../scss/_plone.scss */
 .calendar tbody td.selected {
   font-weight: bold;
   background: #08c;
   color: white;
 }
 
-/* line 275, ../scss/_plone.scss */
+/* line 276, ../scss/_plone.scss */
 .calendar tbody td.weekend {
   color: #c00;
 }
 
-/* line 276, ../scss/_plone.scss */
+/* line 277, ../scss/_plone.scss */
 .calendar tbody td.today {
   font-weight: bold;
   color: white;
   border-radius: 3px;
 }
 
-/* line 277, ../scss/_plone.scss */
+/* line 278, ../scss/_plone.scss */
 .calendar tbody td.disabled {
   color: gray;
 }
 
-/* line 279, ../scss/_plone.scss */
+/* line 280, ../scss/_plone.scss */
 .calendar tbody .emptyrow {
   display: none;
 }
 
-/* line 281, ../scss/_plone.scss */
+/* line 282, ../scss/_plone.scss */
 .calendar tfoot .ttip {
   background: #f7f7f7;
   border-top: 1px solid #b2b2b2;
   text-align: center;
 }
 
-/* line 282, ../scss/_plone.scss */
+/* line 283, ../scss/_plone.scss */
 .calendar tfoot .hilite {
   background-color: #cef !important;
 }
 
-/* line 283, ../scss/_plone.scss */
-.calendar tfoot .active, .calendar tfoot .selected {
+/* line 284, ../scss/_plone.scss */
+.calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
   background-color: #08c !important;
 }
 
-/* line 285, ../scss/_plone.scss */
+/* line 286, ../scss/_plone.scss */
 .calendar .combo {
   position: absolute;
   display: none;
@@ -12017,7 +12055,7 @@ iframe {
   z-index: 100;
 }
 
-/* line 302, ../scss/_plone.scss */
+/* line 303, ../scss/_plone.scss */
 .calendar .combo .label, .calendar .combo #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .calendar .combo .state-restricted-to-managers, .calendar .combo #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .calendar .combo .state-visible, .calendar .combo #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .calendar .combo .state-intranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publishtointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publicaalaintranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retracttointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retiraalaintranet, .calendar .combo #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .calendar .combo .state-private, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-hide,
 .calendar .combo .label-IEfix {
   text-align: center;
@@ -12025,24 +12063,24 @@ iframe {
   padding: 1px;
 }
 
-/* line 308, ../scss/_plone.scss */
+/* line 309, ../scss/_plone.scss */
 .calendar .combo .label-IEfix {
   width: 4em;
 }
 
-/* line 312, ../scss/_plone.scss */
+/* line 313, ../scss/_plone.scss */
 .calendar .combo .active, .calendar .combo .selected {
   padding: 0px;
   border: 1px solid #000;
 }
 
-/* line 317, ../scss/_plone.scss */
+/* line 318, ../scss/_plone.scss */
 .calendar .combo .hilite {
   background: Highlight;
   color: HighlightText;
 }
 
-/* line 322, ../scss/_plone.scss */
+/* line 323, ../scss/_plone.scss */
 .calendar td.time {
   border-top: 1px solid ButtonShadow;
   padding: 1px 0px;
@@ -12050,7 +12088,7 @@ iframe {
   background-color: ButtonFace;
 }
 
-/* line 331, ../scss/_plone.scss */
+/* line 332, ../scss/_plone.scss */
 .calendar td.time .hour,
 .calendar td.time .minute,
 .calendar td.time .ampm {
@@ -12060,32 +12098,32 @@ iframe {
   background-color: Menu;
 }
 
-/* line 338, ../scss/_plone.scss */
+/* line 339, ../scss/_plone.scss */
 .calendar td.time .ampm {
   text-align: center;
 }
 
-/* line 342, ../scss/_plone.scss */
+/* line 343, ../scss/_plone.scss */
 .calendar td.time .colon {
   padding: 0px 2px 0px 3px;
   font-weight: bold;
 }
 
-/* line 347, ../scss/_plone.scss */
+/* line 348, ../scss/_plone.scss */
 .calendar td.time span.hilite {
   border-color: #000;
   background-color: Highlight;
   color: HighlightText;
 }
 
-/* line 353, ../scss/_plone.scss */
+/* line 354, ../scss/_plone.scss */
 .calendar td.time span.active, .calendar td.time span.selected {
   border-color: #f00;
   background-color: #000;
   color: #080;
 }
 
-/* line 360, ../scss/_plone.scss */
+/* line 361, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong {
   display: inline-block;
   padding: 2px 0 0 4px;
@@ -12095,37 +12133,37 @@ iframe {
   width: 34%;
 }
 
-/* line 362, ../scss/_plone.scss */
+/* line 363, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader:hover strong {
   color: white;
 }
-/* line 363, ../scss/_plone.scss */
+/* line 364, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader:hover a {
   color: #30a2c3;
 }
 
-/* line 365, ../scss/_plone.scss */
+/* line 366, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong:hover {
   overflow: visible;
   width: 100%;
   padding-bottom: 1px !important;
 }
 
-/* line 366, ../scss/_plone.scss */
+/* line 367, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong:hover + span {
   display: none;
 }
 
-/* line 369, ../scss/_plone.scss */
+/* line 370, ../scss/_plone.scss */
 img[src$="spinner.gif"] {
   box-shadow: 0 0 250px 250px white;
 }
 
-/* line 374, ../scss/_plone.scss */
+/* line 375, ../scss/_plone.scss */
 .discussion .commentImage {
   position: absolute;
 }
-/* line 376, ../scss/_plone.scss */
+/* line 377, ../scss/_plone.scss */
 .discussion .commentImage img {
   width: 50px;
   -webkit-border-radius: 4px;
@@ -12134,93 +12172,93 @@ img[src$="spinner.gif"] {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 378, ../scss/_plone.scss */
+/* line 379, ../scss/_plone.scss */
 .discussion .replyTreeLevel0 {
   margin-top: 2em;
 }
-/* line 381, ../scss/_plone.scss */
+/* line 382, ../scss/_plone.scss */
 .discussion .documentByLine a {
   font-weight: bold;
 }
-/* line 383, ../scss/_plone.scss */
+/* line 384, ../scss/_plone.scss */
 .discussion .commentDate {
   float: right;
 }
-/* line 384, ../scss/_plone.scss */
+/* line 385, ../scss/_plone.scss */
 .discussion .commentBody {
   color: #333333;
 }
-/* line 385, ../scss/_plone.scss */
+/* line 386, ../scss/_plone.scss */
 .discussion .commentActions {
   float: right;
 }
-/* line 388, ../scss/_plone.scss */
+/* line 389, ../scss/_plone.scss */
 .discussion .comment {
   border-left: 1px solid #b2b2b2;
   padding-left: 1em;
   margin-bottom: .5em;
   min-height: 50px;
 }
-/* line 389, ../scss/_plone.scss */
+/* line 390, ../scss/_plone.scss */
 .discussion .comment.replyTreeLevel0 {
   padding-left: 0;
   border-left: 0;
 }
-/* line 390, ../scss/_plone.scss */
+/* line 391, ../scss/_plone.scss */
 .discussion .reply-to-comment-button {
   display: block;
 }
-/* line 391, ../scss/_plone.scss */
+/* line 392, ../scss/_plone.scss */
 .discussion .documentByLine, .discussion .commentBody, .discussion .reply-to-comment-button {
   margin-left: 60px;
 }
-/* line 392, ../scss/_plone.scss */
+/* line 393, ../scss/_plone.scss */
 .discussion .reply {
   margin-top: 20px;
 }
 
-/* line 396, ../scss/_plone.scss */
+/* line 397, ../scss/_plone.scss */
 .collage-row {
   border-bottom: 1px solid #b2b2b2;
 }
 
-/* line 397, ../scss/_plone.scss */
+/* line 398, ../scss/_plone.scss */
 .collage-row:first-child {
   border-top: 1px solid #b2b2b2;
 }
 
-/* line 398, ../scss/_plone.scss */
+/* line 399, ../scss/_plone.scss */
 .collage-header {
   background: #fea;
 }
 
-/* line 400, ../scss/_plone.scss */
+/* line 401, ../scss/_plone.scss */
 .collage-image {
   width: 100%;
 }
 
-/* line 403, ../scss/_plone.scss */
+/* line 404, ../scss/_plone.scss */
 .collage-featured-image {
   float: right;
 }
 
-/* line 406, ../scss/_plone.scss */
+/* line 407, ../scss/_plone.scss */
 .featured-document {
   background: #f3f3f3;
   padding: 10px;
 }
 
-/* line 410, ../scss/_plone.scss */
+/* line 411, ../scss/_plone.scss */
 .collage-listitem {
   margin-bottom: 1em;
 }
 
-/* line 413, ../scss/_plone.scss */
+/* line 414, ../scss/_plone.scss */
 .collage-item .documentActions {
   display: none;
 }
 
-/* line 416, ../scss/_plone.scss */
+/* line 417, ../scss/_plone.scss */
 .collage-header {
   /*font-size: 0.9em;*/
   border-bottom: 1px solid White;
@@ -12229,23 +12267,23 @@ img[src$="spinner.gif"] {
   margin-bottom: 2px !important;
 }
 
-/* line 423, ../scss/_plone.scss */
+/* line 424, ../scss/_plone.scss */
 .collage-header p.discreet {
   /*font-size: 0.9em;*/
 }
 
-/* line 426, ../scss/_plone.scss */
+/* line 427, ../scss/_plone.scss */
 .collage-header span.icon img {
   padding: 2px;
 }
 
-/* line 429, ../scss/_plone.scss */
+/* line 430, ../scss/_plone.scss */
 .collage-header span.icon img.alias {
   padding: 0px;
   border: 2px solid White;
 }
 
-/* line 433, ../scss/_plone.scss */
+/* line 434, ../scss/_plone.scss */
 .collage-item div.clickable a {
   text-decoration: none;
   border: none;
@@ -12253,18 +12291,18 @@ img[src$="spinner.gif"] {
   background: transparent !important;
 }
 
-/* line 439, ../scss/_plone.scss */
+/* line 440, ../scss/_plone.scss */
 .collage-header span {
   color: #007bc0;
   text-transform: lowercase;
 }
 
-/* line 444, ../scss/_plone.scss */
+/* line 445, ../scss/_plone.scss */
 .collage-existing-items select {
   /*font-size: 80%;*/
 }
 
-/* line 447, ../scss/_plone.scss */
+/* line 448, ../scss/_plone.scss */
 .collage-existing-items .breadcrumbs {
   background: url("logoIcon.gif") no-repeat left center;
   padding-top: 4px;
@@ -12274,23 +12312,23 @@ img[src$="spinner.gif"] {
   border-bottom: 1px solid White;
 }
 
-/* line 456, ../scss/_plone.scss */
+/* line 457, ../scss/_plone.scss */
 .collage-existing-items .breadcrumbs a,
 .collage-existing-items .breadcrumbs span {
   /*font-size: 1.0em !important;*/
 }
 
-/* line 460, ../scss/_plone.scss */
+/* line 461, ../scss/_plone.scss */
 .collage-existing-items label {
   display: none;
 }
 
-/* line 463, ../scss/_plone.scss */
+/* line 464, ../scss/_plone.scss */
 .collage-header a {
   cursor: pointer;
 }
 
-/* line 468, ../scss/_plone.scss */
+/* line 469, ../scss/_plone.scss */
 .collage-header a.action,
 .collage-header a.layout,
 .collage-header a.create {
@@ -12299,23 +12337,23 @@ img[src$="spinner.gif"] {
   text-decoration: none;
 }
 
-/* line 473, ../scss/_plone.scss */
+/* line 474, ../scss/_plone.scss */
 .collage-header a.delete-confirm {
   color: red;
 }
 
-/* line 477, ../scss/_plone.scss */
+/* line 478, ../scss/_plone.scss */
 .collage-header a.action span.inactive,
 .collage-header a.layout span.inactive {
   text-decoration: underline;
 }
 
-/* line 480, ../scss/_plone.scss */
+/* line 481, ../scss/_plone.scss */
 .collage-header a.layout span.active, .collage-header a.layout span.selected {
   color: Black;
 }
 
-/* line 483, ../scss/_plone.scss */
+/* line 484, ../scss/_plone.scss */
 .delete-object-icon {
   float: left;
   width: 14px;
@@ -12324,7 +12362,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-delete.gif") no-repeat top left;
 }
 
-/* line 490, ../scss/_plone.scss */
+/* line 491, ../scss/_plone.scss */
 .copy-object-icon {
   float: left;
   width: 14px;
@@ -12333,7 +12371,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-copy.gif") no-repeat top left;
 }
 
-/* line 497, ../scss/_plone.scss */
+/* line 498, ../scss/_plone.scss */
 .paste-object-icon {
   float: left;
   width: 14px;
@@ -12342,7 +12380,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-paste.gif") no-repeat top left;
 }
 
-/* line 504, ../scss/_plone.scss */
+/* line 505, ../scss/_plone.scss */
 .split-column-icon {
   float: left;
   width: 14px;
@@ -12351,7 +12389,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-split.gif") no-repeat top left;
 }
 
-/* line 511, ../scss/_plone.scss */
+/* line 512, ../scss/_plone.scss */
 .object-action-generic-icon {
   float: left;
   width: 14px;
@@ -12361,7 +12399,7 @@ img[src$="spinner.gif"] {
 }
 
 /* */
-/* line 519, ../scss/_plone.scss */
+/* line 520, ../scss/_plone.scss */
 .expandable-section .expandable-label .expandable-icon {
   background: url("/++resource++collage-resources/icon-plusminus.gif") no-repeat top left;
   float: left;
@@ -12371,18 +12409,18 @@ img[src$="spinner.gif"] {
   margin-left: 3px;
 }
 
-/* line 527, ../scss/_plone.scss */
+/* line 528, ../scss/_plone.scss */
 .expandable-section .expandable-label.enabled .expandable-icon {
   background-position: -20px 0%;
 }
 
-/* line 530, ../scss/_plone.scss */
+/* line 531, ../scss/_plone.scss */
 .expandable-section .expandable-label {
   float: left;
   position: relative;
 }
 
-/* line 534, ../scss/_plone.scss */
+/* line 535, ../scss/_plone.scss */
 .expandable-content {
   display: none;
   top: 35px;
@@ -12411,7 +12449,7 @@ border-bottom: 1px solid #74ae0b;
 margin: 0.5em;
 }
 */
-/* line 561, ../scss/_plone.scss */
+/* line 562, ../scss/_plone.scss */
 ul.collage-content-menu {
   display: block;
   list-style-image: none !important;
@@ -12419,85 +12457,85 @@ ul.collage-content-menu {
   margin-left: 0 !important;
 }
 
-/* line 568, ../scss/_plone.scss */
+/* line 569, ../scss/_plone.scss */
 ul.collage-content-menu li {
   display: block;
 }
 
-/* line 571, ../scss/_plone.scss */
+/* line 572, ../scss/_plone.scss */
 ul.collage-content-menu li a {
   border: none;
 }
 
 /* */
-/* line 575, ../scss/_plone.scss */
+/* line 576, ../scss/_plone.scss */
 div.insert-existing-items h4 {
   line-height: 16px;
 }
 
-/* line 578, ../scss/_plone.scss */
+/* line 579, ../scss/_plone.scss */
 input#insert-collage-row {
   margin-top: 1em;
 }
 
 /* */
-/* line 582, ../scss/_plone.scss */
+/* line 583, ../scss/_plone.scss */
 span.collage-navigation img {
   width: 9px;
   height: 9px;
 }
 
-/* line 586, ../scss/_plone.scss */
+/* line 587, ../scss/_plone.scss */
 span.collage-navigation {
   margin-left: 4px;
 }
 
-/* line 589, ../scss/_plone.scss */
+/* line 590, ../scss/_plone.scss */
 span.collage-navigation a {
   text-decoration: none;
 }
 
 /* */
-/* line 593, ../scss/_plone.scss */
+/* line 594, ../scss/_plone.scss */
 .display-collagerow_default_view {
   background-image: url(icon-collagerow_default_view.gif) !important;
 }
 
-/* line 596, ../scss/_plone.scss */
+/* line 597, ../scss/_plone.scss */
 .display-collagerow_largeleft_view {
   background-image: url(icon-collagerow_largeleft_view.gif) !important;
 }
 
-/* line 599, ../scss/_plone.scss */
+/* line 600, ../scss/_plone.scss */
 .display-collagerow_largeright_view {
   background-image: url(icon-collagerow_largeright_view.gif) !important;
 }
 
-/* line 602, ../scss/_plone.scss */
+/* line 603, ../scss/_plone.scss */
 .display-collagecolumn_default_view {
   background-image: url(icon-collagecolumn_default_view.gif) !important;
 }
 
 /* */
-/* line 606, ../scss/_plone.scss */
+/* line 607, ../scss/_plone.scss */
 .icons-on .collage-content-menu .contenttype-file {
   background: no-repeat transparent 0px -433px url(contenttypes-sprite.png);
   padding-left: 20px !important;
 }
 
-/* line 610, ../scss/_plone.scss */
+/* line 611, ../scss/_plone.scss */
 .icons-on .collage-content-menu .contenttype-image {
   background: no-repeat transparent 0px -865px url(contenttypes-sprite.png);
   padding-left: 20px !important;
 }
 
 /* */
-/* line 615, ../scss/_plone.scss */
+/* line 616, ../scss/_plone.scss */
 .collage-quickedit {
   float: right;
 }
 
-/* line 618, ../scss/_plone.scss */
+/* line 619, ../scss/_plone.scss */
 #collage .collage-row {
   min-height: 100%;
   margin-left: auto;
@@ -12508,25 +12546,25 @@ span.collage-navigation a {
   clear: both;
 }
 
-/* line 628, ../scss/_plone.scss */
+/* line 629, ../scss/_plone.scss */
 #collage div.collage-first-object,
 #collage div.collage-first-object div.collage-item {
   margin-left: 0;
 }
 
-/* line 632, ../scss/_plone.scss */
+/* line 633, ../scss/_plone.scss */
 #collage div.collage-last-object,
 #collage div.collage-last-object div.collage-item {
   margin-right: 0;
 }
 
-/* line 635, ../scss/_plone.scss */
+/* line 636, ../scss/_plone.scss */
 * html #collage .collage-row {
   width: 100%;
   height: 100%;
 }
 
-/* line 643, ../scss/_plone.scss */
+/* line 644, ../scss/_plone.scss */
 #collage .block_1,
 #collage .block_2,
 #collage .block_3,
@@ -12535,40 +12573,40 @@ span.collage-navigation a {
   float: left;
 }
 
-/* line 646, ../scss/_plone.scss */
+/* line 647, ../scss/_plone.scss */
 .collage-item {
   margin-bottom: 0.5em;
 }
 
 /* */
-/* line 650, ../scss/_plone.scss */
+/* line 651, ../scss/_plone.scss */
 #collage .one-column .block_1 {
   width: 100%;
 }
 
-/* line 653, ../scss/_plone.scss */
+/* line 654, ../scss/_plone.scss */
 #collage .two-columns-equal .block_1 {
   width: 49.49%;
 }
 
-/* line 656, ../scss/_plone.scss */
+/* line 657, ../scss/_plone.scss */
 #collage .two-columns-equal .block_2 {
   width: 49.49%;
 }
 
-/* line 659, ../scss/_plone.scss */
+/* line 660, ../scss/_plone.scss */
 #collage .three-columns-equal .block_1,
 #collage .three-columns-equal .block_2,
 #collage .three-columns-equal .block_3 {
   width: 32.5%;
 }
 
-/* line 662, ../scss/_plone.scss */
+/* line 663, ../scss/_plone.scss */
 #collage .three-columns-equal .block_2 {
   width: 32.9%;
 }
 
-/* line 666, ../scss/_plone.scss */
+/* line 667, ../scss/_plone.scss */
 #collage .four-columns-equal .block_1,
 #collage .four-columns-equal .block_2,
 #collage .four-columns-equal .block_3,
@@ -12576,12 +12614,12 @@ span.collage-navigation a {
   width: 24.2%;
 }
 
-/* line 669, ../scss/_plone.scss */
+/* line 670, ../scss/_plone.scss */
 #collage .four-columns-equal .block_2 {
   width: 24.4%;
 }
 
-/* line 674, ../scss/_plone.scss */
+/* line 675, ../scss/_plone.scss */
 #collage .five-columns-equal .block_1,
 #collage .five-columns-equal .block_2,
 #collage .five-columns-equal .block_3,
@@ -12590,12 +12628,12 @@ span.collage-navigation a {
   width: 19.2%;
 }
 
-/* line 677, ../scss/_plone.scss */
+/* line 678, ../scss/_plone.scss */
 #collage .five-columns-equal .block_2 {
   width: 19.2%;
 }
 
-/* line 683, ../scss/_plone.scss */
+/* line 684, ../scss/_plone.scss */
 #collage .block_2,
 #collage .block_4,
 #collage .block_3,
@@ -12605,49 +12643,49 @@ span.collage-navigation a {
   padding-left: 1%;
 }
 
-/* line 686, ../scss/_plone.scss */
+/* line 687, ../scss/_plone.scss */
 #collage .two-columns-largeleft .block_1 {
   width: 59%;
 }
 
-/* line 689, ../scss/_plone.scss */
+/* line 690, ../scss/_plone.scss */
 #collage .two-columns-largeleft .block_2 {
   width: 40%;
 }
 
-/* line 692, ../scss/_plone.scss */
+/* line 693, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_1 {
   width: 59%;
 }
 
-/* line 695, ../scss/_plone.scss */
+/* line 696, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_2 {
   width: 19%;
 }
 
-/* line 698, ../scss/_plone.scss */
+/* line 699, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_3 {
   width: 20%;
 }
 
-/* line 701, ../scss/_plone.scss */
+/* line 702, ../scss/_plone.scss */
 #collage .four-columns-largeleft .block_1 {
   width: 40%;
 }
 
-/* line 706, ../scss/_plone.scss */
+/* line 707, ../scss/_plone.scss */
 #collage .four-columns-largeleft .block_2,
 #collage .four-columns-largeleft .block_3,
 #collage .four-columns-largeleft .block_4 {
   width: 19%;
 }
 
-/* line 709, ../scss/_plone.scss */
+/* line 710, ../scss/_plone.scss */
 #collage .five-columns-largeleft .block_1 {
   width: 24%;
 }
 
-/* line 715, ../scss/_plone.scss */
+/* line 716, ../scss/_plone.scss */
 #collage .five-columns-largeleft .block_2,
 #collage .five-columns-largeleft .block_3,
 #collage .five-columns-largeleft .block_4,
@@ -12655,44 +12693,44 @@ span.collage-navigation a {
   width: 18%;
 }
 
-/* line 718, ../scss/_plone.scss */
+/* line 719, ../scss/_plone.scss */
 #collage .two-columns-largeright .block_2 {
   width: 59%;
 }
 
-/* line 721, ../scss/_plone.scss */
+/* line 722, ../scss/_plone.scss */
 #collage .two-columns-largeright .block_1 {
   width: 40%;
 }
 
-/* line 724, ../scss/_plone.scss */
+/* line 725, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_3 {
   width: 59%;
 }
 
-/* line 727, ../scss/_plone.scss */
+/* line 728, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_1 {
   width: 20%;
 }
 
-/* line 730, ../scss/_plone.scss */
+/* line 731, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_2 {
   width: 19%;
 }
 
-/* line 735, ../scss/_plone.scss */
+/* line 736, ../scss/_plone.scss */
 #collage .four-columns-largeright .block_1,
 #collage .four-columns-largeright .block_2,
 #collage .four-columns-largeright .block_3 {
   width: 19%;
 }
 
-/* line 738, ../scss/_plone.scss */
+/* line 739, ../scss/_plone.scss */
 #collage .four-columns-largeright .block_4 {
   width: 40%;
 }
 
-/* line 744, ../scss/_plone.scss */
+/* line 745, ../scss/_plone.scss */
 #collage .five-columns-largeright .block_1,
 #collage .five-columns-largeright .block_2,
 #collage .five-columns-largeright .block_3,
@@ -12700,101 +12738,101 @@ span.collage-navigation a {
   width: 18%;
 }
 
-/* line 747, ../scss/_plone.scss */
+/* line 748, ../scss/_plone.scss */
 #collage .five-columns-largeright .block_5 {
   width: 24%;
 }
 
 /* */
-/* line 752, ../scss/_plone.scss */
+/* line 753, ../scss/_plone.scss */
 #collage .collage-item .documentByLine,
 #collage .collage-item .link-parent {
   display: none;
 }
 
 /* */
-/* line 756, ../scss/_plone.scss */
+/* line 757, ../scss/_plone.scss */
 #collage .unbatched-with-1 .column-block {
   width: 100%;
 }
 
-/* line 757, ../scss/_plone.scss */
+/* line 758, ../scss/_plone.scss */
 #collage .unbatched-with-2 .column-block {
   width: 49.5%;
 }
 
-/* line 758, ../scss/_plone.scss */
+/* line 759, ../scss/_plone.scss */
 #collage .unbatched-with-3 .column-block {
   width: 32.5%;
 }
 
-/* line 759, ../scss/_plone.scss */
+/* line 760, ../scss/_plone.scss */
 #collage .unbatched-with-4 .column-block {
   width: 24.25%;
 }
 
-/* line 760, ../scss/_plone.scss */
+/* line 761, ../scss/_plone.scss */
 #collage .unbatched-with-5 .column-block {
   width: 19%;
 }
 
-/* line 761, ../scss/_plone.scss */
+/* line 762, ../scss/_plone.scss */
 #collage .unbatched-with-6 .column-block {
   width: 16.5%;
 }
 
 /* */
-/* line 764, ../scss/_plone.scss */
+/* line 765, ../scss/_plone.scss */
 #collage .collage-portlet-notification dt.portletHeader {
   background-color: #ffffe3;
 }
 
-/* line 767, ../scss/_plone.scss */
+/* line 768, ../scss/_plone.scss */
 #collage .collage-portlet-help dt.portletHeader {
   background-color: #ffffe1;
 }
 
-/* line 770, ../scss/_plone.scss */
+/* line 771, ../scss/_plone.scss */
 #collage .collage-layout-error {
   background-color: yellow;
   font-weight: bold;
 }
 
-/* line 776, ../scss/_plone.scss */
+/* line 777, ../scss/_plone.scss */
 .collage-header > * {
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 783, ../scss/_plone.scss */
+/* line 784, ../scss/_plone.scss */
 .collage-header > .expandable-section,
 .collage-header > .post {
   margin-bottom: 2px;
 }
 
-/* line 785, ../scss/_plone.scss */
+/* line 786, ../scss/_plone.scss */
 .expandable-icon, .split-column-icon, .delete-object-icon, .copy-object-icon,
 .object-action-generic-icon {
   margin-top: 2px;
 }
 
-/* line 787, ../scss/_plone.scss */
+/* line 788, ../scss/_plone.scss */
 .collage-header .expandable-content {
   width: 306px !important;
 }
 
-/* line 788, ../scss/_plone.scss */
+/* line 789, ../scss/_plone.scss */
 .column-block > .collage-header {
   background-color: #efa;
 }
 
-/* line 789, ../scss/_plone.scss */
+/* line 790, ../scss/_plone.scss */
 .collage-item > .collage-header {
   background-color: #afe;
 }
 
-/* line 791, ../scss/_plone.scss */
+/* line 792, ../scss/_plone.scss */
 .collage-header .visualIcon img {
   display: none;
 }
@@ -12802,13 +12840,13 @@ span.collage-navigation a {
 /*
 FORULARI
 */
-/* line 800, ../scss/_plone.scss */
+/* line 801, ../scss/_plone.scss */
 .pfg-drafts-float {
   position: relative !important;
   width: auto !important;
 }
 
-/* line 802, ../scss/_plone.scss */
+/* line 803, ../scss/_plone.scss */
 .standalone + .pfg-draft {
   display: inline-block;
 }
@@ -12816,13 +12854,13 @@ FORULARI
 /*
 NOTICIA
 */
-/* line 807, ../scss/_plone.scss */
+/* line 808, ../scss/_plone.scss */
 .newsImageContainer {
   margin: 0 0 1em 1em;
 }
 
 /* VISTA MINIATURES*/
-/* line 815, ../scss/_plone.scss */
+/* line 816, ../scss/_plone.scss */
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li,
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li,
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li + li + li + li + li
@@ -12835,7 +12873,7 @@ html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li +
 /*
 VIEWS
 */
-/* line 821, ../scss/_plone.scss */
+/* line 822, ../scss/_plone.scss */
 body.template-folder_summary_view #content ul li:first-child {
   border-top: 0;
   -webkit-box-shadow: none;
@@ -12846,7 +12884,7 @@ body.template-folder_summary_view #content ul li:first-child {
 /*
 custom file posat aqui per evitar comptar com a selector en l'altre paquet
 */
-/* line 830, ../scss/_plone.scss */
+/* line 831, ../scss/_plone.scss */
 div.overlay {
   /* initially overlay is hidden */
   display: none;
@@ -13306,7 +13344,7 @@ html {
   #portal-header h1.pull-left {
     height: 46px;
     width: 207px;
-    background: url('/++genweb++static/images/logoUPC@2x.png?1370877920') no-repeat;
+    background: url('/++genweb++static/images/logoUPC@2x.png?1374690608') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -13315,7 +13353,7 @@ html {
 
   /* line 12, ../scss/_retina.scss */
   .header-image {
-    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1370877920');
+    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1374690608');
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -13324,12 +13362,12 @@ html {
 
   /* line 14, ../scss/_retina.scss */
   .list-links li, .portaltype-packet .estudis .llistatEnllacos li {
-    content: url('/++genweb++static/images/arrow@2x.png?1370877920');
+    content: url('/++genweb++static/images/arrow@2x.png?1374690608');
   }
 
   /* line 15, ../scss/_retina.scss */
   .list-highlighted li {
-    content: url('/++genweb++static/images/arrow_hl@2x.png?1370877920');
+    content: url('/++genweb++static/images/arrow_hl@2x.png?1374690608');
   }
 
   /* line 17, ../scss/_retina.scss */
@@ -13340,22 +13378,22 @@ html {
 
   /* line 18, ../scss/_retina.scss */
   .img_blank[src*="blank_blau"] {
-    content: url('/++genweb++static/images/blank_blau@2x.png?1370877920');
+    content: url('/++genweb++static/images/blank_blau@2x.png?1374690608');
   }
 
   /* line 19, ../scss/_retina.scss */
   .img_blank[src*="blank_gris"] {
-    content: url('/++genweb++static/images/blank_gris@2x.png?1370877920');
+    content: url('/++genweb++static/images/blank_gris@2x.png?1374690608');
   }
 
   /* line 20, ../scss/_retina.scss */
   .img_blank[src*="blank_blanc"] {
-    content: url('/++genweb++static/images/blank_blanc@2x.png?1370877920');
+    content: url('/++genweb++static/images/blank_blanc@2x.png?1374690608');
   }
 
   /* line 22, ../scss/_retina.scss */
   .userScreen, .userTablet, .userMobile, .userGenweb {
-    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1370877920');
+    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1374690608');
     -webkit-background-size: 20px 400px;
     -moz-background-size: 20px 400px;
     -o-background-size: 20px 400px;
@@ -13777,7 +13815,7 @@ html.lt-ie8 .list-portlet li  {
 }
 /* line 34, ../scss/_upcnet.scss */
 .link-parent:before {
-  background: url('/++genweb++static/images/gh-w.png?1370877920') no-repeat -290px -95px;
+  background: url('/++genweb++static/images/gh-w.png?1374690608') no-repeat -290px -95px;
   content: " ";
   display: inline-block;
   height: 14px;

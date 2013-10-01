@@ -398,7 +398,8 @@ class gwLayoutPolicy(LayoutPolicy):
             # Browser view
             name = view.__name__
         else:
-            name = template.getId()
+            if hasattr(template, 'getId'):
+                name = template.getId()
         name = normalizer.normalize(name)
         body_class = 'template-%s' % name
 
