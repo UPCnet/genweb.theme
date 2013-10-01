@@ -4,8 +4,7 @@ Changelog
 1.0b6 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+ * Fix for p.a.contenttypes, and other fixes for CSS [Victor Fernandez de Alba]
 
 1.0b5 (2013-08-02)
 ------------------
