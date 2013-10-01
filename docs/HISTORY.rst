@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0b6 (unreleased)
+1.0b6 (2013-10-01)
 ------------------
 
  * Fix for p.a.contenttypes, and other fixes for CSS [Victor Fernandez de Alba]
