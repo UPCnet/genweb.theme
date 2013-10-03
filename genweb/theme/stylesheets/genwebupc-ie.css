@@ -1,0 +1,916 @@
+@import url('genwebupc-ie-blessed2.css?z=1380794218687');
+@import url('genwebupc-ie-blessed1.css?z=1380794218687');
+
+
+/* line 101, ../scss/_ui.scss */
+.ploneSkin .mceOldBoxModel .mceListBox .mceOpen {
+  width: 11px;
+  height: 22px;
+}
+
+/* line 102, ../scss/_ui.scss */
+.ploneSkin select.mceNativeListBox {
+  font-size: 7pt;
+  background: #444;
+  border: 1px solid #444;
+  margin-right: 2px;
+}
+
+/* SplitButton */
+/* line 105, ../scss/_ui.scss */
+.ploneSkin .mceSplitButton {
+  width: 32px;
+  height: 20px;
+  direction: ltr;
+}
+
+/* line 106, ../scss/_ui.scss */
+.ploneSkin .mceSplitButton a, .ploneSkin .mceSplitButton span {
+  height: 20px;
+  display: block;
+}
+
+/* line 107, ../scss/_ui.scss */
+.ploneSkin .mceSplitButton a.mceAction {
+  width: 20px;
+  border: 1px solid #444;
+  border-right: 0px;
+}
+
+/* line 108, ../scss/_ui.scss */
+.ploneSkin .mceSplitButton span.mceAction {
+  width: 20px;
+  background: url(../../img/icons.gif) 20px 20px;
+}
+
+/* line 109, ../scss/_ui.scss */
+.ploneSkin .mceSplitButton a.mceOpen {
+  width: 9px;
+  border: 1px solid transparent;
+}
+
+/* line 110, ../scss/_ui.scss */
+.ploneSkin .mceSplitButton span.mceOpen {
+  width: 9px;
+  background: url(../../img/icons.gif) -741px 0;
+}
+
+/* line 111, ../scss/_ui.scss */
+.ploneSkin table.mceSplitButtonEnabled:hover a.mceAction, .ploneSkin .mceSplitButtonHover a.mceAction, .ploneSkin .mceSplitButtonSelected a.mceAction {
+  border: 1px solid #444;
+  border-right: 0;
+  background-color: #444;
+}
+
+/* line 112, ../scss/_ui.scss */
+.ploneSkin table.mceSplitButtonEnabled:hover a.mceOpen, .ploneSkin .mceSplitButtonHover a.mceOpen, .ploneSkin .mceSplitButtonSelected a.mceOpen {
+  border: 1px solid #444;
+}
+
+/* line 113, ../scss/_ui.scss */
+.ploneSkin table.mceSplitButtonEnabled:hover span.mceOpen, .ploneSkin .mceSplitButtonHover span.mceOpen, .ploneSkin .mceSplitButtonSelected span.mceOpen {
+  background-color: #444;
+}
+
+/* line 114, ../scss/_ui.scss */
+.ploneSkin .mceSplitButtonDisabled .mceAction, .ploneSkin .mceSplitButtonDisabled span.mceOpen {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+/* line 115, ../scss/_ui.scss */
+.ploneSkin .mceSplitButtonActive a.mceAction {
+  border: 1px solid #444;
+  background-color: #444;
+}
+
+/* line 116, ../scss/_ui.scss */
+.ploneSkin .mceSplitButtonActive a.mceOpen {
+  border-left: 0;
+}
+
+/* ColorSplitButton */
+/* line 119, ../scss/_ui.scss */
+.ploneSkin div.mceColorSplitMenu table {
+  background: #ddd;
+  border: 1px solid #444;
+}
+
+/* line 120, ../scss/_ui.scss */
+.ploneSkin .mceColorSplitMenu td {
+  padding: 2px;
+}
+
+/* line 121, ../scss/_ui.scss */
+.ploneSkin .mceColorSplitMenu a {
+  display: block;
+  width: 9px;
+  height: 9px;
+  overflow: hidden;
+  border: 1px solid #444;
+}
+
+/* line 122, ../scss/_ui.scss */
+.ploneSkin .mceColorSplitMenu td.mceMoreColors {
+  padding: 1px 3px 1px 1px;
+}
+
+/* line 123, ../scss/_ui.scss */
+.ploneSkin .mceColorSplitMenu a.mceMoreColors {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 100%;
+  line-height: 20px;
+  border: 1px solid #444;
+}
+
+/* line 124, ../scss/_ui.scss */
+.ploneSkin .mceColorSplitMenu a.mceMoreColors:hover {
+  border: 1px solid #444;
+  background-color: #444;
+}
+
+/* line 125, ../scss/_ui.scss */
+.ploneSkin a.mceMoreColors:hover {
+  border: 1px solid #444;
+}
+
+/* line 126, ../scss/_ui.scss */
+.ploneSkin .mceColorPreview {
+  margin-left: 2px;
+  width: 16px;
+  height: 4px;
+  overflow: hidden;
+  background: gray;
+}
+
+/* line 127, ../scss/_ui.scss */
+.ploneSkin .mce_forecolor span.mceAction, .ploneSkin .mce_backcolor span.mceAction {
+  overflow: hidden;
+  height: 16px;
+}
+
+/* Menu */
+/* line 130, ../scss/_ui.scss */
+.ploneSkin .mceMenu {
+  position: absolute;
+  left: 1px;
+  top: 0px;
+  z-index: 1000;
+  border: 1px solid #444;
+}
+
+/* line 131, ../scss/_ui.scss */
+.ploneSkin .mceNoIcons span.mceIcon {
+  width: 0;
+}
+
+/* line 132, ../scss/_ui.scss */
+.ploneSkin .mceNoIcons a .mceText {
+  padding-left: 10px;
+}
+
+/* line 133, ../scss/_ui.scss */
+.ploneSkin .mceMenu table {
+  background: White;
+}
+
+/* line 134, ../scss/_ui.scss */
+.ploneSkin .mceMenu a, .ploneSkin .mceMenu span, .ploneSkin .mceMenu {
+  display: block;
+}
+
+/* line 135, ../scss/_ui.scss */
+.ploneSkin .mceMenu td {
+  height: 20px;
+}
+
+/* line 136, ../scss/_ui.scss */
+.ploneSkin .mceMenu a {
+  position: relative;
+  padding: 3px 0 4px 0;
+}
+
+/* line 137, ../scss/_ui.scss */
+.ploneSkin .mceMenu .mceText {
+  position: relative;
+  display: block;
+  color: Black;
+  cursor: default;
+  margin: 0;
+  padding: 0 25px 0 25px;
+  display: block;
+}
+
+/* line 138, ../scss/_ui.scss */
+.ploneSkin .mceMenu span.mceText, .ploneSkin .mceMenu .mcePreview {
+  font-size: 100%;
+}
+
+/* line 139, ../scss/_ui.scss */
+.ploneSkin .mceMenu pre.mceText {
+  font-family: Monospace;
+}
+
+/* line 140, ../scss/_ui.scss */
+.ploneSkin .mceMenu .mceIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+}
+
+/* line 141, ../scss/_ui.scss */
+.ploneSkin .mceMenu .mceMenuItemEnabled a:hover, .ploneSkin .mceMenu .mceMenuItemActive {
+  background-color: #ddd;
+}
+
+/* line 142, ../scss/_ui.scss */
+.ploneSkin td.mceMenuItemSeparator {
+  background: #444;
+  height: 1px;
+}
+
+/* line 143, ../scss/_ui.scss */
+.ploneSkin .mceMenuItemTitle a {
+  border: 0;
+  background: #ddd;
+}
+
+/* line 144, ../scss/_ui.scss */
+.ploneSkin .mceFirst .mceMenuItemTitle a {
+  border: 1px solid #fff;
+  border-style: none none solid;
+  background: #ddd;
+}
+
+/* line 145, ../scss/_ui.scss */
+.ploneSkin .mceMenuItemTitle span.mceText {
+  color: Black;
+  padding-left: 4px;
+}
+
+/* line 146, ../scss/_ui.scss */
+.ploneSkin .mceMenuItemDisabled .mceText {
+  color: #444;
+}
+
+/* line 147, ../scss/_ui.scss */
+.ploneSkin .mceMenuItemSelected .mceIcon {
+  background: url(img/menu_check.gif);
+}
+
+/* line 148, ../scss/_ui.scss */
+.ploneSkin .mceNoIcons .mceMenuItemSelected a {
+  background: url(img/menu_arrow.gif) no-repeat -6px center;
+}
+
+/* line 149, ../scss/_ui.scss */
+.ploneSkin .mceMenu span.mceMenuLine {
+  display: none;
+}
+
+/* line 150, ../scss/_ui.scss */
+.ploneSkin .mceMenuItemSub a {
+  background: url(img/menu_arrow.gif) no-repeat top right;
+}
+
+/* Progress,Resize */
+/* line 153, ../scss/_ui.scss */
+.ploneSkin .mceBlocker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: 'alpha(opacity=50)';
+  background: #ddd;
+}
+
+/* line 154, ../scss/_ui.scss */
+.ploneSkin .mceProgress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1001;
+  background: url(img/progress.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  margin: -16px 0 0 -16px;
+}
+
+/* line 155, ../scss/_ui.scss */
+.ploneSkin .mcePlaceHolder {
+  border: 1px dotted #444;
+}
+
+/* Formats */
+/* line 158, ../scss/_ui.scss */
+.ploneSkin .mce_formatPreview a {
+  font-size: 80%;
+}
+
+/* line 160, ../scss/_ui.scss */
+.ploneSkin .mce_address span.mceText {
+  font-style: italic;
+}
+
+/* line 161, ../scss/_ui.scss */
+.ploneSkin .mce_pre span.mceText {
+  font-family: monospace;
+}
+
+/* line 162, ../scss/_ui.scss */
+.ploneSkin .mce_h1 span.mceText {
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+/* line 163, ../scss/_ui.scss */
+.ploneSkin .mce_h2 span.mceText {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+/* line 164, ../scss/_ui.scss */
+.ploneSkin .mce_h3 span.mceText {
+  font-weight: bolder;
+  font-size: 1.17em;
+}
+
+/* line 165, ../scss/_ui.scss */
+.ploneSkin .mce_h4 span.mceText {
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+/* line 166, ../scss/_ui.scss */
+.ploneSkin .mce_h5 span.mceText {
+  font-weight: bolder;
+  font-size: .83em;
+}
+
+/* line 167, ../scss/_ui.scss */
+.ploneSkin .mce_h6 span.mceText {
+  font-weight: bolder;
+  font-size: .75em;
+}
+
+/* Theme */
+/* line 170, ../scss/_ui.scss */
+.ploneSkin span.mce_bold {
+  background-position: 0 0;
+}
+
+/* line 171, ../scss/_ui.scss */
+.ploneSkin span.mce_italic {
+  background-position: -60px 0;
+}
+
+/* line 172, ../scss/_ui.scss */
+.ploneSkin span.mce_underline {
+  background-position: -140px 0;
+}
+
+/* line 173, ../scss/_ui.scss */
+.ploneSkin span.mce_strikethrough {
+  background-position: -120px 0;
+}
+
+/* line 174, ../scss/_ui.scss */
+.ploneSkin span.mce_undo {
+  background-position: -160px 0;
+}
+
+/* line 175, ../scss/_ui.scss */
+.ploneSkin span.mce_redo {
+  background-position: -100px 0;
+}
+
+/* line 176, ../scss/_ui.scss */
+.ploneSkin span.mce_cleanup {
+  background-position: -40px 0;
+}
+
+/* line 177, ../scss/_ui.scss */
+.ploneSkin span.mce_bullist {
+  background-position: -20px 0;
+}
+
+/* line 178, ../scss/_ui.scss */
+.ploneSkin span.mce_numlist {
+  background-position: -80px 0;
+}
+
+/* line 179, ../scss/_ui.scss */
+.ploneSkin span.mce_justifyleft {
+  background-position: -460px 0;
+}
+
+/* line 180, ../scss/_ui.scss */
+.ploneSkin span.mce_justifyright {
+  background-position: -480px 0;
+}
+
+/* line 181, ../scss/_ui.scss */
+.ploneSkin span.mce_justifycenter {
+  background-position: -420px 0;
+}
+
+/* line 182, ../scss/_ui.scss */
+.ploneSkin span.mce_justifyfull {
+  background-position: -440px 0;
+}
+
+/* line 183, ../scss/_ui.scss */
+.ploneSkin span.mce_anchor {
+  background-position: -200px 0;
+}
+
+/* line 184, ../scss/_ui.scss */
+.ploneSkin span.mce_indent {
+  background-position: -400px 0;
+}
+
+/* line 185, ../scss/_ui.scss */
+.ploneSkin span.mce_outdent {
+  background-position: -540px 0;
+}
+
+/* line 186, ../scss/_ui.scss */
+.ploneSkin span.mce_link {
+  background-position: -500px 0;
+}
+
+/* line 187, ../scss/_ui.scss */
+.ploneSkin span.mce_unlink {
+  background-position: -640px 0;
+}
+
+/* line 188, ../scss/_ui.scss */
+.ploneSkin span.mce_sub {
+  background-position: -600px 0;
+}
+
+/* line 189, ../scss/_ui.scss */
+.ploneSkin span.mce_sup {
+  background-position: -620px 0;
+}
+
+/* line 190, ../scss/_ui.scss */
+.ploneSkin span.mce_removeformat {
+  background-position: -580px 0;
+}
+
+/* line 191, ../scss/_ui.scss */
+.ploneSkin span.mce_newdocument {
+  background-position: -520px 0;
+}
+
+/* line 192, ../scss/_ui.scss */
+.ploneSkin span.mce_image {
+  background-position: -380px 0;
+}
+
+/* line 193, ../scss/_ui.scss */
+.ploneSkin span.mce_help {
+  background-position: -340px 0;
+}
+
+/* line 194, ../scss/_ui.scss */
+.ploneSkin span.mce_code {
+  background-position: -260px 0;
+}
+
+/* line 195, ../scss/_ui.scss */
+.ploneSkin span.mce_hr {
+  background-position: -360px 0;
+}
+
+/* line 196, ../scss/_ui.scss */
+.ploneSkin span.mce_visualaid {
+  background-position: -660px 0;
+}
+
+/* line 197, ../scss/_ui.scss */
+.ploneSkin span.mce_charmap {
+  background-position: -240px 0;
+}
+
+/* line 198, ../scss/_ui.scss */
+.ploneSkin span.mce_paste {
+  background-position: -560px 0;
+}
+
+/* line 199, ../scss/_ui.scss */
+.ploneSkin span.mce_copy {
+  background-position: -700px 0;
+}
+
+/* line 200, ../scss/_ui.scss */
+.ploneSkin span.mce_cut {
+  background-position: -680px 0;
+}
+
+/* line 201, ../scss/_ui.scss */
+.ploneSkin span.mce_blockquote {
+  background-position: -220px 0;
+}
+
+/* line 202, ../scss/_ui.scss */
+.ploneSkin .mce_forecolor span.mceAction {
+  background-position: -720px 0;
+}
+
+/* line 203, ../scss/_ui.scss */
+.ploneSkin .mce_backcolor span.mceAction {
+  background-position: -760px 0;
+}
+
+/* line 204, ../scss/_ui.scss */
+.ploneSkin span.mce_forecolorpicker {
+  background-position: -720px 0;
+}
+
+/* line 205, ../scss/_ui.scss */
+.ploneSkin span.mce_backcolorpicker {
+  background-position: -760px 0;
+}
+
+/* Plugins */
+/* line 208, ../scss/_ui.scss */
+.ploneSkin span.mce_advhr {
+  background-position: -0px -20px;
+}
+
+/* line 209, ../scss/_ui.scss */
+.ploneSkin span.mce_ltr {
+  background-position: -20px -20px;
+}
+
+/* line 210, ../scss/_ui.scss */
+.ploneSkin span.mce_rtl {
+  background-position: -40px -20px;
+}
+
+/* line 211, ../scss/_ui.scss */
+.ploneSkin span.mce_emotions {
+  background-position: -60px -20px;
+}
+
+/* line 212, ../scss/_ui.scss */
+.ploneSkin span.mce_fullpage {
+  background-position: -80px -20px;
+}
+
+/* line 213, ../scss/_ui.scss */
+.ploneSkin span.mce_fullscreen {
+  background-position: -100px -20px;
+}
+
+/* line 214, ../scss/_ui.scss */
+.ploneSkin span.mce_iespell {
+  background-position: -120px -20px;
+}
+
+/* line 215, ../scss/_ui.scss */
+.ploneSkin span.mce_insertdate {
+  background-position: -140px -20px;
+}
+
+/* line 216, ../scss/_ui.scss */
+.ploneSkin span.mce_inserttime {
+  background-position: -160px -20px;
+}
+
+/* line 217, ../scss/_ui.scss */
+.ploneSkin span.mce_absolute {
+  background-position: -180px -20px;
+}
+
+/* line 218, ../scss/_ui.scss */
+.ploneSkin span.mce_backward {
+  background-position: -200px -20px;
+}
+
+/* line 219, ../scss/_ui.scss */
+.ploneSkin span.mce_forward {
+  background-position: -220px -20px;
+}
+
+/* line 220, ../scss/_ui.scss */
+.ploneSkin span.mce_insert_layer {
+  background-position: -240px -20px;
+}
+
+/* line 221, ../scss/_ui.scss */
+.ploneSkin span.mce_insertlayer {
+  background-position: -260px -20px;
+}
+
+/* line 222, ../scss/_ui.scss */
+.ploneSkin span.mce_movebackward {
+  background-position: -280px -20px;
+}
+
+/* line 223, ../scss/_ui.scss */
+.ploneSkin span.mce_moveforward {
+  background-position: -300px -20px;
+}
+
+/* line 224, ../scss/_ui.scss */
+.ploneSkin span.mce_media {
+  background-position: -320px -20px;
+}
+
+/* line 225, ../scss/_ui.scss */
+.ploneSkin span.mce_nonbreaking {
+  background-position: -340px -20px;
+}
+
+/* line 226, ../scss/_ui.scss */
+.ploneSkin span.mce_pastetext {
+  background-position: -360px -20px;
+}
+
+/* line 227, ../scss/_ui.scss */
+.ploneSkin span.mce_pasteword {
+  background-position: -380px -20px;
+}
+
+/* line 228, ../scss/_ui.scss */
+.ploneSkin span.mce_selectall {
+  background-position: -400px -20px;
+}
+
+/* line 229, ../scss/_ui.scss */
+.ploneSkin span.mce_preview {
+  background-position: -420px -20px;
+}
+
+/* line 230, ../scss/_ui.scss */
+.ploneSkin span.mce_print {
+  background-position: -440px -20px;
+}
+
+/* line 231, ../scss/_ui.scss */
+.ploneSkin span.mce_cancel {
+  background-position: -460px -20px;
+}
+
+/* line 232, ../scss/_ui.scss */
+.ploneSkin span.mce_save {
+  background-position: -480px -20px;
+}
+
+/* line 233, ../scss/_ui.scss */
+.ploneSkin span.mce_replace {
+  background-position: -500px -20px;
+}
+
+/* line 234, ../scss/_ui.scss */
+.ploneSkin span.mce_search {
+  background-position: -520px -20px;
+}
+
+/* line 235, ../scss/_ui.scss */
+.ploneSkin span.mce_styleprops {
+  background-position: -560px -20px;
+}
+
+/* line 236, ../scss/_ui.scss */
+.ploneSkin span.mce_table {
+  background-position: -580px -20px;
+}
+
+/* line 237, ../scss/_ui.scss */
+.ploneSkin span.mce_cell_props {
+  background-position: -600px -20px;
+}
+
+/* line 238, ../scss/_ui.scss */
+.ploneSkin span.mce_delete_table {
+  background-position: -620px -20px;
+}
+
+/* line 239, ../scss/_ui.scss */
+.ploneSkin span.mce_delete_col {
+  background-position: -640px -20px;
+}
+
+/* line 240, ../scss/_ui.scss */
+.ploneSkin span.mce_delete_row {
+  background-position: -660px -20px;
+}
+
+/* line 241, ../scss/_ui.scss */
+.ploneSkin span.mce_col_after {
+  background-position: -680px -20px;
+}
+
+/* line 242, ../scss/_ui.scss */
+.ploneSkin span.mce_col_before {
+  background-position: -700px -20px;
+}
+
+/* line 243, ../scss/_ui.scss */
+.ploneSkin span.mce_row_after {
+  background-position: -720px -20px;
+}
+
+/* line 244, ../scss/_ui.scss */
+.ploneSkin span.mce_row_before {
+  background-position: -740px -20px;
+}
+
+/* line 245, ../scss/_ui.scss */
+.ploneSkin span.mce_merge_cells {
+  background-position: -760px -20px;
+}
+
+/* line 246, ../scss/_ui.scss */
+.ploneSkin span.mce_table_props {
+  background-position: -980px -20px;
+}
+
+/* line 247, ../scss/_ui.scss */
+.ploneSkin span.mce_row_props {
+  background-position: -780px -20px;
+}
+
+/* line 248, ../scss/_ui.scss */
+.ploneSkin span.mce_split_cells {
+  background-position: -800px -20px;
+}
+
+/* line 249, ../scss/_ui.scss */
+.ploneSkin span.mce_template {
+  background-position: -820px -20px;
+}
+
+/* line 250, ../scss/_ui.scss */
+.ploneSkin span.mce_visualchars {
+  background-position: -840px -20px;
+}
+
+/* line 251, ../scss/_ui.scss */
+.ploneSkin span.mce_abbr {
+  background-position: -860px -20px;
+}
+
+/* line 252, ../scss/_ui.scss */
+.ploneSkin span.mce_acronym {
+  background-position: -880px -20px;
+}
+
+/* line 253, ../scss/_ui.scss */
+.ploneSkin span.mce_attribs {
+  background-position: -900px -20px;
+}
+
+/* line 254, ../scss/_ui.scss */
+.ploneSkin span.mce_cite {
+  background-position: -920px -20px;
+}
+
+/* line 255, ../scss/_ui.scss */
+.ploneSkin span.mce_del {
+  background-position: -940px -20px;
+}
+
+/* line 256, ../scss/_ui.scss */
+.ploneSkin span.mce_ins {
+  background-position: -960px -20px;
+}
+
+/* line 257, ../scss/_ui.scss */
+.ploneSkin span.mce_pagebreak {
+  background-position: 0 -40px;
+}
+
+/* line 258, ../scss/_ui.scss */
+.ploneSkin .mce_spellchecker span.mceAction {
+  background-position: -540px -20px;
+}
+
+/* Fullscreen editing */
+/* line 261, ../scss/_ui.scss */
+#mce_fullscreen_container {
+  background-color: #fff;
+}
+
+/*  */
+/* line 264, ../scss/_ui.scss */
+table.mceLayout tr {
+  display: table-row;
+}
+
+/* line 267, ../scss/_ui.scss */
+tr.mceFirst > td {
+  border: 1px solid #b2b2b2 !important;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 0 !important;
+}
+
+/* line 268, ../scss/_ui.scss */
+tr.mceLast > td {
+  border: 1px solid #b2b2b2 !important;
+  border-radius: 0 0 3px 3px;
+  border-top: 0 !important;
+}
+
+/* line 269, ../scss/_ui.scss */
+#text_path_row, .suppressVisualEditor {
+  display: none;
+}
+
+@media print {
+  @page {
+    margin: 1.5cm;
+}
+
+  /* line 4, ../scss/_print.scss */
+  body {
+    background: white;
+    font-size: 12pt;
+  }
+
+  /* line 6, ../scss/_print.scss */
+  * {
+    color: #000;
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+
+  /* line 7, ../scss/_print.scss */
+  a {
+    color: #08c;
+    text-decoration: underline;
+  }
+
+  /* line 9, ../scss/_print.scss */
+  #content a:link:after, #content a:visited:after {
+    content: " (" attr(href) ") ";
+    font-size: 90%;
+  }
+
+  /* line 14, ../scss/_print.scss */
+  .nav-collapse-eines, #portal-personaltools-wrapper, #portal-globalnav, #portal-breadcrumbs, #portal-column-one, .alert, .portalMessage, #edit-bar, #viewlet-below-content-title, #viewlet-below-content, #peu .span4, #peu .w1\3a 3 {
+    display: none !important;
+  }
+
+  /* line 16, ../scss/_print.scss */
+  #portal-column-content {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  /* line 17, ../scss/_print.scss */
+  #peu .span8 {
+    width: 100%;
+  }
+}
+/* line 5, ../scss/genwebupc.scss */
+.width100 {
+  width: 100% !important;
+  -moz-box-sizing: border-box;
+}
+
+/* line 6, ../scss/genwebupc.scss */
+.img_blank {
+  opacity: .7;
+}
+
+/* line 7, ../scss/genwebupc.scss */
+a:hover .img_blank {
+  opacity: 1;
+}
+
+/*ff*/
+/* line 10, ../scss/genwebupc.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 12, ../scss/genwebupc.scss */
+.titol-espai h1 {
+  font-weight: 200;
+  color: red;
+}
+
+/* line 18, ../scss/genwebupc.scss */
+.page-header {
+  border-top: 1px solid #CCCCCC !important;
+  border-bottom: 0;
+  box-shadow: 0 -8px 16px -16px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* line 23, ../scss/genwebupc.scss */
+.page-header h1 {
+  color: #446a8e;
+}

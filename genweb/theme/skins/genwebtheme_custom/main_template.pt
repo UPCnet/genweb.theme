@@ -64,7 +64,13 @@
         <link rel="apple-touch-icon" sizes="114x114" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-114x114-precomposed.png" /> <!-- iPhone 2x -->
         <link rel="apple-touch-icon" sizes="144x144" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-144x144-precomposed.png" /> <!-- iPad 2x -->
 
-        <link rel="stylesheet" tal:attributes="href string:${portal_url}/++genweb++stylesheets/genwebupc.css">
+        <tal:comment content="nothing"> <!-- Splitting CSS only for IE, the rest the common CSS --> </tal:comment>
+        <!--[if !IE]><!-->
+          <link rel="stylesheet" tal:attributes="href string:${portal_url}/++genweb++stylesheets/genwebupc.css">
+        <!--<![endif]-->
+
+        <tal:splittedCSS4IE tal:replace="structure string:&lt;!--[if lt IE 10]&gt;&lt;link rel='stylesheet' href='${portal_url}/++genweb++stylesheets/genwebupc-ie.css'&gt;&lt;![endif]--&gt;" />
+
         <link rel="stylesheet" tal:attributes="href string:${portal_url}/dynamic.css">
         <!-- <script tal:attributes="src string:${portal_url}/++bootstrap++js/modernizr-2.6.1.min.js"></script> -->
 
