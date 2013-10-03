@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.0b7 (unreleased)
+1.0b7 (2013-10-03)
 ------------------
 
-- Nothing changed yet.
-
+ * Added proper automatic conditional CSS splitting for IE [Victor Fernandez de Alba]
 
 1.0b6 (2013-10-01)
 ------------------
