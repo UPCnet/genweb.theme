@@ -11,7 +11,10 @@ $(document).ready(function () {
   var intervalId = setInterval(function(event) {
      var traduccion = _gw_i18n("fitxer_no_seleccionat")
      if (traduccion!="fitxer_no_seleccionat") {
-         $('[type=file]').customFileInput();
+         $('[type=file]').each(function(index, value) {
+             $(value).customFileInput();
+         })
+
          clearInterval(intervalId)
      }
 }, 50)
