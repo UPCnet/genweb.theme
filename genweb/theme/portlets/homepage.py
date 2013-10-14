@@ -13,6 +13,7 @@ from plone.app.portlets.portlets import base
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from Products.CMFPlone import PloneMessageFactory as _
+from genweb.core import GenwebMessageFactory as GWMF
 
 
 class IHomepagePortlet(IPortletDataProvider):
@@ -23,7 +24,7 @@ class IHomepagePortlet(IPortletDataProvider):
 class Assignment(base.Assignment):
     implements(IHomepagePortlet)
 
-    title = _(u'homepage', default=u'Homepage')
+    title = GWMF(u'homepage_portlet', default=u'Homepage')
 
 
 class Renderer(base.Renderer):

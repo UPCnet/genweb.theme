@@ -18,6 +18,10 @@ from Products.CMFPlone.interfaces import IPloneSiteRoot
 
 from genweb.theme.browser.interfaces import IGenwebTheme
 
+from genweb.core.utils import genweb_config
+from zope.component import getMultiAdapter
+
+
 grok.templatedir("views_templates")
 
 
@@ -112,13 +116,12 @@ class ContactForm(form.Form):
         context = aq_inner(self.context)
         mailhost = getToolByName(context, 'MailHost')
         urltool = getToolByName(context, 'portal_url')
-        proptool = getToolByName(context, 'portal_properties')
         portal = urltool.getPortalObject()
         email_charset = portal.getProperty('email_charset')
 
         to_address = portal.getProperty('email_from_address')
         from_name = portal.getProperty('email_from_name')
-        titulo_web = portal.getProperty('title')
+
 
         source = "%s <%s>" % (escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['from_address'])))
         subject = "[Formulari Contacte] %s" % (escape(safe_unicode(data['asunto'])))
@@ -151,3 +154,24 @@ class ContactForm(form.Form):
 
     def getURLMaps(self, codi):
         return "http://maps.upc.edu/new/index.php/embed?iu=%s" % codi
+
+    def getContactPersonalized (self):
+        not_customized = not genweb_config().contacte_BBDD_or_page
+        return not_customized
+
+    def getContactPage (self):
+        """
+        Funcio que retorna la pagina de contacte personalitzada. Te en compte els permissos de lusuari validat, amb un
+        restrictedTraverse sobre lobjecte (tenint en compte lidioma)
+        """
+        page = {}
+        portal_state = getMultiAdapter((self.context, self.request),
+                                        name=u'plone_portal_state')
+        portal = portal_state.portal()
+
+        FrontPageObj = portal.contactepersonalitzat.getTranslation()
+        idFrontPageObj = FrontPageObj.id
+        traversal = portal.restrictedTraverse(idFrontPageObj)
+        page['body'] = FrontPageObj.CookedBody()
+
+        return page

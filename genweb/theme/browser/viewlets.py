@@ -116,8 +116,22 @@ class gwHeader(viewletBase):
         isAnon = getMultiAdapter((self.context, self.request), name='plone_portal_state').anonymous()
         return not self.genweb_config().amaga_identificacio and isAnon
 
+    # def show_directory(self):
+    #     return self.genweb_config().directori_upc
+
     def show_directory(self):
-        return self.genweb_config().directori_upc
+        show_general = self.genweb_config().directori_upc
+        return show_general
+
+    def show_directory_filtered(self):
+        show_filtered = self.genweb_config().directori_filtrat
+        return show_filtered
+
+    def getURLDirectori(self, codi):
+        if codi:
+            return "http://directori.upc.edu/directori/dadesUE.jsp?id=%s" % codi
+        else:
+            return "http://directori.upc.edu"
 
 
 class gwImportantNews(viewletBase):
