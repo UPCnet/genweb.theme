@@ -1,6 +1,6 @@
 <footer id="peu" role="contentinfo"
         tal:define="dades context/@@genweb.utils/getDadesUnitat;
-                    edifici context/@@genweb.utils/getEdifici"
+                    edifici context/@@genweb.utils/getEdificiPeu"
         i18n:domain="genweb">
   <div class="container">
     <div class="row-fluid">
