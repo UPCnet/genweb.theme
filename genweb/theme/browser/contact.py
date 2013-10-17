@@ -168,10 +168,13 @@ class ContactForm(form.Form):
         portal_state = getMultiAdapter((self.context, self.request),
                                         name=u'plone_portal_state')
         portal = portal_state.portal()
+        context = aq_inner(self.context)
+        isCustomized = getattr(context, 'contactepersonalitzat', False)
 
-        FrontPageObj = portal.contactepersonalitzat.getTranslation()
-        idFrontPageObj = FrontPageObj.id
-        traversal = portal.restrictedTraverse(idFrontPageObj)
-        page['body'] = FrontPageObj.CookedBody()
-
-        return page
+        if isCustomized:
+            FrontPageObj = portal.contactepersonalitzat.getTranslation()
+            page['body'] = FrontPageObj.CookedBody()
+            return page
+        else:
+            page['body'] = ""
+            return page

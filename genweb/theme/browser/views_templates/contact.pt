@@ -105,7 +105,7 @@
                     </tal:maps>
                   </ul>
             </tal:co>
-            <tal:co tal:condition="python:not contacte_personalitzat">
+            <tal:co tal:condition="not: contacte_personalitzat">
               <div tal:define="contact view/getContactPage">
                 <div tal:replace="structure contact/body">Cos de la pagina de contacte</div>
               </div>
