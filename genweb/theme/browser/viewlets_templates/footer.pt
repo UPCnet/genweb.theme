@@ -1,6 +1,5 @@
 <footer id="peu" role="contentinfo"
-        tal:define="dades context/@@genweb.utils/getDadesUnitat;
-                    edifici context/@@genweb.utils/getEdificiPeu"
+        tal:define="dades context/@@genweb.utils/getDadesUnitat;"
         i18n:domain="genweb">
   <div class="container">
     <div class="row-fluid">
@@ -16,7 +15,8 @@
         </p>
         <address tal:condition="python:getattr(viewlet.genweb_config(), 'contacte_al_peu', False)">
           <p tal:condition="python:dades and not dades.get('error', False)">
-            <tal:edifici content="edifici | nothing">
+            <tal:edifici define="edifici python:dades['edifici_{}'.format(viewlet.pref_lang())]"
+                         content="edifici | nothing">
                 Edifici
             </tal:edifici>.
             <tal:adreca content="dades/adreca | nothing">
