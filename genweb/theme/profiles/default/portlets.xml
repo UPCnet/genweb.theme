@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
-<portlets>
+<portlets xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+          i18n:domain="genweb">
     <portlet title="Homepage" addview="genweb.portlets.homepage"
-       description="Proxy to welcome page"/>
+       description="Proxy to welcome page"
+       i18n:attributes="title"/>
     <portlet title="AgendaGW" addview="genweb.portlets.esdeveniments"
         description="Agenda d'esdeveniments"/>
     <portlet title="NoticiesPropi" addview="genweb.portlets.news"

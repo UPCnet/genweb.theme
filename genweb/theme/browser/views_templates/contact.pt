@@ -78,7 +78,7 @@
                   <ul class="unstyled">
                     <li>
                       <p>
-                        <a tal:attributes="href python:view.getURLDirectori(codi_upc)">
+                        <a tal:condition="codi_upc" tal:attributes="href python:view.getURLDirectori(codi_upc)">
                           <i class="icon-book"></i>
                           Directori UPC
                           <img class="img_blank" src="++genweb++static/images/blank_blau.png"

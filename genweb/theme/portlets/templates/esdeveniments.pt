@@ -61,7 +61,7 @@
                 </li>
             </tal:events>
         </ul>
-        <a href="" class="portlet-footer" tal:attributes="href view/all_events_link" i18n:translate="box_upcoming_events">
+        <a href="" class="portlet-footer" tal:attributes="href view/all_events_link" i18n:domain="genweb" i18n:translate="box_upcoming_events">
            Més esdeveniments
         </a>
   </div>

@@ -15,10 +15,6 @@
         </p>
         <address tal:condition="python:getattr(viewlet.genweb_config(), 'contacte_al_peu', False)">
           <p tal:condition="python:dades and not dades.get('error', False)">
-            <tal:edifici define="edifici python:dades['edifici_{}'.format(viewlet.pref_lang())]"
-                         content="edifici | nothing">
-                Edifici
-            </tal:edifici>.
             <tal:adreca content="dades/adreca | nothing">
               Edifici Til·lers. Jordi Girona, 31.
             </tal:adreca>.
