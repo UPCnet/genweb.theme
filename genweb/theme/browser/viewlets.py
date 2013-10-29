@@ -9,6 +9,7 @@ from AccessControl import getSecurityManager
 from zope.interface import Interface
 from zope.component import getMultiAdapter
 from zope.component.hooks import getSite
+from zope.security import checkPermission
 
 from plone.memoize import ram
 from plone.memoize.view import memoize_contextless
@@ -73,7 +74,7 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         return havePermissionAtRoot()
 
     def canManageSite(self):
-        return getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
+        return checkPermission("plone.app.controlpanel.Overview", self.portal())
 
     def getPortraitMini(self):
         pm = getToolByName(self.portal(), 'portal_membership')
@@ -143,11 +144,11 @@ class gwImportantNews(viewletBase):
 
     def permisos_important(self):
         #TODO: Comprovar que l'usuari tingui permisos per a marcar com a important
-        return not IImportant(self.context).is_important and getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
+        return not IImportant(self.context).is_important and checkPermission("plone.app.controlpanel.Overview", self.portal())
 
     def permisos_notimportant(self):
         #TODO: Comprovar que l'usuari tingui permisos per a marcar com a notimportant
-        return IImportant(self.context).is_important and getSecurityManager().checkPermission("plone.app.controlpanel.Overview", self.portal)
+        return IImportant(self.context).is_important and checkPermission("plone.app.controlpanel.Overview", self.portal())
 
     def update(self):
         form = self.request.form
