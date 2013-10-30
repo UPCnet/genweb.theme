@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*!
+/*
  * Bootstrap v2.1.0
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -1790,11 +1789,9 @@ select:focus:required:invalid:focus {
   border-radius: 0;
 }
 /* line 466, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
-.input-append .active, .input-append .selected, .input-append .contentViews .selected:hover, .contentViews .input-append .selected:hover,
+.input-append .active, .input-append .selected,
 .input-prepend .active,
-.input-prepend .selected,
-.input-prepend .contentViews .selected:hover,
-.contentViews .input-prepend .selected:hover {
+.input-prepend .selected {
   background-color: #bce673;
   border-color: #72a31d;
 }
@@ -2072,7 +2069,7 @@ legend + .control-group {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/++genweb++static/images/gh.png?1380282107');
+  background-image: url('/++genweb++static/images/gh.png?1370877920');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2088,7 +2085,6 @@ legend + .control-group {
 .nav > .selected > a > [class^="icon-"],
 .configlets > .selected > a > [class^="icon-"],
 .formTabs > .selected > a > [class^="icon-"],
-.contentViews > .selected > a > [class^="icon-"],
 .nav > .active > a > #category.documentByLine:before,
 .contentViews > .active > a > #category.documentByLine:before,
 .configlets > .active > a > #category.documentByLine:before,
@@ -2096,7 +2092,6 @@ legend + .control-group {
 .nav > .selected > a > #category.documentByLine:before,
 .configlets > .selected > a > #category.documentByLine:before,
 .formTabs > .selected > a > #category.documentByLine:before,
-.contentViews > .selected > a > #category.documentByLine:before,
 .nav > .active > a > .tileFooter:before,
 .contentViews > .active > a > .tileFooter:before,
 .configlets > .active > a > .tileFooter:before,
@@ -2104,7 +2099,6 @@ legend + .control-group {
 .nav > .selected > a > .tileFooter:before,
 .configlets > .selected > a > .tileFooter:before,
 .formTabs > .selected > a > .tileFooter:before,
-.contentViews > .selected > a > .tileFooter:before,
 .nav > .active > a > [class*=" icon-"],
 .contentViews > .active > a > [class*=" icon-"],
 .configlets > .active > a > [class*=" icon-"],
@@ -2112,7 +2106,6 @@ legend + .control-group {
 .nav > .selected > a > [class*=" icon-"],
 .configlets > .selected > a > [class*=" icon-"],
 .formTabs > .selected > a > [class*=" icon-"],
-.contentViews > .selected > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],
 .dropdown-menu > li > a:hover > #category.documentByLine:before,
 .dropdown-menu > li > a:hover > .tileFooter:before,
@@ -2125,12 +2118,12 @@ legend + .control-group {
 .dropdown-menu > .selected > a > .tileFooter:before,
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-menu > .selected > a > [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/gh-w.png?1380282107');
+  background-image: url('/++genweb++static/images/gh-w.png?1370877920');
 }
 
 /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-color {
-  background-image: url('/++genweb++static/images/gh-c.png?1380282107');
+  background-image: url('/++genweb++static/images/gh-c.png?1370877920');
 }
 
 /* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -3053,7 +3046,7 @@ legend + .control-group {
 
 /* line 257, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon {
-  background-image: url('/++genweb++static/images/gh-150.png?1380282107');
+  background-image: url('/++genweb++static/images/gh-150.png?1370877920');
   width: 21px;
   height: 21px;
   margin-top: -1px;
@@ -3086,7 +3079,7 @@ legend + .control-group {
 
 /* line 273, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon.icon-white {
-  background-image: url('/++genweb++static/images/gh-150-w.png?1380282107');
+  background-image: url('/++genweb++static/images/gh-150-w.png?1370877920');
 }
 
 /*extends icones*/
@@ -3195,7 +3188,7 @@ legend + .control-group {
 }
 
 /* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
-.dropdown-menu .active > a, .dropdown-menu .selected > a, .dropdown-menu .contentViews .selected:hover > a, .contentViews .dropdown-menu .selected:hover > a,
+.dropdown-menu .active > a, .dropdown-menu .selected > a,
 .dropdown-menu .active > a:hover,
 .dropdown-menu .selected > a:hover {
   color: white;
@@ -3411,13 +3404,13 @@ button.close {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
+.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
   color: #333333;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent {
+.btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent {
   background-color: #cccccc \9;
 }
 /* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -3447,7 +3440,7 @@ button.close {
   outline-offset: -2px;
 }
 /* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
+.btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
   background-color: #d9d9d9;
   background-color: #cccccc \9;
   background-image: none;
@@ -3579,28 +3572,21 @@ button.pfg-draft-save:active .tileFooter:before,
 }
 
 /* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover,
+.btn-primary.active, .active.context, .context.selected, .btn-primary.selected,
 .btn-warning.active,
 .btn-warning.selected,
-.contentViews .btn-warning.selected:hover,
 .btn-danger.active,
 .btn-danger.selected,
-.contentViews .btn-danger.selected:hover,
 .btn-success.active,
 .btn-success.selected,
 button.selected.pfg-draft-save,
-.contentViews .btn-success.selected:hover,
-.contentViews button.selected.pfg-draft-save:hover,
 button.active.pfg-draft-save,
 .btn-info.active,
 .btn-info.selected,
 .selected.link-parent,
-.contentViews .btn-info.selected:hover,
-.contentViews .selected.link-parent:hover,
 .active.link-parent,
 .btn-inverse.active,
-.btn-inverse.selected,
-.contentViews .btn-inverse.selected:hover {
+.btn-inverse.selected {
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -3629,13 +3615,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
+.btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
   color: white;
   background-color: #005a8d;
   *background-color: #004a74;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover {
+.btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected {
   background-color: #003a5a \9;
 }
 
@@ -3658,13 +3644,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected:hover, .btn-warning.disabled, .btn-warning[disabled] {
+.btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .btn-warning.disabled, .btn-warning[disabled] {
   color: white;
   background-color: #c67605;
   *background-color: #ad6704;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected:hover {
+.btn-warning:active, .btn-warning.active, .btn-warning.selected {
   background-color: #945904 \9;
 }
 
@@ -3687,13 +3673,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected:hover, .btn-danger.disabled, .btn-danger[disabled] {
+.btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .btn-danger.disabled, .btn-danger[disabled] {
   color: white;
   background-color: #a62e1f;
   *background-color: #91281b;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected:hover {
+.btn-danger:active, .btn-danger.active, .btn-danger.selected {
   background-color: #7b2217 \9;
 }
 
@@ -3716,13 +3702,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
+.btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
   color: white;
   background-color: #547815;
   *background-color: #456211;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save {
+.btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, button.active.pfg-draft-save {
   background-color: #354c0e \9;
 }
 
@@ -3745,13 +3731,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
+.btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
   color: white;
   background-color: #26809a;
   *background-color: #216f86;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent {
+.btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .active.link-parent {
   background-color: #1c5e71 \9;
 }
 
@@ -3774,13 +3760,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected:hover, .btn-inverse.disabled, .btn-inverse[disabled] {
+.btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .btn-inverse.disabled, .btn-inverse[disabled] {
   color: white;
   background-color: #222222;
   *background-color: #151515;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected:hover {
+.btn-inverse:active, .btn-inverse.active, .btn-inverse.selected {
   background-color: #090909 \9;
 }
 
@@ -4337,7 +4323,7 @@ button.pfg-draft-save .caret,
 }
 
 /* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-list > .active > a, .nav-list > .selected > a, .contentViews .nav-list > .selected:hover > a,
+.nav-list > .active > a, .nav-list > .selected > a,
 .nav-list > .active > a:hover,
 .nav-list > .selected > a:hover,
 .formTabs > li > a.selected,
@@ -4438,13 +4424,12 @@ button.pfg-draft-save .caret,
 }
 
 /* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .contentViews > .selected > a, .contentViews .nav-tabs > .selected:hover > a, .contentViews > .selected:hover > a, .contentViews .configlets > .selected:hover > a,
+.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a,
 .nav-tabs > .active > a:hover,
 .contentViews > .active > a:hover,
 .configlets > .active > a:hover,
 .nav-tabs > .selected > a:hover,
-.configlets > .selected > a:hover,
-.contentViews > .selected > a:hover {
+.configlets > .selected > a:hover {
   color: #666666;
   background-color: white;
   background-color: white;
@@ -4472,7 +4457,7 @@ button.pfg-draft-save .caret,
 }
 
 /* line 153, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a, .contentViews .nav-pills > .selected:hover > a, .contentViews .formTabs > .selected:hover > a,
+.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a,
 .nav-pills > .active > a:hover,
 .formTabs > .active > a:hover,
 .nav-pills > .selected > a:hover,
@@ -4574,19 +4559,19 @@ button.pfg-draft-save .caret,
 }
 
 /* line 229, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret {
+.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret {
   border-top-color: #333333;
   border-bottom-color: #333333;
 }
 
 /* line 233, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret {
+.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret {
   border-top-color: #666666;
   border-bottom-color: #666666;
 }
 
 /* line 240, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover, .contentViews > .dropdown.selected > a:hover {
+.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover {
   cursor: pointer;
 }
 
@@ -4600,8 +4585,7 @@ button.pfg-draft-save .caret,
 .formTabs > li.dropdown.open.active > a:hover,
 .nav > li.dropdown.open.selected > a:hover,
 .configlets > li.dropdown.open.selected > a:hover,
-.formTabs > li.dropdown.open.selected > a:hover,
-.contentViews > li.dropdown.open.selected > a:hover {
+.formTabs > li.dropdown.open.selected > a:hover {
   color: white;
   background-color: #aaaaaa;
   border-color: #aaaaaa;
@@ -4616,7 +4600,6 @@ button.pfg-draft-save .caret,
 .nav li.dropdown.open.selected .caret,
 .configlets li.dropdown.open.selected .caret,
 .formTabs li.dropdown.open.selected .caret,
-.contentViews li.dropdown.open.selected .caret,
 .nav li.dropdown.open a:hover .caret,
 .contentViews li.dropdown.open a:hover .caret,
 .configlets li.dropdown.open a:hover .caret,
@@ -4670,10 +4653,9 @@ button.pfg-draft-save .caret,
 }
 
 /* line 296, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tab-content > .active, .tab-content > .selected, .contentViews .tab-content > .selected:hover,
+.tab-content > .active, .tab-content > .selected,
 .pill-content > .active,
-.pill-content > .selected,
-.contentViews .pill-content > .selected:hover {
+.pill-content > .selected {
   display: block;
 }
 
@@ -4701,13 +4683,12 @@ button.pfg-draft-save .caret,
 }
 
 /* line 319, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .configlets > .selected > a, .tabs-below > .contentViews > .selected > a,
+.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .configlets > .selected > a,
 .tabs-below > .nav-tabs > .active > a:hover,
 .tabs-below > .contentViews > .active > a:hover,
 .tabs-below > .configlets > .active > a:hover,
 .tabs-below > .nav-tabs > .selected > a:hover,
-.tabs-below > .configlets > .selected > a:hover,
-.tabs-below > .contentViews > .selected > a:hover {
+.tabs-below > .configlets > .selected > a:hover {
   border-color: transparent #ccc #ccc #ccc;
 }
 
@@ -4750,13 +4731,12 @@ button.pfg-draft-save .caret,
 }
 
 /* line 352, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .selected > a, .tabs-left > .contentViews .selected > a,
+.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .selected > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .contentViews .active > a:hover,
 .tabs-left > .configlets .active > a:hover,
 .tabs-left > .nav-tabs .selected > a:hover,
-.tabs-left > .configlets .selected > a:hover,
-.tabs-left > .contentViews .selected > a:hover {
+.tabs-left > .configlets .selected > a:hover {
   border-color: #ccc transparent #ccc #ccc;
   *border-right-color: white;
 }
@@ -4782,13 +4762,12 @@ button.pfg-draft-save .caret,
 }
 
 /* line 371, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .selected > a, .tabs-right > .contentViews .selected > a,
+.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .selected > a,
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .contentViews .active > a:hover,
 .tabs-right > .configlets .active > a:hover,
 .tabs-right > .nav-tabs .selected > a:hover,
-.tabs-right > .configlets .selected > a:hover,
-.tabs-right > .contentViews .selected > a:hover {
+.tabs-right > .configlets .selected > a:hover {
   border-color: #ccc #ccc #ccc transparent;
   *border-left-color: white;
 }
@@ -5097,7 +5076,7 @@ button.pfg-draft-save .caret,
 }
 
 /* line 261, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a, .navbar .contentViews > .selected > a,
+.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a,
 .navbar .nav > .active > a:hover,
 .navbar .contentViews > .active > a:hover,
 .navbar .configlets > .active > a:hover,
@@ -5105,15 +5084,13 @@ button.pfg-draft-save .caret,
 .navbar .nav > .selected > a:hover,
 .navbar .configlets > .selected > a:hover,
 .navbar .formTabs > .selected > a:hover,
-.navbar .contentViews > .selected > a:hover,
 .navbar .nav > .active > a:focus,
 .navbar .contentViews > .active > a:focus,
 .navbar .configlets > .active > a:focus,
 .navbar .formTabs > .active > a:focus,
 .navbar .nav > .selected > a:focus,
 .navbar .configlets > .selected > a:focus,
-.navbar .formTabs > .selected > a:focus,
-.navbar .contentViews > .selected > a:focus {
+.navbar .formTabs > .selected > a:focus {
   color: #222222;
   text-decoration: none;
   background-color: white;
@@ -5232,15 +5209,13 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle,
-.navbar .contentViews li.dropdown.selected > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle,
 .navbar .formTabs li.dropdown.open.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle,
-.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle,
-.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle {
+.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle {
   background-color: white;
   color: #222222;
 }
@@ -5260,15 +5235,13 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle .caret,
-.navbar .contentViews li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle .caret {
+.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret {
   border-top-color: #222222;
   border-bottom-color: #222222;
 }
@@ -5374,7 +5347,7 @@ button.pfg-draft-save .caret,
   color: white;
 }
 /* line 409, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a, .navbar-inverse .contentViews .selected > a,
+.navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .contentViews .active > a:hover,
 .navbar-inverse .configlets .active > a:hover,
@@ -5382,15 +5355,13 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav .selected > a:hover,
 .navbar-inverse .configlets .selected > a:hover,
 .navbar-inverse .formTabs .selected > a:hover,
-.navbar-inverse .contentViews .selected > a:hover,
 .navbar-inverse .nav .active > a:focus,
 .navbar-inverse .contentViews .active > a:focus,
 .navbar-inverse .configlets .active > a:focus,
 .navbar-inverse .formTabs .active > a:focus,
 .navbar-inverse .nav .selected > a:focus,
 .navbar-inverse .configlets .selected > a:focus,
-.navbar-inverse .formTabs .selected > a:focus,
-.navbar-inverse .contentViews .selected > a:focus {
+.navbar-inverse .formTabs .selected > a:focus {
   color: white;
   background-color: black;
 }
@@ -5416,15 +5387,13 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle,
 .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle,
 .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle,
-.navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
 .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle,
 .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle,
 .navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle,
 .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle,
-.navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle,
-.navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle {
+.navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle {
   background-color: black;
   color: white;
 }
@@ -5442,15 +5411,13 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle .caret,
 .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle .caret,
 .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle .caret,
-.navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle .caret,
 .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle .caret {
+.navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret {
   border-top-color: white;
   border-bottom-color: white;
 }
@@ -5544,7 +5511,7 @@ button.pfg-draft-save .caret,
   top: -1px;
 }
 /* line 23, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
-.breadcrumb .active, .breadcrumb .selected, .breadcrumb .contentViews .selected:hover, .contentViews .breadcrumb .selected:hover, .breadcrumb .active a, .breadcrumb .selected a, .breadcrumb .contentViews .selected:hover a, .contentViews .breadcrumb .selected:hover a {
+.breadcrumb .active, .breadcrumb .selected, .breadcrumb .active a, .breadcrumb .selected a {
   color: #666666;
   font-weight: bold;
 }
@@ -5608,31 +5575,19 @@ button.pfg-draft-save .caret,
 .listingBar .active a,
 .pagination .selected a,
 .listingBar .selected a,
-.pagination .contentViews .selected:hover a,
-.contentViews .pagination .selected:hover a,
-.listingBar .contentViews .selected:hover a,
-.contentViews .listingBar .selected:hover a,
 .pagination .active span,
 .listingBar .active span,
 .pagination .selected span,
-.listingBar .selected span,
-.pagination .contentViews .selected:hover span,
-.contentViews .pagination .selected:hover span,
-.listingBar .contentViews .selected:hover span,
-.contentViews .listingBar .selected:hover span {
+.listingBar .selected span {
   background-color: #f2f2f2;
 }
 
 /* line 35, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a, .pagination .contentViews .selected:hover a, .contentViews .pagination .selected:hover a, .listingBar .contentViews .selected:hover a, .contentViews .listingBar .selected:hover a,
+.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a,
 .pagination .active span,
 .listingBar .active span,
 .pagination .selected span,
-.listingBar .selected span,
-.pagination .contentViews .selected:hover span,
-.contentViews .pagination .selected:hover span,
-.listingBar .contentViews .selected:hover span,
-.contentViews .listingBar .selected:hover span {
+.listingBar .selected span {
   color: #666666;
   cursor: default;
 }
@@ -6634,19 +6589,19 @@ button.pfg-draft-save .badge,
   line-height: 1;
 }
 /* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active > img, .carousel .selected > img, .carousel .contentViews .selected:hover > img, .contentViews .carousel .selected:hover > img {
+.carousel .active > img, .carousel .selected > img {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
 /* line 41, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active, .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover,
+.carousel .active, .carousel .selected,
 .carousel .next,
 .carousel .prev {
   display: block;
 }
 /* line 43, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active, .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover {
+.carousel .active, .carousel .selected {
   left: 0;
 }
 /* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
@@ -6961,7 +6916,7 @@ button.pfg-draft-save .badge,
 
   /* line 16, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar .btn-navbar i {
-    background-image: url('/++genweb++static/images/gh-w.png?1380282107');
+    background-image: url('/++genweb++static/images/gh-w.png?1370877920');
   }
 
   /* line 17, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
@@ -7202,7 +7157,7 @@ button.pfg-draft-save .badge,
   }
   /* line 138, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
-    background-image: url('/++genweb++static/images/gh-w.png?1380282107');
+    background-image: url('/++genweb++static/images/gh-w.png?1370877920');
   }
   /* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
@@ -8412,7 +8367,7 @@ button.pfg-draft-save .badge,
     display: none !important;
   }
 }
-/*!
+/*
  * Genweb UPC v4.0
  *
  * Copyright 2012-2013 UPC
@@ -8475,7 +8430,7 @@ button.pfg-draft-save .badge,
 
 /* line 41, ../scss/_base.scss */
 .userScreen, .userTablet, .userMobile, .userGenweb {
-  background: url('/++genweb++static/images/sprite_usuari.png?1380282107') transparent no-repeat center top;
+  background: url('/++genweb++static/images/sprite_usuari.png?1370877920') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em;
 }
@@ -8579,7 +8534,7 @@ button.pfg-draft-save .badge,
 /*ajusta imatges icos en menús per a hovers */
 /* line 68, ../scss/_base.scss */
 .dropdown-menu a:hover [class^="icon-"], .dropdown-menu a:hover #category.documentByLine:before, .dropdown-menu a:hover .tileFooter:before, .dropdown-menu a:hover [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/gh-w.png?1380282107') !important;
+  background-image: url('/++genweb++static/images/gh-w.png?1370877920') !important;
 }
 
 /* line 75, ../scss/_base.scss */
@@ -8697,7 +8652,7 @@ button.pfg-draft-save .badge,
 
 /* line 125, ../scss/_base.scss */
 .header-image {
-  background-image: url('/++genweb++static/images/capcalera.jpg?1380282107');
+  background-image: url('/++genweb++static/images/capcalera.jpg?1370877920');
   margin-top: 0 !important;
   height: 65px;
   overflow: hidden;
@@ -8919,7 +8874,7 @@ button.pfg-draft-save .badge,
 }
 /* line 226, ../scss/_base.scss */
 #canvia-vista a {
-  background: url('/++genweb++static/images/vistabg.png?1380282107') #666666;
+  background: url('/++genweb++static/images/vistabg.png?1370877920') #666666;
   text-align: center;
   -webkit-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
@@ -9087,7 +9042,7 @@ button.pfg-draft-save .badge,
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   right: 7px;
   top: 8px;
-  background-image: url('/++genweb++static/images/gh-w.png?1380282107');
+  background-image: url('/++genweb++static/images/gh-w.png?1370877920');
   background-position: -455px -71px;
   background-repeat: no-repeat;
   width: 17px;
@@ -9260,7 +9215,7 @@ button.pfg-draft-save .badge,
 }
 /* line 154, ../scss/_nav.scss */
 .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
-  background-image: url('/++genweb++static/images/gh.png?1380282107');
+  background-image: url('/++genweb++static/images/gh.png?1370877920');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -9358,7 +9313,7 @@ button.pfg-draft-save .badge,
 
 /* line 204, ../scss/_nav.scss */
 html * .dropdown-menu a:hover .img_blank {
-  content: url('/++genweb++static/images/blank_blanc.png?1380282107');
+  content: url('/++genweb++static/images/blank_blanc.png?1370877920');
   width: 10px;
   height: 10px;
 }
@@ -9411,7 +9366,7 @@ html * .dropdown-menu a:hover .img_blank {
 }
 /* line 244, ../scss/_nav.scss */
 #listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-folder_tabular_view .listing a[class^="contenttype-"]:before, .template-folder_tabular_view .listing a[class*=" contenttype-"]:before {
-  background-image: url('/++genweb++static/images/gh.png?1380282107');
+  background-image: url('/++genweb++static/images/gh.png?1370877920');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -9900,7 +9855,7 @@ html[lang="es"] .box-example:after {
 /* line 144, ../scss/_wells-boxes.scss */
 .sheet:before, div.fitxa:before {
   content: "*";
-  content: url('/++genweb++static/images/sheet.png?1380282107');
+  content: url('/++genweb++static/images/sheet.png?1370877920');
   font-size: 300%;
   position: absolute;
   right: -19px;
@@ -10069,7 +10024,7 @@ ul {
 
 /* line 125, ../scss/_lists.scss */
 .list-links li:before, .portaltype-packet .estudis .llistatEnllacos li:before {
-  content: url('/++genweb++static/images/arrow.png?1380282107');
+  content: url('/++genweb++static/images/arrow.png?1370877920');
   margin-left: -15px;
   margin-top: -13px;
 }
@@ -10081,7 +10036,7 @@ ul {
 
 /* line 135, ../scss/_lists.scss */
 .list-highlighted li:before {
-  content: url('/++genweb++static/images/arrow_hl.png?1380282107');
+  content: url('/++genweb++static/images/arrow_hl.png?1370877920');
   margin-left: -22px;
   margin-top: -11px;
 }
@@ -10944,7 +10899,7 @@ hr.liniaDalt, hr.tileHeadline {
   display: block;
   width: 14px;
   height: 14px;
-  background: url('/++genweb++static/images/gh.png?1380282107');
+  background: url('/++genweb++static/images/gh.png?1370877920');
 }
 
 /* line 94, ../scss/_texts.scss */
@@ -10992,7 +10947,7 @@ a {
 
 /* line 114, ../scss/_texts.scss */
 .pdf:after, .ppt:after, .xls:after, .doc:after, .down:after, .https:after, .vid:after, .img:after, .txt:after {
-  background: url('/++genweb++static/images/gh-c.png?1380282107') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1370877920') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -11203,7 +11158,7 @@ input[type="file"] {
 }
 /* line 18, ../scss/_inputs.scss */
 .customfile-feedback-populated:before {
-  background: url('/++genweb++static/images/gh-c.png?1380282107') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1370877920') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -11584,7 +11539,7 @@ h2.title-inverse {
 }
 /* line 223, ../scss/_portlets.scss */
 h2.title-inverse i {
-  background-image: url('/++genweb++static/images/gh-w.png?1380282107');
+  background-image: url('/++genweb++static/images/gh-w.png?1370877920');
 }
 
 /* line 230, ../scss/_portlets.scss */
@@ -11764,7 +11719,7 @@ input#title {
 }
 /* line 159, ../scss/_plone.scss */
 .img-mask iframe {
-  -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1380282107') no-repeat center center;
+  -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1370877920') no-repeat center center;
 }
 
 /* line 164, ../scss/_plone.scss */
@@ -11795,7 +11750,7 @@ iframe {
   width: 14px;
   height: 14px;
   display: inline-block;
-  background: url('/++genweb++static/images/gh.png?1380282107') -239px -143px no-repeat;
+  background: url('/++genweb++static/images/gh.png?1370877920') -239px -143px no-repeat;
   margin-left: 5px;
 }
 /* line 192, ../scss/_plone.scss */
@@ -11951,7 +11906,7 @@ iframe {
 }
 
 /* line 266, ../scss/_plone.scss */
-.calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
+.calendar thead .active, .calendar thead .selected {
   box-shadow: inset 0 0 3px #08c;
 }
 
@@ -11996,7 +11951,7 @@ iframe {
 }
 
 /* line 274, ../scss/_plone.scss */
-.calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
+.calendar tbody td.active, .calendar tbody td.selected {
   box-shadow: inset 0 0 3px #08c;
 }
 
@@ -12042,7 +11997,7 @@ iframe {
 }
 
 /* line 284, ../scss/_plone.scss */
-.calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
+.calendar tfoot .active, .calendar tfoot .selected {
   background-color: #08c !important;
 }
 
@@ -12164,7 +12119,7 @@ iframe {
 
 /* line 370, ../scss/_plone.scss */
 img[src$="spinner.gif"] {
-  box-shadow: 0 0 250px 250px white;
+  box-shadow: 0 0 350px 125px white;
 }
 
 /* line 375, ../scss/_plone.scss */
@@ -13352,7 +13307,7 @@ html {
   #portal-header h1.pull-left {
     height: 46px;
     width: 207px;
-    background: url('/++genweb++static/images/logoUPC@2x.png?1380282107') no-repeat;
+    background: url('/++genweb++static/images/logoUPC@2x.png?1370877920') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -13361,7 +13316,7 @@ html {
 
   /* line 12, ../scss/_retina.scss */
   .header-image {
-    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1380282107');
+    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1370877920');
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -13370,12 +13325,12 @@ html {
 
   /* line 14, ../scss/_retina.scss */
   .list-links li, .portaltype-packet .estudis .llistatEnllacos li {
-    content: url('/++genweb++static/images/arrow@2x.png?1380282107');
+    content: url('/++genweb++static/images/arrow@2x.png?1370877920');
   }
 
   /* line 15, ../scss/_retina.scss */
   .list-highlighted li {
-    content: url('/++genweb++static/images/arrow_hl@2x.png?1380282107');
+    content: url('/++genweb++static/images/arrow_hl@2x.png?1370877920');
   }
 
   /* line 17, ../scss/_retina.scss */
@@ -13386,22 +13341,22 @@ html {
 
   /* line 18, ../scss/_retina.scss */
   .img_blank[src*="blank_blau"] {
-    content: url('/++genweb++static/images/blank_blau@2x.png?1380282107');
+    content: url('/++genweb++static/images/blank_blau@2x.png?1370877920');
   }
 
   /* line 19, ../scss/_retina.scss */
   .img_blank[src*="blank_gris"] {
-    content: url('/++genweb++static/images/blank_gris@2x.png?1380282107');
+    content: url('/++genweb++static/images/blank_gris@2x.png?1370877920');
   }
 
   /* line 20, ../scss/_retina.scss */
   .img_blank[src*="blank_blanc"] {
-    content: url('/++genweb++static/images/blank_blanc@2x.png?1380282107');
+    content: url('/++genweb++static/images/blank_blanc@2x.png?1370877920');
   }
 
   /* line 22, ../scss/_retina.scss */
   .userScreen, .userTablet, .userMobile, .userGenweb {
-    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1380282107');
+    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1370877920');
     -webkit-background-size: 20px 400px;
     -moz-background-size: 20px 400px;
     -o-background-size: 20px 400px;
@@ -13823,7 +13778,7 @@ html.lt-ie8 .list-portlet li  {
 }
 /* line 34, ../scss/_upcnet.scss */
 .link-parent:before {
-  background: url('/++genweb++static/images/gh-w.png?1380282107') no-repeat -290px -95px;
+  background: url('/++genweb++static/images/gh-w.png?1370877920') no-repeat -290px -95px;
   content: " ";
   display: inline-block;
   height: 14px;
