@@ -29,3 +29,6 @@ pip-log.txt
 
 genweb/theme/.sass-cache
 genweb/theme/fontconfig
+
+.sass-cache
+node_modules
