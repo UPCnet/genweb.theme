@@ -1,11 +1,26 @@
 Changelog
 =========
 
-1.0b8 (unreleased)
-------------------
+1.0b10 (unreleased)
+-------------------
 
 - Nothing changed yet.
 
+
+1.0b9 (2013-10-29)
+------------------
+
+ * Missing updates
+
+1.0b8 (2013-10-29)
+------------------
+
+* Fix permission lookup in several places. [Victor Fernandez de Alba]
+* Pagina personalizada [Corina Riba]
+* Get rid of getEdifici [Victor Fernandez de Alba]
+* getEdificiPeu [Corina Riba]
+* Directori filtrado, cambio pie, pagina personalizada. Traducciones [Corina Riba]
+* Allow more than one fileinput [Carles Bruguera]
 
 1.0b7 (2013-10-03)
 ------------------
