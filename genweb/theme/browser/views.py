@@ -583,7 +583,7 @@ class gwSendEventView(grok.View):
         urltool = getToolByName(context, 'portal_url')
         portal = urltool.getPortalObject()
         email_charset = portal.getProperty('email_charset')
-        to_address = 'corina.riba@upcnet.es'
+        to_address = 'info@upc.edu'
         from_name = portal.getProperty('email_from_name')
         from_address = portal.getProperty('email_from_address')
         titulo_web = portal.getProperty('title')
