@@ -1,11 +1,13 @@
 Changelog
 =========
 
-1.0b10 (unreleased)
+1.0b10 (2013-11-04)
 -------------------
 
-- Nothing changed yet.
-
+* Added new grunt recipe for compiling and blessing CSS. [Victor Fernandez de Alba]
+* Fix to AJAX call CSS animation [Victor Fernandez de Alba]
+* Estilos y eventos enviables por correo [Corina Riba]
+* Direccion from mensajes de envio eventos [Corina Riba]
 
 1.0b9 (2013-10-29)
 ------------------
