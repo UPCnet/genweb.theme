@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.0b11 (unreleased)
+1.0b11 (2013-11-11)
 -------------------
 
-- Nothing changed yet.
-
+* Everybody welcome alertify.js to its new home [Carles Bruguera]
 
 1.0b10 (2013-11-04)
 -------------------
