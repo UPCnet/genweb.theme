@@ -1,10 +1,3 @@
-
-dynamic_scss = """
-// Albert, aqui va la part d'scss dinamic amb els colors especifics
-
-$genwebPrimary: %(especific1)s;
-$genwebTitles: %(especific2)s;
-
 //ANIMATION res de res
 
 //BASE
@@ -21,7 +14,8 @@ $genwebTitles: %(especific2)s;
 
 //EMPAQUETATS
 .portaltype-packet .estudis .note { border: 5px solid lighten($genwebPrimary, 25%);}
-GW3toGW4
+
+//GW3toGW4
 //
 .destacatBandejat {border-top:5px solid $genwebPrimary;}
 .destacatQuadres {border: 5px solid lighten($genwebPrimary, 25%);}
@@ -30,7 +24,7 @@ div.fitxa {border-right:20px solid lighten($genwebPrimary,35%);}
 //IE res de res
 //INPUTS res de res
 
-//LEAD 
+//LEAD
 .lead-small { border: 5px solid lighten($genwebPrimary, 25%);}
 .lead-large { border-top:5px solid $genwebPrimary;}
 
@@ -70,4 +64,3 @@ h1, h2, h3 {color:$genwebTitles; }
 
 
 // ...
-"""

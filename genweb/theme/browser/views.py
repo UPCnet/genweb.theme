@@ -38,13 +38,13 @@ from collective.recaptcha.view import RecaptchaView as CollectiveRecaptchaView
 from genweb.core.interfaces import IHomePage
 from genweb.core.utils import genweb_config, pref_lang
 
-from genweb.theme.scss import dynamic_scss
 from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 
 from genweb.portlets.browser.manager import ISpanStorage
 
+import pkg_resources
 import json
-import re
+import scss
 
 MESSAGE_TEMPLATE = u"""\
 L'usuari %(user_name)s ha creat un nou esdeveniment en l'agenda del GenWeb \
@@ -282,6 +282,7 @@ class typeaheadJson(grok.View):
 class dynamicCSS(grok.View):
     grok.name('dynamic.css')
     grok.context(Interface)
+    grok.layer(IGenwebTheme)
 
     def update(self):
         self.especific1 = genweb_config().especific1
@@ -289,6 +290,7 @@ class dynamicCSS(grok.View):
 
     def render(self):
         self.request.response.setHeader('Content-Type', 'text/css')
+        self.request.response.addHeader('Cache-Control', 'must-revalidate, max-age=0, no-cache, no-store')
         if self.especific1 and self.especific2:
             return self.compile_scss(especific1=self.especific1, especific2=self.especific2)
         else:
@@ -296,16 +298,31 @@ class dynamicCSS(grok.View):
 
     #@ram.cache(_render_cachekey)
     def compile_scss(self, **kwargs):
+        genwebthemeegg = pkg_resources.get_distribution('genweb.theme')
+
+        scssfile = open('{}/genweb/theme/scss/_dynamic.scss'.format(genwebthemeegg.location))
+
+        settings = dict(especific1=self.especific1, especific2=self.especific2)
+
+        variables_scss = """
+
+        $genwebPrimary: {especific1};
+        $genwebTitles: {especific2};
+
+        """.format(**settings)
+
+        scss.config.LOAD_PATHS = [
+            '{}/genweb/theme/bootstrap/scss/compass_twitter_bootstrap'.format(genwebthemeegg.location)
+        ]
+
         css = Scss(scss_opts={
                    'compress': False,
                    'debug_info': False,
                    })
 
-        def matchdict(params, matchobj):
-            return params.get(matchobj.groups()[0], matchobj.group())
+        dynamic_scss = ''.join([variables_scss, scssfile.read()])
 
-        changed = re.sub(r'%\(([\w\d]+)\)s', partial(matchdict, kwargs), dynamic_scss)
-        return css.compile(changed)
+        return css.compile(dynamic_scss)
 
 
 class gwCatalogNavigationTabs(CatalogNavigationTabs):
