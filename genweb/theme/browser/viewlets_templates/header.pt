@@ -27,15 +27,17 @@
              </a></li>
         <li tal:condition="viewlet/show_directory"
             tal:define="filtered viewlet/show_directory_filtered">
-          <tal:block tal:condition="filtered"
-                     tal:define="codi_upc dades/codi_upc">
-            <a tal:attributes="href python:viewlet.getURLDirectori(codi_upc)" target="_blank" accesskey="7">
-                Directori UPC
-                <img class="img_blank" src="++genweb++static/images/blank_blau.png"
-                  i18n:domain="genweb"
-                  i18n:attributes="alt obrir_link_finestra_nova">
-            </a>
-          </tal:block>
+          <tal:codi tal:condition="dades">
+            <tal:block tal:condition="filtered"
+                       tal:define="codi_upc dades/codi_upc">
+              <a tal:attributes="href python:viewlet.getURLDirectori(codi_upc)" target="_blank" accesskey="7">
+                  Directori UPC
+                  <img class="img_blank" src="++genweb++static/images/blank_blau.png"
+                    i18n:domain="genweb"
+                    i18n:attributes="alt obrir_link_finestra_nova">
+              </a>
+            </tal:block>
+          </tal:codi>
           <tal:block tal:condition="python:not filtered">
             <a href="http://directori.upc.edu" target="_blank" accesskey="7">
                 Directori UPC
