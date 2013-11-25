@@ -41,23 +41,26 @@ class Assignment (base.Assignment):
     def __init__(self, count=5, showdata=True):
         self.count = count
         self.showdata = showdata
-    title = _(u"Noticies", default=u'Noticies')
-
 
 class Renderer(news_renderer):
     render = ViewPageTemplateFile('templates/news.pt')
+
+    @memoize
+    def have_news_folder(self):
+        return 'news' in self.navigation_root_object.objectIds()
 
     def mostraData(self):
         return self.data.showdata
 
     def all_news_link(self):
         context = aq_inner(self.context)
-        portal_state = getMultiAdapter((context, self.request),
-            name=u'plone_portal_state')
-        portal = portal_state.portal()
-        if 'news' in getNavigationRootObject(context, portal).objectIds():
-            return '%s/news' % portal_state.navigation_root_url()
-        return None
+        portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
+        self.portal = portal_state.portal()
+        if self.have_news_folder:
+            news = self.portal.noticies.getTranslation()
+            return '%s' % news.absolute_url()
+        else:
+            return '%s/news_listing' % self.portal_url
 
     @memoize
     def _data(self):
