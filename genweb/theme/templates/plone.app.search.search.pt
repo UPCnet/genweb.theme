@@ -55,8 +55,7 @@
                    i18n:attributes="value label_search;"/>
         </fieldset>
 
-        <div class="row">
-
+        <div class="row1">
             <div class="cell width-full position-0">
                 <h1 class="documentFirstHeading"
                     i18n:translate=""
@@ -113,7 +112,8 @@
                               Filter the results.
                           </a>
                       </dt>
-                      <dd class="actionMenuContent">
+
+                      <dd class="actionMenuContent dropdown-menu">
                           <div id="search-filter" i18n:domain="plone">
 
                               <fieldset class="noborder">
@@ -263,6 +263,7 @@
                          tal:define="navigation_root_url context/@@plone_portal_state/navigation_root_url;">
 
                         <metal:noresults tal:condition="not: batch">
+                          <br/>
                           <p i18n:domain="plone"><strong i18n:translate="description_no_results_found">No results were found.</strong></p>
                         </metal:noresults>
 
@@ -374,6 +375,7 @@
                                       </cite>
 
                                     </dd>
+                                    <br/>
                               </tal:results>
                           </dl>
                           <div metal:use-macro="context/batch_macros/macros/navigation" />
