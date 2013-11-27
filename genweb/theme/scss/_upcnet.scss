@@ -1,4 +1,4 @@
-// UPC NET TOQUEU AQUÍ
+// UPCnet TOQUEU AQUÍ
 // -------------------
 .nav-gw4 {display:block !important; margin-top:$baseLineHeight/2;}
 
@@ -172,3 +172,16 @@ input[type="radio"].required:after { content: none; }
 
 .fieldUploadFile {display: none; }
 .fieldTextFormat {display: none; }
+
+
+.dropdown-menu a {
+display: block;
+padding: 3px 15px;
+clear: both;
+font-weight: normal;
+line-height: 18px;
+color: #666666;
+white-space: nowrap;
+font-size: 12px;
+}
+
