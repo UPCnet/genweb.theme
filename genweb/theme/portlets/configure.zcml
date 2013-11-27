@@ -54,6 +54,7 @@
      assignment=".news.Assignment"
      renderer=".news.Renderer"
      addview=".news.AddForm"
+     editview=".news.EditForm"
      />
 
 </configure>

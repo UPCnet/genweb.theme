@@ -42,6 +42,10 @@ class Assignment (base.Assignment):
         self.count = count
         self.showdata = showdata
 
+    @property
+    def title(self):
+        return _(u"News")
+
 class Renderer(news_renderer):
     render = ViewPageTemplateFile('templates/news.pt')
 
@@ -93,3 +97,8 @@ class AddForm(base.AddForm):
 
         def create(self, data):
             return Assignment(count=data.get('count', 5), showdata=data.get('showdata', True))
+
+class EditForm(base.EditForm):
+    form_fields = form.Fields(INewsPortlet)
+    label = _(u"Edit News Portlet")
+    description = _(u"This portlet displays recent News Items.")
