@@ -21,7 +21,7 @@
   #eines .input-append {margin-left:0 !important; border: 0 !important;}
   #eines {
     & a {
-      padding: 10px !important; margin: 0 !important;
+      padding: 8px !important; margin: 0 !important;  
       &:hover, &:focus {
         color: $white !important;
         background: $blue;
@@ -33,6 +33,7 @@
   }
   /* capçalera */
   #portal-personaltools-wrapper + #portal-header {margin-top:40px;}
+  #portal-header{padding-bottom:10px;} //afegim padding-bottom per separar link home i menú
   .header-image {@include background-size(100%);}
   .header-image.l2-image {margin-left:207px !important;
     &:before {top:45px;width:175px;margin-left:-207px;}
@@ -90,7 +91,11 @@
 
   .span12,.row-fluid .span12 {width: 100%;@include box-sizing(border-box);}
 
-  // FORM FIELDS
+ 
+
+
+
+   // FORM FIELDS
   // -----------
   // Make span* classes full width
   .input-large,
@@ -143,15 +148,18 @@
   .titol-espai:before {position:absolute; border-top:1px solid #ccc;}
   .titol-espai h1 {font-size:138.461538%; line-height:24px; margin-top:5px !important;}
   .titol-espai h1 a {display:block;}
-  #portal-header {background:#f7f7f7 !important;}
+  #portal-header {background:#f7f7f7 !important; }
   #portal-header .btn-navbar.pull-right {margin-top:12px !important;}
-  #eines {margin: 0 0 9px !important;}
+  #eines {margin: 0 0 9px !important;text-align:right;}
   #portal-header h1.pull-left {margin-bottom:7px !important;}
   #portal-header h1.pull-left img {margin-top:-3px; height:46px;}
   #portal-header .container > div.clearfix {margin:0 !important;}
   #portal-header .btn-navbar.pull-right {margin-top:13px;margin-right:0 !important; padding: 7px 10px;}
   #eines input {width:65%;}
   #eines button {width:34%; line-height:20px;}
+   #eines a {
+    margin: 0 0 20px 0!important; //canvi espai entre opcions menú eines 0->20 només per a telèfon
+  }
   .header-image {height:40px !important;}
   .header-image.l2-image {height:30px !important; margin-left:55px !important;
     &:before {top:25px;width:45px;margin-left:-55px;}
@@ -170,7 +178,7 @@
   .llistatLogos {margin: 1em auto !important;}
   #peu {font-size: 84.613846% !important;}
   #peu .container {padding-top:5px;}
-  #peu .span4 {display:none;}
+  // desactivem aquesta funció per tal que surti el peu al mòbil #peu .span4 {display:none;}
   .img_blank {margin-top:-1px;}
 
   // Smooth out the collapsing/expanding nav
@@ -196,6 +204,8 @@
   }
   // Carousel
   .carousel-caption {position: static;}
+  //botó descàrrega banners, per evitar scroll horitzontal el forcem a sota
+  .btn-group a {float: left; }
 }
 
 

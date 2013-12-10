@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*!
+/*
  * Bootstrap v2.1.0
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -1790,9 +1790,11 @@ select:focus:required:invalid:focus {
   border-radius: 0;
 }
 /* line 466, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
-.input-append .active, .input-append .selected, .input-append .contentViews .selected:hover, .contentViews .input-append .selected:hover,
+.input-append .active, .input-append .selected, .input-append .contentViews .selected, .contentViews .input-append .selected, .input-append .contentViews .selected:hover, .contentViews .input-append .selected:hover,
 .input-prepend .active,
 .input-prepend .selected,
+.input-prepend .contentViews .selected,
+.contentViews .input-prepend .selected,
 .input-prepend .contentViews .selected:hover,
 .contentViews .input-prepend .selected:hover {
   background-color: #bce673;
@@ -2072,7 +2074,7 @@ legend + .control-group {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/++genweb++static/images/gh.png?1384859287');
+  background-image: url('/++genweb++static/images/gh.png?1354788544');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2088,7 +2090,13 @@ legend + .control-group {
 .nav > .selected > a > [class^="icon-"],
 .configlets > .selected > a > [class^="icon-"],
 .formTabs > .selected > a > [class^="icon-"],
-.contentViews > .selected > a > [class^="icon-"],
+.contentViews .nav > .selected > a > [class^="icon-"],
+.contentViews .configlets > .selected > a > [class^="icon-"],
+.contentViews .formTabs > .selected > a > [class^="icon-"],
+.contentViews .nav > .selected:hover > a > [class^="icon-"],
+.contentViews > .selected:hover > a > [class^="icon-"],
+.contentViews .configlets > .selected:hover > a > [class^="icon-"],
+.contentViews .formTabs > .selected:hover > a > [class^="icon-"],
 .nav > .active > a > #category.documentByLine:before,
 .contentViews > .active > a > #category.documentByLine:before,
 .configlets > .active > a > #category.documentByLine:before,
@@ -2096,7 +2104,14 @@ legend + .control-group {
 .nav > .selected > a > #category.documentByLine:before,
 .configlets > .selected > a > #category.documentByLine:before,
 .formTabs > .selected > a > #category.documentByLine:before,
+.contentViews .nav > .selected > a > #category.documentByLine:before,
 .contentViews > .selected > a > #category.documentByLine:before,
+.contentViews .configlets > .selected > a > #category.documentByLine:before,
+.contentViews .formTabs > .selected > a > #category.documentByLine:before,
+.contentViews .nav > .selected:hover > a > #category.documentByLine:before,
+.contentViews > .selected:hover > a > #category.documentByLine:before,
+.contentViews .configlets > .selected:hover > a > #category.documentByLine:before,
+.contentViews .formTabs > .selected:hover > a > #category.documentByLine:before,
 .nav > .active > a > .tileFooter:before,
 .contentViews > .active > a > .tileFooter:before,
 .configlets > .active > a > .tileFooter:before,
@@ -2104,7 +2119,14 @@ legend + .control-group {
 .nav > .selected > a > .tileFooter:before,
 .configlets > .selected > a > .tileFooter:before,
 .formTabs > .selected > a > .tileFooter:before,
+.contentViews .nav > .selected > a > .tileFooter:before,
 .contentViews > .selected > a > .tileFooter:before,
+.contentViews .configlets > .selected > a > .tileFooter:before,
+.contentViews .formTabs > .selected > a > .tileFooter:before,
+.contentViews .nav > .selected:hover > a > .tileFooter:before,
+.contentViews > .selected:hover > a > .tileFooter:before,
+.contentViews .configlets > .selected:hover > a > .tileFooter:before,
+.contentViews .formTabs > .selected:hover > a > .tileFooter:before,
 .nav > .active > a > [class*=" icon-"],
 .contentViews > .active > a > [class*=" icon-"],
 .configlets > .active > a > [class*=" icon-"],
@@ -2112,25 +2134,39 @@ legend + .control-group {
 .nav > .selected > a > [class*=" icon-"],
 .configlets > .selected > a > [class*=" icon-"],
 .formTabs > .selected > a > [class*=" icon-"],
-.contentViews > .selected > a > [class*=" icon-"],
+.contentViews .nav > .selected > a > [class*=" icon-"],
+.contentViews .configlets > .selected > a > [class*=" icon-"],
+.contentViews .formTabs > .selected > a > [class*=" icon-"],
+.contentViews .nav > .selected:hover > a > [class*=" icon-"],
+.contentViews > .selected:hover > a > [class*=" icon-"],
+.contentViews .configlets > .selected:hover > a > [class*=" icon-"],
+.contentViews .formTabs > .selected:hover > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],
 .dropdown-menu > li > a:hover > #category.documentByLine:before,
 .dropdown-menu > li > a:hover > .tileFooter:before,
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .selected > a > [class^="icon-"],
+.contentViews .dropdown-menu > .selected > a > [class^="icon-"],
+.contentViews .dropdown-menu > .selected:hover > a > [class^="icon-"],
 .dropdown-menu > .active > a > #category.documentByLine:before,
 .dropdown-menu > .selected > a > #category.documentByLine:before,
+.contentViews .dropdown-menu > .selected > a > #category.documentByLine:before,
+.contentViews .dropdown-menu > .selected:hover > a > #category.documentByLine:before,
 .dropdown-menu > .active > a > .tileFooter:before,
 .dropdown-menu > .selected > a > .tileFooter:before,
+.contentViews .dropdown-menu > .selected > a > .tileFooter:before,
+.contentViews .dropdown-menu > .selected:hover > a > .tileFooter:before,
 .dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-menu > .selected > a > [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/gh-w.png?1384859287');
+.dropdown-menu > .selected > a > [class*=" icon-"],
+.contentViews .dropdown-menu > .selected > a > [class*=" icon-"],
+.contentViews .dropdown-menu > .selected:hover > a > [class*=" icon-"] {
+  background-image: url('/++genweb++static/images/gh-w.png?1354788544');
 }
 
 /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-color {
-  background-image: url('/++genweb++static/images/gh-c.png?1384859287');
+  background-image: url('/++genweb++static/images/gh-c.png?1360586349');
 }
 
 /* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2140,22 +2176,22 @@ legend + .control-group {
 
 /* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-music {
-  background-position: -24px  0;
+  background-position: -24px 0;
 }
 
 /* line 51, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-search {
-  background-position: -48px  0;
+  background-position: -48px 0;
 }
 
 /* line 52, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-envelope, .icon-formmaileradapter {
-  background-position: -72px  0;
+  background-position: -72px 0;
 }
 
 /* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-heart {
-  background-position: -96px  0;
+  background-position: -96px 0;
 }
 
 /* line 55, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2239,27 +2275,27 @@ legend + .control-group {
 
 /* line 74, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-home {
-  background-position: 0      -24px;
+  background-position: 0 -24px;
 }
 
 /* line 75, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-page, .icon-document {
-  background-position: -24px  -24px;
+  background-position: -24px -24px;
 }
 
 /* line 76, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-time, .icon-surveydatequestion, .icon-formdatefield {
-  background-position: -48px  -24px;
+  background-position: -48px -24px;
 }
 
 /* line 77, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-road {
-  background-position: -72px  -24px;
+  background-position: -72px -24px;
 }
 
 /* line 78, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-download-alt {
-  background-position: -96px  -24px;
+  background-position: -96px -24px;
 }
 
 /* line 79, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2339,27 +2375,27 @@ legend + .control-group {
 
 /* line 95, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-tag, .icon-formlabelfield {
-  background-position: 0      -48px;
+  background-position: 0 -48px;
 }
 
 /* line 96, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-tags, .icon-formrichlabelfield, #category.documentByLine:before {
-  background-position: -25px  -48px;
+  background-position: -25px -48px;
 }
 
 /* line 97, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-book {
-  background-position: -48px  -48px;
+  background-position: -48px -48px;
 }
 
 /* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-bookmark {
-  background-position: -72px  -48px;
+  background-position: -72px -48px;
 }
 
 /* line 99, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-print {
-  background-position: -96px  -48px;
+  background-position: -96px -48px;
 }
 
 /* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2439,27 +2475,27 @@ legend + .control-group {
 
 /* line 116, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-pencil {
-  background-position: 0      -72px;
+  background-position: 0 -72px;
 }
 
 /* line 117, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-map-marker {
-  background-position: -24px  -72px;
+  background-position: -24px -72px;
 }
 
 /* line 118, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-adjust {
-  background-position: -48px  -72px;
+  background-position: -48px -72px;
 }
 
 /* line 119, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-tint {
-  background-position: -72px  -72px;
+  background-position: -72px -72px;
 }
 
 /* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-edit, .icon-formstringfield, .icon-formlinesfield, .icon-formintegerfield, .icon-formfixedpointfield {
-  background-position: -96px  -72px;
+  background-position: -96px -72px;
 }
 
 /* line 121, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2539,27 +2575,27 @@ legend + .control-group {
 
 /* line 137, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-plus-sign, .tileFooter:before {
-  background-position: 0      -96px;
+  background-position: 0 -96px;
 }
 
 /* line 138, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-minus-sign {
-  background-position: -24px  -96px;
+  background-position: -24px -96px;
 }
 
 /* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-remove-sign {
-  background-position: -48px  -96px;
+  background-position: -48px -96px;
 }
 
 /* line 140, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-ok-sign, .icon-plone-contentmenu-display-fg_base_view_p3 {
-  background-position: -72px  -96px;
+  background-position: -72px -96px;
 }
 
 /* line 141, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-question-sign {
-  background-position: -96px  -96px;
+  background-position: -96px -96px;
 }
 
 /* line 142, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2639,27 +2675,27 @@ legend + .control-group {
 
 /* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-exclamation-sign {
-  background-position: 0      -120px;
+  background-position: 0 -120px;
 }
 
 /* line 159, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-gift {
-  background-position: -24px  -120px;
+  background-position: -24px -120px;
 }
 
 /* line 160, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-leaf {
-  background-position: -48px  -120px;
+  background-position: -48px -120px;
 }
 
 /* line 161, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-fire {
-  background-position: -72px  -120px;
+  background-position: -72px -120px;
 }
 
 /* line 162, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-eye-open, .icon-workflow-transition-publish {
-  background-position: -96px  -120px;
+  background-position: -96px -120px;
 }
 
 /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2741,27 +2777,27 @@ legend + .control-group {
 
 /* line 179, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-hdd, .icon-formsavedataadapter {
-  background-position: 0      -144px;
+  background-position: 0 -144px;
 }
 
 /* line 180, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-bullhorn {
-  background-position: -24px  -144px;
+  background-position: -24px -144px;
 }
 
 /* line 181, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-bell {
-  background-position: -48px  -144px;
+  background-position: -48px -144px;
 }
 
 /* line 182, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-certificate {
-  background-position: -72px  -144px;
+  background-position: -72px -144px;
 }
 
 /* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-thumbs-up, .icon-formthankspage {
-  background-position: -96px  -144px;
+  background-position: -96px -144px;
 }
 
 /* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2842,27 +2878,27 @@ legend + .control-group {
 /*afegits per a GW*/
 /* line 203, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-upc {
-  background-position: 0      -169px;
+  background-position: 0 -169px;
 }
 
 /* line 204, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-news, .icon-news-item {
-  background-position: -23px  -169px;
+  background-position: -23px -169px;
 }
 
 /* line 205, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-box, .icon-packet, .icon-packet {
-  background-position: -48px  -168px;
+  background-position: -48px -168px;
 }
 
 /* line 206, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-link {
-  background-position: -72px  -169px;
+  background-position: -72px -169px;
 }
 
 /* line 207, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-iframe, .icon-window {
-  background-position: -96px  -169px;
+  background-position: -96px -169px;
 }
 
 /* line 208, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2950,27 +2986,27 @@ legend + .control-group {
 
 /* line 232, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-upload {
-  background-position: 0      -192px;
+  background-position: 0 -192px;
 }
 
 /* line 233, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-rss {
-  background-position: -24px  -192px;
+  background-position: -24px -192px;
 }
 
 /* line 234, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-poll, .icon-plonepopoll {
-  background-position: -48px  -192px;
+  background-position: -48px -192px;
 }
 
 /* line 235, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-collection {
-  background-position: -72px  -192px;
+  background-position: -72px -192px;
 }
 
 /* line 236, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-caching {
-  background-position: -96px  -192px;
+  background-position: -96px -192px;
 }
 
 /* line 237, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -3053,7 +3089,7 @@ legend + .control-group {
 
 /* line 257, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon {
-  background-image: url('/++genweb++static/images/gh-150.png?1384859287');
+  background-image: url('/++genweb++static/images/gh-150.png?1354788544');
   width: 21px;
   height: 21px;
   margin-top: -1px;
@@ -3061,7 +3097,7 @@ legend + .control-group {
 }
 /* line 264, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon.icon-news, .large-icon.icon-news-item {
-  background-position: -37px  -252px;
+  background-position: -37px -252px;
 }
 /* line 265, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon.icon-link {
@@ -3069,11 +3105,11 @@ legend + .control-group {
 }
 /* line 266, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon.icon-upc {
-  background-position: 0      -252px;
+  background-position: 0 -252px;
 }
 /* line 267, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon.icon-poll, .large-icon.icon-plonepopoll {
-  background-position: -73px  -288px;
+  background-position: -73px -288px;
 }
 /* line 268, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon.icon-calendar, .large-icon.icon-event {
@@ -3086,7 +3122,7 @@ legend + .control-group {
 
 /* line 273, ../bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon.icon-white {
-  background-image: url('/++genweb++static/images/gh-150-w.png?1384859287');
+  background-image: url('/++genweb++static/images/gh-150-w.png?1354788544');
 }
 
 /*extends icones*/
@@ -3195,9 +3231,13 @@ legend + .control-group {
 }
 
 /* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
-.dropdown-menu .active > a, .dropdown-menu .selected > a, .dropdown-menu .contentViews .selected:hover > a, .contentViews .dropdown-menu .selected:hover > a,
+.dropdown-menu .active > a, .dropdown-menu .selected > a, .dropdown-menu .contentViews .selected > a, .contentViews .dropdown-menu .selected > a, .dropdown-menu .contentViews .selected:hover > a, .contentViews .dropdown-menu .selected:hover > a,
 .dropdown-menu .active > a:hover,
-.dropdown-menu .selected > a:hover {
+.dropdown-menu .selected > a:hover,
+.dropdown-menu .contentViews .selected > a:hover,
+.contentViews .dropdown-menu .selected > a:hover,
+.dropdown-menu .contentViews .selected:hover > a:hover,
+.contentViews .dropdown-menu .selected:hover > a:hover {
   color: white;
   text-decoration: none;
   outline: 0;
@@ -3411,13 +3451,13 @@ button.close {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
+.btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
   color: #333333;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent {
+.btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent {
   background-color: #cccccc \9;
 }
 /* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -3447,7 +3487,7 @@ button.close {
   outline-offset: -2px;
 }
 /* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
+.btn.active, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
   background-color: #d9d9d9;
   background-color: #cccccc \9;
   background-image: none;
@@ -3579,27 +3619,34 @@ button.pfg-draft-save:active .tileFooter:before,
 }
 
 /* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover,
+.btn-primary.active, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn-primary.selected, .contentViews .btn-primary.selected, .contentViews .btn-primary.selected:hover,
 .btn-warning.active,
 .btn-warning.selected,
+.contentViews .btn-warning.selected,
 .contentViews .btn-warning.selected:hover,
 .btn-danger.active,
 .btn-danger.selected,
+.contentViews .btn-danger.selected,
 .contentViews .btn-danger.selected:hover,
 .btn-success.active,
 .btn-success.selected,
 button.selected.pfg-draft-save,
+.contentViews .btn-success.selected,
+.contentViews button.selected.pfg-draft-save,
 .contentViews .btn-success.selected:hover,
 .contentViews button.selected.pfg-draft-save:hover,
 button.active.pfg-draft-save,
 .btn-info.active,
 .btn-info.selected,
 .selected.link-parent,
+.contentViews .btn-info.selected,
+.contentViews .selected.link-parent,
 .contentViews .btn-info.selected:hover,
 .contentViews .selected.link-parent:hover,
 .active.link-parent,
 .btn-inverse.active,
 .btn-inverse.selected,
+.contentViews .btn-inverse.selected,
 .contentViews .btn-inverse.selected:hover {
   color: rgba(255, 255, 255, 0.75);
 }
@@ -3629,13 +3676,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
+.btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn-primary.selected, .contentViews .btn-primary.selected, .contentViews .btn-primary.selected:hover, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
   color: white;
   background-color: #005a8d;
   *background-color: #004a74;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover {
+.btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn-primary.selected, .contentViews .btn-primary.selected, .contentViews .btn-primary.selected:hover {
   background-color: #003a5a \9;
 }
 
@@ -3658,13 +3705,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected:hover, .btn-warning.disabled, .btn-warning[disabled] {
+.btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected, .contentViews .btn-warning.selected:hover, .btn-warning.disabled, .btn-warning[disabled] {
   color: white;
   background-color: #c67605;
   *background-color: #ad6704;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected:hover {
+.btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected, .contentViews .btn-warning.selected:hover {
   background-color: #945904 \9;
 }
 
@@ -3687,13 +3734,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected:hover, .btn-danger.disabled, .btn-danger[disabled] {
+.btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected, .contentViews .btn-danger.selected:hover, .btn-danger.disabled, .btn-danger[disabled] {
   color: white;
   background-color: #a62e1f;
   *background-color: #91281b;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected:hover {
+.btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected, .contentViews .btn-danger.selected:hover {
   background-color: #7b2217 \9;
 }
 
@@ -3716,13 +3763,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
+.btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected, .contentViews button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
   color: white;
   background-color: #547815;
   *background-color: #456211;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save {
+.btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected, .contentViews button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save {
   background-color: #354c0e \9;
 }
 
@@ -3745,13 +3792,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
+.btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected, .contentViews .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
   color: white;
   background-color: #26809a;
   *background-color: #216f86;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent {
+.btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected, .contentViews .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent {
   background-color: #1c5e71 \9;
 }
 
@@ -3774,13 +3821,13 @@ button.active.pfg-draft-save,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected:hover, .btn-inverse.disabled, .btn-inverse[disabled] {
+.btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected, .contentViews .btn-inverse.selected:hover, .btn-inverse.disabled, .btn-inverse[disabled] {
   color: white;
   background-color: #222222;
   *background-color: #151515;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected:hover {
+.btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected, .contentViews .btn-inverse.selected:hover {
   background-color: #090909 \9;
 }
 
@@ -3994,21 +4041,37 @@ input[type="submit"]::-moz-focus-inner {
 .btn-group > .btn.active,
 .btn-group > .active.standalone,
 .btn-group > .standalone.selected,
+.contentViews .btn-group > .standalone.selected,
+.contentViews .btn-group > .standalone.selected:hover,
 .btn-group > input.active[value^="Cancel"],
 .btn-group > input[value^="Cancel"].selected,
+.contentViews .btn-group > input[value^="Cancel"].selected,
+.contentViews .btn-group > input[value^="Cancel"].selected:hover,
 .btn-group > .active[type="submit"],
 .btn-group > [type="submit"].selected,
+.contentViews .btn-group > [type="submit"].selected,
+.contentViews .btn-group > [type="submit"].selected:hover,
 .btn-group > .active.context,
 .btn-group > .context.selected,
+.contentViews .btn-group > .context.selected,
+.contentViews .btn-group > .context.selected:hover,
 .btn-group > .btn.selected,
 .btn-group > .selected.searchButton,
 .btn-group > button.selected.pfg-draft-save,
 .btn-group > .selected.link-parent,
 .btn-group > .active.searchButton,
+.contentViews .btn-group > .searchButton.selected,
+.contentViews .btn-group > .searchButton.selected:hover,
+.contentViews .btn-group > .btn.selected,
+.contentViews .btn-group > button.selected.pfg-draft-save,
+.contentViews .btn-group > .selected.link-parent,
+.contentViews .btn-group > .btn.selected:hover,
 .contentViews .customfile-hover .btn-group > .selected.customfile-button,
 .customfile-hover .contentViews .btn-group > .selected.customfile-button,
 .contentViews .customfile-focus .btn-group > .selected.customfile-button,
 .customfile-focus .contentViews .btn-group > .selected.customfile-button,
+.contentViews .btn-group > button.selected.pfg-draft-save:hover,
+.contentViews .btn-group > .selected.link-parent:hover,
 .btn-group > button.active.pfg-draft-save,
 .btn-group > .active.link-parent {
   z-index: 2;
@@ -4337,9 +4400,11 @@ button.pfg-draft-save .caret,
 }
 
 /* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-list > .active > a, .nav-list > .selected > a, .contentViews .nav-list > .selected:hover > a,
+.nav-list > .active > a, .nav-list > .selected > a, .contentViews .nav-list > .selected > a, .contentViews .nav-list > .selected:hover > a,
 .nav-list > .active > a:hover,
 .nav-list > .selected > a:hover,
+.contentViews .nav-list > .selected > a:hover,
+.contentViews .nav-list > .selected:hover > a:hover,
 .formTabs > li > a.selected,
 .formTabs > li > a.selected:hover {
   color: white;
@@ -4411,7 +4476,7 @@ button.pfg-draft-save .caret,
   box-shadow: inset 0 -10px 12px -18px black;
 }
 /* line 108, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs.nav-stacked, .nav-stacked.contentViews, .configlets {
+.nav-tabs.nav-stacked, .nav-stacked.contentViews, .contentViews.configlets, .configlets {
   -webkit-box-shadow: 0 10px 12px -18px black;
   -moz-box-shadow: 0 10px 12px -18px black;
   box-shadow: 0 10px 12px -18px black;
@@ -4438,13 +4503,17 @@ button.pfg-draft-save .caret,
 }
 
 /* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .contentViews > .selected > a, .contentViews .nav-tabs > .selected:hover > a, .contentViews > .selected:hover > a, .contentViews .configlets > .selected:hover > a,
+.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .contentViews .nav-tabs > .selected > a, .contentViews > .selected > a, .contentViews .configlets > .selected > a, .contentViews .nav-tabs > .selected:hover > a, .contentViews > .selected:hover > a, .contentViews .configlets > .selected:hover > a,
 .nav-tabs > .active > a:hover,
 .contentViews > .active > a:hover,
 .configlets > .active > a:hover,
 .nav-tabs > .selected > a:hover,
 .configlets > .selected > a:hover,
-.contentViews > .selected > a:hover {
+.contentViews .nav-tabs > .selected > a:hover,
+.contentViews .configlets > .selected > a:hover,
+.contentViews .nav-tabs > .selected:hover > a:hover,
+.contentViews > .selected:hover > a:hover,
+.contentViews .configlets > .selected:hover > a:hover {
   color: #666666;
   background-color: white;
   background-color: white;
@@ -4472,11 +4541,15 @@ button.pfg-draft-save .caret,
 }
 
 /* line 153, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a, .contentViews .nav-pills > .selected:hover > a, .contentViews .formTabs > .selected:hover > a,
+.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a, .contentViews .nav-pills > .selected > a, .contentViews .formTabs > .selected > a, .contentViews .nav-pills > .selected:hover > a, .contentViews .formTabs > .selected:hover > a,
 .nav-pills > .active > a:hover,
 .formTabs > .active > a:hover,
 .nav-pills > .selected > a:hover,
-.formTabs > .selected > a:hover {
+.formTabs > .selected > a:hover,
+.contentViews .nav-pills > .selected > a:hover,
+.contentViews .formTabs > .selected > a:hover,
+.contentViews .nav-pills > .selected:hover > a:hover,
+.contentViews .formTabs > .selected:hover > a:hover {
   color: white;
   background-color: #007bc0;
 }
@@ -4492,12 +4565,12 @@ button.pfg-draft-save .caret,
 }
 
 /* line 172, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs.nav-stacked, .nav-stacked.contentViews, .configlets {
+.nav-tabs.nav-stacked, .nav-stacked.contentViews, .contentViews.configlets, .configlets {
   border-bottom: 0;
 }
 
 /* line 175, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs.nav-stacked > li > a, .nav-stacked.contentViews > li > a, .configlets > li > a {
+.nav-tabs.nav-stacked > li > a, .nav-stacked.contentViews > li > a, .contentViews.configlets > li > a, .configlets > li > a {
   border: 1px solid #ccc;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -4574,19 +4647,19 @@ button.pfg-draft-save .caret,
 }
 
 /* line 229, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret {
+.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret, .nav .contentViews .selected .dropdown-toggle .caret, .contentViews .nav .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret, .configlets .contentViews .selected .dropdown-toggle .caret, .contentViews .configlets .selected .dropdown-toggle .caret, .formTabs .contentViews .selected .dropdown-toggle .caret, .contentViews .formTabs .selected .dropdown-toggle .caret, .nav .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .nav .selected:hover .dropdown-toggle .caret, .contentViews .selected:hover .dropdown-toggle .caret, .configlets .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .configlets .selected:hover .dropdown-toggle .caret, .formTabs .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .formTabs .selected:hover .dropdown-toggle .caret {
   border-top-color: #333333;
   border-bottom-color: #333333;
 }
 
 /* line 233, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret {
+.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .nav-tabs .contentViews .selected .dropdown-toggle .caret, .contentViews .nav-tabs .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret, .configlets .contentViews .selected .dropdown-toggle .caret, .contentViews .configlets .selected .dropdown-toggle .caret, .nav-tabs .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .nav-tabs .selected:hover .dropdown-toggle .caret, .contentViews .selected:hover .dropdown-toggle .caret, .configlets .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .configlets .selected:hover .dropdown-toggle .caret {
   border-top-color: #666666;
   border-bottom-color: #666666;
 }
 
 /* line 240, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover, .contentViews > .dropdown.selected > a:hover {
+.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover, .contentViews .nav > .dropdown.selected > a:hover, .contentViews .configlets > .dropdown.selected > a:hover, .contentViews .formTabs > .dropdown.selected > a:hover, .contentViews .nav > .dropdown.selected:hover > a:hover, .contentViews .configlets > .dropdown.selected:hover > a:hover, .contentViews .formTabs > .dropdown.selected:hover > a:hover {
   cursor: pointer;
 }
 
@@ -4601,7 +4674,12 @@ button.pfg-draft-save .caret,
 .nav > li.dropdown.open.selected > a:hover,
 .configlets > li.dropdown.open.selected > a:hover,
 .formTabs > li.dropdown.open.selected > a:hover,
-.contentViews > li.dropdown.open.selected > a:hover {
+.contentViews .nav > li.dropdown.open.selected > a:hover,
+.contentViews .configlets > li.dropdown.open.selected > a:hover,
+.contentViews .formTabs > li.dropdown.open.selected > a:hover,
+.contentViews .nav > li.dropdown.open.selected:hover > a:hover,
+.contentViews .configlets > li.dropdown.open.selected:hover > a:hover,
+.contentViews .formTabs > li.dropdown.open.selected:hover > a:hover {
   color: white;
   background-color: #aaaaaa;
   border-color: #aaaaaa;
@@ -4616,7 +4694,20 @@ button.pfg-draft-save .caret,
 .nav li.dropdown.open.selected .caret,
 .configlets li.dropdown.open.selected .caret,
 .formTabs li.dropdown.open.selected .caret,
+.nav .contentViews li.dropdown.open.selected .caret,
+.contentViews .nav li.dropdown.open.selected .caret,
 .contentViews li.dropdown.open.selected .caret,
+.configlets .contentViews li.dropdown.open.selected .caret,
+.contentViews .configlets li.dropdown.open.selected .caret,
+.formTabs .contentViews li.dropdown.open.selected .caret,
+.contentViews .formTabs li.dropdown.open.selected .caret,
+.nav .contentViews li.dropdown.open.selected:hover .caret,
+.contentViews .nav li.dropdown.open.selected:hover .caret,
+.contentViews li.dropdown.open.selected:hover .caret,
+.configlets .contentViews li.dropdown.open.selected:hover .caret,
+.contentViews .configlets li.dropdown.open.selected:hover .caret,
+.formTabs .contentViews li.dropdown.open.selected:hover .caret,
+.contentViews .formTabs li.dropdown.open.selected:hover .caret,
 .nav li.dropdown.open a:hover .caret,
 .contentViews li.dropdown.open a:hover .caret,
 .configlets li.dropdown.open a:hover .caret,
@@ -4670,9 +4761,10 @@ button.pfg-draft-save .caret,
 }
 
 /* line 296, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tab-content > .active, .tab-content > .selected, .contentViews .tab-content > .selected:hover,
+.tab-content > .active, .tab-content > .selected, .contentViews .tab-content > .selected, .contentViews .tab-content > .selected:hover,
 .pill-content > .active,
 .pill-content > .selected,
+.contentViews .pill-content > .selected,
 .contentViews .pill-content > .selected:hover {
   display: block;
 }
@@ -4701,13 +4793,16 @@ button.pfg-draft-save .caret,
 }
 
 /* line 319, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .configlets > .selected > a, .tabs-below > .contentViews > .selected > a,
+.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .configlets > .selected > a, .contentViews .tabs-below > .nav-tabs > .selected > a, .contentViews .tabs-below > .configlets > .selected > a, .contentViews .tabs-below > .nav-tabs > .selected:hover > a, .tabs-below > .contentViews > .selected:hover > a, .contentViews .tabs-below > .configlets > .selected:hover > a,
 .tabs-below > .nav-tabs > .active > a:hover,
 .tabs-below > .contentViews > .active > a:hover,
 .tabs-below > .configlets > .active > a:hover,
 .tabs-below > .nav-tabs > .selected > a:hover,
 .tabs-below > .configlets > .selected > a:hover,
-.tabs-below > .contentViews > .selected > a:hover {
+.contentViews .tabs-below > .nav-tabs > .selected > a:hover,
+.contentViews .tabs-below > .configlets > .selected > a:hover,
+.contentViews .tabs-below > .nav-tabs > .selected:hover > a:hover,
+.contentViews .tabs-below > .configlets > .selected:hover > a:hover {
   border-color: transparent #ccc #ccc #ccc;
 }
 
@@ -4750,13 +4845,20 @@ button.pfg-draft-save .caret,
 }
 
 /* line 352, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .selected > a, .tabs-left > .contentViews .selected > a,
+.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .selected > a, .tabs-left > .nav-tabs .contentViews .selected > a, .contentViews .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .contentViews .selected > a, .contentViews .tabs-left > .configlets .selected > a, .tabs-left > .nav-tabs .contentViews .selected:hover > a, .contentViews .tabs-left > .nav-tabs .selected:hover > a, .tabs-left > .contentViews .selected:hover > a, .tabs-left > .configlets .contentViews .selected:hover > a, .contentViews .tabs-left > .configlets .selected:hover > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .contentViews .active > a:hover,
 .tabs-left > .configlets .active > a:hover,
 .tabs-left > .nav-tabs .selected > a:hover,
 .tabs-left > .configlets .selected > a:hover,
-.tabs-left > .contentViews .selected > a:hover {
+.tabs-left > .nav-tabs .contentViews .selected > a:hover,
+.contentViews .tabs-left > .nav-tabs .selected > a:hover,
+.tabs-left > .configlets .contentViews .selected > a:hover,
+.contentViews .tabs-left > .configlets .selected > a:hover,
+.tabs-left > .nav-tabs .contentViews .selected:hover > a:hover,
+.contentViews .tabs-left > .nav-tabs .selected:hover > a:hover,
+.tabs-left > .configlets .contentViews .selected:hover > a:hover,
+.contentViews .tabs-left > .configlets .selected:hover > a:hover {
   border-color: #ccc transparent #ccc #ccc;
   *border-right-color: white;
 }
@@ -4782,13 +4884,20 @@ button.pfg-draft-save .caret,
 }
 
 /* line 371, ../bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .selected > a, .tabs-right > .contentViews .selected > a,
+.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .selected > a, .tabs-right > .nav-tabs .contentViews .selected > a, .contentViews .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .contentViews .selected > a, .contentViews .tabs-right > .configlets .selected > a, .tabs-right > .nav-tabs .contentViews .selected:hover > a, .contentViews .tabs-right > .nav-tabs .selected:hover > a, .tabs-right > .contentViews .selected:hover > a, .tabs-right > .configlets .contentViews .selected:hover > a, .contentViews .tabs-right > .configlets .selected:hover > a,
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .contentViews .active > a:hover,
 .tabs-right > .configlets .active > a:hover,
 .tabs-right > .nav-tabs .selected > a:hover,
 .tabs-right > .configlets .selected > a:hover,
-.tabs-right > .contentViews .selected > a:hover {
+.tabs-right > .nav-tabs .contentViews .selected > a:hover,
+.contentViews .tabs-right > .nav-tabs .selected > a:hover,
+.tabs-right > .configlets .contentViews .selected > a:hover,
+.contentViews .tabs-right > .configlets .selected > a:hover,
+.tabs-right > .nav-tabs .contentViews .selected:hover > a:hover,
+.contentViews .tabs-right > .nav-tabs .selected:hover > a:hover,
+.tabs-right > .configlets .contentViews .selected:hover > a:hover,
+.contentViews .tabs-right > .configlets .selected:hover > a:hover {
   border-color: #ccc #ccc #ccc transparent;
   *border-left-color: white;
 }
@@ -5097,7 +5206,7 @@ button.pfg-draft-save .caret,
 }
 
 /* line 261, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a, .navbar .contentViews > .selected > a,
+.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a, .navbar .contentViews .nav > .selected > a, .contentViews .navbar .nav > .selected > a, .navbar .contentViews .configlets > .selected > a, .contentViews .navbar .configlets > .selected > a, .navbar .contentViews .formTabs > .selected > a, .contentViews .navbar .formTabs > .selected > a, .navbar .contentViews .nav > .selected:hover > a, .contentViews .navbar .nav > .selected:hover > a, .navbar .contentViews > .selected:hover > a, .navbar .contentViews .configlets > .selected:hover > a, .contentViews .navbar .configlets > .selected:hover > a, .navbar .contentViews .formTabs > .selected:hover > a, .contentViews .navbar .formTabs > .selected:hover > a,
 .navbar .nav > .active > a:hover,
 .navbar .contentViews > .active > a:hover,
 .navbar .configlets > .active > a:hover,
@@ -5105,7 +5214,18 @@ button.pfg-draft-save .caret,
 .navbar .nav > .selected > a:hover,
 .navbar .configlets > .selected > a:hover,
 .navbar .formTabs > .selected > a:hover,
-.navbar .contentViews > .selected > a:hover,
+.navbar .contentViews .nav > .selected > a:hover,
+.contentViews .navbar .nav > .selected > a:hover,
+.navbar .contentViews .configlets > .selected > a:hover,
+.contentViews .navbar .configlets > .selected > a:hover,
+.navbar .contentViews .formTabs > .selected > a:hover,
+.contentViews .navbar .formTabs > .selected > a:hover,
+.navbar .contentViews .nav > .selected:hover > a:hover,
+.contentViews .navbar .nav > .selected:hover > a:hover,
+.navbar .contentViews .configlets > .selected:hover > a:hover,
+.contentViews .navbar .configlets > .selected:hover > a:hover,
+.navbar .contentViews .formTabs > .selected:hover > a:hover,
+.contentViews .navbar .formTabs > .selected:hover > a:hover,
 .navbar .nav > .active > a:focus,
 .navbar .contentViews > .active > a:focus,
 .navbar .configlets > .active > a:focus,
@@ -5113,7 +5233,18 @@ button.pfg-draft-save .caret,
 .navbar .nav > .selected > a:focus,
 .navbar .configlets > .selected > a:focus,
 .navbar .formTabs > .selected > a:focus,
-.navbar .contentViews > .selected > a:focus {
+.navbar .contentViews .nav > .selected > a:focus,
+.contentViews .navbar .nav > .selected > a:focus,
+.navbar .contentViews .configlets > .selected > a:focus,
+.contentViews .navbar .configlets > .selected > a:focus,
+.navbar .contentViews .formTabs > .selected > a:focus,
+.contentViews .navbar .formTabs > .selected > a:focus,
+.navbar .contentViews .nav > .selected:hover > a:focus,
+.contentViews .navbar .nav > .selected:hover > a:focus,
+.navbar .contentViews .configlets > .selected:hover > a:focus,
+.contentViews .navbar .configlets > .selected:hover > a:focus,
+.navbar .contentViews .formTabs > .selected:hover > a:focus,
+.contentViews .navbar .formTabs > .selected:hover > a:focus {
   color: #222222;
   text-decoration: none;
   background-color: white;
@@ -5154,13 +5285,13 @@ button.pfg-draft-save .caret,
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
+.navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected, .contentViews .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected:hover, .contentViews .navbar .btn-navbar.selected:hover, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
   color: white;
   background-color: lightgrey;
   *background-color: #c6c6c6;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected {
+.navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected, .contentViews .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected:hover, .contentViews .navbar .btn-navbar.selected:hover {
   background-color: #b9b9b9 \9;
 }
 
@@ -5232,7 +5363,20 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle,
+.navbar .nav .contentViews li.dropdown.selected > .dropdown-toggle,
+.contentViews .navbar .nav li.dropdown.selected > .dropdown-toggle,
 .navbar .contentViews li.dropdown.selected > .dropdown-toggle,
+.navbar .configlets .contentViews li.dropdown.selected > .dropdown-toggle,
+.contentViews .navbar .configlets li.dropdown.selected > .dropdown-toggle,
+.navbar .formTabs .contentViews li.dropdown.selected > .dropdown-toggle,
+.contentViews .navbar .formTabs li.dropdown.selected > .dropdown-toggle,
+.navbar .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.contentViews .navbar .nav li.dropdown.selected:hover > .dropdown-toggle,
+.navbar .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.navbar .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.contentViews .navbar .configlets li.dropdown.selected:hover > .dropdown-toggle,
+.navbar .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.contentViews .navbar .formTabs li.dropdown.selected:hover > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle,
@@ -5240,7 +5384,20 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle,
 .navbar .formTabs li.dropdown.open.selected > .dropdown-toggle,
-.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle {
+.navbar .nav .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.contentViews .navbar .nav li.dropdown.open.selected > .dropdown-toggle,
+.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.navbar .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.contentViews .navbar .configlets li.dropdown.open.selected > .dropdown-toggle,
+.navbar .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.contentViews .navbar .formTabs li.dropdown.open.selected > .dropdown-toggle,
+.navbar .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.contentViews .navbar .nav li.dropdown.open.selected:hover > .dropdown-toggle,
+.navbar .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.navbar .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.contentViews .navbar .configlets li.dropdown.open.selected:hover > .dropdown-toggle,
+.navbar .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.contentViews .navbar .formTabs li.dropdown.open.selected:hover > .dropdown-toggle {
   background-color: white;
   color: #222222;
 }
@@ -5260,7 +5417,20 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle .caret,
+.navbar .nav .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.contentViews .navbar .nav li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.navbar .configlets .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.contentViews .navbar .configlets li.dropdown.selected > .dropdown-toggle .caret,
+.navbar .formTabs .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.contentViews .navbar .formTabs li.dropdown.selected > .dropdown-toggle .caret,
+.navbar .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .nav li.dropdown.selected:hover > .dropdown-toggle .caret,
+.navbar .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.navbar .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .configlets li.dropdown.selected:hover > .dropdown-toggle .caret,
+.navbar .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .formTabs li.dropdown.selected:hover > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle .caret,
@@ -5268,7 +5438,20 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle .caret {
+.navbar .nav .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.contentViews .navbar .nav li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.contentViews .navbar .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.contentViews .navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .nav li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.navbar .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.navbar .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .configlets li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.navbar .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .formTabs li.dropdown.open.selected:hover > .dropdown-toggle .caret {
   border-top-color: #222222;
   border-bottom-color: #222222;
 }
@@ -5374,7 +5557,7 @@ button.pfg-draft-save .caret,
   color: white;
 }
 /* line 409, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a, .navbar-inverse .contentViews .selected > a,
+.navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a, .navbar-inverse .nav .contentViews .selected > a, .contentViews .navbar-inverse .nav .selected > a, .navbar-inverse .contentViews .selected > a, .navbar-inverse .configlets .contentViews .selected > a, .contentViews .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .contentViews .selected > a, .contentViews .navbar-inverse .formTabs .selected > a, .navbar-inverse .nav .contentViews .selected:hover > a, .contentViews .navbar-inverse .nav .selected:hover > a, .navbar-inverse .contentViews .selected:hover > a, .navbar-inverse .configlets .contentViews .selected:hover > a, .contentViews .navbar-inverse .configlets .selected:hover > a, .navbar-inverse .formTabs .contentViews .selected:hover > a, .contentViews .navbar-inverse .formTabs .selected:hover > a,
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .contentViews .active > a:hover,
 .navbar-inverse .configlets .active > a:hover,
@@ -5382,7 +5565,20 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav .selected > a:hover,
 .navbar-inverse .configlets .selected > a:hover,
 .navbar-inverse .formTabs .selected > a:hover,
+.navbar-inverse .nav .contentViews .selected > a:hover,
+.contentViews .navbar-inverse .nav .selected > a:hover,
 .navbar-inverse .contentViews .selected > a:hover,
+.navbar-inverse .configlets .contentViews .selected > a:hover,
+.contentViews .navbar-inverse .configlets .selected > a:hover,
+.navbar-inverse .formTabs .contentViews .selected > a:hover,
+.contentViews .navbar-inverse .formTabs .selected > a:hover,
+.navbar-inverse .nav .contentViews .selected:hover > a:hover,
+.contentViews .navbar-inverse .nav .selected:hover > a:hover,
+.navbar-inverse .contentViews .selected:hover > a:hover,
+.navbar-inverse .configlets .contentViews .selected:hover > a:hover,
+.contentViews .navbar-inverse .configlets .selected:hover > a:hover,
+.navbar-inverse .formTabs .contentViews .selected:hover > a:hover,
+.contentViews .navbar-inverse .formTabs .selected:hover > a:hover,
 .navbar-inverse .nav .active > a:focus,
 .navbar-inverse .contentViews .active > a:focus,
 .navbar-inverse .configlets .active > a:focus,
@@ -5390,7 +5586,20 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav .selected > a:focus,
 .navbar-inverse .configlets .selected > a:focus,
 .navbar-inverse .formTabs .selected > a:focus,
-.navbar-inverse .contentViews .selected > a:focus {
+.navbar-inverse .nav .contentViews .selected > a:focus,
+.contentViews .navbar-inverse .nav .selected > a:focus,
+.navbar-inverse .contentViews .selected > a:focus,
+.navbar-inverse .configlets .contentViews .selected > a:focus,
+.contentViews .navbar-inverse .configlets .selected > a:focus,
+.navbar-inverse .formTabs .contentViews .selected > a:focus,
+.contentViews .navbar-inverse .formTabs .selected > a:focus,
+.navbar-inverse .nav .contentViews .selected:hover > a:focus,
+.contentViews .navbar-inverse .nav .selected:hover > a:focus,
+.navbar-inverse .contentViews .selected:hover > a:focus,
+.navbar-inverse .configlets .contentViews .selected:hover > a:focus,
+.contentViews .navbar-inverse .configlets .selected:hover > a:focus,
+.navbar-inverse .formTabs .contentViews .selected:hover > a:focus,
+.contentViews .navbar-inverse .formTabs .selected:hover > a:focus {
   color: white;
   background-color: black;
 }
@@ -5416,7 +5625,20 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle,
 .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle,
 .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle,
+.navbar-inverse .nav .contentViews li.dropdown.selected > .dropdown-toggle,
+.contentViews .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle,
 .navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle,
+.navbar-inverse .configlets .contentViews li.dropdown.selected > .dropdown-toggle,
+.contentViews .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle,
+.navbar-inverse .formTabs .contentViews li.dropdown.selected > .dropdown-toggle,
+.contentViews .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle,
+.navbar-inverse .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.contentViews .navbar-inverse .nav li.dropdown.selected:hover > .dropdown-toggle,
+.navbar-inverse .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.navbar-inverse .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.contentViews .navbar-inverse .configlets li.dropdown.selected:hover > .dropdown-toggle,
+.navbar-inverse .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.contentViews .navbar-inverse .formTabs li.dropdown.selected:hover > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
 .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle,
 .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle,
@@ -5424,7 +5646,20 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle,
 .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle,
 .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle,
-.navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle {
+.navbar-inverse .nav .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.contentViews .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle,
+.navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.navbar-inverse .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.contentViews .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle,
+.navbar-inverse .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.contentViews .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle,
+.navbar-inverse .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.contentViews .navbar-inverse .nav li.dropdown.open.selected:hover > .dropdown-toggle,
+.navbar-inverse .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.navbar-inverse .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.contentViews .navbar-inverse .configlets li.dropdown.open.selected:hover > .dropdown-toggle,
+.navbar-inverse .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.contentViews .navbar-inverse .formTabs li.dropdown.open.selected:hover > .dropdown-toggle {
   background-color: black;
   color: white;
 }
@@ -5442,7 +5677,20 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle .caret,
 .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle .caret,
 .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle .caret,
+.navbar-inverse .nav .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle .caret,
 .navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.navbar-inverse .configlets .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle .caret,
+.navbar-inverse .formTabs .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle .caret,
+.navbar-inverse .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .nav li.dropdown.selected:hover > .dropdown-toggle .caret,
+.navbar-inverse .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.navbar-inverse .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .configlets li.dropdown.selected:hover > .dropdown-toggle .caret,
+.navbar-inverse .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .formTabs li.dropdown.selected:hover > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle .caret,
@@ -5450,7 +5698,20 @@ button.pfg-draft-save .caret,
 .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle .caret,
 .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
 .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle .caret {
+.navbar-inverse .nav .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar-inverse .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar-inverse .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar-inverse .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .nav li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.navbar-inverse .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.navbar-inverse .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .configlets li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.navbar-inverse .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar-inverse .formTabs li.dropdown.open.selected:hover > .dropdown-toggle .caret {
   border-top-color: white;
   border-bottom-color: white;
 }
@@ -5510,13 +5771,13 @@ button.pfg-draft-save .caret,
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
+.navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected, .contentViews .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected:hover, .contentViews .navbar-inverse .btn-navbar.selected:hover, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
   color: white;
   background-color: #040404;
   *background-color: black;
 }
 /* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-.navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected {
+.navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected, .contentViews .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected:hover, .contentViews .navbar-inverse .btn-navbar.selected:hover {
   background-color: black \9;
 }
 
@@ -5544,7 +5805,7 @@ button.pfg-draft-save .caret,
   top: -1px;
 }
 /* line 23, ../bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
-.breadcrumb .active, .breadcrumb .selected, .breadcrumb .contentViews .selected:hover, .contentViews .breadcrumb .selected:hover, .breadcrumb .active a, .breadcrumb .selected a, .breadcrumb .contentViews .selected:hover a, .contentViews .breadcrumb .selected:hover a {
+.breadcrumb .active, .breadcrumb .selected, .breadcrumb .contentViews .selected, .contentViews .breadcrumb .selected, .breadcrumb .contentViews .selected:hover, .contentViews .breadcrumb .selected:hover, .breadcrumb .active a, .breadcrumb .selected a, .breadcrumb .contentViews .selected a, .contentViews .breadcrumb .selected a, .breadcrumb .contentViews .selected:hover a, .contentViews .breadcrumb .selected:hover a {
   color: #666666;
   font-weight: bold;
 }
@@ -5595,7 +5856,7 @@ button.pfg-draft-save .caret,
   padding: 0 14px;
   line-height: 34px;
   text-decoration: none;
-  text-shadow: 0 -1px #fff;
+  text-shadow: 0 -1px white;
   background-color: white;
   border: 1px solid #d9d9d9;
   border-bottom: 1px solid #b2b2b2;
@@ -5608,6 +5869,10 @@ button.pfg-draft-save .caret,
 .listingBar .active a,
 .pagination .selected a,
 .listingBar .selected a,
+.pagination .contentViews .selected a,
+.contentViews .pagination .selected a,
+.listingBar .contentViews .selected a,
+.contentViews .listingBar .selected a,
 .pagination .contentViews .selected:hover a,
 .contentViews .pagination .selected:hover a,
 .listingBar .contentViews .selected:hover a,
@@ -5616,6 +5881,10 @@ button.pfg-draft-save .caret,
 .listingBar .active span,
 .pagination .selected span,
 .listingBar .selected span,
+.pagination .contentViews .selected span,
+.contentViews .pagination .selected span,
+.listingBar .contentViews .selected span,
+.contentViews .listingBar .selected span,
 .pagination .contentViews .selected:hover span,
 .contentViews .pagination .selected:hover span,
 .listingBar .contentViews .selected:hover span,
@@ -5624,11 +5893,15 @@ button.pfg-draft-save .caret,
 }
 
 /* line 35, ../bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a, .pagination .contentViews .selected:hover a, .contentViews .pagination .selected:hover a, .listingBar .contentViews .selected:hover a, .contentViews .listingBar .selected:hover a,
+.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a, .pagination .contentViews .selected a, .contentViews .pagination .selected a, .listingBar .contentViews .selected a, .contentViews .listingBar .selected a, .pagination .contentViews .selected:hover a, .contentViews .pagination .selected:hover a, .listingBar .contentViews .selected:hover a, .contentViews .listingBar .selected:hover a,
 .pagination .active span,
 .listingBar .active span,
 .pagination .selected span,
 .listingBar .selected span,
+.pagination .contentViews .selected span,
+.contentViews .pagination .selected span,
+.listingBar .contentViews .selected span,
+.contentViews .listingBar .selected span,
 .pagination .contentViews .selected:hover span,
 .contentViews .pagination .selected:hover span,
 .listingBar .contentViews .selected:hover span,
@@ -6189,7 +6462,7 @@ a.thumbnail:hover, .photoAlbumEntry a:hover {
 }
 
 /* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_thumbnails.scss */
-.thumbnail .caption, .thumb-img img .caption, .photoAlbumEntry a .caption, .photoAlbumEntry a .photoAlbumEntryTitle {
+.thumbnail .caption, .thumb-img img .caption, .photoAlbumEntry a .caption, .thumbnail .photoAlbumEntry a .photoAlbumEntryTitle, .photoAlbumEntry a .thumbnail .photoAlbumEntryTitle, .thumb-img img .photoAlbumEntry a .photoAlbumEntryTitle, .photoAlbumEntry a .thumb-img img .photoAlbumEntryTitle, .photoAlbumEntry a .photoAlbumEntryTitle {
   padding: 9px;
   color: #666666;
 }
@@ -6457,7 +6730,7 @@ button.pfg-draft-save .badge,
 }
 
 /* line 80, ../bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
-.progress.active .bar, .progress.selected .bar {
+.progress.active .bar, .progress.selected .bar, .contentViews .progress.selected .bar, .contentViews .progress.selected:hover .bar {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   -moz-animation: progress-bar-stripes 2s linear infinite;
   -ms-animation: progress-bar-stripes 2s linear infinite;
@@ -6634,19 +6907,19 @@ button.pfg-draft-save .badge,
   line-height: 1;
 }
 /* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active > img, .carousel .selected > img, .carousel .contentViews .selected:hover > img, .contentViews .carousel .selected:hover > img {
+.carousel .active > img, .carousel .selected > img, .carousel .contentViews .selected > img, .contentViews .carousel .selected > img, .carousel .contentViews .selected:hover > img, .contentViews .carousel .selected:hover > img {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
 /* line 41, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active, .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover,
+.carousel .active, .carousel .selected, .carousel .contentViews .selected, .contentViews .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover,
 .carousel .next,
 .carousel .prev {
   display: block;
 }
 /* line 43, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active, .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover {
+.carousel .active, .carousel .selected, .carousel .contentViews .selected, .contentViews .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover {
   left: 0;
 }
 /* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
@@ -6670,11 +6943,11 @@ button.pfg-draft-save .badge,
   left: 0;
 }
 /* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active.left, .carousel .left.selected {
+.carousel .active.left, .carousel .left.selected, .carousel .contentViews .left.selected, .contentViews .carousel .left.selected, .carousel .contentViews .left.selected:hover, .contentViews .carousel .left.selected:hover {
   left: -100%;
 }
 /* line 68, ../bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active.right, .carousel .right.selected {
+.carousel .active.right, .carousel .right.selected, .carousel .contentViews .right.selected, .contentViews .carousel .right.selected, .carousel .contentViews .right.selected:hover, .contentViews .carousel .right.selected:hover {
   left: 100%;
 }
 
@@ -6961,7 +7234,7 @@ button.pfg-draft-save .badge,
 
   /* line 16, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar .btn-navbar i {
-    background-image: url('/++genweb++static/images/gh-w.png?1384859287');
+    background-image: url('/++genweb++static/images/gh-w.png?1354788544');
   }
 
   /* line 17, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
@@ -6995,7 +7268,7 @@ button.pfg-draft-save .badge,
 
   /* line 23, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines a {
-    padding: 10px !important;
+    padding: 8px !important;
     margin: 0 !important;
   }
   /* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
@@ -7015,6 +7288,11 @@ button.pfg-draft-save .badge,
   }
 
   /* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header {
+    padding-bottom: 10px;
+  }
+
+  /* line 37, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image {
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -7022,11 +7300,11 @@ button.pfg-draft-save .badge,
     background-size: 100%;
   }
 
-  /* line 37, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 38, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image {
     margin-left: 207px !important;
   }
-  /* line 38, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 39, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image:before {
     top: 45px;
     width: 175px;
@@ -7034,27 +7312,27 @@ button.pfg-draft-save .badge,
   }
 
   /*contingut*/
-  /* line 41, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-column-one, #portal-column-content {
     width: 100% !important;
     margin-left: 0;
   }
 
   /* peus */
-  /* line 43, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu [class*="span"], #peu .cella {
     float: none;
     display: block;
     width: auto;
     margin-left: 0;
   }
-  /* line 45, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 46, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu [class*="span"] .pull-right, #peu .cella .pull-right, #peu [class*="span"] .newsImageContainer, #peu .cella .newsImageContainer {
     float: none;
     margin: 0;
   }
 
-  /* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #canvia-vista {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -7064,7 +7342,7 @@ button.pfg-draft-save .badge,
   }
 
   /*altres ajustaments*/
-  /* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 54, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   table {
     /*    display:block; */
     width: 100%;
@@ -7073,7 +7351,7 @@ button.pfg-draft-save .badge,
     max-width: 100%;
   }
 
-  /* line 62, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 63, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar-fixed-top, .navbar-fixed-bottom {
     margin-left: 0px;
     margin-right: 0px;
@@ -7081,45 +7359,45 @@ button.pfg-draft-save .badge,
     margin-left: 0;
   }
 
-  /* line 64, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container-fluid {
     padding: 0;
   }
 
-  /* line 70, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 71, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dt, .portaltype-packet .estudis dl.fitxa dt {
     float: none;
     clear: none;
     width: auto;
     text-align: left;
   }
-  /* line 76, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 77, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dd, .portaltype-packet .estudis dl.fitxa dd {
     margin-left: 0;
   }
 
-  /* line 84, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container {
     width: auto;
   }
 
-  /* line 86, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 87, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row-fluid, #dashboard, .fila, .template-atct_album_view #content-core {
     width: 100%;
   }
 
-  /* line 88, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row, .thumbnails {
     margin-left: 0;
   }
 
-  /* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 90, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .thumbnails > li {
     float: none;
     margin-left: 0;
   }
 
-  /* line 91, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .span12, .row-fluid .span12, #dashboard .span12, .fila .span12, .template-atct_album_view #content-core .span12 {
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -7127,7 +7405,7 @@ button.pfg-draft-save .badge,
     box-sizing: border-box;
   }
 
-  /* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 107, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .input-large,
   .input-xlarge,
   .input-xxlarge,
@@ -7147,7 +7425,7 @@ button.pfg-draft-save .badge,
     box-sizing: border-box;
   }
 
-  /* line 109, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 114, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .input-prepend input,
   .input-append input,
   .input-prepend input[class*="span"],
@@ -7158,7 +7436,7 @@ button.pfg-draft-save .badge,
     width: auto;
   }
 
-  /* line 115, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal, .pb-ajax {
     position: fixed;
     top: 20px;
@@ -7167,131 +7445,137 @@ button.pfg-draft-save .badge,
     width: auto;
     margin: 0;
   }
-  /* line 122, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 127, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal.fade.in, .fade.in.pb-ajax {
     top: 10px;
   }
 }
 @media only screen and (max-width: 639px) {
   /*general*/
-  /* line 131, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 136, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   body {
     font-size: 14.5px;
   }
 
   /* personaltools*/
-  /* line 133, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 138, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper, .navbar-fixed-top, .navbar-fixed-bottom {
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
 
-  /* line 134, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .navbar-inner, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 0px !important;
   }
 
-  /* line 135, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 140, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper + #portal-header {
     margin-top: 0px;
   }
 
-  /* line 137, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 142, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav ul, #portal-personaltools-wrapper .contentViews ul, #portal-personaltools-wrapper .configlets ul, #portal-personaltools-wrapper .formTabs ul {
     margin: 0 !important;
   }
-  /* line 138, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 143, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
-    background-image: url('/++genweb++static/images/gh-w.png?1384859287');
+    background-image: url('/++genweb++static/images/gh-w.png?1354788544');
   }
-  /* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
     background: black;
   }
-  /* line 140, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 145, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a.btn, #portal-personaltools-wrapper .contentViews a.btn, #portal-personaltools-wrapper .configlets a.btn, #portal-personaltools-wrapper .formTabs a.btn, #portal-personaltools-wrapper .nav a.standalone, #portal-personaltools-wrapper .contentViews a.standalone, #portal-personaltools-wrapper .configlets a.standalone, #portal-personaltools-wrapper .formTabs a.standalone, #portal-personaltools-wrapper .nav a[type="submit"], #portal-personaltools-wrapper .contentViews a[type="submit"], #portal-personaltools-wrapper .configlets a[type="submit"], #portal-personaltools-wrapper .formTabs a[type="submit"], #portal-personaltools-wrapper .nav a.context, #portal-personaltools-wrapper .contentViews a.context, #portal-personaltools-wrapper .configlets a.context, #portal-personaltools-wrapper .formTabs a.context, #portal-personaltools-wrapper .nav a.searchButton, #portal-personaltools-wrapper .contentViews a.searchButton, #portal-personaltools-wrapper .configlets a.searchButton, #portal-personaltools-wrapper .formTabs a.searchButton, #portal-personaltools-wrapper .nav a.link-parent, #portal-personaltools-wrapper .contentViews a.link-parent, #portal-personaltools-wrapper .configlets a.link-parent, #portal-personaltools-wrapper .formTabs a.link-parent, #portal-personaltools-wrapper .nav a.btn:focus, #portal-personaltools-wrapper .contentViews a.btn:focus, #portal-personaltools-wrapper .configlets a.btn:focus, #portal-personaltools-wrapper .formTabs a.btn:focus, #portal-personaltools-wrapper .nav a.standalone:focus, #portal-personaltools-wrapper .contentViews a.standalone:focus, #portal-personaltools-wrapper .configlets a.standalone:focus, #portal-personaltools-wrapper .formTabs a.standalone:focus, #portal-personaltools-wrapper .nav a[type="submit"]:focus, #portal-personaltools-wrapper .contentViews a[type="submit"]:focus, #portal-personaltools-wrapper .configlets a[type="submit"]:focus, #portal-personaltools-wrapper .formTabs a[type="submit"]:focus, #portal-personaltools-wrapper .nav a.context:focus, #portal-personaltools-wrapper .contentViews a.context:focus, #portal-personaltools-wrapper .configlets a.context:focus, #portal-personaltools-wrapper .formTabs a.context:focus, #portal-personaltools-wrapper .nav a.searchButton:focus, #portal-personaltools-wrapper .contentViews a.searchButton:focus, #portal-personaltools-wrapper .configlets a.searchButton:focus, #portal-personaltools-wrapper .formTabs a.searchButton:focus, #portal-personaltools-wrapper .nav a.link-parent:focus, #portal-personaltools-wrapper .contentViews a.link-parent:focus, #portal-personaltools-wrapper .configlets a.link-parent:focus, #portal-personaltools-wrapper .formTabs a.link-parent:focus {
     background-color: #BB3423;
   }
 
   /* capçalera*/
-  /* line 143, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 148, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai:before {
     position: absolute;
     border-top: 1px solid #ccc;
   }
 
-  /* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 149, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai h1 {
     font-size: 138.461538%;
     line-height: 24px;
     margin-top: 5px !important;
   }
 
-  /* line 145, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 150, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai h1 a {
     display: block;
   }
 
-  /* line 146, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 151, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header {
     background: #f7f7f7 !important;
   }
 
-  /* line 147, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
     margin-top: 12px !important;
   }
 
-  /* line 148, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 153, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines {
     margin: 0 0 9px !important;
+    text-align: right;
   }
 
-  /* line 149, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 154, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header h1.pull-left {
     margin-bottom: 7px !important;
   }
 
-  /* line 150, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 155, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header h1.pull-left img {
     margin-top: -3px;
     height: 46px;
   }
 
-  /* line 151, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 156, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header .container > div.clearfix, #portal-header .container > div.visualClear, #portal-header .portaltype-packet .estudis .container > div.caixa3, .portaltype-packet .estudis #portal-header .container > div.caixa3 {
     margin: 0 !important;
   }
 
-  /* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 157, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
     margin-top: 13px;
     margin-right: 0 !important;
     padding: 7px 10px;
   }
 
-  /* line 153, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines input {
     width: 65%;
   }
 
-  /* line 154, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 159, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines button {
     width: 34%;
     line-height: 20px;
   }
 
-  /* line 155, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 160, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #eines a {
+    margin: 0 0 20px 0!important;
+  }
+
+  /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image {
     height: 40px !important;
   }
 
-  /* line 156, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 164, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image {
     height: 30px !important;
     margin-left: 55px !important;
   }
-  /* line 157, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 165, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image:before {
     top: 25px;
     width: 45px;
@@ -7299,13 +7583,13 @@ button.pfg-draft-save .badge,
   }
 
   /* breadcrumbs*/
-  /* line 160, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 168, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-breadcrumbs {
     display: none;
   }
 
   /* contingut*/
-  /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 171, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   [class*="span"], .cella,
   .row-fluid [class*="span"],
   #dashboard [class*="span"],
@@ -7322,48 +7606,43 @@ button.pfg-draft-save .badge,
   }
 
   /* peu i prepeu */
-  /* line 170, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 178, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .llistatLogos {
     margin: 1em auto !important;
   }
 
-  /* line 171, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 179, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu {
     font-size: 84.613846% !important;
   }
 
-  /* line 172, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 180, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu .container {
     padding-top: 5px;
   }
 
-  /* line 173, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #peu .span4, #peu .w1\3a 3 {
-    display: none;
-  }
-
-  /* line 174, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 182, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .img_blank {
     margin-top: -1px;
   }
 
-  /* line 177, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 185, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
 
-  /* line 179, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .page-header h1 small {
     display: block;
     line-height: 18px;
   }
 
-  /* line 181, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 189, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   input[type="checkbox"], input[type="radio"] {
     border: 1px solid #ccc;
   }
 
-  /* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 191, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-group > label {
     float: none;
     width: auto;
@@ -7371,23 +7650,23 @@ button.pfg-draft-save .badge,
     text-align: left;
   }
 
-  /* line 185, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 193, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .controls {
     margin-left: 0;
   }
 
-  /* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 195, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-list {
     padding-top: 0;
   }
 
-  /* line 189, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 197, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .form-actions {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  /* line 191, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 199, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal, .pb-ajax {
     top: 10px;
     left: 10px;
@@ -7395,24 +7674,29 @@ button.pfg-draft-save .badge,
     max-width: 100%;
   }
 
-  /* line 192, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 200, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-header .close, .pb-ajax .documentFirstHeading .close, .pb-ajax > div > h2 .close {
     padding: 10px;
     margin: -10px;
   }
 
-  /* line 193, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 201, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-body, .pb-ajax #content-core, .pb-ajax .documentDescription, .pb-ajax #content-history {
     max-height: 280px;
   }
 
-  /* line 198, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 206, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .carousel-caption {
     position: static;
   }
+
+  /* line 208, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .btn-group a {
+    float: left;
+  }
 }
 @media only screen and (max-width: 639px) and (orientation: landscape) {
-  /* line 195, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 203, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-body, .pb-ajax #content-core, .pb-ajax .documentDescription, .pb-ajax #content-history {
     max-height: 160px;
   }
@@ -7895,6 +8179,17 @@ button.pfg-draft-save .badge,
   textarea.span1,
   .uneditable-input.span1 {
     width: 40px;
+  }
+
+  /* line 20, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
+  .span9 .row-fluid > [class*=span3]:nth-child(2n+1), .w3\3a 4 .row-fluid > [class*=span3]:nth-child(2n+1), .span9 #dashboard > [class*=span3]:nth-child(2n+1), .w3\3a 4 #dashboard > [class*=span3]:nth-child(2n+1), .span9 .fila > [class*=span3]:nth-child(2n+1), .w3\3a 4 .fila > [class*=span3]:nth-child(2n+1), .span9 .template-atct_album_view #content-core > [class*=span3]:nth-child(2n+1), .template-atct_album_view .span9 #content-core > [class*=span3]:nth-child(2n+1), .w3\3a 4 .template-atct_album_view #content-core > [class*=span3]:nth-child(2n+1), .template-atct_album_view .w3\3a 4 #content-core > [class*=span3]:nth-child(2n+1) {
+    clear: both;
+    margin-left: 0;
+  }
+
+  /* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
+  .span9 .row-fluid .span3, .w3\3a 4 .row-fluid .span3, .span9 #dashboard .span3, .w3\3a 4 #dashboard .span3, .span9 .fila .span3, .w3\3a 4 .fila .span3, .span9 .template-atct_album_view #content-core .span3, .template-atct_album_view .span9 #content-core .span3, .w3\3a 4 .template-atct_album_view #content-core .span3, .template-atct_album_view .w3\3a 4 #content-core .span3, .span9 .row-fluid #dashboard-portlets1, .w3\3a 4 .row-fluid #dashboard-portlets1, .span9 #dashboard #dashboard-portlets1, .w3\3a 4 #dashboard #dashboard-portlets1, .span9 .fila #dashboard-portlets1, .w3\3a 4 .fila #dashboard-portlets1, .span9 .template-atct_album_view #content-core #dashboard-portlets1, .template-atct_album_view .span9 #content-core #dashboard-portlets1, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets1, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets1, .span9 .row-fluid #dashboard-portlets2, .w3\3a 4 .row-fluid #dashboard-portlets2, .span9 #dashboard #dashboard-portlets2, .w3\3a 4 #dashboard #dashboard-portlets2, .span9 .fila #dashboard-portlets2, .w3\3a 4 .fila #dashboard-portlets2, .span9 .template-atct_album_view #content-core #dashboard-portlets2, .template-atct_album_view .span9 #content-core #dashboard-portlets2, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets2, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets2, .span9 .row-fluid #dashboard-portlets3, .w3\3a 4 .row-fluid #dashboard-portlets3, .span9 #dashboard #dashboard-portlets3, .w3\3a 4 #dashboard #dashboard-portlets3, .span9 .fila #dashboard-portlets3, .w3\3a 4 .fila #dashboard-portlets3, .span9 .template-atct_album_view #content-core #dashboard-portlets3, .template-atct_album_view .span9 #content-core #dashboard-portlets3, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets3, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets3, .span9 .row-fluid #dashboard-portlets4, .w3\3a 4 .row-fluid #dashboard-portlets4, .span9 #dashboard #dashboard-portlets4, .w3\3a 4 #dashboard #dashboard-portlets4, .span9 .fila #dashboard-portlets4, .w3\3a 4 .fila #dashboard-portlets4, .span9 .template-atct_album_view #content-core #dashboard-portlets4, .template-atct_album_view .span9 #content-core #dashboard-portlets4, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets4, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets4, .span9 .row-fluid .w1\3a 4, .w3\3a 4 .row-fluid .w1\3a 4, .span9 #dashboard .w1\3a 4, .w3\3a 4 #dashboard .w1\3a 4, .span9 .fila .w1\3a 4, .w3\3a 4 .fila .w1\3a 4, .span9 .template-atct_album_view #content-core .w1\3a 4, .template-atct_album_view .span9 #content-core .w1\3a 4, .w3\3a 4 .template-atct_album_view #content-core .w1\3a 4, .template-atct_album_view .w3\3a 4 #content-core .w1\3a 4, .span9 .row-fluid .photoAlbumEntry, .w3\3a 4 .row-fluid .photoAlbumEntry, .span9 #dashboard .photoAlbumEntry, .w3\3a 4 #dashboard .photoAlbumEntry, .span9 .fila .photoAlbumEntry, .w3\3a 4 .fila .photoAlbumEntry, .span9 .template-atct_album_view #content-core .photoAlbumEntry, .template-atct_album_view .span9 #content-core .photoAlbumEntry, .w3\3a 4 .template-atct_album_view #content-core .photoAlbumEntry, .template-atct_album_view .w3\3a 4 #content-core .photoAlbumEntry {
+    width: 48% !important;
   }
 }
 /* No es fa servir
@@ -8412,7 +8707,7 @@ button.pfg-draft-save .badge,
     display: none !important;
   }
 }
-/*!
+/*
  * Genweb UPC v4.0
  *
  * Copyright 2012-2013 UPC
@@ -8460,7 +8755,7 @@ button.pfg-draft-save .badge,
   width: 26px;
   height: 26px;
   border: 0.1em solid #6ba700;
-  margin: -.55em 0;
+  margin: -0.55em 0;
   position: relative;
   image-rendering: optimizeQuality;
   -ms-interpolation-mode: bicubic;
@@ -8469,13 +8764,13 @@ button.pfg-draft-save .badge,
 }
 
 /* line 40, ../scss/_base.scss */
-.dropdown-menu li > a.btn-danger:hover, .dropdown-menu .active > a.btn-danger:hover, .dropdown-menu .selected > a.btn-danger:hover {
+.dropdown-menu li > a.btn-danger:hover, .dropdown-menu .active > a.btn-danger:hover, .dropdown-menu .selected > a.btn-danger:hover, .dropdown-menu .contentViews .selected > a.btn-danger:hover, .contentViews .dropdown-menu .selected > a.btn-danger:hover, .dropdown-menu .contentViews .selected:hover > a.btn-danger:hover, .contentViews .dropdown-menu .selected:hover > a.btn-danger:hover {
   background-color: #BD362F;
 }
 
 /* line 41, ../scss/_base.scss */
 .userScreen, .userTablet, .userMobile, .userGenweb {
-  background: url('/++genweb++static/images/sprite_usuari.png?1384859287') transparent no-repeat center top;
+  background: url('/++genweb++static/images/sprite_usuari.png?1354788544') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em;
 }
@@ -8533,7 +8828,7 @@ button.pfg-draft-save .badge,
 
 /* line 52, ../scss/_base.scss */
 #portal-personaltools-wrapper .nav, #portal-personaltools-wrapper .contentViews, #portal-personaltools-wrapper .configlets, #portal-personaltools-wrapper .formTabs {
-  margin: 0 !important;
+  margin: 0!important;
 }
 
 /* line 53, ../scss/_base.scss */
@@ -8579,7 +8874,7 @@ button.pfg-draft-save .badge,
 /*ajusta imatges icos en menús per a hovers */
 /* line 68, ../scss/_base.scss */
 .dropdown-menu a:hover [class^="icon-"], .dropdown-menu a:hover #category.documentByLine:before, .dropdown-menu a:hover .tileFooter:before, .dropdown-menu a:hover [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/gh-w.png?1384859287') !important;
+  background-image: url('/++genweb++static/images/gh-w.png?1354788544') !important;
 }
 
 /* line 75, ../scss/_base.scss */
@@ -8697,7 +8992,7 @@ button.pfg-draft-save .badge,
 
 /* line 125, ../scss/_base.scss */
 .header-image {
-  background-image: url('/++genweb++static/images/capcalera.jpg?1384859287');
+  background-image: url('/++genweb++static/images/capcalera.jpg?1354788544');
   margin-top: 0 !important;
   height: 65px;
   overflow: hidden;
@@ -8870,7 +9165,7 @@ button.pfg-draft-save .badge,
   font-size: 52px;
   position: relative;
   line-height: 0;
-  top: -.01em;
+  top: -0.01em;
   left: -1px;
   color: #4d6573;
 }
@@ -8890,7 +9185,7 @@ button.pfg-draft-save .badge,
   font-size: 13px;
   position: relative;
   line-height: 0;
-  top: -.35em;
+  top: -0.35em;
   padding: 0 2px 0 3px;
 }
 
@@ -8919,7 +9214,7 @@ button.pfg-draft-save .badge,
 }
 /* line 226, ../scss/_base.scss */
 #canvia-vista a {
-  background: url('/++genweb++static/images/vistabg.png?1384859287') #666666;
+  background: url('/++genweb++static/images/vistabg.png?1354788544') #666666;
   text-align: center;
   -webkit-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
@@ -9072,7 +9367,11 @@ button.pfg-draft-save .badge,
 /* line 59, ../scss/_nav.scss */
 .subnavbar .nav-list a:hover:after,
 .subnavbar .nav-list .active a:after,
-.subnavbar .nav-list .selected a:after {
+.subnavbar .nav-list .selected a:after,
+.subnavbar .nav-list .contentViews .selected a:after,
+.contentViews .subnavbar .nav-list .selected a:after,
+.subnavbar .nav-list .contentViews .selected:hover a:after,
+.contentViews .subnavbar .nav-list .selected:hover a:after {
   content: "";
   position: absolute;
   background-color: #007bc0;
@@ -9087,34 +9386,34 @@ button.pfg-draft-save .badge,
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   right: 7px;
   top: 8px;
-  background-image: url('/++genweb++static/images/gh-w.png?1384859287');
+  background-image: url('/++genweb++static/images/gh-w.png?1354788544');
   background-position: -455px -71px;
   background-repeat: no-repeat;
   width: 17px;
   height: 17px;
 }
 /* line 75, ../scss/_nav.scss */
-.subnavbar .nav-list a.state-private:hover:after, .subnavbar .nav-list a#workflow-transition-hide:hover:after, .subnavbar .nav-list .active .state-private:after, .subnavbar .nav-list .selected .state-private:after, .subnavbar .nav-list .active #workflow-transition-hide:after, .subnavbar .nav-list .selected #workflow-transition-hide:after {
+.subnavbar .nav-list a.state-private:hover:after, .subnavbar .nav-list a#workflow-transition-hide:hover:after, .subnavbar .nav-list .active .state-private:after, .subnavbar .nav-list .selected .state-private:after, .subnavbar .nav-list .contentViews .selected .state-private:after, .contentViews .subnavbar .nav-list .selected .state-private:after, .subnavbar .nav-list .contentViews .selected:hover .state-private:after, .contentViews .subnavbar .nav-list .selected:hover .state-private:after, .subnavbar .nav-list .active #workflow-transition-hide:after, .subnavbar .nav-list .selected #workflow-transition-hide:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-hide:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-hide:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-hide:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-hide:after {
   background-color: #a62e1f;
 }
 /* line 76, ../scss/_nav.scss */
-.subnavbar .nav-list a.state-draft:hover:after, .subnavbar .nav-list a#workflow-transition-reject:hover:after, .subnavbar .nav-list a#workflow-transition-retiraaesborrany:hover:after, .subnavbar .nav-list a#workflow-transition-show:hover:after, .subnavbar .nav-list .active .state-draft:after, .subnavbar .nav-list .selected .state-draft:after, .subnavbar .nav-list .active #workflow-transition-reject:after, .subnavbar .nav-list .selected #workflow-transition-reject:after, .subnavbar .nav-list .active #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .selected #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .active #workflow-transition-show:after, .subnavbar .nav-list .selected #workflow-transition-show:after {
+.subnavbar .nav-list a.state-draft:hover:after, .subnavbar .nav-list a#workflow-transition-reject:hover:after, .subnavbar .nav-list a#workflow-transition-retiraaesborrany:hover:after, .subnavbar .nav-list a#workflow-transition-show:hover:after, .subnavbar .nav-list .active .state-draft:after, .subnavbar .nav-list .selected .state-draft:after, .subnavbar .nav-list .contentViews .selected .state-draft:after, .contentViews .subnavbar .nav-list .selected .state-draft:after, .subnavbar .nav-list .contentViews .selected:hover .state-draft:after, .contentViews .subnavbar .nav-list .selected:hover .state-draft:after, .subnavbar .nav-list .active #workflow-transition-reject:after, .subnavbar .nav-list .selected #workflow-transition-reject:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-reject:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-reject:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-reject:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-reject:after, .subnavbar .nav-list .active #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .selected #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-retiraaesborrany:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-retiraaesborrany:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .active #workflow-transition-show:after, .subnavbar .nav-list .selected #workflow-transition-show:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-show:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-show:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-show:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-show:after {
   background-color: #72a31d;
 }
 /* line 77, ../scss/_nav.scss */
-.subnavbar .nav-list a.state-visible:hover:after, .subnavbar .nav-list .active .visible-draft:after, .subnavbar .nav-list .selected .visible-draft:after {
+.subnavbar .nav-list a.state-visible:hover:after, .subnavbar .nav-list .active .visible-draft:after, .subnavbar .nav-list .selected .visible-draft:after, .subnavbar .nav-list .contentViews .selected .visible-draft:after, .contentViews .subnavbar .nav-list .selected .visible-draft:after, .subnavbar .nav-list .contentViews .selected:hover .visible-draft:after, .contentViews .subnavbar .nav-list .selected:hover .visible-draft:after {
   background-color: #72a31d;
 }
 /* line 78, ../scss/_nav.scss */
-.subnavbar .nav-list a.state-pending:hover:after, .subnavbar .nav-list a#workflow-transition-submit:hover:after, .subnavbar .nav-list .active .state-pending:after, .subnavbar .nav-list .selected .state-pending:after, .subnavbar .nav-list .active #workflow-transition-submit:after, .subnavbar .nav-list .selected #workflow-transition-submit:after {
+.subnavbar .nav-list a.state-pending:hover:after, .subnavbar .nav-list a#workflow-transition-submit:hover:after, .subnavbar .nav-list .active .state-pending:after, .subnavbar .nav-list .selected .state-pending:after, .subnavbar .nav-list .contentViews .selected .state-pending:after, .contentViews .subnavbar .nav-list .selected .state-pending:after, .subnavbar .nav-list .contentViews .selected:hover .state-pending:after, .contentViews .subnavbar .nav-list .selected:hover .state-pending:after, .subnavbar .nav-list .active #workflow-transition-submit:after, .subnavbar .nav-list .selected #workflow-transition-submit:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-submit:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-submit:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-submit:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-submit:after {
   background-color: #df8505;
 }
 /* line 79, ../scss/_nav.scss */
-.subnavbar .nav-list a.state-intranet:hover:after, .subnavbar .nav-list a#workflow-transition-publishtointranet:hover:after, .subnavbar .nav-list a#workflow-transition-publicaalaintranet:hover:after, .subnavbar .nav-list a#workflow-transition-retracttointranet:hover:after, .subnavbar .nav-list a#workflow-transition-retiraalaintranet:hover:after, .subnavbar .nav-list .active .state-intranet:after, .subnavbar .nav-list .selected .state-intranet:after, .subnavbar .nav-list .active #workflow-transition-publishtointranet:after, .subnavbar .nav-list .selected #workflow-transition-publishtointranet:after, .subnavbar .nav-list .active #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .selected #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .active #workflow-transition-retracttointranet:after, .subnavbar .nav-list .selected #workflow-transition-retracttointranet:after, .subnavbar .nav-list .active #workflow-transition-retiraalaintranet:after, .subnavbar .nav-list .selected #workflow-transition-retiraalaintranet:after {
+.subnavbar .nav-list a.state-intranet:hover:after, .subnavbar .nav-list a#workflow-transition-publishtointranet:hover:after, .subnavbar .nav-list a#workflow-transition-publicaalaintranet:hover:after, .subnavbar .nav-list a#workflow-transition-retracttointranet:hover:after, .subnavbar .nav-list a#workflow-transition-retiraalaintranet:hover:after, .subnavbar .nav-list .active .state-intranet:after, .subnavbar .nav-list .selected .state-intranet:after, .subnavbar .nav-list .contentViews .selected .state-intranet:after, .contentViews .subnavbar .nav-list .selected .state-intranet:after, .subnavbar .nav-list .contentViews .selected:hover .state-intranet:after, .contentViews .subnavbar .nav-list .selected:hover .state-intranet:after, .subnavbar .nav-list .active #workflow-transition-publishtointranet:after, .subnavbar .nav-list .selected #workflow-transition-publishtointranet:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-publishtointranet:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-publishtointranet:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-publishtointranet:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-publishtointranet:after, .subnavbar .nav-list .active #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .selected #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-publicaalaintranet:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-publicaalaintranet:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .active #workflow-transition-retracttointranet:after, .subnavbar .nav-list .selected #workflow-transition-retracttointranet:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-retracttointranet:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-retracttointranet:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-retracttointranet:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-retracttointranet:after, .subnavbar .nav-list .active #workflow-transition-retiraalaintranet:after, .subnavbar .nav-list .selected #workflow-transition-retiraalaintranet:after, .subnavbar .nav-list .contentViews .selected #workflow-transition-retiraalaintranet:after, .contentViews .subnavbar .nav-list .selected #workflow-transition-retiraalaintranet:after, .subnavbar .nav-list .contentViews .selected:hover #workflow-transition-retiraalaintranet:after, .contentViews .subnavbar .nav-list .selected:hover #workflow-transition-retiraalaintranet:after {
   background-color: #8952ab;
 }
 /* line 80, ../scss/_nav.scss */
-.subnavbar .nav-list .active a, .subnavbar .nav-list .selected a {
+.subnavbar .nav-list .active a, .subnavbar .nav-list .selected a, .subnavbar .nav-list .contentViews .selected a, .contentViews .subnavbar .nav-list .selected a, .subnavbar .nav-list .contentViews .selected:hover a, .contentViews .subnavbar .nav-list .selected:hover a {
   background: #d4d4d4;
   color: #222222;
 }
@@ -9166,7 +9465,7 @@ button.pfg-draft-save .badge,
   border-radius: 4px;
 }
 /* line 101, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul, .subnavbar .nav-list .selected ul {
+.subnavbar .nav-list .active ul, .subnavbar .nav-list .selected ul, .subnavbar .nav-list .contentViews .selected ul, .contentViews .subnavbar .nav-list .selected ul, .subnavbar .nav-list .contentViews .selected:hover ul, .contentViews .subnavbar .nav-list .selected:hover ul {
   margin-left: -15px !important;
   margin-right: -15px;
   border-top: 1px solid #b2b2b2;
@@ -9177,7 +9476,7 @@ button.pfg-draft-save .badge,
   box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.25);
 }
 /* line 108, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a, .subnavbar .nav-list .selected ul a {
+.subnavbar .nav-list .active ul a, .subnavbar .nav-list .selected ul a, .subnavbar .nav-list .contentViews .selected ul a, .contentViews .subnavbar .nav-list .selected ul a, .subnavbar .nav-list .contentViews .selected:hover ul a, .contentViews .subnavbar .nav-list .selected:hover ul a {
   border-top: 0 !important;
   font-size: 12px;
   font-weight: normal;
@@ -9195,52 +9494,52 @@ button.pfg-draft-save .badge,
   border-radius: 0 !important;
 }
 /* line 120, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a:hover, .subnavbar .nav-list .selected ul a:hover {
+.subnavbar .nav-list .active ul a:hover, .subnavbar .nav-list .selected ul a:hover, .subnavbar .nav-list .contentViews .selected ul a:hover, .contentViews .subnavbar .nav-list .selected ul a:hover, .subnavbar .nav-list .contentViews .selected:hover ul a:hover, .contentViews .subnavbar .nav-list .selected:hover ul a:hover {
   background-color: #e5f6ff !important;
 }
 /* line 121, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.active, .subnavbar .nav-list .selected ul a.active, .subnavbar .nav-list .active ul a.selected, .subnavbar .nav-list .selected ul a.selected {
+.subnavbar .nav-list .active ul a.active, .subnavbar .nav-list .selected ul a.active, .subnavbar .nav-list .contentViews .selected ul a.active, .contentViews .subnavbar .nav-list .selected ul a.active, .subnavbar .nav-list .contentViews .selected:hover ul a.active, .contentViews .subnavbar .nav-list .selected:hover ul a.active, .subnavbar .nav-list .active ul a.selected, .subnavbar .nav-list .selected ul a.selected, .subnavbar .nav-list .contentViews .selected ul a.selected, .contentViews .subnavbar .nav-list .selected ul a.selected, .subnavbar .nav-list .contentViews .selected:hover ul a.selected, .contentViews .subnavbar .nav-list .selected:hover ul a.selected, .subnavbar .nav-list .active ul .contentViews a.selected, .contentViews .subnavbar .nav-list .active ul a.selected, .subnavbar .nav-list .selected ul .contentViews a.selected, .contentViews .subnavbar .nav-list .selected ul a.selected, .subnavbar .nav-list .contentViews .selected ul a.selected, .contentViews .subnavbar .nav-list .selected ul a.selected, .subnavbar .nav-list .contentViews .selected:hover ul a.selected, .contentViews .subnavbar .nav-list .selected:hover ul a.selected, .subnavbar .nav-list .active ul .contentViews a.selected:hover, .contentViews .subnavbar .nav-list .active ul a.selected:hover, .subnavbar .nav-list .selected ul .contentViews a.selected:hover, .contentViews .subnavbar .nav-list .selected ul a.selected:hover, .subnavbar .nav-list .contentViews .selected ul a.selected:hover, .contentViews .subnavbar .nav-list .selected ul a.selected:hover, .subnavbar .nav-list .contentViews .selected:hover ul a.selected:hover, .contentViews .subnavbar .nav-list .selected:hover ul a.selected:hover {
   background-color: #f2f8fc !important;
   color: #222222;
 }
 /* line 123, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected span:after {
+.subnavbar .nav-list .active ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected ul a.active[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.active[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .contentViews .selected ul a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .active ul .contentViews a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .active ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .selected ul .contentViews a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .contentViews .selected ul a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" contenttype-"].selected span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .active ul .contentViews a[class*=" contenttype-"].selected:hover span:after, .contentViews .subnavbar .nav-list .active ul a[class*=" contenttype-"].selected:hover span:after, .subnavbar .nav-list .selected ul .contentViews a[class*=" contenttype-"].selected:hover span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected:hover span:after, .subnavbar .nav-list .contentViews .selected ul a[class*=" contenttype-"].selected:hover span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected:hover span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" contenttype-"].selected:hover span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" contenttype-"].selected:hover span:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
   opacity: 100;
 }
 /* line 124, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.active span:before, .subnavbar .nav-list .selected ul a.active span:before, .subnavbar .nav-list .active ul a.selected span:before, .subnavbar .nav-list .selected ul a.selected span:before {
+.subnavbar .nav-list .active ul a.active span:before, .subnavbar .nav-list .selected ul a.active span:before, .subnavbar .nav-list .contentViews .selected ul a.active span:before, .contentViews .subnavbar .nav-list .selected ul a.active span:before, .subnavbar .nav-list .contentViews .selected:hover ul a.active span:before, .contentViews .subnavbar .nav-list .selected:hover ul a.active span:before, .subnavbar .nav-list .active ul a.selected span:before, .subnavbar .nav-list .selected ul a.selected span:before, .subnavbar .nav-list .contentViews .selected ul a.selected span:before, .contentViews .subnavbar .nav-list .selected ul a.selected span:before, .subnavbar .nav-list .contentViews .selected:hover ul a.selected span:before, .contentViews .subnavbar .nav-list .selected:hover ul a.selected span:before, .subnavbar .nav-list .active ul .contentViews a.selected span:before, .contentViews .subnavbar .nav-list .active ul a.selected span:before, .subnavbar .nav-list .selected ul .contentViews a.selected span:before, .contentViews .subnavbar .nav-list .selected ul a.selected span:before, .subnavbar .nav-list .contentViews .selected ul a.selected span:before, .contentViews .subnavbar .nav-list .selected ul a.selected span:before, .subnavbar .nav-list .contentViews .selected:hover ul a.selected span:before, .contentViews .subnavbar .nav-list .selected:hover ul a.selected span:before, .subnavbar .nav-list .active ul .contentViews a.selected:hover span:before, .contentViews .subnavbar .nav-list .active ul a.selected:hover span:before, .subnavbar .nav-list .selected ul .contentViews a.selected:hover span:before, .contentViews .subnavbar .nav-list .selected ul a.selected:hover span:before, .subnavbar .nav-list .contentViews .selected ul a.selected:hover span:before, .contentViews .subnavbar .nav-list .selected ul a.selected:hover span:before, .subnavbar .nav-list .contentViews .selected:hover ul a.selected:hover span:before, .contentViews .subnavbar .nav-list .selected:hover ul a.selected:hover span:before {
   font-size: 525%;
   top: -2px;
   left: 4px;
 }
 /* line 126, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.state-private, .subnavbar .nav-list .selected ul a.state-private, .subnavbar .nav-list .active ul a#workflow-transition-hide, .subnavbar .nav-list .selected ul a#workflow-transition-hide {
+.subnavbar .nav-list .active ul a.state-private, .subnavbar .nav-list .selected ul a.state-private, .subnavbar .nav-list .contentViews .selected ul a.state-private, .contentViews .subnavbar .nav-list .selected ul a.state-private, .subnavbar .nav-list .contentViews .selected:hover ul a.state-private, .contentViews .subnavbar .nav-list .selected:hover ul a.state-private, .subnavbar .nav-list .active ul a#workflow-transition-hide, .subnavbar .nav-list .selected ul a#workflow-transition-hide, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-hide, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-hide, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-hide, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-hide {
   border-right: 3px solid #a62e1f;
   color: #a62e1f;
 }
 /* line 127, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.state-draft, .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .active ul a#workflow-transition-reject, .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .active ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .selected ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .active ul a#workflow-transition-show, .subnavbar .nav-list .selected ul a#workflow-transition-show, .subnavbar .nav-list .active ul a.state-visible, .subnavbar .nav-list .selected ul a.state-visible {
+.subnavbar .nav-list .active ul a.state-draft, .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .contentViews .selected ul a.state-draft, .contentViews .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .contentViews .selected:hover ul a.state-draft, .contentViews .subnavbar .nav-list .selected:hover ul a.state-draft, .subnavbar .nav-list .active ul a#workflow-transition-reject, .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-reject, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-reject, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-reject, .subnavbar .nav-list .active ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .selected ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-retiraaesborrany, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-retiraaesborrany, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .active ul a#workflow-transition-show, .subnavbar .nav-list .selected ul a#workflow-transition-show, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-show, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-show, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-show, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-show, .subnavbar .nav-list .active ul a.state-visible, .subnavbar .nav-list .selected ul a.state-visible, .subnavbar .nav-list .contentViews .selected ul a.state-visible, .contentViews .subnavbar .nav-list .selected ul a.state-visible, .subnavbar .nav-list .contentViews .selected:hover ul a.state-visible, .contentViews .subnavbar .nav-list .selected:hover ul a.state-visible {
   border-right: 3px solid #72a31d;
   color: #72a31d;
 }
 /* line 128, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.state-pending, .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .active ul a#workflow-transition-submit, .subnavbar .nav-list .selected ul a#workflow-transition-submit {
+.subnavbar .nav-list .active ul a.state-pending, .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .contentViews .selected ul a.state-pending, .contentViews .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .contentViews .selected:hover ul a.state-pending, .contentViews .subnavbar .nav-list .selected:hover ul a.state-pending, .subnavbar .nav-list .active ul a#workflow-transition-submit, .subnavbar .nav-list .selected ul a#workflow-transition-submit, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-submit, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-submit, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-submit, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-submit {
   border-right: 3px solid #df8505;
   color: #df8505;
 }
 /* line 129, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.state-intranet, .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .active ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .active ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .selected ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .active ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .selected ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .active ul a#workflow-transition-retiraalaintranet, .subnavbar .nav-list .selected ul a#workflow-transition-retiraalaintranet {
+.subnavbar .nav-list .active ul a.state-intranet, .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .contentViews .selected ul a.state-intranet, .contentViews .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .contentViews .selected:hover ul a.state-intranet, .contentViews .subnavbar .nav-list .selected:hover ul a.state-intranet, .subnavbar .nav-list .active ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-publishtointranet, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-publishtointranet, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .active ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .selected ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-publicaalaintranet, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-publicaalaintranet, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .active ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .selected ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-retracttointranet, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-retracttointranet, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .active ul a#workflow-transition-retiraalaintranet, .subnavbar .nav-list .selected ul a#workflow-transition-retiraalaintranet, .subnavbar .nav-list .contentViews .selected ul a#workflow-transition-retiraalaintranet, .contentViews .subnavbar .nav-list .selected ul a#workflow-transition-retiraalaintranet, .subnavbar .nav-list .contentViews .selected:hover ul a#workflow-transition-retiraalaintranet, .contentViews .subnavbar .nav-list .selected:hover ul a#workflow-transition-retiraalaintranet {
   border-right: 3px solid #8952ab;
   color: #8952ab;
 }
 /* line 131, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a[class^="state-"]:hover, .subnavbar .nav-list .selected ul a[class^="state-"]:hover, .subnavbar .nav-list .active ul a[class*=" state-"]:hover, .subnavbar .nav-list .selected ul a[class*=" state-"]:hover {
+.subnavbar .nav-list .active ul a[class^="state-"]:hover, .subnavbar .nav-list .selected ul a[class^="state-"]:hover, .subnavbar .nav-list .contentViews .selected ul a[class^="state-"]:hover, .contentViews .subnavbar .nav-list .selected ul a[class^="state-"]:hover, .subnavbar .nav-list .contentViews .selected:hover ul a[class^="state-"]:hover, .contentViews .subnavbar .nav-list .selected:hover ul a[class^="state-"]:hover, .subnavbar .nav-list .active ul a[class*=" state-"]:hover, .subnavbar .nav-list .selected ul a[class*=" state-"]:hover, .subnavbar .nav-list .contentViews .selected ul a[class*=" state-"]:hover, .contentViews .subnavbar .nav-list .selected ul a[class*=" state-"]:hover, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" state-"]:hover, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" state-"]:hover {
   color: black;
   text-decoration: none;
 }
 /* line 135, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a span, .subnavbar .nav-list .selected ul a span {
+.subnavbar .nav-list .active ul a span, .subnavbar .nav-list .selected ul a span, .subnavbar .nav-list .contentViews .selected ul a span, .contentViews .subnavbar .nav-list .selected ul a span, .subnavbar .nav-list .contentViews .selected:hover ul a span, .contentViews .subnavbar .nav-list .selected:hover ul a span {
   border-top: 1px solid #d9d9d9 !important;
   padding: 8px 0 8px 12px !important;
   display: block;
@@ -9249,7 +9548,7 @@ button.pfg-draft-save .badge,
   line-height: 15px;
 }
 /* line 142, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a span:before, .subnavbar .nav-list .selected ul a span:before {
+.subnavbar .nav-list .active ul a span:before, .subnavbar .nav-list .selected ul a span:before, .subnavbar .nav-list .contentViews .selected ul a span:before, .contentViews .subnavbar .nav-list .selected ul a span:before, .subnavbar .nav-list .contentViews .selected:hover ul a span:before, .contentViews .subnavbar .nav-list .selected:hover ul a span:before {
   content: ".";
   color: #007bc0;
   top: 4px;
@@ -9259,8 +9558,8 @@ button.pfg-draft-save .badge,
   line-height: 0 !important;
 }
 /* line 154, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
-  background-image: url('/++genweb++static/images/gh.png?1384859287');
+.subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected ul a[class^="contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class^="contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected ul a[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .contentViews .selected:hover ul a[class*=" contenttype-"] span:after, .contentViews .subnavbar .nav-list .selected:hover ul a[class*=" contenttype-"] span:after {
+  background-image: url('/++genweb++static/images/gh.png?1354788544');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -9274,80 +9573,80 @@ button.pfg-draft-save .badge,
   position: absolute;
 }
 /* line 167, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-folder span:after, .subnavbar .nav-list .selected ul a.contenttype-folder span:after {
-  background-position: -384px 	-120px;
+.subnavbar .nav-list .active ul a.contenttype-folder span:after, .subnavbar .nav-list .selected ul a.contenttype-folder span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-folder span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-folder span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-folder span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-folder span:after {
+  background-position: -384px -120px;
 }
 /* line 169, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-page span:after, .subnavbar .nav-list .selected ul a.contenttype-page span:after, .subnavbar .nav-list .active ul a.contenttype-document span:after, .subnavbar .nav-list .selected ul a.contenttype-document span:after {
-  background-position: -24px 	-24px;
+.subnavbar .nav-list .active ul a.contenttype-page span:after, .subnavbar .nav-list .selected ul a.contenttype-page span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-page span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-page span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-page span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-page span:after, .subnavbar .nav-list .active ul a.contenttype-document span:after, .subnavbar .nav-list .selected ul a.contenttype-document span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-document span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-document span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-document span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-document span:after {
+  background-position: -24px -24px;
 }
 /* line 170, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-link span:after, .subnavbar .nav-list .selected ul a.contenttype-link span:after {
-  background-position: -72px 	-168px;
+.subnavbar .nav-list .active ul a.contenttype-link span:after, .subnavbar .nav-list .selected ul a.contenttype-link span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-link span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-link span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-link span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-link span:after {
+  background-position: -72px -168px;
 }
 /* line 172, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-windowztool span:after, .subnavbar .nav-list .selected ul a.contenttype-windowztool span:after, .subnavbar .nav-list .active ul a.contenttype-window span:after, .subnavbar .nav-list .selected ul a.contenttype-window span:after {
-  background-position: -97px 	-168px;
+.subnavbar .nav-list .active ul a.contenttype-windowztool span:after, .subnavbar .nav-list .selected ul a.contenttype-windowztool span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-windowztool span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-windowztool span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-windowztool span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-windowztool span:after, .subnavbar .nav-list .active ul a.contenttype-window span:after, .subnavbar .nav-list .selected ul a.contenttype-window span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-window span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-window span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-window span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-window span:after {
+  background-position: -97px -168px;
 }
 /* line 174, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .selected ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .active ul a.contenttype-banner span:after, .subnavbar .nav-list .selected ul a.contenttype-banner span:after {
-  background-position: -313px	-25px;
+.subnavbar .nav-list .active ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .selected ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-bannercontainer span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-bannercontainer span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .active ul a.contenttype-banner span:after, .subnavbar .nav-list .selected ul a.contenttype-banner span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-banner span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-banner span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-banner span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-banner span:after {
+  background-position: -313px -25px;
 }
 /* line 175, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-topic span:after, .subnavbar .nav-list .selected ul a.contenttype-topic span:after {
-  background-position: -72px 	-192px;
+.subnavbar .nav-list .active ul a.contenttype-topic span:after, .subnavbar .nav-list .selected ul a.contenttype-topic span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-topic span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-topic span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-topic span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-topic span:after {
+  background-position: -72px -192px;
 }
 /* line 176, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-file span:after, .subnavbar .nav-list .selected ul a.contenttype-file span:after {
-  background-position: -167px	-168px;
+.subnavbar .nav-list .active ul a.contenttype-file span:after, .subnavbar .nav-list .selected ul a.contenttype-file span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-file span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-file span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-file span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-file span:after {
+  background-position: -167px -168px;
 }
 /* line 177, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-image span:after, .subnavbar .nav-list .selected ul a.contenttype-image span:after {
-  background-position: -457px	-49px;
+.subnavbar .nav-list .active ul a.contenttype-image span:after, .subnavbar .nav-list .selected ul a.contenttype-image span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-image span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-image span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-image span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-image span:after {
+  background-position: -457px -49px;
 }
 /* line 179, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-logos_container span:after, .subnavbar .nav-list .selected ul a.contenttype-logos_container span:after, .subnavbar .nav-list .active ul a.contenttype-logos_footer span:after, .subnavbar .nav-list .selected ul a.contenttype-logos_footer span:after {
-  background-position: -143px 	-168px;
+.subnavbar .nav-list .active ul a.contenttype-logos_container span:after, .subnavbar .nav-list .selected ul a.contenttype-logos_container span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-logos_container span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-logos_container span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-logos_container span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-logos_container span:after, .subnavbar .nav-list .active ul a.contenttype-logos_footer span:after, .subnavbar .nav-list .selected ul a.contenttype-logos_footer span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-logos_footer span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-logos_footer span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-logos_footer span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-logos_footer span:after {
+  background-position: -143px -168px;
 }
 /* line 181, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .selected ul a.contenttype-plonepopoll span:after {
-  background-position: -47px		-193px;
+.subnavbar .nav-list .active ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .selected ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-plonepopoll span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-plonepopoll span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-plonepopoll span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-plonepopoll span:after {
+  background-position: -47px -193px;
 }
 /* line 182, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-event span:after, .subnavbar .nav-list .selected ul a.contenttype-event span:after {
-  background-position: -191px 	-120px;
+.subnavbar .nav-list .active ul a.contenttype-event span:after, .subnavbar .nav-list .selected ul a.contenttype-event span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-event span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-event span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-event span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-event span:after {
+  background-position: -191px -120px;
 }
 /* line 183, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-news-item span:after, .subnavbar .nav-list .selected ul a.contenttype-news-item span:after {
-  background-position: -24px 	-168px;
+.subnavbar .nav-list .active ul a.contenttype-news-item span:after, .subnavbar .nav-list .selected ul a.contenttype-news-item span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-news-item span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-news-item span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-news-item span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-news-item span:after {
+  background-position: -24px -168px;
 }
 /* line 184, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-packet span:after, .subnavbar .nav-list .selected ul a.contenttype-packet span:after {
-  background-position: -47px 	-168px;
+.subnavbar .nav-list .active ul a.contenttype-packet span:after, .subnavbar .nav-list .selected ul a.contenttype-packet span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-packet span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-packet span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-packet span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-packet span:after {
+  background-position: -47px -168px;
 }
 /* line 185, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-collage span:after, .subnavbar .nav-list .selected ul a.contenttype-collage span:after {
-  background-position: -216px 	-168px;
+.subnavbar .nav-list .active ul a.contenttype-collage span:after, .subnavbar .nav-list .selected ul a.contenttype-collage span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-collage span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-collage span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-collage span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-collage span:after {
+  background-position: -216px -168px;
 }
 /* line 186, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-collection span:after, .subnavbar .nav-list .selected ul a.contenttype-collection span:after {
-  background-position: -240px 	-168px;
+.subnavbar .nav-list .active ul a.contenttype-collection span:after, .subnavbar .nav-list .selected ul a.contenttype-collection span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-collection span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-collection span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-collection span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-collection span:after {
+  background-position: -240px -168px;
 }
 /* line 187, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-survey span:after, .subnavbar .nav-list .selected ul a.contenttype-survey span:after {
-  background-position: -265px 	-23px;
+.subnavbar .nav-list .active ul a.contenttype-survey span:after, .subnavbar .nav-list .selected ul a.contenttype-survey span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-survey span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-survey span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-survey span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-survey span:after {
+  background-position: -265px -23px;
 }
 /* line 188, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a.contenttype-formfolder span:after, .subnavbar .nav-list .selected ul a.contenttype-formfolder span:after {
-  background-position: -144px 	-72px;
+.subnavbar .nav-list .active ul a.contenttype-formfolder span:after, .subnavbar .nav-list .selected ul a.contenttype-formfolder span:after, .subnavbar .nav-list .contentViews .selected ul a.contenttype-formfolder span:after, .contentViews .subnavbar .nav-list .selected ul a.contenttype-formfolder span:after, .subnavbar .nav-list .contentViews .selected:hover ul a.contenttype-formfolder span:after, .contentViews .subnavbar .nav-list .selected:hover ul a.contenttype-formfolder span:after {
+  background-position: -144px -72px;
 }
 /* line 190, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul a:hover span:after, .subnavbar .nav-list .selected ul a:hover span:after {
+.subnavbar .nav-list .active ul a:hover span:after, .subnavbar .nav-list .selected ul a:hover span:after, .subnavbar .nav-list .contentViews .selected ul a:hover span:after, .contentViews .subnavbar .nav-list .selected ul a:hover span:after, .subnavbar .nav-list .contentViews .selected:hover ul a:hover span:after, .contentViews .subnavbar .nav-list .selected:hover ul a:hover span:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
   opacity: 100;
 }
 /* line 192, ../scss/_nav.scss */
-.subnavbar .nav-list .active ul li:first-child a span, .subnavbar .nav-list .selected ul li:first-child a span {
+.subnavbar .nav-list .active ul li:first-child a span, .subnavbar .nav-list .selected ul li:first-child a span, .subnavbar .nav-list .contentViews .selected ul li:first-child a span, .contentViews .subnavbar .nav-list .selected ul li:first-child a span, .subnavbar .nav-list .contentViews .selected:hover ul li:first-child a span, .contentViews .subnavbar .nav-list .selected:hover ul li:first-child a span {
   border-top: 0 !important;
 }
 
@@ -9358,7 +9657,7 @@ button.pfg-draft-save .badge,
 
 /* line 204, ../scss/_nav.scss */
 html * .dropdown-menu a:hover .img_blank {
-  content: url('/++genweb++static/images/blank_blanc.png?1384859287');
+  content: url('/++genweb++static/images/blank_blanc.png?1354788544');
   width: 10px;
   height: 10px;
 }
@@ -9411,7 +9710,7 @@ html * .dropdown-menu a:hover .img_blank {
 }
 /* line 244, ../scss/_nav.scss */
 #listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-folder_tabular_view .listing a[class^="contenttype-"]:before, .template-folder_tabular_view .listing a[class*=" contenttype-"]:before {
-  background-image: url('/++genweb++static/images/gh.png?1384859287');
+  background-image: url('/++genweb++static/images/gh.png?1354788544');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -9425,71 +9724,71 @@ html * .dropdown-menu a:hover .img_blank {
 }
 /* line 256, ../scss/_nav.scss */
 #listing-table a.contenttype-folder:before, .template-folder_tabular_view .listing a.contenttype-folder:before {
-  background-position: -384px 	-120px;
+  background-position: -384px -120px;
 }
 /* line 258, ../scss/_nav.scss */
 #listing-table a.contenttype-page:before, #listing-table a.contenttype-document:before, .template-folder_tabular_view .listing a.contenttype-page:before, .template-folder_tabular_view .listing a.contenttype-document:before {
-  background-position: -24px 	-24px;
+  background-position: -24px -24px;
 }
 /* line 259, ../scss/_nav.scss */
 #listing-table a.contenttype-link:before, .template-folder_tabular_view .listing a.contenttype-link:before {
-  background-position: -72px 	-168px;
+  background-position: -72px -168px;
 }
 /* line 262, ../scss/_nav.scss */
 #listing-table a.contenttype-windowztool:before, #listing-table a.contenttype-window:before, #listing-table a.contenttype-window:before, .template-folder_tabular_view .listing a.contenttype-windowztool:before, .template-folder_tabular_view .listing a.contenttype-window:before, .template-folder_tabular_view .listing a.contenttype-window:before {
-  background-position: -97px 	-168px;
+  background-position: -97px -168px;
 }
 /* line 264, ../scss/_nav.scss */
 #listing-table a.contenttype-bannercontainer:before, #listing-table a.contenttype-banner:before, .template-folder_tabular_view .listing a.contenttype-bannercontainer:before, .template-folder_tabular_view .listing a.contenttype-banner:before {
-  background-position: -313px	-25px;
+  background-position: -313px -25px;
 }
 /* line 266, ../scss/_nav.scss */
 #listing-table a.contenttype-logos_container:before, #listing-table a.contenttype-logos_footer:before, .template-folder_tabular_view .listing a.contenttype-logos_container:before, .template-folder_tabular_view .listing a.contenttype-logos_footer:before {
-  background-position: -143px 	-168px;
+  background-position: -143px -168px;
 }
 /* line 267, ../scss/_nav.scss */
 #listing-table a.contenttype-topic:before, .template-folder_tabular_view .listing a.contenttype-topic:before {
-  background-position: -72px 	-192px;
+  background-position: -72px -192px;
 }
 /* line 268, ../scss/_nav.scss */
 #listing-table a.contenttype-file:before, .template-folder_tabular_view .listing a.contenttype-file:before {
-  background-position: -167px	-168px;
+  background-position: -167px -168px;
 }
 /* line 269, ../scss/_nav.scss */
 #listing-table a.contenttype-image:before, .template-folder_tabular_view .listing a.contenttype-image:before {
-  background-position: -457px	-49px;
+  background-position: -457px -49px;
 }
 /* line 270, ../scss/_nav.scss */
 #listing-table a.contenttype-plonepopoll:before, .template-folder_tabular_view .listing a.contenttype-plonepopoll:before {
-  background-position: -47px		-193px;
+  background-position: -47px -193px;
 }
 /* line 271, ../scss/_nav.scss */
 #listing-table a.contenttype-event:before, .template-folder_tabular_view .listing a.contenttype-event:before {
-  background-position: -191px 	-120px;
+  background-position: -191px -120px;
 }
 /* line 272, ../scss/_nav.scss */
 #listing-table a.contenttype-news-item:before, .template-folder_tabular_view .listing a.contenttype-news-item:before {
-  background-position: -24px 	-168px;
+  background-position: -24px -168px;
 }
 /* line 273, ../scss/_nav.scss */
 #listing-table a.contenttype-packet:before, .template-folder_tabular_view .listing a.contenttype-packet:before {
-  background-position: -47px 	-168px;
+  background-position: -47px -168px;
 }
 /* line 274, ../scss/_nav.scss */
 #listing-table a.contenttype-collage:before, .template-folder_tabular_view .listing a.contenttype-collage:before {
-  background-position: -216px 	-168px;
+  background-position: -216px -168px;
 }
 /* line 275, ../scss/_nav.scss */
 #listing-table a.contenttype-collection:before, .template-folder_tabular_view .listing a.contenttype-collection:before {
-  background-position: -240px 	-168px;
+  background-position: -240px -168px;
 }
 /* line 276, ../scss/_nav.scss */
 #listing-table a.contenttype-survey:before, .template-folder_tabular_view .listing a.contenttype-survey:before {
-  background-position: -265px 	-23px;
+  background-position: -265px -23px;
 }
 /* line 277, ../scss/_nav.scss */
 #listing-table a.contenttype-formfolder:before, .template-folder_tabular_view .listing a.contenttype-formfolder:before {
-  background-position: -144px 	-72px;
+  background-position: -144px -72px;
 }
 /* line 279, ../scss/_nav.scss */
 #listing-table a:hover:before, .template-folder_tabular_view .listing a:hover:before {
@@ -9900,7 +10199,7 @@ html[lang="es"] .box-example:after {
 /* line 144, ../scss/_wells-boxes.scss */
 .sheet:before, div.fitxa:before {
   content: "*";
-  content: url('/++genweb++static/images/sheet.png?1384859287');
+  content: url('/++genweb++static/images/sheet.png?1354788544');
   font-size: 300%;
   position: absolute;
   right: -19px;
@@ -10069,7 +10368,7 @@ ul {
 
 /* line 125, ../scss/_lists.scss */
 .list-links li:before, .portaltype-packet .estudis .llistatEnllacos li:before {
-  content: url('/++genweb++static/images/arrow.png?1384859287');
+  content: url('/++genweb++static/images/arrow.png?1354788544');
   margin-left: -15px;
   margin-top: -13px;
 }
@@ -10081,7 +10380,7 @@ ul {
 
 /* line 135, ../scss/_lists.scss */
 .list-highlighted li:before {
-  content: url('/++genweb++static/images/arrow_hl.png?1384859287');
+  content: url('/++genweb++static/images/arrow_hl.png?1354788544');
   margin-left: -22px;
   margin-top: -11px;
 }
@@ -10605,12 +10904,12 @@ tfoot td, tfoot tr {
 }
 
 /* line 281, ../scss/_tables.scss */
-.table.table-bordered tr:last-child td:first-child, .listing tr:last-child td:first-child, .table-bordered.taulaRegistres tr:last-child td:first-child, .portaltype-packet .estudis table.table-bordered.minimal tr:last-child td:first-child {
+.table.table-bordered tr:last-child td:first-child, .listing tr:last-child td:first-child, .table-bordered.taulaRegistres tr:last-child td:first-child, .portaltype-packet .estudis table.table-bordered.minimal tr:last-child td:first-child, .portaltype-packet .estudis table.minimal.listing tr:last-child td:first-child {
   border-radius: 0 0 0 4px;
 }
 
 /* line 284, ../scss/_tables.scss */
-.table.table-bordered tfoot + tbody tr:last-child td:first-child, .listing tfoot + tbody tr:last-child td:first-child, .table-bordered.taulaRegistres tfoot + tbody tr:last-child td:first-child, .portaltype-packet .estudis table.table-bordered.minimal tfoot + tbody tr:last-child td:first-child {
+.table.table-bordered tfoot + tbody tr:last-child td:first-child, .listing tfoot + tbody tr:last-child td:first-child, .table-bordered.taulaRegistres tfoot + tbody tr:last-child td:first-child, .portaltype-packet .estudis table.table-bordered.minimal tfoot + tbody tr:last-child td:first-child, .portaltype-packet .estudis table.minimal.listing tfoot + tbody tr:last-child td:first-child {
   border-radius: 0 !important;
 }
 
@@ -10944,7 +11243,7 @@ hr.liniaDalt, hr.tileHeadline {
   display: block;
   width: 14px;
   height: 14px;
-  background: url('/++genweb++static/images/gh.png?1384859287');
+  background: url('/++genweb++static/images/gh.png?1354788544');
 }
 
 /* line 94, ../scss/_texts.scss */
@@ -10992,7 +11291,7 @@ a {
 
 /* line 114, ../scss/_texts.scss */
 .pdf:after, .ppt:after, .xls:after, .doc:after, .down:after, .https:after, .vid:after, .img:after, .txt:after {
-  background: url('/++genweb++static/images/gh-c.png?1384859287') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1360586349') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -11143,7 +11442,7 @@ ol.linenums li {
 /* line 173, ../scss/_texts.scss */
 .prettyprint-inverse ol.linenums li {
   color: #eee;
-  text-shadow: 0 -1px 0 #111;
+  text-shadow: 0 -1px 0 #111111;
 }
 
 /* line 177, ../scss/_texts.scss */
@@ -11203,7 +11502,7 @@ input[type="file"] {
 }
 /* line 18, ../scss/_inputs.scss */
 .customfile-feedback-populated:before {
-  background: url('/++genweb++static/images/gh-c.png?1384859287') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1360586349') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -11584,7 +11883,7 @@ h2.title-inverse {
 }
 /* line 223, ../scss/_portlets.scss */
 h2.title-inverse i {
-  background-image: url('/++genweb++static/images/gh-w.png?1384859287');
+  background-image: url('/++genweb++static/images/gh-w.png?1354788544');
 }
 
 /* line 230, ../scss/_portlets.scss */
@@ -11610,7 +11909,7 @@ h2.title-inverse i {
 /* line 234, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar td.event, .portletCalendar .ploneCalendar td.todayevent {
   background: #08c;
-  text-shadow: 0 -1px #06a;
+  text-shadow: 0 -1px #0066aa;
 }
 /* line 235, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar td.event a, .portletCalendar .ploneCalendar td.todayevent a {
@@ -11760,11 +12059,11 @@ input#title {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
   margin-top: 6px;
   width: 222px;
-  margin: 0 auto;
+  margin: 20px 0 auto;
 }
 /* line 159, ../scss/_plone.scss */
 .img-mask iframe {
-  -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1384859287') no-repeat center center;
+  -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1354788544') no-repeat center center;
 }
 
 /* line 164, ../scss/_plone.scss */
@@ -11795,7 +12094,7 @@ iframe {
   width: 14px;
   height: 14px;
   display: inline-block;
-  background: url('/++genweb++static/images/gh.png?1384859287') -239px -143px no-repeat;
+  background: url('/++genweb++static/images/gh.png?1354788544') -239px -143px no-repeat;
   margin-left: 5px;
 }
 /* line 192, ../scss/_plone.scss */
@@ -11951,7 +12250,7 @@ iframe {
 }
 
 /* line 266, ../scss/_plone.scss */
-.calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
+.calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected, .contentViews .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
 
@@ -11996,7 +12295,7 @@ iframe {
 }
 
 /* line 274, ../scss/_plone.scss */
-.calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
+.calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected, .contentViews .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
 
@@ -12042,7 +12341,7 @@ iframe {
 }
 
 /* line 284, ../scss/_plone.scss */
-.calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
+.calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected, .contentViews .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
   background-color: #08c !important;
 }
 
@@ -12077,7 +12376,7 @@ iframe {
 }
 
 /* line 313, ../scss/_plone.scss */
-.calendar .combo .active, .calendar .combo .selected {
+.calendar .combo .active, .calendar .combo .selected, .calendar .combo .contentViews .selected, .contentViews .calendar .combo .selected, .calendar .combo .contentViews .selected:hover, .contentViews .calendar .combo .selected:hover {
   padding: 0px;
   border: 1px solid #000;
 }
@@ -12125,7 +12424,7 @@ iframe {
 }
 
 /* line 354, ../scss/_plone.scss */
-.calendar td.time span.active, .calendar td.time span.selected {
+.calendar td.time span.active, .calendar td.time span.selected, .calendar td.time .contentViews span.selected, .contentViews .calendar td.time span.selected, .calendar td.time .contentViews span.selected:hover, .contentViews .calendar td.time span.selected:hover {
   border-color: #f00;
   background-color: #000;
   color: #080;
@@ -12270,7 +12569,7 @@ img[src$="spinner.gif"] {
 .collage-header {
   /*font-size: 0.9em;*/
   border-bottom: 1px solid White;
-  padding: 2px 0 2px 0 !important;
+  padding: 2px 0 2px 0!important;
   position: relative;
   margin-bottom: 2px !important;
 }
@@ -12357,7 +12656,7 @@ img[src$="spinner.gif"] {
 }
 
 /* line 481, ../scss/_plone.scss */
-.collage-header a.layout span.active, .collage-header a.layout span.selected {
+.collage-header a.layout span.active, .collage-header a.layout span.selected, .collage-header a.layout .contentViews span.selected, .contentViews .collage-header a.layout span.selected, .collage-header a.layout .contentViews span.selected:hover, .contentViews .collage-header a.layout span.selected:hover {
   color: Black;
 }
 
@@ -13236,11 +13535,6 @@ html {
     float: none;
   }
 
-  /* line 14, ../scss/_mobile.scss */
-  #peu .span4, #peu .w1\3a 3 {
-    display: none;
-  }
-
   /* line 16, ../scss/_mobile.scss */
   .xafa {
     margin: 0 1.25em;
@@ -13364,7 +13658,7 @@ html {
   #portal-header h1.pull-left {
     height: 46px;
     width: 207px;
-    background: url('/++genweb++static/images/logoUPC@2x.png?1384859287') no-repeat;
+    background: url('/++genweb++static/images/logoUPC@2x.png?1354788544') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -13373,7 +13667,7 @@ html {
 
   /* line 12, ../scss/_retina.scss */
   .header-image {
-    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1384859287');
+    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1354788544');
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -13382,12 +13676,12 @@ html {
 
   /* line 14, ../scss/_retina.scss */
   .list-links li, .portaltype-packet .estudis .llistatEnllacos li {
-    content: url('/++genweb++static/images/arrow@2x.png?1384859287');
+    content: url('/++genweb++static/images/arrow@2x.png?1354788544');
   }
 
   /* line 15, ../scss/_retina.scss */
   .list-highlighted li {
-    content: url('/++genweb++static/images/arrow_hl@2x.png?1384859287');
+    content: url('/++genweb++static/images/arrow_hl@2x.png?1354788544');
   }
 
   /* line 17, ../scss/_retina.scss */
@@ -13398,22 +13692,22 @@ html {
 
   /* line 18, ../scss/_retina.scss */
   .img_blank[src*="blank_blau"] {
-    content: url('/++genweb++static/images/blank_blau@2x.png?1384859287');
+    content: url('/++genweb++static/images/blank_blau@2x.png?1354788544');
   }
 
   /* line 19, ../scss/_retina.scss */
   .img_blank[src*="blank_gris"] {
-    content: url('/++genweb++static/images/blank_gris@2x.png?1384859287');
+    content: url('/++genweb++static/images/blank_gris@2x.png?1354788544');
   }
 
   /* line 20, ../scss/_retina.scss */
   .img_blank[src*="blank_blanc"] {
-    content: url('/++genweb++static/images/blank_blanc@2x.png?1384859287');
+    content: url('/++genweb++static/images/blank_blanc@2x.png?1354788544');
   }
 
   /* line 22, ../scss/_retina.scss */
   .userScreen, .userTablet, .userMobile, .userGenweb {
-    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1384859287');
+    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1354788544');
     -webkit-background-size: 20px 400px;
     -moz-background-size: 20px 400px;
     -o-background-size: 20px 400px;
@@ -13835,7 +14129,7 @@ html.lt-ie8 .list-portlet li  {
 }
 /* line 34, ../scss/_upcnet.scss */
 .link-parent:before {
-  background: url('/++genweb++static/images/gh-w.png?1384859287') no-repeat -290px -95px;
+  background: url('/++genweb++static/images/gh-w.png?1354788544') no-repeat -290px -95px;
   content: " ";
   display: inline-block;
   height: 14px;
@@ -14858,7 +15152,7 @@ input[type="radio"].required:after {
 /* Plugins */
 /* line 208, ../scss/_ui.scss */
 .ploneSkin span.mce_advhr {
-  background-position: -0px -20px;
+  background-position: 0px -20px;
 }
 
 /* line 209, ../scss/_ui.scss */
