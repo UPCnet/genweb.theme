@@ -1,0 +1,34 @@
+<tal:newsitems tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                           plone_view context/@@plone;
+                           news_items view/published_news_items;
+                           data view/mostraData"
+               tal:condition="news_items"
+               i18n:domain="plone">
+
+
+    <div class="portlet portlet-noticies portlet-ampliat">
+        <h2>Notícies <i class="icon-news large-icon pull-right"></i></h2>
+        <ul class="list-portlet">
+            <li class="clearfix" tal:repeat="obj news_items">
+                <a href="" tal:attributes="href obj/getURL">
+                    <h3><span tal:replace="obj/pretty_title_or_id">
+                    Notícies RSS
+
+                    </span></h3>
+                    <div tal:condition="obj">
+                        <img tal:attributes="src string:${obj/getURL}/@@images/image" class="image-noticies">
+                    </div>
+                </a>
+              <div class="content-noticies">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <time class="smaller" tal:content="python:toLocalizedTime(obj.Date)">May 5</time>
+              </div>
+            </li>
+        </ul>
+        <a href="" class="portlet-footer" tal:attributes="href view/all_news_link">
+            <i class="icon-rss"></i> Més notícies</a>
+    </div>
+</tal:newsitems>
+
+
+<!--tal:replace="structure obj/"-->
