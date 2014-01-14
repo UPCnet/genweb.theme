@@ -8,10 +8,8 @@ from Acquisition import aq_inner
 from plone.memoize.instance import memoize
 from plone.portlets.interfaces import IPortletDataProvider
 from Products.CMFCore.utils import getToolByName
-from genweb.core.adapters import IImportant
 
 from zope.component import getMultiAdapter
-from plone.app.layout.navigation.root import getNavigationRootObject
 
 from plone.app.portlets.portlets.news import Renderer as news_renderer
 

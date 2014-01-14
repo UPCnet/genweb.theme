@@ -25,10 +25,16 @@
         i18n:translate="genweb_formContacte">
           Contact
       </h1>
+
+
       <div class="row-fluid">
         <div class="span8 box box-gradient">
           <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
         </div>
+
+
+
+
         <div class="span4"
              tal:define="edifici python:getattr(dades, 'edifici_%s' % view.pref_lang(), u'Edifici Til·lers');
                          campus python:getattr(dades, 'campus_%s' % view.pref_lang(), 'Campus Nord');
