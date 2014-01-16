@@ -64,21 +64,16 @@ class Renderer(news_renderer):
         else:
             return '%s/news_listing' % self.portal_url
 
-    # def getNewsData(self):
-    #     news_item = self._data()
-    #     data = []
-    #     for item in news_item:
+    def abrevia(self, obj):
+        desc_new=obj.Description
 
-    #         if item.Type == 'News Item':
-    #             data = dict (title = item.Title,
-    #                          description = item.Description,
-    #                          image = item.Image)
-    #         if item.Type == 'Link':
-    #             data = dict (title = item.Title,
-    #                          description = item.Description,
-    #                          image=False)
-
-    #     return data
+        if len(desc_new) > 200:
+            desc_text=desc_new[:200]
+            desc_text=desc_text[:desc_text.rfind(' ')-len(desc_text)]
+            desc_text=desc_text+'...'
+        else:
+            desc_text=desc_new
+        return desc_text
 
     @memoize
     def _data(self):
