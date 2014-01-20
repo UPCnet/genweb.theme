@@ -25,6 +25,8 @@
         i18n:translate="genweb_formContacte">
           Contact
       </h1>
+
+
       <div class="row-fluid">
         <div class="span7 box box-gradient">
           <metal:block use-macro="context/@@ploneform-macros/titlelessform" />

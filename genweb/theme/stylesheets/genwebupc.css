@@ -14466,18 +14466,6 @@ input[type="radio"].required:after {
   display: none;
 }
 
-/* line 177, ../scss/_upcnet.scss */
-.dropdown-menu a {
-  display: block;
-  padding: 3px 15px;
-  clear: both;
-  font-weight: normal;
-  line-height: 18px;
-  color: #666666;
-  white-space: nowrap;
-  font-size: 12px;
-}
-
 /* TINY */
 /* Save message */
 /* line 4, ../scss/_ui.scss */
