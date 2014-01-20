@@ -87,6 +87,7 @@ input[type="color"],
   color: $gray;
   @include border-radius($inputBorderRadius);
 }
+input[type="text"].searchPage {margin-bottom: 0 !important;} // text cerca alineat amb botó cerca
 
 // Reset appearance properties for textual inputs and textarea
 // Declare width for legacy (can't be on input[type=*] selectors or it's too specific)
@@ -540,7 +541,9 @@ input.search-query {
   @include border-radius(14px 0 0 14px);
 }
 
-
+.optionsToggle {
+  display:block; // fem que es diferenciï el check de commuta de la resca de checks
+}
 
 
 // HORIZONTAL & VERTICAL FORMS

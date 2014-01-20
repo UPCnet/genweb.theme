@@ -32,3 +32,4 @@ genweb/theme/fontconfig
 
 .sass-cache
 node_modules
+.dropbox
