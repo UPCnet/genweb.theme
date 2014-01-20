@@ -14,7 +14,7 @@ from zope.component import getMultiAdapter
 from plone.app.portlets.portlets.news import Renderer as news_renderer
 
 
-class INewsPortlet(IPortletDataProvider):
+class IFullNewsPortlet(IPortletDataProvider):
     """A portlet which can render a list of news.
     """
     count = schema.Int(
@@ -34,7 +34,7 @@ class INewsPortlet(IPortletDataProvider):
 
 
 class Assignment (base.Assignment):
-    implements(INewsPortlet)
+    implements(IFullNewsPortlet)
 
     def __init__(self, count=5, showdata=True):
         self.count = count
@@ -42,10 +42,10 @@ class Assignment (base.Assignment):
 
     @property
     def title(self):
-        return _(u"News")
+        return _(u"Full News")
 
 class Renderer(news_renderer):
-    render = ViewPageTemplateFile('templates/news.pt')
+    render = ViewPageTemplateFile('templates/fullnews.pt')
 
     @memoize
     def have_news_folder(self):
@@ -63,6 +63,17 @@ class Renderer(news_renderer):
             return '%s' % news.absolute_url()
         else:
             return '%s/news_listing' % self.portal_url
+
+    def abrevia(self, obj):
+        desc_new=obj.Description
+
+        if len(desc_new) > 200:
+            desc_text=desc_new[:200]
+            desc_text=desc_text[:desc_text.rfind(' ')-len(desc_text)]
+            desc_text=desc_text+'...'
+        else:
+            desc_text=desc_new
+        return desc_text
 
     @memoize
     def _data(self):
@@ -89,7 +100,7 @@ class Renderer(news_renderer):
 
 
 class AddForm(base.AddForm):
-        form_fields = form.Fields(INewsPortlet)
+        form_fields = form.Fields(IFullNewsPortlet)
         label = _(u"Add Noticies portlet")
         description = _(u"Aquest portlet mostra noticies")
 
@@ -97,6 +108,6 @@ class AddForm(base.AddForm):
             return Assignment(count=data.get('count', 5), showdata=data.get('showdata', True))
 
 class EditForm(base.EditForm):
-    form_fields = form.Fields(INewsPortlet)
+    form_fields = form.Fields(IFullNewsPortlet)
     label = _(u"Edit News Portlet")
     description = _(u"This portlet displays recent News Items.")

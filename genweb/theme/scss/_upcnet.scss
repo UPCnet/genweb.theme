@@ -174,14 +174,16 @@ input[type="radio"].required:after { content: none; }
 .fieldTextFormat {display: none; }
 
 
-.dropdown-menu a {
-display: block;
-padding: 3px 15px;
-clear: both;
-font-weight: normal;
-line-height: 18px;
-color: #666666;
-white-space: nowrap;
-font-size: 12px;
-}
+// En la nevera, porque peta el desplegable de usuario.
+// https://github.com/UPCnet/genweb.theme/blame/develop/genweb/theme/stylesheets/genwebupc.css#L13932
+// .dropdown-menu a {
+// display: block;
+// padding: 3px 15px;
+// clear: both;
+// font-weight: normal;
+// line-height: 18px;
+// color: #666666;
+// white-space: nowrap;
+// font-size: 12px;
+// }
 

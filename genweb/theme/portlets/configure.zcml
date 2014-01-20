@@ -57,4 +57,13 @@
      editview=".news.EditForm"
      />
 
+     <plone:portlet
+     name="genweb.portlets.fullnews"
+     interface=".fullnews.IFullNewsPortlet"
+     assignment=".fullnews.Assignment"
+     renderer=".fullnews.Renderer"
+     addview=".fullnews.AddForm"
+     editview=".fullnews.EditForm"
+     />
+
 </configure>
