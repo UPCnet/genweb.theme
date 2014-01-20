@@ -482,34 +482,59 @@ class gwRecaptchaView(RecaptchaView, grok.View):
                         <script type="text/javascript">
                             var RecaptchaOptions = {
                                     custom_translations : {
-                                            instructions_visual : "Escriu les dues paraules:",
-                                            instructions_audio : "Transcriu el que sentis:",
-                                            play_again : "Torna a escoltar l'\u00e0udio",
-                                            cant_hear_this : "Descarrega la pista en MP3",
-                                            visual_challenge : "Modalitat visual",
-                                            audio_challenge : "Modalitat auditiva",
-                                            refresh_btn : "Demana dues noves paraules",
-                                            help_btn : "Ajuda",
-                                            incorrect_try_again : "Incorrecte. Torna-ho a provar.",
+                                        instructions_visual : "Escriu les dues paraules:",
+                                        instructions_audio : "Transcriu el que sentis:",
+                                        play_again : "Torna a escoltar l'\u00e0udio",
+                                        cant_hear_this : "Descarrega la pista en MP3",
+                                        visual_challenge : "Modalitat visual",
+                                        audio_challenge : "Modalitat auditiva",
+                                        refresh_btn : "Demana dues noves paraules",
+                                        help_btn : "Ajuda",
+                                        incorrect_try_again : "Incorrecte. Torna-ho a provar.",
                                     },
                                     lang : '%s',
-                                    theme : 'clean'
+                                    theme : 'custom',
+                                    custom_theme_widget: 'recaptcha_widget'
                                 };
                         </script>
                         """ % lang,
                    "es": """
                         <script type="text/javascript">
                             var RecaptchaOptions = {
-                                    lang : '%s',
-                                    theme : 'clean'
+                                 custom_translations : {
+                                    instructions_visual : "Escriba las dos palabras",
+                                    instructions_audio : "Transcriba lo que oye",
+                                    play_again : "Volver a escuchar el audio",
+                                    cant_hear_this : "Descargar la pista en MP3",
+                                    visual_challenge : "Modalidad visual",
+                                    audio_challenge : "Modalidad auditiva",
+                                    refresh_btn : "Pedir dos palabras nuevas",
+                                    help_btn : "Ayuda",
+                                    incorrect_try_again : "Incorrecto. Vuelva a intentarlo."
+                                  },
+                                  lang : '%s',
+                                  theme : 'custom',
+                                  custom_theme_widget: 'recaptcha_widget'
                             };
                         </script>
                         """ % lang,
                    "en": """
                         <script type="text/javascript">
                             var RecaptchaOptions = {
-                                    lang : '%s',
-                                    theme : 'clean'
+                                custom_translations : {
+                                    instructions_visual : "Type the text",
+                                    instructions_audio : "Type what you hear",
+                                    play_again : "Play sound again",
+                                    cant_hear_this : "Download sound as MP3",
+                                    visual_challenge : "Get a visual challenge",
+                                    audio_challenge : "Get an audio challenge",
+                                    refresh_btn : "Get a new challenge",
+                                    help_btn : "Help",
+                                    incorrect_try_again : "Incorrect. Please try again."
+                                  },
+                                  lang : '%s',
+                                  theme : 'custom',
+                                  custom_theme_widget: 'recaptcha_widget'
                             };
                         </script>
                         """ % lang

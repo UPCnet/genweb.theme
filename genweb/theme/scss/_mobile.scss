@@ -11,7 +11,7 @@
 	  float:none;
 	}
 
-	// desactivem aquesta funció per tal que surti el peu al mòbil #peu .span4 {display: none;}
+	// desactivem aquesta propietat per tal que surti el peu al mòbil #peu .span4 {display: none;}
 
   .xafa {margin: 0 1.25em;}
   .xafa2 { margin: 0 2.5em;  }
@@ -46,8 +46,8 @@
   .portaltype-packet .estudis td:first-child, .portaltype-packet .estudis th:first-child {min-width: auto !important;}
   .discussion .commentDate {float:none;}
 
-  .carousel-control.right {left: 244px; top: 62px;}
-  .carousel-control.left {left: 5px; top: 62px;}
+  .carousel-control.right { top: 62px;}
+  .carousel-control.left { top: 62px;}
 
 }
 

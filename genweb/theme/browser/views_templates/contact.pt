@@ -26,10 +26,10 @@
           Contact
       </h1>
       <div class="row-fluid">
-        <div class="span8 box box-gradient">
+        <div class="span7 box box-gradient">
           <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
         </div>
-        <div class="span4"
+        <div class="span5"
              tal:define="edifici python:getattr(dades, 'edifici_%s' % view.pref_lang(), u'Edifici Til·lers');
                          campus python:getattr(dades, 'campus_%s' % view.pref_lang(), 'Campus Nord');
                          adreca dades/adreca_sencera;
@@ -43,26 +43,31 @@
                          contacte_personalitzat view/getContactPersonalized"
              tal:condition="adreca">
             <tal:co tal:condition="contacte_personalitzat">
-                  <h2 tal:content="python:getattr(dades, 'nom_%s' % view.pref_lang(), 'Servei de Comunicació i Promoció')">
-                    Servei de Comunicació i Promoció
-                  </h2>
-                  <address>
-                    <p tal:content="adreca">
-                      Campus Diagonal Sud, Edifici H. Av. Diagonal, 647. 08028 Barcelona
-                    </p>
-                    <br>
+              <h2 tal:content="python:getattr(dades, 'nom_%s' % view.pref_lang(), 'Servei de Comunicació i Promoció')">
+                Servei de Comunicació i Promoció
+              </h2>
+              <address>
+                <p tal:content="adreca">
+                  Campus Diagonal Sud, Edifici H. Av. Diagonal, 647. 08028 Barcelona
+                </p>
+                <ul class="unstyled" id='contacte-dades' >  
+                  <li>
                     <p tal:condition="telefon">
                       <tal:telmsg i18n:translate="genweb_telefon">Telèfon</tal:telmsg>
                       <tal:telefon content="telefon">
                         Telèfon 93 401 65 83 / 65 85
                       </tal:telefon>
                     </p>
+                  </li>
+                  <li>
                     <p tal:condition="fax">
                       <tal:faxmsg i18n:translate="genweb_fax">Fax</tal:faxmsg>
                       <tal:fax content="fax">
                         93 401 60 54
                       </tal:fax>
                     </p>
+                  </li>
+                  <li>
                     <p tal:condition="email">
                       <abbr rel="tooltip" data-placement="top" title="Adreça electrònica"
                             i18n:translate="genweb_ae">
@@ -73,37 +78,37 @@
                           director.oe@(upc.edu)
                       </a>
                     </p>
-                  </address>
-
-                  <ul class="unstyled">
-                    <li>
+                  </li>
+                </ul>
+                <ul class="unstyled" id='contacte-links'>
+                  <li>
+                    <p>
+                      <a tal:condition="codi_upc" tal:attributes="href python:view.getURLDirectori(codi_upc)">
+                        <i class="icon-book"></i>
+                        Directori UPC
+                        <img class="img_blank" src="++genweb++static/images/blank_blau.png"
+                           i18n:attributes="alt obrir_link_finestra_nova">
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <tal:maps condition="python:not getattr(genweb_config, 'contacte_no_upcmaps', False)">
                       <p>
-                        <a tal:condition="codi_upc" tal:attributes="href python:view.getURLDirectori(codi_upc)">
-                          <i class="icon-book"></i>
-                          Directori UPC
+                        <a href="https://maps.upc.edu" class="show" rel="tooltip" data-placement="bottom" title="Clica el marcador per anar a UPCmaps" target="_blank">
+                          <i class="icon-map-marker"></i>
+                          UPCmaps
                           <img class="img_blank" src="++genweb++static/images/blank_blau.png"
-                             i18n:attributes="alt obrir_link_finestra_nova">
+                               i18n:attributes="alt obrir_link_finestra_nova">
                         </a>
                       </p>
-                    </li>
-                    <tal:maps condition="python:not getattr(genweb_config, 'contacte_no_upcmaps', False)">
-                      <li class="divider"></li>
-                      <li>
-                        <p>
-                          <a href="http://maps.upc.edu" class="show" rel="tooltip" data-placement="bottom" title="Clica el marcador per anar a UPCmaps" target="_blank">
-                            <i class="icon-map-marker"></i>
-                            UPCmaps
-                            <img class="img_blank" src="++genweb++static/images/blank_blau.png"
-                                 i18n:attributes="alt obrir_link_finestra_nova">
-                            <span class="img-mask">
-                              <iframe tal:attributes="src python:view.getURLMaps(id_scp)" border="0" width="222" height="222">
-                              </iframe>
-                            </span>
-                          </a>
-                        </p>
-                      </li>
                     </tal:maps>
-                  </ul>
+                  </li>
+                </ul>
+              </address>
+              <span class="img-mask">
+                <iframe tal:attributes="src python:view.getURLMaps(id_scp)" border="0">
+                </iframe>
+              </span>
             </tal:co>
             <tal:co tal:condition="not: contacte_personalitzat">
               <div tal:define="contact view/getContactPage">

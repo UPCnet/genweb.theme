@@ -20,7 +20,7 @@ section {
   display: block;
 }
 
-/* line 27, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 29, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 audio,
 canvas,
 video {
@@ -29,12 +29,12 @@ video {
   *zoom: 1;
 }
 
-/* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 38, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 audio:not([controls]) {
   display: none;
 }
 
-/* line 43, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 45, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -42,20 +42,20 @@ html {
   background: #f2f2f2;
 }
 
-/* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 52, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-/* line 55, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 57, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 63, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 sub,
 sup {
   position: relative;
@@ -64,17 +64,17 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 71, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 74, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 79, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 81, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -83,18 +83,18 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 88, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 90, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 #mapCanvas label {
   width: auto;
   display: inline;
 }
 
-/* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 91, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 #mapCanvas img {
   max-width: none;
 }
 
-/* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 button,
 input,
 select,
@@ -104,21 +104,21 @@ textarea {
   vertical-align: middle;
 }
 
-/* line 104, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 106, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 button,
 input {
   *overflow: visible;
   line-height: normal;
 }
 
-/* line 109, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 111, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-/* line 116, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 118, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -127,7 +127,7 @@ input[type="submit"] {
   -webkit-appearance: button;
 }
 
-/* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 122, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 input[type="search"] {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -135,13 +135,13 @@ input[type="search"] {
   -webkit-appearance: textfield;
 }
 
-/* line 127, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 130, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
+/* line 132, ../bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
@@ -1041,13 +1041,18 @@ input[type="color"],
   border-radius: 3px;
 }
 
-/* line 94, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 90, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+input[type="text"].searchPage {
+  margin-bottom: 0 !important;
+}
+
+/* line 95, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 input,
 textarea {
   width: 210px;
 }
 
-/* line 98, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 99, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 textarea {
   resize: vertical;
   height: auto;
@@ -1060,7 +1065,7 @@ textarea {
   box-sizing: border-box;
 }
 
-/* line 124, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 125, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 textarea,
 select,
 input[type="text"],
@@ -1088,7 +1093,7 @@ input[type="color"],
   -o-transition: border linear 0.2s, box-shadow linear 0.2s;
   transition: border linear 0.2s, box-shadow linear 0.2s;
 }
-/* line 131, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 132, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 textarea:focus,
 select:focus,
 input[type="text"]:focus,
@@ -1115,7 +1120,7 @@ input[type="color"]:focus,
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 }
 
-/* line 142, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 143, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
@@ -1127,7 +1132,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-/* line 157, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 input[type="file"],
 input[type="image"],
 input[type="submit"],
@@ -1138,7 +1143,7 @@ input[type="checkbox"] {
   width: auto;
 }
 
-/* line 164, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 165, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 select,
 select[size="1"],
 input[type="file"] {
@@ -1149,7 +1154,7 @@ input[type="file"] {
   line-height: 28px;
 }
 
-/* line 171, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 172, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 select {
   width: 220px;
   border: 1px solid #b2b2b2;
@@ -1157,20 +1162,20 @@ select {
   cursor: pointer;
 }
 
-/* line 180, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 181, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 select[multiple],
 select[size] {
   height: auto;
 }
 
-/* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 select[size="1"] {
   height: 28px;
   *margin-top: 4px;
   line-height: 28px;
 }
 
-/* line 192, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 193, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
@@ -1179,12 +1184,12 @@ input[type="checkbox"]:focus {
   outline-offset: -2px;
 }
 
-/* line 196, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 197, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 option {
   padding: 5px;
 }
 
-/* line 206, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 207, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .uneditable-input,
 .uneditable-textarea {
   color: #aaaaaa;
@@ -1196,13 +1201,13 @@ option {
   cursor: not-allowed;
 }
 
-/* line 215, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 216, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .uneditable-input {
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* line 221, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 222, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .uneditable-textarea {
   width: auto;
   height: auto;
@@ -1224,27 +1229,27 @@ textarea::-webkit-input-placeholder {
   color: #aaaaaa;
 }
 
-/* line 242, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 243, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .radio,
 .checkbox {
   min-height: 18px;
   padding-left: 18px;
 }
 
-/* line 247, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 248, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
   float: left;
   margin-left: -18px;
 }
 
-/* line 254, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 255, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .controls > .radio:first-child,
 .controls > .checkbox:first-child {
   padding-top: 5px;
 }
 
-/* line 261, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 262, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .radio.inline,
 .checkbox.inline {
   display: inline-block;
@@ -1253,43 +1258,43 @@ textarea::-webkit-input-placeholder {
   vertical-align: middle;
 }
 
-/* line 268, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 269, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .radio.inline + .radio.inline,
 .checkbox.inline + .checkbox.inline {
   margin-left: 10px;
 }
 
-/* line 278, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 279, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-mini {
   width: 60px;
 }
 
-/* line 279, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 280, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-small {
   width: 90px;
 }
 
-/* line 280, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 281, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-medium {
   width: 150px;
 }
 
-/* line 281, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 282, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-large {
   width: 210px;
 }
 
-/* line 282, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 283, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-xlarge {
   width: 270px;
 }
 
-/* line 283, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 284, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-xxlarge, #archetypes-fieldname-title input {
   width: 530px;
 }
 
-/* line 294, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 295, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 input[class*="span"], input.cella,
 select[class*="span"],
 select.cella,
@@ -1333,7 +1338,7 @@ textarea.cella,
   margin-left: 0;
 }
 
-/* line 308, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 309, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-append input[class*="span"], .input-append input.cella,
 .input-append .uneditable-input[class*="span"],
 .input-append .uneditable-input.cella,
@@ -1508,7 +1513,7 @@ textarea.span1,
   width: 40px;
 }
 
-/* line 321, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 322, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .controls-row {
   *zoom: 1;
 }
@@ -1523,12 +1528,12 @@ textarea.span1,
   clear: both;
 }
 
-/* line 324, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 325, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .controls-row [class*="span"], .controls-row .cella {
   float: left;
 }
 
-/* line 340, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 341, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 input[disabled],
 select[disabled],
 textarea[disabled],
@@ -1539,7 +1544,7 @@ textarea[readonly] {
   background-color: #f2f2f2;
 }
 
-/* line 348, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 349, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
 input[type="radio"][readonly],
@@ -1658,14 +1663,14 @@ input[type="checkbox"][readonly] {
   border-color: #456211;
 }
 
-/* line 375, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 376, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 input:focus:required:invalid,
 textarea:focus:required:invalid,
 select:focus:required:invalid {
   color: #b94a48;
   border-color: #ee5f5b;
 }
-/* line 378, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 379, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 input:focus:required:invalid:focus,
 textarea:focus:required:invalid:focus,
 select:focus:required:invalid:focus {
@@ -1675,7 +1680,7 @@ select:focus:required:invalid:focus {
   box-shadow: 0 0 6px #f8b9b7;
 }
 
-/* line 389, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 390, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-actions {
   padding: 17px 20px 18px;
   margin-top: 18px;
@@ -1695,19 +1700,19 @@ select:focus:required:invalid:focus {
   clear: both;
 }
 
-/* line 404, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 405, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .help-block,
 .help-inline {
   color: #595959;
 }
 
-/* line 408, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 409, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .help-block {
   display: block;
   margin-bottom: 9px;
 }
 
-/* line 413, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 414, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .help-inline {
   display: inline-block;
   *display: inline;
@@ -1716,14 +1721,14 @@ select:focus:required:invalid:focus {
   padding-left: 5px;
 }
 
-/* line 427, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 428, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-append,
 .input-prepend {
   margin-bottom: 5px;
   font-size: 0;
   white-space: nowrap;
 }
-/* line 434, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 435, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-append input,
 .input-append select,
 .input-append .uneditable-input,
@@ -1739,7 +1744,7 @@ select:focus:required:invalid:focus {
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
-/* line 442, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 443, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-append input:focus,
 .input-append select:focus,
 .input-append .uneditable-input:focus,
@@ -1748,7 +1753,7 @@ select:focus:required:invalid:focus {
 .input-prepend .uneditable-input:focus {
   z-index: 2;
 }
-/* line 446, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 447, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-append .add-on,
 .input-prepend .add-on {
   display: inline-block;
@@ -1764,7 +1769,7 @@ select:focus:required:invalid:focus {
   background-color: #f2f2f2;
   border: 1px solid #ccc;
 }
-/* line 461, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 462, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-append .add-on,
 .input-append .btn,
 .input-append .standalone,
@@ -1789,7 +1794,7 @@ select:focus:required:invalid:focus {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-/* line 466, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 467, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-append .active, .input-append .selected, .input-append .contentViews .selected, .contentViews .input-append .selected, .input-append .contentViews .selected:hover, .contentViews .input-append .selected:hover,
 .input-prepend .active,
 .input-prepend .selected,
@@ -1801,7 +1806,7 @@ select:focus:required:invalid:focus {
   border-color: #72a31d;
 }
 
-/* line 473, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 474, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-prepend .add-on,
 .input-prepend .btn,
 .input-prepend .standalone,
@@ -1813,7 +1818,7 @@ select:focus:required:invalid:focus {
 .input-prepend .link-parent {
   margin-right: -1px;
 }
-/* line 477, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 478, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-prepend .add-on:first-child,
 .input-prepend .btn:first-child,
 .input-prepend .standalone:first-child,
@@ -1828,7 +1833,7 @@ select:focus:required:invalid:focus {
   border-radius: 3px 0 0 3px;
 }
 
-/* line 484, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 485, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-append input,
 .input-append select,
 .input-append .uneditable-input {
@@ -1836,7 +1841,7 @@ select:focus:required:invalid:focus {
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-/* line 488, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 489, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-append .add-on:last-child,
 .input-append .btn:last-child,
 .input-append .standalone:last-child,
@@ -1851,7 +1856,7 @@ select:focus:required:invalid:focus {
   border-radius: 0 3px 3px 0;
 }
 
-/* line 496, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 497, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-prepend.input-append input,
 .input-prepend.input-append select,
 .input-prepend.input-append .uneditable-input {
@@ -1859,7 +1864,7 @@ select:focus:required:invalid:focus {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-/* line 500, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 501, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-prepend.input-append .add-on:first-child,
 .input-prepend.input-append .btn:first-child,
 .input-prepend.input-append .standalone:first-child,
@@ -1874,7 +1879,7 @@ select:focus:required:invalid:focus {
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-/* line 505, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 506, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .input-prepend.input-append .add-on:last-child,
 .input-prepend.input-append .btn:last-child,
 .input-prepend.input-append .standalone:last-child,
@@ -1890,7 +1895,7 @@ select:focus:required:invalid:focus {
   border-radius: 0 3px 3px 0;
 }
 
-/* line 516, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 517, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 input.search-query {
   padding-right: 14px;
   padding-right: 4px \9;
@@ -1904,7 +1909,7 @@ input.search-query {
 }
 
 /* Allow for input prepend/append in search forms */
-/* line 527, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 528, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-search .input-append .search-query,
 .form-search .input-prepend .search-query {
   -webkit-border-radius: 0;
@@ -1912,35 +1917,40 @@ input.search-query {
   border-radius: 0;
 }
 
-/* line 530, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 531, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-search .input-append .search-query {
   -webkit-border-radius: 14px 0 0 14px;
   -moz-border-radius: 14px 0 0 14px;
   border-radius: 14px 0 0 14px;
 }
 
-/* line 533, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 534, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-search .input-append .btn, .form-search .input-append .standalone, .form-search .input-append input[value^="Cancel"], .form-search .input-append [type="submit"], .form-search .input-append .context, .form-search .input-append .searchButton, .form-search .input-append button.pfg-draft-save, .form-search .input-append .link-parent {
   -webkit-border-radius: 0 14px 14px 0;
   -moz-border-radius: 0 14px 14px 0;
   border-radius: 0 14px 14px 0;
 }
 
-/* line 536, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 537, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-search .input-prepend .search-query {
   -webkit-border-radius: 0 14px 14px 0;
   -moz-border-radius: 0 14px 14px 0;
   border-radius: 0 14px 14px 0;
 }
 
-/* line 539, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 540, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-search .input-prepend .btn, .form-search .input-prepend .standalone, .form-search .input-prepend input[value^="Cancel"], .form-search .input-prepend [type="submit"], .form-search .input-prepend .context, .form-search .input-prepend .searchButton, .form-search .input-prepend button.pfg-draft-save, .form-search .input-prepend .link-parent {
   -webkit-border-radius: 14px 0 0 14px;
   -moz-border-radius: 14px 0 0 14px;
   border-radius: 14px 0 0 14px;
 }
 
-/* line 561, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 544, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+.optionsToggle {
+  display: block;
+}
+
+/* line 564, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-search input,
 .form-search textarea,
 .form-search select,
@@ -1968,14 +1978,14 @@ input.search-query {
   margin-bottom: 0;
   vertical-align: middle;
 }
-/* line 568, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 571, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-search .hide,
 .form-inline .hide,
 .form-horizontal .hide {
   display: none;
 }
 
-/* line 575, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 578, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-search label,
 .form-inline label,
 .form-search .btn-group,
@@ -1983,7 +1993,7 @@ input.search-query {
   display: inline-block;
 }
 
-/* line 582, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 585, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-search .input-append,
 .form-inline .input-append,
 .form-search .input-prepend,
@@ -1991,7 +2001,7 @@ input.search-query {
   margin-bottom: 0;
 }
 
-/* line 589, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 592, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-search .radio,
 .form-search .checkbox,
 .form-inline .radio,
@@ -2001,7 +2011,7 @@ input.search-query {
   vertical-align: middle;
 }
 
-/* line 598, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 601, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-search .radio input[type="radio"],
 .form-search .checkbox input[type="checkbox"],
 .form-inline .radio input[type="radio"],
@@ -2011,18 +2021,18 @@ input.search-query {
   margin-left: 0;
 }
 
-/* line 606, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 609, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .control-group {
   margin-bottom: 9px;
 }
 
-/* line 611, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 614, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 legend + .control-group {
   margin-top: 18px;
   -webkit-margin-top-collapse: separate;
 }
 
-/* line 621, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 624, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-horizontal .control-group {
   margin-bottom: 18px;
   *zoom: 1;
@@ -2037,30 +2047,30 @@ legend + .control-group {
 .form-horizontal .control-group:after {
   clear: both;
 }
-/* line 626, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 629, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-horizontal .control-label {
   float: left;
   width: 140px;
   padding-top: 5px;
   text-align: right;
 }
-/* line 633, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 636, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-horizontal .controls {
   *display: inline-block;
   *padding-left: 20px;
   margin-left: 160px;
   *margin-left: 0;
 }
-/* line 640, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 643, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-horizontal .controls:first-child {
   *padding-left: 160px;
 }
-/* line 645, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 648, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-horizontal .help-block {
   margin-top: 9px;
   margin-bottom: 0;
 }
-/* line 650, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
+/* line 653, ../bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
 .form-horizontal .form-actions {
   padding-left: 160px;
 }
@@ -5194,6 +5204,11 @@ button.pfg-draft-save .caret,
   text-decoration: none;
 }
 
+/* line 250, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
+#portal-globalnav .navbar .nav > li, #portal-globalnav .navbar .contentViews > li, #portal-globalnav .navbar .configlets > li, #portal-globalnav .navbar .formTabs > li {
+  background-color: #EEEEEE;
+}
+
 /* line 252, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
 #portal-globalnav .navbar .nav > li > a:focus, #portal-globalnav .navbar .contentViews > li > a:focus, #portal-globalnav .navbar .configlets > li > a:focus, #portal-globalnav .navbar .formTabs > li > a:focus,
 #portal-globalnav .navbar .nav > li > a:hover,
@@ -5261,7 +5276,7 @@ button.pfg-draft-save .caret,
 /* line 273, ../bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
 .navbar .btn-navbar {
   display: none;
-  float: right;
+  float: left;
   padding: 7px 10px;
   margin-left: 5px;
   margin-right: 5px;
@@ -6044,8 +6059,8 @@ button.pfg-draft-save .caret,
 /* line 28, ../bootstrap/scss/compass_twitter_bootstrap/_modals.scss */
 .modal-backdrop,
 .modal-backdrop.fade.in {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.65;
+  filter: alpha(opacity=65);
 }
 
 /* line 33, ../bootstrap/scss/compass_twitter_bootstrap/_modals.scss */
@@ -7249,50 +7264,60 @@ button.pfg-draft-save .badge,
     line-height: 18px;
   }
 
-  /* line 19, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #eines {
+    margin: 0 0 9px !important;
+    text-align: right;
+  }
+  /* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines input {
     width: 85%;
   }
-
-  /* line 20, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 26, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines button {
     width: 14%;
     line-height: 20px;
+    min-width: 60px;
   }
-
-  /* line 21, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 27, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines .input-append {
     margin-left: 0 !important;
     border: 0 !important;
   }
-
-  /* line 23, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 28, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines a {
     padding: 8px !important;
     margin: 0 !important;
   }
-  /* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines a:hover, #eines a:focus {
     color: white !important;
     background: #007bc0;
   }
-  /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 35, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines ul {
     margin: 0;
   }
 
+  /* menú principal */
+  /* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #titol-menu-1 {
+    width: 75%;
+  }
+  /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #titol-menu-1 a {
+    display: block;
+    text-decoration: none;
+    color: #666666;
+  }
+
   /* capçalera */
-  /* line 35, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #portal-personaltools-wrapper + #portal-header {
-    margin-top: 40px;
+  /* line 51, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper ~ #portal-header {
+    margin-top: 40px !important;
   }
 
-  /* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #portal-header {
-    padding-bottom: 10px;
-  }
-
-  /* line 37, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 52, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image {
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -7300,11 +7325,11 @@ button.pfg-draft-save .badge,
     background-size: 100%;
   }
 
-  /* line 38, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image {
     margin-left: 207px !important;
   }
-  /* line 39, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 54, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image:before {
     top: 45px;
     width: 175px;
@@ -7312,27 +7337,27 @@ button.pfg-draft-save .badge,
   }
 
   /*contingut*/
-  /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 57, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-column-one, #portal-column-content {
     width: 100% !important;
     margin-left: 0;
   }
 
   /* peus */
-  /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 59, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu [class*="span"], #peu .cella {
     float: none;
     display: block;
     width: auto;
     margin-left: 0;
   }
-  /* line 46, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu [class*="span"] .pull-right, #peu .cella .pull-right, #peu [class*="span"] .newsImageContainer, #peu .cella .newsImageContainer {
     float: none;
     margin: 0;
   }
 
-  /* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #canvia-vista {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -7342,7 +7367,7 @@ button.pfg-draft-save .badge,
   }
 
   /*altres ajustaments*/
-  /* line 54, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   table {
     /*    display:block; */
     width: 100%;
@@ -7351,7 +7376,7 @@ button.pfg-draft-save .badge,
     max-width: 100%;
   }
 
-  /* line 63, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 78, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar-fixed-top, .navbar-fixed-bottom {
     margin-left: 0px;
     margin-right: 0px;
@@ -7359,45 +7384,45 @@ button.pfg-draft-save .badge,
     margin-left: 0;
   }
 
-  /* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 80, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container-fluid {
     padding: 0;
   }
 
-  /* line 71, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 86, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dt, .portaltype-packet .estudis dl.fitxa dt {
     float: none;
     clear: none;
     width: auto;
     text-align: left;
   }
-  /* line 77, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dd, .portaltype-packet .estudis dl.fitxa dd {
     margin-left: 0;
   }
 
-  /* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container {
     width: auto;
   }
 
-  /* line 87, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row-fluid, #dashboard, .fila, .template-atct_album_view #content-core {
     width: 100%;
   }
 
-  /* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 104, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row, .thumbnails {
     margin-left: 0;
   }
 
-  /* line 90, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 105, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .thumbnails > li {
     float: none;
     margin-left: 0;
   }
 
-  /* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 107, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .span12, .row-fluid .span12, #dashboard .span12, .fila .span12, .template-atct_album_view #content-core .span12 {
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -7405,7 +7430,7 @@ button.pfg-draft-save .badge,
     box-sizing: border-box;
   }
 
-  /* line 107, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 122, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .input-large,
   .input-xlarge,
   .input-xxlarge,
@@ -7425,7 +7450,7 @@ button.pfg-draft-save .badge,
     box-sizing: border-box;
   }
 
-  /* line 114, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .input-prepend input,
   .input-append input,
   .input-prepend input[class*="span"],
@@ -7436,7 +7461,7 @@ button.pfg-draft-save .badge,
     width: auto;
   }
 
-  /* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 135, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal, .pb-ajax {
     position: fixed;
     top: 20px;
@@ -7445,137 +7470,148 @@ button.pfg-draft-save .badge,
     width: auto;
     margin: 0;
   }
-  /* line 127, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 142, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal.fade.in, .fade.in.pb-ajax {
     top: 10px;
+  }
+
+  /* line 147, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .subnavbar .nav-list a:hover:after, .subnavbar .nav-list .active a:after, .subnavbar .nav-list .selected a:after, .subnavbar .nav-list .contentViews .selected a:after, .contentViews .subnavbar .nav-list .selected a:after, .subnavbar .nav-list .contentViews .selected:hover a:after, .contentViews .subnavbar .nav-list .selected:hover a:after {
+    background-position: -311.5px -117px !important;
+  }
+
+  /* line 154, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .img-mask iframe {
+    height: 300px !important;
+  }
+
+  /* line 160, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .unit-picture .img-polaroid, .unit-picture .template-personal-information [for="form.portrait"] ~ img, .template-personal-information .unit-picture [for="form.portrait"] ~ img, .unit-picture .newsImageContainer, .unit-picture .tileItem img, .tileItem .unit-picture img {
+    float: none;
+    clear: both;
+  }
+
+  /* line 161, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .contact table {
+    width: 100% !important;
   }
 }
 @media only screen and (max-width: 639px) {
   /*general*/
-  /* line 136, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 168, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   body {
     font-size: 14.5px;
   }
 
   /* personaltools*/
-  /* line 138, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 170, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper, .navbar-fixed-top, .navbar-fixed-bottom {
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
 
-  /* line 139, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 171, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .navbar-inner, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 0px !important;
   }
 
-  /* line 140, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #portal-personaltools-wrapper + #portal-header {
-    margin-top: 0px;
+  /* line 172, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper ~ #portal-header {
+    margin-top: 0px !important;
   }
 
-  /* line 142, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 174, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav ul, #portal-personaltools-wrapper .contentViews ul, #portal-personaltools-wrapper .configlets ul, #portal-personaltools-wrapper .formTabs ul {
     margin: 0 !important;
   }
-  /* line 143, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 175, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
     background-image: url('/++genweb++static/images/gh-w.png?1354788544');
   }
-  /* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
     background: black;
   }
-  /* line 145, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 177, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a.btn, #portal-personaltools-wrapper .contentViews a.btn, #portal-personaltools-wrapper .configlets a.btn, #portal-personaltools-wrapper .formTabs a.btn, #portal-personaltools-wrapper .nav a.standalone, #portal-personaltools-wrapper .contentViews a.standalone, #portal-personaltools-wrapper .configlets a.standalone, #portal-personaltools-wrapper .formTabs a.standalone, #portal-personaltools-wrapper .nav a[type="submit"], #portal-personaltools-wrapper .contentViews a[type="submit"], #portal-personaltools-wrapper .configlets a[type="submit"], #portal-personaltools-wrapper .formTabs a[type="submit"], #portal-personaltools-wrapper .nav a.context, #portal-personaltools-wrapper .contentViews a.context, #portal-personaltools-wrapper .configlets a.context, #portal-personaltools-wrapper .formTabs a.context, #portal-personaltools-wrapper .nav a.searchButton, #portal-personaltools-wrapper .contentViews a.searchButton, #portal-personaltools-wrapper .configlets a.searchButton, #portal-personaltools-wrapper .formTabs a.searchButton, #portal-personaltools-wrapper .nav a.link-parent, #portal-personaltools-wrapper .contentViews a.link-parent, #portal-personaltools-wrapper .configlets a.link-parent, #portal-personaltools-wrapper .formTabs a.link-parent, #portal-personaltools-wrapper .nav a.btn:focus, #portal-personaltools-wrapper .contentViews a.btn:focus, #portal-personaltools-wrapper .configlets a.btn:focus, #portal-personaltools-wrapper .formTabs a.btn:focus, #portal-personaltools-wrapper .nav a.standalone:focus, #portal-personaltools-wrapper .contentViews a.standalone:focus, #portal-personaltools-wrapper .configlets a.standalone:focus, #portal-personaltools-wrapper .formTabs a.standalone:focus, #portal-personaltools-wrapper .nav a[type="submit"]:focus, #portal-personaltools-wrapper .contentViews a[type="submit"]:focus, #portal-personaltools-wrapper .configlets a[type="submit"]:focus, #portal-personaltools-wrapper .formTabs a[type="submit"]:focus, #portal-personaltools-wrapper .nav a.context:focus, #portal-personaltools-wrapper .contentViews a.context:focus, #portal-personaltools-wrapper .configlets a.context:focus, #portal-personaltools-wrapper .formTabs a.context:focus, #portal-personaltools-wrapper .nav a.searchButton:focus, #portal-personaltools-wrapper .contentViews a.searchButton:focus, #portal-personaltools-wrapper .configlets a.searchButton:focus, #portal-personaltools-wrapper .formTabs a.searchButton:focus, #portal-personaltools-wrapper .nav a.link-parent:focus, #portal-personaltools-wrapper .contentViews a.link-parent:focus, #portal-personaltools-wrapper .configlets a.link-parent:focus, #portal-personaltools-wrapper .formTabs a.link-parent:focus {
     background-color: #BB3423;
   }
 
   /* capçalera*/
-  /* line 148, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 181, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai:before {
     position: absolute;
     border-top: 1px solid #ccc;
   }
-
-  /* line 149, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 182, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai h1 {
     font-size: 138.461538%;
     line-height: 24px;
     margin-top: 5px !important;
   }
-
-  /* line 150, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai h1 a {
     display: block;
   }
 
-  /* line 151, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 188, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header {
+    padding-bottom: 10px;
     background: #f7f7f7 !important;
   }
-
-  /* line 152, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 191, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
     margin-top: 12px !important;
   }
-
-  /* line 153, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #eines {
-    margin: 0 0 9px !important;
-    text-align: right;
-  }
-
-  /* line 154, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 192, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header h1.pull-left {
     margin-bottom: 7px !important;
   }
-
-  /* line 155, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 194, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header h1.pull-left img {
     margin-top: -3px;
     height: 46px;
   }
-
-  /* line 156, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 196, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header .container > div.clearfix, #portal-header .container > div.visualClear, #portal-header .portaltype-packet .estudis .container > div.caixa3, .portaltype-packet .estudis #portal-header .container > div.caixa3 {
     margin: 0 !important;
   }
-
-  /* line 157, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 197, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header .container {
+    border-bottom: 0 !important;
+  }
+  /* line 198, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
     margin-top: 13px;
     margin-right: 0 !important;
     padding: 7px 10px;
   }
 
-  /* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 201, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines input {
     width: 65%;
   }
-
-  /* line 159, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 202, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines button {
     width: 34%;
     line-height: 20px;
   }
-
-  /* line 160, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 203, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines a {
     margin: 0 0 20px 0!important;
   }
 
-  /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 207, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image {
-    height: 40px !important;
+    display: none;
   }
 
-  /* line 164, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 211, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image {
     height: 30px !important;
     margin-left: 55px !important;
   }
-  /* line 165, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 212, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image:before {
     top: 25px;
     width: 45px;
@@ -7583,13 +7619,13 @@ button.pfg-draft-save .badge,
   }
 
   /* breadcrumbs*/
-  /* line 168, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 215, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-breadcrumbs {
     display: none;
   }
 
   /* contingut*/
-  /* line 171, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 218, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   [class*="span"], .cella,
   .row-fluid [class*="span"],
   #dashboard [class*="span"],
@@ -7606,43 +7642,42 @@ button.pfg-draft-save .badge,
   }
 
   /* peu i prepeu */
-  /* line 178, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 225, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .llistatLogos {
     margin: 1em auto !important;
   }
 
-  /* line 179, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 226, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu {
     font-size: 84.613846% !important;
   }
-
-  /* line 180, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 228, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu .container {
     padding-top: 5px;
   }
 
-  /* line 182, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 232, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .img_blank {
     margin-top: -1px;
   }
 
-  /* line 185, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 235, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
 
-  /* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 237, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .page-header h1 small {
     display: block;
     line-height: 18px;
   }
 
-  /* line 189, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 239, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   input[type="checkbox"], input[type="radio"] {
     border: 1px solid #ccc;
   }
 
-  /* line 191, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 241, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-group > label {
     float: none;
     width: auto;
@@ -7650,23 +7685,23 @@ button.pfg-draft-save .badge,
     text-align: left;
   }
 
-  /* line 193, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 243, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .controls {
     margin-left: 0;
   }
 
-  /* line 195, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 245, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-list {
     padding-top: 0;
   }
 
-  /* line 197, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 247, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .form-actions {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  /* line 199, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 249, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal, .pb-ajax {
     top: 10px;
     left: 10px;
@@ -7674,34 +7709,72 @@ button.pfg-draft-save .badge,
     max-width: 100%;
   }
 
-  /* line 200, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 250, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-header .close, .pb-ajax .documentFirstHeading .close, .pb-ajax > div > h2 .close {
     padding: 10px;
     margin: -10px;
   }
 
-  /* line 201, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  .modal-body, .pb-ajax #content-core, .pb-ajax .documentDescription, .pb-ajax #content-history {
-    max-height: 280px;
-  }
-
-  /* line 206, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 258, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .carousel-caption {
     position: static;
   }
 
-  /* line 208, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  .btn-group a {
-    float: left;
+  /* line 261, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis {
+    background-color: #F7F7F7;
+  }
+  /* line 264, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis thead {
+    display: block;
+  }
+  /* line 266, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis thead th {
+    font-size: 80%;
+  }
+  /* line 268, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis thead th.semester {
+    display: none;
+  }
+  /* line 271, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis thead th.plaEstudis_titolCredits {
+    min-width: 80px;
+  }
+  /* line 274, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis thead th.plaEstudis_titolAssignatures {
+    width: 100%;
+  }
+  /* line 280, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis tbody {
+    display: block;
+    clear: both;
+  }
+  /* line 283, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis tbody th {
+    display: block;
+    font-size: 80%;
+  }
+  /* line 289, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis tr {
+    display: block;
+  }
+  /* line 293, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis td {
+    background-color: #fff !important;
+    font-size: 80%;
+  }
+  /* line 296, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis td.subject {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 639px) and (orientation: landscape) {
-  /* line 203, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 255, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-body, .pb-ajax #content-core, .pb-ajax .documentDescription, .pb-ajax #content-history {
     max-height: 160px;
   }
 }
-@media only screen and (min-width: 640px) and (max-width: 979px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 552, ../bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row {
     margin-left: -30px;
@@ -8219,65 +8292,75 @@ button.pfg-draft-save .badge,
 }
 
 */
-@media only screen and (max-width: 979px) and (orientation: portrait), only screen and (max-width: 979px) and (orientation: landscape) {
-  /* line 19, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+@media only screen and (max-width: 979px) and (orientation: portrait), only screen and (max-width: 768px) and (orientation: landscape) {
+  /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  #titol-menu-1 {
+    display: block !important;
+  }
+
+  /* line 16, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  #eines-menu {
+    display: block !important;
+  }
+
+  /* line 21, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   body {
     padding-top: 0;
   }
 
-  /* line 24, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 26, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-fixed-top,
   #portal-globalnav .navbar-fixed-bottom {
     position: static;
   }
 
-  /* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 27, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-fixed-top {
     margin-bottom: 18px;
   }
 
-  /* line 26, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 28, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-fixed-bottom {
     margin-top: 18px;
   }
 
-  /* line 28, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-fixed-top .navbar-inner,
   #portal-globalnav .navbar-fixed-bottom .navbar-inner {
     padding: 5px;
   }
 
-  /* line 29, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 31, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar .container {
     width: auto;
     padding: 0;
   }
 
-  /* line 31, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 33, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar .brand {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 0 0 -5px;
   }
 
-  /* line 33, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 35, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-fixed-top, #portal-globalnav .navbar-fixed-bottom {
     margin-left: -10px;
     margin-right: -10px;
   }
 
-  /* line 37, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 39, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse, .nav-collapse-eines {
     clear: both;
   }
 
-  /* line 39, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 41, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav, #portal-globalnav .nav-collapse .contentViews, #portal-globalnav .nav-collapse .configlets, #portal-globalnav .nav-collapse .formTabs, .nav-collapse-eines .nav, .nav-collapse-eines .contentViews, .nav-collapse-eines .configlets, .nav-collapse-eines .formTabs {
     float: none;
     margin: 0 0 9px;
   }
 
-  /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 46, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav > li, #portal-globalnav .nav-collapse .contentViews > li, #portal-globalnav .nav-collapse .configlets > li, #portal-globalnav .nav-collapse .formTabs > li,
   .nav-collapse-eines.nav-collapse .nav > li,
   .nav-collapse-eines.nav-collapse .contentViews > li,
@@ -8286,7 +8369,7 @@ button.pfg-draft-save .badge,
     float: none;
   }
 
-  /* line 48, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 50, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav > li > a, #portal-globalnav .nav-collapse .contentViews > li > a, #portal-globalnav .nav-collapse .configlets > li > a, #portal-globalnav .nav-collapse .formTabs > li > a,
   .nav-collapse-eines.nav-collapse .nav > li > a,
   .nav-collapse-eines.nav-collapse .contentViews > li > a,
@@ -8295,7 +8378,7 @@ button.pfg-draft-save .badge,
     margin-bottom: 2px;
   }
 
-  /* line 52, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 54, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav > .divider-vertical, #portal-globalnav .nav-collapse .contentViews > .divider-vertical, #portal-globalnav .nav-collapse .configlets > .divider-vertical, #portal-globalnav .nav-collapse .formTabs > .divider-vertical,
   .nav-collapse-eines.nav-collapse .nav > .divider-vertical,
   .nav-collapse-eines.nav-collapse .contentViews > .divider-vertical,
@@ -8304,7 +8387,7 @@ button.pfg-draft-save .badge,
     display: none;
   }
 
-  /* line 56, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 58, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav .nav-header, #portal-globalnav .nav-collapse .contentViews .nav-header, #portal-globalnav .nav-collapse .configlets .nav-header, #portal-globalnav .nav-collapse .formTabs .nav-header,
   .nav-collapse-eines.nav-collapse .nav .nav-header,
   .nav-collapse-eines.nav-collapse .contentViews .nav-header,
@@ -8314,7 +8397,7 @@ button.pfg-draft-save .badge,
     text-shadow: none;
   }
 
-  /* line 64, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 66, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav > li > a, #portal-globalnav .nav-collapse .contentViews > li > a, #portal-globalnav .nav-collapse .configlets > li > a, #portal-globalnav .nav-collapse .formTabs > li > a,
   #portal-globalnav .nav-collapse .dropdown-menu a,
   .nav-collapse-eines.nav-collapse .nav > li > a,
@@ -8330,7 +8413,7 @@ button.pfg-draft-save .badge,
     border-radius: 3px;
   }
 
-  /* line 72, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 74, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .btn, #portal-globalnav .nav-collapse .standalone, #portal-globalnav .nav-collapse input[value^="Cancel"], #portal-globalnav .nav-collapse [type="submit"], #portal-globalnav .nav-collapse .context, #portal-globalnav .nav-collapse .searchButton, #portal-globalnav .nav-collapse button.pfg-draft-save, #portal-globalnav .nav-collapse .link-parent {
     padding: 4px 10px 4px;
     font-weight: normal;
@@ -8339,30 +8422,30 @@ button.pfg-draft-save .badge,
     border-radius: 4px;
   }
 
-  /* line 77, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 79, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .dropdown-menu li + li a {
     margin-bottom: 2px;
   }
 
-  /* line 81, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 83, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav > li > a:hover, #portal-globalnav .nav-collapse .contentViews > li > a:hover, #portal-globalnav .nav-collapse .configlets > li > a:hover, #portal-globalnav .nav-collapse .formTabs > li > a:hover,
   #portal-globalnav .nav-collapse .dropdown-menu a:hover {
     background-color: #e0e0e0;
   }
 
-  /* line 85, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 87, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-inverse .nav-collapse .nav > li > a:hover, #portal-globalnav .navbar-inverse .nav-collapse .contentViews > li > a:hover, #portal-globalnav .navbar-inverse .nav-collapse .configlets > li > a:hover, #portal-globalnav .navbar-inverse .nav-collapse .formTabs > li > a:hover,
   #portal-globalnav .navbar-inverse .nav-collapse .dropdown-menu a:hover {
     background-color: #111111;
   }
 
-  /* line 89, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 91, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse.in .btn-group {
     margin-top: 5px;
     padding: 0;
   }
 
-  /* line 95, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 97, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .dropdown-menu,
   .nav-collapse-eines.nav-collapse .dropdown-menu {
     position: static;
@@ -8383,18 +8466,18 @@ button.pfg-draft-save .badge,
     box-shadow: none;
   }
 
-  /* line 110, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 112, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .dropdown-menu:before,
   #portal-globalnav .nav-collapse .dropdown-menu:after {
     display: none;
   }
 
-  /* line 113, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 115, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .dropdown-menu .divider {
     display: none;
   }
 
-  /* line 118, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 120, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .navbar-form,
   #portal-globalnav .nav-collapse .navbar-search {
     float: none;
@@ -8407,36 +8490,36 @@ button.pfg-draft-save .badge,
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   }
 
-  /* line 127, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar .nav-collapse .nav.pull-right, #portal-globalnav .navbar .nav-collapse .pull-right.contentViews, #portal-globalnav .navbar .nav-collapse .contentViews.newsImageContainer, #portal-globalnav .navbar .nav-collapse .pull-right.configlets, #portal-globalnav .navbar .nav-collapse .configlets.newsImageContainer, #portal-globalnav .navbar .nav-collapse .nav.newsImageContainer, #portal-globalnav .navbar .nav-collapse .newsImageContainer.formTabs, #portal-globalnav .navbar .nav-collapse .pull-right.formTabs {
     float: none;
     margin-left: 0;
   }
 
-  /* line 133, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 135, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse,
   #portal-globalnav .nav-collapse.collapse {
     overflow: hidden;
     height: 0;
   }
 
-  /* line 138, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 140, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar .btn-navbar {
     display: block;
   }
 
-  /* line 142, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
     margin-top: 18px;
   }
 
-  /* line 143, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 145, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse-eines.nav-collapse {
     overflow: hidden;
     height: 0;
   }
 
-  /* line 144, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 146, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse-eines.nav-collapse .nav, .nav-collapse-eines.nav-collapse .contentViews, .nav-collapse-eines.nav-collapse .configlets, .nav-collapse-eines.nav-collapse .formTabs {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -8449,29 +8532,29 @@ button.pfg-draft-save .badge,
     box-shadow: inset 0 2px 5px 2px rgba(0, 0, 0, 0.15);
   }
 
-  /* line 145, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 147, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse-eines.nav-collapse .nav .dropdown-toggle, .nav-collapse-eines.nav-collapse .contentViews .dropdown-toggle, .nav-collapse-eines.nav-collapse .configlets .dropdown-toggle, .nav-collapse-eines.nav-collapse .formTabs .dropdown-toggle {
     display: none;
   }
 
-  /* line 146, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 148, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse-eines.nav-collapse a {
     color: #007bc0 !important;
   }
 
-  /* line 149, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 151, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-static .navbar-inner {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  /* line 153, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 155, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav, #portal-globalnav .contentViews, #portal-globalnav .configlets, #portal-globalnav .formTabs {
     margin-bottom: 0 !important;
     border-top: 1px solid #b2b2b2;
   }
 
-  /* line 154, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 156, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav a, #portal-globalnav .contentViews a, #portal-globalnav .configlets a, #portal-globalnav .formTabs a {
     color: #666666 !important;
     border-bottom: 0 !important;
@@ -8480,117 +8563,117 @@ button.pfg-draft-save .badge,
     border-radius: 0 !important;
     margin-bottom: 0 !important;
   }
-  /* line 155, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 157, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav a:focus, #portal-globalnav .contentViews a:focus, #portal-globalnav .configlets a:focus, #portal-globalnav .formTabs a:focus, #portal-globalnav .nav a:hover, #portal-globalnav .contentViews a:hover, #portal-globalnav .configlets a:hover, #portal-globalnav .formTabs a:hover {
     color: #222222 !important;
   }
 
-  /* line 157, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 159, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .state-published, #portal-globalnav #workflow-transition-publish {
     border-right: 3px solid #007bc0 !important;
   }
 
-  /* line 158, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 160, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .state-draft, #portal-globalnav #workflow-transition-reject, #portal-globalnav #workflow-transition-retiraaesborrany, #portal-globalnav #workflow-transition-show {
     border-right: 3px solid #72a31d !important;
   }
 
-  /* line 159, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 161, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .state-pending, #portal-globalnav #workflow-transition-submit {
     border-right: 3px solid #ad6704 !important;
   }
 
-  /* line 160, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 162, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .state-intranet, #portal-globalnav #workflow-transition-publishtointranet, #portal-globalnav #workflow-transition-publicaalaintranet, #portal-globalnav #workflow-transition-retracttointranet, #portal-globalnav #workflow-transition-retiraalaintranet {
     border-right: 3px solid #8952ab !important;
   }
 
-  /* line 161, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .state-private, #portal-globalnav #workflow-transition-hide {
     border-right: 3px solid #a62e1f !important;
   }
 }
 @media only screen and (max-width: 639px), only screen and (max-width: 639px) and (orientation: landscape) {
-  /* line 174, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top, .navbar-fixed-bottom {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 178, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 180, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     position: static;
   }
 
-  /* line 179, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 181, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top {
     margin-bottom: 18px;
   }
 
-  /* line 180, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 182, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-bottom {
     margin-top: 18px;
   }
 
-  /* line 182, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
     padding: 5px;
   }
 
-  /* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 185, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .container {
     width: auto;
     padding: 0;
   }
 
-  /* line 185, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .brand {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 0 0 -5px;
   }
 
-  /* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 189, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top, #portal-globalnav .navbar-fixed-bottom {
     margin-left: -10px;
     margin-right: -10px;
   }
 
-  /* line 191, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 193, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse {
     clear: both;
   }
 
-  /* line 193, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 195, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav, .nav-collapse .contentViews, .nav-collapse .configlets, .nav-collapse .formTabs {
     float: none;
     margin: 0 0 9px;
   }
 
-  /* line 197, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 199, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li, .nav-collapse .contentViews > li, .nav-collapse .configlets > li, .nav-collapse .formTabs > li {
     float: none;
   }
 
-  /* line 200, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 202, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a, .nav-collapse .contentViews > li > a, .nav-collapse .configlets > li > a, .nav-collapse .formTabs > li > a {
     margin-bottom: 2px;
   }
 
-  /* line 203, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 205, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > .divider-vertical, .nav-collapse .contentViews > .divider-vertical, .nav-collapse .configlets > .divider-vertical, .nav-collapse .formTabs > .divider-vertical {
     display: none;
   }
 
-  /* line 206, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 208, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav .nav-header, .nav-collapse .contentViews .nav-header, .nav-collapse .configlets .nav-header, .nav-collapse .formTabs .nav-header {
     color: #666666;
     text-shadow: none;
   }
 
-  /* line 212, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 214, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a, .nav-collapse .contentViews > li > a, .nav-collapse .configlets > li > a, .nav-collapse .formTabs > li > a,
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
@@ -8601,7 +8684,7 @@ button.pfg-draft-save .badge,
     border-radius: 3px;
   }
 
-  /* line 220, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 222, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .btn, .nav-collapse .standalone, .nav-collapse input[value^="Cancel"], .nav-collapse [type="submit"], .nav-collapse .context, .nav-collapse .searchButton, .nav-collapse button.pfg-draft-save, .nav-collapse .link-parent {
     padding: 4px 10px 4px;
     font-weight: normal;
@@ -8610,30 +8693,30 @@ button.pfg-draft-save .badge,
     border-radius: 4px;
   }
 
-  /* line 225, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 227, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu li + li a {
     margin-bottom: 2px;
   }
 
-  /* line 229, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 231, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a:hover, .nav-collapse .contentViews > li > a:hover, .nav-collapse .configlets > li > a:hover, .nav-collapse .formTabs > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
     background-color: #e0e0e0;
   }
 
-  /* line 233, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 235, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .contentViews > li > a:hover, .navbar-inverse .nav-collapse .configlets > li > a:hover, .navbar-inverse .nav-collapse .formTabs > li > a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover {
     background-color: #111111;
   }
 
-  /* line 237, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 239, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse.in .btn-group {
     margin-top: 5px;
     padding: 0;
   }
 
-  /* line 242, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 244, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu {
     position: static;
     top: auto;
@@ -8653,18 +8736,18 @@ button.pfg-draft-save .badge,
     box-shadow: none;
   }
 
-  /* line 257, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 259, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu:before,
   .nav-collapse .dropdown-menu:after {
     display: none;
   }
 
-  /* line 260, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 262, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu .divider {
     display: none;
   }
 
-  /* line 265, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 267, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .navbar-form,
   .nav-collapse .navbar-search {
     float: none;
@@ -8677,32 +8760,32 @@ button.pfg-draft-save .badge,
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   }
 
-  /* line 274, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 276, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .nav-collapse .nav.pull-right, .navbar .nav-collapse .pull-right.contentViews, .navbar .nav-collapse .contentViews.newsImageContainer, .navbar .nav-collapse .pull-right.configlets, .navbar .nav-collapse .configlets.newsImageContainer, .navbar .nav-collapse .nav.newsImageContainer, .navbar .nav-collapse .newsImageContainer.formTabs, .navbar .nav-collapse .pull-right.formTabs {
     float: none;
     margin-left: 0;
   }
 
-  /* line 280, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 282, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse,
   .nav-collapse.collapse {
     overflow: hidden;
     height: 0;
   }
 
-  /* line 285, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 287, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .btn-navbar {
     display: block;
   }
 
-  /* line 291, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 293, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-static .navbar-inner {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
-  /* line 298, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 300, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   * .reView {
     display: none !important;
   }
@@ -12053,41 +12136,103 @@ input#title {
 
 /* line 153, ../scss/_plone.scss */
 .img-mask {
+  clear: both;
   display: block;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
   margin-top: 6px;
-  width: 222px;
-  margin: 20px 0 auto;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  width: 90%;
+  height: 100%;
+  min-height: 100%;
 }
-/* line 159, ../scss/_plone.scss */
+/* line 164, ../scss/_plone.scss */
 .img-mask iframe {
   -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1354788544') no-repeat center center;
+  height: 400px;
+  width: 100%;
 }
 
-/* line 164, ../scss/_plone.scss */
+/* line 173, ../scss/_plone.scss */
 iframe {
   border: 0 !important;
   display: block !important;
 }
 
-/* line 170, ../scss/_plone.scss */
+/* regles afegides per maquetar contacte segons proposta oriol */
+/* line 180, ../scss/_plone.scss */
+#formfield-form-widgets-nombre {
+  float: left;
+  width: 48% !important;
+}
+
+/* line 184, ../scss/_plone.scss */
+#form-widgets-nombre {
+  width: 90% !important;
+}
+
+/* line 186, ../scss/_plone.scss */
+#formfield-form-widgets-from_address {
+  float: right;
+  width: 48% !important;
+}
+
+/* line 191, ../scss/_plone.scss */
+#form-widgets-from_address {
+  width: 95% !important;
+}
+
+/* line 193, ../scss/_plone.scss */
+#formfield-form-widgets-asunto {
+  clear: both;
+  width: 100%;
+}
+
+/* line 197, ../scss/_plone.scss */
+#form-widgets-asunto {
+  width: 97% !important;
+}
+
+/* line 201, ../scss/_plone.scss */
+#formfield-form-widgets-mensaje {
+  width: 100%;
+}
+
+/* line 204, ../scss/_plone.scss */
+#contacte-dades {
+  width: 48%;
+  float: left;
+  display: inline;
+}
+
+/* line 209, ../scss/_plone.scss */
+#contacte-links {
+  margin-left: 2%;
+  width: 48%;
+  float: left;
+  display: inline;
+  text-align: right;
+}
+
+/* FI regles afegides per maquetar contacte segons proposta oriol  */
+/* line 223, ../scss/_plone.scss */
 #portal-sitemap > li {
   font-weight: bold;
   font-size: normal;
   margin-top: 30px;
 }
-/* line 175, ../scss/_plone.scss */
+/* line 228, ../scss/_plone.scss */
 #portal-sitemap > li > div {
   padding-bottom: 10px;
   border-bottom: 1px solid #b2b2b2;
 }
-/* line 179, ../scss/_plone.scss */
+/* line 232, ../scss/_plone.scss */
 #portal-sitemap > li a {
   color: #007bc0;
 }
-/* line 181, ../scss/_plone.scss */
+/* line 234, ../scss/_plone.scss */
 #portal-sitemap > li a:after {
   content: " ";
   position: relative;
@@ -12097,7 +12242,7 @@ iframe {
   background: url('/++genweb++static/images/gh.png?1354788544') -239px -143px no-repeat;
   margin-left: 5px;
 }
-/* line 192, ../scss/_plone.scss */
+/* line 245, ../scss/_plone.scss */
 #portal-sitemap ul {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -12110,7 +12255,7 @@ iframe {
   column-fill: auto;
   margin: 0;
 }
-/* line 198, ../scss/_plone.scss */
+/* line 251, ../scss/_plone.scss */
 #portal-sitemap ul > li {
   font-weight: bold;
   font-size: normal;
@@ -12121,79 +12266,79 @@ iframe {
   -moz-column-break-inside: avoid;
   column-break-inside: avoid;
 }
-/* line 208, ../scss/_plone.scss */
+/* line 261, ../scss/_plone.scss */
 #portal-sitemap ul > li > div {
   padding-bottom: 0;
   padding-top: 5px;
 }
-/* line 212, ../scss/_plone.scss */
+/* line 265, ../scss/_plone.scss */
 #portal-sitemap ul > li a {
   color: #004a74;
 }
-/* line 214, ../scss/_plone.scss */
+/* line 267, ../scss/_plone.scss */
 #portal-sitemap ul > li a:after {
   content: none;
 }
-/* line 219, ../scss/_plone.scss */
+/* line 272, ../scss/_plone.scss */
 #portal-sitemap ul ul {
   -webkit-column-count: 1;
   -moz-column-count: 1;
   column-count: 1;
 }
-/* line 224, ../scss/_plone.scss */
+/* line 277, ../scss/_plone.scss */
 #portal-sitemap ul > li li {
   padding: 5px 9px;
   line-height: 12px;
   font-weight: normal;
   font-size: smaller;
 }
-/* line 231, ../scss/_plone.scss */
+/* line 284, ../scss/_plone.scss */
 #portal-sitemap ul > li li > div {
   padding-top: 0;
 }
-/* line 234, ../scss/_plone.scss */
+/* line 287, ../scss/_plone.scss */
 #portal-sitemap ul > li li a {
   color: #666666;
 }
 
-/* line 241, ../scss/_plone.scss */
+/* line 294, ../scss/_plone.scss */
 #recordsTable {
   table-layout: fixed;
 }
-/* line 242, ../scss/_plone.scss */
+/* line 295, ../scss/_plone.scss */
 #recordsTable td {
   word-break: break-all;
 }
 
-/* line 247, ../scss/_plone.scss */
+/* line 300, ../scss/_plone.scss */
 #dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3, #dashboard-portlets4 {
   float: left;
   margin-bottom: 18px;
 }
 
-/* line 248, ../scss/_plone.scss */
+/* line 301, ../scss/_plone.scss */
 #dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3 {
   margin-right: 30px;
 }
 
-/* line 251, ../scss/_plone.scss */
+/* line 304, ../scss/_plone.scss */
 .plone_jscalendar .dk_container {
   display: inline-block;
 }
 
-/* line 252, ../scss/_plone.scss */
+/* line 305, ../scss/_plone.scss */
 .plone_jscalendar .dk_toggle {
   width: 100px !important;
 }
 
-/* line 253, ../scss/_plone.scss */
+/* line 306, ../scss/_plone.scss */
 .plone_jscalendar .dk_options {
   min-width: 128px !important;
   width: 128px !important;
 }
 
 /* The main calendar widget.  DIV containing a table. */
-/* line 258, ../scss/_plone.scss */
+/* line 311, ../scss/_plone.scss */
 .calendar {
   display: none;
   margin: 0 auto;
@@ -12203,7 +12348,7 @@ iframe {
   margin-top: 50%;
 }
 
-/* line 259, ../scss/_plone.scss */
+/* line 312, ../scss/_plone.scss */
 .calendar table {
   background: #f2f2f2;
   border-radius: 5px;
@@ -12214,24 +12359,24 @@ iframe {
   margin: 0 auto;
 }
 
-/* line 260, ../scss/_plone.scss */
+/* line 313, ../scss/_plone.scss */
 .calendar .button {
   text-align: center;
   background: #f2f2f2;
 }
 
-/* line 261, ../scss/_plone.scss */
+/* line 314, ../scss/_plone.scss */
 .calendar .nav, .calendar .contentViews, .calendar .configlets, .calendar .formTabs {
   background: #f2f2f2 url(menuarrow.gif) no-repeat 100% 100%;
 }
 
-/* line 262, ../scss/_plone.scss */
+/* line 315, ../scss/_plone.scss */
 .calendar thead .title {
   font-weight: bold;
   text-align: center;
 }
 
-/* line 263, ../scss/_plone.scss */
+/* line 316, ../scss/_plone.scss */
 .calendar thead .name {
   border-bottom: 1px solid #b2b2b2;
   border-top: 1px solid #b2b2b2;
@@ -12239,113 +12384,113 @@ iframe {
   background: #f7f7f7;
 }
 
-/* line 264, ../scss/_plone.scss */
+/* line 317, ../scss/_plone.scss */
 .calendar thead .weekend {
   color: #c00;
 }
 
-/* line 265, ../scss/_plone.scss */
+/* line 318, ../scss/_plone.scss */
 .calendar thead .hilite {
   background: #cef;
 }
 
-/* line 266, ../scss/_plone.scss */
+/* line 319, ../scss/_plone.scss */
 .calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected, .contentViews .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
 
-/* line 267, ../scss/_plone.scss */
+/* line 320, ../scss/_plone.scss */
 .calendar tbody {
   background: #fff;
 }
 
-/* line 268, ../scss/_plone.scss */
+/* line 321, ../scss/_plone.scss */
 .calendar tbody .day {
   width: 2em;
   text-align: center;
   padding: 2px 0px;
 }
 
-/* line 269, ../scss/_plone.scss */
+/* line 322, ../scss/_plone.scss */
 .calendar tbody .day.othermonth {
   font-size: 80%;
   color: #aaa;
 }
 
-/* line 270, ../scss/_plone.scss */
+/* line 323, ../scss/_plone.scss */
 .calendar tbody .day.othermonth.oweekend {
   color: #faa;
 }
 
-/* line 271, ../scss/_plone.scss */
+/* line 324, ../scss/_plone.scss */
 .calendar table .wn {
   border-right: 1px solid #b2b2b2;
   background: #f7f7f7;
 }
 
-/* line 272, ../scss/_plone.scss */
+/* line 325, ../scss/_plone.scss */
 .calendar tbody .rowhilite td {
   background: #cef;
 }
 
-/* line 273, ../scss/_plone.scss */
+/* line 326, ../scss/_plone.scss */
 .calendar tbody td.hilite {
   background: #08c;
   color: white;
 }
 
-/* line 274, ../scss/_plone.scss */
+/* line 327, ../scss/_plone.scss */
 .calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected, .contentViews .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
 
-/* line 275, ../scss/_plone.scss */
+/* line 328, ../scss/_plone.scss */
 .calendar tbody td.selected {
   font-weight: bold;
   background: #08c;
   color: white;
 }
 
-/* line 276, ../scss/_plone.scss */
+/* line 329, ../scss/_plone.scss */
 .calendar tbody td.weekend {
   color: #c00;
 }
 
-/* line 277, ../scss/_plone.scss */
+/* line 330, ../scss/_plone.scss */
 .calendar tbody td.today {
   font-weight: bold;
   color: white;
   border-radius: 3px;
 }
 
-/* line 278, ../scss/_plone.scss */
+/* line 331, ../scss/_plone.scss */
 .calendar tbody td.disabled {
   color: gray;
 }
 
-/* line 280, ../scss/_plone.scss */
+/* line 333, ../scss/_plone.scss */
 .calendar tbody .emptyrow {
   display: none;
 }
 
-/* line 282, ../scss/_plone.scss */
+/* line 335, ../scss/_plone.scss */
 .calendar tfoot .ttip {
   background: #f7f7f7;
   border-top: 1px solid #b2b2b2;
   text-align: center;
 }
 
-/* line 283, ../scss/_plone.scss */
+/* line 336, ../scss/_plone.scss */
 .calendar tfoot .hilite {
   background-color: #cef !important;
 }
 
-/* line 284, ../scss/_plone.scss */
+/* line 337, ../scss/_plone.scss */
 .calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected, .contentViews .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
   background-color: #08c !important;
 }
 
-/* line 286, ../scss/_plone.scss */
+/* line 339, ../scss/_plone.scss */
 .calendar .combo {
   position: absolute;
   display: none;
@@ -12362,7 +12507,7 @@ iframe {
   z-index: 100;
 }
 
-/* line 303, ../scss/_plone.scss */
+/* line 356, ../scss/_plone.scss */
 .calendar .combo .label, .calendar .combo #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .calendar .combo .state-restricted-to-managers, .calendar .combo #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .calendar .combo .state-visible, .calendar .combo #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .calendar .combo .state-intranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publishtointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publicaalaintranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retracttointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retiraalaintranet, .calendar .combo #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .calendar .combo .state-private, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-hide,
 .calendar .combo .label-IEfix {
   text-align: center;
@@ -12370,24 +12515,24 @@ iframe {
   padding: 1px;
 }
 
-/* line 309, ../scss/_plone.scss */
+/* line 362, ../scss/_plone.scss */
 .calendar .combo .label-IEfix {
   width: 4em;
 }
 
-/* line 313, ../scss/_plone.scss */
+/* line 366, ../scss/_plone.scss */
 .calendar .combo .active, .calendar .combo .selected, .calendar .combo .contentViews .selected, .contentViews .calendar .combo .selected, .calendar .combo .contentViews .selected:hover, .contentViews .calendar .combo .selected:hover {
   padding: 0px;
   border: 1px solid #000;
 }
 
-/* line 318, ../scss/_plone.scss */
+/* line 371, ../scss/_plone.scss */
 .calendar .combo .hilite {
   background: Highlight;
   color: HighlightText;
 }
 
-/* line 323, ../scss/_plone.scss */
+/* line 376, ../scss/_plone.scss */
 .calendar td.time {
   border-top: 1px solid ButtonShadow;
   padding: 1px 0px;
@@ -12395,7 +12540,7 @@ iframe {
   background-color: ButtonFace;
 }
 
-/* line 332, ../scss/_plone.scss */
+/* line 385, ../scss/_plone.scss */
 .calendar td.time .hour,
 .calendar td.time .minute,
 .calendar td.time .ampm {
@@ -12405,32 +12550,32 @@ iframe {
   background-color: Menu;
 }
 
-/* line 339, ../scss/_plone.scss */
+/* line 392, ../scss/_plone.scss */
 .calendar td.time .ampm {
   text-align: center;
 }
 
-/* line 343, ../scss/_plone.scss */
+/* line 396, ../scss/_plone.scss */
 .calendar td.time .colon {
   padding: 0px 2px 0px 3px;
   font-weight: bold;
 }
 
-/* line 348, ../scss/_plone.scss */
+/* line 401, ../scss/_plone.scss */
 .calendar td.time span.hilite {
   border-color: #000;
   background-color: Highlight;
   color: HighlightText;
 }
 
-/* line 354, ../scss/_plone.scss */
+/* line 407, ../scss/_plone.scss */
 .calendar td.time span.active, .calendar td.time span.selected, .calendar td.time .contentViews span.selected, .contentViews .calendar td.time span.selected, .calendar td.time .contentViews span.selected:hover, .contentViews .calendar td.time span.selected:hover {
   border-color: #f00;
   background-color: #000;
   color: #080;
 }
 
-/* line 361, ../scss/_plone.scss */
+/* line 414, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong {
   display: inline-block;
   padding: 2px 0 0 4px;
@@ -12440,37 +12585,37 @@ iframe {
   width: 34%;
 }
 
-/* line 363, ../scss/_plone.scss */
+/* line 416, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader:hover strong {
   color: white;
 }
-/* line 364, ../scss/_plone.scss */
+/* line 417, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader:hover a {
   color: #30a2c3;
 }
 
-/* line 366, ../scss/_plone.scss */
+/* line 419, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong:hover {
   overflow: visible;
   width: 100%;
   padding-bottom: 1px !important;
 }
 
-/* line 367, ../scss/_plone.scss */
+/* line 420, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong:hover + span {
   display: none;
 }
 
-/* line 370, ../scss/_plone.scss */
+/* line 423, ../scss/_plone.scss */
 img[src$="spinner.gif"] {
   box-shadow: 0 0 350px 125px white;
 }
 
-/* line 375, ../scss/_plone.scss */
+/* line 428, ../scss/_plone.scss */
 .discussion .commentImage {
   position: absolute;
 }
-/* line 377, ../scss/_plone.scss */
+/* line 430, ../scss/_plone.scss */
 .discussion .commentImage img {
   width: 50px;
   -webkit-border-radius: 4px;
@@ -12479,93 +12624,93 @@ img[src$="spinner.gif"] {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 379, ../scss/_plone.scss */
+/* line 432, ../scss/_plone.scss */
 .discussion .replyTreeLevel0 {
   margin-top: 2em;
 }
-/* line 382, ../scss/_plone.scss */
+/* line 435, ../scss/_plone.scss */
 .discussion .documentByLine a {
   font-weight: bold;
 }
-/* line 384, ../scss/_plone.scss */
+/* line 437, ../scss/_plone.scss */
 .discussion .commentDate {
   float: right;
 }
-/* line 385, ../scss/_plone.scss */
+/* line 438, ../scss/_plone.scss */
 .discussion .commentBody {
   color: #333333;
 }
-/* line 386, ../scss/_plone.scss */
+/* line 439, ../scss/_plone.scss */
 .discussion .commentActions {
   float: right;
 }
-/* line 389, ../scss/_plone.scss */
+/* line 442, ../scss/_plone.scss */
 .discussion .comment {
   border-left: 1px solid #b2b2b2;
   padding-left: 1em;
   margin-bottom: .5em;
   min-height: 50px;
 }
-/* line 390, ../scss/_plone.scss */
+/* line 443, ../scss/_plone.scss */
 .discussion .comment.replyTreeLevel0 {
   padding-left: 0;
   border-left: 0;
 }
-/* line 391, ../scss/_plone.scss */
+/* line 444, ../scss/_plone.scss */
 .discussion .reply-to-comment-button {
   display: block;
 }
-/* line 392, ../scss/_plone.scss */
+/* line 445, ../scss/_plone.scss */
 .discussion .documentByLine, .discussion .commentBody, .discussion .reply-to-comment-button {
   margin-left: 60px;
 }
-/* line 393, ../scss/_plone.scss */
+/* line 446, ../scss/_plone.scss */
 .discussion .reply {
   margin-top: 20px;
 }
 
-/* line 397, ../scss/_plone.scss */
+/* line 450, ../scss/_plone.scss */
 .collage-row {
   border-bottom: 1px solid #b2b2b2;
 }
 
-/* line 398, ../scss/_plone.scss */
+/* line 451, ../scss/_plone.scss */
 .collage-row:first-child {
   border-top: 1px solid #b2b2b2;
 }
 
-/* line 399, ../scss/_plone.scss */
+/* line 452, ../scss/_plone.scss */
 .collage-header {
   background: #fea;
 }
 
-/* line 401, ../scss/_plone.scss */
+/* line 454, ../scss/_plone.scss */
 .collage-image {
   width: 100%;
 }
 
-/* line 404, ../scss/_plone.scss */
+/* line 457, ../scss/_plone.scss */
 .collage-featured-image {
   float: right;
 }
 
-/* line 407, ../scss/_plone.scss */
+/* line 460, ../scss/_plone.scss */
 .featured-document {
   background: #f3f3f3;
   padding: 10px;
 }
 
-/* line 411, ../scss/_plone.scss */
+/* line 464, ../scss/_plone.scss */
 .collage-listitem {
   margin-bottom: 1em;
 }
 
-/* line 414, ../scss/_plone.scss */
+/* line 467, ../scss/_plone.scss */
 .collage-item .documentActions {
   display: none;
 }
 
-/* line 417, ../scss/_plone.scss */
+/* line 470, ../scss/_plone.scss */
 .collage-header {
   /*font-size: 0.9em;*/
   border-bottom: 1px solid White;
@@ -12574,23 +12719,23 @@ img[src$="spinner.gif"] {
   margin-bottom: 2px !important;
 }
 
-/* line 424, ../scss/_plone.scss */
+/* line 477, ../scss/_plone.scss */
 .collage-header p.discreet {
   /*font-size: 0.9em;*/
 }
 
-/* line 427, ../scss/_plone.scss */
+/* line 480, ../scss/_plone.scss */
 .collage-header span.icon img {
   padding: 2px;
 }
 
-/* line 430, ../scss/_plone.scss */
+/* line 483, ../scss/_plone.scss */
 .collage-header span.icon img.alias {
   padding: 0px;
   border: 2px solid White;
 }
 
-/* line 434, ../scss/_plone.scss */
+/* line 487, ../scss/_plone.scss */
 .collage-item div.clickable a {
   text-decoration: none;
   border: none;
@@ -12598,18 +12743,18 @@ img[src$="spinner.gif"] {
   background: transparent !important;
 }
 
-/* line 440, ../scss/_plone.scss */
+/* line 493, ../scss/_plone.scss */
 .collage-header span {
   color: #007bc0;
   text-transform: lowercase;
 }
 
-/* line 445, ../scss/_plone.scss */
+/* line 498, ../scss/_plone.scss */
 .collage-existing-items select {
   /*font-size: 80%;*/
 }
 
-/* line 448, ../scss/_plone.scss */
+/* line 501, ../scss/_plone.scss */
 .collage-existing-items .breadcrumbs {
   background: url("logoIcon.gif") no-repeat left center;
   padding-top: 4px;
@@ -12619,23 +12764,23 @@ img[src$="spinner.gif"] {
   border-bottom: 1px solid White;
 }
 
-/* line 457, ../scss/_plone.scss */
+/* line 510, ../scss/_plone.scss */
 .collage-existing-items .breadcrumbs a,
 .collage-existing-items .breadcrumbs span {
   /*font-size: 1.0em !important;*/
 }
 
-/* line 461, ../scss/_plone.scss */
+/* line 514, ../scss/_plone.scss */
 .collage-existing-items label {
   display: none;
 }
 
-/* line 464, ../scss/_plone.scss */
+/* line 517, ../scss/_plone.scss */
 .collage-header a {
   cursor: pointer;
 }
 
-/* line 469, ../scss/_plone.scss */
+/* line 522, ../scss/_plone.scss */
 .collage-header a.action,
 .collage-header a.layout,
 .collage-header a.create {
@@ -12644,23 +12789,23 @@ img[src$="spinner.gif"] {
   text-decoration: none;
 }
 
-/* line 474, ../scss/_plone.scss */
+/* line 527, ../scss/_plone.scss */
 .collage-header a.delete-confirm {
   color: red;
 }
 
-/* line 478, ../scss/_plone.scss */
+/* line 531, ../scss/_plone.scss */
 .collage-header a.action span.inactive,
 .collage-header a.layout span.inactive {
   text-decoration: underline;
 }
 
-/* line 481, ../scss/_plone.scss */
+/* line 534, ../scss/_plone.scss */
 .collage-header a.layout span.active, .collage-header a.layout span.selected, .collage-header a.layout .contentViews span.selected, .contentViews .collage-header a.layout span.selected, .collage-header a.layout .contentViews span.selected:hover, .contentViews .collage-header a.layout span.selected:hover {
   color: Black;
 }
 
-/* line 484, ../scss/_plone.scss */
+/* line 537, ../scss/_plone.scss */
 .delete-object-icon {
   float: left;
   width: 14px;
@@ -12669,7 +12814,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-delete.gif") no-repeat top left;
 }
 
-/* line 491, ../scss/_plone.scss */
+/* line 544, ../scss/_plone.scss */
 .copy-object-icon {
   float: left;
   width: 14px;
@@ -12678,7 +12823,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-copy.gif") no-repeat top left;
 }
 
-/* line 498, ../scss/_plone.scss */
+/* line 551, ../scss/_plone.scss */
 .paste-object-icon {
   float: left;
   width: 14px;
@@ -12687,7 +12832,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-paste.gif") no-repeat top left;
 }
 
-/* line 505, ../scss/_plone.scss */
+/* line 558, ../scss/_plone.scss */
 .split-column-icon {
   float: left;
   width: 14px;
@@ -12696,7 +12841,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-split.gif") no-repeat top left;
 }
 
-/* line 512, ../scss/_plone.scss */
+/* line 565, ../scss/_plone.scss */
 .object-action-generic-icon {
   float: left;
   width: 14px;
@@ -12706,7 +12851,7 @@ img[src$="spinner.gif"] {
 }
 
 /* */
-/* line 520, ../scss/_plone.scss */
+/* line 573, ../scss/_plone.scss */
 .expandable-section .expandable-label .expandable-icon {
   background: url("/++resource++collage-resources/icon-plusminus.gif") no-repeat top left;
   float: left;
@@ -12716,18 +12861,18 @@ img[src$="spinner.gif"] {
   margin-left: 3px;
 }
 
-/* line 528, ../scss/_plone.scss */
+/* line 581, ../scss/_plone.scss */
 .expandable-section .expandable-label.enabled .expandable-icon {
   background-position: -20px 0%;
 }
 
-/* line 531, ../scss/_plone.scss */
+/* line 584, ../scss/_plone.scss */
 .expandable-section .expandable-label {
   float: left;
   position: relative;
 }
 
-/* line 535, ../scss/_plone.scss */
+/* line 588, ../scss/_plone.scss */
 .expandable-content {
   display: none;
   top: 35px;
@@ -12756,7 +12901,7 @@ border-bottom: 1px solid #74ae0b;
 margin: 0.5em;
 }
 */
-/* line 562, ../scss/_plone.scss */
+/* line 615, ../scss/_plone.scss */
 ul.collage-content-menu {
   display: block;
   list-style-image: none !important;
@@ -12764,85 +12909,85 @@ ul.collage-content-menu {
   margin-left: 0 !important;
 }
 
-/* line 569, ../scss/_plone.scss */
+/* line 622, ../scss/_plone.scss */
 ul.collage-content-menu li {
   display: block;
 }
 
-/* line 572, ../scss/_plone.scss */
+/* line 625, ../scss/_plone.scss */
 ul.collage-content-menu li a {
   border: none;
 }
 
 /* */
-/* line 576, ../scss/_plone.scss */
+/* line 629, ../scss/_plone.scss */
 div.insert-existing-items h4 {
   line-height: 16px;
 }
 
-/* line 579, ../scss/_plone.scss */
+/* line 632, ../scss/_plone.scss */
 input#insert-collage-row {
   margin-top: 1em;
 }
 
 /* */
-/* line 583, ../scss/_plone.scss */
+/* line 636, ../scss/_plone.scss */
 span.collage-navigation img {
   width: 9px;
   height: 9px;
 }
 
-/* line 587, ../scss/_plone.scss */
+/* line 640, ../scss/_plone.scss */
 span.collage-navigation {
   margin-left: 4px;
 }
 
-/* line 590, ../scss/_plone.scss */
+/* line 643, ../scss/_plone.scss */
 span.collage-navigation a {
   text-decoration: none;
 }
 
 /* */
-/* line 594, ../scss/_plone.scss */
+/* line 647, ../scss/_plone.scss */
 .display-collagerow_default_view {
   background-image: url(icon-collagerow_default_view.gif) !important;
 }
 
-/* line 597, ../scss/_plone.scss */
+/* line 650, ../scss/_plone.scss */
 .display-collagerow_largeleft_view {
   background-image: url(icon-collagerow_largeleft_view.gif) !important;
 }
 
-/* line 600, ../scss/_plone.scss */
+/* line 653, ../scss/_plone.scss */
 .display-collagerow_largeright_view {
   background-image: url(icon-collagerow_largeright_view.gif) !important;
 }
 
-/* line 603, ../scss/_plone.scss */
+/* line 656, ../scss/_plone.scss */
 .display-collagecolumn_default_view {
   background-image: url(icon-collagecolumn_default_view.gif) !important;
 }
 
 /* */
-/* line 607, ../scss/_plone.scss */
+/* line 660, ../scss/_plone.scss */
 .icons-on .collage-content-menu .contenttype-file {
   background: no-repeat transparent 0px -433px url(contenttypes-sprite.png);
   padding-left: 20px !important;
 }
 
-/* line 611, ../scss/_plone.scss */
+/* line 664, ../scss/_plone.scss */
 .icons-on .collage-content-menu .contenttype-image {
   background: no-repeat transparent 0px -865px url(contenttypes-sprite.png);
   padding-left: 20px !important;
 }
 
 /* */
-/* line 616, ../scss/_plone.scss */
+/* line 669, ../scss/_plone.scss */
 .collage-quickedit {
   float: right;
 }
 
-/* line 619, ../scss/_plone.scss */
+/* line 672, ../scss/_plone.scss */
 #collage .collage-row {
   min-height: 100%;
   margin-left: auto;
@@ -12853,25 +12998,25 @@ span.collage-navigation a {
   clear: both;
 }
 
-/* line 629, ../scss/_plone.scss */
+/* line 682, ../scss/_plone.scss */
 #collage div.collage-first-object,
 #collage div.collage-first-object div.collage-item {
   margin-left: 0;
 }
 
-/* line 633, ../scss/_plone.scss */
+/* line 686, ../scss/_plone.scss */
 #collage div.collage-last-object,
 #collage div.collage-last-object div.collage-item {
   margin-right: 0;
 }
 
-/* line 636, ../scss/_plone.scss */
+/* line 689, ../scss/_plone.scss */
 * html #collage .collage-row {
   width: 100%;
   height: 100%;
 }
 
-/* line 644, ../scss/_plone.scss */
+/* line 697, ../scss/_plone.scss */
 #collage .block_1,
 #collage .block_2,
 #collage .block_3,
@@ -12880,40 +13025,40 @@ span.collage-navigation a {
   float: left;
 }
 
-/* line 647, ../scss/_plone.scss */
+/* line 700, ../scss/_plone.scss */
 .collage-item {
   margin-bottom: 0.5em;
 }
 
 /* */
-/* line 651, ../scss/_plone.scss */
+/* line 704, ../scss/_plone.scss */
 #collage .one-column .block_1 {
   width: 100%;
 }
 
-/* line 654, ../scss/_plone.scss */
+/* line 707, ../scss/_plone.scss */
 #collage .two-columns-equal .block_1 {
   width: 49.49%;
 }
 
-/* line 657, ../scss/_plone.scss */
+/* line 710, ../scss/_plone.scss */
 #collage .two-columns-equal .block_2 {
   width: 49.49%;
 }
 
-/* line 660, ../scss/_plone.scss */
+/* line 713, ../scss/_plone.scss */
 #collage .three-columns-equal .block_1,
 #collage .three-columns-equal .block_2,
 #collage .three-columns-equal .block_3 {
   width: 32.5%;
 }
 
-/* line 663, ../scss/_plone.scss */
+/* line 716, ../scss/_plone.scss */
 #collage .three-columns-equal .block_2 {
   width: 32.9%;
 }
 
-/* line 667, ../scss/_plone.scss */
+/* line 720, ../scss/_plone.scss */
 #collage .four-columns-equal .block_1,
 #collage .four-columns-equal .block_2,
 #collage .four-columns-equal .block_3,
@@ -12921,12 +13066,12 @@ span.collage-navigation a {
   width: 24.2%;
 }
 
-/* line 670, ../scss/_plone.scss */
+/* line 723, ../scss/_plone.scss */
 #collage .four-columns-equal .block_2 {
   width: 24.4%;
 }
 
-/* line 675, ../scss/_plone.scss */
+/* line 728, ../scss/_plone.scss */
 #collage .five-columns-equal .block_1,
 #collage .five-columns-equal .block_2,
 #collage .five-columns-equal .block_3,
@@ -12935,12 +13080,12 @@ span.collage-navigation a {
   width: 19.2%;
 }
 
-/* line 678, ../scss/_plone.scss */
+/* line 731, ../scss/_plone.scss */
 #collage .five-columns-equal .block_2 {
   width: 19.2%;
 }
 
-/* line 684, ../scss/_plone.scss */
+/* line 737, ../scss/_plone.scss */
 #collage .block_2,
 #collage .block_4,
 #collage .block_3,
@@ -12950,49 +13095,49 @@ span.collage-navigation a {
   padding-left: 1%;
 }
 
-/* line 687, ../scss/_plone.scss */
+/* line 740, ../scss/_plone.scss */
 #collage .two-columns-largeleft .block_1 {
   width: 59%;
 }
 
-/* line 690, ../scss/_plone.scss */
+/* line 743, ../scss/_plone.scss */
 #collage .two-columns-largeleft .block_2 {
   width: 40%;
 }
 
-/* line 693, ../scss/_plone.scss */
+/* line 746, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_1 {
   width: 59%;
 }
 
-/* line 696, ../scss/_plone.scss */
+/* line 749, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_2 {
   width: 19%;
 }
 
-/* line 699, ../scss/_plone.scss */
+/* line 752, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_3 {
   width: 20%;
 }
 
-/* line 702, ../scss/_plone.scss */
+/* line 755, ../scss/_plone.scss */
 #collage .four-columns-largeleft .block_1 {
   width: 40%;
 }
 
-/* line 707, ../scss/_plone.scss */
+/* line 760, ../scss/_plone.scss */
 #collage .four-columns-largeleft .block_2,
 #collage .four-columns-largeleft .block_3,
 #collage .four-columns-largeleft .block_4 {
   width: 19%;
 }
 
-/* line 710, ../scss/_plone.scss */
+/* line 763, ../scss/_plone.scss */
 #collage .five-columns-largeleft .block_1 {
   width: 24%;
 }
 
-/* line 716, ../scss/_plone.scss */
+/* line 769, ../scss/_plone.scss */
 #collage .five-columns-largeleft .block_2,
 #collage .five-columns-largeleft .block_3,
 #collage .five-columns-largeleft .block_4,
@@ -13000,44 +13145,44 @@ span.collage-navigation a {
   width: 18%;
 }
 
-/* line 719, ../scss/_plone.scss */
+/* line 772, ../scss/_plone.scss */
 #collage .two-columns-largeright .block_2 {
   width: 59%;
 }
 
-/* line 722, ../scss/_plone.scss */
+/* line 775, ../scss/_plone.scss */
 #collage .two-columns-largeright .block_1 {
   width: 40%;
 }
 
-/* line 725, ../scss/_plone.scss */
+/* line 778, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_3 {
   width: 59%;
 }
 
-/* line 728, ../scss/_plone.scss */
+/* line 781, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_1 {
   width: 20%;
 }
 
-/* line 731, ../scss/_plone.scss */
+/* line 784, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_2 {
   width: 19%;
 }
 
-/* line 736, ../scss/_plone.scss */
+/* line 789, ../scss/_plone.scss */
 #collage .four-columns-largeright .block_1,
 #collage .four-columns-largeright .block_2,
 #collage .four-columns-largeright .block_3 {
   width: 19%;
 }
 
-/* line 739, ../scss/_plone.scss */
+/* line 792, ../scss/_plone.scss */
 #collage .four-columns-largeright .block_4 {
   width: 40%;
 }
 
-/* line 745, ../scss/_plone.scss */
+/* line 798, ../scss/_plone.scss */
 #collage .five-columns-largeright .block_1,
 #collage .five-columns-largeright .block_2,
 #collage .five-columns-largeright .block_3,
@@ -13045,101 +13190,101 @@ span.collage-navigation a {
   width: 18%;
 }
 
-/* line 748, ../scss/_plone.scss */
+/* line 801, ../scss/_plone.scss */
 #collage .five-columns-largeright .block_5 {
   width: 24%;
 }
 
 /* */
-/* line 753, ../scss/_plone.scss */
+/* line 806, ../scss/_plone.scss */
 #collage .collage-item .documentByLine,
 #collage .collage-item .link-parent {
   display: none;
 }
 
 /* */
-/* line 757, ../scss/_plone.scss */
+/* line 810, ../scss/_plone.scss */
 #collage .unbatched-with-1 .column-block {
   width: 100%;
 }
 
-/* line 758, ../scss/_plone.scss */
+/* line 811, ../scss/_plone.scss */
 #collage .unbatched-with-2 .column-block {
   width: 49.5%;
 }
 
-/* line 759, ../scss/_plone.scss */
+/* line 812, ../scss/_plone.scss */
 #collage .unbatched-with-3 .column-block {
   width: 32.5%;
 }
 
-/* line 760, ../scss/_plone.scss */
+/* line 813, ../scss/_plone.scss */
 #collage .unbatched-with-4 .column-block {
   width: 24.25%;
 }
 
-/* line 761, ../scss/_plone.scss */
+/* line 814, ../scss/_plone.scss */
 #collage .unbatched-with-5 .column-block {
   width: 19%;
 }
 
-/* line 762, ../scss/_plone.scss */
+/* line 815, ../scss/_plone.scss */
 #collage .unbatched-with-6 .column-block {
   width: 16.5%;
 }
 
 /* */
-/* line 765, ../scss/_plone.scss */
+/* line 818, ../scss/_plone.scss */
 #collage .collage-portlet-notification dt.portletHeader {
   background-color: #ffffe3;
 }
 
-/* line 768, ../scss/_plone.scss */
+/* line 821, ../scss/_plone.scss */
 #collage .collage-portlet-help dt.portletHeader {
   background-color: #ffffe1;
 }
 
-/* line 771, ../scss/_plone.scss */
+/* line 824, ../scss/_plone.scss */
 #collage .collage-layout-error {
   background-color: yellow;
   font-weight: bold;
 }
 
-/* line 777, ../scss/_plone.scss */
+/* line 830, ../scss/_plone.scss */
 .collage-header > * {
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 784, ../scss/_plone.scss */
+/* line 837, ../scss/_plone.scss */
 .collage-header > .expandable-section,
 .collage-header > .post {
   margin-bottom: 2px;
 }
 
-/* line 786, ../scss/_plone.scss */
+/* line 839, ../scss/_plone.scss */
 .expandable-icon, .split-column-icon, .delete-object-icon, .copy-object-icon,
 .object-action-generic-icon {
   margin-top: 2px;
 }
 
-/* line 788, ../scss/_plone.scss */
+/* line 841, ../scss/_plone.scss */
 .collage-header .expandable-content {
   width: 306px !important;
 }
 
-/* line 789, ../scss/_plone.scss */
+/* line 842, ../scss/_plone.scss */
 .column-block > .collage-header {
   background-color: #efa;
 }
 
-/* line 790, ../scss/_plone.scss */
+/* line 843, ../scss/_plone.scss */
 .collage-item > .collage-header {
   background-color: #afe;
 }
 
-/* line 792, ../scss/_plone.scss */
+/* line 845, ../scss/_plone.scss */
 .collage-header .visualIcon img {
   display: none;
 }
@@ -13147,13 +13292,13 @@ span.collage-navigation a {
 /*
 FORULARI
 */
-/* line 801, ../scss/_plone.scss */
+/* line 854, ../scss/_plone.scss */
 .pfg-drafts-float {
   position: relative !important;
   width: auto !important;
 }
 
-/* line 803, ../scss/_plone.scss */
+/* line 856, ../scss/_plone.scss */
 .standalone + .pfg-draft {
   display: inline-block;
 }
@@ -13161,13 +13306,13 @@ FORULARI
 /*
 NOTICIA
 */
-/* line 808, ../scss/_plone.scss */
+/* line 861, ../scss/_plone.scss */
 .newsImageContainer {
   margin: 0 0 1em 1em;
 }
 
 /* VISTA MINIATURES*/
-/* line 816, ../scss/_plone.scss */
+/* line 869, ../scss/_plone.scss */
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li,
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li,
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li + li + li + li + li
@@ -13180,7 +13325,7 @@ html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li +
 /*
 VIEWS
 */
-/* line 822, ../scss/_plone.scss */
+/* line 875, ../scss/_plone.scss */
 body.template-folder_summary_view #content ul li:first-child {
   border-top: 0;
   -webkit-box-shadow: none;
@@ -13191,7 +13336,7 @@ body.template-folder_summary_view #content ul li:first-child {
 /*
 custom file posat aqui per evitar comptar com a selector en l'altre paquet
 */
-/* line 831, ../scss/_plone.scss */
+/* line 884, ../scss/_plone.scss */
 div.overlay {
   /* initially overlay is hidden */
   display: none;
@@ -13638,13 +13783,11 @@ html {
 
   /* line 49, ../scss/_mobile.scss */
   .carousel-control.right {
-    left: 244px;
     top: 62px;
   }
 
   /* line 50, ../scss/_mobile.scss */
   .carousel-control.left {
-    left: 5px;
     top: 62px;
   }
 }
@@ -14004,6 +14147,106 @@ div[id^="ascrail"] > div {
 /* line 9, ../scss/_empaquetats.scss */
 .portaltype-packet .estudis .right {
   float: right;
+}
+
+/* line 20, ../scss/_empaquetats.scss */
+.tab-content .unit-content header h1 {
+  font-size: 17px;
+  line-height: 17px;
+}
+
+/* line 25, ../scss/_empaquetats.scss */
+.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .contentViews .nav-tabs > .selected > a, .contentViews > .selected > a, .contentViews .configlets > .selected > a, .contentViews .nav-tabs > .selected:hover > a, .contentViews > .selected:hover > a, .contentViews .configlets > .selected:hover > a, .nav-tabs > .active > a:hover, .contentViews > .active > a:hover, .configlets > .active > a:hover, .nav-tabs > .selected > a:hover, .configlets > .selected > a:hover, .contentViews .nav-tabs > .selected > a:hover, .contentViews .configlets > .selected > a:hover, .contentViews .nav-tabs > .selected:hover > a:hover, .contentViews > .selected:hover > a:hover, .contentViews .configlets > .selected:hover > a:hover {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #b2b2b2 #b2b2b2 rgba(0, 0, 0, 0);
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* line 36, ../scss/_empaquetats.scss */
+.nav-tabs > li > a, .contentViews > li > a, .configlets > li > a, .nav-pills > li > a, .formTabs > li > a {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/* line 41, ../scss/_empaquetats.scss */
+body {
+  font-size: 12px;
+}
+
+/* line 45, ../scss/_empaquetats.scss */
+#tab-academic-information table th, #tab-admission table th {
+  width: 194px;
+}
+
+/* line 48, ../scss/_empaquetats.scss */
+#tab-curriculum table th.semester {
+  min-width: 100px;
+}
+
+/* line 53, ../scss/_empaquetats.scss */
+table th {
+  background-color: #F7F7F7;
+}
+
+/* line 57, ../scss/_empaquetats.scss */
+.nav-tabs, .contentViews, .configlets {
+  border-bottom: 1px solid #B2B2B2;
+}
+
+/* line 61, ../scss/_empaquetats.scss */
+a {
+  color: #007BC0;
+}
+
+/* line 65, ../scss/_empaquetats.scss */
+img.link_blank, img.link_pdf {
+  padding-bottom: 3px;
+}
+
+/* line 69, ../scss/_empaquetats.scss */
+.well p, .well-inverse p {
+  margin: 0;
+}
+
+/* line 73, ../scss/_empaquetats.scss */
+td > p {
+  margin-bottom: 0;
+}
+
+/* line 77, ../scss/_empaquetats.scss */
+.unit-content .contact {
+  background: linear-gradient(to bottom, #c8c8c8 0%, #ffffff 99%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 1px;
+}
+
+/* line 83, ../scss/_empaquetats.scss */
+.unit-content .contact table th {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  text-align: left;
+  width: 130px;
+}
+
+/* line 89, ../scss/_empaquetats.scss */
+.unit-content .contact > div {
+  background: linear-gradient(to bottom, #f5f5f5 0%, #ffffff 99%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 8px 15px;
+}
+
+/* line 96, ../scss/_empaquetats.scss */
+.contact table {
+  width: 50%;
+}
+
+/* line 98, ../scss/_empaquetats.scss */
+#tab-curriculum .table tr:first-child td, #tab-curriculum .listing tr:first-child td, #tab-curriculum .taulaRegistres tr:first-child td, #tab-curriculum .portaltype-packet .estudis table.minimal tr:first-child td, .portaltype-packet .estudis #tab-curriculum table.minimal tr:first-child td {
+  border-top: 1px solid #b2b2b2;
 }
 
 /* NOMES CORRECCIONS PER A IE SENSE HACKS */

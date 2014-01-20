@@ -55,7 +55,7 @@
         <metal:headslot define-slot="head_slot" />
         <metal:styleslot define-slot="style_slot" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <tal:comment replace="nothing"><!-- El seguent script ha d'anar seguit del meta del viewport --></tal:comment>
         <script tal:attributes="src string:${portal_url}/++genweb++static/js/ReView.js"></script>
 
@@ -214,7 +214,7 @@
     </script>
 
     <!--[if IE 8]>
-    <script type="text/javascript" src="http://malsup.github.com/jquery.corner.js"></script>
+    <script type="text/javascript" src="https://malsup.github.com/jquery.corner.js"></script>
     <script>
       $('.header-image').corner('top 8px');
       $('#portal-globalnav .navbar').corner('bottom 8px');
