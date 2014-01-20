@@ -1,11 +1,26 @@
 Changelog
 =========
 
-1.0b12 (unreleased)
+1.0b12 (2014-01-20)
 -------------------
 
-- Nothing changed yet.
-
+* Portlet noticies ampliadas [Corina Riba]
+* New user select widget based on Select2.js [Victor Fernandez de Alba]
+* Put into the fridge the Roberto's modifications to .dropdown a styles. [Victor Fernandez de Alba]
+* Downgrade alertify.js [Victor Fernandez de Alba]
+* generated css [Roberto Diaz]
+* align carousel left & right in mobile css [Roberto Diaz]
+* remove display block from tables [Roberto Diaz]
+* label calendar max width correct visible [Roberto Diaz]
+* added modal to filter_results in search [Roberto Diaz]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* added size to text in livesearch (to see results) [Roberto Diaz]
+* changes in folder_contents buttons for upload... [Roberto Diaz]
+* center search results and br between [Roberto Diaz]
+* Portlet de noticias editable y nombre correcto [Corina Riba]
+* Cambio enlace "Mes noticies" [Corina Riba]
+* Corregir error cabecera cuando no existe el codigo UPC [Corina Riba]
+* Do dynamic CSS in a more fashion way :) [Victor Fernandez de Alba]
 
 1.0b11 (2013-11-11)
 -------------------
