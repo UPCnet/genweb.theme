@@ -74,14 +74,14 @@ var directions = {
     'vertical': createYDirection
 };
 
-exports.directions = directions;
+//exports.directions = directions;
 
-exports.flashIndicators = function() {
+//exports.flashIndicators = function() {
     // var scrollables = document.querySelectorAll('.scrollable.vertical');
     // for (var i = 0; i < scrollables.length; ++i) {
     // exports.scrollTo(scrollables[i], 0, 0, 20, true);
     // }
-}
+//}
 
 function onLoad() {
     var ss = document.createElement("style");
@@ -91,7 +91,7 @@ function onLoad() {
     // exports.flashIndicators();
 }
 
-require.ready(function() {
+$(document).ready(function() {
     document.addEventListener(isTouch ? 'touchstart' : 'mousedown', onTouchStart, false);
     window.addEventListener('load', onLoad, false);
 });
