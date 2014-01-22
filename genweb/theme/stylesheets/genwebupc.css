@@ -10209,7 +10209,7 @@ a.primary, .primary a, a .primary {
 
 /* line 61, ../scss/_wells-boxes.scss */
 .box, .box-inverse, .template-manage-homeportlets .portletHeader:hover, .portaltype-packet .estudis .caixa3, #category.documentByLine {
-  min-height: 20px;
+  min-height: 25px;
   padding: 18px;
   margin-bottom: 20px;
   background-color: white;
