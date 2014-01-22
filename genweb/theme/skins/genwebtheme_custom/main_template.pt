@@ -205,7 +205,7 @@
     <tal:comment replace="nothing"> <!-- A partir d'aqui, els JS comuns d'inicialització --> </tal:comment>
 
     <!-- <script tal:attributes="src string:${portal_url}/++genweb++static/js/dropkick.js"></script> -->
-    <script tal:attributes="src string:${portal_url}/++genweb++static/js/scrollability.js"></script>
+    <!-- <script tal:attributes="src string:${portal_url}/++genweb++static/js/scrollability.js"></script> -->
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/fileinput.js"></script>
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/customInput.js"></script>
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/jquery.nicescroll.js"></script>
@@ -214,7 +214,7 @@
     </script>
 
     <!--[if IE 8]>
-    <script type="text/javascript" src="https://malsup.github.com/jquery.corner.js"></script>
+    <script type="text/javascript" src="/++genweb++static/js/jquery.corner.js"></script>
     <script>
       $('.header-image').corner('top 8px');
       $('#portal-globalnav .navbar').corner('bottom 8px');
