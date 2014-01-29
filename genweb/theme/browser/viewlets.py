@@ -72,6 +72,18 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
 
     index = ViewPageTemplateFile('viewlets_templates/personal_bar.pt')
 
+    def default_site_lang(self):
+        #import ipdb;ipdb.set_trace()
+        lang = self.portal().portal_properties.site_properties.default_language
+        if lang == 'ca':
+            return 'Català'
+        elif lang == 'es':
+            return 'Español'
+        elif lang == 'en':
+            return 'Engish'
+        else:
+            return lang
+        
     def showRootFolderLink(self):
         return havePermissionAtRoot()
 
