@@ -18,6 +18,8 @@ from plone.memoize.view import memoize_contextless
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile as ZopeViewPageTemplateFile
+from Products.Five.browser.metaconfigure import ViewMixinForTemplates
 
 from plone.app.layout.viewlets.common import PersonalBarViewlet, GlobalSectionsViewlet, PathBarViewlet
 from plone.app.layout.viewlets.common import SearchBoxViewlet, TitleViewlet, ManagePortletsFallbackViewlet
@@ -205,6 +207,32 @@ class gwFooter(viewletBase):
     grok.template('footer')
     grok.viewletmanager(IPortalFooter)
     grok.layer(IGenwebTheme)
+
+    def get_go_to_top_link(self, template, view):
+
+        name = ''
+        if isinstance(template, ViewPageTemplateFile) or \
+           isinstance(template, ZopeViewPageTemplateFile) or \
+           isinstance(template, ViewMixinForTemplates):
+            # Browser view
+            name = view.__name__
+        else:
+            if hasattr(template, 'getId'):
+                name = template.getId()
+
+        context_state = getMultiAdapter(
+            (aq_inner(self.context), self.request),
+            name=u'plone_context_state')
+
+        if name and name in context_state.current_base_url():
+            # We are dealing with a view
+            if '@@' in context_state.current_page_url():
+                name = '@@{}'.format(name)
+
+            return '{}/{}#portal-header'.format(self.context.absolute_url(), name)
+        else:
+            # We have a bare content
+            return '{}#portal-header'.format(self.context.absolute_url())
 
     def getLinksPeu(self):
         """ links fixats per accessibilitat/rss/about """
