@@ -52,6 +52,7 @@
                 <p tal:content="adreca">
                   Campus Diagonal Sud, Edifici H. Av. Diagonal, 647. 08028 Barcelona
                 </p>
+              </address>
                 <ul class="unstyled" id='contacte-dades' >  
                   <li>
                     <p tal:condition="telefon">
@@ -93,33 +94,51 @@
                       </a>
                     </p>
                   </li>
-                  <li>
-                    <tal:maps condition="python:not getattr(genweb_config, 'contacte_no_upcmaps', False)">
-                      <p>
-                        <a href="https://maps.upc.edu" class="show" rel="tooltip" data-placement="bottom" title="Clica el marcador per anar a UPCmaps" target="_blank">
-                          <i class="icon-map-marker"></i>
-                          UPCmaps
-                          <img class="img_blank" src="++genweb++static/images/blank_blau.png"
-                               i18n:attributes="alt obrir_link_finestra_nova">
-                        </a>
-                      </p>
-                    </tal:maps>
-                  </li>
-                </ul>
-              </address>
-              <span class="img-mask">
-                <iframe tal:attributes="src python:view.getURLMaps(id_scp)" border="0">
-                </iframe>
-              </span>
-            </tal:co>
+                  <tal:maps tal:condition="python:not getattr(genweb_config, 'contacte_no_upcmaps', False)">
+                    <li>
+                        <p>
+                          <a href="https://maps.upc.edu" class="show" rel="tooltip" data-placement="bottom" title="Clica el marcador per anar a UPCmaps" target="_blank">
+                            <i class="icon-map-marker"></i>
+                            UPCmaps
+                            <img class="img_blank" src="++genweb++static/images/blank_blau.png"
+                                 i18n:attributes="alt obrir_link_finestra_nova" />
+                          </a>
+                        </p>
+                    </li>
+                  </tal:maps>
+                  </ul>
+                  <div>
+                    <span class="img-mask">
+                      <iframe tal:attributes="src python:view.getURLMaps(id_scp)" border="0">
+                      </iframe>
+                    </span>
+                  </div>
+                </tal:co>
+          
             <tal:co tal:condition="not: contacte_personalitzat">
               <div tal:define="contact view/getContactPage">
                 <div tal:replace="structure contact/body">Cos de la pagina de contacte</div>
               </div>
             </tal:co>
         </div>
-  </tal:block>
-<!-- Fi dades de contacte -->
+    </tal:block>
+
+
+    <tal:block tal:condition="not: dades">
+
+      <h1 class="documentFirstHeading"
+        i18n:translate="genweb_formContacte">
+          Contact
+      </h1>
+
+      <div class="row-fluid">
+        <div class="box box-gradient">
+          <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
+        </div>
+      </div>
+
+    </tal:block>
+
 </tal:main-macro>
 
 </div>
