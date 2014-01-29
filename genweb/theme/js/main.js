@@ -17,7 +17,7 @@ $(document).ready(function () {
 
          clearInterval(intervalId)
      }
-}, 50)
+    }, 50)
 
   // $('select:not([multiple])').dropkick();
   $('ul.dk_options_inner').addClass('scrollable');
