@@ -48,23 +48,38 @@
                 </li>
               </ul>
             </li>
-            <li  role="menuitem"><a tal:condition="view/showRootFolderLink"
+            <li role="menuitem"><a tal:condition="view/showRootFolderLink"
                    tal:attributes="href string:${view/portal_url}/folder_contents">
                    <tal:rootFolder i18n:translate="genweb-accesarrel">
                       Root folder</tal:rootFolder>
             </a></li>
-            <li  role="menuitem"><a tal:condition="view/canManageSite"
+            <li role="menuitem"><a tal:condition="view/canManageSite"
                    tal:attributes="href string:${view/portal_url}/@@overview-controlpanel">
                    <tal:managesite i18n:domain="plone" i18n:translate="Site Setup">
                       Site setup</tal:managesite>
             </a></li>
-            <li  role="menuitem" ><a href="https://genweb.upc.edu/formacio-i-ajuda" target="_blank" accesskey="6">
-                   <tal:help i18n:translate="genweb-ajuda">
-                      Help</tal:help>
-                   <img i18n:attributes="alt obrir_link_finestra_nova"
-                        class="img_blank"
-                        src="/++genweb++static/images/blank_blanc.png">
-            </a></li>
+            <li role="menuitem" tal:condition="view/canManageSite">
+              <a tal:attributes="href string:${view/portal_url}/@@genweb-controlpanel">
+                <tal:managesite i18n:translate="genWeb UPC settings" i18n:domain="plone">
+                      Genweb UPC Settings</tal:managesite>
+                <img i18n:attributes="alt obrir_link_finestra_nova"
+                    class="img_blank"
+                    src="++resource++cpgenweb.png">
+              </a>
+            </li> 
+
+            <li role="menuitem" class="visible-desktop visible-tablet" tal:condition="view/canManageSite"> 
+              <a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Idioma establert com a defecte al lloc web. Potser no és el mateix que hi ha publicat al web segons la configuració del panell de control del Genweb" data-original-title="Idioma per defecte"><span class="label label-important "><tal:co tal:content="view/default_site_lang"></tal:co></span></a>
+            </li>
+
+            <li role="menuitem"> 
+              <a href="https://genweb.upc.edu/formacio-i-ajuda" target="_blank" accesskey="6">
+              <tal:help i18n:translate="genweb-ajuda">Help</tal:help>
+              <img i18n:attributes="alt obrir_link_finestra_nova"
+                    class="img_blank"
+                    src="/++genweb++static/images/blank_blanc.png">
+              </a>
+            </li>
           </ul>
           <h2 class="goout" id="titol-menu-eines-genweb"> Menú d'eines Genweb UPC </h2>
           <ul class="nav pull-right" role="toolbar" aria-labelledby="titol-menu-eines-genweb">
