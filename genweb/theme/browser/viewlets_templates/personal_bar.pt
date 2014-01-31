@@ -66,18 +66,24 @@
                     class="img_blank"
                     src="++resource++cpgenweb.png">
               </a>
-            </li> 
+            </li>
 
-            <li role="menuitem" class="visible-desktop visible-tablet" tal:condition="view/canManageSite"> 
+            <li role="menuitem" class="visible-desktop visible-tablet" tal:condition="view/canManageSite">
               <a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Idioma establert com a defecte al lloc web. Potser no és el mateix que hi ha publicat al web segons la configuració del panell de control del Genweb" data-original-title="Idioma per defecte"><span class="label label-important "><tal:co tal:content="view/default_site_lang"></tal:co></span></a>
             </li>
 
-            <li role="menuitem"> 
+            <li role="menuitem">
               <a href="https://genweb.upc.edu/formacio-i-ajuda" target="_blank" accesskey="6">
               <tal:help i18n:translate="genweb-ajuda">Help</tal:help>
               <img i18n:attributes="alt obrir_link_finestra_nova"
                     class="img_blank"
                     src="/++genweb++static/images/blank_blanc.png">
+              </a>
+            </li>
+            <li role="menuitem">
+              <a class="button" data-text="Your customized bookmarklet"
+                 tal:attributes="href string:javascript:void((function(d){if(self!=top||d.getElementById('toolbar')&&d.getElementById('toolbar').getAttribute('data-resizer'))return%20false;d.write('<!DOCTYPE%20HTML><html%20style=\'opacity:0;\'><head><meta%20charset=\'utf-8\'/></head><body><a%20data-viewport=\'320x480\'%20data-icon=\'mobile\'>Mobile%20(e.g.%20Apple%20iPhone)</a><a%20data-viewport=\'600x800\'%20data-icon=\'small-tablet\'>Small%20Tablet</a><a%20data-viewport=\'768x1024\'%20data-icon=\'tablet\'>Tablet%20(e.g.%20Apple%20iPad%202-3rd,%20mini)</a><a%20data-viewport=\'1024x768\'%20data-icon=\'display\'%20data-version=\'17%E2%80%B3\'>17%E2%80%B3%20Display</a><a%20data-viewport=\'1280x800\'%20data-icon=\'notebook\'>Widescreen</a><script%20src=\'${view/forgeResizerURLCall}\'></script></body></html>')})(document));">
+              <tal:help i18n:translate="genweb-vistes">Vistes</tal:help>
               </a>
             </li>
           </ul>
