@@ -113,12 +113,29 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
             return {}
 
     def forgeResizerURLCall(self):
+        resizer_string = """
+            javascript:void((function(d){
+                if(self!=top||d.getElementById("toolbar")&&d.getElementById("toolbar").getAttribute("data-resizer")) return false;
+                d.write("
+                    <!DOCTYPE HTML>
+                    <html style="opacity:0;">
+                    <head><meta charset="utf-8"/></head>
+                    <body>
+                        <a data-viewport="320x480" data-icon="mobile">Mobile</a>
+                        <a data-viewport="600x800" data-icon="small-tablet">Small Tablet</a>
+                        <a data-viewport="768x1024" data-icon="tablet">Tablet</a>
+                        <a data-viewport="1280x800" data-icon="notebook">Widescreen</a>
+                        <script src="http://localhost:8080/Plone/++genweb++static/js/resizer.min.js"></script>
+                    </body>
+                    </html>
+                ")})(document));
+        """
 
-        resizer_string_header = "javascript:void((function(d){if(self!=top||d.getElementById('toolbar')&&d.getElementById('toolbar').getAttribute('data-resizer'))return%20false;d.write('<!DOCTYPE%20HTML><html%20style=\'opacity:0;\'><head><meta%20charset=\'utf-8\'/></head><body><a%20data-viewport=\'320x480\'%20data-icon=\'mobile\'>Mobile%20(e.g.%20Apple%20iPhone)</a><a%20data-viewport=\'600x800\'%20data-icon=\'small-tablet\'>Small%20Tablet</a><a%20data-viewport=\'768x1024\'%20data-icon=\'tablet\'>Tablet%20(e.g.%20Apple%20iPad%202-3rd,%20mini)</a><a%20data-viewport=\'1024x768\'%20data-icon=\'display\'%20data-version=\'17%E2%80%B3\'>17%E2%80%B3%20Display</a><a%20data-viewport=\'1280x800\'%20data-icon=\'notebook\'>Widescreen</a><script%20src=\'"
+        resizer_string_header = "javascript:void((function(d){if(self!=top||d.getElementById('toolbar')&&d.getElementById('toolbar').getAttribute('data-resizer'))return false;d.write('<!DOCTYPE HTML><html style='opacity:0;'><head><meta%20charset='utf-8'/></head><body><a%20data-viewport=\'320x480\'%20data-icon=\'mobile\'>Mobile%20(e.g.%20Apple%20iPhone)</a><a%20data-viewport=\'600x800\'%20data-icon=\'small-tablet\'>Small%20Tablet</a><a%20data-viewport=\'768x1024\'%20data-icon=\'tablet\'>Tablet%20(e.g.%20Apple%20iPad%202-3rd,%20mini)</a><a%20data-viewport=\'1024x768\'%20data-icon=\'display\'%20data-version=\'17%E2%80%B3\'>17%E2%80%B3%20Display</a><a%20data-viewport=\'1280x800\'%20data-icon=\'notebook\'>Widescreen</a><script%20src=\'"
         resizer_js = '{}/++genweb++static/js/resizer.min.js'.format(self.portal_url)
         resizer_string_tail = "\'></script></body></html>')})(document));"
 
-        return '{}{}{}'.format(resizer_string_header, resizer_js, resizer_string_tail)
+        return '<a href="javascript:void((function(d){if(self!=top||d.getElementById(\'toolbar\')&&d.getElementById(\'toolbar\').getAttribute(\'data-resizer\'))return%20false;d.write(\'<!DOCTYPE%20HTML><html%20style=\'opacity:0;\'><head><meta%20charset=\'utf-8\'/></head><body><a%20data-viewport=\'320x480\'%20data-icon=\'mobile\'>Mobile</a><a%20data-viewport=\'600x800\'%20data-icon=\'small-tablet\'>Small%20Tablet</a><a%20data-viewport=\'768x1024\'%20data-icon=\'tablet\'>Tablet</a><a%20data-viewport=\'1280x800\'%20data-icon=\'notebook\'>Widescreen</a><script%20src=\'/++genweb++static/js/resizer.min.js\'></script></body></html>\')})(document));">Vistes2</a>'
 
 
 class gwHeader(viewletBase):

@@ -80,12 +80,30 @@
                     src="/++genweb++static/images/blank_blanc.png">
               </a>
             </li>
-            <!-- <li role="menuitem">
+            <li role="menuitem">
+<!--               <script>
+                function call_resizer (d) {
+                if(self!=top||d.getElementById("toolbar")&&d.getElementById("toolbar").getAttribute("data-resizer")) return false;
+                d.write("\
+                    &lt;!DOCTYPE HTML&gt;\
+                    &lt;html style=&#39;opacity:0;&#39;&gt;\
+                    &lt;head&gt;&lt;meta charset=&#39;utf-8&#39;/&gt;&lt;/head&gt;\
+                    &lt;body&gt;\
+                        &lt;a data-viewport=&#39;320x480&#39; data-icon=&#39;mobile&#39;&gt;Mobile&lt;/a&gt;\
+                        &lt;a data-viewport=&#39;600x800&#39; data-icon=&#39;small-tablet&#39;&gt;Small Tablet&lt;/a&gt;\
+                        &lt;a data-viewport=&#39;768x1024&#39; data-icon=&#39;tablet&#39;&gt;Tablet&lt;/a&gt;\
+                        &lt;a data-viewport=&#39;1280x800&#39; data-icon=&#39;notebook&#39;&gt;Widescreen&lt;/a&gt;\
+                        &lt;script src=&#39;http://localhost:8080/Plone/++genweb++static/js/resizer.min.js&#39;&gt;&lt;/script&gt;\
+                    &lt;/body&gt;\
+                    &lt;/html&gt;\
+                ")};
+              </script> -->
+              <a tal:replace="structure view/forgeResizerURLCall"></a>
               <a class="button" data-text="Your customized bookmarklet"
-                 tal:attributes="href string:javascript:void((function(d){if(self!=top||d.getElementById('toolbar')&&d.getElementById('toolbar').getAttribute('data-resizer'))return%20false;d.write('<!DOCTYPE%20HTML><html%20style=\'opacity:0;\'><head><meta%20charset=\'utf-8\'/></head><body><a%20data-viewport=\'320x480\'%20data-icon=\'mobile\'>Mobile%20(e.g.%20Apple%20iPhone)</a><a%20data-viewport=\'600x800\'%20data-icon=\'small-tablet\'>Small%20Tablet</a><a%20data-viewport=\'768x1024\'%20data-icon=\'tablet\'>Tablet%20(e.g.%20Apple%20iPad%202-3rd,%20mini)</a><a%20data-viewport=\'1024x768\'%20data-icon=\'display\'%20data-version=\'17%E2%80%B3\'>17%E2%80%B3%20Display</a><a%20data-viewport=\'1280x800\'%20data-icon=\'notebook\'>Widescreen</a><script%20src=\'${view/forgeResizerURLCall}\'></script></body></html>')})(document));">
+                  tal:attributes="href view/forgeResizerURLCall">
               <tal:help i18n:translate="genweb-vistes">Vistes</tal:help>
               </a>
-            </li> -->
+            </li>
           </ul>
           <h2 class="goout" id="titol-menu-eines-genweb"> Menú d'eines Genweb UPC </h2>
           <ul class="nav pull-right" role="toolbar" aria-labelledby="titol-menu-eines-genweb">
