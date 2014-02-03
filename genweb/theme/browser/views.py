@@ -656,3 +656,11 @@ class gwSendEventView(grok.View):
         confirm = _(u"Gràcies per la vostra col·laboració. Les dades de l\'activitat s\'han enviat correctament i seran publicades com més aviat millor.")
         IStatusMessage(self.request).addStatusMessage(confirm, type='info')
         self.request.response.redirect(self.context.absolute_url())
+
+
+class ContactFeedback(grok.View):
+    grok.name('contact_feedback')
+    grok.context(IPloneSiteRoot)
+    grok.template("contact_feedback")
+    grok.require('zope2.View')
+    grok.layer(IGenwebTheme)
