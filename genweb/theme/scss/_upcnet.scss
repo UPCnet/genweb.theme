@@ -190,3 +190,78 @@ input[type="radio"].required:after { content: none; }
 #eines .typeahead.dropdown-menu a {
     font-size: 12px;
 }
+
+
+// collection dynamic selection syling to mimic bootstrap
+
+.QueryWidget {
+    font-size: 13px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color:#666;
+
+    dl.referenceWidget {
+        width:214px;
+    }
+    dl.multipleSelectionWidget {
+        position:relative;
+        padding: 4px 6px 2px;
+        border: 1px solid #b2b2b2;
+        @include border-radius(3px);
+        dt {
+            border:none;
+            font-weight: normal;
+        }
+
+        .arrowDownAlternative {
+            font-size: 9px;
+        }
+
+        .multipleSelectionWidgetTitle {
+            padding: 5px;
+            line-height: normal;
+        }
+
+        dd.widgetPulldownMenu {
+            z-index: 100;
+            padding:5px;
+            width: 350px;
+            height:30em;
+            top:27px;
+            left:0px;
+            label {
+                &.header {
+                    background-color: #cdd;
+                    color: #777;
+                    line-height: 26px;
+                    padding-left: 16px;
+                    font-weight: normal;
+                    padding-top: 2px;
+                    font-style: italic;
+                    font-size: 16px;
+                    margin: 3px 0;
+                }
+                color:#666;
+                margin-bottom: 0px;
+                line-height: normal;
+                input[checked="checked"]~span {
+                    background-color: red;
+                    color:white;
+                    background-color: #557c95;
+                    font-weight: normal
+                }
+            }
+
+        }
+    }
+
+    .criteria {
+        margin-bottom:22px;
+        position:relative;
+        .queryresults {
+            position:absolute;
+            left:293px;
+            top:29px;
+        }
+    }
+}
