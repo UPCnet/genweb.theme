@@ -94,7 +94,7 @@
                       </a>
                     </p>
                   </li>
-                    <tal:maps tal:condition="python:not getattr(genweb_config, 'contacte_no_upcmaps', False)">
+                  <tal:maps tal:condition="python:not getattr(genweb_config, 'contacte_no_upcmaps', False)">
                     <li>
                         <p>
                           <a href="https://maps.upc.edu" class="show" rel="tooltip" data-placement="bottom" title="Clica el marcador per anar a UPCmaps" target="_blank">
@@ -120,12 +120,27 @@
                 <div tal:replace="structure contact/body">Cos de la pagina de contacte</div>
               </div>
             </tal:co>
+		</div>
+    </tal:block>
+
+
+    <tal:block tal:condition="not: dades">
+
+      <h1 class="documentFirstHeading"
+        i18n:translate="genweb_formContacte">
+          Contact
+      </h1>
+
+      <div class="row-fluid">
+        <div class="box box-gradient">
+          <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
         </div>
-  </tal:block>
+      </div>
+
+    </tal:block>
 
 </tal:main-macro>
 
 </div>
 </body>
 </html>
-

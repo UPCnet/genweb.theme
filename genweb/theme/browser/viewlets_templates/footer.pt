@@ -1,5 +1,7 @@
 <footer id="peu" role="contentinfo"
-        tal:define="dades context/@@genweb.utils/getDadesUnitat;"
+        tal:define="plone_view context/@@plone;
+                    view nocall:view | nocall: plone_view;
+                    dades context/@@genweb.utils/getDadesUnitat;"
         i18n:domain="genweb">
   <div class="container">
     <div class="row-fluid">
@@ -61,7 +63,7 @@
           </li>
           <li role="menuitem" class="amunt">
             <a rel="tooltip" data-placement="top" title="Inici de la pàgina"
-               tal:attributes="href string:${context/absolute_url_path}#portal-header">
+               tal:attributes="href python:viewlet.get_go_to_top_link(template, view)">
               <img src="/++genweb++static/images/amunt.png" alt="Inici de la pàgina">
             </a>
           </li>

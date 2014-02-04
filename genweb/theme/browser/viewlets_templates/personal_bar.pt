@@ -48,37 +48,49 @@
                 </li>
               </ul>
             </li>
-            <li  role="menuitem"><a tal:condition="view/showRootFolderLink"
+            <li role="menuitem"><a tal:condition="view/showRootFolderLink"
                    tal:attributes="href string:${view/portal_url}/folder_contents">
                    <tal:rootFolder i18n:translate="genweb-accesarrel">
                       Root folder</tal:rootFolder>
             </a></li>
-            <li  role="menuitem"><a tal:condition="view/canManageSite"
+            <li role="menuitem"><a tal:condition="view/canManageSite"
                    tal:attributes="href string:${view/portal_url}/@@overview-controlpanel">
                    <tal:managesite i18n:domain="plone" i18n:translate="Site Setup">
                       Site setup</tal:managesite>
             </a></li>
-            <li  role="menuitem" ><a href="https://genweb.upc.edu/formacio-i-ajuda" target="_blank" accesskey="6">
-                   <tal:help i18n:translate="genweb-ajuda">
-                      Help</tal:help>
-                   <img i18n:attributes="alt obrir_link_finestra_nova"
-                        class="img_blank"
-                        src="/++genweb++static/images/blank_blanc.png">
-            </a></li>
-                         <li  role="menuitem" class="visible-desktop" ><a class="button" title="Les Vistes Beta pretenen ajudar a fer millors versions de mòbil i de tauleta del vostre web. Només està disponible per a navegadors moderns. En cap cas és la versió real de com es veurà el web mobilitzat sinó només una simulació. Cliqueu en 'Vistes Beta' i es desplegarà una barra amb diferents opcions de visualització. També podeu arrossegar 'Vistes Beta' a la vostra barra de marcadors i sempre les tindreu disponibles." data-text="Vistes Beta" href="javascript:void((function(d){if(self!=top||d.getElementById('toolbar')&&d.getElementById('toolbar').getAttribute('data-resizer'))return%20false;d.write('<!DOCTYPE%20HTML><html%20style=\'opacity:0;\'><head><meta%20charset=\'utf-8\'/></head><body><a%20data-viewport=\'320x480\'%20data-icon=\'mobile\'>Mobile</a><a%20data-viewport=\'600x800\'%20data-icon=\'small-tablet\'>Small%20Tablet</a><a%20data-viewport=\'768x1024\'%20data-icon=\'tablet\'>Tablet</a><a%20data-viewport=\'1280x800\'%20data-icon=\'notebook\'>Widescreen</a><script%20src=\'https://devel.upcnet.es/comunitat/++genweb++static/js/resizer.min.js\'></script></body></html>')})(document));">Vistes Beta
-                         <img i18n:attributes="alt obrir_link_finestra_nova"
-                        class="img_blank"
-                        src="/++genweb++static/images/blank_blanc.png"></a>
-</li>
+            <li role="menuitem" tal:condition="view/canManageSite">
+              <a tal:attributes="href string:${view/portal_url}/@@genweb-controlpanel">
+                <tal:managesite i18n:translate="genWeb UPC settings" i18n:domain="plone">
+                      Genweb UPC Settings</tal:managesite>
+                <img i18n:attributes="alt obrir_link_finestra_nova"
+                    class="img_blank"
+                    src="++resource++cpgenweb.png">
+              </a>
+            </li>
 
+            <li role="menuitem">
+              <a href="https://genweb.upc.edu/formacio-i-ajuda" target="_blank" accesskey="6">
+              <tal:help i18n:translate="genweb-ajuda">Help</tal:help>
+              <img i18n:attributes="alt obrir_link_finestra_nova"
+                    class="img_blank"
+                    src="/++genweb++static/images/blank_blanc.png">
+              </a>
+            </li>
+            <li role="menuitem">
+              <a tal:replace="structure view/forgeResizerURLCall"></a>
+              <!-- <tal:help i18n:translate="genweb-vistes">Vistes</tal:help> -->
+            </li>
           </ul>
           <h2 class="goout" id="titol-menu-eines-genweb"> Menú d'eines Genweb UPC </h2>
-          <ul style="display:none" class="nav pull-right" role="toolbar" aria-labelledby="titol-menu-eines-genweb">
+          <ul class="nav pull-right" role="toolbar" aria-labelledby="titol-menu-eines-genweb">
+            <li role="menuitem" class="visible-desktop visible-tablet" tal:condition="view/canManageSite">
+              <a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Idioma establert com a defecte al lloc web. Potser no és el mateix que hi ha publicat al web segons la configuració del panell de control del Genweb" data-original-title="Idioma per defecte"><span class="label label-important "><tal:co tal:content="view/default_site_lang"></tal:co></span></a>
+            </li>
             <!--[if !IE]> -->
-            <li role="menuitem" class="visible-desktop visible-tablet"><a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Les vistes pretenen ajudar a fer millors versions de mòbil i de tauleta del vostre web.<br /> Només està disponible per a navegadors moderns i encara en <strong>fase beta</strong>. En cap cas és la versió real de com es veurà el web mobilitzat sinó només una simulació.<br><br><span class='s text-info'>Seleccioneu vista mòbil o tauleta i només heu de clicar a la icona pantalla per tornar a la vista normal</span>" data-original-title="<strong>Vistes</strong> Beta"><span class="label label-important ">Vistes Beta</span></a></li>
+<!--             <li role="menuitem" class="visible-desktop visible-tablet"><a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Les vistes pretenen ajudar a fer millors versions de mòbil i de tauleta del vostre web.<br /> Només està disponible per a navegadors moderns i encara en <strong>fase beta</strong>. En cap cas és la versió real de com es veurà el web mobilitzat sinó només una simulació.<br><br><span class='s text-info'>Seleccioneu vista mòbil o tauleta i només heu de clicar a la icona pantalla per tornar a la vista normal</span>" data-original-title="<strong>Vistes</strong> Beta"><span class="label label-important ">Vistes Beta</span></a></li>
             <li role="menuitem" class="visible-desktop visible-tablet"><a class="userScreen" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Screenview"><span class="goout">Screen</span></a></li>
             <li role="menuitem" class="visible-desktop visible-tablet"><a class="userTablet " href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Tabletview"><span class="goout">Tablet</span></a></li>
-            <li role="menuitem" class="visible-desktop visible-tablet"><a class="userMobile " href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Mobileview"><span class="goout">Mobile</span></a></li>
+            <li role="menuitem" class="visible-desktop visible-tablet"><a class="userMobile " href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Mobileview"><span class="goout">Mobile</span></a></li> -->
             <!-- <![endif]-->
             <li aria-hidden="true" class="divider-vertical hidden-phone"></li>
             <li role="menuitem" class="dropdown hidden-phone pull-right"

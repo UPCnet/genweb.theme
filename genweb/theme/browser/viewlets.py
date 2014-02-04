@@ -18,6 +18,8 @@ from plone.memoize.view import memoize_contextless
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile as ZopeViewPageTemplateFile
+from Products.Five.browser.metaconfigure import ViewMixinForTemplates
 
 from plone.app.layout.viewlets.common import PersonalBarViewlet, GlobalSectionsViewlet, PathBarViewlet
 from plone.app.layout.viewlets.common import SearchBoxViewlet, TitleViewlet, ManagePortletsFallbackViewlet
@@ -70,6 +72,17 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
 
     index = ViewPageTemplateFile('viewlets_templates/personal_bar.pt')
 
+    def default_site_lang(self):
+        lang = self.portal().portal_properties.site_properties.default_language
+        if lang == 'ca':
+            return 'Català'
+        elif lang == 'es':
+            return 'Español'
+        elif lang == 'en':
+            return 'Engish'
+        else:
+            return lang
+
     def showRootFolderLink(self):
         return havePermissionAtRoot()
 
@@ -98,6 +111,12 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
             return results
         except:
             return {}
+
+    def forgeResizerURLCall(self):
+
+        part1 = """<a class="button" data-text="Advanced bookmarklet" href="javascript:void((function(d){if(self!=top||d.getElementById('toolbar')&&d.getElementById('toolbar').getAttribute('data-resizer'))return false;d.write('<!DOCTYPE HTML><html style=&quot;opacity:0;&quot;><head><meta charset=&quot;utf-8&quot;/></head><body><a data-viewport=&quot;240x240&quot; data-icon=&quot;handy&quot;>Mobile</a><a data-viewport=&quot;320x480&quot; data-icon=&quot;mobile&quot;>Mobile (e.g. Apple iPhone)</a><a data-viewport=&quot;320x568&quot; data-icon=&quot;mobile&quot; data-version=&quot;5&quot;>Apple iPhone 5</a><a data-viewport=&quot;600x800&quot; data-icon=&quot;small-tablet&quot;>Small Tablet</a><a data-viewport=&quot;768x1024&quot; data-icon=&quot;tablet&quot;>Tablet (e.g. Apple iPad 2-3rd, mini)</a><a data-viewport=&quot;1024x768&quot; data-icon=&quot;display&quot; data-version=&quot;17″&quot;>17″ Display</a><a data-viewport=&quot;1280x800&quot; data-icon=&quot;notebook&quot;>Widescreen</a><a data-viewport=&quot;2560x1600&quot; data-icon=&quot;display&quot; data-version=&quot;30″&quot;>30″ Apple Cinema Display</a><script src=&quot;"""
+        part2 = """/++genweb++static/js/resizer.min.js&quot;></script></body></html>')})(document));"><span>Vistes Beta</span></a>"""
+        return part1 + self.portal_url + part2
 
 
 class gwHeader(viewletBase):
@@ -205,6 +224,32 @@ class gwFooter(viewletBase):
     grok.template('footer')
     grok.viewletmanager(IPortalFooter)
     grok.layer(IGenwebTheme)
+
+    def get_go_to_top_link(self, template, view):
+
+        name = ''
+        if isinstance(template, ViewPageTemplateFile) or \
+           isinstance(template, ZopeViewPageTemplateFile) or \
+           isinstance(template, ViewMixinForTemplates):
+            # Browser view
+            name = view.__name__
+        else:
+            if hasattr(template, 'getId'):
+                name = template.getId()
+
+        context_state = getMultiAdapter(
+            (aq_inner(self.context), self.request),
+            name=u'plone_context_state')
+
+        if name and name in context_state.current_base_url():
+            # We are dealing with a view
+            if '@@' in context_state.current_page_url():
+                name = '@@{}'.format(name)
+
+            return '{}/{}#portal-header'.format(self.context.absolute_url(), name)
+        else:
+            # We have a bare content
+            return '{}#portal-header'.format(self.context.absolute_url())
 
     def getLinksPeu(self):
         """ links fixats per accessibilitat/rss/about """

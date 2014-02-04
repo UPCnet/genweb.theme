@@ -14395,6 +14395,11 @@ input[type="radio"].required:after {
   display: none;
 }
 
+/* line 190, ../scss/_upcnet.scss */
+#eines .typeahead.dropdown-menu a {
+  font-size: 12px;
+}
+
 /* TINY */
 /* Save message */
 /* line 4, ../scss/_ui.scss */
