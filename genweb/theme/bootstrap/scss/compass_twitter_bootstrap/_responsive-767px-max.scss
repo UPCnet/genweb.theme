@@ -4,21 +4,35 @@
 
 @media only screen and (max-width: 979px) and (orientation: portrait), 
        only screen and (max-width: 979px) and (orientation: landscape)  {
+  
   /*generals*/
-  body {font-size:14.5px !important; padding: 0 !important;}
+  
+  body {
+    font-size:14.5px !important; 
+    padding: 0 !important;
+  }
+  
   .container {width:100% !important;}
+  
   #portal-personaltools-wrapper .navbar-inner, #portal-header, #portal-globalnav, #portal-breadcrumbs, #content-area, #bandaLogos, #peu {
-    margin-left:0 !important; margin-right: 0 !important; padding-left: 10px !important;padding-right: 10px !important;}
-  /* personaltools*/
+    margin-left:0 !important; margin-right: 0 !important; padding-left: 10px !important;padding-right: 10px !important;
+  }
+  
+  // personaltools
+  
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {padding:0 5px !important; min-height: 40px;}
+  
   nav#portal-personaltools-wrapper {margin-top: 0px !important;}
-  .navbar .btn-navbar {margin-right: 10px !important;}
-  .navbar .btn-navbar i {background-image:image-url("gh-w.png");}
+  
+  .navbar .btn-navbar {
+    margin-right: 10px !important;
+    i {background-image:image-url("gh-w.png");}
+  }
+  
   .navbar-fixed-top {margin-bottom:0 !important;}
+  
   #portal-globalnav h2.brand {font-size: 17px;font-weight: bold;line-height: 18px;}
-  //refactor#eines input {width:85%;}
-  //refactor#eines button {width:14%; line-height:20px;min-width:60px;}
-  //refactor#eines .input-append {margin-left:0 !important; border: 0 !important;}
+  
   #eines {
     margin: 0 0 9px !important;
     text-align:right;
@@ -36,7 +50,8 @@
       margin:0;  
     }
   }
-  /* menú principal */
+
+  // menú principal
   #titol-menu-1 { // fem que tota la barra desplegui el menú
     width:75%;
     a {
@@ -45,29 +60,37 @@
       color:$gray;
     }
   }
-  /* capçalera */
-  //#portal-personaltools-wrapper + #portal-header {margin-top:40px;}
-  
-  #portal-personaltools-wrapper ~ #portal-header {margin-top:40px !important;} // arregla sobreposició barra usuari amb header en tablet
-  .header-image {@include background-size(100%);}
-  .header-image.l2-image {margin-left:207px !important;
-    &:before {top:45px;width:175px;margin-left:-207px;}
+
+  // capçalera
+   #portal-personaltools-wrapper ~ #portal-header {margin-top:40px !important;} // arregla sobreposició barra usuari amb header en tablet
+
+  .header-image {
+    @include background-size(100%);
+    &.l2-image {
+      margin-left:207px !important;
+      &:before {top:45px;width:175px;margin-left:-207px;}
+    }
   }
-  /*contingut*/
+  
+  // contingut
   #portal-column-one, #portal-column-content {width:100% !important; margin-left:0;}
-  /* peus */
+
+  // peus
   #peu [class*="span"] {
     float: none;display: block;width: auto;margin-left: 0;
     & .pull-right {
       float:none; margin:0;
     }
   }
+
   #canvia-vista {
     @include box-sizing(content-box);margin-left: 0px !important;margin-right: 0px !important;
   }
-  /*altres ajustaments*/
+
+  // altres ajustaments
+
   table {
-/*    display:block; */
+//    display:block;
     width:100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
@@ -79,8 +102,6 @@
   // Remove padding on container given explicit padding set on body
   .container-fluid {padding: 0;}
 
-  // TIP=
-  // ----------
   // Reset horizontal dl
   .dl-horizontal {
     dt {
@@ -96,25 +117,25 @@
 
   // GRID & CONTAINERS
   // -----------------
+
   // Remove width from containers
   .container { width: auto;}
+
   // Fluid rows
   .row-fluid {width: 100%;}
+
   // Undo negative margin on rows and thumbnails
   .row,.thumbnails {margin-left: 0;}
+
   .thumbnails > li {float: none;margin-left: 0;} // Reset the default margin for all li elements when no .span* classes are present
 
   .span12,.row-fluid .span12 {width: 100%;@include box-sizing(border-box);}
 
- 
-
-
-
-   // FORM FIELDS
+  // FORM FIELDS
   // -----------
+
   // Make span* classes full width
-  .input-large,
-  .input-xlarge,
+  .input-large, .input-xlarge,
   .input-xxlarge,
   input[class*="span"],
   select[class*="span"],
@@ -122,6 +143,7 @@
   .uneditable-input {
     @include input-block-level();
   }
+
   // But don't let it screw up prepend/append inputs
   .input-prepend input,
   .input-append input,
@@ -142,171 +164,19 @@
     &.fade.in { top:10px; }
   }
 
-  //fletxa avall en menú segon nivell seleccionat
+  //canviem la fletxa esquerra per fletxa avall en menú segon nivell seleccionat
   .subnavbar .nav-list {
     & a:hover:after, .active a:after {
         background-position:  -311.5px -117px !important; //fletxa avall
     }
   }
 
-
-
   // empaquetat
   .unit-picture .img-polaroid {float:none;clear:both;}
   .contact table {width:100% !important;} 
-}
-
-// UP TO LANDSCAPE PHONE
-// ---------------------
-@media only screen and (max-width: 639px) {  
-  /*general*/
-  body {font-size:14.5px;}
-  /* personaltools*/
-  #portal-personaltools-wrapper,.navbar-fixed-top,.navbar-fixed-bottom {margin-left: 0px !important;margin-right: 0px !important;}
-  #portal-personaltools-wrapper .navbar-inner, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {padding:0px !important;}
-  #portal-personaltools-wrapper ~ #portal-header {margin-top:0px !important;} // treu marge per versió mòbil
-  #portal-personaltools-wrapper .nav {
-    & ul { margin:0 !important; }
-    & i { background-image: image-url("gh-w.png");}
-    & a:not(.btn):hover, & a:not(.btn):focus {background: $black;}
-    & a.btn, & a.btn:focus {background-color: #BB3423;}
-  }
-  /* capçalera*/
-  .titol-espai{
-    &:before {position:absolute; border-top:1px solid #ccc;}
-    h1 {
-      font-size:138.461538%; line-height:24px; margin-top:5px !important;
-      a {display:block;}
-    }
-  }
-  
-  #portal-header {
-    padding-bottom:10px; //afegim padding-bottom per separar link home i menú
-    background:#f7f7f7 !important; 
-    .btn-navbar.pull-right {margin-top:12px !important;}
-    h1.pull-left {
-      margin-bottom:7px !important;
-      img {margin-top:-3px; height:46px;}
-    }
-    .container > div.clearfix {margin:0 !important;}
-    .container {border-bottom:0 !important;}
-    .btn-navbar.pull-right {margin-top:13px;margin-right:0 !important; padding: 7px 10px;}
-  }
-  #eines {
-    input {width:65%;}
-    button {width:34%; line-height:20px;}
-    a { 
-      margin: 0 0 20px 0!important; //canvi espai entre opcions menú eines 0->20 només per a telèfon
-    }
-  }
-  .header-image { // no la mostrem en mòbil
-    //height:40px !important;
-    display: none;
-  }
-  .header-image.l2-image {height:30px !important; margin-left:55px !important;
-    &:before {top:25px;width:45px;margin-left:-55px;}
-  }
-  /* breadcrumbs*/
-  #portal-breadcrumbs {display:none;}
-  /* contingut*/  // Make all grid-sized elements block level again
-  [class*="span"],
-  .row-fluid [class*="span"] {
-    float: none;
-    display: block;
-    width: auto;
-    margin-left: 0;
-  }  
-  /* peu i prepeu */
-  .llistatLogos {margin: 1em auto !important;}
-  #peu {
-    font-size: 84.613846% !important;
-    .container {padding-top:5px;}
-  }
-  
-  // desactivem aquesta funció per tal que surti el peu al mòbil #peu .span4 {display:none;}
-  .img_blank {margin-top:-1px;}
-
-  // Smooth out the collapsing/expanding nav
-  .nav-collapse {-webkit-transform: translate3d(0, 0, 0);} // activate the GPU
-  // Block level the page header small tag for readability
-  .page-header h1 small {display: block;line-height: $baseLineHeight;}
-  // Update checkboxes for iOS
-  input[type="checkbox"], input[type="radio"] {border: 1px solid #ccc;}
-  // Remove the horizontal form styles
-  .form-horizontal .control-group > label {float: none;width: auto;padding-top: 0;text-align: left;}
-  // Move over all input controls and content
-  .form-horizontal .controls {margin-left: 0;}
-  // Move the options list down to align with labels
-  .form-horizontal .control-list {padding-top: 0;} // has to be padding because margin collaspes
-  // Move over buttons in .form-actions to align with .controls
-  .form-horizontal .form-actions {padding-left: 10px;padding-right: 10px;}
-  // Modals
-  .modal {top: 10px;left: 10px;right: 10px;max-width: 100%;}
-  .modal-header .close {padding: 10px;margin: -10px;}
-  .modal-body {
-    //max-height: 280px;
-  }
-  @media only screen and (orientation: landscape) { 
-    .modal-body {max-height: 160px;}
-  }
-  // Carousel
-  .carousel-caption {position: static;}
-  
-  // taula pla estudis empaquetat
-  .plaEstudis {
-    background-color: #F7F7F7 ;
-
-    thead { 
-      display: block; 
-      th{
-        font-size: 80%;
-        &.semester{
-           display:none;
-        }
-        &.plaEstudis_titolCredits {
-          min-width:80px;
-        }
-        &.plaEstudis_titolAssignatures {
-          width:100%; 
-        }
-      }
-    }
-
-    tbody { 
-      display: block; 
-      clear:both;
-      th{ 
-        display: block; 
-        font-size: 80%;
-      }
-    }
-      
-    tr { 
-      display: block; 
-    }
-
-    td{
-      background-color: #fff !important;
-      font-size: 80%;
-      &.subject {
-        width: 100%;
-      }
-    }
 
 
-  }  // FI taula pla estudis empaquetat
-
-
-  // mapa contacte, afegim marges laterals per poder fer scroll en mòbil
-  .img-mask { 
-    width:90% !important;
-    margin-left:5% !important;
-    margin-right:5% !important;
-  }
-
-
-  /* captcha */
-
+  // captcha
   #recaptcha_table {// en mòbil visualitzem la taula captcha en blocks
     td {
       display:block;
@@ -338,8 +208,7 @@
     center {
       float:left;
     }
-
-  }
+  } // fi #recaptcha_table
 
   .recaptcha_only_if_privacy {
     float: left !important;
@@ -358,8 +227,172 @@
   #recaptcha_input_area, #recaptcha_response_field {
     width:240px !important;
   }
+  // FI captcha
+}// END Responsive: Landscape phone to desktop/tablet
 
-  /* FI captcha */
-}
+
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+@media only screen and (max-width: 639px) {  
+  
+  //general
+  body {font-size:14.5px;}
+  
+  // personaltools
+  #portal-personaltools-wrapper,.navbar-fixed-top,.navbar-fixed-bottom {margin-left: 0px !important;margin-right: 0px !important;}
+  #portal-personaltools-wrapper .navbar-inner, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {padding:0px !important;}
+  #portal-personaltools-wrapper ~ #portal-header {margin-top:0px !important;} // treu marge per versió mòbil
+  #portal-personaltools-wrapper .nav {
+    & ul { margin:0 !important; }
+    & i { background-image: image-url("gh-w.png");}
+    & a:not(.btn):hover, & a:not(.btn):focus {background: $black;}
+    & a.btn, & a.btn:focus {background-color: #BB3423;}
+  }
+
+  // capçalera
+  .titol-espai{
+    &:before {position:absolute; border-top:1px solid #ccc;}
+    h1 {
+      font-size:138.461538%; line-height:24px; margin-top:5px !important;
+      a {display:block;}
+    }
+  }
+  
+  #portal-header {
+    padding-bottom:10px; //afegim padding-bottom per separar link home i menú
+    background:#f7f7f7 !important; 
+    .btn-navbar.pull-right {margin-top:12px !important;}
+    h1.pull-left {
+      margin-bottom:7px !important;
+      img {margin-top:-3px; height:46px;}
+    }
+    .container > div.clearfix {margin:0 !important;}
+    .container {border-bottom:0 !important;}
+    .btn-navbar.pull-right {margin-top:13px;margin-right:0 !important; padding: 7px 10px;}
+  }
+
+  #eines {
+    input {width:65%;}
+    button {width:34%; line-height:20px;}
+    a { 
+      margin: 0 0 20px 0!important; //canvi espai entre opcions menú eines 0->20 només per a telèfon
+    }
+  }
+
+  .header-image { // no la mostrem en mòbil
+    //height:40px !important;
+    display: none;
+  }
+  .header-image.l2-image {height:30px !important; margin-left:55px !important;
+    &:before {top:25px;width:45px;margin-left:-55px;}
+  }
+
+  // breadcrumbs
+  #portal-breadcrumbs {display:none;}
+  
+  // contingut Make all grid-sized elements block level again
+  [class*="span"],
+  .row-fluid [class*="span"] {
+    float: none;
+    display: block;
+    width: auto;
+    margin-left: 0;
+  }  
+
+  // peu i prepeu 
+  .llistatLogos {margin: 1em auto !important;}
+
+  #peu {
+    font-size: 84.613846% !important;
+    .container {padding-top:5px;}
+  }
+  
+  // desactivem aquesta funció per tal que surti el peu al mòbil #peu .span4 {display:none;}
+  .img_blank {margin-top:-1px;}
+
+  // Smooth out the collapsing/expanding nav
+  .nav-collapse {-webkit-transform: translate3d(0, 0, 0);} // activate the GPU
+
+  // Block level the page header small tag for readability
+  .page-header h1 small {display: block;line-height: $baseLineHeight;}
+
+  // Update checkboxes for iOS
+  input[type="checkbox"], input[type="radio"] {border: 1px solid #ccc;}
+
+  // Remove the horizontal form styles
+  .form-horizontal .control-group > label {float: none;width: auto;padding-top: 0;text-align: left;}
+
+  // Move over all input controls and content
+  .form-horizontal .controls {margin-left: 0;}
+
+  // Move the options list down to align with labels
+  .form-horizontal .control-list {padding-top: 0;} // has to be padding because margin collaspes
+
+  // Move over buttons in .form-actions to align with .controls
+  .form-horizontal .form-actions {padding-left: 10px;padding-right: 10px;}
+
+  // Modals
+  .modal {top: 10px;left: 10px;right: 10px;max-width: 100%;}
+  .modal-header .close {padding: 10px;margin: -10px;}
+  .modal-body {
+    //max-height: 280px; desactivat per que no surti scroll vertical en mòbil
+  }
+
+  @media only screen and (orientation: landscape) { 
+    .modal-body {max-height: 160px;}
+  }
+
+  // Carousel
+  .carousel-caption {position: static;}
+  
+  // taula pla estudis empaquetat
+  .plaEstudis {
+    background-color: #F7F7F7;
+    thead { 
+      display: block; 
+      th{
+        font-size: 80%;
+        &.semester{
+           display:none;
+        }
+        &.plaEstudis_titolCredits {
+          min-width:80px;
+        }
+        &.plaEstudis_titolAssignatures {
+          width:100%; 
+        }
+      }
+    }
+    tbody { 
+      display: block; 
+      clear:both;
+      th{ 
+        display: block; 
+        font-size: 80%;
+      }
+    }      
+    tr { 
+      display: block; 
+    }
+    td{
+      background-color: #fff !important;
+      font-size: 80%;
+      &.subject {
+        width: 100%;
+      }
+    }
+
+
+  }// FI taula pla estudis empaquetat
+
+
+  // mapa contacte, afegim marges laterals per poder fer scroll en mòbil
+  .img-mask { 
+    width:90% !important;
+    margin-left:5% !important;
+    margin-right:5% !important;
+  }
+} 
 
 

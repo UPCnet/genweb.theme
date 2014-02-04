@@ -65,9 +65,15 @@
                         class="img_blank"
                         src="/++genweb++static/images/blank_blanc.png">
             </a></li>
+                         <li  role="menuitem" class="visible-desktop" ><a class="button" title="Les Vistes Beta pretenen ajudar a fer millors versions de mòbil i de tauleta del vostre web. Només està disponible per a navegadors moderns. En cap cas és la versió real de com es veurà el web mobilitzat sinó només una simulació. Cliqueu en 'Vistes Beta' i es desplegarà una barra amb diferents opcions de visualització. També podeu arrossegar 'Vistes Beta' a la vostra barra de marcadors i sempre les tindreu disponibles." data-text="Vistes Beta" href="javascript:void((function(d){if(self!=top||d.getElementById('toolbar')&&d.getElementById('toolbar').getAttribute('data-resizer'))return%20false;d.write('<!DOCTYPE%20HTML><html%20style=\'opacity:0;\'><head><meta%20charset=\'utf-8\'/></head><body><a%20data-viewport=\'320x480\'%20data-icon=\'mobile\'>Mobile</a><a%20data-viewport=\'600x800\'%20data-icon=\'small-tablet\'>Small%20Tablet</a><a%20data-viewport=\'768x1024\'%20data-icon=\'tablet\'>Tablet</a><a%20data-viewport=\'1280x800\'%20data-icon=\'notebook\'>Widescreen</a><script%20src=\'https://devel.upcnet.es/comunitat/++genweb++static/js/resizer.min.js\'></script></body></html>')})(document));">Vistes Beta
+                         <img i18n:attributes="alt obrir_link_finestra_nova"
+                        class="img_blank"
+                        src="/++genweb++static/images/blank_blanc.png"></a>
+</li>
+
           </ul>
           <h2 class="goout" id="titol-menu-eines-genweb"> Menú d'eines Genweb UPC </h2>
-          <ul class="nav pull-right" role="toolbar" aria-labelledby="titol-menu-eines-genweb">
+          <ul style="display:none" class="nav pull-right" role="toolbar" aria-labelledby="titol-menu-eines-genweb">
             <!--[if !IE]> -->
             <li role="menuitem" class="visible-desktop visible-tablet"><a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Les vistes pretenen ajudar a fer millors versions de mòbil i de tauleta del vostre web.<br /> Només està disponible per a navegadors moderns i encara en <strong>fase beta</strong>. En cap cas és la versió real de com es veurà el web mobilitzat sinó només una simulació.<br><br><span class='s text-info'>Seleccioneu vista mòbil o tauleta i només heu de clicar a la icona pantalla per tornar a la vista normal</span>" data-original-title="<strong>Vistes</strong> Beta"><span class="label label-important ">Vistes Beta</span></a></li>
             <li role="menuitem" class="visible-desktop visible-tablet"><a class="userScreen" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Screenview"><span class="goout">Screen</span></a></li>

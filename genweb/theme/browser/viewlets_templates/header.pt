@@ -2,7 +2,7 @@
      i18n:domain="genweb">
   <div class="clearfix">
     <h1 class="pull-left">
-      <a href="http://www.upc.edu" accesskey="1">
+      <a href="http://www.upc.edu" accesskey="1" target="_blank">
         <img tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/logoUPC.png"
              alt="Universitat Politècnica de Catalunya · BarcelonaTech">
       </a>

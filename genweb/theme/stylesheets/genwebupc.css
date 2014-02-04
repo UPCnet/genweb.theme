@@ -7211,18 +7211,18 @@ button.pfg-draft-save .badge,
 }
 @media only screen and (max-width: 979px) and (orientation: portrait), only screen and (max-width: 979px) and (orientation: landscape) {
   /*generals*/
-  /* line 8, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 10, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   body {
     font-size: 14.5px !important;
     padding: 0 !important;
   }
 
-  /* line 9, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container {
     width: 100% !important;
   }
 
-  /* line 10, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 17, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .navbar-inner, #portal-header, #portal-globalnav, #portal-breadcrumbs, #content-area, #bandaLogos, #peu {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -7230,134 +7230,127 @@ button.pfg-draft-save .badge,
     padding-right: 10px !important;
   }
 
-  /* personaltools*/
-  /* line 13, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 23, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 0 5px !important;
     min-height: 40px;
   }
 
-  /* line 14, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   nav#portal-personaltools-wrapper {
     margin-top: 0px !important;
   }
 
-  /* line 15, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 27, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar .btn-navbar {
     margin-right: 10px !important;
   }
-
-  /* line 16, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 29, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar .btn-navbar i {
     background-image: url('/++genweb++static/images/gh-w.png?1354788544');
   }
 
-  /* line 17, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 32, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar-fixed-top {
     margin-bottom: 0 !important;
   }
 
-  /* line 18, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 34, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-globalnav h2.brand {
     font-size: 17px;
     font-weight: bold;
     line-height: 18px;
   }
 
-  /* line 22, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 36, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines {
     margin: 0 0 9px !important;
     text-align: right;
   }
-  /* line 25, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 39, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines input {
     width: 85%;
   }
-  /* line 26, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines button {
     width: 14%;
     line-height: 20px;
     min-width: 60px;
   }
-  /* line 27, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 41, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines .input-append {
     margin-left: 0 !important;
     border: 0 !important;
   }
-  /* line 28, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines a {
     padding: 8px !important;
     margin: 0 !important;
   }
-  /* line 30, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 44, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines a:hover, #eines a:focus {
     color: white !important;
     background: #007bc0;
   }
-  /* line 35, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 49, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines ul {
     margin: 0;
   }
 
-  /* menú principal */
-  /* line 40, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 55, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #titol-menu-1 {
     width: 75%;
   }
-  /* line 42, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 57, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #titol-menu-1 a {
     display: block;
     text-decoration: none;
     color: #666666;
   }
 
-  /* capçalera */
-  /* line 51, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper ~ #portal-header {
     margin-top: 40px !important;
   }
 
-  /* line 52, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 67, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image {
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
   }
-
-  /* line 53, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image {
     margin-left: 207px !important;
   }
-  /* line 54, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 71, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image:before {
     top: 45px;
     width: 175px;
     margin-left: -207px;
   }
 
-  /*contingut*/
-  /* line 57, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 76, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-column-one, #portal-column-content {
     width: 100% !important;
     margin-left: 0;
   }
 
-  /* peus */
-  /* line 59, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 79, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu [class*="span"], #peu .cella {
     float: none;
     display: block;
     width: auto;
     margin-left: 0;
   }
-  /* line 61, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 81, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu [class*="span"] .pull-right, #peu .cella .pull-right, #peu [class*="span"] .newsImageContainer, #peu .cella .newsImageContainer {
     float: none;
     margin: 0;
   }
 
-  /* line 65, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 86, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #canvia-vista {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -7366,17 +7359,15 @@ button.pfg-draft-save .badge,
     margin-right: 0px !important;
   }
 
-  /*altres ajustaments*/
-  /* line 69, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   table {
-    /*    display:block; */
     width: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     max-width: 100%;
   }
 
-  /* line 78, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 101, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar-fixed-top, .navbar-fixed-bottom {
     margin-left: 0px;
     margin-right: 0px;
@@ -7384,45 +7375,45 @@ button.pfg-draft-save .badge,
     margin-left: 0;
   }
 
-  /* line 80, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 103, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container-fluid {
     padding: 0;
   }
 
-  /* line 86, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 107, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dt, .portaltype-packet .estudis dl.fitxa dt {
     float: none;
     clear: none;
     width: auto;
     text-align: left;
   }
-  /* line 92, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 113, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dd, .portaltype-packet .estudis dl.fitxa dd {
     margin-left: 0;
   }
 
-  /* line 100, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 122, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container {
     width: auto;
   }
 
-  /* line 102, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 125, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row-fluid, #dashboard, .fila, .template-atct_album_view #content-core {
     width: 100%;
   }
 
-  /* line 104, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 128, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row, .thumbnails {
     margin-left: 0;
   }
 
-  /* line 105, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 130, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .thumbnails > li {
     float: none;
     margin-left: 0;
   }
 
-  /* line 107, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 132, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .span12, .row-fluid .span12, #dashboard .span12, .fila .span12, .template-atct_album_view #content-core .span12 {
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -7430,9 +7421,8 @@ button.pfg-draft-save .badge,
     box-sizing: border-box;
   }
 
-  /* line 122, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  .input-large,
-  .input-xlarge,
+  /* line 143, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .input-large, .input-xlarge,
   .input-xxlarge,
   #archetypes-fieldname-title input,
   input[class*="span"],
@@ -7450,7 +7440,7 @@ button.pfg-draft-save .badge,
     box-sizing: border-box;
   }
 
-  /* line 129, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 151, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .input-prepend input,
   .input-append input,
   .input-prepend input[class*="span"],
@@ -7461,7 +7451,7 @@ button.pfg-draft-save .badge,
     width: auto;
   }
 
-  /* line 135, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 157, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal, .pb-ajax {
     position: fixed;
     top: 20px;
@@ -7470,157 +7460,208 @@ button.pfg-draft-save .badge,
     width: auto;
     margin: 0;
   }
-  /* line 142, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 164, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal.fade.in, .fade.in.pb-ajax {
     top: 10px;
   }
 
-  /* line 147, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 169, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .subnavbar .nav-list a:hover:after, .subnavbar .nav-list .active a:after, .subnavbar .nav-list .selected a:after, .subnavbar .nav-list .contentViews .selected a:after, .contentViews .subnavbar .nav-list .selected a:after, .subnavbar .nav-list .contentViews .selected:hover a:after, .contentViews .subnavbar .nav-list .selected:hover a:after {
     background-position: -311.5px -117px !important;
   }
 
-  /* line 155, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 175, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .unit-picture .img-polaroid, .unit-picture .template-personal-information [for="form.portrait"] ~ img, .template-personal-information .unit-picture [for="form.portrait"] ~ img, .unit-picture .newsImageContainer, .unit-picture .tileItem img, .tileItem .unit-picture img {
     float: none;
     clear: both;
   }
 
-  /* line 156, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .contact table {
     width: 100% !important;
   }
+
+  /* line 181, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table td {
+    display: block;
+  }
+  /* line 184, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table tr:nth-child(1) {
+    width: 70%;
+  }
+  /* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table tr:nth-child(1) td:nth-child(1) {
+    width: 70%;
+  }
+  /* line 190, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table tr:nth-child(1) td:nth-child(2) {
+    width: 30px;
+    float: left;
+  }
+  /* line 195, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table tr:nth-child(1) td:nth-child(3) {
+    float: left;
+  }
+  /* line 201, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table tr:nth-child(2) {
+    width: 70%;
+  }
+  /* line 203, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table tr:nth-child(2) td {
+    width: 50%;
+  }
+  /* line 208, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table center {
+    float: left;
+  }
+
+  /* line 213, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .recaptcha_only_if_privacy {
+    float: left !important;
+    text-align: left !important;
+    margin-left: 7px !important;
+    margin-bottom: 7px !important;
+  }
+
+  /* line 220, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_image {
+    width: 250px !important;
+  }
+  /* line 222, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_image img {
+    width: 250px !important;
+  }
+
+  /* line 227, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_input_area, #recaptcha_response_field {
+    width: 240px !important;
+  }
 }
 @media only screen and (max-width: 639px) {
-  /*general*/
-  /* line 163, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 240, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   body {
     font-size: 14.5px;
   }
 
-  /* personaltools*/
-  /* line 165, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 243, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper, .navbar-fixed-top, .navbar-fixed-bottom {
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
 
-  /* line 166, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 244, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .navbar-inner, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 0px !important;
   }
 
-  /* line 167, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 245, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper ~ #portal-header {
     margin-top: 0px !important;
   }
 
-  /* line 169, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 247, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav ul, #portal-personaltools-wrapper .contentViews ul, #portal-personaltools-wrapper .configlets ul, #portal-personaltools-wrapper .formTabs ul {
     margin: 0 !important;
   }
-  /* line 170, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 248, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
     background-image: url('/++genweb++static/images/gh-w.png?1354788544');
   }
-  /* line 171, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 249, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
     background: black;
   }
-  /* line 172, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 250, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a.btn, #portal-personaltools-wrapper .contentViews a.btn, #portal-personaltools-wrapper .configlets a.btn, #portal-personaltools-wrapper .formTabs a.btn, #portal-personaltools-wrapper .nav a.standalone, #portal-personaltools-wrapper .contentViews a.standalone, #portal-personaltools-wrapper .configlets a.standalone, #portal-personaltools-wrapper .formTabs a.standalone, #portal-personaltools-wrapper .nav a[type="submit"], #portal-personaltools-wrapper .contentViews a[type="submit"], #portal-personaltools-wrapper .configlets a[type="submit"], #portal-personaltools-wrapper .formTabs a[type="submit"], #portal-personaltools-wrapper .nav a.context, #portal-personaltools-wrapper .contentViews a.context, #portal-personaltools-wrapper .configlets a.context, #portal-personaltools-wrapper .formTabs a.context, #portal-personaltools-wrapper .nav a.searchButton, #portal-personaltools-wrapper .contentViews a.searchButton, #portal-personaltools-wrapper .configlets a.searchButton, #portal-personaltools-wrapper .formTabs a.searchButton, #portal-personaltools-wrapper .nav a.link-parent, #portal-personaltools-wrapper .contentViews a.link-parent, #portal-personaltools-wrapper .configlets a.link-parent, #portal-personaltools-wrapper .formTabs a.link-parent, #portal-personaltools-wrapper .nav a.btn:focus, #portal-personaltools-wrapper .contentViews a.btn:focus, #portal-personaltools-wrapper .configlets a.btn:focus, #portal-personaltools-wrapper .formTabs a.btn:focus, #portal-personaltools-wrapper .nav a.standalone:focus, #portal-personaltools-wrapper .contentViews a.standalone:focus, #portal-personaltools-wrapper .configlets a.standalone:focus, #portal-personaltools-wrapper .formTabs a.standalone:focus, #portal-personaltools-wrapper .nav a[type="submit"]:focus, #portal-personaltools-wrapper .contentViews a[type="submit"]:focus, #portal-personaltools-wrapper .configlets a[type="submit"]:focus, #portal-personaltools-wrapper .formTabs a[type="submit"]:focus, #portal-personaltools-wrapper .nav a.context:focus, #portal-personaltools-wrapper .contentViews a.context:focus, #portal-personaltools-wrapper .configlets a.context:focus, #portal-personaltools-wrapper .formTabs a.context:focus, #portal-personaltools-wrapper .nav a.searchButton:focus, #portal-personaltools-wrapper .contentViews a.searchButton:focus, #portal-personaltools-wrapper .configlets a.searchButton:focus, #portal-personaltools-wrapper .formTabs a.searchButton:focus, #portal-personaltools-wrapper .nav a.link-parent:focus, #portal-personaltools-wrapper .contentViews a.link-parent:focus, #portal-personaltools-wrapper .configlets a.link-parent:focus, #portal-personaltools-wrapper .formTabs a.link-parent:focus {
     background-color: #BB3423;
   }
 
-  /* capçalera*/
-  /* line 176, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 255, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai:before {
     position: absolute;
     border-top: 1px solid #ccc;
   }
-  /* line 177, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 256, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai h1 {
     font-size: 138.461538%;
     line-height: 24px;
     margin-top: 5px !important;
   }
-  /* line 179, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 258, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai h1 a {
     display: block;
   }
 
-  /* line 183, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 262, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header {
     padding-bottom: 10px;
     background: #f7f7f7 !important;
   }
-  /* line 186, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 265, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
     margin-top: 12px !important;
   }
-  /* line 187, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 266, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header h1.pull-left {
     margin-bottom: 7px !important;
   }
-  /* line 189, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 268, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header h1.pull-left img {
     margin-top: -3px;
     height: 46px;
   }
-  /* line 191, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 270, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header .container > div.clearfix, #portal-header .container > div.visualClear, #portal-header .portaltype-packet .estudis .container > div.caixa3, .portaltype-packet .estudis #portal-header .container > div.caixa3 {
     margin: 0 !important;
   }
-  /* line 192, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 271, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header .container {
     border-bottom: 0 !important;
   }
-  /* line 193, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 272, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
     margin-top: 13px;
     margin-right: 0 !important;
     padding: 7px 10px;
   }
 
-  /* line 196, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 276, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines input {
     width: 65%;
   }
-  /* line 197, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 277, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines button {
     width: 34%;
     line-height: 20px;
   }
-  /* line 198, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 278, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines a {
     margin: 0 0 20px 0!important;
   }
 
-  /* line 202, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 283, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image {
     display: none;
   }
 
-  /* line 206, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 287, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image {
     height: 30px !important;
     margin-left: 55px !important;
   }
-  /* line 207, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 288, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image:before {
     top: 25px;
     width: 45px;
     margin-left: -55px;
   }
 
-  /* breadcrumbs*/
-  /* line 210, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 292, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-breadcrumbs {
     display: none;
   }
 
-  /* contingut*/
-  /* line 213, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 296, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   [class*="span"], .cella,
   .row-fluid [class*="span"],
   #dashboard [class*="span"],
@@ -7636,43 +7677,42 @@ button.pfg-draft-save .badge,
     margin-left: 0;
   }
 
-  /* peu i prepeu */
-  /* line 220, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 304, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .llistatLogos {
     margin: 1em auto !important;
   }
 
-  /* line 221, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 306, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu {
     font-size: 84.613846% !important;
   }
-  /* line 223, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 308, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu .container {
     padding-top: 5px;
   }
 
-  /* line 227, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 312, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .img_blank {
     margin-top: -1px;
   }
 
-  /* line 230, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 315, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
 
-  /* line 232, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 318, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .page-header h1 small {
     display: block;
     line-height: 18px;
   }
 
-  /* line 234, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 321, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   input[type="checkbox"], input[type="radio"] {
     border: 1px solid #ccc;
   }
 
-  /* line 236, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 324, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-group > label {
     float: none;
     width: auto;
@@ -7680,23 +7720,23 @@ button.pfg-draft-save .badge,
     text-align: left;
   }
 
-  /* line 238, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 327, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .controls {
     margin-left: 0;
   }
 
-  /* line 240, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 330, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-list {
     padding-top: 0;
   }
 
-  /* line 242, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 333, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .form-actions {
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  /* line 244, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 336, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal, .pb-ajax {
     top: 10px;
     left: 10px;
@@ -7704,133 +7744,74 @@ button.pfg-draft-save .badge,
     max-width: 100%;
   }
 
-  /* line 245, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 337, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-header .close, .pb-ajax .documentFirstHeading .close, .pb-ajax > div > h2 .close {
     padding: 10px;
     margin: -10px;
   }
 
-  /* line 253, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 347, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .carousel-caption {
     position: static;
   }
 
-  /* line 256, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 350, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis {
     background-color: #F7F7F7;
   }
-  /* line 259, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 352, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis thead {
     display: block;
   }
-  /* line 261, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 354, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis thead th {
     font-size: 80%;
   }
-  /* line 263, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 356, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis thead th.semester {
     display: none;
   }
-  /* line 266, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 359, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis thead th.plaEstudis_titolCredits {
     min-width: 80px;
   }
-  /* line 269, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 362, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis thead th.plaEstudis_titolAssignatures {
     width: 100%;
   }
-  /* line 275, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 367, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis tbody {
     display: block;
     clear: both;
   }
-  /* line 278, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 370, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis tbody th {
     display: block;
     font-size: 80%;
   }
-  /* line 284, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 375, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis tr {
     display: block;
   }
-  /* line 288, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 378, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis td {
     background-color: #fff !important;
     font-size: 80%;
   }
-  /* line 291, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 381, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis td.subject {
     width: 100%;
   }
 
-  /* line 301, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 391, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .img-mask {
     width: 90% !important;
     margin-left: 5% !important;
     margin-right: 5% !important;
   }
-
-  /* captcha */
-  /* line 311, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #recaptcha_table td {
-    display: block;
-  }
-  /* line 314, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #recaptcha_table tr:nth-child(1) {
-    width: 70%;
-  }
-  /* line 317, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #recaptcha_table tr:nth-child(1) td:nth-child(1) {
-    width: 70%;
-  }
-  /* line 320, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #recaptcha_table tr:nth-child(1) td:nth-child(2) {
-    width: 30px;
-    float: left;
-  }
-  /* line 325, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #recaptcha_table tr:nth-child(1) td:nth-child(3) {
-    float: left;
-  }
-  /* line 331, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #recaptcha_table tr:nth-child(2) {
-    width: 70%;
-  }
-  /* line 333, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #recaptcha_table tr:nth-child(2) td {
-    width: 50%;
-  }
-  /* line 338, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #recaptcha_table center {
-    float: left;
-  }
-
-  /* line 344, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  .recaptcha_only_if_privacy {
-    float: left !important;
-    text-align: left !important;
-    margin-left: 7px !important;
-    margin-bottom: 7px !important;
-  }
-
-  /* line 351, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #recaptcha_image {
-    width: 250px !important;
-  }
-  /* line 353, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #recaptcha_image img {
-    width: 250px !important;
-  }
-
-  /* line 358, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  #recaptcha_input_area, #recaptcha_response_field {
-    width: 240px !important;
-  }
-
-  /* FI captcha */
 }
 @media only screen and (max-width: 639px) and (orientation: landscape) {
-  /* line 250, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 343, ../bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-body, .pb-ajax #content-core, .pb-ajax .documentDescription, .pb-ajax #content-history {
     max-height: 160px;
   }
@@ -10209,7 +10190,7 @@ a.primary, .primary a, a .primary {
 
 /* line 61, ../scss/_wells-boxes.scss */
 .box, .box-inverse, .template-manage-homeportlets .portletHeader:hover, .portaltype-packet .estudis .caixa3, #category.documentByLine {
-  min-height: 25px;
+  min-height: 20px;
   padding: 18px;
   margin-bottom: 20px;
   background-color: white;
@@ -12379,24 +12360,22 @@ iframe {
   margin-right: 30px;
 }
 
-/* line 301, ../scss/_plone.scss */
+/* line 302, ../scss/_plone.scss */
 .plone_jscalendar .dk_container {
   display: inline-block;
 }
-
-/* line 302, ../scss/_plone.scss */
+/* line 303, ../scss/_plone.scss */
 .plone_jscalendar .dk_toggle {
   width: 100px !important;
 }
-
-/* line 303, ../scss/_plone.scss */
+/* line 304, ../scss/_plone.scss */
 .plone_jscalendar .dk_options {
   min-width: 128px !important;
   width: 128px !important;
 }
 
 /* The main calendar widget.  DIV containing a table. */
-/* line 308, ../scss/_plone.scss */
+/* line 310, ../scss/_plone.scss */
 .calendar {
   display: none;
   margin: 0 auto;
@@ -12405,8 +12384,7 @@ iframe {
   height: 100% !important;
   margin-top: 50%;
 }
-
-/* line 309, ../scss/_plone.scss */
+/* line 312, ../scss/_plone.scss */
 .calendar table {
   background: #f2f2f2;
   border-radius: 5px;
@@ -12416,139 +12394,115 @@ iframe {
   margin-top: -100px !important;
   margin: 0 auto;
 }
-
-/* line 310, ../scss/_plone.scss */
+/* line 314, ../scss/_plone.scss */
+.calendar table .wn {
+  border-right: 1px solid #b2b2b2;
+  background: #f7f7f7;
+}
+/* line 316, ../scss/_plone.scss */
 .calendar .button {
   text-align: center;
   background: #f2f2f2;
 }
-
-/* line 311, ../scss/_plone.scss */
+/* line 317, ../scss/_plone.scss */
 .calendar .nav, .calendar .contentViews, .calendar .configlets, .calendar .formTabs {
   background: #f2f2f2 url(menuarrow.gif) no-repeat 100% 100%;
 }
-
-/* line 312, ../scss/_plone.scss */
+/* line 319, ../scss/_plone.scss */
 .calendar thead .title {
   font-weight: bold;
   text-align: center;
 }
-
-/* line 313, ../scss/_plone.scss */
+/* line 320, ../scss/_plone.scss */
 .calendar thead .name {
   border-bottom: 1px solid #b2b2b2;
   border-top: 1px solid #b2b2b2;
   text-align: center;
   background: #f7f7f7;
 }
-
-/* line 314, ../scss/_plone.scss */
+/* line 321, ../scss/_plone.scss */
 .calendar thead .weekend {
   color: #c00;
 }
-
-/* line 315, ../scss/_plone.scss */
+/* line 322, ../scss/_plone.scss */
 .calendar thead .hilite {
   background: #cef;
 }
-
-/* line 316, ../scss/_plone.scss */
+/* line 323, ../scss/_plone.scss */
 .calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected, .contentViews .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
-
-/* line 317, ../scss/_plone.scss */
+/* line 325, ../scss/_plone.scss */
 .calendar tbody {
   background: #fff;
 }
-
-/* line 318, ../scss/_plone.scss */
+/* line 327, ../scss/_plone.scss */
 .calendar tbody .day {
   width: 2em;
   text-align: center;
   padding: 2px 0px;
 }
-
-/* line 319, ../scss/_plone.scss */
+/* line 328, ../scss/_plone.scss */
 .calendar tbody .day.othermonth {
   font-size: 80%;
   color: #aaa;
 }
-
-/* line 320, ../scss/_plone.scss */
+/* line 329, ../scss/_plone.scss */
 .calendar tbody .day.othermonth.oweekend {
   color: #faa;
 }
-
-/* line 321, ../scss/_plone.scss */
-.calendar table .wn {
-  border-right: 1px solid #b2b2b2;
-  background: #f7f7f7;
-}
-
-/* line 322, ../scss/_plone.scss */
+/* line 330, ../scss/_plone.scss */
 .calendar tbody .rowhilite td {
   background: #cef;
 }
-
-/* line 323, ../scss/_plone.scss */
+/* line 331, ../scss/_plone.scss */
 .calendar tbody td.hilite {
   background: #08c;
   color: white;
 }
-
-/* line 324, ../scss/_plone.scss */
+/* line 332, ../scss/_plone.scss */
 .calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected, .contentViews .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
   box-shadow: inset 0 0 3px #08c;
 }
-
-/* line 325, ../scss/_plone.scss */
+/* line 333, ../scss/_plone.scss */
 .calendar tbody td.selected {
   font-weight: bold;
   background: #08c;
   color: white;
 }
-
-/* line 326, ../scss/_plone.scss */
+/* line 334, ../scss/_plone.scss */
 .calendar tbody td.weekend {
   color: #c00;
 }
-
-/* line 327, ../scss/_plone.scss */
+/* line 335, ../scss/_plone.scss */
 .calendar tbody td.today {
   font-weight: bold;
   color: white;
   border-radius: 3px;
 }
-
-/* line 328, ../scss/_plone.scss */
+/* line 336, ../scss/_plone.scss */
 .calendar tbody td.disabled {
   color: gray;
 }
-
-/* line 330, ../scss/_plone.scss */
+/* line 338, ../scss/_plone.scss */
 .calendar tbody .emptyrow {
   display: none;
 }
-
-/* line 332, ../scss/_plone.scss */
+/* line 341, ../scss/_plone.scss */
 .calendar tfoot .ttip {
   background: #f7f7f7;
   border-top: 1px solid #b2b2b2;
   text-align: center;
 }
-
-/* line 333, ../scss/_plone.scss */
+/* line 342, ../scss/_plone.scss */
 .calendar tfoot .hilite {
   background-color: #cef !important;
 }
-
-/* line 334, ../scss/_plone.scss */
+/* line 343, ../scss/_plone.scss */
 .calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected, .contentViews .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
   background-color: #08c !important;
 }
-
-/* line 336, ../scss/_plone.scss */
+/* line 345, ../scss/_plone.scss */
 .calendar .combo {
   position: absolute;
   display: none;
@@ -12564,41 +12518,35 @@ iframe {
   padding: 1px;
   z-index: 100;
 }
-
-/* line 353, ../scss/_plone.scss */
+/* line 360, ../scss/_plone.scss */
 .calendar .combo .label, .calendar .combo #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .calendar .combo .state-restricted-to-managers, .calendar .combo #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .calendar .combo .state-visible, .calendar .combo #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .calendar .combo .state-intranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publishtointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publicaalaintranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retracttointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retiraalaintranet, .calendar .combo #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .calendar .combo .state-private, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-hide,
 .calendar .combo .label-IEfix {
   text-align: center;
   display: block;
   padding: 1px;
 }
-
-/* line 359, ../scss/_plone.scss */
+/* line 365, ../scss/_plone.scss */
 .calendar .combo .label-IEfix {
   width: 4em;
 }
-
-/* line 363, ../scss/_plone.scss */
+/* line 368, ../scss/_plone.scss */
 .calendar .combo .active, .calendar .combo .selected, .calendar .combo .contentViews .selected, .contentViews .calendar .combo .selected, .calendar .combo .contentViews .selected:hover, .contentViews .calendar .combo .selected:hover {
   padding: 0px;
   border: 1px solid #000;
 }
-
-/* line 368, ../scss/_plone.scss */
+/* line 372, ../scss/_plone.scss */
 .calendar .combo .hilite {
   background: Highlight;
   color: HighlightText;
 }
-
-/* line 373, ../scss/_plone.scss */
+/* line 378, ../scss/_plone.scss */
 .calendar td.time {
   border-top: 1px solid ButtonShadow;
   padding: 1px 0px;
   text-align: center;
   background-color: ButtonFace;
 }
-
-/* line 382, ../scss/_plone.scss */
+/* line 385, ../scss/_plone.scss */
 .calendar td.time .hour,
 .calendar td.time .minute,
 .calendar td.time .ampm {
@@ -12607,33 +12555,29 @@ iframe {
   font-weight: bold;
   background-color: Menu;
 }
-
-/* line 389, ../scss/_plone.scss */
+/* line 392, ../scss/_plone.scss */
 .calendar td.time .ampm {
   text-align: center;
 }
-
-/* line 393, ../scss/_plone.scss */
+/* line 396, ../scss/_plone.scss */
 .calendar td.time .colon {
   padding: 0px 2px 0px 3px;
   font-weight: bold;
 }
-
-/* line 398, ../scss/_plone.scss */
+/* line 401, ../scss/_plone.scss */
 .calendar td.time span.hilite {
   border-color: #000;
   background-color: Highlight;
   color: HighlightText;
 }
-
-/* line 404, ../scss/_plone.scss */
+/* line 407, ../scss/_plone.scss */
 .calendar td.time span.active, .calendar td.time span.selected, .calendar td.time .contentViews span.selected, .contentViews .calendar td.time span.selected, .calendar td.time .contentViews span.selected:hover, .contentViews .calendar td.time span.selected:hover {
   border-color: #f00;
   background-color: #000;
   color: #080;
 }
 
-/* line 411, ../scss/_plone.scss */
+/* line 416, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong {
   display: inline-block;
   padding: 2px 0 0 4px;
@@ -12643,37 +12587,37 @@ iframe {
   width: 34%;
 }
 
-/* line 413, ../scss/_plone.scss */
+/* line 418, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader:hover strong {
   color: white;
 }
-/* line 414, ../scss/_plone.scss */
+/* line 419, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader:hover a {
   color: #30a2c3;
 }
 
-/* line 416, ../scss/_plone.scss */
+/* line 421, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong:hover {
   overflow: visible;
   width: 100%;
   padding-bottom: 1px !important;
 }
 
-/* line 417, ../scss/_plone.scss */
+/* line 422, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong:hover + span {
   display: none;
 }
 
-/* line 420, ../scss/_plone.scss */
+/* line 425, ../scss/_plone.scss */
 img[src$="spinner.gif"] {
   box-shadow: 0 0 350px 125px white;
 }
 
-/* line 425, ../scss/_plone.scss */
+/* line 430, ../scss/_plone.scss */
 .discussion .commentImage {
   position: absolute;
 }
-/* line 427, ../scss/_plone.scss */
+/* line 432, ../scss/_plone.scss */
 .discussion .commentImage img {
   width: 50px;
   -webkit-border-radius: 4px;
@@ -12682,118 +12626,113 @@ img[src$="spinner.gif"] {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 429, ../scss/_plone.scss */
+/* line 434, ../scss/_plone.scss */
 .discussion .replyTreeLevel0 {
   margin-top: 2em;
 }
-/* line 432, ../scss/_plone.scss */
+/* line 437, ../scss/_plone.scss */
 .discussion .documentByLine a {
   font-weight: bold;
 }
-/* line 434, ../scss/_plone.scss */
+/* line 439, ../scss/_plone.scss */
 .discussion .commentDate {
   float: right;
 }
-/* line 435, ../scss/_plone.scss */
+/* line 440, ../scss/_plone.scss */
 .discussion .commentBody {
   color: #333333;
 }
-/* line 436, ../scss/_plone.scss */
+/* line 441, ../scss/_plone.scss */
 .discussion .commentActions {
   float: right;
 }
-/* line 439, ../scss/_plone.scss */
+/* line 444, ../scss/_plone.scss */
 .discussion .comment {
   border-left: 1px solid #b2b2b2;
   padding-left: 1em;
   margin-bottom: .5em;
   min-height: 50px;
 }
-/* line 440, ../scss/_plone.scss */
+/* line 445, ../scss/_plone.scss */
 .discussion .comment.replyTreeLevel0 {
   padding-left: 0;
   border-left: 0;
 }
-/* line 441, ../scss/_plone.scss */
+/* line 446, ../scss/_plone.scss */
 .discussion .reply-to-comment-button {
   display: block;
 }
-/* line 442, ../scss/_plone.scss */
+/* line 447, ../scss/_plone.scss */
 .discussion .documentByLine, .discussion .commentBody, .discussion .reply-to-comment-button {
   margin-left: 60px;
 }
-/* line 443, ../scss/_plone.scss */
+/* line 448, ../scss/_plone.scss */
 .discussion .reply {
   margin-top: 20px;
 }
 
-/* line 447, ../scss/_plone.scss */
+/* line 452, ../scss/_plone.scss */
 .collage-row {
   border-bottom: 1px solid #b2b2b2;
 }
-
-/* line 448, ../scss/_plone.scss */
+/* line 454, ../scss/_plone.scss */
 .collage-row:first-child {
   border-top: 1px solid #b2b2b2;
 }
 
-/* line 449, ../scss/_plone.scss */
+/* line 457, ../scss/_plone.scss */
 .collage-header {
   background: #fea;
-}
-
-/* line 451, ../scss/_plone.scss */
-.collage-image {
-  width: 100%;
-}
-
-/* line 454, ../scss/_plone.scss */
-.collage-featured-image {
-  float: right;
-}
-
-/* line 457, ../scss/_plone.scss */
-.featured-document {
-  background: #f3f3f3;
-  padding: 10px;
-}
-
-/* line 461, ../scss/_plone.scss */
-.collage-listitem {
-  margin-bottom: 1em;
-}
-
-/* line 464, ../scss/_plone.scss */
-.collage-item .documentActions {
-  display: none;
-}
-
-/* line 467, ../scss/_plone.scss */
-.collage-header {
-  /*font-size: 0.9em;*/
   border-bottom: 1px solid White;
   padding: 2px 0 2px 0!important;
   position: relative;
   margin-bottom: 2px !important;
 }
-
-/* line 474, ../scss/_plone.scss */
+/* line 463, ../scss/_plone.scss */
 .collage-header p.discreet {
   /*font-size: 0.9em;*/
 }
-
-/* line 477, ../scss/_plone.scss */
+/* line 466, ../scss/_plone.scss */
 .collage-header span.icon img {
   padding: 2px;
 }
-
-/* line 480, ../scss/_plone.scss */
+/* line 469, ../scss/_plone.scss */
 .collage-header span.icon img.alias {
   padding: 0px;
   border: 2px solid White;
 }
+/* line 473, ../scss/_plone.scss */
+.collage-header span {
+  color: #007bc0;
+  text-transform: lowercase;
+}
 
-/* line 484, ../scss/_plone.scss */
+/* line 479, ../scss/_plone.scss */
+.collage-image {
+  width: 100%;
+}
+
+/* line 482, ../scss/_plone.scss */
+.collage-featured-image {
+  float: right;
+}
+
+/* line 485, ../scss/_plone.scss */
+.featured-document {
+  background: #f3f3f3;
+  padding: 10px;
+}
+
+/* line 489, ../scss/_plone.scss */
+.collage-listitem {
+  margin-bottom: 1em;
+}
+
+/* line 493, ../scss/_plone.scss */
+.collage-item .documentActions {
+  display: none;
+}
+/* line 496, ../scss/_plone.scss */
 .collage-item div.clickable a {
   text-decoration: none;
   border: none;
@@ -12801,18 +12740,7 @@ img[src$="spinner.gif"] {
   background: transparent !important;
 }
 
-/* line 490, ../scss/_plone.scss */
-.collage-header span {
-  color: #007bc0;
-  text-transform: lowercase;
-}
-
-/* line 495, ../scss/_plone.scss */
-.collage-existing-items select {
-  /*font-size: 80%;*/
-}
-
-/* line 498, ../scss/_plone.scss */
+/* line 505, ../scss/_plone.scss */
 .collage-existing-items .breadcrumbs {
   background: url("logoIcon.gif") no-repeat left center;
   padding-top: 4px;
@@ -12821,49 +12749,35 @@ img[src$="spinner.gif"] {
   padding-left: 20px;
   border-bottom: 1px solid White;
 }
-
-/* line 507, ../scss/_plone.scss */
-.collage-existing-items .breadcrumbs a,
-.collage-existing-items .breadcrumbs span {
-  /*font-size: 1.0em !important;*/
-}
-
-/* line 511, ../scss/_plone.scss */
+/* line 513, ../scss/_plone.scss */
 .collage-existing-items label {
   display: none;
 }
 
-/* line 514, ../scss/_plone.scss */
+/* line 519, ../scss/_plone.scss */
 .collage-header a {
   cursor: pointer;
 }
-
-/* line 519, ../scss/_plone.scss */
-.collage-header a.action,
-.collage-header a.layout,
-.collage-header a.create {
+/* line 521, ../scss/_plone.scss */
+.collage-header a.action, .collage-header a.layout, .collage-header a.create {
   text-transform: lowercase;
   margin-right: 0.2em;
   text-decoration: none;
 }
-
-/* line 524, ../scss/_plone.scss */
+/* line 526, ../scss/_plone.scss */
 .collage-header a.delete-confirm {
   color: red;
 }
-
-/* line 528, ../scss/_plone.scss */
-.collage-header a.action span.inactive,
-.collage-header a.layout span.inactive {
+/* line 530, ../scss/_plone.scss */
+.collage-header a.action span.inactive, .collage-header a.layout span.inactive {
   text-decoration: underline;
 }
-
-/* line 531, ../scss/_plone.scss */
+/* line 533, ../scss/_plone.scss */
 .collage-header a.layout span.active, .collage-header a.layout span.selected, .collage-header a.layout .contentViews span.selected, .contentViews .collage-header a.layout span.selected, .collage-header a.layout .contentViews span.selected:hover, .contentViews .collage-header a.layout span.selected:hover {
   color: Black;
 }
 
-/* line 534, ../scss/_plone.scss */
+/* line 546, ../scss/_plone.scss */
 .delete-object-icon {
   float: left;
   width: 14px;
@@ -12872,7 +12786,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-delete.gif") no-repeat top left;
 }
 
-/* line 541, ../scss/_plone.scss */
+/* line 550, ../scss/_plone.scss */
 .copy-object-icon {
   float: left;
   width: 14px;
@@ -12881,7 +12795,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-copy.gif") no-repeat top left;
 }
 
-/* line 548, ../scss/_plone.scss */
+/* line 554, ../scss/_plone.scss */
 .paste-object-icon {
   float: left;
   width: 14px;
@@ -12890,7 +12804,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-paste.gif") no-repeat top left;
 }
 
-/* line 555, ../scss/_plone.scss */
+/* line 558, ../scss/_plone.scss */
 .split-column-icon {
   float: left;
   width: 14px;
@@ -12908,8 +12822,7 @@ img[src$="spinner.gif"] {
   background: url("/++resource++collage-resources/icon-object-action.gif") no-repeat top left;
 }
 
-/* */
-/* line 570, ../scss/_plone.scss */
+/* line 567, ../scss/_plone.scss */
 .expandable-section .expandable-label .expandable-icon {
   background: url("/++resource++collage-resources/icon-plusminus.gif") no-repeat top left;
   float: left;
@@ -12919,133 +12832,102 @@ img[src$="spinner.gif"] {
   margin-left: 3px;
 }
 
-/* line 578, ../scss/_plone.scss */
+/* line 573, ../scss/_plone.scss */
 .expandable-section .expandable-label.enabled .expandable-icon {
   background-position: -20px 0%;
 }
 
-/* line 581, ../scss/_plone.scss */
+/* line 576, ../scss/_plone.scss */
 .expandable-section .expandable-label {
   float: left;
   position: relative;
 }
 
-/* line 585, ../scss/_plone.scss */
+/* line 580, ../scss/_plone.scss */
 .expandable-content {
   display: none;
   top: 35px;
 }
 
-/*
-.expandable-content {
-clear: both;
-display: none;
-background-color: white;
-padding: 0;
-position: absolute;
-z-index: 200;
-margin-top: 3em;
-border: 1px solid #74ae0b;
-}
-#collage .expandable-content h4 {
-margin: 0;
-background: #75AD0A url("/++resource++collage-resources/collage_icon.png") no-repeat 3px center;
-color: White;
-display: block;
-padding: 2px 2.2em;
-border-bottom: 1px solid #74ae0b;
-}
-.expandable-content .inner-content {
-margin: 0.5em;
-}
-*/
-/* line 612, ../scss/_plone.scss */
+/* line 585, ../scss/_plone.scss */
 ul.collage-content-menu {
   display: block;
   list-style-image: none !important;
   list-style-type: none !important;
   margin-left: 0 !important;
 }
-
-/* line 619, ../scss/_plone.scss */
-ul.collage-content-menu li {
+/* line 591, ../scss/_plone.scss */
+ul.collage-content-menu.collage-content-menu li {
   display: block;
 }
-
-/* line 622, ../scss/_plone.scss */
-ul.collage-content-menu li a {
+/* line 593, ../scss/_plone.scss */
+ul.collage-content-menu.collage-content-menu li a {
   border: none;
 }
 
-/* */
-/* line 626, ../scss/_plone.scss */
+/* line 598, ../scss/_plone.scss */
 div.insert-existing-items h4 {
   line-height: 16px;
 }
 
-/* line 629, ../scss/_plone.scss */
+/* line 600, ../scss/_plone.scss */
 input#insert-collage-row {
   margin-top: 1em;
 }
 
-/* */
-/* line 633, ../scss/_plone.scss */
+/* line 602, ../scss/_plone.scss */
 span.collage-navigation img {
   width: 9px;
   height: 9px;
 }
 
-/* line 637, ../scss/_plone.scss */
+/* line 606, ../scss/_plone.scss */
 span.collage-navigation {
   margin-left: 4px;
 }
-
-/* line 640, ../scss/_plone.scss */
-span.collage-navigation a {
+/* line 608, ../scss/_plone.scss */
+span.collage-navigation.collage-navigation a {
   text-decoration: none;
 }
 
-/* */
-/* line 644, ../scss/_plone.scss */
+/* line 613, ../scss/_plone.scss */
 .display-collagerow_default_view {
   background-image: url(icon-collagerow_default_view.gif) !important;
 }
 
-/* line 647, ../scss/_plone.scss */
+/* line 614, ../scss/_plone.scss */
 .display-collagerow_largeleft_view {
   background-image: url(icon-collagerow_largeleft_view.gif) !important;
 }
 
-/* line 650, ../scss/_plone.scss */
+/* line 615, ../scss/_plone.scss */
 .display-collagerow_largeright_view {
   background-image: url(icon-collagerow_largeright_view.gif) !important;
 }
 
-/* line 653, ../scss/_plone.scss */
+/* line 616, ../scss/_plone.scss */
 .display-collagecolumn_default_view {
   background-image: url(icon-collagecolumn_default_view.gif) !important;
 }
 
-/* */
-/* line 657, ../scss/_plone.scss */
+/* line 618, ../scss/_plone.scss */
 .icons-on .collage-content-menu .contenttype-file {
   background: no-repeat transparent 0px -433px url(contenttypes-sprite.png);
   padding-left: 20px !important;
 }
 
-/* line 661, ../scss/_plone.scss */
+/* line 623, ../scss/_plone.scss */
 .icons-on .collage-content-menu .contenttype-image {
   background: no-repeat transparent 0px -865px url(contenttypes-sprite.png);
   padding-left: 20px !important;
 }
 
-/* */
-/* line 666, ../scss/_plone.scss */
+/* line 628, ../scss/_plone.scss */
 .collage-quickedit {
   float: right;
 }
 
-/* line 669, ../scss/_plone.scss */
+/* line 631, ../scss/_plone.scss */
 #collage .collage-row {
   min-height: 100%;
   margin-left: auto;
@@ -13055,26 +12937,24 @@ span.collage-navigation a {
   width: 100%;
   clear: both;
 }
-
-/* line 679, ../scss/_plone.scss */
+/* line 641, ../scss/_plone.scss */
 #collage div.collage-first-object,
 #collage div.collage-first-object div.collage-item {
   margin-left: 0;
 }
-
-/* line 683, ../scss/_plone.scss */
+/* line 645, ../scss/_plone.scss */
 #collage div.collage-last-object,
 #collage div.collage-last-object div.collage-item {
   margin-right: 0;
 }
 
-/* line 686, ../scss/_plone.scss */
+/* line 651, ../scss/_plone.scss */
 * html #collage .collage-row {
   width: 100%;
   height: 100%;
 }
 
-/* line 694, ../scss/_plone.scss */
+/* line 660, ../scss/_plone.scss */
 #collage .block_1,
 #collage .block_2,
 #collage .block_3,
@@ -13083,40 +12963,39 @@ span.collage-navigation a {
   float: left;
 }
 
-/* line 697, ../scss/_plone.scss */
+/* line 664, ../scss/_plone.scss */
 .collage-item {
   margin-bottom: 0.5em;
 }
 
-/* */
-/* line 701, ../scss/_plone.scss */
+/* line 666, ../scss/_plone.scss */
 #collage .one-column .block_1 {
   width: 100%;
 }
 
-/* line 704, ../scss/_plone.scss */
+/* line 668, ../scss/_plone.scss */
 #collage .two-columns-equal .block_1 {
   width: 49.49%;
 }
 
-/* line 707, ../scss/_plone.scss */
+/* line 669, ../scss/_plone.scss */
 #collage .two-columns-equal .block_2 {
   width: 49.49%;
 }
 
-/* line 710, ../scss/_plone.scss */
+/* line 672, ../scss/_plone.scss */
 #collage .three-columns-equal .block_1,
 #collage .three-columns-equal .block_2,
 #collage .three-columns-equal .block_3 {
   width: 32.5%;
 }
 
-/* line 713, ../scss/_plone.scss */
+/* line 675, ../scss/_plone.scss */
 #collage .three-columns-equal .block_2 {
   width: 32.9%;
 }
 
-/* line 717, ../scss/_plone.scss */
+/* line 679, ../scss/_plone.scss */
 #collage .four-columns-equal .block_1,
 #collage .four-columns-equal .block_2,
 #collage .four-columns-equal .block_3,
@@ -13124,12 +13003,12 @@ span.collage-navigation a {
   width: 24.2%;
 }
 
-/* line 720, ../scss/_plone.scss */
+/* line 682, ../scss/_plone.scss */
 #collage .four-columns-equal .block_2 {
   width: 24.4%;
 }
 
-/* line 725, ../scss/_plone.scss */
+/* line 687, ../scss/_plone.scss */
 #collage .five-columns-equal .block_1,
 #collage .five-columns-equal .block_2,
 #collage .five-columns-equal .block_3,
@@ -13138,12 +13017,12 @@ span.collage-navigation a {
   width: 19.2%;
 }
 
-/* line 728, ../scss/_plone.scss */
+/* line 690, ../scss/_plone.scss */
 #collage .five-columns-equal .block_2 {
   width: 19.2%;
 }
 
-/* line 734, ../scss/_plone.scss */
+/* line 696, ../scss/_plone.scss */
 #collage .block_2,
 #collage .block_4,
 #collage .block_3,
@@ -13153,49 +13032,49 @@ span.collage-navigation a {
   padding-left: 1%;
 }
 
-/* line 737, ../scss/_plone.scss */
+/* line 697, ../scss/_plone.scss */
 #collage .two-columns-largeleft .block_1 {
   width: 59%;
 }
 
-/* line 740, ../scss/_plone.scss */
+/* line 698, ../scss/_plone.scss */
 #collage .two-columns-largeleft .block_2 {
   width: 40%;
 }
 
-/* line 743, ../scss/_plone.scss */
+/* line 699, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_1 {
   width: 59%;
 }
 
-/* line 746, ../scss/_plone.scss */
+/* line 700, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_2 {
   width: 19%;
 }
 
-/* line 749, ../scss/_plone.scss */
+/* line 701, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_3 {
   width: 20%;
 }
 
-/* line 752, ../scss/_plone.scss */
+/* line 702, ../scss/_plone.scss */
 #collage .four-columns-largeleft .block_1 {
   width: 40%;
 }
 
-/* line 757, ../scss/_plone.scss */
+/* line 705, ../scss/_plone.scss */
 #collage .four-columns-largeleft .block_2,
 #collage .four-columns-largeleft .block_3,
 #collage .four-columns-largeleft .block_4 {
   width: 19%;
 }
 
-/* line 760, ../scss/_plone.scss */
+/* line 708, ../scss/_plone.scss */
 #collage .five-columns-largeleft .block_1 {
   width: 24%;
 }
 
-/* line 766, ../scss/_plone.scss */
+/* line 712, ../scss/_plone.scss */
 #collage .five-columns-largeleft .block_2,
 #collage .five-columns-largeleft .block_3,
 #collage .five-columns-largeleft .block_4,
@@ -13203,44 +13082,44 @@ span.collage-navigation a {
   width: 18%;
 }
 
-/* line 769, ../scss/_plone.scss */
+/* line 715, ../scss/_plone.scss */
 #collage .two-columns-largeright .block_2 {
   width: 59%;
 }
 
-/* line 772, ../scss/_plone.scss */
+/* line 716, ../scss/_plone.scss */
 #collage .two-columns-largeright .block_1 {
   width: 40%;
 }
 
-/* line 775, ../scss/_plone.scss */
+/* line 717, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_3 {
   width: 59%;
 }
 
-/* line 778, ../scss/_plone.scss */
+/* line 718, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_1 {
   width: 20%;
 }
 
-/* line 781, ../scss/_plone.scss */
+/* line 719, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_2 {
   width: 19%;
 }
 
-/* line 786, ../scss/_plone.scss */
+/* line 722, ../scss/_plone.scss */
 #collage .four-columns-largeright .block_1,
 #collage .four-columns-largeright .block_2,
 #collage .four-columns-largeright .block_3 {
   width: 19%;
 }
 
-/* line 789, ../scss/_plone.scss */
+/* line 725, ../scss/_plone.scss */
 #collage .four-columns-largeright .block_4 {
   width: 40%;
 }
 
-/* line 795, ../scss/_plone.scss */
+/* line 729, ../scss/_plone.scss */
 #collage .five-columns-largeright .block_1,
 #collage .five-columns-largeright .block_2,
 #collage .five-columns-largeright .block_3,
@@ -13248,129 +13127,121 @@ span.collage-navigation a {
   width: 18%;
 }
 
-/* line 798, ../scss/_plone.scss */
+/* line 730, ../scss/_plone.scss */
 #collage .five-columns-largeright .block_5 {
   width: 24%;
 }
 
-/* */
-/* line 803, ../scss/_plone.scss */
+/* line 733, ../scss/_plone.scss */
 #collage .collage-item .documentByLine,
 #collage .collage-item .link-parent {
   display: none;
 }
 
 /* */
-/* line 807, ../scss/_plone.scss */
+/* line 737, ../scss/_plone.scss */
 #collage .unbatched-with-1 .column-block {
   width: 100%;
 }
 
-/* line 808, ../scss/_plone.scss */
+/* line 738, ../scss/_plone.scss */
 #collage .unbatched-with-2 .column-block {
   width: 49.5%;
 }
 
-/* line 809, ../scss/_plone.scss */
+/* line 739, ../scss/_plone.scss */
 #collage .unbatched-with-3 .column-block {
   width: 32.5%;
 }
 
-/* line 810, ../scss/_plone.scss */
+/* line 740, ../scss/_plone.scss */
 #collage .unbatched-with-4 .column-block {
   width: 24.25%;
 }
 
-/* line 811, ../scss/_plone.scss */
+/* line 741, ../scss/_plone.scss */
 #collage .unbatched-with-5 .column-block {
   width: 19%;
 }
 
-/* line 812, ../scss/_plone.scss */
+/* line 742, ../scss/_plone.scss */
 #collage .unbatched-with-6 .column-block {
   width: 16.5%;
 }
 
 /* */
-/* line 815, ../scss/_plone.scss */
+/* line 745, ../scss/_plone.scss */
 #collage .collage-portlet-notification dt.portletHeader {
   background-color: #ffffe3;
 }
 
-/* line 818, ../scss/_plone.scss */
+/* line 748, ../scss/_plone.scss */
 #collage .collage-portlet-help dt.portletHeader {
   background-color: #ffffe1;
 }
 
-/* line 821, ../scss/_plone.scss */
+/* line 751, ../scss/_plone.scss */
 #collage .collage-layout-error {
   background-color: yellow;
   font-weight: bold;
 }
 
-/* line 827, ../scss/_plone.scss */
+/* line 757, ../scss/_plone.scss */
 .collage-header > * {
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 834, ../scss/_plone.scss */
+/* line 766, ../scss/_plone.scss */
 .collage-header > .expandable-section,
 .collage-header > .post {
   margin-bottom: 2px;
 }
 
-/* line 836, ../scss/_plone.scss */
+/* line 768, ../scss/_plone.scss */
 .expandable-icon, .split-column-icon, .delete-object-icon, .copy-object-icon,
 .object-action-generic-icon {
   margin-top: 2px;
 }
 
-/* line 838, ../scss/_plone.scss */
+/* line 770, ../scss/_plone.scss */
 .collage-header .expandable-content {
   width: 306px !important;
 }
 
-/* line 839, ../scss/_plone.scss */
+/* line 771, ../scss/_plone.scss */
 .column-block > .collage-header {
   background-color: #efa;
 }
 
-/* line 840, ../scss/_plone.scss */
+/* line 772, ../scss/_plone.scss */
 .collage-item > .collage-header {
   background-color: #afe;
 }
 
-/* line 842, ../scss/_plone.scss */
+/* line 774, ../scss/_plone.scss */
 .collage-header .visualIcon img {
   display: none;
 }
 
-/*
-FORULARI
-*/
-/* line 851, ../scss/_plone.scss */
+/* line 778, ../scss/_plone.scss */
 .pfg-drafts-float {
   position: relative !important;
   width: auto !important;
 }
 
-/* line 853, ../scss/_plone.scss */
+/* line 780, ../scss/_plone.scss */
 .standalone + .pfg-draft {
   display: inline-block;
 }
 
-/*
-NOTICIA
-*/
-/* line 858, ../scss/_plone.scss */
+/* line 783, ../scss/_plone.scss */
 .newsImageContainer {
   margin: 0 0 1em 1em;
 }
 
-/* VISTA MINIATURES*/
-/* line 866, ../scss/_plone.scss */
+/* line 791, ../scss/_plone.scss */
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li,
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li,
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li + li + li + li + li
@@ -13380,10 +13251,7 @@ html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li +
   margin-left: 0 !important;
 }
 
-/*
-VIEWS
-*/
-/* line 872, ../scss/_plone.scss */
+/* line 795, ../scss/_plone.scss */
 body.template-folder_summary_view #content ul li:first-child {
   border-top: 0;
   -webkit-box-shadow: none;
@@ -13391,10 +13259,13 @@ body.template-folder_summary_view #content ul li:first-child {
   box-shadow: none;
 }
 
-/*
-custom file posat aqui per evitar comptar com a selector en l'altre paquet
-*/
-/* line 881, ../scss/_plone.scss */
+/* line 800, ../scss/_plone.scss */
+#content-core div:first-child h2 {
+  border-top: 0 none;
+  box-shadow: none;
+}
+
+/* line 811, ../scss/_plone.scss */
 div.overlay {
   /* initially overlay is hidden */
   display: none;
