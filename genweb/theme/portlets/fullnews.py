@@ -86,15 +86,25 @@ class Renderer(news_renderer):
                        is_important=True,
                        sort_on="getObjPositionInParent",
                        sort_limit=limit)
+        results = [a for a in results]
         important = len(results)
         if important < limit:
             results2 = catalog(portal_type=('News Item', 'Link'),
                        review_state=state,
                        is_important=False,
                        sort_on=('Date'),
-                       sort_order='reverse',
-                       sort_limit=limit - important)
-            return results + results2
+                       sort_order='reverse')
+                       #, sort_limit=limit - important)
+            results3 = []
+            path_folder_news = self.all_news_link()
+            for brain in results2:
+                brain_url = brain.getURL()
+                brain_type = brain.Type
+                if brain_type == 'Link' and brain_url.startswith(path_folder_news) or brain_type == 'News Item':
+                    results3.append(brain)
+                if len(results3) == limit - important:
+                    break
+            return results + results3
         else:
             return results
 

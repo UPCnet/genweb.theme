@@ -26,7 +26,9 @@
                 <p>
                     <tal:cos tal:content="python: view.abrevia(obj)">New description</tal:cos>
                 </p>
-                <time class="smaller" tal:content="python:toLocalizedTime(obj.Date)">May 5</time>
+                <tal:co condition="data">
+                    <time class="smaller" tal:content="python:toLocalizedTime(obj.EffectiveDate)">May 5</time>
+                </tal:co>
               </div>
             </li>
         </ul>

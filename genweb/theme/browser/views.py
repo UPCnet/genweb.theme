@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from five import grok
 from Acquisition import aq_inner
-from functools import partial
 from DateTime.DateTime import DateTime
 from scss import Scss
 
@@ -11,7 +10,6 @@ from zope.annotation.interfaces import IAnnotations
 from zope.component import getMultiAdapter, queryMultiAdapter, getUtility, queryUtility
 from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile as ZopeViewPageTemplateFile
 
-from plone.memoize import ram
 from plone.registry.interfaces import IRegistry
 from plone.portlets.interfaces import IPortletManager
 from plone.portlets.interfaces import IPortletManagerRenderer
@@ -41,10 +39,16 @@ from genweb.core.utils import genweb_config, pref_lang
 from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 
 from genweb.portlets.browser.manager import ISpanStorage
+from genweb.theme.portlets.fullnews import Renderer
+
+from Products.CMFCore.interfaces import IFolderish
+from plone.memoize.view import memoize
 
 import pkg_resources
 import json
 import scss
+
+grok.templatedir("views_templates")
 
 MESSAGE_TEMPLATE = u"""\
 L'usuari %(user_name)s ha creat un nou esdeveniment en l'agenda del GenWeb \
@@ -656,3 +660,53 @@ class gwSendEventView(grok.View):
         confirm = _(u"Gràcies per la vostra col·laboració. Les dades de l\'activitat s\'han enviat correctament i seran publicades com més aviat millor.")
         IStatusMessage(self.request).addStatusMessage(confirm, type='info')
         self.request.response.redirect(self.context.absolute_url())
+
+class newsCollectionView(grok.View):
+    grok.context(IFolderish)
+    grok.name('newscollection_view')
+    grok.template("newscollectionview")
+    grok.require('zope2.View')
+    grok.layer(IGenwebTheme)
+
+    def published_news_items(self):
+        return self._data()
+
+    @memoize
+    def _data(self):
+
+        context = aq_inner(self.context)
+        catalog = getToolByName(context, 'portal_catalog')
+        state = ['published', 'intranet']
+        results = catalog(portal_type=('News Item'),
+                       review_state=state,
+                       is_important=True,
+                       sort_on="getObjPositionInParent")
+        results = [a for a in results]
+        results2 = catalog(portal_type=('News Item', 'Link'),
+                   review_state=state,
+                   is_important=False,
+                   sort_on=('Date'),
+                   sort_order='reverse')
+        results3 = []
+        #import ipdb;ipdb.set_trace()
+        path_folder_news = self.all_news_link()
+        for brain in results2:
+            brain_url = brain.getURL()
+            brain_type = brain.Type
+            if brain_type == 'Link' and brain_url.startswith(path_folder_news) or brain_type == 'News Item':
+                results3.append(brain)
+        return results + results3
+
+    def all_news_link(self):
+        context = aq_inner(self.context)
+        portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
+        self.portal = portal_state.portal()
+        if self.have_news_folder:
+            news = self.portal.noticies.getTranslation()
+            return '%s' % news.absolute_url()
+        else:
+            return '%s/news_listing' % self.portal_url
+
+    @memoize
+    def have_news_folder(self):
+        return 'news' in self.navigation_root_object.objectIds()
