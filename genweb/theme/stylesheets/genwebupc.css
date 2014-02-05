@@ -14400,6 +14400,88 @@ input[type="radio"].required:after {
   font-size: 12px;
 }
 
+/* line 197, ../scss/_upcnet.scss */
+.QueryWidget {
+  font-size: 13px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #666;
+}
+/* line 203, ../scss/_upcnet.scss */
+.QueryWidget dl.referenceWidget {
+  width: 214px;
+}
+/* line 206, ../scss/_upcnet.scss */
+.QueryWidget dl.multipleSelectionWidget {
+  position: relative;
+  padding: 4px 6px 2px;
+  border: 1px solid #b2b2b2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 211, ../scss/_upcnet.scss */
+.QueryWidget dl.multipleSelectionWidget dt {
+  border: none;
+  font-weight: normal;
+}
+/* line 216, ../scss/_upcnet.scss */
+.QueryWidget dl.multipleSelectionWidget .arrowDownAlternative {
+  font-size: 9px;
+}
+/* line 220, ../scss/_upcnet.scss */
+.QueryWidget dl.multipleSelectionWidget .multipleSelectionWidgetTitle {
+  padding: 5px;
+  line-height: normal;
+}
+/* line 225, ../scss/_upcnet.scss */
+.QueryWidget dl.multipleSelectionWidget dd.widgetPulldownMenu {
+  z-index: 100;
+  padding: 5px;
+  width: 350px;
+  height: 30em;
+  top: 27px;
+  left: 0px;
+}
+/* line 232, ../scss/_upcnet.scss */
+.QueryWidget dl.multipleSelectionWidget dd.widgetPulldownMenu label {
+  color: #666;
+  margin-bottom: 0px;
+  line-height: normal;
+}
+/* line 233, ../scss/_upcnet.scss */
+.QueryWidget dl.multipleSelectionWidget dd.widgetPulldownMenu label.header {
+  background-color: #cdd;
+  color: #777;
+  line-height: 26px;
+  padding-left: 16px;
+  font-weight: normal;
+  padding-top: 2px;
+  font-style: italic;
+  font-size: 16px;
+  margin: 3px 0;
+}
+/* line 247, ../scss/_upcnet.scss */
+.QueryWidget dl.multipleSelectionWidget dd.widgetPulldownMenu label input[checked="checked"] ~ span {
+  background-color: red;
+  color: white;
+  background-color: #557c95;
+  font-weight: normal;
+}
+/* line 258, ../scss/_upcnet.scss */
+.QueryWidget .criteria {
+  margin-bottom: 22px;
+  position: relative;
+}
+/* line 261, ../scss/_upcnet.scss */
+.QueryWidget .criteria .queryresults {
+  position: absolute;
+  left: 293px;
+  top: 29px;
+}
+
 /* TINY */
 /* Save message */
 /* line 4, ../scss/_ui.scss */
