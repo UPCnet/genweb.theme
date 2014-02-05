@@ -636,7 +636,7 @@ class gwSendEventView(grok.View):
         IStatusMessage(self.request).addStatusMessage(confirm, type='info')
         self.request.response.redirect(self.context.absolute_url())
 
-<<<<<<< HEAD
+
 class newsCollectionView(grok.View):
     grok.context(IFolderish)
     grok.name('newscollection_view')
