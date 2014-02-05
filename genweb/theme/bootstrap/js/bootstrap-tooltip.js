@@ -20,7 +20,6 @@
 
 
 !function ($) {
-
   "use strict"; // jshint ;_;
 
 
@@ -201,14 +200,15 @@
     }
 
   , getTitle: function () {
-      var title
+    console.log('gettitle'); return "hola k ase";
+      /*var title
         , $e = this.$element
         , o = this.options
 
       title = $e.attr('data-original-title')
         || (typeof o.title == 'function' ? o.title.call($e[0]) :  o.title)
 
-      return title
+      return title*/
     }
 
   , tip: function () {

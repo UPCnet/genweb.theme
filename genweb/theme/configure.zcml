@@ -10,10 +10,10 @@
     i18n_domain="genweb.theme">
 
   <five:registerPackage package="." initialize=".initialize" />
+  <grok:grok package=".browser" />
 
   <includeDependencies package="." />
   <include package="grokcore.component" file="meta.zcml" />
-  <grok:grok package=".browser" />
 
   <include package=".browser" />
   <include package=".portlets" />

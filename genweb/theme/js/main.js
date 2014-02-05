@@ -17,14 +17,15 @@ $(document).ready(function () {
 
          clearInterval(intervalId)
      }
-    }, 50)
+  }, 50)
 
   // $('select:not([multiple])').dropkick();
   $('ul.dk_options_inner').addClass('scrollable');
   if ($(window).width() < 640 ) {
+    /* aquestes dues classes que s'afegeixen són necessàries? aparentment funciona igual i llavors funciona bé la vista beta
     $('.nav-tabs').addClass('nav-stacked');
-    $('.nav-pills').addClass('nav-stacked');
-    $(document).scrollTop( $("content").offset().top );
+    $('.nav-pills').addClass('nav-stacked'); */
+    $(document).scrollTop( $("#content").offset().top ); //aquí saltava un error perquè faltava '#'
   }
   $('.custom-chekbox[type="checkbox"]').customInput();
   $('.custom-radio[type="radio"]').customInput();
@@ -109,6 +110,53 @@ $(document).ready(function () {
           process(items);
     });
  };
+
+// actualització títol menú 1, mostra l'opció de primer nivell que hem seleccionat, es fa a partir del 2on valor de la llista del breadcrumb
+  var lititol=$('ol.breadcrumb li:eq(1) a');// cas amb breadcrumb no visible
+  if (lititol.length===0) lititol=$('ol.breadcrumb li:eq(1)');// cas amb breadcrumb visible
+  var nouTitol=lititol.text(); 
+  if (nouTitol) $('#titol-menu-1 a').text(nouTitol);
+
+// actualització títol menú 2, mostra l'opció de primer nivell que hem seleccionat, es fa a partir del 3er valor de la llista del breadcrumb
+/*  var lititol=$('ol.breadcrumb li:eq(2) a');// cas amb breadcrumb no visible
+  if (lititol.length===0) lititol=$('ol.breadcrumb li:eq(2)');// cas amb breadcrumb visible
+  var nouTitol=lititol.text(); 
+  if (nouTitol) $('#titol-menu-2').text(nouTitol);*/
+
+
+// RECAPTCHA
+  if (RecaptchaOptions!==undefined) {
+    var translations = RecaptchaOptions['custom_translations'];
+    $('div.recaptcha_only_if_incorrect_sol').text(translations['incorrect_try_again']);
+    $('li.recaptcha_play_again span').text(translations['refresh_btn']);
+    $('#recaptcha_reload').attr('alt',translations['refresh_btn']);
+    $('a.recaptcha_only_if_image span').text(translations['audio_challenge']);
+    $('#recaptcha_switch_audio').attr('alt',translations['audio_challenge']);
+    $('a.recaptcha_only_if_audio span').text(translations['visual_challenge']);
+    $('#recaptcha_switch_img').attr('alt',translations['visual_challenge']);
+    $('li.recaptcha_help span').text(translations['help_btn']);
+    $('#recaptcha_whatsthis').attr('alt',translations['help_btn']);
+
+    input_text_default('audio');
+
+    $('#recaptcha_switch_type').click(
+      function(){
+        input_text_default(Recaptcha['type']);
+      }
+    );
+  }
+
+  function input_text_default(captcha_type){
+    var text_default="";
+    if (captcha_type==='image')  {
+      text_default=translations['instructions_audio'];
+    } else {
+      text_default=translations['instructions_visual'];
+    }   
+    $('#recaptcha_response_field').val(text_default);
+    
+  }    
+  // FI RECAPTCHA
 
 }); // End of $(document).ready
 
