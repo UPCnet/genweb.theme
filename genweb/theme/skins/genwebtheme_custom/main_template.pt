@@ -57,7 +57,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <tal:comment replace="nothing"><!-- El seguent script ha d'anar seguit del meta del viewport --></tal:comment>
-        <!-- <script tal:attributes="src string:${portal_url}/++genweb++static/js/ReView.js"></script> -->
+        <script tal:attributes="src string:${portal_url}/++genweb++static/js/ReView.js"></script>
 
         <link rel="apple-touch-icon" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-57x57-precomposed.png" /> <!-- iPhone -->
         <link rel="apple-touch-icon" sizes="72x72" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-72x72-precomposed.png" /> <!-- iPad -->
