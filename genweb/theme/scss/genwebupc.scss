@@ -25,3 +25,12 @@ b, strong {font-weight:bold;}
 
 a#calendar-next {width: 8px;}
 a#calendar-previous { margin-left: -4px; width: 12px;}
+
+.popover.left, .left.expandable-content {
+margin-right: 10px;
+left: 815px !important;
+}
+
+.popover, .expandable-content {
+width: 275px;
+}
