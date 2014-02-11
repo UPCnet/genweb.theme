@@ -84,7 +84,7 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
             return lang
 
     def showRootFolderLink(self):
-        return havePermissionAtRoot()
+        return havePermissionAtRoot(self)
 
     def canManageSite(self):
         return checkPermission("plone.app.controlpanel.Overview", self.portal())
