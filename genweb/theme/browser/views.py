@@ -664,7 +664,6 @@ class newsCollectionView(grok.View):
                    sort_on=('Date'),
                    sort_order='reverse')
         results3 = []
-        #import ipdb;ipdb.set_trace()
         path_folder_news = self.all_news_link()
         for brain in results2:
             brain_url = brain.getURL()
