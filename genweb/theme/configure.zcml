@@ -77,7 +77,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Genweb UPC 4 Theme"
+      title="Genweb Theme (genweb.theme)"
       directory="profiles/default"
       description="Installs the genweb.theme package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
