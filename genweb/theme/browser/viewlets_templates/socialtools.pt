@@ -1,22 +1,17 @@
-<tal:con i18n:domain="upc.genwebupc">
+<tal:con i18n:domain="genweb">
 
 <script src="/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-popover.js"></script> 
 
-    <p style="float: right" >
-        <a class="btn btn-link" href="javascript:();" rel="popover" data-placement="left" data-original-title="Comparteix" data-contentwrapper=".mycontent" data-html="true">
-      
-            <img style="float: right" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_share.png" alt="Comparteix" title=""/>
-        
-        </a>
+    <p style="float: right" ><a class="btn btn-link" href="javascript:();" rel="popover" data-placement="left" data-original-title="Share" data-contentwrapper=".mycontent" data-html="true"><img style="float: right" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_share.png" i18n:attributes="title Comparteix; alt Comparteix;"/></a>
     </p>
 
     <div class="mycontent" style="display: none;"> 
-        <a target="_blank" href="https://plus.google.com/up/?continue=https://plus.google.com/share?url&type=st&gpsrc=frameless&rsz=1&client=3"><img style="margin-right: 5px;" alt="Comparteix" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_googleplus.png"/></a>
-        <a target="_blank" href="https://www.facebook.com/login.php?next=http%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%26display%3Dpopup&display=popup"><img style="margin-right: 5px;" alt="Comparteix" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_facebook.png"/></a>
-        <a target="_blank" href="https://www.linkedin.com/reg/join?"><img style="margin-right: 5px;" alt="Comparteix" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_linkedin.png"/></a>
-        <a target="_blank" href="https://twitter.com/intent/tweet?"><img style="margin-right: 5px;" alt="Comparteix" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_twitter.png"/></a>
-        <a target="_blank" href="javascript:window.print()"><img style="margin-right: 5px;" alt="Comparteix" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_print.png"/></a>
-        <a target="_blank" href="javascript:location.href='mailto:?SUBJECT=Ha compartit amb tu:'+document.title+'&amp;BODY='+escape(location.href);void 0"><img alt="Comparteix" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_email.png"/></a>
+        <a target="_blank" href="https://plus.google.com/up/?continue=https://plus.google.com/share?url&type=st&gpsrc=frameless&rsz=1&client=3"><img style="margin-right: 5px;" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_googleplus.png;" i18n:attributes="title comparteix_google; alt comparteix_google" /></a>
+        <a target="_blank" href="https://www.facebook.com/login.php?next=http%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%26display%3Dpopup&display=popup"><img style="margin-right: 5px;" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_facebook.png;" i18n:attributes="title comparteix_facebook; alt comparteix_facebook"/></a>
+        <a target="_blank" href="https://www.linkedin.com/reg/join?"><img style="margin-right: 5px;" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_linkedin.png" i18n:attributes="alt comparteix_linkedin; title comparteix_linkedin"/></a>
+        <a target="_blank" href="https://twitter.com/intent/tweet?"><img style="margin-right: 5px;" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_twitter.png" i18n:attributes="title comparteix_twitter; alt comparteix_twitter"/></a>
+        <a target="_blank" href="javascript:window.print()"><img style="margin-right: 5px;" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_print.png" i18n:attributes="title Print; alt Print"/></a>
+        <a target="_blank" href="javascript:location.href='mailto:?SUBJECT=Ha compartit amb tu:'+document.title+'&amp;BODY='+escape(location.href);void 0"><img tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_email.png" i18n:attributes="title send_mail; alt send_mail"/></a>
     </div>
 
 <script type="text/javascript">
@@ -28,53 +23,5 @@ $('[rel=popover]').popover({
     }
 });
 </script>
-
-
-<!-- Este codigo funciona con Addthis siempre que se refresque la pagina sino no carga los iconos 
- --> <!-- <script src="/twitter-bootstrap/twitter-bootstrap-v2/js/bootstrap-popover.js"></script> 
-<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js"></script>
-
-<a class='socialtools' title="Comparteix <a class='close' href='#'');>&times;</a>" href="javascript:();" rel="popover" data-placement="left"><img style="float: right" tal:attributes="src string:${viewlet/portal_url}/++genweb++static/images/icon_share.png" alt="Comparteix" title=""/> 
-    <div id="popover_content_wrapper" style="display: none;">
-        <div id="toolbox" style="width: 450px; margin-right: -70px;" class="addthis_toolbox addthis_default_style addthis_32x32_style addthis:url=http://www.addthis.com/ addthis:title=AddThis - Share Button, Social Bookmark, Sharing Plugins and Analytics" addthis:url="http://www.addthis.com/" addthis:title="AddThis - Share Button, Social Bookmark, Sharing Plugins and Analytics"></div>
-    </div>
-</a>
-<script type="text/javascript">
-var tbx = document.getElementById("toolbox"),
-    svcs = {google_plusone_share: 'Google+', facebook: 'Facebook', linkedin: 'Linkedin', twitter: 'Twitter', print: 'Print', email: 'Email', expanded: 'More'};
-
-for (var s in svcs) {
-    tbx.innerHTML += '<a class="addthis_button_'+s+'"></a>';
-}
-addthis.toolbox("#toolbox");
-</script>
-
-<script type="text/javascript">
-     $(document).ready(function(){
-          $('.socialtools').popover({ 
-            html : true,        
-            content: function() {                
-              return $('#toolbox')
-            }             
-          }); 
-      });
-     
-
-      $('.socialtools').click(function (e) {
-            e.stopPropagation();         
-      });
-
-     
-      $(document).click(function (e) {
-            if ($(e.target).is('.close')) {
-                $('.socialtools').popover('hide');               
-            } else {                
-                $('.socialtools').popover('toggle');                               
-            }
-      });
-     
-
- </script>   -->
-
 
 </tal:con>
