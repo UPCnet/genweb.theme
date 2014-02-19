@@ -84,7 +84,7 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
             return lang
 
     def showRootFolderLink(self):
-        return havePermissionAtRoot(self)
+        return havePermissionAtRoot()
 
     def canManageSite(self):
         return checkPermission("plone.app.controlpanel.Overview", self.portal())
@@ -358,8 +358,8 @@ class TitleViewlet(TitleViewlet, viewletBase):
             self.site_title = u"%s &mdash; %s &mdash; %s" % (page_title, genweb_title, marca_UPC)
 
 class socialtoolsViewlet(viewletBase):
-    grok.name('genweb.socialtools') 
+    grok.name('genweb.socialtools')
     grok.template('socialtools')
     grok.viewletmanager(IBelowContentTitle)
-    grok.layer(IGenwebTheme)    
-    
+    grok.layer(IGenwebTheme)
+
