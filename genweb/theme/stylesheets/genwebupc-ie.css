@@ -1,141 +1,141 @@
-@import url('genwebupc-ie-blessed1.css?z=1391097522987');
+@import url('genwebupc-ie-blessed1.css?z=1393516086307');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
-  /* line 552, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 552, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row {
     margin-left: -30px;
     *zoom: 1; }
-    /* line 15, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 15, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row:before, .row:after {
       display: table;
       content: "";
       line-height: 0; }
-    /* line 22, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 22, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row:after {
       clear: both; }
 
-  /* line 557, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 557, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   [class*="span"], .cella {
     float: left;
     margin-left: 30px;
     margin-bottom: 18px; }
 
-  /* line 567, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 567, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .container,
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
     width: 978px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span12 {
     width: 978px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span11 {
     width: 894px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span10 {
     width: 810px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span9, .w3\3a 4 {
     width: 726px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span8 {
     width: 642px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span7 {
     width: 558px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span6, .w1\3a 2, .w2\3a 4 {
     width: 474px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span5 {
     width: 390px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span4, .w1\3a 3 {
     width: 306px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span3, #dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3, #dashboard-portlets4, .w1\3a 4, .photoAlbumEntry {
     width: 222px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span2 {
     width: 138px; }
 
-  /* line 574, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 574, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .span1 {
     width: 54px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset12 {
     margin-left: 1038px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset11 {
     margin-left: 954px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset10 {
     margin-left: 870px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset9 {
     margin-left: 786px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset8 {
     margin-left: 702px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset7 {
     margin-left: 618px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset6 {
     margin-left: 534px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset5 {
     margin-left: 450px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset4 {
     margin-left: 366px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset3 {
     margin-left: 282px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset2 {
     margin-left: 198px; }
 
-  /* line 580, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 580, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .offset1 {
     margin-left: 114px; }
 
-  /* line 601, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 601, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .row-fluid, #dashboard, .fila, .template-atct_album_view #content-core {
     width: 100%;
     *zoom: 1; }
-    /* line 15, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 15, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid:before, #dashboard:before, .fila:before, .template-atct_album_view #content-core:before, .row-fluid:after, #dashboard:after, .fila:after, .template-atct_album_view #content-core:after {
       display: table;
       content: "";
       line-height: 0; }
-    /* line 22, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 22, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid:after, #dashboard:after, .fila:after, .template-atct_album_view #content-core:after {
       clear: both; }
-    /* line 604, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 604, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid [class*="span"], #dashboard [class*="span"], .fila [class*="span"], .template-atct_album_view #content-core [class*="span"], .row-fluid .cella, #dashboard .cella, .fila .cella, .template-atct_album_view #content-core .cella {
       display: block;
       width: 100%;
@@ -146,183 +146,183 @@
       float: left;
       margin-left: 3.06748%;
       *margin-left: 3.01636%; }
-    /* line 610, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 610, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid [class*="span"]:first-child, #dashboard [class*="span"]:first-child, .fila [class*="span"]:first-child, .template-atct_album_view #content-core [class*="span"]:first-child, .row-fluid .cella:first-child, #dashboard .cella:first-child, .fila .cella:first-child, .template-atct_album_view #content-core .cella:first-child {
       margin-left: 0; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span12, #dashboard .span12, .fila .span12, .template-atct_album_view #content-core .span12 {
       width: 100%;
       *width: 99.94888%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset12, #dashboard .offset12, .fila .offset12, .template-atct_album_view #content-core .offset12 {
       margin-left: 106.13497%;
       *margin-left: 106.03272%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset12:first-child, #dashboard .offset12:first-child, .fila .offset12:first-child, .template-atct_album_view #content-core .offset12:first-child {
       margin-left: 103.06748%;
       *margin-left: 102.96524%; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span11, #dashboard .span11, .fila .span11, .template-atct_album_view #content-core .span11 {
       width: 91.41104%;
       *width: 91.35992%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset11, #dashboard .offset11, .fila .offset11, .template-atct_album_view #content-core .offset11 {
       margin-left: 97.54601%;
       *margin-left: 97.44376%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset11:first-child, #dashboard .offset11:first-child, .fila .offset11:first-child, .template-atct_album_view #content-core .offset11:first-child {
       margin-left: 94.47853%;
       *margin-left: 94.37628%; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span10, #dashboard .span10, .fila .span10, .template-atct_album_view #content-core .span10 {
       width: 82.82209%;
       *width: 82.77096%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset10, #dashboard .offset10, .fila .offset10, .template-atct_album_view #content-core .offset10 {
       margin-left: 88.95706%;
       *margin-left: 88.85481%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset10:first-child, #dashboard .offset10:first-child, .fila .offset10:first-child, .template-atct_album_view #content-core .offset10:first-child {
       margin-left: 85.88957%;
       *margin-left: 85.78732%; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span9, #dashboard .span9, .fila .span9, .template-atct_album_view #content-core .span9, .row-fluid .w3\3a 4, #dashboard .w3\3a 4, .fila .w3\3a 4, .template-atct_album_view #content-core .w3\3a 4 {
       width: 74.23313%;
       *width: 74.182%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset9, #dashboard .offset9, .fila .offset9, .template-atct_album_view #content-core .offset9 {
       margin-left: 80.3681%;
       *margin-left: 80.26585%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset9:first-child, #dashboard .offset9:first-child, .fila .offset9:first-child, .template-atct_album_view #content-core .offset9:first-child {
       margin-left: 77.30061%;
       *margin-left: 77.19836%; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span8, #dashboard .span8, .fila .span8, .template-atct_album_view #content-core .span8 {
       width: 65.64417%;
       *width: 65.59305%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset8, #dashboard .offset8, .fila .offset8, .template-atct_album_view #content-core .offset8 {
       margin-left: 71.77914%;
       *margin-left: 71.67689%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset8:first-child, #dashboard .offset8:first-child, .fila .offset8:first-child, .template-atct_album_view #content-core .offset8:first-child {
       margin-left: 68.71166%;
       *margin-left: 68.60941%; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span7, #dashboard .span7, .fila .span7, .template-atct_album_view #content-core .span7 {
       width: 57.05521%;
       *width: 57.00409%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset7, #dashboard .offset7, .fila .offset7, .template-atct_album_view #content-core .offset7 {
       margin-left: 63.19018%;
       *margin-left: 63.08793%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset7:first-child, #dashboard .offset7:first-child, .fila .offset7:first-child, .template-atct_album_view #content-core .offset7:first-child {
       margin-left: 60.1227%;
       *margin-left: 60.02045%; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span6, #dashboard .span6, .fila .span6, .template-atct_album_view #content-core .span6, .row-fluid .w1\3a 2, #dashboard .w1\3a 2, .fila .w1\3a 2, .template-atct_album_view #content-core .w1\3a 2, .row-fluid .w2\3a 4, #dashboard .w2\3a 4, .fila .w2\3a 4, .template-atct_album_view #content-core .w2\3a 4 {
       width: 48.46626%;
       *width: 48.41513%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset6, #dashboard .offset6, .fila .offset6, .template-atct_album_view #content-core .offset6 {
       margin-left: 54.60123%;
       *margin-left: 54.49898%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset6:first-child, #dashboard .offset6:first-child, .fila .offset6:first-child, .template-atct_album_view #content-core .offset6:first-child {
       margin-left: 51.53374%;
       *margin-left: 51.43149%; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span5, #dashboard .span5, .fila .span5, .template-atct_album_view #content-core .span5 {
       width: 39.8773%;
       *width: 39.82618%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset5, #dashboard .offset5, .fila .offset5, .template-atct_album_view #content-core .offset5 {
       margin-left: 46.01227%;
       *margin-left: 45.91002%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset5:first-child, #dashboard .offset5:first-child, .fila .offset5:first-child, .template-atct_album_view #content-core .offset5:first-child {
       margin-left: 42.94479%;
       *margin-left: 42.84254%; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span4, #dashboard .span4, .fila .span4, .template-atct_album_view #content-core .span4, .row-fluid .w1\3a 3, #dashboard .w1\3a 3, .fila .w1\3a 3, .template-atct_album_view #content-core .w1\3a 3 {
       width: 31.28834%;
       *width: 31.23722%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset4, #dashboard .offset4, .fila .offset4, .template-atct_album_view #content-core .offset4 {
       margin-left: 37.42331%;
       *margin-left: 37.32106%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset4:first-child, #dashboard .offset4:first-child, .fila .offset4:first-child, .template-atct_album_view #content-core .offset4:first-child {
       margin-left: 34.35583%;
       *margin-left: 34.25358%; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span3, #dashboard .span3, .fila .span3, .template-atct_album_view #content-core .span3, .row-fluid #dashboard-portlets1, #dashboard #dashboard-portlets1, .fila #dashboard-portlets1, .template-atct_album_view #content-core #dashboard-portlets1, .row-fluid #dashboard-portlets2, #dashboard #dashboard-portlets2, .fila #dashboard-portlets2, .template-atct_album_view #content-core #dashboard-portlets2, .row-fluid #dashboard-portlets3, #dashboard #dashboard-portlets3, .fila #dashboard-portlets3, .template-atct_album_view #content-core #dashboard-portlets3, .row-fluid #dashboard-portlets4, #dashboard #dashboard-portlets4, .fila #dashboard-portlets4, .template-atct_album_view #content-core #dashboard-portlets4, .row-fluid .w1\3a 4, #dashboard .w1\3a 4, .fila .w1\3a 4, .template-atct_album_view #content-core .w1\3a 4, .row-fluid .photoAlbumEntry, #dashboard .photoAlbumEntry, .fila .photoAlbumEntry, .template-atct_album_view #content-core .photoAlbumEntry {
       width: 22.69939%;
       *width: 22.64826%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset3, #dashboard .offset3, .fila .offset3, .template-atct_album_view #content-core .offset3 {
       margin-left: 28.83436%;
       *margin-left: 28.73211%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset3:first-child, #dashboard .offset3:first-child, .fila .offset3:first-child, .template-atct_album_view #content-core .offset3:first-child {
       margin-left: 25.76687%;
       *margin-left: 25.66462%; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span2, #dashboard .span2, .fila .span2, .template-atct_album_view #content-core .span2 {
       width: 14.11043%;
       *width: 14.0593%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset2, #dashboard .offset2, .fila .offset2, .template-atct_album_view #content-core .offset2 {
       margin-left: 20.2454%;
       *margin-left: 20.14315%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset2:first-child, #dashboard .offset2:first-child, .fila .offset2:first-child, .template-atct_album_view #content-core .offset2:first-child {
       margin-left: 17.17791%;
       *margin-left: 17.07566%; }
-    /* line 617, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 617, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .span1, #dashboard .span1, .fila .span1, .template-atct_album_view #content-core .span1 {
       width: 5.52147%;
       *width: 5.47035%; }
-    /* line 620, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 620, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset1, #dashboard .offset1, .fila .offset1, .template-atct_album_view #content-core .offset1 {
       margin-left: 11.65644%;
       *margin-left: 11.55419%; }
-    /* line 623, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+    /* line 623, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
     .row-fluid .offset1:first-child, #dashboard .offset1:first-child, .fila .offset1:first-child, .template-atct_album_view #content-core .offset1:first-child {
       margin-left: 8.58896%;
       *margin-left: 8.48671%; }
 
-  /* line 638, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 638, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input,
   textarea,
   .uneditable-input {
     margin-left: 0; }
 
-  /* line 643, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 643, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .controls-row [class*="span"] + [class*="span"], .controls-row .cella + [class*="span"], .controls-row [class*="span"] + .cella, .controls-row .cella + .cella {
     margin-left: 30px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span12,
   textarea.span12,
   .uneditable-input.span12 {
     width: 964px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span11,
   textarea.span11,
   .uneditable-input.span11 {
     width: 880px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span10,
   textarea.span10,
   .uneditable-input.span10 {
     width: 796px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span9, input.w3\3a 4,
   textarea.span9,
   textarea.w3\3a 4,
@@ -330,19 +330,19 @@
   .uneditable-input.w3\3a 4 {
     width: 712px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span8,
   textarea.span8,
   .uneditable-input.span8 {
     width: 628px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span7,
   textarea.span7,
   .uneditable-input.span7 {
     width: 544px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span6, input.w1\3a 2, input.w2\3a 4,
   textarea.span6,
   textarea.w1\3a 2,
@@ -352,13 +352,13 @@
   .uneditable-input.w2\3a 4 {
     width: 460px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span5,
   textarea.span5,
   .uneditable-input.span5 {
     width: 376px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span4, input.w1\3a 3,
   textarea.span4,
   textarea.w1\3a 3,
@@ -366,7 +366,7 @@
   .uneditable-input.w1\3a 3 {
     width: 292px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span3, input#dashboard-portlets1, input#dashboard-portlets2, input#dashboard-portlets3, input#dashboard-portlets4, input.w1\3a 4, input.photoAlbumEntry,
   textarea.span3,
   textarea#dashboard-portlets1,
@@ -384,24 +384,24 @@
   .uneditable-input.photoAlbumEntry {
     width: 208px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span2,
   textarea.span2,
   .uneditable-input.span2 {
     width: 124px; }
 
-  /* line 652, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  /* line 652, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   input.span1,
   textarea.span1,
   .uneditable-input.span1 {
     width: 40px; }
 
-  /* line 20, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
+  /* line 20, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
   .span9 .row-fluid > [class*=span3]:nth-child(2n+1), .w3\3a 4 .row-fluid > [class*=span3]:nth-child(2n+1), .span9 #dashboard > [class*=span3]:nth-child(2n+1), .w3\3a 4 #dashboard > [class*=span3]:nth-child(2n+1), .span9 .fila > [class*=span3]:nth-child(2n+1), .w3\3a 4 .fila > [class*=span3]:nth-child(2n+1), .span9 .template-atct_album_view #content-core > [class*=span3]:nth-child(2n+1), .template-atct_album_view .span9 #content-core > [class*=span3]:nth-child(2n+1), .w3\3a 4 .template-atct_album_view #content-core > [class*=span3]:nth-child(2n+1), .template-atct_album_view .w3\3a 4 #content-core > [class*=span3]:nth-child(2n+1) {
     clear: both;
     margin-left: 0; }
 
-  /* line 25, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
+  /* line 25, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-768px-979px.scss */
   .span9 .row-fluid .span3, .w3\3a 4 .row-fluid .span3, .span9 #dashboard .span3, .w3\3a 4 #dashboard .span3, .span9 .fila .span3, .w3\3a 4 .fila .span3, .span9 .template-atct_album_view #content-core .span3, .template-atct_album_view .span9 #content-core .span3, .w3\3a 4 .template-atct_album_view #content-core .span3, .template-atct_album_view .w3\3a 4 #content-core .span3, .span9 .row-fluid #dashboard-portlets1, .w3\3a 4 .row-fluid #dashboard-portlets1, .span9 #dashboard #dashboard-portlets1, .w3\3a 4 #dashboard #dashboard-portlets1, .span9 .fila #dashboard-portlets1, .w3\3a 4 .fila #dashboard-portlets1, .span9 .template-atct_album_view #content-core #dashboard-portlets1, .template-atct_album_view .span9 #content-core #dashboard-portlets1, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets1, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets1, .span9 .row-fluid #dashboard-portlets2, .w3\3a 4 .row-fluid #dashboard-portlets2, .span9 #dashboard #dashboard-portlets2, .w3\3a 4 #dashboard #dashboard-portlets2, .span9 .fila #dashboard-portlets2, .w3\3a 4 .fila #dashboard-portlets2, .span9 .template-atct_album_view #content-core #dashboard-portlets2, .template-atct_album_view .span9 #content-core #dashboard-portlets2, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets2, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets2, .span9 .row-fluid #dashboard-portlets3, .w3\3a 4 .row-fluid #dashboard-portlets3, .span9 #dashboard #dashboard-portlets3, .w3\3a 4 #dashboard #dashboard-portlets3, .span9 .fila #dashboard-portlets3, .w3\3a 4 .fila #dashboard-portlets3, .span9 .template-atct_album_view #content-core #dashboard-portlets3, .template-atct_album_view .span9 #content-core #dashboard-portlets3, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets3, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets3, .span9 .row-fluid #dashboard-portlets4, .w3\3a 4 .row-fluid #dashboard-portlets4, .span9 #dashboard #dashboard-portlets4, .w3\3a 4 #dashboard #dashboard-portlets4, .span9 .fila #dashboard-portlets4, .w3\3a 4 .fila #dashboard-portlets4, .span9 .template-atct_album_view #content-core #dashboard-portlets4, .template-atct_album_view .span9 #content-core #dashboard-portlets4, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets4, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets4, .span9 .row-fluid .w1\3a 4, .w3\3a 4 .row-fluid .w1\3a 4, .span9 #dashboard .w1\3a 4, .w3\3a 4 #dashboard .w1\3a 4, .span9 .fila .w1\3a 4, .w3\3a 4 .fila .w1\3a 4, .span9 .template-atct_album_view #content-core .w1\3a 4, .template-atct_album_view .span9 #content-core .w1\3a 4, .w3\3a 4 .template-atct_album_view #content-core .w1\3a 4, .template-atct_album_view .w3\3a 4 #content-core .w1\3a 4, .span9 .row-fluid .photoAlbumEntry, .w3\3a 4 .row-fluid .photoAlbumEntry, .span9 #dashboard .photoAlbumEntry, .w3\3a 4 #dashboard .photoAlbumEntry, .span9 .fila .photoAlbumEntry, .w3\3a 4 .fila .photoAlbumEntry, .span9 .template-atct_album_view #content-core .photoAlbumEntry, .template-atct_album_view .span9 #content-core .photoAlbumEntry, .w3\3a 4 .template-atct_album_view #content-core .photoAlbumEntry, .template-atct_album_view .w3\3a 4 #content-core .photoAlbumEntry {
     width: 48% !important; } }
 /* No es fa servir
@@ -432,62 +432,62 @@
 
 */
 @media only screen and (max-width: 979px) and (orientation: portrait), only screen and (max-width: 768px) and (orientation: landscape) {
-  /* line 15, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 15, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #titol-menu-1 {
     display: block !important; }
 
-  /* line 16, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 16, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #eines-menu {
     display: block !important; }
 
-  /* line 21, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 21, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   body {
     padding-top: 0; }
 
-  /* line 26, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 26, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-fixed-top,
   #portal-globalnav .navbar-fixed-bottom {
     position: static; }
 
-  /* line 27, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 27, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-fixed-top {
     margin-bottom: 18px; }
 
-  /* line 28, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 28, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-fixed-bottom {
     margin-top: 18px; }
 
-  /* line 30, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 30, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-fixed-top .navbar-inner,
   #portal-globalnav .navbar-fixed-bottom .navbar-inner {
     padding: 5px; }
 
-  /* line 31, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 31, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar .container {
     width: auto;
     padding: 0; }
 
-  /* line 33, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 33, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar .brand {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 0 0 -5px; }
 
-  /* line 35, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 35, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-fixed-top, #portal-globalnav .navbar-fixed-bottom {
     margin-left: -10px;
     margin-right: -10px; }
 
-  /* line 39, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 39, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse, .nav-collapse-eines {
     clear: both; }
 
-  /* line 41, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 41, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav, #portal-globalnav .nav-collapse .contentViews, #portal-globalnav .nav-collapse .configlets, #portal-globalnav .nav-collapse .formTabs, .nav-collapse-eines .nav, .nav-collapse-eines .contentViews, .nav-collapse-eines .configlets, .nav-collapse-eines .formTabs {
     float: none;
     margin: 0 0 9px; }
 
-  /* line 46, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 46, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav > li, #portal-globalnav .nav-collapse .contentViews > li, #portal-globalnav .nav-collapse .configlets > li, #portal-globalnav .nav-collapse .formTabs > li,
   .nav-collapse-eines.nav-collapse .nav > li,
   .nav-collapse-eines.nav-collapse .contentViews > li,
@@ -495,7 +495,7 @@
   .nav-collapse-eines.nav-collapse .formTabs > li {
     float: none; }
 
-  /* line 50, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 50, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav > li > a, #portal-globalnav .nav-collapse .contentViews > li > a, #portal-globalnav .nav-collapse .configlets > li > a, #portal-globalnav .nav-collapse .formTabs > li > a,
   .nav-collapse-eines.nav-collapse .nav > li > a,
   .nav-collapse-eines.nav-collapse .contentViews > li > a,
@@ -503,7 +503,7 @@
   .nav-collapse-eines.nav-collapse .formTabs > li > a {
     margin-bottom: 2px; }
 
-  /* line 54, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 54, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav > .divider-vertical, #portal-globalnav .nav-collapse .contentViews > .divider-vertical, #portal-globalnav .nav-collapse .configlets > .divider-vertical, #portal-globalnav .nav-collapse .formTabs > .divider-vertical,
   .nav-collapse-eines.nav-collapse .nav > .divider-vertical,
   .nav-collapse-eines.nav-collapse .contentViews > .divider-vertical,
@@ -511,7 +511,7 @@
   .nav-collapse-eines.nav-collapse .formTabs > .divider-vertical {
     display: none; }
 
-  /* line 58, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 58, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav .nav-header, #portal-globalnav .nav-collapse .contentViews .nav-header, #portal-globalnav .nav-collapse .configlets .nav-header, #portal-globalnav .nav-collapse .formTabs .nav-header,
   .nav-collapse-eines.nav-collapse .nav .nav-header,
   .nav-collapse-eines.nav-collapse .contentViews .nav-header,
@@ -520,7 +520,7 @@
     color: #666666;
     text-shadow: none; }
 
-  /* line 66, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 66, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav > li > a, #portal-globalnav .nav-collapse .contentViews > li > a, #portal-globalnav .nav-collapse .configlets > li > a, #portal-globalnav .nav-collapse .formTabs > li > a,
   #portal-globalnav .nav-collapse .dropdown-menu a,
   .nav-collapse-eines.nav-collapse .nav > li > a,
@@ -535,7 +535,7 @@
     -moz-border-radius: 3px;
     border-radius: 3px; }
 
-  /* line 74, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 74, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .btn, #portal-globalnav .nav-collapse .standalone, #portal-globalnav .nav-collapse input[value^="Cancel"], #portal-globalnav .nav-collapse [type="submit"], #portal-globalnav .nav-collapse .context, #portal-globalnav .nav-collapse .searchButton, #portal-globalnav .nav-collapse button.pfg-draft-save, #portal-globalnav .nav-collapse .link-parent {
     padding: 4px 10px 4px;
     font-weight: normal;
@@ -543,26 +543,26 @@
     -moz-border-radius: 4px;
     border-radius: 4px; }
 
-  /* line 79, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 79, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .dropdown-menu li + li a {
     margin-bottom: 2px; }
 
-  /* line 83, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 83, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .nav > li > a:hover, #portal-globalnav .nav-collapse .contentViews > li > a:hover, #portal-globalnav .nav-collapse .configlets > li > a:hover, #portal-globalnav .nav-collapse .formTabs > li > a:hover,
   #portal-globalnav .nav-collapse .dropdown-menu a:hover {
     background-color: #e0e0e0; }
 
-  /* line 87, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 87, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-inverse .nav-collapse .nav > li > a:hover, #portal-globalnav .navbar-inverse .nav-collapse .contentViews > li > a:hover, #portal-globalnav .navbar-inverse .nav-collapse .configlets > li > a:hover, #portal-globalnav .navbar-inverse .nav-collapse .formTabs > li > a:hover,
   #portal-globalnav .navbar-inverse .nav-collapse .dropdown-menu a:hover {
     background-color: #111111; }
 
-  /* line 91, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 91, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse.in .btn-group {
     margin-top: 5px;
     padding: 0; }
 
-  /* line 97, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 97, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .dropdown-menu,
   .nav-collapse-eines.nav-collapse .dropdown-menu {
     position: static;
@@ -582,16 +582,16 @@
     -moz-box-shadow: none;
     box-shadow: none; }
 
-  /* line 112, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 112, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .dropdown-menu:before,
   #portal-globalnav .nav-collapse .dropdown-menu:after {
     display: none; }
 
-  /* line 115, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 115, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .dropdown-menu .divider {
     display: none; }
 
-  /* line 120, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 120, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse .navbar-form,
   #portal-globalnav .nav-collapse .navbar-search {
     float: none;
@@ -603,31 +603,31 @@
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
-  /* line 129, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 129, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar .nav-collapse .nav.pull-right, #portal-globalnav .navbar .nav-collapse .pull-right.contentViews, #portal-globalnav .navbar .nav-collapse .contentViews.newsImageContainer, #portal-globalnav .navbar .nav-collapse .pull-right.configlets, #portal-globalnav .navbar .nav-collapse .configlets.newsImageContainer, #portal-globalnav .navbar .nav-collapse .nav.newsImageContainer, #portal-globalnav .navbar .nav-collapse .newsImageContainer.formTabs, #portal-globalnav .navbar .nav-collapse .pull-right.formTabs {
     float: none;
     margin-left: 0; }
 
-  /* line 135, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 135, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav-collapse,
   #portal-globalnav .nav-collapse.collapse {
     overflow: hidden;
     height: 0; }
 
-  /* line 140, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 140, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar .btn-navbar {
     display: block; }
 
-  /* line 144, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 144, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
     margin-top: 18px; }
 
-  /* line 145, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 145, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse-eines.nav-collapse {
     overflow: hidden;
     height: 0; }
 
-  /* line 146, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 146, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse-eines.nav-collapse .nav, .nav-collapse-eines.nav-collapse .contentViews, .nav-collapse-eines.nav-collapse .configlets, .nav-collapse-eines.nav-collapse .formTabs {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -639,25 +639,25 @@
     -moz-box-shadow: inset 0 2px 5px 2px rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 2px 5px 2px rgba(0, 0, 0, 0.15); }
 
-  /* line 147, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 147, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse-eines.nav-collapse .nav .dropdown-toggle, .nav-collapse-eines.nav-collapse .contentViews .dropdown-toggle, .nav-collapse-eines.nav-collapse .configlets .dropdown-toggle, .nav-collapse-eines.nav-collapse .formTabs .dropdown-toggle {
     display: none; }
 
-  /* line 148, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 148, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse-eines.nav-collapse a {
     color: #007bc0 !important; }
 
-  /* line 151, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 151, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .navbar-static .navbar-inner {
     padding-left: 10px;
     padding-right: 10px; }
 
-  /* line 155, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 155, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav, #portal-globalnav .contentViews, #portal-globalnav .configlets, #portal-globalnav .formTabs {
     margin-bottom: 0 !important;
     border-top: 1px solid #b2b2b2; }
 
-  /* line 156, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 156, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .nav a, #portal-globalnav .contentViews a, #portal-globalnav .configlets a, #portal-globalnav .formTabs a {
     color: #666666 !important;
     border-bottom: 0 !important;
@@ -665,96 +665,96 @@
     -moz-border-radius: 0 !important;
     border-radius: 0 !important;
     margin-bottom: 0 !important; }
-    /* line 157, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+    /* line 157, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
     #portal-globalnav .nav a:focus, #portal-globalnav .contentViews a:focus, #portal-globalnav .configlets a:focus, #portal-globalnav .formTabs a:focus, #portal-globalnav .nav a:hover, #portal-globalnav .contentViews a:hover, #portal-globalnav .configlets a:hover, #portal-globalnav .formTabs a:hover {
       color: #222222 !important; }
 
-  /* line 159, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 159, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .state-published, #portal-globalnav #workflow-transition-publish {
     border-right: 3px solid #007bc0 !important; }
 
-  /* line 160, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 160, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .state-draft, #portal-globalnav #workflow-transition-reject, #portal-globalnav #workflow-transition-retiraaesborrany, #portal-globalnav #workflow-transition-show {
     border-right: 3px solid #72a31d !important; }
 
-  /* line 161, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 161, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .state-pending, #portal-globalnav #workflow-transition-submit {
     border-right: 3px solid #ad6704 !important; }
 
-  /* line 162, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 162, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .state-intranet, #portal-globalnav #workflow-transition-publishtointranet, #portal-globalnav #workflow-transition-publicaalaintranet, #portal-globalnav #workflow-transition-retracttointranet, #portal-globalnav #workflow-transition-retiraalaintranet {
     border-right: 3px solid #8952ab !important; }
 
-  /* line 163, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 163, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   #portal-globalnav .state-private, #portal-globalnav #workflow-transition-hide {
     border-right: 3px solid #a62e1f !important; } }
 @media only screen and (max-width: 639px), only screen and (max-width: 639px) and (orientation: landscape) {
-  /* line 176, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 176, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top, .navbar-fixed-bottom {
     padding-left: 0;
     padding-right: 0; }
 
-  /* line 180, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 180, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     position: static; }
 
-  /* line 181, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 181, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top {
     margin-bottom: 18px; }
 
-  /* line 182, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 182, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-bottom {
     margin-top: 18px; }
 
-  /* line 184, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 184, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
     padding: 5px; }
 
-  /* line 185, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 185, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .container {
     width: auto;
     padding: 0; }
 
-  /* line 187, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 187, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .brand {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 0 0 -5px; }
 
-  /* line 189, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 189, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-fixed-top, #portal-globalnav .navbar-fixed-bottom {
     margin-left: -10px;
     margin-right: -10px; }
 
-  /* line 193, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 193, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse {
     clear: both; }
 
-  /* line 195, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 195, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav, .nav-collapse .contentViews, .nav-collapse .configlets, .nav-collapse .formTabs {
     float: none;
     margin: 0 0 9px; }
 
-  /* line 199, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 199, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li, .nav-collapse .contentViews > li, .nav-collapse .configlets > li, .nav-collapse .formTabs > li {
     float: none; }
 
-  /* line 202, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 202, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a, .nav-collapse .contentViews > li > a, .nav-collapse .configlets > li > a, .nav-collapse .formTabs > li > a {
     margin-bottom: 2px; }
 
-  /* line 205, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 205, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > .divider-vertical, .nav-collapse .contentViews > .divider-vertical, .nav-collapse .configlets > .divider-vertical, .nav-collapse .formTabs > .divider-vertical {
     display: none; }
 
-  /* line 208, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 208, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav .nav-header, .nav-collapse .contentViews .nav-header, .nav-collapse .configlets .nav-header, .nav-collapse .formTabs .nav-header {
     color: #666666;
     text-shadow: none; }
 
-  /* line 214, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 214, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a, .nav-collapse .contentViews > li > a, .nav-collapse .configlets > li > a, .nav-collapse .formTabs > li > a,
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
@@ -764,7 +764,7 @@
     -moz-border-radius: 3px;
     border-radius: 3px; }
 
-  /* line 222, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 222, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .btn, .nav-collapse .standalone, .nav-collapse input[value^="Cancel"], .nav-collapse [type="submit"], .nav-collapse .context, .nav-collapse .searchButton, .nav-collapse button.pfg-draft-save, .nav-collapse .link-parent {
     padding: 4px 10px 4px;
     font-weight: normal;
@@ -772,26 +772,26 @@
     -moz-border-radius: 4px;
     border-radius: 4px; }
 
-  /* line 227, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 227, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu li + li a {
     margin-bottom: 2px; }
 
-  /* line 231, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 231, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .nav > li > a:hover, .nav-collapse .contentViews > li > a:hover, .nav-collapse .configlets > li > a:hover, .nav-collapse .formTabs > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
     background-color: #e0e0e0; }
 
-  /* line 235, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 235, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .contentViews > li > a:hover, .navbar-inverse .nav-collapse .configlets > li > a:hover, .navbar-inverse .nav-collapse .formTabs > li > a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover {
     background-color: #111111; }
 
-  /* line 239, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 239, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse.in .btn-group {
     margin-top: 5px;
     padding: 0; }
 
-  /* line 244, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 244, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu {
     position: static;
     top: auto;
@@ -810,16 +810,16 @@
     -moz-box-shadow: none;
     box-shadow: none; }
 
-  /* line 259, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 259, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu:before,
   .nav-collapse .dropdown-menu:after {
     display: none; }
 
-  /* line 262, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 262, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .dropdown-menu .divider {
     display: none; }
 
-  /* line 267, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 267, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse .navbar-form,
   .nav-collapse .navbar-search {
     float: none;
@@ -831,27 +831,27 @@
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
-  /* line 276, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 276, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .nav-collapse .nav.pull-right, .navbar .nav-collapse .pull-right.contentViews, .navbar .nav-collapse .contentViews.newsImageContainer, .navbar .nav-collapse .pull-right.configlets, .navbar .nav-collapse .configlets.newsImageContainer, .navbar .nav-collapse .nav.newsImageContainer, .navbar .nav-collapse .newsImageContainer.formTabs, .navbar .nav-collapse .pull-right.formTabs {
     float: none;
     margin-left: 0; }
 
-  /* line 282, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 282, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .nav-collapse,
   .nav-collapse.collapse {
     overflow: hidden;
     height: 0; }
 
-  /* line 287, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 287, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar .btn-navbar {
     display: block; }
 
-  /* line 293, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 293, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   .navbar-static .navbar-inner {
     padding-left: 10px;
     padding-right: 10px; } }
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
-  /* line 300, /Development/genwebupc4.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
+  /* line 300, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-navbar.scss */
   * .reView {
     display: none !important; } }
 /*!
@@ -908,7 +908,7 @@
 
 /* line 41, ../scss/_base.scss */
 .userScreen, .userTablet, .userMobile, .userGenweb {
-  background: url('/++genweb++static/images/sprite_usuari.png?1390394071') transparent no-repeat center top;
+  background: url('/++genweb++static/images/sprite_usuari.png?1370877920') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em; }
 
@@ -995,7 +995,7 @@
 /*ajusta imatges icos en menús per a hovers */
 /* line 68, ../scss/_base.scss */
 .dropdown-menu a:hover [class^="icon-"], .dropdown-menu a:hover #category.documentByLine:before, .dropdown-menu a:hover .tileFooter:before, .dropdown-menu a:hover [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/gh-w.png?1390394071') !important; }
+  background-image: url('/++genweb++static/images/gh-w.png?1370877920') !important; }
 
 /* line 75, ../scss/_base.scss */
 #portal-header {
@@ -1097,7 +1097,7 @@
 
 /* line 125, ../scss/_base.scss */
 .header-image {
-  background-image: url('/++genweb++static/images/capcalera.jpg?1390394071');
+  background-image: url('/++genweb++static/images/capcalera.jpg?1370877920');
   margin-top: 0 !important;
   height: 65px;
   overflow: hidden;
@@ -1285,7 +1285,7 @@
     margin: 0 !important; }
   /* line 226, ../scss/_base.scss */
   #canvia-vista a {
-    background: url('/++genweb++static/images/vistabg.png?1390394071') #666666;
+    background: url('/++genweb++static/images/vistabg.png?1370877920') #666666;
     text-align: center;
     -webkit-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
@@ -1430,7 +1430,7 @@
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
     right: 7px;
     top: 8px;
-    background-image: url('/++genweb++static/images/gh-w.png?1390394071');
+    background-image: url('/++genweb++static/images/gh-w.png?1370877920');
     background-position: -455px -71px;
     background-repeat: no-repeat;
     width: 17px;
@@ -1577,7 +1577,7 @@
           line-height: 0 !important; }
       /* line 154, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
-        background-image: url('/++genweb++static/images/gh.png?1390394071');
+        background-image: url('/++genweb++static/images/gh.png?1370877920');
         background-repeat: no-repeat;
         content: " ";
         display: block;
@@ -1654,7 +1654,7 @@
 
 /* line 204, ../scss/_nav.scss */
 html * .dropdown-menu a:hover .img_blank {
-  content: url('/++genweb++static/images/blank_blanc.png?1390394071');
+  content: url('/++genweb++static/images/blank_blanc.png?1370877920');
   width: 10px;
   height: 10px; }
 
@@ -1700,7 +1700,7 @@ html * .dropdown-menu a:hover .img_blank {
   position: relative; }
 /* line 244, ../scss/_nav.scss */
 #listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-folder_tabular_view .listing a[class^="contenttype-"]:before, .template-folder_tabular_view .listing a[class*=" contenttype-"]:before {
-  background-image: url('/++genweb++static/images/gh.png?1390394071');
+  background-image: url('/++genweb++static/images/gh.png?1370877920');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -2128,7 +2128,7 @@ html[lang="es"] .box-example:after {
   /* line 144, ../scss/_wells-boxes.scss */
   .sheet:before, div.fitxa:before {
     content: "*";
-    content: url('/++genweb++static/images/sheet.png?1390394071');
+    content: url('/++genweb++static/images/sheet.png?1370877920');
     font-size: 300%;
     position: absolute;
     right: -19px;
@@ -2271,7 +2271,7 @@ ul {
 
 /* line 125, ../scss/_lists.scss */
 .list-links li:before, .portaltype-packet .estudis .llistatEnllacos li:before {
-  content: url('/++genweb++static/images/arrow.png?1390394071');
+  content: url('/++genweb++static/images/arrow.png?1370877920');
   margin-left: -15px;
   margin-top: -13px; }
 
@@ -2281,7 +2281,7 @@ ul {
 
 /* line 135, ../scss/_lists.scss */
 .list-highlighted li:before {
-  content: url('/++genweb++static/images/arrow_hl.png?1390394071');
+  content: url('/++genweb++static/images/arrow_hl.png?1370877920');
   margin-left: -22px;
   margin-top: -11px; }
 
@@ -3038,7 +3038,7 @@ hr.liniaDalt, hr.tileHeadline {
   display: block;
   width: 14px;
   height: 14px;
-  background: url('/++genweb++static/images/gh.png?1390394071'); }
+  background: url('/++genweb++static/images/gh.png?1370877920'); }
 
 /* line 94, ../scss/_texts.scss */
 .mayus {
@@ -3077,7 +3077,7 @@ a {
 
 /* line 114, ../scss/_texts.scss */
 .pdf:after, .ppt:after, .xls:after, .doc:after, .down:after, .https:after, .vid:after, .img:after, .txt:after {
-  background: url('/++genweb++static/images/gh-c.png?1390394071') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1370877920') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -3255,7 +3255,7 @@ input[type="file"] {
   font-weight: bold; }
   /* line 18, ../scss/_inputs.scss */
   .customfile-feedback-populated:before {
-    background: url('/++genweb++static/images/gh-c.png?1390394071') no-repeat;
+    background: url('/++genweb++static/images/gh-c.png?1370877920') no-repeat;
     width: 14px;
     height: 14px;
     display: inline-block;
@@ -3580,7 +3580,7 @@ h2.title-inverse {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3); }
   /* line 223, ../scss/_portlets.scss */
   h2.title-inverse i {
-    background-image: url('/++genweb++static/images/gh-w.png?1390394071'); }
+    background-image: url('/++genweb++static/images/gh-w.png?1370877920'); }
 
 /* line 230, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar {
@@ -3726,61 +3726,58 @@ input#title {
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
   margin-top: 6px;
-  margin-left: 5% !important;
-  margin-right: 5% !important;
-  width: 90%;
+  width: 100%;
   height: 100%;
   min-height: 100%; }
-  /* line 164, ../scss/_plone.scss */
+  /* line 162, ../scss/_plone.scss */
   .img-mask iframe {
-    -webkit-mask: url('/++genweb++static/images/mapa-mask.png?1390394071') no-repeat center center;
     height: 400px;
     width: 100%; }
 
-/* line 173, ../scss/_plone.scss */
+/* line 170, ../scss/_plone.scss */
 iframe {
   border: 0 !important;
   display: block !important; }
 
 /* regles afegides per maquetar contacte segons proposta oriol */
-/* line 180, ../scss/_plone.scss */
+/* line 177, ../scss/_plone.scss */
 #formfield-form-widgets-nombre {
   float: left;
   width: 48% !important; }
 
-/* line 184, ../scss/_plone.scss */
+/* line 181, ../scss/_plone.scss */
 #form-widgets-nombre {
   width: 90% !important; }
 
-/* line 186, ../scss/_plone.scss */
+/* line 183, ../scss/_plone.scss */
 #formfield-form-widgets-from_address {
   float: right;
   width: 48% !important; }
 
-/* line 191, ../scss/_plone.scss */
+/* line 188, ../scss/_plone.scss */
 #form-widgets-from_address {
   width: 95% !important; }
 
-/* line 193, ../scss/_plone.scss */
+/* line 190, ../scss/_plone.scss */
 #formfield-form-widgets-asunto {
   clear: both;
   width: 100%; }
 
-/* line 197, ../scss/_plone.scss */
+/* line 194, ../scss/_plone.scss */
 #form-widgets-asunto {
   width: 97% !important; }
 
-/* line 201, ../scss/_plone.scss */
+/* line 198, ../scss/_plone.scss */
 #formfield-form-widgets-mensaje {
   width: 100%; }
 
-/* line 204, ../scss/_plone.scss */
+/* line 201, ../scss/_plone.scss */
 #contacte-dades {
   width: 48%;
   float: left;
   display: inline; }
 
-/* line 209, ../scss/_plone.scss */
+/* line 206, ../scss/_plone.scss */
 #contacte-links {
   margin-left: 2%;
   width: 48%;
@@ -3789,28 +3786,28 @@ iframe {
   text-align: right; }
 
 /* FI regles afegides per maquetar contacte segons proposta oriol  */
-/* line 223, ../scss/_plone.scss */
+/* line 220, ../scss/_plone.scss */
 #portal-sitemap > li {
   font-weight: bold;
   font-size: normal;
   margin-top: 30px; }
-  /* line 228, ../scss/_plone.scss */
+  /* line 225, ../scss/_plone.scss */
   #portal-sitemap > li > div {
     padding-bottom: 10px;
     border-bottom: 1px solid #b2b2b2; }
-  /* line 232, ../scss/_plone.scss */
+  /* line 229, ../scss/_plone.scss */
   #portal-sitemap > li a {
     color: #007bc0; }
-    /* line 234, ../scss/_plone.scss */
+    /* line 231, ../scss/_plone.scss */
     #portal-sitemap > li a:after {
       content: " ";
       position: relative;
       width: 14px;
       height: 14px;
       display: inline-block;
-      background: url('/++genweb++static/images/gh.png?1390394071') -239px -143px no-repeat;
+      background: url('/++genweb++static/images/gh.png?1370877920') -239px -143px no-repeat;
       margin-left: 5px; }
-/* line 245, ../scss/_plone.scss */
+/* line 242, ../scss/_plone.scss */
 #portal-sitemap ul {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -3822,7 +3819,7 @@ iframe {
   -moz-column-fill: auto;
   column-fill: auto;
   margin: 0; }
-  /* line 251, ../scss/_plone.scss */
+  /* line 248, ../scss/_plone.scss */
   #portal-sitemap ul > li {
     font-weight: bold;
     font-size: normal;
@@ -3832,65 +3829,63 @@ iframe {
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
     column-break-inside: avoid; }
-    /* line 261, ../scss/_plone.scss */
+    /* line 258, ../scss/_plone.scss */
     #portal-sitemap ul > li > div {
       padding-bottom: 0;
       padding-top: 5px; }
-    /* line 265, ../scss/_plone.scss */
+    /* line 262, ../scss/_plone.scss */
     #portal-sitemap ul > li a {
       color: #004a74; }
-      /* line 267, ../scss/_plone.scss */
+      /* line 264, ../scss/_plone.scss */
       #portal-sitemap ul > li a:after {
         content: none; }
-  /* line 272, ../scss/_plone.scss */
+  /* line 269, ../scss/_plone.scss */
   #portal-sitemap ul ul {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1; }
-  /* line 277, ../scss/_plone.scss */
+  /* line 274, ../scss/_plone.scss */
   #portal-sitemap ul > li li {
     padding: 5px 9px;
     line-height: 12px;
     font-weight: normal;
     font-size: smaller; }
-    /* line 284, ../scss/_plone.scss */
+    /* line 281, ../scss/_plone.scss */
     #portal-sitemap ul > li li > div {
       padding-top: 0; }
-    /* line 287, ../scss/_plone.scss */
+    /* line 284, ../scss/_plone.scss */
     #portal-sitemap ul > li li a {
       color: #666666; }
 
-/* line 294, ../scss/_plone.scss */
+/* line 291, ../scss/_plone.scss */
 #recordsTable {
   table-layout: fixed; }
-  /* line 295, ../scss/_plone.scss */
+  /* line 292, ../scss/_plone.scss */
   #recordsTable td {
     word-break: break-all; }
 
-/* line 300, ../scss/_plone.scss */
+/* line 297, ../scss/_plone.scss */
 #dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3, #dashboard-portlets4 {
   float: left;
   margin-bottom: 18px; }
 
-/* line 301, ../scss/_plone.scss */
+/* line 298, ../scss/_plone.scss */
 #dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3 {
   margin-right: 30px; }
 
-/* line 304, ../scss/_plone.scss */
+/* line 302, ../scss/_plone.scss */
 .plone_jscalendar .dk_container {
   display: inline-block; }
-
-/* line 305, ../scss/_plone.scss */
+/* line 303, ../scss/_plone.scss */
 .plone_jscalendar .dk_toggle {
   width: 100px !important; }
-
-/* line 306, ../scss/_plone.scss */
+/* line 304, ../scss/_plone.scss */
 .plone_jscalendar .dk_options {
   min-width: 128px !important;
   width: 128px !important; }
 
 /* The main calendar widget.  DIV containing a table. */
-/* line 311, ../scss/_plone.scss */
+/* line 310, ../scss/_plone.scss */
 .calendar {
   display: none;
   margin: 0 auto;
@@ -3898,200 +3893,165 @@ iframe {
   width: 100% !important;
   height: 100% !important;
   margin-top: 50%; }
+  /* line 312, ../scss/_plone.scss */
+  .calendar table {
+    background: #f2f2f2;
+    border-radius: 5px;
+    width: 222px;
+    box-shadow: 0 0 100px black;
+    top: 50%;
+    margin-top: -100px !important;
+    margin: 0 auto; }
+    /* line 314, ../scss/_plone.scss */
+    .calendar table .wn {
+      border-right: 1px solid #b2b2b2;
+      background: #f7f7f7; }
+  /* line 316, ../scss/_plone.scss */
+  .calendar .button {
+    text-align: center;
+    background: #f2f2f2; }
+  /* line 317, ../scss/_plone.scss */
+  .calendar .nav, .calendar .contentViews, .calendar .configlets, .calendar .formTabs {
+    background: #f2f2f2 url(menuarrow.gif) no-repeat 100% 100%; }
+  /* line 319, ../scss/_plone.scss */
+  .calendar thead .title {
+    font-weight: bold;
+    text-align: center; }
+  /* line 320, ../scss/_plone.scss */
+  .calendar thead .name {
+    border-bottom: 1px solid #b2b2b2;
+    border-top: 1px solid #b2b2b2;
+    text-align: center;
+    background: #f7f7f7; }
+  /* line 321, ../scss/_plone.scss */
+  .calendar thead .weekend {
+    color: #c00; }
+  /* line 322, ../scss/_plone.scss */
+  .calendar thead .hilite {
+    background: #cef; }
+  /* line 323, ../scss/_plone.scss */
+  .calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
+    box-shadow: inset 0 0 3px #08c; }
+  /* line 325, ../scss/_plone.scss */
+  .calendar tbody {
+    background: #fff; }
+    /* line 327, ../scss/_plone.scss */
+    .calendar tbody .day {
+      width: 2em;
+      text-align: center;
+      padding: 2px 0px; }
+    /* line 328, ../scss/_plone.scss */
+    .calendar tbody .day.othermonth {
+      font-size: 80%;
+      color: #aaa; }
+    /* line 329, ../scss/_plone.scss */
+    .calendar tbody .day.othermonth.oweekend {
+      color: #faa; }
+    /* line 330, ../scss/_plone.scss */
+    .calendar tbody .rowhilite td {
+      background: #cef; }
+    /* line 331, ../scss/_plone.scss */
+    .calendar tbody td.hilite {
+      background: #08c;
+      color: white; }
+    /* line 332, ../scss/_plone.scss */
+    .calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
+      box-shadow: inset 0 0 3px #08c; }
+    /* line 333, ../scss/_plone.scss */
+    .calendar tbody td.selected {
+      font-weight: bold;
+      background: #08c;
+      color: white; }
+    /* line 334, ../scss/_plone.scss */
+    .calendar tbody td.weekend {
+      color: #c00; }
+    /* line 335, ../scss/_plone.scss */
+    .calendar tbody td.today {
+      font-weight: bold;
+      color: white;
+      border-radius: 3px; }
+    /* line 336, ../scss/_plone.scss */
+    .calendar tbody td.disabled {
+      color: gray; }
+    /* line 338, ../scss/_plone.scss */
+    .calendar tbody .emptyrow {
+      display: none; }
+  /* line 341, ../scss/_plone.scss */
+  .calendar tfoot .ttip {
+    background: #f7f7f7;
+    border-top: 1px solid #b2b2b2;
+    text-align: center; }
+  /* line 342, ../scss/_plone.scss */
+  .calendar tfoot .hilite {
+    background-color: #cef !important; }
+  /* line 343, ../scss/_plone.scss */
+  .calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
+    background-color: #08c !important; }
+  /* line 345, ../scss/_plone.scss */
+  .calendar .combo {
+    position: absolute;
+    display: none;
+    width: 4em;
+    top: 0px;
+    left: 0px;
+    cursor: default;
+    border: 1px solid;
+    border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+    background: Menu;
+    color: MenuText;
+    font-size: 90%;
+    padding: 1px;
+    z-index: 100; }
+    /* line 360, ../scss/_plone.scss */
+    .calendar .combo .label, .calendar .combo #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .calendar .combo .state-restricted-to-managers, .calendar .combo #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .calendar .combo .state-visible, .calendar .combo #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .calendar .combo .state-intranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publishtointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publicaalaintranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retracttointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retiraalaintranet, .calendar .combo #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .calendar .combo .state-private, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-hide,
+    .calendar .combo .label-IEfix {
+      text-align: center;
+      display: block;
+      padding: 1px; }
+    /* line 365, ../scss/_plone.scss */
+    .calendar .combo .label-IEfix {
+      width: 4em; }
+    /* line 368, ../scss/_plone.scss */
+    .calendar .combo .active, .calendar .combo .selected {
+      padding: 0px;
+      border: 1px solid #000; }
+    /* line 372, ../scss/_plone.scss */
+    .calendar .combo .hilite {
+      background: Highlight;
+      color: HighlightText; }
+  /* line 378, ../scss/_plone.scss */
+  .calendar td.time {
+    border-top: 1px solid ButtonShadow;
+    padding: 1px 0px;
+    text-align: center;
+    background-color: ButtonFace; }
+    /* line 385, ../scss/_plone.scss */
+    .calendar td.time .hour,
+    .calendar td.time .minute,
+    .calendar td.time .ampm {
+      padding: 0px 3px 0px 4px;
+      border: 1px solid #889;
+      font-weight: bold;
+      background-color: Menu; }
+    /* line 392, ../scss/_plone.scss */
+    .calendar td.time .ampm {
+      text-align: center; }
+    /* line 396, ../scss/_plone.scss */
+    .calendar td.time .colon {
+      padding: 0px 2px 0px 3px;
+      font-weight: bold; }
+    /* line 401, ../scss/_plone.scss */
+    .calendar td.time span.hilite {
+      border-color: #000;
+      background-color: Highlight;
+      color: HighlightText; }
+    /* line 407, ../scss/_plone.scss */
+    .calendar td.time span.active, .calendar td.time span.selected {
+      border-color: #f00;
+      background-color: #000;
+      color: #080; }
 
-/* line 312, ../scss/_plone.scss */
-.calendar table {
-  background: #f2f2f2;
-  border-radius: 5px;
-  width: 222px;
-  box-shadow: 0 0 100px black;
-  top: 50%;
-  margin-top: -100px !important;
-  margin: 0 auto; }
-
-/* line 313, ../scss/_plone.scss */
-.calendar .button {
-  text-align: center;
-  background: #f2f2f2; }
-
-/* line 314, ../scss/_plone.scss */
-.calendar .nav, .calendar .contentViews, .calendar .configlets, .calendar .formTabs {
-  background: #f2f2f2 url(menuarrow.gif) no-repeat 100% 100%; }
-
-/* line 315, ../scss/_plone.scss */
-.calendar thead .title {
-  font-weight: bold;
-  text-align: center; }
-
-/* line 316, ../scss/_plone.scss */
-.calendar thead .name {
-  border-bottom: 1px solid #b2b2b2;
-  border-top: 1px solid #b2b2b2;
-  text-align: center;
-  background: #f7f7f7; }
-
-/* line 317, ../scss/_plone.scss */
-.calendar thead .weekend {
-  color: #c00; }
-
-/* line 318, ../scss/_plone.scss */
-.calendar thead .hilite {
-  background: #cef; }
-
-/* line 319, ../scss/_plone.scss */
-.calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
-  box-shadow: inset 0 0 3px #08c; }
-
-/* line 320, ../scss/_plone.scss */
-.calendar tbody {
-  background: #fff; }
-
-/* line 321, ../scss/_plone.scss */
-.calendar tbody .day {
-  width: 2em;
-  text-align: center;
-  padding: 2px 0px; }
-
-/* line 322, ../scss/_plone.scss */
-.calendar tbody .day.othermonth {
-  font-size: 80%;
-  color: #aaa; }
-
-/* line 323, ../scss/_plone.scss */
-.calendar tbody .day.othermonth.oweekend {
-  color: #faa; }
-
-/* line 324, ../scss/_plone.scss */
-.calendar table .wn {
-  border-right: 1px solid #b2b2b2;
-  background: #f7f7f7; }
-
-/* line 325, ../scss/_plone.scss */
-.calendar tbody .rowhilite td {
-  background: #cef; }
-
-/* line 326, ../scss/_plone.scss */
-.calendar tbody td.hilite {
-  background: #08c;
-  color: white; }
-
-/* line 327, ../scss/_plone.scss */
-.calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
-  box-shadow: inset 0 0 3px #08c; }
-
-/* line 328, ../scss/_plone.scss */
-.calendar tbody td.selected {
-  font-weight: bold;
-  background: #08c;
-  color: white; }
-
-/* line 329, ../scss/_plone.scss */
-.calendar tbody td.weekend {
-  color: #c00; }
-
-/* line 330, ../scss/_plone.scss */
-.calendar tbody td.today {
-  font-weight: bold;
-  color: white;
-  border-radius: 3px; }
-
-/* line 331, ../scss/_plone.scss */
-.calendar tbody td.disabled {
-  color: gray; }
-
-/* line 333, ../scss/_plone.scss */
-.calendar tbody .emptyrow {
-  display: none; }
-
-/* line 335, ../scss/_plone.scss */
-.calendar tfoot .ttip {
-  background: #f7f7f7;
-  border-top: 1px solid #b2b2b2;
-  text-align: center; }
-
-/* line 336, ../scss/_plone.scss */
-.calendar tfoot .hilite {
-  background-color: #cef !important; }
-
-/* line 337, ../scss/_plone.scss */
-.calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
-  background-color: #08c !important; }
-
-/* line 339, ../scss/_plone.scss */
-.calendar .combo {
-  position: absolute;
-  display: none;
-  width: 4em;
-  top: 0px;
-  left: 0px;
-  cursor: default;
-  border: 1px solid;
-  border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
-  background: Menu;
-  color: MenuText;
-  font-size: 90%;
-  padding: 1px;
-  z-index: 100; }
-
-/* line 356, ../scss/_plone.scss */
-.calendar .combo .label, .calendar .combo #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .calendar .combo .state-restricted-to-managers, .calendar .combo #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .calendar .combo .state-visible, .calendar .combo #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .calendar .combo .state-intranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publishtointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-publicaalaintranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retracttointranet, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-retiraalaintranet, .calendar .combo #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .calendar .combo .state-private, .calendar .combo #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .calendar .combo #workflow-transition-hide,
-.calendar .combo .label-IEfix {
-  text-align: center;
-  display: block;
-  padding: 1px; }
-
-/* line 362, ../scss/_plone.scss */
-.calendar .combo .label-IEfix {
-  width: 4em; }
-
-/* line 366, ../scss/_plone.scss */
-.calendar .combo .active, .calendar .combo .selected {
-  padding: 0px;
-  border: 1px solid #000; }
-
-/* line 371, ../scss/_plone.scss */
-.calendar .combo .hilite {
-  background: Highlight;
-  color: HighlightText; }
-
-/* line 376, ../scss/_plone.scss */
-.calendar td.time {
-  border-top: 1px solid ButtonShadow;
-  padding: 1px 0px;
-  text-align: center;
-  background-color: ButtonFace; }
-
-/* line 385, ../scss/_plone.scss */
-.calendar td.time .hour,
-.calendar td.time .minute,
-.calendar td.time .ampm {
-  padding: 0px 3px 0px 4px;
-  border: 1px solid #889;
-  font-weight: bold;
-  background-color: Menu; }
-
-/* line 392, ../scss/_plone.scss */
-.calendar td.time .ampm {
-  text-align: center; }
-
-/* line 396, ../scss/_plone.scss */
-.calendar td.time .colon {
-  padding: 0px 2px 0px 3px;
-  font-weight: bold; }
-
-/* line 401, ../scss/_plone.scss */
-.calendar td.time span.hilite {
-  border-color: #000;
-  background-color: Highlight;
-  color: HighlightText; }
-
-/* line 407, ../scss/_plone.scss */
-.calendar td.time span.active, .calendar td.time span.selected {
-  border-color: #f00;
-  background-color: #000;
-  color: #080; }
-
-/* line 414, ../scss/_plone.scss */
+/* line 416, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong {
   display: inline-block;
   padding: 2px 0 0 4px;
@@ -4100,31 +4060,31 @@ iframe {
   white-space: nowrap;
   width: 34%; }
 
-/* line 416, ../scss/_plone.scss */
+/* line 418, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader:hover strong {
   color: white; }
-/* line 417, ../scss/_plone.scss */
+/* line 419, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader:hover a {
   color: #30a2c3; }
 
-/* line 419, ../scss/_plone.scss */
+/* line 421, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong:hover {
   overflow: visible;
   width: 100%;
   padding-bottom: 1px !important; }
 
-/* line 420, ../scss/_plone.scss */
+/* line 422, ../scss/_plone.scss */
 .template-manage-homeportlets .portletHeader strong:hover + span {
   display: none; }
 
-/* line 423, ../scss/_plone.scss */
+/* line 425, ../scss/_plone.scss */
 img[src$="spinner.gif"] {
   box-shadow: 0 0 350px 125px white; }
 
-/* line 428, ../scss/_plone.scss */
+/* line 430, ../scss/_plone.scss */
 .discussion .commentImage {
   position: absolute; }
-  /* line 430, ../scss/_plone.scss */
+  /* line 432, ../scss/_plone.scss */
   .discussion .commentImage img {
     width: 50px;
     -webkit-border-radius: 4px;
@@ -4132,112 +4092,98 @@ img[src$="spinner.gif"] {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     border-radius: 4px; }
-/* line 432, ../scss/_plone.scss */
+/* line 434, ../scss/_plone.scss */
 .discussion .replyTreeLevel0 {
   margin-top: 2em; }
-/* line 435, ../scss/_plone.scss */
+/* line 437, ../scss/_plone.scss */
 .discussion .documentByLine a {
   font-weight: bold; }
-/* line 437, ../scss/_plone.scss */
+/* line 439, ../scss/_plone.scss */
 .discussion .commentDate {
   float: right; }
-/* line 438, ../scss/_plone.scss */
+/* line 440, ../scss/_plone.scss */
 .discussion .commentBody {
   color: #333333; }
-/* line 439, ../scss/_plone.scss */
+/* line 441, ../scss/_plone.scss */
 .discussion .commentActions {
   float: right; }
-/* line 442, ../scss/_plone.scss */
+/* line 444, ../scss/_plone.scss */
 .discussion .comment {
   border-left: 1px solid #b2b2b2;
   padding-left: 1em;
   margin-bottom: .5em;
   min-height: 50px; }
-/* line 443, ../scss/_plone.scss */
+/* line 445, ../scss/_plone.scss */
 .discussion .comment.replyTreeLevel0 {
   padding-left: 0;
   border-left: 0; }
-/* line 444, ../scss/_plone.scss */
+/* line 446, ../scss/_plone.scss */
 .discussion .reply-to-comment-button {
   display: block; }
-/* line 445, ../scss/_plone.scss */
+/* line 447, ../scss/_plone.scss */
 .discussion .documentByLine, .discussion .commentBody, .discussion .reply-to-comment-button {
   margin-left: 60px; }
-/* line 446, ../scss/_plone.scss */
+/* line 448, ../scss/_plone.scss */
 .discussion .reply {
   margin-top: 20px; }
 
-/* line 450, ../scss/_plone.scss */
+/* line 452, ../scss/_plone.scss */
 .collage-row {
   border-bottom: 1px solid #b2b2b2; }
-
-/* line 451, ../scss/_plone.scss */
-.collage-row:first-child {
-  border-top: 1px solid #b2b2b2; }
-
-/* line 452, ../scss/_plone.scss */
-.collage-header {
-  background: #fea; }
-
-/* line 454, ../scss/_plone.scss */
-.collage-image {
-  width: 100%; }
+  /* line 454, ../scss/_plone.scss */
+  .collage-row:first-child {
+    border-top: 1px solid #b2b2b2; }
 
 /* line 457, ../scss/_plone.scss */
-.collage-featured-image {
-  float: right; }
-
-/* line 460, ../scss/_plone.scss */
-.featured-document {
-  background: #f3f3f3;
-  padding: 10px; }
-
-/* line 464, ../scss/_plone.scss */
-.collage-listitem {
-  margin-bottom: 1em; }
-
-/* line 467, ../scss/_plone.scss */
-.collage-item .documentActions {
-  display: none; }
-
-/* line 470, ../scss/_plone.scss */
 .collage-header {
-  /*font-size: 0.9em;*/
+  background: #fea;
   border-bottom: 1px solid White;
   padding: 2px 0 2px 0 !important;
   position: relative;
   margin-bottom: 2px !important; }
+  /* line 463, ../scss/_plone.scss */
+  .collage-header p.discreet {
+    /*font-size: 0.9em;*/ }
+  /* line 466, ../scss/_plone.scss */
+  .collage-header span.icon img {
+    padding: 2px; }
+  /* line 469, ../scss/_plone.scss */
+  .collage-header span.icon img.alias {
+    padding: 0px;
+    border: 2px solid White; }
+  /* line 473, ../scss/_plone.scss */
+  .collage-header span {
+    color: #007bc0;
+    text-transform: lowercase; }
 
-/* line 477, ../scss/_plone.scss */
-.collage-header p.discreet {
-  /*font-size: 0.9em;*/ }
+/* line 479, ../scss/_plone.scss */
+.collage-image {
+  width: 100%; }
 
-/* line 480, ../scss/_plone.scss */
-.collage-header span.icon img {
-  padding: 2px; }
+/* line 482, ../scss/_plone.scss */
+.collage-featured-image {
+  float: right; }
 
-/* line 483, ../scss/_plone.scss */
-.collage-header span.icon img.alias {
-  padding: 0px;
-  border: 2px solid White; }
+/* line 485, ../scss/_plone.scss */
+.featured-document {
+  background: #f3f3f3;
+  padding: 10px; }
 
-/* line 487, ../scss/_plone.scss */
+/* line 489, ../scss/_plone.scss */
+.collage-listitem {
+  margin-bottom: 1em; }
+
+/* line 493, ../scss/_plone.scss */
+.collage-item .documentActions {
+  display: none; }
+/* line 496, ../scss/_plone.scss */
 .collage-item div.clickable a {
   text-decoration: none;
   border: none;
   padding: 0 !important;
   background: transparent !important; }
 
-/* line 493, ../scss/_plone.scss */
-.collage-header span {
-  color: #007bc0;
-  text-transform: lowercase; }
-
-/* line 498, ../scss/_plone.scss */
-.collage-existing-items select {
-  /*font-size: 80%;*/ }
-
-/* line 501, ../scss/_plone.scss */
+/* line 505, ../scss/_plone.scss */
 .collage-existing-items .breadcrumbs {
   background: url("logoIcon.gif") no-repeat left center;
   padding-top: 4px;
@@ -4245,42 +4191,29 @@ img[src$="spinner.gif"] {
   margin-bottom: 8px;
   padding-left: 20px;
   border-bottom: 1px solid White; }
-
-/* line 510, ../scss/_plone.scss */
-.collage-existing-items .breadcrumbs a,
-.collage-existing-items .breadcrumbs span {
-  /*font-size: 1.0em !important;*/ }
-
-/* line 514, ../scss/_plone.scss */
+/* line 513, ../scss/_plone.scss */
 .collage-existing-items label {
   display: none; }
 
-/* line 517, ../scss/_plone.scss */
+/* line 519, ../scss/_plone.scss */
 .collage-header a {
   cursor: pointer; }
+  /* line 521, ../scss/_plone.scss */
+  .collage-header a.action, .collage-header a.layout, .collage-header a.create {
+    text-transform: lowercase;
+    margin-right: 0.2em;
+    text-decoration: none; }
+  /* line 526, ../scss/_plone.scss */
+  .collage-header a.delete-confirm {
+    color: red; }
+  /* line 530, ../scss/_plone.scss */
+  .collage-header a.action span.inactive, .collage-header a.layout span.inactive {
+    text-decoration: underline; }
+  /* line 533, ../scss/_plone.scss */
+  .collage-header a.layout span.active, .collage-header a.layout span.selected {
+    color: Black; }
 
-/* line 522, ../scss/_plone.scss */
-.collage-header a.action,
-.collage-header a.layout,
-.collage-header a.create {
-  text-transform: lowercase;
-  margin-right: 0.2em;
-  text-decoration: none; }
-
-/* line 527, ../scss/_plone.scss */
-.collage-header a.delete-confirm {
-  color: red; }
-
-/* line 531, ../scss/_plone.scss */
-.collage-header a.action span.inactive,
-.collage-header a.layout span.inactive {
-  text-decoration: underline; }
-
-/* line 534, ../scss/_plone.scss */
-.collage-header a.layout span.active, .collage-header a.layout span.selected {
-  color: Black; }
-
-/* line 537, ../scss/_plone.scss */
+/* line 546, ../scss/_plone.scss */
 .delete-object-icon {
   float: left;
   width: 14px;
@@ -4288,7 +4221,7 @@ img[src$="spinner.gif"] {
   padding-right: 2px;
   background: url("/++resource++collage-resources/icon-delete.gif") no-repeat top left; }
 
-/* line 544, ../scss/_plone.scss */
+/* line 550, ../scss/_plone.scss */
 .copy-object-icon {
   float: left;
   width: 14px;
@@ -4296,7 +4229,7 @@ img[src$="spinner.gif"] {
   padding-right: 2px;
   background: url("/++resource++collage-resources/icon-copy.gif") no-repeat top left; }
 
-/* line 551, ../scss/_plone.scss */
+/* line 554, ../scss/_plone.scss */
 .paste-object-icon {
   float: left;
   width: 14px;
@@ -4312,7 +4245,7 @@ img[src$="spinner.gif"] {
   padding-right: 2px;
   background: url("/++resource++collage-resources/icon-split.gif") no-repeat top left; }
 
-/* line 565, ../scss/_plone.scss */
+/* line 562, ../scss/_plone.scss */
 .object-action-generic-icon {
   float: left;
   width: 14px;
@@ -4320,8 +4253,7 @@ img[src$="spinner.gif"] {
   padding-right: 2px;
   background: url("/++resource++collage-resources/icon-object-action.gif") no-repeat top left; }
 
-/* */
-/* line 573, ../scss/_plone.scss */
+/* line 567, ../scss/_plone.scss */
 .expandable-section .expandable-label .expandable-icon {
   background: url("/++resource++collage-resources/icon-plusminus.gif") no-repeat top left;
   float: left;
@@ -4330,115 +4262,84 @@ img[src$="spinner.gif"] {
   padding-right: 2px;
   margin-left: 3px; }
 
-/* line 581, ../scss/_plone.scss */
+/* line 573, ../scss/_plone.scss */
 .expandable-section .expandable-label.enabled .expandable-icon {
   background-position: -20px 0%; }
 
-/* line 584, ../scss/_plone.scss */
+/* line 576, ../scss/_plone.scss */
 .expandable-section .expandable-label {
   float: left;
   position: relative; }
 
-/* line 588, ../scss/_plone.scss */
+/* line 580, ../scss/_plone.scss */
 .expandable-content {
   display: none;
   top: 35px; }
 
-/*
-.expandable-content {
-clear: both;
-display: none;
-background-color: white;
-padding: 0;
-position: absolute;
-z-index: 200;
-margin-top: 3em;
-border: 1px solid #74ae0b;
-}
-#collage .expandable-content h4 {
-margin: 0;
-background: #75AD0A url("/++resource++collage-resources/collage_icon.png") no-repeat 3px center;
-color: White;
-display: block;
-padding: 2px 2.2em;
-border-bottom: 1px solid #74ae0b;
-}
-.expandable-content .inner-content {
-margin: 0.5em;
-}
-*/
-/* line 615, ../scss/_plone.scss */
+/* line 585, ../scss/_plone.scss */
 ul.collage-content-menu {
   display: block;
   list-style-image: none !important;
   list-style-type: none !important;
   margin-left: 0 !important; }
+  /* line 591, ../scss/_plone.scss */
+  ul.collage-content-menu.collage-content-menu li {
+    display: block; }
+    /* line 593, ../scss/_plone.scss */
+    ul.collage-content-menu.collage-content-menu li a {
+      border: none; }
 
-/* line 622, ../scss/_plone.scss */
-ul.collage-content-menu li {
-  display: block; }
-
-/* line 625, ../scss/_plone.scss */
-ul.collage-content-menu li a {
-  border: none; }
-
-/* */
-/* line 629, ../scss/_plone.scss */
+/* line 598, ../scss/_plone.scss */
 div.insert-existing-items h4 {
   line-height: 16px; }
 
-/* line 632, ../scss/_plone.scss */
+/* line 600, ../scss/_plone.scss */
 input#insert-collage-row {
   margin-top: 1em; }
 
-/* */
-/* line 636, ../scss/_plone.scss */
+/* line 602, ../scss/_plone.scss */
 span.collage-navigation img {
   width: 9px;
   height: 9px; }
 
-/* line 640, ../scss/_plone.scss */
+/* line 606, ../scss/_plone.scss */
 span.collage-navigation {
   margin-left: 4px; }
+  /* line 608, ../scss/_plone.scss */
+  span.collage-navigation.collage-navigation a {
+    text-decoration: none; }
 
-/* line 643, ../scss/_plone.scss */
-span.collage-navigation a {
-  text-decoration: none; }
-
-/* */
-/* line 647, ../scss/_plone.scss */
+/* line 613, ../scss/_plone.scss */
 .display-collagerow_default_view {
   background-image: url(icon-collagerow_default_view.gif) !important; }
 
-/* line 650, ../scss/_plone.scss */
+/* line 614, ../scss/_plone.scss */
 .display-collagerow_largeleft_view {
   background-image: url(icon-collagerow_largeleft_view.gif) !important; }
 
-/* line 653, ../scss/_plone.scss */
+/* line 615, ../scss/_plone.scss */
 .display-collagerow_largeright_view {
   background-image: url(icon-collagerow_largeright_view.gif) !important; }
 
-/* line 656, ../scss/_plone.scss */
+/* line 616, ../scss/_plone.scss */
 .display-collagecolumn_default_view {
   background-image: url(icon-collagecolumn_default_view.gif) !important; }
 
-/* */
-/* line 660, ../scss/_plone.scss */
+/* line 618, ../scss/_plone.scss */
 .icons-on .collage-content-menu .contenttype-file {
   background: no-repeat transparent 0px -433px url(contenttypes-sprite.png);
   padding-left: 20px !important; }
 
-/* line 664, ../scss/_plone.scss */
+/* line 623, ../scss/_plone.scss */
 .icons-on .collage-content-menu .contenttype-image {
   background: no-repeat transparent 0px -865px url(contenttypes-sprite.png);
   padding-left: 20px !important; }
 
-/* */
-/* line 669, ../scss/_plone.scss */
+/* line 628, ../scss/_plone.scss */
 .collage-quickedit {
   float: right; }
 
-/* line 672, ../scss/_plone.scss */
+/* line 631, ../scss/_plone.scss */
 #collage .collage-row {
   min-height: 100%;
   margin-left: auto;
@@ -4447,23 +4348,21 @@ span.collage-navigation a {
   position: relative;
   width: 100%;
   clear: both; }
-
-/* line 682, ../scss/_plone.scss */
+/* line 641, ../scss/_plone.scss */
 #collage div.collage-first-object,
 #collage div.collage-first-object div.collage-item {
   margin-left: 0; }
-
-/* line 686, ../scss/_plone.scss */
+/* line 645, ../scss/_plone.scss */
 #collage div.collage-last-object,
 #collage div.collage-last-object div.collage-item {
   margin-right: 0; }
 
-/* line 689, ../scss/_plone.scss */
+/* line 651, ../scss/_plone.scss */
 * html #collage .collage-row {
   width: 100%;
   height: 100%; }
 
-/* line 697, ../scss/_plone.scss */
+/* line 660, ../scss/_plone.scss */
 #collage .block_1,
 #collage .block_2,
 #collage .block_3,
@@ -4471,45 +4370,44 @@ span.collage-navigation a {
 #collage .block_5 {
   float: left; }
 
-/* line 700, ../scss/_plone.scss */
+/* line 664, ../scss/_plone.scss */
 .collage-item {
   margin-bottom: 0.5em; }
 
-/* */
-/* line 704, ../scss/_plone.scss */
+/* line 666, ../scss/_plone.scss */
 #collage .one-column .block_1 {
   width: 100%; }
 
-/* line 707, ../scss/_plone.scss */
+/* line 668, ../scss/_plone.scss */
 #collage .two-columns-equal .block_1 {
   width: 49.49%; }
 
-/* line 710, ../scss/_plone.scss */
+/* line 669, ../scss/_plone.scss */
 #collage .two-columns-equal .block_2 {
   width: 49.49%; }
 
-/* line 713, ../scss/_plone.scss */
+/* line 672, ../scss/_plone.scss */
 #collage .three-columns-equal .block_1,
 #collage .three-columns-equal .block_2,
 #collage .three-columns-equal .block_3 {
   width: 32.5%; }
 
-/* line 716, ../scss/_plone.scss */
+/* line 675, ../scss/_plone.scss */
 #collage .three-columns-equal .block_2 {
   width: 32.9%; }
 
-/* line 720, ../scss/_plone.scss */
+/* line 679, ../scss/_plone.scss */
 #collage .four-columns-equal .block_1,
 #collage .four-columns-equal .block_2,
 #collage .four-columns-equal .block_3,
 #collage .four-columns-equal .block_4 {
   width: 24.2%; }
 
-/* line 723, ../scss/_plone.scss */
+/* line 682, ../scss/_plone.scss */
 #collage .four-columns-equal .block_2 {
   width: 24.4%; }
 
-/* line 728, ../scss/_plone.scss */
+/* line 687, ../scss/_plone.scss */
 #collage .five-columns-equal .block_1,
 #collage .five-columns-equal .block_2,
 #collage .five-columns-equal .block_3,
@@ -4517,11 +4415,11 @@ span.collage-navigation a {
 #collage .five-columns-equal .block_5 {
   width: 19.2%; }
 
-/* line 731, ../scss/_plone.scss */
+/* line 690, ../scss/_plone.scss */
 #collage .five-columns-equal .block_2 {
   width: 19.2%; }
 
-/* line 737, ../scss/_plone.scss */
+/* line 696, ../scss/_plone.scss */
 #collage .block_2,
 #collage .block_4,
 #collage .block_3,
@@ -4530,186 +4428,178 @@ span.collage-navigation a {
 #collage .block_6 {
   padding-left: 1%; }
 
-/* line 740, ../scss/_plone.scss */
+/* line 697, ../scss/_plone.scss */
 #collage .two-columns-largeleft .block_1 {
   width: 59%; }
 
-/* line 743, ../scss/_plone.scss */
+/* line 698, ../scss/_plone.scss */
 #collage .two-columns-largeleft .block_2 {
   width: 40%; }
 
-/* line 746, ../scss/_plone.scss */
+/* line 699, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_1 {
   width: 59%; }
 
-/* line 749, ../scss/_plone.scss */
+/* line 700, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_2 {
   width: 19%; }
 
-/* line 752, ../scss/_plone.scss */
+/* line 701, ../scss/_plone.scss */
 #collage .three-columns-largeleft .block_3 {
   width: 20%; }
 
-/* line 755, ../scss/_plone.scss */
+/* line 702, ../scss/_plone.scss */
 #collage .four-columns-largeleft .block_1 {
   width: 40%; }
 
-/* line 760, ../scss/_plone.scss */
+/* line 705, ../scss/_plone.scss */
 #collage .four-columns-largeleft .block_2,
 #collage .four-columns-largeleft .block_3,
 #collage .four-columns-largeleft .block_4 {
   width: 19%; }
 
-/* line 763, ../scss/_plone.scss */
+/* line 708, ../scss/_plone.scss */
 #collage .five-columns-largeleft .block_1 {
   width: 24%; }
 
-/* line 769, ../scss/_plone.scss */
+/* line 712, ../scss/_plone.scss */
 #collage .five-columns-largeleft .block_2,
 #collage .five-columns-largeleft .block_3,
 #collage .five-columns-largeleft .block_4,
 #collage .five-columns-largeleft .block_5 {
   width: 18%; }
 
-/* line 772, ../scss/_plone.scss */
+/* line 715, ../scss/_plone.scss */
 #collage .two-columns-largeright .block_2 {
   width: 59%; }
 
-/* line 775, ../scss/_plone.scss */
+/* line 716, ../scss/_plone.scss */
 #collage .two-columns-largeright .block_1 {
   width: 40%; }
 
-/* line 778, ../scss/_plone.scss */
+/* line 717, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_3 {
   width: 59%; }
 
-/* line 781, ../scss/_plone.scss */
+/* line 718, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_1 {
   width: 20%; }
 
-/* line 784, ../scss/_plone.scss */
+/* line 719, ../scss/_plone.scss */
 #collage .three-columns-largeright .block_2 {
   width: 19%; }
 
-/* line 789, ../scss/_plone.scss */
+/* line 722, ../scss/_plone.scss */
 #collage .four-columns-largeright .block_1,
 #collage .four-columns-largeright .block_2,
 #collage .four-columns-largeright .block_3 {
   width: 19%; }
 
-/* line 792, ../scss/_plone.scss */
+/* line 725, ../scss/_plone.scss */
 #collage .four-columns-largeright .block_4 {
   width: 40%; }
 
-/* line 798, ../scss/_plone.scss */
+/* line 729, ../scss/_plone.scss */
 #collage .five-columns-largeright .block_1,
 #collage .five-columns-largeright .block_2,
 #collage .five-columns-largeright .block_3,
 #collage .five-columns-largeright .block_4 {
   width: 18%; }
 
-/* line 801, ../scss/_plone.scss */
+/* line 730, ../scss/_plone.scss */
 #collage .five-columns-largeright .block_5 {
   width: 24%; }
 
-/* */
-/* line 806, ../scss/_plone.scss */
+/* line 733, ../scss/_plone.scss */
 #collage .collage-item .documentByLine,
 #collage .collage-item .link-parent {
   display: none; }
 
 /* */
-/* line 810, ../scss/_plone.scss */
+/* line 737, ../scss/_plone.scss */
 #collage .unbatched-with-1 .column-block {
   width: 100%; }
 
-/* line 811, ../scss/_plone.scss */
+/* line 738, ../scss/_plone.scss */
 #collage .unbatched-with-2 .column-block {
   width: 49.5%; }
 
-/* line 812, ../scss/_plone.scss */
+/* line 739, ../scss/_plone.scss */
 #collage .unbatched-with-3 .column-block {
   width: 32.5%; }
 
-/* line 813, ../scss/_plone.scss */
+/* line 740, ../scss/_plone.scss */
 #collage .unbatched-with-4 .column-block {
   width: 24.25%; }
 
-/* line 814, ../scss/_plone.scss */
+/* line 741, ../scss/_plone.scss */
 #collage .unbatched-with-5 .column-block {
   width: 19%; }
 
-/* line 815, ../scss/_plone.scss */
+/* line 742, ../scss/_plone.scss */
 #collage .unbatched-with-6 .column-block {
   width: 16.5%; }
 
 /* */
-/* line 818, ../scss/_plone.scss */
+/* line 745, ../scss/_plone.scss */
 #collage .collage-portlet-notification dt.portletHeader {
   background-color: #ffffe3; }
 
-/* line 821, ../scss/_plone.scss */
+/* line 748, ../scss/_plone.scss */
 #collage .collage-portlet-help dt.portletHeader {
   background-color: #ffffe1; }
 
-/* line 824, ../scss/_plone.scss */
+/* line 751, ../scss/_plone.scss */
 #collage .collage-layout-error {
   background-color: yellow;
   font-weight: bold; }
 
-/* line 830, ../scss/_plone.scss */
+/* line 757, ../scss/_plone.scss */
 .collage-header > * {
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle; }
 
-/* line 837, ../scss/_plone.scss */
+/* line 766, ../scss/_plone.scss */
 .collage-header > .expandable-section,
 .collage-header > .post {
   margin-bottom: 2px; }
 
-/* line 839, ../scss/_plone.scss */
+/* line 768, ../scss/_plone.scss */
 .expandable-icon, .split-column-icon, .delete-object-icon, .copy-object-icon,
 .object-action-generic-icon {
   margin-top: 2px; }
 
-/* line 841, ../scss/_plone.scss */
+/* line 770, ../scss/_plone.scss */
 .collage-header .expandable-content {
   width: 306px !important; }
 
-/* line 842, ../scss/_plone.scss */
+/* line 771, ../scss/_plone.scss */
 .column-block > .collage-header {
   background-color: #efa; }
 
-/* line 843, ../scss/_plone.scss */
+/* line 772, ../scss/_plone.scss */
 .collage-item > .collage-header {
   background-color: #afe; }
 
-/* line 845, ../scss/_plone.scss */
+/* line 774, ../scss/_plone.scss */
 .collage-header .visualIcon img {
   display: none; }
 
-/*
-FORULARI
-*/
-/* line 854, ../scss/_plone.scss */
+/* line 778, ../scss/_plone.scss */
 .pfg-drafts-float {
   position: relative !important;
   width: auto !important; }
 
-/* line 856, ../scss/_plone.scss */
+/* line 780, ../scss/_plone.scss */
 .standalone + .pfg-draft {
   display: inline-block; }
 
-/*
-NOTICIA
-*/
-/* line 861, ../scss/_plone.scss */
+/* line 783, ../scss/_plone.scss */
 .newsImageContainer {
   margin: 0 0 1em 1em; }
 
-/* VISTA MINIATURES*/
-/* line 869, ../scss/_plone.scss */
+/* line 791, ../scss/_plone.scss */
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li,
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li,
 html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li + li + li + li + li
@@ -4718,20 +4608,19 @@ html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li +
 .thumbnails li:nth-child(4n+1) {
   margin-left: 0 !important; }
 
-/*
-VIEWS
-*/
-/* line 875, ../scss/_plone.scss */
+/* line 795, ../scss/_plone.scss */
 body.template-folder_summary_view #content ul li:first-child {
   border-top: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
 
-/*
-custom file posat aqui per evitar comptar com a selector en l'altre paquet
-*/
-/* line 884, ../scss/_plone.scss */
+/* line 800, ../scss/_plone.scss */
+#content-core div:first-child h2 {
+  border-top: 0 none;
+  box-shadow: none; }
+
+/* line 811, ../scss/_plone.scss */
 div.overlay {
   /* initially overlay is hidden */
   display: none; }
@@ -5120,7 +5009,7 @@ html {
   #portal-header h1.pull-left {
     height: 46px;
     width: 207px;
-    background: url('/++genweb++static/images/logoUPC@2x.png?1390394071') no-repeat;
+    background: url('/++genweb++static/images/logoUPC@2x.png?1370877920') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -5128,7 +5017,7 @@ html {
 
   /* line 12, ../scss/_retina.scss */
   .header-image {
-    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1390394071');
+    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1370877920');
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -5136,11 +5025,11 @@ html {
 
   /* line 14, ../scss/_retina.scss */
   .list-links li, .portaltype-packet .estudis .llistatEnllacos li {
-    content: url('/++genweb++static/images/arrow@2x.png?1390394071'); }
+    content: url('/++genweb++static/images/arrow@2x.png?1370877920'); }
 
   /* line 15, ../scss/_retina.scss */
   .list-highlighted li {
-    content: url('/++genweb++static/images/arrow_hl@2x.png?1390394071'); }
+    content: url('/++genweb++static/images/arrow_hl@2x.png?1370877920'); }
 
   /* line 17, ../scss/_retina.scss */
   .img_blank[src*="blank_"] {
@@ -5149,19 +5038,19 @@ html {
 
   /* line 18, ../scss/_retina.scss */
   .img_blank[src*="blank_blau"] {
-    content: url('/++genweb++static/images/blank_blau@2x.png?1390394071'); }
+    content: url('/++genweb++static/images/blank_blau@2x.png?1370877920'); }
 
   /* line 19, ../scss/_retina.scss */
   .img_blank[src*="blank_gris"] {
-    content: url('/++genweb++static/images/blank_gris@2x.png?1390394071'); }
+    content: url('/++genweb++static/images/blank_gris@2x.png?1370877920'); }
 
   /* line 20, ../scss/_retina.scss */
   .img_blank[src*="blank_blanc"] {
-    content: url('/++genweb++static/images/blank_blanc@2x.png?1390394071'); }
+    content: url('/++genweb++static/images/blank_blanc@2x.png?1370877920'); }
 
   /* line 22, ../scss/_retina.scss */
   .userScreen, .userTablet, .userMobile, .userGenweb {
-    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1390394071');
+    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1370877920');
     -webkit-background-size: 20px 400px;
     -moz-background-size: 20px 400px;
     -o-background-size: 20px 400px;
@@ -5446,64 +5335,60 @@ div[id^="ascrail"] {
   padding-right: 6px; }
 
 /* line 41, ../scss/_empaquetats.scss */
-body {
-  font-size: 12px; }
-
-/* line 45, ../scss/_empaquetats.scss */
 #tab-academic-information table th, #tab-admission table th {
   width: 194px; }
 
-/* line 48, ../scss/_empaquetats.scss */
+/* line 44, ../scss/_empaquetats.scss */
 #tab-curriculum table th.semester {
   min-width: 100px; }
 
-/* line 53, ../scss/_empaquetats.scss */
+/* line 49, ../scss/_empaquetats.scss */
 table th {
   background-color: #F7F7F7; }
 
-/* line 57, ../scss/_empaquetats.scss */
+/* line 53, ../scss/_empaquetats.scss */
 .nav-tabs, .contentViews, .configlets {
   border-bottom: 1px solid #B2B2B2; }
 
-/* line 61, ../scss/_empaquetats.scss */
+/* line 57, ../scss/_empaquetats.scss */
 a {
   color: #007BC0; }
 
-/* line 65, ../scss/_empaquetats.scss */
+/* line 61, ../scss/_empaquetats.scss */
 img.link_blank, img.link_pdf {
   padding-bottom: 3px; }
 
-/* line 69, ../scss/_empaquetats.scss */
+/* line 65, ../scss/_empaquetats.scss */
 .well p, .well-inverse p {
   margin: 0; }
 
-/* line 73, ../scss/_empaquetats.scss */
+/* line 69, ../scss/_empaquetats.scss */
 td > p {
   margin-bottom: 0; }
 
-/* line 77, ../scss/_empaquetats.scss */
+/* line 73, ../scss/_empaquetats.scss */
 .unit-content .contact {
   background: linear-gradient(to bottom, #c8c8c8 0%, #ffffff 99%) repeat scroll 0 0 rgba(0, 0, 0, 0);
   border-radius: 10px;
   padding: 1px; }
 
-/* line 83, ../scss/_empaquetats.scss */
+/* line 79, ../scss/_empaquetats.scss */
 .unit-content .contact table th {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
   text-align: left;
   width: 130px; }
 
-/* line 89, ../scss/_empaquetats.scss */
+/* line 85, ../scss/_empaquetats.scss */
 .unit-content .contact > div {
   background: linear-gradient(to bottom, #f5f5f5 0%, #ffffff 99%) repeat scroll 0 0 rgba(0, 0, 0, 0);
   border-radius: 10px;
   padding: 8px 15px; }
 
-/* line 96, ../scss/_empaquetats.scss */
+/* line 92, ../scss/_empaquetats.scss */
 .contact table {
   width: 50%; }
 
-/* line 98, ../scss/_empaquetats.scss */
+/* line 94, ../scss/_empaquetats.scss */
 #tab-curriculum .table tr:first-child td, #tab-curriculum .listing tr:first-child td, #tab-curriculum .taulaRegistres tr:first-child td, #tab-curriculum .portaltype-packet .estudis table.minimal tr:first-child td, .portaltype-packet .estudis #tab-curriculum table.minimal tr:first-child td {
   border-top: 1px solid #b2b2b2; }
 
@@ -5612,7 +5497,7 @@ html.lt-ie8 .list-portlet li  {
   margin-bottom: 1em; }
   /* line 34, ../scss/_upcnet.scss */
   .link-parent:before {
-    background: url('/++genweb++static/images/gh-w.png?1390394071') no-repeat -290px -95px;
+    background: url('/++genweb++static/images/gh-w.png?1370877920') no-repeat -290px -95px;
     content: " ";
     display: inline-block;
     height: 14px;
@@ -5693,6 +5578,76 @@ input[type="radio"].required:after {
 /* line 190, ../scss/_upcnet.scss */
 #eines .typeahead.dropdown-menu a {
   font-size: 12px; }
+
+/* line 197, ../scss/_upcnet.scss */
+.QueryWidget {
+  font-size: 13px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #666; }
+  /* line 203, ../scss/_upcnet.scss */
+  .QueryWidget dl.referenceWidget {
+    width: 214px; }
+  /* line 206, ../scss/_upcnet.scss */
+  .QueryWidget dl.multipleSelectionWidget {
+    position: relative;
+    padding: 4px 6px 2px;
+    border: 1px solid #b2b2b2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px; }
+    /* line 211, ../scss/_upcnet.scss */
+    .QueryWidget dl.multipleSelectionWidget dt {
+      border: none;
+      font-weight: normal; }
+    /* line 216, ../scss/_upcnet.scss */
+    .QueryWidget dl.multipleSelectionWidget .arrowDownAlternative {
+      font-size: 9px; }
+    /* line 220, ../scss/_upcnet.scss */
+    .QueryWidget dl.multipleSelectionWidget .multipleSelectionWidgetTitle {
+      padding: 5px;
+      line-height: normal; }
+    /* line 225, ../scss/_upcnet.scss */
+    .QueryWidget dl.multipleSelectionWidget dd.widgetPulldownMenu {
+      z-index: 100;
+      padding: 5px;
+      width: 350px;
+      height: 30em;
+      top: 27px;
+      left: 0px; }
+      /* line 232, ../scss/_upcnet.scss */
+      .QueryWidget dl.multipleSelectionWidget dd.widgetPulldownMenu label {
+        color: #666;
+        margin-bottom: 0px;
+        line-height: normal; }
+        /* line 233, ../scss/_upcnet.scss */
+        .QueryWidget dl.multipleSelectionWidget dd.widgetPulldownMenu label.header {
+          background-color: #cdd;
+          color: #777;
+          line-height: 26px;
+          padding-left: 16px;
+          font-weight: normal;
+          padding-top: 2px;
+          font-style: italic;
+          font-size: 16px;
+          margin: 3px 0; }
+        /* line 247, ../scss/_upcnet.scss */
+        .QueryWidget dl.multipleSelectionWidget dd.widgetPulldownMenu label input[checked="checked"] ~ span {
+          background-color: red;
+          color: white;
+          background-color: #557c95;
+          font-weight: normal; }
+  /* line 258, ../scss/_upcnet.scss */
+  .QueryWidget .criteria {
+    margin-bottom: 22px;
+    position: relative; }
+    /* line 261, ../scss/_upcnet.scss */
+    .QueryWidget .criteria .queryresults {
+      position: absolute;
+      left: 293px;
+      top: 29px; }
 
 /* TINY */
 /* Save message */
@@ -6778,3 +6733,12 @@ a#calendar-next {
 a#calendar-previous {
   margin-left: -4px;
   width: 12px; }
+
+/* line 29, ../scss/genwebupc.scss */
+.popover.left, .left.expandable-content, .left.expandable-content {
+  margin-right: 10px;
+  left: 815px !important; }
+
+/* line 34, ../scss/genwebupc.scss */
+.popover, .expandable-content, .expandable-content {
+  width: 275px; }
