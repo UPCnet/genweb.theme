@@ -1811,7 +1811,7 @@ legend + .control-group {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('/++genweb++static/images/gh.png?1370877920');
+  background-image: url('/++genweb++static/images/gh.png?1387373273');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px; }
@@ -1863,11 +1863,11 @@ legend + .control-group {
 .dropdown-menu > .selected > a > .tileFooter:before,
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-menu > .selected > a > [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/gh-w.png?1370877920'); }
+  background-image: url('/++genweb++static/images/gh-w.png?1387373273'); }
 
 /* line 44, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-color {
-  background-image: url('/++genweb++static/images/gh-c.png?1370877920'); }
+  background-image: url('/++genweb++static/images/gh-c.png?1387373273'); }
 
 /* line 49, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-glass {
@@ -2609,7 +2609,7 @@ legend + .control-group {
 
 /* line 257, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon {
-  background-image: url('/++genweb++static/images/gh-150.png?1370877920');
+  background-image: url('/++genweb++static/images/gh-150.png?1387373273');
   width: 21px;
   height: 21px;
   margin-top: -1px;
@@ -2635,7 +2635,7 @@ legend + .control-group {
 
 /* line 273, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon.icon-white {
-  background-image: url('/++genweb++static/images/gh-150-w.png?1370877920'); }
+  background-image: url('/++genweb++static/images/gh-150-w.png?1387373273'); }
 
 /*extends icones*/
 /* line 8, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
@@ -6046,7 +6046,7 @@ button.pfg-draft-save .badge,
     margin-right: 10px !important; }
     /* line 29, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .navbar .btn-navbar i {
-      background-image: url('/++genweb++static/images/gh-w.png?1370877920'); }
+      background-image: url('/++genweb++static/images/gh-w.png?1387373273'); }
 
   /* line 32, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar-fixed-top {
@@ -6309,7 +6309,7 @@ button.pfg-draft-save .badge,
     margin: 0 !important; }
   /* line 248, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
-    background-image: url('/++genweb++static/images/gh-w.png?1370877920'); }
+    background-image: url('/++genweb++static/images/gh-w.png?1387373273'); }
   /* line 249, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
     background: black; }
@@ -7418,7 +7418,7 @@ button.pfg-draft-save .badge,
 
 /* line 41, ../scss/_base.scss */
 .userScreen, .userTablet, .userMobile, .userGenweb {
-  background: url('/++genweb++static/images/sprite_usuari.png?1370877920') transparent no-repeat center top;
+  background: url('/++genweb++static/images/sprite_usuari.png?1387373273') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em; }
 
@@ -7505,7 +7505,7 @@ button.pfg-draft-save .badge,
 /*ajusta imatges icos en menús per a hovers */
 /* line 68, ../scss/_base.scss */
 .dropdown-menu a:hover [class^="icon-"], .dropdown-menu a:hover #category.documentByLine:before, .dropdown-menu a:hover .tileFooter:before, .dropdown-menu a:hover [class*=" icon-"] {
-  background-image: url('/++genweb++static/images/gh-w.png?1370877920') !important; }
+  background-image: url('/++genweb++static/images/gh-w.png?1387373273') !important; }
 
 /* line 75, ../scss/_base.scss */
 #portal-header {
@@ -7607,7 +7607,7 @@ button.pfg-draft-save .badge,
 
 /* line 125, ../scss/_base.scss */
 .header-image {
-  background-image: url('/++genweb++static/images/capcalera.jpg?1370877920');
+  background-image: url('/++genweb++static/images/capcalera.jpg?1387373273');
   margin-top: 0 !important;
   height: 65px;
   overflow: hidden;
@@ -7795,7 +7795,7 @@ button.pfg-draft-save .badge,
     margin: 0 !important; }
   /* line 226, ../scss/_base.scss */
   #canvia-vista a {
-    background: url('/++genweb++static/images/vistabg.png?1370877920') #666666;
+    background: url('/++genweb++static/images/vistabg.png?1387373273') #666666;
     text-align: center;
     -webkit-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
@@ -7940,7 +7940,7 @@ button.pfg-draft-save .badge,
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
     right: 7px;
     top: 8px;
-    background-image: url('/++genweb++static/images/gh-w.png?1370877920');
+    background-image: url('/++genweb++static/images/gh-w.png?1387373273');
     background-position: -455px -71px;
     background-repeat: no-repeat;
     width: 17px;
@@ -8087,7 +8087,7 @@ button.pfg-draft-save .badge,
           line-height: 0 !important; }
       /* line 154, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
-        background-image: url('/++genweb++static/images/gh.png?1370877920');
+        background-image: url('/++genweb++static/images/gh.png?1387373273');
         background-repeat: no-repeat;
         content: " ";
         display: block;
@@ -8164,7 +8164,7 @@ button.pfg-draft-save .badge,
 
 /* line 204, ../scss/_nav.scss */
 html * .dropdown-menu a:hover .img_blank {
-  content: url('/++genweb++static/images/blank_blanc.png?1370877920');
+  content: url('/++genweb++static/images/blank_blanc.png?1387373273');
   width: 10px;
   height: 10px; }
 
@@ -8210,7 +8210,7 @@ html * .dropdown-menu a:hover .img_blank {
   position: relative; }
 /* line 244, ../scss/_nav.scss */
 #listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-folder_tabular_view .listing a[class^="contenttype-"]:before, .template-folder_tabular_view .listing a[class*=" contenttype-"]:before {
-  background-image: url('/++genweb++static/images/gh.png?1370877920');
+  background-image: url('/++genweb++static/images/gh.png?1387373273');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -8638,7 +8638,7 @@ html[lang="es"] .box-example:after {
   /* line 144, ../scss/_wells-boxes.scss */
   .sheet:before, div.fitxa:before {
     content: "*";
-    content: url('/++genweb++static/images/sheet.png?1370877920');
+    content: url('/++genweb++static/images/sheet.png?1387373273');
     font-size: 300%;
     position: absolute;
     right: -19px;
@@ -8781,7 +8781,7 @@ ul {
 
 /* line 125, ../scss/_lists.scss */
 .list-links li:before, .portaltype-packet .estudis .llistatEnllacos li:before {
-  content: url('/++genweb++static/images/arrow.png?1370877920');
+  content: url('/++genweb++static/images/arrow.png?1387373273');
   margin-left: -15px;
   margin-top: -13px; }
 
@@ -8791,7 +8791,7 @@ ul {
 
 /* line 135, ../scss/_lists.scss */
 .list-highlighted li:before {
-  content: url('/++genweb++static/images/arrow_hl.png?1370877920');
+  content: url('/++genweb++static/images/arrow_hl.png?1387373273');
   margin-left: -22px;
   margin-top: -11px; }
 
@@ -9548,7 +9548,7 @@ hr.liniaDalt, hr.tileHeadline {
   display: block;
   width: 14px;
   height: 14px;
-  background: url('/++genweb++static/images/gh.png?1370877920'); }
+  background: url('/++genweb++static/images/gh.png?1387373273'); }
 
 /* line 94, ../scss/_texts.scss */
 .mayus {
@@ -9587,7 +9587,7 @@ a {
 
 /* line 114, ../scss/_texts.scss */
 .pdf:after, .ppt:after, .xls:after, .doc:after, .down:after, .https:after, .vid:after, .img:after, .txt:after {
-  background: url('/++genweb++static/images/gh-c.png?1370877920') no-repeat;
+  background: url('/++genweb++static/images/gh-c.png?1387373273') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -9765,7 +9765,7 @@ input[type="file"] {
   font-weight: bold; }
   /* line 18, ../scss/_inputs.scss */
   .customfile-feedback-populated:before {
-    background: url('/++genweb++static/images/gh-c.png?1370877920') no-repeat;
+    background: url('/++genweb++static/images/gh-c.png?1387373273') no-repeat;
     width: 14px;
     height: 14px;
     display: inline-block;
@@ -10090,7 +10090,7 @@ h2.title-inverse {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3); }
   /* line 223, ../scss/_portlets.scss */
   h2.title-inverse i {
-    background-image: url('/++genweb++static/images/gh-w.png?1370877920'); }
+    background-image: url('/++genweb++static/images/gh-w.png?1387373273'); }
 
 /* line 230, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar {
@@ -10315,7 +10315,7 @@ iframe {
       width: 14px;
       height: 14px;
       display: inline-block;
-      background: url('/++genweb++static/images/gh.png?1370877920') -239px -143px no-repeat;
+      background: url('/++genweb++static/images/gh.png?1387373273') -239px -143px no-repeat;
       margin-left: 5px; }
 /* line 242, ../scss/_plone.scss */
 #portal-sitemap ul {
@@ -11519,7 +11519,7 @@ html {
   #portal-header h1.pull-left {
     height: 46px;
     width: 207px;
-    background: url('/++genweb++static/images/logoUPC@2x.png?1370877920') no-repeat;
+    background: url('/++genweb++static/images/logoUPC@2x.png?1387373273') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -11527,7 +11527,7 @@ html {
 
   /* line 12, ../scss/_retina.scss */
   .header-image {
-    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1370877920');
+    background-image: url('/++genweb++static/images/capcalera@2x.jpg?1387373273');
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -11535,11 +11535,11 @@ html {
 
   /* line 14, ../scss/_retina.scss */
   .list-links li, .portaltype-packet .estudis .llistatEnllacos li {
-    content: url('/++genweb++static/images/arrow@2x.png?1370877920'); }
+    content: url('/++genweb++static/images/arrow@2x.png?1387373273'); }
 
   /* line 15, ../scss/_retina.scss */
   .list-highlighted li {
-    content: url('/++genweb++static/images/arrow_hl@2x.png?1370877920'); }
+    content: url('/++genweb++static/images/arrow_hl@2x.png?1387373273'); }
 
   /* line 17, ../scss/_retina.scss */
   .img_blank[src*="blank_"] {
@@ -11548,19 +11548,19 @@ html {
 
   /* line 18, ../scss/_retina.scss */
   .img_blank[src*="blank_blau"] {
-    content: url('/++genweb++static/images/blank_blau@2x.png?1370877920'); }
+    content: url('/++genweb++static/images/blank_blau@2x.png?1387373273'); }
 
   /* line 19, ../scss/_retina.scss */
   .img_blank[src*="blank_gris"] {
-    content: url('/++genweb++static/images/blank_gris@2x.png?1370877920'); }
+    content: url('/++genweb++static/images/blank_gris@2x.png?1387373273'); }
 
   /* line 20, ../scss/_retina.scss */
   .img_blank[src*="blank_blanc"] {
-    content: url('/++genweb++static/images/blank_blanc@2x.png?1370877920'); }
+    content: url('/++genweb++static/images/blank_blanc@2x.png?1387373273'); }
 
   /* line 22, ../scss/_retina.scss */
   .userScreen, .userTablet, .userMobile, .userGenweb {
-    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1370877920');
+    background-image: url('/++genweb++static/images/sprite_usuari@2x.png?1387373273');
     -webkit-background-size: 20px 400px;
     -moz-background-size: 20px 400px;
     -o-background-size: 20px 400px;
@@ -12007,7 +12007,7 @@ html.lt-ie8 .list-portlet li  {
   margin-bottom: 1em; }
   /* line 34, ../scss/_upcnet.scss */
   .link-parent:before {
-    background: url('/++genweb++static/images/gh-w.png?1370877920') no-repeat -290px -95px;
+    background: url('/++genweb++static/images/gh-w.png?1387373273') no-repeat -290px -95px;
     content: " ";
     display: inline-block;
     height: 14px;
@@ -12158,6 +12158,14 @@ input[type="radio"].required:after {
       position: absolute;
       left: 293px;
       top: 29px; }
+
+/* line 269, ../scss/_upcnet.scss */
+.thumbnail:hover, .thumb-img img:hover, .photoAlbumEntry a:hover {
+  width: inherit !important; }
+
+/* line 271, ../scss/_upcnet.scss */
+#plonebrowser #general_panel {
+  margin-left: 0px; }
 
 /* TINY */
 /* Save message */
