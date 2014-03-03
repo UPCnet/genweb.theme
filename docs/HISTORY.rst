@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.0b15 (unreleased)
+1.0b15 (2014-03-03)
 -------------------
 
-- Nothing changed yet.
-
+* Fix TinyMCE CSS [Victor Fernandez de Alba]
 
 1.0b14 (2014-03-03)
 -------------------
