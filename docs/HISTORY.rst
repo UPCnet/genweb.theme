@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.0b14 (unreleased)
+1.0b14 (2014-03-03)
 -------------------
 
-- Nothing changed yet.
-
+* Fix social tools viewlet [Victor Fernandez de Alba]
+* Bye bye body 12px in the middle of empaquetats.scss [Victor Fernandez de Alba]
 
 1.0b13 (2014-02-24)
 -------------------
