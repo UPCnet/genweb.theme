@@ -158,6 +158,15 @@ $(document).ready(function () {
   }
   // FI RECAPTCHA
 
+  // Share popover specific
+  $('.share_popover').popover({
+      html:true,
+      placement:'left',
+      content:function(){
+          return $($(this).data('contentwrapper')).html();
+      }
+  });
+
 }); // End of $(document).ready
 
 // Token input z3c.form widget

@@ -357,9 +357,9 @@ class TitleViewlet(TitleViewlet, viewletBase):
         else:
             self.site_title = u"%s &mdash; %s &mdash; %s" % (page_title, genweb_title, marca_UPC)
 
+
 class socialtoolsViewlet(viewletBase):
     grok.name('genweb.socialtools')
     grok.template('socialtools')
-    grok.viewletmanager(IBelowContentTitle)
+    grok.viewletmanager(IAboveContentTitle)
     grok.layer(IGenwebTheme)
-
