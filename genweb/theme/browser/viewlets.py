@@ -197,6 +197,7 @@ class gwSendEvent(viewletBase):
     def canManageSite(self):
         return checkPermission("plone.app.controlpanel.Overview", self.portal())
 
+
 class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
     grok.name('genweb.globalsections')
     grok.viewletmanager(IPortalTop)
