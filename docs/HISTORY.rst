@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.0b16 (unreleased)
+1.0b16 (2014-03-04)
 -------------------
 
-- Nothing changed yet.
-
+* Update important [Victor Fernandez de Alba]
 
 1.0b15 (2014-03-03)
 -------------------
