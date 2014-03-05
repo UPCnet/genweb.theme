@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.0b17 (unreleased)
+1.0b17 (2014-03-05)
 -------------------
 
-- Nothing changed yet.
-
+* Fix buttons on Tiny [Victor Fernandez de Alba]
 
 1.0b16 (2014-03-04)
 -------------------
