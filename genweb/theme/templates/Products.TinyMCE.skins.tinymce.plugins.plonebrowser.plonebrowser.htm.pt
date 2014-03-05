@@ -226,7 +226,7 @@
             </div>
         </div>
 
-        <div id="email_panel" class="hide">
+        <div id="email_panel" class="span12 hide">
             <h2 i18n:domain="plone.tinymce" i18n:translate="">Email</h2>
 
             <div class="field">
@@ -245,7 +245,7 @@
 
         </div>
 
-        <div id="anchor_panel" class="hide">
+        <div id="anchor_panel" class="span12 hide">
             <h2 i18n:domain="plone.tinymce" i18n:translate="">Link to anchor</h2>
 
             <div class="field">
