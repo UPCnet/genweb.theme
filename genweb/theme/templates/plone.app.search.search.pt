@@ -57,10 +57,8 @@
 
       <div class="row1">
         <div class="cell width-full position-0">
-          <h1 class="documentFirstHeading" i18n:translate="" tal:condition="not:st">
-              Search results
-          </h1>
-          <h1 class="documentFirstHeading" i18n:translate="" tal:condition="st">
+
+          <h1 class="documentFirstHeading" i18n:translate="" >
               Search results for 
               <strong id="search-term" tal:content="st" i18n:name="term">
                   Search Term
@@ -98,12 +96,12 @@
               <dl class="actionMenu deactivated"
                   tal:attributes="class python:view.show_advanced_search() and 'actionMenu activated' or 'actionMenu deactivated'">
                 <dt class="actionMenuHeader" data-toggle="modal" data-target="#resultsModal">
-                  <a href="#"
+                  <h2><a href="#"
                      tal:attributes="href view/advanced_search_trigger"
                      id="search-filter-toggle"
                      i18n:translate="narrow_search_options">
                       Filter the results.
-                  </a>
+                  </a></h2>
                 </dt>
 
                     <div id="resultsModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="resultsModalLabel" aria-hidden="true" i18n:domain="genweb">

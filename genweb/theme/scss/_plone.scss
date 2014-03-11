@@ -91,6 +91,12 @@ label {
 
 .searchButton {@extend .btn;}
 
+#search-term {
+    color: #666666;
+    &:before{content:"\" "} 
+    &:after{content:" \""} 
+}
+
 div.label, label *.label {
 	background:$white;
 	text-shadow:none;

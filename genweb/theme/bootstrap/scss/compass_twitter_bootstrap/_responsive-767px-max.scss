@@ -51,6 +51,8 @@
     }
   }
 
+  
+
   // menú principal
   #titol-menu-1 { // fem que tota la barra desplegui el menú
     width:75%;
@@ -228,14 +230,23 @@
     width:240px !important;
   }
   // FI captcha
+
+
+  // cerca desplegable
+  .typeahead.dropdown-menu {
+    left: auto !important;
+    right: 10px !important;
+    li {text-align:left !important;}
+  }
 }// END Responsive: Landscape phone to desktop/tablet
+
 
 
 
 // UP TO LANDSCAPE PHONE
 // ---------------------
 @media only screen and (max-width: 639px) {  
-  
+
   //general
   body {font-size:14.5px;}
   
@@ -393,6 +404,8 @@
     margin-left:5% !important;
     margin-right:5% !important;
   }
+
+
 } 
 
 

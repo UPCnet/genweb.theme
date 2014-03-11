@@ -48,34 +48,40 @@
                 </li>
               </ul>
             </li>
-            <li role="menuitem"><a tal:condition="view/showRootFolderLink"
+            <li role="menuitem">
+              <a tal:condition="view/showRootFolderLink"
                    tal:attributes="href string:${view/portal_url}/folder_contents">
                    <tal:rootFolder i18n:translate="genweb-accesarrel">
                       Root folder</tal:rootFolder>
-            </a></li>
-            <li role="menuitem"><a tal:condition="view/canManageSite"
-                   tal:attributes="href string:${view/portal_url}/@@overview-controlpanel">
-                   <tal:managesite i18n:domain="plone" i18n:translate="Site Setup">
-                      Site setup</tal:managesite>
-            </a></li>
-            <li role="menuitem" tal:condition="view/canManageSite">
-              <a tal:attributes="href string:${view/portal_url}/@@genweb-controlpanel">
-                <tal:managesite i18n:translate="genWeb UPC settings" i18n:domain="plone">
-                      Genweb UPC Settings</tal:managesite>
-                <img i18n:attributes="alt obrir_link_finestra_nova"
-                    class="img_blank"
-                    src="++resource++cpgenweb.png">
               </a>
             </li>
+            <!-- oscar: agrupació de les dues opcions de configuració en un desplegable -->
+            <li class="dropdown" role="menuitem" id="admin">
+              <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
+                <span id="user-name">Configuració</span>
+                <b aria-hidden="true" class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="menuitem">
+                  <a tal:condition="view/canManageSite"
+                       tal:attributes="href string:${view/portal_url}/@@overview-controlpanel">
+                       <tal:managesite i18n:domain="plone" i18n:translate="Site Setup">
+                          Site setup</tal:managesite>
+                  </a>
+                </li>
+                <li role="menuitem" tal:condition="view/canManageSite">
+                  <a tal:attributes="href string:${view/portal_url}/@@genweb-controlpanel">
+                    <tal:managesite i18n:translate="genWeb UPC settings" i18n:domain="plone">
+                          Genweb UPC Settings</tal:managesite>
+                    <img i18n:attributes="alt obrir_link_finestra_nova"
+                        class="img_blank"
+                        src="++resource++cpgenweb.png">
+                  </a>
+                </li>
+              </ul>
+            </li>
+              
 
-            <li role="menuitem">
-              <a href="https://genweb.upc.edu/formacio-i-ajuda" target="_blank" accesskey="6">
-              <tal:help i18n:translate="genweb-ajuda">Help</tal:help>
-              <img i18n:attributes="alt obrir_link_finestra_nova"
-                    class="img_blank"
-                    src="/++genweb++static/images/blank_blanc.png">
-              </a>
-            </li>
             <li role="menuitem">
               <a tal:replace="structure view/forgeResizerURLCall"></a>
               <!-- <tal:help i18n:translate="genweb-vistes">Vistes</tal:help> -->
@@ -102,6 +108,7 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <tal:notificacionsmenu repeat="notificacio notificacions/elements">
+
                   <li role="menuitem"
                       tal:condition="notificacio/li-class"
                       tal:attributes="class notificacio/li-class"
@@ -121,7 +128,17 @@
                                 tal:condition="notificacio/nou">nou</span>
                         </a>
                   </li>
+
                 </tal:notificacionsmenu>
+                <!-- oscar: opció d'ajuda moguda al desplegable menú eines genweb -->
+                 <li role="menuitem">
+                    <a href="https://genweb.upc.edu/formacio-i-ajuda" target="_blank" accesskey="6">
+                    <tal:help i18n:translate="genweb-ajuda">Help</tal:help>
+                    <img i18n:attributes="alt obrir_link_finestra_nova"
+                          class="img_blank"
+                          src="/++genweb++static/images/blank_blanc.png">
+                    </a>
+                  </li>
               </ul>
             </li>
           </ul>

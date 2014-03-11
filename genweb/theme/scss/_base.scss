@@ -34,7 +34,7 @@ $purple:                #8952ab !default;
 
 // USUARI
 // -------------------------
-#portal-personaltools-wrapper {margin-top:38px !important;}
+#portal-personaltools-wrapper {margin-top:36px !important;} // rebaixa de 38 a 36 per tal que no quedi marge quan estem identificats
 .user {@include opacity(.8); width:26px; height:26px; border:.1em solid darken(adjust-hue($blue, -120),5%); margin: -.55em 0; position: relative; 
   image-rendering: optimizeQuality; -ms-interpolation-mode: bicubic; left:-6px; top:-1px;}
 .dropdown-menu li > a.btn-danger:hover, .dropdown-menu .active > a.btn-danger:hover {background-color: #BD362F;}
