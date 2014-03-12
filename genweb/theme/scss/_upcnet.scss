@@ -265,3 +265,10 @@ input[type="radio"].required:after { content: none; }
         }
     }
 }
+
+.thumbnail:hover { width: inherit !important; }
+#plonebrowser {
+    #general_panel {
+        margin-left: 0px;
+    }
+}

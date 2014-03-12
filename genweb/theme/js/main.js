@@ -114,18 +114,18 @@ $(document).ready(function () {
 // actualització títol menú 1, mostra l'opció de primer nivell que hem seleccionat, es fa a partir del 2on valor de la llista del breadcrumb
   var lititol=$('ol.breadcrumb li:eq(1) a');// cas amb breadcrumb no visible
   if (lititol.length===0) lititol=$('ol.breadcrumb li:eq(1)');// cas amb breadcrumb visible
-  var nouTitol=lititol.text(); 
+  var nouTitol=lititol.text();
   if (nouTitol) $('#titol-menu-1 a').text(nouTitol);
 
 // actualització títol menú 2, mostra l'opció de primer nivell que hem seleccionat, es fa a partir del 3er valor de la llista del breadcrumb
 /*  var lititol=$('ol.breadcrumb li:eq(2) a');// cas amb breadcrumb no visible
   if (lititol.length===0) lititol=$('ol.breadcrumb li:eq(2)');// cas amb breadcrumb visible
-  var nouTitol=lititol.text(); 
+  var nouTitol=lititol.text();
   if (nouTitol) $('#titol-menu-2').text(nouTitol);*/
 
 
 // RECAPTCHA
-  if (RecaptchaOptions!==undefined) {
+  if (window.hasOwnProperty('RecaptchaOptions')) {
     var translations = RecaptchaOptions['custom_translations'];
     $('div.recaptcha_only_if_incorrect_sol').text(translations['incorrect_try_again']);
     $('li.recaptcha_play_again span').text(translations['refresh_btn']);
@@ -152,11 +152,20 @@ $(document).ready(function () {
       text_default=translations['instructions_audio'];
     } else {
       text_default=translations['instructions_visual'];
-    }   
+    }
     $('#recaptcha_response_field').val(text_default);
-    
-  }    
+
+  }
   // FI RECAPTCHA
+
+  // Share popover specific
+  $('.share_popover').popover({
+      html:true,
+      placement:'left',
+      content:function(){
+          return $($(this).data('contentwrapper')).html();
+      }
+  });
 
 }); // End of $(document).ready
 

@@ -14126,77 +14126,72 @@ div[id^="ascrail"] > div {
 }
 
 /* line 41, ../scss/_empaquetats.scss */
-body {
-  font-size: 12px;
-}
-
-/* line 45, ../scss/_empaquetats.scss */
 #tab-academic-information table th, #tab-admission table th {
   width: 194px;
 }
 
-/* line 48, ../scss/_empaquetats.scss */
+/* line 44, ../scss/_empaquetats.scss */
 #tab-curriculum table th.semester {
   min-width: 100px;
 }
 
-/* line 53, ../scss/_empaquetats.scss */
+/* line 49, ../scss/_empaquetats.scss */
 table th {
   background-color: #F7F7F7;
 }
 
-/* line 57, ../scss/_empaquetats.scss */
+/* line 53, ../scss/_empaquetats.scss */
 .nav-tabs, .contentViews, .configlets {
   border-bottom: 1px solid #B2B2B2;
 }
 
-/* line 61, ../scss/_empaquetats.scss */
+/* line 57, ../scss/_empaquetats.scss */
 a {
   color: #007BC0;
 }
 
-/* line 65, ../scss/_empaquetats.scss */
+/* line 61, ../scss/_empaquetats.scss */
 img.link_blank, img.link_pdf {
   padding-bottom: 3px;
 }
 
-/* line 69, ../scss/_empaquetats.scss */
+/* line 65, ../scss/_empaquetats.scss */
 .well p, .well-inverse p {
   margin: 0;
 }
 
-/* line 73, ../scss/_empaquetats.scss */
+/* line 69, ../scss/_empaquetats.scss */
 td > p {
   margin-bottom: 0;
 }
 
-/* line 77, ../scss/_empaquetats.scss */
+/* line 73, ../scss/_empaquetats.scss */
 .unit-content .contact {
   background: linear-gradient(to bottom, #c8c8c8 0%, #ffffff 99%) repeat scroll 0 0 rgba(0, 0, 0, 0);
   border-radius: 10px;
   padding: 1px;
 }
 
-/* line 83, ../scss/_empaquetats.scss */
+/* line 79, ../scss/_empaquetats.scss */
 .unit-content .contact table th {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
   text-align: left;
   width: 130px;
 }
 
-/* line 89, ../scss/_empaquetats.scss */
+/* line 85, ../scss/_empaquetats.scss */
 .unit-content .contact > div {
   background: linear-gradient(to bottom, #f5f5f5 0%, #ffffff 99%) repeat scroll 0 0 rgba(0, 0, 0, 0);
   border-radius: 10px;
   padding: 8px 15px;
 }
 
-/* line 96, ../scss/_empaquetats.scss */
+/* line 92, ../scss/_empaquetats.scss */
 .contact table {
   width: 50%;
 }
 
-/* line 98, ../scss/_empaquetats.scss */
+/* line 94, ../scss/_empaquetats.scss */
 #tab-curriculum .table tr:first-child td, #tab-curriculum .listing tr:first-child td, #tab-curriculum .taulaRegistres tr:first-child td, #tab-curriculum .portaltype-packet .estudis table.minimal tr:first-child td, .portaltype-packet .estudis #tab-curriculum table.minimal tr:first-child td {
   border-top: 1px solid #b2b2b2;
 }
@@ -14503,6 +14498,16 @@ input[type="radio"].required:after {
   position: absolute;
   left: 293px;
   top: 29px;
+}
+
+/* line 269, ../scss/_upcnet.scss */
+.thumbnail:hover, .thumb-img img:hover, .photoAlbumEntry a:hover {
+  width: inherit !important;
+}
+
+/* line 271, ../scss/_upcnet.scss */
+#plonebrowser #general_panel {
+  margin-left: 0px;
 }
 
 /* TINY */
@@ -15804,4 +15809,15 @@ a#calendar-next {
 a#calendar-previous {
   margin-left: -4px;
   width: 12px;
+}
+
+/* line 29, ../scss/genwebupc.scss */
+.popover.left, .left.expandable-content, .left.expandable-content {
+  margin-right: 10px;
+  left: 815px !important;
+}
+
+/* line 34, ../scss/genwebupc.scss */
+.popover, .expandable-content, .expandable-content {
+  width: 275px;
 }

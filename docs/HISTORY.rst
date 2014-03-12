@@ -1,11 +1,76 @@
 Changelog
 =========
 
-1.0b13 (unreleased)
+1.0b18 (unreleased)
 -------------------
 
 - Nothing changed yet.
 
+
+1.0b17 (2014-03-05)
+-------------------
+
+* Fix buttons on Tiny [Victor Fernandez de Alba]
+
+1.0b16 (2014-03-04)
+-------------------
+
+* Update important [Victor Fernandez de Alba]
+
+1.0b15 (2014-03-03)
+-------------------
+
+* Fix TinyMCE CSS [Victor Fernandez de Alba]
+
+1.0b14 (2014-03-03)
+-------------------
+
+* Fix social tools viewlet [Victor Fernandez de Alba]
+* Bye bye body 12px in the middle of empaquetats.scss [Victor Fernandez de Alba]
+
+1.0b13 (2014-02-24)
+-------------------
+
+* Update font awesome [Victor Fernandez de Alba]
+* Fix utils method and improving it [Victor Fernandez de Alba]
+* Fix JS document ready [Victor Fernandez de Alba]
+* Translated sharing page options [Roberto Diaz]
+* renamed package (removed UPC string) [Roberto Diaz]
+* remove commented ipdb [Roberto Diaz]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* derived from -> solved bug trying to delete a previously created Plone Site [Roberto Diaz]
+* Viewlet de compartir en xarxes socials [Pilar Marinas]
+* Return ReView to its place [Victor Fernandez de Alba]
+* WIP, refine header [Victor Fernandez de Alba]
+* Update de CSS [root]
+* changes after merge [Corina Riba]
+* Afegir nova vista noticies i portlet [Corina Riba]
+* Query widget syling to mimic bootstrap [Carles Bruguera]
+* Canvis Oscar Feb [root]
+* Obsolete Review.js and scrollability [Victor Fernandez de Alba]
+* Finish first working version of mobile views with resizer.js [Victor Fernandez de Alba]
+* Add font [Victor Fernandez de Alba]
+* Add CSS and clean [Victor Fernandez de Alba]
+* Uncompress and hack resizer [Carles Bruguera]
+* Now what [Carles Bruguera]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* mierdo [Victor Fernandez de Alba]
+* contact-feedback grok view [Roberto Diaz]
+* Temporally comment crashing JS [Carles Bruguera]
+* Add resizer to static resources [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* Fix search box in desktop [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* remove commented ipdb [Roberto Diaz]
+* show default lang in personal_bar [Roberto Diaz]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* default contact if no upc code inserted [Roberto Diaz]
+* fix footer [Victor Fernandez de Alba]
+* solved width off assigned manage_home_portlets [root]
+* Merge branch 'develop' into oscar [root]
+* Canvis Oscar 22/01 [root]
+* Disable scrollability and add local jquery corner [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
 
 1.0b12 (2014-01-20)
 -------------------
