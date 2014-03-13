@@ -1,11 +1,13 @@
 Changelog
 =========
 
-1.0b18 (unreleased)
+1.0b18 (2014-03-13)
 -------------------
 
-- Nothing changed yet.
-
+* Updated resources and fix alertify [Victor Fernandez de Alba]
+* Merge canvis oscar early march [roberto.diaz]
+* Canvis Oscar A. Late Feb. [roberto.diaz]
+* Unload robot tests [Victor Fernandez de Alba]
 
 1.0b17 (2014-03-05)
 -------------------
