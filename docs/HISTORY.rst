@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.0b19 (unreleased)
+1.0b19 (2014-03-24)
 -------------------
 
-- Nothing changed yet.
-
+* Fix default portlets [Victor Fernandez de Alba]
+* Not render the path bar if homepage or portal root [Victor Fernandez de Alba]
 
 1.0b18 (2014-03-13)
 -------------------
