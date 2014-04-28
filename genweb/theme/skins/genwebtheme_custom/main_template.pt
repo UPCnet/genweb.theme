@@ -38,7 +38,7 @@
     <meta name="generator" content="Plone - http://plone.org" />
     <meta name="author" content="Servei de Comunicació i Promoció" />
     <meta name="description" content="Genweb UPC v4.0 - El generador de webs de la UPC" />
-    <link rel="shortcut icon" type="image/x-icon" tal:attributes="href string:${portal_url}/++genweb++static/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" tal:attributes="href string:${portal_url}/favicon.ico" />
 
     <metal:baseslot define-slot="base">
         <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
@@ -59,10 +59,11 @@
         <tal:comment replace="nothing"><!-- El seguent script ha d'anar seguit del meta del viewport --></tal:comment>
         <script tal:attributes="src string:${portal_url}/++genweb++static/js/ReView.js"></script>
 
-        <link rel="apple-touch-icon" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-57x57-precomposed.png" /> <!-- iPhone -->
-        <link rel="apple-touch-icon" sizes="72x72" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-72x72-precomposed.png" /> <!-- iPad -->
-        <link rel="apple-touch-icon" sizes="114x114" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-114x114-precomposed.png" /> <!-- iPhone 2x -->
-        <link rel="apple-touch-icon" sizes="144x144" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-144x144-precomposed.png" /> <!-- iPad 2x -->
+        <link rel="apple-touch-icon" tal:attributes="href string:${portal_url}/apple-touch-icon.png" /> <!-- 60x60 -->
+        <link rel="apple-touch-icon" sizes="57x57" tal:attributes="href string:${portal_url}/apple-touch-icon-57x57-precomposed.png" /> <!-- iPhone -->
+        <link rel="apple-touch-icon" sizes="72x72" tal:attributes="href string:${portal_url}/apple-touch-icon-72x72-precomposed.png" /> <!-- iPad -->
+        <link rel="apple-touch-icon" sizes="114x114" tal:attributes="href string:${portal_url}/apple-touch-icon-114x114-precomposed.png" /> <!-- iPhone 2x -->
+        <link rel="apple-touch-icon" sizes="144x144" tal:attributes="href string:${portal_url}/apple-touch-icon-144x144-precomposed.png" /> <!-- iPad 2x -->
 
         <tal:comment content="nothing"> <!-- Splitting CSS only for IE, the rest the common CSS --> </tal:comment>
         <!--[if !IE]><!-->
@@ -72,7 +73,6 @@
         <tal:splittedCSS4IE tal:replace="structure string:&lt;!--[if lt IE 10]&gt;&lt;link rel='stylesheet' href='${portal_url}/++genweb++stylesheets/genwebupc-ie.css'&gt;&lt;![endif]--&gt;" />
 
         <link rel="stylesheet" tal:attributes="href string:${portal_url}/dynamic.css">
-        <!-- <script tal:attributes="src string:${portal_url}/++bootstrap++js/modernizr-2.6.1.min.js"></script> -->
 
     </tal:notajax>
 </head>
@@ -210,8 +210,8 @@
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/customInput.js"></script>
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/jquery.nicescroll.js"></script>
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/prettify.js"></script>
-    <script tal:attributes="src string:${portal_url}/++genweb++static/js/alertify.min.js">
-    </script>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/alertify.min.js"></script>
+    <script tal:attributes="src string:${portal_url}/++genweb++static/js/select2.min.js"></script>
 
     <!--[if IE 8]>
     <script type="text/javascript" src="/++genweb++static/js/jquery.corner.js"></script>
