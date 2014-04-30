@@ -6086,51 +6086,51 @@ button.pfg-draft-save .badge,
     #eines ul {
       margin: 0; }
 
-  /* line 55, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 57, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #titol-menu-1 {
     width: 75%; }
-    /* line 57, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 59, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #titol-menu-1 a {
       display: block;
       text-decoration: none;
       color: #666666; }
 
-  /* line 65, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 67, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper ~ #portal-header {
     margin-top: 40px !important; }
 
-  /* line 67, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 69, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image {
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%; }
-    /* line 69, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 71, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .header-image.l2-image {
       margin-left: 207px !important; }
-      /* line 71, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      /* line 73, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
       .header-image.l2-image:before {
         top: 45px;
         width: 175px;
         margin-left: -207px; }
 
-  /* line 76, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 78, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-column-one, #portal-column-content {
     width: 100% !important;
     margin-left: 0; }
 
-  /* line 79, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 81, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu [class*="span"], #peu .cella {
     float: none;
     display: block;
     width: auto;
     margin-left: 0; }
-    /* line 81, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 83, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #peu [class*="span"] .pull-right, #peu .cella .pull-right, #peu [class*="span"] .newsImageContainer, #peu .cella .newsImageContainer {
       float: none;
       margin: 0; }
 
-  /* line 86, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 88, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #canvia-vista {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -6138,59 +6138,59 @@ button.pfg-draft-save .badge,
     margin-left: 0px !important;
     margin-right: 0px !important; }
 
-  /* line 92, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 94, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   table {
     width: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     max-width: 100%; }
 
-  /* line 101, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 103, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar-fixed-top, .navbar-fixed-bottom {
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0;
     margin-left: 0; }
 
-  /* line 103, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 105, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container-fluid {
     padding: 0; }
 
-  /* line 107, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 109, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dt, .portaltype-packet .estudis dl.fitxa dt {
     float: none;
     clear: none;
     width: auto;
     text-align: left; }
-  /* line 113, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 115, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dd, .portaltype-packet .estudis dl.fitxa dd {
     margin-left: 0; }
 
-  /* line 122, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 124, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container {
     width: auto; }
 
-  /* line 125, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 127, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row-fluid, #dashboard, .fila, .template-atct_album_view #content-core {
     width: 100%; }
 
-  /* line 128, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 130, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row, .thumbnails {
     margin-left: 0; }
 
-  /* line 130, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 132, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .thumbnails > li {
     float: none;
     margin-left: 0; }
 
-  /* line 132, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 134, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .span12, .row-fluid .span12, #dashboard .span12, .fila .span12, .template-atct_album_view #content-core .span12 {
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
-  /* line 143, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 145, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .input-large, .input-xlarge,
   .input-xxlarge,
   #archetypes-fieldname-title input,
@@ -6208,7 +6208,7 @@ button.pfg-draft-save .badge,
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
-  /* line 151, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 153, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .input-prepend input,
   .input-append input,
   .input-prepend input[class*="span"],
@@ -6218,7 +6218,7 @@ button.pfg-draft-save .badge,
     display: inline-block;
     width: auto; }
 
-  /* line 157, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 159, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal, .pb-ajax {
     position: fixed;
     top: 20px;
@@ -6226,166 +6226,174 @@ button.pfg-draft-save .badge,
     right: 20px;
     width: auto;
     margin: 0; }
-    /* line 164, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 166, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .modal.fade.in, .fade.in.pb-ajax {
       top: 10px; }
 
-  /* line 169, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 171, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .subnavbar .nav-list a:hover:after, .subnavbar .nav-list .active a:after, .subnavbar .nav-list .selected a:after {
     background-position: -311.5px -117px !important; }
 
-  /* line 175, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 177, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .unit-picture .img-polaroid, .unit-picture .template-personal-information [for="form.portrait"] ~ img, .template-personal-information .unit-picture [for="form.portrait"] ~ img, .unit-picture .newsImageContainer, .unit-picture .tileItem img, .tileItem .unit-picture img {
     float: none;
     clear: both; }
 
-  /* line 176, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 178, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .contact table {
     width: 100% !important; }
 
-  /* line 181, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 183, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_table td {
     display: block; }
-  /* line 184, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 186, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_table tr:nth-child(1) {
     width: 70%; }
-    /* line 187, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 189, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(1) {
       width: 70%; }
-    /* line 190, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 192, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(2) {
       width: 30px;
       float: left; }
-    /* line 195, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 197, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(3) {
       float: left; }
-  /* line 201, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 203, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_table tr:nth-child(2) {
     width: 70%; }
-    /* line 203, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 205, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #recaptcha_table tr:nth-child(2) td {
       width: 50%; }
-  /* line 208, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 210, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_table center {
     float: left; }
 
-  /* line 213, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 215, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .recaptcha_only_if_privacy {
     float: left !important;
     text-align: left !important;
     margin-left: 7px !important;
     margin-bottom: 7px !important; }
 
-  /* line 220, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 222, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_image {
     width: 250px !important; }
-    /* line 222, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 224, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #recaptcha_image img {
       width: 250px !important; }
 
-  /* line 227, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 229, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_input_area, #recaptcha_response_field {
-    width: 240px !important; } }
+    width: 240px !important; }
+
+  /* line 236, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .typeahead.dropdown-menu {
+    left: auto !important;
+    right: 10px !important; }
+    /* line 239, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    .typeahead.dropdown-menu li {
+      text-align: left !important; } }
 @media only screen and (max-width: 639px) {
-  /* line 240, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 251, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   body {
     font-size: 14.5px; }
 
-  /* line 243, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 254, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper, .navbar-fixed-top, .navbar-fixed-bottom {
     margin-left: 0px !important;
     margin-right: 0px !important; }
 
-  /* line 244, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 255, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .navbar-inner, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 0px !important; }
 
-  /* line 245, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 256, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper ~ #portal-header {
     margin-top: 0px !important; }
 
-  /* line 247, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 258, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav ul, #portal-personaltools-wrapper .contentViews ul, #portal-personaltools-wrapper .configlets ul, #portal-personaltools-wrapper .formTabs ul {
     margin: 0 !important; }
-  /* line 248, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 259, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
     background-image: url('/++genweb++static/images/gh-w.png?1387373273'); }
-  /* line 249, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 260, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
     background: black; }
-  /* line 250, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 261, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a.btn, #portal-personaltools-wrapper .contentViews a.btn, #portal-personaltools-wrapper .configlets a.btn, #portal-personaltools-wrapper .formTabs a.btn, #portal-personaltools-wrapper .nav a.standalone, #portal-personaltools-wrapper .contentViews a.standalone, #portal-personaltools-wrapper .configlets a.standalone, #portal-personaltools-wrapper .formTabs a.standalone, #portal-personaltools-wrapper .nav a[type="submit"], #portal-personaltools-wrapper .contentViews a[type="submit"], #portal-personaltools-wrapper .configlets a[type="submit"], #portal-personaltools-wrapper .formTabs a[type="submit"], #portal-personaltools-wrapper .nav a.context, #portal-personaltools-wrapper .contentViews a.context, #portal-personaltools-wrapper .configlets a.context, #portal-personaltools-wrapper .formTabs a.context, #portal-personaltools-wrapper .nav a.searchButton, #portal-personaltools-wrapper .contentViews a.searchButton, #portal-personaltools-wrapper .configlets a.searchButton, #portal-personaltools-wrapper .formTabs a.searchButton, #portal-personaltools-wrapper .nav a.link-parent, #portal-personaltools-wrapper .contentViews a.link-parent, #portal-personaltools-wrapper .configlets a.link-parent, #portal-personaltools-wrapper .formTabs a.link-parent, #portal-personaltools-wrapper .nav a.btn:focus, #portal-personaltools-wrapper .contentViews a.btn:focus, #portal-personaltools-wrapper .configlets a.btn:focus, #portal-personaltools-wrapper .formTabs a.btn:focus, #portal-personaltools-wrapper .nav a.standalone:focus, #portal-personaltools-wrapper .contentViews a.standalone:focus, #portal-personaltools-wrapper .configlets a.standalone:focus, #portal-personaltools-wrapper .formTabs a.standalone:focus, #portal-personaltools-wrapper .nav a[type="submit"]:focus, #portal-personaltools-wrapper .contentViews a[type="submit"]:focus, #portal-personaltools-wrapper .configlets a[type="submit"]:focus, #portal-personaltools-wrapper .formTabs a[type="submit"]:focus, #portal-personaltools-wrapper .nav a.context:focus, #portal-personaltools-wrapper .contentViews a.context:focus, #portal-personaltools-wrapper .configlets a.context:focus, #portal-personaltools-wrapper .formTabs a.context:focus, #portal-personaltools-wrapper .nav a.searchButton:focus, #portal-personaltools-wrapper .contentViews a.searchButton:focus, #portal-personaltools-wrapper .configlets a.searchButton:focus, #portal-personaltools-wrapper .formTabs a.searchButton:focus, #portal-personaltools-wrapper .nav a.link-parent:focus, #portal-personaltools-wrapper .contentViews a.link-parent:focus, #portal-personaltools-wrapper .configlets a.link-parent:focus, #portal-personaltools-wrapper .formTabs a.link-parent:focus {
     background-color: #BB3423; }
 
-  /* line 255, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 266, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai:before {
     position: absolute;
     border-top: 1px solid #ccc; }
-  /* line 256, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 267, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai h1 {
     font-size: 138.461538%;
     line-height: 24px;
     margin-top: 5px !important; }
-    /* line 258, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 269, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .titol-espai h1 a {
       display: block; }
 
-  /* line 262, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 273, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header {
     padding-bottom: 10px;
     background: #f7f7f7 !important; }
-    /* line 265, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 276, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
       margin-top: 12px !important; }
-    /* line 266, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 277, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #portal-header h1.pull-left {
       margin-bottom: 7px !important; }
-      /* line 268, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      /* line 279, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
       #portal-header h1.pull-left img {
         margin-top: -3px;
         height: 46px; }
-    /* line 270, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 281, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #portal-header .container > div.clearfix, #portal-header .container > div.visualClear, #portal-header .portaltype-packet .estudis .container > div.caixa3, .portaltype-packet .estudis #portal-header .container > div.caixa3 {
       margin: 0 !important; }
-    /* line 271, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 282, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #portal-header .container {
       border-bottom: 0 !important; }
-    /* line 272, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 283, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
       margin-top: 13px;
       margin-right: 0 !important;
       padding: 7px 10px; }
 
-  /* line 276, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 287, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines input {
     width: 65%; }
-  /* line 277, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 288, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines button {
     width: 34%;
     line-height: 20px; }
-  /* line 278, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 289, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines a {
     margin: 0 0 20px 0 !important; }
 
-  /* line 283, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 294, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image {
     display: none; }
 
-  /* line 287, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 298, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image {
     height: 30px !important;
     margin-left: 55px !important; }
-    /* line 288, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 299, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .header-image.l2-image:before {
       top: 25px;
       width: 45px;
       margin-left: -55px; }
 
-  /* line 292, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 303, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-breadcrumbs {
     display: none; }
 
-  /* line 296, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 307, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   [class*="span"], .cella,
   .row-fluid [class*="span"],
   #dashboard [class*="span"],
@@ -6400,113 +6408,113 @@ button.pfg-draft-save .badge,
     width: auto;
     margin-left: 0; }
 
-  /* line 304, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 315, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .llistatLogos {
     margin: 1em auto !important; }
 
-  /* line 306, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 317, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu {
     font-size: 84.613846% !important; }
-    /* line 308, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 319, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #peu .container {
       padding-top: 5px; }
 
-  /* line 312, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 323, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .img_blank {
     margin-top: -1px; }
 
-  /* line 315, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 326, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); }
 
-  /* line 318, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 329, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .page-header h1 small {
     display: block;
     line-height: 18px; }
 
-  /* line 321, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 332, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   input[type="checkbox"], input[type="radio"] {
     border: 1px solid #ccc; }
 
-  /* line 324, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 335, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-group > label {
     float: none;
     width: auto;
     padding-top: 0;
     text-align: left; }
 
-  /* line 327, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 338, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .controls {
     margin-left: 0; }
 
-  /* line 330, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 341, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-list {
     padding-top: 0; }
 
-  /* line 333, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 344, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .form-actions {
     padding-left: 10px;
     padding-right: 10px; }
 
-  /* line 336, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 347, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal, .pb-ajax {
     top: 10px;
     left: 10px;
     right: 10px;
     max-width: 100%; }
 
-  /* line 337, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 348, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-header .close, .pb-ajax .documentFirstHeading .close, .pb-ajax > div > h2 .close {
     padding: 10px;
     margin: -10px; }
 
-  /* line 347, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 358, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .carousel-caption {
     position: static; }
 
-  /* line 350, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 361, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis {
     background-color: #F7F7F7; }
-    /* line 352, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 363, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .plaEstudis thead {
       display: block; }
-      /* line 354, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      /* line 365, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
       .plaEstudis thead th {
         font-size: 80%; }
-        /* line 356, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+        /* line 367, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
         .plaEstudis thead th.semester {
           display: none; }
-        /* line 359, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+        /* line 370, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
         .plaEstudis thead th.plaEstudis_titolCredits {
           min-width: 80px; }
-        /* line 362, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+        /* line 373, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
         .plaEstudis thead th.plaEstudis_titolAssignatures {
           width: 100%; }
-    /* line 367, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 378, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .plaEstudis tbody {
       display: block;
       clear: both; }
-      /* line 370, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      /* line 381, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
       .plaEstudis tbody th {
         display: block;
         font-size: 80%; }
-    /* line 375, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 386, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .plaEstudis tr {
       display: block; }
-    /* line 378, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 389, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .plaEstudis td {
       background-color: #fff !important;
       font-size: 80%; }
-      /* line 381, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      /* line 392, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
       .plaEstudis td.subject {
         width: 100%; }
 
-  /* line 391, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 402, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .img-mask {
     width: 90% !important;
     margin-left: 5% !important;
     margin-right: 5% !important; } }
 @media only screen and (max-width: 639px) and (orientation: landscape) {
-  /* line 343, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 354, /Development/ulearn.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-body, .pb-ajax #content-core, .pb-ajax .documentDescription, .pb-ajax #content-history {
     max-height: 160px; } }

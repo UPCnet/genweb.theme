@@ -60,6 +60,9 @@ label {
 		line-height: 0;
 	}
 }
+// No * on file required fields
+#form-widgets-file.required:after { content: ""; }
+
 .selected.required:after {color:$white;}
 .field {
 	margin-bottom: $baseLineHeight;
@@ -93,8 +96,8 @@ label {
 
 #search-term {
     color: #666666;
-    &:before{content:"\" "} 
-    &:after{content:" \""} 
+    &:before{content:"\" "}
+    &:after{content:" \""}
 }
 
 div.label, label *.label {
@@ -174,7 +177,7 @@ input#title {font-weight:bold}
 
 
 iframe {
-	border:0 !important; 
+	border:0 !important;
 	display: block !important;
 }
 
@@ -195,7 +198,7 @@ iframe {
 
 #formfield-form-widgets-asunto {
   clear:both;
-  width:100%; 
+  width:100%;
 }
 #form-widgets-asunto{
   width:97% !important;
@@ -217,7 +220,7 @@ iframe {
   text-align:right;
 }
 
-/* FI regles afegides per maquetar contacte segons proposta oriol  */	
+/* FI regles afegides per maquetar contacte segons proposta oriol  */
 
 // SITEMAP
 // -----------------------
@@ -313,10 +316,10 @@ iframe {
 // calenendar-system.css
 /* The main calendar widget.  DIV containing a table. */
 
-.calendar { 
+.calendar {
 	display: none; margin:0 auto; position:fixed !important; width:100% !important; height:100% !important; margin-top: 50%;
-	table { 
-		background: #f2f2f2; border-radius:5px; width:222px; box-shadow: 0 0 100px black; top:50%; margin-top:-100px !important; margin: 0 auto; 
+	table {
+		background: #f2f2f2; border-radius:5px; width:222px; box-shadow: 0 0 100px black; top:50%; margin-top:-100px !important; margin: 0 auto;
 		.wn { border-right: 1px solid #b2b2b2; background: #f7f7f7;}
 	}
 	.button { text-align: center; background: #f2f2f2;}
@@ -414,7 +417,7 @@ iframe {
 		  border-color: #f00;
 		  background-color: #000;
 		  color: #080;
-		}	
+		}
 	}
 }
 
@@ -609,7 +612,7 @@ span.collage-navigation img {
 	width: 9px;
 	height: 9px;
 }
-span.collage-navigation { 
+span.collage-navigation {
 	margin-left: 4px;
 	&.collage-navigation a {
 		text-decoration: none;
@@ -706,7 +709,7 @@ span.collage-navigation {
 #collage .three-columns-largeleft .block_2 { width:19%; }
 #collage .three-columns-largeleft .block_3 { width: 20%; }
 #collage .four-columns-largeleft .block_1 { width: 40%; }
-#collage .four-columns-largeleft .block_2, 
+#collage .four-columns-largeleft .block_2,
 #collage .four-columns-largeleft .block_3,
 #collage .four-columns-largeleft .block_4 {
 	width: 19%;
@@ -715,7 +718,7 @@ span.collage-navigation {
 #collage .five-columns-largeleft .block_2,
 #collage .five-columns-largeleft .block_3,
 #collage .five-columns-largeleft .block_4,
-#collage .five-columns-largeleft .block_5 { 
+#collage .five-columns-largeleft .block_5 {
 	width: 18%;
 }
 #collage .two-columns-largeright .block_2 { width: 59%; }
@@ -817,4 +820,4 @@ body.template-folder_summary_view #content ul li:first-child {border-top:0; @inc
 div.overlay {
     /* initially overlay is hidden */
     display: none;
-} 
+}
