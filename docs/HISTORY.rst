@@ -1,11 +1,17 @@
 Changelog
 =========
 
-1.0b110 (unreleased)
---------------------
+1.0 (2014-05-07)
+----------------
 
-- Nothing changed yet.
-
+* New retina favicon UPC [Victor Fernandez de Alba]
+* Fix required CSS for file fields [Victor Fernandez de Alba]
+* Update travis build and bootstrap [Victor Fernandez de Alba]
+* Updated [Victor Fernandez de Alba]
+* Update references to resources for made them customizable [Victor Fernandez de Alba]
+* Update ignore [Victor Fernandez de Alba]
+* Added select2 CSS just for reference [Victor Fernandez de Alba]
+* Fix version [Victor Fernandez de Alba]
 
 1.0b19 (2014-03-24)
 -------------------
