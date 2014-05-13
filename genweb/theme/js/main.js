@@ -15,7 +15,6 @@ $(document).ready(function () {
 
          clearInterval(intervalId);
      }
-     console.log("asdasd");
   }, 50);
 
   // $('select:not([multiple])').dropkick();
