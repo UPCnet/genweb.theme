@@ -2,22 +2,21 @@
 
 $(document).ready(function () {
   // set a TTL for it (change on production)
-  jarn.i18n.setTTL(1000);
+  jarn.i18n.setTTL(100000);
   // Load the i18n Plone catalog for genweb
   jarn.i18n.loadCatalog('genweb');
   _gw_i18n = jarn.i18n.MessageFactory('genweb');
 
-
   var intervalId = setInterval(function(event) {
-     var traduccion = _gw_i18n("fitxer_no_seleccionat")
-     if (traduccion!="fitxer_no_seleccionat") {
+     if (window._gw_i18n !== undefined && window._i18nsucks === true) {
          $('[type=file]').each(function(index, value) {
              $(value).customFileInput();
-         })
+         });
 
-         clearInterval(intervalId)
+         clearInterval(intervalId);
      }
-  }, 50)
+     console.log("asdasd");
+  }, 50);
 
   // $('select:not([multiple])').dropkick();
   $('ul.dk_options_inner').addClass('scrollable');
@@ -126,24 +125,26 @@ $(document).ready(function () {
 
 // RECAPTCHA
   if (window.hasOwnProperty('RecaptchaOptions')) {
-    var translations = RecaptchaOptions['custom_translations'];
-    $('div.recaptcha_only_if_incorrect_sol').text(translations['incorrect_try_again']);
-    $('li.recaptcha_play_again span').text(translations['refresh_btn']);
-    $('#recaptcha_reload').attr('alt',translations['refresh_btn']);
-    $('a.recaptcha_only_if_image span').text(translations['audio_challenge']);
-    $('#recaptcha_switch_audio').attr('alt',translations['audio_challenge']);
-    $('a.recaptcha_only_if_audio span').text(translations['visual_challenge']);
-    $('#recaptcha_switch_img').attr('alt',translations['visual_challenge']);
-    $('li.recaptcha_help span').text(translations['help_btn']);
-    $('#recaptcha_whatsthis').attr('alt',translations['help_btn']);
+    if (RecaptchaOptions !== undefined) {
+      var translations = RecaptchaOptions['custom_translations'];
+      $('div.recaptcha_only_if_incorrect_sol').text(translations['incorrect_try_again']);
+      $('li.recaptcha_play_again span').text(translations['refresh_btn']);
+      $('#recaptcha_reload').attr('alt',translations['refresh_btn']);
+      $('a.recaptcha_only_if_image span').text(translations['audio_challenge']);
+      $('#recaptcha_switch_audio').attr('alt',translations['audio_challenge']);
+      $('a.recaptcha_only_if_audio span').text(translations['visual_challenge']);
+      $('#recaptcha_switch_img').attr('alt',translations['visual_challenge']);
+      $('li.recaptcha_help span').text(translations['help_btn']);
+      $('#recaptcha_whatsthis').attr('alt',translations['help_btn']);
 
-    input_text_default('audio');
+      input_text_default('audio');
 
-    $('#recaptcha_switch_type').click(
-      function(){
-        input_text_default(Recaptcha['type']);
-      }
-    );
+      $('#recaptcha_switch_type').click(
+        function(){
+          input_text_default(Recaptcha['type']);
+        }
+      );
+    }
   }
 
   function input_text_default(captcha_type){
