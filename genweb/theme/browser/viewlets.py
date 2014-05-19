@@ -21,6 +21,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile as ZopeViewPageTemplateFile
 from Products.Five.browser.metaconfigure import ViewMixinForTemplates
 
+from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.app.layout.viewlets.common import PersonalBarViewlet, GlobalSectionsViewlet, PathBarViewlet
 from plone.app.layout.viewlets.common import SearchBoxViewlet, TitleViewlet, ManagePortletsFallbackViewlet
 from plone.app.layout.viewlets.interfaces import IHtmlHead, IPortalTop, IPortalHeader, IBelowContent
@@ -34,6 +35,7 @@ from zope.annotation.interfaces import IAnnotations
 from Products.ATContentTypes.interfaces.event import IATEvent
 
 from genweb.core import HAS_CAS
+from genweb.core import HAS_DXCT
 from genweb.core.interfaces import IHomePage
 from genweb.theme.browser.interfaces import IHomePageView
 from genweb.core.utils import genweb_config, havePermissionAtRoot, pref_lang
@@ -294,13 +296,9 @@ class gwSearchViewlet(SearchBoxViewlet, viewletBase):
     render = ViewPageTemplateFile('viewlets_templates/searchbox.pt')
 
 
-class gwManagePortletsFallbackViewlet(ManagePortletsFallbackViewlet, viewletBase):
+class gwManagePortletsFallbackViewletMixin(object):
     """ The override for the manage_portlets_fallback viewlet for IPloneSiteRoot
     """
-    grok.context(IPloneSiteRoot)
-    grok.name('plone.manage_portlets_fallback')
-    grok.viewletmanager(IBelowContent)
-    grok.layer(IGenwebTheme)
 
     render = ViewPageTemplateFile('viewlets_templates/manage_portlets_fallback.pt')
 
@@ -313,8 +311,12 @@ class gwManagePortletsFallbackViewlet(ManagePortletsFallbackViewlet, viewletBase
         # Except in the portal root, when we look for an alternative
         if IPloneSiteRoot.providedBy(self.context):
             pc = getToolByName(context, 'portal_catalog')
+            # Add the use case of mixin types of IHomepages. The main ones of a
+            # non PAM-enabled site and the possible inner ones.
             result = pc.searchResults(object_provides=IHomePage.__identifier__,
+                                      portal_type='Document',
                                       Language=pref_lang())
+
             if result:
                 # Return the object without forcing a getObject()
                 container_url = result[0].getURL()
@@ -326,10 +328,29 @@ class gwManagePortletsFallbackViewlet(ManagePortletsFallbackViewlet, viewletBase
 
     def available(self):
         secman = getSecurityManager()
+
         if secman.checkPermission('Portlets: Manage portlets', self.context):
             return True
         else:
             return False
+
+
+class gwManagePortletsFallbackViewletForPloneSiteRoot(gwManagePortletsFallbackViewletMixin, ManagePortletsFallbackViewlet, viewletBase):
+    """ The override for the manage_portlets_fallback viewlet for IPloneSiteRoot
+    """
+    grok.context(IPloneSiteRoot)
+    grok.name('plone.manage_portlets_fallback')
+    grok.viewletmanager(IBelowContent)
+    grok.layer(IGenwebTheme)
+
+
+class gwManagePortletsFallbackViewletForIHomePage(gwManagePortletsFallbackViewletMixin, ManagePortletsFallbackViewlet, viewletBase):
+    """ The override for the manage_portlets_fallback viewlet for IHomePage
+    """
+    grok.context(IHomePage)
+    grok.name('plone.manage_portlets_fallback')
+    grok.viewletmanager(IBelowContent)
+    grok.layer(IGenwebTheme)
 
 
 class TitleViewlet(TitleViewlet, viewletBase):

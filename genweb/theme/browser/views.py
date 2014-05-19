@@ -100,7 +100,10 @@ class HomePageBase(grok.View):
         # Except in the portal root, when we look for an alternative
         if IPloneSiteRoot.providedBy(self.context):
             pc = getToolByName(context, 'portal_catalog')
+            # Add the use case of mixin types of IHomepages. The main ones of a
+            # non PAM-enabled site and the possible inner ones.
             result = pc.searchResults(object_provides=IHomePage.__identifier__,
+                                      portal_type='Document',
                                       Language=pref_lang())
             if result:
                 # Return the object without forcing a getObject()
@@ -157,6 +160,17 @@ class homePage(HomePageBase):
     """
     grok.implements(IHomePageView)
     grok.context(IPloneSiteRoot)
+    grok.layer(IGenwebTheme)
+
+
+class subHomePage(HomePageBase):
+    """ This is the special view for the subhomepage containing support for the
+        portlet managers provided by the package genweb.portlets.
+        It is used in IFolderish (DX and AT) content for use in inner landing
+        pages.
+    """
+    grok.implements(IHomePageView)
+    grok.context(IFolderish)
     grok.layer(IGenwebTheme)
 
 
