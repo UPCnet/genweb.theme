@@ -1,11 +1,14 @@
 Changelog
 =========
 
-1.1 (unreleased)
+1.1 (2014-05-26)
 ----------------
 
-- Nothing changed yet.
-
+* Improve the query to the catalog for include some more use cases. Add wide support for subhomepages [Victor Fernandez de Alba]
+* Update viewlets hidden and modernize babel view [Victor Fernandez de Alba]
+* [cherry [Victor Fernandez de Alba]
+* Treure consoles [Victor Fernandez de Alba]
+* Fix JS [Victor Fernandez de Alba]
 
 1.0 (2014-05-07)
 ----------------
