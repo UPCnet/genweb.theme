@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.2 (unreleased)
+1.2 (2014-05-28)
 ----------------
 
-- Nothing changed yet.
-
+* underscore-min [Pilar Marinas]
 
 1.1 (2014-05-26)
 ----------------
