@@ -42,6 +42,7 @@ from genweb.core.utils import genweb_config, havePermissionAtRoot, pref_lang
 
 from genweb.theme.browser.interfaces import IGenwebTheme
 
+import plone.api
 
 grok.context(Interface)
 
@@ -75,15 +76,9 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
     index = ViewPageTemplateFile('viewlets_templates/personal_bar.pt')
 
     def default_site_lang(self):
-        lang = self.portal().portal_properties.site_properties.default_language
-        if lang == 'ca':
-            return 'Català'
-        elif lang == 'es':
-            return 'Español'
-        elif lang == 'en':
-            return 'Engish'
-        else:
-            return lang
+        pl = plone.api.portal.get_tool(name='portal_languages')
+        default_lang = pl.getDefaultLanguage()
+        return pl.getAvailableLanguages()[default_lang]['native']
 
     def showRootFolderLink(self):
         return havePermissionAtRoot()
@@ -286,6 +281,7 @@ class gwFooter(viewletBase):
 class gwSearchViewletManager(grok.ViewletManager):
     grok.context(Interface)
     grok.name('genweb.search_manager')
+    grok.layer(IGenwebTheme)
 
 
 class gwSearchViewlet(SearchBoxViewlet, viewletBase):

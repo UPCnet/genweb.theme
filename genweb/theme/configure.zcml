@@ -91,4 +91,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+    <genericsetup:registerProfile
+      name="uninstall"
+      title="Uninstall genweb.theme"
+      directory="profiles/uninstall"
+      description="Uninstall base setup for genweb.theme."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>

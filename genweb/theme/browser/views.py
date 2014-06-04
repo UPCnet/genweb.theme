@@ -68,6 +68,7 @@ Per a la seva publicació a l'Agenda general de la UPC.
 
 class GWConfig(grok.View):
     grok.context(Interface)
+    grok.layer(IGenwebTheme)
 
     def render(self):
         return genweb_config()

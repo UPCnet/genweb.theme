@@ -1,0 +1,7 @@
+<layers>
+  <layer
+      name="GenwebTheme"
+      interface="genweb.theme.browser.interfaces.IGenwebTheme"
+      remove="True"
+  />
+</layers>
