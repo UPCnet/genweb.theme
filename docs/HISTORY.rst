@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.3 (unreleased)
+1.3 (2014-06-12)
 ----------------
 
-- Nothing changed yet.
-
+* Uninstall profile, more specific views to live in peace with alternatheme [Victor Fernandez de Alba]
 
 1.2 (2014-05-28)
 ----------------
