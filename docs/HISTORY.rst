@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.4 (unreleased)
+1.4 (2014-06-25)
 ----------------
 
-- Nothing changed yet.
-
+* Fix hasOwnProperty bug for IE8 [Carles Bruguera]
 
 1.3 (2014-06-12)
 ----------------
