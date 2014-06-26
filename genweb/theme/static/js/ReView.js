@@ -2,6 +2,13 @@
 ReView.js 0.65b. The Responsive Viewport. responsiveviewport.com.
 Developed by Edward Cant. @opticswerve.
 */
+
+if(typeof String.prototype.trim !== 'function') {
+  String.prototype.trim = function() {
+    return this.replace(/^\s+|\s+$/g, '');
+  };
+}
+
 function Viewport(){this.viewport=function(a){var b=document,d=b.documentElement;b.head=b.head||b.getElementsByTagName("head")[0];var e=screen,c=this,f=window;c.bScaled=!1;c.bSupported=!0;b.addEventListener===a?c.bSupported=!1:b.querySelector===a?c.bSupported=!1:f!==parent?c.bSupported=!1:f.orientation===a&&(c.bSupported=!1);c.updateOrientation();c.updateScreen();c.dpr=1;var g=f.devicePixelRatio;g===a?c.bSupported=!1:c.dpr=g;c.fromHead();this.meta!==a&&(c.iHeight=c.height,c.iMaxScale=c.maxScale,c.iMinScale=
 c.minScale,c.iUserScalable=c.bUserScalable,c.iWidth=c.width);c.defaultWidth=980;e.width>c.defaultWidth&&(c.defaultWidth=e.width);e.height>c.defaultWidth&&(c.defaultWidth=e.height);c.ready(function(){if(c.bSupported){if(f.screenX!==0)c.bSupported=false;else if(c.width!==a){var e;if(d.offsetHeight<=d.clientHeight){e=d.style.height;d.style.height=d.clientHeight+128+"px"}if(c.width==="device-width"){if(d.clientWidth!==c.screenWidth)c.bSupported=false}else if(c.width!==d.clientWidth)c.bSupported=false;
 e===""?d.style.height="auto":e!==a&&(d.style.height=e)}if(c.bSupported){b.addEventListener("touchend",function(){var b=(new Date).getTime();if(c.lastTouch!==a&&b-c.lastTouch<500&&c.bUserScalable===true)c.bScaled=true;c.lastTouch=b},false);b.addEventListener("gestureend",function(a){if(a.scale!==1&&c.bUserScalable===true)c.bScaled=true},false);b.addEventListener("resize",function(){c.updateCheck()},false);b.addEventListener("orientationchange",function(){var b=c.orientation;c.updateOrientation();if(b!==
