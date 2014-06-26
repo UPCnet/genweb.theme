@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.5 (unreleased)
+1.5 (2014-06-26)
 ----------------
 
-- Nothing changed yet.
-
+* Fix problem with .trim() in IE8 [Carles Bruguera]
+* Fix for Date.now on IE8 [Carles Bruguera]
 
 1.4 (2014-06-25)
 ----------------
