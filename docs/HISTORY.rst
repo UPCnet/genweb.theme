@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.6 (unreleased)
+1.6 (2014-06-26)
 ----------------
 
-- Nothing changed yet.
-
+* Disable the JS .map call [Victor Fernandez de Alba]
 
 1.5 (2014-06-26)
 ----------------
