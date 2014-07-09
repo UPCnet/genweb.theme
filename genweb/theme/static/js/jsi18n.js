@@ -1,5 +1,8 @@
 /*global $:false, window:false, portal_url:false, jarn:false, jQuery:false, localStorage:false, */
 
+// Fix for Date.now, inexistent in IE8
+Date.now = Date.now || function() { return +new Date; };
+
 (function (jarn, $) {
 
     jarn.i18n = {

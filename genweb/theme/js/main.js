@@ -123,7 +123,7 @@ $(document).ready(function () {
 
 
 // RECAPTCHA
-  if (window.hasOwnProperty('RecaptchaOptions')) {
+  if (_.hasOwnProperty(window, 'RecaptchaOptions')) {
     if (RecaptchaOptions !== undefined) {
       var translations = RecaptchaOptions['custom_translations'];
       $('div.recaptcha_only_if_incorrect_sol').text(translations['incorrect_try_again']);

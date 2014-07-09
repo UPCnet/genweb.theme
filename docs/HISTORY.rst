@@ -1,11 +1,32 @@
 Changelog
 =========
 
-1.3 (unreleased)
+1.7 (unreleased)
 ----------------
 
 - Nothing changed yet.
 
+
+1.6 (2014-06-26)
+----------------
+
+* Disable the JS .map call [Victor Fernandez de Alba]
+
+1.5 (2014-06-26)
+----------------
+
+* Fix problem with .trim() in IE8 [Carles Bruguera]
+* Fix for Date.now on IE8 [Carles Bruguera]
+
+1.4 (2014-06-25)
+----------------
+
+* Fix hasOwnProperty bug for IE8 [Carles Bruguera]
+
+1.3 (2014-06-12)
+----------------
+
+* Uninstall profile, more specific views to live in peace with alternatheme [Victor Fernandez de Alba]
 
 1.2 (2014-05-28)
 ----------------
