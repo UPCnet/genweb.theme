@@ -6,7 +6,8 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     compass: true,
-                    lineNumbers: true
+                    lineNumbers: true,
+                    // require: ['sass-css-importer-load-paths',],
                     // style: 'compressed'
                 },
                 files: {
@@ -27,12 +28,37 @@ module.exports = function (grunt) {
                 'genweb/theme/stylesheets/genwebupc-ie.css': 'genweb/theme/stylesheets/genwebupc.css'
               }
             }
-        }
+        },
+        copy: {
+          main: {
+            files: [
+                {
+                    expand: true,
+                    cwd: '../genweb.alternatheme/genweb/alternatheme/components/fontawesome/css',
+                    src:'font-awesome.css',
+                    dest:'font-awesome.scss',
+                    rename: function(dest, src) {
+                        return '../genweb.alternatheme/genweb/alternatheme/components/fontawesome/css/' + dest;
+                    }
+                },
+                {
+                    expand: true,
+                    cwd: '../genweb.alternatheme/genweb/alternatheme/components/fontawesome/css',
+                    src:'font-awesome.css',
+                    dest:'font-awesome.less',
+                    rename: function(dest, src) {
+                        return '../genweb.alternatheme/genweb/alternatheme/components/fontawesome/css/' + dest;
+                    }
+                },
+            ]
+          },
+        },
     });
 
     // grunt.loadTasks('tasks');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-bless');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.registerTask('default', ['watch']);
 };

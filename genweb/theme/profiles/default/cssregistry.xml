@@ -21,6 +21,18 @@
  <stylesheet id="ploneCustom.css" enabled="False" />
  <stylesheet id="collage.css" enabled="False" />
 
+  <stylesheet title=""
+    id="++components++root/select2/select2.css"
+    media="" rel="stylesheet" rendering="link"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression=""/>
+
+  <stylesheet title=""
+    id="++components++fontawesome/css/font-awesome.min.css"
+    media="" rel="stylesheet" rendering="link"
+    cacheable="True" compression="safe" cookable="False"
+    enabled="1" expression=""/>
+
 <!-- Per deshabilitar/passar a scss:
 collective.js.jqueryui.custom.min.css
 ++resource++plone.app.discussion.stylesheets/discussion.css
