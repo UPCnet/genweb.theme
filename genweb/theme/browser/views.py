@@ -827,3 +827,18 @@ class SearchFilteredContentAjax(FilteredContentsSearchView):
     grok.context(Interface)
     grok.template('filtered_contents_search_ajax')
     grok.layer(IGenwebTheme)
+
+
+class ImagesGalleryFolderView(grok.View):
+    """ Filtered content search view for every folder. """
+    grok.name('images_gallery_folder_view')
+    grok.context(Interface)
+    grok.require('genweb.member')
+    grok.template('images_gallery_folder')
+    grok.layer(IGenwebTheme)
+
+    def get_images(self):
+        pc = api.portal.get_tool(name='portal_catalog')
+        path = '/'.join(self.context.getPhysicalPath())
+        return pc.searchResults(portal_type='Image',
+                                path={'query': path})

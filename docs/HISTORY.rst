@@ -1,11 +1,14 @@
 Changelog
 =========
 
-1.7 (unreleased)
+1.7 (2014-07-15)
 ----------------
 
-- Nothing changed yet.
-
+* Not using FA registration, as SCSS supports variables in extends [Victor Fernandez de Alba]
+* Generalise the filtered_search_view for all Genwebs [Victor Fernandez de Alba]
+* si no comento aquest codi, el popover de compartir a FB, TW, etc no apareix... [roberto.diaz]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* SHARE on Social Networs now is fully functional [roberto.diaz]
 
 1.6 (2014-06-26)
 ----------------
