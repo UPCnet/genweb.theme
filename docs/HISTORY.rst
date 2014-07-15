@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.9 (unreleased)
+1.9 (2014-07-15)
 ----------------
 
-- Nothing changed yet.
-
+* Uncook CSS for select2 [Victor Fernandez de Alba]
 
 1.8 (2014-07-15)
 ----------------
