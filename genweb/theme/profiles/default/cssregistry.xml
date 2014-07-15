@@ -24,7 +24,7 @@
   <stylesheet title=""
     id="++components++root/select2/select2.css"
     media="" rel="stylesheet" rendering="link"
-    cacheable="True" compression="safe" cookable="True"
+    cacheable="False" compression="safe" cookable="False"
     enabled="1" expression=""/>
 
 <!-- Per deshabilitar/passar a scss:
