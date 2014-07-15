@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.8 (unreleased)
+1.8 (2014-07-15)
 ----------------
 
-- Nothing changed yet.
-
+* Disable WIP view [Victor Fernandez de Alba]
 
 1.7 (2014-07-15)
 ----------------
