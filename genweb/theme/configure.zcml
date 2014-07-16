@@ -24,18 +24,26 @@
   <include package="plone.resource" file="meta.zcml"/>
 
   <!-- Resource traversers -->
+  <plone:static
+      directory="stylesheets"
+      type="genweb"
+      name="stylesheets"
+      />
+
+  <plone:static
+      directory="js"
+      type="genweb"
+      name="js"
+      />
+
+  <!-- Maintaining the bootstrap resource traverser for not collide with the 3.x
+       branches
+   -->
   <adapter
       name="bootstrap"
       for="* zope.publisher.interfaces.IRequest"
       provides="zope.traversing.interfaces.ITraversable"
       factory=".traversal.BootStrapTraverser"
-      />
-
-  <adapter
-      name="genweb"
-      for="* zope.publisher.interfaces.IRequest"
-      provides="zope.traversing.interfaces.ITraversable"
-      factory=".traversal.GenwebTraverser"
       />
 
   <plone:static
@@ -50,38 +58,12 @@
       name="js"
       />
 
-  <plone:static
-      directory="static"
-      type="genweb"
-      name="static"
-      />
-
-  <plone:static
-      directory="stylesheets"
-      type="genweb"
-      name="stylesheets"
-      />
-
-  <plone:static
-      directory="js"
-      type="genweb"
-      name="js"
-      />
-
   <include package="z3c.jbot" file="meta.zcml" />
 
   <browser:jbot
       directory="templates"
       layer=".browser.interfaces.IGenwebTheme"
   />
-
-  <!-- Addon packages resource overrides -->
-  <!-- Custom jsi18n.js for including a trigger -->
-  <browser:resource
-    name="jsi18n.js"
-    file="static/js/jsi18n.js"
-    layer=".browser.interfaces.IGenwebTheme"
-    />
 
   <genericsetup:registerProfile
       name="default"
