@@ -74,7 +74,7 @@ $(document).ready(function () {
 
 // Live search
 
- /*$("#cercaCapca").typeahead({
+  $("#cercaCapca").typeahead({
    source: function (query, process) {
       setTimeout(searchElements(query, process) , 300);
    },
@@ -95,7 +95,7 @@ $(document).ready(function () {
   items: 12,
   minLength: 2
   });
-*/
+
  var searchElements = function( query, process ){
      $.get(document.getElementsByTagName('base')[0].href+"/typeaheadJson", { q: query }, function(data) {
           //Reseting containers
@@ -123,7 +123,6 @@ $(document).ready(function () {
 
 
 // RECAPTCHA
-/*
   if (_.hasOwnProperty(window, 'RecaptchaOptions')) {
     if (RecaptchaOptions !== undefined) {
       var translations = RecaptchaOptions['custom_translations'];
@@ -156,7 +155,7 @@ $(document).ready(function () {
     }
     $('#recaptcha_response_field').val(text_default);
 
-  }*/
+  }
   // FI RECAPTCHA
 
   // Share popover specific

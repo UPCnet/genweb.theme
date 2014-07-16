@@ -1,0 +1,83 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="ulearn">
+
+<head>
+  <metal:javascript fill-slot="javascript_head_slot" tal:omit-tag="">
+      <script type="text/javascript"
+          tal:attributes="src string:${context/absolute_url}/++components++root/wookmark-jquery/libs/jquery.imagesloaded.js">
+      </script>
+      <script type="text/javascript"
+          tal:attributes="src string:${context/absolute_url}/++components++root/wookmark-jquery/libs/jquery.magnific-popup.min.js">
+      </script>
+      <script type="text/javascript"
+          tal:attributes="src string:${context/absolute_url}/++components++root/wookmark-jquery/jquery.wookmark.min.js">
+      </script>
+
+  </metal:javascript>
+
+  <metal:block fill-slot="top_slot">
+      <tal:insert tal:replace="nothing"
+                  tal:define="dummy python:request.set('enable_border', 1);
+                              disable_column_one python:request.set('disable_plone.rightcolumn',1);" />
+  </metal:block>
+</head>
+
+<body>
+
+  <metal:main metal:fill-slot="main"
+              tal:define="images view/get_images">
+
+    <ul id="tiles">
+      <li tal:repeat="image_brain images">
+        <a tal:define="image image_brain/getObject"
+           tal:attributes="href image_brain/getURL">
+          <img  tal:define="scales image/@@images;
+                            thumbnail python: scales.scale('image', scale='mini');"
+                tal:condition="thumbnail"
+                tal:attributes="src thumbnail/url;
+                                width thumbnail/width;
+                                height thumbnail/height"/>
+
+        </a>
+        <p>1</p>
+      </li>
+    </ul>
+
+  <script type="text/javascript">
+    (function ($){
+      // Prepare layout options.
+      var options = {
+        autoResize: true, // This will auto-update the layout when the browser window is resized.
+        container: $('#main'), // Optional, used for some extra CSS styling
+        offset: 2, // Optional, the distance between grid items
+        itemWidth: 210 // Optional, the width of a grid item
+      };
+
+      // Get a reference to your grid items.
+      var handler = $('#tiles li');
+
+      // Init lightbox
+      $('#tiles').magnificPopup({
+        delegate: 'li:not(.inactive) a',
+        type: 'image',
+        gallery: {
+          enabled: true
+        }
+      });
+
+      // Call the layout function after all images have loaded
+      $('#tiles').imagesLoaded(function() {
+        handler.wookmark(options);
+      });
+    })(jQuery);
+  </script>
+
+  </metal:main>
+
+</body>
+</html>
