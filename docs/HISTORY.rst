@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.10 (unreleased)
+1.10 (2014-07-21)
 -----------------
 
-- Nothing changed yet.
-
+* Sanitize the static resources for the whole Genweb project [Victor Fernandez de Alba]
+* Uncomment search and recaptcha in JS [Victor Fernandez de Alba]
 
 1.9 (2014-07-15)
 ----------------
