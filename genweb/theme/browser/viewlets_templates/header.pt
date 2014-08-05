@@ -55,7 +55,7 @@
                i18n:translate="identificat">
                Identifica't
             </a></li>
-        <tal:block replace="structure provider:genweb.language_selector_manager" /> 
+        <tal:block replace="structure provider:genweb.pamls" />
         <li class="divider"> </li>
         <li>
           <tal:block replace="structure provider:genweb.search_manager" />

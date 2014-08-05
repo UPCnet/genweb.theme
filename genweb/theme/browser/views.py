@@ -159,8 +159,9 @@ class homePage(HomePageBase):
     """ This is the special view for the homepage containing support for the
         portlet managers provided by the package genweb.portlets.
         It's restrained to IGenwebTheme layer to prevent it will interfere with
-        the one defined in the Genweb legacy theme (v4).
+        the one defined in the Genweb legacy theme (v3.5).
     """
+    grok.name('homepage')
     grok.implements(IHomePageView)
     grok.context(IPloneSiteRoot)
     grok.layer(IGenwebTheme)
@@ -169,9 +170,11 @@ class homePage(HomePageBase):
 class subHomePage(HomePageBase):
     """ This is the special view for the subhomepage containing support for the
         portlet managers provided by the package genweb.portlets.
-        It is used in IFolderish (DX and AT) content for use in inner landing
+        This is the PAM aware default LRF homepage view.
+        It is also used in IFolderish (DX and AT) content for use in inner landing
         pages.
     """
+    grok.name('homepage')
     grok.implements(IHomePageView)
     grok.context(IFolderish)
     grok.layer(IGenwebTheme)
