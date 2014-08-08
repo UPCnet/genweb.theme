@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.11 (unreleased)
+1.11 (2014-08-08)
 -----------------
 
-- Nothing changed yet.
-
+* Better handling of homepage view (and subhomepages). PAM aware language selector. [Victor Fernandez de Alba]
 
 1.10 (2014-07-21)
 -----------------
