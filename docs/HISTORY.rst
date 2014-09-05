@@ -1,11 +1,12 @@
 Changelog
 =========
 
-1.12 (unreleased)
+1.12 (2014-09-05)
 -----------------
 
-- Nothing changed yet.
-
+* Fix Travis 1 [Victor Fernandez de Alba]
+* Update CSS and override archetypes warning [Victor Fernandez de Alba]
+* Several fixes [Victor Fernandez de Alba]
 
 1.11 (2014-08-08)
 -----------------
