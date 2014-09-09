@@ -10,7 +10,8 @@
           <a href="http://www.upc.edu" target="_blank">
             <abbr rel="tooltip" data-placement="top" title="Universitat Politècnica de Catalunya · BarcelonaTech">UPC</abbr>
             <img class="img_blank" src="/++genweb++static/images/blank_blau.png"
-                 i18n:attributes="alt obrir_link_finestra_nova"></a>. <tal:signatura
+                 i18n:attributes="alt obrir_link_finestra_nova"></a>.
+            <tal:signatura
               content="python:getattr(viewlet.genweb_config(), 'signatura_unitat_%s' % viewlet.pref_lang(), '')">
                 Servei de Comunicació i Promoció
             </tal:signatura>
@@ -62,7 +63,7 @@
             </a>
           </li>
           <li role="menuitem" class="amunt">
-            <a rel="tooltip" data-placement="top" 
+            <a rel="tooltip" data-placement="top"
                tal:attributes="href python:viewlet.get_go_to_top_link(template, view)"
                i18n:attributes="title inici_page;alt inici_page;">
               <img src="/++genweb++static/images/amunt.png">
