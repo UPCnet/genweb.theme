@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.13 (unreleased)
+1.13 (2014-09-09)
 -----------------
 
-- Nothing changed yet.
-
+* Fix rare compilation error [victorfda]
+* Fix rare error compiling template. [Victor Fernandez de Alba]
 
 1.12 (2014-09-05)
 -----------------
