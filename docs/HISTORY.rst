@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.14 (unreleased)
+1.14 (2014-09-16)
 -----------------
 
-- Nothing changed yet.
-
+* Fix the remaining resources with fixed /++genweb++static/ paths [Victor Fernandez de Alba]
+* Fix line carrier return compilation error [victorfda]
 
 1.13 (2014-09-09)
 -----------------
