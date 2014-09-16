@@ -6,7 +6,7 @@
 // Genweb colors
 // -------------------------
 $genwebPrimary:         #007bc0 !default;
-$genwebTitles:          #557C95 !default; 
+$genwebTitles:          #557C95 !default;
 
 
 // Accent colors
@@ -28,25 +28,25 @@ $purple:                #8952ab !default;
 .state-intranet {color: $purple;}
 .state-pending {color: darken($orange,5%);}
 .state-draft, .state-visible {color: $green;}
-.state-private {color: $red;} 
+.state-private {color: $red;}
 .state-restricted-to-managers {color: $grayDarker;}
 
 
 // USUARI
 // -------------------------
 #portal-personaltools-wrapper {margin-top:36px !important;} // rebaixa de 38 a 36 per tal que no quedi marge quan estem identificats
-.user {@include opacity(.8); width:26px; height:26px; border:.1em solid darken(adjust-hue($blue, -120),5%); margin: -.55em 0; position: relative; 
+.user {@include opacity(.8); width:26px; height:26px; border:.1em solid darken(adjust-hue($blue, -120),5%); margin: -.55em 0; position: relative;
   image-rendering: optimizeQuality; -ms-interpolation-mode: bicubic; left:-6px; top:-1px;}
 .dropdown-menu li > a.btn-danger:hover, .dropdown-menu .active > a.btn-danger:hover {background-color: #BD362F;}
 .userScreen, .userTablet, .userMobile, .userGenweb {background: image-url("sprite_usuari.png") transparent no-repeat center top; height: 1.5em; width:1.5em;}
 .userScreen {background-position: center -40px;}
 .userTablet {background-position: center -140px;}
 .userMobile {background-position: center -240px;}
-.userGenweb {background-position: 10px -340px; width:2em;}  
+.userGenweb {background-position: 10px -340px; width:2em;}
 .userScreen:hover {background-position: center 10px;}
 .userTablet:hover {background-position: center -90px;}
 .userMobile:hover {background-position: center -190px;}
-.userGenweb:hover, .open .userGenweb {background-position: 10px -290px;}  
+.userGenweb:hover, .open .userGenweb {background-position: 10px -290px;}
 	.dropdown .userGenweb .caret { margin-left: 24px;}
 #portal-personaltools-wrapper .container {box-shadow: 0 -8px 5px 5px rgba(255, 255, 255, 0.05);}
 #portal-personaltools-wrapper .nav {margin:0!important;}
@@ -73,7 +73,7 @@ background-image: image-url("gh-w.png") !important;
 // PORTAL HEADER
 // -------------------------
 #portal-header {
-	border-bottom:1px solid #d7d5d2; 
+	border-bottom:1px solid #d7d5d2;
 	border-top:5px solid desaturate(lighten($genwebPrimary,40%), 85%);
 		background: #fcfcfc; /* Old browsers */
 		background: -moz-linear-gradient(top,  #f7f7f7 0%, #ffffff 25%); /* FF3.6+ */
@@ -87,7 +87,7 @@ background-image: image-url("gh-w.png") !important;
 	#portal-header h1.pull-left {margin-bottom:0;}
 
 .titol-espai {margin-top:0;
-	& h1 {font-weight:normal; margin:0;}	
+	& h1 {font-weight:normal; margin:0;}
 	& a {color:#333; text-shadow: 0 1px 1px rgba(0,0,0,.1); display:table !important; min-height:49px; width:100%;
 		& span {display:table-cell; vertical-align:middle; padding:5px 0;}
 		&:hover {color:$blue; text-decoration:none;}
@@ -122,35 +122,35 @@ background-image: image-url("gh-w.png") !important;
 
 // IMATGE DE CAPCALERA
 // -------------------------
-.header-image { 
-	background-image: image-url("capcalera.jpg");	
-	margin-top:0 !important; 
-	height:65px; 
+.header-image {
+	background-image: url("../capcalera.jpg");
+	margin-top:0 !important;
+	height:65px;
 	overflow:hidden;
 	position: relative;
 	@include border-radius(5px 5px 0 0);
-	@include box-shadow(0 0 5px rgba(0,0,0,.15));	
+	@include box-shadow(0 0 5px rgba(0,0,0,.15));
 }
 /* L3 */
 .l3-image {
-	height:65px; 
+	height:65px;
 }
 /* L2 */
 .l2-image {
-	margin-left:250px !important; 
-	height:50px; 
-	margin-bottom:-1px;	
+	margin-left:250px !important;
+	height:50px;
+	margin-bottom:-1px;
 	overflow:visible;
 	&:before {
 		content:" ";
-		background:$genwebPrimary; 
+		background:$genwebPrimary;
 		height: 5px;
     	margin-left: -250px;
     	position: absolute;
     	top: 45px;
     	width: 222px;
 	}
-}	
+}
 /* NO-IMG */
 .no-image .header-image { display:none !important;}
 /* ajusta menú L3*/
@@ -198,7 +198,7 @@ background-image: image-url("gh-w.png") !important;
 	& .container {border-top:5px solid $genwebPrimary; margin-top:-5px;}
     & p {margin:6px 0 0;}
 	& .amunt img {@include opacity(.7);}
-	& .amunt a:hover img {@include opacity(1);}    
+	& .amunt a:hover img {@include opacity(1);}
 	& address {color: $gray;
 		& p {margin: 0;}
 	}

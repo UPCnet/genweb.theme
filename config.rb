@@ -8,7 +8,7 @@ additional_import_paths = [
 http_path = "/"
 css_dir = "./genweb/theme/stylesheets"
 sass_dir = "./genweb/theme/scss"
-http_images_path = "/++genweb++static/images"
+http_images_path = "++genweb++static/images"
 images_dir = "../genweb.core/genweb/core/static/images"
 javascripts_dir = "./genweb/theme/bootstrap/js"
 
