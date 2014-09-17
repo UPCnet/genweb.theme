@@ -80,6 +80,14 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         default_lang = pl.getDefaultLanguage()
         return pl.getAvailableLanguages()[default_lang]['native']
 
+    def get_available_langs(self):
+        pl = plone.api.portal.get_tool(name='portal_languages')
+        langs_info = []
+        for lang in pl.getSupportedLanguages():
+            langs_info.append(dict(native=pl.getAvailableLanguages()[lang]['native'],
+                                   code=lang))
+        return langs_info
+
     def showRootFolderLink(self):
         return havePermissionAtRoot()
 
