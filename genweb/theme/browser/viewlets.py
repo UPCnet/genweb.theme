@@ -34,6 +34,7 @@ from genweb.core.adapters import IImportant
 from zope.annotation.interfaces import IAnnotations
 from Products.ATContentTypes.interfaces.event import IATEvent
 
+from genweb.core import _
 from genweb.core import HAS_CAS
 from genweb.core import HAS_DXCT
 from genweb.core.interfaces import IHomePage

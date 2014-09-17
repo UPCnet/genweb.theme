@@ -57,6 +57,11 @@
                 <b aria-hidden="true" class="caret"></b>
               </a>
               <ul class="dropdown-menu" role="menu">
+                <li role="menuitem">
+                  <a tal:attributes="href string:${view/portal_url}/folder_contents">
+                    Neutral
+                  </a>
+                </li>
                 <li role="menuitem"
                     tal:repeat="lang_info view/get_available_langs">
                   <a tal:attributes="href string:${view/portal_url}/${lang_info/code}/folder_contents"
