@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.15 (unreleased)
+1.15 (2014-09-17)
 -----------------
 
-- Nothing changed yet.
-
+* Add missing neutral (root) folder. [Victor Fernandez de Alba]
+* New root folder dropdown with access to the LRFs [Victor Fernandez de Alba]
 
 1.14 (2014-09-16)
 -----------------
