@@ -185,8 +185,8 @@ def _render_cachekey(method, self, especific1, especific2):
     return (especific1, especific2)
 
 
-class typeaheadJson(grok.View):
-    grok.name('typeaheadJson')
+class TypeAheadSearch(grok.View):
+    grok.name('gw_type_ahead_search')
     grok.context(Interface)
     grok.layer(IGenwebTheme)
 

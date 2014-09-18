@@ -71,30 +71,51 @@ $(document).ready(function () {
       $.getScript("/++genweb++static/js/prettify.js", function() {prettyPrint()});
   }
 
+// Toggle search
+  $("#search-results-bar dl a").on("click", function(e) {
+    event.preventDefault();
+    $("#search-results-bar dl dd.actionMenuContent").toggle();
+  });
 
 // Live search
-
-  $("#cercaCapca").typeahead({
-   source: function (query, process) {
-      setTimeout(searchElements(query, process) , 300);
-   },
-   highlighter: function(item){
-      var iitem = $("#cercaCapca").get(0).results[item];
-      //info = items[item.split("#")[0]];
-      var itm = "<i class='icon-"+iitem.icon+"'></i> " +
-                 iitem.title +
-                "<p class='xs margin0'>"+iitem.description+"</p>";
-      return itm;
-  },
-  matcher: function (item) {
-      return true;
-  },
-  updater: function(item) {
-      window.location.href = $("#cercaCapca").get(0).results[item]['itemUrl'];
-  },
-  items: 12,
-  minLength: 2
+  $('#cercaCapca').select2({
+      minimumInputLength: 1,
+      ajax: {
+          url: portal_url + '/gw_type_ahead_search',
+          data: function (term, page) {
+              return {
+                  q: term,
+                  page: page, // page number
+              };
+          },
+          results: function (data, page) {
+              return data;
+          },
+      },
   });
+
+
+  // $("#cercaCapca").typeahead({
+  //  source: function (query, process) {
+  //     setTimeout(searchElements(query, process) , 300);
+  //  },
+  //  highlighter: function(item){
+  //     var iitem = $("#cercaCapca").get(0).results[item];
+  //     //info = items[item.split("#")[0]];
+  //     var itm = "<i class='icon-"+iitem.icon+"'></i> " +
+  //                iitem.title +
+  //               "<p class='xs margin0'>"+iitem.description+"</p>";
+  //     return itm;
+  // },
+  // matcher: function (item) {
+  //     return true;
+  // },
+  // updater: function(item) {
+  //     window.location.href = $("#cercaCapca").get(0).results[item]['itemUrl'];
+  // },
+  // items: 12,
+  // minLength: 2
+  // });
 
  var searchElements = function( query, process ){
      $.get(document.getElementsByTagName('base')[0].href+"/typeaheadJson", { q: query }, function(data) {

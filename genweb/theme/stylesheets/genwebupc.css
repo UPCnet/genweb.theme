@@ -12189,6 +12189,15 @@ input[type="radio"].required:after {
 #plonebrowser #general_panel {
   margin-left: 0px; }
 
+/* line 278, ../scss/_upcnet.scss */
+#search-results-bar [class*="span"], #search-results-bar .cella,
+#search-results-bar dl {
+  margin-bottom: 0px; }
+
+/* line 279, ../scss/_upcnet.scss */
+#search-results-bar dt.actionMenuHeader a::after {
+  content: " ▼"; }
+
 /* TINY */
 /* Save message */
 /* line 4, ../scss/_ui.scss */
