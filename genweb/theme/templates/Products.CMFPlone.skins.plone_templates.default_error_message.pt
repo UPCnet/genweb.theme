@@ -47,7 +47,7 @@
                     <p i18n:domain="genweb" i18n:translate="description_site_error_mail_site_admin">
                         Verifiqueu l'adreça web a què voleu accedir i consulteu el <a href="#"
                            i18n:translate="label_site_admin"
-                           tal:attributes="href string:${context/portal_url}/contact">mapa del web</a> o utilitzeu el cercador  per a localitzar-ne el contingut. Si l'adreça web és correcta, però retorna un error, contacteu amb 
+                           tal:attributes="href string:${context/portal_url}/sitemap">mapa del web</a> o utilitzeu el cercador  per a localitzar-ne el contingut. Si l'adreça web és correcta, però retorna un error, contacteu amb
                         <span i18n:name="site_admin">
                             <a href="#"
                                i18n:translate="label_site_admin"
@@ -71,7 +71,7 @@
                                      condition="python:first_parent is not None or similar_items">
                         <div class="well">
                             <h2 class="margin0" i18n:domain="genweb" i18n:translate="heading_not_found_suggestions">You might have been looking for&hellip;</h2>
-                            
+
                             <dl class="unstyled">
 
                             <tal:firstparent condition="first_parent/absolute_url | nothing">
@@ -90,11 +90,11 @@
                                                          class string:$item_wf_state_class"
                                          tal:content="first_parent/Title" />
 
-                                        <span class="discreet" i18n:translate="results_by_author"
+<!--                                         <span class="discreet" i18n:translate="results_by_author"
                                           tal:condition="python: not isAnon or site_properties.allowAnonymousViewAbout">
                                         by <span tal:omit-tag="" tal:content="first_parent/Creator" i18n:name="author">Author</span>,
                                         <span tal:omit-tag="" tal:content="python:toLocalizedTime(first_parent.ModificationDate(), long_format=1)" i18n:name="date">Modification Date</span>
-                                        </span>
+                                        </span> -->
 
                                     </dt>
 
@@ -116,12 +116,11 @@
                                          tal:attributes="href url;
                                                          class string:$item_wf_state_class"
                                          tal:content="similar/pretty_title_or_id" />
-
-                                        <span class="discreet" i18n:translate="results_by_author"
+<!--                                         <span class="discreet" i18n:translate="results_by_author"
                                           tal:condition="python: not isAnon or site_properties.allowAnonymousViewAbout">
                                         by <span tal:omit-tag="" tal:content="similar/Creator" i18n:name="author">Author</span>,
                                         <span tal:omit-tag="" tal:content="python:toLocalizedTime(similar.ModificationDate, long_format=1)" i18n:name="date">Modification Date</span>
-                                        </span>
+                                        </span> -->
 
                                     </dt>
 
