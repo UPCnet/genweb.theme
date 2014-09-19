@@ -274,7 +274,8 @@ html * .dropdown-menu a:hover .img_blank {
 		&.contenttype-collage:before 		{background-position: -216px 	-168px;}
 		&.contenttype-collection:before 	{background-position: -240px 	-168px;}
 		&.contenttype-survey:before 		{background-position: -265px 	-23px;}
-		&.contenttype-formfolder:before 	{background-position: -144px 	-72px;}
+        &.contenttype-formfolder:before     {background-position: -144px    -72px;}
+		&.contenttype-lrf:before 	        {background-position: -216px    -191px;}
 
 		&:hover:before { @include opacity(100);}
 	}

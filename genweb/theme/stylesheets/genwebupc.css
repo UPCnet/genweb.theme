@@ -2006,7 +2006,7 @@ legend + .control-group {
   background-position: -287px -24px; }
 
 /* line 87, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-flag {
+.icon-flag, .icon-banner {
   background-position: -312px -24px; }
 
 /* line 88, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2461,7 +2461,7 @@ legend + .control-group {
   background-position: -120px -169px; }
 
 /* line 209, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-logosfooter {
+.icon-logosfooter, .icon-logos_footer {
   background-position: -144px -169px; }
 
 /* line 210, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -8279,8 +8279,11 @@ html * .dropdown-menu a:hover .img_blank {
   background-position: -265px 	-23px; }
 /* line 277, ../scss/_nav.scss */
 #listing-table a.contenttype-formfolder:before, .template-folder_tabular_view .listing a.contenttype-formfolder:before {
-  background-position: -144px 	-72px; }
-/* line 279, ../scss/_nav.scss */
+  background-position: -144px    -72px; }
+/* line 278, ../scss/_nav.scss */
+#listing-table a.contenttype-lrf:before, .template-folder_tabular_view .listing a.contenttype-lrf:before {
+  background-position: -216px    -191px; }
+/* line 280, ../scss/_nav.scss */
 #listing-table a:hover:before, .template-folder_tabular_view .listing a:hover:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
   opacity: 100; }
