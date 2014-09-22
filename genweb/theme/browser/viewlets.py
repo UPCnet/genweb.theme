@@ -32,7 +32,8 @@ from Products.ATContentTypes.interface.news import IATNewsItem
 from genweb.core.adapters import IImportant
 
 from zope.annotation.interfaces import IAnnotations
-from Products.ATContentTypes.interfaces.event import IATEvent
+# from Products.ATContentTypes.interfaces.event import IATEvent
+from plone.app.contenttypes.interfaces import IEvent
 
 from genweb.core import _
 from genweb.core import HAS_CAS
@@ -185,7 +186,7 @@ class gwImportantNews(viewletBase):
 
 class gwSendEvent(viewletBase):
     grok.name('genweb.sendevent')
-    grok.context(IATEvent)
+    grok.context(IEvent)
     grok.template('send_event')
     grok.viewletmanager(IAboveContentTitle)
     grok.layer(IGenwebTheme)

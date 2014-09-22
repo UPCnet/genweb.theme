@@ -18,6 +18,7 @@ from plone.portlets.interfaces import IPortletManagerRenderer
 from plone.app.layout.globals.layout import LayoutPolicy
 from plone.i18n.normalizer.interfaces import IIDNormalizer
 from plone.formwidget.recaptcha.view import RecaptchaView, IRecaptchaInfo
+from plone.app.contenttypes.interfaces import IEvent
 
 from Products.CMFPlone import utils
 from Products.CMFPlone.utils import safe_unicode
@@ -26,7 +27,7 @@ from Products.CMFPlone import PloneMessageFactory as _
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.PythonScripts.standard import url_quote_plus
 from Products.statusmessages.interfaces import IStatusMessage
-from Products.ATContentTypes.interfaces.event import IATEvent
+# from Products.ATContentTypes.interfaces.event import IATEvent
 from Products.CMFPlone.browser.navtree import getNavigationRoot
 from Products.CMFPlone.browser.navigation import CatalogNavigationTabs
 from Products.CMFPlone.browser.navigation import get_id, get_view_url
@@ -604,7 +605,7 @@ class gwCollectiveRecaptchaView(CollectiveRecaptchaView, grok.View):
 
 
 class gwSendEventView(grok.View):
-    grok.context(IATEvent)
+    grok.context(IEvent)
     grok.name('send-event')
     grok.require('cmf.AddPortalContent')
     grok.layer(IGenwebTheme)
