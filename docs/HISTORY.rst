@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.17 (unreleased)
+1.17 (2014-09-22)
 -----------------
 
-- Nothing changed yet.
-
+* Update markup for the send-event viewlet. Update the registrations for DX event. [Victor Fernandez de Alba]
 
 1.16 (2014-09-22)
 -----------------
