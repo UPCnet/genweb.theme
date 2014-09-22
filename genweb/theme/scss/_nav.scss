@@ -279,3 +279,19 @@ html * .dropdown-menu a:hover .img_blank {
 		&:hover:before { @include opacity(100);}
 	}
 }
+
+
+/* llista dl en pàgina error */
+dt[class*=" contenttype-"] {
+    background-image: image-url("gh.png");
+    background-repeat:no-repeat;
+	content: " ";
+	display: block;
+	right: 22px;
+	height: 20px;
+	margin-right: -24px;
+	width: 20px;
+	@include opacity(75);
+	top:10px;
+	position:absolute;
+}
