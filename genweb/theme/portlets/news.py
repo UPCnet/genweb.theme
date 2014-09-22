@@ -1,15 +1,18 @@
+from Acquisition import aq_inner
+from plone import api
 from zope import schema
 from zope.interface import implements
 from zope.formlib import form
+
 from plone.app.portlets.portlets import base
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from Products.CMFPlone import PloneMessageFactory as _
-from Acquisition import aq_inner
 from plone.memoize.instance import memoize
 from plone.portlets.interfaces import IPortletDataProvider
+
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from Products.CMFPlone import PloneMessageFactory as _
 from Products.CMFCore.utils import getToolByName
 
-from zope.component import getMultiAdapter
+from genweb.core.interfaces import INewsFolder
 
 from plone.app.portlets.portlets.news import Renderer as news_renderer
 
@@ -23,14 +26,15 @@ class INewsPortlet(IPortletDataProvider):
         required=True,
         default=5,
         min=5,
-        max=7)
+        max=7
+    )
 
     showdata = schema.Bool(
         title=_(u"Mostra data?"),
         description=_(u"Boolea que indica si s'ha de mostrar la data en les noticies"),
         required=True,
         default=True,
-        )
+    )
 
 
 class Assignment (base.Assignment):
@@ -44,25 +48,21 @@ class Assignment (base.Assignment):
     def title(self):
         return _(u"News")
 
+
 class Renderer(news_renderer):
     render = ViewPageTemplateFile('templates/news.pt')
-
-    @memoize
-    def have_news_folder(self):
-        return 'news' in self.navigation_root_object.objectIds()
 
     def mostraData(self):
         return self.data.showdata
 
     def all_news_link(self):
-        context = aq_inner(self.context)
-        portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
-        self.portal = portal_state.portal()
-        if self.have_news_folder:
-            news = self.portal.noticies.getTranslation()
-            return '%s' % news.absolute_url()
+        pc = api.portal.get_tool('portal_catalog')
+        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__)
+
+        if news_folder:
+            return '%s' % news_folder[0].getURL()
         else:
-            return '%s/news_listing' % self.portal_url
+            return ''
 
     @memoize
     def _data(self):
@@ -105,6 +105,7 @@ class AddForm(base.AddForm):
 
         def create(self, data):
             return Assignment(count=data.get('count', 5), showdata=data.get('showdata', True))
+
 
 class EditForm(base.EditForm):
     form_fields = form.Fields(INewsPortlet)

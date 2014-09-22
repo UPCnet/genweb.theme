@@ -75,11 +75,11 @@
            title="AgendaGW"
            i18n:attributes="title"/>
 
-    <portlet addview="genweb.portlets.news"
-             title="NoticiesPropi"
-             i18n:attributes="title"/>
+  <portlet addview="genweb.portlets.news"
+           title="NoticiesPropi"
+           i18n:attributes="title"/>
 
-    <portlet addview="genweb.portlets.fullnews"
-             title="FullNews"
-             i18n:attributes="title"/>
+  <portlet addview="genweb.portlets.fullnews"
+           title="FullNews"
+           i18n:attributes="title"/>
 </portlets>

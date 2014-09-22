@@ -1,3 +1,4 @@
+from plone import api
 from plone.memoize.instance import memoize
 from plone.memoize import ram
 from plone.memoize.compress import xhtml_compress
@@ -17,6 +18,8 @@ from plone.app.portlets import PloneMessageFactory as _
 from plone.app.portlets.cache import render_cachekey
 from plone.app.portlets.portlets import base
 
+from genweb.core.interfaces import IEventFolder
+
 from zope.i18nmessageid import MessageFactory
 PLMF = MessageFactory('plonelocales')
 
@@ -30,7 +33,8 @@ class IEsdevenimentsPortlet(IPortletDataProvider):
                        required=True,
                        default=5,
                        min=5,
-                       max=7)
+                       max=7
+                       )
 
     state = schema.Tuple(title=_(u"Workflow state"),
                          description=_(u"Items in which workflow state to show."),
@@ -61,10 +65,10 @@ class Renderer(base.Renderer):
         base.Renderer.__init__(self, *args)
 
         portal_state = getMultiAdapter((self.context, self.request), name=u'plone_portal_state')
-        self.navigation_root_url = portal_state.navigation_root_url()
-        self.portal = portal_state.portal()
+        # self.navigation_root_url = portal_state.navigation_root_url()
+        self.portal = api.portal.get()
         self.navigation_root_path = portal_state.navigation_root_path()
-        self.navigation_root_object = getNavigationRootObject(self.context, self.portal)
+        # self.navigation_root_object = getNavigationRootObject(self.context, self.portal)
 
     @ram.cache(render_cachekey)
     def render(self):
@@ -82,7 +86,7 @@ class Renderer(base.Renderer):
         month = DateTime.month(data)
         self._ts = getToolByName(context, 'translation_service')
         monthName = TAM(self._ts.month_msgid(month, format='a'),
-                              default=self._ts.month_english(month, format='a'))
+                        default=self._ts.month_english(month, format='a'))
         return monthName
 
     def getMonth(self, data):
@@ -90,7 +94,7 @@ class Renderer(base.Renderer):
         month = DateTime.month(data)
         self._ts = getToolByName(context, 'translation_service')
         monthName = PLMF(self._ts.month_msgid(month),
-                              default=self._ts.month_english(month))
+                         default=self._ts.month_english(month))
         return monthName
 
     def getDay(self, data):
@@ -103,17 +107,16 @@ class Renderer(base.Renderer):
         else:
             return False
 
-    @memoize
-    def have_events_folder(self):
-        return 'events' in self.navigation_root_object.objectIds()
-
     def all_events_link(self):
-        if self.have_events_folder:
-            events = self.portal.esdeveniments.getTranslation()
-            return '%s' % events.absolute_url()
-        else:
-            return '%s/events_listing' % self.portal_url
+        pc = api.portal.get_tool('portal_catalog')
+        events_folder = pc.searchResults(object_provides=IEventFolder.__identifier__)
 
+        if events_folder:
+            return '%s' % events_folder[0].getURL()
+        else:
+            return ''
+
+    # Deprecated?
     def prev_events_link(self):
         previous_events = self.portal.esdeveniments.aggregator.anteriors.getTranslation()
         if self.have_events_folder:
@@ -134,40 +137,35 @@ class Renderer(base.Renderer):
         results = catalog(portal_type='Event',
                           review_state=state,
                           end={'query': now,
-                               'range': 'min'
-                               },
+                               'range': 'min'},
                           start={'query': [yesterday, tomorrow],
-                               'range': 'min:max'
-                               },
+                                 'range': 'min:max'},
                           path=path,
                           sort_on='start',
                           sort_limit=limit)[:limit]
         count = len(results)
         if count < limit:
             results2 = catalog(portal_type=('Event'),
-                       review_state=state,
-                       end={'query': now,
-                            'range': 'min'
-                            },
-                       start={'query': yesterday,
-                              'range': 'max'
-                            },
-                       path=path,
-                       sort_on='start',
-                       sort_limit=limit - count)[:limit - count]
+                               review_state=state,
+                               end={'query': now,
+                                    'range': 'min'},
+                               start={'query': yesterday,
+                                      'range': 'max'},
+                               path=path,
+                               sort_on='start',
+                               sort_limit=limit - count)[:limit - count]
             count = len(results + results2)
             if count < limit:
                 results3 = catalog(portal_type=('Event'),
-                           review_state=state,
-                           end={'query': now,
-                                'range': 'min'
-                                },
-                       start={'query': tomorrow,
-                              'range': 'min'
-                            },
-                       path=path,
-                       sort_on='start',
-                       sort_limit=limit - count)[:limit - count]
+                                   review_state=state,
+                                   end={'query': now,
+                                        'range': 'min'
+                                        },
+                                   start={'query': tomorrow,
+                                          'range': 'min'},
+                                   path=path,
+                                   sort_on='start',
+                                   sort_limit=limit - count)[:limit - count]
                 return results + results2 + results3
             else:
                 return results + results2
