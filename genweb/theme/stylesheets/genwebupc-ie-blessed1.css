@@ -2006,7 +2006,7 @@ legend + .control-group {
   background-position: -287px -24px; }
 
 /* line 87, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-flag {
+.icon-flag, .icon-banner {
   background-position: -312px -24px; }
 
 /* line 88, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
@@ -2461,7 +2461,7 @@ legend + .control-group {
   background-position: -120px -169px; }
 
 /* line 209, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
-.icon-logosfooter {
+.icon-logosfooter, .icon-logos_footer {
   background-position: -144px -169px; }
 
 /* line 210, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */

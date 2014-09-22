@@ -272,3 +272,10 @@ input[type="radio"].required:after { content: none; }
         margin-left: 0px;
     }
 }
+
+// Search Template
+#search-results-bar [class*="span"],
+#search-results-bar dl {margin-bottom: 0px;}
+#search-results-bar dt.actionMenuHeader a::after {
+    content: " ▼";
+}

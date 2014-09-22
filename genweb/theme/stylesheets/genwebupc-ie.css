@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1410892063631');
+@import url('genwebupc-ie-blessed1.css?z=1411127843589');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 552, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -1761,8 +1761,11 @@ html * .dropdown-menu a:hover .img_blank {
   background-position: -265px 	-23px; }
 /* line 277, ../scss/_nav.scss */
 #listing-table a.contenttype-formfolder:before, .template-folder_tabular_view .listing a.contenttype-formfolder:before {
-  background-position: -144px 	-72px; }
-/* line 279, ../scss/_nav.scss */
+  background-position: -144px    -72px; }
+/* line 278, ../scss/_nav.scss */
+#listing-table a.contenttype-lrf:before, .template-folder_tabular_view .listing a.contenttype-lrf:before {
+  background-position: -216px    -191px; }
+/* line 280, ../scss/_nav.scss */
 #listing-table a:hover:before, .template-folder_tabular_view .listing a:hover:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
   opacity: 100; }
@@ -5670,6 +5673,15 @@ input[type="radio"].required:after {
 /* line 271, ../scss/_upcnet.scss */
 #plonebrowser #general_panel {
   margin-left: 0px; }
+
+/* line 278, ../scss/_upcnet.scss */
+#search-results-bar [class*="span"], #search-results-bar .cella,
+#search-results-bar dl {
+  margin-bottom: 0px; }
+
+/* line 279, ../scss/_upcnet.scss */
+#search-results-bar dt.actionMenuHeader a::after {
+  content: " ▼"; }
 
 /* TINY */
 /* Save message */
