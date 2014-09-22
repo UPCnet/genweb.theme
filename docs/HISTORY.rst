@@ -1,11 +1,21 @@
 Changelog
 =========
 
-1.16 (unreleased)
+1.16 (2014-09-22)
 -----------------
 
-- Nothing changed yet.
-
+* Fix portlets [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* Fix of benvingut portlet [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* CSS changes by Oscar [Roberto Diaz]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* Fix missing icons [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Corina Riba]
+* Eliminar autor y fecha de las sugerencias [Corina Riba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* New search template and initial work on select2 based livesearch [Victor Fernandez de Alba]
+* Mensaje de error personalizado [Corina Riba]
 
 1.15 (2014-09-17)
 -----------------
