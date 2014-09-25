@@ -103,15 +103,9 @@
           </ul>
           <h2 class="goout" id="titol-menu-eines-genweb"> Menú d'eines Genweb UPC </h2>
           <ul class="nav pull-right" role="toolbar" aria-labelledby="titol-menu-eines-genweb">
-            <li role="menuitem" class="visible-desktop visible-tablet" tal:condition="view/canManageSite">
+<!--             <li role="menuitem" class="visible-desktop visible-tablet" tal:condition="view/canManageSite">
               <a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Idioma establert com a defecte al lloc web. Potser no és el mateix que hi ha publicat al web segons la configuració del panell de control del Genweb" data-original-title="Idioma per defecte"><span class="label label-important "><tal:co tal:content="view/default_site_lang"></tal:co></span></a>
-            </li>
-            <!--[if !IE]> -->
-<!--             <li role="menuitem" class="visible-desktop visible-tablet"><a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Les vistes pretenen ajudar a fer millors versions de mòbil i de tauleta del vostre web.<br /> Només està disponible per a navegadors moderns i encara en <strong>fase beta</strong>. En cap cas és la versió real de com es veurà el web mobilitzat sinó només una simulació.<br><br><span class='s text-info'>Seleccioneu vista mòbil o tauleta i només heu de clicar a la icona pantalla per tornar a la vista normal</span>" data-original-title="<strong>Vistes</strong> Beta"><span class="label label-important ">Vistes Beta</span></a></li>
-            <li role="menuitem" class="visible-desktop visible-tablet"><a class="userScreen" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Screenview"><span class="goout">Screen</span></a></li>
-            <li role="menuitem" class="visible-desktop visible-tablet"><a class="userTablet " href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Tabletview"><span class="goout">Tablet</span></a></li>
-            <li role="menuitem" class="visible-desktop visible-tablet"><a class="userMobile " href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Mobileview"><span class="goout">Mobile</span></a></li> -->
-            <!-- <![endif]-->
+            </li> -->
             <li aria-hidden="true" class="divider-vertical hidden-phone"></li>
             <li role="menuitem" class="dropdown hidden-phone pull-right"
                 tal:define="notificacions view/getNotificacionsGW">

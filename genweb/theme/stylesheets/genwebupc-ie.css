@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1411127843589');
+@import url('genwebupc-ie-blessed1.css?z=1411640260968');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 552, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -1769,6 +1769,22 @@ html * .dropdown-menu a:hover .img_blank {
 #listing-table a:hover:before, .template-folder_tabular_view .listing a:hover:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
   opacity: 100; }
+
+/* llista dl en pàgina error */
+/* line 286, ../scss/_nav.scss */
+dt[class*=" contenttype-"] {
+  background-image: url('++genweb++static/images/gh.png?1406203246');
+  background-repeat: no-repeat;
+  content: " ";
+  display: block;
+  right: 22px;
+  height: 20px;
+  margin-right: -24px;
+  width: 20px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=7500);
+  opacity: 75;
+  top: 10px;
+  position: absolute; }
 
 /* ABANS EREN LI */
 /* line 11, ../scss/_plantilles.scss */
@@ -5682,6 +5698,20 @@ input[type="radio"].required:after {
 /* line 279, ../scss/_upcnet.scss */
 #search-results-bar dt.actionMenuHeader a::after {
   content: " ▼"; }
+
+/* line 284, ../scss/_upcnet.scss */
+ul.betaviewsicons {
+  display: inline;
+  list-style: none;
+  float: right;
+  margin-left: 5px; }
+  /* line 289, ../scss/_upcnet.scss */
+  ul.betaviewsicons li {
+    display: inline-block; }
+
+/* line 291, ../scss/_upcnet.scss */
+.fontello-icon-mobile, .fontello-icon-tablet {
+  font-size: 20px; }
 
 /* TINY */
 /* Save message */

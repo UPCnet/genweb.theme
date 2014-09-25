@@ -30,6 +30,12 @@
     cacheable="False" compression="safe" cookable="False"
     enabled="1" expression=""/>
 
+  <stylesheet title=""
+    id="++genweb++static/fontello-genweb/css/fontello.css"
+    media="" rel="stylesheet" rendering="link"
+    cacheable="False" compression="safe" cookable="False"
+    enabled="1" expression=""/>
+
 <!-- Per deshabilitar/passar a scss:
 collective.js.jqueryui.custom.min.css
 ++resource++plone.app.discussion.stylesheets/discussion.css

@@ -279,3 +279,13 @@ input[type="radio"].required:after { content: none; }
 #search-results-bar dt.actionMenuHeader a::after {
     content: " ▼";
 }
+
+// Personal tool icons
+ul.betaviewsicons {
+    display: inline;
+    list-style: none;
+    float: right;
+    margin-left: 5px;
+    li { display: inline-block; }
+}
+.fontello-icon-mobile, .fontello-icon-tablet { font-size: 20px; }
