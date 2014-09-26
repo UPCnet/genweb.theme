@@ -5165,15 +5165,16 @@ button.pfg-draft-save .caret,
   border-width: 0 5px 5px;
   border-bottom-color: #111111; }
 
-/* line 6, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+/* line 7, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
 .popover, .expandable-content {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1010;
   display: none;
-  width: 236px;
+  max-width: 276px;
   padding: 1px;
+  text-align: left;
   background-color: white;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
@@ -5185,109 +5186,117 @@ button.pfg-draft-save .caret,
   border-radius: 6px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
-  /* line 24, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  white-space: normal; }
+  /* line 29, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
   .popover.top, .top.expandable-content {
-    margin-bottom: 10px; }
-  /* line 25, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+    margin-top: -10px; }
+  /* line 30, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
   .popover.right, .right.expandable-content {
     margin-left: 10px; }
-  /* line 26, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+  /* line 31, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
   .popover.bottom, .bottom.expandable-content {
     margin-top: 10px; }
-  /* line 27, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+  /* line 32, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
   .popover.left, .left.expandable-content {
-    margin-right: 10px; }
+    margin-left: -10px; }
 
-/* line 31, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+/* line 35, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
 .popover-title, .expandable-content h4 {
   margin: 0;
-  padding: 8px 12px;
-  font-size: 107.692308%;
+  padding: 8px 14px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 18px;
-  text-shadow: 0 -1px white;
   background-color: #f7f7f7;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #ebebeb;
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0; }
-
-/* line 43, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover-content, .expandable-content .inner-content {
-  padding: 9px 12px; }
   /* line 45, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-  .popover-content p, .expandable-content .inner-content p, .popover-content ul, .expandable-content .inner-content ul, .popover-content ol, .expandable-content .inner-content ol {
-    margin-bottom: 0; }
+  .popover-title:empty, .expandable-content h4:empty {
+    display: none; }
 
-/* line 52, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+/* line 50, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+.popover-content, .expandable-content .inner-content {
+  padding: 9px 14px; }
+
+/* line 59, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
 .popover .arrow, .expandable-content .arrow,
 .popover .arrow:after,
 .expandable-content .arrow:after {
   position: absolute;
-  display: inline-block;
+  display: block;
   width: 0;
   height: 0;
   border-color: transparent;
   border-style: solid; }
 
-/* line 60, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
-.popover .arrow:after, .expandable-content .arrow:after {
-  content: "";
-  z-index: -1; }
+/* line 67, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+.popover .arrow, .expandable-content .arrow {
+  border-width: 9px; }
 
-/* line 66, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+/* line 70, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+.popover .arrow:after, .expandable-content .arrow:after {
+  border-width: 8px;
+  content: ""; }
+
+/* line 76, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
 .popover.top .arrow, .top.expandable-content .arrow {
-  bottom: -8px;
   left: 50%;
-  margin-left: -8px;
-  border-width: 8px 8px 0;
-  border-top-color: white; }
-  /* line 72, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+  margin-left: -9px;
+  border-bottom-width: 0;
+  border-top-color: #999;
+  border-top-color: rgba(0, 0, 0, 0.15);
+  bottom: -9px; }
+  /* line 83, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
   .popover.top .arrow:after, .top.expandable-content .arrow:after {
-    border-width: 9px 9px 0;
-    border-top-color: rgba(0, 0, 0, 0.15);
-    bottom: -1px;
-    left: -9px; }
-/* line 79, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+    bottom: 1px;
+    margin-left: -8px;
+    border-bottom-width: 0;
+    border-top-color: white; }
+/* line 90, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
 .popover.right .arrow, .right.expandable-content .arrow {
   top: 50%;
-  left: -8px;
-  margin-top: -8px;
-  border-width: 8px 8px 8px 0;
-  border-right-color: white; }
-  /* line 85, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+  left: -9px;
+  margin-top: -9px;
+  border-left-width: 0;
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, 0.15); }
+  /* line 97, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
   .popover.right .arrow:after, .right.expandable-content .arrow:after {
-    border-width: 9px 9px 9px 0;
-    border-right-color: rgba(0, 0, 0, 0.15);
-    bottom: -9px;
-    left: -1px; }
-/* line 92, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+    left: 1px;
+    bottom: -8px;
+    border-left-width: 0;
+    border-right-color: white; }
+/* line 104, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
 .popover.bottom .arrow, .bottom.expandable-content .arrow {
-  top: -8px;
   left: 50%;
-  margin-left: -8px;
-  border-width: 0 8px 8px;
-  border-bottom-color: #f7f7f7; }
-  /* line 98, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+  margin-left: -9px;
+  border-top-width: 0;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, 0.15);
+  top: -9px; }
+  /* line 111, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
   .popover.bottom .arrow:after, .bottom.expandable-content .arrow:after {
-    border-width: 0 9px 9px;
-    border-bottom-color: rgba(0, 0, 0, 0.15);
-    top: -1px;
-    left: -9px; }
-/* line 105, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+    top: 1px;
+    margin-left: -8px;
+    border-top-width: 0;
+    border-bottom-color: white; }
+/* line 119, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
 .popover.left .arrow, .left.expandable-content .arrow {
   top: 50%;
-  right: -8px;
-  margin-top: -8px;
-  border-width: 8px 0 8px 8px;
-  border-left-color: white; }
-  /* line 111, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
+  right: -9px;
+  margin-top: -9px;
+  border-right-width: 0;
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, 0.15); }
+  /* line 126, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_popovers.scss */
   .popover.left .arrow:after, .left.expandable-content .arrow:after {
-    border-width: 9px 0 9px 9px;
-    border-left-color: rgba(0, 0, 0, 0.15);
-    bottom: -9px;
-    right: -1px; }
+    right: 1px;
+    border-right-width: 0;
+    border-left-color: white;
+    bottom: -8px; }
 
 /* line 8, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_thumbnails.scss */
 .thumbnails {
@@ -13353,12 +13362,3 @@ a#calendar-next {
 a#calendar-previous {
   margin-left: -4px;
   width: 12px; }
-
-/* line 29, ../scss/genwebupc.scss */
-.popover.left, .left.expandable-content, .left.expandable-content {
-  margin-right: 10px;
-  left: 815px !important; }
-
-/* line 34, ../scss/genwebupc.scss */
-.popover, .expandable-content, .expandable-content {
-  width: 275px; }
