@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1411640260968');
+@import url('genwebupc-ie-blessed1.css?z=1411733355216');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 552, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -6797,12 +6797,3 @@ a#calendar-next {
 a#calendar-previous {
   margin-left: -4px;
   width: 12px; }
-
-/* line 29, ../scss/genwebupc.scss */
-.popover.left, .left.expandable-content, .left.expandable-content {
-  margin-right: 10px;
-  left: 815px !important; }
-
-/* line 34, ../scss/genwebupc.scss */
-.popover, .expandable-content, .expandable-content {
-  width: 275px; }

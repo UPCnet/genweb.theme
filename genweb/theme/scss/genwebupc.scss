@@ -1,5 +1,5 @@
 @import "reboot";
-@import "genweb_upc"; 
+@import "genweb_upc";
 
 
 .width100 {width:100% !important; -moz-box-sizing:border-box;}
@@ -26,11 +26,11 @@ b, strong {font-weight:bold;}
 a#calendar-next {width: 8px;}
 a#calendar-previous { margin-left: -4px; width: 12px;}
 
-.popover.left, .left.expandable-content {
-margin-right: 10px;
-left: 815px !important;
-}
+// .popover.left, .left.expandable-content {
+// margin-right: 10px;
+// left: 815px !important;
+// }
 
-.popover, .expandable-content {
-width: 275px;
-}
+// .popover, .expandable-content {
+// width: 275px;
+// }
