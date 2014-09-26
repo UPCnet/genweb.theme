@@ -278,21 +278,56 @@ html * .dropdown-menu a:hover .img_blank {
 		&.contenttype-lrf:before 	        {background-position: -216px    -191px;}
 
 		&:hover:before { @include opacity(100);}
-	}
+	} 
 }
 
 
 /* llista dl en pàgina error */
-dt[class*=" contenttype-"] {
-    background-image: image-url("gh.png");
-    background-repeat:no-repeat;
-	content: " ";
-	display: block;
-	right: 22px;
-	height: 20px;
-	margin-right: -24px;
-	width: 20px;
-	@include opacity(75);
-	top:10px;
-	position:absolute;
+/* line 286, ../scss/_nav.scss */
+dt[class*="contenttype"]{
+  margin-left:20px;
 }
+dt[class*="contenttype"] + dd{
+  margin-left:20px;
+}
+dt[class*="contenttype"]:before {
+  background-image: url('gh.png');
+  background-repeat: no-repeat;
+  
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  position: relative;
+  right: 17px;
+  top: 17px;
+  /*margin-right: -3px;*/
+
+  content: " ";
+  opacity: 0.75;
+
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=7500);
+} 
+
+dt.contenttype-page:before,
+    dt.contenttype-document:before     {background-position: -24px   -24px;}
+    dt.contenttype-link:before       {background-position: -72px   -168px;}
+    dt.contenttype-windowztool:before,
+    dt.contenttype-window:before,
+    dt.contenttype-window:before     {background-position: -97px   -168px;}
+    dt.contenttype-bannercontainer:before,
+    dt.contenttype-banner:before     {background-position: -313px  -25px;}
+    dt.contenttype-logos_container:before,
+    dt.contenttype-logos_footer:before   {background-position: -143px  -168px;}
+    dt.contenttype-topic:before      {background-position: -72px   -192px;}
+    dt.contenttype-file:before       {background-position: -167px  -168px;}
+    dt.contenttype-image:before      {background-position: -457px  -49px;}
+    dt.contenttype-collective-polls-poll:before  {background-position: -47px   -193px;}
+    dt.contenttype-event:before      {background-position: -191px  -120px;}
+    dt.contenttype-news-item:before    {background-position: -24px   -168px;}
+    dt.contenttype-packet:before     {background-position: -47px   -168px;}
+    dt.contenttype-collage:before    {background-position: -216px  -168px;}
+    dt.contenttype-collection:before   {background-position: -240px  -168px;}
+    dt.contenttype-survey:before     {background-position: -265px  -23px;}
+        dt.contenttype-formfolder:before     {background-position: -144px    -72px;}
+    dt.contenttype-lrf:before          {background-position: -216px    -191px;}
