@@ -1,11 +1,21 @@
 Changelog
 =========
 
-1.18 (unreleased)
+1.18 (2014-09-29)
 -----------------
 
-- Nothing changed yet.
-
+* Fix remaining relative paths [Victor Fernandez de Alba]
+* Fix CSS merges [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+*  [Roberto Diaz]
+* Conflicts: [Roberto Diaz]
+* genweb/theme/stylesheets/genwebupc-ie-blessed1.css [Roberto Diaz]
+* genweb/theme/stylesheets/genwebupc-ie.css [Roberto Diaz]
+* genweb/theme/stylesheets/genwebupc.css [Roberto Diaz]
+* Oscar changes [Roberto Diaz]
+* Correcting popovers on left. [Victor Fernandez de Alba]
+* New custom font for Genweb. Fix resizer.js. Added SEO optimizer. [Victor Fernandez de Alba]
+* Update image call in template [Victor Fernandez de Alba]
 
 1.17 (2014-09-22)
 -----------------
