@@ -5,7 +5,7 @@ add_import_path "./bootstrap/scss"
 http_path = "/"
 css_dir = "./stylesheets"
 sass_dir = "./scss"
-http_images_path = "/++genweb++static/images"
+http_images_path = "++genweb++static/images"
 images_dir = "static/images"
 javascripts_dir = "./bootstrap/js"
 
