@@ -8309,7 +8309,7 @@ dt[class*="contenttype"] + dd {
 
 /* line 293, ../scss/_nav.scss */
 dt[class*="contenttype"]:before {
-  background-image: url("gh.png");
+  background-image: url('++genweb++static/images/gh.png?1406203246');
   background-repeat: no-repeat;
   display: block;
   width: 15px;
