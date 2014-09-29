@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.19 (unreleased)
+1.19 (2014-09-29)
 -----------------
 
-- Nothing changed yet.
-
+* Fix relative gh.png mention [Victor Fernandez de Alba]
 
 1.18 (2014-09-29)
 -----------------
