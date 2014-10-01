@@ -180,16 +180,18 @@
             </div> <!-- Fi span content -->
 
             <!-- Ojo, a GW no tenim mai columna dreta de portlets! no? -->
-            <tal:notajax tal:condition="not:ajax_load">
-                <div id="portal-column-two"
-                    class="spanX"
-                    metal:define-slot="column_two_slot"
-                    tal:condition="sr">
-                    <metal:portlets define-slot="portlets_two_slot">
-                        <tal:block replace="structure provider:plone.rightcolumn" />
-                    </metal:portlets>
-                </div>
-            </tal:notajax>
+            <tal:comment replace="nothing">
+              <tal:notajax tal:condition="not:ajax_load">
+                  <div id="portal-column-two"
+                      class="spanX"
+                      metal:define-slot="column_two_slot"
+                      tal:condition="sr">
+                      <metal:portlets define-slot="portlets_two_slot">
+                          <tal:block replace="structure provider:plone.rightcolumn" />
+                      </metal:portlets>
+                  </div>
+              </tal:notajax>
+            </tal:comment>
         </div> <!-- Fi row content -->
 
     </div>

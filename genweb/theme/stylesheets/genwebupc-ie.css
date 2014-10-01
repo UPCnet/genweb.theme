@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1411982917118');
+@import url('genwebupc-ie-blessed1.css?z=1412174213148');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 552, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -1867,6 +1867,15 @@ dt.contenttype-formfolder:before {
 /* line 333, ../scss/_nav.scss */
 dt.contenttype-lrf:before {
   background-position: -216px    -191px; }
+
+/* line 339, ../scss/_nav.scss */
+.icons-off .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .icons-off .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
+  background-image: none;
+  background-repeat: none; }
 
 /* ABANS EREN LI */
 /* line 11, ../scss/_plantilles.scss */

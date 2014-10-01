@@ -72,7 +72,8 @@
                 Compartits
               </a>
             </li>
-            <li class="dropdown" role="menuitem" id="admin">
+            <li class="dropdown" role="menuitem" id="admin"
+                tal:condition="view/canManageSite">
               <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
                 <span id="user-name">Configuració</span>
                 <b aria-hidden="true" class="caret"></b>
@@ -92,6 +93,12 @@
                     <img i18n:attributes="alt obrir_link_finestra_nova"
                         class="img_blank"
                         src="++resource++cpgenweb.png">
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a tal:attributes="href string:${view/portal_url}/${view/pref_lang}/@@manage-portlets">
+                    <tal:managesite i18n:domain="plone" i18n:translate="manage_portlets_link">
+                      Manage root portlets</tal:managesite>
                   </a>
                 </li>
               </ul>
