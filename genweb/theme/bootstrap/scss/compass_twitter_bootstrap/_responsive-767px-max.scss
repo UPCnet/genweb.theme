@@ -238,7 +238,34 @@
     right: 10px !important;
     li {text-align:left !important;}
   }
-}// END Responsive: Landscape phone to desktop/tablet
+
+  // canviem les pestanyes a botons 
+  .nav-tabs, .contentViews, .configlets, #edit-bar {
+        border-bottom: 0px solid red;
+        box-shadow: 0 0px 0px 0px black inset;
+    }
+
+    .nav-tabs > li > a, .contentViews > li > a, .configlets > li > a {
+      border-radius: 4px;
+    }
+
+    .nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .nav-tabs > .active > a:hover, .contentViews > .active > a:hover, .configlets > .active > a:hover, .nav-tabs > .selected > a:hover, .configlets > .selected > a:hover {
+    border-color: #b2b2b2;
+  }
+
+}
+
+
+
+
+// END Responsive: Landscape phone to desktop/tablet
+
+
+
+
+
+
+
 
 
 
