@@ -1,11 +1,14 @@
 Changelog
 =========
 
-1.20 (unreleased)
+1.20 (2014-10-01)
 -----------------
 
-- Nothing changed yet.
-
+* Update CSS [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* Canvis Oscar. [Roberto Diaz]
+* Adjust main template for not show the not used right column portlet. Hide the icons for non authenticated requests in the navigation portlet. [Victor Fernandez de Alba]
+* Canvi url maps [hanirok]
 
 1.19 (2014-09-29)
 -----------------
