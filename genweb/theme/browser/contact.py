@@ -153,13 +153,13 @@ class ContactForm(form.Form):
         return "http://directori.upc.edu/directori/dadesUE.jsp?id=%s" % codi
 
     def getURLMaps(self, codi):
-        return "https://maps.upc.edu/new/index.php/embed?iu=%s" % codi
+        return "//maps.upc.edu/new/index.php/embed?iu=%s" % codi
 
-    def getContactPersonalized (self):
+    def getContactPersonalized(self):
         not_customized = not genweb_config().contacte_BBDD_or_page
         return not_customized
 
-    def getContactPage (self):
+    def getContactPage(self):
         """
         Funcio que retorna la pagina de contacte personalitzada. Te en compte els permissos de lusuari validat, amb un
         restrictedTraverse sobre lobjecte (tenint en compte lidioma)

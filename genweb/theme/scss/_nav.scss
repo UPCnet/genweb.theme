@@ -331,3 +331,12 @@ dt.contenttype-page:before,
     dt.contenttype-survey:before     {background-position: -265px  -23px;}
         dt.contenttype-formfolder:before     {background-position: -144px    -72px;}
     dt.contenttype-lrf:before          {background-position: -216px    -191px;}
+
+// Fer que desapareixin les icones del portlet de navegació
+.icons-off .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
+    background-image: none;
+    background-repeat: none;
+}

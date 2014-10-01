@@ -8395,6 +8395,15 @@ dt.contenttype-formfolder:before {
 dt.contenttype-lrf:before {
   background-position: -216px    -191px; }
 
+/* line 339, ../scss/_nav.scss */
+.icons-off .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .icons-off .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
+  background-image: none;
+  background-repeat: none; }
+
 /* ABANS EREN LI */
 /* line 11, ../scss/_plantilles.scss */
 .success {
