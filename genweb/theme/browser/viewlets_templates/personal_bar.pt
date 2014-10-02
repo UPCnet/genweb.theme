@@ -64,13 +64,13 @@
                     English
                   </a>
                 </li>
+                <li aria-hidden="true" class="divider"></li>
+                <li role="menuitem">
+                  <a tal:attributes="href string:${view/portal_url}/folder_contents">
+                    Compartits
+                  </a>
+                </li>
               </ul>
-            </li>
-            <li role="menuitem"
-                tal:condition="view/showRootFolderLink">
-              <a tal:attributes="href string:${view/portal_url}/folder_contents">
-                Compartits
-              </a>
             </li>
             <li class="dropdown" role="menuitem" id="admin"
                 tal:condition="view/canManageSite">
@@ -95,6 +95,7 @@
                         src="++resource++cpgenweb.png">
                   </a>
                 </li>
+                <li aria-hidden="true" class="divider"></li>
                 <li role="menuitem">
                   <a tal:attributes="href string:${view/portal_url}/${view/pref_lang}/@@manage-portlets">
                     <tal:managesite i18n:domain="plone" i18n:translate="manage_portlets_link">
