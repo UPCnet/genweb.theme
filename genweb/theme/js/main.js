@@ -28,7 +28,11 @@ $(document).ready(function () {
   $('.custom-chekbox[type="checkbox"]').customInput();
   $('.custom-radio[type="radio"]').customInput();
 
+  // Tooltips
   $('[rel="tooltip"]').tooltip({container: 'body'});
+  $('.ploneCalendar .event a').on('click', function (e) {e.preventDefault();})
+  $('.ploneCalendar .event a').tooltip({container: 'body', html: 'true', trigger: 'click'});
+
   $('[rel="popover"]').popover();
   $(document).on('touchend click', '.amunt a', function() {
     $("html, body").animate({ scrollTop: 0 }, 'slow');
@@ -229,6 +233,9 @@ $(document).ready(function () {
           $('#tagslist').html(data);
       });
   });
+
+
+
 
 }); // End of $(document).ready
 

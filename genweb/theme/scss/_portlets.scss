@@ -6,8 +6,8 @@
   margin-bottom:20px;
   border: 1px solid $tableBorder;
   & h2 {
-    margin:0; 
-    font-size:107%; 
+    margin:0;
+    font-size:107%;
     color:$gray;
     border-bottom: 5px solid $genwebPrimary;
     padding:10px 15px;
@@ -79,13 +79,13 @@
 .portlet-ampliat {
   & h3 {
     padding:0 15px;
-    text-align:left;    
+    text-align:left;
     color: $gray;
   }
   & .content-noticies {
     padding: 0 15px;
     margin-bottom: 0;
-    text-align:left;    
+    text-align:left;
   }
   & li > img {
     margin: 0 0 10px;
@@ -93,15 +93,15 @@
   }
   & .list-portlet {
     margin:0 !important;
-    padding:0 !important;    
+    padding:0 !important;
     &:before {
       content:none;
     }
     & li {
-      border-color: $tableBorder;      
+      border-color: $tableBorder;
       padding:0 0 12px 0 !important;
       margin: 0 !important;
-      text-align:center;      
+      text-align:center;
       @include box-shadow(0 -5px 10px -5px rgba(0, 0, 0, 0.1));
       &:before {
         content:none;
@@ -197,7 +197,7 @@
     }
   }
   & > p {
-    margin:0 15px 18px; 
+    margin:0 15px 18px;
     border-bottom:1px solid $tableBorder;
     padding:10px 0;
   }
@@ -219,7 +219,7 @@
 }
 h2.title-inverse {
   color:$white;
-  text-shadow: 0 1px rgba(0,0,0,.3); 
+  text-shadow: 0 1px rgba(0,0,0,.3);
   & i {
     background-image: image-url("gh-w.png");
   }
@@ -230,13 +230,20 @@ h2.title-inverse {
   & .ploneCalendar {
     text-align: center; font-size: 85%; table-layout: fixed;
     & td {height: 25px;}
+    & td.event { background: #ccc; }
     & td:not(:empty) {background: #f2f2f2; @include border-radius(50px); text-shadow:0 1px #fff;}
-    & td.event, td.todayevent {background: #08c; text-shadow:0 -1px #06a;
-      & a {color: #fff;}}
-    & td.todayevent { 
-      }
-    & td.todaynoevent {background: #ccc; 
-      & strong {color:#000;}}
+    & td.cal_has_events {
+      background: #08c;
+      font-weight: bold;
+      text-shadow:0 -1px #06a;
+      & a {color: #fff;}
+    }
+    & td.today { font-weight: bold; color:#000; }
+
+    /* grey out prev/next month incl. links and background */
+    & td.cal_prev_month, td.cal_next_month {
+      opacity:0.4;
+    }
   }
 }
 
