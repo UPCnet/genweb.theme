@@ -1,15 +1,17 @@
 from plone import api
+from plone.app.event.base import localized_now
 from plone.memoize.instance import memoize
 from plone.memoize import ram
 from plone.memoize.compress import xhtml_compress
 from plone.portlets.interfaces import IPortletDataProvider
-from plone.app.layout.navigation.root import getNavigationRootObject
 from zope.component import getMultiAdapter
 from zope.formlib import form
 from zope.interface import implements
 from zope import schema
 
 from Acquisition import aq_inner
+from datetime import date
+from datetime import timedelta
 from DateTime.DateTime import DateTime
 from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
@@ -20,10 +22,11 @@ from plone.app.portlets.portlets import base
 
 from genweb.core.interfaces import IEventFolder
 
+from genweb.core import GenwebMessageFactory as TAM
+from genweb.core.utils import pref_lang
+
 from zope.i18nmessageid import MessageFactory
 PLMF = MessageFactory('plonelocales')
-
-from genweb.core import GenwebMessageFactory as TAM
 
 
 class IEsdevenimentsPortlet(IPortletDataProvider):
@@ -130,17 +133,18 @@ class Renderer(base.Renderer):
         catalog = getToolByName(context, 'portal_catalog')
         limit = self.data.count
         state = self.data.state
-        now = DateTime()
-        tomorrow = DateTime.Date(now + 1)
-        yesterday = DateTime.Date(now - 1)
-        path = self.navigation_root_path
+
+        now = localized_now()
+        tomorrow = date.today() + timedelta(1)
+        yesterday = date.today() - timedelta(1)
+
         results = catalog(portal_type='Event',
                           review_state=state,
                           end={'query': now,
                                'range': 'min'},
                           start={'query': [yesterday, tomorrow],
                                  'range': 'min:max'},
-                          path=path,
+                          Language=pref_lang(),
                           sort_on='start',
                           sort_limit=limit)[:limit]
         count = len(results)
@@ -151,7 +155,7 @@ class Renderer(base.Renderer):
                                     'range': 'min'},
                                start={'query': yesterday,
                                       'range': 'max'},
-                               path=path,
+                               Language=pref_lang(),
                                sort_on='start',
                                sort_limit=limit - count)[:limit - count]
             count = len(results + results2)
@@ -163,7 +167,7 @@ class Renderer(base.Renderer):
                                         },
                                    start={'query': tomorrow,
                                           'range': 'min'},
-                                   path=path,
+                                   Language=pref_lang(),
                                    sort_on='start',
                                    sort_limit=limit - count)[:limit - count]
                 return results + results2 + results3
