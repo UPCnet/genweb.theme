@@ -3,10 +3,10 @@
 // --------------------------------------------------
 
 @media only screen and (max-width: 979px) and (orientation: portrait), 
-       only screen and (max-width: 979px) and (orientation: landscape)  {
+       only screen and (max-width: 979px) and (orientation: landscape)  
+{
   
-  /*generals*/
-  
+  /*generals*/  
   body {
     font-size:14.5px !important; 
     padding: 0 !important;
@@ -18,8 +18,7 @@
     margin-left:0 !important; margin-right: 0 !important; padding-left: 10px !important;padding-right: 10px !important;
   }
   
-  // personaltools
-  
+  // personaltools  
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {padding:0 5px !important; min-height: 40px;}
   
   nav#portal-personaltools-wrapper {margin-top: 0px !important;}
@@ -49,9 +48,7 @@
     & ul {
       margin:0;  
     }
-  }
-
-  
+  }  
 
   // menú principal
   #titol-menu-1 { // fem que tota la barra desplegui el menú
@@ -85,14 +82,12 @@
     }
   }
 
-  #canvia-vista {
-    @include box-sizing(content-box);margin-left: 0px !important;margin-right: 0px !important;
-  }
+  #canvia-vista {     @include box-sizing(content-box);margin-left: 0px !important;margin-right: 0px !important;  }
 
   // altres ajustaments
 
-  table {
-//    display:block;
+  table { 
+    //  display:block;
     width:100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
@@ -137,20 +132,10 @@
   // -----------
 
   // Make span* classes full width
-  .input-large, .input-xlarge,
-  .input-xxlarge,
-  input[class*="span"],
-  select[class*="span"],
-  textarea[class*="span"],
-  .uneditable-input {
-    @include input-block-level();
-  }
+  .input-large, .input-xlarge, .input-xxlarge,  input[class*="span"],  select[class*="span"],  textarea[class*="span"],  .uneditable-input {    @include input-block-level();  }
 
   // But don't let it screw up prepend/append inputs
-  .input-prepend input,
-  .input-append input,
-  .input-prepend input[class*="span"],
-  .input-append input[class*="span"] {
+  .input-prepend input,  .input-append input,  .input-prepend input[class*="span"],  .input-append input[class*="span"] {
     display: inline-block; // redeclare so they don't wrap to new lines
     width: auto;
   }
@@ -177,9 +162,8 @@
   .unit-picture .img-polaroid {float:none;clear:both;}
   .contact table {width:100% !important;} 
 
-
   // captcha
-  #recaptcha_table {// en mòbil visualitzem la taula captcha en blocks
+  #recaptcha_table {// en mobil visualitzem la taula captcha en blocks
     td {
       display:block;
     }
@@ -226,9 +210,7 @@
     }
   }
 
-  #recaptcha_input_area, #recaptcha_response_field {
-    width:240px !important;
-  }
+  #recaptcha_input_area, #recaptcha_response_field {    width:240px !important;  }
   // FI captcha
 
 
@@ -239,34 +221,21 @@
     li {text-align:left !important;}
   }
 
-  // canviem les pestanyes a botons 
+  /* canviem les pestanyes a botons */
   .nav-tabs, .contentViews, .configlets, #edit-bar {
-        border-bottom: 0px solid red;
-        box-shadow: 0 0px 0px 0px black inset;
+        border-bottom: 0px !important;
+        box-shadow: 0 0px 0px 0px black inset !important;
     }
 
-    .nav-tabs > li > a, .contentViews > li > a, .configlets > li > a {
+  .nav-tabs > li > a, .contentViews > li > a, .configlets > li > a {
       border-radius: 4px;
     }
 
-    .nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .nav-tabs > .active > a:hover, .contentViews > .active > a:hover, .configlets > .active > a:hover, .nav-tabs > .selected > a:hover, .configlets > .selected > a:hover {
-    border-color: #b2b2b2;
+  .nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .nav-tabs > .active > a:hover, .contentViews > .active > a:hover, .configlets > .active > a:hover, .nav-tabs > .selected > a:hover, .configlets > .selected > a:hover {
+    border-color: #b2b2b2 !important;
   }
 
-}
-
-
-
-
-// END Responsive: Landscape phone to desktop/tablet
-
-
-
-
-
-
-
-
+} // END Responsive: Landscape phone to desktop/tablet
 
 
 
@@ -425,7 +394,7 @@
   }// FI taula pla estudis empaquetat
 
 
-  // mapa contacte, afegim marges laterals per poder fer scroll en mòbil
+  /* mapa contacte, afegim marges laterals per poder fer scroll en mòbil */
   .img-mask { 
     width:90% !important;
     margin-left:5% !important;

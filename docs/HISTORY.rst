@@ -1,11 +1,25 @@
 Changelog
 =========
 
-1.21 (unreleased)
+1.22 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+1.21 (2014-10-06)
+-----------------
+
+* CSS [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* Fix news portlet [Victor Fernandez de Alba]
+* Fix calendar [Victor Fernandez de Alba]
+* Canvis Oscar [Roberto Diaz]
+* Idioma per defecte [Victor Fernandez de Alba]
+* Fix portlet calendar [Victor Fernandez de Alba]
+* Fix wc.fc select all error. [Victor Fernandez de Alba]
+* Fix grunt [Victor Fernandez de Alba]
+* Rationalize links in personal bar [Victor Fernandez de Alba]
 
 1.20 (2014-10-01)
 -----------------

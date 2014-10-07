@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1412174474131');
+@import url('genwebupc-ie-blessed1.css?z=1412621720018');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 552, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -1877,6 +1877,7 @@ dt.contenttype-lrf:before {
   background-image: none;
   background-repeat: none; }
 
+/* test5 */
 /* ABANS EREN LI */
 /* line 11, ../scss/_plantilles.scss */
 .success {
@@ -3696,11 +3697,15 @@ h2.title-inverse {
 .portletCalendar .ploneCalendar {
   text-align: center;
   font-size: 85%;
-  table-layout: fixed; }
+  table-layout: fixed;
+  /* grey out prev/next month incl. links and background */ }
   /* line 232, ../scss/_portlets.scss */
   .portletCalendar .ploneCalendar td {
     height: 25px; }
   /* line 233, ../scss/_portlets.scss */
+  .portletCalendar .ploneCalendar td.event {
+    background: #ccc; }
+  /* line 234, ../scss/_portlets.scss */
   .portletCalendar .ploneCalendar td:not(:empty) {
     background: #f2f2f2;
     -webkit-border-radius: 50px;
@@ -3709,27 +3714,29 @@ h2.title-inverse {
     -o-border-radius: 50px;
     border-radius: 50px;
     text-shadow: 0 1px #fff; }
-  /* line 234, ../scss/_portlets.scss */
-  .portletCalendar .ploneCalendar td.event, .portletCalendar .ploneCalendar td.todayevent {
+  /* line 235, ../scss/_portlets.scss */
+  .portletCalendar .ploneCalendar td.cal_has_events {
     background: #08c;
+    font-weight: bold;
     text-shadow: 0 -1px #06a; }
-    /* line 235, ../scss/_portlets.scss */
-    .portletCalendar .ploneCalendar td.event a, .portletCalendar .ploneCalendar td.todayevent a {
-      color: #fff; }
-  /* line 238, ../scss/_portlets.scss */
-  .portletCalendar .ploneCalendar td.todaynoevent {
-    background: #ccc; }
     /* line 239, ../scss/_portlets.scss */
-    .portletCalendar .ploneCalendar td.todaynoevent strong {
-      color: #000; }
+    .portletCalendar .ploneCalendar td.cal_has_events a {
+      color: #fff; }
+  /* line 241, ../scss/_portlets.scss */
+  .portletCalendar .ploneCalendar td.today {
+    font-weight: bold;
+    color: #000; }
+  /* line 244, ../scss/_portlets.scss */
+  .portletCalendar .ploneCalendar td.cal_prev_month, .portletCalendar .ploneCalendar td.cal_next_month {
+    opacity: 0.4; }
 
-/* line 244, ../scss/_portlets.scss */
+/* line 251, ../scss/_portlets.scss */
 #portlet-prefs {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
 
-/* line 245, ../scss/_portlets.scss */
+/* line 252, ../scss/_portlets.scss */
 .portlet > .pad {
   border-bottom: 1px solid #b2b2b2; }
 

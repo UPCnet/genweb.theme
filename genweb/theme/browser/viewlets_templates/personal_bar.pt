@@ -59,9 +59,11 @@
               <ul class="dropdown-menu" role="menu">
                 <li role="menuitem"
                     tal:repeat="lang_info view/get_available_langs">
-                  <a tal:attributes="href string:${view/portal_url}/${lang_info/code}/folder_contents"
-                     tal:content="lang_info/native">
-                    English
+                  <a tal:attributes="href string:${view/portal_url}/${lang_info/code}/folder_contents">
+                    <tal:language content="lang_info/native">English</tal:language>
+                    <tal:default_lang
+                      i18n:translate="personalbar_default_language"
+                      condition="python: view.default_site_lang() == lang_info['code']">(Default)</tal:default_lang>
                   </a>
                 </li>
                 <li aria-hidden="true" class="divider"></li>

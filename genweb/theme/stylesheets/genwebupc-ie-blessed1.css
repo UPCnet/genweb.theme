@@ -6041,105 +6041,105 @@ button.pfg-draft-save .badge,
     padding-left: 10px !important;
     padding-right: 10px !important; }
 
-  /* line 23, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 22, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 0 5px !important;
     min-height: 40px; }
 
-  /* line 25, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 24, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   nav#portal-personaltools-wrapper {
     margin-top: 0px !important; }
 
-  /* line 27, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 26, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar .btn-navbar {
     margin-right: 10px !important; }
-    /* line 29, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 28, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .navbar .btn-navbar i {
       background-image: url('++genweb++static/images/gh-w.png?1406203246'); }
 
-  /* line 32, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 31, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar-fixed-top {
     margin-bottom: 0 !important; }
 
-  /* line 34, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 33, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-globalnav h2.brand {
     font-size: 17px;
     font-weight: bold;
     line-height: 18px; }
 
-  /* line 36, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 35, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines {
     margin: 0 0 9px !important;
     text-align: right; }
-    /* line 39, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 38, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #eines input {
       width: 85%; }
-    /* line 40, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 39, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #eines button {
       width: 14%;
       line-height: 20px;
       min-width: 60px; }
-    /* line 41, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 40, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #eines .input-append {
       margin-left: 0 !important;
       border: 0 !important; }
-    /* line 42, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 41, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #eines a {
       padding: 8px !important;
       margin: 0 !important; }
-      /* line 44, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      /* line 43, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
       #eines a:hover, #eines a:focus {
         color: white !important;
         background: #007bc0; }
-    /* line 49, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 48, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #eines ul {
       margin: 0; }
 
-  /* line 57, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 54, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #titol-menu-1 {
     width: 75%; }
-    /* line 59, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 56, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #titol-menu-1 a {
       display: block;
       text-decoration: none;
       color: #666666; }
 
-  /* line 67, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 64, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper ~ #portal-header {
     margin-top: 40px !important; }
 
-  /* line 69, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 66, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image {
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%; }
-    /* line 71, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 68, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .header-image.l2-image {
       margin-left: 207px !important; }
-      /* line 73, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      /* line 70, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
       .header-image.l2-image:before {
         top: 45px;
         width: 175px;
         margin-left: -207px; }
 
-  /* line 78, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 75, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-column-one, #portal-column-content {
     width: 100% !important;
     margin-left: 0; }
 
-  /* line 81, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 78, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu [class*="span"], #peu .cella {
     float: none;
     display: block;
     width: auto;
     margin-left: 0; }
-    /* line 83, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 80, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #peu [class*="span"] .pull-right, #peu .cella .pull-right, #peu [class*="span"] .newsImageContainer, #peu .cella .newsImageContainer {
       float: none;
       margin: 0; }
 
-  /* line 88, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 85, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #canvia-vista {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -6147,69 +6147,60 @@ button.pfg-draft-save .badge,
     margin-left: 0px !important;
     margin-right: 0px !important; }
 
-  /* line 94, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 89, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   table {
     width: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
     max-width: 100%; }
 
-  /* line 103, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 98, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .navbar-fixed-top, .navbar-fixed-bottom {
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0;
     margin-left: 0; }
 
-  /* line 105, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 100, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container-fluid {
     padding: 0; }
 
-  /* line 109, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 104, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dt, .portaltype-packet .estudis dl.fitxa dt {
     float: none;
     clear: none;
     width: auto;
     text-align: left; }
-  /* line 115, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 110, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .dl-horizontal dd, .portaltype-packet .estudis dl.fitxa dd {
     margin-left: 0; }
 
-  /* line 124, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 119, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .container {
     width: auto; }
 
-  /* line 127, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 122, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row-fluid, #dashboard, .fila, .template-atct_album_view #content-core {
     width: 100%; }
 
-  /* line 130, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 125, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .row, .thumbnails {
     margin-left: 0; }
 
-  /* line 132, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 127, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .thumbnails > li {
     float: none;
     margin-left: 0; }
 
-  /* line 134, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 129, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .span12, .row-fluid .span12, #dashboard .span12, .fila .span12, .template-atct_album_view #content-core .span12 {
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
-  /* line 145, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  .input-large, .input-xlarge,
-  .input-xxlarge,
-  #archetypes-fieldname-title input,
-  input[class*="span"],
-  input.cella,
-  select[class*="span"],
-  select.cella,
-  textarea[class*="span"],
-  textarea.cella,
-  .uneditable-input {
+  /* line 135, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .input-large, .input-xlarge, .input-xxlarge, #archetypes-fieldname-title input, input[class*="span"], input.cella, select[class*="span"], select.cella, textarea[class*="span"], textarea.cella, .uneditable-input {
     display: block;
     width: 100%;
     min-height: 30px;
@@ -6217,17 +6208,12 @@ button.pfg-draft-save .badge,
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
-  /* line 153, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
-  .input-prepend input,
-  .input-append input,
-  .input-prepend input[class*="span"],
-  .input-prepend input.cella,
-  .input-append input[class*="span"],
-  .input-append input.cella {
+  /* line 138, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .input-prepend input, .input-append input, .input-prepend input[class*="span"], .input-prepend input.cella, .input-append input[class*="span"], .input-append input.cella {
     display: inline-block;
     width: auto; }
 
-  /* line 159, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 144, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal, .pb-ajax {
     position: fixed;
     top: 20px;
@@ -6235,187 +6221,188 @@ button.pfg-draft-save .badge,
     right: 20px;
     width: auto;
     margin: 0; }
-    /* line 166, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 151, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .modal.fade.in, .fade.in.pb-ajax {
       top: 10px; }
 
-  /* line 171, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 156, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .subnavbar .nav-list a:hover:after, .subnavbar .nav-list .active a:after, .subnavbar .nav-list .selected a:after {
     background-position: -311.5px -117px !important; }
 
-  /* line 177, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 162, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .unit-picture .img-polaroid, .unit-picture .template-personal-information [for="form.portrait"] ~ img, .template-personal-information .unit-picture [for="form.portrait"] ~ img, .unit-picture .newsImageContainer, .unit-picture .tileItem img, .tileItem .unit-picture img {
     float: none;
     clear: both; }
 
-  /* line 178, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 163, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .contact table {
     width: 100% !important; }
 
-  /* line 183, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 167, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_table td {
     display: block; }
-  /* line 186, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 170, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_table tr:nth-child(1) {
     width: 70%; }
-    /* line 189, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 173, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(1) {
       width: 70%; }
-    /* line 192, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 176, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(2) {
       width: 30px;
       float: left; }
-    /* line 197, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 181, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(3) {
       float: left; }
-  /* line 203, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 187, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_table tr:nth-child(2) {
     width: 70%; }
-    /* line 205, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 189, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #recaptcha_table tr:nth-child(2) td {
       width: 50%; }
-  /* line 210, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 194, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_table center {
     float: left; }
 
-  /* line 215, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 199, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .recaptcha_only_if_privacy {
     float: left !important;
     text-align: left !important;
     margin-left: 7px !important;
     margin-bottom: 7px !important; }
 
-  /* line 222, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 206, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_image {
     width: 250px !important; }
-    /* line 224, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 208, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #recaptcha_image img {
       width: 250px !important; }
 
-  /* line 229, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 213, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #recaptcha_input_area, #recaptcha_response_field {
     width: 240px !important; }
 
-  /* line 236, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 218, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .typeahead.dropdown-menu {
     left: auto !important;
     right: 10px !important; }
-    /* line 239, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 221, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .typeahead.dropdown-menu li {
       text-align: left !important; }
 
-  /* line 243, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* canviem les pestanyes a botons */
+  /* line 225, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .nav-tabs, .contentViews, .configlets, .contentViews, .configlets, #edit-bar {
-    border-bottom: 0px solid red;
-    box-shadow: 0 0px 0px 0px black inset; }
+    border-bottom: 0px !important;
+    box-shadow: 0 0px 0px 0px black inset !important; }
 
-  /* line 248, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 230, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .nav-tabs > li > a, .contentViews > li > a, .configlets > li > a, .contentViews > li > a, .configlets > li > a {
     border-radius: 4px; }
 
-  /* line 252, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 234, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .contentViews > .selected > a, .contentViews .nav-tabs > .selected:hover > a, .contentViews > .selected:hover > a, .contentViews .configlets > .selected:hover > a, .contentViews > .active > a, .contentViews > .selected > a, .contentViews > .selected:hover > a, .configlets > .active > a, .configlets > .selected > a, .contentViews .configlets > .selected:hover > a, .nav-tabs > .selected > a, .contentViews > .selected > a, .configlets > .selected > a, .configlets > .selected > a, .nav-tabs > .active > a:hover, .contentViews > .active > a:hover, .configlets > .active > a:hover, .nav-tabs > .selected > a:hover, .configlets > .selected > a:hover, .contentViews > .selected > a:hover, .contentViews > .active > a:hover, .contentViews > .selected > a:hover, .configlets > .active > a:hover, .configlets > .selected > a:hover, .nav-tabs > .selected > a:hover, .contentViews > .selected > a:hover, .configlets > .selected > a:hover, .configlets > .selected > a:hover {
-    border-color: #b2b2b2; } }
+    border-color: #b2b2b2 !important; } }
 @media only screen and (max-width: 639px) {
-  /* line 278, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 247, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   body {
     font-size: 14.5px; }
 
-  /* line 281, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 250, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper, .navbar-fixed-top, .navbar-fixed-bottom {
     margin-left: 0px !important;
     margin-right: 0px !important; }
 
-  /* line 282, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 251, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .navbar-inner, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding: 0px !important; }
 
-  /* line 283, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 252, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper ~ #portal-header {
     margin-top: 0px !important; }
 
-  /* line 285, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 254, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav ul, #portal-personaltools-wrapper .contentViews ul, #portal-personaltools-wrapper .configlets ul, #portal-personaltools-wrapper .formTabs ul {
     margin: 0 !important; }
-  /* line 286, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 255, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
     background-image: url('++genweb++static/images/gh-w.png?1406203246'); }
-  /* line 287, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 256, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
     background: black; }
-  /* line 288, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 257, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-personaltools-wrapper .nav a.btn, #portal-personaltools-wrapper .contentViews a.btn, #portal-personaltools-wrapper .configlets a.btn, #portal-personaltools-wrapper .formTabs a.btn, #portal-personaltools-wrapper .nav a.standalone, #portal-personaltools-wrapper .contentViews a.standalone, #portal-personaltools-wrapper .configlets a.standalone, #portal-personaltools-wrapper .formTabs a.standalone, #portal-personaltools-wrapper .nav a[type="submit"], #portal-personaltools-wrapper .contentViews a[type="submit"], #portal-personaltools-wrapper .configlets a[type="submit"], #portal-personaltools-wrapper .formTabs a[type="submit"], #portal-personaltools-wrapper .nav a.context, #portal-personaltools-wrapper .contentViews a.context, #portal-personaltools-wrapper .configlets a.context, #portal-personaltools-wrapper .formTabs a.context, #portal-personaltools-wrapper .nav a.searchButton, #portal-personaltools-wrapper .contentViews a.searchButton, #portal-personaltools-wrapper .configlets a.searchButton, #portal-personaltools-wrapper .formTabs a.searchButton, #portal-personaltools-wrapper .nav a.link-parent, #portal-personaltools-wrapper .contentViews a.link-parent, #portal-personaltools-wrapper .configlets a.link-parent, #portal-personaltools-wrapper .formTabs a.link-parent, #portal-personaltools-wrapper .nav a.btn:focus, #portal-personaltools-wrapper .contentViews a.btn:focus, #portal-personaltools-wrapper .configlets a.btn:focus, #portal-personaltools-wrapper .formTabs a.btn:focus, #portal-personaltools-wrapper .nav a.standalone:focus, #portal-personaltools-wrapper .contentViews a.standalone:focus, #portal-personaltools-wrapper .configlets a.standalone:focus, #portal-personaltools-wrapper .formTabs a.standalone:focus, #portal-personaltools-wrapper .nav a[type="submit"]:focus, #portal-personaltools-wrapper .contentViews a[type="submit"]:focus, #portal-personaltools-wrapper .configlets a[type="submit"]:focus, #portal-personaltools-wrapper .formTabs a[type="submit"]:focus, #portal-personaltools-wrapper .nav a.context:focus, #portal-personaltools-wrapper .contentViews a.context:focus, #portal-personaltools-wrapper .configlets a.context:focus, #portal-personaltools-wrapper .formTabs a.context:focus, #portal-personaltools-wrapper .nav a.searchButton:focus, #portal-personaltools-wrapper .contentViews a.searchButton:focus, #portal-personaltools-wrapper .configlets a.searchButton:focus, #portal-personaltools-wrapper .formTabs a.searchButton:focus, #portal-personaltools-wrapper .nav a.link-parent:focus, #portal-personaltools-wrapper .contentViews a.link-parent:focus, #portal-personaltools-wrapper .configlets a.link-parent:focus, #portal-personaltools-wrapper .formTabs a.link-parent:focus {
     background-color: #BB3423; }
 
-  /* line 293, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 262, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai:before {
     position: absolute;
     border-top: 1px solid #ccc; }
-  /* line 294, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 263, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .titol-espai h1 {
     font-size: 138.461538%;
     line-height: 24px;
     margin-top: 5px !important; }
-    /* line 296, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 265, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .titol-espai h1 a {
       display: block; }
 
-  /* line 300, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 269, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-header {
     padding-bottom: 10px;
     background: #f7f7f7 !important; }
-    /* line 303, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 272, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
       margin-top: 12px !important; }
-    /* line 304, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 273, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #portal-header h1.pull-left {
       margin-bottom: 7px !important; }
-      /* line 306, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      /* line 275, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
       #portal-header h1.pull-left img {
         margin-top: -3px;
         height: 46px; }
-    /* line 308, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 277, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #portal-header .container > div.clearfix, #portal-header .container > div.visualClear, #portal-header .portaltype-packet .estudis .container > div.caixa3, .portaltype-packet .estudis #portal-header .container > div.caixa3 {
       margin: 0 !important; }
-    /* line 309, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 278, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #portal-header .container {
       border-bottom: 0 !important; }
-    /* line 310, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 279, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
       margin-top: 13px;
       margin-right: 0 !important;
       padding: 7px 10px; }
 
-  /* line 314, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 283, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines input {
     width: 65%; }
-  /* line 315, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 284, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines button {
     width: 34%;
     line-height: 20px; }
-  /* line 316, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 285, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines a {
     margin: 0 0 20px 0 !important; }
 
-  /* line 321, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 290, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image {
     display: none; }
 
-  /* line 325, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 294, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .header-image.l2-image {
     height: 30px !important;
     margin-left: 55px !important; }
-    /* line 326, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 295, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .header-image.l2-image:before {
       top: 25px;
       width: 45px;
       margin-left: -55px; }
 
-  /* line 330, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 299, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #portal-breadcrumbs {
     display: none; }
 
-  /* line 334, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 303, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   [class*="span"], .cella,
   .row-fluid [class*="span"],
   #dashboard [class*="span"],
@@ -6430,113 +6417,114 @@ button.pfg-draft-save .badge,
     width: auto;
     margin-left: 0; }
 
-  /* line 342, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 311, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .llistatLogos {
     margin: 1em auto !important; }
 
-  /* line 344, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 313, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #peu {
     font-size: 84.613846% !important; }
-    /* line 346, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 315, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #peu .container {
       padding-top: 5px; }
 
-  /* line 350, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 319, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .img_blank {
     margin-top: -1px; }
 
-  /* line 353, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 322, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0); }
 
-  /* line 356, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 325, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .page-header h1 small {
     display: block;
     line-height: 18px; }
 
-  /* line 359, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 328, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   input[type="checkbox"], input[type="radio"] {
     border: 1px solid #ccc; }
 
-  /* line 362, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 331, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-group > label {
     float: none;
     width: auto;
     padding-top: 0;
     text-align: left; }
 
-  /* line 365, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 334, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .controls {
     margin-left: 0; }
 
-  /* line 368, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 337, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .control-list {
     padding-top: 0; }
 
-  /* line 371, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 340, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .form-horizontal .form-actions {
     padding-left: 10px;
     padding-right: 10px; }
 
-  /* line 374, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 343, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal, .pb-ajax {
     top: 10px;
     left: 10px;
     right: 10px;
     max-width: 100%; }
 
-  /* line 375, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 344, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-header .close, .pb-ajax .documentFirstHeading .close, .pb-ajax > div > h2 .close {
     padding: 10px;
     margin: -10px; }
 
-  /* line 385, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 354, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .carousel-caption {
     position: static; }
 
-  /* line 388, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 357, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .plaEstudis {
     background-color: #F7F7F7; }
-    /* line 390, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 359, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .plaEstudis thead {
       display: block; }
-      /* line 392, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      /* line 361, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
       .plaEstudis thead th {
         font-size: 80%; }
-        /* line 394, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+        /* line 363, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
         .plaEstudis thead th.semester {
           display: none; }
-        /* line 397, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+        /* line 366, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
         .plaEstudis thead th.plaEstudis_titolCredits {
           min-width: 80px; }
-        /* line 400, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+        /* line 369, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
         .plaEstudis thead th.plaEstudis_titolAssignatures {
           width: 100%; }
-    /* line 405, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 374, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .plaEstudis tbody {
       display: block;
       clear: both; }
-      /* line 408, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      /* line 377, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
       .plaEstudis tbody th {
         display: block;
         font-size: 80%; }
-    /* line 413, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 382, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .plaEstudis tr {
       display: block; }
-    /* line 416, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    /* line 385, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     .plaEstudis td {
       background-color: #fff !important;
       font-size: 80%; }
-      /* line 419, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      /* line 388, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
       .plaEstudis td.subject {
         width: 100%; }
 
-  /* line 429, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* mapa contacte, afegim marges laterals per poder fer scroll en mòbil */
+  /* line 398, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .img-mask {
     width: 90% !important;
     margin-left: 5% !important;
     margin-right: 5% !important; } }
 @media only screen and (max-width: 639px) and (orientation: landscape) {
-  /* line 381, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  /* line 350, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   .modal-body, .pb-ajax #content-core, .pb-ajax .documentDescription, .pb-ajax #content-history {
     max-height: 160px; } }

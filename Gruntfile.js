@@ -17,7 +17,7 @@ module.exports = function (grunt) {
         },
         watch: {
             scripts: {
-                files: ['genweb/theme/scss/*.scss',],
+                files: ['genweb/theme/scss/*.scss', 'genweb/theme/bootstrap/scss/compass_twitter_bootstrap/*.scss'],
                 tasks: ['sass', 'bless']
             }
         },

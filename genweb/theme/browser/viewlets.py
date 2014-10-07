@@ -80,8 +80,8 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
 
     def default_site_lang(self):
         pl = plone.api.portal.get_tool(name='portal_languages')
-        default_lang = pl.getDefaultLanguage()
-        return pl.getAvailableLanguages()[default_lang]['native']
+        return pl.getDefaultLanguage()
+        # return pl.getAvailableLanguages()[default_lang]['native']
 
     def get_available_langs(self):
         pl = plone.api.portal.get_tool(name='portal_languages')
