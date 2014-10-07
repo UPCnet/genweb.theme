@@ -28,7 +28,8 @@ from plone.app.layout.viewlets.interfaces import IHtmlHead, IPortalTop, IPortalH
 from plone.app.layout.viewlets.interfaces import IPortalFooter, IAboveContentTitle, IBelowContentTitle
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 
-from Products.ATContentTypes.interface.news import IATNewsItem
+#from Products.ATContentTypes.interface.news import IATNewsItem
+from plone.app.contenttypes.interfaces import INewsItem
 from genweb.core.adapters import IImportant
 
 from zope.annotation.interfaces import IAnnotations
@@ -163,7 +164,7 @@ class gwHeader(viewletBase):
 
 class gwImportantNews(viewletBase):
     grok.name('genweb.important')
-    grok.context(IATNewsItem)
+    grok.context(INewsItem)
     grok.template('important')
     grok.viewletmanager(IAboveContentTitle)
     grok.layer(IGenwebTheme)
@@ -182,6 +183,19 @@ class gwImportantNews(viewletBase):
             IImportant(self.context).is_important = True
         if 'genweb.theme.viewlet.marcar_notimportant' in form:
             IImportant(self.context).is_important = False
+
+    def isNewImportant(self):
+        """
+        """
+        context = self.context
+        annotations = IAnnotations(context)
+        if 'important' in annotations:
+            return True
+        else:
+            return False
+
+    def canManageSite(self):
+        return checkPermission("plone.app.controlpanel.Overview", self.portal())
 
 
 class gwSendEvent(viewletBase):
