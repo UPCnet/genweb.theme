@@ -16,7 +16,7 @@
         <li><a accesskey="3"
                i18n:domain="plone"
                i18n:translate="Site Map"
-               tal:attributes="href string:${viewlet/portal_url}/sitemap">
+               tal:attributes="href string:${viewlet/portal_url}/${viewlet/pref_lang}/sitemap">
                Site Map
              </a></li>
         <li><a accesskey="9"

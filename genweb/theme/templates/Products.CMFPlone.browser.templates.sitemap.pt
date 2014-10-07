@@ -25,10 +25,8 @@
     </div>
 
     <div id="content-core">
-
         <ul id="portal-sitemap"
-            class="navTreeLevel0 visualNoMarker"
-            tal:define="view nocall:context/@@sitemap_view;">
+            class="navTreeLevel0 visualNoMarker">
             <tal:sitemap replace="structure view/createSiteMap" />
 
             <li class="navTreeItem visualNoMarker">
@@ -77,7 +75,6 @@
             </li>
 
         </ul>
-
     </div>
 
 </metal:main>
