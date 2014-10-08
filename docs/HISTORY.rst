@@ -1,11 +1,13 @@
 Changelog
 =========
 
-1.23 (unreleased)
+1.23 (2014-10-08)
 -----------------
 
-- Nothing changed yet.
-
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* Fix collage styling. Fix contact viewlet. [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [hanirok]
+* Marcar los noticias como importantes [hanirok]
 
 1.22 (2014-10-07)
 -----------------
