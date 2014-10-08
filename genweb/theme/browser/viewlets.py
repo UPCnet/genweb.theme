@@ -28,7 +28,8 @@ from plone.app.layout.viewlets.interfaces import IHtmlHead, IPortalTop, IPortalH
 from plone.app.layout.viewlets.interfaces import IPortalFooter, IAboveContentTitle, IBelowContentTitle
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 
-from Products.ATContentTypes.interface.news import IATNewsItem
+#from Products.ATContentTypes.interface.news import IATNewsItem
+from plone.app.contenttypes.interfaces import INewsItem
 from genweb.core.adapters import IImportant
 
 from zope.annotation.interfaces import IAnnotations
@@ -176,7 +177,7 @@ class gwHeader(viewletBase):
 
 class gwImportantNews(viewletBase):
     grok.name('genweb.important')
-    grok.context(IATNewsItem)
+    grok.context(INewsItem)
     grok.template('important')
     grok.viewletmanager(IAboveContentTitle)
     grok.layer(IGenwebTheme)
@@ -189,12 +190,13 @@ class gwImportantNews(viewletBase):
         #TODO: Comprovar que l'usuari tingui permisos per a marcar com a notimportant
         return IImportant(self.context).is_important and checkPermission("plone.app.controlpanel.Overview", self.portal())
 
-    def update(self):
-        form = self.request.form
-        if 'genweb.theme.viewlet.marcar_important' in form:
-            IImportant(self.context).is_important = True
-        if 'genweb.theme.viewlet.marcar_notimportant' in form:
-            IImportant(self.context).is_important = False
+    def canManageSite(self):
+        return checkPermission("plone.app.controlpanel.Overview", self.portal())
+
+    def isNewImportant(self):
+        context = aq_inner(self.context)
+        is_important = IImportant(context).is_important
+        return is_important
 
 
 class gwSendEvent(viewletBase):
