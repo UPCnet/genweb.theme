@@ -68,8 +68,9 @@
                 </li>
                 <li aria-hidden="true" class="divider"></li>
                 <li role="menuitem">
-                  <a tal:attributes="href string:${view/portal_url}/folder_contents">
-                    Compartits
+                  <a i18n:translate="shared_folder"
+                     tal:attributes="href string:${view/portal_url}/folder_contents">
+                    Continguts compartits
                   </a>
                 </li>
               </ul>

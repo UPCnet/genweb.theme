@@ -1,11 +1,17 @@
 Changelog
 =========
 
-1.22 (unreleased)
+1.23 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+1.22 (2014-10-07)
+-----------------
+
+* Sitemap fix, continguts compartits literal. [Victor Fernandez de Alba]
+* The new header with the right logo yes/no implemented [Victor Fernandez de Alba]
 
 1.21 (2014-10-06)
 -----------------

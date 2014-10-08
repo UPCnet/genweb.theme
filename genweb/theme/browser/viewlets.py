@@ -161,6 +161,19 @@ class gwHeader(viewletBase):
         else:
             return "http://directori.upc.edu"
 
+    def get_title(self):
+        title = getattr(self.genweb_config(), 'html_title_{}'.format(self.pref_lang()))
+        if title:
+            return title
+        else:
+            return u'Servei de <b>Comunicació i Promoció</b>'
+
+    def is_logo_enabled(self):
+        return self.genweb_config().right_logo_enabled
+
+    def get_right_logo_alt(self):
+        return self.genweb_config().right_logo_alt
+
 
 class gwImportantNews(viewletBase):
     grok.name('genweb.important')
