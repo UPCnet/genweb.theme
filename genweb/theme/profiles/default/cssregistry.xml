@@ -23,6 +23,7 @@
  <stylesheet id="++resource++plone.app.collection.css" enabled="False" remove="True" />
  <stylesheet id="++resource++collection.css" enabled="False" remove="True" />
  <stylesheet id="++resource++plone.app.event/event.css" enabled="False" remove="True" />
+ <stylesheet id="++resource++collective.z3cform.widgets/related.css" enabled="False" remove="True" />
 
 <!-- Web Components -->
   <stylesheet title=""
