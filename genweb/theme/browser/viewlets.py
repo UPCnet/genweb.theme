@@ -177,25 +177,13 @@ class gwImportantNews(viewletBase):
         #TODO: Comprovar que l'usuari tingui permisos per a marcar com a notimportant
         return IImportant(self.context).is_important and checkPermission("plone.app.controlpanel.Overview", self.portal())
 
-    def update(self):
-        form = self.request.form
-        if 'genweb.theme.viewlet.marcar_important' in form:
-            IImportant(self.context).is_important = True
-        if 'genweb.theme.viewlet.marcar_notimportant' in form:
-            IImportant(self.context).is_important = False
-
-    def isNewImportant(self):
-        """
-        """
-        context = self.context
-        annotations = IAnnotations(context)
-        if 'important' in annotations:
-            return True
-        else:
-            return False
-
     def canManageSite(self):
         return checkPermission("plone.app.controlpanel.Overview", self.portal())
+
+    def isNewImportant(self):
+        context = aq_inner(self.context)
+        is_important = IImportant(context).is_important
+        return is_important
 
 
 class gwSendEvent(viewletBase):
