@@ -214,6 +214,8 @@
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/prettify.js"></script>
     <script tal:attributes="src string:${portal_url}/++genweb++static/js/alertify.min.js"></script>
     <script tal:attributes="src string:${portal_url}/++components++root/select2/select2.js"></script>
+    <script tal:attributes="src string:${portal_url}/++components++root/handlebars/handlebars.min.js"></script>
+    <script tal:attributes="src string:${portal_url}/++components++root/typeahead.js/dist/typeahead.jquery.js"></script>
 
     <tal:select2lang condition="python:lang=='ca'">
       <script tal:attributes="src string:${portal_url}/++components++root/select2/select2_locale_ca.js"></script>
