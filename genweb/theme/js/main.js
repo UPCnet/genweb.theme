@@ -1,3 +1,11 @@
+/*global jarn */
+/*global prettyPrint */
+/*global portal_url */
+/*global Recaptcha */
+/*global RecaptchaOptions */
+/*global Handlebars */
+
+
 // En aquest script agruparem tots els "document ready" quan sigui necessari
 
 $(document).ready(function () {
@@ -5,7 +13,7 @@ $(document).ready(function () {
   jarn.i18n.setTTL(100000);
   // Load the i18n Plone catalog for genweb
   jarn.i18n.loadCatalog('genweb');
-  _gw_i18n = jarn.i18n.MessageFactory('genweb');
+  window._gw_i18n = jarn.i18n.MessageFactory('genweb');
 
   var intervalId = setInterval(function(event) {
      if (window._gw_i18n !== undefined && window._i18nsucks === true) {
@@ -30,7 +38,7 @@ $(document).ready(function () {
 
   // Tooltips
   $('[rel="tooltip"]').tooltip({container: 'body'});
-  $('.ploneCalendar .event a').on('click', function (e) {e.preventDefault();})
+  $('.ploneCalendar .event a').on('click', function (e) {e.preventDefault();});
   $('.ploneCalendar .event a').tooltip({container: 'body', html: 'true', trigger: 'click'});
 
   $('[rel="popover"]').popover();
@@ -72,7 +80,7 @@ $(document).ready(function () {
   });
 
   if ( prettify ) {
-      $.getScript(window.location.href + "/++genweb++static/js/prettify.js", function() {prettyPrint()});
+      $.getScript(window.location.href + "/++genweb++static/js/prettify.js", function() {prettyPrint();});
   }
 
 // Toggle search
@@ -81,64 +89,12 @@ $(document).ready(function () {
     $("#search-results-bar dl dd.actionMenuContent").toggle();
   });
 
-// Live search
-  $('#cercaCapca').select2({
-      minimumInputLength: 1,
-      ajax: {
-          url: portal_url + '/gw_type_ahead_search',
-          data: function (term, page) {
-              return {
-                  q: term,
-                  page: page, // page number
-              };
-          },
-          results: function (data, page) {
-              return data;
-          },
-      },
-  });
-
-
-  // $("#cercaCapca").typeahead({
-  //  source: function (query, process) {
-  //     setTimeout(searchElements(query, process) , 300);
-  //  },
-  //  highlighter: function(item){
-  //     var iitem = $("#cercaCapca").get(0).results[item];
-  //     //info = items[item.split("#")[0]];
-  //     var itm = "<i class='icon-"+iitem.icon+"'></i> " +
-  //                iitem.title +
-  //               "<p class='xs margin0'>"+iitem.description+"</p>";
-  //     return itm;
-  // },
-  // matcher: function (item) {
-  //     return true;
-  // },
-  // updater: function(item) {
-  //     window.location.href = $("#cercaCapca").get(0).results[item]['itemUrl'];
-  // },
-  // items: 12,
-  // minLength: 2
-  // });
-
- var searchElements = function( query, process ){
-     $.get(document.getElementsByTagName('base')[0].href+"/typeaheadJson", { q: query }, function(data) {
-          //Reseting containers
-          var items = [];
-
-          $.each(data, function(index, value) {
-              items.push(index.toString());
-          });
-          $("#cercaCapca").get(0).results = data;
-          process(items);
-    });
- };
 
 // actualització títol menú 1, mostra l'opció de primer nivell que hem seleccionat, es fa a partir del 2on valor de la llista del breadcrumb
   var lititol=$('ol.breadcrumb li:eq(1) a');// cas amb breadcrumb no visible
-  if (lititol.length===0) lititol=$('ol.breadcrumb li:eq(1)');// cas amb breadcrumb visible
+  if (lititol.length===0) { lititol=$('ol.breadcrumb li:eq(1)'); }// cas amb breadcrumb visible
   var nouTitol=lititol.text();
-  if (nouTitol) $('#titol-menu-1 a').text(nouTitol);
+  if (nouTitol) {$('#titol-menu-1 a').text(nouTitol);}
 
 // actualització títol menú 2, mostra l'opció de primer nivell que hem seleccionat, es fa a partir del 3er valor de la llista del breadcrumb
 /*  var lititol=$('ol.breadcrumb li:eq(2) a');// cas amb breadcrumb no visible
@@ -146,41 +102,42 @@ $(document).ready(function () {
   var nouTitol=lititol.text();
   if (nouTitol) $('#titol-menu-2').text(nouTitol);*/
 
+  function input_text_default(captcha_type){
+    var text_default="";
+    if (captcha_type==='image')  {
+      text_default=translations.instructions_audio;
+    } else {
+      text_default=translations.instructions_visual;
+    }
+    $('#recaptcha_response_field').val(text_default);
+
+  }
 
 // RECAPTCHA
   if (_.hasOwnProperty(window, 'RecaptchaOptions')) {
     if (RecaptchaOptions !== undefined) {
-      var translations = RecaptchaOptions['custom_translations'];
-      $('div.recaptcha_only_if_incorrect_sol').text(translations['incorrect_try_again']);
-      $('li.recaptcha_play_again span').text(translations['refresh_btn']);
-      $('#recaptcha_reload').attr('alt',translations['refresh_btn']);
-      $('a.recaptcha_only_if_image span').text(translations['audio_challenge']);
-      $('#recaptcha_switch_audio').attr('alt',translations['audio_challenge']);
-      $('a.recaptcha_only_if_audio span').text(translations['visual_challenge']);
-      $('#recaptcha_switch_img').attr('alt',translations['visual_challenge']);
-      $('li.recaptcha_help span').text(translations['help_btn']);
-      $('#recaptcha_whatsthis').attr('alt',translations['help_btn']);
+      var translations = RecaptchaOptions.custom_translations;
+      $('div.recaptcha_only_if_incorrect_sol').text(translations.incorrect_try_again);
+      $('li.recaptcha_play_again span').text(translations.refresh_btn);
+      $('#recaptcha_reload').attr('alt',translations.refresh_btn);
+      $('a.recaptcha_only_if_image span').text(translations.audio_challenge);
+      $('#recaptcha_switch_audio').attr('alt',translations.audio_challenge);
+      $('a.recaptcha_only_if_audio span').text(translations.visual_challenge);
+      $('#recaptcha_switch_img').attr('alt',translations.visual_challenge);
+      $('li.recaptcha_help span').text(translations.help_btn);
+      $('#recaptcha_whatsthis').attr('alt',translations.help_btn);
 
       input_text_default('audio');
 
       $('#recaptcha_switch_type').click(
         function(){
-          input_text_default(Recaptcha['type']);
+          input_text_default(Recaptcha.type);
         }
       );
     }
   }
 
-  function input_text_default(captcha_type){
-    var text_default="";
-    if (captcha_type==='image')  {
-      text_default=translations['instructions_audio'];
-    } else {
-      text_default=translations['instructions_visual'];
-    }
-    $('#recaptcha_response_field').val(text_default);
 
-  }
   // FI RECAPTCHA
 
   // Share popover specific
@@ -202,13 +159,13 @@ $(document).ready(function () {
           data: function (term, page) {
               return {
                   query: term,
-                  page: page, // page number
+                  page: page // page number
               };
           },
           results: function (data, page) {
               return data;
-          },
-      },
+          }
+      }
   });
 
   // Tags search
@@ -234,6 +191,68 @@ $(document).ready(function () {
       });
   });
 
+
+var liveSearch = function(data_url) {
+  return function findMatches(q, cb) {
+    $.get(data_url + '?q=' + q, function(data) {
+      window._gw_typeahead_last_result = data;
+      cb(data);
+    });
+
+  };
+};
+
+window._gw_typeahead_last_result = [];
+var selector = '#the-basics .typeahead';
+var $typeahead_dom = $(selector);
+$typeahead_dom.typeahead({
+  hint: true,
+  highlight: true,
+  minLength: 1
+},
+{
+  name: 'states',
+  displayKey: 'title',
+  source: liveSearch($typeahead_dom.attr('data-typeahead-url')),
+  templates: {
+    suggestion: Handlebars.compile('<a class="{{class}}" href="{{itemUrl}}">{{title}}</a>'),
+    empty: '<div class="tt-empty"><p>No hi ha elements<p></div>'
+  }
+}).on("typeahead:datasetRendered", function(event) {
+  var $dropdown = $(this).parent().find('.tt-dropdown-menu');
+  var $separator = $dropdown.find('.tt-suggestion a.with-separator').parent();
+  var separator_css = {
+    "border-top": ' 1px solid rgba(0, 0, 0, 0.2)',
+    'background-color': "#f5f5f5",
+    "padding-top": "4px"
+  };
+
+  if ($separator.is(':first-child')) {
+    separator_css['border-top-left-radius']= "8px";
+    separator_css['border-top-right-radius']= "8px";
+    separator_css['border-top'] = "none";
+  }
+
+  $separator.css(separator_css);
+  $separator = $dropdown.find('.tt-suggestion a.with-background').parent();
+  $separator.css({'background-color': "#f5f5f5" });
+})
+.on("keyup", function(event) {
+    if (event.keyCode === 13) {
+        var text = $(this).val();
+        if (!_.findWhere(window._gw_typeahead_last_result, {'title': text})) {
+            window.location.href = $typeahead_dom.attr('data-search-url') + '?SearchableText=' + text;
+        }
+
+    }
+})
+.on("typeahead:selected", function(event, suggestion, dataset) {
+    event.preventDefault();
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    window.location.href = suggestion.itemUrl;
+
+});
 
 
 

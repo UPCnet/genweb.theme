@@ -284,22 +284,15 @@ class TypeAheadSearch(grok.View):
                         (display_description[:MAX_DESCRIPTION], '...'))
 
                 # We build the dictionary element with the desired parameters and we add it to the queryElements array.
-                queryElement = {'title': display_title, 'description': display_description, 'itemUrl': itemUrl, 'icon': icon}
+                queryElement = {'class': '', 'title': display_title, 'description': display_description, 'itemUrl': itemUrl, 'icon': icon}
                 queryElements.append(queryElement)
 
             if len(results) > limit:
                 #We have to add here an element to the JSON in case there is too many elements.
                 searchquery = '/@@search?SearchableText=%s&path=%s' \
                     % (searchterms, params['path'])
-                too_many_results = {'title': ts.translate(label_show_all, context=REQUEST), 'description': '', 'itemUrl': portal_url + searchquery, 'icon': ''}
+                too_many_results = {'class': 'with-separator', 'title': ts.translate(label_show_all, context=REQUEST), 'description': '', 'itemUrl': portal_url + searchquery, 'icon': ''}
                 queryElements.append(too_many_results)
-        else:
-            # No results
-            no_results = {'title': ts.translate(label_no_results_found, context=REQUEST), 'description': '', 'itemUrl': portal_url + '/@@search', 'icon': ''}
-            queryElements.append(no_results)
-
-        advancedSearch = {'title': ts.translate(label_advanced_search, context=REQUEST), 'description': '', 'itemUrl': portal_url + '/@@search', 'icon': ''}
-        queryElements.append(advancedSearch)
 
         return json.dumps(queryElements)
 
