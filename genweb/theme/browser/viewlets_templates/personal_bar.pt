@@ -79,7 +79,7 @@
                 </li>
                 <li role="menuitem" tal:condition="show_tools/show_shared">
                   <a i18n:translate="shared_folder"
-                     tal:attributes="href string:${view/portal_url}/folder_contents">
+                     tal:attributes="href string:${view/portal_url}/shared">
                     Shared files
                   </a>
                 </li>
