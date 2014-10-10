@@ -2,6 +2,7 @@
 import re
 import requests
 from five import grok
+from plone import api
 from time import time
 from cgi import escape
 from Acquisition import aq_inner
@@ -45,8 +46,6 @@ from genweb.core.utils import genweb_config, havePermissionAtRoot, pref_lang
 
 from genweb.theme.browser.interfaces import IGenwebTheme
 
-import plone.api
-
 grok.context(Interface)
 
 
@@ -79,12 +78,12 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
     index = ViewPageTemplateFile('viewlets_templates/personal_bar.pt')
 
     def default_site_lang(self):
-        pl = plone.api.portal.get_tool(name='portal_languages')
+        pl = api.portal.get_tool(name='portal_languages')
         return pl.getDefaultLanguage()
         # return pl.getAvailableLanguages()[default_lang]['native']
 
     def get_available_langs(self):
-        pl = plone.api.portal.get_tool(name='portal_languages')
+        pl = api.portal.get_tool(name='portal_languages')
         langs_info = []
         for lang in pl.getSupportedLanguages():
             langs_info.append(dict(native=pl.getAvailableLanguages()[lang]['native'],
@@ -93,6 +92,38 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
 
     def showRootFolderLink(self):
         return havePermissionAtRoot()
+
+    def show_tools(self):
+        portal = self.portal()
+        user_roles_at_root = api.user.get_roles(obj=portal)
+
+        # If user is Editor, WebMaster or Manager at main root, inconditionally
+        # return True and stop bothering
+        if 'Editor' in user_roles_at_root or 'Manager' in user_roles_at_root or 'WebMaster' in user_roles_at_root:
+            return dict(show=True, show_advanced=True, show_en=True, show_ca=True, show_es=True, show_shared=True)
+
+        if getattr(portal, 'ca', False):
+            user_roles_at_ca_root = api.user.get_roles(obj=portal['ca'])
+        if getattr(portal, 'es', False):
+            user_roles_at_es_root = api.user.get_roles(obj=portal['es'])
+        if getattr(portal, 'en', False):
+            user_roles_at_en_root = api.user.get_roles(obj=portal['en'])
+        if getattr(portal, 'shared', False):
+            user_roles_at_shared = api.user.get_roles(obj=portal['en'])
+
+        menus_to_show = {}
+        if 'Editor' in user_roles_at_ca_root or 'Contributor' in user_roles_at_ca_root:
+            menus_to_show['show'] = True
+            menus_to_show['show_ca'] = True
+        if 'Editor' in user_roles_at_es_root or 'Contributor' in user_roles_at_es_root:
+            menus_to_show['show'] = True
+            menus_to_show['show_ca'] = True
+        if 'Editor' in user_roles_at_en_root or 'Contributor' in user_roles_at_en_root:
+            menus_to_show['show'] = True
+            menus_to_show['show_ca'] = True
+        if 'Editor' in user_roles_at_shared or 'Contributor' in user_roles_at_en_root:
+            menus_to_show['show'] = True
+            menus_to_show['show_shared'] = True
 
     def canManageSite(self):
         return checkPermission("plone.app.controlpanel.Overview", self.portal())
@@ -123,7 +154,7 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
     def forgeResizerURLCall(self):
 
         part1 = """<a class="button" data-text="Advanced bookmarklet" href="javascript:void((function(d){if(self!=top||d.getElementById('toolbar')&&d.getElementById('toolbar').getAttribute('data-resizer'))return false;d.write('<!DOCTYPE HTML><html style=&quot;opacity:0;&quot;><head><meta charset=&quot;utf-8&quot;/></head><body><a data-viewport=&quot;240x240&quot; data-icon=&quot;handy&quot;>Mobile</a><a data-viewport=&quot;320x480&quot; data-icon=&quot;mobile&quot;>Mobile (e.g. Apple iPhone)</a><a data-viewport=&quot;320x568&quot; data-icon=&quot;mobile&quot; data-version=&quot;5&quot;>Apple iPhone 5</a><a data-viewport=&quot;600x800&quot; data-icon=&quot;small-tablet&quot;>Small Tablet</a><a data-viewport=&quot;768x1024&quot; data-icon=&quot;tablet&quot;>Tablet (e.g. Apple iPad 2-3rd, mini)</a><a data-viewport=&quot;1024x768&quot; data-icon=&quot;display&quot; data-version=&quot;17″&quot;>17″ Display</a><a data-viewport=&quot;1280x800&quot; data-icon=&quot;notebook&quot;>Widescreen</a><a data-viewport=&quot;2560x1600&quot; data-icon=&quot;display&quot; data-version=&quot;30″&quot;>30″ Apple Cinema Display</a><script src=&quot;"""
-        part2 = """/++genweb++static/js/resizer.min.js&quot;></script></body></html>')})(document));"><span>Vistes</span><ul class='betaviewsicons'><li><i class="fontello-icon-mobile"></li><li></i><i class="fontello-icon-tablet"></i></li></ul></a>"""
+        part2 = """/++genweb++static/js/resizer.min.js&quot;></script></body></html>')})(document));"><span class="pull-left">Vistes</span><i class="fontello-icon-mobile pull-left"></i><i class="fontello-icon-tablet pull-left"></i></a>"""
         return part1 + self.portal_url + part2
 
 

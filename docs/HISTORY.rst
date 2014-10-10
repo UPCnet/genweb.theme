@@ -1,11 +1,16 @@
 Changelog
 =========
 
-1.24 (unreleased)
+1.25 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+1.24 (2014-10-09)
+-----------------
+
+* Fix tiny OK button in plonebrowser [Victor Fernandez de Alba]
 
 1.23 (2014-10-08)
 -----------------
