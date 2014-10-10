@@ -281,25 +281,28 @@ class gwFooter(viewletBase):
             "ca": {
                 "rss": "rss-ca",
                 "about": "sobre-aquest-web",
-                "accessibility": "accessibilitat"
+                "accessibility": "accessibilitat",
+                "disclaimer": "https://www.upc.edu/avis-legal"
             },
             "es": {
                 "rss": "rss-es",
                 "about": "sobre-esta-web",
-                "accessibility": "accesibilidad"
+                "accessibility": "accesibilidad",
+                "disclaimer": "https://www.upc.edu/aviso-legal"
             },
             "en": {
                 "rss": "rss-en",
                 "about": "about-this-web",
-                "accessibility": "accessibility"
+                "accessibility": "accessibility",
+                "disclaimer": "https://www.upc.edu/disclaimer"
             },
             "zh": {
                 "rss": "rss-en",
                 "about": "about-this-web",
-                "accessibility": "accessibility"
+                "accessibility": "accessibility",
+                "disclaimer": "https://www.upc.edu/disclaimer"
             },
         }
-
         return footer_links[idioma]
 
 

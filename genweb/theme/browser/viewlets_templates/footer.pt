@@ -1,12 +1,13 @@
 <footer id="peu" role="contentinfo"
-        tal:define="plone_view context/@@plone;
+        tal:define="portal_url context/@@plone_portal_state/portal_url;
+                    plone_view context/@@plone;
                     view nocall:view | nocall: plone_view;
                     dades context/@@genweb.utils/getDadesUnitat;"
         i18n:domain="genweb">
   <div class="container">
     <div class="row-fluid">
       <div class="span8">
-        <p>&copy;
+        <p>
           <a href="http://www.upc.edu" target="_blank">
             <abbr rel="tooltip" data-placement="top" title="Universitat Politècnica de Catalunya · BarcelonaTech">UPC</abbr>
             <img class="img_blank" src="++genweb++static/images/blank_blau.png"
@@ -40,26 +41,17 @@
         <ul class="pull-right sobreElWeb" role="menu"
             tal:define="link viewlet/getLinksPeu" >
           <li role="menuitem">
-            <a href="#"
-               tal:attributes="href link/rss">
-              <abbr rel="tooltip" data-placement="top" title="Really Simple Sindication"
-                    i18n:translate="genweb-rss">
-                      RSS
-              </abbr>
+            <a href="#" accesskey="0"
+               tal:attributes="href string:${portal_url}/${link/accessibility}"
+               i18n:translate="genweb-accessibility">
+                Accessibilitat
             </a>
           </li>
           <li role="menuitem">
             <a href="#" accesskey="8"
-               tal:attributes="href link/about"
-               i18n:translate="genweb-sobre_aquest_web">
-                Sobre aquest web
-            </a>
-          </li>
-          <li role="menuitem">
-            <a href="#" accesskey="0"
-               tal:attributes="href link/accessibility"
-               i18n:translate="genweb-accessibility">
-                Accessibilitat
+               tal:attributes="href link/disclaimer"
+               i18n:translate="genweb-disclaimer">
+                Disclaimer
             </a>
           </li>
           <li role="menuitem" class="amunt">
@@ -78,8 +70,8 @@
 <!--[if !IE]> -->
 <footer id="canvia-vista" role="complementary">
   <p>
-    <a class="reView" data-defaultText="Versi&oacute; m&ograve;bil" data-coreText="Versi&oacute; d&apos;escriptori" href="javascript:void(0)">
-      Versi&oacute; d&apos;escriptori
+    <a class="reView" data-defaultText="Versió móbil" data-coreText="Versió d'escriptori" href="javascript:void(0)">
+      Versió d'escriptori
     </a>
   </p>
 </footer>
