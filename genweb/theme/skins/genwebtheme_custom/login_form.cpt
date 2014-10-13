@@ -187,7 +187,7 @@
                          i18n:translate="genweb-si_heu_oblidat_la_contrasenya">
                           If you have forgotten your password,
                           <tal:recuperarla i18n:name="click_here">
-                            <a tal:attributes="href string:${portal_url}/canvidecontrasenya"
+                            <a tal:attributes="href python:'http://www.upcnet.es/CanviContrasenyaUPC' if is_ldap_upc_site else '{}/@@change-password'.format(portal_url)"
                                i18n:translate="genweb-per_recuperarla">
                                 click here to retrieve it
                             </a>
