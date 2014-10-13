@@ -39,7 +39,7 @@
     button {width:14%; line-height:20px;min-width:60px;}
     .input-append {margin-left:0 !important; border: 0 !important;}
     & a {
-      padding: 8px !important; margin: 0 !important;  
+      margin: 0 !important;  
       &:hover, &:focus {
         color: $white !important;
         background: $blue;
@@ -47,6 +47,9 @@
     }
     & ul {
       margin:0;  
+    }
+    & li {
+      padding: 8px !important; 
     }
   }  
 
@@ -221,7 +224,7 @@
     li {text-align:left !important;}
   }
 
-  /* canviem les pestanyes a botons */
+  // canviem les pestanyes a botons 
   .nav-tabs, .contentViews, .configlets, #edit-bar {
         border-bottom: 0px !important;
         box-shadow: 0 0px 0px 0px black inset !important;
@@ -235,7 +238,22 @@
     border-color: #b2b2b2 !important;
   }
 
+  // float left per a cerca 
+  #s2id_cercaCapca { float:left; }
+
+  // arreglar amplada i posició contacte 
+  #formfield-form-widgets-nombre, #formfield-form-widgets-from_address { 
+    float: none !important;
+    width:100% !important; }
+
+  #form-widgets-nombre { width: 100% !important;}
+
 } // END Responsive: Landscape phone to desktop/tablet
+
+
+
+
+
 
 
 
@@ -394,7 +412,7 @@
   }// FI taula pla estudis empaquetat
 
 
-  /* mapa contacte, afegim marges laterals per poder fer scroll en mòbil */
+  // mapa contacte, afegim marges laterals per poder fer scroll en mòbil 
   .img-mask { 
     width:90% !important;
     margin-left:5% !important;

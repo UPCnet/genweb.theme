@@ -89,7 +89,7 @@ label {
 
 .formControls, #actionsView {
 	padding-top: 25px;
-	@include box-shadow(0 -15px 15px -15px rgba(0,0,0,.25));
+	//@include box-shadow(0 -15px 15px -15px rgba(0,0,0,.25));
 }
 
 .searchButton {@extend .btn;}
@@ -167,7 +167,6 @@ input#title {font-weight:bold}
 	width:100%;
 	height:100%;
 	min-height:100%;
-	//margin: 20px 0 auto;
 	iframe {
 		height:400px; // alçada mapa contacte
 		width:100%;
@@ -185,27 +184,41 @@ iframe {
 /* regles afegides per maquetar contacte segons proposta oriol */
 #formfield-form-widgets-nombre  {
   float:left;
-  width:48% !important;
+  width:48%;
 }
-#form-widgets-nombre{width:90% !important;}
+#form-widgets-nombre{width:100% !important;}
 
 #formfield-form-widgets-from_address {
-  float:right;
-  //margin-left:3% !important;
-  width:48% !important;
+  float:right;  
+  width:48% ;
 }
-#form-widgets-from_address {width:95% !important;}
+#form-widgets-from_address {width:100% !important;}
 
 #formfield-form-widgets-asunto {
   clear:both;
   width:100%;
 }
-#form-widgets-asunto{
+
+/*#form-widgets-asunto{
   width:97% !important;
-}
+}*/
 
 #formfield-form-widgets-mensaje { width:100%;}
 
+.kssattr-formname-contac input { // ajusta amplada camps formulari contacte
+  resize:vertical;
+  height: auto;
+  max-width:100%;
+  min-width:210px;
+  min-height: 30px;
+  width: 100%;
+  @include box-sizing(border-box);
+}
+
+#form-buttons-send {
+  width:65px !important;
+  min-width:65px !important;
+}
 
 #contacte-dades {
   width:48%;
@@ -821,3 +834,12 @@ div.overlay {
     /* initially overlay is hidden */
     display: none;
 }
+
+// ESDEVENIMENT
+div[id*='formfield-form-widgets-IEventBasic-'] select { width:auto; } // ajusta amplada select
+
+// POLL - ENQUESTA
+
+.tasksplease span { padding-right: 10px; } // afegeix separació entre opcions
+
+input[name='poll.submit'] { margin-top: 15px; } // afegeix separació botó enviament

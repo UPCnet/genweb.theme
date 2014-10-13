@@ -121,7 +121,7 @@
 			&.active {
 				background-color: #f2f8fc !important; color:$grayDarker;
 				&[class*=" contenttype-"] span:after {@include opacity(100);}
-				& span:before {font-size: 525%; top:-2px; left:4px; }
+				& span:before {font-size: 66px; top:-2px; left:4px; }
 			}
 			&.state-private {border-right: 3px solid $red; color:$red;}
 			&.state-draft, &.state-visible {border-right: 3px solid $green; color:$green;}
@@ -145,7 +145,7 @@
 					top:4px;
 					left:7px;
 					position:absolute;
-					font-size:350%;
+					font-size: 44px;
 					line-height:0 !important;
 				}
 			}
