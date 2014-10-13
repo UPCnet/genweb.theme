@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import re
 from five import grok
+from plone import api
 from cgi import escape
 from Acquisition import aq_inner
 
@@ -107,16 +108,15 @@ class ContactForm(form.Form):
         else:
             return
 
-        if not 'asunto' in data or \
-           not 'from_address' in data or \
-           not 'mensaje' in data or \
-           not 'nombre' in data:
+        if 'asunto' not in data or \
+           'from_address' not in data or \
+           'mensaje' not in data or \
+           'nombre' not in data:
             return
 
         context = aq_inner(self.context)
         mailhost = getToolByName(context, 'MailHost')
-        urltool = getToolByName(context, 'portal_url')
-        portal = urltool.getPortalObject()
+        portal = api.portal.get()
         email_charset = portal.getProperty('email_charset')
 
         to_address = portal.getProperty('email_from_address')
