@@ -9,7 +9,6 @@ from Acquisition import aq_inner
 from AccessControl import getSecurityManager
 from zope.interface import Interface
 from zope.component import getMultiAdapter
-from zope.component.hooks import getSite
 from zope.security import checkPermission
 
 from plone.memoize import ram
@@ -53,12 +52,12 @@ class viewletBase(grok.Viewlet):
     grok.baseclass()
 
     @memoize_contextless
-    def portal_url(self):
+    def root_url(self):
         return self.portal().absolute_url()
 
     @memoize_contextless
     def portal(self):
-        return getSite()
+        return api.portal.get()
 
     def genweb_config(self):
         return genweb_config()
@@ -134,9 +133,9 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
 
     def logout_link(self):
         if HAS_CAS:
-            return '{}/cas_logout'.format(self.portal_url)
+            return '{}/cas_logout'.format(self.root_url())
         else:
-            return '{}/logout'.format(self.portal_url)
+            return '{}/logout'.format(self.root_url())
 
     @ram.cache(lambda *args: time() // (60 * 60))
     def getNotificacionsGW(self):
@@ -152,10 +151,9 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
             return {}
 
     def forgeResizerURLCall(self):
-
         part1 = """<a class="button" data-text="Advanced bookmarklet" href="javascript:void((function(d){if(self!=top||d.getElementById('toolbar')&&d.getElementById('toolbar').getAttribute('data-resizer'))return false;d.write('<!DOCTYPE HTML><html style=&quot;opacity:0;&quot;><head><meta charset=&quot;utf-8&quot;/></head><body><a data-viewport=&quot;240x240&quot; data-icon=&quot;handy&quot;>Mobile</a><a data-viewport=&quot;320x480&quot; data-icon=&quot;mobile&quot;>Mobile (e.g. Apple iPhone)</a><a data-viewport=&quot;320x568&quot; data-icon=&quot;mobile&quot; data-version=&quot;5&quot;>Apple iPhone 5</a><a data-viewport=&quot;600x800&quot; data-icon=&quot;small-tablet&quot;>Small Tablet</a><a data-viewport=&quot;768x1024&quot; data-icon=&quot;tablet&quot;>Tablet (e.g. Apple iPad 2-3rd, mini)</a><a data-viewport=&quot;1024x768&quot; data-icon=&quot;display&quot; data-version=&quot;17″&quot;>17″ Display</a><a data-viewport=&quot;1280x800&quot; data-icon=&quot;notebook&quot;>Widescreen</a><a data-viewport=&quot;2560x1600&quot; data-icon=&quot;display&quot; data-version=&quot;30″&quot;>30″ Apple Cinema Display</a><script src=&quot;"""
         part2 = """/++genweb++static/js/resizer.min.js&quot;></script></body></html>')})(document));"><span class="pull-left">Vistes</span><i class="fontello-icon-mobile pull-left"></i><i class="fontello-icon-tablet pull-left"></i></a>"""
-        return part1 + self.portal_url + part2
+        return part1 + self.root_url() + part2
 
 
 class gwHeader(viewletBase):
