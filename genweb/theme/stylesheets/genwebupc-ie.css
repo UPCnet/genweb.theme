@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1412933828572');
+@import url('genwebupc-ie-blessed1.css?z=1413189869163');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 552, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -1876,6 +1876,96 @@ dt.contenttype-lrf:before {
 .icons-off .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
   background-image: none;
   background-repeat: none; }
+
+/* line 347, ../scss/_nav.scss */
+.tt-dropdown-menu,
+.gist {
+  text-align: left; }
+
+/* base styles */
+/* ----------- */
+/* line 357, ../scss/_nav.scss */
+.typeahead,
+.tt-query,
+.tt-hint {
+  height: 30px;
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  outline: none; }
+
+/* line 367, ../scss/_nav.scss */
+.typeahead {
+  background-color: #fff; }
+
+/* line 371, ../scss/_nav.scss */
+.typeahead:focus {
+  border: 1px solid #0097cf; }
+
+/* line 375, ../scss/_nav.scss */
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+/* line 381, ../scss/_nav.scss */
+.tt-hint {
+  color: #999999; }
+
+/* line 385, ../scss/_nav.scss */
+.tt-dropdown-menu {
+  padding: 0px 0;
+  padding-bottom: 0px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+/* line 399, ../scss/_nav.scss */
+.tt-suggestion, .tt-empty {
+  padding: 3px 10px;
+  font-size: 110%; }
+  /* line 402, ../scss/_nav.scss */
+  .tt-suggestion a, .tt-empty a {
+    color: #333; }
+
+/* line 405, ../scss/_nav.scss */
+.tt-empty {
+  padding: 5px 10px 0px; }
+
+/* line 409, ../scss/_nav.scss */
+.tt-suggestion.tt-cursor {
+  color: #fff;
+  background-color: #0097cf !important; }
+  /* line 412, ../scss/_nav.scss */
+  .tt-suggestion.tt-cursor a {
+    color: #fff; }
+
+/* line 415, ../scss/_nav.scss */
+.tt-suggestion p {
+  margin: 0; }
+
+/* line 420, ../scss/_nav.scss */
+.tt-suggestion.with-separator:first-child {
+  padding: 0px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
+/* line 425, ../scss/_nav.scss */
+.tt-suggestion:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
+/* line 430, ../scss/_nav.scss */
+.gist {
+  font-size: 14px; }
 
 /* test5 */
 /* ABANS EREN LI */
