@@ -38,6 +38,7 @@ from collective.recaptcha.view import RecaptchaView as CollectiveRecaptchaView
 
 from genweb.core.interfaces import IHomePage
 from genweb.core.utils import genweb_config, pref_lang
+from genweb.core.interfaces import INewsFolder
 
 from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 
@@ -663,18 +664,19 @@ class newsCollectionView(grok.View):
 
     @memoize
     def _data(self):
-
         context = aq_inner(self.context)
         catalog = getToolByName(context, 'portal_catalog')
         state = ['published', 'intranet']
         results = catalog(portal_type=('News Item'),
                        review_state=state,
                        is_important=True,
+                       Language=pref_lang(),
                        sort_on="getObjPositionInParent")
         results = [a for a in results]
         results2 = catalog(portal_type=('News Item', 'Link'),
                    review_state=state,
                    is_important=False,
+                   Language=pref_lang(),
                    sort_on=('Date'),
                    sort_order='reverse')
         results3 = []
@@ -687,18 +689,14 @@ class newsCollectionView(grok.View):
         return results + results3
 
     def all_news_link(self):
-        context = aq_inner(self.context)
-        portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
-        self.portal = portal_state.portal()
-        if self.have_news_folder:
-            news = self.portal.noticies.getTranslation()
-            return '%s' % news.absolute_url()
+        pc = api.portal.get_tool('portal_catalog')
+        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__,
+                                       Language=pref_lang())
+
+        if news_folder:
+            return '%s' % news_folder[0].getURL()
         else:
             return '%s/news_listing' % self.portal_url
-
-    @memoize
-    def have_news_folder(self):
-        return 'news' in self.navigation_root_object.objectIds()
 
 
 class ContactFeedback(grok.View):

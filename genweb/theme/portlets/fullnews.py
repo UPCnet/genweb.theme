@@ -13,6 +13,7 @@ from Products.CMFPlone import PloneMessageFactory as _
 from Products.CMFCore.utils import getToolByName
 
 from genweb.core.interfaces import INewsFolder
+from genweb.core.utils import pref_lang
 
 from plone.app.portlets.portlets.news import Renderer as news_renderer
 
@@ -57,7 +58,8 @@ class Renderer(news_renderer):
 
     def all_news_link(self):
         pc = api.portal.get_tool('portal_catalog')
-        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__)
+        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__,
+                                       Language=pref_lang())
 
         if news_folder:
             return '%s' % news_folder[0].getURL()
@@ -84,6 +86,7 @@ class Renderer(news_renderer):
         results = catalog(portal_type=('News Item', 'Link'),
                        review_state=state,
                        is_important=True,
+                       Language=pref_lang(),
                        sort_on="getObjPositionInParent",
                        sort_limit=limit)
         results = [a for a in results]
@@ -92,6 +95,7 @@ class Renderer(news_renderer):
             results2 = catalog(portal_type=('News Item', 'Link'),
                        review_state=state,
                        is_important=False,
+                       Language=pref_lang(),
                        sort_on=('Date'),
                        sort_order='reverse')
                        #, sort_limit=limit - important)
