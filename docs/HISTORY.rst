@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.26 (unreleased)
+1.26 (2014-10-15)
 -----------------
 
-- Nothing changed yet.
-
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
 
 1.25 (2014-10-15)
 -----------------
