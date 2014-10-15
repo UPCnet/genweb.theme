@@ -242,19 +242,14 @@ class TypeAheadSearch(grok.View):
         else:
             params['path'] = path
 
+        params["Language"] = pref_lang()
         # search limit+1 results to know if limit is exceeded
         results = catalog(**params)
-
-        searchterm_query = '?searchterm=%s' % url_quote_plus(q)
 
         REQUEST = self.context.REQUEST
         RESPONSE = REQUEST.RESPONSE
         RESPONSE.setHeader('Content-Type', 'application/json')
 
-        label_no_results_found = _('label_no_results_found',
-                                   default='No matching results found.')
-        label_advanced_search = _('label_advanced_search',
-                                  default='Advanced Search&#8230;')
         label_show_all = _('label_show_all', default='Show all items')
 
         ts = getToolByName(self.context, 'translation_service')
@@ -270,7 +265,6 @@ class TypeAheadSearch(grok.View):
                 if result.portal_type in useViewAction:
                     itemUrl += '/view'
 
-                itemUrl = itemUrl + searchterm_query
                 full_title = safe_unicode(pretty_title_or_id(result))
                 if len(full_title) > MAX_TITLE:
                     display_title = ''.join((full_title[:MAX_TITLE], '...'))
