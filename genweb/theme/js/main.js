@@ -83,24 +83,24 @@ $(document).ready(function () {
       $.getScript(window.location.href + "/++genweb++static/js/prettify.js", function() {prettyPrint();});
   }
 
-// Toggle search
+  // Toggle search
   $("#search-results-bar dl a").on("click", function(e) {
     event.preventDefault();
     $("#search-results-bar dl dd.actionMenuContent").toggle();
   });
 
 
-// actualització títol menú 1, mostra l'opció de primer nivell que hem seleccionat, es fa a partir del 2on valor de la llista del breadcrumb
+  // actualització títol menú 1, mostra l'opció de primer nivell que hem seleccionat, es fa a partir del 2on valor de la llista del breadcrumb
   var lititol=$('ol.breadcrumb li:eq(1) a');// cas amb breadcrumb no visible
   if (lititol.length===0) { lititol=$('ol.breadcrumb li:eq(1)'); }// cas amb breadcrumb visible
   var nouTitol=lititol.text();
   if (nouTitol) {$('#titol-menu-1 a').text(nouTitol);}
 
-// actualització títol menú 2, mostra l'opció de primer nivell que hem seleccionat, es fa a partir del 3er valor de la llista del breadcrumb
-/*  var lititol=$('ol.breadcrumb li:eq(2) a');// cas amb breadcrumb no visible
-  if (lititol.length===0) lititol=$('ol.breadcrumb li:eq(2)');// cas amb breadcrumb visible
-  var nouTitol=lititol.text();
-  if (nouTitol) $('#titol-menu-2').text(nouTitol);*/
+  // actualització títol menú 2, mostra l'opció de primer nivell que hem seleccionat, es fa a partir del 3er valor de la llista del breadcrumb
+  /*  var lititol=$('ol.breadcrumb li:eq(2) a');// cas amb breadcrumb no visible
+    if (lititol.length===0) lititol=$('ol.breadcrumb li:eq(2)');// cas amb breadcrumb visible
+    var nouTitol=lititol.text();
+    if (nouTitol) $('#titol-menu-2').text(nouTitol);*/
 
   function input_text_default(captcha_type){
     var text_default="";
@@ -113,7 +113,7 @@ $(document).ready(function () {
 
   }
 
-// RECAPTCHA
+  // RECAPTCHA
   if (_.hasOwnProperty(window, 'RecaptchaOptions')) {
     if (RecaptchaOptions !== undefined) {
       var translations = RecaptchaOptions.custom_translations;
@@ -141,12 +141,16 @@ $(document).ready(function () {
   // FI RECAPTCHA
 
   // Share popover specific
-  $('.share_popover').popover({
+  $('.share_popover')
+    .popover({
       html:true,
       placement:'left',
       content:function(){
           return $($(this).data('contentwrapper')).html();
       }
+    })
+    .click(function(e) { // evita scroll top
+      e.preventDefault();
   });
 
   // Tags select2 field
@@ -192,69 +196,69 @@ $(document).ready(function () {
   });
 
 
-var liveSearch = function(data_url) {
-  return function findMatches(q, cb) {
-    $.get(data_url + '?q=' + q, function(data) {
-      window._gw_typeahead_last_result = data;
-      cb(data);
-    });
+  var liveSearch = function(data_url) {
+    return function findMatches(q, cb) {
+      $.get(data_url + '?q=' + q, function(data) {
+        window._gw_typeahead_last_result = data;
+        cb(data);
+      });
 
-  };
-};
-
-window._gw_typeahead_last_result = [];
-var selector = '#the-basics .typeahead';
-var $typeahead_dom = $(selector);
-$typeahead_dom.typeahead({
-  hint: true,
-  highlight: true,
-  minLength: 1
-},
-{
-  name: 'states',
-  displayKey: 'title',
-  source: liveSearch($typeahead_dom.attr('data-typeahead-url')),
-  templates: {
-    suggestion: Handlebars.compile('<a class="{{class}}" href="{{itemUrl}}">{{title}}</a>'),
-    empty: '<div class="tt-empty"><p>No hi ha elements<p></div>'
-  }
-}).on("typeahead:datasetRendered", function(event) {
-  var $dropdown = $(this).parent().find('.tt-dropdown-menu');
-  var $separator = $dropdown.find('.tt-suggestion a.with-separator').parent();
-  var separator_css = {
-    "border-top": ' 1px solid rgba(0, 0, 0, 0.2)',
-    'background-color': "#f5f5f5",
-    "padding-top": "4px"
+    };
   };
 
-  if ($separator.is(':first-child')) {
-    separator_css['border-top-left-radius']= "8px";
-    separator_css['border-top-right-radius']= "8px";
-    separator_css['border-top'] = "none";
-  }
-
-  $separator.css(separator_css);
-  $separator = $dropdown.find('.tt-suggestion a.with-background').parent();
-  $separator.css({'background-color': "#f5f5f5" });
-})
-.on("keyup", function(event) {
-    if (event.keyCode === 13) {
-        var text = $(this).val();
-        if (!_.findWhere(window._gw_typeahead_last_result, {'title': text})) {
-            window.location.href = $typeahead_dom.attr('data-search-url') + '?SearchableText=' + text;
-        }
-
+  window._gw_typeahead_last_result = [];
+  var selector = '#the-basics .typeahead';
+  var $typeahead_dom = $(selector);
+  $typeahead_dom.typeahead({
+    hint: true,
+    highlight: true,
+    minLength: 1
+  },
+  {
+    name: 'states',
+    displayKey: 'title',
+    source: liveSearch($typeahead_dom.attr('data-typeahead-url')),
+    templates: {
+      suggestion: Handlebars.compile('<a class="{{class}}" href="{{itemUrl}}">{{title}}</a>'),
+      empty: '<div class="tt-empty"><p>No hi ha elements<p></div>'
     }
-})
-.on("typeahead:selected", function(event, suggestion, dataset) {
-    event.preventDefault();
-    event.stopPropagation();
-    event.stopImmediatePropagation();
-    window.location.href = suggestion.itemUrl;
+  }).on("typeahead:datasetRendered", function(event) {
+    var $dropdown = $(this).parent().find('.tt-dropdown-menu');
+    var $separator = $dropdown.find('.tt-suggestion a.with-separator').parent();
+    var separator_css = {
+      "border-top": ' 1px solid rgba(0, 0, 0, 0.2)',
+      'background-color': "#f5f5f5",
+      "padding-top": "4px"
+    };
 
-});
+    if ($separator.is(':first-child')) {
+      separator_css['border-top-left-radius']= "8px";
+      separator_css['border-top-right-radius']= "8px";
+      separator_css['border-top'] = "none";
+    }
 
+    $separator.css(separator_css);
+    $separator = $dropdown.find('.tt-suggestion a.with-background').parent();
+    $separator.css({'background-color': "#f5f5f5" });
+  })
+  .on("keyup", function(event) {
+      if (event.keyCode === 13) {
+          var text = $(this).val();
+          if (!_.findWhere(window._gw_typeahead_last_result, {'title': text})) {
+              window.location.href = $typeahead_dom.attr('data-search-url') + '?SearchableText=' + text;
+          }
 
+      }
+  })
+  .on("typeahead:selected", function(event, suggestion, dataset) {
+      event.preventDefault();
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+      window.location.href = suggestion.itemUrl;
+
+  });
+
+  append_new_window_icon();
 
 }); // End of $(document).ready
 
@@ -268,3 +272,62 @@ function keywordTokenInputActivate(id, newValues, oldValues) {
       prePopulate: oldValues
   });
 }
+
+
+function append_new_window_icon() 
+{
+    /*  afegeix icon_blank.gif a tots els <a target='_blank'>
+        EXCEPCIONS:
+        - si troba una imatge (no importa quina imatge sigui, pdf, facebook, twitter, etc, seran vàlides)
+            - dins <a> 
+            - immeditament després <a>
+        - té la classe no_icon_blank            */
+
+    var text_alt = 
+    {
+        ca: '(obriu en una finestra nova)', 
+        es: '(abrir en una ventana nueva)', 
+        en: '(open in new window)'
+    };
+
+    var lang = get_lang(document.URL);
+
+    $('a[target = "_blank"]').each(function(i,obj) // busquem tots el <a> amb target _blank 
+    {
+        if (!$(this).hasClass('no_icon_blank')) // que no tinguin classe no_icon_blank
+        {
+            var img = $(this).find("img")[0]; 
+            if (img === undefined) // que no tinguin una imatge dins <a>
+            {
+                var img2 = $(this).next('img:first')[0]; 
+                if (img2 === undefined) // que no tinguin imatge immediatament després <a>
+                {
+                    $(this).append('<img style="margin-left:5px;" class="link_blank" alt="' + text_alt[lang] + '" src="http://www.upc.edu/icon_blank.gif">');
+                }
+            } 
+        }
+    });
+}
+
+
+function get_lang(text) 
+{
+    /*  cerca dins el paràmetre els textos /es/ o /en/
+        retorna es o en o ca (valor per defecte)        */
+
+    var lang = 'ca';
+
+    if ( text.indexOf('/es/')>-1 )
+    {
+        lang = 'es'
+    }
+    else
+    {
+        if ( text.indexOf('/en/')>-1 )
+        {
+            lang = 'en'
+        } 
+    }
+
+    return lang;
+} 

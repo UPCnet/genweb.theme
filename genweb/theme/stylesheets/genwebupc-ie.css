@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1413189995726');
+@import url('genwebupc-ie-blessed1.css?z=1413459710742');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 552, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -1967,7 +1967,6 @@ dt.contenttype-lrf:before {
 .gist {
   font-size: 14px; }
 
-/* test5 */
 /* ABANS EREN LI */
 /* line 11, ../scss/_plantilles.scss */
 .success {
