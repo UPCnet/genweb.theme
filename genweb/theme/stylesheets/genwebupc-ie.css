@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1413459710742');
+@import url('genwebupc-ie-blessed1.css?z=1413460054963');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 552, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -1916,6 +1916,7 @@ dt.contenttype-lrf:before {
 
 /* line 385, ../scss/_nav.scss */
 .tt-dropdown-menu {
+  width: 100%;
   padding: 0px 0;
   padding-bottom: 0px;
   background-color: #fff;
@@ -1928,42 +1929,42 @@ dt.contenttype-lrf:before {
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
-/* line 399, ../scss/_nav.scss */
+/* line 400, ../scss/_nav.scss */
 .tt-suggestion, .tt-empty {
   padding: 3px 10px;
   font-size: 110%; }
-  /* line 402, ../scss/_nav.scss */
+  /* line 403, ../scss/_nav.scss */
   .tt-suggestion a, .tt-empty a {
     color: #333; }
 
-/* line 405, ../scss/_nav.scss */
+/* line 406, ../scss/_nav.scss */
 .tt-empty {
   padding: 5px 10px 0px; }
 
-/* line 409, ../scss/_nav.scss */
+/* line 410, ../scss/_nav.scss */
 .tt-suggestion.tt-cursor {
   color: #fff;
   background-color: #0097cf !important; }
-  /* line 412, ../scss/_nav.scss */
+  /* line 413, ../scss/_nav.scss */
   .tt-suggestion.tt-cursor a {
     color: #fff; }
 
-/* line 415, ../scss/_nav.scss */
+/* line 416, ../scss/_nav.scss */
 .tt-suggestion p {
   margin: 0; }
 
-/* line 420, ../scss/_nav.scss */
+/* line 421, ../scss/_nav.scss */
 .tt-suggestion.with-separator:first-child {
   padding: 0px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px; }
 
-/* line 425, ../scss/_nav.scss */
+/* line 426, ../scss/_nav.scss */
 .tt-suggestion:last-child {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px; }
 
-/* line 430, ../scss/_nav.scss */
+/* line 431, ../scss/_nav.scss */
 .gist {
   font-size: 14px; }
 

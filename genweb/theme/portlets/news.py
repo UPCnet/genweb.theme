@@ -58,7 +58,8 @@ class Renderer(news_renderer):
 
     def all_news_link(self):
         pc = api.portal.get_tool('portal_catalog')
-        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__)
+        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__,
+                                       Language=pref_lang())
 
         if news_folder:
             return '%s' % news_folder[0].getURL()

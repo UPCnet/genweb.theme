@@ -38,6 +38,7 @@ from collective.recaptcha.view import RecaptchaView as CollectiveRecaptchaView
 
 from genweb.core.interfaces import IHomePage
 from genweb.core.utils import genweb_config, pref_lang
+from genweb.core.interfaces import INewsFolder
 
 from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 
@@ -241,19 +242,14 @@ class TypeAheadSearch(grok.View):
         else:
             params['path'] = path
 
+        params["Language"] = pref_lang()
         # search limit+1 results to know if limit is exceeded
         results = catalog(**params)
-
-        searchterm_query = '?searchterm=%s' % url_quote_plus(q)
 
         REQUEST = self.context.REQUEST
         RESPONSE = REQUEST.RESPONSE
         RESPONSE.setHeader('Content-Type', 'application/json')
 
-        label_no_results_found = _('label_no_results_found',
-                                   default='No matching results found.')
-        label_advanced_search = _('label_advanced_search',
-                                  default='Advanced Search&#8230;')
         label_show_all = _('label_show_all', default='Show all items')
 
         ts = getToolByName(self.context, 'translation_service')
@@ -269,7 +265,6 @@ class TypeAheadSearch(grok.View):
                 if result.portal_type in useViewAction:
                     itemUrl += '/view'
 
-                itemUrl = itemUrl + searchterm_query
                 full_title = safe_unicode(pretty_title_or_id(result))
                 if len(full_title) > MAX_TITLE:
                     display_title = ''.join((full_title[:MAX_TITLE], '...'))
@@ -663,18 +658,19 @@ class newsCollectionView(grok.View):
 
     @memoize
     def _data(self):
-
         context = aq_inner(self.context)
         catalog = getToolByName(context, 'portal_catalog')
         state = ['published', 'intranet']
         results = catalog(portal_type=('News Item'),
                        review_state=state,
                        is_important=True,
+                       Language=pref_lang(),
                        sort_on="getObjPositionInParent")
         results = [a for a in results]
         results2 = catalog(portal_type=('News Item', 'Link'),
                    review_state=state,
                    is_important=False,
+                   Language=pref_lang(),
                    sort_on=('Date'),
                    sort_order='reverse')
         results3 = []
@@ -687,18 +683,14 @@ class newsCollectionView(grok.View):
         return results + results3
 
     def all_news_link(self):
-        context = aq_inner(self.context)
-        portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
-        self.portal = portal_state.portal()
-        if self.have_news_folder:
-            news = self.portal.noticies.getTranslation()
-            return '%s' % news.absolute_url()
+        pc = api.portal.get_tool('portal_catalog')
+        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__,
+                                       Language=pref_lang())
+
+        if news_folder:
+            return '%s' % news_folder[0].getURL()
         else:
             return '%s/news_listing' % self.portal_url
-
-    @memoize
-    def have_news_folder(self):
-        return 'news' in self.navigation_root_object.objectIds()
 
 
 class ContactFeedback(grok.View):

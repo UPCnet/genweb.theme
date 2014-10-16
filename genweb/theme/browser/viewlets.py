@@ -20,29 +20,20 @@ from Products.CMFPlone.utils import safe_unicode
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile as ZopeViewPageTemplateFile
 from Products.Five.browser.metaconfigure import ViewMixinForTemplates
+from Products.CMFPlone.interfaces import IPloneSiteRoot
 
-from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.app.layout.viewlets.common import PersonalBarViewlet, GlobalSectionsViewlet, PathBarViewlet
 from plone.app.layout.viewlets.common import SearchBoxViewlet, TitleViewlet, ManagePortletsFallbackViewlet
 from plone.app.layout.viewlets.interfaces import IHtmlHead, IPortalTop, IPortalHeader, IBelowContent
 from plone.app.layout.viewlets.interfaces import IPortalFooter, IAboveContentTitle, IBelowContentTitle
-from Products.CMFPlone.interfaces import IPloneSiteRoot
-
-#from Products.ATContentTypes.interface.news import IATNewsItem
-from plone.app.contenttypes.interfaces import INewsItem
-from genweb.core.adapters import IImportant
-
-from zope.annotation.interfaces import IAnnotations
-# from Products.ATContentTypes.interfaces.event import IATEvent
-from plone.app.contenttypes.interfaces import IEvent
 
 from genweb.core import _
 from genweb.core import HAS_CAS
-from genweb.core import HAS_DXCT
 from genweb.core.interfaces import IHomePage
 from genweb.theme.browser.interfaces import IHomePageView
-from genweb.core.utils import genweb_config, havePermissionAtRoot, pref_lang
-
+from genweb.core.utils import genweb_config
+from genweb.core.utils import havePermissionAtRoot
+from genweb.core.utils import pref_lang
 from genweb.theme.browser.interfaces import IGenwebTheme
 
 grok.context(Interface)
@@ -202,51 +193,6 @@ class gwHeader(viewletBase):
 
     def get_right_logo_alt(self):
         return self.genweb_config().right_logo_alt
-
-
-class gwImportantNews(viewletBase):
-    grok.name('genweb.important')
-    grok.context(INewsItem)
-    grok.template('important')
-    grok.viewletmanager(IAboveContentTitle)
-    grok.layer(IGenwebTheme)
-
-    def permisos_important(self):
-        #TODO: Comprovar que l'usuari tingui permisos per a marcar com a important
-        return not IImportant(self.context).is_important and checkPermission("plone.app.controlpanel.Overview", self.portal())
-
-    def permisos_notimportant(self):
-        #TODO: Comprovar que l'usuari tingui permisos per a marcar com a notimportant
-        return IImportant(self.context).is_important and checkPermission("plone.app.controlpanel.Overview", self.portal())
-
-    def canManageSite(self):
-        return checkPermission("plone.app.controlpanel.Overview", self.portal())
-
-    def isNewImportant(self):
-        context = aq_inner(self.context)
-        is_important = IImportant(context).is_important
-        return is_important
-
-
-class gwSendEvent(viewletBase):
-    grok.name('genweb.sendevent')
-    grok.context(IEvent)
-    grok.template('send_event')
-    grok.viewletmanager(IAboveContentTitle)
-    grok.layer(IGenwebTheme)
-
-    def isEventSent(self):
-        """
-        """
-        context = self.context
-        annotations = IAnnotations(context)
-        if 'eventsent' in annotations:
-            return True
-        else:
-            return False
-
-    def canManageSite(self):
-        return checkPermission("plone.app.controlpanel.Overview", self.portal())
 
 
 class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
@@ -413,10 +359,8 @@ class TitleViewlet(TitleViewlet, viewletBase):
     grok.layer(IGenwebTheme)
 
     def update(self):
-        portal_state = getMultiAdapter((self.context, self.request),
-                                        name=u'plone_portal_state')
-        context_state = getMultiAdapter((self.context, self.request),
-                                         name=u'plone_context_state')
+        portal_state = getMultiAdapter((self.context, self.request), name=u'plone_portal_state')
+        context_state = getMultiAdapter((self.context, self.request), name=u'plone_context_state')
         page_title = escape(safe_unicode(context_state.object_title()))
         portal_title = escape(safe_unicode(portal_state.navigation_root_title()))
 
@@ -443,5 +387,4 @@ class socialtoolsViewlet(viewletBase):
         Title = aq_inner(self.context).Title()
         contextURL = self.context.absolute_url()
 
-        return dict(Title = Title, URL = contextURL)
-
+        return dict(Title=Title, URL=contextURL)

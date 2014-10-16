@@ -1,11 +1,46 @@
 Changelog
 =========
 
-1.25 (unreleased)
+1.29 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+1.28 (2014-10-16)
+-----------------
+
+* Fix login form, searchbox placeholder and personal bar [Victor Fernandez de Alba]
+
+1.27 (2014-10-16)
+-----------------
+
+* Transferred feature viewlets from genweb.theme [Victor Fernandez de Alba]
+
+1.26 (2014-10-15)
+-----------------
+
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+
+1.25 (2014-10-15)
+-----------------
+
+* Fix PAMaware issues [Victor Fernandez de Alba]
+* New versions history form [Victor Fernandez de Alba]
+* Die to the portal_url overwritting, new root_url in place [Victor Fernandez de Alba]
+* Better portal url and pep8 [Victor Fernandez de Alba]
+* Fix retrieve password from UPC sites [Victor Fernandez de Alba]
+* css sense conflictes [Roberto Diaz]
+* Canvis Oscar [Roberto Diaz]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* Update literal [Victor Fernandez de Alba]
+* New search box using twiter typeahead.js [Carles Bruguera]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [hanirok]
+* Cambio enlaces pie [hanirok]
+* Fix literal [Victor Fernandez de Alba]
+* New personal bar dropdown for users [Victor Fernandez de Alba]
+* Update markup for mobile views for resizer. [Victor Fernandez de Alba]
+* Place correct DOCTYPE inside TinyMCE iframe. [Victor Fernandez de Alba]
 
 1.24 (2014-10-09)
 -----------------
