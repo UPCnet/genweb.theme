@@ -52,13 +52,13 @@
             <li class="dropdown" role="menuitem"
                 tal:condition="show_tools/show">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <tal:rootFolder i18n:translate="genweb-accesarrel2">
-                  Eines
+                <tal:rootFolder i18n:translate="genweb-eines">
+                  Tools
                 </tal:rootFolder>
                 <b aria-hidden="true" class="caret"></b>
               </a>
               <ul class="dropdown-menu" role="menu">
-                <li class="nav-header">Carpetes arrel</li>
+                <li class="nav-header" i18n:translate="genweb-roots">Root folders</li>
                 <tal:langs repeat="lang_info view/get_available_langs">
                   <li role="menuitem"
                       tal:condition="python:show_tools['show_'+lang_info['code']]">
@@ -74,19 +74,19 @@
                 <li role="menuitem" tal:condition="show_tools/show_advanced">
                   <a i18n:translate="manage_site_permissions"
                      tal:attributes="href string:${view/root_url}/sharing">
-                    Manage site permissions
+                    Grant access
                   </a>
                 </li>
                 <li role="menuitem" tal:condition="show_tools/show_shared">
                   <a i18n:translate="shared_folder"
                      tal:attributes="href string:${view/root_url}/shared">
-                    Shared files
+                    Common files
                   </a>
                 </li>
                 <li role="menuitem" tal:condition="show_tools/show_advanced">
                   <a i18n:translate="templates_folder"
                      tal:attributes="href string:${view/root_url}/plantilles">
-                    Templates folder
+                    Customize templates
                   </a>
                 </li>
               </ul>

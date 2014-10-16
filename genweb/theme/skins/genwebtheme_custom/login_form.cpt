@@ -52,7 +52,8 @@
                     use_external python:auth and external_login_url and not external_login_iframe;
                     target request/target|nothing;
                     target python:test(target in ('_parent', '_top', '_blank', '_self'), target, None);
-                    ztu modules/ZTUtils;">
+                    ztu modules/ZTUtils;
+                    is_ldap_upc_site context/@@genweb.utils/is_ldap_upc_site">
 
         <div class="alert alert-error"
              id="enable_cookies_message"
