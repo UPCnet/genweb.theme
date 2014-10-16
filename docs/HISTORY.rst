@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.28 (unreleased)
+1.28 (2014-10-16)
 -----------------
 
-- Nothing changed yet.
-
+* Fix login form, searchbox placeholder and personal bar [Victor Fernandez de Alba]
 
 1.27 (2014-10-16)
 -----------------
