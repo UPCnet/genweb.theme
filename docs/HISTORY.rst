@@ -1,11 +1,12 @@
 Changelog
 =========
 
-1.29 (unreleased)
+1.29 (2014-10-16)
 -----------------
 
-- Nothing changed yet.
-
+* Improve JS [Victor Fernandez de Alba]
+* Fix CSS [Roberto Diaz]
+* Canvis Oscar [Roberto Diaz]
 
 1.28 (2014-10-16)
 -----------------
