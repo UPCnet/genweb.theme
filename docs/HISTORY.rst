@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.27 (unreleased)
+1.27 (2014-10-16)
 -----------------
 
-- Nothing changed yet.
-
+* Transferred feature viewlets from genweb.theme [Victor Fernandez de Alba]
 
 1.26 (2014-10-15)
 -----------------
