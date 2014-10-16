@@ -258,6 +258,7 @@ $(document).ready(function () {
 
   });
 
+  // Append the accessibility thinggy when the link opens in new window
   append_new_window_icon();
 
 }); // End of $(document).ready
@@ -273,61 +274,37 @@ function keywordTokenInputActivate(id, newValues, oldValues) {
   });
 }
 
-
-function append_new_window_icon() 
+function append_new_window_icon()
 {
     /*  afegeix icon_blank.gif a tots els <a target='_blank'>
         EXCEPCIONS:
         - si troba una imatge (no importa quina imatge sigui, pdf, facebook, twitter, etc, seran vàlides)
-            - dins <a> 
+            - dins <a>
             - immeditament després <a>
         - té la classe no_icon_blank            */
 
-    var text_alt = 
+    var text_alt =
     {
-        ca: '(obriu en una finestra nova)', 
-        es: '(abrir en una ventana nueva)', 
+        ca: '(obriu en una finestra nova)',
+        es: '(abrir en una ventana nueva)',
         en: '(open in new window)'
     };
 
-    var lang = get_lang(document.URL);
+    var lang = $('html').attr('lang');
 
-    $('a[target = "_blank"]').each(function(i,obj) // busquem tots el <a> amb target _blank 
+    $('a[target = "_blank"]').each(function(i,obj) // busquem tots el <a> amb target _blank
     {
         if (!$(this).hasClass('no_icon_blank')) // que no tinguin classe no_icon_blank
         {
-            var img = $(this).find("img")[0]; 
+            var img = $(this).find("img")[0];
             if (img === undefined) // que no tinguin una imatge dins <a>
             {
-                var img2 = $(this).next('img:first')[0]; 
+                var img2 = $(this).next('img:first')[0];
                 if (img2 === undefined) // que no tinguin imatge immediatament després <a>
                 {
                     $(this).append('<img style="margin-left:5px;" class="link_blank" alt="' + text_alt[lang] + '" src="http://www.upc.edu/icon_blank.gif">');
                 }
-            } 
+            }
         }
     });
 }
-
-
-function get_lang(text) 
-{
-    /*  cerca dins el paràmetre els textos /es/ o /en/
-        retorna es o en o ca (valor per defecte)        */
-
-    var lang = 'ca';
-
-    if ( text.indexOf('/es/')>-1 )
-    {
-        lang = 'es'
-    }
-    else
-    {
-        if ( text.indexOf('/en/')>-1 )
-        {
-            lang = 'en'
-        } 
-    }
-
-    return lang;
-} 
