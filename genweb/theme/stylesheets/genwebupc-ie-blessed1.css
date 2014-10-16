@@ -40,7 +40,7 @@ html {
 
 /* line 52, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_reset.scss */
 a:focus {
-  outline: thin dotted #333333;
+  outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
@@ -158,7 +158,7 @@ a:hover {
 .img-polaroid, .template-personal-information [for="form.portrait"] ~ img, .newsImageContainer, .tileItem img {
   padding: 4px;
   background-color: #fff;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -782,7 +782,7 @@ pre {
   white-space: pre;
   white-space: pre-wrap;
   background-color: #e1f2f8;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -1005,7 +1005,7 @@ select[size="1"] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted #333333;
+  outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
@@ -1529,7 +1529,7 @@ select:focus:required:invalid {
     text-align: center;
     text-shadow: 0 1px 0 white;
     background-color: #f2f2f2;
-    border: 1px solid #cccccc; }
+    border: 1px solid #ccc; }
   /* line 462, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
   .input-append .add-on,
   .input-append .btn,
@@ -1555,13 +1555,9 @@ select:focus:required:invalid {
     -moz-border-radius: 0;
     border-radius: 0; }
   /* line 467, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_forms.scss */
-  .input-append .active, .input-append .selected, .input-append .contentViews .selected, .contentViews .input-append .selected, .input-append .contentViews .selected:hover, .contentViews .input-append .selected:hover,
+  .input-append .active, .input-append .selected,
   .input-prepend .active,
-  .input-prepend .selected,
-  .input-prepend .contentViews .selected,
-  .contentViews .input-prepend .selected,
-  .input-prepend .contentViews .selected:hover,
-  .contentViews .input-prepend .selected:hover {
+  .input-prepend .selected {
     background-color: #bce673;
     border-color: #72a31d; }
 
@@ -1813,7 +1809,7 @@ legend + .control-group {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('++genweb++static/images/gh.png?1409564226');
+  background-image: url('++genweb++static/images/gh.png?1410864406');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px; }
@@ -1828,13 +1824,6 @@ legend + .control-group {
 .nav > .selected > a > [class^="icon-"],
 .configlets > .selected > a > [class^="icon-"],
 .formTabs > .selected > a > [class^="icon-"],
-.contentViews .nav > .selected > a > [class^="icon-"],
-.contentViews .configlets > .selected > a > [class^="icon-"],
-.contentViews .formTabs > .selected > a > [class^="icon-"],
-.contentViews .nav > .selected:hover > a > [class^="icon-"],
-.contentViews > .selected:hover > a > [class^="icon-"],
-.contentViews .configlets > .selected:hover > a > [class^="icon-"],
-.contentViews .formTabs > .selected:hover > a > [class^="icon-"],
 .nav > .active > a > #category.documentByLine:before,
 .contentViews > .active > a > #category.documentByLine:before,
 .configlets > .active > a > #category.documentByLine:before,
@@ -1842,14 +1831,6 @@ legend + .control-group {
 .nav > .selected > a > #category.documentByLine:before,
 .configlets > .selected > a > #category.documentByLine:before,
 .formTabs > .selected > a > #category.documentByLine:before,
-.contentViews .nav > .selected > a > #category.documentByLine:before,
-.contentViews > .selected > a > #category.documentByLine:before,
-.contentViews .configlets > .selected > a > #category.documentByLine:before,
-.contentViews .formTabs > .selected > a > #category.documentByLine:before,
-.contentViews .nav > .selected:hover > a > #category.documentByLine:before,
-.contentViews > .selected:hover > a > #category.documentByLine:before,
-.contentViews .configlets > .selected:hover > a > #category.documentByLine:before,
-.contentViews .formTabs > .selected:hover > a > #category.documentByLine:before,
 .nav > .active > a > .tileFooter:before,
 .contentViews > .active > a > .tileFooter:before,
 .configlets > .active > a > .tileFooter:before,
@@ -1857,14 +1838,6 @@ legend + .control-group {
 .nav > .selected > a > .tileFooter:before,
 .configlets > .selected > a > .tileFooter:before,
 .formTabs > .selected > a > .tileFooter:before,
-.contentViews .nav > .selected > a > .tileFooter:before,
-.contentViews > .selected > a > .tileFooter:before,
-.contentViews .configlets > .selected > a > .tileFooter:before,
-.contentViews .formTabs > .selected > a > .tileFooter:before,
-.contentViews .nav > .selected:hover > a > .tileFooter:before,
-.contentViews > .selected:hover > a > .tileFooter:before,
-.contentViews .configlets > .selected:hover > a > .tileFooter:before,
-.contentViews .formTabs > .selected:hover > a > .tileFooter:before,
 .nav > .active > a > [class*=" icon-"],
 .contentViews > .active > a > [class*=" icon-"],
 .configlets > .active > a > [class*=" icon-"],
@@ -1872,58 +1845,43 @@ legend + .control-group {
 .nav > .selected > a > [class*=" icon-"],
 .configlets > .selected > a > [class*=" icon-"],
 .formTabs > .selected > a > [class*=" icon-"],
-.contentViews .nav > .selected > a > [class*=" icon-"],
-.contentViews .configlets > .selected > a > [class*=" icon-"],
-.contentViews .formTabs > .selected > a > [class*=" icon-"],
-.contentViews .nav > .selected:hover > a > [class*=" icon-"],
-.contentViews > .selected:hover > a > [class*=" icon-"],
-.contentViews .configlets > .selected:hover > a > [class*=" icon-"],
-.contentViews .formTabs > .selected:hover > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],
 .dropdown-menu > li > a:hover > #category.documentByLine:before,
 .dropdown-menu > li > a:hover > .tileFooter:before,
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .selected > a > [class^="icon-"],
-.contentViews .dropdown-menu > .selected > a > [class^="icon-"],
-.contentViews .dropdown-menu > .selected:hover > a > [class^="icon-"],
 .dropdown-menu > .active > a > #category.documentByLine:before,
 .dropdown-menu > .selected > a > #category.documentByLine:before,
-.contentViews .dropdown-menu > .selected > a > #category.documentByLine:before,
-.contentViews .dropdown-menu > .selected:hover > a > #category.documentByLine:before,
 .dropdown-menu > .active > a > .tileFooter:before,
 .dropdown-menu > .selected > a > .tileFooter:before,
-.contentViews .dropdown-menu > .selected > a > .tileFooter:before,
-.contentViews .dropdown-menu > .selected:hover > a > .tileFooter:before,
 .dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-menu > .selected > a > [class*=" icon-"],
-.contentViews .dropdown-menu > .selected > a > [class*=" icon-"],
-.contentViews .dropdown-menu > .selected:hover > a > [class*=" icon-"] {
-  background-image: url('++genweb++static/images/gh-w.png?1409564226'); }
+.dropdown-menu > .selected > a > [class*=" icon-"] {
+  background-image: url('++genweb++static/images/gh-w.png?1410864406'); }
 
 /* line 44, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-color {
-  background-image: url('++genweb++static/images/gh-c.png?1409564226'); }
+  background-image: url('++genweb++static/images/gh-c.png?1410864406'); }
 
 /* line 49, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-glass {
-  background-position: 0 0; }
+  background-position: 0      0; }
 
 /* line 50, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-music {
-  background-position: -24px 0; }
+  background-position: -24px  0; }
 
 /* line 51, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-search {
-  background-position: -48px 0; }
+  background-position: -48px  0; }
 
 /* line 52, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-envelope, .icon-formmaileradapter {
-  background-position: -72px 0; }
+  background-position: -72px  0; }
 
 /* line 53, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-heart {
-  background-position: -96px 0; }
+  background-position: -96px  0; }
 
 /* line 55, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-star,
@@ -1991,23 +1949,23 @@ legend + .control-group {
 
 /* line 74, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-home {
-  background-position: 0 -24px; }
+  background-position: 0      -24px; }
 
 /* line 75, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-page, .icon-document {
-  background-position: -24px -24px; }
+  background-position: -24px  -24px; }
 
 /* line 76, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-time, .icon-surveydatequestion, .icon-formdatefield {
-  background-position: -48px -24px; }
+  background-position: -48px  -24px; }
 
 /* line 77, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-road {
-  background-position: -72px -24px; }
+  background-position: -72px  -24px; }
 
 /* line 78, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-download-alt {
-  background-position: -96px -24px; }
+  background-position: -96px  -24px; }
 
 /* line 79, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-download {
@@ -2071,23 +2029,23 @@ legend + .control-group {
 
 /* line 95, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-tag, .icon-formlabelfield {
-  background-position: 0 -48px; }
+  background-position: 0      -48px; }
 
 /* line 96, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-tags, .icon-formrichlabelfield, #category.documentByLine:before {
-  background-position: -25px -48px; }
+  background-position: -25px  -48px; }
 
 /* line 97, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-book {
-  background-position: -48px -48px; }
+  background-position: -48px  -48px; }
 
 /* line 98, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-bookmark {
-  background-position: -72px -48px; }
+  background-position: -72px  -48px; }
 
 /* line 99, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-print {
-  background-position: -96px -48px; }
+  background-position: -96px  -48px; }
 
 /* line 100, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-camera {
@@ -2151,23 +2109,23 @@ legend + .control-group {
 
 /* line 116, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-pencil {
-  background-position: 0 -72px; }
+  background-position: 0      -72px; }
 
 /* line 117, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-map-marker {
-  background-position: -24px -72px; }
+  background-position: -24px  -72px; }
 
 /* line 118, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-adjust {
-  background-position: -48px -72px; }
+  background-position: -48px  -72px; }
 
 /* line 119, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-tint {
-  background-position: -72px -72px; }
+  background-position: -72px  -72px; }
 
 /* line 120, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-edit, .icon-formstringfield, .icon-formlinesfield, .icon-formintegerfield, .icon-formfixedpointfield {
-  background-position: -96px -72px; }
+  background-position: -96px  -72px; }
 
 /* line 121, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-share {
@@ -2231,23 +2189,23 @@ legend + .control-group {
 
 /* line 137, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-plus-sign, .tileFooter:before {
-  background-position: 0 -96px; }
+  background-position: 0      -96px; }
 
 /* line 138, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-minus-sign {
-  background-position: -24px -96px; }
+  background-position: -24px  -96px; }
 
 /* line 139, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-remove-sign {
-  background-position: -48px -96px; }
+  background-position: -48px  -96px; }
 
 /* line 140, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-ok-sign, .icon-plone-contentmenu-display-fg_base_view_p3 {
-  background-position: -72px -96px; }
+  background-position: -72px  -96px; }
 
 /* line 141, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-question-sign {
-  background-position: -96px -96px; }
+  background-position: -96px  -96px; }
 
 /* line 142, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-info-sign, .icon-policy, .icon-plone-contentmenu-display-pfg_draft_view {
@@ -2311,23 +2269,23 @@ legend + .control-group {
 
 /* line 158, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-exclamation-sign {
-  background-position: 0 -120px; }
+  background-position: 0      -120px; }
 
 /* line 159, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-gift {
-  background-position: -24px -120px; }
+  background-position: -24px  -120px; }
 
 /* line 160, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-leaf {
-  background-position: -48px -120px; }
+  background-position: -48px  -120px; }
 
 /* line 161, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-fire {
-  background-position: -72px -120px; }
+  background-position: -72px  -120px; }
 
 /* line 162, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-eye-open, .icon-workflow-transition-publish {
-  background-position: -96px -120px; }
+  background-position: -96px  -120px; }
 
 /* line 163, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-eye-close, .icon-workflow-transition-publishtointranet, .icon-workflow-transition-publicaalaintranet, .icon-workflow-transition-retracttointranet, .icon-workflow-transition-retiraalaintranet {
@@ -2393,23 +2351,23 @@ legend + .control-group {
 
 /* line 179, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-hdd, .icon-formsavedataadapter {
-  background-position: 0 -144px; }
+  background-position: 0      -144px; }
 
 /* line 180, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-bullhorn {
-  background-position: -24px -144px; }
+  background-position: -24px  -144px; }
 
 /* line 181, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-bell {
-  background-position: -48px -144px; }
+  background-position: -48px  -144px; }
 
 /* line 182, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-certificate {
-  background-position: -72px -144px; }
+  background-position: -72px  -144px; }
 
 /* line 183, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-thumbs-up, .icon-formthankspage {
-  background-position: -96px -144px; }
+  background-position: -96px  -144px; }
 
 /* line 184, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-thumbs-down {
@@ -2474,23 +2432,23 @@ legend + .control-group {
 /*afegits per a GW*/
 /* line 203, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-upc {
-  background-position: 0 -169px; }
+  background-position: 0      -169px; }
 
 /* line 204, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-news, .icon-news-item {
-  background-position: -23px -169px; }
+  background-position: -23px  -169px; }
 
 /* line 205, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-box, .icon-packet, .icon-packet {
-  background-position: -48px -168px; }
+  background-position: -48px  -168px; }
 
 /* line 206, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-link {
-  background-position: -72px -169px; }
+  background-position: -72px  -169px; }
 
 /* line 207, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-iframe, .icon-window {
-  background-position: -96px -169px; }
+  background-position: -96px  -169px; }
 
 /* line 208, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-desktop {
@@ -2562,23 +2520,23 @@ legend + .control-group {
 
 /* line 232, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-upload {
-  background-position: 0 -192px; }
+  background-position: 0      -192px; }
 
 /* line 233, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-rss {
-  background-position: -24px -192px; }
+  background-position: -24px  -192px; }
 
 /* line 234, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-poll, .icon-collective-polls-poll {
-  background-position: -48px -192px; }
+  background-position: -48px  -192px; }
 
 /* line 235, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-collection {
-  background-position: -72px -192px; }
+  background-position: -72px  -192px; }
 
 /* line 236, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-caching {
-  background-position: -96px -192px; }
+  background-position: -96px  -192px; }
 
 /* line 237, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .icon-html, .icon-formcustomscriptadapter {
@@ -2645,23 +2603,23 @@ legend + .control-group {
 
 /* line 257, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon {
-  background-image: url('++genweb++static/images/gh-150.png?1409564226');
+  background-image: url('++genweb++static/images/gh-150.png?1410864406');
   width: 21px;
   height: 21px;
   margin-top: -1px;
   margin-right: -5px; }
   /* line 264, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
   .large-icon.icon-news, .large-icon.icon-news-item {
-    background-position: -37px -252px; }
+    background-position: -37px  -252px; }
   /* line 265, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
   .large-icon.icon-link {
     background-position: -108px -252px; }
   /* line 266, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
   .large-icon.icon-upc {
-    background-position: 0 -252px; }
+    background-position: 0      -252px; }
   /* line 267, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
   .large-icon.icon-poll, .large-icon.icon-collective-polls-poll {
-    background-position: -73px -288px; }
+    background-position: -73px  -288px; }
   /* line 268, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
   .large-icon.icon-calendar, .large-icon.icon-event {
     background-position: -287px -180px; }
@@ -2671,7 +2629,7 @@ legend + .control-group {
 
 /* line 273, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_sprites.scss */
 .large-icon.icon-white {
-  background-image: url('++genweb++static/images/gh-150-w.png?1409564226'); }
+  background-image: url('++genweb++static/images/gh-150-w.png?1410864406'); }
 
 /*extends icones*/
 /* line 8, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
@@ -2717,9 +2675,9 @@ legend + .control-group {
   margin: 2px 0 0;
   list-style: none;
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  *border-bottom: 2px inset #cccccc;
+  *border-bottom: 2px inset #ccc;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -2769,13 +2727,9 @@ legend + .control-group {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078bb', endColorstr='#0067a1', GradientType=0); }
 
 /* line 100, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_dropdowns.scss */
-.dropdown-menu .active > a, .dropdown-menu .selected > a, .dropdown-menu .contentViews .selected > a, .contentViews .dropdown-menu .selected > a, .dropdown-menu .contentViews .selected:hover > a, .contentViews .dropdown-menu .selected:hover > a,
+.dropdown-menu .active > a, .dropdown-menu .selected > a,
 .dropdown-menu .active > a:hover,
-.dropdown-menu .selected > a:hover,
-.dropdown-menu .contentViews .selected > a:hover,
-.contentViews .dropdown-menu .selected > a:hover,
-.dropdown-menu .contentViews .selected:hover > a:hover,
-.contentViews .dropdown-menu .selected:hover > a:hover {
+.dropdown-menu .selected > a:hover {
   color: white;
   text-decoration: none;
   outline: 0;
@@ -2966,12 +2920,12 @@ button.close {
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
   /* line 489, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
+  .btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
     color: #333333;
     background-color: #e6e6e6;
     *background-color: #d9d9d9; }
   /* line 497, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent {
+  .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent {
     background-color: #cccccc \9; }
   /* line 61, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
   .btn:first-child, .standalone:first-child, input[value^="Cancel"]:first-child, [type="submit"]:first-child, .context:first-child, .searchButton:first-child, button.pfg-draft-save:first-child, .link-parent:first-child {
@@ -2993,11 +2947,11 @@ button.close {
     transition: background-position 0.1s linear; }
   /* line 47, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
   .btn:focus, .standalone:focus, input[value^="Cancel"]:focus, [type="submit"]:focus, .context:focus, .searchButton:focus, button.pfg-draft-save:focus, .link-parent:focus {
-    outline: thin dotted #333333;
+    outline: thin dotted #333;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
   /* line 53, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-  .btn.active, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
+  .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
     background-color: #d9d9d9;
     background-color: #cccccc \9;
     background-image: none;
@@ -3118,35 +3072,21 @@ button.pfg-draft-save:active .tileFooter:before,
   margin-top: 5px; }
 
 /* line 144, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
-.btn-primary.active, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn-primary.selected, .contentViews .btn-primary.selected, .contentViews .btn-primary.selected:hover,
+.btn-primary.active, .active.context, .context.selected, .btn-primary.selected,
 .btn-warning.active,
 .btn-warning.selected,
-.contentViews .btn-warning.selected,
-.contentViews .btn-warning.selected:hover,
 .btn-danger.active,
 .btn-danger.selected,
-.contentViews .btn-danger.selected,
-.contentViews .btn-danger.selected:hover,
 .btn-success.active,
 .btn-success.selected,
 button.selected.pfg-draft-save,
-.contentViews .btn-success.selected,
-.contentViews button.selected.pfg-draft-save,
-.contentViews .btn-success.selected:hover,
-.contentViews button.selected.pfg-draft-save:hover,
 button.active.pfg-draft-save,
 .btn-info.active,
 .btn-info.selected,
 .selected.link-parent,
-.contentViews .btn-info.selected,
-.contentViews .selected.link-parent,
-.contentViews .btn-info.selected:hover,
-.contentViews .selected.link-parent:hover,
 .active.link-parent,
 .btn-inverse.active,
-.btn-inverse.selected,
-.contentViews .btn-inverse.selected,
-.contentViews .btn-inverse.selected:hover {
+.btn-inverse.selected {
   color: rgba(255, 255, 255, 0.75); }
 
 /* line 150, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
@@ -3172,12 +3112,12 @@ button.active.pfg-draft-save,
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
   /* line 489, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn-primary.selected, .contentViews .btn-primary.selected, .contentViews .btn-primary.selected:hover, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
+  .btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
     color: white;
     background-color: #005a8d;
     *background-color: #004a74; }
   /* line 497, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn-primary.selected, .contentViews .btn-primary.selected, .contentViews .btn-primary.selected:hover {
+  .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected {
     background-color: #003a5a \9; }
 
 /* line 159, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
@@ -3198,12 +3138,12 @@ button.active.pfg-draft-save,
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
   /* line 489, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected, .contentViews .btn-warning.selected:hover, .btn-warning.disabled, .btn-warning[disabled] {
+  .btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .btn-warning.disabled, .btn-warning[disabled] {
     color: white;
     background-color: #c67605;
     *background-color: #ad6704; }
   /* line 497, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected, .contentViews .btn-warning.selected:hover {
+  .btn-warning:active, .btn-warning.active, .btn-warning.selected {
     background-color: #945904 \9; }
 
 /* line 163, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
@@ -3224,12 +3164,12 @@ button.active.pfg-draft-save,
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
   /* line 489, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected, .contentViews .btn-danger.selected:hover, .btn-danger.disabled, .btn-danger[disabled] {
+  .btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .btn-danger.disabled, .btn-danger[disabled] {
     color: white;
     background-color: #a62e1f;
     *background-color: #91281b; }
   /* line 497, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected, .contentViews .btn-danger.selected:hover {
+  .btn-danger:active, .btn-danger.active, .btn-danger.selected {
     background-color: #7b2217 \9; }
 
 /* line 167, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
@@ -3250,12 +3190,12 @@ button.active.pfg-draft-save,
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
   /* line 489, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected, .contentViews button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
+  .btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
     color: white;
     background-color: #547815;
     *background-color: #456211; }
   /* line 497, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected, .contentViews button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save {
+  .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, button.active.pfg-draft-save {
     background-color: #354c0e \9; }
 
 /* line 171, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
@@ -3276,12 +3216,12 @@ button.active.pfg-draft-save,
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
   /* line 489, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected, .contentViews .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
+  .btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
     color: white;
     background-color: #26809a;
     *background-color: #216f86; }
   /* line 497, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected, .contentViews .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent {
+  .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .active.link-parent {
     background-color: #1c5e71 \9; }
 
 /* line 175, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
@@ -3302,12 +3242,12 @@ button.active.pfg-draft-save,
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
   /* line 489, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected, .contentViews .btn-inverse.selected:hover, .btn-inverse.disabled, .btn-inverse[disabled] {
+  .btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .btn-inverse.disabled, .btn-inverse[disabled] {
     color: white;
     background-color: #222222;
     *background-color: #151515; }
   /* line 497, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected, .contentViews .btn-inverse.selected:hover {
+  .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected {
     background-color: #090909 \9; }
 
 /* line 184, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_buttons.scss */
@@ -3499,37 +3439,21 @@ input[type="submit"] {
 .btn-group > .btn.active,
 .btn-group > .active.standalone,
 .btn-group > .standalone.selected,
-.contentViews .btn-group > .standalone.selected,
-.contentViews .btn-group > .standalone.selected:hover,
 .btn-group > input.active[value^="Cancel"],
 .btn-group > input[value^="Cancel"].selected,
-.contentViews .btn-group > input[value^="Cancel"].selected,
-.contentViews .btn-group > input[value^="Cancel"].selected:hover,
 .btn-group > .active[type="submit"],
 .btn-group > [type="submit"].selected,
-.contentViews .btn-group > [type="submit"].selected,
-.contentViews .btn-group > [type="submit"].selected:hover,
 .btn-group > .active.context,
 .btn-group > .context.selected,
-.contentViews .btn-group > .context.selected,
-.contentViews .btn-group > .context.selected:hover,
 .btn-group > .btn.selected,
 .btn-group > .selected.searchButton,
 .btn-group > button.selected.pfg-draft-save,
 .btn-group > .selected.link-parent,
 .btn-group > .active.searchButton,
-.contentViews .btn-group > .searchButton.selected,
-.contentViews .btn-group > .searchButton.selected:hover,
-.contentViews .btn-group > .btn.selected,
-.contentViews .btn-group > button.selected.pfg-draft-save,
-.contentViews .btn-group > .selected.link-parent,
-.contentViews .btn-group > .btn.selected:hover,
 .contentViews .customfile-hover .btn-group > .selected.customfile-button,
 .customfile-hover .contentViews .btn-group > .selected.customfile-button,
 .contentViews .customfile-focus .btn-group > .selected.customfile-button,
 .customfile-focus .contentViews .btn-group > .selected.customfile-button,
-.contentViews .btn-group > button.selected.pfg-draft-save:hover,
-.contentViews .btn-group > .selected.link-parent:hover,
 .btn-group > button.active.pfg-draft-save,
 .btn-group > .active.link-parent {
   z-index: 2; }
@@ -3817,11 +3741,9 @@ button.pfg-draft-save .caret,
   padding: 3px 15px; }
 
 /* line 66, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-list > .active > a, .nav-list > .selected > a, .contentViews .nav-list > .selected > a, .contentViews .nav-list > .selected:hover > a,
+.nav-list > .active > a, .nav-list > .selected > a,
 .nav-list > .active > a:hover,
 .nav-list > .selected > a:hover,
-.contentViews .nav-list > .selected > a:hover,
-.contentViews .nav-list > .selected:hover > a:hover,
 .formTabs > li > a.selected,
 .formTabs > li > a.selected:hover {
   color: white;
@@ -3879,12 +3801,12 @@ button.pfg-draft-save .caret,
 
 /* line 105, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .nav-tabs, .contentViews, .configlets {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ccc;
   -webkit-box-shadow: inset 0 -10px 12px -18px black;
   -moz-box-shadow: inset 0 -10px 12px -18px black;
   box-shadow: inset 0 -10px 12px -18px black; }
   /* line 108, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-  .nav-tabs.nav-stacked, .nav-stacked.contentViews, .contentViews.configlets, .configlets {
+  .nav-tabs.nav-stacked, .nav-stacked.contentViews, .configlets {
     -webkit-box-shadow: 0 10px 12px -18px black;
     -moz-box-shadow: 0 10px 12px -18px black;
     box-shadow: 0 10px 12px -18px black; }
@@ -3907,17 +3829,12 @@ button.pfg-draft-save .caret,
     border-color: #f2f2f2 #f2f2f2 #cccccc; }
 
 /* line 129, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .contentViews .nav-tabs > .selected > a, .contentViews > .selected > a, .contentViews .configlets > .selected > a, .contentViews .nav-tabs > .selected:hover > a, .contentViews > .selected:hover > a, .contentViews .configlets > .selected:hover > a,
+.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a,
 .nav-tabs > .active > a:hover,
 .contentViews > .active > a:hover,
 .configlets > .active > a:hover,
 .nav-tabs > .selected > a:hover,
-.configlets > .selected > a:hover,
-.contentViews .nav-tabs > .selected > a:hover,
-.contentViews .configlets > .selected > a:hover,
-.contentViews .nav-tabs > .selected:hover > a:hover,
-.contentViews > .selected:hover > a:hover,
-.contentViews .configlets > .selected:hover > a:hover {
+.configlets > .selected > a:hover {
   color: #666666;
   background-color: white;
   background-color: white;
@@ -3928,7 +3845,7 @@ button.pfg-draft-save .caret,
   background-image: linear-gradient(#f7f7f7, #ffffff 50%, #ffffff);
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#fcfcfc', GradientType=0);
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-bottom-color: transparent;
   cursor: default; }
 
@@ -3943,15 +3860,11 @@ button.pfg-draft-save .caret,
   border-radius: 5px; }
 
 /* line 153, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a, .contentViews .nav-pills > .selected > a, .contentViews .formTabs > .selected > a, .contentViews .nav-pills > .selected:hover > a, .contentViews .formTabs > .selected:hover > a,
+.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a,
 .nav-pills > .active > a:hover,
 .formTabs > .active > a:hover,
 .nav-pills > .selected > a:hover,
-.formTabs > .selected > a:hover,
-.contentViews .nav-pills > .selected > a:hover,
-.contentViews .formTabs > .selected > a:hover,
-.contentViews .nav-pills > .selected:hover > a:hover,
-.contentViews .formTabs > .selected:hover > a:hover {
+.formTabs > .selected > a:hover {
   color: white;
   background-color: #007bc0; }
 
@@ -3964,12 +3877,12 @@ button.pfg-draft-save .caret,
   margin-right: 0; }
 
 /* line 172, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs.nav-stacked, .nav-stacked.contentViews, .contentViews.configlets, .configlets {
+.nav-tabs.nav-stacked, .nav-stacked.contentViews, .configlets {
   border-bottom: 0; }
 
 /* line 175, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs.nav-stacked > li > a, .nav-stacked.contentViews > li > a, .contentViews.configlets > li > a, .configlets > li > a {
-  border: 1px solid #cccccc;
+.nav-tabs.nav-stacked > li > a, .nav-stacked.contentViews > li > a, .configlets > li > a {
+  border: 1px solid #ccc;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0; }
@@ -4034,17 +3947,17 @@ button.pfg-draft-save .caret,
   margin-top: 8px; }
 
 /* line 229, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret, .nav .contentViews .selected .dropdown-toggle .caret, .contentViews .nav .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret, .configlets .contentViews .selected .dropdown-toggle .caret, .contentViews .configlets .selected .dropdown-toggle .caret, .formTabs .contentViews .selected .dropdown-toggle .caret, .contentViews .formTabs .selected .dropdown-toggle .caret, .nav .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .nav .selected:hover .dropdown-toggle .caret, .contentViews .selected:hover .dropdown-toggle .caret, .configlets .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .configlets .selected:hover .dropdown-toggle .caret, .formTabs .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .formTabs .selected:hover .dropdown-toggle .caret {
+.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret {
   border-top-color: #333333;
   border-bottom-color: #333333; }
 
 /* line 233, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .nav-tabs .contentViews .selected .dropdown-toggle .caret, .contentViews .nav-tabs .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret, .configlets .contentViews .selected .dropdown-toggle .caret, .contentViews .configlets .selected .dropdown-toggle .caret, .nav-tabs .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .nav-tabs .selected:hover .dropdown-toggle .caret, .contentViews .selected:hover .dropdown-toggle .caret, .configlets .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .configlets .selected:hover .dropdown-toggle .caret {
+.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret {
   border-top-color: #666666;
   border-bottom-color: #666666; }
 
 /* line 240, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover, .contentViews .nav > .dropdown.selected > a:hover, .contentViews .configlets > .dropdown.selected > a:hover, .contentViews .formTabs > .dropdown.selected > a:hover, .contentViews .nav > .dropdown.selected:hover > a:hover, .contentViews .configlets > .dropdown.selected:hover > a:hover, .contentViews .formTabs > .dropdown.selected:hover > a:hover {
+.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover {
   cursor: pointer; }
 
 /* line 248, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
@@ -4057,13 +3970,7 @@ button.pfg-draft-save .caret,
 .formTabs > li.dropdown.open.active > a:hover,
 .nav > li.dropdown.open.selected > a:hover,
 .configlets > li.dropdown.open.selected > a:hover,
-.formTabs > li.dropdown.open.selected > a:hover,
-.contentViews .nav > li.dropdown.open.selected > a:hover,
-.contentViews .configlets > li.dropdown.open.selected > a:hover,
-.contentViews .formTabs > li.dropdown.open.selected > a:hover,
-.contentViews .nav > li.dropdown.open.selected:hover > a:hover,
-.contentViews .configlets > li.dropdown.open.selected:hover > a:hover,
-.contentViews .formTabs > li.dropdown.open.selected:hover > a:hover {
+.formTabs > li.dropdown.open.selected > a:hover {
   color: white;
   background-color: #aaaaaa;
   border-color: #aaaaaa; }
@@ -4077,20 +3984,6 @@ button.pfg-draft-save .caret,
 .nav li.dropdown.open.selected .caret,
 .configlets li.dropdown.open.selected .caret,
 .formTabs li.dropdown.open.selected .caret,
-.nav .contentViews li.dropdown.open.selected .caret,
-.contentViews .nav li.dropdown.open.selected .caret,
-.contentViews li.dropdown.open.selected .caret,
-.configlets .contentViews li.dropdown.open.selected .caret,
-.contentViews .configlets li.dropdown.open.selected .caret,
-.formTabs .contentViews li.dropdown.open.selected .caret,
-.contentViews .formTabs li.dropdown.open.selected .caret,
-.nav .contentViews li.dropdown.open.selected:hover .caret,
-.contentViews .nav li.dropdown.open.selected:hover .caret,
-.contentViews li.dropdown.open.selected:hover .caret,
-.configlets .contentViews li.dropdown.open.selected:hover .caret,
-.contentViews .configlets li.dropdown.open.selected:hover .caret,
-.formTabs .contentViews li.dropdown.open.selected:hover .caret,
-.contentViews .formTabs li.dropdown.open.selected:hover .caret,
 .nav li.dropdown.open a:hover .caret,
 .contentViews li.dropdown.open a:hover .caret,
 .configlets li.dropdown.open a:hover .caret,
@@ -4136,16 +4029,14 @@ button.pfg-draft-save .caret,
   display: none; }
 
 /* line 296, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tab-content > .active, .tab-content > .selected, .contentViews .tab-content > .selected, .contentViews .tab-content > .selected:hover,
+.tab-content > .active, .tab-content > .selected,
 .pill-content > .active,
-.pill-content > .selected,
-.contentViews .pill-content > .selected,
-.contentViews .pill-content > .selected:hover {
+.pill-content > .selected {
   display: block; }
 
 /* line 304, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .tabs-below > .nav-tabs, .tabs-below > .contentViews, .tabs-below > .configlets {
-  border-top: 1px solid #cccccc; }
+  border-top: 1px solid #ccc; }
 
 /* line 307, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .tabs-below > .nav-tabs > li, .tabs-below > .contentViews > li, .tabs-below > .configlets > li {
@@ -4163,17 +4054,13 @@ button.pfg-draft-save .caret,
     border-top-color: #ccc; }
 
 /* line 319, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .configlets > .selected > a, .contentViews .tabs-below > .nav-tabs > .selected > a, .contentViews .tabs-below > .configlets > .selected > a, .contentViews .tabs-below > .nav-tabs > .selected:hover > a, .tabs-below > .contentViews > .selected:hover > a, .contentViews .tabs-below > .configlets > .selected:hover > a,
+.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .configlets > .selected > a,
 .tabs-below > .nav-tabs > .active > a:hover,
 .tabs-below > .contentViews > .active > a:hover,
 .tabs-below > .configlets > .active > a:hover,
 .tabs-below > .nav-tabs > .selected > a:hover,
-.tabs-below > .configlets > .selected > a:hover,
-.contentViews .tabs-below > .nav-tabs > .selected > a:hover,
-.contentViews .tabs-below > .configlets > .selected > a:hover,
-.contentViews .tabs-below > .nav-tabs > .selected:hover > a:hover,
-.contentViews .tabs-below > .configlets > .selected:hover > a:hover {
-  border-color: transparent #cccccc #cccccc #cccccc; }
+.tabs-below > .configlets > .selected > a:hover {
+  border-color: transparent #ccc #ccc #ccc; }
 
 /* line 328, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .tabs-left > .nav-tabs > li, .tabs-left > .contentViews > li, .tabs-left > .configlets > li,
@@ -4195,7 +4082,7 @@ button.pfg-draft-save .caret,
 .tabs-left > .nav-tabs, .tabs-left > .contentViews, .tabs-left > .configlets {
   float: left;
   margin-right: 19px;
-  border-right: 1px solid #cccccc; }
+  border-right: 1px solid #ccc; }
 
 /* line 344, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .tabs-left > .nav-tabs > li > a, .tabs-left > .contentViews > li > a, .tabs-left > .configlets > li > a {
@@ -4209,28 +4096,20 @@ button.pfg-draft-save .caret,
   border-color: #f2f2f2 #cccccc #f2f2f2 #f2f2f2; }
 
 /* line 352, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .selected > a, .tabs-left > .nav-tabs .contentViews .selected > a, .contentViews .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .contentViews .selected > a, .contentViews .tabs-left > .configlets .selected > a, .tabs-left > .nav-tabs .contentViews .selected:hover > a, .contentViews .tabs-left > .nav-tabs .selected:hover > a, .tabs-left > .contentViews .selected:hover > a, .tabs-left > .configlets .contentViews .selected:hover > a, .contentViews .tabs-left > .configlets .selected:hover > a,
+.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .selected > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .contentViews .active > a:hover,
 .tabs-left > .configlets .active > a:hover,
 .tabs-left > .nav-tabs .selected > a:hover,
-.tabs-left > .configlets .selected > a:hover,
-.tabs-left > .nav-tabs .contentViews .selected > a:hover,
-.contentViews .tabs-left > .nav-tabs .selected > a:hover,
-.tabs-left > .configlets .contentViews .selected > a:hover,
-.contentViews .tabs-left > .configlets .selected > a:hover,
-.tabs-left > .nav-tabs .contentViews .selected:hover > a:hover,
-.contentViews .tabs-left > .nav-tabs .selected:hover > a:hover,
-.tabs-left > .configlets .contentViews .selected:hover > a:hover,
-.contentViews .tabs-left > .configlets .selected:hover > a:hover {
-  border-color: #cccccc transparent #cccccc #cccccc;
+.tabs-left > .configlets .selected > a:hover {
+  border-color: #ccc transparent #ccc #ccc;
   *border-right-color: white; }
 
 /* line 358, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .tabs-right > .nav-tabs, .tabs-right > .contentViews, .tabs-right > .configlets {
   float: right;
   margin-left: 19px;
-  border-left: 1px solid #cccccc; }
+  border-left: 1px solid #ccc; }
 
 /* line 363, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
 .tabs-right > .nav-tabs > li > a, .tabs-right > .contentViews > li > a, .tabs-right > .configlets > li > a {
@@ -4244,21 +4123,13 @@ button.pfg-draft-save .caret,
   border-color: #f2f2f2 #f2f2f2 #f2f2f2 #cccccc; }
 
 /* line 371, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
-.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .selected > a, .tabs-right > .nav-tabs .contentViews .selected > a, .contentViews .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .contentViews .selected > a, .contentViews .tabs-right > .configlets .selected > a, .tabs-right > .nav-tabs .contentViews .selected:hover > a, .contentViews .tabs-right > .nav-tabs .selected:hover > a, .tabs-right > .contentViews .selected:hover > a, .tabs-right > .configlets .contentViews .selected:hover > a, .contentViews .tabs-right > .configlets .selected:hover > a,
+.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .selected > a,
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .contentViews .active > a:hover,
 .tabs-right > .configlets .active > a:hover,
 .tabs-right > .nav-tabs .selected > a:hover,
-.tabs-right > .configlets .selected > a:hover,
-.tabs-right > .nav-tabs .contentViews .selected > a:hover,
-.contentViews .tabs-right > .nav-tabs .selected > a:hover,
-.tabs-right > .configlets .contentViews .selected > a:hover,
-.contentViews .tabs-right > .configlets .selected > a:hover,
-.tabs-right > .nav-tabs .contentViews .selected:hover > a:hover,
-.contentViews .tabs-right > .nav-tabs .selected:hover > a:hover,
-.tabs-right > .configlets .contentViews .selected:hover > a:hover,
-.contentViews .tabs-right > .configlets .selected:hover > a:hover {
-  border-color: #cccccc #cccccc #cccccc transparent;
+.tabs-right > .configlets .selected > a:hover {
+  border-color: #ccc #ccc #ccc transparent;
   *border-left-color: white; }
 
 /* line 382, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navs.scss */
@@ -4528,7 +4399,7 @@ button.pfg-draft-save .caret,
   box-shadow: inset 0 20px 20px -10px rgba(255, 255, 255, 0.75); }
 
 /* line 261, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a, .navbar .contentViews .nav > .selected > a, .contentViews .navbar .nav > .selected > a, .navbar .contentViews .configlets > .selected > a, .contentViews .navbar .configlets > .selected > a, .navbar .contentViews .formTabs > .selected > a, .contentViews .navbar .formTabs > .selected > a, .navbar .contentViews .nav > .selected:hover > a, .contentViews .navbar .nav > .selected:hover > a, .navbar .contentViews > .selected:hover > a, .navbar .contentViews .configlets > .selected:hover > a, .contentViews .navbar .configlets > .selected:hover > a, .navbar .contentViews .formTabs > .selected:hover > a, .contentViews .navbar .formTabs > .selected:hover > a,
+.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a,
 .navbar .nav > .active > a:hover,
 .navbar .contentViews > .active > a:hover,
 .navbar .configlets > .active > a:hover,
@@ -4536,37 +4407,13 @@ button.pfg-draft-save .caret,
 .navbar .nav > .selected > a:hover,
 .navbar .configlets > .selected > a:hover,
 .navbar .formTabs > .selected > a:hover,
-.navbar .contentViews .nav > .selected > a:hover,
-.contentViews .navbar .nav > .selected > a:hover,
-.navbar .contentViews .configlets > .selected > a:hover,
-.contentViews .navbar .configlets > .selected > a:hover,
-.navbar .contentViews .formTabs > .selected > a:hover,
-.contentViews .navbar .formTabs > .selected > a:hover,
-.navbar .contentViews .nav > .selected:hover > a:hover,
-.contentViews .navbar .nav > .selected:hover > a:hover,
-.navbar .contentViews .configlets > .selected:hover > a:hover,
-.contentViews .navbar .configlets > .selected:hover > a:hover,
-.navbar .contentViews .formTabs > .selected:hover > a:hover,
-.contentViews .navbar .formTabs > .selected:hover > a:hover,
 .navbar .nav > .active > a:focus,
 .navbar .contentViews > .active > a:focus,
 .navbar .configlets > .active > a:focus,
 .navbar .formTabs > .active > a:focus,
 .navbar .nav > .selected > a:focus,
 .navbar .configlets > .selected > a:focus,
-.navbar .formTabs > .selected > a:focus,
-.navbar .contentViews .nav > .selected > a:focus,
-.contentViews .navbar .nav > .selected > a:focus,
-.navbar .contentViews .configlets > .selected > a:focus,
-.contentViews .navbar .configlets > .selected > a:focus,
-.navbar .contentViews .formTabs > .selected > a:focus,
-.contentViews .navbar .formTabs > .selected > a:focus,
-.navbar .contentViews .nav > .selected:hover > a:focus,
-.contentViews .navbar .nav > .selected:hover > a:focus,
-.navbar .contentViews .configlets > .selected:hover > a:focus,
-.contentViews .navbar .configlets > .selected:hover > a:focus,
-.navbar .contentViews .formTabs > .selected:hover > a:focus,
-.contentViews .navbar .formTabs > .selected:hover > a:focus {
+.navbar .formTabs > .selected > a:focus {
   color: #222222;
   text-decoration: none;
   background-color: white;
@@ -4604,12 +4451,12 @@ button.pfg-draft-save .caret,
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075); }
   /* line 489, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected, .contentViews .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected:hover, .contentViews .navbar .btn-navbar.selected:hover, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
+  .navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
     color: white;
     background-color: lightgrey;
     *background-color: #c6c6c6; }
   /* line 497, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected, .contentViews .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected:hover, .contentViews .navbar .btn-navbar.selected:hover {
+  .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected {
     background-color: #b9b9b9 \9; }
 
 /* line 282, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
@@ -4635,7 +4482,7 @@ button.pfg-draft-save .caret,
   display: inline-block;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-bottom: 7px solid #cccccc;
+  border-bottom: 7px solid #ccc;
   border-bottom-color: rgba(0, 0, 0, 0.25);
   position: absolute;
   top: -7px;
@@ -4653,7 +4500,7 @@ button.pfg-draft-save .caret,
 
 /* line 325, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
 .navbar-fixed-bottom .dropdown-menu:before {
-  border-top: 7px solid #cccccc;
+  border-top: 7px solid #ccc;
   border-top-color: rgba(0, 0, 0, 0.25);
   border-bottom: 0;
   bottom: -7px;
@@ -4674,41 +4521,13 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle,
-.navbar .nav .contentViews li.dropdown.selected > .dropdown-toggle,
-.contentViews .navbar .nav li.dropdown.selected > .dropdown-toggle,
-.navbar .contentViews li.dropdown.selected > .dropdown-toggle,
-.navbar .configlets .contentViews li.dropdown.selected > .dropdown-toggle,
-.contentViews .navbar .configlets li.dropdown.selected > .dropdown-toggle,
-.navbar .formTabs .contentViews li.dropdown.selected > .dropdown-toggle,
-.contentViews .navbar .formTabs li.dropdown.selected > .dropdown-toggle,
-.navbar .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle,
-.contentViews .navbar .nav li.dropdown.selected:hover > .dropdown-toggle,
-.navbar .contentViews li.dropdown.selected:hover > .dropdown-toggle,
-.navbar .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle,
-.contentViews .navbar .configlets li.dropdown.selected:hover > .dropdown-toggle,
-.navbar .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle,
-.contentViews .navbar .formTabs li.dropdown.selected:hover > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle,
 .navbar .formTabs li.dropdown.open.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle,
-.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle,
-.navbar .nav .contentViews li.dropdown.open.selected > .dropdown-toggle,
-.contentViews .navbar .nav li.dropdown.open.selected > .dropdown-toggle,
-.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle,
-.navbar .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle,
-.contentViews .navbar .configlets li.dropdown.open.selected > .dropdown-toggle,
-.navbar .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle,
-.contentViews .navbar .formTabs li.dropdown.open.selected > .dropdown-toggle,
-.navbar .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
-.contentViews .navbar .nav li.dropdown.open.selected:hover > .dropdown-toggle,
-.navbar .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
-.navbar .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
-.contentViews .navbar .configlets li.dropdown.open.selected:hover > .dropdown-toggle,
-.navbar .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
-.contentViews .navbar .formTabs li.dropdown.open.selected:hover > .dropdown-toggle {
+.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle {
   background-color: white;
   color: #222222; }
 
@@ -4726,41 +4545,13 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle .caret,
-.navbar .nav .contentViews li.dropdown.selected > .dropdown-toggle .caret,
-.contentViews .navbar .nav li.dropdown.selected > .dropdown-toggle .caret,
-.navbar .contentViews li.dropdown.selected > .dropdown-toggle .caret,
-.navbar .configlets .contentViews li.dropdown.selected > .dropdown-toggle .caret,
-.contentViews .navbar .configlets li.dropdown.selected > .dropdown-toggle .caret,
-.navbar .formTabs .contentViews li.dropdown.selected > .dropdown-toggle .caret,
-.contentViews .navbar .formTabs li.dropdown.selected > .dropdown-toggle .caret,
-.navbar .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
-.contentViews .navbar .nav li.dropdown.selected:hover > .dropdown-toggle .caret,
-.navbar .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
-.navbar .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
-.contentViews .navbar .configlets li.dropdown.selected:hover > .dropdown-toggle .caret,
-.navbar .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
-.contentViews .navbar .formTabs li.dropdown.selected:hover > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .nav .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
-.contentViews .navbar .nav li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
-.contentViews .navbar .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
-.contentViews .navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-.contentViews .navbar .nav li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-.navbar .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-.navbar .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-.contentViews .navbar .configlets li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-.navbar .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-.contentViews .navbar .formTabs li.dropdown.open.selected:hover > .dropdown-toggle .caret {
+.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret {
   border-top-color: #222222;
   border-bottom-color: #222222; }
 
@@ -4856,7 +4647,7 @@ button.pfg-draft-save .caret,
     background-color: transparent;
     color: white; }
   /* line 409, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
-  .navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a, .navbar-inverse .nav .contentViews .selected > a, .contentViews .navbar-inverse .nav .selected > a, .navbar-inverse .contentViews .selected > a, .navbar-inverse .configlets .contentViews .selected > a, .contentViews .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .contentViews .selected > a, .contentViews .navbar-inverse .formTabs .selected > a, .navbar-inverse .nav .contentViews .selected:hover > a, .contentViews .navbar-inverse .nav .selected:hover > a, .navbar-inverse .contentViews .selected:hover > a, .navbar-inverse .configlets .contentViews .selected:hover > a, .contentViews .navbar-inverse .configlets .selected:hover > a, .navbar-inverse .formTabs .contentViews .selected:hover > a, .contentViews .navbar-inverse .formTabs .selected:hover > a,
+  .navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a,
   .navbar-inverse .nav .active > a:hover,
   .navbar-inverse .contentViews .active > a:hover,
   .navbar-inverse .configlets .active > a:hover,
@@ -4864,41 +4655,13 @@ button.pfg-draft-save .caret,
   .navbar-inverse .nav .selected > a:hover,
   .navbar-inverse .configlets .selected > a:hover,
   .navbar-inverse .formTabs .selected > a:hover,
-  .navbar-inverse .nav .contentViews .selected > a:hover,
-  .contentViews .navbar-inverse .nav .selected > a:hover,
-  .navbar-inverse .contentViews .selected > a:hover,
-  .navbar-inverse .configlets .contentViews .selected > a:hover,
-  .contentViews .navbar-inverse .configlets .selected > a:hover,
-  .navbar-inverse .formTabs .contentViews .selected > a:hover,
-  .contentViews .navbar-inverse .formTabs .selected > a:hover,
-  .navbar-inverse .nav .contentViews .selected:hover > a:hover,
-  .contentViews .navbar-inverse .nav .selected:hover > a:hover,
-  .navbar-inverse .contentViews .selected:hover > a:hover,
-  .navbar-inverse .configlets .contentViews .selected:hover > a:hover,
-  .contentViews .navbar-inverse .configlets .selected:hover > a:hover,
-  .navbar-inverse .formTabs .contentViews .selected:hover > a:hover,
-  .contentViews .navbar-inverse .formTabs .selected:hover > a:hover,
   .navbar-inverse .nav .active > a:focus,
   .navbar-inverse .contentViews .active > a:focus,
   .navbar-inverse .configlets .active > a:focus,
   .navbar-inverse .formTabs .active > a:focus,
   .navbar-inverse .nav .selected > a:focus,
   .navbar-inverse .configlets .selected > a:focus,
-  .navbar-inverse .formTabs .selected > a:focus,
-  .navbar-inverse .nav .contentViews .selected > a:focus,
-  .contentViews .navbar-inverse .nav .selected > a:focus,
-  .navbar-inverse .contentViews .selected > a:focus,
-  .navbar-inverse .configlets .contentViews .selected > a:focus,
-  .contentViews .navbar-inverse .configlets .selected > a:focus,
-  .navbar-inverse .formTabs .contentViews .selected > a:focus,
-  .contentViews .navbar-inverse .formTabs .selected > a:focus,
-  .navbar-inverse .nav .contentViews .selected:hover > a:focus,
-  .contentViews .navbar-inverse .nav .selected:hover > a:focus,
-  .navbar-inverse .contentViews .selected:hover > a:focus,
-  .navbar-inverse .configlets .contentViews .selected:hover > a:focus,
-  .contentViews .navbar-inverse .configlets .selected:hover > a:focus,
-  .navbar-inverse .formTabs .contentViews .selected:hover > a:focus,
-  .contentViews .navbar-inverse .formTabs .selected:hover > a:focus {
+  .navbar-inverse .formTabs .selected > a:focus {
     color: white;
     background-color: black; }
   /* line 415, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
@@ -4920,41 +4683,13 @@ button.pfg-draft-save .caret,
   .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle,
   .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle,
   .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle,
-  .navbar-inverse .nav .contentViews li.dropdown.selected > .dropdown-toggle,
-  .contentViews .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle,
-  .navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle,
-  .navbar-inverse .configlets .contentViews li.dropdown.selected > .dropdown-toggle,
-  .contentViews .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle,
-  .navbar-inverse .formTabs .contentViews li.dropdown.selected > .dropdown-toggle,
-  .contentViews .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle,
-  .navbar-inverse .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle,
-  .contentViews .navbar-inverse .nav li.dropdown.selected:hover > .dropdown-toggle,
-  .navbar-inverse .contentViews li.dropdown.selected:hover > .dropdown-toggle,
-  .navbar-inverse .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle,
-  .contentViews .navbar-inverse .configlets li.dropdown.selected:hover > .dropdown-toggle,
-  .navbar-inverse .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle,
-  .contentViews .navbar-inverse .formTabs li.dropdown.selected:hover > .dropdown-toggle,
   .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle,
   .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle,
-  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle,
-  .navbar-inverse .nav .contentViews li.dropdown.open.selected > .dropdown-toggle,
-  .contentViews .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle,
-  .navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle,
-  .navbar-inverse .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle,
-  .contentViews .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle,
-  .navbar-inverse .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle,
-  .contentViews .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle,
-  .navbar-inverse .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
-  .contentViews .navbar-inverse .nav li.dropdown.open.selected:hover > .dropdown-toggle,
-  .navbar-inverse .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
-  .navbar-inverse .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
-  .contentViews .navbar-inverse .configlets li.dropdown.open.selected:hover > .dropdown-toggle,
-  .navbar-inverse .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
-  .contentViews .navbar-inverse .formTabs li.dropdown.open.selected:hover > .dropdown-toggle {
+  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle {
     background-color: black;
     color: white; }
   /* line 435, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
@@ -4970,41 +4705,13 @@ button.pfg-draft-save .caret,
   .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle .caret,
   .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle .caret,
   .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle .caret,
-  .navbar-inverse .nav .contentViews li.dropdown.selected > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle .caret,
-  .navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle .caret,
-  .navbar-inverse .configlets .contentViews li.dropdown.selected > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle .caret,
-  .navbar-inverse .formTabs .contentViews li.dropdown.selected > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle .caret,
-  .navbar-inverse .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .nav li.dropdown.selected:hover > .dropdown-toggle .caret,
-  .navbar-inverse .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
-  .navbar-inverse .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .configlets li.dropdown.selected:hover > .dropdown-toggle .caret,
-  .navbar-inverse .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .formTabs li.dropdown.selected:hover > .dropdown-toggle .caret,
   .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle .caret,
   .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
-  .navbar-inverse .nav .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle .caret,
-  .navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
-  .navbar-inverse .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-  .navbar-inverse .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
-  .navbar-inverse .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .nav li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-  .navbar-inverse .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-  .navbar-inverse .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .configlets li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-  .navbar-inverse .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
-  .contentViews .navbar-inverse .formTabs li.dropdown.open.selected:hover > .dropdown-toggle .caret {
+  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret {
     border-top-color: white;
     border-bottom-color: white; }
   /* line 448, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_navbar.scss */
@@ -5057,12 +4764,12 @@ button.pfg-draft-save .caret,
     /* Darken IE7 buttons by default so they stand out more given they won't have borders */
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
     /* line 489, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-    .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected, .contentViews .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected:hover, .contentViews .navbar-inverse .btn-navbar.selected:hover, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
+    .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
       color: white;
       background-color: #040404;
       *background-color: black; }
     /* line 497, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-    .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected, .contentViews .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected:hover, .contentViews .navbar-inverse .btn-navbar.selected:hover {
+    .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected {
       background-color: black \9; }
 
 /* line 5, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
@@ -5086,7 +4793,7 @@ button.pfg-draft-save .caret,
     position: relative;
     top: -1px; }
   /* line 23, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
-  .breadcrumb .active, .breadcrumb .selected, .breadcrumb .contentViews .selected, .contentViews .breadcrumb .selected, .breadcrumb .contentViews .selected:hover, .contentViews .breadcrumb .selected:hover, .breadcrumb .active a, .breadcrumb .selected a, .breadcrumb .contentViews .selected a, .contentViews .breadcrumb .selected a, .breadcrumb .contentViews .selected:hover a, .contentViews .breadcrumb .selected:hover a {
+  .breadcrumb .active, .breadcrumb .selected, .breadcrumb .active a, .breadcrumb .selected a {
     color: #666666;
     font-weight: bold; }
   /* line 27, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_breadcrumbs.scss */
@@ -5132,7 +4839,7 @@ button.pfg-draft-save .caret,
   padding: 0 14px;
   line-height: 34px;
   text-decoration: none;
-  text-shadow: 0 -1px white;
+  text-shadow: 0 -1px #fff;
   background-color: white;
   border: 1px solid #d9d9d9;
   border-bottom: 1px solid #b2b2b2;
@@ -5144,42 +4851,18 @@ button.pfg-draft-save .caret,
 .listingBar .active a,
 .pagination .selected a,
 .listingBar .selected a,
-.pagination .contentViews .selected a,
-.contentViews .pagination .selected a,
-.listingBar .contentViews .selected a,
-.contentViews .listingBar .selected a,
-.pagination .contentViews .selected:hover a,
-.contentViews .pagination .selected:hover a,
-.listingBar .contentViews .selected:hover a,
-.contentViews .listingBar .selected:hover a,
 .pagination .active span,
 .listingBar .active span,
 .pagination .selected span,
-.listingBar .selected span,
-.pagination .contentViews .selected span,
-.contentViews .pagination .selected span,
-.listingBar .contentViews .selected span,
-.contentViews .listingBar .selected span,
-.pagination .contentViews .selected:hover span,
-.contentViews .pagination .selected:hover span,
-.listingBar .contentViews .selected:hover span,
-.contentViews .listingBar .selected:hover span {
+.listingBar .selected span {
   background-color: #f2f2f2; }
 
 /* line 35, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_pagination.scss */
-.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a, .pagination .contentViews .selected a, .contentViews .pagination .selected a, .listingBar .contentViews .selected a, .contentViews .listingBar .selected a, .pagination .contentViews .selected:hover a, .contentViews .pagination .selected:hover a, .listingBar .contentViews .selected:hover a, .contentViews .listingBar .selected:hover a,
+.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a,
 .pagination .active span,
 .listingBar .active span,
 .pagination .selected span,
-.listingBar .selected span,
-.pagination .contentViews .selected span,
-.contentViews .pagination .selected span,
-.listingBar .contentViews .selected span,
-.contentViews .listingBar .selected span,
-.pagination .contentViews .selected:hover span,
-.contentViews .pagination .selected:hover span,
-.listingBar .contentViews .selected:hover span,
-.contentViews .listingBar .selected:hover span {
+.listingBar .selected span {
   color: #666666;
   cursor: default; }
 
@@ -5310,9 +4993,9 @@ button.pfg-draft-save .caret,
   width: 560px;
   margin: -250px 0 0 -280px;
   background-color: white;
-  border: 1px solid #999999;
+  border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  *border: 1px solid #999999;
+  *border: 1px solid #999;
   /* IE6-7 */
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -5496,7 +5179,7 @@ button.pfg-draft-save .caret,
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -5644,7 +5327,7 @@ button.pfg-draft-save .caret,
   display: block;
   padding: 4px;
   line-height: 18px;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -5671,7 +5354,7 @@ a.thumbnail:hover, .photoAlbumEntry a:hover {
   margin-right: auto; }
 
 /* line 48, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_thumbnails.scss */
-.thumbnail .caption, .thumb-img img .caption, .photoAlbumEntry a .caption, .thumbnail .photoAlbumEntry a .photoAlbumEntryTitle, .photoAlbumEntry a .thumbnail .photoAlbumEntryTitle, .thumb-img img .photoAlbumEntry a .photoAlbumEntryTitle, .photoAlbumEntry a .thumb-img img .photoAlbumEntryTitle, .photoAlbumEntry a .photoAlbumEntryTitle {
+.thumbnail .caption, .thumb-img img .caption, .photoAlbumEntry a .caption, .photoAlbumEntry a .photoAlbumEntryTitle {
   padding: 9px;
   color: #666666; }
 
@@ -5899,7 +5582,7 @@ button.pfg-draft-save .badge,
   background-size: 40px 40px; }
 
 /* line 80, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_progress-bars.scss */
-.progress.active .bar, .progress.selected .bar, .contentViews .progress.selected .bar, .contentViews .progress.selected:hover .bar {
+.progress.active .bar, .progress.selected .bar {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   -moz-animation: progress-bar-stripes 2s linear infinite;
   -ms-animation: progress-bar-stripes 2s linear infinite;
@@ -6056,17 +5739,17 @@ button.pfg-draft-save .badge,
   display: block;
   line-height: 1; }
 /* line 36, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active > img, .carousel .selected > img, .carousel .contentViews .selected > img, .contentViews .carousel .selected > img, .carousel .contentViews .selected:hover > img, .contentViews .carousel .selected:hover > img {
+.carousel .active > img, .carousel .selected > img {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px; }
 /* line 41, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active, .carousel .selected, .carousel .contentViews .selected, .contentViews .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover,
+.carousel .active, .carousel .selected,
 .carousel .next,
 .carousel .prev {
   display: block; }
 /* line 43, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active, .carousel .selected, .carousel .contentViews .selected, .contentViews .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover {
+.carousel .active, .carousel .selected {
   left: 0; }
 /* line 48, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
 .carousel .next,
@@ -6085,10 +5768,10 @@ button.pfg-draft-save .badge,
 .carousel .prev.right {
   left: 0; }
 /* line 65, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active.left, .carousel .left.selected, .carousel .contentViews .left.selected, .contentViews .carousel .left.selected, .carousel .contentViews .left.selected:hover, .contentViews .carousel .left.selected:hover {
+.carousel .active.left, .carousel .left.selected {
   left: -100%; }
 /* line 68, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
-.carousel .active.right, .carousel .right.selected, .carousel .contentViews .right.selected, .contentViews .carousel .right.selected, .carousel .contentViews .right.selected:hover, .contentViews .carousel .right.selected:hover {
+.carousel .active.right, .carousel .right.selected {
   left: 100%; }
 
 /* line 77, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_carousel.scss */
@@ -6217,3 +5900,600 @@ button.pfg-draft-save .badge,
 /* line 41, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_utilities.scss */
 .clearfix, .visualClear, .portaltype-packet .estudis .caixa3 {
   *zoom: 1; }
+  /* line 15, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .clearfix:before, .visualClear:before, .portaltype-packet .estudis .caixa3:before, .clearfix:after, .visualClear:after, .portaltype-packet .estudis .caixa3:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  /* line 22, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
+  .clearfix:after, .visualClear:after, .portaltype-packet .estudis .caixa3:after {
+    clear: both; }
+
+/* line 46, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_utilities.scss */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+/* line 51, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_utilities.scss */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 8, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* line 16, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+.visible-phone {
+  display: none !important; }
+
+/* line 17, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+.visible-tablet {
+  display: none !important; }
+
+/* line 18, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+.visible-desktop {
+  display: inherit !important; }
+
+/* line 21, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+.hidden-desktop {
+  display: none !important; }
+
+@media only screen and (max-width: 979px) and (orientation: portrait), only screen and (max-width: 979px) and (orientation: landscape) {
+  /* line 27, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .hidden-desktop {
+    display: inherit !important; }
+
+  /* line 28, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .visible-desktop {
+    display: none !important; }
+
+  /* line 30, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .visible-tablet {
+    display: inherit !important; }
+
+  /* line 32, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .hidden-tablet {
+    display: none !important; } }
+@media only screen and (max-width: 639px) {
+  /* line 38, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .hidden-desktop {
+    display: inherit !important; }
+
+  /* line 39, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .visible-desktop {
+    display: none !important; }
+
+  /* line 41, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .visible-phone {
+    display: inherit !important; }
+
+  /* line 43, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-utilities.scss */
+  .hidden-phone {
+    display: none !important; } }
+@media only screen and (max-width: 979px) and (orientation: portrait), only screen and (max-width: 979px) and (orientation: landscape) {
+  /*generals*/
+  /* line 10, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  body {
+    font-size: 14.5px !important;
+    padding: 0 !important; }
+
+  /* line 15, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .container {
+    width: 100% !important; }
+
+  /* line 17, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .navbar-inner, #portal-header, #portal-globalnav, #portal-breadcrumbs, #content-area, #bandaLogos, #peu {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
+
+  /* line 22, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+    padding: 0 5px !important;
+    min-height: 40px; }
+
+  /* line 24, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  nav#portal-personaltools-wrapper {
+    margin-top: 0px !important; }
+
+  /* line 26, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .navbar .btn-navbar {
+    margin-right: 10px !important; }
+    /* line 28, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    .navbar .btn-navbar i {
+      background-image: url('++genweb++static/images/gh-w.png?1410864406'); }
+
+  /* line 31, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .navbar-fixed-top {
+    margin-bottom: 0 !important; }
+
+  /* line 33, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-globalnav h2.brand {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 18px; }
+
+  /* line 35, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #eines {
+    margin: 0 0 9px !important;
+    text-align: right; }
+    /* line 38, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #eines input {
+      width: 85%; }
+    /* line 39, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #eines button {
+      width: 14%;
+      line-height: 20px;
+      min-width: 60px; }
+    /* line 40, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #eines .input-append {
+      margin-left: 0 !important;
+      border: 0 !important; }
+    /* line 41, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #eines a {
+      margin: 0 !important; }
+      /* line 43, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      #eines a:hover, #eines a:focus {
+        color: white !important;
+        background: #007bc0; }
+    /* line 48, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #eines ul {
+      margin: 0; }
+    /* line 51, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #eines li {
+      padding: 8px !important; }
+
+  /* line 57, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #titol-menu-1 {
+    width: 75%; }
+    /* line 59, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #titol-menu-1 a {
+      display: block;
+      text-decoration: none;
+      color: #666666; }
+
+  /* line 67, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper ~ #portal-header {
+    margin-top: 40px !important; }
+
+  /* line 69, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .header-image {
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%; }
+    /* line 71, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    .header-image.l2-image {
+      margin-left: 207px !important; }
+      /* line 73, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      .header-image.l2-image:before {
+        top: 45px;
+        width: 175px;
+        margin-left: -207px; }
+
+  /* line 78, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-column-one, #portal-column-content {
+    width: 100% !important;
+    margin-left: 0; }
+
+  /* line 81, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #peu [class*="span"], #peu .cella {
+    float: none;
+    display: block;
+    width: auto;
+    margin-left: 0; }
+    /* line 83, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #peu [class*="span"] .pull-right, #peu .cella .pull-right, #peu [class*="span"] .newsImageContainer, #peu .cella .newsImageContainer {
+      float: none;
+      margin: 0; }
+
+  /* line 88, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #canvia-vista {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin-left: 0px !important;
+    margin-right: 0px !important; }
+
+  /* line 92, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  table {
+    width: 100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%; }
+
+  /* line 101, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0;
+    margin-left: 0; }
+
+  /* line 103, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .container-fluid {
+    padding: 0; }
+
+  /* line 107, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .dl-horizontal dt, .portaltype-packet .estudis dl.fitxa dt {
+    float: none;
+    clear: none;
+    width: auto;
+    text-align: left; }
+  /* line 113, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .dl-horizontal dd, .portaltype-packet .estudis dl.fitxa dd {
+    margin-left: 0; }
+
+  /* line 122, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .container {
+    width: auto; }
+
+  /* line 125, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .row-fluid, #dashboard, .fila, .template-atct_album_view #content-core {
+    width: 100%; }
+
+  /* line 128, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .row, .thumbnails {
+    margin-left: 0; }
+
+  /* line 130, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .thumbnails > li {
+    float: none;
+    margin-left: 0; }
+
+  /* line 132, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .span12, .row-fluid .span12, #dashboard .span12, .fila .span12, .template-atct_album_view #content-core .span12 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 138, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .input-large, .input-xlarge, .input-xxlarge, #archetypes-fieldname-title input, input[class*="span"], input.cella, select[class*="span"], select.cella, textarea[class*="span"], textarea.cella, .uneditable-input {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 141, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .input-prepend input, .input-append input, .input-prepend input[class*="span"], .input-prepend input.cella, .input-append input[class*="span"], .input-append input.cella {
+    display: inline-block;
+    width: auto; }
+
+  /* line 147, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .modal, .pb-ajax {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    margin: 0; }
+    /* line 154, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    .modal.fade.in, .fade.in.pb-ajax {
+      top: 10px; }
+
+  /* line 159, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .subnavbar .nav-list a:hover:after, .subnavbar .nav-list .active a:after, .subnavbar .nav-list .selected a:after {
+    background-position: -311.5px -117px !important; }
+
+  /* line 165, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .unit-picture .img-polaroid, .unit-picture .template-personal-information [for="form.portrait"] ~ img, .template-personal-information .unit-picture [for="form.portrait"] ~ img, .unit-picture .newsImageContainer, .unit-picture .tileItem img, .tileItem .unit-picture img {
+    float: none;
+    clear: both; }
+
+  /* line 166, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .contact table {
+    width: 100% !important; }
+
+  /* line 170, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table td {
+    display: block; }
+  /* line 173, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table tr:nth-child(1) {
+    width: 70%; }
+    /* line 176, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #recaptcha_table tr:nth-child(1) td:nth-child(1) {
+      width: 70%; }
+    /* line 179, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #recaptcha_table tr:nth-child(1) td:nth-child(2) {
+      width: 30px;
+      float: left; }
+    /* line 184, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #recaptcha_table tr:nth-child(1) td:nth-child(3) {
+      float: left; }
+  /* line 190, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table tr:nth-child(2) {
+    width: 70%; }
+    /* line 192, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #recaptcha_table tr:nth-child(2) td {
+      width: 50%; }
+  /* line 197, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_table center {
+    float: left; }
+
+  /* line 202, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .recaptcha_only_if_privacy {
+    float: left !important;
+    text-align: left !important;
+    margin-left: 7px !important;
+    margin-bottom: 7px !important; }
+
+  /* line 209, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_image {
+    width: 250px !important; }
+    /* line 211, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #recaptcha_image img {
+      width: 250px !important; }
+
+  /* line 216, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #recaptcha_input_area, #recaptcha_response_field {
+    width: 240px !important; }
+
+  /* line 221, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .typeahead.dropdown-menu {
+    left: auto !important;
+    right: 10px !important; }
+    /* line 224, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    .typeahead.dropdown-menu li {
+      text-align: left !important; }
+
+  /* line 228, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .nav-tabs, .contentViews, .configlets, .contentViews, .configlets, #edit-bar {
+    border-bottom: 0px !important;
+    box-shadow: 0 0px 0px 0px black inset !important; }
+
+  /* line 233, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .nav-tabs > li > a, .contentViews > li > a, .configlets > li > a, .contentViews > li > a, .configlets > li > a {
+    border-radius: 4px; }
+
+  /* line 237, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .contentViews > .active > a, .contentViews > .selected:hover > a, .configlets > .active > a, .configlets > .selected > a, .nav-tabs > .selected > a, .contentViews > .selected > a, .configlets > .selected > a, .configlets > .selected > a, .nav-tabs > .active > a:hover, .contentViews > .active > a:hover, .configlets > .active > a:hover, .nav-tabs > .selected > a:hover, .configlets > .selected > a:hover, .contentViews > .active > a:hover, .configlets > .active > a:hover, .configlets > .selected > a:hover, .nav-tabs > .selected > a:hover, .contentViews > .selected > a:hover, .configlets > .selected > a:hover, .configlets > .selected > a:hover {
+    border-color: #b2b2b2 !important; }
+
+  /* line 242, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #s2id_cercaCapca {
+    float: left; }
+
+  /* line 245, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #formfield-form-widgets-nombre, #formfield-form-widgets-from_address {
+    float: none !important;
+    width: 100% !important; }
+
+  /* line 249, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #form-widgets-nombre {
+    width: 100% !important; } }
+@media only screen and (max-width: 639px) {
+  /* line 265, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  body {
+    font-size: 14.5px; }
+
+  /* line 268, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper, .navbar-fixed-top, .navbar-fixed-bottom {
+    margin-left: 0px !important;
+    margin-right: 0px !important; }
+
+  /* line 269, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .navbar-inner, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+    padding: 0px !important; }
+
+  /* line 270, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper ~ #portal-header {
+    margin-top: 0px !important; }
+
+  /* line 272, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .nav ul, #portal-personaltools-wrapper .contentViews ul, #portal-personaltools-wrapper .configlets ul, #portal-personaltools-wrapper .formTabs ul {
+    margin: 0 !important; }
+  /* line 273, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
+    background-image: url('++genweb++static/images/gh-w.png?1410864406'); }
+  /* line 274, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
+    background: black; }
+  /* line 275, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-personaltools-wrapper .nav a.btn, #portal-personaltools-wrapper .contentViews a.btn, #portal-personaltools-wrapper .configlets a.btn, #portal-personaltools-wrapper .formTabs a.btn, #portal-personaltools-wrapper .nav a.standalone, #portal-personaltools-wrapper .contentViews a.standalone, #portal-personaltools-wrapper .configlets a.standalone, #portal-personaltools-wrapper .formTabs a.standalone, #portal-personaltools-wrapper .nav a[type="submit"], #portal-personaltools-wrapper .contentViews a[type="submit"], #portal-personaltools-wrapper .configlets a[type="submit"], #portal-personaltools-wrapper .formTabs a[type="submit"], #portal-personaltools-wrapper .nav a.context, #portal-personaltools-wrapper .contentViews a.context, #portal-personaltools-wrapper .configlets a.context, #portal-personaltools-wrapper .formTabs a.context, #portal-personaltools-wrapper .nav a.searchButton, #portal-personaltools-wrapper .contentViews a.searchButton, #portal-personaltools-wrapper .configlets a.searchButton, #portal-personaltools-wrapper .formTabs a.searchButton, #portal-personaltools-wrapper .nav a.link-parent, #portal-personaltools-wrapper .contentViews a.link-parent, #portal-personaltools-wrapper .configlets a.link-parent, #portal-personaltools-wrapper .formTabs a.link-parent, #portal-personaltools-wrapper .nav a.btn:focus, #portal-personaltools-wrapper .contentViews a.btn:focus, #portal-personaltools-wrapper .configlets a.btn:focus, #portal-personaltools-wrapper .formTabs a.btn:focus, #portal-personaltools-wrapper .nav a.standalone:focus, #portal-personaltools-wrapper .contentViews a.standalone:focus, #portal-personaltools-wrapper .configlets a.standalone:focus, #portal-personaltools-wrapper .formTabs a.standalone:focus, #portal-personaltools-wrapper .nav a[type="submit"]:focus, #portal-personaltools-wrapper .contentViews a[type="submit"]:focus, #portal-personaltools-wrapper .configlets a[type="submit"]:focus, #portal-personaltools-wrapper .formTabs a[type="submit"]:focus, #portal-personaltools-wrapper .nav a.context:focus, #portal-personaltools-wrapper .contentViews a.context:focus, #portal-personaltools-wrapper .configlets a.context:focus, #portal-personaltools-wrapper .formTabs a.context:focus, #portal-personaltools-wrapper .nav a.searchButton:focus, #portal-personaltools-wrapper .contentViews a.searchButton:focus, #portal-personaltools-wrapper .configlets a.searchButton:focus, #portal-personaltools-wrapper .formTabs a.searchButton:focus, #portal-personaltools-wrapper .nav a.link-parent:focus, #portal-personaltools-wrapper .contentViews a.link-parent:focus, #portal-personaltools-wrapper .configlets a.link-parent:focus, #portal-personaltools-wrapper .formTabs a.link-parent:focus {
+    background-color: #BB3423; }
+
+  /* line 280, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .titol-espai:before {
+    position: absolute;
+    border-top: 1px solid #ccc; }
+  /* line 281, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .titol-espai h1 {
+    font-size: 138.461538%;
+    line-height: 24px;
+    margin-top: 5px !important; }
+    /* line 283, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    .titol-espai h1 a {
+      display: block; }
+
+  /* line 287, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-header {
+    padding-bottom: 10px;
+    background: #f7f7f7 !important; }
+    /* line 290, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
+      margin-top: 12px !important; }
+    /* line 291, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #portal-header h1.pull-left {
+      margin-bottom: 7px !important; }
+      /* line 293, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      #portal-header h1.pull-left img {
+        margin-top: -3px;
+        height: 46px; }
+    /* line 295, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #portal-header .container > div.clearfix, #portal-header .container > div.visualClear, #portal-header .portaltype-packet .estudis .container > div.caixa3, .portaltype-packet .estudis #portal-header .container > div.caixa3 {
+      margin: 0 !important; }
+    /* line 296, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #portal-header .container {
+      border-bottom: 0 !important; }
+    /* line 297, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
+      margin-top: 13px;
+      margin-right: 0 !important;
+      padding: 7px 10px; }
+
+  /* line 301, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #eines input {
+    width: 65%; }
+  /* line 302, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #eines button {
+    width: 34%;
+    line-height: 20px; }
+  /* line 303, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #eines a {
+    margin: 0 0 20px 0 !important; }
+
+  /* line 308, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .header-image {
+    display: none; }
+
+  /* line 312, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .header-image.l2-image {
+    height: 30px !important;
+    margin-left: 55px !important; }
+    /* line 313, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    .header-image.l2-image:before {
+      top: 25px;
+      width: 45px;
+      margin-left: -55px; }
+
+  /* line 317, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #portal-breadcrumbs {
+    display: none; }
+
+  /* line 321, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  [class*="span"], .cella,
+  .row-fluid [class*="span"],
+  #dashboard [class*="span"],
+  .fila [class*="span"],
+  .template-atct_album_view #content-core [class*="span"],
+  .row-fluid .cella,
+  #dashboard .cella,
+  .fila .cella,
+  .template-atct_album_view #content-core .cella {
+    float: none;
+    display: block;
+    width: auto;
+    margin-left: 0; }
+
+  /* line 329, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .llistatLogos {
+    margin: 1em auto !important; }
+
+  /* line 331, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  #peu {
+    font-size: 84.613846% !important; }
+    /* line 333, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    #peu .container {
+      padding-top: 5px; }
+
+  /* line 337, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .img_blank {
+    margin-top: -1px; }
+
+  /* line 340, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0); }
+
+  /* line 343, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .page-header h1 small {
+    display: block;
+    line-height: 18px; }
+
+  /* line 346, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  input[type="checkbox"], input[type="radio"] {
+    border: 1px solid #ccc; }
+
+  /* line 349, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .control-group > label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left; }
+
+  /* line 352, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .controls {
+    margin-left: 0; }
+
+  /* line 355, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .control-list {
+    padding-top: 0; }
+
+  /* line 358, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .form-horizontal .form-actions {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  /* line 361, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .modal, .pb-ajax {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    max-width: 100%; }
+
+  /* line 362, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .modal-header .close, .pb-ajax .documentFirstHeading .close, .pb-ajax > div > h2 .close {
+    padding: 10px;
+    margin: -10px; }
+
+  /* line 372, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .carousel-caption {
+    position: static; }
+
+  /* line 375, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .plaEstudis {
+    background-color: #F7F7F7; }
+    /* line 377, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    .plaEstudis thead {
+      display: block; }
+      /* line 379, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      .plaEstudis thead th {
+        font-size: 80%; }
+        /* line 381, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+        .plaEstudis thead th.semester {
+          display: none; }
+        /* line 384, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+        .plaEstudis thead th.plaEstudis_titolCredits {
+          min-width: 80px; }
+        /* line 387, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+        .plaEstudis thead th.plaEstudis_titolAssignatures {
+          width: 100%; }
+    /* line 392, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    .plaEstudis tbody {
+      display: block;
+      clear: both; }
+      /* line 395, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      .plaEstudis tbody th {
+        display: block;
+        font-size: 80%; }
+    /* line 400, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    .plaEstudis tr {
+      display: block; }
+    /* line 403, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+    .plaEstudis td {
+      background-color: #fff !important;
+      font-size: 80%; }
+      /* line 406, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+      .plaEstudis td.subject {
+        width: 100%; }
+
+  /* line 416, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .img-mask {
+    width: 90% !important;
+    margin-left: 5% !important;
+    margin-right: 5% !important; } }
+@media only screen and (max-width: 639px) and (orientation: landscape) {
+  /* line 368, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
+  .modal-body, .pb-ajax #content-core, .pb-ajax .documentDescription, .pb-ajax #content-history {
+    max-height: 160px; } }
