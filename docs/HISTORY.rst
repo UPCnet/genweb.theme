@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.30 (unreleased)
+1.30 (2014-10-20)
 -----------------
 
-- Nothing changed yet.
-
+* Update id of search feature and added missing accessibility accesskey. [Victor Fernandez de Alba]
 
 1.29 (2014-10-16)
 -----------------
