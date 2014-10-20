@@ -1,8 +1,7 @@
-
-<div id="the-basics" i18n:domain="plone">
+<div id="gwsearch" i18n:domain="plone">
   <input class="typeahead" type="text" placeholder="Search"
          tal:attributes="data-typeahead-url string:${view/site_url}/gw_type_ahead_search;
                          data-search-url string:${view/site_url}/@@search;"
          i18n:attributes="placeholder text_search"/>
 </div>
-
+<p class="goout"><a accesskey="5" href="/search">Cerca</a></p>

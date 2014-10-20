@@ -207,7 +207,7 @@ $(document).ready(function () {
   };
 
   window._gw_typeahead_last_result = [];
-  var selector = '#the-basics .typeahead';
+  var selector = '#gwsearch .typeahead';
   var $typeahead_dom = $(selector);
   $typeahead_dom.typeahead({
     hint: true,
