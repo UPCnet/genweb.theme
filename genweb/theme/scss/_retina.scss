@@ -11,7 +11,7 @@ only screen and (                min-resolution: 2dppx) {
 
 	.header-image {background-image:url("../capcalera@2x.jpg"); @include background-size(100%);}
 
-  	.list-links li {content: image-url("arrow@2x.png");}
+  	//això peta la llista links en mòbil perquè substitueix tot el contingut per una url!? --->  .list-links li {content: image-url("arrow@2x.png");}
 	.list-highlighted li {content: image-url("arrow_hl@2x.png");}
 
 	.img_blank[src*="blank_"] {width:10px; height:10px;}

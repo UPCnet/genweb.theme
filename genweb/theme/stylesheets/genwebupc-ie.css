@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1413460128899');
+@import url('genwebupc-ie-blessed1.css?z=1413976287438');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 552, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -5269,10 +5269,6 @@ html {
     -o-background-size: 100%;
     background-size: 100%; }
 
-  /* line 14, ../scss/_retina.scss */
-  .list-links li, .portaltype-packet .estudis .llistatEnllacos li {
-    content: url('++genweb++static/images/arrow@2x.png?1410864406'); }
-
   /* line 15, ../scss/_retina.scss */
   .list-highlighted li {
     content: url('++genweb++static/images/arrow_hl@2x.png?1410864406'); }
@@ -5775,10 +5771,6 @@ html.lt-ie8 .list-portlet li  {
 .tileFooter:before {
   content: ""; }
 
-/* line 137, ../scss/_upcnet.scss */
-.photoAlbumEntry a img {
-  width: 100%; }
-
 /* line 147, ../scss/_upcnet.scss */
 .plone_jscalendar > * {
   display: inline-block; }
@@ -5895,10 +5887,6 @@ input[type="radio"].required:after {
       left: 293px;
       top: 29px; }
 
-/* line 269, ../scss/_upcnet.scss */
-.thumbnail:hover, .thumb-img img:hover, .photoAlbumEntry a:hover {
-  width: inherit !important; }
-
 /* line 271, ../scss/_upcnet.scss */
 #plonebrowser #general_panel {
   margin-left: 0px; }
@@ -5925,6 +5913,85 @@ ul.betaviewsicons {
 /* line 291, ../scss/_upcnet.scss */
 .fontello-icon-mobile, .fontello-icon-tablet {
   font-size: 20px; }
+
+/* line 296, ../scss/_upcnet.scss */
+div.photoAlbumEntry {
+  text-align: center;
+  float: left;
+  width: 130px !important;
+  height: 158px;
+  min-height: 158px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: block;
+  line-height: 18px;
+  padding: 4px;
+  margin: 5px; }
+  /* line 309, ../scss/_upcnet.scss */
+  div.photoAlbumEntry a {
+    border: 0 !important;
+    box-shadow: 0 0 0 !important;
+    border-radius: 0; }
+
+/* line 316, ../scss/_upcnet.scss */
+.estilImgPhotoAlbum3 {
+  height: 83px !important;
+  width: 96% !important; }
+
+/* line 321, ../scss/_upcnet.scss */
+.estilImgPhotoAlbum1 {
+  height: 96px !important;
+  width: 96% !important; }
+
+/* line 326, ../scss/_upcnet.scss */
+.estilImgPhotoAlbum2 {
+  height: 128px !important;
+  width: 96px !important; }
+
+/* line 335, ../scss/_upcnet.scss */
+#FCKTdiv1imatgedamunttext {
+  margin: 0 auto;
+  position: relative; }
+
+/* line 340, ../scss/_upcnet.scss */
+#FCKTdiv2imatgedamunttext {
+  background-color: white;
+  color: #333;
+  font-family: Arial,Helvetica,Verdana,sans-serif;
+  font-size: 12px;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  opacity: 0.8;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 200px; }
+
+/* line 356, ../scss/_upcnet.scss */
+#FCKTdiv3imatgedamunttext {
+  padding: 10px; }
+
+/* line 363, ../scss/_upcnet.scss */
+#tab-professional-opportunities ul {
+  list-style: inside none square;
+  box-shadow: 0 1px 1px #b2b2b2;
+  padding: 5px 5px 5px 15px;
+  margin-left: 2px;
+  -webkit-box-shadow: 0 1px 1px #b2b2b2;
+  -moz-box-shadow: 0 1px 1px #b2b2b2;
+  box-shadow: 0 1px 1px #b2b2b2;
+  border: 1px solid #b2b2b2;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  border-left: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
 
 /* TINY */
 /* Save message */

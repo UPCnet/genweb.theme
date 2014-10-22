@@ -170,7 +170,6 @@
                   </li>
 
                 </tal:notificacionsmenu>
-                <!-- oscar: opció d'ajuda moguda al desplegable menú eines genweb -->
                  <li role="menuitem">
                     <a href="https://genweb.upc.edu/formacio-i-ajuda" target="_blank" accesskey="6">
                     <tal:help i18n:translate="genweb-ajuda">Help</tal:help>

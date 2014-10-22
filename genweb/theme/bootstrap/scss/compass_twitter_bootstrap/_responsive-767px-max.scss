@@ -248,6 +248,26 @@
 
   #form-widgets-nombre { width: 100% !important;}
 
+  // fitxa estudis
+  
+  #tab-pdf { display: none; } // ocultem generació fitxa pdf
+  
+  #tab-academic-information, #tab-admission { // mostrem la taula en format continu
+  	tr, th, td { 
+  		display: block; 
+  		border-top: 0 !important;
+  		border-bottom: 0 !important;
+  	}
+  	th { background: transparent !important; }
+  }
+  
+  .unit-content .unit-picture, .studies { display:none;} // oculta imatge centre i llista estudis
+
+
+
+
+  // END fitxa estudis
+
 } // END Responsive: Landscape phone to desktop/tablet
 
 
