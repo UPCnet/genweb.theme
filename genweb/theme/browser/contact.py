@@ -122,7 +122,6 @@ class ContactForm(form.Form):
         to_address = portal.getProperty('email_from_address')
         from_name = portal.getProperty('email_from_name')
 
-
         source = "%s <%s>" % (escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['from_address'])))
         subject = "[Formulari Contacte] %s" % (escape(safe_unicode(data['asunto'])))
         message = MESSAGE_TEMPLATE % dict(name=data['nombre'],
@@ -156,25 +155,39 @@ class ContactForm(form.Form):
         return "//maps.upc.edu/new/index.php/embed?iu=%s" % codi
 
     def getContactPersonalized(self):
-        not_customized = not genweb_config().contacte_BBDD_or_page
-        return not_customized
+        customized = genweb_config().contacte_BBDD_or_page
+        return customized
 
     def getContactPage(self):
         """
         Funcio que retorna la pagina de contacte personalitzada. Te en compte els permissos de lusuari validat, amb un
         restrictedTraverse sobre lobjecte (tenint en compte lidioma)
         """
-        page = {}
-        portal_state = getMultiAdapter((self.context, self.request),
-                                        name=u'plone_portal_state')
+        page = ""
+        portal_state = getMultiAdapter((self.context, self.request), name=u'plone_portal_state')
         portal = portal_state.portal()
         context = aq_inner(self.context)
-        isCustomized = getattr(context, 'contactepersonalitzat', False)
+        lang = self.context.Language()
 
-        if isCustomized:
-            FrontPageObj = portal.contactepersonalitzat.getTranslation()
-            page['body'] = FrontPageObj.CookedBody()
-            return page
-        else:
-            page['body'] = ""
-            return page
+        if lang == 'ca':
+            isCustomized = getattr(context, 'contactepersonalitzat', False)
+            if isCustomized:
+                contact_body = portal.contactepersonalitzat.text.raw
+                page = contact_body
+            else:
+                return page
+        if lang == 'es':
+            isCustomized = getattr(context, 'contactopersonalizado', False)
+            if isCustomized:
+                contact_body = portal.contactopersonalizado.text.raw
+                page = contact_body
+            else:
+                return page
+        if lang == 'en':
+            isCustomized = getattr(context, 'customizedcontact', False)
+            if isCustomized:
+                contact_body = portal.customizedcontact.text.raw
+                page = contact_body
+            else:
+                return page
+        return page

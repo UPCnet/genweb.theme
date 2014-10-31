@@ -6,7 +6,7 @@
       metal:use-macro="context/main_template/macros/master"
       i18n:domain="genweb">
 
-<body class="template-contacte">
+<body class="template-contacte" dir="ltr">
 <script type="text/javascript">
     RecaptchaOptions = { theme : 'white' };
 
@@ -16,7 +16,7 @@
 
 <div metal:fill-slot="main">
   <tal:main-macro metal:define-macro="main"
-            tal:define="dades context/@@genweb.utils/getDadesUnitat;
+            tal:define="dades context/@@genweb.utils/getDadesContact;
                         genweb_config context/@@gwconfig">
 
 <!-- Dades de contacte -->
@@ -31,21 +31,18 @@
         <div class="span7 box box-gradient">
           <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
         </div>
+
         <div class="span5"
-             tal:define="edifici python:getattr(dades, 'edifici_%s' % view.pref_lang(), u'Edifici Til·lers');
-                         campus python:getattr(dades, 'campus_%s' % view.pref_lang(), 'Campus Nord');
-                         adreca dades/adreca_sencera;
-                         codi_postal dades/codi_postal;
-                         localitat dades/localitat;
+             tal:define="adreca dades/adreca_sencera;
                          telefon dades/telefon;
                          fax dades/fax;
                          email dades/email;
-                         id_scp dades/id;
                          codi_upc dades/codi_upc;
-                         contacte_personalitzat view/getContactPersonalized"
+                         nom dades/nom;
+                         contacte_personalitzat view/getContactPage"
              tal:condition="adreca">
-            <tal:co tal:condition="contacte_personalitzat">
-              <h2 tal:content="python:getattr(dades, 'nom_%s' % view.pref_lang(), 'Servei de Comunicació i Promoció')">
+            <tal:co tal:condition="not: contacte_personalitzat">
+              <h2 tal:content="nom">
                 Servei de Comunicació i Promoció
               </h2>
               <address>
@@ -53,7 +50,7 @@
                   Campus Diagonal Sud, Edifici H. Av. Diagonal, 647. 08028 Barcelona
                 </p>
               </address>
-                <ul class="unstyled" id='contacte-dades' >  
+                <ul class="unstyled" id='contacte-dades' >
                   <li>
                     <p tal:condition="telefon">
                       <tal:telmsg i18n:translate="genweb_telefon">Telèfon</tal:telmsg>
@@ -86,7 +83,7 @@
                 <ul class="unstyled" id='contacte-links'>
                   <li>
                     <p>
-                      <a tal:condition="codi_upc" tal:attributes="href python:view.getURLDirectori(codi_upc)">
+                      <a tal:condition="codi_upc" tal:attributes="href python:view.getURLDirectori(codi_upc); target string:_blank">
                         <i class="icon-book"></i>
                         Directori UPC
                         <img class="img_blank" src="++genweb++static/images/blank_blau.png"
@@ -109,16 +106,14 @@
                   </ul>
                   <div tal:condition="python:not getattr(genweb_config, 'contacte_no_upcmaps', False)">
                     <span class="img-mask">
-                      <iframe  tal:attributes="src python:view.getURLMaps(id_scp)" border="0">
+                      <iframe  tal:attributes="src python:view.getURLMaps(codi_upc)" border="0">
                       </iframe>
                     </span>
                   </div>
                 </tal:co>
-          
-            <tal:co tal:condition="not: contacte_personalitzat">
-              <div tal:define="contact view/getContactPage">
-                <div tal:replace="structure contact/body">Cos de la pagina de contacte</div>
-              </div>
+
+            <tal:co tal:condition="contacte_personalitzat">
+                <div tal:replace="structure contacte_personalitzat">Cos de la pagina de contacte</div>
             </tal:co>
 		</div>
     </tal:block>
