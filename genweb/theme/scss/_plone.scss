@@ -168,7 +168,7 @@ input#title {font-weight:bold}
 	height:100%;
 	min-height:100%;
 	iframe {
-		height:400px; // alçada mapa contacte
+		height:250px; // alçada mapa contacte
 		width:100%;
 	}
 }
@@ -184,13 +184,14 @@ iframe {
 /* regles afegides per maquetar contacte segons proposta oriol */
 #formfield-form-widgets-nombre  {
   float:left;
-  width:48%;
+  width:46%;/**/
 }
 #form-widgets-nombre{width:100% !important;}
 
 #formfield-form-widgets-from_address {
   float:right;  
-  width:48% ;
+  margin-right: 3%;
+  width:46% ; 
 }
 #form-widgets-from_address {width:100% !important;}
 
@@ -199,9 +200,9 @@ iframe {
   width:100%;
 }
 
-/*#form-widgets-asunto{
+#form-widgets-asunto{
   width:97% !important;
-}*/
+}
 
 #formfield-form-widgets-mensaje { width:100%;}
 
@@ -835,11 +836,63 @@ div.overlay {
     display: none;
 }
 
+
 // ESDEVENIMENT
+
 div[id*='formfield-form-widgets-IEventBasic-'] select { width:auto; } // ajusta amplada select
+
 
 // POLL - ENQUESTA
 
 .tasksplease span { padding-right: 10px; } // afegeix separació entre opcions
 
 input[name='poll.submit'] { margin-top: 15px; } // afegeix separació botó enviament
+
+
+// IMATGES inserides per tiny
+
+.image-left {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.image-right {
+	float: right;
+	margin: 0 0 0 10px;
+}
+
+
+  // captcha
+  #recaptcha_table {// visualitzem la taula captcha en blocks
+  	width: 334px;
+    td {
+      display:block;
+    }
+    tr:nth-child(1){
+      width:70%;
+      td {
+        &:nth-child(1){// imatge
+          width:70%
+        }
+        &:nth-child(2){// botons
+          width:30px;
+          float:left;
+          //border:1px solid red !important;
+        }
+        &:nth-child(3){// logo
+          float:left;
+        }
+      }
+    }
+    
+    tr:nth-child(2) {
+      width:70%;
+      td {
+        width:50%;
+      }
+    }
+
+    center {
+      float:left;
+    }
+  } // fi #recaptcha_table 
