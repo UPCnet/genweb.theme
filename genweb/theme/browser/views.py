@@ -683,6 +683,7 @@ class newsCollectionView(grok.View):
         return results + results3
 
     def all_news_link(self):
+        portal = api.portal.get()
         pc = api.portal.get_tool('portal_catalog')
         news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__,
                                        Language=pref_lang())
@@ -690,7 +691,7 @@ class newsCollectionView(grok.View):
         if news_folder:
             return '%s' % news_folder[0].getURL()
         else:
-            return '%s/news_listing' % self.portal_url
+            return '%s/news_listing' % portal.absolute_url()
 
 
 class ContactFeedback(grok.View):
