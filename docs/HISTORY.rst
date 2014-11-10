@@ -1,11 +1,13 @@
 Changelog
 =========
 
-1.31 (unreleased)
+1.31 (2014-11-10)
 -----------------
 
-- Nothing changed yet.
-
+* Fix several bugs [Victor Fernandez de Alba]
+* Hide author and date for readers [hanirok]
+* Customized Contact and contact translation [hanirok]
+* Canvis Oscar [Roberto Diaz]
 
 1.30 (2014-10-20)
 -----------------
