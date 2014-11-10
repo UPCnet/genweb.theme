@@ -280,6 +280,20 @@ class gwFooter(viewletBase):
         }
         return footer_links[idioma]
 
+    def idioma_cookies(self):
+        lang = self.pref_lang()
+
+        if lang == 'ca':
+            return 'https://www.upc.edu/avis-legal/politica-de-cookies'
+        if lang == 'es':
+            return 'https://www.upc.edu/aviso-legal/politica-de-cookies'
+        if lang == 'en':
+            return 'https://www.upc.edu/disclaimer/cookies-policy'
+        if lang == 'zh':
+            return 'https://www.upc.edu/disclaimer/cookies-policy'
+        if lang == '':
+            return 'https://www.upc.edu/avis-legal/politica-de-cookies'
+
 
 class gwSearchViewletManager(grok.ViewletManager):
     grok.context(Interface)

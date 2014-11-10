@@ -2,8 +2,15 @@
         tal:define="portal_url context/@@plone_portal_state/portal_url;
                     plone_view context/@@plone;
                     view nocall:view | nocall: plone_view;
-                    dades context/@@genweb.utils/getDadesUnitat;"
+                    dades context/@@genweb.utils/getDadesUnitat;
+                    cookies viewlet/idioma_cookies;"
         i18n:domain="genweb">
+    <div id="cookies">
+        <tal:msg i18n:translate="cookie_policy_this_site">
+        Aquest web utilitza cookies pròpies per oferir-li una millor experiència i servei. En continuar amb la navegació entenem que accepta la nostra
+        </tal:msg>
+        <a tal:attributes="href cookies" i18n:translate="cookie_policy" target="_blank">política de cookies</a>.
+    </div>
   <div class="container">
     <div class="row-fluid">
       <div class="span8">
@@ -65,6 +72,8 @@
       </div>
     </div>
   </div>
+
+
 </footer>
 
 <!--[if !IE]> -->
