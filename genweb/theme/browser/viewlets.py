@@ -101,19 +101,21 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         if getattr(portal, 'shared', False):
             user_roles_at_shared = api.user.get_roles(obj=portal['en'])
 
-        menus_to_show = {}
+        menus_to_show = dict(show=False, show_advanced=False, show_en=False, show_ca=False, show_es=False, show_shared=False)
         if 'Editor' in user_roles_at_ca_root or 'Contributor' in user_roles_at_ca_root:
             menus_to_show['show'] = True
             menus_to_show['show_ca'] = True
         if 'Editor' in user_roles_at_es_root or 'Contributor' in user_roles_at_es_root:
             menus_to_show['show'] = True
-            menus_to_show['show_ca'] = True
+            menus_to_show['show_es'] = True
         if 'Editor' in user_roles_at_en_root or 'Contributor' in user_roles_at_en_root:
             menus_to_show['show'] = True
-            menus_to_show['show_ca'] = True
+            menus_to_show['show_en'] = True
         if 'Editor' in user_roles_at_shared or 'Contributor' in user_roles_at_en_root:
             menus_to_show['show'] = True
             menus_to_show['show_shared'] = True
+
+        return menus_to_show
 
     def canManageSite(self):
         return checkPermission("plone.app.controlpanel.Overview", self.portal())

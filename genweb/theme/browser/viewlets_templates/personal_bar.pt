@@ -70,7 +70,9 @@
                     </a>
                   </li>
                 </tal:langs>
-                <li aria-hidden="true" class="divider"></li>
+                <li aria-hidden="true" class="divider"
+                    tal:condition="python: show_tools['show_advanced'] or show_tools['show_shared']">
+                </li>
                 <li role="menuitem" tal:condition="show_tools/show_advanced">
                   <a i18n:translate="manage_site_permissions"
                      tal:attributes="href string:${view/root_url}/sharing">
@@ -94,7 +96,7 @@
             <li class="dropdown" role="menuitem" id="admin"
                 tal:condition="view/canManageSite">
               <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
-                <span id="user-name">Configuració</span>
+                <span>Configuració</span>
                 <b aria-hidden="true" class="caret"></b>
               </a>
               <ul class="dropdown-menu" role="menu">

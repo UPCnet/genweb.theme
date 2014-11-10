@@ -165,39 +165,7 @@
   .unit-picture .img-polaroid {float:none;clear:both;}
   .contact table {width:100% !important;} 
 
-  // captcha
-  #recaptcha_table {// en mobil visualitzem la taula captcha en blocks
-    td {
-      display:block;
-    }
-    tr:nth-child(1){
-      width:70%;
-      td {
-        &:nth-child(1){// imatge
-          width:70%
-        }
-        &:nth-child(2){// botons
-          width:30px;
-          float:left;
-          //border:1px solid red !important;
-        }
-        &:nth-child(3){// logo
-          float:left;
-        }
-      }
-    }
-    
-    tr:nth-child(2) {
-      width:70%;
-      td {
-        width:50%;
-      }
-    }
 
-    center {
-      float:left;
-    }
-  } // fi #recaptcha_table
 
   .recaptcha_only_if_privacy {
     float: left !important;
@@ -241,10 +209,15 @@
   // float left per a cerca 
   #s2id_cercaCapca { float:left; }
 
+  #gwsearch input.tt-hint {   // corregeix posicio text typeahead  
+    position: relative !important;
+    top: 39px !important;
+  }
+
   // arreglar amplada i posició contacte 
   #formfield-form-widgets-nombre, #formfield-form-widgets-from_address { 
     float: none !important;
-    width:100% !important; }
+    width: 97% !important;/*aqui*/ }
 
   #form-widgets-nombre { width: 100% !important;}
 

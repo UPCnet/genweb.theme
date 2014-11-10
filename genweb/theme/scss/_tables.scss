@@ -359,6 +359,7 @@ NOTEBOOK
     border-left-color: $tableBorder !important;
     border-left-style:solid;
   }
+  tr:first-child td {border-top:3px double lighten(complement($blue),40%) !important;} // força border double en taula notebook
 }
 
 
