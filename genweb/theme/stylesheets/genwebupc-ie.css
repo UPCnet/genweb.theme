@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1415614701763');
+@import url('genwebupc-ie-blessed1.css?z=1415702759497');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 552, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -4915,6 +4915,14 @@ input[name='poll.submit'] {
   /* line 895, ../scss/_plone.scss */
   #recaptcha_table center {
     float: left; }
+
+/* line 902, ../scss/_plone.scss */
+#cookies {
+  border-bottom: 1px solid #dedede;
+  color: #666666;
+  margin: auto;
+  padding: 5px 0;
+  width: 978px; }
 
 /* line 10, ../scss/_gw3togw4.scss */
 div.llistatIndex, div.llistat {

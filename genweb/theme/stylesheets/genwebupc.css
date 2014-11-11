@@ -11410,6 +11410,14 @@ input[name='poll.submit'] {
   #recaptcha_table center {
     float: left; }
 
+/* line 902, ../scss/_plone.scss */
+#cookies {
+  border-bottom: 1px solid #dedede;
+  color: #666666;
+  margin: auto;
+  padding: 5px 0;
+  width: 978px; }
+
 /* line 10, ../scss/_gw3togw4.scss */
 div.llistatIndex, div.llistat {
   padding-left: 0; }

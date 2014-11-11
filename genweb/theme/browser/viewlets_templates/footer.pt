@@ -5,13 +5,14 @@
                     dades context/@@genweb.utils/getDadesUnitat;
                     cookies viewlet/idioma_cookies;"
         i18n:domain="genweb">
+
+  <div class="container">
     <div id="cookies">
         <tal:msg i18n:translate="cookie_policy_this_site">
         Aquest web utilitza cookies pròpies per oferir-li una millor experiència i servei. En continuar amb la navegació entenem que accepta la nostra
         </tal:msg>
         <a tal:attributes="href cookies" i18n:translate="cookie_policy" target="_blank">política de cookies</a>.
-    </div>
-  <div class="container">
+    </div> 
     <div class="row-fluid">
       <div class="span8">
         <p>
@@ -55,7 +56,7 @@
             </a>
           </li>
           <li role="menuitem">
-            <a href="#" accesskey="8"
+            <a href="#" accesskey="8"  target="_blank"
                tal:attributes="href link/disclaimer"
                i18n:translate="genweb-disclaimer">
                 Disclaimer
