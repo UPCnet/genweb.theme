@@ -39,9 +39,10 @@
                          email dades/email;
                          codi_upc dades/codi_upc;
                          nom dades/nom;
-                         contacte_personalitzat view/getContactPage"
+                         contacte_personalitzat view/getContactPage;
+                         isCustomized view/getContactPersonalized"
              tal:condition="adreca">
-            <tal:co tal:condition="not: contacte_personalitzat">
+            <tal:co tal:condition="not: isCustomized">
               <h2 tal:content="nom">
                 Servei de Comunicació i Promoció
               </h2>
@@ -112,7 +113,7 @@
                   </div>
                 </tal:co>
 
-            <tal:co tal:condition="contacte_personalitzat">
+            <tal:co tal:condition="isCustomized">
                 <div tal:replace="structure contacte_personalitzat">Cos de la pagina de contacte</div>
             </tal:co>
 		</div>

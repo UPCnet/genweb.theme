@@ -22,6 +22,8 @@ from genweb.theme.browser.interfaces import IGenwebTheme
 from genweb.core.utils import genweb_config
 from zope.component import getMultiAdapter
 
+from plone import api
+
 
 grok.templatedir("views_templates")
 
@@ -155,37 +157,38 @@ class ContactForm(form.Form):
         return "//maps.upc.edu/new/index.php/embed?iu=%s" % codi
 
     def getContactPersonalized(self):
-        customized = genweb_config().contacte_BBDD_or_page
-        return customized
+        isCustomized = genweb_config().contacte_BBDD_or_page
+        return isCustomized
 
     def getContactPage(self):
         """
-        Funcio que retorna la pagina de contacte personalitzada. Te en compte els permissos de lusuari validat, amb un
-        restrictedTraverse sobre lobjecte (tenint en compte lidioma)
+        Funcio que retorna la pagina de contacte personalitzada
         """
         page = ""
         portal_state = getMultiAdapter((self.context, self.request), name=u'plone_portal_state')
         portal = portal_state.portal()
         context = aq_inner(self.context)
         lang = self.context.Language()
-
         if lang == 'ca':
-            isCustomized = getattr(context, 'contactepersonalitzat', False)
-            if isCustomized:
+            CustomizedPage = getattr(context, 'contactepersonalitzat', False)
+            state = api.content.get_state(CustomizedPage)
+            if CustomizedPage and state == 'published':
                 contact_body = portal.contactepersonalitzat.text.raw
                 page = contact_body
             else:
                 return page
         if lang == 'es':
-            isCustomized = getattr(context, 'contactopersonalizado', False)
-            if isCustomized:
+            CustomizedPage = getattr(context, 'contactopersonalizado', False)
+            state = api.content.get_state(CustomizedPage)
+            if CustomizedPage and state == 'published':
                 contact_body = portal.contactopersonalizado.text.raw
                 page = contact_body
             else:
                 return page
         if lang == 'en':
-            isCustomized = getattr(context, 'customizedcontact', False)
-            if isCustomized:
+            CustomizedPage = getattr(context, 'customizedcontact', False)
+            state = api.content.get_state(CustomizedPage)
+            if CustomizedPage and state == 'published':
                 contact_body = portal.customizedcontact.text.raw
                 page = contact_body
             else:
