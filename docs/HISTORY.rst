@@ -1,11 +1,17 @@
 Changelog
 =========
 
-1.32 (unreleased)
+1.32 (2014-11-14)
 -----------------
 
-- Nothing changed yet.
-
+* Social tools conditional working [Victor Fernandez de Alba]
+* Optimisation for JS resources [Victor Fernandez de Alba]
+* Add SC id for maps [hanirok]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* Canvis Oscar [Roberto Diaz]
+* Personalized Contact only if published [hanirok]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [hanirok]
+* Add cookies message [hanirok]
 
 1.31 (2014-11-10)
 -----------------
