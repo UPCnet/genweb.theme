@@ -156,6 +156,10 @@ class ContactForm(form.Form):
     def getURLMaps(self, codi):
         return "//maps.upc.edu/new/index.php/embed?iu=%s" % codi
 
+    def getURLUPCmaps(self, codi):
+        lang = self.context.Language()
+        return "//maps.upc.edu/?iu=%s&lang=%s" % (codi, lang)
+
     def getContactPersonalized(self):
         isCustomized = genweb_config().contacte_BBDD_or_page
         return isCustomized

@@ -96,7 +96,7 @@
                   <tal:maps tal:condition="python:not getattr(genweb_config, 'contacte_no_upcmaps', False)">
                     <li>
                         <p>
-                          <a href="https://maps.upc.edu" class="show" rel="tooltip" data-placement="bottom" title="Clica el marcador per anar a UPCmaps" target="_blank">
+                          <a tal:attributes="href python:view.getURLUPCmaps(id_scp)" href="https://maps.upc.edu" class="show" rel="tooltip" data-placement="bottom" title="Clica el marcador per anar a UPCmaps" target="_blank">
                             <i class="icon-map-marker"></i>
                             UPCmaps
                             <img class="img_blank" src="++genweb++static/images/blank_blau.png"
