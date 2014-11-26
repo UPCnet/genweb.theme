@@ -144,11 +144,11 @@ class ContactForm(form.Form):
 
         return ''
 
-    def pref_lang(self):
-        """ Extracts the current language for the current user
-        """
-        lt = getToolByName(self.context, 'portal_languages')
-        return lt.getPreferredLanguage()
+    # def pref_lang(self):
+    #     """ Extracts the current language for the current user
+    #     """
+    #     lt = getToolByName(self.context, 'portal_languages')
+    #     return lt.getPreferredLanguage()
 
     def getURLDirectori(self, codi):
         return "http://directori.upc.edu/directori/dadesUE.jsp?id=%s" % codi

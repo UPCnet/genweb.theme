@@ -66,4 +66,12 @@
      editview=".fullnews.EditForm"
      />
 
+     <plone:portlet
+     name="genweb.portlets.upcnews"
+     interface=".upcnews.IUPCNewsPortlet"
+     assignment=".upcnews.Assignment"
+     renderer=".upcnews.Renderer"
+     addview=".upcnews.AddForm"
+     />
+
 </configure>
