@@ -25,29 +25,6 @@
  <javascript id="accessibility.js" enabled="False" />
  <javascript id="styleswitcher.js" enabled="False" />
 
- <!-- Reorder -->
- <javascript id="++resource++plone.formwidget.querystring.querywidget.js" insert-after="kss-bbb.js" />
- <javascript id="collective.js.jqueryui.custom.min.js" insert-after="++resource++plone.formwidget.querystring.querywidget.js" />
- <javascript id="++resource++collective.polls/js/jquery.flot.js" insert-after="collective.js.jqueryui.custom.min.js" />
- <javascript id="++resource++collective.polls/js/jquery.flot.pie.js" insert-after="++resource++collective.polls/js/jquery.flot.js" />
- <javascript id="++resource++collective.polls/js/polls.js" insert-after="++resource++collective.polls/js/jquery.flot.pie.js" />
- <javascript id="++resource++collective.polls/js/collective.poll.js" insert-after="++resource++collective.polls/js/polls.js" />
-
- <javascript id="++resource++plone.formwidget.recaptcha/recaptcha_ajax.js" insert-after="++resource++collective.polls/js/collective.poll.js" />
- <javascript id="++resource++plone.formwidget.recurrence/jquery.tmpl-beta1.js" insert-after="++resource++plone.formwidget.recaptcha/recaptcha_ajax.js" />
- <javascript id="++resource++plone.formwidget.recurrence/jquery.recurrenceinput.js" insert-after="++resource++plone.formwidget.recurrence/jquery.tmpl-beta1.js" />
- <javascript id="++resource++plone.app.event/event.js" insert-after="++resource++plone.formwidget.recurrence/jquery.recurrenceinput.js" />
- <javascript id="++resource++plone.app.event.portlet_calendar.js" insert-after="++resource++plone.app.event/event.js" />
- <javascript id="++resource++plone.formwidget.autocomplete/jquery.autocomplete.min.js" insert-after="++resource++plone.app.event.portlet_calendar.js" />
- <javascript id="++resource++plone.formwidget.autocomplete/formwidget-autocomplete.js" insert-after="++resource++plone.formwidget.autocomplete/jquery.autocomplete.min.js" />
- <javascript id="++resource++plone.formwidget.contenttree/contenttree.js" insert-after="++resource++plone.formwidget.autocomplete/formwidget-autocomplete.js" />
- <javascript id="++resource++jsi18n.js" insert-after="++resource++plone.formwidget.contenttree/contenttree.js" />
-
- <javascript id="++resource++collective.polls/js/jquery.tasksplease.js" insert-after="tiny_mce_gzip.js" />
-
- <!-- In case we use Tiny 3.x for removing old Tiny init -->
- <!-- <javascript id="tiny_mce_init.js" remove="True"/> -->
-
  <!-- Add new JS -->
  <javascript authenticated="False" bundle="default" cacheable="True"
     compression="safe" conditionalcomment="" cookable="False" enabled="True"
