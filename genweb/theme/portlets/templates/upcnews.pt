@@ -4,34 +4,26 @@
                        plone_view context/@@plone"
            tal:condition="entries"
            i18n:domain="genweb">
-    <div class="taulaDivs taulaDivsTdD">
-        <div class="noticiesDalt">
-            <h2 i18n:translate="genweb-actualitat"> Actualitat UPC </h2>
-        </div>
-        <div class="agendaContingut">
-            <ul>
-                <li tal:repeat="entry entries">
-                    <a href=""
-                       tal:attributes="title entry/summary | nothing; href entry/url | nothing"
-                       target="_blank">
-                        <span tal:replace="entry/title | nothing">
-                            Notícies RSS
-                        </span>
-                    </a>
-                </li>
-            </ul>
 
-            <div class="portletPlus">
+    <div class="portlet portlet-noticies">
+        <h2 i18n:translate="genweb-actualitat" > Actualitat UPC <i class="icon-news large-icon pull-right"></i></h2>
+        <ul class="list-portlet">
+            <li tal:repeat="entry entries">
                 <a href=""
-                   tal:define="url utils/premsa_url"
-                   tal:attributes="href url"
-                   i18n:domain="plone"
-                   i18n:translate="more_news_link"
+                   tal:attributes="title entry/summary | nothing; href entry/url | nothing"
                    target="_blank">
-                   More news&hellip;
+                    <span tal:replace="entry/title | nothing">
+                        Notícies RSS
+                    </span>
                 </a>
-            </div>
-
-        </div>
+            </li>
+        </ul>
+        <a href="" class="portlet-footer" tal:define="url utils/premsa_url"
+               tal:attributes="href url"
+               i18n:domain="plone"
+               i18n:translate="more_news_link"
+               target="_blank">
+               More news&hellip;
+        </a>
     </div>
 </tal:block>
