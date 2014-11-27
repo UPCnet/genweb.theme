@@ -172,14 +172,6 @@
                   </li>
 
                 </tal:notificacionsmenu>
-                 <li role="menuitem">
-                    <a href="https://genweb.upc.edu/formacio-i-ajuda" target="_blank" accesskey="6">
-                    <tal:help i18n:translate="genweb-ajuda">Help</tal:help>
-                    <img i18n:attributes="alt obrir_link_finestra_nova"
-                          class="img_blank"
-                          src="++genweb++static/images/blank_blanc.png">
-                    </a>
-                  </li>
               </ul>
             </li>
           </ul>
