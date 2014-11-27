@@ -20,7 +20,7 @@
                 </tal:co>
             </li>
         </ul>
-        <a href="" class="portlet-footer" tal:attributes="href view/all_news_link" i18n:translate="more_news_link" >
+        <a href="" class="portlet-footer" tal:attributes="href view/rss_news_link" i18n:translate="more_news_link" >
             <i class="icon-rss"></i> Més notícies
         </a>
     </div>

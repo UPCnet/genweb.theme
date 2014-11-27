@@ -6,7 +6,8 @@ from plone.portlets.interfaces import IPortletDataProvider
 
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFPlone import PloneMessageFactory as _
-from Products.CMFCore.utils import getToolByName
+
+from genweb.core import utils
 
 import feedparser
 
@@ -35,8 +36,7 @@ class Renderer(base.Renderer):
 
     def getRSS(self):
 
-        lt = getToolByName(self, 'portal_languages')
-        idioma = lt.getPreferredLanguage()
+        idioma = utils.pref_lang()
 
         if idioma == 'zh':  # Force RSS en angles a web en chino
             idioma = 'en'
@@ -59,16 +59,10 @@ class Renderer(base.Renderer):
             items.append(itemdict)
         return items[:5]
 
-    def abrevia(self, obj):
-        desc_new = obj.Description
-
-        if len(desc_new) > 200:
-            desc_text = desc_new[:200]
-            desc_text = desc_text[:desc_text.rfind(' ') - len(desc_text)]
-            desc_text = desc_text + '...'
-        else:
-            desc_text = desc_new
-        return desc_text
+    def getUrlRSSPremsa(self):
+        idioma = idioma = utils.pref_lang()
+        url_rss = 'http://www.upc.edu/saladepremsa/actualitat-upc/RSS?set_language=' + idioma
+        return url_rss
 
 
 class AddForm(base.NullAddForm):

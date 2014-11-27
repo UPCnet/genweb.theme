@@ -66,6 +66,16 @@ class Renderer(news_renderer):
         else:
             return ''
 
+    def rss_news_link(self):
+        pc = api.portal.get_tool('portal_catalog')
+        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__,
+                                       Language=pref_lang())
+
+        if news_folder:
+            return '%s%s' % (news_folder[0].getURL(), '/aggregator/RSS')
+        else:
+            return ''
+
     @memoize
     def _data(self):
         context = aq_inner(self.context)

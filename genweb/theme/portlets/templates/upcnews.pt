@@ -6,7 +6,7 @@
            i18n:domain="genweb">
 
     <div class="portlet portlet-noticies">
-        <h2 i18n:translate="genweb-actualitat" > Actualitat UPC <i class="icon-news large-icon pull-right"></i></h2>
+        <h2 i18n:translate="genweb-actualitat" > Actualitat UPC </h2>
         <ul class="list-portlet">
             <li tal:repeat="entry entries">
                 <a href=""
@@ -18,7 +18,7 @@
                 </a>
             </li>
         </ul>
-        <a href="" class="portlet-footer" tal:define="url utils/premsa_url"
+        <a href="" class="portlet-footer" tal:define="url view/getUrlRSSPremsa"
                tal:attributes="href url"
                i18n:domain="plone"
                i18n:translate="more_news_link"
