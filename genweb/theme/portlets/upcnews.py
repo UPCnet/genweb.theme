@@ -64,6 +64,15 @@ class Renderer(base.Renderer):
         url_rss = 'http://www.upc.edu/saladepremsa/actualitat-upc/RSS?set_language=' + idioma
         return url_rss
 
+    def getURLPremsa(self):
+        idioma = utils.pref_lang()
+
+        if idioma == 'zh':  # Force RSS en angles a web en chino
+            idioma = 'en'
+
+        url = 'http://www.upc.edu/saladepremsa/actualitat-upc?set_language=' + idioma
+        return url
+
 
 class AddForm(base.NullAddForm):
 

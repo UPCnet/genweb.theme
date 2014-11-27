@@ -3,13 +3,11 @@
                            news_items view/published_news_items;
                            data view/mostraData"
                tal:condition="news_items"
-               i18n:domain="plone">
+               i18n:domain="genweb">
 
 
     <div class="portlet portlet-noticies portlet-ampliat" role="complementary">
-        <h2>Notícies
-            <i class="icon-news large-icon pull-right"></i>
-        </h2>
+        <h2 i18n:translate="genweb-noticies">Notícies</h2>
         <ul class="list-portlet">
             <li class="clearfix" tal:repeat="obj news_items">
                     <h3>
@@ -32,7 +30,16 @@
               </div>
             </li>
         </ul>
-        <a href="" class="portlet-footer" tal:attributes="href view/all_news_link">
-            <i class="icon-rss"></i> Més notícies</a>
+        <div class="portlet-footer">
+            <a href=""
+               tal:attributes="href view/rss_news_link">
+               <i class="icon-rss pull-left"></i>
+            </a>
+            <a href=""
+               tal:attributes="href view/all_news_link"
+               i18n:domain="plone"
+               i18n:translate="more_news_link">Més notícies
+            </a>
+        </div>
     </div>
 </tal:newsitems>

@@ -18,12 +18,18 @@
                 </a>
             </li>
         </ul>
-        <a href="" class="portlet-footer" tal:define="url view/getUrlRSSPremsa"
-               tal:attributes="href url"
+        <div class="portlet-footer">
+            <a href=""
+               tal:attributes="href view/getUrlRSSPremsa">
+                <i class="icon-rss pull-left"></i>
+            </a>
+            <a href=""
+               tal:attributes="href view/getURLPremsa"
                i18n:domain="plone"
                i18n:translate="more_news_link"
                target="_blank">
-               More news&hellip;
-        </a>
+                   More news&hellip;
+            </a>
+        </div>
     </div>
 </tal:block>
