@@ -19,7 +19,7 @@ from Products.CMFPlone.interfaces import IPloneSiteRoot
 
 from genweb.theme.browser.interfaces import IGenwebTheme
 
-from genweb.core.utils import genweb_config
+from genweb.core import utils
 from zope.component import getMultiAdapter
 
 from plone import api
@@ -144,24 +144,19 @@ class ContactForm(form.Form):
 
         return ''
 
-    # def pref_lang(self):
-    #     """ Extracts the current language for the current user
-    #     """
-    #     lt = getToolByName(self.context, 'portal_languages')
-    #     return lt.getPreferredLanguage()
-
     def getURLDirectori(self, codi):
         return "http://directori.upc.edu/directori/dadesUE.jsp?id=%s" % codi
 
     def getURLMaps(self, codi):
-        return "//maps.upc.edu/new/index.php/embed?iu=%s" % codi
+        lang = utils.pref_lang()
+        return "//maps.upc.edu/embed/?lang=%s&iu=%s" % (lang, codi)
 
     def getURLUPCmaps(self, codi):
         lang = self.context.Language()
         return "//maps.upc.edu/?iu=%s&lang=%s" % (codi, lang)
 
     def getContactPersonalized(self):
-        isCustomized = genweb_config().contacte_BBDD_or_page
+        isCustomized = utils.genweb_config().contacte_BBDD_or_page
         return isCustomized
 
     def getContactPage(self):

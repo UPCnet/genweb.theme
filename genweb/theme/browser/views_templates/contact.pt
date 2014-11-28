@@ -40,7 +40,6 @@
                          id_scp dades/id_scp;
                          codi_upc dades/codi_upc;
                          nom dades/nom;
-                         contacte_personalitzat view/getContactPage;
                          isCustomized view/getContactPersonalized"
              tal:condition="adreca">
             <tal:co tal:condition="not: isCustomized">
@@ -115,7 +114,7 @@
                 </tal:co>
 
             <tal:co tal:condition="isCustomized">
-                <div tal:replace="structure contacte_personalitzat">Cos de la pagina de contacte</div>
+                <div tal:replace="structure view/getContactPage">Cos de la pagina de contacte</div>
             </tal:co>
 		</div>
     </tal:block>
