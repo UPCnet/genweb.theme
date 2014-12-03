@@ -1,11 +1,20 @@
 Changelog
 =========
 
-1.33 (unreleased)
+1.33 (2014-12-03)
 -----------------
 
-- Nothing changed yet.
-
+* cambios traducciones [Francisco Gregori]
+* Change url maps [hanirok]
+* Cambiar menu ayuda [hanirok]
+* Borrar la opción fija de ayuda del menu [hanirok]
+* Link RSS and More news [hanirok]
+* News portlets icons and translations [hanirok]
+* Portlet style [hanirok]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [hanirok]
+* New portlet UPC Today [hanirok]
+* Reorder moved [Victor Fernandez de Alba]
+* Change maps URL [hanirok]
 
 1.32 (2014-11-14)
 -----------------
