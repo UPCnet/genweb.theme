@@ -45,9 +45,13 @@
                     </p>
 
                     <p i18n:domain="genweb" i18n:translate="description_site_error_mail_site_admin">
-                        Verifiqueu l'adreça web a què voleu accedir i consulteu el <a href="#"
-                           i18n:translate="label_site_admin"
-                           tal:attributes="href string:${context/portal_url}/sitemap">mapa del web</a> o utilitzeu el cercador  per a localitzar-ne el contingut. Si l'adreça web és correcta, però retorna un error, contacteu amb
+                        Verifiqueu l'adreça web a què voleu accedir i consulteu el 
+                        <span i18n:name="site_web_map">
+                            <a href="#"
+                               i18n:translate="label_web_map"
+                               tal:attributes="href string:${context/portal_url}/sitemap"> mapa del web</a>
+                        </span>
+                            o utilitzeu el cercador  per a localitzar-ne el contingut. Si l'adreça web és correcta, però retorna un error, contacteu amb
                         <span i18n:name="site_admin">
                             <a href="#"
                                i18n:translate="label_site_admin"
