@@ -71,7 +71,7 @@
   <div class="titol-espai clearfix">
     <h1>
       <a href="#" accesskey="2"
-         tal:attributes="href string:${viewlet/root_url}">
+         tal:attributes="href string:${viewlet/root_url}/${viewlet/pref_lang}">
           <span tal:content="structure viewlet/get_title">
             Servei de <b>Comunicació i Promoció</b>
           </span>
