@@ -72,7 +72,8 @@
         </div>
 
         <p class="documentDescription margin0"
-           i18n:translate="genweb-heading_sign_in-v4">
+           i18n:translate="genweb-heading_sign_in-v4"
+           i18n:domain="genweb">
            Please log in using your UPC intranet user.
         </p>
         <div class="accordion xafa4 pad" id="accordionLogin">
@@ -82,7 +83,10 @@
               <a class="accordion-toggle" href="http://cas.upc.edu"
                  tal:attributes="href context/cas_login_url | nothing">
                 <strong>
-                  <tal:entra i18n:translate="genweb-single-sign-on-v4">Single sign on log in</tal:entra>
+                  <tal:entra i18n:translate="genweb-single-sign-on-v4"
+                             i18n:domain="genweb">
+                             Single sign on log in
+                  </tal:entra>
                   <img class="img_blank" src="++genweb++static/images/blank_blau.png"
                        i18n:attributes="alt obrir_link_finestra_nova">
                 </strong>
@@ -94,7 +98,10 @@
           <div class="accordion-group">
             <div class="accordion-heading box-gradient">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionLogin" href="#colapsible-login">
-                <strong i18n:translate="genweb_loginlocal">Log in only in this site</strong>
+                <strong i18n:translate="genweb_loginlocal"
+                        i18n:domain="genweb">
+                        Log in only in this site
+                </strong>
              </a>
             </div>
             <div id="colapsible-login" class="accordion-body collapse box-gradient">
@@ -150,7 +157,7 @@
                        tal:define="error python:errors.get(ac_name, None);"
                        tal:attributes="class python:test(error, 'control-group error', 'control-group')">
                     <label class="control-label" for="inputEmail"
-                           i18n:domain="plone"
+                           i18n:domain="plonee"
                            i18n:translate="label_login_name">Username</label>
                     <div class="controls">
                       <input type="text" id="inputEmail" placeholder="nom.usuari"
@@ -165,7 +172,7 @@
                        tal:define="error python:errors.get(ac_password, None);"
                        tal:attributes="class python:test(error, 'control-group error', 'control-group')">
                     <label class="control-label" for="inputPassword"
-                           i18n:domain="plone"
+                           i18n:domain="plonee"
                            i18n:translate="label_password">Password</label>
                     <div class="controls">
                       <input type="password" id="inputPassword" placeholder="contrasenya"
@@ -178,7 +185,7 @@
                   <div class="control-group margin0">
                     <div class="controls">
                       <button type="submit" name="submit" class="btn btn-primary"
-                              i18n:domain="plone"
+                              i18n:domain="plonee"
                               i18n:translate="label_log_in">Log in</button>
                       <h2 class="l"
                           i18n:translate="genweb-si_heu_oblidat_la_contrasenya_question">

@@ -30,7 +30,9 @@
           <tal:codi tal:condition="dades">
             <tal:block tal:condition="filtered"
                        tal:define="codi_upc dades/codi_upc">
-              <a tal:attributes="href python:viewlet.getURLDirectori(codi_upc)" target="_blank" accesskey="7">
+              <a tal:attributes="href python:viewlet.getURLDirectori(codi_upc)" target="_blank" accesskey="7"
+                i18n:domain="genweb"
+                i18n:translate="label_dir_upc">
                   Directori UPC
                   <img class="img_blank" src="++genweb++static/images/blank_blau.png"
                     i18n:domain="genweb"
@@ -39,8 +41,10 @@
             </tal:block>
           </tal:codi>
           <tal:block tal:condition="python:not filtered">
-            <a href="http://directori.upc.edu" target="_blank" accesskey="7">
-                Directori UPC
+            <a href="http://directori.upc.edu" target="_blank" accesskey="7"
+              i18n:domain="genweb"
+              i18n:translate="label_dir_upc">
+                Directoria UPC
                 <img class="img_blank" src="++genweb++static/images/blank_blau.png"
                   i18n:domain="genweb"
                   i18n:attributes="alt obrir_link_finestra_nova">
@@ -87,7 +91,7 @@
      i18n:domain="genweb">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="loginModalLabel">Inicia la sessió</h3>
+    <h3 id="loginModalLabel" i18n:translate="label_start_session">Inicia la sessió</h3>
   </div>
   <div class="modal-body">
     The popup login form

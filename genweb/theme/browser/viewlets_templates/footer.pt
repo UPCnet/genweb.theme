@@ -45,7 +45,8 @@
         </address>
       </div>
       <div class="span4" role="complementary" aria-labelledby="titol-sobre-el-web">
-        <h2 class="goout" id="titol-sobre-el-web"> Sobre el web </h2>
+        <h2 class="goout" id="titol-sobre-el-web" 
+          i18n:translate="label_about"> Sobre el web </h2>
         <ul class="pull-right sobreElWeb" role="menu"
             tal:define="link viewlet/getLinksPeu" >
           <li role="menuitem">

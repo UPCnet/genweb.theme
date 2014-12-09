@@ -96,7 +96,9 @@
             <li class="dropdown" role="menuitem" id="admin"
                 tal:condition="view/canManageSite">
               <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
-                <span>Configuració</span>
+                <tal:settingsFolder i18n:translate="genweb-settings">
+                  Configuració
+                </tal:settingsFolder>
                 <b aria-hidden="true" class="caret"></b>
               </a>
               <ul class="dropdown-menu" role="menu">
