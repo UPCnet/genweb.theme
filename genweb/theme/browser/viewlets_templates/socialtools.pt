@@ -6,7 +6,7 @@
       data-placement="left" i18n:attributes="data-original-title label_share"
       data-contentwrapper=".share_content" data-html="true">
       <img tal:attributes="src string:${viewlet/root_url}/++genweb++static/images/icon_share.png"
-           i18n:attributes="title Comparteix; alt Comparteix;"/>
+           i18n:attributes="title label_share; alt Comparteix;"/>
     </a>
   </div>
 
