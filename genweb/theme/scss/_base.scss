@@ -185,8 +185,8 @@ background-image: image-url("gh-w.png") !important;
 #bandaLogos {border-top:1px solid desaturate(lighten($genwebPrimary,40%), 85%); box-shadow: 0 -10px 20px rgba(0, 0, 0, .03);
 	& .container {border-top:1px solid darken($genwebPrimary,25%); margin-top:-1px;}
 }
-.llistatLogos {margin:0 auto; list-style:none; text-align:center; padding-top: 1em;
-	& li {display:inline-block; margin:0 .5em 1em;}
+.llistatLogos {margin:0 auto; list-style:none; text-align:right; padding-top: 1em; // canvis, alineat a dreta i menys separació entre logos
+	& li {display:inline-block; margin:0 0 1em;}
 	& a {margin:0 1.5em; display: block;}
 	& img {max-height: 100px;}
 }

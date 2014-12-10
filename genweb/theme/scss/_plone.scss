@@ -819,11 +819,11 @@ body.template-folder_summary_view #content ul li:first-child {border-top:0; @inc
 
 
 // treu la línia decorativa del primer element de la llista en la vista de carpeta "Tot el contingut"
-
-#content-core div:first-child h2{
-    border-top: 0 none;
-    box-shadow: none;
-}
+// desactivat per què afecta a altres continguts
+//#content-core div h2{
+//    border-top: 0 none;
+//    box-shadow: none;
+//}
 
 
 // custom file posat aqui per evitar comptar com a selector en l'altre paquet
@@ -896,3 +896,28 @@ input[name='poll.submit'] { margin-top: 15px; } // afegeix separació botó envi
       float:left;
     }
   } // fi #recaptcha_table 
+
+
+// COOKIES
+#cookies {
+  	border-bottom: 1px solid #dedede;
+  	color: #666666;
+  	margin: auto;
+  	padding: 4px 0;
+  	width: 978px;
+}
+
+// SEO Properties
+#contentview-SEOProperties {
+	width: 40px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: none;
+	a {
+		width: 26px;
+  		overflow: hidden;
+	}
+	a[href*="/es/"] {
+		direction: rtl;
+	}	
+}

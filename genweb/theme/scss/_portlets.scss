@@ -134,7 +134,7 @@
     border-top:1px solid lighten($tableBorder, 20%);
     *border-top:1px solid #e5e5e5;
     margin:0 15px;
-    padding: 15px 0;
+    padding: 9px 0;
     &:first-child {
       border-top:0;
     }
@@ -150,8 +150,8 @@
   }
   & time {
     position:absolute;
-    left:12px;
-    top:18px;
+    left:7px;
+    top:13px;
     font-size:153.846154%;
     color:$grayLight;
     font-weight:bold;
@@ -169,7 +169,7 @@
 .portlet-esdeveniments ul time {text-align:center;}
 .portlet-esdeveniments .multidate-before {padding-left:60px;}
 .portlet-esdeveniments .multidate time + time {margin-left:1.3em !important;}
-.portlet-esdeveniments .multidate time + time:before {content:"-";font-size: 70%;margin-left: -5px;float: left; margin-top:-2px;}
+.portlet-esdeveniments .multidate time + time:before {content:"-";font-size: 70%;margin-left: -2px;float: left; margin-top:-2px;}
 .portlet-esdeveniments .multidate {font-size: 90%; }
 .portlet-esdeveniments .multidate time abbr {font-size:48%;}
 
