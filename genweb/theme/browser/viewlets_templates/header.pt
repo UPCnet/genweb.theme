@@ -4,7 +4,7 @@
     <h1 class="pull-left">
       <a href="http://www.upc.edu" accesskey="1" target="_blank">
         <img tal:attributes="src string:${viewlet/root_url}/++genweb++static/images/logoUPC.png"
-             i18n:atributes="alt label_alt_logo; title label_title_logo">
+             i18n:attributes="alt label_alt_logo; title label_title_logo">
       </a>
     </h1>
     <a id='eines-menu' class="btn btn-navbar pull-right hidden-desktop hidden-tablet" data-toggle="collapse" data-target=".nav-collapse-eines">
