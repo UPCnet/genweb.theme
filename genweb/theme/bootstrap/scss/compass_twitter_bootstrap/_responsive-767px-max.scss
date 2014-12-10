@@ -2,36 +2,36 @@
 // Responsive: Landscape phone to desktop/tablet
 // --------------------------------------------------
 
-@media only screen and (max-width: 979px) and (orientation: portrait), 
-       only screen and (max-width: 979px) and (orientation: landscape)  
+@media only screen and (max-width: 979px) and (orientation: portrait),
+       only screen and (max-width: 979px) and (orientation: landscape)
 {
-  
-  /*generals*/  
+
+  /*generals*/
   body {
-    font-size:14.5px !important; 
+    font-size:14.5px !important;
     padding: 0 !important;
   }
-  
+
   .container {width:100% !important;}
-  
+
   #portal-personaltools-wrapper .navbar-inner, #portal-header, #portal-globalnav, #portal-breadcrumbs, #content-area, #bandaLogos, #peu {
     margin-left:0 !important; margin-right: 0 !important; padding-left: 10px !important;padding-right: 10px !important;
   }
-  
-  // personaltools  
+
+  // personaltools
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {padding:0 5px !important; min-height: 40px;}
-  
+
   nav#portal-personaltools-wrapper {margin-top: 0px !important;}
-  
+
   .navbar .btn-navbar {
     margin-right: 10px !important;
     i {background-image:image-url("gh-w.png");}
   }
-  
+
   .navbar-fixed-top {margin-bottom:0 !important;}
-  
+
   #portal-globalnav h2.brand {font-size: 17px;font-weight: bold;line-height: 18px;}
-  
+
   #eines {
     margin: 0 0 9px !important;
     text-align:right;
@@ -39,19 +39,19 @@
     button {width:14%; line-height:20px;min-width:60px;}
     .input-append {margin-left:0 !important; border: 0 !important;}
     & a {
-      margin: 0 !important;  
+      margin: 0 !important;
       &:hover, &:focus {
         color: $white !important;
         background: $blue;
       }
     }
     & ul {
-      margin:0;  
+      margin:0;
     }
     & li {
-      padding: 8px !important; 
+      padding: 8px !important;
     }
-  }  
+  }
 
   // menú principal
   #titol-menu-1 { // fem que tota la barra desplegui el menú
@@ -73,7 +73,7 @@
       &:before {top:45px;width:175px;margin-left:-207px;}
     }
   }
-  
+
   // contingut
   #portal-column-one, #portal-column-content {width:100% !important; margin-left:0;}
 
@@ -89,7 +89,7 @@
 
   // altres ajustaments
 
-  table { 
+  table {
     //  display:block;
     width:100%;
     overflow: scroll;
@@ -163,7 +163,7 @@
 
   // empaquetat
   .unit-picture .img-polaroid {float:none;clear:both;}
-  .contact table {width:100% !important;} 
+  .contact table {width:100% !important;}
 
 
 
@@ -192,7 +192,7 @@
     li {text-align:left !important;}
   }
 
-  // canviem les pestanyes a botons 
+  // canviem les pestanyes a botons
   .nav-tabs, .contentViews, .configlets, #edit-bar {
         border-bottom: 0px !important;
         box-shadow: 0 0px 0px 0px black inset !important;
@@ -206,34 +206,34 @@
     border-color: #b2b2b2 !important;
   }
 
-  // float left per a cerca 
+  // float left per a cerca
   #s2id_cercaCapca { float:left; }
 
-  #gwsearch input.tt-hint {   // corregeix posicio text typeahead  
+  #gwsearch input.tt-hint {   // corregeix posicio text typeahead
     position: relative !important;
     top: 39px !important;
   }
 
-  // arreglar amplada i posició contacte 
-  #formfield-form-widgets-nombre, #formfield-form-widgets-from_address { 
+  // arreglar amplada i posició contacte
+  #formfield-form-widgets-nombre, #formfield-form-widgets-from_address {
     float: none !important;
     width: 97% !important;/*aqui*/ }
 
   #form-widgets-nombre { width: 100% !important;}
 
   // fitxa estudis
-  
+
   #tab-pdf { display: none; } // ocultem generació fitxa pdf
-  
+
   #tab-academic-information, #tab-admission { // mostrem la taula en format continu
-  	tr, th, td { 
-  		display: block; 
+  	tr, th, td {
+  		display: block;
   		border-top: 0 !important;
   		border-bottom: 0 !important;
   	}
   	th { background: transparent !important; }
   }
-  
+
   .unit-content .unit-picture, .studies { display:none;} // oculta imatge centre i llista estudis
 
 
@@ -252,11 +252,11 @@
 
 // UP TO LANDSCAPE PHONE
 // ---------------------
-@media only screen and (max-width: 639px) {  
+@media only screen and (max-width: 639px) {
 
   //general
   body {font-size:14.5px;}
-  
+
   // personaltools
   #portal-personaltools-wrapper,.navbar-fixed-top,.navbar-fixed-bottom {margin-left: 0px !important;margin-right: 0px !important;}
   #portal-personaltools-wrapper .navbar-inner, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {padding:0px !important;}
@@ -276,10 +276,10 @@
       a {display:block;}
     }
   }
-  
+
   #portal-header {
     padding-bottom:10px; //afegim padding-bottom per separar link home i menú
-    background:#f7f7f7 !important; 
+    background:#f7f7f7;
     .btn-navbar.pull-right {margin-top:12px !important;}
     h1.pull-left {
       margin-bottom:7px !important;
@@ -293,7 +293,7 @@
   #eines {
     input {width:65%;}
     button {width:34%; line-height:20px;}
-    a { 
+    a {
       margin: 0 0 20px 0!important; //canvi espai entre opcions menú eines 0->20 només per a telèfon
     }
   }
@@ -308,7 +308,7 @@
 
   // breadcrumbs
   #portal-breadcrumbs {display:none;}
-  
+
   // contingut Make all grid-sized elements block level again
   [class*="span"],
   .row-fluid [class*="span"] {
@@ -316,16 +316,16 @@
     display: block;
     width: auto;
     margin-left: 0;
-  }  
+  }
 
-  // peu i prepeu 
+  // peu i prepeu
   .llistatLogos {margin: 1em auto !important;}
 
   #peu {
     font-size: 84.613846% !important;
     .container {padding-top:5px;}
   }
-  
+
   // desactivem aquesta funció per tal que surti el peu al mòbil #peu .span4 {display:none;}
   .img_blank {margin-top:-1px;}
 
@@ -357,18 +357,18 @@
     //max-height: 280px; desactivat per que no surti scroll vertical en mòbil
   }
 
-  @media only screen and (orientation: landscape) { 
+  @media only screen and (orientation: landscape) {
     .modal-body {max-height: 160px;}
   }
 
   // Carousel
   .carousel-caption {position: static;}
-  
+
   // taula pla estudis empaquetat
   .plaEstudis {
     background-color: #F7F7F7;
-    thead { 
-      display: block; 
+    thead {
+      display: block;
       th{
         font-size: 80%;
         &.semester{
@@ -378,20 +378,20 @@
           min-width:80px;
         }
         &.plaEstudis_titolAssignatures {
-          width:100%; 
+          width:100%;
         }
       }
     }
-    tbody { 
-      display: block; 
+    tbody {
+      display: block;
       clear:both;
-      th{ 
-        display: block; 
+      th{
+        display: block;
         font-size: 80%;
       }
-    }      
-    tr { 
-      display: block; 
+    }
+    tr {
+      display: block;
     }
     td{
       background-color: #fff !important;
@@ -405,14 +405,14 @@
   }// FI taula pla estudis empaquetat
 
 
-  // mapa contacte, afegim marges laterals per poder fer scroll en mòbil 
-  .img-mask { 
+  // mapa contacte, afegim marges laterals per poder fer scroll en mòbil
+  .img-mask {
     width:90% !important;
     margin-left:5% !important;
     margin-right:5% !important;
   }
 
 
-} 
+}
 
 
