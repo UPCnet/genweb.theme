@@ -1,11 +1,19 @@
 Changelog
 =========
 
-1.34 (unreleased)
+1.34 (2014-12-10)
 -----------------
 
-- Nothing changed yet.
-
+* Update CSS [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [hanirok]
+* Traduccion [hanirok]
+* remove fixed width in select (now, calendar selector shows good!) [Roberto Diaz]
+* logo [Paco Gregori]
+* alt title logo [Paco Gregori]
+* Bug idioma logo + pàgina accesssibilitat [Paco Gregori]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Paco Gregori]
+* traduccions theme [Paco Gregori]
+* Icono ayuda y mapa contacto [hanirok]
 
 1.33 (2014-12-03)
 -----------------
