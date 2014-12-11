@@ -4,4 +4,4 @@
                          data-search-url string:${view/site_url}/@@search;"
          i18n:attributes="placeholder text_search"/>
 </div>
-<p class="goout"><a accesskey="5" href="/search">Cerca</a></p>
+<p class="goout"><a accesskey="5" href="/search" i18n:translate="submitGo" i18n:domain="genweb">Cerca</a></p>

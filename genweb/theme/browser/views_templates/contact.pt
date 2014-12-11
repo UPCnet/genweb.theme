@@ -88,7 +88,7 @@
                          tal:attributes="href python:view.getURLDirectori(codi_upc); target string:_blank"
                          title="Clica el marcador per anar al Directori UPC">
                         <i class="icon-book"></i>
-                        Directori UPC
+                        <tal:dirupc i18n:translate="label_dir_upc">Directori UPC</tal:dirupc>
                         <img class="img_blank" src="++genweb++static/images/blank_blau.png"
                            i18n:attributes="alt obrir_link_finestra_nova">
                       </a>
