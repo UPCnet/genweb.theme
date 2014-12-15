@@ -1,11 +1,22 @@
 Changelog
 =========
 
-1.35 (unreleased)
+1.35 (2014-12-15)
 -----------------
 
-- Nothing changed yet.
-
+* Fix Title [Victor Fernandez de Alba]
+* Fix search template [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* Omit other contents in sitemap [hanirok]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* Fix tinyMCE select images [Victor Fernandez de Alba]
+* Delete customize documentbyline [hanirok]
+* added compiled CSS [Roberto Diaz]
+* Removed fixed width in select [Roberto Diaz]
+* és traduccions [Paco Gregori]
+* és traduccions [Paco Gregori]
+* Refer css [Roberto Diaz]
+* Canvis css Oscar [Roberto Diaz]
 
 1.34 (2014-12-10)
 -----------------
