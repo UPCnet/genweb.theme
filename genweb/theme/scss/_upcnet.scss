@@ -372,3 +372,7 @@ div.photoAlbumEntry {
     border-left: 0;
     @include border-radius(4px);
 }
+
+select {
+    width: auto;
+}

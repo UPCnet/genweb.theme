@@ -1,6 +1,8 @@
 
 <tal:personaltools condition="not: view/anonymous">
-<h1 class="goout" id="titol-eines-usuari"> Eines d'usuari </h1>
+<h1 class="goout" id="titol-eines-usuari"
+    i18n:domain="genweb"
+    i18n:translate="label_eines_usuari"> Eines d'usuari </h1>
 <nav id="portal-personaltools-wrapper" role="toolbar" aria-labelledby="titol-eines-usuari"
      i18n:domain="genweb">
   <div class="navbar navbar-fixed-top navbar-inverse">
@@ -10,7 +12,8 @@
           <i class="icon-user icon-white"></i><span id='user-name'> <tal:username content="view/user_name"> Rafael Ojeda Rojas </tal:username></span>
         </a>
         <div class="nav-collapse nav-collapse-edit">
-          <h2 class="goout" id="titol-eines-usuari"> Menú d'usuari </h2>
+          <h2 class="goout" id="titol-eines-usuari" 
+              i18n:translate="label_menu_usuari"> Menú d'usuari </h2>
           <ul class="nav" role="menu" aria-labelledby="titol-menu-usuari"
               tal:define="show_tools view/show_tools">
             <li class="dropdown" role="menuitem" tal:attributes="id string:${view/user_name}">
@@ -137,7 +140,8 @@
               <!-- <tal:help i18n:translate="genweb-vistes">Vistes</tal:help> -->
             </li>
           </ul>
-          <h2 class="goout" id="titol-menu-eines-genweb"> Menú d'eines Genweb UPC </h2>
+          <h2 class="goout" id="titol-menu-eines-genweb" 
+              i18n:translate="label_menu_eines_genweb"> Menú d'eines Genweb UPC </h2>
           <ul class="nav pull-right" role="toolbar" aria-labelledby="titol-menu-eines-genweb">
 <!--             <li role="menuitem" class="visible-desktop visible-tablet" tal:condition="view/canManageSite">
               <a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Idioma establert com a defecte al lloc web. Potser no és el mateix que hi ha publicat al web segons la configuració del panell de control del Genweb" data-original-title="Idioma per defecte"><span class="label label-important "><tal:co tal:content="view/default_site_lang"></tal:co></span></a>

@@ -160,7 +160,8 @@
                            i18n:domain="plonee"
                            i18n:translate="label_login_name">Username</label>
                     <div class="controls">
-                      <input type="text" id="inputEmail" placeholder="nom.usuari"
+                      <input type="text" id="inputEmail" 
+                             i18n:attributes="placeholder label_user_name"
                              tal:attributes="name ac_name;
                                              value login_name;">
                       <span class="help-inline"
@@ -175,7 +176,8 @@
                            i18n:domain="plonee"
                            i18n:translate="label_password">Password</label>
                     <div class="controls">
-                      <input type="password" id="inputPassword" placeholder="contrasenya"
+                      <input type="password" id="inputPassword" 
+                             i18n:attributes="placeholder label_password"
                              tal:attributes="name ac_password">
                       <span class="help-inline"
                             tal:condition="error"
