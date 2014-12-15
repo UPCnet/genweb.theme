@@ -34,7 +34,8 @@
                       first_call not:request/advanced_search|nothing;
                       st python:request.get('SearchableText', '');
                       DateTime python:modules['DateTime'].DateTime;
-                      navigation_root_url view/navroot_url;">
+                      navigation_root_url view/navroot_url;
+                      pref_lang context/@@genweb.utils/pref_lang">
 
         <input type="hidden" name="advanced_search" value="False" />
         <input type="hidden" name="sort_on" value="" />
@@ -91,7 +92,7 @@
                  class="cell width-full position-0"
                  tal:define="b_start python:0;
                              b_start request/b_start | b_start;
-                             batch python: view.results(b_start=b_start);
+                             batch python: view.results(query={'Language': pref_lang}, b_start=b_start);
                              normalizeString nocall:context/@@plone/normalizeString;">
 
                 <div id="search-results-bar">
@@ -279,7 +280,6 @@
                           <dl class="searchResults">
                               <tal:results repeat="item batch">
                                     <dt tal:attributes="class item/ContentTypeClass">
-                                      <img tal:replace="structure item/getIcon" />
                                       <a href="#"
                                          tal:define="item_url item/getURL;
                                                      item_type item/PortalType"
