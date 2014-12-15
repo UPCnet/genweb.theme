@@ -389,27 +389,29 @@ class gwTitleViewlet(TitleViewlet, viewletBase):
         page_title = escape(safe_unicode(context_state.object_title()))
         portal_title = escape(safe_unicode(portal_state.navigation_root_title()))
 
-        try:
-            self.seo_context = getMultiAdapter((self.context, self.request), name=u'seo_context')
+        # Mixed with SEO Properties
+        # try:
+        #     self.seo_context = getMultiAdapter((self.context, self.request), name=u'seo_context')
 
-            self.override_title = self.seo_context['has_seo_title']
-            self.has_comments = self.seo_context['has_html_comment']
-            self.has_noframes = self.seo_context['has_noframes']
-        except:
-            self.override_title = False
-            self.has_comments = False
-            self.has_noframes = False
+        #     self.override_title = self.seo_context['has_seo_title']
+        #     self.has_comments = self.seo_context['has_html_comment']
+        #     self.has_noframes = self.seo_context['has_noframes']
+        # except:
+        #     self.override_title = False
+        #     self.has_comments = False
+        #     self.has_noframes = False
 
-        if self.override_title:
-            genweb_title = u'%s' % escape(safe_unicode(self.seo_context['seo_title']))
-        else:
-            genweb_title = getattr(self.genweb_config(), 'html_title_%s' % self.pref_lang(), 'Genweb UPC')
+        # if self.override_title:
+        #     genweb_title = u'%s' % escape(safe_unicode(self.seo_context['seo_title']))
+        # else:
+
+        genweb_title = getattr(self.genweb_config(), 'html_title_%s' % self.pref_lang(), 'Genweb UPC')
 
         if not genweb_title:
             genweb_title = 'Genweb UPC'
         genweb_title = escape(safe_unicode(re.sub(r'(<.*?>)', r'', genweb_title)))
 
-        marca_UPC = escape(safe_unicode(u"UPC. Universitat Politècnica de Catalunya · BarcelonaTech"))
+        marca_UPC = escape(safe_unicode(u"UPC. Universitat Politècnica de Catalunya"))
 
         if page_title == portal_title:
             self.site_title = u"%s &mdash; %s" % (genweb_title, marca_UPC)
