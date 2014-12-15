@@ -29,7 +29,7 @@
             class="navTreeLevel0 visualNoMarker">
             <tal:sitemap replace="structure view/createSiteMap" />
 
-            <li class="navTreeItem visualNoMarker">
+<!--        <li class="navTreeItem visualNoMarker">
               <div>
                <p i18n:domain="genweb"
                   i18n:translate="label_other_contents_web">
@@ -39,7 +39,7 @@
               <ul class="navTree navTreeLevel2">
                 <li class="navTreeItem visualNoMarker">
                   <div>
-                    <a href="#" class="state-published" 
+                    <a href="#" class="state-published"
                       i18n:domain="genweb"
                       i18n:translate="genweb_contacte">
                       Contacte</a>
@@ -86,7 +86,7 @@
                   </div>
                 </li>
               </ul>
-            </li>
+            </li> -->
 
         </ul>
     </div>
