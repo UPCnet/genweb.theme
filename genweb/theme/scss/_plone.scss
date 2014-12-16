@@ -61,7 +61,8 @@ label {
 	}
 }
 // No * on file required fields
-#form-widgets-file.required:after { content: ""; }
+.namedblobfile-field.required:after { content: ""; }
+.namedblobimage-field.required:after { content: ""; }
 
 .selected.required:after {color:$white;}
 .field {
@@ -189,9 +190,9 @@ iframe {
 #form-widgets-nombre{width:100% !important;}
 
 #formfield-form-widgets-from_address {
-  float:right;  
+  float:right;
   margin-right: 3%;
-  width:46% ; 
+  width:46% ;
 }
 #form-widgets-from_address {width:100% !important;}
 
@@ -884,7 +885,7 @@ input[name='poll.submit'] { margin-top: 15px; } // afegeix separació botó envi
         }
       }
     }
-    
+
     tr:nth-child(2) {
       width:70%;
       td {
@@ -895,7 +896,7 @@ input[name='poll.submit'] { margin-top: 15px; } // afegeix separació botó envi
     center {
       float:left;
     }
-  } // fi #recaptcha_table 
+  } // fi #recaptcha_table
 
 
 // COOKIES
@@ -919,5 +920,5 @@ input[name='poll.submit'] { margin-top: 15px; } // afegeix separació botó envi
 	}
 	a[href*="/es/"] {
 		direction: rtl;
-	}	
+	}
 }

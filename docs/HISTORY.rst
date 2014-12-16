@@ -1,11 +1,22 @@
 Changelog
 =========
 
-1.36 (unreleased)
+1.38 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+1.37 (2014-12-16)
+-----------------
+
+- Nothing changed yet.
+
+
+1.36 (2014-12-16)
+-----------------
+
+* Fixed JS problem with non WebKit browsers [Victor Fernandez de Alba]
 
 1.35 (2014-12-15)
 -----------------
