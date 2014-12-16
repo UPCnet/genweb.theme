@@ -85,7 +85,7 @@ $(document).ready(function () {
 
   // Toggle search
   $("#search-results-bar dl a").on("click", function(e) {
-    event.preventDefault();
+    e.preventDefault();
     $("#search-results-bar dl dd.actionMenuContent").toggle();
   });
 
