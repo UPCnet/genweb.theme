@@ -195,8 +195,11 @@ class TypeAheadSearch(grok.View):
     def render(self):
         # We set the parameters sent in livesearch using the old way.
         q = self.request['q']
+        cf = self.request['cf']
         limit = 10
         path = None
+        if cf != '':
+            path = cf
         ploneUtils = getToolByName(self.context, 'plone_utils')
         portal_url = getToolByName(self.context, 'portal_url')()
         pretty_title_or_id = ploneUtils.pretty_title_or_id
