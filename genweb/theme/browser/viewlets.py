@@ -130,12 +130,19 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         else:
             return '{}/logout'.format(self.root_url())
 
-    @ram.cache(lambda *args: time() // (60 * 60))
     def getNotificacionsGW(self):
         results = {}
         try:
-            r = requests.get('http://www.upc.edu/ws/genweb/EinesGWv1.php', timeout=10)
-            notificacions = r.json().get('items')
+            r = requests.get('http://www.upc.edu/ws/genweb/EinesGWv2.php', timeout=10)
+
+            lang = self.pref_lang()
+            if lang == 'ca':
+                notificacions = r.json().get('ca')
+            elif lang == 'es':
+                notificacions = r.json().get('es')
+            elif lang == 'en':
+                notificacions = r.json().get('en')
+
             have_new = [notificacio for notificacio in notificacions if notificacio.get('nou')]
             results['nou'] = have_new and ' nou' or ''
             results['elements'] = notificacions

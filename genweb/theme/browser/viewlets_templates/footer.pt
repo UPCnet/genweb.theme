@@ -50,14 +50,14 @@
         <ul class="pull-right sobreElWeb" role="menu"
             tal:define="link viewlet/getLinksPeu" >
           <li role="menuitem">
-            <a href="#" accesskey="0"
+            <a href="#" accesskey="7"
                tal:attributes="href string:${portal_url}/${link/accessibility}"
                i18n:translate="genweb-accessibility">
                 Accessibilitat
             </a>
           </li>
           <li role="menuitem">
-            <a href="#" accesskey="8"  target="_blank"
+            <a href="#" target="_blank"
                tal:attributes="href link/disclaimer"
                i18n:translate="genweb-disclaimer">
                 Disclaimer

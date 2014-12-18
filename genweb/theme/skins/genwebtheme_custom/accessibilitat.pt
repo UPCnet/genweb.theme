@@ -75,16 +75,17 @@
 <p>Les tecles d'accés són una eina de navegació que permet visitar aquest web utilitzant el teclat.<br />Més informació sobre les tecles d'accés: <a href="http://www.w3.org/TR/WCAG10-HTML-TECHS/#link-accesskey" target="_blank">Guies d'accessibilitat W3C <img alt="(obriu en finestra nova)" class="link_blank" src="http://www.upc.edu/comunicacio/icon_blank.gif" /></a>.</p><br />
 <p>Aquest web utilitza una configuració que coincideix amb la majoria de recomanacions d'accessibilitat internacionals.</p>
 <h3>Tecles d'accés disponibles</h3>
+
 <ul style="margin-left: 0px; ">
-<li style="list-style: none; "><code style="font-size: 12px; ">1</code> — Pàgina d'inici</li>
-<li style="list-style: none; "><code style="font-size: 12px; ">2</code> — Vés al contingut</li>
-<li style="list-style: none; "><code style="font-size: 12px; ">3</code> — Mapa del web</li>
-<li style="list-style: none; "><code style="font-size: 12px; ">4</code> — Focus al camp de cerca</li>
-<li style="list-style: none; "><code style="font-size: 12px; ">5</code> — Cerca avançada</li>
-<li style="list-style: none; "><code style="font-size: 12px; ">6</code> — Arbre de navegació</li>
-<li style="list-style: none; "><code style="font-size: 12px; ">9</code> — Informació de contacte</li>
-<li style="list-style: none; "><code style="font-size: 12px; ">0</code> — Consulta accessibilitat</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">1</code> — Pàgina d'inici</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">2</code> — Vés al contingut</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">3</code> — Vés a l'arbre de navegació</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">4</code> — Mapa del web</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">5</code> — Vés a la cerca</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">6</code> — Informació de contacte</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">7</code> — Accessibilitat</li>
 </ul>
+
 <br />
 <p>Per utilizar les tecles d'accés cal prémer simultàniament MAJ + ALT + tecla d'accés.</p>
 <br />

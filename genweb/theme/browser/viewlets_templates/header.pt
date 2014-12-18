@@ -2,7 +2,7 @@
      i18n:domain="genweb">
   <div class="clearfix">
     <h1 class="pull-left">
-      <a href="http://www.upc.edu" accesskey="1" target="_blank">
+      <a href="http://www.upc.edu" target="_blank">
         <img tal:attributes="src string:${viewlet/root_url}/++genweb++static/images/logoUPC.png"
              i18n:attributes="alt label_alt_logo; title label_title_logo">
       </a>
@@ -13,13 +13,13 @@
     <div class="nav-collapse nav-collapse-eines"
          tal:define="dades context/@@genweb.utils/getDadesUnitat">
       <ul id="eines" class="nav nav-pills pull-right">
-        <li><a accesskey="3"
+        <li><a accesskey="4"
                i18n:domain="plone"
                i18n:translate="Site Map"
                tal:attributes="href string:${viewlet/root_url}/${viewlet/pref_lang}/sitemap">
                Site Map
              </a></li>
-        <li><a accesskey="9"
+        <li><a accesskey="6"
                i18n:domain="plone"
                i18n:translate="Contact"
                tal:attributes="href string:${viewlet/root_url}/${viewlet/pref_lang}/contact">
@@ -30,7 +30,7 @@
           <tal:codi tal:condition="dades">
             <tal:block tal:condition="filtered"
                        tal:define="codi_upc dades/codi_upc">
-              <a tal:attributes="href python:viewlet.getURLDirectori(codi_upc)" target="_blank" accesskey="7"
+              <a tal:attributes="href python:viewlet.getURLDirectori(codi_upc)" target="_blank" 
                 i18n:domain="genweb"
                 i18n:translate="label_dir_upc">
                   Directori UPC
@@ -41,7 +41,7 @@
             </tal:block>
           </tal:codi>
           <tal:block tal:condition="python:not filtered">
-            <a href="http://directori.upc.edu" target="_blank" accesskey="7"
+            <a href="http://directori.upc.edu" target="_blank"
               i18n:domain="genweb"
               i18n:translate="label_dir_upc">
                 Directoria UPC
@@ -70,7 +70,7 @@
 
   <div class="titol-espai clearfix">
     <h1>
-      <a href="#" accesskey="2"
+      <a href="#" accesskey="1"
          tal:attributes="href string:${viewlet/root_url}/${viewlet/pref_lang}">
           <span tal:content="structure viewlet/get_title">
             Servei de <b>Comunicació i Promoció</b>

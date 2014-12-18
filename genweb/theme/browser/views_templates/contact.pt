@@ -86,6 +86,7 @@
                     <p>
                       <a tal:condition="codi_upc"
                          tal:attributes="href python:view.getURLDirectori(codi_upc); target string:_blank"
+                         class="show" rel="tooltip"
                          i18n:attributes= "title title_dir_upc">
                         <i class="icon-book"></i>
                         <tal:dirupc i18n:translate="label_dir_upc">Directori UPC</tal:dirupc>
