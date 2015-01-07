@@ -10,7 +10,9 @@
     <a id='eines-menu' class="btn btn-navbar pull-right hidden-desktop hidden-tablet" data-toggle="collapse" data-target=".nav-collapse-eines">
       <i class="icon-wrench"></i>
     </a>
-    <div class="nav-collapse nav-collapse-eines"
+
+    <!-- Menu para tamaño escritorio -->
+    <div class="nav-collapse nav-collapse-eines hidden-phone hidden-tablet"
          tal:define="dades context/@@genweb.utils/getDadesUnitat">
       <ul id="eines" class="nav nav-pills pull-right">
         <li><a accesskey="4"
@@ -66,6 +68,67 @@
         </li>
       </ul>
     </div>
+
+    <!-- Menu para phone y tablet -->
+    <div class="nav-collapse nav-collapse-eines hidden-desktop"
+         tal:define="dades context/@@genweb.utils/getDadesUnitat">
+      <ul id="eines" class="nav nav-pills pull-right">
+        <li>
+          <tal:block replace="structure provider:genweb.search_manager" />
+        </li>
+        <li><a accesskey="4"
+               i18n:domain="plone"
+               i18n:translate="Site Map"
+               tal:attributes="href string:${viewlet/root_url}/${viewlet/pref_lang}/sitemap">
+               Site Map
+             </a></li>
+        <li><a accesskey="6"
+               i18n:domain="plone"
+               i18n:translate="Contact"
+               tal:attributes="href string:${viewlet/root_url}/${viewlet/pref_lang}/contact">
+               Contact
+             </a></li>
+        <li tal:condition="viewlet/show_directory"
+            tal:define="filtered viewlet/show_directory_filtered">
+          <tal:codi tal:condition="dades">
+            <tal:block tal:condition="filtered"
+                       tal:define="codi_upc dades/codi_upc">
+              <a tal:attributes="href python:viewlet.getURLDirectori(codi_upc)" target="_blank" 
+                i18n:domain="genweb"
+                i18n:translate="label_dir_upc">
+                  Directori UPC
+                  <img class="img_blank" src="++genweb++static/images/blank_blau.png"
+                    i18n:domain="genweb"
+                    i18n:attributes="alt obrir_link_finestra_nova">
+              </a>
+            </tal:block>
+          </tal:codi>
+          <tal:block tal:condition="python:not filtered">
+            <a href="http://directori.upc.edu" target="_blank"
+              i18n:domain="genweb"
+              i18n:translate="label_dir_upc">
+                Directoria UPC
+                <img class="img_blank" src="++genweb++static/images/blank_blau.png"
+                  i18n:domain="genweb"
+                  i18n:attributes="alt obrir_link_finestra_nova">
+            </a>
+          </tal:block>
+        </li>
+
+        <li tal:condition="python:viewlet.show_login()">
+            <a href="" data-toggle="modal" data-target="#loginModal"
+               tal:attributes="href string:${viewlet/root_url}/popup_login_form?came_from=${context/absolute_url}"
+               i18n:domain="genweb"
+               i18n:translate="identificat">
+               Identifica't
+            </a></li>
+        <tal:block replace="structure provider:genweb.pamls" />
+        <li class="divider"> </li>
+      </ul>
+    </div>
+
+
+
   </div>
 
   <div class="titol-espai clearfix">
