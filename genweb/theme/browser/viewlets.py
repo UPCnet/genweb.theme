@@ -204,7 +204,7 @@ class gwHeader(viewletBase):
         if title:
             return title
         else:
-            return u'Servei de <b>Comunicació</b>'
+            return u''
 
     def is_logo_enabled(self):
         return self.genweb_config().right_logo_enabled

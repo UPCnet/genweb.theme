@@ -1,17 +1,35 @@
 Changelog
 =========
 
-1.38 (unreleased)
+1.39 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+1.38 (2014-12-30)
+-----------------
+
+* Normalize variable name [Victor Fernandez de Alba]
+* Get rid of the Title customization on SEO and the default title [Victor Fernandez de Alba]
+* Fallback for customfile widget [Victor Fernandez de Alba]
+* Cerca afegint check només en aquest lloc [Pilar Marinas]
+* accesskey [Paco Gregori]
+* accesskeys [Paco Gregori]
+* trad [Paco Gregori]
+* Missing floating * in files and images [Victor Fernandez de Alba]
 
 1.37 (2014-12-16)
 -----------------
 
-- Nothing changed yet.
-
+* Normalize variable name [Victor Fernandez de Alba]
+* Get rid of the Title customization on SEO and the default title [Victor Fernandez de Alba]
+* Fallback for customfile widget [Victor Fernandez de Alba]
+* Cerca afegint check només en aquest lloc [Pilar Marinas]
+* accesskey [Paco Gregori]
+* accesskeys [Paco Gregori]
+* trad [Paco Gregori]
+* Missing floating * in files and images [Victor Fernandez de Alba]
 
 1.36 (2014-12-16)
 -----------------
