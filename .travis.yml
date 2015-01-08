@@ -1,5 +1,9 @@
 language: python
 python: "2.7"
+sudo: false
+cache:
+  directories:
+  - eggs
 install:
 #  - touch /home/travis/virtualenv/python2.7/lib/python2.7/sitecustomize.py
 #  - echo "import sys; sys.setdefaultencoding('utf-8')" > /home/travis/virtualenv/python2.7/lib/python2.7/sitecustomize.py

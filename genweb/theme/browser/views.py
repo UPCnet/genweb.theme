@@ -156,6 +156,21 @@ class HomePageBase(grok.View):
 
         return renderer.visible
 
+    def is_visible(self):
+        """ This method lookup for the physical welcome page and checks if the
+            user has the permission to view it. If it doesn't raises an
+            unauthorized (login)
+        """
+        portal = api.portal.get()
+        pc = api.portal.get_tool('portal_catalog')
+        result = pc.unrestrictedSearchResults(object_provides=IHomePage.__identifier__,
+                                              Language=pref_lang())
+        if result:
+            portal.restrictedTraverse(result[0].getPath())
+            return True
+        else:
+            return False
+
 
 class homePage(HomePageBase):
     """ This is the special view for the homepage containing support for the
