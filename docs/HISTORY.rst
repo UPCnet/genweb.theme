@@ -1,11 +1,15 @@
 Changelog
 =========
 
-1.39 (unreleased)
+1.39 (2015-01-08)
 -----------------
 
-- Nothing changed yet.
-
+* Fix Travis [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Paco Gregori]
+* canvis search [Paco Gregori]
+* Fix Travis [Victor Fernandez de Alba]
+* Resolve bug of not being able to make the homepage intanet enabled [Victor Fernandez de Alba]
+* enu [Paco Gregori]
 
 1.38 (2014-12-30)
 -----------------
