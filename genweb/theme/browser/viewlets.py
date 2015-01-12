@@ -312,7 +312,14 @@ class gwFooter(viewletBase):
         if lang == '':
             return 'https://www.upc.edu/avis-legal/politica-de-cookies'
 
+    def servername(self):
+        import socket
+        return socket.gethostname()
 
+    def serverIP(self):
+        import socket
+        return socket.gethostbyname(socket.gethostname())
+        
 class gwSearchViewletManager(grok.ViewletManager):
     grok.context(Interface)
     grok.name('genweb.search_manager')
