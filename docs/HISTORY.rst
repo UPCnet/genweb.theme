@@ -1,17 +1,45 @@
 Changelog
 =========
 
-1.38 (unreleased)
+1.40 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+1.39 (2015-01-08)
+-----------------
+
+* Fix Travis [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Paco Gregori]
+* canvis search [Paco Gregori]
+* Fix Travis [Victor Fernandez de Alba]
+* Resolve bug of not being able to make the homepage intanet enabled [Victor Fernandez de Alba]
+* enu [Paco Gregori]
+
+1.38 (2014-12-30)
+-----------------
+
+* Normalize variable name [Victor Fernandez de Alba]
+* Get rid of the Title customization on SEO and the default title [Victor Fernandez de Alba]
+* Fallback for customfile widget [Victor Fernandez de Alba]
+* Cerca afegint check només en aquest lloc [Pilar Marinas]
+* accesskey [Paco Gregori]
+* accesskeys [Paco Gregori]
+* trad [Paco Gregori]
+* Missing floating * in files and images [Victor Fernandez de Alba]
 
 1.37 (2014-12-16)
 -----------------
 
-- Nothing changed yet.
-
+* Normalize variable name [Victor Fernandez de Alba]
+* Get rid of the Title customization on SEO and the default title [Victor Fernandez de Alba]
+* Fallback for customfile widget [Victor Fernandez de Alba]
+* Cerca afegint check només en aquest lloc [Pilar Marinas]
+* accesskey [Paco Gregori]
+* accesskeys [Paco Gregori]
+* trad [Paco Gregori]
+* Missing floating * in files and images [Victor Fernandez de Alba]
 
 1.36 (2014-12-16)
 -----------------

@@ -6093,7 +6093,9 @@ button.pfg-draft-save .badge,
   /* line 35, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
   #eines {
     margin: 0 0 9px !important;
-    text-align: right; }
+    text-align: right;
+
+     }
     /* line 38, /Development/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_responsive-767px-max.scss */
     #eines input {
       width: 85%; }
@@ -9628,7 +9630,7 @@ NOTEBOOK
   .table-notebook tr:first-child td {
     border-top: 3px double #ffb68d !important; }
 
-/* 
+/*
 .table
 .table-striped
 .table-bordered
@@ -13708,3 +13710,16 @@ a#calendar-next {
 a#calendar-previous {
   margin-left: -4px;
   width: 12px; }
+
+.searchSection label {
+font-size: 10px;
+}
+
+.searchSection {
+margin-bottom: 5px;
+margin-top: -5px;
+}
+
+.tt-dropdown-menu {
+z-index: 1020 !important;
+}

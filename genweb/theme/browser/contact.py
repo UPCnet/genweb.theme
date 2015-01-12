@@ -169,25 +169,25 @@ class ContactForm(form.Form):
         context = aq_inner(self.context)
         lang = self.context.Language()
         if lang == 'ca':
-            CustomizedPage = getattr(context, 'contactepersonalitzat', False)
-            state = api.content.get_state(CustomizedPage)
-            if CustomizedPage and state == 'published':
+            customized_page = getattr(context, 'contactepersonalitzat', False)
+            state = api.content.get_state(customized_page)
+            if customized_page and state == 'published':
                 contact_body = portal.contactepersonalitzat.text.raw
                 page = contact_body
             else:
                 return page
         if lang == 'es':
-            CustomizedPage = getattr(context, 'contactopersonalizado', False)
-            state = api.content.get_state(CustomizedPage)
-            if CustomizedPage and state == 'published':
+            customized_page = getattr(context, 'contactopersonalizado', False)
+            state = api.content.get_state(customized_page)
+            if customized_page and state == 'published':
                 contact_body = portal.contactopersonalizado.text.raw
                 page = contact_body
             else:
                 return page
         if lang == 'en':
-            CustomizedPage = getattr(context, 'customizedcontact', False)
-            state = api.content.get_state(CustomizedPage)
-            if CustomizedPage and state == 'published':
+            customized_page = getattr(context, 'customizedcontact', False)
+            state = api.content.get_state(customized_page)
+            if customized_page and state == 'published':
                 contact_body = portal.customizedcontact.text.raw
                 page = contact_body
             else:
