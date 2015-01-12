@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import re
 import requests
+import socket
 from five import grok
 from plone import api
 from time import time
@@ -332,13 +333,27 @@ class gwFooter(viewletBase):
         return canViewContent
 
     def servername(self):
-        import socket
         return socket.gethostname()
 
     def serverIP(self):
-        import socket
         return socket.gethostbyname(socket.gethostname())
 
+    def serverTCPPort(self):
+        return "TODO"
+
+    def ploneVersion(self):
+        return api.env.plone_version()
+
+    def zopeVersion(self):
+        return api.env.zope_version()
+
+    def isDebug(self):
+        in_debug_mode = api.env.debug_mode()
+        if in_debug_mode:
+            return 'Zope is in debug mode'
+        else:
+            return "Zope not in debug mode"
+            
 
 class gwSearchViewletManager(grok.ViewletManager):
     grok.context(Interface)

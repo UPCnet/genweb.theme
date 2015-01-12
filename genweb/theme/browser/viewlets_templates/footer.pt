@@ -87,8 +87,14 @@
       <div style="text-align: right;">
         Servername: <span tal:content="viewlet/servername"></span><br/>
         IP: <span tal:content="viewlet/serverIP"></span><br/>
-        Assigned Port: <span tal:content="viewlet/serverIP"></span>
+        Assigned Port: <span tal:content="viewlet/serverTCPPort"></span><br/>
+        Plone version: <span tal:content="viewlet/ploneVersion"></span><br/>
+        Zope version: <span tal:content="viewlet/zopeVersion"></span><br/>
+        <span tal:content="viewlet/isDebug"></span><br/>
+
+        
       </div>
+
     </div>
     <br/>
   </div>
