@@ -73,7 +73,8 @@
         </ul>
       </div>
     </div>
-    <div class="extraInfo" style="background-color: #f2dede;
+    <div tal:condition="viewlet/checkIsAdmin"
+         class="extraInfo" style="background-color: #f2dede;
                 color: #a94442;
                 text-align: right;
                 font-size: 12px;
