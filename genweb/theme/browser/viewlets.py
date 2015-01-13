@@ -342,9 +342,9 @@ class gwFooter(viewletBase):
 
         in_debug_mode = api.env.debug_mode()
         if in_debug_mode:
-            data['Debug'] = "Zope is in debug mode"
+            data['Debug'] = "-  Zope is in debug mode"
         else:
-            data['Debug'] = "Zope not in debug mode"
+            data['Debug'] = ""
 
         return data
 

@@ -85,17 +85,17 @@
         This box with extra information is only viewed by managers.
       </div>
       <div style="text-align: right;" tal:define="data viewlet/serverInfo">
-        - Servername: 
+        Servername: 
         <span style="font-weight: bold;" tal:content="data/Hostname"></span>
-        - IP: 
+        &nbsp; IP: 
         <span style="font-weight: bold;" tal:content="data/IP"></span>
-        - Port: 
+        &nbsp; Port: 
         <span style="font-weight: bold;" tal:content="data/Port"></span>
-        - Plone version: 
+        &nbsp; Plone version: 
         <span style="font-weight: bold;" tal:content="data/Plone"></span>
-        - Zope version: 
-        <span style="font-weight: bold;" tal:content="data/Zope"></span>
-        - 
+        &nbsp; Zope version: 
+        <span style="font-weight: bold;" tal:content="data/Zope"></span> 
+        &nbsp;
         <span style="font-weight: bold;" tal:content="data/Debug"></span>
       </div>
     </div>
