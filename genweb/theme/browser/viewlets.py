@@ -332,28 +332,22 @@ class gwFooter(viewletBase):
                 canViewContent = False
         return canViewContent
 
-    def servername(self):
-        return socket.gethostname()
+    def serverInfo(self):
+        data = {}
+        data['Hostname'] = socket.gethostname()
+        data['IP'] = socket.gethostbyname(socket.gethostname())
+        data['Port'] = "TODO"
+        data['Plone'] = api.env.plone_version()
+        data['Zope'] = api.env.zope_version()
 
-    def serverIP(self):
-        return socket.gethostbyname(socket.gethostname())
-
-    def serverTCPPort(self):
-        return "TODO"
-
-    def ploneVersion(self):
-        return api.env.plone_version()
-
-    def zopeVersion(self):
-        return api.env.zope_version()
-
-    def isDebug(self):
         in_debug_mode = api.env.debug_mode()
         if in_debug_mode:
-            return 'Zope is in debug mode'
+            data['Debug'] = "Zope is in debug mode"
         else:
-            return "Zope not in debug mode"
-            
+            data['Debug'] = "Zope not in debug mode"
+
+        return data
+
 
 class gwSearchViewletManager(grok.ViewletManager):
     grok.context(Interface)

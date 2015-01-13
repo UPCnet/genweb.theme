@@ -74,27 +74,30 @@
       </div>
     </div>
     <div tal:condition="viewlet/checkIsAdmin"
-         class="extraInfo" style="background-color: #f2dede;
+         class="extraInfo" 
+         style="background-color: #f2dede;
                 color: #a94442;
                 text-align: right;
                 font-size: 12px;
-                font-weight: bold;
                 border: 1px solid #ebccd1;
                 padding: 15px;">
       <div style="text-align: left;">
-        This box with extra information is only viewed by administrators...
+        This box with extra information is only viewed by managers.
       </div>
-      <div style="text-align: right;">
-        Servername: <span tal:content="viewlet/servername"></span><br/>
-        IP: <span tal:content="viewlet/serverIP"></span><br/>
-        Assigned Port: <span tal:content="viewlet/serverTCPPort"></span><br/>
-        Plone version: <span tal:content="viewlet/ploneVersion"></span><br/>
-        Zope version: <span tal:content="viewlet/zopeVersion"></span><br/>
-        <span tal:content="viewlet/isDebug"></span><br/>
-
-        
+      <div style="text-align: right;" tal:define="data viewlet/serverInfo">
+        - Servername: 
+        <span style="font-weight: bold;" tal:content="data/Hostname"></span>
+        - IP: 
+        <span style="font-weight: bold;" tal:content="data/IP"></span>
+        - Port: 
+        <span style="font-weight: bold;" tal:content="data/Port"></span>
+        - Plone version: 
+        <span style="font-weight: bold;" tal:content="data/Plone"></span>
+        - Zope version: 
+        <span style="font-weight: bold;" tal:content="data/Zope"></span>
+        - 
+        <span style="font-weight: bold;" tal:content="data/Debug"></span>
       </div>
-
     </div>
     <br/>
   </div>
