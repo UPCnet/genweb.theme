@@ -19,7 +19,6 @@
                    summary="Event details" i18n:attributes="summary summary_event_details;">
 
                 <tbody>
-
                     <tr>
                         <th i18n:translate="event_when">When</th>
                         <td>
