@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import re
 import requests
+import socket
 from five import grok
 from plone import api
 from time import time
@@ -10,6 +11,7 @@ from AccessControl import getSecurityManager
 from zope.interface import Interface
 from zope.component import getMultiAdapter
 from zope.security import checkPermission
+from plone import api
 
 from plone.memoize import ram
 from plone.memoize.view import memoize_contextless
@@ -311,6 +313,40 @@ class gwFooter(viewletBase):
             return 'https://www.upc.edu/disclaimer/cookies-policy'
         if lang == '':
             return 'https://www.upc.edu/avis-legal/politica-de-cookies'
+
+    def checkIsAdmin(self):
+        # Check if user has admin role to show the bottom information box
+        # (only for managers)
+        if api.user.is_anonymous():
+            # is anon
+            canViewContent = False
+        else:
+            # Is a validated user...
+            username = api.user.get_current().getProperty('id')
+            # get username
+            roles = api.user.get_roles(username=username)
+            # And check roles
+            if 'Manager' in roles:
+                canViewContent = True
+            else:
+                canViewContent = False
+        return canViewContent
+
+    def serverInfo(self):
+        data = {}
+        data['Hostname'] = socket.gethostname()
+        data['IP'] = socket.gethostbyname(socket.gethostname())
+        data['Port'] = "TODO"
+        data['Plone'] = api.env.plone_version()
+        data['Zope'] = api.env.zope_version()
+
+        in_debug_mode = api.env.debug_mode()
+        if in_debug_mode:
+            data['Debug'] = "-  Zope is in debug mode"
+        else:
+            data['Debug'] = ""
+
+        return data
 
 
 class gwSearchViewletManager(grok.ViewletManager):
