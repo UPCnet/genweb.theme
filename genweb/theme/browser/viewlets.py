@@ -336,7 +336,7 @@ class gwFooter(viewletBase):
         data = {}
         data['Hostname'] = socket.gethostname()
         data['IP'] = socket.gethostbyname(socket.gethostname())
-        data['Port'] = "TODO"
+        data['Port'] = self.request.environ['SERVER_PORT']
         data['Plone'] = api.env.plone_version()
         data['Zope'] = api.env.zope_version()
 
