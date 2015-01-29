@@ -232,7 +232,7 @@ $(document).ready(function () {
     source: liveSearch($typeahead_dom.attr('data-typeahead-url')),
     templates: {
       suggestion: Handlebars.compile('<a class="{{class}}" href="{{itemUrl}}">{{title}}</a>'),
-      empty: '<div class="tt-empty"><p>No hi ha elements<p></div>'
+      empty: '<div class="tt-empty"><p>'+ window._gw_i18n("No hi ha elements") + '<p></div>'
     }
   }).on("typeahead:datasetRendered", function(event) {
     var $dropdown = $(this).parent().find('.tt-dropdown-menu');
