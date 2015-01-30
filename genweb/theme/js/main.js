@@ -205,12 +205,7 @@ $(document).ready(function () {
 
   var liveSearch = function(data_url) {
     return function findMatches(q, cb) {
-      if (document.getElementById('searchbox_currentfolder_only').checked){
-            cf =  $('#gwsearch .searchSection #searchbox_currentfolder_only').val();
-      } else {
-            cf = ''
-      }
-      $.get(data_url + '?q=' + q + '&cf=' + cf, function(data) {
+      $.get(data_url + '?q=' + q, function(data) {
         window._gw_typeahead_last_result = data;
         cb(data);
       });
@@ -256,13 +251,8 @@ $(document).ready(function () {
   .on("keyup", function(event) {
       if (event.keyCode === 13) {
           var text = $(this).val();
-          if (document.getElementById('searchbox_currentfolder_only').checked){
-            cf =  $('#gwsearch .searchSection #searchbox_currentfolder_only').val();
-          } else {
-                cf = ''
-          }
           if (!_.findWhere(window._gw_typeahead_last_result, {'title': text})) {
-              window.location.href = $typeahead_dom.attr('data-search-url') + '?SearchableText=' + text + '&path=' + cf;
+              window.location.href = $typeahead_dom.attr('data-search-url') + '?SearchableText=' + text;
           }
 
       }
