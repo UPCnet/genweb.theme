@@ -66,7 +66,7 @@
 
     <tal:cond condition="python:'contact' not in excludes">
     <tal:cond define="mail data/contact_email; name data/contact_name;" tal:condition="python:name or mail">
-      <dt i18n:translate="contact_name">Contact Name</dt>
+      <dt i18n:domain="genweb" i18n:translate="contact_name">Contact Name</dt>
       <dd>
         <a class="email fn" tal:condition="mail" tal:attributes="href string:mailto:${mail}" tal:content="name" />
         <span class="fn" tal:condition="not:mail" tal:content="name" />
@@ -86,9 +86,12 @@
 
     <tal:cond condition="python:'event_url' not in excludes">
     <tal:cond condition="data/event_url">
-      <dt i18n:translate="event_url">Web</dt>
+      <dt i18n:domain="genweb" i18n:translate="event_url">Web</dt>
       <dd class="url">
-        <a href="" tal:attributes="href data/event_url" i18n:translate="external_website">Visit external website</a>
+        <a href="" tal:attributes="href data/event_url" 
+                  tal:content="data/event_url">
+                  Visit external website
+        </a>
       </dd>
     </tal:cond>
     </tal:cond>
