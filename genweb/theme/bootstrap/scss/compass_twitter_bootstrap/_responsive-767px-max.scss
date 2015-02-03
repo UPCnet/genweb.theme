@@ -192,8 +192,8 @@
     li {text-align:left !important;}
   }
 
-  // canviem les pestanyes a botons
-  .nav-tabs, .contentViews, .configlets, #edit-bar {
+  // canviem les pestanyes a botons, en previsualització plantilla NO
+  div:not('mceContentBody') > .nav-tabs, .contentViews, .configlets, #edit-bar {
         border-bottom: 0px !important;
         box-shadow: 0 0px 0px 0px black inset !important;
     }

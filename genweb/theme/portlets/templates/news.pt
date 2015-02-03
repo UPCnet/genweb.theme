@@ -16,7 +16,7 @@
                     </span>
                 </a>
                 <tal:co condition="data">
-                    <time class="smaller" tal:attributes="datetime obj/Date" tal:content="python:toLocalizedTime(obj.Date)">May 5</time>
+                    <time class="smaller"  datetime="obj.Date" tal:content="python:toLocalizedTime(obj.Date)">May 5</time>
                 </tal:co>
             </li>
         </ul>
