@@ -1,11 +1,27 @@
 Changelog
 =========
 
-1.40 (unreleased)
+1.40 (2015-02-05)
 -----------------
 
-- Nothing changed yet.
-
+* Acultar opción menu Tradueix [hanirok]
+* Change Genweb UPC link in accesibility [hanirok]
+* plantilles accessibilitat [Paco Gregori]
+* Canvis Oscar Gener [Roberto Diaz]
+* genweb/theme/scss/genwebupc.scss [Roberto Diaz]
+* Canvis Oscar Gener [Roberto Diaz]
+* Treure cerca afegint ckeck només en aquest lloc de la base de genweb [Pilar Marinas]
+* Traduir No hi ha elements js cerca [Pilar Marinas]
+* Added TCP PORT to footer admin box [Roberto Diaz]
+* Event style [hanirok]
+* dexterity_edit [Paco Gregori]
+* eventos [Paco Gregori]
+* Fix wc.foldercontents again... [Victor Fernandez de Alba]
+* Changes box footer [Roberto Diaz]
+* unified code [Roberto Diaz]
+* testing api [Roberto Diaz]
+* added permission to info box [Roberto Diaz]
+* testing footer info page [Roberto Diaz]
 
 1.39 (2015-01-08)
 -----------------
