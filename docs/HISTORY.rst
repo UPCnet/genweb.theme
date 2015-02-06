@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.42 (unreleased)
+1.42 (2015-02-06)
 -----------------
 
-- Nothing changed yet.
-
+* Fix wrong CSS on portal navigation portlet [Victor Fernandez de Alba]
 
 1.41 (2015-02-06)
 -----------------
