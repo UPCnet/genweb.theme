@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.41 (unreleased)
+1.41 (2015-02-06)
 -----------------
 
-- Nothing changed yet.
-
+* New PAM adjustments [Victor Fernandez de Alba]
 
 1.40 (2015-02-05)
 -----------------
