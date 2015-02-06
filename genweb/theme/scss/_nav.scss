@@ -234,7 +234,7 @@ html * .dropdown-menu a:hover .img_blank {
 
 
 //content types
-#listing-table, .template-folder_tabular_view .listing, .navTree {
+#listing-table, .template-folder_tabular_view .listing {
 	a {
 		&[class^="contenttype-"], &[class*=" contenttype-"] {
 			padding-left: 8px;
