@@ -19,6 +19,7 @@ from plone.app.layout.globals.layout import LayoutPolicy
 from plone.i18n.normalizer.interfaces import IIDNormalizer
 from plone.formwidget.recaptcha.view import RecaptchaView, IRecaptchaInfo
 from plone.app.contenttypes.interfaces import IEvent
+from plone.app.layout.navigation.interfaces import INavigationRoot
 
 from Products.CMFPlone import utils
 from Products.CMFPlone.utils import safe_unicode
@@ -103,7 +104,7 @@ class HomePageBase(grok.View):
 
         # Portlet container will be in the context,
         # Except in the portal root, when we look for an alternative
-        if IPloneSiteRoot.providedBy(self.context):
+        if INavigationRoot.providedBy(self.context):
             pc = getToolByName(context, 'portal_catalog')
             # Add the use case of mixin types of IHomepages. The main ones of a
             # non PAM-enabled site and the possible inner ones.
@@ -180,7 +181,7 @@ class homePage(HomePageBase):
     """
     grok.name('homepage')
     grok.implements(IHomePageView)
-    grok.context(IPloneSiteRoot)
+    grok.context(INavigationRoot)
     grok.layer(IGenwebTheme)
 
 

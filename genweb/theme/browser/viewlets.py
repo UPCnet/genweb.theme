@@ -28,6 +28,7 @@ from plone.app.layout.viewlets.common import PersonalBarViewlet, GlobalSectionsV
 from plone.app.layout.viewlets.common import SearchBoxViewlet, TitleViewlet, ManagePortletsFallbackViewlet
 from plone.app.layout.viewlets.interfaces import IHtmlHead, IPortalTop, IPortalHeader, IBelowContent
 from plone.app.layout.viewlets.interfaces import IPortalFooter, IAboveContentTitle, IBelowContentTitle
+from plone.app.layout.navigation.interfaces import INavigationRoot
 
 from genweb.core import _
 from genweb.core import HAS_CAS
@@ -100,8 +101,8 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
             user_roles_at_es_root = api.user.get_roles(obj=portal['es'])
         if getattr(portal, 'en', False):
             user_roles_at_en_root = api.user.get_roles(obj=portal['en'])
-        if getattr(portal, 'shared', False):
-            user_roles_at_shared = api.user.get_roles(obj=portal['en'])
+        # if getattr(portal, 'shared', False):
+        #     user_roles_at_shared = api.user.get_roles(obj=portal['en'])
 
         menus_to_show = dict(show=False, show_advanced=False, show_en=False, show_ca=False, show_es=False, show_shared=False)
         if 'Editor' in user_roles_at_ca_root or 'Contributor' in user_roles_at_ca_root:
@@ -113,9 +114,9 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         if 'Editor' in user_roles_at_en_root or 'Contributor' in user_roles_at_en_root:
             menus_to_show['show'] = True
             menus_to_show['show_en'] = True
-        if 'Editor' in user_roles_at_shared or 'Contributor' in user_roles_at_en_root:
-            menus_to_show['show'] = True
-            menus_to_show['show_shared'] = True
+        # if 'Editor' in user_roles_at_shared or 'Contributor' in user_roles_at_en_root:
+        #     menus_to_show['show'] = True
+        #     menus_to_show['show_shared'] = True
 
         return menus_to_show
 
@@ -376,7 +377,7 @@ class gwManagePortletsFallbackViewletMixin(object):
 
         # Portlet container will be in the context,
         # Except in the portal root, when we look for an alternative
-        if IPloneSiteRoot.providedBy(self.context):
+        if INavigationRoot.providedBy(self.context):
             pc = getToolByName(context, 'portal_catalog')
             # Add the use case of mixin types of IHomepages. The main ones of a
             # non PAM-enabled site and the possible inner ones.
@@ -405,7 +406,7 @@ class gwManagePortletsFallbackViewletMixin(object):
 class gwManagePortletsFallbackViewletForPloneSiteRoot(gwManagePortletsFallbackViewletMixin, ManagePortletsFallbackViewlet, viewletBase):
     """ The override for the manage_portlets_fallback viewlet for IPloneSiteRoot
     """
-    grok.context(IPloneSiteRoot)
+    grok.context(INavigationRoot)
     grok.name('plone.manage_portlets_fallback')
     grok.viewletmanager(IBelowContent)
     grok.layer(IGenwebTheme)
