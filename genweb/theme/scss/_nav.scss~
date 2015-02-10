@@ -24,7 +24,7 @@
 // PORTAL SUBNAV
 // -------------------------
 .subnavbar {margin-bottom:18px;}
-.subnavbar .nav-list {
+.subnavbar .nav-list, .navTree {
 	border:1px solid #b2b2b2; box-shadow:0 3px 5px #ccc;
 	@include border-radius(4px);
 	@include box-shadow(0 1px 4px rgba(0,0,0,.1));
@@ -233,7 +233,7 @@ html * .dropdown-menu a:hover .img_blank {
 
 
 //content types
-#listing-table, .template-folder_tabular_view .listing, .contenttreeWidget > .navTree {
+#listing-table, .template-folder_tabular_view .listing {
 	a {
 		&[class^="contenttype-"], &[class*=" contenttype-"] {
 			padding-left: 8px;
