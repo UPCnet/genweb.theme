@@ -309,7 +309,7 @@ function append_new_window_icon()
                 var img2 = $(this).next('img:first')[0];
                 if (img2 === undefined) // que no tinguin imatge immediatament després <a>
                 {
-                    $(this).append('<img style="margin-left:5px;" class="link_blank" alt="' + text_alt[lang] + '" src="http://www.upc.edu/icon_blank.gif">');
+                    $(this).append('<img style="margin-left:5px;" class="link_blank" alt="' + text_alt[lang] + '" src="++genweb++static/images/icon_blank.gif">');
                 }
             }
         }

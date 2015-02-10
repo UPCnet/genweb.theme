@@ -1,78 +1,87 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
-      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      xmlns:tal="http://xml.zope.org/namespaces/tal"
-      xmlns:metal="http://xml.zope.org/namespaces/metal"
-      lang="en"
-      metal:use-macro="here/main_template/macros/master"
-      i18n:domain="plone">
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    lang="en"
+    metal:use-macro="here/main_template/macros/master"
+    i18n:domain="plone">
 
-<head>
-    <metal:noborder fill-slot="top_slot"
-                 tal:define="dummy python:request.set('disable_border',1)" />
-</head>
+    <head>
+        <metal:noborder fill-slot="top_slot"
+            tal:define="dummy python:request.set('disable_border',1)" />
+        </head>
 
-<body>
-<div metal:fill-slot="main" class="plain"
-     tal:define="portal_url context/@@plone_portal_state/portal_url">
+        <body>
+            <div metal:fill-slot="main" class="plain"
+                tal:define="portal_url context/@@plone_portal_state/portal_url">
 
 
-    <h1>Accessibility</h1>
-<br />
-<p>The <strong>Universitat Politècnica de Catalunya · BarcelonaTech (UPC)</strong> aims to provide the university community and society in general with a website whose design makes it accessible regardless of limitations imposed by the environment, the Internet connection or personal circumstances.</p>
-<br />
-<p>Royal Decree 1494/2007, of 12 November, establishes that the information available on the Internet pages of public administrations must be accessible to elderly and disabled persons, with the minimum level of accessibility required to meet priorities 1 and 2 of standard UNE 139803:2004. Public educational institutions, training institutes and universities, as well as private schools that are fully or partly funded by the public, are also obliged to conform to this standard.</p>
-<br />
-<p>This website has been generated with <a href="http://genweb.upc.edu" target="_blank"><strong>Genweb UPC <img alt="(open in new window)" class="link_blank" src="http://www.upc.edu/sri/icon_blank.gif" /></strong></a>, a tool that allows to the creation and management of web pages according to the UPC institutional style guide.</p>
-<br />
-<p><a href="http://genweb.upc.edu" target="_blank"><strong>Genweb UPC <img alt="(open in new window)" class="link_blank" src="http://www.upc.edu/sri/icon_blank.gif" /></strong></a> is a project co-authored by the Communication Service  of UPC and <a href="http://www.upcnet.es/" target="_blank">UPCnet <img alt="(open in new window)" class="link_blank" src="http://www.upc.edu/sri/icon_blank.gif" /></a> developed with the Open Source Content Management System <a href="http://plone.org/" target="_blank">Plone <img alt="(open in new window)" class="link_blank" src="http://www.upc.edu/sri/icon_blank.gif" /></a>. This site has been designed to be completely accessible and usable, working in accordance with the W3C accessibility guidelines.</p>
-<h2>Pautes WAI</h2>
-<p><a href="http://www.w3.org/WAI/WCAG1AA-Conformance" target="_blank" title="(obriu en finestra nova)"><img alt="validat wai-aa wcag 1.0, (obriu en finestra nova)" class="align_left" src="http://www.upc.edu/config-ca/imatges/wcag-1.0-aa" /></a>Els continguts del web de la UPC han estat validats amb la certificació Doble-A, segons les recomanacions de la WAI (<span>Web Accessibility Iniciative</span>), grup de treball internacional que pertany al W3C (<span>World Wide Web Consortium</span>) , organisme que vetlla perquè cap col·lectiu pateixi discriminacions de cap mena que puguin ser causa de fractures socials en el món virtual.</p>
-<br /><br />
-<p><a href="http://jigsaw.w3.org/css-validator/" target="_blank" title="(obriu en finestra nova)"><img alt="validat css, (obriu en finestra nova)" class="align_left" src="http://www.upc.edu/config-ca/imatges/valid-css" /></a><a href="http://validator.w3.org/check?uri=referer" target="_blank" title="(obriu en finestra nova)"><img alt="validat xhtml 1.0, (obriu en finestra nova)" class="align_left" src="http://www.upc.edu/config-ca/imatges/valid-xhtml-1.0" /></a>En aquest sentit, les tècniques emprades al web de la UPC encaixen amb el que la WAI preconitza, tant per al marcat XHTML 1.0 com per al CSS.<br /></p>
-<br />
-<h2>Changing text size in common web browsers</h2>
-<div class="blockquote icon_nav"><img alt=" " class="align_left" src="http://www.upc.edu/config-ca/imatges/ff-icon.png" />
-<h3>Mozilla Firefox</h3>
-<p><strong>Increase text size</strong>: CTRL + mouse wheel up, CTRL + + (plus key), or View &gt; Text Size &gt; Increase<br /><strong>Decrease text size</strong>: CTRL + mouse wheel down, CTRL + – (minus key), or View &gt; Text Size &gt; Decrease<br /><strong>Restore default size</strong>: CTRL + 0 (zero), or View &gt; Text Size &gt; Normal</p>
-<div class="visualClear"></div>
-<img alt=" " class="align_left" src="http://www.upc.edu/config-ca/imatges/sf-icon.png" />
-<h3>Safari</h3>
-<p><strong>Increase text size</strong>: Command (Mac) / CTRL (PC) + + (plus key), or View &gt; Make Text Bigger<br /><strong>Decrease text size</strong>: Command (Mac) / CTRL (PC) + – (minus key), or View &gt; Make Text Smaller<br /><strong>Restore default size</strong>: Command (Mac) / CTRL (PC) + 0, or View &gt; Make Text Normal Size</p>
-<div class="visualClear"></div>
-<img alt=" " class="align_left" src="http://www.upc.edu/config-ca/imatges/ie-icon.png" />
-<h3>Internet Explorer</h3>
-<p><strong>Increase text size</strong>: CTRL + mouse wheel up, CTRL + + (plus key), or View &gt; Text Size &gt; Larger / Largest<br /><strong>Decrease text size</strong>: CTRL + mouse wheel down, CTRL + – (minus key), or View &gt; Text Size &gt; Smaller / Smallest<br /><strong>Restore default size</strong>: CTRL + 0 (zero, not with numeric keypad), or View &gt; Text Size &gt; Medium</p>
-<div class="visualClear"></div>
-<img alt=" " class="align_left" src="http://www.upc.edu/config-ca/imatges/op-icon.png" />
-<h3>Opera</h3>
-<p><strong>Increase text size</strong>: CTRL + mouse wheel up, or View &gt; Zoom &gt; 120% (or more)<br /><strong>Decrease text size</strong>: CTRL + mouse wheel down, or View &gt; Zoom &gt; 80% (or less)<br /><strong>Restore default size</strong>: View &gt; Zoom &gt; 100%</p>
-<div class="visualClear"></div>
-<img alt=" " class="align_left" src="http://www.upc.edu/config-ca/imatges/ch-icon.png" />
-<h3>Chrome</h3>
-<p><strong>Increase text size</strong>: CTRL + mouse wheel up, CTRL + + (plus key), or Page icon &gt; Zoom &gt; Larger<br /><strong>Decrease text size</strong>: CTRL + mouse wheel down, CTRL + – (minus key), or Page icon &gt; Zoom &gt; Smaller<br /><strong>Restore default size</strong>: CTRL + 0 (zero, not with numeric keypad), or Page icon &gt; Zoom &gt; Normal</p>
-<div class="visualClear"></div>
-</div>
-<br /><br />
-<h2>Access keys</h2>
-<p>Access keys are a navigation tool that enables you to get around this site using your keyboard. <br /> More information about access keys: <a href="http://www.w3.org/TR/WCAG10-HTML-TECHS/#link-accesskey" target="_blank">W3C Accessibility Guidelines <img alt="(open in new window)" class="link_blank" src="http://www.upc.edu/sri/icon_blank.gif" /></a>.</p><br />
-<p>This site uses a setup that closely matches most international recommendations on access keys.</p>
-<h3 style="color: rgb(85, 124, 149); border-bottom-color: rgb(174, 180, 184); ">Access keys available on this website</h3>
+                <h1>Accessibility</h1>
+                <br />
+                <p>The <strong>Universitat Politècnica de Catalunya · BarcelonaTech (UPC)</strong> aims to provide the university community and society in general with a website whose design makes it accessible regardless of limitations imposed by the environment, the Internet connection or personal circumstances.</p>
+                <br />
+                <p>Royal Decree 1494/2007, of 12 November, establishes that the information available on the Internet pages of public administrations must be accessible to elderly and disabled persons, with the minimum level of accessibility required to meet priorities 1 and 2 of standard UNE 139803:2004. Public educational institutions, training institutes and universities, as well as private schools that are fully or partly funded by the public, are also obliged to conform to this standard.</p>
+                <br />
+                <p>This website has been generated with 
+                    <a href="http://genweb.upc.edu" target="_blank"><strong>Genweb UPC <img alt="(open in new window)" class="link_blank" src="++genweb++static/images/icon_blank.gif" /></strong></a>, a tool that allows to the creation and management of web pages according to the UPC institutional style guide.</p>
+                    <br />
+                    <p>
+                        <a href="http://genweb.upc.edu" target="_blank"><strong>Genweb UPC <img alt="(open in new window)" class="link_blank" src="++genweb++static/images/icon_blank.gif" /></strong></a> is a project co-authored by the Communication Service  of UPC and 
+                        <a href="http://www.upcnet.es/" target="_blank">UPCnet <img alt="(open in new window)" class="link_blank" src="++genweb++static/images/icon_blank.gif" /></a> developed with the Open Source Content Management System 
+                        <a href="http://plone.org/" target="_blank">Plone <img alt="(open in new window)" class="link_blank" src="++genweb++static/images/icon_blank.gif" /></a>. This site has been designed to be completely accessible and usable, working in accordance with the W3C accessibility guidelines.</p>
+                        <h2>Pautes WAI</h2>
+                        <p>
+                            <a href="http://www.w3.org/WAI/WCAG1AA-Conformance" target="_blank" title="(obriu en finestra nova)"><img alt="validat wai-aa wcag 1.0, (obriu en finestra nova)" class="align_left" src="++genweb++static/images/wcag-1.0-aa.png" /></a>Els continguts del web de la UPC han estat validats amb la certificació Doble-A, segons les recomanacions de la WAI (<span>Web Accessibility Iniciative</span>), grup de treball internacional que pertany al W3C (<span>World Wide Web Consortium</span>) , organisme que vetlla perquè cap col·lectiu pateixi discriminacions de cap mena que puguin ser causa de fractures socials en el món virtual.</p>
+                            <br /><br />
+                            <p>
+                                <a href="http://jigsaw.w3.org/css-validator/" target="_blank" title="(obriu en finestra nova)"><img alt="validat css, (obriu en finestra nova)" class="align_left" src="++genweb++static/images/valid-css.png" /></a>
+                                <a href="http://validator.w3.org/check?uri=referer" target="_blank" title="(obriu en finestra nova)"><img alt="validat xhtml 1.0, (obriu en finestra nova)" class="align_left" src="++genweb++static/images/valid-xhtml-1.0.png" /></a>En aquest sentit, les tècniques emprades al web de la UPC encaixen amb el que la WAI preconitza, tant per al marcat XHTML 1.0 com per al CSS.<br /></p>
+                                <br />
+                                <h2>Changing text size in common web browsers</h2>
+                                <div class="blockquote icon_nav"><img alt=" " class="align_left" src="++genweb++static/images/ff-icon.png" />
+                                <h3>Mozilla Firefox</h3>
+                                <p><strong>Increase text size</strong>: CTRL + mouse wheel up, CTRL + + (plus key), or View &gt; Text Size &gt; Increase<br /><strong>Decrease text size</strong>: CTRL + mouse wheel down, CTRL + – (minus key), or View &gt; Text Size &gt; Decrease<br /><strong>Restore default size</strong>: CTRL + 0 (zero), or View &gt; Text Size &gt; Normal</p>
+                                <div class="visualClear"></div>
+                                <img alt=" " class="align_left" src="++genweb++static/images/sf-icon.png" />
+                                <h3>Safari</h3>
+                                <p><strong>Increase text size</strong>: Command (Mac) / CTRL (PC) + + (plus key), or View &gt; Make Text Bigger<br /><strong>Decrease text size</strong>: Command (Mac) / CTRL (PC) + – (minus key), or View &gt; Make Text Smaller<br /><strong>Restore default size</strong>: Command (Mac) / CTRL (PC) + 0, or View &gt; Make Text Normal Size</p>
+                                <div class="visualClear"></div>
+                                <img alt=" " class="align_left" src="++genweb++static/images/ie-icon.png" />
+                                <h3>Internet Explorer</h3>
+                                <p><strong>Increase text size</strong>: CTRL + mouse wheel up, CTRL + + (plus key), or View &gt; Text Size &gt; Larger / Largest<br /><strong>Decrease text size</strong>: CTRL + mouse wheel down, CTRL + – (minus key), or View &gt; Text Size &gt; Smaller / Smallest<br /><strong>Restore default size</strong>: CTRL + 0 (zero, not with numeric keypad), or View &gt; Text Size &gt; Medium</p>
+                                <div class="visualClear"></div>
+                                <img alt=" " class="align_left" src="++genweb++static/images/op-icon.png" />
+                                <h3>Opera</h3>
+                                <p><strong>Increase text size</strong>: CTRL + mouse wheel up, or View &gt; Zoom &gt; 120% (or more)<br /><strong>Decrease text size</strong>: CTRL + mouse wheel down, or View &gt; Zoom &gt; 80% (or less)<br /><strong>Restore default size</strong>: View &gt; Zoom &gt; 100%</p>
+                                <div class="visualClear"></div>
+                                <img alt=" " class="align_left" src="++genweb++static/images/ch-icon.png" />
+                                <h3>Chrome</h3>
+                                <p><strong>Increase text size</strong>: CTRL + mouse wheel up, CTRL + + (plus key), or Page icon &gt; Zoom &gt; Larger<br /><strong>Decrease text size</strong>: CTRL + mouse wheel down, CTRL + – (minus key), or Page icon &gt; Zoom &gt; Smaller<br /><strong>Restore default size</strong>: CTRL + 0 (zero, not with numeric keypad), or Page icon &gt; Zoom &gt; Normal</p>
+                                <div class="visualClear"></div>
+                            </div>
+                            <br /><br />
+                            <h2>Access keys</h2>
+                            <p>Access keys are a navigation tool that enables you to get around this site using your keyboard. <br /> More information about access keys: 
+                            <a href="http://www.w3.org/TR/WCAG10-HTML-TECHS/#link-accesskey" target="_blank">W3C Accessibility Guidelines <img alt="(open in new window)" class="link_blank" src="++genweb++static/images/icon_blank.gif" /></a>.</p><br />
+                            <p>This site uses a setup that closely matches most international recommendations on access keys.</p>
+                            <h3 style="color: rgb(85, 124, 149); border-bottom-color: rgb(174, 180, 184); ">Access keys available on this website</h3>
 
-<ul style="margin-left: 0px; ">
-  <li style="list-style: none; "><code style="font-size: 12px; ">1</code> — Home page</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">2</code> — Skip to content</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">3</code> — Site navigation tree</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">4</code> — Site map</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">5</code> — Advanced search</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">6</code> — Contact information</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">7</code> — Accessibility information</li>
-</ul>
+                            <ul style="margin-left: 0px; ">
+                                <li style="list-style: none; "><code style="font-size: 12px; ">1</code> — Home page</li>
+                                <li style="list-style: none; "><code style="font-size: 12px; ">2</code> — Skip to content</li>
+                                <li style="list-style: none; "><code style="font-size: 12px; ">3</code> — Site navigation tree</li>
+                                <li style="list-style: none; "><code style="font-size: 12px; ">4</code> — Site map</li>
+                                <li style="list-style: none; "><code style="font-size: 12px; ">5</code> — Advanced search</li>
+                                <li style="list-style: none; "><code style="font-size: 12px; ">6</code> — Contact information</li>
+                                <li style="list-style: none; "><code style="font-size: 12px; ">7</code> — Accessibility information</li>
+                            </ul>
 
-<br />
-<p>Press SHIFT + ALT + access key.</p>
-<br />
-<h2 class="liniaBaix">Contact</h2>
-<p>We are working to maintain and improve the accessibility of this website. If you notice any accessibility-related anomalies on any of its pages, please contact the <a tal:attributes="href string:${portal_url}/contact" href="">webmaster</a>.</p>    </div>
+                            <br />
+                            <p>Press SHIFT + ALT + access key.</p>
+                            <br />
+                            <h2 class="liniaBaix">Contact</h2>
+                            <p>We are working to maintain and improve the accessibility of this website. If you notice any accessibility-related anomalies on any of its pages, please contact the
+                                <a tal:attributes="href string:${portal_url}/contact" href="">webmaster</a>.</p>    </div>
 
-</body>
-</html>
+                            </body>
+                        </html>

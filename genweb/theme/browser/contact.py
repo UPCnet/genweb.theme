@@ -15,14 +15,12 @@ from Products.CMFPlone.utils import safe_unicode
 from Products.statusmessages.interfaces import IStatusMessage
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone import PloneMessageFactory as _
-from Products.CMFPlone.interfaces import IPloneSiteRoot
+from plone.app.layout.navigation.interfaces import INavigationRoot
 
 from genweb.theme.browser.interfaces import IGenwebTheme
 
 from genweb.core import utils
 from zope.component import getMultiAdapter
-
-from plone import api
 
 
 grok.templatedir("views_templates")
@@ -80,7 +78,7 @@ class IContactForm(form.Schema):
 
 class ContactForm(form.Form):
     grok.name('contact')
-    grok.context(IPloneSiteRoot)
+    grok.context(INavigationRoot)
     grok.template("contact")
     grok.require('zope2.View')
     grok.layer(IGenwebTheme)
