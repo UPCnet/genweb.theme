@@ -1,11 +1,12 @@
 Changelog
 =========
 
-1.43 (unreleased)
+1.43 (2015-02-11)
 -----------------
 
-- Nothing changed yet.
-
+* Regen of the CSS [Victor Fernandez de Alba]
+* Oscars styles [Roberto Diaz]
+* Pagina de contacto y urls iconos [hanirok]
 
 1.42 (2015-02-06)
 -----------------
