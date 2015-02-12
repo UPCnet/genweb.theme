@@ -170,7 +170,7 @@ class ContactForm(form.Form):
             customized_page = getattr(context, 'contactepersonalitzat', False)
             state = api.content.get_state(customized_page)
             if customized_page and state == 'published':
-                contact_body = portal.contactepersonalitzat.text.raw
+                contact_body = context.contactepersonalitzat.text.raw
                 page = contact_body
             else:
                 return page
@@ -178,7 +178,7 @@ class ContactForm(form.Form):
             customized_page = getattr(context, 'contactopersonalizado', False)
             state = api.content.get_state(customized_page)
             if customized_page and state == 'published':
-                contact_body = portal.contactopersonalizado.text.raw
+                contact_body = context.contactopersonalizado.text.raw
                 page = contact_body
             else:
                 return page
@@ -186,7 +186,7 @@ class ContactForm(form.Form):
             customized_page = getattr(context, 'customizedcontact', False)
             state = api.content.get_state(customized_page)
             if customized_page and state == 'published':
-                contact_body = portal.customizedcontact.text.raw
+                contact_body = context.customizedcontact.text.raw
                 page = contact_body
             else:
                 return page
