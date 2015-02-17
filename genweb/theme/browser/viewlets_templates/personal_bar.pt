@@ -12,7 +12,7 @@
           <i class="icon-user icon-white"></i><span id='user-name'> <tal:username content="view/user_name"> Rafael Ojeda Rojas </tal:username></span>
         </a>
         <div class="nav-collapse nav-collapse-edit">
-          <h2 class="goout" id="titol-eines-usuari" 
+          <h2 class="goout" id="titol-eines-usuari"
               i18n:translate="label_menu_usuari"> Menú d'usuari </h2>
           <ul class="nav" role="menu" aria-labelledby="titol-menu-usuari"
               tal:define="show_tools view/show_tools">
@@ -82,9 +82,9 @@
                     Grant access
                   </a>
                 </li>
-                <li role="menuitem" tal:condition="show_tools/show_shared">
+                <li role="menuitem" tal:condition="show_tools/show_shared" tal:define="lang_pref view/pref_lang">
                   <a i18n:translate="shared_folder"
-                     tal:attributes="href string:${view/root_url}/shared">
+                     tal:attributes="href string:${view/root_url}/${lang_pref}/shared">
                     Common files
                   </a>
                 </li>
@@ -140,7 +140,7 @@
               <!-- <tal:help i18n:translate="genweb-vistes">Vistes</tal:help> -->
             </li>
           </ul>
-          <h2 class="goout" id="titol-menu-eines-genweb" 
+          <h2 class="goout" id="titol-menu-eines-genweb"
               i18n:translate="label_menu_eines_genweb"> Menú d'eines Genweb UPC </h2>
           <ul class="nav pull-right" role="toolbar" aria-labelledby="titol-menu-eines-genweb">
 <!--             <li role="menuitem" class="visible-desktop visible-tablet" tal:condition="view/canManageSite">
