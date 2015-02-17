@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.44 (unreleased)
+1.44 (2015-02-17)
 -----------------
 
-- Nothing changed yet.
-
+* Link to Shared folder with language code [hanirok]
+* Add correct path to customized contact [hanirok]
 
 1.43 (2015-02-11)
 -----------------
