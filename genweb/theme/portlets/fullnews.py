@@ -9,7 +9,8 @@ from plone.memoize.instance import memoize
 from plone.portlets.interfaces import IPortletDataProvider
 
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from Products.CMFPlone import PloneMessageFactory as _
+# from Products.CMFPlone import PloneMessageFactory as _
+from genweb.core import GenwebMessageFactory as _
 from Products.CMFCore.utils import getToolByName
 
 from genweb.core.interfaces import INewsFolder

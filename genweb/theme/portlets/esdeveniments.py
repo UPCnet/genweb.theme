@@ -57,7 +57,7 @@ class Assignment(base.Assignment):
 
     @property
     def title(self):
-        return _(u"Events")
+        return TAM(u"Events")
 
 
 class Renderer(base.Renderer):
