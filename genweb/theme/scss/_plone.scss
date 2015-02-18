@@ -845,35 +845,17 @@ div[id*='formfield-form-widgets-IEventBasic-'] select { width:auto; } // ajusta 
 // visualitzacio event a la dreta 
 
 dl.event.summary.details {
-    /*border-top: 2px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #aaa;
-    border-left: 1px solid #ccc;
-    box-shadow: 0 0 5px #ccc; // a gw3 era #eee pero no es veu 
-    color: #666;
-    display: table;
-    float:right;
-    margin-left:1%;
-    max-width: 300px;
-    text-align: left;
-    dt, dt+dd { // vora ratllada
-        border-top: 1px dashed #d9d9d9;
-        padding: 5px;
-        &:first-of-type { 
-            border-top: 0px dashed #d9d9d9 !important; // el primer NO te vora ratllada, si un dd no ve despres d'un dt tampoc
-        }
-    }*/
-
     border-top: 2px solid $grayLight;
     border-right: 1px solid $grayLight;
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid $grayLight;
     border-left: 1px solid $grayLight;
     box-shadow: 0 0 5px $grayLight; // a gw3 era #eee pero no es veu 
     color: #666;
     display: table;
-    float:right;
+    float: right;
     margin-left:1%;
     max-width: 300px;
+    width: 300px; 
     text-align: left;
     dt, dt+dd { // vora ratllada
         border-top: 1px dashed $grayLighter;

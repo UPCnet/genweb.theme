@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1424174280648');
+@import url('genwebupc-ie-blessed1.css?z=1424189486829');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 553, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -4867,27 +4867,12 @@ div.overlay {
 /* line 843, ../scss/_plone.scss */
 div[id*='formfield-form-widgets-IEventBasic-'] select {
   width: auto; }
-  /*border-top: 2px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #aaa;
-  border-left: 1px solid #ccc;
-  box-shadow: 0 0 5px #ccc; // a gw3 era #eee pero no es veu 
-  color: #666;
-  display: table;
-  float:right;
-  margin-left:1%;
-  max-width: 300px;
-  text-align: left;
-  dt, dt+dd { // vora ratllada
-      border-top: 1px dashed #d9d9d9;
-      padding: 5px;
-      &:first-of-type { 
-          border-top: 0px dashed #d9d9d9 !important; // el primer NO te vora ratllada, si un dd no ve despres d'un dt tampoc
-      }
-  }*/
+
+/* line 847, ../scss/_plone.scss */
+dl.event.summary.details {
   border-top: 2px solid #aaaaaa;
   border-right: 1px solid #aaaaaa;
-  border-bottom: 1px solid #666666;
+  border-bottom: 1px solid #aaaaaa;
   border-left: 1px solid #aaaaaa;
   box-shadow: 0 0 5px #aaaaaa;
   color: #666;
@@ -4895,79 +4880,80 @@ div[id*='formfield-form-widgets-IEventBasic-'] select {
   float: right;
   margin-left: 1%;
   max-width: 300px;
+  width: 300px;
   text-align: left; }
-  /* line 878, ../scss/_plone.scss */
+  /* line 860, ../scss/_plone.scss */
   dl.event.summary.details dt, dl.event.summary.details dt + dd {
     border-top: 1px dashed #f2f2f2;
     padding: 5px; }
-    /* line 881, ../scss/_plone.scss */
+    /* line 863, ../scss/_plone.scss */
     dl.event.summary.details dt:first-of-type, dl.event.summary.details dt + dd:first-of-type {
       border-top: 0px !important; }
-  /* line 886, ../scss/_plone.scss */
+  /* line 868, ../scss/_plone.scss */
   dl.event.summary.details dd {
     padding: 5px;
     margin: 0 0 0 50%; }
-    /* line 889, ../scss/_plone.scss */
+    /* line 871, ../scss/_plone.scss */
     dl.event.summary.details dd + dd {
       padding-left: 10px; }
-  /* line 893, ../scss/_plone.scss */
+  /* line 875, ../scss/_plone.scss */
   dl.event.summary.details dt {
     float: left;
     clear: left;
     width: 50%; }
 
-/* line 900, ../scss/_plone.scss */
+/* line 882, ../scss/_plone.scss */
 ul.hCalendar-hidden {
   display: none; }
 
-/* line 910, ../scss/_plone.scss */
+/* line 892, ../scss/_plone.scss */
 .tasksplease span {
   padding-right: 10px; }
 
-/* line 912, ../scss/_plone.scss */
+/* line 894, ../scss/_plone.scss */
 input[name='poll.submit'] {
   margin-top: 15px; }
 
-/* line 917, ../scss/_plone.scss */
+/* line 899, ../scss/_plone.scss */
 .image-left {
   float: left;
   margin: 0 10px 0 0; }
 
-/* line 922, ../scss/_plone.scss */
+/* line 904, ../scss/_plone.scss */
 .image-right {
   float: right;
   margin: 0 0 0 10px; }
 
-/* line 929, ../scss/_plone.scss */
+/* line 911, ../scss/_plone.scss */
 #recaptcha_table {
   width: 334px; }
-  /* line 931, ../scss/_plone.scss */
+  /* line 913, ../scss/_plone.scss */
   #recaptcha_table td {
     display: block; }
-  /* line 934, ../scss/_plone.scss */
+  /* line 916, ../scss/_plone.scss */
   #recaptcha_table tr:nth-child(1) {
     width: 70%; }
-    /* line 937, ../scss/_plone.scss */
+    /* line 919, ../scss/_plone.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(1) {
       width: 70%; }
-    /* line 940, ../scss/_plone.scss */
+    /* line 922, ../scss/_plone.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(2) {
       width: 30px;
       float: left; }
-    /* line 945, ../scss/_plone.scss */
+    /* line 927, ../scss/_plone.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(3) {
       float: left; }
-  /* line 951, ../scss/_plone.scss */
+  /* line 933, ../scss/_plone.scss */
   #recaptcha_table tr:nth-child(2) {
     width: 70%; }
-    /* line 953, ../scss/_plone.scss */
+    /* line 935, ../scss/_plone.scss */
     #recaptcha_table tr:nth-child(2) td {
       width: 50%; }
-  /* line 958, ../scss/_plone.scss */
+  /* line 940, ../scss/_plone.scss */
   #recaptcha_table center {
     float: left; }
 
-/* line 965, ../scss/_plone.scss */
+/* line 947, ../scss/_plone.scss */
 #cookies {
   border-bottom: 1px solid #dedede;
   color: #666666;
@@ -4975,17 +4961,17 @@ input[name='poll.submit'] {
   padding: 4px 0;
   width: 978px; }
 
-/* line 974, ../scss/_plone.scss */
+/* line 956, ../scss/_plone.scss */
 #contentview-SEOProperties {
   width: 40px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: none; }
-  /* line 979, ../scss/_plone.scss */
+  /* line 961, ../scss/_plone.scss */
   #contentview-SEOProperties a {
     width: 26px;
     overflow: hidden; }
-  /* line 983, ../scss/_plone.scss */
+  /* line 965, ../scss/_plone.scss */
   #contentview-SEOProperties a[href*="/es/"] {
     direction: rtl; }
 
@@ -7161,7 +7147,45 @@ tr.mceLast > td {
 
   /* line 17, ../scss/_print.scss */
   #peu .span8 {
-    width: 100%; } }
+    width: 100%; }
+
+  /* line 31, ../scss/_print.scss */
+  .share_popover,
+  #portal-header > div.container > div.clearfix > h1.pull-left > a,
+  #portal-header > div.container > div.visualClear > h1.pull-left > a,
+  .portaltype-packet .estudis #portal-header > div.container > div.caixa3 > h1.pull-left > a,
+  #cookies,
+  .sobreElWeb,
+  .extraInfo,
+  .img_blank,
+  .header-image,
+  .event img {
+    display: none !important; }
+
+  /* line 35, ../scss/_print.scss */
+  abbr {
+    border: 0 !important; }
+
+  /* line 37, ../scss/_print.scss */
+  dl.event.summary.details {
+    width: 98% !important;
+    max-width: 98% !important;
+    box-shadow: 0 0 0 !important;
+    border: 1px solid #aaaaaa !important;
+    float: none !important; }
+
+  /* line 45, ../scss/_print.scss */
+  .liniaBaix, .documentFirstHeading, .documentFirstHeading {
+    box-shadow: 0 0 0 !important; }
+
+  /* line 49, ../scss/_print.scss */
+  #portal-header > div.container, #peu > div.container {
+    border-top: 1px solid #aaaaaa !important; }
+
+  /* line 51, ../scss/_print.scss */
+  a, a:visited {
+    color: black;
+    text-decoration: none; } }
 /* line 5, ../scss/genwebupc.scss */
 .width100 {
   width: 100% !important;

@@ -1,19 +1,56 @@
 @media print {
-	@page { margin: 1.5cm; }
+    @page { margin: 1.5cm; }
 
- 	body {background: white; font-size: 12pt;}
+    body {background: white; font-size: 12pt;}
 
- 	* {color: #000; background-color: #fff; @include box-shadow(none); @include text-shadow(none);}
- 	a {color:#08c; text-decoration: underline;}
+    * {color: #000; background-color: #fff; @include box-shadow(none); @include text-shadow(none);}
+    a {color:#08c; text-decoration: underline;}
 
-	#content a:link:after, #content a:visited:after {
-   		content: " (" attr(href) ") ";
-   		font-size: 90%;
+    #content a:link:after, #content a:visited:after {
+        content: " (" attr(href) ") ";
+        font-size: 90%;
     }
 
-	.nav-collapse-eines, #portal-personaltools-wrapper, #portal-globalnav, #portal-breadcrumbs, #portal-column-one, .alert, #edit-bar, #viewlet-below-content-title, #viewlet-below-content, #peu .span4 {display: none !important;}
+    .nav-collapse-eines, #portal-personaltools-wrapper, #portal-globalnav, #portal-breadcrumbs, #portal-column-one, .alert, #edit-bar, #viewlet-below-content-title, #viewlet-below-content, #peu .span4 {display: none !important;}
 
-	#portal-column-content {margin:0 !important; width:100% !important;}
-	#peu .span8 {width:100%;}
+    #portal-column-content {margin:0 !important; width:100% !important;}
+    #peu .span8 {width:100%;}
+
+
+
+
+    // simplificacio impressio
+
+    .share_popover,
+    #portal-header > div.container > div.clearfix > h1.pull-left > a,
+    #cookies,
+    .sobreElWeb,
+    .extraInfo,
+    .img_blank,
+    .header-image,
+    .event img {
+        display: none !important; }
+
+
+    abbr { border:0 !important;}
+
+    dl.event.summary.details { 
+        width: 98% !important;
+        max-width: 98% !important;
+        box-shadow: 0 0 0 !important;
+        border: 1px solid $grayLight !important;
+        float:none !important;
+    }
+
+    .liniaBaix, .documentFirstHeading {
+        box-shadow: 0 0 0 !important;
+    }
+
+    #portal-header > div.container, #peu > div.container { border-top:1px solid $grayLight !important;} 
+
+    a, a:visited {
+        color: black;
+        text-decoration: none;
+    }
 
 }

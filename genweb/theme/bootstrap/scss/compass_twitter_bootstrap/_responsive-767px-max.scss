@@ -239,9 +239,8 @@
   .unit-content .unit-picture, .studies { display:none;} // oculta imatge centre i llista estudis
 
 
-
-
   // END fitxa estudis
+
 
 } // END Responsive: Landscape phone to desktop/tablet
 
@@ -414,6 +413,10 @@
     margin-right:5% !important;
   }
 
+  // event
+  dl.event.summary.details {
+    float: none !important; // treiem el float dreta en versió mòbil
+  }
 
 }
 
