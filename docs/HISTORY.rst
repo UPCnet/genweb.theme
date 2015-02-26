@@ -1,11 +1,16 @@
 Changelog
 =========
 
-1.45 (unreleased)
+1.45 (2015-02-26)
 -----------------
 
-- Nothing changed yet.
-
+* Canvis Oscar [Roberto Diaz]
+* Oscar style [Roberto Diaz]
+* Oscar style [Roberto Diaz]
+* Oscar styles [Roberto Diaz]
+* Oscar styles [Roberto Diaz]
+* Styles [Roberto Diaz]
+* Portlets translations [hanirok]
 
 1.44 (2015-02-17)
 -----------------
