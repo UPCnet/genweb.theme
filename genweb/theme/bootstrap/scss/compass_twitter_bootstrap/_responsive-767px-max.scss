@@ -68,10 +68,6 @@
 
   .header-image {
     @include background-size(100%);
-    &.l2-image {
-      margin-left:207px !important;
-      &:before {top:45px;width:175px;margin-left:-207px;}
-    }
   }
 
   // contingut

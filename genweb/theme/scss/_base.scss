@@ -135,20 +135,10 @@ background-image: image-url("gh-w.png") !important;
 	height:65px;
 }
 /* L2 */
-.l2-image {
-	margin-left:250px !important;
+.l2-image {	
 	height:50px;
 	margin-bottom:-1px;
 	overflow:visible;
-	&:before {
-		content:" ";
-		background:$genwebPrimary;
-		height: 5px;
-    	margin-left: -250px;
-    	position: absolute;
-    	top: 45px;
-    	width: 222px;
-	}
 }
 /* NO-IMG */
 .no-image .header-image { display:none !important;}
