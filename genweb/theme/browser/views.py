@@ -714,7 +714,7 @@ class newsCollectionView(grok.View):
 
 class ContactFeedback(grok.View):
     grok.name('contact_feedback')
-    grok.context(IPloneSiteRoot)
+    grok.context(INavigationRoot)
     grok.template("contact_feedback")
     grok.require('zope2.View')
     grok.layer(IGenwebTheme)
