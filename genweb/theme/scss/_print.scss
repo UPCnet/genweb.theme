@@ -28,7 +28,9 @@
     .extraInfo,
     .img_blank,
     .header-image,
-    .event img {
+    .event img,
+    #bandaLogos,
+    #baners {
         display: none !important; }
 
 
@@ -52,5 +54,7 @@
         color: black;
         text-decoration: none;
     }
+
+
 
 }

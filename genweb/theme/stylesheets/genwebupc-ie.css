@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1424868843432');
+@import url('genwebupc-ie-blessed1.css?z=1425041946857');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 553, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -4904,67 +4904,78 @@ ul.hCalendar-hidden {
 input[name='poll.submit'] {
   margin-top: 15px; }
 
-/* line 899, ../scss/_plone.scss */
+/* line 900, ../scss/_plone.scss */
 .image-left {
   float: left;
   margin: 0 10px 0 0; }
 
-/* line 904, ../scss/_plone.scss */
+/* line 905, ../scss/_plone.scss */
 .image-right {
   float: right;
   margin: 0 0 0 10px; }
 
 /* line 911, ../scss/_plone.scss */
+body.mceContentBody br[data-mce-bogus="1"] {
+  display: none; }
+/* line 915, ../scss/_plone.scss */
+body.mceContentBody #myTab li.active a, body.mceContentBody #myTab li.selected a {
+  border-bottom: 1px solid #fff !important; }
+
+/* line 920, ../scss/_plone.scss */
+iframe#templatesrc {
+  width: 100% !important; }
+
+/* line 928, ../scss/_plone.scss */
 #recaptcha_table {
   width: 334px; }
-  /* line 913, ../scss/_plone.scss */
+  /* line 930, ../scss/_plone.scss */
   #recaptcha_table td {
     display: block; }
-  /* line 916, ../scss/_plone.scss */
+  /* line 933, ../scss/_plone.scss */
   #recaptcha_table tr:nth-child(1) {
     width: 70%; }
-    /* line 919, ../scss/_plone.scss */
+    /* line 936, ../scss/_plone.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(1) {
       width: 70%; }
-    /* line 922, ../scss/_plone.scss */
+    /* line 939, ../scss/_plone.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(2) {
       width: 30px;
       float: left; }
-    /* line 927, ../scss/_plone.scss */
+    /* line 944, ../scss/_plone.scss */
     #recaptcha_table tr:nth-child(1) td:nth-child(3) {
       float: left; }
-  /* line 933, ../scss/_plone.scss */
+  /* line 950, ../scss/_plone.scss */
   #recaptcha_table tr:nth-child(2) {
     width: 70%; }
-    /* line 935, ../scss/_plone.scss */
+    /* line 952, ../scss/_plone.scss */
     #recaptcha_table tr:nth-child(2) td {
       width: 50%; }
-  /* line 940, ../scss/_plone.scss */
+  /* line 957, ../scss/_plone.scss */
   #recaptcha_table center {
     float: left; }
 
-/* line 947, ../scss/_plone.scss */
+/* line 964, ../scss/_plone.scss */
 #cookies {
   border-bottom: 1px solid #dedede;
   color: #666666;
   margin: auto;
   padding: 4px 0; }
 
-/* line 955, ../scss/_plone.scss */
+/* line 972, ../scss/_plone.scss */
 #contentview-SEOProperties {
   width: 40px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: none; }
-  /* line 960, ../scss/_plone.scss */
+  /* line 977, ../scss/_plone.scss */
   #contentview-SEOProperties a {
     width: 26px;
     overflow: hidden; }
-  /* line 964, ../scss/_plone.scss */
+  /* line 981, ../scss/_plone.scss */
   #contentview-SEOProperties a[href*="/es/"] {
     direction: rtl; }
 
-/* line 975, ../scss/_plone.scss */
+/* line 992, ../scss/_plone.scss */
 .template-folder_listing #content dl dt:before {
   background: url('++genweb++static/images/gh-c.png?1410864406') no-repeat scroll -191px -43px/290px auto rgba(0, 0, 0, 0);
   content: " ";
@@ -4973,27 +4984,27 @@ input[name='poll.submit'] {
   margin-left: 3px;
   position: relative;
   width: 14px; }
-/* line 984, ../scss/_plone.scss */
+/* line 1001, ../scss/_plone.scss */
 .template-folder_listing #content dl {
   padding: 0 0 0 6px; }
-/* line 987, ../scss/_plone.scss */
+/* line 1004, ../scss/_plone.scss */
 .template-folder_listing #content dt {
   font-weight: normal !important;
   margin-top: 16px; }
-/* line 991, ../scss/_plone.scss */
+/* line 1008, ../scss/_plone.scss */
 .template-folder_listing #content dd {
   margin-bottom: 10px;
   margin-left: 22px; }
 
-/* line 999, ../scss/_plone.scss */
+/* line 1016, ../scss/_plone.scss */
 .template-folder_tabular_view #content table.listing a {
   font-weight: normal !important; }
 
-/* line 1004, ../scss/_plone.scss */
+/* line 1021, ../scss/_plone.scss */
 .template-folder_summary_view #content p.tileFooter {
   display: none; }
 
-/* line 1010, ../scss/_plone.scss */
+/* line 1027, ../scss/_plone.scss */
 .template-atct_album_view #content dt {
   font-weight: normal !important; }
 
@@ -7171,7 +7182,7 @@ tr.mceLast > td {
   #peu .span8 {
     width: 100%; }
 
-  /* line 31, ../scss/_print.scss */
+  /* line 33, ../scss/_print.scss */
   .share_popover,
   #portal-header > div.container > div.clearfix > h1.pull-left > a,
   #portal-header > div.container > div.visualClear > h1.pull-left > a,
@@ -7181,14 +7192,16 @@ tr.mceLast > td {
   .extraInfo,
   .img_blank,
   .header-image,
-  .event img {
+  .event img,
+  #bandaLogos,
+  #baners {
     display: none !important; }
 
-  /* line 35, ../scss/_print.scss */
+  /* line 37, ../scss/_print.scss */
   abbr {
     border: 0 !important; }
 
-  /* line 37, ../scss/_print.scss */
+  /* line 39, ../scss/_print.scss */
   dl.event.summary.details {
     width: 98% !important;
     max-width: 98% !important;
@@ -7196,15 +7209,15 @@ tr.mceLast > td {
     border: 1px solid #aaaaaa !important;
     float: none !important; }
 
-  /* line 45, ../scss/_print.scss */
+  /* line 47, ../scss/_print.scss */
   .liniaBaix, .documentFirstHeading, .documentFirstHeading {
     box-shadow: 0 0 0 !important; }
 
-  /* line 49, ../scss/_print.scss */
+  /* line 51, ../scss/_print.scss */
   #portal-header > div.container, #peu > div.container {
     border-top: 1px solid #aaaaaa !important; }
 
-  /* line 51, ../scss/_print.scss */
+  /* line 53, ../scss/_print.scss */
   a, a:visited {
     color: black;
     text-decoration: none; } }

@@ -893,6 +893,7 @@ ul.hCalendar-hidden {
 
 input[name='poll.submit'] { margin-top: 15px; } // afegeix separació botó enviament
 
+// TINY
 
 // IMATGES inserides per tiny
 
@@ -906,41 +907,57 @@ input[name='poll.submit'] { margin-top: 15px; } // afegeix separació botó envi
 	margin: 0 0 0 10px;
 }
 
+body.mceContentBody {
+	br[data-mce-bogus="1"] { // amaga els br extra introduits per tiny
+		display: none;
+	}
 
-  // captcha
-  #recaptcha_table {// visualitzem la taula captcha en blocks
-  	width: 334px;
-    td {
-      display:block;
-    }
-    tr:nth-child(1){
-      width:70%;
-      td {
-        &:nth-child(1){// imatge
-          width:70%
-        }
-        &:nth-child(2){// botons
-          width:30px;
-          float:left;
-          //border:1px solid red !important;
-        }
-        &:nth-child(3){// logo
-          float:left;
-        }
-      }
-    }
+	#myTab li.active a { // correccio per plantilla pestanyes
+  		border-bottom:1px solid #fff !important;
+	}
+}
 
-    tr:nth-child(2) {
-      width:70%;
-      td {
-        width:50%;
-      }
-    }
+iframe#templatesrc { // amplada iframe previsualitzacio plantilles
+	width: 100% !important;
+}
 
-    center {
+// fi TINY
+
+
+// captcha
+#recaptcha_table {// visualitzem la taula captcha en blocks
+	width: 334px;
+td {
+  display:block;
+}
+tr:nth-child(1){
+  width:70%;
+  td {
+    &:nth-child(1){// imatge
+      width:70%
+    }
+    &:nth-child(2){// botons
+      width:30px;
+      float:left;
+      //border:1px solid red !important;
+    }
+    &:nth-child(3){// logo
       float:left;
     }
-  } // fi #recaptcha_table
+  }
+}
+
+tr:nth-child(2) {
+  width:70%;
+  td {
+    width:50%;
+  }
+}
+
+center {
+  float:left;
+}
+} // fi #recaptcha_table
 
 
 // COOKIES
