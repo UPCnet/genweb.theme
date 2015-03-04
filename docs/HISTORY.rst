@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.47 (unreleased)
+1.47 (2015-03-04)
 -----------------
 
 - Nothing changed yet.
-
+- Re-released.
 
 1.46 (2015-03-04)
 -----------------
