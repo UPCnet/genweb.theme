@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.46 (unreleased)
+1.46 (2015-03-04)
 -----------------
 
-- Nothing changed yet.
-
+* Change redirect contact_feedback [hanirok]
 
 1.45 (2015-02-26)
 -----------------
