@@ -15,22 +15,26 @@ $(document).ready(function () {
   jarn.i18n.loadCatalog('genweb');
   window._gw_i18n = jarn.i18n.MessageFactory('genweb');
 
-  var max_iterations = 40;
-  var intervalId = setInterval(function(event) {
-     if (window._gw_i18n !== undefined && window._i18nsucks === true) {
-         $('[type=file]').each(function(index, value) {
-             $(value).customFileInput();
-         });
-         clearInterval(intervalId);
-     }
+$('[type=file]').each(function(index, value) {
+              $(value).customFileInput();
+});
 
-     max_iterations -= 1;
-     if (max_iterations <= 0) {
-      clearInterval(intervalId);
-      $('.namedblobimage-field input, .namedblobfile-field input').css({position: 'inherit', opacity: '1'});
-     }
+  // var max_iterations = 40;
+  // var intervalId = setInterval(function(event) {
+  //    if (window._gw_i18n !== undefined && window._i18nsucks === true) {
+  //        $('[type=file]').each(function(index, value) {
+  //            $(value).customFileInput();
+  //        });
+  //        clearInterval(intervalId);
+  //    }
 
-  }, 50);
+  //    max_iterations -= 1;
+  //    if (max_iterations <= 0) {
+  //     clearInterval(intervalId);
+  //     $('.namedblobimage-field input, .namedblobfile-field input').css({position: 'inherit', opacity: '1'});
+  //    }
+
+  // }, 50);
 
   // $('select:not([multiple])').dropkick();
   $('ul.dk_options_inner').addClass('scrollable');
