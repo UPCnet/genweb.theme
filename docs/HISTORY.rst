@@ -1,17 +1,19 @@
 Changelog
 =========
 
-1.48 (unreleased)
+1.48 (2015-03-12)
 -----------------
 
-- Nothing changed yet.
-
+* quitar de las vistas los elementos excluidos de navegación [Paco Gregori]
+* Slight improvements to the file widget [Victor Fernandez de Alba]
+* Temporaly disable AJAX visual indicators [Victor Fernandez de Alba]
 
 1.47 (2015-03-04)
 -----------------
 
-- Nothing changed yet.
-- Re-released.
+* quitar de las vistas los elementos excluidos de navegación [Paco Gregori]
+* Slight improvements to the file widget [Victor Fernandez de Alba]
+* Temporaly disable AJAX visual indicators [Victor Fernandez de Alba]- Re-released.
 
 1.46 (2015-03-04)
 -----------------
