@@ -7623,31 +7623,31 @@ button.pfg-draft-save .badge,
   padding-top: 6.63%; }
 
 /* L3 */
-/* line 131, ../scss/_base.scss */
+/* line 134, ../scss/_base.scss */
 .l3-image {
   height: 65px; }
 
 /* L2 */
-/* line 135, ../scss/_base.scss */
+/* line 138, ../scss/_base.scss */
 .l2-image {
   margin-bottom: -1px;
   overflow: visible; }
 
 /* NO-IMG */
-/* line 141, ../scss/_base.scss */
+/* line 143, ../scss/_base.scss */
 .no-image .header-image {
   display: none !important; }
 
 /* ajusta menú L3*/
-/* line 143, ../scss/_base.scss */
+/* line 145, ../scss/_base.scss */
 #portal-header.no-image .container {
   padding-bottom: 20px; }
 
-/* line 144, ../scss/_base.scss */
+/* line 146, ../scss/_base.scss */
 #portal-header.no-image + #portal-globalnav .navbar-inner {
   margin-top: -20px; }
 
-/* line 145, ../scss/_base.scss */
+/* line 147, ../scss/_base.scss */
 #portal-header:not(.no-image) + #portal-globalnav .navbar-inner {
   -webkit-border-radius: 0 0 4px 4px !important;
   -moz-border-radius: 0 0 4px 4px !important;
@@ -7656,88 +7656,88 @@ button.pfg-draft-save .badge,
   border-radius: 0 0 4px 4px !important;
   margin-top: -1px; }
 
-/* line 150, ../scss/_base.scss */
+/* line 152, ../scss/_base.scss */
 #content-area {
   padding-bottom: 2em;
   margin-top: 1.5em; }
 
-/* line 152, ../scss/_base.scss */
+/* line 154, ../scss/_base.scss */
 #edit-bar {
   border-bottom: 1px solid #CCCCCC;
   box-shadow: 0 -10px 12px -18px black inset;
   margin-bottom: 18px; }
-  /* line 156, ../scss/_base.scss */
+  /* line 158, ../scss/_base.scss */
   #edit-bar .nav-tabs, #edit-bar .contentViews, #edit-bar .configlets {
     border-bottom: 0;
     box-shadow: none;
     margin: 0; }
-  /* line 161, ../scss/_base.scss */
+  /* line 163, ../scss/_base.scss */
   #edit-bar .nav-pills, #edit-bar .formTabs {
     margin: 0; }
-  /* line 163, ../scss/_base.scss */
+  /* line 165, ../scss/_base.scss */
   #edit-bar .dropdown-toggle .label, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-restricted-to-managers, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-visible, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-intranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-publishtointranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-publicaalaintranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-retracttointranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-retiraalaintranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-private, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-hide, #edit-bar .dropdown-toggle .badge {
     font-size: 100%; }
 
-/* line 171, ../scss/_base.scss */
+/* line 173, ../scss/_base.scss */
 #bandaLogos {
   border-top: 1px solid #bdc8cf;
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.03); }
-  /* line 172, ../scss/_base.scss */
+  /* line 174, ../scss/_base.scss */
   #bandaLogos .container {
     border-top: 1px solid #002941;
     margin-top: -1px; }
 
-/* line 174, ../scss/_base.scss */
+/* line 176, ../scss/_base.scss */
 .llistatLogos {
   margin: 0 auto;
   list-style: none;
   text-align: right;
   padding-top: 1em; }
-  /* line 175, ../scss/_base.scss */
+  /* line 177, ../scss/_base.scss */
   .llistatLogos li {
     display: inline-block;
     margin: 0 0 1em; }
-  /* line 176, ../scss/_base.scss */
+  /* line 178, ../scss/_base.scss */
   .llistatLogos a {
     margin: 0 1.5em;
     display: block; }
-  /* line 177, ../scss/_base.scss */
+  /* line 179, ../scss/_base.scss */
   .llistatLogos img {
     max-height: 100px; }
 
-/* line 183, ../scss/_base.scss */
+/* line 185, ../scss/_base.scss */
 #peu {
   background: #f2f2f2;
   border-top: 5px solid #bdc8cf;
   font-size: 92.3076923%; }
-  /* line 184, ../scss/_base.scss */
+  /* line 186, ../scss/_base.scss */
   #peu .container {
     border-top: 5px solid #007bc0;
     margin-top: -5px; }
-  /* line 185, ../scss/_base.scss */
+  /* line 187, ../scss/_base.scss */
   #peu p {
     margin: 6px 0 0; }
-  /* line 186, ../scss/_base.scss */
+  /* line 188, ../scss/_base.scss */
   #peu .amunt img {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.7; }
-  /* line 187, ../scss/_base.scss */
+  /* line 189, ../scss/_base.scss */
   #peu .amunt a:hover img {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1; }
-  /* line 188, ../scss/_base.scss */
+  /* line 190, ../scss/_base.scss */
   #peu address {
     color: #666666; }
-    /* line 189, ../scss/_base.scss */
+    /* line 191, ../scss/_base.scss */
     #peu address p {
       margin: 0; }
 
-/* line 193, ../scss/_base.scss */
+/* line 195, ../scss/_base.scss */
 .sobreElWeb li {
   display: inline-block;
   line-height: 0; }
 
-/* line 194, ../scss/_base.scss */
+/* line 196, ../scss/_base.scss */
 .sobreElWeb li:before {
   content: ".";
   font-size: 52px;
@@ -7747,7 +7747,7 @@ button.pfg-draft-save .badge,
   left: -1px;
   color: #4d6573; }
 
-/* line 198, ../scss/_base.scss */
+/* line 200, ../scss/_base.scss */
 .sobreElWeb li:first-child:before {
   content: "";
   font-size: 52px;
@@ -7755,7 +7755,7 @@ button.pfg-draft-save .badge,
   line-height: 0;
   top: .25em; }
 
-/* line 199, ../scss/_base.scss */
+/* line 201, ../scss/_base.scss */
 .sobreElWeb li:last-child:before {
   content: " __ ";
   font-size: 13px;
@@ -7764,26 +7764,26 @@ button.pfg-draft-save .badge,
   top: -.35em;
   padding: 0 2px 0 3px; }
 
-/* line 200, ../scss/_base.scss */
+/* line 202, ../scss/_base.scss */
 #peu .amunt {
   position: relative;
   top: 3px; }
 
-/* line 201, ../scss/_base.scss */
+/* line 203, ../scss/_base.scss */
 #peu .amunt div.tooltip {
   margin-top: -21px !important;
   margin-left: 6px !important; }
 
-/* line 206, ../scss/_base.scss */
+/* line 208, ../scss/_base.scss */
 #canvia-vista {
   padding: 0;
   margin-left: -10px;
   margin-right: -10px;
   display: block; }
-  /* line 211, ../scss/_base.scss */
+  /* line 213, ../scss/_base.scss */
   #canvia-vista p {
     margin: 0 !important; }
-  /* line 212, ../scss/_base.scss */
+  /* line 214, ../scss/_base.scss */
   #canvia-vista a {
     background: url('++genweb++static/images/vistabg.png?1410864406') #666666;
     text-align: center;
@@ -7797,7 +7797,7 @@ button.pfg-draft-save .badge,
     display: block;
     background-position: left 3px; }
 
-/* line 224, ../scss/_base.scss */
+/* line 226, ../scss/_base.scss */
 .review {
   display: none; }
 
