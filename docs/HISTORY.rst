@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.49 (unreleased)
+1.49 (2015-03-19)
 -----------------
 
-- Nothing changed yet.
-
+* open link in new window on portlet navigation [Paco Gregori]
 
 1.48 (2015-03-12)
 -----------------
