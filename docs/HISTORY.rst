@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.50 (unreleased)
+1.50 (2015-04-13)
 -----------------
 
-- Nothing changed yet.
-
+* add link for return to previous page in insufficient_privileges page [Paco Gregori]
+* Remove conflic [Victor Fernandez de Alba]
 
 1.49 (2015-03-19)
 -----------------
