@@ -11,7 +11,9 @@
         font-size: 90%;
     }
 
-    .nav-collapse-eines, #portal-personaltools-wrapper, #portal-globalnav, #portal-breadcrumbs, #portal-column-one, .alert, #edit-bar, #viewlet-below-content-title, #viewlet-below-content, #peu .span4 {display: none !important;}
+    .nav-collapse-eines, #portal-personaltools-wrapper, #portal-globalnav, #portal-breadcrumbs,
+     #portal-column-one, .alert, #edit-bar, #viewlet-below-content-title, #viewlet-below-content,
+     #peu .span4, #peu .span8 > p, #bandaLogos, div.popover, #menusup {display: none !important;}
 
     #portal-column-content {margin:0 !important; width:100% !important;}
     #peu .span8 {width:100%;}
