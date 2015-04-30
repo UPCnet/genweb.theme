@@ -252,14 +252,52 @@
                                   <div class="visualClear"><!-- --></div>
                               </fieldset>
                              </div>
+                             <div class="span3" >
+                              <fieldset class="noborder" i18n:domain="plone">
+                                  <legend i18n:translate="label_author">Author</legend>
+                                  <div class="field">
+                                    <div class="formHelp"></div>
+                                    <input  class="searchPage"
+                                            name="Creator"
+                                            id="Creator"
+                                            type="text"
+                                            size="25"
+                                            title="Search Author"
+                                    />
+                                  </div>
+                                </fieldset>
+                              </div>
+                              <div class="span3">
+                                <fieldset class="noborder">
+                                  <legend i18n:translate="label_tags">Tags</legend>
+                                  <div class="field"
+                    tal:define="usedSubjects python:context.portal_catalog.uniqueValuesFor('Subject');"
+                   tal:condition="usedSubjects">
+                                  <div class="formHelp"></div>
+                                  <select name="Subject:list"
+                                          id="Subject"
+                                          size="7"
+                                          multiple="multiple"
+                                          tal:define="contentSubjects context/Subject;">
+                                      
+                                      <option value="#"
+                                              tal:repeat="subject usedSubjects"
+                                              tal:content="subject"
+                                              tal:attributes="value subject"
+                                              i18n:domain="plone-metadata"
+                                              i18n:translate=""
+                                              >dummy
+                                      </option>
+                                      
+                                  </select>
+                                 </div>
+                                </fieldset>
+                              </div>
                             </div>
                           </div>
                       </dd>
-
                     </dl>
-
                 </div>
-
                 <div class="visualClear"><!-- --></div>
 
                 <metal:searchresults define-macro="search_results">
