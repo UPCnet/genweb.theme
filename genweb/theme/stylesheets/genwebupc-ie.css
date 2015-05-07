@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1426240602509');
+@import url('genwebupc-ie-blessed1.css?z=1429531537728');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 553, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -2058,6 +2058,153 @@ a.primary, .primary a, a .primary {
   -moz-column-gap: 20px;
   column-gap: 20px; }
 
+/* line 86, ../scss/_plantilles.scss */
+.beautytab {
+  width: 100%; }
+  /* line 89, ../scss/_plantilles.scss */
+  .beautytab ul {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0; }
+  /* line 100, ../scss/_plantilles.scss */
+  .beautytab li.formTab {
+    flex-grow: 1;
+    list-style: none;
+    text-align: center;
+    border-style: solid;
+    border-color: #b2b2b2;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: -moz-linear-gradient(top, white, #d8d8d8);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#d8d8d8));
+    background-image: -webkit-linear-gradient(top, white, #d8d8d8);
+    background-image: -o-linear-gradient(top, white, #d8d8d8);
+    background-image: linear-gradient(to bottom, #ffffff, #d8d8d8);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#d6d6d6', GradientType=0);
+    border-width: 1px 1px 1px 0;
+    text-decoration: none;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); }
+    /* line 116, ../scss/_plantilles.scss */
+    .beautytab li.formTab:hover {
+      background-color: #e2e2e2;
+      background-image: -moz-linear-gradient(top, white, #b2b2b2);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#b2b2b2));
+      background-image: -webkit-linear-gradient(top, white, #b2b2b2);
+      background-image: -o-linear-gradient(top, white, #b2b2b2);
+      background-image: linear-gradient(to bottom, #ffffff, #b2b2b2);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#afafaf', GradientType=0); }
+    /* line 120, ../scss/_plantilles.scss */
+    .beautytab li.formTab.active, .beautytab li.formTab.selected {
+      background-color: #e2e2e2;
+      background-image: -moz-linear-gradient(top, white, #b2b2b2);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#b2b2b2));
+      background-image: -webkit-linear-gradient(top, white, #b2b2b2);
+      background-image: -o-linear-gradient(top, white, #b2b2b2);
+      background-image: linear-gradient(to bottom, #ffffff, #b2b2b2);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#afafaf', GradientType=0); }
+      /* line 122, ../scss/_plantilles.scss */
+      .beautytab li.formTab.active:after, .beautytab li.formTab.selected:after {
+        content: "";
+        float: right;
+        position: relative;
+        top: 7px;
+        right: 43%;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 7px 8px 0;
+        border-color: #b2b2b2 transparent transparent transparent; }
+  /* line 136, ../scss/_plantilles.scss */
+  .beautytab a {
+    display: block;
+    padding: 6px 4px 0px 4px;
+    color: #4c4c4c;
+    text-shadow: 0 0 0.5em white; }
+    /* line 141, ../scss/_plantilles.scss */
+    .beautytab a:hover {
+      text-decoration: none; }
+  /* line 147, ../scss/_plantilles.scss */
+  .beautytab li:first-child {
+    border-left-width: 1px;
+    -moz-border-radius-topleft: 0.5em;
+    -webkit-border-top-left-radius: 0.5em;
+    border-top-left-radius: 0.5em; }
+  /* line 151, ../scss/_plantilles.scss */
+  .beautytab li:last-child {
+    border-right-style: solid;
+    border-right-width: 1px !important;
+    -moz-border-radius-topright: 0.5em;
+    -webkit-border-top-right-radius: 0.5em;
+    border-top-right-radius: 0.5em; }
+
+/* line 158, ../scss/_plantilles.scss */
+.beautytab-content {
+  border-style: solid;
+  border-color: #b2b2b2;
+  border-width: 0 1px 1px 1px;
+  padding: 10px 5px;
+  -moz-border-radius-bottomright: 0.5em;
+  -webkit-border-bottom-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  -moz-border-radius-bottomleft: 0.5em;
+  -webkit-border-bottom-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em; }
+
+@media only screen and (max-width: 360px) {
+  /* line 170, ../scss/_plantilles.scss */
+  .beautytab ul {
+    display: block; }
+  /* line 173, ../scss/_plantilles.scss */
+  .beautytab li.formTab {
+    border-width: 1px;
+    margin-top: -1px;
+    background-color: #e2e2e2;
+    background-image: -moz-linear-gradient(top, #e2e2e2, #e2e2e2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e2e2e2), to(#e2e2e2));
+    background-image: -webkit-linear-gradient(top, #e2e2e2, #e2e2e2);
+    background-image: -o-linear-gradient(top, #e2e2e2, #e2e2e2);
+    background-image: linear-gradient(to bottom, #e2e2e2, #e2e2e2);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#dfdfdf', GradientType=0); }
+    /* line 177, ../scss/_plantilles.scss */
+    .beautytab li.formTab:first-child {
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em;
+      border-right-width: 1px !important; }
+    /* line 181, ../scss/_plantilles.scss */
+    .beautytab li.formTab:last-child {
+      -moz-border-radius-topright: 0;
+      -webkit-border-top-right-radius: 0;
+      border-top-right-radius: 0; }
+    /* line 184, ../scss/_plantilles.scss */
+    .beautytab li.formTab.active, .beautytab li.formTab.selected {
+      font-weight: bold;
+      background-color: #b2b2b2;
+      background-image: -moz-linear-gradient(top, #b2b2b2, #b2b2b2);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b2b2b2), to(#b2b2b2));
+      background-image: -webkit-linear-gradient(top, #b2b2b2, #b2b2b2);
+      background-image: -o-linear-gradient(top, #b2b2b2, #b2b2b2);
+      background-image: linear-gradient(to bottom, #b2b2b2, #b2b2b2);
+      background-repeat: repeat-x;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#afafaf', endColorstr='#afafaf', GradientType=0); }
+      /* line 187, ../scss/_plantilles.scss */
+      .beautytab li.formTab.active:after, .beautytab li.formTab.selected:after {
+        border-width: 0; } }
 /* line 4, ../scss/_leads.scss */
 .lead, .lead-small, .destacatQuadres, .portaltype-packet .estudis .note, .lead-large, .sheet, div.fitxa, .destacatBandejat, .textDestacat {
   margin-bottom: 18px;
@@ -4976,34 +5123,33 @@ iframe#templatesrc {
 
 /* line 992, ../scss/_plone.scss */
 .template-folder_listing #content dl dt:before {
-  background: url('++genweb++static/images/gh-c.png?1410864406') no-repeat scroll -191px -43px/290px auto rgba(0, 0, 0, 0);
-  content: " ";
-  display: inline-block;
-  height: 11px;
-  margin-left: 3px;
-  position: relative;
-  width: 14px; }
-/* line 1001, ../scss/_plone.scss */
+  content: ".";
+  position: absolute;
+  font-size: 52px;
+  margin-left: -20px;
+  margin-top: -15px;
+  color: #557c95; }
+/* line 1000, ../scss/_plone.scss */
 .template-folder_listing #content dl {
-  padding: 0 0 0 6px; }
-/* line 1004, ../scss/_plone.scss */
+  padding: 0 0 0 28px; }
+/* line 1003, ../scss/_plone.scss */
 .template-folder_listing #content dt {
   font-weight: normal !important;
   margin-top: 16px; }
-/* line 1008, ../scss/_plone.scss */
+/* line 1007, ../scss/_plone.scss */
 .template-folder_listing #content dd {
   margin-bottom: 10px;
   margin-left: 22px; }
 
-/* line 1016, ../scss/_plone.scss */
+/* line 1015, ../scss/_plone.scss */
 .template-folder_tabular_view #content table.listing a {
   font-weight: normal !important; }
 
-/* line 1021, ../scss/_plone.scss */
+/* line 1020, ../scss/_plone.scss */
 .template-folder_summary_view #content p.tileFooter {
   display: none; }
 
-/* line 1027, ../scss/_plone.scss */
+/* line 1026, ../scss/_plone.scss */
 .template-atct_album_view #content dt {
   font-weight: normal !important; }
 
@@ -7168,20 +7314,23 @@ tr.mceLast > td {
     content: " (" attr(href) ") ";
     font-size: 90%; }
 
-  /* line 14, ../scss/_print.scss */
-  .nav-collapse-eines, #portal-personaltools-wrapper, #portal-globalnav, #portal-breadcrumbs, #portal-column-one, .alert, .portalMessage, #edit-bar, #viewlet-below-content-title, #viewlet-below-content, #peu .span4, #peu .w1\3a 3 {
+  /* line 16, ../scss/_print.scss */
+  .nav-collapse-eines, #portal-personaltools-wrapper, #portal-globalnav, #portal-breadcrumbs,
+  #portal-column-one, .alert, .portalMessage, #edit-bar, #viewlet-below-content-title, #viewlet-below-content,
+  #peu .span4,
+  #peu .w1\3a 3, #peu .span8 > p, #bandaLogos, div.popover, div.expandable-content, #menusup {
     display: none !important; }
 
-  /* line 16, ../scss/_print.scss */
+  /* line 18, ../scss/_print.scss */
   #portal-column-content {
     margin: 0 !important;
     width: 100% !important; }
 
-  /* line 17, ../scss/_print.scss */
+  /* line 19, ../scss/_print.scss */
   #peu .span8 {
     width: 100%; }
 
-  /* line 33, ../scss/_print.scss */
+  /* line 35, ../scss/_print.scss */
   .share_popover,
   #portal-header > div.container > div.clearfix > h1.pull-left > a,
   #portal-header > div.container > div.visualClear > h1.pull-left > a,
@@ -7196,11 +7345,11 @@ tr.mceLast > td {
   #baners {
     display: none !important; }
 
-  /* line 37, ../scss/_print.scss */
+  /* line 39, ../scss/_print.scss */
   abbr {
     border: 0 !important; }
 
-  /* line 39, ../scss/_print.scss */
+  /* line 41, ../scss/_print.scss */
   dl.event.summary.details {
     width: 98% !important;
     max-width: 98% !important;
@@ -7208,15 +7357,15 @@ tr.mceLast > td {
     border: 1px solid #aaaaaa !important;
     float: none !important; }
 
-  /* line 47, ../scss/_print.scss */
+  /* line 49, ../scss/_print.scss */
   .liniaBaix, .documentFirstHeading, .documentFirstHeading {
     box-shadow: 0 0 0 !important; }
 
-  /* line 51, ../scss/_print.scss */
+  /* line 53, ../scss/_print.scss */
   #portal-header > div.container, #peu > div.container {
     border-top: 1px solid #aaaaaa !important; }
 
-  /* line 53, ../scss/_print.scss */
+  /* line 55, ../scss/_print.scss */
   a, a:visited {
     color: black;
     text-decoration: none; } }

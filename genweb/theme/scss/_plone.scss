@@ -990,16 +990,15 @@ center {
 
 .template-folder_listing #content {
 	dl dt:before {
-	    background: image-url("gh-c.png") no-repeat scroll -191px -43px / 290px auto rgba(0, 0, 0, 0);
-	    content: " ";
-	    display: inline-block;
-	    height: 11px;
-	    margin-left: 3px;
-	    position: relative;
-	    width: 14px;
+		content:".";
+	    position: absolute;
+	    font-size:52px;
+	    margin-left:-20px;
+	    margin-top:-15px;
+	    color: $genwebTitles;
 	}
 	dl {
-	    padding: 0 0 0 6px;
+	    padding: 0 0 0 28px;
 	}
 	dt {
 		font-weight: normal !important;
@@ -1027,4 +1026,8 @@ center {
 .template-atct_album_view #content dt {
   font-weight: normal !important;
 }
+
+
+
+			
 
