@@ -1,11 +1,18 @@
 Changelog
 =========
 
-1.51 (unreleased)
+1.51 (2015-05-18)
 -----------------
 
-- Nothing changed yet.
-
+* Delete nav.scss duplicated [hanirok]
+* portlet collection error [Paco Gregori]
+* Tags and author fields added to the search form [Helena Orihuela]
+* change color text administration menu [Paco Gregori]
+* css print [Paco Gregori]
+* Merge [Roberto Diaz]
+* render css print [Paco Gregori]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* customize print page [Paco Gregori]
 
 1.50 (2015-04-13)
 -----------------
