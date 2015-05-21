@@ -184,7 +184,7 @@ a:hover {
     clear: both; }
 
 /* line 558, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-[class*="span"], .cella {
+[class^="span"], .cella {
   float: left;
   margin-left: 30px;
   margin-bottom: 18px; }
@@ -305,7 +305,7 @@ a:hover {
   .row-fluid:after, #dashboard:after, .fila:after, .template-atct_album_view #content-core:after {
     clear: both; }
   /* line 605, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  .row-fluid [class*="span"], #dashboard [class*="span"], .fila [class*="span"], .template-atct_album_view #content-core [class*="span"], .row-fluid .cella, #dashboard .cella, .fila .cella, .template-atct_album_view #content-core .cella {
+  .row-fluid [class^="span"], #dashboard [class*="span"], .fila [class*="span"], .template-atct_album_view #content-core [class*="span"], .row-fluid .cella, #dashboard .cella, .fila .cella, .template-atct_album_view #content-core .cella {
     display: block;
     width: 100%;
     min-height: 30px;

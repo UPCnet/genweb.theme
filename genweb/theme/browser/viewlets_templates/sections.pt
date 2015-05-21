@@ -1,7 +1,9 @@
 <nav id="portal-globalnav"
-     tal:define="portal_tabs view/portal_tabs"
+     tal:define="portal_tabs view/portal_tabs;
+                 portal_url context/@@plone_portal_state/portal_url;"
      tal:condition="view/show_menu"
      i18n:domain="plone"><!-- #portal-globalnav -->
+ 
   <div class="container">
     <div class="navbar" role="navigation">
       <div class="navbar-inner">

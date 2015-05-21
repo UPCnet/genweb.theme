@@ -555,7 +555,7 @@
     @include clearfix();
   }
 
-  [class*="span"] {
+  [class^="span"] {
     float: left;
     margin-left: $gutterWidth;
     margin-bottom: $baseLineHeight;
@@ -602,7 +602,7 @@
   .row-fluid {
     width: 100%;
     @include clearfix();
-    [class*="span"] {
+    [class^="span"] {
       @include input-block-level();
       float: left;
       margin-left: $gutterWidth;

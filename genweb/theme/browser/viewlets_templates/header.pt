@@ -10,7 +10,6 @@
     <a id='eines-menu' class="btn btn-navbar pull-right hidden-desktop hidden-tablet" data-toggle="collapse" data-target=".nav-collapse-eines">
       <i class="icon-wrench"></i>
     </a>
-
     <!-- Menu para tamaño escritorio -->
     <div class="nav-collapse nav-collapse-eines hidden-phone hidden-tablet"
          tal:define="dades context/@@genweb.utils/getDadesUnitat">
@@ -68,7 +67,6 @@
         </li>
       </ul>
     </div>
-
     <!-- Menu para phone y tablet -->
     <div class="nav-collapse nav-collapse-eines hidden-desktop"
          tal:define="dades context/@@genweb.utils/getDadesUnitat">
@@ -126,9 +124,6 @@
         <li class="divider"> </li>
       </ul>
     </div>
-
-
-
   </div>
 
   <div class="titol-espai clearfix">
@@ -144,6 +139,7 @@
                                alt viewlet/get_right_logo_alt">
       </a>
     </h1>
+    
   </div>
 
   <div class="header-image l3-image"
