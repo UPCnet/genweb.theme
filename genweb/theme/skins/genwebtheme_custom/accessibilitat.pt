@@ -90,7 +90,7 @@
 <p>Per utilizar les tecles d'accés cal prémer simultàniament MAJ + ALT + tecla d'accés.</p>
 <br />
 <h2>Contacte</h2>
-<p>Actualment, continuem treballant per mantenir i millorar l'accessibilitat de totes les pàgines del web. Si observeu alguna anomalia, relacionada amb l'accessibilitat, contacteu si us plau amb l'<a tal:attributes="href string:${portal_url}/contact" href="">Administració del web</a>.</p>
+<p>Actualment, continuem treballant per mantenir i millorar l'accessibilitat de totes les pàgines del web. Si observeu alguna anomalia, relacionada amb l'accessibilitat, contacteu si us plau amb l'<a tal:attributes="href string:${portal_url}/ca/contact" href="">Administració del web</a>.</p>
     </div>
 </body>
 </html>

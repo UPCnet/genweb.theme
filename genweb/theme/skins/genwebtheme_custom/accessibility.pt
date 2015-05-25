@@ -81,7 +81,7 @@
                             <br />
                             <h2 class="liniaBaix">Contact</h2>
                             <p>We are working to maintain and improve the accessibility of this website. If you notice any accessibility-related anomalies on any of its pages, please contact the
-                                <a tal:attributes="href string:${portal_url}/contact" href="">webmaster</a>.</p>    </div>
+                                <a tal:attributes="href string:${portal_url}/en/contact" href="">webmaster</a>.</p>    </div>
 
                             </body>
                         </html>

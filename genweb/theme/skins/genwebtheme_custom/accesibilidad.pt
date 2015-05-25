@@ -70,6 +70,6 @@
 <p>Para utilizar las teclas de acceso hay que pulsar simultáneamente MAY + ALT + tecla de acceso.</p>
 <br />
 <h2>Contacto</h2>
-<p>Actualmente, continuamos trabajando para mantener y mejorar la accesibilidad de todas las páginas de la web. Si observa alguna anomalía, relacionada con la accesibilidad, contacte por favor con la <a tal:attributes="href string:${portal_url}/contact" href="">Administración del web</a>.</p>    </div>
+<p>Actualmente, continuamos trabajando para mantener y mejorar la accesibilidad de todas las páginas de la web. Si observa alguna anomalía, relacionada con la accesibilidad, contacte por favor con la <a tal:attributes="href string:${portal_url}/es/contact" href="">Administración del web</a>.</p>    </div>
 </body>
 </html>
