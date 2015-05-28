@@ -55,7 +55,7 @@
                         <span i18n:name="site_admin">
                             <a href="#"
                                i18n:translate="label_site_admin"
-                               tal:attributes="href string:${context/portal_url}/contact">Site Administration</a>
+                               tal:attributes="href string:${context/portal_url}/contact-info">Site Administration</a>
                         </span>.
                     </p>
 
