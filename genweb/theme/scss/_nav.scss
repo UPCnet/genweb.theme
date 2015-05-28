@@ -29,6 +29,9 @@
 	@include border-radius(4px);
 	@include box-shadow(0 1px 4px rgba(0,0,0,.1));
 	position:relative;
+	border-top-width: 2px;
+	border-bottom-width: 3px;
+
 
 	& a {
 		@include gradient-vertical(#f7f7f7, #f2f2f2);
@@ -56,7 +59,7 @@
 
 	}
 	& a:hover:after, 
-	.active a:after {
+	.active > div > a:after {
 		content:"";
   		position:absolute;
   		background-color:$blue;
@@ -71,6 +74,10 @@
 		width:17px;
 		height:17px;
 	}
+	.active ul a:after { // corregir posicio bullet fletxa en elements 2n nivell
+		right: 3px !important;
+	}
+
 
 	& a.state-private:hover:after, .active .state-private:after {background-color:$red;}
 	& a.state-draft:hover:after, .active .state-draft:after {background-color:$green;}
@@ -82,22 +89,7 @@
 		color:$grayDarker;
 	}
 	& a:focus {@include box-shadow(inset 0 0 8px 2px rgba(0,0,0,.15));}
-	& li:first-child a{
-		border-top:0 !important;
-		@include border-radius(4px 4px 0 0);
-	}
-	& li:last-child a{
-		@include border-radius(0);
-	}
-	& li:last-child a:only-child {
-		@include border-radius(0 0 4px 4px);
-	}
-	& li:first-child:last-child a {
-		@include border-radius(4px 4px 0 0);
-	}
-	& li:first-child:last-child a:only-child {
-		@include border-radius(4px);
-	}
+
 	& .active ul {
 		margin-left:-15px !important;
 		margin-right:-15px;
@@ -121,7 +113,6 @@
 			&.active {
 				background-color: #f2f8fc !important; color:$grayDarker;
 				&[class*=" contenttype-"] span:after {@include opacity(100);}
-				& span:before {font-size: 66px; top:-2px; left:4px; }
 			}
 			&.state-private {border-right: 3px solid $red; color:$red;}
 			&.state-draft, &.state-visible {border-right: 3px solid $green; color:$green;}

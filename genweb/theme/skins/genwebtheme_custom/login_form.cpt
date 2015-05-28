@@ -71,13 +71,13 @@
             Since cookie authentication is disabled, cookie-based login is not available.
         </div>
 
-        <p class="documentDescription margin0"
-           i18n:translate="genweb-heading_sign_in-v4"
-           i18n:domain="genweb">
-           Please log in using your UPC intranet user.
-        </p>
-        <div class="accordion xafa4 pad" id="accordionLogin">
 
+        <div class="accordion xafa4 pad" id="accordionLogin">
+          <p class="documentDescription"
+             i18n:translate="genweb-heading_sign_in-v4"
+             i18n:domain="genweb">
+             Please log in using your UPC intranet user.
+          </p>
           <div class="accordion-group">
             <div class="accordion-heading box-gradient">
               <a class="accordion-toggle" href="http://cas.upc.edu"
