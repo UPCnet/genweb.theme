@@ -45,7 +45,7 @@
                     </p>
 
                     <p i18n:domain="genweb" i18n:translate="description_site_error_mail_site_admin">
-                        Verifiqueu l'adreça web a què voleu accedir i consulteu el 
+                        Verifiqueu l'adreça web a què voleu accedir i consulteu el
                         <span i18n:name="site_web_map">
                             <a href="#"
                                i18n:translate="label_web_map"
@@ -55,7 +55,7 @@
                         <span i18n:name="site_admin">
                             <a href="#"
                                i18n:translate="label_site_admin"
-                               tal:attributes="href string:${context/portal_url}/contact-info">Site Administration</a>
+                               tal:attributes="href string:${context/portal_url}/contact">Site Administration</a>
                         </span>.
                     </p>
 
@@ -164,7 +164,7 @@
                     <span i18n:name="site_admin">
                     <a href="#"
                        i18n:translate="label_site_admin"
-                       tal:attributes="href string:${context/portal_url}/contact-info">Site Administration</a></span>,
+                       tal:attributes="href string:${context/portal_url}/contact">Site Administration</a></span>,
                     please include this entry number in your message.
                     </p>
 
@@ -188,7 +188,7 @@
                     contact the <span i18n:name="site_admin">
                     <a href="#"
                        i18n:translate="label_site_admin"
-                       tal:attributes="href string:${context/portal_url}/contact-info">Site Administration</a></span>.
+                       tal:attributes="href string:${context/portal_url}/contact">Site Administration</a></span>.
                     </p>
                 </tal:noentry>
             </div>

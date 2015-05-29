@@ -1,11 +1,25 @@
 Changelog
 =========
 
-1.52 (unreleased)
+1.53 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+1.52 (2015-05-28)
+-----------------
+
+* Change link to contact in message error [hanirok]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* Canvis Oscar 20150528: LoginForm intranet, icono listas, cabecera repetida, estilo menu navegacion, aliniacion idioma y busqueda [Roberto Diaz]
+* modify link to administration form [Paco Gregori]
+* Modificación enlace al contacto en accesibilidad [hanirok]
+* modified just _mixins.scss [Helena Orihuela]
+* Revert "modified css span class" [Helena Orihuela]
+*  [Helena Orihuela]
+* This reverts commit 9cf872b46073fdda2843e65ae6d18eeb891c297c. [Helena Orihuela]
+* modified css span class [Helena Orihuela]
 
 1.51 (2015-05-18)
 -----------------
