@@ -1,4 +1,3 @@
-//
 // Variables
 // --------------------------------------------------
 
@@ -128,14 +127,10 @@ background-image: image-url("gh-w.png") !important;
  	background-repeat: no-repeat; 
  	width: 100%; 
  	height: 0px; 
- 	//padding-top: 6.63%;
+ 	padding-top: 6.63%;
 }
-/* L3 */
-.l3-image {
-	height:65px;
-}
-/* L2 */
-.l2-image {	
+// L3 i L2 
+.l2-image, .l3-image {	
 	margin-bottom:-1px;
 	overflow:visible;
 }
