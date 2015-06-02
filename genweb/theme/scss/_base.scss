@@ -124,13 +124,14 @@ background-image: image-url("gh-w.png") !important;
 	background-image: url("../capcalera.jpg");
 	@include border-radius(5px 5px 0 0);
 	@include box-shadow(0 0 5px rgba(0,0,0,.15));
- 	background-repeat: no-repeat; 
- 	width: 100%; 
- 	height: 0px; 
+ 	background-repeat: no-repeat;
+ 	width: 100%;
+ 	height: 0px;
  	padding-top: 6.63%;
 }
-// L3 i L2 
-.l2-image, .l3-image {	
+// L3 i L2
+
+.l2-image, .l3-image {
 	margin-bottom:-1px;
 	overflow:visible;
 }

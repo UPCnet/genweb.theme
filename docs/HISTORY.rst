@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.53 (unreleased)
+1.53 (2015-06-02)
 -----------------
 
-- Nothing changed yet.
-
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* Oscar: eliminar imagen cabecera duplicada [Roberto Diaz]
 
 1.52 (2015-05-28)
 -----------------
