@@ -1,38 +1,56 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:metal="http://xml.zope.org/namespaces/metal"
-      xmlns:tal="http://xml.zope.org/namespaces/tal"
-      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-      metal:use-macro="context/main_template/macros/master">
+            xmlns:metal="http://xml.zope.org/namespaces/metal"
+            xmlns:tal="http://xml.zope.org/namespaces/tal"
+            xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+            metal:use-macro="context/main_template/macros/master">
 
 <body>
 
-<metal:content-core fill-slot="content-core">
-<tal:newsitems tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
-                           plone_view context/@@plone;
-                           news_items view/published_news_items;"
-               tal:condition="news_items"
-               i18n:domain="plone">
+    <metal:content-core fill-slot="content-core">
+        <tal:newsitems tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                                                             plone_view context/@@plone;
+                                                             news_items view/published_news_items;
+                                                             Batch python:modules['Products.CMFPlone'].Batch;
+                                                             b_size python:5;
+                                                             b_start python:0;
+                                                             b_start request/b_start | b_start;
+                                                             batch python:Batch(news_items, b_size, int(b_start), orphan=1);"
+                                     tal:condition="news_items"
+                                     i18n:domain="plone">
 
 
-    <div role="complementary">
-        <ul class="list-portlet">
-            <li tal:repeat="obj news_items">
-                <a href="" tal:attributes="href obj/getURL">
-                    <tal:titol replace="obj/pretty_title_or_id">Titol</tal:titol>
-                </a>
-                <div class="content-noticies">
-                    <p>
-                        <tal:cos tal:content="obj/Description">New description</tal:cos>
-                    </p>
-                    <!-- <tal:co >
-                        <time class="smaller" tal:content="python:toLocalizedTime(obj.EffectiveDate)">May 5</time>
-                    </tal:co> -->
-                </div>
-            </li>
-        </ul>
-    </div>
-</tal:newsitems>
-</metal:content-core>
+            <div role="complementary">
+                <ul class="list-portlet">
+                    <li tal:repeat="obj batch">
+                        <a href="" tal:attributes="href obj/getURL">
+                                <img    tal:condition="python:obj.Type=='News Item'" 
+                                        tal:condition="obj/news_image_filename|nothing" 
+                                        tal:attributes="src string:${obj/getURL}/@@images/image/tile"  
+                                        alt="" 
+                                        class="image-noticies" >                                        <!-- large, preview, mini, thumb, tile, icon -->
+                            </a>
+                        <strong><a href="" tal:attributes="href obj/getURL" tal:content="obj/pretty_title_or_id">
+                            Titol
+                        </a></strong>
+                        <p><time class="smaller data-noticies" tal:content="python:toLocalizedTime(obj.EffectiveDate)">May 5</time></p>
+                        <div class="content-noticies">
+                            
+                            <p tal:content="obj/Description">
+                                New description
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div metal:use-macro="here/batch_macros/macros/navigation" />
+
+            <script>
+                $('#portal-column-one').remove(); /* treu columna esquerra menu */
+                $('#portal-column-content').removeClass('span9'); /* amplia contingut */
+                $('#portal-column-content').addClass('span12');
+            </script>
+        </tal:newsitems>
+    </metal:content-core>
 
 </body>
 
