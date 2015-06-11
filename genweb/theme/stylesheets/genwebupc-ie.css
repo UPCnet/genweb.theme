@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1429531537728');
+@import url('genwebupc-ie-blessed1.css?z=1433341058805');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 553, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -15,7 +15,7 @@
       clear: both; }
 
   /* line 558, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-  [class*="span"], .cella {
+  [class^="span"] {
     float: left;
     margin-left: 30px;
     margin-bottom: 18px; }
@@ -136,7 +136,7 @@
     .row-fluid:after, #dashboard:after, .fila:after, .template-atct_album_view #content-core:after {
       clear: both; }
     /* line 605, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
-    .row-fluid [class*="span"], #dashboard [class*="span"], .fila [class*="span"], .template-atct_album_view #content-core [class*="span"], .row-fluid .cella, #dashboard .cella, .fila .cella, .template-atct_album_view #content-core .cella {
+    .row-fluid [class^="span"], #dashboard [class^="span"], .fila [class^="span"], .template-atct_album_view #content-core [class^="span"] {
       display: block;
       width: 100%;
       min-height: 30px;
@@ -860,35 +860,35 @@
  * Copyright 2012-2013 UPC
  *
  */
-/* line 26, ../scss/_base.scss */
+/* line 25, ../scss/_base.scss */
 .state-published, #workflow-transition-publish {
   color: #007bc0; }
 
-/* line 27, ../scss/_base.scss */
+/* line 26, ../scss/_base.scss */
 .state-intranet, #workflow-transition-publishtointranet, #workflow-transition-publicaalaintranet, #workflow-transition-retracttointranet, #workflow-transition-retiraalaintranet {
   color: #8952ab; }
 
-/* line 28, ../scss/_base.scss */
+/* line 27, ../scss/_base.scss */
 .state-pending, #workflow-transition-submit {
   color: #df8505; }
 
-/* line 29, ../scss/_base.scss */
+/* line 28, ../scss/_base.scss */
 .state-draft, #workflow-transition-reject, #workflow-transition-retiraaesborrany, #workflow-transition-show, .state-visible {
   color: #72a31d; }
 
-/* line 30, ../scss/_base.scss */
+/* line 29, ../scss/_base.scss */
 .state-private, #workflow-transition-hide {
   color: #a62e1f; }
 
-/* line 31, ../scss/_base.scss */
+/* line 30, ../scss/_base.scss */
 .state-restricted-to-managers {
   color: #222222; }
 
-/* line 36, ../scss/_base.scss */
+/* line 35, ../scss/_base.scss */
 #portal-personaltools-wrapper {
   margin-top: 36px !important; }
 
-/* line 37, ../scss/_base.scss */
+/* line 36, ../scss/_base.scss */
 .user {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
@@ -902,77 +902,77 @@
   left: -6px;
   top: -1px; }
 
-/* line 39, ../scss/_base.scss */
+/* line 38, ../scss/_base.scss */
 .dropdown-menu li > a.btn-danger:hover, .dropdown-menu .active > a.btn-danger:hover, .dropdown-menu .selected > a.btn-danger:hover {
   background-color: #BD362F; }
 
-/* line 40, ../scss/_base.scss */
+/* line 39, ../scss/_base.scss */
 .userScreen, .userTablet, .userMobile, .userGenweb {
   background: url('++genweb++static/images/sprite_usuari.png?1410864406') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em; }
 
-/* line 41, ../scss/_base.scss */
+/* line 40, ../scss/_base.scss */
 .userScreen {
   background-position: center -40px; }
 
-/* line 42, ../scss/_base.scss */
+/* line 41, ../scss/_base.scss */
 .userTablet {
   background-position: center -140px; }
 
-/* line 43, ../scss/_base.scss */
+/* line 42, ../scss/_base.scss */
 .userMobile {
   background-position: center -240px; }
 
-/* line 44, ../scss/_base.scss */
+/* line 43, ../scss/_base.scss */
 .userGenweb {
   background-position: 10px -340px;
   width: 2em; }
 
-/* line 45, ../scss/_base.scss */
+/* line 44, ../scss/_base.scss */
 .userScreen:hover {
   background-position: center 10px; }
 
-/* line 46, ../scss/_base.scss */
+/* line 45, ../scss/_base.scss */
 .userTablet:hover {
   background-position: center -90px; }
 
-/* line 47, ../scss/_base.scss */
+/* line 46, ../scss/_base.scss */
 .userMobile:hover {
   background-position: center -190px; }
 
-/* line 48, ../scss/_base.scss */
+/* line 47, ../scss/_base.scss */
 .userGenweb:hover, .open .userGenweb {
   background-position: 10px -290px; }
 
-/* line 49, ../scss/_base.scss */
+/* line 48, ../scss/_base.scss */
 .dropdown .userGenweb .caret {
   margin-left: 24px; }
 
-/* line 50, ../scss/_base.scss */
+/* line 49, ../scss/_base.scss */
 #portal-personaltools-wrapper .container {
   box-shadow: 0 -8px 5px 5px rgba(255, 255, 255, 0.05); }
 
-/* line 51, ../scss/_base.scss */
+/* line 50, ../scss/_base.scss */
 #portal-personaltools-wrapper .nav, #portal-personaltools-wrapper .contentViews, #portal-personaltools-wrapper .configlets, #portal-personaltools-wrapper .formTabs {
   margin: 0 !important; }
 
-/* line 52, ../scss/_base.scss */
+/* line 51, ../scss/_base.scss */
 #portal-personaltools-wrapper .nav .img_blank, #portal-personaltools-wrapper .contentViews .img_blank, #portal-personaltools-wrapper .configlets .img_blank, #portal-personaltools-wrapper .formTabs .img_blank {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7; }
 
-/* line 53, ../scss/_base.scss */
+/* line 52, ../scss/_base.scss */
 #portal-personaltools-wrapper .nav a:hover .img_blank, #portal-personaltools-wrapper .contentViews a:hover .img_blank, #portal-personaltools-wrapper .configlets a:hover .img_blank, #portal-personaltools-wrapper .formTabs a:hover .img_blank {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1; }
 
-/* line 54, ../scss/_base.scss */
+/* line 53, ../scss/_base.scss */
 .btn-menu-adjust a {
   margin: 3px 15px !important;
   color: white; }
 
-/* line 59, ../scss/_base.scss */
+/* line 58, ../scss/_base.scss */
 .dropdown-menu li.btn-menu-adjust > a:hover,
 .dropdown-menu li.btn-menu-adjust > a:focus,
 .dropdown-submenu:hover > a {
@@ -988,16 +988,16 @@
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cd3926', endColorstr='#b73322', GradientType=0); }
 
-/* line 65, ../scss/_base.scss */
+/* line 64, ../scss/_base.scss */
 .btn-menu-adjust {
   text-align: center; }
 
 /*ajusta imatges icos en menús per a hovers */
-/* line 67, ../scss/_base.scss */
+/* line 66, ../scss/_base.scss */
 .dropdown-menu a:hover [class^="icon-"], .dropdown-menu a:hover #category.documentByLine:before, .dropdown-menu a:hover .tileFooter:before, .dropdown-menu a:hover [class*=" icon-"] {
   background-image: url('++genweb++static/images/gh-w.png?1410864406') !important; }
 
-/* line 74, ../scss/_base.scss */
+/* line 73, ../scss/_base.scss */
 #portal-header {
   border-bottom: 1px solid #d7d5d2;
   border-top: 5px solid #bdc8cf;
@@ -1016,42 +1016,42 @@
   background: linear-gradient(to bottom, #f7f7f7 0%, #ffffff 25%);
   /* W3C */ }
 
-/* line 85, ../scss/_base.scss */
+/* line 84, ../scss/_base.scss */
 #portal-header .container {
   border-top: 5px solid #007bc0;
   margin-top: -5px;
   border-bottom: 1px solid #796e64;
   margin-bottom: -1px; }
 
-/* line 86, ../scss/_base.scss */
+/* line 85, ../scss/_base.scss */
 #portal-header h1.pull-left {
   margin-bottom: 0; }
 
-/* line 88, ../scss/_base.scss */
+/* line 87, ../scss/_base.scss */
 .titol-espai {
   margin-top: 0; }
-  /* line 89, ../scss/_base.scss */
+  /* line 88, ../scss/_base.scss */
   .titol-espai h1 {
     font-weight: normal;
     margin: 0; }
-  /* line 90, ../scss/_base.scss */
+  /* line 89, ../scss/_base.scss */
   .titol-espai a {
     color: #333;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     display: table !important;
     min-height: 49px;
     width: 100%; }
-    /* line 91, ../scss/_base.scss */
+    /* line 90, ../scss/_base.scss */
     .titol-espai a span {
       display: table-cell;
       vertical-align: middle;
       padding: 5px 0; }
-    /* line 92, ../scss/_base.scss */
+    /* line 91, ../scss/_base.scss */
     .titol-espai a:hover {
       color: #007bc0;
       text-decoration: none; }
 
-/* line 95, ../scss/_base.scss */
+/* line 94, ../scss/_base.scss */
 .logoPropi {
   height: 49px;
   display: table-cell;
@@ -1059,25 +1059,25 @@
   min-width: 49px;
   padding: 5px 0; }
 
-/* line 97, ../scss/_base.scss */
+/* line 96, ../scss/_base.scss */
 #eines {
   margin: 15px 0 0 0; }
-  /* line 98, ../scss/_base.scss */
+  /* line 97, ../scss/_base.scss */
   #eines > li > a {
     border-radius: 4px;
     margin-top: 0px;
     padding-bottom: 7px;
     padding-top: 6px; }
-  /* line 104, ../scss/_base.scss */
+  /* line 103, ../scss/_base.scss */
   #eines .input-append {
     border-left: 1px dotted #b2b2b2;
     margin-left: 2px;
     padding-left: 5px; }
-  /* line 109, ../scss/_base.scss */
+  /* line 108, ../scss/_base.scss */
   #eines .adjust-langs {
     min-width: 87px !important; }
 
-/* line 112, ../scss/_base.scss */
+/* line 111, ../scss/_base.scss */
 #eines input.cercaupc {
   width: 124px !important;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1086,7 +1086,7 @@
   -o-transition: all 0.5s ease-in-out !important;
   transition: all 0.5s ease-in-out !important; }
 
-/* line 117, ../scss/_base.scss */
+/* line 116, ../scss/_base.scss */
 #eines input.cercaupc:focus {
   width: 200px !important;
   -webkit-transition: all 0.5s in-out;
@@ -1095,7 +1095,7 @@
   -o-transition: all 0.5s in-out !important;
   transition: all 0.5s in-out !important; }
 
-/* line 124, ../scss/_base.scss */
+/* line 123, ../scss/_base.scss */
 .header-image {
   background-image: url("../capcalera.jpg");
   -webkit-border-radius: 5px 5px 0 0;
@@ -1111,32 +1111,26 @@
   height: 0px;
   padding-top: 6.63%; }
 
-/* L3 */
-/* line 134, ../scss/_base.scss */
-.l3-image {
-  height: 65px; }
-
-/* L2 */
-/* line 138, ../scss/_base.scss */
-.l2-image {
+/* line 133, ../scss/_base.scss */
+.l2-image, .l3-image {
   margin-bottom: -1px;
   overflow: visible; }
 
 /* NO-IMG */
-/* line 143, ../scss/_base.scss */
+/* line 138, ../scss/_base.scss */
 .no-image .header-image {
   display: none !important; }
 
 /* ajusta menú L3*/
-/* line 145, ../scss/_base.scss */
+/* line 140, ../scss/_base.scss */
 #portal-header.no-image .container {
   padding-bottom: 20px; }
 
-/* line 146, ../scss/_base.scss */
+/* line 141, ../scss/_base.scss */
 #portal-header.no-image + #portal-globalnav .navbar-inner {
   margin-top: -20px; }
 
-/* line 147, ../scss/_base.scss */
+/* line 142, ../scss/_base.scss */
 #portal-header:not(.no-image) + #portal-globalnav .navbar-inner {
   -webkit-border-radius: 0 0 4px 4px !important;
   -moz-border-radius: 0 0 4px 4px !important;
@@ -1145,88 +1139,88 @@
   border-radius: 0 0 4px 4px !important;
   margin-top: -1px; }
 
-/* line 152, ../scss/_base.scss */
+/* line 147, ../scss/_base.scss */
 #content-area {
   padding-bottom: 2em;
   margin-top: 1.5em; }
 
-/* line 154, ../scss/_base.scss */
+/* line 149, ../scss/_base.scss */
 #edit-bar {
   border-bottom: 1px solid #CCCCCC;
   box-shadow: 0 -10px 12px -18px black inset;
   margin-bottom: 18px; }
-  /* line 158, ../scss/_base.scss */
+  /* line 153, ../scss/_base.scss */
   #edit-bar .nav-tabs, #edit-bar .contentViews, #edit-bar .configlets {
     border-bottom: 0;
     box-shadow: none;
     margin: 0; }
-  /* line 163, ../scss/_base.scss */
+  /* line 158, ../scss/_base.scss */
   #edit-bar .nav-pills, #edit-bar .formTabs {
     margin: 0; }
-  /* line 165, ../scss/_base.scss */
+  /* line 160, ../scss/_base.scss */
   #edit-bar .dropdown-toggle .label, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-restricted-to-managers, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-visible, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-intranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-publishtointranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-publicaalaintranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-retracttointranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-retiraalaintranet, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle .state-private, #edit-bar .dropdown-toggle #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) #edit-bar .dropdown-toggle #workflow-transition-hide, #edit-bar .dropdown-toggle .badge {
     font-size: 100%; }
 
-/* line 173, ../scss/_base.scss */
+/* line 168, ../scss/_base.scss */
 #bandaLogos {
   border-top: 1px solid #bdc8cf;
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.03); }
-  /* line 174, ../scss/_base.scss */
+  /* line 169, ../scss/_base.scss */
   #bandaLogos .container {
     border-top: 1px solid #002941;
     margin-top: -1px; }
 
-/* line 176, ../scss/_base.scss */
+/* line 171, ../scss/_base.scss */
 .llistatLogos {
   margin: 0 auto;
   list-style: none;
   text-align: right;
   padding-top: 1em; }
-  /* line 177, ../scss/_base.scss */
+  /* line 172, ../scss/_base.scss */
   .llistatLogos li {
     display: inline-block;
     margin: 0 0 1em; }
-  /* line 178, ../scss/_base.scss */
+  /* line 173, ../scss/_base.scss */
   .llistatLogos a {
     margin: 0 1.5em;
     display: block; }
-  /* line 179, ../scss/_base.scss */
+  /* line 174, ../scss/_base.scss */
   .llistatLogos img {
     max-height: 100px; }
 
-/* line 185, ../scss/_base.scss */
+/* line 180, ../scss/_base.scss */
 #peu {
   background: #f2f2f2;
   border-top: 5px solid #bdc8cf;
   font-size: 92.3076923%; }
-  /* line 186, ../scss/_base.scss */
+  /* line 181, ../scss/_base.scss */
   #peu .container {
     border-top: 5px solid #007bc0;
     margin-top: -5px; }
-  /* line 187, ../scss/_base.scss */
+  /* line 182, ../scss/_base.scss */
   #peu p {
     margin: 6px 0 0; }
-  /* line 188, ../scss/_base.scss */
+  /* line 183, ../scss/_base.scss */
   #peu .amunt img {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
     opacity: 0.7; }
-  /* line 189, ../scss/_base.scss */
+  /* line 184, ../scss/_base.scss */
   #peu .amunt a:hover img {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1; }
-  /* line 190, ../scss/_base.scss */
+  /* line 185, ../scss/_base.scss */
   #peu address {
     color: #666666; }
-    /* line 191, ../scss/_base.scss */
+    /* line 186, ../scss/_base.scss */
     #peu address p {
       margin: 0; }
 
-/* line 195, ../scss/_base.scss */
+/* line 190, ../scss/_base.scss */
 .sobreElWeb li {
   display: inline-block;
   line-height: 0; }
 
-/* line 196, ../scss/_base.scss */
+/* line 191, ../scss/_base.scss */
 .sobreElWeb li:before {
   content: ".";
   font-size: 52px;
@@ -1236,7 +1230,7 @@
   left: -1px;
   color: #4d6573; }
 
-/* line 200, ../scss/_base.scss */
+/* line 195, ../scss/_base.scss */
 .sobreElWeb li:first-child:before {
   content: "";
   font-size: 52px;
@@ -1244,7 +1238,7 @@
   line-height: 0;
   top: .25em; }
 
-/* line 201, ../scss/_base.scss */
+/* line 196, ../scss/_base.scss */
 .sobreElWeb li:last-child:before {
   content: " __ ";
   font-size: 13px;
@@ -1253,26 +1247,26 @@
   top: -.35em;
   padding: 0 2px 0 3px; }
 
-/* line 202, ../scss/_base.scss */
+/* line 197, ../scss/_base.scss */
 #peu .amunt {
   position: relative;
   top: 3px; }
 
-/* line 203, ../scss/_base.scss */
+/* line 198, ../scss/_base.scss */
 #peu .amunt div.tooltip {
   margin-top: -21px !important;
   margin-left: 6px !important; }
 
-/* line 208, ../scss/_base.scss */
+/* line 203, ../scss/_base.scss */
 #canvia-vista {
   padding: 0;
   margin-left: -10px;
   margin-right: -10px;
   display: block; }
-  /* line 213, ../scss/_base.scss */
+  /* line 208, ../scss/_base.scss */
   #canvia-vista p {
     margin: 0 !important; }
-  /* line 214, ../scss/_base.scss */
+  /* line 209, ../scss/_base.scss */
   #canvia-vista a {
     background: url('++genweb++static/images/vistabg.png?1410864406') #666666;
     text-align: center;
@@ -1286,7 +1280,7 @@
     display: block;
     background-position: left 3px; }
 
-/* line 226, ../scss/_base.scss */
+/* line 221, ../scss/_base.scss */
 .review {
   display: none; }
 
@@ -1354,8 +1348,10 @@
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  position: relative; }
-  /* line 33, ../scss/_nav.scss */
+  position: relative;
+  border-top-width: 2px;
+  border-bottom-width: 3px; }
+  /* line 36, ../scss/_nav.scss */
   .subnavbar .nav-list a {
     background-color: whitesmoke;
     background-image: -moz-linear-gradient(top, #f7f7f7, #f2f2f2);
@@ -1375,19 +1371,19 @@
     border-top: 1px solid #b2b2b2 !important;
     padding: 8px 28px 8px 9px !important;
     position: relative; }
-    /* line 45, ../scss/_nav.scss */
+    /* line 48, ../scss/_nav.scss */
     .subnavbar .nav-list a.state-intranet, .subnavbar .nav-list a#workflow-transition-publishtointranet, .subnavbar .nav-list a#workflow-transition-publicaalaintranet, .subnavbar .nav-list a#workflow-transition-retracttointranet, .subnavbar .nav-list a#workflow-transition-retiraalaintranet {
       color: #8952ab; }
-    /* line 46, ../scss/_nav.scss */
+    /* line 49, ../scss/_nav.scss */
     .subnavbar .nav-list a.state-pending, .subnavbar .nav-list a#workflow-transition-submit {
       color: #df8505; }
-    /* line 47, ../scss/_nav.scss */
+    /* line 50, ../scss/_nav.scss */
     .subnavbar .nav-list a.state-draft, .subnavbar .nav-list a#workflow-transition-reject, .subnavbar .nav-list a#workflow-transition-retiraaesborrany, .subnavbar .nav-list a#workflow-transition-show, .subnavbar .nav-list a.state-visible {
       color: #72a31d; }
-    /* line 48, ../scss/_nav.scss */
+    /* line 51, ../scss/_nav.scss */
     .subnavbar .nav-list a.state-private, .subnavbar .nav-list a#workflow-transition-hide {
       color: #a62e1f; }
-    /* line 49, ../scss/_nav.scss */
+    /* line 52, ../scss/_nav.scss */
     .subnavbar .nav-list a:hover {
       background-color: #e7e7e7;
       background-image: -moz-linear-gradient(top, #eeeeee, #dddddd);
@@ -1398,13 +1394,13 @@
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#dadada', GradientType=0);
       color: #222222; }
-    /* line 53, ../scss/_nav.scss */
+    /* line 56, ../scss/_nav.scss */
     .subnavbar .nav-list a + ul a:after {
       display: none !important; }
-  /* line 59, ../scss/_nav.scss */
+  /* line 62, ../scss/_nav.scss */
   .subnavbar .nav-list a:hover:after,
-  .subnavbar .nav-list .active a:after,
-  .subnavbar .nav-list .selected a:after {
+  .subnavbar .nav-list .active > div > a:after,
+  .subnavbar .nav-list .selected > div > a:after {
     content: "";
     position: absolute;
     background-color: #007bc0;
@@ -1424,67 +1420,34 @@
     background-repeat: no-repeat;
     width: 17px;
     height: 17px; }
-  /* line 75, ../scss/_nav.scss */
+  /* line 77, ../scss/_nav.scss */
+  .subnavbar .nav-list .active ul a:after, .subnavbar .nav-list .selected ul a:after {
+    right: 3px !important; }
+  /* line 82, ../scss/_nav.scss */
   .subnavbar .nav-list a.state-private:hover:after, .subnavbar .nav-list a#workflow-transition-hide:hover:after, .subnavbar .nav-list .active .state-private:after, .subnavbar .nav-list .selected .state-private:after, .subnavbar .nav-list .active #workflow-transition-hide:after, .subnavbar .nav-list .selected #workflow-transition-hide:after {
     background-color: #a62e1f; }
-  /* line 76, ../scss/_nav.scss */
+  /* line 83, ../scss/_nav.scss */
   .subnavbar .nav-list a.state-draft:hover:after, .subnavbar .nav-list a#workflow-transition-reject:hover:after, .subnavbar .nav-list a#workflow-transition-retiraaesborrany:hover:after, .subnavbar .nav-list a#workflow-transition-show:hover:after, .subnavbar .nav-list .active .state-draft:after, .subnavbar .nav-list .selected .state-draft:after, .subnavbar .nav-list .active #workflow-transition-reject:after, .subnavbar .nav-list .selected #workflow-transition-reject:after, .subnavbar .nav-list .active #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .selected #workflow-transition-retiraaesborrany:after, .subnavbar .nav-list .active #workflow-transition-show:after, .subnavbar .nav-list .selected #workflow-transition-show:after {
     background-color: #72a31d; }
-  /* line 77, ../scss/_nav.scss */
+  /* line 84, ../scss/_nav.scss */
   .subnavbar .nav-list a.state-visible:hover:after, .subnavbar .nav-list .active .visible-draft:after, .subnavbar .nav-list .selected .visible-draft:after {
     background-color: #72a31d; }
-  /* line 78, ../scss/_nav.scss */
+  /* line 85, ../scss/_nav.scss */
   .subnavbar .nav-list a.state-pending:hover:after, .subnavbar .nav-list a#workflow-transition-submit:hover:after, .subnavbar .nav-list .active .state-pending:after, .subnavbar .nav-list .selected .state-pending:after, .subnavbar .nav-list .active #workflow-transition-submit:after, .subnavbar .nav-list .selected #workflow-transition-submit:after {
     background-color: #df8505; }
-  /* line 79, ../scss/_nav.scss */
+  /* line 86, ../scss/_nav.scss */
   .subnavbar .nav-list a.state-intranet:hover:after, .subnavbar .nav-list a#workflow-transition-publishtointranet:hover:after, .subnavbar .nav-list a#workflow-transition-publicaalaintranet:hover:after, .subnavbar .nav-list a#workflow-transition-retracttointranet:hover:after, .subnavbar .nav-list a#workflow-transition-retiraalaintranet:hover:after, .subnavbar .nav-list .active .state-intranet:after, .subnavbar .nav-list .selected .state-intranet:after, .subnavbar .nav-list .active #workflow-transition-publishtointranet:after, .subnavbar .nav-list .selected #workflow-transition-publishtointranet:after, .subnavbar .nav-list .active #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .selected #workflow-transition-publicaalaintranet:after, .subnavbar .nav-list .active #workflow-transition-retracttointranet:after, .subnavbar .nav-list .selected #workflow-transition-retracttointranet:after, .subnavbar .nav-list .active #workflow-transition-retiraalaintranet:after, .subnavbar .nav-list .selected #workflow-transition-retiraalaintranet:after {
     background-color: #8952ab; }
-  /* line 80, ../scss/_nav.scss */
+  /* line 87, ../scss/_nav.scss */
   .subnavbar .nav-list .active a, .subnavbar .nav-list .selected a {
     background: #d4d4d4;
     color: #222222; }
-  /* line 84, ../scss/_nav.scss */
+  /* line 91, ../scss/_nav.scss */
   .subnavbar .nav-list a:focus {
     -webkit-box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.15); }
-  /* line 85, ../scss/_nav.scss */
-  .subnavbar .nav-list li:first-child a {
-    border-top: 0 !important;
-    -webkit-border-radius: 4px 4px 0 0;
-    -moz-border-radius: 4px 4px 0 0;
-    -ms-border-radius: 4px 4px 0 0;
-    -o-border-radius: 4px 4px 0 0;
-    border-radius: 4px 4px 0 0; }
-  /* line 89, ../scss/_nav.scss */
-  .subnavbar .nav-list li:last-child a {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0; }
-  /* line 92, ../scss/_nav.scss */
-  .subnavbar .nav-list li:last-child a:only-child {
-    -webkit-border-radius: 0 0 4px 4px;
-    -moz-border-radius: 0 0 4px 4px;
-    -ms-border-radius: 0 0 4px 4px;
-    -o-border-radius: 0 0 4px 4px;
-    border-radius: 0 0 4px 4px; }
-  /* line 95, ../scss/_nav.scss */
-  .subnavbar .nav-list li:first-child:last-child a {
-    -webkit-border-radius: 4px 4px 0 0;
-    -moz-border-radius: 4px 4px 0 0;
-    -ms-border-radius: 4px 4px 0 0;
-    -o-border-radius: 4px 4px 0 0;
-    border-radius: 4px 4px 0 0; }
-  /* line 98, ../scss/_nav.scss */
-  .subnavbar .nav-list li:first-child:last-child a:only-child {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px; }
-  /* line 101, ../scss/_nav.scss */
+  /* line 93, ../scss/_nav.scss */
   .subnavbar .nav-list .active ul, .subnavbar .nav-list .selected ul {
     margin-left: -15px !important;
     margin-right: -15px;
@@ -1494,7 +1457,7 @@
     -webkit-box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.25); }
-    /* line 108, ../scss/_nav.scss */
+    /* line 100, ../scss/_nav.scss */
     .subnavbar .nav-list .active ul a, .subnavbar .nav-list .selected ul a {
       border-top: 0 !important;
       font-size: 12px;
@@ -1511,43 +1474,38 @@
       -ms-border-radius: 0 !important;
       -o-border-radius: 0 !important;
       border-radius: 0 !important; }
-      /* line 120, ../scss/_nav.scss */
+      /* line 112, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a:hover, .subnavbar .nav-list .selected ul a:hover {
         background-color: #e5f6ff !important; }
-      /* line 121, ../scss/_nav.scss */
+      /* line 113, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.active, .subnavbar .nav-list .selected ul a.active, .subnavbar .nav-list .active ul a.selected, .subnavbar .nav-list .selected ul a.selected {
         background-color: #f2f8fc !important;
         color: #222222; }
-        /* line 123, ../scss/_nav.scss */
+        /* line 115, ../scss/_nav.scss */
         .subnavbar .nav-list .active ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a.active[class*=" contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"].selected span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"].selected span:after {
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
           opacity: 100; }
-        /* line 124, ../scss/_nav.scss */
-        .subnavbar .nav-list .active ul a.active span:before, .subnavbar .nav-list .selected ul a.active span:before, .subnavbar .nav-list .active ul a.selected span:before, .subnavbar .nav-list .selected ul a.selected span:before {
-          font-size: 66px;
-          top: -2px;
-          left: 4px; }
-      /* line 126, ../scss/_nav.scss */
+      /* line 117, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.state-private, .subnavbar .nav-list .selected ul a.state-private, .subnavbar .nav-list .active ul a#workflow-transition-hide, .subnavbar .nav-list .selected ul a#workflow-transition-hide {
         border-right: 3px solid #a62e1f;
         color: #a62e1f; }
-      /* line 127, ../scss/_nav.scss */
+      /* line 118, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.state-draft, .subnavbar .nav-list .selected ul a.state-draft, .subnavbar .nav-list .active ul a#workflow-transition-reject, .subnavbar .nav-list .selected ul a#workflow-transition-reject, .subnavbar .nav-list .active ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .selected ul a#workflow-transition-retiraaesborrany, .subnavbar .nav-list .active ul a#workflow-transition-show, .subnavbar .nav-list .selected ul a#workflow-transition-show, .subnavbar .nav-list .active ul a.state-visible, .subnavbar .nav-list .selected ul a.state-visible {
         border-right: 3px solid #72a31d;
         color: #72a31d; }
-      /* line 128, ../scss/_nav.scss */
+      /* line 119, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.state-pending, .subnavbar .nav-list .selected ul a.state-pending, .subnavbar .nav-list .active ul a#workflow-transition-submit, .subnavbar .nav-list .selected ul a#workflow-transition-submit {
         border-right: 3px solid #df8505;
         color: #df8505; }
-      /* line 129, ../scss/_nav.scss */
+      /* line 120, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.state-intranet, .subnavbar .nav-list .selected ul a.state-intranet, .subnavbar .nav-list .active ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .selected ul a#workflow-transition-publishtointranet, .subnavbar .nav-list .active ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .selected ul a#workflow-transition-publicaalaintranet, .subnavbar .nav-list .active ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .selected ul a#workflow-transition-retracttointranet, .subnavbar .nav-list .active ul a#workflow-transition-retiraalaintranet, .subnavbar .nav-list .selected ul a#workflow-transition-retiraalaintranet {
         border-right: 3px solid #8952ab;
         color: #8952ab; }
-      /* line 131, ../scss/_nav.scss */
+      /* line 122, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a[class^="state-"]:hover, .subnavbar .nav-list .selected ul a[class^="state-"]:hover, .subnavbar .nav-list .active ul a[class*=" state-"]:hover, .subnavbar .nav-list .selected ul a[class*=" state-"]:hover {
         color: black;
         text-decoration: none; }
-      /* line 135, ../scss/_nav.scss */
+      /* line 126, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a span, .subnavbar .nav-list .selected ul a span {
         border-top: 1px solid #d9d9d9 !important;
         padding: 8px 0 8px 12px !important;
@@ -1555,7 +1513,7 @@
         margin-right: 24px;
         margin-left: 10px;
         line-height: 15px; }
-        /* line 142, ../scss/_nav.scss */
+        /* line 133, ../scss/_nav.scss */
         .subnavbar .nav-list .active ul a span:before, .subnavbar .nav-list .selected ul a span:before {
           content: ".";
           color: #007bc0;
@@ -1564,7 +1522,7 @@
           position: absolute;
           font-size: 44px;
           line-height: 0 !important; }
-      /* line 154, ../scss/_nav.scss */
+      /* line 145, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
         background-image: url('++genweb++static/images/gh.png?1410864406');
         background-repeat: no-repeat;
@@ -1578,76 +1536,76 @@
         opacity: 75;
         top: 10px;
         position: absolute; }
-      /* line 167, ../scss/_nav.scss */
+      /* line 158, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-folder span:after, .subnavbar .nav-list .selected ul a.contenttype-folder span:after {
         background-position: -384px 	-120px; }
-      /* line 169, ../scss/_nav.scss */
+      /* line 160, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-page span:after, .subnavbar .nav-list .selected ul a.contenttype-page span:after, .subnavbar .nav-list .active ul a.contenttype-document span:after, .subnavbar .nav-list .selected ul a.contenttype-document span:after {
         background-position: -24px 	-24px; }
-      /* line 170, ../scss/_nav.scss */
+      /* line 161, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-link span:after, .subnavbar .nav-list .selected ul a.contenttype-link span:after {
         background-position: -72px 	-168px; }
-      /* line 172, ../scss/_nav.scss */
+      /* line 163, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-windowztool span:after, .subnavbar .nav-list .selected ul a.contenttype-windowztool span:after, .subnavbar .nav-list .active ul a.contenttype-window span:after, .subnavbar .nav-list .selected ul a.contenttype-window span:after {
         background-position: -97px 	-168px; }
-      /* line 174, ../scss/_nav.scss */
+      /* line 165, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .selected ul a.contenttype-bannercontainer span:after, .subnavbar .nav-list .active ul a.contenttype-banner span:after, .subnavbar .nav-list .selected ul a.contenttype-banner span:after {
         background-position: -313px	-25px; }
-      /* line 175, ../scss/_nav.scss */
+      /* line 166, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-topic span:after, .subnavbar .nav-list .selected ul a.contenttype-topic span:after {
         background-position: -72px 	-192px; }
-      /* line 176, ../scss/_nav.scss */
+      /* line 167, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-file span:after, .subnavbar .nav-list .selected ul a.contenttype-file span:after {
         background-position: -167px	-168px; }
-      /* line 177, ../scss/_nav.scss */
+      /* line 168, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-image span:after, .subnavbar .nav-list .selected ul a.contenttype-image span:after {
         background-position: -457px	-49px; }
-      /* line 179, ../scss/_nav.scss */
+      /* line 170, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-logos_container span:after, .subnavbar .nav-list .selected ul a.contenttype-logos_container span:after, .subnavbar .nav-list .active ul a.contenttype-logos_footer span:after, .subnavbar .nav-list .selected ul a.contenttype-logos_footer span:after {
         background-position: -143px 	-168px; }
-      /* line 181, ../scss/_nav.scss */
+      /* line 172, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-collective-polls-poll span:after, .subnavbar .nav-list .selected ul a.contenttype-collective-polls-poll span:after {
         background-position: -47px		-193px; }
-      /* line 182, ../scss/_nav.scss */
+      /* line 173, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-event span:after, .subnavbar .nav-list .selected ul a.contenttype-event span:after {
         background-position: -191px 	-120px; }
-      /* line 183, ../scss/_nav.scss */
+      /* line 174, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-news-item span:after, .subnavbar .nav-list .selected ul a.contenttype-news-item span:after {
         background-position: -24px 	-168px; }
-      /* line 184, ../scss/_nav.scss */
+      /* line 175, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-packet span:after, .subnavbar .nav-list .selected ul a.contenttype-packet span:after {
         background-position: -47px 	-168px; }
-      /* line 185, ../scss/_nav.scss */
+      /* line 176, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-collage span:after, .subnavbar .nav-list .selected ul a.contenttype-collage span:after {
         background-position: -216px 	-168px; }
-      /* line 186, ../scss/_nav.scss */
+      /* line 177, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-collection span:after, .subnavbar .nav-list .selected ul a.contenttype-collection span:after {
         background-position: -240px 	-168px; }
-      /* line 187, ../scss/_nav.scss */
+      /* line 178, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-survey span:after, .subnavbar .nav-list .selected ul a.contenttype-survey span:after {
         background-position: -265px 	-23px; }
-      /* line 188, ../scss/_nav.scss */
+      /* line 179, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a.contenttype-formfolder span:after, .subnavbar .nav-list .selected ul a.contenttype-formfolder span:after {
         background-position: -144px 	-72px; }
-      /* line 190, ../scss/_nav.scss */
+      /* line 181, ../scss/_nav.scss */
       .subnavbar .nav-list .active ul a:hover span:after, .subnavbar .nav-list .selected ul a:hover span:after {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
         opacity: 100; }
-    /* line 192, ../scss/_nav.scss */
+    /* line 183, ../scss/_nav.scss */
     .subnavbar .nav-list .active ul li:first-child a span, .subnavbar .nav-list .selected ul li:first-child a span {
       border-top: 0 !important; }
 
-/* line 197, ../scss/_nav.scss */
+/* line 188, ../scss/_nav.scss */
 #portal-personaltools-wrapper .nav a:focus, #portal-personaltools-wrapper .contentViews a:focus, #portal-personaltools-wrapper .configlets a:focus, #portal-personaltools-wrapper .formTabs a:focus {
   background-color: black; }
 
-/* line 204, ../scss/_nav.scss */
+/* line 195, ../scss/_nav.scss */
 html * .dropdown-menu a:hover .img_blank {
   content: url('++genweb++static/images/blank_blanc.png?1410864406');
   width: 10px;
   height: 10px; }
 
-/* line 211, ../scss/_nav.scss */
+/* line 202, ../scss/_nav.scss */
 .dropdown.nou::after {
   content: "!";
   border-radius: 500px;
@@ -1663,31 +1621,31 @@ html * .dropdown-menu a:hover .img_blank {
   line-height: 12px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25); }
 
-/* line 226, ../scss/_nav.scss */
+/* line 217, ../scss/_nav.scss */
 #portal-personaltools-wrapper .pull-right .dropdown.nou::after, #portal-personaltools-wrapper .newsImageContainer .dropdown.nou::after {
   top: 12px; }
 
-/* line 230, ../scss/_nav.scss */
+/* line 221, ../scss/_nav.scss */
 .navbar ul.nav.pull-right > li > .dropdown-menu, .navbar ul.pull-right.contentViews > li > .dropdown-menu, .navbar ul.contentViews.newsImageContainer > li > .dropdown-menu, .navbar ul.pull-right.configlets > li > .dropdown-menu, .navbar ul.configlets.newsImageContainer > li > .dropdown-menu, .navbar ul.nav.newsImageContainer > li > .dropdown-menu, .navbar ul.newsImageContainer.formTabs > li > .dropdown-menu, .navbar ul.pull-right.formTabs > li > .dropdown-menu {
   right: 0 !important;
   left: auto !important; }
 
-/* line 231, ../scss/_nav.scss */
+/* line 222, ../scss/_nav.scss */
 .navbar ul.nav.pull-right > li > .dropdown-menu:before, .navbar ul.pull-right.contentViews > li > .dropdown-menu:before, .navbar ul.contentViews.newsImageContainer > li > .dropdown-menu:before, .navbar ul.pull-right.configlets > li > .dropdown-menu:before, .navbar ul.configlets.newsImageContainer > li > .dropdown-menu:before, .navbar ul.nav.newsImageContainer > li > .dropdown-menu:before, .navbar ul.newsImageContainer.formTabs > li > .dropdown-menu:before, .navbar ul.pull-right.formTabs > li > .dropdown-menu:before {
   right: 9px !important;
   left: auto !important; }
 
-/* line 232, ../scss/_nav.scss */
+/* line 223, ../scss/_nav.scss */
 .navbar ul.nav.pull-right > li > .dropdown-menu:after, .navbar ul.pull-right.contentViews > li > .dropdown-menu:after, .navbar ul.contentViews.newsImageContainer > li > .dropdown-menu:after, .navbar ul.pull-right.configlets > li > .dropdown-menu:after, .navbar ul.configlets.newsImageContainer > li > .dropdown-menu:after, .navbar ul.nav.newsImageContainer > li > .dropdown-menu:after, .navbar ul.newsImageContainer.formTabs > li > .dropdown-menu:after, .navbar ul.pull-right.formTabs > li > .dropdown-menu:after {
   right: 10px !important;
   left: auto !important; }
 
-/* line 238, ../scss/_nav.scss */
+/* line 229, ../scss/_nav.scss */
 #listing-table a[class^="contenttype-"], #listing-table a[class*=" contenttype-"], .template-folder_tabular_view .listing a[class^="contenttype-"], .template-folder_tabular_view .listing a[class*=" contenttype-"], .contenttreeWidget > .navTree a[class^="contenttype-"], .contenttreeWidget > .navTree a[class*=" contenttype-"] {
   padding-left: 8px;
   font-weight: bold;
   position: relative; }
-/* line 244, ../scss/_nav.scss */
+/* line 235, ../scss/_nav.scss */
 #listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-folder_tabular_view .listing a[class^="contenttype-"]:before, .template-folder_tabular_view .listing a[class*=" contenttype-"]:before, .contenttreeWidget > .navTree a[class^="contenttype-"]:before, .contenttreeWidget > .navTree a[class*=" contenttype-"]:before {
   background-image: url('++genweb++static/images/gh.png?1410864406');
   background-repeat: no-repeat;
@@ -1700,76 +1658,76 @@ html * .dropdown-menu a:hover .img_blank {
   opacity: 75;
   position: relative;
   float: left; }
-/* line 256, ../scss/_nav.scss */
+/* line 247, ../scss/_nav.scss */
 #listing-table a.contenttype-folder:before, .template-folder_tabular_view .listing a.contenttype-folder:before, .contenttreeWidget > .navTree a.contenttype-folder:before {
   background-position: -384px 	-120px; }
-/* line 258, ../scss/_nav.scss */
+/* line 249, ../scss/_nav.scss */
 #listing-table a.contenttype-page:before, #listing-table a.contenttype-document:before, .template-folder_tabular_view .listing a.contenttype-page:before, .template-folder_tabular_view .listing a.contenttype-document:before, .contenttreeWidget > .navTree a.contenttype-page:before, .contenttreeWidget > .navTree a.contenttype-document:before {
   background-position: -24px 	-24px; }
-/* line 259, ../scss/_nav.scss */
+/* line 250, ../scss/_nav.scss */
 #listing-table a.contenttype-link:before, .template-folder_tabular_view .listing a.contenttype-link:before, .contenttreeWidget > .navTree a.contenttype-link:before {
   background-position: -72px 	-168px; }
-/* line 262, ../scss/_nav.scss */
+/* line 253, ../scss/_nav.scss */
 #listing-table a.contenttype-windowztool:before, #listing-table a.contenttype-window:before, #listing-table a.contenttype-window:before, .template-folder_tabular_view .listing a.contenttype-windowztool:before, .template-folder_tabular_view .listing a.contenttype-window:before, .template-folder_tabular_view .listing a.contenttype-window:before, .contenttreeWidget > .navTree a.contenttype-windowztool:before, .contenttreeWidget > .navTree a.contenttype-window:before, .contenttreeWidget > .navTree a.contenttype-window:before {
   background-position: -97px 	-168px; }
-/* line 264, ../scss/_nav.scss */
+/* line 255, ../scss/_nav.scss */
 #listing-table a.contenttype-bannercontainer:before, #listing-table a.contenttype-banner:before, .template-folder_tabular_view .listing a.contenttype-bannercontainer:before, .template-folder_tabular_view .listing a.contenttype-banner:before, .contenttreeWidget > .navTree a.contenttype-bannercontainer:before, .contenttreeWidget > .navTree a.contenttype-banner:before {
   background-position: -313px	-25px; }
-/* line 266, ../scss/_nav.scss */
+/* line 257, ../scss/_nav.scss */
 #listing-table a.contenttype-logos_container:before, #listing-table a.contenttype-logos_footer:before, .template-folder_tabular_view .listing a.contenttype-logos_container:before, .template-folder_tabular_view .listing a.contenttype-logos_footer:before, .contenttreeWidget > .navTree a.contenttype-logos_container:before, .contenttreeWidget > .navTree a.contenttype-logos_footer:before {
   background-position: -143px 	-168px; }
-/* line 267, ../scss/_nav.scss */
+/* line 258, ../scss/_nav.scss */
 #listing-table a.contenttype-topic:before, .template-folder_tabular_view .listing a.contenttype-topic:before, .contenttreeWidget > .navTree a.contenttype-topic:before {
   background-position: -72px 	-192px; }
-/* line 268, ../scss/_nav.scss */
+/* line 259, ../scss/_nav.scss */
 #listing-table a.contenttype-file:before, .template-folder_tabular_view .listing a.contenttype-file:before, .contenttreeWidget > .navTree a.contenttype-file:before {
   background-position: -167px	-168px; }
-/* line 269, ../scss/_nav.scss */
+/* line 260, ../scss/_nav.scss */
 #listing-table a.contenttype-image:before, .template-folder_tabular_view .listing a.contenttype-image:before, .contenttreeWidget > .navTree a.contenttype-image:before {
   background-position: -457px	-49px; }
-/* line 270, ../scss/_nav.scss */
+/* line 261, ../scss/_nav.scss */
 #listing-table a.contenttype-collective-polls-poll:before, .template-folder_tabular_view .listing a.contenttype-collective-polls-poll:before, .contenttreeWidget > .navTree a.contenttype-collective-polls-poll:before {
   background-position: -47px		-193px; }
-/* line 271, ../scss/_nav.scss */
+/* line 262, ../scss/_nav.scss */
 #listing-table a.contenttype-event:before, .template-folder_tabular_view .listing a.contenttype-event:before, .contenttreeWidget > .navTree a.contenttype-event:before {
   background-position: -191px 	-120px; }
-/* line 272, ../scss/_nav.scss */
+/* line 263, ../scss/_nav.scss */
 #listing-table a.contenttype-news-item:before, .template-folder_tabular_view .listing a.contenttype-news-item:before, .contenttreeWidget > .navTree a.contenttype-news-item:before {
   background-position: -24px 	-168px; }
-/* line 273, ../scss/_nav.scss */
+/* line 264, ../scss/_nav.scss */
 #listing-table a.contenttype-packet:before, .template-folder_tabular_view .listing a.contenttype-packet:before, .contenttreeWidget > .navTree a.contenttype-packet:before {
   background-position: -47px 	-168px; }
-/* line 274, ../scss/_nav.scss */
+/* line 265, ../scss/_nav.scss */
 #listing-table a.contenttype-collage:before, .template-folder_tabular_view .listing a.contenttype-collage:before, .contenttreeWidget > .navTree a.contenttype-collage:before {
   background-position: -216px 	-168px; }
-/* line 275, ../scss/_nav.scss */
+/* line 266, ../scss/_nav.scss */
 #listing-table a.contenttype-collection:before, .template-folder_tabular_view .listing a.contenttype-collection:before, .contenttreeWidget > .navTree a.contenttype-collection:before {
   background-position: -240px 	-168px; }
-/* line 276, ../scss/_nav.scss */
+/* line 267, ../scss/_nav.scss */
 #listing-table a.contenttype-survey:before, .template-folder_tabular_view .listing a.contenttype-survey:before, .contenttreeWidget > .navTree a.contenttype-survey:before {
   background-position: -265px 	-23px; }
-/* line 277, ../scss/_nav.scss */
+/* line 268, ../scss/_nav.scss */
 #listing-table a.contenttype-formfolder:before, .template-folder_tabular_view .listing a.contenttype-formfolder:before, .contenttreeWidget > .navTree a.contenttype-formfolder:before {
   background-position: -144px    -72px; }
-/* line 278, ../scss/_nav.scss */
+/* line 269, ../scss/_nav.scss */
 #listing-table a.contenttype-lrf:before, .template-folder_tabular_view .listing a.contenttype-lrf:before, .contenttreeWidget > .navTree a.contenttype-lrf:before {
   background-position: -216px    -191px; }
-/* line 280, ../scss/_nav.scss */
+/* line 271, ../scss/_nav.scss */
 #listing-table a:hover:before, .template-folder_tabular_view .listing a:hover:before, .contenttreeWidget > .navTree a:hover:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
   opacity: 100; }
 
 /* llista dl en pàgina error */
 /* line 286, ../scss/_nav.scss */
-/* line 287, ../scss/_nav.scss */
+/* line 278, ../scss/_nav.scss */
 dt[class*="contenttype"] {
   margin-left: 20px; }
 
-/* line 290, ../scss/_nav.scss */
+/* line 281, ../scss/_nav.scss */
 dt[class*="contenttype"] + dd {
   margin-left: 20px; }
 
-/* line 293, ../scss/_nav.scss */
+/* line 284, ../scss/_nav.scss */
 dt[class*="contenttype"]:before {
   background-image: url('++genweb++static/images/gh.png?1410864406');
   background-repeat: no-repeat;
@@ -1784,80 +1742,80 @@ dt[class*="contenttype"]:before {
   opacity: 0.75;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=7500); }
 
-/* line 313, ../scss/_nav.scss */
+/* line 304, ../scss/_nav.scss */
 dt.contenttype-page:before,
 dt.contenttype-document:before {
   background-position: -24px   -24px; }
 
-/* line 314, ../scss/_nav.scss */
+/* line 305, ../scss/_nav.scss */
 dt.contenttype-link:before {
   background-position: -72px   -168px; }
 
-/* line 317, ../scss/_nav.scss */
+/* line 308, ../scss/_nav.scss */
 dt.contenttype-windowztool:before,
 dt.contenttype-window:before,
 dt.contenttype-window:before {
   background-position: -97px   -168px; }
 
-/* line 319, ../scss/_nav.scss */
+/* line 310, ../scss/_nav.scss */
 dt.contenttype-bannercontainer:before,
 dt.contenttype-banner:before {
   background-position: -313px  -25px; }
 
-/* line 321, ../scss/_nav.scss */
+/* line 312, ../scss/_nav.scss */
 dt.contenttype-logos_container:before,
 dt.contenttype-logos_footer:before {
   background-position: -143px  -168px; }
 
-/* line 322, ../scss/_nav.scss */
+/* line 313, ../scss/_nav.scss */
 dt.contenttype-topic:before {
   background-position: -72px   -192px; }
 
-/* line 323, ../scss/_nav.scss */
+/* line 314, ../scss/_nav.scss */
 dt.contenttype-file:before {
   background-position: -167px  -168px; }
 
-/* line 324, ../scss/_nav.scss */
+/* line 315, ../scss/_nav.scss */
 dt.contenttype-image:before {
   background-position: -457px  -49px; }
 
-/* line 325, ../scss/_nav.scss */
+/* line 316, ../scss/_nav.scss */
 dt.contenttype-collective-polls-poll:before {
   background-position: -47px   -193px; }
 
-/* line 326, ../scss/_nav.scss */
+/* line 317, ../scss/_nav.scss */
 dt.contenttype-event:before {
   background-position: -191px  -120px; }
 
-/* line 327, ../scss/_nav.scss */
+/* line 318, ../scss/_nav.scss */
 dt.contenttype-news-item:before {
   background-position: -24px   -168px; }
 
-/* line 328, ../scss/_nav.scss */
+/* line 319, ../scss/_nav.scss */
 dt.contenttype-packet:before {
   background-position: -47px   -168px; }
 
-/* line 329, ../scss/_nav.scss */
+/* line 320, ../scss/_nav.scss */
 dt.contenttype-collage:before {
   background-position: -216px  -168px; }
 
-/* line 330, ../scss/_nav.scss */
+/* line 321, ../scss/_nav.scss */
 dt.contenttype-collection:before {
   background-position: -240px  -168px; }
 
-/* line 331, ../scss/_nav.scss */
+/* line 322, ../scss/_nav.scss */
 dt.contenttype-survey:before {
   background-position: -265px  -23px; }
 
-/* line 332, ../scss/_nav.scss */
+/* line 323, ../scss/_nav.scss */
 dt.contenttype-formfolder:before {
   background-position: -144px    -72px; }
 
-/* line 333, ../scss/_nav.scss */
+/* line 324, ../scss/_nav.scss */
 dt.contenttype-lrf:before {
   background-position: -216px    -191px; }
 
-/* line 339, ../scss/_nav.scss */
+/* line 330, ../scss/_nav.scss */
 .icons-off .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .icons-off .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after,
 .icons-off .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after,
 .icons-off .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after,
@@ -1866,14 +1824,14 @@ dt.contenttype-lrf:before {
   background-image: none;
   background-repeat: none; }
 
-/* line 347, ../scss/_nav.scss */
+/* line 338, ../scss/_nav.scss */
 .tt-dropdown-menu,
 .gist {
   text-align: left; }
 
 /* base styles */
 /* ----------- */
-/* line 357, ../scss/_nav.scss */
+/* line 348, ../scss/_nav.scss */
 .typeahead,
 .tt-query,
 .tt-hint {
@@ -1885,25 +1843,25 @@ dt.contenttype-lrf:before {
   border-radius: 8px;
   outline: none; }
 
-/* line 367, ../scss/_nav.scss */
+/* line 358, ../scss/_nav.scss */
 .typeahead {
   background-color: #fff; }
 
-/* line 371, ../scss/_nav.scss */
+/* line 362, ../scss/_nav.scss */
 .typeahead:focus {
   border: 1px solid #0097cf; }
 
-/* line 375, ../scss/_nav.scss */
+/* line 366, ../scss/_nav.scss */
 .tt-query {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
-/* line 381, ../scss/_nav.scss */
+/* line 372, ../scss/_nav.scss */
 .tt-hint {
   color: #999999; }
 
-/* line 385, ../scss/_nav.scss */
+/* line 376, ../scss/_nav.scss */
 .tt-dropdown-menu {
   width: 100%;
   padding: 0px 0;
@@ -1918,42 +1876,42 @@ dt.contenttype-lrf:before {
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
-/* line 400, ../scss/_nav.scss */
+/* line 391, ../scss/_nav.scss */
 .tt-suggestion, .tt-empty {
   padding: 3px 10px;
   font-size: 110%; }
-  /* line 403, ../scss/_nav.scss */
+  /* line 394, ../scss/_nav.scss */
   .tt-suggestion a, .tt-empty a {
     color: #333; }
 
-/* line 406, ../scss/_nav.scss */
+/* line 397, ../scss/_nav.scss */
 .tt-empty {
   padding: 5px 10px 0px; }
 
-/* line 410, ../scss/_nav.scss */
+/* line 401, ../scss/_nav.scss */
 .tt-suggestion.tt-cursor {
   color: #fff;
   background-color: #0097cf !important; }
-  /* line 413, ../scss/_nav.scss */
+  /* line 404, ../scss/_nav.scss */
   .tt-suggestion.tt-cursor a {
     color: #fff; }
 
-/* line 416, ../scss/_nav.scss */
+/* line 407, ../scss/_nav.scss */
 .tt-suggestion p {
   margin: 0; }
 
-/* line 421, ../scss/_nav.scss */
+/* line 412, ../scss/_nav.scss */
 .tt-suggestion.with-separator:first-child {
   padding: 0px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px; }
 
-/* line 426, ../scss/_nav.scss */
+/* line 417, ../scss/_nav.scss */
 .tt-suggestion:last-child {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px; }
 
-/* line 431, ../scss/_nav.scss */
+/* line 422, ../scss/_nav.scss */
 .gist {
   font-size: 14px; }
 
@@ -5127,29 +5085,28 @@ iframe#templatesrc {
   position: absolute;
   font-size: 52px;
   margin-left: -20px;
-  margin-top: -15px;
-  color: #557c95; }
-/* line 1000, ../scss/_plone.scss */
+  margin-top: -15px; }
+/* line 999, ../scss/_plone.scss */
 .template-folder_listing #content dl {
   padding: 0 0 0 28px; }
-/* line 1003, ../scss/_plone.scss */
+/* line 1002, ../scss/_plone.scss */
 .template-folder_listing #content dt {
   font-weight: normal !important;
   margin-top: 16px; }
-/* line 1007, ../scss/_plone.scss */
+/* line 1006, ../scss/_plone.scss */
 .template-folder_listing #content dd {
   margin-bottom: 10px;
   margin-left: 22px; }
 
-/* line 1015, ../scss/_plone.scss */
+/* line 1014, ../scss/_plone.scss */
 .template-folder_tabular_view #content table.listing a {
   font-weight: normal !important; }
 
-/* line 1020, ../scss/_plone.scss */
+/* line 1019, ../scss/_plone.scss */
 .template-folder_summary_view #content p.tileFooter {
   display: none; }
 
-/* line 1026, ../scss/_plone.scss */
+/* line 1025, ../scss/_plone.scss */
 .template-atct_album_view #content dt {
   font-weight: normal !important; }
 
@@ -7318,7 +7275,7 @@ tr.mceLast > td {
   .nav-collapse-eines, #portal-personaltools-wrapper, #portal-globalnav, #portal-breadcrumbs,
   #portal-column-one, .alert, .portalMessage, #edit-bar, #viewlet-below-content-title, #viewlet-below-content,
   #peu .span4,
-  #peu .w1\3a 3, #peu .span8 > p, #bandaLogos, div.popover, div.expandable-content, #menusup {
+  #peu .w1\3a 3, #peu .span8 > p, #bandaLogos, div.popover, div.expandable-content, #menusup, #cookies, a.share_popover {
     display: none !important; }
 
   /* line 18, ../scss/_print.scss */
@@ -7427,3 +7384,57 @@ a#calendar-previous {
 /* line 52, ../scss/genwebupc.scss */
 .hCalendar-hidden {
   display: none; }
+
+/* line 60, ../scss/genwebupc.scss */
+#folder-index-view ul {
+  list-style-type: none; }
+/* line 64, ../scss/genwebupc.scss */
+#folder-index-view h3 {
+  margin-bottom: 30px !important;
+  margin-top: 0 !important; }
+/* line 69, ../scss/genwebupc.scss */
+#folder-index-view h3 + ul {
+  margin-top: -20px !important; }
+/* line 73, ../scss/genwebupc.scss */
+#folder-index-view .index-img {
+  height: 90px;
+  width: 90px;
+  float: left;
+  clear: both;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  background-color: #fff;
+  padding: 0.4em; }
+
+/* line 85, ../scss/genwebupc.scss */
+.folder-index-view-dreta {
+  border-left: 1px solid #ccc; }
+
+/* line 89, ../scss/genwebupc.scss */
+.folder-index-view-row {
+  border-bottom: 3px solid #ccc;
+  margin-bottom: 10px; }
+
+/* line 97, ../scss/genwebupc.scss */
+.image-noticies {
+  max-width: 75px;
+  float: right;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  padding: 3px; }
+
+/* line 105, ../scss/genwebupc.scss */
+div.content-noticies {
+  overflow: hidden; }
+
+/* line 109, ../scss/genwebupc.scss */
+.listingBar {
+  margin-top: 10px; }
+
+/* line 115, ../scss/genwebupc.scss */
+div#gwsearch {
+  margin-top: -3px; }
+
+/* line 118, ../scss/genwebupc.scss */
+li#portal-languageselector {
+  margin-top: -1px; }
