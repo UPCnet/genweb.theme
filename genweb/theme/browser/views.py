@@ -850,3 +850,96 @@ class ImagesGalleryFolderView(grok.View):
         path = '/'.join(self.context.getPhysicalPath())
         return pc.searchResults(portal_type='Image',
                                 path={'query': path})
+
+
+class FolderIndexView(grok.View):
+    """ Render the title of items and its children
+    """
+
+    #import pdb; pdb.set_trace()
+    MAX_LEVEL = 3 # number of levels to show, if greater than 3 should modify template
+
+    grok.name(_(u'folder_index_view'))
+    grok.template('folder_index_view')
+    grok.context(IFolderish)
+    grok.layer(IGenwebTheme)
+    grok.require('zope2.View')
+
+    def update(self):
+        self.theme = 'Genweb'
+    def genwebTheme(self):
+        return self.theme == 'Genweb'
+    def upcTheme(self):
+        return self.theme == 'UPC'
+
+    def items(self):
+                return self._data()
+
+    @memoize
+    def _data(self):
+        context = aq_inner(self.context)
+        self.catalog = getToolByName(context, 'portal_catalog')
+        folder_path = '/'.join(context.getPhysicalPath())
+        results = self.find_items_in_path(folder_path, 1)
+
+        return results
+
+    def find_items_in_path(self, folder_path, level):
+
+        query_results = self.catalog(path={'query': folder_path, 'depth': 1}, sort_on='getObjPositionInParent') #find items in folder sorted manually by user
+        results = [] # list of objects (brain, results2) results2 only has value if item is a Folder
+        for item in query_results:
+            results2 = []
+            if level < FolderIndexView.MAX_LEVEL:
+                if item.Type == 'Folder': # find its children
+                    folder_path_2 = folder_path + '/' + item.id
+                    results2 = self.find_items_in_path(folder_path_2, level + 1)
+            result = FolderIndexItem(item, results2, self)
+            #import pdb; pdb.set_trace()
+            results.append(result)
+        return results
+
+
+class FolderIndexItem():
+    """ Brain and its children
+    """
+
+    def __init__(self, brain, children, context):
+        self.brain = brain
+        self.children = children
+        self.context = context
+
+    def getChildren(self):
+        return self.children
+
+    def getClass(self):
+        if self.isFolder():
+            return 'span4'
+        else:
+            return 'span12'
+
+    def hasImg(self):
+        pathImg = self.brain.getPath() + '-img'
+        if self.context.catalog.searchResults(path=pathImg):
+            return True
+        else:
+            return False
+
+    def getDescription(self):
+        return self.brain.Description
+    
+    def getPath(self):
+        return self.brain.getPath()
+
+    def getPathImg(self):
+        return self.brain.getPath() + '-img'
+        
+    def getTitle(self):
+        return self.brain.Title
+
+    def isFolder(self):
+        return self.brain.Type == "Folder"
+
+    def isVisible(self):
+        return not self.brain.exclude_from_nav
+

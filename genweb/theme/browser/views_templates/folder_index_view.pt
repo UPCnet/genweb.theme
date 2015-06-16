@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    metal:use-macro="context/main_template/macros/master"
+    lang="en"
+    i18n:domain="genweb">
+
+    <metal:block fill-slot="content-core">
+        <div tal:condition="view/genwebTheme" class='well' id='folder-index-view'>
+            <ul>
+                <tal:block tal:repeat="item view/items" >
+                    <li tal:condition="item/isVisible">
+                        <h3><a tal:attributes="href item/getPath" tal:content="item/getTitle"></a></h3>
+                        <ul class='list-index' tal:condition="item/isFolder" >
+                            <tal:block tal:repeat="item2 item/getChildren">
+                                <li tal:condition="item2/isVisible">
+                                    <a tal:attributes="href item2/getPath" tal:content="item2/getTitle"></a>
+                                    <ul tal:condition="item2/isFolder" >
+                                        <tal:block tal:repeat="item3 item2/getChildren">
+                                            <li tal:condition="item3/isVisible">
+                                                <a tal:attributes="href item3/getPath" tal:content="item3/getTitle"></a>
+                                            </li>
+                                        </tal:block>
+                                    </ul>
+                                </li>
+                            </tal:block>
+                        </ul>
+                    </li>
+                </tal:block>
+            </ul>
+        </div>
+
+        <div tal:condition="view/upcTheme" id='folder-index-view'>
+             <tal:block tal:repeat="item view/items" >
+                <div class='row-fluid folder-index-view-row' tal:condition="item/isVisible">
+                    <div tal:attributes="class item/getClass">
+                        <img tal:condition="item/hasImg" class='index-img' tal:attributes="src item/getPathImg" />
+                        <h3><a tal:attributes="href item/getPath" tal:content="item/getTitle"></a></h3>
+                        <small tal:content="item/getDescription">description</small>
+                    </div>
+                    <div class='span8 folder-index-view-dreta' tal:condition="item/isFolder">                            
+                        <ul class='list-index'  >
+                            <tal:block tal:repeat="item2 item/getChildren">
+                                <li tal:condition="item2/isVisible">
+                                    <a tal:attributes="href item2/getPath" tal:content="item2/getTitle"></a>
+                                    <ul tal:condition="item2/isFolder" >
+                                        <tal:block tal:repeat="item3 item2/getChildren">
+                                            <li tal:condition="item3/isVisible">
+                                                <a tal:attributes="href item3/getPath" tal:content="item3/getTitle"></a>
+                                            </li>
+                                        </tal:block>
+                                    </ul>
+                                </li>
+                            </tal:block>
+                        </ul>
+                    </div>
+                </div>
+            </tal:block>
+        </div>
+
+    </metal:block>
+
+</html>
+

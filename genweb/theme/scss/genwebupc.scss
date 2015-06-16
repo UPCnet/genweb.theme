@@ -118,3 +118,10 @@ div#gwsearch {
 li#portal-languageselector {
     margin-top: -1px;
 }
+
+
+// ocultar botó pujada fitxers en banners i logos peu
+.portaltype-bannercontainer #upload-files,
+.portaltype-logos_container #upload-files{
+    display: none;
+}

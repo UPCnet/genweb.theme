@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1434017305158');
+@import url('genwebupc-ie-blessed1.css?z=1434452834747');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   /* line 553, /var/plone/genweb.buildout/src/genweb.theme/genweb/theme/bootstrap/scss/compass_twitter_bootstrap/_mixins.scss */
@@ -5114,6 +5114,10 @@ iframe#templatesrc {
 div.llistatIndex, div.llistat {
   padding-left: 0; }
 
+/* line 13, ../scss/_gw3togw4.scss */
+.cella {
+  float: left; }
+
 /* line 2, ../scss/_animations.scss */
 a:hover, a {
   -webkit-transition: color 0.5s ease-out;
@@ -7438,3 +7442,8 @@ div#gwsearch {
 /* line 118, ../scss/genwebupc.scss */
 li#portal-languageselector {
   margin-top: -1px; }
+
+/* line 125, ../scss/genwebupc.scss */
+.portaltype-bannercontainer #upload-files,
+.portaltype-logos_container #upload-files {
+  display: none; }
