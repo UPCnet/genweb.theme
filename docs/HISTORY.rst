@@ -1,11 +1,15 @@
 Changelog
 =========
 
-1.54 (unreleased)
+1.54 (2015-06-17)
 -----------------
 
-- Nothing changed yet.
-
+* Canvis Oscar: corrección vista tres niveles [Roberto Diaz]
+* Canvis Oscar [Roberto Diaz]
+* merge [Roberto Diaz]
+* Add icon_blank in genwebtheme_custom [Pilar Marinas]
+* Oscar changes [Roberto Diaz]
+* oscar changes [Roberto Diaz]
 
 1.53 (2015-06-02)
 -----------------
