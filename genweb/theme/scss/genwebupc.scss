@@ -80,6 +80,11 @@ z-index: 1020 !important;
         background-color: #fff;
         padding: 0.4em;
     }
+
+    .level-3 li {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
 }
 
 .folder-index-view-dreta {
@@ -91,8 +96,9 @@ z-index: 1020 !important;
     margin-bottom: 10px;
 }
 
-// vista notícies
 
+
+// vista notícies
             
 .image-noticies {
     max-width:75px;

@@ -8,15 +8,15 @@
 
     <metal:block fill-slot="content-core">
         <div tal:condition="view/genwebTheme" class='well' id='folder-index-view'>
-            <ul>
+            <ul class="level-1">
                 <tal:block tal:repeat="item view/items" >
                     <li tal:condition="item/isVisible">
                         <h3><a tal:attributes="href item/getPath" tal:content="item/getTitle"></a></h3>
-                        <ul class='list-index' tal:condition="item/isFolder" >
+                        <ul class='list-index level-2' tal:condition="item/isFolder" >
                             <tal:block tal:repeat="item2 item/getChildren">
                                 <li tal:condition="item2/isVisible">
                                     <a tal:attributes="href item2/getPath" tal:content="item2/getTitle"></a>
-                                    <ul tal:condition="item2/isFolder" >
+                                    <ul class="level-3" tal:condition="item2/isFolder" >
                                         <tal:block tal:repeat="item3 item2/getChildren">
                                             <li tal:condition="item3/isVisible">
                                                 <a tal:attributes="href item3/getPath" tal:content="item3/getTitle"></a>
@@ -40,11 +40,11 @@
                         <small tal:content="item/getDescription">description</small>
                     </div>
                     <div class='span8 folder-index-view-dreta' tal:condition="item/isFolder">                            
-                        <ul class='list-index'  >
+                        <ul class='list-index level-2'  >
                             <tal:block tal:repeat="item2 item/getChildren">
                                 <li tal:condition="item2/isVisible">
                                     <a tal:attributes="href item2/getPath" tal:content="item2/getTitle"></a>
-                                    <ul tal:condition="item2/isFolder" >
+                                    <ul class="level-3" tal:condition="item2/isFolder" >
                                         <tal:block tal:repeat="item3 item2/getChildren">
                                             <li tal:condition="item3/isVisible">
                                                 <a tal:attributes="href item3/getPath" tal:content="item3/getTitle"></a>

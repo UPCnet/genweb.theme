@@ -941,5 +941,6 @@ class FolderIndexItem():
         return self.brain.Type == "Folder"
 
     def isVisible(self):
-        return not self.brain.exclude_from_nav
+        # test if excluded from nav and has valid title
+        return not self.brain.exclude_from_nav and len(self.brain.Title) > 0
 

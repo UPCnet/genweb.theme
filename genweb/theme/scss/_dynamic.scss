@@ -31,6 +31,7 @@ div.fitxa {border-right:20px solid lighten($genwebPrimary,35%);}
 //LISTS
 .list li:before, .list-index li:before, .list-striped li:before, .list-hover li:before, .list-bordered li:before, .list-notebook li:before, .list-condensed li:before, .list-links li:before, .list-highlighted li:before, .list-portlet li:before { color: lighten($genwebPrimary, 15%);}
 .list-index li:before {color: $genwebTitles;}
+.list-index .level-3 li:before {color: $genwebPrimary;} // nivell 3 folder_index_view
 
 //MOBILE res de res
 //NAV res de res
