@@ -44,11 +44,6 @@
             </div>
             <div metal:use-macro="here/batch_macros/macros/navigation" />
 
-            <script>
-                $('#portal-column-one').remove(); /* treu columna esquerra menu */
-                $('#portal-column-content').removeClass('span9'); /* amplia contingut */
-                $('#portal-column-content').addClass('span12');
-            </script>
         </tal:newsitems>
     </metal:content-core>
 
