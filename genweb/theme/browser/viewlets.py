@@ -133,6 +133,7 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         else:
             return '{}/logout'.format(self.root_url())
 
+    @ram.cache(lambda *args: time() // (60 * 60))
     def getNotificacionsGW(self):
         results = {}
         try:
