@@ -1,0 +1,7 @@
+<tal:cssdefines define="portal_state context/@@plone_portal_state;
+                       portal_url portal_state/portal_url"
+                condition="not: viewlet/is_devel_mode">
+
+<link rel="stylesheet" tal:attributes="href string:${portal_url}/++genweb++distcss/vendor.8a6f25a6.css">
+
+</tal:cssdefines>

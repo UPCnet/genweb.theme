@@ -30,12 +30,6 @@
       name="stylesheets"
       />
 
-  <plone:static
-      directory="js"
-      type="genweb"
-      name="js"
-      />
-
   <!-- Maintaining the bootstrap resource traverser for not collide with the 3.x
        branches
    -->
@@ -56,6 +50,12 @@
       directory="bootstrap/js"
       type="bootstrap"
       name="js"
+      />
+
+  <plone:static
+      directory="dist"
+      type="genweb"
+      name="distcss"
       />
 
   <include package="z3c.jbot" file="meta.zcml" />

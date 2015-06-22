@@ -38,8 +38,29 @@ from genweb.core.utils import genweb_config
 from genweb.core.utils import havePermissionAtRoot
 from genweb.core.utils import pref_lang
 from genweb.theme.browser.interfaces import IGenwebTheme
+from genweb.core.browser.viewlets import gwCSSViewletManager
 
 grok.context(Interface)
+
+
+class gwCSSDevelViewlet(grok.Viewlet):
+    """ This is the develop CSS viewlet. """
+    grok.context(Interface)
+    grok.viewletmanager(gwCSSViewletManager)
+    grok.layer(IGenwebTheme)
+
+    def is_devel_mode(self):
+        return api.env.debug_mode()
+
+
+class gwCSSProductionViewlet(grok.Viewlet):
+    """ This is the production CSS viewlet. """
+    grok.context(Interface)
+    grok.viewletmanager(gwCSSViewletManager)
+    grok.layer(IGenwebTheme)
+
+    def is_devel_mode(self):
+        return api.env.debug_mode()
 
 
 class viewletBase(grok.Viewlet):

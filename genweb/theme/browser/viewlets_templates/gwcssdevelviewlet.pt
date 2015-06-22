@@ -1,0 +1,10 @@
+<tal:cssdefines define="portal_state context/@@plone_portal_state;
+                       portal_url portal_state/portal_url"
+                condition="viewlet/is_devel_mode">
+
+<!-- build:css(.) vendor.css -->
+    <link rel="stylesheet" tal:attributes="href string:${portal_url}/++components++root/select2/select2.css">
+    <link rel="stylesheet" tal:attributes="href string:${portal_url}/++genweb++static/fontello-genweb/css/fontello.css">
+<!-- endbuild -->
+
+</tal:cssdefines>
