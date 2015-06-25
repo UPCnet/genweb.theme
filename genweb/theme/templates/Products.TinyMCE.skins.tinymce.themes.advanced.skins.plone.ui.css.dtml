@@ -88,7 +88,7 @@
 /* SplitButton */
 .ploneSkin .mceSplitButton {width:32px; height:20px; direction:ltr}
 .ploneSkin .mceSplitButton a, .ploneSkin .mceSplitButton span {height:20px; display:block}
-.ploneSkin .mceSplitButton a.mceAction {width:20px; border:1px solid #444;border-right:0px}
+.ploneSkin .mceSplitButton a.mceAction {width:20px; border:none;border-right:0px}
 .ploneSkin .mceSplitButton span.mceAction {width:20px; background:url(../../img/icons.gif) 20px 20px;}
 .ploneSkin .mceSplitButton a.mceOpen {width:9px; border:1px solid transparent;}
 .ploneSkin .mceSplitButton span.mceOpen {width:9px; background:url(../../img/icons.gif) -741px 0;}
