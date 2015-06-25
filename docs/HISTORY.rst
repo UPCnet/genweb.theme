@@ -1,11 +1,18 @@
 Changelog
 =========
 
-1.55 (unreleased)
+1.55 (2015-06-25)
 -----------------
 
-- Nothing changed yet.
-
+* Fix color button [Victor Fernandez de Alba]
+* Fix TinyMCE split button [Victor Fernandez de Alba]
+* Updated CSS [Victor Fernandez de Alba]
+* css error span [Paco Gregori]
+* Add missing dist [Victor Fernandez de Alba]
+* New CSS and JS viewlet in place [Victor Fernandez de Alba]
+* Add 1h cache to the request for notifications from SC WS [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* ReDo newscollectionview [Roberto Diaz]
 
 1.54 (2015-06-17)
 -----------------
