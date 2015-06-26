@@ -325,7 +325,8 @@ class dynamicCSS(grok.View):
         if self.especific1 and self.especific2:
             return self.compile_scss(especific1=self.especific1, especific2=self.especific2)
         else:
-            return ""
+            default = '@import "{}/genwebcustom.css";'.format(api.portal.get().absolute_url())
+            return default
 
     #@ram.cache(_render_cachekey)
     def compile_scss(self, **kwargs):
