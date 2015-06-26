@@ -333,12 +333,16 @@ class dynamicCSS(grok.View):
 
         scssfile = open('{}/genweb/theme/scss/_dynamic.scss'.format(genwebthemeegg.location))
 
-        settings = dict(especific1=self.especific1, especific2=self.especific2)
+        settings = dict(especific1=self.especific1,
+                        especific2=self.especific2,
+                        portal_url=api.portal.get().absolute_url())
 
         variables_scss = """
 
         $genwebPrimary: {especific1};
         $genwebTitles: {especific2};
+
+        @import "{portal_url}/genwebcustom.css";
 
         """.format(**settings)
 
@@ -927,13 +931,13 @@ class FolderIndexItem():
 
     def getDescription(self):
         return self.brain.Description
-    
+
     def getPath(self):
         return self.brain.getPath()
 
     def getPathImg(self):
         return self.brain.getPath() + '-img'
-        
+
     def getTitle(self):
         return self.brain.Title
 
@@ -944,3 +948,14 @@ class FolderIndexItem():
         # test if excluded from nav and has valid title
         return not self.brain.exclude_from_nav and len(self.brain.Title) > 0
 
+
+class CustomCSS(grok.View):
+    grok.name('genwebcustom.css')
+    grok.context(Interface)
+    grok.layer(IGenwebTheme)
+
+    index = ViewPageTemplateFile('views_templates/genwebcustom.css.pt')
+
+    def render(self):
+        self.request.response.setHeader('Content-Type', 'text/css')
+        return self.index()
