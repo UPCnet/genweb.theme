@@ -533,7 +533,7 @@ class gwRecaptchaView(RecaptchaView, grok.View):
                                     };
                             </script>
                             """ % lang,
-                       "es": """
+                   "es": """
                             <script type="text/javascript">
                                 var RecaptchaOptions = {
                                         lang : '%s',
@@ -541,7 +541,7 @@ class gwRecaptchaView(RecaptchaView, grok.View):
                                 };
                             </script>
                             """ % lang,
-                       "en": """
+                   "en": """
                             <script type="text/javascript">
                                 var RecaptchaOptions = {
                                         lang : '%s',
@@ -549,12 +549,13 @@ class gwRecaptchaView(RecaptchaView, grok.View):
                                 };
                             </script>
                             """ % lang
-        }
+                   }
 
         if not self.settings.public_key:
             raise ValueError('No recaptcha public key configured. Go to path/to/site/@@recaptcha-settings to configure.')
         use_ssl = self.request['SERVER_URL'].startswith('https://')
         error = IRecaptchaInfo(self.request).error
+
         return options.get(lang, '') + displayhtml(self.settings.public_key, use_ssl=use_ssl, error=error)
 
 
@@ -606,12 +607,13 @@ class gwCollectiveRecaptchaView(CollectiveRecaptchaView, grok.View):
                             };
                         </script>
                         """ % lang
-        }
+                   }
 
         if not self.settings.public_key:
             raise ValueError('No recaptcha public key configured. Go to path/to/site/@@recaptcha-settings to configure.')
         use_ssl = self.request['SERVER_URL'].startswith('https://')
         error = IRecaptchaInfo(self.request).error
+
         return options.get(lang, '') + displayhtml(self.settings.public_key, use_ssl=use_ssl, error=error)
 
 
