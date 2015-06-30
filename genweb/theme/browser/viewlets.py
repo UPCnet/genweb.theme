@@ -186,7 +186,6 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         if lang == 'en':
             part2 = """/++genweb++static/js/resizer.min.js&quot;></script></body></html>')})(document));"><span class="pull-left">Views</span><i class="fontello-icon-mobile pull-left"></i><i class="fontello-icon-tablet pull-left"></i></a>"""
 
-
         return part1 + self.root_url() + part2
 
 
