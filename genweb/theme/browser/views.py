@@ -863,8 +863,8 @@ class FolderIndexView(grok.View):
     """ Render the title of items and its children
     """
 
-    #import pdb; pdb.set_trace()
-    MAX_LEVEL = 3 # number of levels to show, if greater than 3 should modify template
+    # number of levels to show, if greater than 3 should modify template
+    MAX_LEVEL = 3
 
     grok.name(_(u'folder_index_view'))
     grok.template('folder_index_view')
@@ -874,13 +874,15 @@ class FolderIndexView(grok.View):
 
     def update(self):
         self.theme = 'Genweb'
+
     def genwebTheme(self):
         return self.theme == 'Genweb'
+
     def upcTheme(self):
         return self.theme == 'UPC'
 
     def items(self):
-                return self._data()
+        return self._data()
 
     @memoize
     def _data(self):
@@ -892,17 +894,18 @@ class FolderIndexView(grok.View):
         return results
 
     def find_items_in_path(self, folder_path, level):
-
-        query_results = self.catalog(path={'query': folder_path, 'depth': 1}, sort_on='getObjPositionInParent') #find items in folder sorted manually by user
-        results = [] # list of objects (brain, results2) results2 only has value if item is a Folder
+        # find items in folder sorted manually by user
+        query_results = self.catalog(path={'query': folder_path, 'depth': 1}, sort_on='getObjPositionInParent')
+        # list of objects (brain, results2) results2 only has value if item is a Folder
+        results = []
         for item in query_results:
             results2 = []
             if level < FolderIndexView.MAX_LEVEL:
-                if item.Type == 'Folder': # find its children
+                if item.Type == 'Folder':  # find its children
                     folder_path_2 = folder_path + '/' + item.id
                     results2 = self.find_items_in_path(folder_path_2, level + 1)
             result = FolderIndexItem(item, results2, self)
-            #import pdb; pdb.set_trace()
+
             results.append(result)
         return results
 
