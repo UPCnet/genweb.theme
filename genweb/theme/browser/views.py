@@ -44,10 +44,10 @@ from genweb.core.interfaces import INewsFolder
 from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 
 from genweb.portlets.browser.manager import ISpanStorage
-from genweb.theme.portlets.fullnews import Renderer
 
 from Products.CMFCore.interfaces import IFolderish
 from plone.memoize.view import memoize
+from plone.memoize import ram
 
 import pkg_resources
 import json
@@ -328,7 +328,7 @@ class dynamicCSS(grok.View):
             default = '@import "{}/genwebcustom.css";'.format(api.portal.get().absolute_url())
             return default
 
-    #@ram.cache(_render_cachekey)
+    @ram.cache(_render_cachekey)
     def compile_scss(self, **kwargs):
         genwebthemeegg = pkg_resources.get_distribution('genweb.theme')
 
