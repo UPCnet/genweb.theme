@@ -482,19 +482,3 @@ class gwTitleViewlet(TitleViewlet, viewletBase):
             self.site_title = u"%s &mdash; %s" % (genweb_title, marca_UPC)
         else:
             self.site_title = u"%s &mdash; %s &mdash; %s" % (page_title, genweb_title, marca_UPC)
-
-
-class socialtoolsViewlet(viewletBase):
-    grok.name('genweb.socialtools')
-    grok.template('socialtools')
-    grok.viewletmanager(IAboveContentTitle)
-    grok.layer(IGenwebTheme)
-
-    def getData(self):
-        Title = aq_inner(self.context).Title()
-        contextURL = self.context.absolute_url()
-
-        return dict(Title=Title, URL=contextURL)
-
-    def is_social_tools_enabled(self):
-        return not self.genweb_config().treu_icones_xarxes_socials
