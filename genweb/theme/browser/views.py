@@ -55,21 +55,6 @@ import scss
 
 grok.templatedir("views_templates")
 
-MESSAGE_TEMPLATE = u"""\
-L'usuari %(user_name)s ha creat un nou esdeveniment en l'agenda del GenWeb \
-"%(titolGW)s":
-
-Títol: "%(titleEvent)s"
-Data: %(dayEvent)s-%(monthEvent)s-%(yearEvent)s
-Hora: %(hourEvent)s
-
-i que podreu trobar al següent enllaç:
-
-%(linkEvent)s
-
-Per a la seva publicació a l'Agenda general de la UPC.
-"""
-
 
 class GWConfig(grok.View):
     grok.context(Interface)
