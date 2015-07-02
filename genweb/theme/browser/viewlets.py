@@ -32,6 +32,7 @@ from plone.app.layout.navigation.interfaces import INavigationRoot
 
 from genweb.core import _
 from genweb.core import HAS_CAS
+from genweb.core import HAS_PAM
 from genweb.core.interfaces import IHomePage
 from genweb.theme.browser.interfaces import IHomePageView
 from genweb.core.utils import genweb_config
@@ -235,6 +236,9 @@ class gwHeader(viewletBase):
 
     def get_right_logo_alt(self):
         return self.genweb_config().right_logo_alt
+
+    def is_pam_installed(self):
+        return HAS_PAM
 
 
 class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
