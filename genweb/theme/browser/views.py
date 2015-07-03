@@ -650,6 +650,42 @@ class newsCollectionView(grok.View):
             return '%s/news_listing' % portal.absolute_url()
 
 
+class EventsCollectionView(grok.View):
+    grok.context(IFolderish)
+    grok.name('eventscollection_view')
+    grok.template("eventscollectionview")
+    grok.require('zope2.View')
+    grok.layer(IGenwebTheme)
+
+    def published_events_items(self):
+        pc = api.portal.get_tool('portal_catalog')
+        results = pc.searchResults(portal_type='Event',
+                                   Language=pref_lang(),
+                                   end={'query': DateTime(),
+                                        'range': 'min'},
+                                   sort_on='start',
+                                   sort_order='reverse')
+        return results
+
+
+class PastEventsCollectionView(grok.View):
+    grok.context(IFolderish)
+    grok.name('pasteventscollection_view')
+    grok.template("pasteventscollectionview")
+    grok.require('zope2.View')
+    grok.layer(IGenwebTheme)
+
+    def published_events_items(self):
+        pc = api.portal.get_tool('portal_catalog')
+        results = pc.searchResults(portal_type='Event',
+                                   Language=pref_lang(),
+                                   start={'query': DateTime(),
+                                          'range': 'max'},
+                                   sort_on='start',
+                                   sort_order='reverse')
+        return results
+
+
 class ContactFeedback(grok.View):
     grok.name('contact_feedback')
     grok.context(INavigationRoot)
