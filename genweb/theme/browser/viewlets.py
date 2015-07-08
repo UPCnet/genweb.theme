@@ -32,6 +32,7 @@ from plone.app.layout.navigation.interfaces import INavigationRoot
 
 from genweb.core import _
 from genweb.core import HAS_CAS
+from genweb.core import HAS_PAM
 from genweb.core.interfaces import IHomePage
 from genweb.theme.browser.interfaces import IHomePageView
 from genweb.core.utils import genweb_config
@@ -186,7 +187,6 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         if lang == 'en':
             part2 = """/++genweb++static/js/resizer.min.js&quot;></script></body></html>')})(document));"><span class="pull-left">Views</span><i class="fontello-icon-mobile pull-left"></i><i class="fontello-icon-tablet pull-left"></i></a>"""
 
-
         return part1 + self.root_url() + part2
 
 
@@ -236,6 +236,9 @@ class gwHeader(viewletBase):
 
     def get_right_logo_alt(self):
         return self.genweb_config().right_logo_alt
+
+    def is_pam_installed(self):
+        return HAS_PAM
 
 
 class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
@@ -483,19 +486,3 @@ class gwTitleViewlet(TitleViewlet, viewletBase):
             self.site_title = u"%s &mdash; %s" % (genweb_title, marca_UPC)
         else:
             self.site_title = u"%s &mdash; %s &mdash; %s" % (page_title, genweb_title, marca_UPC)
-
-
-class socialtoolsViewlet(viewletBase):
-    grok.name('genweb.socialtools')
-    grok.template('socialtools')
-    grok.viewletmanager(IAboveContentTitle)
-    grok.layer(IGenwebTheme)
-
-    def getData(self):
-        Title = aq_inner(self.context).Title()
-        contextURL = self.context.absolute_url()
-
-        return dict(Title=Title, URL=contextURL)
-
-    def is_social_tools_enabled(self):
-        return not self.genweb_config().treu_icones_xarxes_socials

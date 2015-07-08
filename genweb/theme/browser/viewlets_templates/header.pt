@@ -32,7 +32,7 @@
           <tal:codi tal:condition="dades">
             <tal:block tal:condition="filtered"
                        tal:define="codi_upc dades/codi_upc">
-              <a tal:attributes="href python:viewlet.getURLDirectori(codi_upc)" target="_blank" 
+              <a tal:attributes="href python:viewlet.getURLDirectori(codi_upc)" target="_blank"
                 i18n:domain="genweb"
                 i18n:translate="label_dir_upc">
                   Directori UPC
@@ -61,7 +61,9 @@
                i18n:translate="identificat">
                Identifica't
             </a></li>
-        <tal:block replace="structure provider:genweb.pamls" />
+        <tal:genwebpamls condition="viewlet/is_pam_installed">
+          <tal:block replace="structure provider:genweb.pamls" />
+        </tal:genwebpamls>
         <li class="divider"> </li>
         <li>
           <tal:block replace="structure provider:genweb.search_manager" />
@@ -93,7 +95,7 @@
           <tal:codi tal:condition="dades">
             <tal:block tal:condition="filtered"
                        tal:define="codi_upc dades/codi_upc">
-              <a tal:attributes="href python:viewlet.getURLDirectori(codi_upc)" target="_blank" 
+              <a tal:attributes="href python:viewlet.getURLDirectori(codi_upc)" target="_blank"
                 i18n:domain="genweb"
                 i18n:translate="label_dir_upc">
                   Directori UPC
@@ -122,7 +124,9 @@
                i18n:translate="identificat">
                Identifica't
             </a></li>
-        <tal:block replace="structure provider:genweb.pamls" />
+        <tal:genwebpamls condition="viewlet/is_pam_installed">
+          <tal:block replace="structure provider:genweb.pamls" />
+        </tal:genwebpamls>
         <li class="divider"> </li>
       </ul>
     </div>

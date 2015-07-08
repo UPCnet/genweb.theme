@@ -44,31 +44,16 @@ from genweb.core.interfaces import INewsFolder
 from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 
 from genweb.portlets.browser.manager import ISpanStorage
-from genweb.theme.portlets.fullnews import Renderer
 
 from Products.CMFCore.interfaces import IFolderish
 from plone.memoize.view import memoize
+from plone.memoize import ram
 
 import pkg_resources
 import json
 import scss
 
 grok.templatedir("views_templates")
-
-MESSAGE_TEMPLATE = u"""\
-L'usuari %(user_name)s ha creat un nou esdeveniment en l'agenda del GenWeb \
-"%(titolGW)s":
-
-Títol: "%(titleEvent)s"
-Data: %(dayEvent)s-%(monthEvent)s-%(yearEvent)s
-Hora: %(hourEvent)s
-
-i que podreu trobar al següent enllaç:
-
-%(linkEvent)s
-
-Per a la seva publicació a l'Agenda general de la UPC.
-"""
 
 
 class GWConfig(grok.View):
@@ -325,20 +310,25 @@ class dynamicCSS(grok.View):
         if self.especific1 and self.especific2:
             return self.compile_scss(especific1=self.especific1, especific2=self.especific2)
         else:
-            return ""
+            default = '@import "{}/genwebcustom.css";'.format(api.portal.get().absolute_url())
+            return default
 
-    #@ram.cache(_render_cachekey)
+    @ram.cache(_render_cachekey)
     def compile_scss(self, **kwargs):
         genwebthemeegg = pkg_resources.get_distribution('genweb.theme')
 
         scssfile = open('{}/genweb/theme/scss/_dynamic.scss'.format(genwebthemeegg.location))
 
-        settings = dict(especific1=self.especific1, especific2=self.especific2)
+        settings = dict(especific1=self.especific1,
+                        especific2=self.especific2,
+                        portal_url=api.portal.get().absolute_url())
 
         variables_scss = """
 
         $genwebPrimary: {especific1};
         $genwebTitles: {especific2};
+
+        @import "{portal_url}/genwebcustom.css";
 
         """.format(**settings)
 
@@ -528,7 +518,7 @@ class gwRecaptchaView(RecaptchaView, grok.View):
                                     };
                             </script>
                             """ % lang,
-                       "es": """
+                   "es": """
                             <script type="text/javascript">
                                 var RecaptchaOptions = {
                                         lang : '%s',
@@ -536,7 +526,7 @@ class gwRecaptchaView(RecaptchaView, grok.View):
                                 };
                             </script>
                             """ % lang,
-                       "en": """
+                   "en": """
                             <script type="text/javascript">
                                 var RecaptchaOptions = {
                                         lang : '%s',
@@ -544,12 +534,13 @@ class gwRecaptchaView(RecaptchaView, grok.View):
                                 };
                             </script>
                             """ % lang
-        }
+                   }
 
         if not self.settings.public_key:
             raise ValueError('No recaptcha public key configured. Go to path/to/site/@@recaptcha-settings to configure.')
         use_ssl = self.request['SERVER_URL'].startswith('https://')
         error = IRecaptchaInfo(self.request).error
+
         return options.get(lang, '') + displayhtml(self.settings.public_key, use_ssl=use_ssl, error=error)
 
 
@@ -601,67 +592,14 @@ class gwCollectiveRecaptchaView(CollectiveRecaptchaView, grok.View):
                             };
                         </script>
                         """ % lang
-        }
+                   }
 
         if not self.settings.public_key:
             raise ValueError('No recaptcha public key configured. Go to path/to/site/@@recaptcha-settings to configure.')
         use_ssl = self.request['SERVER_URL'].startswith('https://')
         error = IRecaptchaInfo(self.request).error
+
         return options.get(lang, '') + displayhtml(self.settings.public_key, use_ssl=use_ssl, error=error)
-
-
-class gwSendEventView(grok.View):
-    grok.context(IEvent)
-    grok.name('send-event')
-    grok.require('cmf.AddPortalContent')
-    grok.layer(IGenwebTheme)
-
-    def render(self):
-
-        context = aq_inner(self.context)
-        annotations = IAnnotations(context)
-        event_title = context.Title()
-        event_start = context.startDate
-        event_day = DateTime.day(event_start)
-        event_month = DateTime.month(event_start)
-        event_year = DateTime.year(event_start)
-        event_hour = DateTime.Time(event_start)
-        event_link = context.absolute_url()
-        mailhost = getToolByName(context, 'MailHost')
-        urltool = getToolByName(context, 'portal_url')
-        portal = urltool.getPortalObject()
-        email_charset = portal.getProperty('email_charset')
-        to_address = 'info@upc.edu'
-        from_name = portal.getProperty('email_from_name')
-        from_address = portal.getProperty('email_from_address')
-        titulo_web = portal.getProperty('title')
-        mtool = self.context.portal_membership
-        userid = mtool.getAuthenticatedMember().id
-        source = "%s <%s>" % (from_name, from_address)
-        subject = "[Nou esdeveniment] %s" % (titulo_web)
-        message = MESSAGE_TEMPLATE % dict(titolGW=titulo_web,
-                                          titleEvent=event_title,
-                                          dayEvent=event_day,
-                                          monthEvent=event_month,
-                                          yearEvent=event_year,
-                                          hourEvent=event_hour,
-                                          linkEvent=event_link,
-                                          from_address=from_address,
-                                          from_name=from_name,
-                                          user_name=userid)
-
-        mailhost.secureSend(message, to_address, source,
-                            subject=subject, subtype='plain',
-                            charset=email_charset, debug=False,
-                            )
-
-        if 'eventsent' not in annotations:
-            annotations['eventsent'] = True
-
-        # confirm = _(u"Mail sent.")
-        confirm = _(u"Gràcies per la vostra col·laboració. Les dades de l\'activitat s\'han enviat correctament i seran publicades com més aviat millor.")
-        IStatusMessage(self.request).addStatusMessage(confirm, type='info')
-        self.request.response.redirect(self.context.absolute_url())
 
 
 class newsCollectionView(grok.View):
@@ -710,6 +648,42 @@ class newsCollectionView(grok.View):
             return '%s' % news_folder[0].getURL()
         else:
             return '%s/news_listing' % portal.absolute_url()
+
+
+class EventsCollectionView(grok.View):
+    grok.context(IFolderish)
+    grok.name('eventscollection_view')
+    grok.template("eventscollectionview")
+    grok.require('zope2.View')
+    grok.layer(IGenwebTheme)
+
+    def published_events_items(self):
+        pc = api.portal.get_tool('portal_catalog')
+        results = pc.searchResults(portal_type='Event',
+                                   Language=pref_lang(),
+                                   end={'query': DateTime(),
+                                        'range': 'min'},
+                                   sort_on='start',
+                                   sort_order='reverse')
+        return results
+
+
+class PastEventsCollectionView(grok.View):
+    grok.context(IFolderish)
+    grok.name('pasteventscollection_view')
+    grok.template("pasteventscollectionview")
+    grok.require('zope2.View')
+    grok.layer(IGenwebTheme)
+
+    def published_events_items(self):
+        pc = api.portal.get_tool('portal_catalog')
+        results = pc.searchResults(portal_type='Event',
+                                   Language=pref_lang(),
+                                   start={'query': DateTime(),
+                                          'range': 'max'},
+                                   sort_on='start',
+                                   sort_order='reverse')
+        return results
 
 
 class ContactFeedback(grok.View):
@@ -856,8 +830,8 @@ class FolderIndexView(grok.View):
     """ Render the title of items and its children
     """
 
-    #import pdb; pdb.set_trace()
-    MAX_LEVEL = 3 # number of levels to show, if greater than 3 should modify template
+    # number of levels to show, if greater than 3 should modify template
+    MAX_LEVEL = 3
 
     grok.name(_(u'folder_index_view'))
     grok.template('folder_index_view')
@@ -867,13 +841,15 @@ class FolderIndexView(grok.View):
 
     def update(self):
         self.theme = 'Genweb'
+
     def genwebTheme(self):
         return self.theme == 'Genweb'
+
     def upcTheme(self):
         return self.theme == 'UPC'
 
     def items(self):
-                return self._data()
+        return self._data()
 
     @memoize
     def _data(self):
@@ -885,17 +861,18 @@ class FolderIndexView(grok.View):
         return results
 
     def find_items_in_path(self, folder_path, level):
-
-        query_results = self.catalog(path={'query': folder_path, 'depth': 1}, sort_on='getObjPositionInParent') #find items in folder sorted manually by user
-        results = [] # list of objects (brain, results2) results2 only has value if item is a Folder
+        # find items in folder sorted manually by user
+        query_results = self.catalog(path={'query': folder_path, 'depth': 1}, sort_on='getObjPositionInParent')
+        # list of objects (brain, results2) results2 only has value if item is a Folder
+        results = []
         for item in query_results:
             results2 = []
             if level < FolderIndexView.MAX_LEVEL:
-                if item.Type == 'Folder': # find its children
+                if item.Type == 'Folder':  # find its children
                     folder_path_2 = folder_path + '/' + item.id
                     results2 = self.find_items_in_path(folder_path_2, level + 1)
             result = FolderIndexItem(item, results2, self)
-            #import pdb; pdb.set_trace()
+
             results.append(result)
         return results
 
@@ -927,13 +904,13 @@ class FolderIndexItem():
 
     def getDescription(self):
         return self.brain.Description
-    
+
     def getPath(self):
         return self.brain.getPath()
 
     def getPathImg(self):
         return self.brain.getPath() + '-img'
-        
+
     def getTitle(self):
         return self.brain.Title
 
@@ -944,3 +921,14 @@ class FolderIndexItem():
         # test if excluded from nav and has valid title
         return not self.brain.exclude_from_nav and len(self.brain.Title) > 0
 
+
+class CustomCSS(grok.View):
+    grok.name('genwebcustom.css')
+    grok.context(Interface)
+    grok.layer(IGenwebTheme)
+
+    index = ViewPageTemplateFile('views_templates/genwebcustom.css.pt')
+
+    def render(self):
+        self.request.response.setHeader('Content-Type', 'text/css')
+        return self.index()
