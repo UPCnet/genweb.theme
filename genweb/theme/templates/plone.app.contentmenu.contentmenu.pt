@@ -87,7 +87,7 @@
                   <li class="nav-header"
                       tal:condition="not:subMenuItem/action"
                       tal:attributes="id subMenuItem/extra/id | nothing;">
-                      tipus, no action
+
                       <img width="16"
                            height="16"
                            alt=""
