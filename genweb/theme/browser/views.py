@@ -906,10 +906,10 @@ class FolderIndexItem():
         return self.brain.Description
 
     def getPath(self):
-        return self.brain.getPath()
+        return self.brain.getURL()
 
     def getPathImg(self):
-        return self.brain.getPath() + '-img'
+        return self.brain.getURL() + '-img'
 
     def getTitle(self):
         return self.brain.Title
