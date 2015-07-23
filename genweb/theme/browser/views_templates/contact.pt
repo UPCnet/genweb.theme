@@ -9,26 +9,28 @@
 <body class="template-contacte" dir="ltr">
 <script type="text/javascript">
     RecaptchaOptions = { theme : 'white' };
-
 </script>
+
 <metal:block metal:fill-slot="top_slot"
       tal:define="dummy python:request.set('disable_border', 1)" />
 
 <div metal:fill-slot="main">
   <tal:main-macro metal:define-macro="main"
             tal:define="dades context/@@genweb.utils/getDadesContact;
-                        genweb_config context/@@gwconfig">
-
-<!-- Dades de contacte -->
-    <tal:block tal:condition="dades">
-      <h1 class="documentFirstHeading"
+                        genweb_config context/@@gwconfig;
+                        isCustomized view/getContactPersonalized;">
+    <h1 class="documentFirstHeading"
         i18n:translate="genweb_formContacte">
-          Contact
-      </h1>
+      Contact
+    </h1>
+<!-- Dades de contacte -->
+
+<!-- CONTACT WITH DATA FROM WEBSERVICE -->
+    <tal:block tal:condition="dades">
 
       <div class="row-fluid">
         <div class="span7 box box-gradient">
-          <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
+              <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
         </div>
 
         <div class="span5"
@@ -38,9 +40,9 @@
                          email dades/email;
                          id_scp dades/id_scp;
                          codi_upc dades/codi_upc;
-                         nom dades/nom;
-                         isCustomized view/getContactPersonalized"
+                         nom dades/nom"
              tal:condition="adreca">
+
             <tal:co tal:condition="not: isCustomized">
               <h2 tal:content="nom">
                 Servei de Comunicació i Promoció
@@ -127,19 +129,18 @@
     </tal:block>
 
 
+<!-- CONTACT WITHOUT DATA -->
+
     <tal:block tal:condition="not: dades">
-
-      <h1 class="documentFirstHeading"
-        i18n:translate="genweb_formContacte">
-          Contact
-      </h1>
-
-      <div class="row-fluid">
-        <div class="box box-gradient">
-          <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
+        <div class="row-fluid">
+            <div class="box box-gradient"
+                 tal:attributes="class python:isCustomized and 'span7 box box-gradient' or 'box box-gradient'">
+                  <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
+            </div>
+            <tal:co tal:condition="isCustomized">
+                <div class="span5" tal:replace="structure view/getContactPage">Cos de la pagina de contacte</div>
+            </tal:co>
         </div>
-      </div>
-
     </tal:block>
 
 </tal:main-macro>

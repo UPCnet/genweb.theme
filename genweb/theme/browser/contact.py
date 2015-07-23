@@ -5,8 +5,8 @@ from plone import api
 from cgi import escape
 from Acquisition import aq_inner
 
-from zope.schema import TextLine, Text, ValidationError
-from z3c.form import field, button
+from zope.schema import TextLine, Text, ValidationError, Choice
+from z3c.form import button
 from plone.directives import form
 
 from plone.formwidget.recaptcha.widget import ReCaptchaFieldWidget
@@ -20,7 +20,13 @@ from plone.app.layout.navigation.interfaces import INavigationRoot
 from genweb.theme.browser.interfaces import IGenwebTheme
 
 from genweb.core import utils
-from zope.component import getMultiAdapter
+
+from genweb.core.utils import pref_lang
+from zope.component import getUtility
+from plone.registry.interfaces import IRegistry
+from genweb.controlpanel.interface import IGenwebControlPanelSettings
+from zope.schema.vocabulary import SimpleVocabulary
+from zope.schema.interfaces import IVocabularyFactory
 
 
 grok.templatedir("views_templates")
@@ -40,7 +46,21 @@ El missatge és:
 """
 
 
-# Define a validation method for email addresses
+class getEmailsContactNames(object):
+    grok.implements(IVocabularyFactory)
+
+    def __call__(self, context):
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(IGenwebControlPanelSettings, check=False)
+        items = []
+        if settings.contact_emails_table is not None:
+            for item in settings.contact_emails_table:
+                items.append(SimpleVocabulary.createTerm(item['name'], item['name'], item['name']))
+        return SimpleVocabulary(items)
+
+grok.global_utility(getEmailsContactNames, name=u"availableContacts")
+
+
 class NotAnEmailAddress(ValidationError):
     __doc__ = _(u"Invalid email address")
 
@@ -53,9 +73,21 @@ def validate_email(value):
     return True
 
 
+def show_to_address():
+    if True:
+        return 'input'
+    else:
+        return 'hidden'
+
+
 class IContactForm(form.Schema):
     """Define the fields of our form
     """
+
+    form.mode(to_address=show_to_address())
+    to_address = Choice(title=_('to_address',
+                     default=u"Recipient"),
+                     vocabulary=u"availableContacts")
 
     nombre = TextLine(title=_('genweb_sender_fullname', default=u"Name"),
                       required=True)
@@ -71,12 +103,13 @@ class IContactForm(form.Schema):
                    description=_("genweb_help_message", default="Please enter the message you want to send."),
                    required=True)
 
+    form.widget(captcha=ReCaptchaFieldWidget)
     captcha = TextLine(title=_('genweb_type_the_code', default="Type the code"),
                        description=_('genweb_help_type_the_code', default="Type the code from the picture shown below"),
                        required=True)
 
 
-class ContactForm(form.Form):
+class ContactForm(form.SchemaForm):
     grok.name('contact')
     grok.context(INavigationRoot)
     grok.template("contact")
@@ -85,8 +118,7 @@ class ContactForm(form.Form):
 
     ignoreContext = True
 
-    fields = field.Fields(IContactForm)
-    fields['captcha'].widgetFactory = ReCaptchaFieldWidget
+    schema = IContactForm
 
     # This trick hides the editable border and tabs in Plone
     def update(self):
@@ -119,7 +151,13 @@ class ContactForm(form.Form):
         portal = api.portal.get()
         email_charset = portal.getProperty('email_charset')
 
-        to_address = portal.getProperty('email_from_address')
+        multi_contact_emails = self.getEmailsContact()
+        import ipdb;ipdb.set_trace()
+        if multi_contact_emails['contact_emails_show']:
+            to_address = ''
+        else:
+            to_address = portal.getProperty('email_from_address')
+
         from_name = portal.getProperty('email_from_name')
 
         source = "%s <%s>" % (escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['from_address'])))
@@ -162,32 +200,41 @@ class ContactForm(form.Form):
         Funcio que retorna la pagina de contacte personalitzada
         """
         page = ""
-        portal_state = getMultiAdapter((self.context, self.request), name=u'plone_portal_state')
-        portal = portal_state.portal()
         context = aq_inner(self.context)
         lang = self.context.Language()
         if lang == 'ca':
             customized_page = getattr(context, 'contactepersonalitzat', False)
-            state = api.content.get_state(customized_page)
-            if customized_page and state == 'published':
-                contact_body = context.contactepersonalitzat.text.raw
-                page = contact_body
-            else:
-                return page
-        if lang == 'es':
+        elif lang == 'es':
             customized_page = getattr(context, 'contactopersonalizado', False)
-            state = api.content.get_state(customized_page)
-            if customized_page and state == 'published':
-                contact_body = context.contactopersonalizado.text.raw
-                page = contact_body
-            else:
-                return page
-        if lang == 'en':
+        elif lang == 'en':
             customized_page = getattr(context, 'customizedcontact', False)
+        try:
             state = api.content.get_state(customized_page)
-            if customized_page and state == 'published':
-                contact_body = context.customizedcontact.text.raw
-                page = contact_body
-            else:
-                return page
-        return page
+        except:
+            state = ''
+        if state == 'published':
+            contact_body = context.contactepersonalitzat.text.raw
+            page = contact_body
+        else:
+            return page
+
+    def getEmailsContact(self):
+        lang = pref_lang()
+
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(IGenwebControlPanelSettings, check=False)
+        items = []
+        if settings.contact_emails_table is not None:
+            for item in settings.contact_emails_table:
+                if lang in item['language']:
+                    items.append(item)
+
+        if len(items) > 0 and settings.contacte_multi_email:
+            contact_emails_show = True
+        else:
+            contact_emails_show = False
+
+        dades = {'contact_emails_table': items,
+                 'contact_emails_show': contact_emails_show,
+                 }
+        return dades

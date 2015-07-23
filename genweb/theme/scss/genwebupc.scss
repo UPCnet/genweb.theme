@@ -54,7 +54,7 @@ z-index: 1020 !important;
 }
 
 
-// folder_index_view 
+// folder_index_view
 
 #folder-index-view {
 	ul {
@@ -68,7 +68,7 @@ z-index: 1020 !important;
 
 	h3 + ul {
 		margin-top: -20px !important;
-	}	
+	}
 
     .index-img {
         height: 90px;
@@ -99,7 +99,7 @@ z-index: 1020 !important;
 
 
 // vista notícies
-            
+
 .image-noticies {
     max-width:75px;
     float:right;
@@ -130,4 +130,8 @@ li#portal-languageselector {
 .portaltype-bannercontainer #upload-files,
 .portaltype-logos_container #upload-files{
     display: none;
+}
+
+#formfield-form-widgets-contact_emails_table {
+    margin-left: 50px;
 }
