@@ -135,7 +135,7 @@
         <div class="row-fluid">
             <div class="box box-gradient"
                  tal:attributes="class python:isCustomized and 'span7 box box-gradient' or 'box box-gradient'">
-                  <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
+                 <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
             </div>
             <tal:co tal:condition="isCustomized">
                 <div class="span5" tal:replace="structure view/getContactPage">Cos de la pagina de contacte</div>

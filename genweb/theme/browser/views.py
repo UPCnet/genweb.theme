@@ -649,6 +649,28 @@ class newsCollectionView(grok.View):
         else:
             return '%s/news_listing' % portal.absolute_url()
 
+    def getNewsCollections(self):
+        """Return a list of collections in folder news
+        """
+
+        path = self.context.getPhysicalPath()
+        path = "/".join(path)
+
+        portal_catalog = getToolByName(self, 'portal_catalog')
+
+        objects = portal_catalog.searchResults(portal_type='Collection',
+                                          review_state='published',
+                                          path={'query': path, 'depth': 1},
+                                          sort_on='getObjPositionInParent')
+        results = []
+        for obj in objects:
+            if not obj.exclude_from_nav:
+                results.append(obj)
+            else:
+                continue
+
+        return results
+
 
 class EventsCollectionView(grok.View):
     grok.context(IFolderish)

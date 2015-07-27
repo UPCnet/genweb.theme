@@ -52,10 +52,16 @@ class getEmailsContactNames(object):
     def __call__(self, context):
         registry = getUtility(IRegistry)
         settings = registry.forInterface(IGenwebControlPanelSettings, check=False)
+        portal = api.portal.get()
+        lang = utils.pref_lang()
         items = []
-        if settings.contact_emails_table is not None:
+        if settings.contact_emails_table is not None and settings.contacte_multi_email:
             for item in settings.contact_emails_table:
-                items.append(SimpleVocabulary.createTerm(item['name'], item['name'], item['name']))
+                if lang == item['language']:
+                    items.append(SimpleVocabulary.createTerm(item['name'], str(item['name'])))
+        else:
+            name = portal.getProperty('email_from_name')
+            items.append(SimpleVocabulary.createTerm(name, str(name)))
         return SimpleVocabulary(items)
 
 grok.global_utility(getEmailsContactNames, name=u"availableContacts")
@@ -73,18 +79,10 @@ def validate_email(value):
     return True
 
 
-def show_to_address():
-    if True:
-        return 'input'
-    else:
-        return 'hidden'
-
-
 class IContactForm(form.Schema):
     """Define the fields of our form
     """
 
-    form.mode(to_address=show_to_address())
     to_address = Choice(title=_('to_address',
                      default=u"Recipient"),
                      vocabulary=u"availableContacts")
@@ -128,7 +126,7 @@ class ContactForm(form.SchemaForm):
     @button.buttonAndHandler(_(u"Send"))
     def action_send(self, action):
         """Send the email to the configured mail address in properties and redirect to the
-        front page, showing a status message to say the message was received.
+        front page, showing a status message to say the message was sent.
         """
         data, errors = self.extractData()
         if 'recaptcha_response_field' in self.request.keys():
@@ -140,7 +138,8 @@ class ContactForm(form.SchemaForm):
         else:
             return
 
-        if 'asunto' not in data or \
+        if 'to_address' not in data or \
+           'asunto' not in data or \
            'from_address' not in data or \
            'mensaje' not in data or \
            'nombre' not in data:
@@ -150,15 +149,20 @@ class ContactForm(form.SchemaForm):
         mailhost = getToolByName(context, 'MailHost')
         portal = api.portal.get()
         email_charset = portal.getProperty('email_charset')
+        recipient = data['to_address']
 
-        multi_contact_emails = self.getEmailsContact()
-        import ipdb;ipdb.set_trace()
-        if multi_contact_emails['contact_emails_show']:
-            to_address = ''
-        else:
-            to_address = portal.getProperty('email_from_address')
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(IGenwebControlPanelSettings, check=False)
 
-        from_name = portal.getProperty('email_from_name')
+        contacts = settings.contact_emails_table
+
+        for contact in contacts:
+            if contact['name'] == recipient:
+                to_address = contact['email']
+                to_name = contact['name']
+            else:
+                to_address = portal.getProperty('email_from_address')
+                to_name = portal.getProperty('email_from_name')
 
         source = "%s <%s>" % (escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['from_address'])))
         subject = "[Formulari Contacte] %s" % (escape(safe_unicode(data['asunto'])))
@@ -166,7 +170,7 @@ class ContactForm(form.SchemaForm):
                                           from_address=data['from_address'],
                                           genweb=portal.absolute_url(),
                                           message=data['mensaje'],
-                                          from_name=from_name)
+                                          from_name=to_name)
 
         mailhost.secureSend(escape(safe_unicode(message)), to_address, source,
                             subject=subject, subtype='plain',
@@ -217,24 +221,3 @@ class ContactForm(form.SchemaForm):
             page = contact_body
         else:
             return page
-
-    def getEmailsContact(self):
-        lang = pref_lang()
-
-        registry = getUtility(IRegistry)
-        settings = registry.forInterface(IGenwebControlPanelSettings, check=False)
-        items = []
-        if settings.contact_emails_table is not None:
-            for item in settings.contact_emails_table:
-                if lang in item['language']:
-                    items.append(item)
-
-        if len(items) > 0 and settings.contacte_multi_email:
-            contact_emails_show = True
-        else:
-            contact_emails_show = False
-
-        dades = {'contact_emails_table': items,
-                 'contact_emails_show': contact_emails_show,
-                 }
-        return dades
