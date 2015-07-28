@@ -7,7 +7,7 @@
 <body>
 
     <metal:content-core fill-slot="content-core">
-        <div class="row-fluid">
+    <!--    <div class="row-fluid">
             <div class="news-column-1 span3">
                 <tal:block tal:define="codigos view/getNewsCollections"
                                        i18n:domain="genweb">
@@ -20,7 +20,8 @@
                         </ul>
                 </tal:block>
             </div>
-            <div class="news-column-2 span9">
+            <div class="news-column-2 span9"> -->
+            <div>
                     <tal:newsitems tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
                                                                          plone_view context/@@plone;
                                                                          news_items view/published_news_items;
@@ -60,7 +61,7 @@
 
                     </tal:newsitems>
             </div>
-        </div>
+<!--         </div> -->
     </metal:content-core>
 
 </body>
