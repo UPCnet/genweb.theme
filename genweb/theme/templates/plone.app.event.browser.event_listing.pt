@@ -35,7 +35,7 @@
             <a class="mode_future"   href="" tal:attributes="href view/mode_future_url"   i18n:translate="mode_future_link">Upcoming</a>
           </li>
           <li class="" tal:attributes="class python:mode=='past' and 'selected' or ''">
-            <a class="mode_past"   href="" tal:attributes="href view/mode_past_url"   i18n:translate="mode_past_link">Past</a>
+            <a class="mode_past"   href="" tal:attributes="href view/mode_past_url"   i18n:domain="genweb" i18n:translate="mode_past_link">Past</a>
           </li>
           <li class="" tal:attributes="class python:mode=='month' and 'selected' or ''">
             <a class="mode_month" href="" tal:attributes="href view/mode_month_url" i18n:translate="mode_month_link">Month</a>
