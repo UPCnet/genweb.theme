@@ -1,11 +1,32 @@
 Changelog
 =========
 
-1.56 (unreleased)
+1.56 (2015-07-28)
 -----------------
 
-- Nothing changed yet.
-
+* Comentar portlet categorias [hanirok]
+* Translate pasat [hanirok]
+* Personalized contact and Newscollection view [hanirok]
+* Transferred recaptcha override to a patch in genweb.upc [Victor Fernandez de Alba]
+* Add contact emails [hanirok]
+* Canvi url vista 3 nivells [hanirok]
+* Treure literal tipus, no action [Pilar Marinas]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* New view for events [Victor Fernandez de Alba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
+* Canvi estils Oscar [Roberto Diaz]
+* New agenda improvements [Victor Fernandez de Alba]
+* Fix of missing pam in Genweb-core-only setups with no PAM [Victor Fernandez de Alba]
+* Add calculated meta author tag [Victor Fernandez de Alba]
+* Transfer socialtools viewlet [Victor Fernandez de Alba]
+* PEP8 [Victor Fernandez de Alba]
+* Transferred gwSendEventView to genweb.upc [Victor Fernandez de Alba]
+* Transferred gwSendEventView to genweb.upc [Victor Fernandez de Alba]
+* PEP8 [Victor Fernandez de Alba]
+* PEP8 [Victor Fernandez de Alba]
+* Enable ram cache for dynamic.css [Victor Fernandez de Alba]
+* Better implementation [Victor Fernandez de Alba]
+* Add CSS custom facility [Victor Fernandez de Alba]
 
 1.55 (2015-06-25)
 -----------------
