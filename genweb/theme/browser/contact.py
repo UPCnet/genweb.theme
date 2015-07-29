@@ -55,7 +55,8 @@ class getEmailsContactNames(object):
         portal = api.portal.get()
         lang = utils.pref_lang()
         items = []
-        if settings.contact_emails_table is not None and settings.contacte_multi_email:
+        # if settings.contact_emails_table is not None and settings.contacte_multi_email:
+        if settings.contacte_multi_email:
             for item in settings.contact_emails_table:
                 if lang == item['language']:
                     items.append(SimpleVocabulary.createTerm(item['name'], str(item['name'])))
