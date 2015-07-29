@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.57 (unreleased)
+1.57 (2015-07-29)
 -----------------
 
-- Nothing changed yet.
-
+* Fix leftover from the reverted control panel [Victor Fernandez de Alba]
 
 1.56 (2015-07-28)
 -----------------
