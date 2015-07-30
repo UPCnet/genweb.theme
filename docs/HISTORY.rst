@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.58 (unreleased)
+1.58 (2015-07-30)
 -----------------
 
-- Nothing changed yet.
-
+* Tiny icons issues [Victor Fernandez de Alba]
 
 1.57 (2015-07-29)
 -----------------
