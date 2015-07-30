@@ -2122,10 +2122,11 @@ legend + .control-group {
   background-position: -216px -192px; }
 
 .icon-content-view, .icon-folder_full_view,
-.icon-plone-contentmenu-display-folder_full_view,
-.icon-folder-folder_full_view {
+.icon-folder-folder_full_view,
+.icon-plone-contentmenu-display-folder_full_view {
   background-position: -265px -24px; }
 
+.icon-folder-folder_index_view,
 .icon-plone-contentmenu-display-folder_index_view {
   background-position: -240px -192px; }
 

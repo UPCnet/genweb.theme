@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1435229429962');
+@import url('genwebupc-ie-blessed1.css?z=1438253925186');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   .row {
@@ -5298,7 +5298,7 @@ select {
 .ploneSkin .mceStatusbar a.mceResize {
   display: block;
   float: right;
-  background: url(../../img/icons.gif) -808px -8px;
+  background: url(++genweb++static/images/icons.gif) -808px -8px;
   width: 12px;
   height: 12px;
   cursor: se-resize;
@@ -5314,7 +5314,7 @@ select {
   height: 20px; }
 
 .ploneSkin .mceIcon {
-  background: url(../../img/icons.gif) no-repeat 20px 20px; }
+  background: url(++genweb++static/images/icons.gif) no-repeat 20px 20px; }
 
 .ploneSkin td.mceCenter {
   text-align: center; }
@@ -5399,7 +5399,7 @@ select {
 .ploneSkin table.mceListBox .mceOpen {
   width: 17px;
   height: 22px;
-  background: url(../../img/icons.gif) -737px 0;
+  background: url(++genweb++static/images/icons.gif) -737px 0;
   margin-right: 2px;
   border: 1px solid #b2b2b2;
   border-radius: 0 2px 2px 0; }
@@ -5449,7 +5449,7 @@ select {
 
 .ploneSkin .mceSplitButton span.mceAction {
   width: 20px;
-  background: url(../../img/icons.gif) 20px 20px; }
+  background: url(++genweb++static/images/icons.gif) 20px 20px; }
 
 .ploneSkin .mceSplitButton a.mceOpen {
   width: 9px;
@@ -5457,7 +5457,7 @@ select {
 
 .ploneSkin .mceSplitButton span.mceOpen {
   width: 9px;
-  background: url(../../img/icons.gif) -741px 0; }
+  background: url(++genweb++static/images/icons.gif) -741px 0; }
 
 .ploneSkin table.mceSplitButtonEnabled:hover a.mceAction, .ploneSkin .mceSplitButtonHover a.mceAction, .ploneSkin .mceSplitButtonSelected a.mceAction {
   border: 1px solid #444;
@@ -6115,3 +6115,6 @@ li#portal-languageselector {
 .portaltype-bannercontainer #upload-files,
 .portaltype-logos_container #upload-files {
   display: none; }
+
+#formfield-form-widgets-contact_emails_table {
+  margin-left: 50px; }

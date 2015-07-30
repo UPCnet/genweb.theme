@@ -7,7 +7,7 @@ outline: 0;
 outline: thin dotted 9;
 -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6), 0 0 250px 50px rgba(82, 168, 236, 0.5);
 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6), 0 0 250px 50px rgba(82, 168, 236, 0.5);
-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6), 0 0 250px 50px rgba(82, 168, 236, 0.5);    
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6), 0 0 250px 50px rgba(82, 168, 236, 0.5);
 
   color: white;
   font-size: 157%;
@@ -51,23 +51,23 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6
 .ploneSkin table.mceToolbar, .ploneSkin tr.mceFirst .mceToolbar tr td, .ploneSkin tr.mceLast .mceToolbar tr td {border: none; margin:0; padding:0;}
 .ploneSkin td.mceToolbar {padding-top:1px; vertical-align:top;}
 .ploneSkin .mceIframeContainer {border: 1px solid #b2b2b2;display: block;margin: 0 -5px;box-shadow: 0 0 5px rgba(0,0,0,.25);border-radius: 3px;}
-.ploneSkin .mceEditorFocus .mceIframeContainer { 
+.ploneSkin .mceEditorFocus .mceIframeContainer {
 border-color: rgba(82, 168, 236, 0.8);
 outline: 0;
 outline: thin dotted 9;
 -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);    
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 }
 .ploneSkin table.mceEditorSave .mceIframeContainer {border: 1px solid #ddd}
 .ploneSkin .mceStatusbar {font-size:100%;  overflow:visible; color: Black; display:block; height: 12px;}
 .ploneSkin .mceStatusbar div {float:left;  }
 .ploneSkin .mceStatusbar div a {}
-.ploneSkin .mceStatusbar a.mceResize {display:block; float:right; background: url(../../img/icons.gif) -808px -8px; width: 12px; height: 12px; cursor:se-resize;margin-bottom: 10px;}
+.ploneSkin .mceStatusbar a.mceResize {display:block; float:right; background: url(++genweb++static/images/icons.gif) -808px -8px; width: 12px; height: 12px; cursor:se-resize;margin-bottom: 10px;}
 .ploneSkin .mceStatusbar a:hover {}
 .ploneSkin table.mceToolbar {margin-left: 0; float: left;}
 .ploneSkin span.mceIcon, .ploneSkin img.mceIcon {display:block; width: 20px; height:20px;}
-.ploneSkin .mceIcon {background:url(../../img/icons.gif) no-repeat 20px 20px}
+.ploneSkin .mceIcon {background:url(++genweb++static/images/icons.gif) no-repeat 20px 20px}
 .ploneSkin td.mceCenter {text-align:center;}
 .ploneSkin td.mceCenter table {margin:0 auto; text-align:left;}
 .ploneSkin td.mceRight table {margin:0 0 0 auto;}
@@ -92,7 +92,7 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6
 .ploneSkin table#text_style_text td.mceFirst {background:#fff;}
 .ploneSkin table.mceListBox, .ploneSkin .mceListBox a {display:block}
 .ploneSkin table.mceListBox .mceText {padding-left:4px; width:131px; text-align:left; border: 1px solid #b2b2b2; border-right:0; font-size:100%; height: 22px; line-height:20px; overflow:hidden;border-radius: 2px 0 0 2px;}
-.ploneSkin table.mceListBox .mceOpen {width: 17px; height: 22px; background: url(../../img/icons.gif) -737px 0; margin-right:2px; border: 1px solid #b2b2b2;border-radius: 0 2px 2px 0;}
+.ploneSkin table.mceListBox .mceOpen {width: 17px; height: 22px; background: url(++genweb++static/images/icons.gif) -737px 0; margin-right:2px; border: 1px solid #b2b2b2;border-radius: 0 2px 2px 0;}
 .ploneSkin table.mceListBoxEnabled:hover .mceText, .ploneSkin .mceListBoxHover .mceText, .ploneSkin .mceListBoxSelected .mceText {border-right:none;}
 .ploneSkin table.mceListBoxEnabled:hover .mceOpen, .ploneSkin .mceListBoxHover .mceOpen, .ploneSkin .mceListBoxSelected .mceOpen {background-color: #ddd; border: 1px solid #444 !important;}
 .ploneSkin .mceListBoxDisabled a.mceText {color:#444; background-color:transparent;}
@@ -105,9 +105,9 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6
 .ploneSkin .mceSplitButton {width:32px; height:20px; direction:ltr}
 .ploneSkin .mceSplitButton a, .ploneSkin .mceSplitButton span {height:20px; display:block}
 .ploneSkin .mceSplitButton a.mceAction {width:20px; border:1px solid #444;border-right:0px}
-.ploneSkin .mceSplitButton span.mceAction {width:20px; background:url(../../img/icons.gif) 20px 20px;}
+.ploneSkin .mceSplitButton span.mceAction {width:20px; background:url(++genweb++static/images/icons.gif) 20px 20px;}
 .ploneSkin .mceSplitButton a.mceOpen {width:9px; border:1px solid transparent;}
-.ploneSkin .mceSplitButton span.mceOpen {width:9px; background:url(../../img/icons.gif) -741px 0;}
+.ploneSkin .mceSplitButton span.mceOpen {width:9px; background:url(++genweb++static/images/icons.gif) -741px 0;}
 .ploneSkin table.mceSplitButtonEnabled:hover a.mceAction, .ploneSkin .mceSplitButtonHover a.mceAction, .ploneSkin .mceSplitButtonSelected a.mceAction {border:1px solid #444; border-right:0; background-color: #444}
 .ploneSkin table.mceSplitButtonEnabled:hover a.mceOpen, .ploneSkin .mceSplitButtonHover a.mceOpen, .ploneSkin .mceSplitButtonSelected a.mceOpen {border:1px solid #444;}
 .ploneSkin table.mceSplitButtonEnabled:hover span.mceOpen, .ploneSkin .mceSplitButtonHover span.mceOpen, .ploneSkin .mceSplitButtonSelected span.mceOpen {background-color: #444}
