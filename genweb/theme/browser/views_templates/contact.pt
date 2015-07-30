@@ -125,6 +125,7 @@
             <tal:co tal:condition="isCustomized">
                 <div tal:replace="structure view/getContactPage">Cos de la pagina de contacte</div>
             </tal:co>
+        </div>
 		</div>
     </tal:block>
 
@@ -132,15 +133,17 @@
 <!-- CONTACT WITHOUT DATA -->
 
     <tal:block tal:condition="not: dades">
-        <div class="row-fluid">
-            <div class="box box-gradient"
-                 tal:attributes="class python:isCustomized and 'span7 box box-gradient' or 'box box-gradient'">
-                 <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
-            </div>
-            <tal:co tal:condition="isCustomized">
-                <div class="span5" tal:replace="structure view/getContactPage">Cos de la pagina de contacte</div>
-            </tal:co>
+      <div class="row-fluid">
+        <div class="box box-gradient"
+             tal:attributes="class python:isCustomized and 'span7 box box-gradient' or 'box box-gradient'">
+             <metal:block use-macro="context/@@ploneform-macros/titlelessform" />
         </div>
+        <tal:co tal:condition="isCustomized">
+          <div class="span5">
+            <div tal:replace="structure view/getContactPage">Cos de la pagina de contacte</div>
+          </div>
+        </tal:co>
+      </div>
     </tal:block>
 
 </tal:main-macro>

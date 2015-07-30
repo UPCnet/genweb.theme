@@ -218,7 +218,6 @@ class ContactForm(form.SchemaForm):
         except:
             state = ''
         if state == 'published':
-            contact_body = context.contactepersonalitzat.text.raw
-            page = contact_body
-        else:
-            return page
+            page = customized_page.text.raw
+
+        return page
