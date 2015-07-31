@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.59 (unreleased)
+1.59 (2015-07-31)
 -----------------
 
-- Nothing changed yet.
-
+* Fix contact [Victor Fernandez de Alba]
 
 1.58 (2015-07-30)
 -----------------
