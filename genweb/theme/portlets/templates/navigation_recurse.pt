@@ -18,8 +18,9 @@
                 li_extr_class   python:is_in_path and ' active navTreeItemInPath' or '';
                 li_folder_class python:show_children and ' navTreeFolderish' or '';
                 normalizeString nocall: context/plone_utils/normalizeString;
-                item_finestra   python: node['portal_type'] == 'Link' and getattr(node['item'],'open_link_in_new_window','') or False;"
-    tal:attributes="class string:navTreeItem visualNoMarker${li_class}${li_extr_class}${li_folder_class} section-${node/normalized_id}"
+                item_finestra   python: node['portal_type'] == 'Link' and getattr(node['item'],'open_link_in_new_window','') or False;
+                normalized_id   python:node['normalized_id'].replace('span', 'sapan');"
+    tal:attributes="class string:navTreeItem visualNoMarker${li_class}${li_extr_class}${li_folder_class} section-${normalized_id}"
     tal:condition="python:bottomLevel &lt;= 0 or level &lt;= bottomLevel">
 
     <tal:level define="item_class string:state-${node/normalized_review_state};
