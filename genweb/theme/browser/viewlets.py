@@ -119,12 +119,16 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
 
         if getattr(portal, 'ca', False):
             user_roles_at_ca_root = api.user.get_roles(obj=portal['ca'])
+        else:
+            user_roles_at_ca_root = []
         if getattr(portal, 'es', False):
             user_roles_at_es_root = api.user.get_roles(obj=portal['es'])
+        else:
+            user_roles_at_es_root = []
         if getattr(portal, 'en', False):
             user_roles_at_en_root = api.user.get_roles(obj=portal['en'])
-        # if getattr(portal, 'shared', False):
-        #     user_roles_at_shared = api.user.get_roles(obj=portal['en'])
+        else:
+            user_roles_at_en_root = []
 
         menus_to_show = dict(show=False, show_advanced=False, show_en=False, show_ca=False, show_es=False, show_shared=False)
         if 'Editor' in user_roles_at_ca_root or 'Contributor' in user_roles_at_ca_root:
@@ -136,9 +140,6 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         if 'Editor' in user_roles_at_en_root or 'Contributor' in user_roles_at_en_root:
             menus_to_show['show'] = True
             menus_to_show['show_en'] = True
-        # if 'Editor' in user_roles_at_shared or 'Contributor' in user_roles_at_en_root:
-        #     menus_to_show['show'] = True
-        #     menus_to_show['show_shared'] = True
 
         return menus_to_show
 
