@@ -2,9 +2,10 @@
                        portal_url portal_state/portal_url"
                 condition="viewlet/is_devel_mode">
 
-<!-- build:css(.) vendor.css -->
-    <link rel="stylesheet" tal:attributes="href string:${portal_url}/++components++root/select2/select2.css">
-    <link rel="stylesheet" tal:attributes="href string:${portal_url}/++genweb++static/fontello-genweb/css/fontello.css">
-<!-- endbuild -->
+<!-- Beginning of the CSS compiled resources -->
+<tal:resources repeat="resource viewlet/get_resources">
+    <link rel="stylesheet" tal:attributes="href string:${portal_url}/${resource}">
+</tal:resources>
+<!-- End of the CSS compiled resources -->
 
 </tal:cssdefines>

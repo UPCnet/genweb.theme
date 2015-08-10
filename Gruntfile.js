@@ -21,44 +21,15 @@ module.exports = function (grunt) {
     egg: 'genweb/theme'
   };
 
+  var config_file = 'config.json';
+  var resource_config = grunt.file.readJSON(config_file);
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
     // Project settings
     yeoman: appConfig,
 
-    replace: {
-      build: {
-        src: ['<%= yeoman.egg %>/browser/viewlets_templates/gwcssdevelviewlet.pt'],
-        dest: '<%= yeoman.egg %>/browser/viewlets_templates/gwcssproductionviewlet.pt',
-        replacements: [{
-          from: 'tal:attributes="href string:${portal_url}/++genweb++static',
-          to: 'href="../genweb.core/genweb/core/static'
-        },
-        {
-          from: 'tal:attributes="href string:${portal_url}/++components++root',
-          to: 'href="../genweb.js/genweb/js/components'
-        },
-        {
-          from: 'tal:attributes="href string:${portal_url}/++genweb++stylesheets',
-          to: 'href="genweb/theme/stylesheets'
-        },
-        {
-          from: 'condition="viewlet/is_devel_mode"',
-          to: 'condition="not: viewlet/is_devel_mode"'
-        },
-        ]
-      },
-      postbuild: {
-        src: ['<%= yeoman.egg %>/browser/viewlets_templates/gwcssproductionviewlet.pt'],
-        overwrite: true,
-        replacements: [{
-          from: 'href="',
-          to: 'tal:attributes="href string:${portal_url}/++genweb++distcss/'
-        },
-        ]
-      }
-    },
     sass: {
         dist: {
             options: {
@@ -85,72 +56,6 @@ module.exports = function (grunt) {
           }
         }
     },
-    // The actual grunt server settings
-    connect: {
-      options: {
-        port: 9000,
-        // Change this to '0.0.0.0' to access the server from outside.
-        hostname: 'localhost',
-        livereload: 35729
-      },
-      livereload: {
-        options: {
-          open: true,
-          middleware: function (connect) {
-            return [
-              connect.static('.tmp'),
-              connect().use(
-                '/bower_components',
-                connect.static('./bower_components')
-              ),
-              connect.static(appConfig.app)
-            ];
-          }
-        }
-      },
-      test: {
-        options: {
-          port: 9001,
-          middleware: function (connect) {
-            return [
-              connect.static('.tmp'),
-              connect.static('test'),
-              connect().use(
-                '/bower_components',
-                connect.static('./bower_components')
-              ),
-              connect.static(appConfig.app)
-            ];
-          }
-        }
-      },
-      dist: {
-        options: {
-          open: true,
-          base: '<%= yeoman.dist %>'
-        }
-      }
-    },
-
-    // Make sure code styles are up to par and there are no obvious mistakes
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')
-      },
-      all: {
-        src: [
-          'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
-        ]
-      },
-      test: {
-        options: {
-          jshintrc: 'test/.jshintrc'
-        },
-        src: ['test/spec/{,*/}*.js']
-      }
-    },
 
     // Empties folders to start fresh
     clean: {
@@ -165,29 +70,6 @@ module.exports = function (grunt) {
         }]
       },
       server: '.tmp'
-    },
-
-    // Add vendor prefixed styles
-    autoprefixer: {
-      options: {
-        browsers: ['last 1 version']
-      },
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '.tmp/styles/',
-          src: '{,*/}*.css',
-          dest: '.tmp/styles/'
-        }]
-      }
-    },
-
-    // Automatically inject Bower components into the app
-    wiredep: {
-      app: {
-        src: ['<%= yeoman.app %>/index.html'],
-        ignorePath:  /\.\.\//
-      }
     },
 
     // Renames files for browser caching purposes
@@ -207,77 +89,15 @@ module.exports = function (grunt) {
       }
     },
 
-    // Reads HTML for usemin blocks to enable smart builds that automatically
-    // concat, minify and revision files. Creates configurations in memory so
-    // additional tasks can operate on them
-    useminPrepare: {
-      html: '<%= yeoman.egg %>/browser/viewlets_templates/gwcssproductionviewlet.pt',
-      options: {
-        dest: '<%= yeoman.dist %>',
-        flow: {
-          html: {
-            steps: {
-              css: ['cssmin']
-            },
-            post: {}
-          }
-        }
-      }
-    },
-
-    // Performs rewrites based on filerev and the useminPrepare configuration
-    usemin: {
-      html: ['<%= yeoman.egg %>/browser/viewlets_templates/gwcssproductionviewlet.pt'],
-      options: {
-        assetsDirs: ['<%= yeoman.dist %>']
-      }
-    },
-
     // The following *-min tasks will produce minified files in the dist folder
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
     // to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%= yeoman.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
-    // uglify: {
-    //   dist: {
-    //     files: {
-    //       '<%= yeoman.dist %>/scripts/scripts.js': [
-    //         '<%= yeoman.dist %>/scripts/scripts.js'
-    //       ]
-    //     }
-    //   }
-    // },
-    // concat: {
-    //   dist: {}
-    // },
-
-    imagemin: {
+    cssmin: {
       dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/images',
-          src: '{,*/}*.{png,jpg,jpeg,gif}',
-          dest: '<%= yeoman.dist %>/images'
-        }]
-      }
-    },
-
-    svgmin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/images',
-          src: '{,*/}*.svg',
-          dest: '<%= yeoman.dist %>/images'
-        }]
+        files: {
+          '<%= yeoman.dist %>/vendor.css': resource_config.css.development
+        }
       }
     },
 
@@ -299,164 +119,70 @@ module.exports = function (grunt) {
       }
     },
 
-    // ng-annotate tries to make the code safe for minification automatically
-    // by using the Angular long form for dependency injection.
-    ngAnnotate: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '.tmp/concat/scripts',
-          src: ['*.js', '!oldieshim.js'],
-          dest: '.tmp/concat/scripts'
-        }]
-      }
-    },
-
-    // Replace Google CDN references
-    cdnify: {
-      dist: {
-        html: ['<%= yeoman.dist %>/*.html']
-      }
-    },
-
-    // Copies remaining files to places other tasks can use
-    copy: {
-      build: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= yeoman.app %>',
-          dest: '<%= yeoman.dist %>',
-          src: [
-            '*.{ico,png,txt}',
-            '.htaccess',
-            '*.html',
-            'views/{,*/}*.html',
-            'images/{,*/}*.{webp}',
-            'fonts/{,*/}*.*'
-          ]
-        },
-        ]
-      },
-      dist: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= yeoman.app %>',
-          dest: '<%= yeoman.dist %>',
-          src: [
-            '*.{ico,png,txt}',
-            '.htaccess',
-            '*.html',
-            'views/{,*/}*.html',
-            'images/{,*/}*.{webp}',
-            'fonts/{,*/}*.*'
-          ]
-        }, {
-          expand: true,
-          cwd: '.tmp/images',
-          dest: '<%= yeoman.dist %>/images',
-          src: ['generated/*']
-        }, {
-          expand: true,
-          cwd: 'bower_components/bootstrap/dist',
-          src: 'fonts/*',
-          dest: '<%= yeoman.dist %>'
-        }]
-      },
-      styles: {
-        expand: true,
-        cwd: '<%= yeoman.app %>/styles',
-        dest: '.tmp/styles/',
-        src: '{,*/}*.css'
-      }
-    },
-
-    // Run some tasks in parallel to speed up the build process
-    concurrent: {
-      server: [
-        'copy:styles'
-      ],
-      test: [
-        'copy:styles'
-      ],
-      dist: [
-        'copy:styles',
-        'imagemin',
-        'svgmin'
-      ]
-    },
-
-    // Test settings
-    karma: {
-      unit: {
-        configFile: 'test/karma.conf.js',
-        singleRun: true
-      }
-    }
   });
 
+  // Not used because it's done in Python side but kept for reference
+  grunt.registerTask('replacepaths', function () {
+    resource_config.css_true_path = [];
+    resource_config.js_true_path = [];
+    for (var key in resource_config.replace_map) {
+      if (resource_config.replace_map.hasOwnProperty(key)) {
+        var value = resource_config.replace_map[key];
+        if (resource_config.hasOwnProperty('css')) {
+          resource_config.css.development.forEach(function (obj) {
+            if (obj.indexOf(key) !== -1) {
+              // grunt.log.write('Replacing: ' + key + ' \nwith value:' + value + ' in CSS resources.\n');
+              resource_config.css_true_path.push(obj.replace(key, value));
+            }
+          });
+        }
+        if (resource_config.hasOwnProperty('js')) {
+          resource_config.js.development.forEach(function (obj) {
+            if (obj.indexOf(key) !== -1) {
+              // grunt.log.write('Replacing: ' + key + ' \nwith value:' + value + ' in JS resources.\n');
+              resource_config.js_true_path.push(obj.replace(key, value));
+            }
+          });
+        }
+       }
+    }
+    var vendor_css_file = appConfig.dist + '/vendor.css';
+    var updated_cssmin_config = {cssmin: {dist: {files: {}}}};
+    updated_cssmin_config.cssmin.dist.files[vendor_css_file] = resource_config.css_true_path;
+    grunt.config.merge(updated_cssmin_config);
+    // grunt.config.merge({cssmin: {dist: {files: {vendor_css_file: resource_config.css_true_path}}}});
+    grunt.log.write(JSON.stringify(grunt.config.getRaw('cssmin')));
+      // grunt.log.write(JSON.stringify(resource_config.css_true_path));
+      // grunt.log.write(JSON.stringify(resource_config.js_true_path));
 
-  grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
-    if (target === 'dist') {
-      return grunt.task.run(['build', 'connect:dist:keepalive']);
+  });
+
+  grunt.registerTask('debug', function () {
+      grunt.log.write(resource_config.css_true_path);
+    });
+
+  grunt.registerTask('updateconfig', function () {
+    if (!grunt.file.exists(config_file)) {
+        grunt.log.error('file ' + config_file + ' not found');
+        return true; //return false to abort the execution
     }
 
-    grunt.task.run([
-      'clean:server',
-      'wiredep',
-      'concurrent:server',
-      'autoprefixer',
-      'connect:livereload',
-      'watch'
-    ]);
-  });
+    resource_config.revision_info = grunt.filerev.summary; //edit the value of json object, you can also use projec.key if you know what you are updating
 
-  grunt.registerTask('server', 'DEPRECATED TASK. Use the "serve" task instead', function (target) {
-    grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-    grunt.task.run(['serve:' + target]);
-  });
+    grunt.file.write(config_file, JSON.stringify(resource_config, null, 2)); //serialize it back to file
 
-  grunt.registerTask('test', [
-    'clean:server',
-    'concurrent:test',
-    'autoprefixer',
-    'connect:test',
-    'karma'
-  ]);
-
-  grunt.registerTask('build', [
-    'clean:dist',
-    'wiredep',
-    'useminPrepare',
-    'concurrent:dist',
-    'autoprefixer',
-    'concat',
-    'ngAnnotate',
-    'copy:dist',
-    'cdnify',
-    'cssmin',
-    'uglify',
-    'filerev',
-    'usemin',
-    'htmlmin'
-  ]);
+    });
 
   grunt.registerTask('default', [
-    'newer:jshint',
-    'test',
-    'build'
+    'watch',
   ]);
 
   grunt.registerTask('gwbuild', [
+    // 'replacepaths', // Not used, intended to be replaced on Python side
     'clean:dist',
-    'replace:build',
-    'useminPrepare',
-    'cssmin',
-    'copy:build',
+    'cssmin:dist',
     'filerev:build',
-    'usemin',
-    'replace:postbuild'
+    'updateconfig'
   ]);
 
 };

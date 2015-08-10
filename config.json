@@ -1,0 +1,19 @@
+{
+  "css": {
+    "development": [
+      "../genweb.js/genweb/js/components/select2/select2.css",
+      "../genweb.core/genweb/core/static/fontello-genweb/css/fontello.css"
+    ],
+    "production": [
+      "genweb/theme/dist/vendor.css"
+    ]
+  },
+  "replace_map": {
+    "../genweb.js/genweb/js/components": "++components++root",
+    "../genweb.core/genweb/core/static": "++genweb++static",
+    "genweb/theme/dist": "++genweb++distcss"
+  },
+  "revision_info": {
+    "genweb/theme/dist/vendor.css": "genweb/theme/dist/vendor.8a6f25a6.css"
+  }
+}
