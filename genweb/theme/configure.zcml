@@ -52,12 +52,6 @@
       name="js"
       />
 
-  <plone:static
-      directory="dist"
-      type="genweb"
-      name="distcss"
-      />
-
   <include package="z3c.jbot" file="meta.zcml" />
 
   <browser:jbot

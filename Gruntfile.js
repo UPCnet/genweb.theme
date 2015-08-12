@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 
   // Configurable paths for the application
   var appConfig = {
-    dist: 'genweb/theme/dist',
+    dist: '../genweb.cdn/genweb/cdn/dist',
     egg: 'genweb/theme'
   };
 
@@ -60,11 +60,13 @@ module.exports = function (grunt) {
     // Empties folders to start fresh
     clean: {
       dist: {
+        options: {force: true},
         files: [{
           dot: true,
           src: [
             '.tmp',
-            '<%= yeoman.dist %>/{,*/}*',
+            // '<%= yeoman.dist %>/{,*/}*',
+            '<%= yeoman.dist %>/genweb.{,*}*.css',
             '!<%= yeoman.dist %>/.git{,*/}*'
           ]
         }]
@@ -84,7 +86,7 @@ module.exports = function (grunt) {
       },
       build: {
         src: [
-          '<%= yeoman.dist %>/{,*/}*.css',
+          '<%= yeoman.dist %>/genweb.css'
         ]
       }
     },
@@ -96,7 +98,7 @@ module.exports = function (grunt) {
     cssmin: {
       dist: {
         files: {
-          '<%= yeoman.dist %>/vendor.css': resource_config.css.development
+          '<%= yeoman.dist %>/genweb.css': resource_config.resources.genweb.css.development
         }
       }
     },
@@ -121,42 +123,6 @@ module.exports = function (grunt) {
 
   });
 
-  // Not used because it's done in Python side but kept for reference
-  grunt.registerTask('replacepaths', function () {
-    resource_config.css_true_path = [];
-    resource_config.js_true_path = [];
-    for (var key in resource_config.replace_map) {
-      if (resource_config.replace_map.hasOwnProperty(key)) {
-        var value = resource_config.replace_map[key];
-        if (resource_config.hasOwnProperty('css')) {
-          resource_config.css.development.forEach(function (obj) {
-            if (obj.indexOf(key) !== -1) {
-              // grunt.log.write('Replacing: ' + key + ' \nwith value:' + value + ' in CSS resources.\n');
-              resource_config.css_true_path.push(obj.replace(key, value));
-            }
-          });
-        }
-        if (resource_config.hasOwnProperty('js')) {
-          resource_config.js.development.forEach(function (obj) {
-            if (obj.indexOf(key) !== -1) {
-              // grunt.log.write('Replacing: ' + key + ' \nwith value:' + value + ' in JS resources.\n');
-              resource_config.js_true_path.push(obj.replace(key, value));
-            }
-          });
-        }
-       }
-    }
-    var vendor_css_file = appConfig.dist + '/vendor.css';
-    var updated_cssmin_config = {cssmin: {dist: {files: {}}}};
-    updated_cssmin_config.cssmin.dist.files[vendor_css_file] = resource_config.css_true_path;
-    grunt.config.merge(updated_cssmin_config);
-    // grunt.config.merge({cssmin: {dist: {files: {vendor_css_file: resource_config.css_true_path}}}});
-    grunt.log.write(JSON.stringify(grunt.config.getRaw('cssmin')));
-      // grunt.log.write(JSON.stringify(resource_config.css_true_path));
-      // grunt.log.write(JSON.stringify(resource_config.js_true_path));
-
-  });
-
   grunt.registerTask('debug', function () {
       grunt.log.write(resource_config.css_true_path);
     });
@@ -178,7 +144,6 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('gwbuild', [
-    // 'replacepaths', // Not used, intended to be replaced on Python side
     'clean:dist',
     'cssmin:dist',
     'filerev:build',
