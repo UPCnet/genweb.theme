@@ -4,7 +4,8 @@
 <body i18n:domain="plone"
       tal:define="b_start python:0;
                   b_start request/b_start | b_start;
-                  batch python:view.results(b_start=b_start);
+                  pref_lang context/@@genweb.utils/pref_lang;
+                  batch python: view.results(query={'Language': pref_lang}, b_start=b_start);
                   st python:request.get('SearchableText', '');
                   here_url context/@@plone_context_state/object_url;
                   batch_base_url string:${here_url}/@@search;
