@@ -1,11 +1,16 @@
 Changelog
 =========
 
-1.60 (unreleased)
+1.60 (2015-09-04)
 -----------------
 
-- Nothing changed yet.
-
+* changed more news link to work without being logged [helena orihuela]
+* Fixed wrong language results when re-search in @@search view. [Victor Fernandez de Alba]
+* Fix [Victor Fernandez de Alba]
+* Finish new resource model [Victor Fernandez de Alba]
+* New external-based config.json for compiled resources. [Victor Fernandez de Alba]
+* Fix e'span'ols content bug with old version of bootstrap [Victor Fernandez de Alba]
+* Fix for personal_bar when GW doesn't have some of the default languages. Improved for generalisation. [Victor Fernandez de Alba]
 
 1.59 (2015-07-31)
 -----------------
