@@ -144,7 +144,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('gwbuild', [
-    'clean:dist',
+    // 'clean:dist',
     'cssmin:dist',
     'filerev:build',
     'updateconfig'

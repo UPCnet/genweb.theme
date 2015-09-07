@@ -14,7 +14,6 @@ from zope.security import checkPermission
 from plone import api
 
 from plone.memoize import ram
-from plone.memoize import forever
 from plone.memoize.view import memoize_contextless
 
 # from Products.CMFCore import permissions
@@ -41,86 +40,19 @@ from genweb.core.utils import havePermissionAtRoot
 from genweb.core.utils import pref_lang
 from genweb.theme.browser.interfaces import IGenwebTheme
 from genweb.core.browser.viewlets import gwCSSViewletManager
-
-import json
-import pkg_resources
+from genweb.core.browser.viewlets import baseResourcesViewlet
 
 grok.context(Interface)
 
 
-class gwCSSDevelViewlet(grok.Viewlet):
-    """ This is the develop CSS viewlet. """
+class gwCSSViewlet(baseResourcesViewlet):
+    """ This is the CSS viewlet for Genweb """
     grok.context(Interface)
     grok.viewletmanager(gwCSSViewletManager)
     grok.layer(IGenwebTheme)
 
     resource_type = 'css'
-
-    def is_devel_mode(self):
-        return api.env.debug_mode()
-
-    def read_resource_config_file(self):
-        genwebthemeegg = pkg_resources.get_distribution('genweb.theme')
-        resource_file = open('{}/config.json'.format(genwebthemeegg.location))
-        return resource_file.read()
-
-    @forever.memoize
-    def get_resources(self):
-        true_http_path = []
-        resources_conf = json.loads(self.read_resource_config_file())
-        replace_map = resources_conf['replace_map']
-
-        for kind in resources_conf['order']:
-            devel_resources = resources_conf['resources'][kind][self.resource_type]['development']
-            for resource in devel_resources:
-                found = False
-                for source, destination in replace_map.items():
-                    if source in resource:
-                        true_http_path.append(resource.replace(source, destination))
-                        found = True
-                if not found:
-                    true_http_path.append(resource)
-
-        return true_http_path
-
-
-class gwCSSProductionViewlet(grok.Viewlet):
-    """ This is the production CSS viewlet. """
-    grok.context(Interface)
-    grok.viewletmanager(gwCSSViewletManager)
-    grok.layer(IGenwebTheme)
-
-    resource_type = 'css'
-
-    def is_devel_mode(self):
-        return api.env.debug_mode()
-
-    def read_resource_config_file(self):
-        genwebthemeegg = pkg_resources.get_distribution('genweb.theme')
-        resource_file = open('{}/config.json'.format(genwebthemeegg.location))
-        return resource_file.read()
-
-    @forever.memoize
-    def get_resources(self):
-        true_http_path = []
-        resources_conf = json.loads(self.read_resource_config_file())
-        replace_map = resources_conf['replace_map']
-        for kind in resources_conf['order']:
-            production_resources = resources_conf['resources'][kind][self.resource_type]['production']
-            for resource in production_resources:
-                for res_rev_key in resources_conf['revision_info']:
-                    if resource == res_rev_key:
-                        resource = resources_conf['revision_info'][res_rev_key]
-
-                found = False
-                for source, destination in replace_map.items():
-                    if source in resource:
-                        true_http_path.append(resource.replace(source, destination))
-                        found = True
-                if not found:
-                    true_http_path.append(resource)
-
-        return true_http_path
+    current_egg_name = 'genweb.theme'
 
 
 class viewletBase(grok.Viewlet):
