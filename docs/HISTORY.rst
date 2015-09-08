@@ -1,11 +1,13 @@
 Changelog
 =========
 
-1.61 (unreleased)
+1.61 (2015-09-08)
 -----------------
 
-- Nothing changed yet.
-
+* Fix cache of custom.css path [Victor Fernandez de Alba]
+* Delete the now not required template [Victor Fernandez de Alba]
+* Fix resource config location [Victor Fernandez de Alba]
+* Refactor new resource viewlets [Victor Fernandez de Alba]
 
 1.60 (2015-09-04)
 -----------------
