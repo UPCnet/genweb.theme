@@ -21,12 +21,13 @@ from genweb.theme.browser.interfaces import IGenwebTheme
 
 from genweb.core import utils
 
-from genweb.core.utils import pref_lang
 from zope.component import getUtility
 from plone.registry.interfaces import IRegistry
 from genweb.controlpanel.interface import IGenwebControlPanelSettings
 from zope.schema.vocabulary import SimpleVocabulary
 from zope.schema.interfaces import IVocabularyFactory
+
+import json
 
 
 grok.templatedir("views_templates")
@@ -34,7 +35,7 @@ grok.templatedir("views_templates")
 
 MESSAGE_TEMPLATE = u"""\
 Heu rebut aquest correu perquè en/na %(name)s (%(from_address)s) ha enviat \
-comentaris sobre l'espai Genweb que administreu a \
+comentaris sobre l'espai Genweb \
 
 %(genweb)s
 
@@ -55,14 +56,15 @@ class getEmailsContactNames(object):
         portal = api.portal.get()
         lang = utils.pref_lang()
         items = []
-        # if settings.contact_emails_table is not None and settings.contacte_multi_email:
         if settings.contacte_multi_email:
-            for item in settings.contact_emails_table:
-                if lang == item['language']:
-                    items.append(SimpleVocabulary.createTerm(item['name'], str(item['name'])))
-        else:
-            name = portal.getProperty('email_from_name')
-            items.append(SimpleVocabulary.createTerm(name, str(name)))
+            obj_json = settings.contact_emails_data
+            contacts = json.loads(obj_json)
+            for contacto in contacts['contacts']:
+                if lang == contacto['language']:
+                    items.append(SimpleVocabulary.createTerm(contacto['displayname'], str(contacto['displayname'])))
+
+        name = portal.getProperty('email_from_name')
+        items.append(SimpleVocabulary.createTerm(name, str(name)))
         return SimpleVocabulary(items)
 
 grok.global_utility(getEmailsContactNames, name=u"availableContacts")
@@ -151,19 +153,24 @@ class ContactForm(form.SchemaForm):
         portal = api.portal.get()
         email_charset = portal.getProperty('email_charset')
         recipient = data['to_address']
+        lang = utils.pref_lang()
 
         registry = getUtility(IRegistry)
         settings = registry.forInterface(IGenwebControlPanelSettings, check=False)
 
-        contacts = settings.contact_emails_table
+        obj_json = settings.contact_emails_data
+        contacts = json.loads(obj_json)
+        contacts_list = contacts['contacts']
+        to_address = ""
+        to_name = ""
 
-        for contact in contacts:
-            if contact['name'] == recipient:
-                to_address = contact['email']
-                to_name = contact['name']
-            else:
-                to_address = portal.getProperty('email_from_address')
-                to_name = portal.getProperty('email_from_name')
+        for contact in contacts_list:
+            if contact['displayname'] == recipient and contact['language'].encode('ascii', errors='ignore') == lang:
+                to_address = contact['email'].encode('ascii', errors='ignore')
+                to_name = contact['displayname'].encode('ascii', errors='ignore')
+        if recipient == portal.getProperty('email_from_name'):
+            to_address = portal.getProperty('email_from_address')
+            to_name = portal.getProperty('email_from_name')
 
         source = "%s <%s>" % (escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['from_address'])))
         subject = "[Formulari Contacte] %s" % (escape(safe_unicode(data['asunto'])))
