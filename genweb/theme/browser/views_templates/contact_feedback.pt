@@ -16,11 +16,11 @@
 <div metal:fill-slot="main">
 
     <h1 class="documentFirstHeading"
-        i18n:translate="heading_send_feedback_confirm">
+        i18n:translate="upc_heading_send_feedback_confirm">
         Site Administrator has been contacted.
     </h1>
 
-    <p i18n:translate="message_send_feedback_confirm">
+    <p i18n:translate="upc_message_send_feedback_confirm">
         A mail has now been sent to the site administrator regarding your
         questions and/or comments.
     </p>
