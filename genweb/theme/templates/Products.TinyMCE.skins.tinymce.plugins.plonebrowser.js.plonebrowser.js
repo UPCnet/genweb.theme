@@ -1137,8 +1137,8 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
     // handle browse panel
     if (jq.inArray(panel, ["search", "details", "browse", "upload"]) > -1) {
         if (jq.inArray(panel, ["upload", "details"]) > -1) {
-            jq('#browseimage_panel #general_panel', document).removeClass('width-full').addClass('width-3:4');
             jq('#browseimage_panel #general_panel', document).removeClass('span12').addClass('span7');
+            jq('#browseimage_panel #general_panel', document).removeClass('width-full').addClass('width-3:4');
         } else {
             jq('#browseimage_panel #general_panel', document).removeClass('span7').addClass('span12');;
         }
