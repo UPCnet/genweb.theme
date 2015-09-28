@@ -13,8 +13,7 @@
           tal:define="here_url context/@@plone_context_state/object_url;"
           tal:condition="request/SearchableText|nothing"
           tal:attributes="href string:$here_url/search_rss?${request/QUERY_STRING}"/>
-
-    <meta name="navigation_root_url" tal:attributes="content view/navroot_url" />
+    <link rel="home" title="Home" tal:attributes="href view/navroot_url" />
 
   </metal:block>
 
@@ -35,7 +34,8 @@
                       first_call not:request/advanced_search|nothing;
                       st python:request.get('SearchableText', '');
                       DateTime python:modules['DateTime'].DateTime;
-                      navigation_root_url view/navroot_url;"> 
+                      navigation_root_url view/navroot_url;
+                      pref_lang context/@@genweb.utils/pref_lang">
 
         <input type="hidden" name="advanced_search" value="False" />
         <input type="hidden" name="sort_on" value="" />
@@ -55,9 +55,9 @@
                    i18n:attributes="value label_search;"/>
         </fieldset>
 
-        <div class="row">
-
-            <div class="cell width-full position-0">
+        <div class="row-fluid">
+          <div class="span12">
+            <div>
                 <h1 class="documentFirstHeading"
                     i18n:translate=""
                     tal:condition="not:st">
@@ -92,7 +92,7 @@
                  class="cell width-full position-0"
                  tal:define="b_start python:0;
                              b_start request/b_start | b_start;
-                             batch python: view.results(b_start=b_start);
+                             batch python: view.results(query={'Language': pref_lang}, b_start=b_start);
                              normalizeString nocall:context/@@plone/normalizeString;">
 
                 <div id="search-results-bar">
@@ -100,6 +100,25 @@
                         <strong i18n:name="number" id="search-results-number"
                                 tal:content="batch/sequence_length|string:0">234</strong>
                         items matching your search terms.
+                    </span>.
+
+                    <span id="searchResultsSort">
+                      <span i18n:translate="sort_by">Sort by</span>
+                          <span id="sorting-options">
+                              <metal:sorting define-macro="sorting">
+                                  <tal:block repeat="item view/sort_options">
+                                      <tal:item define="selected item/selected">
+                                      <a data-sort=""
+                                         tal:condition="not:selected"
+                                         tal:content="item/title"
+                                         tal:attributes="href item/url;
+                                                         data-sort python:item.sortkey and item.sortkey or None"></a>
+                                      <strong tal:condition="selected" tal:content="item/title"></strong>
+                                      <span tal:condition="not:repeat/item/end">&middot;</span>
+                                      </tal:item>
+                                  </tal:block>
+                              </metal:sorting>
+                          </span>
                     </span>
 
                     <dl class="actionMenu deactivated"
@@ -113,9 +132,10 @@
                               Filter the results.
                           </a>
                       </dt>
-                      <dd class="actionMenuContent">
+                      <dd class="actionMenuContent" style="display:none">
                           <div id="search-filter" i18n:domain="plone">
-
+                            <div class="row-fluid">
+                             <div class="span3">
                               <fieldset class="noborder">
 
                                   <legend i18n:translate="label_item_type">Item type</legend>
@@ -169,7 +189,8 @@
                                       <div class="visualClear"><!-- --></div>
                                   </div>
                               </fieldset>
-
+                             </div>
+                             <div class="span3">
                               <fieldset class="noborder">
 
                                   <legend i18n:translate="label_new_items_since">New items since</legend>
@@ -230,32 +251,53 @@
 
                                   <div class="visualClear"><!-- --></div>
                               </fieldset>
-
+                             </div>
+                             <div class="span3" >
+                              <fieldset class="noborder" i18n:domain="plone">
+                                  <legend i18n:translate="label_author">Author</legend>
+                                  <div class="field">
+                                    <div class="formHelp"></div>
+                                    <input  class="searchPage"
+                                            name="Creator"
+                                            id="Creator"
+                                            type="text"
+                                            size="25"
+                                            title="Search Author"
+                                    />
+                                  </div>
+                                </fieldset>
+                              </div>
+                              <div class="span3">
+                                <fieldset class="noborder">
+                                  <legend i18n:translate="label_tags">Tags</legend>
+                                  <div class="field"
+                    tal:define="usedSubjects python:context.portal_catalog.uniqueValuesFor('Subject');"
+                   tal:condition="usedSubjects">
+                                  <div class="formHelp"></div>
+                                  <select name="Subject:list"
+                                          id="Subject"
+                                          size="7"
+                                          multiple="multiple"
+                                          tal:define="contentSubjects context/Subject;">
+                                      
+                                      <option value="#"
+                                              tal:repeat="subject usedSubjects"
+                                              tal:content="subject"
+                                              tal:attributes="value subject"
+                                              i18n:domain="plone-metadata"
+                                              i18n:translate=""
+                                              >dummy
+                                      </option>
+                                      
+                                  </select>
+                                 </div>
+                                </fieldset>
+                              </div>
+                            </div>
                           </div>
                       </dd>
-
                     </dl>
-
-                    <span id="searchResultsSort">
-                      <span i18n:translate="sort_by">Sort by</span>
-                          <span id="sorting-options">
-                              <metal:sorting define-macro="sorting">
-                                  <tal:block repeat="item view/sort_options">
-                                      <tal:item define="selected item/selected">
-                                      <a data-sort=""
-                                         tal:condition="not:selected"
-                                         tal:content="item/title"
-                                         tal:attributes="href item/url;
-                                                         data-sort python:item.sortkey and item.sortkey or None"></a>
-                                      <strong tal:condition="selected" tal:content="item/title"></strong>
-                                      <span tal:condition="not:repeat/item/end">&middot;</span>
-                                      </tal:item>
-                                  </tal:block>
-                              </metal:sorting>
-                          </span>
-                    </span>
                 </div>
-
                 <div class="visualClear"><!-- --></div>
 
                 <metal:searchresults define-macro="search_results">
@@ -276,13 +318,12 @@
                           <dl class="searchResults">
                               <tal:results repeat="item batch">
                                     <dt tal:attributes="class item/ContentTypeClass">
-                                      <img tal:replace="structure item/getIcon" />
                                       <a href="#"
                                          tal:define="item_url item/getURL;
                                                      item_type item/PortalType"
                                          tal:attributes="href python:item_type in use_view_action and (item_url + '/view') or item_url;
                                                          class string:state-${item/review_state}"
-                                         tal:content="item/Title" />
+                                         tal:content="python:item.getDataOrigin().pretty_title_or_id()" />
                                     </dt>
                                     <dd>
                                       <span class="discreet" i18n:domain="plone"
@@ -382,6 +423,7 @@
                 </metal:searchresults>
 
             </div>
+          </div>
         </div>
 
         <div class="visualClear"><!-- --></div>

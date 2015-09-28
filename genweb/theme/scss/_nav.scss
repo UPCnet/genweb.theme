@@ -29,6 +29,9 @@
 	@include border-radius(4px);
 	@include box-shadow(0 1px 4px rgba(0,0,0,.1));
 	position:relative;
+	border-top-width: 2px;
+	border-bottom-width: 3px;
+
 
 	& a {
 		@include gradient-vertical(#f7f7f7, #f2f2f2);
@@ -55,8 +58,8 @@
 		}
 
 	}
-	& a:hover:after,
-	.active a:after {
+	& a:hover:after, 
+	.active > div > a:after {
 		content:"";
   		position:absolute;
   		background-color:$blue;
@@ -66,11 +69,15 @@
 		right: 7px;
 		top: 8px;
 		background-image: image-url("gh-w.png");
-		background-position:  -455px -71px;
+		background-position:  -455px -71px; //fletxa dreta
 		background-repeat:no-repeat;
 		width:17px;
 		height:17px;
 	}
+	.active ul a:after { // corregir posicio bullet fletxa en elements 2n nivell
+		right: 3px !important;
+	}
+
 
 	& a.state-private:hover:after, .active .state-private:after {background-color:$red;}
 	& a.state-draft:hover:after, .active .state-draft:after {background-color:$green;}
@@ -82,22 +89,7 @@
 		color:$grayDarker;
 	}
 	& a:focus {@include box-shadow(inset 0 0 8px 2px rgba(0,0,0,.15));}
-	& li:first-child a{
-		border-top:0 !important;
-		@include border-radius(4px 4px 0 0);
-	}
-	& li:last-child a{
-		@include border-radius(0);
-	}
-	& li:last-child a:only-child {
-		@include border-radius(0 0 4px 4px);
-	}
-	& li:first-child:last-child a {
-		@include border-radius(4px 4px 0 0);
-	}
-	& li:first-child:last-child a:only-child {
-		@include border-radius(4px);
-	}
+
 	& .active ul {
 		margin-left:-15px !important;
 		margin-right:-15px;
@@ -121,7 +113,6 @@
 			&.active {
 				background-color: #f2f8fc !important; color:$grayDarker;
 				&[class*=" contenttype-"] span:after {@include opacity(100);}
-				& span:before {font-size: 525%; top:-2px; left:4px; }
 			}
 			&.state-private {border-right: 3px solid $red; color:$red;}
 			&.state-draft, &.state-visible {border-right: 3px solid $green; color:$green;}
@@ -145,7 +136,7 @@
 					top:4px;
 					left:7px;
 					position:absolute;
-					font-size:350%;
+					font-size: 44px;
 					line-height:0 !important;
 				}
 			}
@@ -178,7 +169,7 @@
 			&.contenttype-logos_container span:after,
 			&.contenttype-logos_footer span:after 	{background-position: -143px 	-168px;}
 
-			&.contenttype-plonepopoll span:after 	{background-position: -47px		-193px;}
+			&.contenttype-collective-polls-poll span:after 	{background-position: -47px		-193px;}
 			&.contenttype-event span:after 			{background-position: -191px 	-120px;}
 			&.contenttype-news-item span:after 		{background-position: -24px 	-168px;}
 			&.contenttype-packet span:after 		{background-position: -47px 	-168px;}
@@ -233,7 +224,7 @@ html * .dropdown-menu a:hover .img_blank {
 
 
 //content types
-#listing-table, .template-folder_tabular_view .listing {
+#listing-table, .template-folder_tabular_view .listing, .contenttreeWidget > .navTree {
 	a {
 		&[class^="contenttype-"], &[class*=" contenttype-"] {
 			padding-left: 8px;
@@ -267,15 +258,169 @@ html * .dropdown-menu a:hover .img_blank {
 		&.contenttype-topic:before 			{background-position: -72px 	-192px;}
 		&.contenttype-file:before 			{background-position: -167px	-168px;}
 		&.contenttype-image:before 			{background-position: -457px	-49px;}
-		&.contenttype-plonepopoll:before 	{background-position: -47px		-193px;}
+		&.contenttype-collective-polls-poll:before 	{background-position: -47px		-193px;}
 		&.contenttype-event:before 			{background-position: -191px 	-120px;}
 		&.contenttype-news-item:before 		{background-position: -24px 	-168px;}
 		&.contenttype-packet:before 		{background-position: -47px 	-168px;}
 		&.contenttype-collage:before 		{background-position: -216px 	-168px;}
 		&.contenttype-collection:before 	{background-position: -240px 	-168px;}
 		&.contenttype-survey:before 		{background-position: -265px 	-23px;}
-		&.contenttype-formfolder:before 	{background-position: -144px 	-72px;}
+        &.contenttype-formfolder:before     {background-position: -144px    -72px;}
+		&.contenttype-lrf:before 	        {background-position: -216px    -191px;}
 
 		&:hover:before { @include opacity(100);}
 	}
 }
+
+
+/* llista dl en pàgina error */
+/* line 286, ../scss/_nav.scss */
+dt[class*="contenttype"]{
+  margin-left:20px;
+}
+dt[class*="contenttype"] + dd{
+  margin-left:20px;
+}
+dt[class*="contenttype"]:before {
+  background-image: image-url('gh.png');
+  background-repeat: no-repeat;
+
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  position: relative;
+  right: 17px;
+  top: 17px;
+  /*margin-right: -3px;*/
+
+  content: " ";
+  opacity: 0.75;
+
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=7500);
+}
+
+dt.contenttype-page:before,
+    dt.contenttype-document:before     {background-position: -24px   -24px;}
+    dt.contenttype-link:before       {background-position: -72px   -168px;}
+    dt.contenttype-windowztool:before,
+    dt.contenttype-window:before,
+    dt.contenttype-window:before     {background-position: -97px   -168px;}
+    dt.contenttype-bannercontainer:before,
+    dt.contenttype-banner:before     {background-position: -313px  -25px;}
+    dt.contenttype-logos_container:before,
+    dt.contenttype-logos_footer:before   {background-position: -143px  -168px;}
+    dt.contenttype-topic:before      {background-position: -72px   -192px;}
+    dt.contenttype-file:before       {background-position: -167px  -168px;}
+    dt.contenttype-image:before      {background-position: -457px  -49px;}
+    dt.contenttype-collective-polls-poll:before  {background-position: -47px   -193px;}
+    dt.contenttype-event:before      {background-position: -191px  -120px;}
+    dt.contenttype-news-item:before    {background-position: -24px   -168px;}
+    dt.contenttype-packet:before     {background-position: -47px   -168px;}
+    dt.contenttype-collage:before    {background-position: -216px  -168px;}
+    dt.contenttype-collection:before   {background-position: -240px  -168px;}
+    dt.contenttype-survey:before     {background-position: -265px  -23px;}
+        dt.contenttype-formfolder:before     {background-position: -144px    -72px;}
+    dt.contenttype-lrf:before          {background-position: -216px    -191px;}
+
+// Fer que desapareixin les icones del portlet de navegació
+.icons-off .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after,
+.icons-off .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
+    background-image: none;
+    background-repeat: none;
+}
+
+// TYPEAHEAD
+
+.tt-dropdown-menu,
+.gist {
+  text-align: left;
+}
+
+/* base styles */
+/* ----------- */
+
+
+.typeahead,
+.tt-query,
+.tt-hint {
+  height: 30px;
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  outline: none;
+}
+
+.typeahead {
+  background-color: #fff;
+}
+
+.typeahead:focus {
+  border: 1px solid #0097cf;
+}
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-dropdown-menu {
+  width: 100%;
+  padding: 0px 0;
+  padding-bottom: 0px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+          border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion , .tt-empty {
+  padding: 3px 10px;
+  font-size: 110%;
+  a {color: #333;}
+}
+
+.tt-empty {
+    padding: 5px 10px 0px;
+}
+
+.tt-suggestion.tt-cursor {
+  color: #fff;
+  background-color: #0097cf !important;
+  a {color: #fff;}
+}
+
+.tt-suggestion p {
+  margin: 0;
+
+}
+
+.tt-suggestion.with-separator:first-child {
+    padding: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.tt-suggestion:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.gist {
+  font-size: 14px;
+}
+
+

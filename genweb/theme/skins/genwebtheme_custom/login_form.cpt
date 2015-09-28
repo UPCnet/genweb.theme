@@ -52,7 +52,8 @@
                     use_external python:auth and external_login_url and not external_login_iframe;
                     target request/target|nothing;
                     target python:test(target in ('_parent', '_top', '_blank', '_self'), target, None);
-                    ztu modules/ZTUtils;">
+                    ztu modules/ZTUtils;
+                    is_ldap_upc_site context/@@genweb.utils/is_ldap_upc_site">
 
         <div class="alert alert-error"
              id="enable_cookies_message"
@@ -70,18 +71,22 @@
             Since cookie authentication is disabled, cookie-based login is not available.
         </div>
 
-        <p class="documentDescription margin0"
-           i18n:translate="genweb-heading_sign_in-v4">
-           Please log in using your UPC intranet user.
-        </p>
-        <div class="accordion xafa4 pad" id="accordionLogin">
 
+        <div class="accordion xafa4 pad" id="accordionLogin">
+          <p class="documentDescription"
+             i18n:translate="genweb-heading_sign_in-v4"
+             i18n:domain="genweb">
+             Please log in using your UPC intranet user.
+          </p>
           <div class="accordion-group">
             <div class="accordion-heading box-gradient">
               <a class="accordion-toggle" href="http://cas.upc.edu"
                  tal:attributes="href context/cas_login_url | nothing">
                 <strong>
-                  <tal:entra i18n:translate="genweb-single-sign-on-v4">Single sign on log in</tal:entra>
+                  <tal:entra i18n:translate="genweb-single-sign-on-v4"
+                             i18n:domain="genweb">
+                             Single sign on log in
+                  </tal:entra>
                   <img class="img_blank" src="++genweb++static/images/blank_blau.png"
                        i18n:attributes="alt obrir_link_finestra_nova">
                 </strong>
@@ -93,7 +98,10 @@
           <div class="accordion-group">
             <div class="accordion-heading box-gradient">
               <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionLogin" href="#colapsible-login">
-                <strong i18n:translate="genweb_loginlocal">Log in only in this site</strong>
+                <strong i18n:translate="genweb_loginlocal"
+                        i18n:domain="genweb">
+                        Log in only in this site
+                </strong>
              </a>
             </div>
             <div id="colapsible-login" class="accordion-body collapse box-gradient">
@@ -149,10 +157,11 @@
                        tal:define="error python:errors.get(ac_name, None);"
                        tal:attributes="class python:test(error, 'control-group error', 'control-group')">
                     <label class="control-label" for="inputEmail"
-                           i18n:domain="plone"
+                           i18n:domain="plonee"
                            i18n:translate="label_login_name">Username</label>
                     <div class="controls">
-                      <input type="text" id="inputEmail" placeholder="nom.usuari"
+                      <input type="text" id="inputEmail" 
+                             i18n:attributes="placeholder label_user_name"
                              tal:attributes="name ac_name;
                                              value login_name;">
                       <span class="help-inline"
@@ -164,10 +173,11 @@
                        tal:define="error python:errors.get(ac_password, None);"
                        tal:attributes="class python:test(error, 'control-group error', 'control-group')">
                     <label class="control-label" for="inputPassword"
-                           i18n:domain="plone"
+                           i18n:domain="plonee"
                            i18n:translate="label_password">Password</label>
                     <div class="controls">
-                      <input type="password" id="inputPassword" placeholder="contrasenya"
+                      <input type="password" id="inputPassword" 
+                             i18n:attributes="placeholder label_password"
                              tal:attributes="name ac_password">
                       <span class="help-inline"
                             tal:condition="error"
@@ -177,7 +187,7 @@
                   <div class="control-group margin0">
                     <div class="controls">
                       <button type="submit" name="submit" class="btn btn-primary"
-                              i18n:domain="plone"
+                              i18n:domain="plonee"
                               i18n:translate="label_log_in">Log in</button>
                       <h2 class="l"
                           i18n:translate="genweb-si_heu_oblidat_la_contrasenya_question">
@@ -187,7 +197,7 @@
                          i18n:translate="genweb-si_heu_oblidat_la_contrasenya">
                           If you have forgotten your password,
                           <tal:recuperarla i18n:name="click_here">
-                            <a tal:attributes="href string:${portal_url}/canvidecontrasenya"
+                            <a tal:attributes="href python:'http://www.upcnet.es/CanviContrasenyaUPC' if is_ldap_upc_site else '{}/@@change-password'.format(portal_url)"
                                i18n:translate="genweb-per_recuperarla">
                                 click here to retrieve it
                             </a>

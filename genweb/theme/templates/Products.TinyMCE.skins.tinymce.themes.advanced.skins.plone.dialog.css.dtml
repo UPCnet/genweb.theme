@@ -13,3 +13,13 @@ input[type="file"] {position:relative; opacity:1;-moz-opacity: 1;filter: progid:
 .panel_wrapper div.current {height: auto;}
 #iframecontainer {border: 1px solid #08c; border-radius:3px;}
 .panel_wrapper, .panel_wrapper div.current {height: auto !important;}
+
+/* Vik important TRANSFER */
+#internallinkcontainer .list.item span, #internallinkcontainer .list.item a {
+  position: absolute;
+  white-space: nowrap;
+}
+.list {margin-bottom: 15px;}
+.list i { margin-right: 3px; }
+
+/* end Vik important TRANSFER */

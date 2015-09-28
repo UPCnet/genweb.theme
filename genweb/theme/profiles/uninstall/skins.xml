@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object name="portal_skins" default_skin="GenwebTheme" remove="True">
+ <object name="genwebtheme_images"
+    meta_type="Filesystem Directory View"
+    directory="genweb.theme:skins/genwebtheme_images" remove="True"/>
+ <object name="genwebtheme_custom"
+    meta_type="Filesystem Directory View"
+    directory="genweb.theme:skins/genwebtheme_custom" remove="True"/>
+
+ <skin-path name="GenwebTheme" based-on="Plone Default" remove="True">
+  <layer name="genwebtheme_images" insert-after="custom" remove="True"/>
+  <layer name="genwebtheme_custom" insert-after="custom" remove="True"/>
+ </skin-path>
+
+</object>

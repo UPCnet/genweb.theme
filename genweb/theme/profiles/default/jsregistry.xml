@@ -19,33 +19,14 @@
     expression="" id="popupforms.js" inline="False"/>
 
  <!-- Disable JS not needed -->
- <javascript authenticated="False" bundle="default" cacheable="True"
-    compression="safe" conditionalcomment="" cookable="True" enabled="False"
-    expression="" id="dropdown.js" inline="False"/>
-
- <!-- In case we use Tiny 3.x for removing old Tiny init -->
- <!-- <javascript id="tiny_mce_init.js" remove="True"/> -->
+ <javascript id="dropdown.js" enabled="False" />
+ <javascript id="livesearch.js" enabled="False" />
+ <javascript id="dragdropreorder.js" enabled="False" />
+ <javascript id="accessibility.js" enabled="False" />
+ <javascript id="styleswitcher.js" enabled="False" />
 
  <!-- Add new JS -->
  <javascript authenticated="False" bundle="default" cacheable="True"
     compression="safe" conditionalcomment="" cookable="False" enabled="True"
     expression="" id="++bootstrap++js/bootstrap.min.js" inline="False"/>
 </object>
-
-<!-- Revisar/recolocar
- <javascript authenticated="False" bundle="default" cacheable="True"
-    compression="safe" conditionalcomment="" cookable="True" enabled="True"
-    expression="" id="collective.js.jqueryui.custom.min.js" inline="False"/>
- <javascript authenticated="False" bundle="default" cacheable="True"
-    compression="none" conditionalcomment="" cookable="True" enabled="True"
-    expression="nocall: object/@@collage_view|nothing"
-    id="++resource++collage-resources/collage.js" inline="False"/>
- <javascript authenticated="False" bundle="default" cacheable="True"
-    compression="none" conditionalcomment="" cookable="True" enabled="True"
-    expression=""
-    id="++resource++plone.formwidget.recaptcha/recaptcha_ajax.js"
-    inline="False"/>
- <javascript authenticated="False" bundle="default" cacheable="True"
-    compression="safe" conditionalcomment="" cookable="True" enabled="True"
-    expression="" id="++resource++jsi18n.js" inline="False"/>
- -->

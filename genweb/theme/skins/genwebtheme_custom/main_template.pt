@@ -36,9 +36,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true" />
     <meta name="generator" content="Plone - http://plone.org" />
-    <meta name="author" content="Servei de Comunicació i Promoció" />
-    <meta name="description" content="Genweb UPC v4.0 - El generador de webs de la UPC" />
-    <link rel="shortcut icon" type="image/x-icon" tal:attributes="href string:${portal_url}/++genweb++static/favicon.ico" />
+    <meta name="author" tal:attributes="content genweb_config/meta_author" />
+    <link rel="shortcut icon" type="image/x-icon" tal:attributes="href string:${portal_url}/favicon.ico" />
 
     <metal:baseslot define-slot="base">
         <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
@@ -55,14 +54,17 @@
         <metal:headslot define-slot="head_slot" />
         <metal:styleslot define-slot="style_slot" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <tal:comment replace="nothing"><!-- El seguent script ha d'anar seguit del meta del viewport --></tal:comment>
         <script tal:attributes="src string:${portal_url}/++genweb++static/js/ReView.js"></script>
 
-        <link rel="apple-touch-icon" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-57x57-precomposed.png" /> <!-- iPhone -->
-        <link rel="apple-touch-icon" sizes="72x72" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-72x72-precomposed.png" /> <!-- iPad -->
-        <link rel="apple-touch-icon" sizes="114x114" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-114x114-precomposed.png" /> <!-- iPhone 2x -->
-        <link rel="apple-touch-icon" sizes="144x144" tal:attributes="href string:${portal_url}/++genweb++static/apple-touch-icon-144x144-precomposed.png" /> <!-- iPad 2x -->
+        <link rel="apple-touch-icon" tal:attributes="href string:${portal_url}/apple-touch-icon.png" /> <!-- 60x60 -->
+        <link rel="apple-touch-icon" sizes="57x57" tal:attributes="href string:${portal_url}/apple-touch-icon-57x57-precomposed.png" /> <!-- iPhone -->
+        <link rel="apple-touch-icon" sizes="72x72" tal:attributes="href string:${portal_url}/apple-touch-icon-72x72-precomposed.png" /> <!-- iPad -->
+        <link rel="apple-touch-icon" sizes="114x114" tal:attributes="href string:${portal_url}/apple-touch-icon-114x114-precomposed.png" /> <!-- iPhone 2x -->
+        <link rel="apple-touch-icon" sizes="144x144" tal:attributes="href string:${portal_url}/apple-touch-icon-144x144-precomposed.png" /> <!-- iPad 2x -->
+
+        <div tal:replace="structure provider:genweb.css" />
 
         <tal:comment content="nothing"> <!-- Splitting CSS only for IE, the rest the common CSS --> </tal:comment>
         <!--[if !IE]><!-->
@@ -72,7 +74,6 @@
         <tal:splittedCSS4IE tal:replace="structure string:&lt;!--[if lt IE 10]&gt;&lt;link rel='stylesheet' href='${portal_url}/++genweb++stylesheets/genwebupc-ie.css'&gt;&lt;![endif]--&gt;" />
 
         <link rel="stylesheet" tal:attributes="href string:${portal_url}/dynamic.css">
-        <!-- <script tal:attributes="src string:${portal_url}/++bootstrap++js/modernizr-2.6.1.min.js"></script> -->
 
     </tal:notajax>
 </head>
@@ -94,7 +95,7 @@
 
 <section id="content-area">
   <div class="container">
-        <div class="row-fluid">
+        <div id="portal-columns" class="row-fluid">
             <tal:notajax tal:condition="not:ajax_load">
                 <div id="portal-column-one"
                     class="span3"
@@ -180,16 +181,18 @@
             </div> <!-- Fi span content -->
 
             <!-- Ojo, a GW no tenim mai columna dreta de portlets! no? -->
-            <tal:notajax tal:condition="not:ajax_load">
-                <div id="portal-column-two"
-                    class="spanX"
-                    metal:define-slot="column_two_slot"
-                    tal:condition="sr">
-                    <metal:portlets define-slot="portlets_two_slot">
-                        <tal:block replace="structure provider:plone.rightcolumn" />
-                    </metal:portlets>
-                </div>
-            </tal:notajax>
+            <tal:comment replace="nothing">
+              <tal:notajax tal:condition="not:ajax_load">
+                  <div id="portal-column-two"
+                      class="spanX"
+                      metal:define-slot="column_two_slot"
+                      tal:condition="sr">
+                      <metal:portlets define-slot="portlets_two_slot">
+                          <tal:block replace="structure provider:plone.rightcolumn" />
+                      </metal:portlets>
+                  </div>
+              </tal:notajax>
+            </tal:comment>
         </div> <!-- Fi row content -->
 
     </div>
@@ -204,25 +207,16 @@
 <tal:notajax tal:condition="not:ajax_load">
     <tal:comment replace="nothing"> <!-- A partir d'aqui, els JS comuns d'inicialització --> </tal:comment>
 
-    <!-- <script tal:attributes="src string:${portal_url}/++genweb++static/js/dropkick.js"></script> -->
-    <script tal:attributes="src string:${portal_url}/++genweb++static/js/scrollability.js"></script>
-    <script tal:attributes="src string:${portal_url}/++genweb++static/js/fileinput.js"></script>
-    <script tal:attributes="src string:${portal_url}/++genweb++static/js/customInput.js"></script>
-    <script tal:attributes="src string:${portal_url}/++genweb++static/js/jquery.nicescroll.js"></script>
-    <script tal:attributes="src string:${portal_url}/++genweb++static/js/prettify.js"></script>
+    <div tal:replace="structure provider:genweb.js" />
 
-    <!--[if IE 8]>
-    <script type="text/javascript" src="http://malsup.github.com/jquery.corner.js"></script>
-    <script>
-      $('.header-image').corner('top 8px');
-      $('#portal-globalnav .navbar').corner('bottom 8px');
-    </script>
-    <![endif]-->
+    <tal:select2lang condition="python:lang=='ca'">
+      <script tal:attributes="src string:${portal_url}/++components++root/select2/select2_locale_ca.js"></script>
+    </tal:select2lang>
 
-    <script tal:attributes="src string:${portal_url}/++genweb++js/main.js"></script>
+    <tal:select2lang condition="python:lang=='es'">
+      <script tal:attributes="src string:${portal_url}/++components++root/select2/select2_locale_es.js"></script>
+    </tal:select2lang>
 
-
-    <script tal:attributes="src string:${portal_url}/++genweb++static/js/ios-orientationchange-fix.js"></script>
     <tal:comment replace="nothing"> <!-- Finalment els que es posen a cada template especificament (per revisar) --> </tal:comment>
     <metal:javascriptslot define-slot="javascript_head_slot" />
 </tal:notajax>

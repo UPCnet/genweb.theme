@@ -1,0 +1,67 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+            xmlns:metal="http://xml.zope.org/namespaces/metal"
+            xmlns:tal="http://xml.zope.org/namespaces/tal"
+            xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+            metal:use-macro="context/main_template/macros/master">
+
+<head>
+  <metal:block fill-slot="top_slot">
+      <tal:insert tal:replace="nothing"
+                  tal:define="disable_column_one python:request.set('disable_plone.leftcolumn',1);" />
+  </metal:block>
+</head>
+
+<body>
+
+    <metal:content-core fill-slot="content-core" tal:define="event_items view/published_events_items">
+        <tal:newsitems tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                                  plone_view context/@@plone;
+                                  Batch python:modules['Products.CMFPlone'].Batch;
+                                  b_size python:5;
+                                  b_start python:0;
+                                  b_start request/b_start | b_start;
+                                  batch python:Batch(event_items, b_size, int(b_start), orphan=1);"
+                       tal:condition="event_items"
+                       i18n:domain="plone">
+
+
+            <div role="complementary">
+                <ul class="list-portlet">
+                    <li tal:repeat="obj batch">
+                        <strong><a href="" tal:attributes="href obj/getURL" tal:content="obj/pretty_title_or_id">
+                            Titol
+                        </a></strong>
+                        <p>
+                            <time class="smaller data-noticies" tal:content="python:toLocalizedTime(obj.start, long_format=1)">May 5</time>
+                            -
+                            <time class="smaller data-noticies" tal:content="python:toLocalizedTime(obj.end, long_format=1)">May 6</time>
+                        </p>
+                        <div class="content-noticies">
+
+                            <p tal:content="obj/Description">
+                                New description
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div metal:use-macro="here/batch_macros/macros/navigation" />
+
+        </tal:newsitems>
+
+        <tal:notnewsitems condition="not: event_items">
+            <p i18n:translate="no_events">There are no events</p>
+        </tal:notnewsitems>
+
+        <div class="past_events_button">
+            <a class="btn"
+               tal:attributes="href string:${context/absolute_url}/pasteventscollection_view"
+               i18n:translate="see_past_events">
+               Veure esdeveniments anteriors
+            </a>
+        </div>
+    </metal:content-core>
+
+</body>
+
+</html>

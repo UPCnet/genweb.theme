@@ -5,13 +5,17 @@
   <div class="container">
     <div class="navbar" role="navigation">
       <div class="navbar-inner">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse-menu">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target="#menu-1">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </a>
-        <h2 class="hidden-desktop brand">Menú</h2>
-        <div class="nav-collapse nav-collapse-menu">
+        </a> 
+        
+        <h2 id="titol-menu-1" class="hidden-desktop hidden-tablet brand">
+          <a data-toggle="collapse" data-target="#menu-1" >Menú</a>
+        </h2> 
+
+        <div id='menu-1' class="nav-collapse nav-collapse-menu">
           <ul class="nav"
               tal:define="selected_tab python:view.selected_portal_tab">
              

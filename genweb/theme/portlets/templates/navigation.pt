@@ -1,5 +1,6 @@
 <tal:block i18n:domain="plone"
-           define="root view/navigation_root">
+           define="root view/navigation_root"><!-- menú 2on nivell -->
+
 <nav class="subnavbar">
   <ul id="portlet-navigation-tree" class="nav nav-list"  role="menu">
             <li role="menuitem" tal:define="selectedClass view/root_item_class;
@@ -14,7 +15,7 @@
                                  root_class python:rootIsPortal and 'contenttype-plone-site' or root_type_class;">
                    <a tal:attributes="href root/absolute_url;
                                       class python:' '.join([root_class, selectedClass]).strip();">
-                   
+
                    <span tal:omit-tag=""
                          tal:condition="rootIsPortal"
                          i18n:translate="tabs_home">Home</span>

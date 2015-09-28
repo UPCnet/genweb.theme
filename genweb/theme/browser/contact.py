@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 import re
 from five import grok
+from plone import api
 from cgi import escape
 from Acquisition import aq_inner
 
-from zope.schema import TextLine, Text, ValidationError
-from z3c.form import field, button
+from zope.schema import TextLine, Text, ValidationError, Choice
+from z3c.form import button
 from plone.directives import form
 
 from plone.formwidget.recaptcha.widget import ReCaptchaFieldWidget
@@ -14,16 +15,27 @@ from Products.CMFPlone.utils import safe_unicode
 from Products.statusmessages.interfaces import IStatusMessage
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone import PloneMessageFactory as _
-from Products.CMFPlone.interfaces import IPloneSiteRoot
+from plone.app.layout.navigation.interfaces import INavigationRoot
 
 from genweb.theme.browser.interfaces import IGenwebTheme
+
+from genweb.core import utils
+
+from zope.component import getUtility
+from plone.registry.interfaces import IRegistry
+from genweb.controlpanel.interface import IGenwebControlPanelSettings
+from zope.schema.vocabulary import SimpleVocabulary
+from zope.schema.interfaces import IVocabularyFactory
+
+import json
+
 
 grok.templatedir("views_templates")
 
 
 MESSAGE_TEMPLATE = u"""\
 Heu rebut aquest correu perquè en/na %(name)s (%(from_address)s) ha enviat \
-comentaris sobre l'espai Genweb que administreu a \
+comentaris sobre l'espai Genweb \
 
 %(genweb)s
 
@@ -35,7 +47,29 @@ El missatge és:
 """
 
 
-# Define a validation method for email addresses
+class getEmailsContactNames(object):
+    grok.implements(IVocabularyFactory)
+
+    def __call__(self, context):
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(IGenwebControlPanelSettings, check=False)
+        portal = api.portal.get()
+        lang = utils.pref_lang()
+        items = []
+        if settings.contacte_multi_email:
+            obj_json = settings.contact_emails_data
+            contacts = json.loads(obj_json)
+            for contacto in contacts['contacts']:
+                if lang == contacto['language']:
+                    items.append(SimpleVocabulary.createTerm(contacto['displayname'], str(contacto['displayname'])))
+
+        name = portal.getProperty('email_from_name')
+        items.append(SimpleVocabulary.createTerm(name, str(name)))
+        return SimpleVocabulary(items)
+
+grok.global_utility(getEmailsContactNames, name=u"availableContacts")
+
+
 class NotAnEmailAddress(ValidationError):
     __doc__ = _(u"Invalid email address")
 
@@ -52,6 +86,10 @@ class IContactForm(form.Schema):
     """Define the fields of our form
     """
 
+    to_address = Choice(title=_('to_address',
+                     default=u"Recipient"),
+                     vocabulary=u"availableContacts")
+
     nombre = TextLine(title=_('genweb_sender_fullname', default=u"Name"),
                       required=True)
 
@@ -66,22 +104,22 @@ class IContactForm(form.Schema):
                    description=_("genweb_help_message", default="Please enter the message you want to send."),
                    required=True)
 
+    form.widget(captcha=ReCaptchaFieldWidget)
     captcha = TextLine(title=_('genweb_type_the_code', default="Type the code"),
                        description=_('genweb_help_type_the_code', default="Type the code from the picture shown below"),
                        required=True)
 
 
-class ContactForm(form.Form):
+class ContactForm(form.SchemaForm):
     grok.name('contact')
-    grok.context(IPloneSiteRoot)
+    grok.context(INavigationRoot)
     grok.template("contact")
     grok.require('zope2.View')
     grok.layer(IGenwebTheme)
 
     ignoreContext = True
 
-    fields = field.Fields(IContactForm)
-    fields['captcha'].widgetFactory = ReCaptchaFieldWidget
+    schema = IContactForm
 
     # This trick hides the editable border and tabs in Plone
     def update(self):
@@ -91,7 +129,7 @@ class ContactForm(form.Form):
     @button.buttonAndHandler(_(u"Send"))
     def action_send(self, action):
         """Send the email to the configured mail address in properties and redirect to the
-        front page, showing a status message to say the message was received.
+        front page, showing a status message to say the message was sent.
         """
         data, errors = self.extractData()
         if 'recaptcha_response_field' in self.request.keys():
@@ -103,22 +141,36 @@ class ContactForm(form.Form):
         else:
             return
 
-        if not 'asunto' in data or \
-           not 'from_address' in data or \
-           not 'mensaje' in data or \
-           not 'nombre' in data:
+        if 'to_address' not in data or \
+           'asunto' not in data or \
+           'from_address' not in data or \
+           'mensaje' not in data or \
+           'nombre' not in data:
             return
 
         context = aq_inner(self.context)
         mailhost = getToolByName(context, 'MailHost')
-        urltool = getToolByName(context, 'portal_url')
-        proptool = getToolByName(context, 'portal_properties')
-        portal = urltool.getPortalObject()
+        portal = api.portal.get()
         email_charset = portal.getProperty('email_charset')
+        recipient = data['to_address']
+        lang = utils.pref_lang()
 
-        to_address = portal.getProperty('email_from_address')
-        from_name = portal.getProperty('email_from_name')
-        titulo_web = portal.getProperty('title')
+        registry = getUtility(IRegistry)
+        settings = registry.forInterface(IGenwebControlPanelSettings, check=False)
+
+        obj_json = settings.contact_emails_data
+        contacts = json.loads(obj_json)
+        contacts_list = contacts['contacts']
+        to_address = ""
+        to_name = ""
+
+        for contact in contacts_list:
+            if contact['displayname'] == recipient and contact['language'].encode('ascii', errors='ignore') == lang:
+                to_address = contact['email'].encode('ascii', errors='ignore')
+                to_name = contact['displayname'].encode('ascii', errors='ignore')
+        if recipient == portal.getProperty('email_from_name'):
+            to_address = portal.getProperty('email_from_address')
+            to_name = portal.getProperty('email_from_name')
 
         source = "%s <%s>" % (escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['from_address'])))
         subject = "[Formulari Contacte] %s" % (escape(safe_unicode(data['asunto'])))
@@ -126,7 +178,7 @@ class ContactForm(form.Form):
                                           from_address=data['from_address'],
                                           genweb=portal.absolute_url(),
                                           message=data['mensaje'],
-                                          from_name=from_name)
+                                          from_name=to_name)
 
         mailhost.secureSend(escape(safe_unicode(message)), to_address, source,
                             subject=subject, subtype='plain',
@@ -140,14 +192,39 @@ class ContactForm(form.Form):
 
         return ''
 
-    def pref_lang(self):
-        """ Extracts the current language for the current user
-        """
-        lt = getToolByName(self.context, 'portal_languages')
-        return lt.getPreferredLanguage()
-
     def getURLDirectori(self, codi):
         return "http://directori.upc.edu/directori/dadesUE.jsp?id=%s" % codi
 
     def getURLMaps(self, codi):
-        return "http://maps.upc.edu/new/index.php/embed?iu=%s" % codi
+        lang = utils.pref_lang()
+        return "//maps.upc.edu/embed/?lang=%s&iu=%s" % (lang, codi)
+
+    def getURLUPCmaps(self, codi):
+        lang = self.context.Language()
+        return "//maps.upc.edu/?iu=%s&lang=%s" % (codi, lang)
+
+    def getContactPersonalized(self):
+        isCustomized = utils.genweb_config().contacte_BBDD_or_page
+        return isCustomized
+
+    def getContactPage(self):
+        """
+        Funcio que retorna la pagina de contacte personalitzada
+        """
+        page = ""
+        context = aq_inner(self.context)
+        lang = self.context.Language()
+        if lang == 'ca':
+            customized_page = getattr(context, 'contactepersonalitzat', False)
+        elif lang == 'es':
+            customized_page = getattr(context, 'contactopersonalizado', False)
+        elif lang == 'en':
+            customized_page = getattr(context, 'customizedcontact', False)
+        try:
+            state = api.content.get_state(customized_page)
+        except:
+            state = ''
+        if state == 'published':
+            page = customized_page.text.raw
+
+        return page

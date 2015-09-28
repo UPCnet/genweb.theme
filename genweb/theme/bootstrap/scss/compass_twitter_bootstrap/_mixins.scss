@@ -6,6 +6,7 @@
 // UTILITY MIXINS
 // --------------------------------------------------
 
+
 // Clearfix
 // --------
 // For clearing floats like a boss h5bp.com/q
@@ -554,7 +555,7 @@
     @include clearfix();
   }
 
-  [class*="span"] {
+  [class^="span"] {
     float: left;
     margin-left: $gutterWidth;
     margin-bottom: $baseLineHeight;

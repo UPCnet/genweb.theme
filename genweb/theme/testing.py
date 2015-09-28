@@ -14,16 +14,14 @@ class GenwebTheme(PloneSandboxLayer):
 
     def setUpZope(self, app, configurationContext):
         # Load ZCML
-        import genweb.theme
         import genweb.core
         xmlconfig.file('configure.zcml',
-                       genweb.theme,
+                       genweb.core,
                        context=configurationContext)
 
     def setUpPloneSite(self, portal):
-        # Install into Plone site using portal_setup
-        applyProfile(portal, 'genweb.theme:default')
-        applyProfile(portal, 'genweb.controlpanel:default')
+        # Install the whole genweb.core suite into Plone site using portal_setup
+        applyProfile(portal, 'genweb.core:default')
 
 
 GENWEBTHEME_FIXTURE = GenwebTheme()
