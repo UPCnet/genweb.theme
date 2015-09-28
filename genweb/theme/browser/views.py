@@ -7,9 +7,9 @@ from scss import Scss
 
 from zope.interface import Interface
 from zope.contentprovider import interfaces
-from zope.annotation.interfaces import IAnnotations
 from zope.component import getMultiAdapter, queryMultiAdapter, getUtility, queryUtility
 from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile as ZopeViewPageTemplateFile
+from Products.Five import BrowserView
 
 from plone.batching import Batch
 from plone.registry.interfaces import IRegistry
@@ -17,18 +17,14 @@ from plone.portlets.interfaces import IPortletManager
 from plone.portlets.interfaces import IPortletManagerRenderer
 from plone.app.layout.globals.layout import LayoutPolicy
 from plone.i18n.normalizer.interfaces import IIDNormalizer
-from plone.formwidget.recaptcha.view import RecaptchaView, IRecaptchaInfo
-from plone.app.contenttypes.interfaces import IEvent
+from plone.formwidget.recaptcha.view import IRecaptchaInfo
 from plone.app.layout.navigation.interfaces import INavigationRoot
 
 from Products.CMFPlone import utils
 from Products.CMFPlone.utils import safe_unicode
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone import PloneMessageFactory as _
-from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.PythonScripts.standard import url_quote_plus
-from Products.statusmessages.interfaces import IStatusMessage
-# from Products.ATContentTypes.interfaces.event import IATEvent
 from Products.CMFPlone.browser.navtree import getNavigationRoot
 from Products.CMFPlone.browser.navigation import CatalogNavigationTabs
 from Products.CMFPlone.browser.navigation import get_id, get_view_url
@@ -390,6 +386,9 @@ class gwCatalogNavigationTabs(CatalogNavigationTabs):
             else:
                 return False
 
+        context = aq_inner(self.context)
+        self.catalog = getToolByName(context, 'portal_catalog')
+
         # now add the content to results
         idsNotToList = self.navtree_properties.getProperty('idsNotToList', ())
         for item in rawresult:
@@ -399,10 +398,27 @@ class gwCatalogNavigationTabs(CatalogNavigationTabs):
                         'id': item.getId,
                         'url': item_url,
                         'description': item.Description,
-                        'review_state': item.review_state}
+                        'review_state': item.review_state
+                        }
                 result.append(data)
 
         return result
+
+    def find_items_in_path(self, folder_path, level):
+        # find items in folder sorted manually by user
+        query_results = self.catalog(path={'query': folder_path, 'depth': 1}, sort_on='getObjPositionInParent')
+        # list of objects (brain, results2) results2 only has value if item is a Folder
+        results = []
+        for item in query_results:
+            results2 = []
+            if level < FolderIndexView.MAX_LEVEL:
+                if item.Type == 'Folder':  # find its children
+                    folder_path_2 = folder_path + '/' + item.id
+                    results2 = self.find_items_in_path(folder_path_2, level + 1)
+            result = FolderIndexItem(item, results2, self)
+
+            results.append(result)
+        return results
 
 
 class gwLayoutPolicy(LayoutPolicy):
@@ -482,64 +498,6 @@ class gwLayoutPolicy(LayoutPolicy):
                 body_class += ' userrole-' + role.lower()
 
         return body_class
-
-
-# class gwRecaptchaView(RecaptchaView, grok.View):
-#     """ Override of the original plone.formwidget.recaptcha view to match style
-#         and language options """
-#     grok.context(Interface)
-#     grok.name('recaptcha')
-#     grok.require('zope2.Public')
-#     grok.layer(IGenwebTheme)
-
-#     def render(self):
-#         pass
-
-#     def image_tag(self):
-#         lang = pref_lang()
-#         options = {"ca": """
-#                             <script type="text/javascript">
-#                                 var RecaptchaOptions = {
-#                                         custom_translations : {
-#                                                 instructions_visual : "Escriu les dues paraules:",
-#                                                 instructions_audio : "Transcriu el que sentis:",
-#                                                 play_again : "Torna a escoltar l'\u00e0udio",
-#                                                 cant_hear_this : "Descarrega la pista en MP3",
-#                                                 visual_challenge : "Modalitat visual",
-#                                                 audio_challenge : "Modalitat auditiva",
-#                                                 refresh_btn : "Demana dues noves paraules",
-#                                                 help_btn : "Ajuda",
-#                                                 incorrect_try_again : "Incorrecte. Torna-ho a provar.",
-#                                         },
-#                                         lang : '%s',
-#                                         theme : 'clean'
-#                                     };
-#                             </script>
-#                             """ % lang,
-#                    "es": """
-#                             <script type="text/javascript">
-#                                 var RecaptchaOptions = {
-#                                         lang : '%s',
-#                                         theme : 'clean'
-#                                 };
-#                             </script>
-#                             """ % lang,
-#                    "en": """
-#                             <script type="text/javascript">
-#                                 var RecaptchaOptions = {
-#                                         lang : '%s',
-#                                         theme : 'clean'
-#                                 };
-#                             </script>
-#                             """ % lang
-#                    }
-
-#         if not self.settings.public_key:
-#             raise ValueError('No recaptcha public key configured. Go to path/to/site/@@recaptcha-settings to configure.')
-#         use_ssl = self.request['SERVER_URL'].startswith('https://')
-#         error = IRecaptchaInfo(self.request).error
-
-#         return options.get(lang, '') + displayhtml(self.settings.public_key, use_ssl=use_ssl, error=error)
 
 
 class gwCollectiveRecaptchaView(CollectiveRecaptchaView, grok.View):
@@ -846,27 +804,12 @@ class ImagesGalleryFolderView(grok.View):
                                 path={'query': path})
 
 
-class FolderIndexView(grok.View):
+class FolderIndexView(BrowserView):
     """ Render the title of items and its children
     """
 
     # number of levels to show, if greater than 3 should modify template
     MAX_LEVEL = 3
-
-    grok.name(_(u'folder_index_view'))
-    grok.template('folder_index_view')
-    grok.context(IFolderish)
-    grok.layer(IGenwebTheme)
-    grok.require('zope2.View')
-
-    def update(self):
-        self.theme = 'Genweb'
-
-    def genwebTheme(self):
-        return self.theme == 'Genweb'
-
-    def upcTheme(self):
-        return self.theme == 'UPC'
 
     def items(self):
         return self._data()
@@ -915,13 +858,6 @@ class FolderIndexItem():
         else:
             return 'span12'
 
-    def hasImg(self):
-        pathImg = self.brain.getPath() + '-img'
-        if self.context.catalog.searchResults(path=pathImg):
-            return True
-        else:
-            return False
-
     def getDescription(self):
         return self.brain.Description
 
@@ -933,6 +869,13 @@ class FolderIndexItem():
 
     def getTitle(self):
         return self.brain.Title
+
+    def hasImg(self):
+        pathImg = self.brain.getPath() + '-img'
+        if self.context.catalog.searchResults(path=pathImg):
+            return True
+        else:
+            return False
 
     def isFolder(self):
         return self.brain.Type == "Folder"
