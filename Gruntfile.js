@@ -21,7 +21,7 @@ module.exports = function (grunt) {
     egg: 'genweb/theme'
   };
 
-  var config_file = 'config.json';
+  var config_file = 'genweb/theme/config.json';
   var resource_config = grunt.file.readJSON(config_file);
 
   // Define the configuration for all the tasks
