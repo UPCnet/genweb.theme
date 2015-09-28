@@ -21,3 +21,117 @@ b, strong {font-weight:bold;}
     box-shadow: 0 -8px 16px -16px rgba(0,0,0,.5) !important;
 	}
 .page-header h1 {color:#446a8e;}
+
+
+a#calendar-next {width: 8px;}
+a#calendar-previous { margin-left: -4px; width: 12px;}
+
+// .popover.left, .left.expandable-content {
+// margin-right: 10px;
+// left: 815px !important;
+// }
+
+// .popover, .expandable-content {
+// width: 275px;
+// }
+
+.searchSection label {
+font-size: 10px;
+}
+
+.searchSection {
+margin-bottom: 5px;
+margin-top: -5px;
+}
+
+
+.tt-dropdown-menu {
+z-index: 1020 !important;
+}
+
+.hCalendar-hidden {
+  display: none;
+}
+
+
+// folder_index_view
+
+#folder-index-view {
+	ul {
+		list-style-type: none;
+	}
+
+	h3 {
+		margin-bottom: 30px !important;
+		margin-top: 0 !important;
+	}
+
+	h3 + ul {
+		margin-top: -20px !important;
+	}
+
+    .index-img {
+        height: 90px;
+        width: 90px;
+        float: left;
+        clear: both;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+        background-color: #fff;
+        padding: 0.4em;
+    }
+
+    .level-3 li {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.folder-index-view-dreta {
+    border-left: 1px solid #ccc;
+}
+
+.folder-index-view-row {
+    border-bottom: 3px solid #ccc;
+    margin-bottom: 10px; 
+}
+
+
+
+// vista notícies
+
+.image-noticies {
+    max-width:75px;
+    float:right;
+    margin-left:10px;
+    border: 1px solid #ccc;
+    padding:3px;
+}
+
+div.content-noticies {
+    overflow: hidden;
+}
+
+.listingBar {
+    margin-top: 10px;
+}
+
+
+// alinear selector idioma i caixa cerca amb text menú
+div#gwsearch {
+    margin-top: -3px;
+}
+li#portal-languageselector {
+    margin-top: -1px;
+}
+
+
+// ocultar botó pujada fitxers en banners i logos peu
+.portaltype-bannercontainer #upload-files,
+.portaltype-logos_container #upload-files{
+    display: none;
+}
+
+#formfield-form-widgets-contact_emails_table {
+    margin-left: 50px;
+}

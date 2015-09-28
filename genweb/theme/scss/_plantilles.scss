@@ -78,3 +78,119 @@ a.primary, .primary a, a .primary {
 .content-columns-2 {
 	@include content-columns(2,20px)	
 }
+
+
+// plantilla pestanyes amb ombra
+
+$beautytabcolor: #b2b2b2;
+.beautytab { 
+	width: 100%; 
+
+	ul { 
+		display: flex;
+      	display: -webkit-box;      // OLD - iOS 6-, Safari 3.1-6
+  		display: -moz-box;         // OLD - Firefox 19- (buggy but mostly works)
+  		display: -ms-flexbox;      // TWEENER - IE 10
+  		display: -webkit-flex;     // NEW - Chrome
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+	}
+
+	li.formTab {
+		flex-grow: 1;
+		list-style: none;
+		text-align: center; 
+		border-style: solid;
+		border-color: $beautytabcolor ;
+		-moz-border-top-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-bottom-colors: none;
+		-moz-border-left-colors: none;
+		padding: 0; 
+		@include gradient-vertical(#fff, lighten($beautytabcolor,15%));
+		border-width:1px 1px 1px 0; 
+		text-decoration:none;
+		@include box-shadow(0 3px 6px rgba(0,0,0,0.1));
+		
+		&:hover {
+			@include gradient-vertical(#fff, $beautytabcolor);
+		}
+
+		&.active {
+			@include gradient-vertical(#fff, $beautytabcolor);
+			&:after { 
+				content: "";
+				float: right;
+				position: relative;
+				top: 7px;
+				right: 43%;
+				width: 0px;
+				height: 0px;
+				border-style: solid;
+				border-width: 7px 8px 0;
+				border-color: $beautytabcolor transparent transparent transparent;
+			}
+		}
+	}
+	a {
+		display:block; 
+		padding: 6px 4px 0px 4px; 
+		color:#4c4c4c; 	 
+		text-shadow: 0 0 0.5em white;
+		&:hover {
+			text-decoration: none;
+		}
+
+	}
+
+	li:first-child  {
+		border-left-width:1px;
+		@include border-top-left-radius(0.5em);
+	}
+	li:last-child  {
+		border-right-style: solid;
+		border-right-width:1px !important;
+		@include border-top-right-radius(0.5em);
+		}
+}
+
+.beautytab-content {
+	border-style: solid; 
+	border-color: $beautytabcolor; 
+	border-width: 0 1px 1px 1px; 
+	padding: 10px 5px;
+	@include border-bottom-right-radius(0.5em);
+	@include border-bottom-left-radius(0.5em);
+	} 
+
+// per a mòbils canviem pestanyes per botons
+@media only screen and (max-width: 360px) {
+	.beautytab {
+		ul {
+	    	display: block;
+	    }
+	    li.formTab {
+		 	border-width: 1px;
+		 	margin-top: -1px;
+		 	@include gradient-vertical(#e2e2e2, #e2e2e2);
+		 	&:first-child {
+		 		@include border-top-right-radius(0.5em);
+		 		border-right-width: 1px !important;
+		 	}
+		 	&:last-child {
+		 		@include border-top-right-radius(0);
+		 	}
+		 	&.active{
+		 		font-weight: bold;
+		 		@include gradient-vertical($beautytabcolor, $beautytabcolor);
+		 		&:after {
+		 			border-width:0;
+		 		}
+		 	}
+		}
+	 }
+}
+
+
+// fi plantilla pestanyes amb ombra

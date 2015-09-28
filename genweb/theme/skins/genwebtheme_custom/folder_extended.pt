@@ -68,7 +68,7 @@
                                    item_end item/end|item/EndDate|nothing;
                                    item_sametime python: item_start == item_end;
                                    item_samedate python: (item_end - item_start &lt; 1) if item_type == 'Event' else False;
-                                   item_finestranova python: item_type == 'Link' and getattr(item,'obrirEnFinestraNova','') or False;">
+                                   item_finestranova python: item_type == 'Link' and getattr(item,'open_link_in_new_window','') or False;">
                 <metal:block define-slot="entry">
                 <li metal:define-macro="listitem">
 
@@ -88,7 +88,7 @@
                                            class string:${item_wf_state_class} link-plain">
                            <span tal:content="item_title_or_id">
                             External Link</span>
-                        <img class="img_blank" src="/++genweb++static/images/blank_blau.png"
+                        <img class="img_blank" src="++genweb++static/images/blank_blau.png"
                              i18n:domain="genweb"
                              i18n:attributes="alt obrir_link_finestra_nova"></a>
                     </tal:span>

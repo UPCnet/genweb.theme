@@ -27,4 +27,12 @@
         layer=".interfaces.IGenwebTheme"
         />
 
+    <browser:page
+      name="folder_index_view"
+      permission="zope2.Public"
+      for="*"
+      class=".views.FolderIndexView"
+      template="views_templates/folder_index_view.pt"
+      layer=".interfaces.IGenwebTheme"
+      />
 </configure>

@@ -10,7 +10,10 @@
 div.llistatIndex, div.llistat {padding-left:0;}
 
 .fila {@extend .row-fluid;}
-.cella {@extend [class*="span"];}
+.cella {
+	@extend [class*="span"];
+	float:left;// correcció migració, celes ocupaven una fila cada una
+}
 .w1\3a 2, .w2\3a 4 {@extend .span6;}
 .w1\3a 3 {@extend .span4;}
 .w3\3a 4 {@extend .span9;}

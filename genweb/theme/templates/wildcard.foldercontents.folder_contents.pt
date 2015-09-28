@@ -122,7 +122,7 @@
               Up one level
           </a>
 
-        <div>
+        <div class="fc fc-container" tal:attributes="data-context-base-url view/context_base_url">
           <form name="folderContentsForm"
                 method="post"
                 action="folder_object"
@@ -138,10 +138,8 @@
             <div class="row-fluid fileupload-buttonbar">
                 <div class="span12 well">
                     <!-- The fileinput-button span is used to style the file input field as button -->
-
-                    <label i18n:translate="foldercontents_add_files">Add files...</label>
-                    <div class="inline-block">
-                    <input type="file" name="files[]" multiple>
+                    <div class="span6">
+                      <input type="file" name="files[]" multiple>
                     </div>
                     <button type="submit" class="btn start">
                         <i class="icon-upload"></i>
@@ -151,7 +149,7 @@
                         <i class="icon-ban-circle"></i>
                         <span i18n:translate="foldercontents_cancel_upload">Cancel upload</span>
                     </button>
-                    <input type="checkbox" class="toggle">
+                    <!-- <input type="checkbox" class="toggle"> -->
                 </div>
             </div>
             <div class="row-fluid">

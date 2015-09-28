@@ -1,17 +1,19 @@
+from Acquisition import aq_inner
+from plone import api
 from zope import schema
 from zope.interface import implements
 from zope.formlib import form
+
 from plone.app.portlets.portlets import base
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from Products.CMFPlone import PloneMessageFactory as _
-from Acquisition import aq_inner
 from plone.memoize.instance import memoize
 from plone.portlets.interfaces import IPortletDataProvider
-from Products.CMFCore.utils import getToolByName
-from genweb.core.adapters import IImportant
 
-from zope.component import getMultiAdapter
-from plone.app.layout.navigation.root import getNavigationRootObject
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from Products.CMFPlone import PloneMessageFactory as _
+from Products.CMFCore.utils import getToolByName
+
+from genweb.core.interfaces import INewsFolder
+from genweb.core.utils import pref_lang
 
 from plone.app.portlets.portlets.news import Renderer as news_renderer
 
@@ -25,14 +27,15 @@ class INewsPortlet(IPortletDataProvider):
         required=True,
         default=5,
         min=5,
-        max=7)
+        max=7
+    )
 
     showdata = schema.Bool(
         title=_(u"Mostra data?"),
         description=_(u"Boolea que indica si s'ha de mostrar la data en les noticies"),
         required=True,
         default=True,
-        )
+    )
 
 
 class Assignment (base.Assignment):
@@ -41,7 +44,10 @@ class Assignment (base.Assignment):
     def __init__(self, count=5, showdata=True):
         self.count = count
         self.showdata = showdata
-    title = _(u"Noticies", default=u'Noticies')
+
+    @property
+    def title(self):
+        return _(u"News")
 
 
 class Renderer(news_renderer):
@@ -51,13 +57,24 @@ class Renderer(news_renderer):
         return self.data.showdata
 
     def all_news_link(self):
-        context = aq_inner(self.context)
-        portal_state = getMultiAdapter((context, self.request),
-            name=u'plone_portal_state')
-        portal = portal_state.portal()
-        if 'news' in getNavigationRootObject(context, portal).objectIds():
-            return '%s/news' % portal_state.navigation_root_url()
-        return None
+        pc = api.portal.get_tool('portal_catalog')
+        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__,
+                                       Language=pref_lang())
+
+        if news_folder:
+            return '%s' % news_folder[0].getURL()
+        else:
+            return ''
+
+    def rss_news_link(self):
+        pc = api.portal.get_tool('portal_catalog')
+        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__,
+                                       Language=pref_lang())
+
+        if news_folder:
+            return '%s%s' % (news_folder[0].getURL(), '/aggregator/RSS')
+        else:
+            return ''
 
     @memoize
     def _data(self):
@@ -68,17 +85,29 @@ class Renderer(news_renderer):
         results = catalog(portal_type=('News Item', 'Link'),
                        review_state=state,
                        is_important=True,
+                       Language=pref_lang(),
                        sort_on="getObjPositionInParent",
                        sort_limit=limit)
+        results = [a for a in results]
         important = len(results)
         if important < limit:
             results2 = catalog(portal_type=('News Item', 'Link'),
                        review_state=state,
                        is_important=False,
+                       Language=pref_lang(),
                        sort_on=('Date'),
-                       sort_order='reverse',
-                       sort_limit=limit - important)
-            return results + results2
+                       sort_order='reverse')
+                       #, sort_limit=limit - important)
+            results3 = []
+            path_folder_news = self.all_news_link()
+            for brain in results2:
+                brain_url = brain.getURL()
+                brain_type = brain.Type
+                if brain_type == 'Link' and brain_url.startswith(path_folder_news) or brain_type == 'News Item':
+                    results3.append(brain)
+                if len(results3) == limit - important:
+                    break
+            return results + results3
         else:
             return results
 
@@ -90,3 +119,9 @@ class AddForm(base.AddForm):
 
         def create(self, data):
             return Assignment(count=data.get('count', 5), showdata=data.get('showdata', True))
+
+
+class EditForm(base.EditForm):
+    form_fields = form.Fields(INewsPortlet)
+    label = _(u"Edit News Portlet")
+    description = _(u"This portlet displays recent News Items.")

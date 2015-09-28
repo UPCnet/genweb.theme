@@ -84,7 +84,7 @@
 .icon-refresh            { background-position: -240px -24px; }
 .icon-list-alt           { background-position: -264px -24px; }
 .icon-lock, .icon-workflow-transition-restrict               { background-position: -287px -24px; } // 1px off
-.icon-flag               { background-position: -312px -24px; }
+.icon-flag, .icon-banner               { background-position: -312px -24px; }
 .icon-headphones         { background-position: -336px -24px; }
 .icon-volume-off         { background-position: -360px -24px; }
 .icon-volume-down        { background-position: -384px -24px; }
@@ -206,7 +206,7 @@
 .icon-link                    { background-position: -72px  -169px; }
 .icon-iframe                  { background-position: -96px  -169px; }
 .icon-desktop                 { background-position: -120px -169px; }
-.icon-logosfooter             { background-position: -144px -169px; }
+.icon-logosfooter, .icon-logos_footer             { background-position: -144px -169px; }
 .icon-file                    { background-position: -168px -169px; }
 .icon-paste, .icon-plone-contentmenu-actions-paste                   { background-position: -192px -168px; }
 .icon-collage                 { background-position: -216px -169px; }
@@ -240,8 +240,10 @@
 .icon-edit-image              { background-position: -192px -192px; }
 .icon-navigation, .icon-workflow-transition-policy              { background-position: -216px -192px; }
 .icon-content-view,
-.icon-plone-contentmenu-display-folder_full_view,
-.icon-folder-folder_full_view            { background-position: -240px -192px; }
+.icon-folder-folder_full_view,
+.icon-plone-contentmenu-display-folder_full_view  { background-position: -265px -24px; }
+.icon-folder-folder_index_view, 
+.icon-plone-contentmenu-display-folder_index_view { background-position: -240px -192px; }
 .icon-genweb                  { background-position: -264px -192px; }
 .icon-captcha, .icon-formcaptchafield                 { background-position: -288px -192px; }
 .icon-users                   { background-position: -312px -192px; }

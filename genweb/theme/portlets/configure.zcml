@@ -54,6 +54,24 @@
      assignment=".news.Assignment"
      renderer=".news.Renderer"
      addview=".news.AddForm"
+     editview=".news.EditForm"
+     />
+
+     <plone:portlet
+     name="genweb.portlets.fullnews"
+     interface=".fullnews.IFullNewsPortlet"
+     assignment=".fullnews.Assignment"
+     renderer=".fullnews.Renderer"
+     addview=".fullnews.AddForm"
+     editview=".fullnews.EditForm"
+     />
+
+     <plone:portlet
+     name="genweb.portlets.upcnews"
+     interface=".upcnews.IUPCNewsPortlet"
+     assignment=".upcnews.Assignment"
+     renderer=".upcnews.Renderer"
+     addview=".upcnews.AddForm"
      />
 
 </configure>

@@ -7,12 +7,14 @@
 // -----------------
 //Recordem $navbarCollapseWidth:             799px !default;
 
-
+// canvi de 979 a 768 perquè el menú es mantigui horitzontal enlloc de botó en tablet landscape
 
 @media only screen and (max-width: 979px) and (orientation: portrait),
-       only screen and (max-width: 979px) and (orientation: landscape) {
+       only screen and (max-width: 768px) and (orientation: landscape) {
 
-   
+  #titol-menu-1 {display:block !important;}
+  #eines-menu {display:block !important;} 
+
   // UNFIX THE TOPBAR
   // ----------------
   // Remove any padding from the body

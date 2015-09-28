@@ -40,7 +40,8 @@
                   use_external python:auth and external_login_url and not external_login_iframe;
                   target request/target|nothing;
                   target python:test(target in ('_parent', '_top', '_blank', '_self'), target, None);
-                  ztu modules/ZTUtils;">
+                  ztu modules/ZTUtils;
+                  is_ldap_upc_site context/@@genweb.utils/is_ldap_upc_site">
 
         <div class="alert alert-error" role="alert"
              id="enable_cookies_message"
@@ -140,7 +141,8 @@
                            i18n:domain="plone"
                            i18n:translate="label_login_name">Username</label>
                     <div class="controls">
-                      <input type="text" id="inputEmail" placeholder="nom.usuari"
+                      <input type="text" id="inputEmail" 
+                             i18n:attributes="placeholder label_user_name"
                              tal:attributes="name ac_name;
                                              value login_name;">
                       <span class="help-inline"
@@ -155,7 +157,8 @@
                            i18n:domain="plone"
                            i18n:translate="label_password">Password</label>
                     <div class="controls">
-                      <input type="password" id="inputPassword" placeholder="contrasenya"
+                      <input type="password" id="inputPassword" 
+                             i18n:attributes="placeholder label_password"
                              tal:attributes="name ac_password">
                       <span class="help-inline"
                             tal:condition="error"
@@ -175,7 +178,7 @@
                          i18n:translate="genweb-si_heu_oblidat_la_contrasenya">
                           If you have forgotten your password,
                           <tal:recuperarla i18n:name="click_here">
-                            <a tal:attributes="href string:${portal_url}/canvidecontrasenya"
+                            <a tal:attributes="href python:'http://www.upcnet.es/CanviContrasenyaUPC' if is_ldap_upc_site else '{}/@@change-password'.format(portal_url)"
                                i18n:translate="genweb-per_recuperarla">
                                 click here to retrieve it
                             </a>

@@ -1,6 +1,6 @@
 
 a:hover, a {
-	@include transition(color .5s ease-out);	
+	@include transition(color .5s ease-out);
 }
 .nav a:hover {
 	@include transition(background-color .2s ease-out);

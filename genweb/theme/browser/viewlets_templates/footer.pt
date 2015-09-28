@@ -1,23 +1,41 @@
 <footer id="peu" role="contentinfo"
-        tal:define="dades context/@@genweb.utils/getDadesUnitat"
+        tal:define="portal_url context/@@plone_portal_state/portal_url;
+                    plone_view context/@@plone;
+                    view nocall:view | nocall: plone_view;
+                    dades context/@@genweb.utils/getDadesUnitat;
+                    cookies viewlet/idioma_cookies;"
         i18n:domain="genweb">
+
   <div class="container">
+    <div id="cookies">
+        <tal:msg i18n:translate="cookie_policy_this_site">
+        Aquest web utilitza cookies pròpies per oferir-li una millor experiència i servei. En continuar amb la navegació entenem que accepta la nostra
+        </tal:msg>
+        <a tal:attributes="href cookies" i18n:translate="cookie_policy" target="_blank">política de cookies</a>.
+    </div> 
     <div class="row-fluid">
       <div class="span8">
-        <p>&copy;
+        <p>
           <a href="http://www.upc.edu" target="_blank">
             <abbr rel="tooltip" data-placement="top" title="Universitat Politècnica de Catalunya · BarcelonaTech">UPC</abbr>
-            <img class="img_blank" src="/++genweb++static/images/blank_blau.png"
-                 i18n:attributes="alt obrir_link_finestra_nova"></a>. <tal:signatura
-              content="python:getattr(viewlet.genweb_config(), 'signatura_unitat_%s' % viewlet.pref_lang(), '')">
+            <img class="img_blank" src="++genweb++static/images/blank_blau.png"
+                 i18n:attributes="alt obrir_link_finestra_nova">
+          </a>.
+          <tal:signatura content="python:getattr(viewlet.genweb_config(), 'signatura_unitat_%s' % viewlet.pref_lang(), '')">
                 Servei de Comunicació i Promoció
-            </tal:signatura>
+          </tal:signatura>
         </p>
         <address tal:condition="python:getattr(viewlet.genweb_config(), 'contacte_al_peu', False)">
           <p tal:condition="python:dades and not dades.get('error', False)">
-            <tal:adreca content="dades/adreca_sencera | nothing">
-              Edifici Til·lers. Jordi Girona, 31. 08011 Barcelona
-            </tal:adreca> -
+            <tal:adreca content="dades/adreca | nothing">
+              Edifici Til·lers. Jordi Girona, 31.
+            </tal:adreca>.
+            <tal:codi content="dades/codi_postal | nothing">
+                08034
+            </tal:codi>
+            <tal:localitat content="dades/localitat | nothing">
+              Barcelona
+            </tal:localitat> -
             <abbr rel="tooltip" data-placement="top" title="Telèfon">
               Tel.</abbr>:
             <tal:tel content="dades/telefon | nothing">
@@ -27,49 +45,72 @@
         </address>
       </div>
       <div class="span4" role="complementary" aria-labelledby="titol-sobre-el-web">
-        <h2 class="goout" id="titol-sobre-el-web"> Sobre el web </h2>
+        <h2 class="goout" id="titol-sobre-el-web" 
+          i18n:translate="label_about"> Sobre el web </h2>
         <ul class="pull-right sobreElWeb" role="menu"
             tal:define="link viewlet/getLinksPeu" >
           <li role="menuitem">
-            <a href="#"
-               tal:attributes="href link/rss">
-              <abbr rel="tooltip" data-placement="top" title="Really Simple Sindication"
-                    i18n:translate="genweb-rss">
-                      RSS
-              </abbr>
-            </a>
-          </li>
-          <li role="menuitem">
-            <a href="#" accesskey="8"
-               tal:attributes="href link/about"
-               i18n:translate="genweb-sobre_aquest_web">
-                Sobre aquest web
-            </a>
-          </li>
-          <li role="menuitem">
-            <a href="#" accesskey="0"
-               tal:attributes="href link/accessibility"
+            <a href="#" accesskey="7"
+               tal:attributes="href string:${portal_url}/${link/accessibility}"
                i18n:translate="genweb-accessibility">
                 Accessibilitat
             </a>
           </li>
+          <li role="menuitem">
+            <a href="#" target="_blank"
+               tal:attributes="href link/disclaimer"
+               i18n:translate="genweb-disclaimer">
+                Disclaimer
+            </a>
+          </li>
           <li role="menuitem" class="amunt">
-            <a rel="tooltip" data-placement="top" title="Inici de la pàgina"
-               tal:attributes="href string:${viewlet/portal_url}/#portal-header">
-              <img src="/++genweb++static/images/amunt.png" alt="Inici de la pàgina">
+            <a rel="tooltip" data-placement="top"
+               tal:attributes="href python:viewlet.get_go_to_top_link(template, view)"
+               i18n:attributes="title inici_page;alt inici_page;">
+              <img src="++genweb++static/images/amunt.png">
             </a>
           </li>
         </ul>
       </div>
     </div>
+    <div tal:condition="viewlet/checkIsAdmin"
+         class="extraInfo" 
+         style="background-color: #f2dede;
+                color: #a94442;
+                text-align: right;
+                font-size: 12px;
+                border: 1px solid #ebccd1;
+                padding: 15px;">
+      <div style="text-align: left;">
+        This box with extra information is only viewed by managers.
+      </div>
+      <div style="text-align: right;" tal:define="data viewlet/serverInfo">
+        Servername: 
+        <span style="font-weight: bold;" tal:content="data/Hostname"></span>
+        &nbsp; IP: 
+        <span style="font-weight: bold;" tal:content="data/IP"></span>
+        &nbsp; Port: 
+        <span style="font-weight: bold;" tal:content="data/Port"></span>
+        &nbsp; Plone version: 
+        <span style="font-weight: bold;" tal:content="data/Plone"></span>
+        &nbsp; Zope version: 
+        <span style="font-weight: bold;" tal:content="data/Zope"></span> 
+        &nbsp;
+        <span style="font-weight: bold;" tal:content="data/Debug"></span>
+      </div>
+    </div>
+    <br/>
   </div>
+
+
+
 </footer>
 
 <!--[if !IE]> -->
 <footer id="canvia-vista" role="complementary">
   <p>
-    <a class="reView" data-defaultText="Versi&oacute; m&ograve;bil" data-coreText="Versi&oacute; d&apos;escriptori" href="javascript:void(0)">
-      Versi&oacute; d&apos;escriptori
+    <a class="reView" data-defaultText="Versió móbil" data-coreText="Versió d'escriptori" href="javascript:void(0)">
+      Versió d'escriptori
     </a>
   </p>
 </footer>
