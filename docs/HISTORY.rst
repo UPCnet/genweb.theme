@@ -1,11 +1,17 @@
 Changelog
 =========
 
-1.62 (unreleased)
+1.62 (2015-09-29)
 -----------------
 
-- Nothing changed yet.
-
+* Fix config.json path in Grunt [Victor Fernandez de Alba]
+* Change Title viewlet to genweb.upc [Victor Fernandez de Alba]
+* Delete unrestricted in news search [hanirok]
+* afegir height a taules firefox [Alberto Duran]
+* afegir height a taules firefox [Alberto Duran]
+* image and link settings are show on the right [Alberto Duran]
+* Change message contact message sent [hanirok]
+* Select contact email [hanirok]
 
 1.61 (2015-09-08)
 -----------------
