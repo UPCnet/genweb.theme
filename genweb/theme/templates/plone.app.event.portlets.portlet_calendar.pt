@@ -68,9 +68,10 @@
                               (prev_month and ' cal_prev_month' or ''),
                               (events and ' cal_has_events' or ''))">
                     <a href=""
+                      rel="popover" data-placement="top" data-html="True"
                       tal:omit-tag="not:events"
                       tal:attributes="href python:view.date_events_url(day['date_string']);
-                                      title day/events_string;"
+                                      data-content day/events_string;"
                       tal:content="day/day">31</a>
                 </td>
               </tal:block>

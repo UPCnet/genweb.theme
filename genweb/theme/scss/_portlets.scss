@@ -237,6 +237,7 @@ h2.title-inverse {
       font-weight: bold;
       text-shadow:0 -1px #06a;
       & a {color: #fff;}
+      & div.popover-content a {color: #08c;}
     }
     & td.today { font-weight: bold; color:#000; }
 
@@ -246,6 +247,7 @@ h2.title-inverse {
     }
   }
 }
+
 
 // Sistema
 #portlet-prefs {@include box-shadow(none);}

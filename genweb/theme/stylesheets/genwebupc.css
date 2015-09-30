@@ -12177,6 +12177,7 @@ h2.title-inverse i {
 .portletCalendar .ploneCalendar td.cal_has_events a {
   color: #fff;
 }
+
 /* line 241, ../scss/_portlets.scss */
 .portletCalendar .ploneCalendar td.today {
   font-weight: bold;
