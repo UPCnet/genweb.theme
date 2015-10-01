@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.64 (unreleased)
+1.64 (2015-10-01)
 -----------------
 
-- Nothing changed yet.
-
+* Fix portlet fullnews [Victor Fernandez de Alba]
 
 1.63 (2015-10-01)
 -----------------
