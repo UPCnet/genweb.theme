@@ -9,14 +9,11 @@ from plone.memoize.instance import memoize
 from plone.portlets.interfaces import IPortletDataProvider
 
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-# from Products.CMFPlone import PloneMessageFactory as _
 from genweb.core import GenwebMessageFactory as _
 from Products.CMFCore.utils import getToolByName
 
 from genweb.core.interfaces import INewsFolder
 from genweb.core.utils import pref_lang
-
-from plone.app.portlets.portlets.news import Renderer as news_renderer
 
 
 class IFullNewsPortlet(IPortletDataProvider):
@@ -51,15 +48,18 @@ class Assignment (base.Assignment):
         return _(u"Full News")
 
 
-class Renderer(news_renderer):
+class Renderer(base.Renderer):
     render = ViewPageTemplateFile('templates/fullnews.pt')
+
+    def published_news_items(self):
+        return self._data()
 
     def mostraData(self):
         return self.data.showdata
 
     def all_news_link(self):
         pc = api.portal.get_tool('portal_catalog')
-        news_folder = pc.SearchResults(object_provides=INewsFolder.__identifier__,
+        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__,
                                        Language=pref_lang())
 
         if news_folder:
@@ -69,7 +69,7 @@ class Renderer(news_renderer):
 
     def rss_news_link(self):
         pc = api.portal.get_tool('portal_catalog')
-        news_folder = pc.SearchResults(object_provides=INewsFolder.__identifier__,
+        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__,
                                        Language=pref_lang())
 
         if news_folder:
