@@ -1,11 +1,14 @@
 Changelog
 =========
 
-1.63 (unreleased)
+1.63 (2015-10-01)
 -----------------
 
-- Nothing changed yet.
-
+* Dont use json yet [hanirok]
+* camp data dels formularis en format dia/mes/any [Alberto Duran]
+* add js modified to show popover in all month on calendar portlet [Paco Gregori]
+* calendar portlet popover show in all month [Paco Gregori]
+* remove white line in tiny: pestanyes caixa [Paco Gregori]
 
 1.62 (2015-09-29)
 -----------------
