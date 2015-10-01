@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="genweb.theme">
+
+    <browser:resource
+        name="plone.app.event.portlet_calendar.js"
+        file="./portlets/portlet_calendar.js"
+        permission="zope.Public"
+        layer="plone.app.event.interfaces.IBrowserLayer"
+        />
+
+</configure>
