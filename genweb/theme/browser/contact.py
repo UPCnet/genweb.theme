@@ -155,22 +155,22 @@ class ContactForm(form.SchemaForm):
         recipient = data['to_address']
         lang = utils.pref_lang()
 
-        registry = getUtility(IRegistry)
-        settings = registry.forInterface(IGenwebControlPanelSettings, check=False)
+        # registry = getUtility(IRegistry)
+        # settings = registry.forInterface(IGenwebControlPanelSettings, check=False)
 
-        obj_json = settings.contact_emails_data
-        contacts = json.loads(obj_json)
-        contacts_list = contacts['contacts']
-        to_address = ""
-        to_name = ""
+        # obj_json = settings.contact_emails_data
+        # contacts = json.loads(obj_json)
+        # contacts_list = contacts['contacts']
+        # to_address = ""
+        # to_name = ""
 
-        for contact in contacts_list:
-            if contact['displayname'] == recipient and contact['language'].encode('ascii', errors='ignore') == lang:
-                to_address = contact['email'].encode('ascii', errors='ignore')
-                to_name = contact['displayname'].encode('ascii', errors='ignore')
-        if recipient == portal.getProperty('email_from_name'):
-            to_address = portal.getProperty('email_from_address')
-            to_name = portal.getProperty('email_from_name')
+        # for contact in contacts_list:
+        #     if contact['displayname'] == recipient and contact['language'].encode('ascii', errors='ignore') == lang:
+        #         to_address = contact['email'].encode('ascii', errors='ignore')
+        #         to_name = contact['displayname'].encode('ascii', errors='ignore')
+        # if recipient == portal.getProperty('email_from_name'):
+        to_address = portal.getProperty('email_from_address')
+        to_name = portal.getProperty('email_from_name')
 
         source = "%s <%s>" % (escape(safe_unicode(data['nombre'])), escape(safe_unicode(data['from_address'])))
         subject = "[Formulari Contacte] %s" % (escape(safe_unicode(data['asunto'])))
