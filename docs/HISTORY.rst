@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.65 (unreleased)
+1.65 (2015-10-06)
 -----------------
 
-- Nothing changed yet.
-
+* opcions tiny encuadrades [Alberto Duran]
+* New contact dependent of the datagridfield control panel settings [Victor Fernandez de Alba]
 
 1.64 (2015-10-01)
 -----------------
