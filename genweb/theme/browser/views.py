@@ -706,14 +706,6 @@ class PastEventsCollectionView(grok.View):
         return results
 
 
-class ContactFeedback(grok.View):
-    grok.name('contact_feedback')
-    grok.context(INavigationRoot)
-    grok.template("contact_feedback")
-    grok.require('zope2.View')
-    grok.layer(IGenwebTheme)
-
-
 class FilteredContentsSearchView(grok.View):
     """ Filtered content search view for every folder. """
     grok.name('filtered_contents_search_view')
