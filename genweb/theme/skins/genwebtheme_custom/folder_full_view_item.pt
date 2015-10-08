@@ -30,8 +30,6 @@
                      rendering_error python:[];
                      ">
 
-        <div tal:replace="structure provider:plone.abovecontenttitle"  />
-
         <h2 class="liniaDalt clearfix">
             <a href="#" class="summary url" tal:content="context/Title"
                tal:attributes="href python:test(item_type in use_view_action, item_url+'/view', item_url);">
@@ -62,8 +60,6 @@
         <tal:block tal:condition="rendering_error">
             <!-- Error rendering item macro -->
         </tal:block>
-
-
 
     </div>
 
