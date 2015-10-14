@@ -7,7 +7,13 @@
         var elem_data = elem.data();
         var portlethash = pw.attr('id');
         portlethash = portlethash.substring(15, portlethash.length);
-        url = portal_url +
+        var comnunity = $('#box_community')
+        var is_community = comnunity.length > 0
+        var base_url = portal_url + '/'
+        if (is_community)
+            base_url = $('head base').attr('href')
+
+        url = base_url +
               '/@@render-portlet?portlethash=' + portlethash +
               '&year=' + elem_data.year +
               '&month=' + elem_data.month;
