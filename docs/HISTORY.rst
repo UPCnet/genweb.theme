@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.66 (unreleased)
+1.66 (2015-10-14)
 -----------------
 
-- Nothing changed yet.
-
+* Solucionar calendar en comunidad [Pilar Marinas]
+* no repeteix icona Comparteix a la vista Tot el contingut [Alberto Duran]
 
 1.65 (2015-10-06)
 -----------------
