@@ -97,12 +97,16 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
 
     def show_tools(self):
         portal = self.portal()
-        user_roles_at_root = api.user.get_roles(obj=portal)
+        user_global_roles = api.user.get_roles()
 
-        # If user is Editor, WebMaster or Manager at main root, inconditionally
+        # If user is Editor, WebMaster or Manager globally, inconditionally
         # return True and stop bothering
-        if 'Editor' in user_roles_at_root or 'Manager' in user_roles_at_root or 'WebMaster' in user_roles_at_root:
-            return dict(show=True, show_advanced=True, show_en=True, show_ca=True, show_es=True, show_shared=True)
+        if 'Editor' in user_global_roles or 'Manager' in user_global_roles or 'WebMaster' in user_global_roles:
+            roles = dict(show=True, show_root_sharing=True, show_advanced=True, show_en=True, show_ca=True, show_es=True, show_shared=True)
+            if 'WebMaster' in user_global_roles and 'Manager' not in user_global_roles:
+                # Can't see the show_root_sharing link
+                roles['show_root_sharing'] = False
+            return roles
 
         if getattr(portal, 'ca', False):
             user_roles_at_ca_root = api.user.get_roles(obj=portal['ca'])
@@ -117,7 +121,7 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         else:
             user_roles_at_en_root = []
 
-        menus_to_show = dict(show=False, show_advanced=False, show_en=False, show_ca=False, show_es=False, show_shared=False)
+        menus_to_show = dict(show=False, show_root_sharing=False, show_advanced=False, show_en=False, show_ca=False, show_es=False, show_shared=False)
         if 'Editor' in user_roles_at_ca_root or 'Contributor' in user_roles_at_ca_root:
             menus_to_show['show'] = True
             menus_to_show['show_ca'] = True
