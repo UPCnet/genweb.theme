@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.67 (unreleased)
+1.67 (2015-10-21)
 -----------------
 
-- Nothing changed yet.
-
+* portlet newscollection [Paco Gregori]
+* Show go to sharing root link hidden for non Managers [Victor Fernandez de Alba]
 
 1.66 (2015-10-14)
 -----------------
