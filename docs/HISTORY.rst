@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.68 (unreleased)
+1.68 (2015-10-22)
 -----------------
 
-- Nothing changed yet.
-
+* Fix menu tools [Victor Fernandez de Alba]
 
 1.67 (2015-10-21)
 -----------------
