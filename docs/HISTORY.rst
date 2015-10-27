@@ -1,11 +1,22 @@
 Changelog
 =========
 
-1.67 (unreleased)
+1.69 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+1.68 (2015-10-22)
+-----------------
+
+* Fix menu tools [Victor Fernandez de Alba]
+
+1.67 (2015-10-21)
+-----------------
+
+* portlet newscollection [Paco Gregori]
+* Show go to sharing root link hidden for non Managers [Victor Fernandez de Alba]
 
 1.66 (2015-10-14)
 -----------------
