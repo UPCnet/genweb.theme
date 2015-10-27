@@ -6,12 +6,12 @@
       metal:use-macro="context/main_template/macros/master"
       i18n:domain="plone.app.event">
 
-<head>
+<!--! <head>
   <metal:block fill-slot="top_slot">
       <tal:insert tal:replace="nothing"
                   tal:define="disable_column_one python:request.set('disable_plone.leftcolumn',1);" />
   </metal:block>
-</head>
+</head> -->
 
 <body>
 
@@ -27,7 +27,7 @@
                  toLocalizedTime nocall: context/@@plone/toLocalizedTime;">
 
   <div class="event_listing">
-    <header>
+<!--!     <header>
       <nav tal:define="show_filter python:not (view.is_collection or view.is_topic)">
         <ul class="mode_selector">
           <tal:cond condition="show_filter">
@@ -82,7 +82,7 @@
         </tal:cond>
       </nav>
       <div class="visualClear"></div>
-    </header>
+    </header> -->
 
     <section>
 
@@ -176,6 +176,7 @@
     </section>
 
   </div>
+  <div class="visualClear"></div>
 
   <div metal:use-macro="context/batch_macros/macros/navigation" />
 

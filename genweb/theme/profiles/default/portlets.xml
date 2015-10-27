@@ -87,4 +87,5 @@
   <portlet addview="genweb.portlets.upcnews"
            title="UPCNews"
            i18n:attributes="title"/>
+
 </portlets>

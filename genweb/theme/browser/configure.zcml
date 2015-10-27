@@ -35,4 +35,14 @@
       template="views_templates/folder_index_view.pt"
       layer=".interfaces.IGenwebTheme"
       />
+
+    <browser:page
+        for="*"
+        name="news_listing"
+        class=".news_listing.NewsListing"
+        template="views_templates/news_listing.pt"
+        permission="zope2.View"
+        layer=".interfaces.IGenwebTheme"
+        />
+
 </configure>

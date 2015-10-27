@@ -12,7 +12,7 @@
         Aquest web utilitza cookies pròpies per oferir-li una millor experiència i servei. En continuar amb la navegació entenem que accepta la nostra
         </tal:msg>
         <a tal:attributes="href cookies" i18n:translate="cookie_policy" target="_blank">política de cookies</a>.
-    </div> 
+    </div>
     <div class="row-fluid">
       <div class="span8">
         <p>
@@ -45,7 +45,7 @@
         </address>
       </div>
       <div class="span4" role="complementary" aria-labelledby="titol-sobre-el-web">
-        <h2 class="goout" id="titol-sobre-el-web" 
+        <h2 class="goout" id="titol-sobre-el-web"
           i18n:translate="label_about"> Sobre el web </h2>
         <ul class="pull-right sobreElWeb" role="menu"
             tal:define="link viewlet/getLinksPeu" >
@@ -73,8 +73,9 @@
         </ul>
       </div>
     </div>
-    <div tal:condition="viewlet/checkIsAdmin"
-         class="extraInfo" 
+<!--! Uncomment if required  -->
+<!--!     <div tal:condition="viewlet/checkIsAdmin"
+         class="extraInfo"
          style="background-color: #f2dede;
                 color: #a94442;
                 text-align: right;
@@ -85,21 +86,21 @@
         This box with extra information is only viewed by managers.
       </div>
       <div style="text-align: right;" tal:define="data viewlet/serverInfo">
-        Servername: 
+        Servername:
         <span style="font-weight: bold;" tal:content="data/Hostname"></span>
-        &nbsp; IP: 
+        &nbsp; IP:
         <span style="font-weight: bold;" tal:content="data/IP"></span>
-        &nbsp; Port: 
+        &nbsp; Port:
         <span style="font-weight: bold;" tal:content="data/Port"></span>
-        &nbsp; Plone version: 
+        &nbsp; Plone version:
         <span style="font-weight: bold;" tal:content="data/Plone"></span>
-        &nbsp; Zope version: 
-        <span style="font-weight: bold;" tal:content="data/Zope"></span> 
+        &nbsp; Zope version:
+        <span style="font-weight: bold;" tal:content="data/Zope"></span>
         &nbsp;
         <span style="font-weight: bold;" tal:content="data/Debug"></span>
       </div>
     </div>
-    <br/>
+    <br/>-->
   </div>
 
 

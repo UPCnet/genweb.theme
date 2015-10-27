@@ -74,4 +74,13 @@
      addview=".upcnews.AddForm"
      />
 
+    <plone:portlet
+     name="genweb.portlets.news_events_listing"
+     interface=".news_events_listing.INewsEventsListingPortlet"
+     assignment=".news_events_listing.Assignment"
+     renderer=".news_events_listing.Renderer"
+     addview=".news_events_listing.AddForm"
+     editview=".news_events_listing.EditForm"
+     />
+
 </configure>
