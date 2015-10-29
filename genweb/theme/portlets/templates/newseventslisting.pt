@@ -9,20 +9,20 @@
 <tal:events condition="not:is_news">
   <div class="portlet portlet-noticies" role="complementary">
     <ul class="mode_selector list-portlet">
-      <li class="" tal:attributes="class python:mode=='future' and 'selected' or ''">
-        <a class="mode_future"   href="" tal:attributes="href view/mode_future_url"   i18n:translate="mode_future_link">Upcoming</a>
-      </li>
-      <li class="" tal:attributes="class python:mode=='past' and 'selected' or ''">
+<!--       <li class="" tal:attributes="class python:mode=='past' and 'selected' or ''">
         <a class="mode_past"   href="" tal:attributes="href view/mode_past_url"   i18n:domain="genweb" i18n:translate="mode_past_link">Past</a>
+      </li> -->
+      <li class="" tal:attributes="class python:mode=='day' and 'selected' or ''">
+        <a class="mode_day"   href="" tal:attributes="href view/mode_day_url"   i18n:translate="mode_day_link">Day</a> <input id="event_listing_calendar" type="hidden" />
       </li>
-      <li class="" tal:attributes="class python:mode=='month' and 'selected' or ''">
-        <a class="mode_month" href="" tal:attributes="href view/mode_month_url" i18n:translate="mode_month_link">Month</a>
-      </li>
+<!--       <li class="" tal:attributes="class python:mode=='future' and 'selected' or ''">
+        <a class="mode_future"   href="" tal:attributes="href view/mode_future_url"   i18n:translate="mode_future_link">Upcoming</a>
+      </li> -->
       <li class="" tal:attributes="class python:mode=='week' and 'selected' or ''">
         <a class="mode_week"  href="" tal:attributes="href view/mode_week_url"  i18n:translate="mode_week_link">Week</a>
       </li>
-      <li class="" tal:attributes="class python:mode=='day' and 'selected' or ''">
-        <a class="mode_day"   href="" tal:attributes="href view/mode_day_url"   i18n:translate="mode_day_link">Day</a> <input id="event_listing_calendar" type="hidden" />
+      <li class="" tal:attributes="class python:mode=='month' and 'selected' or ''">
+        <a class="mode_month" href="" tal:attributes="href view/mode_month_url" i18n:translate="mode_month_link">Month</a>
       </li>
       <li>
         <a class="mode_ical"  href="" tal:attributes="href view/ical_url"
@@ -37,21 +37,21 @@
     <tal:month condition="python:mode=='month'">
     <ul class="sub_nav list-portlet">
       <li><a class="prev_month" href="" tal:attributes="href view/prev_month_url" i18n:translate="prev_month_link">Previous Month</a></li>
-      <li><a class="this_month" href="" tal:attributes="href view/this_month_url" i18n:translate="this_month_link">This Month</a></li>
-      <li><a class="next_month" href="" tal:attributes="href view/next_month_url" i18n:translate="next_month_link">Next Month</a></li>
+<!--       <li><a class="this_month" href="" tal:attributes="href view/this_month_url" i18n:translate="this_month_link">This Month</a></li>
+ -->      <li><a class="next_month" href="" tal:attributes="href view/next_month_url" i18n:translate="next_month_link">Next Month</a></li>
     </ul>
     </tal:month>
     <tal:week condition="python:mode=='week'">
     <ul class="sub_nav list-portlet">
       <li><a class="prev_week"  href="" tal:attributes="href view/prev_week_url"  i18n:translate="prev_week_link">Previous Week</a></li>
-      <li><a class="this_week"  href="" tal:attributes="href view/this_week_url"  i18n:translate="this_week_link">This Week</a></li>
+<!--       <li><a class="this_week"  href="" tal:attributes="href view/this_week_url"  i18n:translate="this_week_link">This Week</a></li> -->
       <li><a class="next_week"  href="" tal:attributes="href view/next_week_url"  i18n:translate="next_week_link">Next Week</a></li>
     </ul>
     </tal:week>
     <tal:day condition="python:mode in ('day', 'today')">
     <ul class="sub_nav list-portlet">
       <li><a class="prev_day"   href="" tal:attributes="href view/prev_day_url"   i18n:translate="prev_day_link">Previous Day</a></li>
-      <li><a class="today"      href="" tal:attributes="href view/today_url"      i18n:translate="today_link">Today</a></li>
+<!--       <li><a class="today"      href="" tal:attributes="href view/today_url"      i18n:translate="today_link">Today</a></li> -->
       <li><a class="next_day"   href="" tal:attributes="href view/next_day_url"   i18n:translate="next_day_link">Next Day</a></li>
     </ul>
     </tal:day>
