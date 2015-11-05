@@ -1,11 +1,13 @@
 Changelog
 =========
 
-1.69 (unreleased)
+1.69 (2015-11-05)
 -----------------
 
-- Nothing changed yet.
-
+* Portlet navegacion eventos [hanirok]
+* Reorder new events portlet [hanirok]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Victor Fernandez de Alba]
+* Add portlet newsevents [Victor Fernandez de Alba]
 
 1.68 (2015-10-22)
 -----------------
