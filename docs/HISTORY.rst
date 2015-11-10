@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.70 (unreleased)
+1.70 (2015-11-10)
 -----------------
 
-- Nothing changed yet.
-
+* Reorder events listing links [hanirok]
 
 1.69 (2015-11-05)
 -----------------
