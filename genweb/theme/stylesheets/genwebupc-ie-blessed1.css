@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*!
+/*
  * Bootstrap v2.1.0
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -1314,11 +1314,9 @@ select:focus:required:invalid {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0; }
-  .input-append .active, .input-append .selected, .input-append .contentViews .selected:hover, .contentViews .input-append .selected:hover,
+  .input-append .active, .input-append .selected,
   .input-prepend .active,
-  .input-prepend .selected,
-  .input-prepend .contentViews .selected:hover,
-  .contentViews .input-prepend .selected:hover {
+  .input-prepend .selected {
     background-color: #bce673;
     border-color: #72a31d; }
 
@@ -1539,7 +1537,7 @@ legend + .control-group {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('++genweb++static/images/gh.png?1426249015');
+  background-image: url('++genweb++static/images/gh.png?1428934242');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px; }
@@ -1553,7 +1551,6 @@ legend + .control-group {
 .nav > .selected > a > [class^="icon-"],
 .configlets > .selected > a > [class^="icon-"],
 .formTabs > .selected > a > [class^="icon-"],
-.contentViews > .selected > a > [class^="icon-"],
 .nav > .active > a > #category.documentByLine:before,
 .contentViews > .active > a > #category.documentByLine:before,
 .configlets > .active > a > #category.documentByLine:before,
@@ -1561,7 +1558,6 @@ legend + .control-group {
 .nav > .selected > a > #category.documentByLine:before,
 .configlets > .selected > a > #category.documentByLine:before,
 .formTabs > .selected > a > #category.documentByLine:before,
-.contentViews > .selected > a > #category.documentByLine:before,
 .nav > .active > a > .tileFooter:before,
 .contentViews > .active > a > .tileFooter:before,
 .configlets > .active > a > .tileFooter:before,
@@ -1569,7 +1565,6 @@ legend + .control-group {
 .nav > .selected > a > .tileFooter:before,
 .configlets > .selected > a > .tileFooter:before,
 .formTabs > .selected > a > .tileFooter:before,
-.contentViews > .selected > a > .tileFooter:before,
 .nav > .active > a > [class*=" icon-"],
 .contentViews > .active > a > [class*=" icon-"],
 .configlets > .active > a > [class*=" icon-"],
@@ -1577,7 +1572,6 @@ legend + .control-group {
 .nav > .selected > a > [class*=" icon-"],
 .configlets > .selected > a > [class*=" icon-"],
 .formTabs > .selected > a > [class*=" icon-"],
-.contentViews > .selected > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],
 .dropdown-menu > li > a:hover > #category.documentByLine:before,
 .dropdown-menu > li > a:hover > .tileFooter:before,
@@ -1590,10 +1584,10 @@ legend + .control-group {
 .dropdown-menu > .selected > a > .tileFooter:before,
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-menu > .selected > a > [class*=" icon-"] {
-  background-image: url('++genweb++static/images/gh-w.png?1426249015'); }
+  background-image: url('++genweb++static/images/gh-w.png?1428934242'); }
 
 .icon-color {
-  background-image: url('++genweb++static/images/gh-c.png?1426249015'); }
+  background-image: url('++genweb++static/images/gh-c.png?1428934242'); }
 
 .icon-glass {
   background-position: 0      0; }
@@ -2158,7 +2152,7 @@ legend + .control-group {
   background-position: -456px -192px; }
 
 .large-icon {
-  background-image: url('++genweb++static/images/gh-150.png?1426249015');
+  background-image: url('++genweb++static/images/gh-150.png?1428934242');
   width: 21px;
   height: 21px;
   margin-top: -1px;
@@ -2177,7 +2171,7 @@ legend + .control-group {
     background-position: -504px -252px; }
 
 .large-icon.icon-white {
-  background-image: url('++genweb++static/images/gh-150-w.png?1426249015'); }
+  background-image: url('++genweb++static/images/gh-150-w.png?1428934242'); }
 
 /*extends icones*/
 .dropup,
@@ -2264,7 +2258,7 @@ legend + .control-group {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078bb', endColorstr='#0067a1', GradientType=0); }
 
-.dropdown-menu .active > a, .dropdown-menu .selected > a, .dropdown-menu .contentViews .selected:hover > a, .contentViews .dropdown-menu .selected:hover > a,
+.dropdown-menu .active > a, .dropdown-menu .selected > a,
 .dropdown-menu .active > a:hover,
 .dropdown-menu .selected > a:hover {
   color: white;
@@ -2434,11 +2428,11 @@ button.close {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
-  .btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
+  .btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
     color: #333333;
     background-color: #e6e6e6;
     *background-color: #d9d9d9; }
-  .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent {
+  .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent {
     background-color: #cccccc \9; }
   .btn:first-child, .standalone:first-child, input[value^="Cancel"]:first-child, [type="submit"]:first-child, .context:first-child, .searchButton:first-child, button.pfg-draft-save:first-child, .link-parent:first-child {
     *margin-left: 0; }
@@ -2460,7 +2454,7 @@ button.close {
     outline: thin dotted #333;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
-  .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
+  .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
     background-color: #d9d9d9;
     background-color: #cccccc \9;
     background-image: none;
@@ -2570,28 +2564,21 @@ button.pfg-draft-save:active .tileFooter:before,
 .btn-block + .btn-block {
   margin-top: 5px; }
 
-.btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover,
+.btn-primary.active, .active.context, .context.selected, .btn-primary.selected,
 .btn-warning.active,
 .btn-warning.selected,
-.contentViews .btn-warning.selected:hover,
 .btn-danger.active,
 .btn-danger.selected,
-.contentViews .btn-danger.selected:hover,
 .btn-success.active,
 .btn-success.selected,
 button.selected.pfg-draft-save,
-.contentViews .btn-success.selected:hover,
-.contentViews button.selected.pfg-draft-save:hover,
 button.active.pfg-draft-save,
 .btn-info.active,
 .btn-info.selected,
 .selected.link-parent,
-.contentViews .btn-info.selected:hover,
-.contentViews .selected.link-parent:hover,
 .active.link-parent,
 .btn-inverse.active,
-.btn-inverse.selected,
-.contentViews .btn-inverse.selected:hover {
+.btn-inverse.selected {
   color: rgba(255, 255, 255, 0.75); }
 
 .btn, .standalone, input[value^="Cancel"], [type="submit"], .context, .searchButton, button.pfg-draft-save, .link-parent {
@@ -2614,11 +2601,11 @@ button.active.pfg-draft-save,
   *background-color: #005a8d;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
+  .btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
     color: white;
     background-color: #005a8d;
     *background-color: #004a74; }
-  .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .contentViews .btn-primary.selected:hover {
+  .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected {
     background-color: #003a5a \9; }
 
 .btn-warning {
@@ -2637,11 +2624,11 @@ button.active.pfg-draft-save,
   *background-color: #c67605;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected:hover, .btn-warning.disabled, .btn-warning[disabled] {
+  .btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .btn-warning.disabled, .btn-warning[disabled] {
     color: white;
     background-color: #c67605;
     *background-color: #ad6704; }
-  .btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected:hover {
+  .btn-warning:active, .btn-warning.active, .btn-warning.selected {
     background-color: #945904 \9; }
 
 .btn-danger {
@@ -2660,11 +2647,11 @@ button.active.pfg-draft-save,
   *background-color: #a62e1f;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected:hover, .btn-danger.disabled, .btn-danger[disabled] {
+  .btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .btn-danger.disabled, .btn-danger[disabled] {
     color: white;
     background-color: #a62e1f;
     *background-color: #91281b; }
-  .btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected:hover {
+  .btn-danger:active, .btn-danger.active, .btn-danger.selected {
     background-color: #7b2217 \9; }
 
 .btn-success, button.pfg-draft-save {
@@ -2683,11 +2670,11 @@ button.active.pfg-draft-save,
   *background-color: #547815;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
+  .btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
     color: white;
     background-color: #547815;
     *background-color: #456211; }
-  .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save {
+  .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, button.active.pfg-draft-save {
     background-color: #354c0e \9; }
 
 .btn-info, .link-parent {
@@ -2706,11 +2693,11 @@ button.active.pfg-draft-save,
   *background-color: #26809a;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
+  .btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
     color: white;
     background-color: #26809a;
     *background-color: #216f86; }
-  .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent {
+  .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .active.link-parent {
     background-color: #1c5e71 \9; }
 
 .btn-inverse {
@@ -2729,11 +2716,11 @@ button.active.pfg-draft-save,
   *background-color: #222222;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected:hover, .btn-inverse.disabled, .btn-inverse[disabled] {
+  .btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .btn-inverse.disabled, .btn-inverse[disabled] {
     color: white;
     background-color: #222222;
     *background-color: #151515; }
-  .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected:hover {
+  .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected {
     background-color: #090909 \9; }
 
 button.btn, button.standalone, button[type="submit"], button.context, button.searchButton, button.pfg-draft-save, button.link-parent,
@@ -3164,7 +3151,7 @@ button.pfg-draft-save .caret,
 .nav-list > li > a {
   padding: 3px 15px; }
 
-.nav-list > .active > a, .nav-list > .selected > a, .contentViews .nav-list > .selected:hover > a,
+.nav-list > .active > a, .nav-list > .selected > a,
 .nav-list > .active > a:hover,
 .nav-list > .selected > a:hover,
 .formTabs > li > a.selected,
@@ -3239,13 +3226,12 @@ button.pfg-draft-save .caret,
   .nav-tabs > li > a:hover, .contentViews > li > a:hover, .configlets > li > a:hover {
     border-color: #f2f2f2 #f2f2f2 #cccccc; }
 
-.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .contentViews > .selected > a, .contentViews .nav-tabs > .selected:hover > a, .contentViews > .selected:hover > a, .contentViews .configlets > .selected:hover > a,
+.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a,
 .nav-tabs > .active > a:hover,
 .contentViews > .active > a:hover,
 .configlets > .active > a:hover,
 .nav-tabs > .selected > a:hover,
-.configlets > .selected > a:hover,
-.contentViews > .selected > a:hover {
+.configlets > .selected > a:hover {
   color: #666666;
   background-color: white;
   background-color: white;
@@ -3269,7 +3255,7 @@ button.pfg-draft-save .caret,
   -moz-border-radius: 5px;
   border-radius: 5px; }
 
-.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a, .contentViews .nav-pills > .selected:hover > a, .contentViews .formTabs > .selected:hover > a,
+.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a,
 .nav-pills > .active > a:hover,
 .formTabs > .active > a:hover,
 .nav-pills > .selected > a:hover,
@@ -3341,15 +3327,15 @@ button.pfg-draft-save .caret,
 .nav-tabs .dropdown-toggle .caret, .contentViews .dropdown-toggle .caret, .configlets .dropdown-toggle .caret {
   margin-top: 8px; }
 
-.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret {
+.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret {
   border-top-color: #333333;
   border-bottom-color: #333333; }
 
-.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret {
+.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret {
   border-top-color: #666666;
   border-bottom-color: #666666; }
 
-.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover, .contentViews > .dropdown.selected > a:hover {
+.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover {
   cursor: pointer; }
 
 .nav-tabs .open .dropdown-toggle, .contentViews .open .dropdown-toggle, .configlets .open .dropdown-toggle,
@@ -3361,8 +3347,7 @@ button.pfg-draft-save .caret,
 .formTabs > li.dropdown.open.active > a:hover,
 .nav > li.dropdown.open.selected > a:hover,
 .configlets > li.dropdown.open.selected > a:hover,
-.formTabs > li.dropdown.open.selected > a:hover,
-.contentViews > li.dropdown.open.selected > a:hover {
+.formTabs > li.dropdown.open.selected > a:hover {
   color: white;
   background-color: #aaaaaa;
   border-color: #aaaaaa; }
@@ -3375,7 +3360,6 @@ button.pfg-draft-save .caret,
 .nav li.dropdown.open.selected .caret,
 .configlets li.dropdown.open.selected .caret,
 .formTabs li.dropdown.open.selected .caret,
-.contentViews li.dropdown.open.selected .caret,
 .nav li.dropdown.open a:hover .caret,
 .contentViews li.dropdown.open a:hover .caret,
 .configlets li.dropdown.open a:hover .caret,
@@ -3413,10 +3397,9 @@ button.pfg-draft-save .caret,
 .pill-content > .pill-pane {
   display: none; }
 
-.tab-content > .active, .tab-content > .selected, .contentViews .tab-content > .selected:hover,
+.tab-content > .active, .tab-content > .selected,
 .pill-content > .active,
-.pill-content > .selected,
-.contentViews .pill-content > .selected:hover {
+.pill-content > .selected {
   display: block; }
 
 .tabs-below > .nav-tabs, .tabs-below > .contentViews, .tabs-below > .configlets {
@@ -3434,13 +3417,12 @@ button.pfg-draft-save .caret,
     border-bottom-color: transparent;
     border-top-color: #ccc; }
 
-.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .configlets > .selected > a, .tabs-below > .contentViews > .selected > a,
+.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .configlets > .selected > a,
 .tabs-below > .nav-tabs > .active > a:hover,
 .tabs-below > .contentViews > .active > a:hover,
 .tabs-below > .configlets > .active > a:hover,
 .tabs-below > .nav-tabs > .selected > a:hover,
-.tabs-below > .configlets > .selected > a:hover,
-.tabs-below > .contentViews > .selected > a:hover {
+.tabs-below > .configlets > .selected > a:hover {
   border-color: transparent #ccc #ccc #ccc; }
 
 .tabs-left > .nav-tabs > li, .tabs-left > .contentViews > li, .tabs-left > .configlets > li,
@@ -3471,13 +3453,12 @@ button.pfg-draft-save .caret,
 .tabs-left > .nav-tabs > li > a:hover, .tabs-left > .contentViews > li > a:hover, .tabs-left > .configlets > li > a:hover {
   border-color: #f2f2f2 #cccccc #f2f2f2 #f2f2f2; }
 
-.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .selected > a, .tabs-left > .contentViews .selected > a,
+.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .selected > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .contentViews .active > a:hover,
 .tabs-left > .configlets .active > a:hover,
 .tabs-left > .nav-tabs .selected > a:hover,
-.tabs-left > .configlets .selected > a:hover,
-.tabs-left > .contentViews .selected > a:hover {
+.tabs-left > .configlets .selected > a:hover {
   border-color: #ccc transparent #ccc #ccc;
   *border-right-color: white; }
 
@@ -3495,13 +3476,12 @@ button.pfg-draft-save .caret,
 .tabs-right > .nav-tabs > li > a:hover, .tabs-right > .contentViews > li > a:hover, .tabs-right > .configlets > li > a:hover {
   border-color: #f2f2f2 #f2f2f2 #f2f2f2 #cccccc; }
 
-.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .selected > a, .tabs-right > .contentViews .selected > a,
+.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .selected > a,
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .contentViews .active > a:hover,
 .tabs-right > .configlets .active > a:hover,
 .tabs-right > .nav-tabs .selected > a:hover,
-.tabs-right > .configlets .selected > a:hover,
-.tabs-right > .contentViews .selected > a:hover {
+.tabs-right > .configlets .selected > a:hover {
   border-color: #ccc #ccc #ccc transparent;
   *border-left-color: white; }
 
@@ -3729,7 +3709,7 @@ button.pfg-draft-save .caret,
   -moz-box-shadow: inset 0 20px 20px -10px rgba(255, 255, 255, 0.75);
   box-shadow: inset 0 20px 20px -10px rgba(255, 255, 255, 0.75); }
 
-.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a, .navbar .contentViews > .selected > a,
+.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a,
 .navbar .nav > .active > a:hover,
 .navbar .contentViews > .active > a:hover,
 .navbar .configlets > .active > a:hover,
@@ -3737,15 +3717,13 @@ button.pfg-draft-save .caret,
 .navbar .nav > .selected > a:hover,
 .navbar .configlets > .selected > a:hover,
 .navbar .formTabs > .selected > a:hover,
-.navbar .contentViews > .selected > a:hover,
 .navbar .nav > .active > a:focus,
 .navbar .contentViews > .active > a:focus,
 .navbar .configlets > .active > a:focus,
 .navbar .formTabs > .active > a:focus,
 .navbar .nav > .selected > a:focus,
 .navbar .configlets > .selected > a:focus,
-.navbar .formTabs > .selected > a:focus,
-.navbar .contentViews > .selected > a:focus {
+.navbar .formTabs > .selected > a:focus {
   color: #222222;
   text-decoration: none;
   background-color: white;
@@ -3842,15 +3820,13 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle,
-.navbar .contentViews li.dropdown.selected > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle,
 .navbar .formTabs li.dropdown.open.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle,
-.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle,
-.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle {
+.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle {
   background-color: white;
   color: #222222; }
 
@@ -3866,15 +3842,13 @@ button.pfg-draft-save .caret,
 .navbar .nav li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle .caret,
-.navbar .contentViews li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle .caret {
+.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret {
   border-top-color: #222222;
   border-bottom-color: #222222; }
 
@@ -3960,7 +3934,7 @@ button.pfg-draft-save .caret,
   .navbar-inverse .formTabs > li > a:hover {
     background-color: transparent;
     color: #aaaaaa; }
-  .navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a, .navbar-inverse .contentViews .selected > a,
+  .navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a,
   .navbar-inverse .nav .active > a:hover,
   .navbar-inverse .contentViews .active > a:hover,
   .navbar-inverse .configlets .active > a:hover,
@@ -3968,15 +3942,13 @@ button.pfg-draft-save .caret,
   .navbar-inverse .nav .selected > a:hover,
   .navbar-inverse .configlets .selected > a:hover,
   .navbar-inverse .formTabs .selected > a:hover,
-  .navbar-inverse .contentViews .selected > a:hover,
   .navbar-inverse .nav .active > a:focus,
   .navbar-inverse .contentViews .active > a:focus,
   .navbar-inverse .configlets .active > a:focus,
   .navbar-inverse .formTabs .active > a:focus,
   .navbar-inverse .nav .selected > a:focus,
   .navbar-inverse .configlets .selected > a:focus,
-  .navbar-inverse .formTabs .selected > a:focus,
-  .navbar-inverse .contentViews .selected > a:focus {
+  .navbar-inverse .formTabs .selected > a:focus {
     color: #aaaaaa;
     background-color: black; }
   .navbar-inverse .navbar-link {
@@ -3994,15 +3966,13 @@ button.pfg-draft-save .caret,
   .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle,
   .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle,
   .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle,
-  .navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle,
   .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle,
   .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle,
-  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle,
-  .navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle {
+  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle {
     background-color: black;
     color: #aaaaaa; }
   .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret, .navbar-inverse .contentViews li.dropdown > .dropdown-toggle .caret, .navbar-inverse .configlets li.dropdown > .dropdown-toggle .caret, .navbar-inverse .formTabs li.dropdown > .dropdown-toggle .caret {
@@ -4016,15 +3986,13 @@ button.pfg-draft-save .caret,
   .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle .caret,
   .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle .caret,
   .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle .caret,
-  .navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle .caret,
   .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle .caret,
   .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
-  .navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle .caret {
+  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret {
     border-top-color: #aaaaaa;
     border-bottom-color: #aaaaaa; }
   .navbar-inverse .navbar-search .search-query {
@@ -4094,7 +4062,7 @@ button.pfg-draft-save .caret,
     font-size: 61.5384615%;
     position: relative;
     top: -1px; }
-  .breadcrumb .active, .breadcrumb .selected, .breadcrumb .contentViews .selected:hover, .contentViews .breadcrumb .selected:hover, .breadcrumb .active a, .breadcrumb .selected a, .breadcrumb .contentViews .selected:hover a, .contentViews .breadcrumb .selected:hover a {
+  .breadcrumb .active, .breadcrumb .selected, .breadcrumb .active a, .breadcrumb .selected a {
     color: #666666;
     font-weight: bold; }
   .breadcrumb h2 {
@@ -4146,29 +4114,17 @@ button.pfg-draft-save .caret,
 .listingBar .active a,
 .pagination .selected a,
 .listingBar .selected a,
-.pagination .contentViews .selected:hover a,
-.contentViews .pagination .selected:hover a,
-.listingBar .contentViews .selected:hover a,
-.contentViews .listingBar .selected:hover a,
 .pagination .active span,
 .listingBar .active span,
 .pagination .selected span,
-.listingBar .selected span,
-.pagination .contentViews .selected:hover span,
-.contentViews .pagination .selected:hover span,
-.listingBar .contentViews .selected:hover span,
-.contentViews .listingBar .selected:hover span {
+.listingBar .selected span {
   background-color: #f2f2f2; }
 
-.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a, .pagination .contentViews .selected:hover a, .contentViews .pagination .selected:hover a, .listingBar .contentViews .selected:hover a, .contentViews .listingBar .selected:hover a,
+.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a,
 .pagination .active span,
 .listingBar .active span,
 .pagination .selected span,
-.listingBar .selected span,
-.pagination .contentViews .selected:hover span,
-.contentViews .pagination .selected:hover span,
-.listingBar .contentViews .selected:hover span,
-.contentViews .listingBar .selected:hover span {
+.listingBar .selected span {
   color: #666666;
   cursor: default; }
 
@@ -4915,15 +4871,15 @@ button.pfg-draft-save .badge,
 .carousel .item > img {
   display: block;
   line-height: 1; }
-.carousel .active > img, .carousel .selected > img, .carousel .contentViews .selected:hover > img, .contentViews .carousel .selected:hover > img {
+.carousel .active > img, .carousel .selected > img {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px; }
-.carousel .active, .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover,
+.carousel .active, .carousel .selected,
 .carousel .next,
 .carousel .prev {
   display: block; }
-.carousel .active, .carousel .selected, .carousel .contentViews .selected:hover, .contentViews .carousel .selected:hover {
+.carousel .active, .carousel .selected {
   left: 0; }
 .carousel .next,
 .carousel .prev {
@@ -5014,7 +4970,7 @@ button.pfg-draft-save .badge,
     background-color: #ccc;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 5px; }
-  .carousel-indicators .active, .carousel-indicators .selected, .carousel-indicators .contentViews .selected:hover, .contentViews .carousel-indicators .selected:hover {
+  .carousel-indicators .active, .carousel-indicators .selected {
     background-color: #fff; }
 
 .hero-unit {
@@ -5156,7 +5112,7 @@ button.pfg-draft-save .badge,
   .navbar .btn-navbar {
     margin-right: 10px !important; }
     .navbar .btn-navbar i {
-      background-image: url('++genweb++static/images/gh-w.png?1426249015'); }
+      background-image: url('++genweb++static/images/gh-w.png?1428934242'); }
 
   .navbar-fixed-top {
     margin-bottom: 0 !important; }
@@ -5323,7 +5279,7 @@ button.pfg-draft-save .badge,
     box-shadow: 0 0px 0px 0px black inset !important; }
   body:not(.mceContentBody) .nav-tabs > li > a, body:not(.mceContentBody) .contentViews > li > a, body:not(.mceContentBody) .configlets > li > a, body:not(.mceContentBody) .contentViews > li > a, body:not(.mceContentBody) .configlets > li > a {
     border-radius: 4px; }
-  body:not(.mceContentBody) .nav-tabs > .active > a, body:not(.mceContentBody) .contentViews > .active > a, body:not(.mceContentBody) .configlets > .active > a, body:not(.mceContentBody) .nav-tabs > .selected > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .contentViews > .selected > a, body:not(.mceContentBody) .contentViews > .active > a, body:not(.mceContentBody) .contentViews > .selected > a, body:not(.mceContentBody) .configlets > .active > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .nav-tabs > .selected > a, body:not(.mceContentBody) .contentViews > .selected > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .nav-tabs > .active > a:hover, body:not(.mceContentBody) .contentViews > .active > a:hover, body:not(.mceContentBody) .configlets > .active > a:hover, body:not(.mceContentBody) .nav-tabs > .selected > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover, body:not(.mceContentBody) .contentViews > .selected > a:hover, body:not(.mceContentBody) .contentViews > .active > a:hover, body:not(.mceContentBody) .contentViews > .selected > a:hover, body:not(.mceContentBody) .configlets > .active > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover, body:not(.mceContentBody) .nav-tabs > .selected > a:hover, body:not(.mceContentBody) .contentViews > .selected > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover {
+  body:not(.mceContentBody) .nav-tabs > .active > a, body:not(.mceContentBody) .contentViews > .active > a, body:not(.mceContentBody) .configlets > .active > a, body:not(.mceContentBody) .nav-tabs > .selected > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .contentViews > .active > a, body:not(.mceContentBody) .configlets > .active > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .nav-tabs > .selected > a, body:not(.mceContentBody) .contentViews > .selected > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .nav-tabs > .active > a:hover, body:not(.mceContentBody) .contentViews > .active > a:hover, body:not(.mceContentBody) .configlets > .active > a:hover, body:not(.mceContentBody) .nav-tabs > .selected > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover, body:not(.mceContentBody) .contentViews > .active > a:hover, body:not(.mceContentBody) .configlets > .active > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover, body:not(.mceContentBody) .nav-tabs > .selected > a:hover, body:not(.mceContentBody) .contentViews > .selected > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover {
     border-color: #b2b2b2 !important; }
 
   #s2id_cercaCapca {
@@ -5370,7 +5326,7 @@ button.pfg-draft-save .badge,
   #portal-personaltools-wrapper .nav ul, #portal-personaltools-wrapper .contentViews ul, #portal-personaltools-wrapper .configlets ul, #portal-personaltools-wrapper .formTabs ul {
     margin: 0 !important; }
   #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
-    background-image: url('++genweb++static/images/gh-w.png?1426249015'); }
+    background-image: url('++genweb++static/images/gh-w.png?1428934242'); }
   #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
     background: black; }
   #portal-personaltools-wrapper .nav a.btn, #portal-personaltools-wrapper .contentViews a.btn, #portal-personaltools-wrapper .configlets a.btn, #portal-personaltools-wrapper .formTabs a.btn, #portal-personaltools-wrapper .nav a.standalone, #portal-personaltools-wrapper .contentViews a.standalone, #portal-personaltools-wrapper .configlets a.standalone, #portal-personaltools-wrapper .formTabs a.standalone, #portal-personaltools-wrapper .nav a[type="submit"], #portal-personaltools-wrapper .contentViews a[type="submit"], #portal-personaltools-wrapper .configlets a[type="submit"], #portal-personaltools-wrapper .formTabs a[type="submit"], #portal-personaltools-wrapper .nav a.context, #portal-personaltools-wrapper .contentViews a.context, #portal-personaltools-wrapper .configlets a.context, #portal-personaltools-wrapper .formTabs a.context, #portal-personaltools-wrapper .nav a.searchButton, #portal-personaltools-wrapper .contentViews a.searchButton, #portal-personaltools-wrapper .configlets a.searchButton, #portal-personaltools-wrapper .formTabs a.searchButton, #portal-personaltools-wrapper .nav a.link-parent, #portal-personaltools-wrapper .contentViews a.link-parent, #portal-personaltools-wrapper .configlets a.link-parent, #portal-personaltools-wrapper .formTabs a.link-parent, #portal-personaltools-wrapper .nav a.btn:focus, #portal-personaltools-wrapper .contentViews a.btn:focus, #portal-personaltools-wrapper .configlets a.btn:focus, #portal-personaltools-wrapper .formTabs a.btn:focus, #portal-personaltools-wrapper .nav a.standalone:focus, #portal-personaltools-wrapper .contentViews a.standalone:focus, #portal-personaltools-wrapper .configlets a.standalone:focus, #portal-personaltools-wrapper .formTabs a.standalone:focus, #portal-personaltools-wrapper .nav a[type="submit"]:focus, #portal-personaltools-wrapper .contentViews a[type="submit"]:focus, #portal-personaltools-wrapper .configlets a[type="submit"]:focus, #portal-personaltools-wrapper .formTabs a[type="submit"]:focus, #portal-personaltools-wrapper .nav a.context:focus, #portal-personaltools-wrapper .contentViews a.context:focus, #portal-personaltools-wrapper .configlets a.context:focus, #portal-personaltools-wrapper .formTabs a.context:focus, #portal-personaltools-wrapper .nav a.searchButton:focus, #portal-personaltools-wrapper .contentViews a.searchButton:focus, #portal-personaltools-wrapper .configlets a.searchButton:focus, #portal-personaltools-wrapper .formTabs a.searchButton:focus, #portal-personaltools-wrapper .nav a.link-parent:focus, #portal-personaltools-wrapper .contentViews a.link-parent:focus, #portal-personaltools-wrapper .configlets a.link-parent:focus, #portal-personaltools-wrapper .formTabs a.link-parent:focus {

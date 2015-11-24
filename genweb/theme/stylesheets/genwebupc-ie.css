@@ -1,4 +1,4 @@
-@import url('genwebupc-ie-blessed1.css?z=1438253925186');
+@import url('genwebupc-ie-blessed1.css?z=1448348546075');
 
 @media only screen and (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
   .row {
@@ -696,7 +696,7 @@
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
   * .reView {
     display: none !important; } }
-/*!
+/*
  * Genweb UPC v4.0
  *
  * Copyright 2012-2013 UPC
@@ -740,7 +740,7 @@
   background-color: #BD362F; }
 
 .userScreen, .userTablet, .userMobile, .userGenweb {
-  background: url('++genweb++static/images/sprite_usuari.png?1426249015') transparent no-repeat center top;
+  background: url('++genweb++static/images/sprite_usuari.png?1428934242') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em; }
 
@@ -810,7 +810,7 @@
 
 /*ajusta imatges icos en menús per a hovers */
 .dropdown-menu a:hover [class^="icon-"], .dropdown-menu a:hover #category.documentByLine:before, .dropdown-menu a:hover .tileFooter:before, .dropdown-menu a:hover [class*=" icon-"] {
-  background-image: url('++genweb++static/images/gh-w.png?1426249015') !important; }
+  background-image: url('++genweb++static/images/gh-w.png?1428934242') !important; }
 
 #portal-header {
   border-bottom: 1px solid #d7d5d2;
@@ -1035,7 +1035,7 @@
   #canvia-vista p {
     margin: 0 !important; }
   #canvia-vista a {
-    background: url('++genweb++static/images/vistabg.png?1426249015') #666666;
+    background: url('++genweb++static/images/vistabg.png?1428934242') #666666;
     text-align: center;
     -webkit-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
@@ -1159,7 +1159,7 @@
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
     right: 7px;
     top: 8px;
-    background-image: url('++genweb++static/images/gh-w.png?1426249015');
+    background-image: url('++genweb++static/images/gh-w.png?1428934242');
     background-position: -455px -71px;
     background-repeat: no-repeat;
     width: 17px;
@@ -1247,7 +1247,7 @@
           font-size: 44px;
           line-height: 0 !important; }
       .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
-        background-image: url('++genweb++static/images/gh.png?1426249015');
+        background-image: url('++genweb++static/images/gh.png?1428934242');
         background-repeat: no-repeat;
         content: " ";
         display: block;
@@ -1303,7 +1303,7 @@
   background-color: black; }
 
 html * .dropdown-menu a:hover .img_blank {
-  content: url('++genweb++static/images/blank_blanc.png?1426249015');
+  content: url('++genweb++static/images/blank_blanc.png?1428934242');
   width: 10px;
   height: 10px; }
 
@@ -1342,7 +1342,7 @@ html * .dropdown-menu a:hover .img_blank {
   font-weight: bold;
   position: relative; }
 #listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-folder_tabular_view .listing a[class^="contenttype-"]:before, .template-folder_tabular_view .listing a[class*=" contenttype-"]:before, .contenttreeWidget > .navTree a[class^="contenttype-"]:before, .contenttreeWidget > .navTree a[class*=" contenttype-"]:before {
-  background-image: url('++genweb++static/images/gh.png?1426249015');
+  background-image: url('++genweb++static/images/gh.png?1428934242');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -1402,7 +1402,7 @@ dt[class*="contenttype"] + dd {
   margin-left: 20px; }
 
 dt[class*="contenttype"]:before {
-  background-image: url('++genweb++static/images/gh.png?1426249015');
+  background-image: url('++genweb++static/images/gh.png?1428934242');
   background-repeat: no-repeat;
   display: block;
   width: 15px;
@@ -2002,7 +2002,7 @@ html[lang="es"] .box-example:after {
   position: relative; }
   .sheet:before, div.fitxa:before {
     content: "*";
-    content: url('++genweb++static/images/sheet.png?1426249015');
+    content: url('++genweb++static/images/sheet.png?1428934242');
     font-size: 300%;
     position: absolute;
     right: -19px;
@@ -2119,7 +2119,7 @@ ul {
     margin-top: -15px; }
 
 .list-links li:before, .portaltype-packet .estudis .llistatEnllacos li:before {
-  content: url('++genweb++static/images/arrow.png?1426249015');
+  content: url('++genweb++static/images/arrow.png?1428934242');
   margin-left: -15px;
   margin-top: -13px; }
 
@@ -2127,7 +2127,7 @@ ul {
   margin-left: -29px; }
 
 .list-highlighted li:before {
-  content: url('++genweb++static/images/arrow_hl.png?1426249015');
+  content: url('++genweb++static/images/arrow_hl.png?1428934242');
   margin-left: -22px;
   margin-top: -11px; }
 
@@ -2780,7 +2780,7 @@ hr.liniaDalt, hr.tileHeadline {
   display: block;
   width: 14px;
   height: 14px;
-  background: url('++genweb++static/images/gh.png?1426249015'); }
+  background: url('++genweb++static/images/gh.png?1428934242'); }
 
 .mayus {
   text-transform: uppercase; }
@@ -2810,7 +2810,7 @@ a {
   box-shadow: 0 1px 3px #666666; }
 
 .pdf:after, .ppt:after, .xls:after, .doc:after, .down:after, .https:after, .vid:after, .img:after, .txt:after {
-  background: url('++genweb++static/images/gh-c.png?1426249015') no-repeat;
+  background: url('++genweb++static/images/gh-c.png?1428934242') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -2955,7 +2955,7 @@ input[type="file"] {
   font-style: normal;
   font-weight: bold; }
   .customfile-feedback-populated:before {
-    background: url('++genweb++static/images/gh-c.png?1426249015') no-repeat;
+    background: url('++genweb++static/images/gh-c.png?1428934242') no-repeat;
     width: 14px;
     height: 14px;
     display: inline-block;
@@ -3224,7 +3224,7 @@ h2.title-inverse {
   color: white;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3); }
   h2.title-inverse i {
-    background-image: url('++genweb++static/images/gh-w.png?1426249015'); }
+    background-image: url('++genweb++static/images/gh-w.png?1428934242'); }
 
 .portletCalendar .ploneCalendar {
   text-align: center;
@@ -3249,6 +3249,8 @@ h2.title-inverse {
     text-shadow: 0 -1px #06a; }
     .portletCalendar .ploneCalendar td.cal_has_events a {
       color: #fff; }
+    .portletCalendar .ploneCalendar td.cal_has_events div.popover-content a, .portletCalendar .ploneCalendar td.cal_has_events .expandable-content div.inner-content a, .expandable-content .portletCalendar .ploneCalendar td.cal_has_events div.inner-content a {
+      color: #08c; }
   .portletCalendar .ploneCalendar td.today {
     font-weight: bold;
     color: #000; }
@@ -3436,7 +3438,7 @@ iframe {
       width: 14px;
       height: 14px;
       display: inline-block;
-      background: url('++genweb++static/images/gh.png?1426249015') -239px -143px no-repeat;
+      background: url('++genweb++static/images/gh.png?1428934242') -239px -143px no-repeat;
       margin-left: 5px; }
 #portal-sitemap ul {
   -webkit-column-count: 3;
@@ -3535,7 +3537,7 @@ iframe {
     color: #c00; }
   .calendar thead .hilite {
     background: #cef; }
-  .calendar thead .active, .calendar thead .selected, .calendar thead .contentViews .selected:hover, .contentViews .calendar thead .selected:hover {
+  .calendar thead .active, .calendar thead .selected {
     box-shadow: inset 0 0 3px #08c; }
   .calendar tbody {
     background: #fff; }
@@ -3553,7 +3555,7 @@ iframe {
     .calendar tbody td.hilite {
       background: #08c;
       color: white; }
-    .calendar tbody td.active, .calendar tbody td.selected, .calendar tbody .contentViews td.selected:hover, .contentViews .calendar tbody td.selected:hover {
+    .calendar tbody td.active, .calendar tbody td.selected {
       box-shadow: inset 0 0 3px #08c; }
     .calendar tbody td.selected {
       font-weight: bold;
@@ -3575,7 +3577,7 @@ iframe {
     text-align: center; }
   .calendar tfoot .hilite {
     background-color: #cef !important; }
-  .calendar tfoot .active, .calendar tfoot .selected, .calendar tfoot .contentViews .selected:hover, .contentViews .calendar tfoot .selected:hover {
+  .calendar tfoot .active, .calendar tfoot .selected {
     background-color: #08c !important; }
   .calendar .combo {
     position: absolute;
@@ -4130,8 +4132,6 @@ input[name='poll.submit'] {
 
 body.mceContentBody br[data-mce-bogus="1"] {
   display: none; }
-body.mceContentBody #myTab li.active a, body.mceContentBody #myTab li.selected a {
-  border-bottom: 1px solid #fff !important; }
 
 iframe#templatesrc {
   width: 100% !important; }
@@ -4519,7 +4519,7 @@ html {
   #portal-header h1.pull-left {
     height: 46px;
     width: 207px;
-    background: url('++genweb++static/images/logoUPC@2x.png?1426249015') no-repeat;
+    background: url('++genweb++static/images/logoUPC@2x.png?1428934242') no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -4533,23 +4533,23 @@ html {
     background-size: 100%; }
 
   .list-highlighted li {
-    content: url('++genweb++static/images/arrow_hl@2x.png?1426249015'); }
+    content: url('++genweb++static/images/arrow_hl@2x.png?1428934242'); }
 
   .img_blank[src*="blank_"] {
     width: 10px;
     height: 10px; }
 
   .img_blank[src*="blank_blau"] {
-    content: url('++genweb++static/images/blank_blau@2x.png?1426249015'); }
+    content: url('++genweb++static/images/blank_blau@2x.png?1428934242'); }
 
   .img_blank[src*="blank_gris"] {
-    content: url('++genweb++static/images/blank_gris@2x.png?1426249015'); }
+    content: url('++genweb++static/images/blank_gris@2x.png?1428934242'); }
 
   .img_blank[src*="blank_blanc"] {
-    content: url('++genweb++static/images/blank_blanc@2x.png?1426249015'); }
+    content: url('++genweb++static/images/blank_blanc@2x.png?1428934242'); }
 
   .userScreen, .userTablet, .userMobile, .userGenweb {
-    background-image: url('++genweb++static/images/sprite_usuari@2x.png?1426249015');
+    background-image: url('++genweb++static/images/sprite_usuari@2x.png?1428934242');
     -webkit-background-size: 20px 400px;
     -moz-background-size: 20px 400px;
     -o-background-size: 20px 400px;
@@ -4782,7 +4782,7 @@ div[id^="ascrail"] {
   font-size: 17px;
   line-height: 17px; }
 
-.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .contentViews > .selected > a, .contentViews .nav-tabs > .selected:hover > a, .contentViews > .selected:hover > a, .contentViews .configlets > .selected:hover > a, .nav-tabs > .active > a:hover, .contentViews > .active > a:hover, .configlets > .active > a:hover, .nav-tabs > .selected > a:hover, .configlets > .selected > a:hover, .contentViews > .selected > a:hover {
+.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a, .nav-tabs > .active > a:hover, .contentViews > .active > a:hover, .configlets > .active > a:hover, .nav-tabs > .selected > a:hover, .configlets > .selected > a:hover {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
@@ -4927,7 +4927,7 @@ html.lt-ie8 .list-portlet li  {
   font-weight: bold;
   margin-bottom: 1em; }
   .link-parent:before {
-    background: url('++genweb++static/images/gh-w.png?1426249015') no-repeat -290px -95px;
+    background: url('++genweb++static/images/gh-w.png?1428934242') no-repeat -290px -95px;
     content: " ";
     display: inline-block;
     height: 14px;
