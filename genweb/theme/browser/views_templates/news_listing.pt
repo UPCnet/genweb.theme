@@ -11,8 +11,7 @@
                 <tal:def define="batch view/news;
                                  mode request/mode|string:all;
                                  toLocalizedTime nocall: context/@@plone/toLocalizedTime;">
-                    <div class="event_listing">
-                        <section>
+                    <div role="complementary">
                         <ul class="list-portlet">
                             <li tal:repeat="data batch">
                                 <a href="" tal:attributes="href data/getURL">
@@ -38,10 +37,7 @@
                                             New description
                                         </p>
                                     </div>
-                                <div class="visualClear"></div>
-
                              </li>
-                        </section>
                     </div>
                     <div metal:use-macro="context/batch_macros/macros/navigation" />
                 </tal:def>
