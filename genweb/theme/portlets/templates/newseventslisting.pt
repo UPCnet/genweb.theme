@@ -54,7 +54,7 @@
     <div class="portlet portlet-noticies" role="complementary">
       <ul class="mode_selector list-portlet">
         <li>
-          <a href="" tal:attributes="href python: view._news_nav_url()">
+          <a href="" i18n:translate="all_news" tal:attributes="href python: view._news_nav_url()">
             All news
           </a>
         <li  tal:repeat="tag tags">
