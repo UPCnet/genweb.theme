@@ -38,11 +38,6 @@
                                             New description
                                         </p>
                                     </div>
-                                    <ul class="horizontal metadata">
-                                        <li tal:condition="data/Subject" itemprop="eventType" class="category">
-                                            <span tal:repeat="data data/Subject" tal:content="data" />
-                                        </li>
-                                    </ul>
                                 <div class="visualClear"></div>
 
                              </li>
