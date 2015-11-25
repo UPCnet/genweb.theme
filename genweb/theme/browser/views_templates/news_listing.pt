@@ -5,68 +5,51 @@
       lang="en"
       metal:use-macro="context/main_template/macros/master"
       i18n:domain="plone.app.event">
-<body>
+    <body>
 
-<metal:custom_title fill-slot="content-title" tal:define="header view/header_string">
-  <h1 class="documentFirstHeading" tal:content="header/main" tal:condition="header/main" />
-  <h2 tal:content="header/sub" tal:condition="header/sub" />
-</metal:custom_title>
+        <metal:content-core fill-slot="content-core">
+                <tal:def define="batch view/news;
+                                 mode request/mode|string:all;
+                                 toLocalizedTime nocall: context/@@plone/toLocalizedTime;">
+                    <div class="event_listing">
+                        <section>
+                        <ul class="list-portlet">
+                            <li tal:repeat="data batch">
+                                <a href="" tal:attributes="href data/getURL">
+                                    <img tal:condition="python:data.Type=='News Item'"
+                                         tal:condition="data/news_image_filename|nothing"
+                                         tal:attributes="src string:${data/getURL}/@@images/image/tile"
+                                         alt=""
+                                         class="image-noticies" >  <!-- large, preview, mini, thumb, tile, icon -->
+                                </a>
+                                    <strong>
+                                        <a href="" itemprop="url" class="url" tal:attributes="href data/getURL">
+                                            <span itemprop="summary" class="summary" tal:content="data/pretty_title_or_id">Title</span>
+                                        </a>
+                                    </strong>
+                                    <p class="smaller data-noticies">
+                                        <time class="smaller data-noticies"
+                                              tal:content="python:toLocalizedTime(data.EffectiveDate)">
+                                              May 5
+                                        </time>
+                                    </p>
+                                    <div class="content-noticies">
+                                        <p tal:content="data/Description">
+                                            New description
+                                        </p>
+                                    </div>
+                                    <ul class="horizontal metadata">
+                                        <li tal:condition="data/Subject" itemprop="eventType" class="category">
+                                            <span tal:repeat="data data/Subject" tal:content="data" />
+                                        </li>
+                                    </ul>
+                                <div class="visualClear"></div>
 
-<metal:content-core fill-slot="content-core">
-<metal:block define-macro="content-core">
-<tal:def define="batch view/news;
-                 mode request/mode|string:all;
-                 toLocalizedTime nocall: context/@@plone/toLocalizedTime;">
-
-  <div class="event_listing">
-    <section>
-
-    <tal:items repeat="data batch">
-
-      <article itemscope itemtype="http://data-vocabulary.org/Event" class="vevent"
-          tal:define="startf python:view.date_speller(data.Date)">
-
-        <div class="">
-            <span class="cal_wkday" tal:content="python:startf['wkday_abbr'][:2]">Tue</span>
-            <span class="cal_day" tal:content="string:${startf/day}.">15.</span>
-            <span class="cal_month" tal:content="string:${startf/month_abbr}.">Oct.</span>
-        </div>
-
-        <div class="cal_info">
-          <h2><a href="" itemprop="url" class="url" tal:attributes="href data/getURL">
-            <span itemprop="summary" class="summary" tal:content="data/Title">Title</span>
-          </a></h2>
-          <div class="documentByLine">
-            <!-- <tal:date tal:replace="structure python:view.formatted_date(data)"/> -->
-          </div>
-
-          <p itemprop="description" class="description" tal:condition="data/description" tal:content="data/description" />
-
-          <ul class="horizontal metadata">
-
-            <li tal:condition="data/Subject" itemprop="eventType" class="category">
-              <span tal:repeat="data data/Subject" tal:content="data" />
-            </li>
-
-          </ul>
-
-        </div>
-        <div class="visualClear"></div>
-
-      </article>
-
-     </tal:items>
-
-    </section>
-
-  </div>
-  <div class="visualClear"></div>
-
-  <div metal:use-macro="context/batch_macros/macros/navigation" />
-
-</tal:def>
-</metal:block>
-</metal:content-core>
-
-</body>
+                             </li>
+                        </section>
+                    </div>
+                    <div metal:use-macro="context/batch_macros/macros/navigation" />
+                </tal:def>
+        </metal:content-core>
+    </body>
 </html>
