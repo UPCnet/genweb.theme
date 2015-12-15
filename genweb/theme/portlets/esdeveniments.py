@@ -112,7 +112,7 @@ class Renderer(base.Renderer):
 
     def all_events_link(self):
         pc = api.portal.get_tool('portal_catalog')
-        events_folder = pc.searchResults(object_provides=IEventFolder.__identifier__)
+        events_folder = pc.searchResults(object_provides=IEventFolder.__identifier__, Language=pref_lang())
 
         if events_folder:
             return '%s' % events_folder[0].getURL()

@@ -4,7 +4,8 @@
       tal:omit-tag="">
   <div class="portlet portlet-esdeveniments"
          i18n:domain="plone">
-        <h2>Agenda <i class="icon-calendar large-icon pull-right"></i></h2>
+        <h2 i18n:domain="genweb" i18n:translate="genweb-agenda">Agenda 
+            <i class="icon-calendar large-icon pull-right"></i></h2>
         <ul class="unstyled">
             <tal:events tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
                                 DateTime python:modules['DateTime'].DateTime"
