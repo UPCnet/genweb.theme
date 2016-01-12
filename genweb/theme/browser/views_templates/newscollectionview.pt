@@ -19,9 +19,9 @@
                     <div role="complementary">
                         <ul class="list-portlet">
                             <li tal:repeat="obj batch">
-                                <a href="" tal:attributes="href obj/getURL">
-                                    <img tal:condition="python:obj.Type=='News Item'"
-                                         tal:condition="obj/news_image_filename|nothing"
+                                <a href="" tal:attributes="href obj/getURL"
+                                  tal:define="image_filename obj/news_image_filename|nothing">
+                                    <img tal:condition="python:obj.Type=='News Item' and image_filename"
                                          tal:attributes="src string:${obj/getURL}/@@images/image/tile"
                                          alt=""
                                          class="image-noticies" >  <!-- large, preview, mini, thumb, tile, icon -->
