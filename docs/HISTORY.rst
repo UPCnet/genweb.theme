@@ -1,11 +1,21 @@
 Changelog
 =========
 
-1.71 (unreleased)
+1.71 (2016-01-14)
 -----------------
 
-- Nothing changed yet.
-
+* only one tal:condition [Alberto Duran]
+* modify livesearch to search in current lang [Paco Gregori]
+* Fix some views where access to genweb_config fails [Victor Fernandez de Alba]
+* Link agenda multidioma [Alberto Duran]
+* Add translation id [hanirok]
+* CSS [hanirok]
+* Optimizar plantilla noticias [hanirok]
+* Hide category in news filtered [hanirok]
+* News views [hanirok]
+* Arrows to event navigation [hanirok]
+* Oscar new events navigation [hanirok]
+* Updated styles from muntanyeta [root muntanyeta]
 
 1.70 (2015-11-10)
 -----------------
