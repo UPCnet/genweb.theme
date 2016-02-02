@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.72 (unreleased)
+1.72 (2016-02-02)
 -----------------
 
-- Nothing changed yet.
-
+* fix gwsearch position [Alberto Duran]
 
 1.71 (2016-01-14)
 -----------------
