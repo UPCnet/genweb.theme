@@ -48,7 +48,10 @@ class Renderer(base.Renderer):
     render = ViewPageTemplateFile('templates/newseventslisting.pt')
 
     def update(self):
-        self.now = now = localized_now(self.context)
+        try:
+            self.now = now = self.context.start
+        except:
+            self.now = now = localized_now(self.context)
 
         # Request parameter
         req = self.request.form
