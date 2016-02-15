@@ -52,7 +52,7 @@
             <tal:entry tal:repeat="item batch" metal:define-macro="entries">
             <tal:block tal:define="item_url item/getURL|item/absolute_url;
                                    item_id item/getId|item/id;
-                                   item_title_or_id item/pretty_title_or_id;
+                                   item_title item/Title;
                                    item_description item/Description;
                                    item_type item/portal_type;
                                    item_type_title item/Type;
@@ -65,6 +65,8 @@
                                    item_creator item/Creator;
                                    item_start item/start|item/StartDate|nothing;
                                    item_end item/end|item/EndDate|nothing;
+                                   item_link python:item_type in view.use_view_action and item_url+'/view' or item_url;
+                                   item_has_image python:view.has_image(item);
                                    item_sametime python: item_start == item_end;
                                    item_samedate python: (item_end - item_start &lt; 1) if item_type == 'Event' else False">
                 <metal:block define-slot="entry">
@@ -81,6 +83,7 @@
                         </a>
                     </span>
 
+                  <metal:block metal:define-macro="document_byline">
                     <span class="documentByLine">
                         <span tal:condition="python: item_type == 'Event' and item_sametime"
                               i18n:translate="label_event_byline_onlyfrom">
@@ -161,6 +164,7 @@
                             </metal:description>
                         </tal:byline>
                     </span>
+                  </metal:block>
 
                 </dt>
 
