@@ -94,16 +94,16 @@
   .offset1 {
     margin-left: 114px; }
 
-  .row-fluid, #dashboard, .fila, .template-atct_album_view #content-core {
+  .row-fluid, #dashboard, .fila, .template-album_view #content-core {
     width: 100%;
     *zoom: 1; }
-    .row-fluid:before, #dashboard:before, .fila:before, .template-atct_album_view #content-core:before, .row-fluid:after, #dashboard:after, .fila:after, .template-atct_album_view #content-core:after {
+    .row-fluid:before, #dashboard:before, .fila:before, .template-album_view #content-core:before, .row-fluid:after, #dashboard:after, .fila:after, .template-album_view #content-core:after {
       display: table;
       content: "";
       line-height: 0; }
-    .row-fluid:after, #dashboard:after, .fila:after, .template-atct_album_view #content-core:after {
+    .row-fluid:after, #dashboard:after, .fila:after, .template-album_view #content-core:after {
       clear: both; }
-    .row-fluid [class*="span"], #dashboard [class*="span"], .fila [class*="span"], .template-atct_album_view #content-core [class*="span"], .row-fluid .cella, #dashboard .cella, .fila .cella, .template-atct_album_view #content-core .cella {
+    .row-fluid [class*="span"], #dashboard [class*="span"], .fila [class*="span"], .template-album_view #content-core [class*="span"], .row-fluid .cella, #dashboard .cella, .fila .cella, .template-album_view #content-core .cella {
       display: block;
       width: 100%;
       min-height: 30px;
@@ -113,114 +113,114 @@
       float: left;
       margin-left: 3.06748%;
       *margin-left: 3.01636%; }
-    .row-fluid [class*="span"]:first-child, #dashboard [class*="span"]:first-child, .fila [class*="span"]:first-child, .template-atct_album_view #content-core [class*="span"]:first-child, .row-fluid .cella:first-child, #dashboard .cella:first-child, .fila .cella:first-child, .template-atct_album_view #content-core .cella:first-child {
+    .row-fluid [class*="span"]:first-child, #dashboard [class*="span"]:first-child, .fila [class*="span"]:first-child, .template-album_view #content-core [class*="span"]:first-child, .row-fluid .cella:first-child, #dashboard .cella:first-child, .fila .cella:first-child, .template-album_view #content-core .cella:first-child {
       margin-left: 0; }
-    .row-fluid .span12, #dashboard .span12, .fila .span12, .template-atct_album_view #content-core .span12 {
+    .row-fluid .span12, #dashboard .span12, .fila .span12, .template-album_view #content-core .span12 {
       width: 100%;
       *width: 99.94888%; }
-    .row-fluid .offset12, #dashboard .offset12, .fila .offset12, .template-atct_album_view #content-core .offset12 {
+    .row-fluid .offset12, #dashboard .offset12, .fila .offset12, .template-album_view #content-core .offset12 {
       margin-left: 106.13497%;
       *margin-left: 106.03272%; }
-    .row-fluid .offset12:first-child, #dashboard .offset12:first-child, .fila .offset12:first-child, .template-atct_album_view #content-core .offset12:first-child {
+    .row-fluid .offset12:first-child, #dashboard .offset12:first-child, .fila .offset12:first-child, .template-album_view #content-core .offset12:first-child {
       margin-left: 103.06748%;
       *margin-left: 102.96524%; }
-    .row-fluid .span11, #dashboard .span11, .fila .span11, .template-atct_album_view #content-core .span11 {
+    .row-fluid .span11, #dashboard .span11, .fila .span11, .template-album_view #content-core .span11 {
       width: 91.41104%;
       *width: 91.35992%; }
-    .row-fluid .offset11, #dashboard .offset11, .fila .offset11, .template-atct_album_view #content-core .offset11 {
+    .row-fluid .offset11, #dashboard .offset11, .fila .offset11, .template-album_view #content-core .offset11 {
       margin-left: 97.54601%;
       *margin-left: 97.44376%; }
-    .row-fluid .offset11:first-child, #dashboard .offset11:first-child, .fila .offset11:first-child, .template-atct_album_view #content-core .offset11:first-child {
+    .row-fluid .offset11:first-child, #dashboard .offset11:first-child, .fila .offset11:first-child, .template-album_view #content-core .offset11:first-child {
       margin-left: 94.47853%;
       *margin-left: 94.37628%; }
-    .row-fluid .span10, #dashboard .span10, .fila .span10, .template-atct_album_view #content-core .span10 {
+    .row-fluid .span10, #dashboard .span10, .fila .span10, .template-album_view #content-core .span10 {
       width: 82.82209%;
       *width: 82.77096%; }
-    .row-fluid .offset10, #dashboard .offset10, .fila .offset10, .template-atct_album_view #content-core .offset10 {
+    .row-fluid .offset10, #dashboard .offset10, .fila .offset10, .template-album_view #content-core .offset10 {
       margin-left: 88.95706%;
       *margin-left: 88.85481%; }
-    .row-fluid .offset10:first-child, #dashboard .offset10:first-child, .fila .offset10:first-child, .template-atct_album_view #content-core .offset10:first-child {
+    .row-fluid .offset10:first-child, #dashboard .offset10:first-child, .fila .offset10:first-child, .template-album_view #content-core .offset10:first-child {
       margin-left: 85.88957%;
       *margin-left: 85.78732%; }
-    .row-fluid .span9, #dashboard .span9, .fila .span9, .template-atct_album_view #content-core .span9, .row-fluid .w3\3a 4, #dashboard .w3\3a 4, .fila .w3\3a 4, .template-atct_album_view #content-core .w3\3a 4 {
+    .row-fluid .span9, #dashboard .span9, .fila .span9, .template-album_view #content-core .span9, .row-fluid .w3\3a 4, #dashboard .w3\3a 4, .fila .w3\3a 4, .template-album_view #content-core .w3\3a 4 {
       width: 74.23313%;
       *width: 74.182%; }
-    .row-fluid .offset9, #dashboard .offset9, .fila .offset9, .template-atct_album_view #content-core .offset9 {
+    .row-fluid .offset9, #dashboard .offset9, .fila .offset9, .template-album_view #content-core .offset9 {
       margin-left: 80.3681%;
       *margin-left: 80.26585%; }
-    .row-fluid .offset9:first-child, #dashboard .offset9:first-child, .fila .offset9:first-child, .template-atct_album_view #content-core .offset9:first-child {
+    .row-fluid .offset9:first-child, #dashboard .offset9:first-child, .fila .offset9:first-child, .template-album_view #content-core .offset9:first-child {
       margin-left: 77.30061%;
       *margin-left: 77.19836%; }
-    .row-fluid .span8, #dashboard .span8, .fila .span8, .template-atct_album_view #content-core .span8 {
+    .row-fluid .span8, #dashboard .span8, .fila .span8, .template-album_view #content-core .span8 {
       width: 65.64417%;
       *width: 65.59305%; }
-    .row-fluid .offset8, #dashboard .offset8, .fila .offset8, .template-atct_album_view #content-core .offset8 {
+    .row-fluid .offset8, #dashboard .offset8, .fila .offset8, .template-album_view #content-core .offset8 {
       margin-left: 71.77914%;
       *margin-left: 71.67689%; }
-    .row-fluid .offset8:first-child, #dashboard .offset8:first-child, .fila .offset8:first-child, .template-atct_album_view #content-core .offset8:first-child {
+    .row-fluid .offset8:first-child, #dashboard .offset8:first-child, .fila .offset8:first-child, .template-album_view #content-core .offset8:first-child {
       margin-left: 68.71166%;
       *margin-left: 68.60941%; }
-    .row-fluid .span7, #dashboard .span7, .fila .span7, .template-atct_album_view #content-core .span7 {
+    .row-fluid .span7, #dashboard .span7, .fila .span7, .template-album_view #content-core .span7 {
       width: 57.05521%;
       *width: 57.00409%; }
-    .row-fluid .offset7, #dashboard .offset7, .fila .offset7, .template-atct_album_view #content-core .offset7 {
+    .row-fluid .offset7, #dashboard .offset7, .fila .offset7, .template-album_view #content-core .offset7 {
       margin-left: 63.19018%;
       *margin-left: 63.08793%; }
-    .row-fluid .offset7:first-child, #dashboard .offset7:first-child, .fila .offset7:first-child, .template-atct_album_view #content-core .offset7:first-child {
+    .row-fluid .offset7:first-child, #dashboard .offset7:first-child, .fila .offset7:first-child, .template-album_view #content-core .offset7:first-child {
       margin-left: 60.1227%;
       *margin-left: 60.02045%; }
-    .row-fluid .span6, #dashboard .span6, .fila .span6, .template-atct_album_view #content-core .span6, .row-fluid .w1\3a 2, #dashboard .w1\3a 2, .fila .w1\3a 2, .template-atct_album_view #content-core .w1\3a 2, .row-fluid .w2\3a 4, #dashboard .w2\3a 4, .fila .w2\3a 4, .template-atct_album_view #content-core .w2\3a 4 {
+    .row-fluid .span6, #dashboard .span6, .fila .span6, .template-album_view #content-core .span6, .row-fluid .w1\3a 2, #dashboard .w1\3a 2, .fila .w1\3a 2, .template-album_view #content-core .w1\3a 2, .row-fluid .w2\3a 4, #dashboard .w2\3a 4, .fila .w2\3a 4, .template-album_view #content-core .w2\3a 4 {
       width: 48.46626%;
       *width: 48.41513%; }
-    .row-fluid .offset6, #dashboard .offset6, .fila .offset6, .template-atct_album_view #content-core .offset6 {
+    .row-fluid .offset6, #dashboard .offset6, .fila .offset6, .template-album_view #content-core .offset6 {
       margin-left: 54.60123%;
       *margin-left: 54.49898%; }
-    .row-fluid .offset6:first-child, #dashboard .offset6:first-child, .fila .offset6:first-child, .template-atct_album_view #content-core .offset6:first-child {
+    .row-fluid .offset6:first-child, #dashboard .offset6:first-child, .fila .offset6:first-child, .template-album_view #content-core .offset6:first-child {
       margin-left: 51.53374%;
       *margin-left: 51.43149%; }
-    .row-fluid .span5, #dashboard .span5, .fila .span5, .template-atct_album_view #content-core .span5 {
+    .row-fluid .span5, #dashboard .span5, .fila .span5, .template-album_view #content-core .span5 {
       width: 39.8773%;
       *width: 39.82618%; }
-    .row-fluid .offset5, #dashboard .offset5, .fila .offset5, .template-atct_album_view #content-core .offset5 {
+    .row-fluid .offset5, #dashboard .offset5, .fila .offset5, .template-album_view #content-core .offset5 {
       margin-left: 46.01227%;
       *margin-left: 45.91002%; }
-    .row-fluid .offset5:first-child, #dashboard .offset5:first-child, .fila .offset5:first-child, .template-atct_album_view #content-core .offset5:first-child {
+    .row-fluid .offset5:first-child, #dashboard .offset5:first-child, .fila .offset5:first-child, .template-album_view #content-core .offset5:first-child {
       margin-left: 42.94479%;
       *margin-left: 42.84254%; }
-    .row-fluid .span4, #dashboard .span4, .fila .span4, .template-atct_album_view #content-core .span4, .row-fluid .w1\3a 3, #dashboard .w1\3a 3, .fila .w1\3a 3, .template-atct_album_view #content-core .w1\3a 3 {
+    .row-fluid .span4, #dashboard .span4, .fila .span4, .template-album_view #content-core .span4, .row-fluid .w1\3a 3, #dashboard .w1\3a 3, .fila .w1\3a 3, .template-album_view #content-core .w1\3a 3 {
       width: 31.28834%;
       *width: 31.23722%; }
-    .row-fluid .offset4, #dashboard .offset4, .fila .offset4, .template-atct_album_view #content-core .offset4 {
+    .row-fluid .offset4, #dashboard .offset4, .fila .offset4, .template-album_view #content-core .offset4 {
       margin-left: 37.42331%;
       *margin-left: 37.32106%; }
-    .row-fluid .offset4:first-child, #dashboard .offset4:first-child, .fila .offset4:first-child, .template-atct_album_view #content-core .offset4:first-child {
+    .row-fluid .offset4:first-child, #dashboard .offset4:first-child, .fila .offset4:first-child, .template-album_view #content-core .offset4:first-child {
       margin-left: 34.35583%;
       *margin-left: 34.25358%; }
-    .row-fluid .span3, #dashboard .span3, .fila .span3, .template-atct_album_view #content-core .span3, .row-fluid #dashboard-portlets1, #dashboard #dashboard-portlets1, .fila #dashboard-portlets1, .template-atct_album_view #content-core #dashboard-portlets1, .row-fluid #dashboard-portlets2, #dashboard #dashboard-portlets2, .fila #dashboard-portlets2, .template-atct_album_view #content-core #dashboard-portlets2, .row-fluid #dashboard-portlets3, #dashboard #dashboard-portlets3, .fila #dashboard-portlets3, .template-atct_album_view #content-core #dashboard-portlets3, .row-fluid #dashboard-portlets4, #dashboard #dashboard-portlets4, .fila #dashboard-portlets4, .template-atct_album_view #content-core #dashboard-portlets4, .row-fluid .w1\3a 4, #dashboard .w1\3a 4, .fila .w1\3a 4, .template-atct_album_view #content-core .w1\3a 4, .row-fluid .photoAlbumEntry, #dashboard .photoAlbumEntry, .fila .photoAlbumEntry, .template-atct_album_view #content-core .photoAlbumEntry {
+    .row-fluid .span3, #dashboard .span3, .fila .span3, .template-album_view #content-core .span3, .row-fluid #dashboard-portlets1, #dashboard #dashboard-portlets1, .fila #dashboard-portlets1, .template-album_view #content-core #dashboard-portlets1, .row-fluid #dashboard-portlets2, #dashboard #dashboard-portlets2, .fila #dashboard-portlets2, .template-album_view #content-core #dashboard-portlets2, .row-fluid #dashboard-portlets3, #dashboard #dashboard-portlets3, .fila #dashboard-portlets3, .template-album_view #content-core #dashboard-portlets3, .row-fluid #dashboard-portlets4, #dashboard #dashboard-portlets4, .fila #dashboard-portlets4, .template-album_view #content-core #dashboard-portlets4, .row-fluid .w1\3a 4, #dashboard .w1\3a 4, .fila .w1\3a 4, .template-album_view #content-core .w1\3a 4, .row-fluid .photoAlbumEntry, #dashboard .photoAlbumEntry, .fila .photoAlbumEntry, .template-album_view #content-core .photoAlbumEntry {
       width: 22.69939%;
       *width: 22.64826%; }
-    .row-fluid .offset3, #dashboard .offset3, .fila .offset3, .template-atct_album_view #content-core .offset3 {
+    .row-fluid .offset3, #dashboard .offset3, .fila .offset3, .template-album_view #content-core .offset3 {
       margin-left: 28.83436%;
       *margin-left: 28.73211%; }
-    .row-fluid .offset3:first-child, #dashboard .offset3:first-child, .fila .offset3:first-child, .template-atct_album_view #content-core .offset3:first-child {
+    .row-fluid .offset3:first-child, #dashboard .offset3:first-child, .fila .offset3:first-child, .template-album_view #content-core .offset3:first-child {
       margin-left: 25.76687%;
       *margin-left: 25.66462%; }
-    .row-fluid .span2, #dashboard .span2, .fila .span2, .template-atct_album_view #content-core .span2 {
+    .row-fluid .span2, #dashboard .span2, .fila .span2, .template-album_view #content-core .span2 {
       width: 14.11043%;
       *width: 14.0593%; }
-    .row-fluid .offset2, #dashboard .offset2, .fila .offset2, .template-atct_album_view #content-core .offset2 {
+    .row-fluid .offset2, #dashboard .offset2, .fila .offset2, .template-album_view #content-core .offset2 {
       margin-left: 20.2454%;
       *margin-left: 20.14315%; }
-    .row-fluid .offset2:first-child, #dashboard .offset2:first-child, .fila .offset2:first-child, .template-atct_album_view #content-core .offset2:first-child {
+    .row-fluid .offset2:first-child, #dashboard .offset2:first-child, .fila .offset2:first-child, .template-album_view #content-core .offset2:first-child {
       margin-left: 17.17791%;
       *margin-left: 17.07566%; }
-    .row-fluid .span1, #dashboard .span1, .fila .span1, .template-atct_album_view #content-core .span1 {
+    .row-fluid .span1, #dashboard .span1, .fila .span1, .template-album_view #content-core .span1 {
       width: 5.52147%;
       *width: 5.47035%; }
-    .row-fluid .offset1, #dashboard .offset1, .fila .offset1, .template-atct_album_view #content-core .offset1 {
+    .row-fluid .offset1, #dashboard .offset1, .fila .offset1, .template-album_view #content-core .offset1 {
       margin-left: 11.65644%;
       *margin-left: 11.55419%; }
-    .row-fluid .offset1:first-child, #dashboard .offset1:first-child, .fila .offset1:first-child, .template-atct_album_view #content-core .offset1:first-child {
+    .row-fluid .offset1:first-child, #dashboard .offset1:first-child, .fila .offset1:first-child, .template-album_view #content-core .offset1:first-child {
       margin-left: 8.58896%;
       *margin-left: 8.48671%; }
 
@@ -312,11 +312,11 @@
   .uneditable-input.span1 {
     width: 40px; }
 
-  .span9 .row-fluid > [class*=span3]:nth-child(2n+1), .w3\3a 4 .row-fluid > [class*=span3]:nth-child(2n+1), .span9 #dashboard > [class*=span3]:nth-child(2n+1), .w3\3a 4 #dashboard > [class*=span3]:nth-child(2n+1), .span9 .fila > [class*=span3]:nth-child(2n+1), .w3\3a 4 .fila > [class*=span3]:nth-child(2n+1), .span9 .template-atct_album_view #content-core > [class*=span3]:nth-child(2n+1), .template-atct_album_view .span9 #content-core > [class*=span3]:nth-child(2n+1), .w3\3a 4 .template-atct_album_view #content-core > [class*=span3]:nth-child(2n+1), .template-atct_album_view .w3\3a 4 #content-core > [class*=span3]:nth-child(2n+1) {
+  .span9 .row-fluid > [class*=span3]:nth-child(2n+1), .w3\3a 4 .row-fluid > [class*=span3]:nth-child(2n+1), .span9 #dashboard > [class*=span3]:nth-child(2n+1), .w3\3a 4 #dashboard > [class*=span3]:nth-child(2n+1), .span9 .fila > [class*=span3]:nth-child(2n+1), .w3\3a 4 .fila > [class*=span3]:nth-child(2n+1), .span9 .template-album_view #content-core > [class*=span3]:nth-child(2n+1), .template-album_view .span9 #content-core > [class*=span3]:nth-child(2n+1), .w3\3a 4 .template-album_view #content-core > [class*=span3]:nth-child(2n+1), .template-album_view .w3\3a 4 #content-core > [class*=span3]:nth-child(2n+1) {
     clear: both;
     margin-left: 0; }
 
-  .span9 .row-fluid .span3, .w3\3a 4 .row-fluid .span3, .span9 #dashboard .span3, .w3\3a 4 #dashboard .span3, .span9 .fila .span3, .w3\3a 4 .fila .span3, .span9 .template-atct_album_view #content-core .span3, .template-atct_album_view .span9 #content-core .span3, .w3\3a 4 .template-atct_album_view #content-core .span3, .template-atct_album_view .w3\3a 4 #content-core .span3, .span9 .row-fluid #dashboard-portlets1, .w3\3a 4 .row-fluid #dashboard-portlets1, .span9 #dashboard #dashboard-portlets1, .w3\3a 4 #dashboard #dashboard-portlets1, .span9 .fila #dashboard-portlets1, .w3\3a 4 .fila #dashboard-portlets1, .span9 .template-atct_album_view #content-core #dashboard-portlets1, .template-atct_album_view .span9 #content-core #dashboard-portlets1, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets1, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets1, .span9 .row-fluid #dashboard-portlets2, .w3\3a 4 .row-fluid #dashboard-portlets2, .span9 #dashboard #dashboard-portlets2, .w3\3a 4 #dashboard #dashboard-portlets2, .span9 .fila #dashboard-portlets2, .w3\3a 4 .fila #dashboard-portlets2, .span9 .template-atct_album_view #content-core #dashboard-portlets2, .template-atct_album_view .span9 #content-core #dashboard-portlets2, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets2, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets2, .span9 .row-fluid #dashboard-portlets3, .w3\3a 4 .row-fluid #dashboard-portlets3, .span9 #dashboard #dashboard-portlets3, .w3\3a 4 #dashboard #dashboard-portlets3, .span9 .fila #dashboard-portlets3, .w3\3a 4 .fila #dashboard-portlets3, .span9 .template-atct_album_view #content-core #dashboard-portlets3, .template-atct_album_view .span9 #content-core #dashboard-portlets3, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets3, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets3, .span9 .row-fluid #dashboard-portlets4, .w3\3a 4 .row-fluid #dashboard-portlets4, .span9 #dashboard #dashboard-portlets4, .w3\3a 4 #dashboard #dashboard-portlets4, .span9 .fila #dashboard-portlets4, .w3\3a 4 .fila #dashboard-portlets4, .span9 .template-atct_album_view #content-core #dashboard-portlets4, .template-atct_album_view .span9 #content-core #dashboard-portlets4, .w3\3a 4 .template-atct_album_view #content-core #dashboard-portlets4, .template-atct_album_view .w3\3a 4 #content-core #dashboard-portlets4, .span9 .row-fluid .w1\3a 4, .w3\3a 4 .row-fluid .w1\3a 4, .span9 #dashboard .w1\3a 4, .w3\3a 4 #dashboard .w1\3a 4, .span9 .fila .w1\3a 4, .w3\3a 4 .fila .w1\3a 4, .span9 .template-atct_album_view #content-core .w1\3a 4, .template-atct_album_view .span9 #content-core .w1\3a 4, .w3\3a 4 .template-atct_album_view #content-core .w1\3a 4, .template-atct_album_view .w3\3a 4 #content-core .w1\3a 4, .span9 .row-fluid .photoAlbumEntry, .w3\3a 4 .row-fluid .photoAlbumEntry, .span9 #dashboard .photoAlbumEntry, .w3\3a 4 #dashboard .photoAlbumEntry, .span9 .fila .photoAlbumEntry, .w3\3a 4 .fila .photoAlbumEntry, .span9 .template-atct_album_view #content-core .photoAlbumEntry, .template-atct_album_view .span9 #content-core .photoAlbumEntry, .w3\3a 4 .template-atct_album_view #content-core .photoAlbumEntry, .template-atct_album_view .w3\3a 4 #content-core .photoAlbumEntry {
+  .span9 .row-fluid .span3, .w3\3a 4 .row-fluid .span3, .span9 #dashboard .span3, .w3\3a 4 #dashboard .span3, .span9 .fila .span3, .w3\3a 4 .fila .span3, .span9 .template-album_view #content-core .span3, .template-album_view .span9 #content-core .span3, .w3\3a 4 .template-album_view #content-core .span3, .template-album_view .w3\3a 4 #content-core .span3, .span9 .row-fluid #dashboard-portlets1, .w3\3a 4 .row-fluid #dashboard-portlets1, .span9 #dashboard #dashboard-portlets1, .w3\3a 4 #dashboard #dashboard-portlets1, .span9 .fila #dashboard-portlets1, .w3\3a 4 .fila #dashboard-portlets1, .span9 .template-album_view #content-core #dashboard-portlets1, .template-album_view .span9 #content-core #dashboard-portlets1, .w3\3a 4 .template-album_view #content-core #dashboard-portlets1, .template-album_view .w3\3a 4 #content-core #dashboard-portlets1, .span9 .row-fluid #dashboard-portlets2, .w3\3a 4 .row-fluid #dashboard-portlets2, .span9 #dashboard #dashboard-portlets2, .w3\3a 4 #dashboard #dashboard-portlets2, .span9 .fila #dashboard-portlets2, .w3\3a 4 .fila #dashboard-portlets2, .span9 .template-album_view #content-core #dashboard-portlets2, .template-album_view .span9 #content-core #dashboard-portlets2, .w3\3a 4 .template-album_view #content-core #dashboard-portlets2, .template-album_view .w3\3a 4 #content-core #dashboard-portlets2, .span9 .row-fluid #dashboard-portlets3, .w3\3a 4 .row-fluid #dashboard-portlets3, .span9 #dashboard #dashboard-portlets3, .w3\3a 4 #dashboard #dashboard-portlets3, .span9 .fila #dashboard-portlets3, .w3\3a 4 .fila #dashboard-portlets3, .span9 .template-album_view #content-core #dashboard-portlets3, .template-album_view .span9 #content-core #dashboard-portlets3, .w3\3a 4 .template-album_view #content-core #dashboard-portlets3, .template-album_view .w3\3a 4 #content-core #dashboard-portlets3, .span9 .row-fluid #dashboard-portlets4, .w3\3a 4 .row-fluid #dashboard-portlets4, .span9 #dashboard #dashboard-portlets4, .w3\3a 4 #dashboard #dashboard-portlets4, .span9 .fila #dashboard-portlets4, .w3\3a 4 .fila #dashboard-portlets4, .span9 .template-album_view #content-core #dashboard-portlets4, .template-album_view .span9 #content-core #dashboard-portlets4, .w3\3a 4 .template-album_view #content-core #dashboard-portlets4, .template-album_view .w3\3a 4 #content-core #dashboard-portlets4, .span9 .row-fluid .w1\3a 4, .w3\3a 4 .row-fluid .w1\3a 4, .span9 #dashboard .w1\3a 4, .w3\3a 4 #dashboard .w1\3a 4, .span9 .fila .w1\3a 4, .w3\3a 4 .fila .w1\3a 4, .span9 .template-album_view #content-core .w1\3a 4, .template-album_view .span9 #content-core .w1\3a 4, .w3\3a 4 .template-album_view #content-core .w1\3a 4, .template-album_view .w3\3a 4 #content-core .w1\3a 4, .span9 .row-fluid .photoAlbumEntry, .w3\3a 4 .row-fluid .photoAlbumEntry, .span9 #dashboard .photoAlbumEntry, .w3\3a 4 #dashboard .photoAlbumEntry, .span9 .fila .photoAlbumEntry, .w3\3a 4 .fila .photoAlbumEntry, .span9 .template-album_view #content-core .photoAlbumEntry, .template-album_view .span9 #content-core .photoAlbumEntry, .w3\3a 4 .template-album_view #content-core .photoAlbumEntry, .template-album_view .w3\3a 4 #content-core .photoAlbumEntry {
     width: 48% !important; } }
 /* No es fa servir
 
@@ -1337,11 +1337,11 @@ html * .dropdown-menu a:hover .img_blank {
   right: 10px !important;
   left: auto !important; }
 
-#listing-table a[class^="contenttype-"], #listing-table a[class*=" contenttype-"], .template-folder_tabular_view .listing a[class^="contenttype-"], .template-folder_tabular_view .listing a[class*=" contenttype-"], .contenttreeWidget > .navTree a[class^="contenttype-"], .contenttreeWidget > .navTree a[class*=" contenttype-"] {
+#listing-table a[class^="contenttype-"], #listing-table a[class*=" contenttype-"], .template-tabular_view .listing a[class^="contenttype-"], .template-tabular_view .listing a[class*=" contenttype-"], .contenttreeWidget > .navTree a[class^="contenttype-"], .contenttreeWidget > .navTree a[class*=" contenttype-"] {
   padding-left: 8px;
   font-weight: bold;
   position: relative; }
-#listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-folder_tabular_view .listing a[class^="contenttype-"]:before, .template-folder_tabular_view .listing a[class*=" contenttype-"]:before, .contenttreeWidget > .navTree a[class^="contenttype-"]:before, .contenttreeWidget > .navTree a[class*=" contenttype-"]:before {
+#listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-tabular_view .listing a[class^="contenttype-"]:before, .template-tabular_view .listing a[class*=" contenttype-"]:before, .contenttreeWidget > .navTree a[class^="contenttype-"]:before, .contenttreeWidget > .navTree a[class*=" contenttype-"]:before {
   background-image: url('++genweb++static/images/gh.png?1428934242');
   background-repeat: no-repeat;
   content: " ";
@@ -1353,43 +1353,43 @@ html * .dropdown-menu a:hover .img_blank {
   opacity: 75;
   position: relative;
   float: left; }
-#listing-table a.contenttype-folder:before, .template-folder_tabular_view .listing a.contenttype-folder:before, .contenttreeWidget > .navTree a.contenttype-folder:before {
+#listing-table a.contenttype-folder:before, .template-tabular_view .listing a.contenttype-folder:before, .contenttreeWidget > .navTree a.contenttype-folder:before {
   background-position: -384px 	-120px; }
-#listing-table a.contenttype-page:before, #listing-table a.contenttype-document:before, .template-folder_tabular_view .listing a.contenttype-page:before, .template-folder_tabular_view .listing a.contenttype-document:before, .contenttreeWidget > .navTree a.contenttype-page:before, .contenttreeWidget > .navTree a.contenttype-document:before {
+#listing-table a.contenttype-page:before, #listing-table a.contenttype-document:before, .template-tabular_view .listing a.contenttype-page:before, .template-tabular_view .listing a.contenttype-document:before, .contenttreeWidget > .navTree a.contenttype-page:before, .contenttreeWidget > .navTree a.contenttype-document:before {
   background-position: -24px 	-24px; }
-#listing-table a.contenttype-link:before, .template-folder_tabular_view .listing a.contenttype-link:before, .contenttreeWidget > .navTree a.contenttype-link:before {
+#listing-table a.contenttype-link:before, .template-tabular_view .listing a.contenttype-link:before, .contenttreeWidget > .navTree a.contenttype-link:before {
   background-position: -72px 	-168px; }
-#listing-table a.contenttype-windowztool:before, #listing-table a.contenttype-window:before, #listing-table a.contenttype-window:before, .template-folder_tabular_view .listing a.contenttype-windowztool:before, .template-folder_tabular_view .listing a.contenttype-window:before, .template-folder_tabular_view .listing a.contenttype-window:before, .contenttreeWidget > .navTree a.contenttype-windowztool:before, .contenttreeWidget > .navTree a.contenttype-window:before, .contenttreeWidget > .navTree a.contenttype-window:before {
+#listing-table a.contenttype-windowztool:before, #listing-table a.contenttype-window:before, #listing-table a.contenttype-window:before, .template-tabular_view .listing a.contenttype-windowztool:before, .template-tabular_view .listing a.contenttype-window:before, .template-tabular_view .listing a.contenttype-window:before, .contenttreeWidget > .navTree a.contenttype-windowztool:before, .contenttreeWidget > .navTree a.contenttype-window:before, .contenttreeWidget > .navTree a.contenttype-window:before {
   background-position: -97px 	-168px; }
-#listing-table a.contenttype-bannercontainer:before, #listing-table a.contenttype-banner:before, .template-folder_tabular_view .listing a.contenttype-bannercontainer:before, .template-folder_tabular_view .listing a.contenttype-banner:before, .contenttreeWidget > .navTree a.contenttype-bannercontainer:before, .contenttreeWidget > .navTree a.contenttype-banner:before {
+#listing-table a.contenttype-bannercontainer:before, #listing-table a.contenttype-banner:before, .template-tabular_view .listing a.contenttype-bannercontainer:before, .template-tabular_view .listing a.contenttype-banner:before, .contenttreeWidget > .navTree a.contenttype-bannercontainer:before, .contenttreeWidget > .navTree a.contenttype-banner:before {
   background-position: -313px	-25px; }
-#listing-table a.contenttype-logos_container:before, #listing-table a.contenttype-logos_footer:before, .template-folder_tabular_view .listing a.contenttype-logos_container:before, .template-folder_tabular_view .listing a.contenttype-logos_footer:before, .contenttreeWidget > .navTree a.contenttype-logos_container:before, .contenttreeWidget > .navTree a.contenttype-logos_footer:before {
+#listing-table a.contenttype-logos_container:before, #listing-table a.contenttype-logos_footer:before, .template-tabular_view .listing a.contenttype-logos_container:before, .template-tabular_view .listing a.contenttype-logos_footer:before, .contenttreeWidget > .navTree a.contenttype-logos_container:before, .contenttreeWidget > .navTree a.contenttype-logos_footer:before {
   background-position: -143px 	-168px; }
-#listing-table a.contenttype-topic:before, .template-folder_tabular_view .listing a.contenttype-topic:before, .contenttreeWidget > .navTree a.contenttype-topic:before {
+#listing-table a.contenttype-topic:before, .template-tabular_view .listing a.contenttype-topic:before, .contenttreeWidget > .navTree a.contenttype-topic:before {
   background-position: -72px 	-192px; }
-#listing-table a.contenttype-file:before, .template-folder_tabular_view .listing a.contenttype-file:before, .contenttreeWidget > .navTree a.contenttype-file:before {
+#listing-table a.contenttype-file:before, .template-tabular_view .listing a.contenttype-file:before, .contenttreeWidget > .navTree a.contenttype-file:before {
   background-position: -167px	-168px; }
-#listing-table a.contenttype-image:before, .template-folder_tabular_view .listing a.contenttype-image:before, .contenttreeWidget > .navTree a.contenttype-image:before {
+#listing-table a.contenttype-image:before, .template-tabular_view .listing a.contenttype-image:before, .contenttreeWidget > .navTree a.contenttype-image:before {
   background-position: -457px	-49px; }
-#listing-table a.contenttype-collective-polls-poll:before, .template-folder_tabular_view .listing a.contenttype-collective-polls-poll:before, .contenttreeWidget > .navTree a.contenttype-collective-polls-poll:before {
+#listing-table a.contenttype-collective-polls-poll:before, .template-tabular_view .listing a.contenttype-collective-polls-poll:before, .contenttreeWidget > .navTree a.contenttype-collective-polls-poll:before {
   background-position: -47px		-193px; }
-#listing-table a.contenttype-event:before, .template-folder_tabular_view .listing a.contenttype-event:before, .contenttreeWidget > .navTree a.contenttype-event:before {
+#listing-table a.contenttype-event:before, .template-tabular_view .listing a.contenttype-event:before, .contenttreeWidget > .navTree a.contenttype-event:before {
   background-position: -191px 	-120px; }
-#listing-table a.contenttype-news-item:before, .template-folder_tabular_view .listing a.contenttype-news-item:before, .contenttreeWidget > .navTree a.contenttype-news-item:before {
+#listing-table a.contenttype-news-item:before, .template-tabular_view .listing a.contenttype-news-item:before, .contenttreeWidget > .navTree a.contenttype-news-item:before {
   background-position: -24px 	-168px; }
-#listing-table a.contenttype-packet:before, .template-folder_tabular_view .listing a.contenttype-packet:before, .contenttreeWidget > .navTree a.contenttype-packet:before {
+#listing-table a.contenttype-packet:before, .template-tabular_view .listing a.contenttype-packet:before, .contenttreeWidget > .navTree a.contenttype-packet:before {
   background-position: -47px 	-168px; }
-#listing-table a.contenttype-collage:before, .template-folder_tabular_view .listing a.contenttype-collage:before, .contenttreeWidget > .navTree a.contenttype-collage:before {
+#listing-table a.contenttype-collage:before, .template-tabular_view .listing a.contenttype-collage:before, .contenttreeWidget > .navTree a.contenttype-collage:before {
   background-position: -216px 	-168px; }
-#listing-table a.contenttype-collection:before, .template-folder_tabular_view .listing a.contenttype-collection:before, .contenttreeWidget > .navTree a.contenttype-collection:before {
+#listing-table a.contenttype-collection:before, .template-tabular_view .listing a.contenttype-collection:before, .contenttreeWidget > .navTree a.contenttype-collection:before {
   background-position: -240px 	-168px; }
-#listing-table a.contenttype-survey:before, .template-folder_tabular_view .listing a.contenttype-survey:before, .contenttreeWidget > .navTree a.contenttype-survey:before {
+#listing-table a.contenttype-survey:before, .template-tabular_view .listing a.contenttype-survey:before, .contenttreeWidget > .navTree a.contenttype-survey:before {
   background-position: -265px 	-23px; }
-#listing-table a.contenttype-formfolder:before, .template-folder_tabular_view .listing a.contenttype-formfolder:before, .contenttreeWidget > .navTree a.contenttype-formfolder:before {
+#listing-table a.contenttype-formfolder:before, .template-tabular_view .listing a.contenttype-formfolder:before, .contenttreeWidget > .navTree a.contenttype-formfolder:before {
   background-position: -144px    -72px; }
-#listing-table a.contenttype-lrf:before, .template-folder_tabular_view .listing a.contenttype-lrf:before, .contenttreeWidget > .navTree a.contenttype-lrf:before {
+#listing-table a.contenttype-lrf:before, .template-tabular_view .listing a.contenttype-lrf:before, .contenttreeWidget > .navTree a.contenttype-lrf:before {
   background-position: -216px    -191px; }
-#listing-table a:hover:before, .template-folder_tabular_view .listing a:hover:before, .contenttreeWidget > .navTree a:hover:before {
+#listing-table a:hover:before, .template-tabular_view .listing a:hover:before, .contenttreeWidget > .navTree a:hover:before {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
   opacity: 100; }
 
@@ -2288,7 +2288,7 @@ table [class*=span],
 .row-fluid table [class*=span],
 #dashboard table [class*=span],
 .fila table [class*=span],
-.template-atct_album_view #content-core table [class*=span] {
+.template-album_view #content-core table [class*=span] {
   display: table-cell;
   float: none;
   margin-left: 0; }
@@ -4072,7 +4072,7 @@ html.lt-ie9 .thumbnails li:first-child + li + li + li + li + li + li + li + li +
 .thumbnails li:nth-child(4n+1) {
   margin-left: 0 !important; }
 
-body.template-folder_summary_view #content ul li:first-child {
+body.template-summary_view #content ul li:first-child {
   border-top: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -4173,28 +4173,28 @@ iframe#templatesrc {
   #contentview-SEOProperties a[href*="/es/"] {
     direction: rtl; }
 
-.template-folder_listing #content dl dt:before {
+.template-listing_view #content dl dt:before {
   content: ".";
   position: absolute;
   font-size: 52px;
   margin-left: -20px;
   margin-top: -15px; }
-.template-folder_listing #content dl {
+.template-listing_view #content dl {
   padding: 0 0 0 28px; }
-.template-folder_listing #content dt {
+.template-listing_view #content dt {
   font-weight: normal !important;
   margin-top: 16px; }
-.template-folder_listing #content dd {
+.template-listing_view #content dd {
   margin-bottom: 10px;
   margin-left: 22px; }
 
-.template-folder_tabular_view #content table.listing a {
+.template-tabular_view #content table.listing a {
   font-weight: normal !important; }
 
-.template-folder_summary_view #content p.tileFooter {
+.template-summary_view #content p.tileFooter {
   display: none; }
 
-.template-atct_album_view #content dt {
+.template-album_view #content dt {
   font-weight: normal !important; }
 
 div.llistatIndex, div.llistat {
@@ -4621,7 +4621,7 @@ html.simulated-mobile-view #content {
   -moz-box-shadow: 0 0 1000px rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 1000px rgba(0, 0, 0, 0.8); }
 
-html.simulated-mobile-view #portal-column-content .row-fluid [class*="span"], html.simulated-mobile-view #portal-column-content #dashboard [class*="span"], html.simulated-mobile-view #portal-column-content .fila [class*="span"], html.simulated-mobile-view #portal-column-content .template-atct_album_view #content-core [class*="span"], .template-atct_album_view html.simulated-mobile-view #portal-column-content #content-core [class*="span"], html.simulated-mobile-view #portal-column-content .row-fluid .cella, html.simulated-mobile-view #portal-column-content #dashboard .cella, html.simulated-mobile-view #portal-column-content .fila .cella, html.simulated-mobile-view #portal-column-content .template-atct_album_view #content-core .cella, .template-atct_album_view html.simulated-mobile-view #portal-column-content #content-core .cella {
+html.simulated-mobile-view #portal-column-content .row-fluid [class*="span"], html.simulated-mobile-view #portal-column-content #dashboard [class*="span"], html.simulated-mobile-view #portal-column-content .fila [class*="span"], html.simulated-mobile-view #portal-column-content .template-album_view #content-core [class*="span"], .template-album_view html.simulated-mobile-view #portal-column-content #content-core [class*="span"], html.simulated-mobile-view #portal-column-content .row-fluid .cella, html.simulated-mobile-view #portal-column-content #dashboard .cella, html.simulated-mobile-view #portal-column-content .fila .cella, html.simulated-mobile-view #portal-column-content .template-album_view #content-core .cella, .template-album_view html.simulated-mobile-view #portal-column-content #content-core .cella {
   width: 100%;
   margin: 0 !important; }
 
@@ -4725,17 +4725,17 @@ html.simulated-tablet-view #edit-bar, html.simulated-tablet-view .alert, html.si
 html.simulated-mobile-view #edit-bar, html.simulated-mobile-view .alert, html.simulated-mobile-view .portalMessage, html.simulated-mobile-view .portalMessag, html.simulated-mobile-view #viewlet-below-content {
   display: none; }
 
-html.simulated-mobile-view #content-area > .container > .row-fluid > div[class*="span"], html.simulated-mobile-view #content-area > .container > #dashboard > div[class*="span"], html.simulated-mobile-view #content-area > .container > .fila > div[class*="span"], html.simulated-mobile-view .template-atct_album_view #content-area > .container > #content-core > div[class*="span"], .template-atct_album_view html.simulated-mobile-view #content-area > .container > #content-core > div[class*="span"], html.simulated-mobile-view #content-area > .container > .row-fluid > div.cella, html.simulated-mobile-view #content-area > .container > #dashboard > div.cella, html.simulated-mobile-view #content-area > .container > .fila > div.cella, html.simulated-mobile-view .template-atct_album_view #content-area > .container > #content-core > div.cella, .template-atct_album_view html.simulated-mobile-view #content-area > .container > #content-core > div.cella,
+html.simulated-mobile-view #content-area > .container > .row-fluid > div[class*="span"], html.simulated-mobile-view #content-area > .container > #dashboard > div[class*="span"], html.simulated-mobile-view #content-area > .container > .fila > div[class*="span"], html.simulated-mobile-view .template-album_view #content-area > .container > #content-core > div[class*="span"], .template-album_view html.simulated-mobile-view #content-area > .container > #content-core > div[class*="span"], html.simulated-mobile-view #content-area > .container > .row-fluid > div.cella, html.simulated-mobile-view #content-area > .container > #dashboard > div.cella, html.simulated-mobile-view #content-area > .container > .fila > div.cella, html.simulated-mobile-view .template-album_view #content-area > .container > #content-core > div.cella, .template-album_view html.simulated-mobile-view #content-area > .container > #content-core > div.cella,
 html.simulated-tablet-view #content-area > .container > .row-fluid > div[class*="span"],
 html.simulated-tablet-view #content-area > .container > #dashboard > div[class*="span"],
 html.simulated-tablet-view #content-area > .container > .fila > div[class*="span"],
-html.simulated-tablet-view .template-atct_album_view #content-area > .container > #content-core > div[class*="span"],
-.template-atct_album_view html.simulated-tablet-view #content-area > .container > #content-core > div[class*="span"],
+html.simulated-tablet-view .template-album_view #content-area > .container > #content-core > div[class*="span"],
+.template-album_view html.simulated-tablet-view #content-area > .container > #content-core > div[class*="span"],
 html.simulated-tablet-view #content-area > .container > .row-fluid > div.cella,
 html.simulated-tablet-view #content-area > .container > #dashboard > div.cella,
 html.simulated-tablet-view #content-area > .container > .fila > div.cella,
-html.simulated-tablet-view .template-atct_album_view #content-area > .container > #content-core > div.cella,
-.template-atct_album_view html.simulated-tablet-view #content-area > .container > #content-core > div.cella {
+html.simulated-tablet-view .template-album_view #content-area > .container > #content-core > div.cella,
+.template-album_view html.simulated-tablet-view #content-area > .container > #content-core > div.cella {
   margin-left: 0 !important;
   width: 100% !important; }
 

@@ -815,7 +815,7 @@ html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li +li
 
 
 // VIEWS
-body.template-folder_summary_view #content ul li:first-child {border-top:0; @include box-shadow(none);}
+body.template-summary_view #content ul li:first-child {border-top:0; @include box-shadow(none);}
 
 
 // treu la línia decorativa del primer element de la llista en la vista de carpeta "Tot el contingut"

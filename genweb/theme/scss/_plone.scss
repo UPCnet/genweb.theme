@@ -816,7 +816,7 @@ html.lt-ie9 .thumbnails li:first-child+li+li+li+li +li+li+li+li +li+li+li+li +li
 
 
 // VIEWS
-body.template-folder_summary_view #content ul li:first-child {border-top:0; @include box-shadow(none);}
+body.template-summary_view #content ul li:first-child {border-top:0; @include box-shadow(none);}
 
 
 // treu la línia decorativa del primer element de la llista en la vista de carpeta "Tot el contingut"
@@ -985,7 +985,7 @@ center {
 
 // standard 
 
-.template-folder_listing #content {
+.template-listing_view #content {
 	dl dt:before {
 		content:".";
 	    position: absolute;
@@ -1008,18 +1008,18 @@ center {
 
 
 // tabular 
-.template-folder_tabular_view #content table.listing a {
+.template-tabular_view #content table.listing a {
   font-weight: normal !important;
 }
 
 // resum 
-.template-folder_summary_view #content p.tileFooter {
+.template-summary_view #content p.tileFooter {
   display:none;
 }
 
 
 // album 
-.template-atct_album_view #content dt {
+.template-album_view #content dt {
   font-weight: normal !important;
 }
 

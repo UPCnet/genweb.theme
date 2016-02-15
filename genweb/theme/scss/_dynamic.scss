@@ -40,7 +40,7 @@ div.fitxa {border-right:20px solid lighten($genwebPrimary,35%);}
 //PLONE
 label { color: $genwebTitles;}
 div.label, label *.label { color: $genwebTitles;}
-.template-folder_listing #content dl dt:before { color: $genwebTitles;	}
+.template-listing_view #content dl dt:before { color: $genwebTitles;	}
 
 //PORTLETS
 .portlet h2 { border-bottom: 5px solid $genwebPrimary; }

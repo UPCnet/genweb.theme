@@ -238,16 +238,16 @@ a:hover {
 .offset1 {
   margin-left: 114px; }
 
-.row-fluid, #dashboard, .fila, .template-atct_album_view #content-core {
+.row-fluid, #dashboard, .fila, .template-album_view #content-core {
   width: 100%;
   *zoom: 1; }
-  .row-fluid:before, #dashboard:before, .fila:before, .template-atct_album_view #content-core:before, .row-fluid:after, #dashboard:after, .fila:after, .template-atct_album_view #content-core:after {
+  .row-fluid:before, #dashboard:before, .fila:before, .template-album_view #content-core:before, .row-fluid:after, #dashboard:after, .fila:after, .template-album_view #content-core:after {
     display: table;
     content: "";
     line-height: 0; }
-  .row-fluid:after, #dashboard:after, .fila:after, .template-atct_album_view #content-core:after {
+  .row-fluid:after, #dashboard:after, .fila:after, .template-album_view #content-core:after {
     clear: both; }
-  .row-fluid [class*="span"], #dashboard [class*="span"], .fila [class*="span"], .template-atct_album_view #content-core [class*="span"], .row-fluid .cella, #dashboard .cella, .fila .cella, .template-atct_album_view #content-core .cella {
+  .row-fluid [class*="span"], #dashboard [class*="span"], .fila [class*="span"], .template-album_view #content-core [class*="span"], .row-fluid .cella, #dashboard .cella, .fila .cella, .template-album_view #content-core .cella {
     display: block;
     width: 100%;
     min-height: 30px;
@@ -257,114 +257,114 @@ a:hover {
     float: left;
     margin-left: 3.06748%;
     *margin-left: 3.01636%; }
-  .row-fluid [class*="span"]:first-child, #dashboard [class*="span"]:first-child, .fila [class*="span"]:first-child, .template-atct_album_view #content-core [class*="span"]:first-child, .row-fluid .cella:first-child, #dashboard .cella:first-child, .fila .cella:first-child, .template-atct_album_view #content-core .cella:first-child {
+  .row-fluid [class*="span"]:first-child, #dashboard [class*="span"]:first-child, .fila [class*="span"]:first-child, .template-album_view #content-core [class*="span"]:first-child, .row-fluid .cella:first-child, #dashboard .cella:first-child, .fila .cella:first-child, .template-album_view #content-core .cella:first-child {
     margin-left: 0; }
-  .row-fluid .span12, #dashboard .span12, .fila .span12, .template-atct_album_view #content-core .span12 {
+  .row-fluid .span12, #dashboard .span12, .fila .span12, .template-album_view #content-core .span12 {
     width: 100%;
     *width: 99.94888%; }
-  .row-fluid .offset12, #dashboard .offset12, .fila .offset12, .template-atct_album_view #content-core .offset12 {
+  .row-fluid .offset12, #dashboard .offset12, .fila .offset12, .template-album_view #content-core .offset12 {
     margin-left: 106.13497%;
     *margin-left: 106.03272%; }
-  .row-fluid .offset12:first-child, #dashboard .offset12:first-child, .fila .offset12:first-child, .template-atct_album_view #content-core .offset12:first-child {
+  .row-fluid .offset12:first-child, #dashboard .offset12:first-child, .fila .offset12:first-child, .template-album_view #content-core .offset12:first-child {
     margin-left: 103.06748%;
     *margin-left: 102.96524%; }
-  .row-fluid .span11, #dashboard .span11, .fila .span11, .template-atct_album_view #content-core .span11 {
+  .row-fluid .span11, #dashboard .span11, .fila .span11, .template-album_view #content-core .span11 {
     width: 91.41104%;
     *width: 91.35992%; }
-  .row-fluid .offset11, #dashboard .offset11, .fila .offset11, .template-atct_album_view #content-core .offset11 {
+  .row-fluid .offset11, #dashboard .offset11, .fila .offset11, .template-album_view #content-core .offset11 {
     margin-left: 97.54601%;
     *margin-left: 97.44376%; }
-  .row-fluid .offset11:first-child, #dashboard .offset11:first-child, .fila .offset11:first-child, .template-atct_album_view #content-core .offset11:first-child {
+  .row-fluid .offset11:first-child, #dashboard .offset11:first-child, .fila .offset11:first-child, .template-album_view #content-core .offset11:first-child {
     margin-left: 94.47853%;
     *margin-left: 94.37628%; }
-  .row-fluid .span10, #dashboard .span10, .fila .span10, .template-atct_album_view #content-core .span10 {
+  .row-fluid .span10, #dashboard .span10, .fila .span10, .template-album_view #content-core .span10 {
     width: 82.82209%;
     *width: 82.77096%; }
-  .row-fluid .offset10, #dashboard .offset10, .fila .offset10, .template-atct_album_view #content-core .offset10 {
+  .row-fluid .offset10, #dashboard .offset10, .fila .offset10, .template-album_view #content-core .offset10 {
     margin-left: 88.95706%;
     *margin-left: 88.85481%; }
-  .row-fluid .offset10:first-child, #dashboard .offset10:first-child, .fila .offset10:first-child, .template-atct_album_view #content-core .offset10:first-child {
+  .row-fluid .offset10:first-child, #dashboard .offset10:first-child, .fila .offset10:first-child, .template-album_view #content-core .offset10:first-child {
     margin-left: 85.88957%;
     *margin-left: 85.78732%; }
-  .row-fluid .span9, #dashboard .span9, .fila .span9, .template-atct_album_view #content-core .span9, .row-fluid .w3\3a 4, #dashboard .w3\3a 4, .fila .w3\3a 4, .template-atct_album_view #content-core .w3\3a 4 {
+  .row-fluid .span9, #dashboard .span9, .fila .span9, .template-album_view #content-core .span9, .row-fluid .w3\3a 4, #dashboard .w3\3a 4, .fila .w3\3a 4, .template-album_view #content-core .w3\3a 4 {
     width: 74.23313%;
     *width: 74.182%; }
-  .row-fluid .offset9, #dashboard .offset9, .fila .offset9, .template-atct_album_view #content-core .offset9 {
+  .row-fluid .offset9, #dashboard .offset9, .fila .offset9, .template-album_view #content-core .offset9 {
     margin-left: 80.3681%;
     *margin-left: 80.26585%; }
-  .row-fluid .offset9:first-child, #dashboard .offset9:first-child, .fila .offset9:first-child, .template-atct_album_view #content-core .offset9:first-child {
+  .row-fluid .offset9:first-child, #dashboard .offset9:first-child, .fila .offset9:first-child, .template-album_view #content-core .offset9:first-child {
     margin-left: 77.30061%;
     *margin-left: 77.19836%; }
-  .row-fluid .span8, #dashboard .span8, .fila .span8, .template-atct_album_view #content-core .span8 {
+  .row-fluid .span8, #dashboard .span8, .fila .span8, .template-album_view #content-core .span8 {
     width: 65.64417%;
     *width: 65.59305%; }
-  .row-fluid .offset8, #dashboard .offset8, .fila .offset8, .template-atct_album_view #content-core .offset8 {
+  .row-fluid .offset8, #dashboard .offset8, .fila .offset8, .template-album_view #content-core .offset8 {
     margin-left: 71.77914%;
     *margin-left: 71.67689%; }
-  .row-fluid .offset8:first-child, #dashboard .offset8:first-child, .fila .offset8:first-child, .template-atct_album_view #content-core .offset8:first-child {
+  .row-fluid .offset8:first-child, #dashboard .offset8:first-child, .fila .offset8:first-child, .template-album_view #content-core .offset8:first-child {
     margin-left: 68.71166%;
     *margin-left: 68.60941%; }
-  .row-fluid .span7, #dashboard .span7, .fila .span7, .template-atct_album_view #content-core .span7 {
+  .row-fluid .span7, #dashboard .span7, .fila .span7, .template-album_view #content-core .span7 {
     width: 57.05521%;
     *width: 57.00409%; }
-  .row-fluid .offset7, #dashboard .offset7, .fila .offset7, .template-atct_album_view #content-core .offset7 {
+  .row-fluid .offset7, #dashboard .offset7, .fila .offset7, .template-album_view #content-core .offset7 {
     margin-left: 63.19018%;
     *margin-left: 63.08793%; }
-  .row-fluid .offset7:first-child, #dashboard .offset7:first-child, .fila .offset7:first-child, .template-atct_album_view #content-core .offset7:first-child {
+  .row-fluid .offset7:first-child, #dashboard .offset7:first-child, .fila .offset7:first-child, .template-album_view #content-core .offset7:first-child {
     margin-left: 60.1227%;
     *margin-left: 60.02045%; }
-  .row-fluid .span6, #dashboard .span6, .fila .span6, .template-atct_album_view #content-core .span6, .row-fluid .w1\3a 2, #dashboard .w1\3a 2, .fila .w1\3a 2, .template-atct_album_view #content-core .w1\3a 2, .row-fluid .w2\3a 4, #dashboard .w2\3a 4, .fila .w2\3a 4, .template-atct_album_view #content-core .w2\3a 4 {
+  .row-fluid .span6, #dashboard .span6, .fila .span6, .template-album_view #content-core .span6, .row-fluid .w1\3a 2, #dashboard .w1\3a 2, .fila .w1\3a 2, .template-album_view #content-core .w1\3a 2, .row-fluid .w2\3a 4, #dashboard .w2\3a 4, .fila .w2\3a 4, .template-album_view #content-core .w2\3a 4 {
     width: 48.46626%;
     *width: 48.41513%; }
-  .row-fluid .offset6, #dashboard .offset6, .fila .offset6, .template-atct_album_view #content-core .offset6 {
+  .row-fluid .offset6, #dashboard .offset6, .fila .offset6, .template-album_view #content-core .offset6 {
     margin-left: 54.60123%;
     *margin-left: 54.49898%; }
-  .row-fluid .offset6:first-child, #dashboard .offset6:first-child, .fila .offset6:first-child, .template-atct_album_view #content-core .offset6:first-child {
+  .row-fluid .offset6:first-child, #dashboard .offset6:first-child, .fila .offset6:first-child, .template-album_view #content-core .offset6:first-child {
     margin-left: 51.53374%;
     *margin-left: 51.43149%; }
-  .row-fluid .span5, #dashboard .span5, .fila .span5, .template-atct_album_view #content-core .span5 {
+  .row-fluid .span5, #dashboard .span5, .fila .span5, .template-album_view #content-core .span5 {
     width: 39.8773%;
     *width: 39.82618%; }
-  .row-fluid .offset5, #dashboard .offset5, .fila .offset5, .template-atct_album_view #content-core .offset5 {
+  .row-fluid .offset5, #dashboard .offset5, .fila .offset5, .template-album_view #content-core .offset5 {
     margin-left: 46.01227%;
     *margin-left: 45.91002%; }
-  .row-fluid .offset5:first-child, #dashboard .offset5:first-child, .fila .offset5:first-child, .template-atct_album_view #content-core .offset5:first-child {
+  .row-fluid .offset5:first-child, #dashboard .offset5:first-child, .fila .offset5:first-child, .template-album_view #content-core .offset5:first-child {
     margin-left: 42.94479%;
     *margin-left: 42.84254%; }
-  .row-fluid .span4, #dashboard .span4, .fila .span4, .template-atct_album_view #content-core .span4, .row-fluid .w1\3a 3, #dashboard .w1\3a 3, .fila .w1\3a 3, .template-atct_album_view #content-core .w1\3a 3 {
+  .row-fluid .span4, #dashboard .span4, .fila .span4, .template-album_view #content-core .span4, .row-fluid .w1\3a 3, #dashboard .w1\3a 3, .fila .w1\3a 3, .template-album_view #content-core .w1\3a 3 {
     width: 31.28834%;
     *width: 31.23722%; }
-  .row-fluid .offset4, #dashboard .offset4, .fila .offset4, .template-atct_album_view #content-core .offset4 {
+  .row-fluid .offset4, #dashboard .offset4, .fila .offset4, .template-album_view #content-core .offset4 {
     margin-left: 37.42331%;
     *margin-left: 37.32106%; }
-  .row-fluid .offset4:first-child, #dashboard .offset4:first-child, .fila .offset4:first-child, .template-atct_album_view #content-core .offset4:first-child {
+  .row-fluid .offset4:first-child, #dashboard .offset4:first-child, .fila .offset4:first-child, .template-album_view #content-core .offset4:first-child {
     margin-left: 34.35583%;
     *margin-left: 34.25358%; }
-  .row-fluid .span3, #dashboard .span3, .fila .span3, .template-atct_album_view #content-core .span3, .row-fluid #dashboard-portlets1, #dashboard #dashboard-portlets1, .fila #dashboard-portlets1, .template-atct_album_view #content-core #dashboard-portlets1, .row-fluid #dashboard-portlets2, #dashboard #dashboard-portlets2, .fila #dashboard-portlets2, .template-atct_album_view #content-core #dashboard-portlets2, .row-fluid #dashboard-portlets3, #dashboard #dashboard-portlets3, .fila #dashboard-portlets3, .template-atct_album_view #content-core #dashboard-portlets3, .row-fluid #dashboard-portlets4, #dashboard #dashboard-portlets4, .fila #dashboard-portlets4, .template-atct_album_view #content-core #dashboard-portlets4, .row-fluid .w1\3a 4, #dashboard .w1\3a 4, .fila .w1\3a 4, .template-atct_album_view #content-core .w1\3a 4, .row-fluid .photoAlbumEntry, #dashboard .photoAlbumEntry, .fila .photoAlbumEntry, .template-atct_album_view #content-core .photoAlbumEntry {
+  .row-fluid .span3, #dashboard .span3, .fila .span3, .template-album_view #content-core .span3, .row-fluid #dashboard-portlets1, #dashboard #dashboard-portlets1, .fila #dashboard-portlets1, .template-album_view #content-core #dashboard-portlets1, .row-fluid #dashboard-portlets2, #dashboard #dashboard-portlets2, .fila #dashboard-portlets2, .template-album_view #content-core #dashboard-portlets2, .row-fluid #dashboard-portlets3, #dashboard #dashboard-portlets3, .fila #dashboard-portlets3, .template-album_view #content-core #dashboard-portlets3, .row-fluid #dashboard-portlets4, #dashboard #dashboard-portlets4, .fila #dashboard-portlets4, .template-album_view #content-core #dashboard-portlets4, .row-fluid .w1\3a 4, #dashboard .w1\3a 4, .fila .w1\3a 4, .template-album_view #content-core .w1\3a 4, .row-fluid .photoAlbumEntry, #dashboard .photoAlbumEntry, .fila .photoAlbumEntry, .template-album_view #content-core .photoAlbumEntry {
     width: 22.69939%;
     *width: 22.64826%; }
-  .row-fluid .offset3, #dashboard .offset3, .fila .offset3, .template-atct_album_view #content-core .offset3 {
+  .row-fluid .offset3, #dashboard .offset3, .fila .offset3, .template-album_view #content-core .offset3 {
     margin-left: 28.83436%;
     *margin-left: 28.73211%; }
-  .row-fluid .offset3:first-child, #dashboard .offset3:first-child, .fila .offset3:first-child, .template-atct_album_view #content-core .offset3:first-child {
+  .row-fluid .offset3:first-child, #dashboard .offset3:first-child, .fila .offset3:first-child, .template-album_view #content-core .offset3:first-child {
     margin-left: 25.76687%;
     *margin-left: 25.66462%; }
-  .row-fluid .span2, #dashboard .span2, .fila .span2, .template-atct_album_view #content-core .span2 {
+  .row-fluid .span2, #dashboard .span2, .fila .span2, .template-album_view #content-core .span2 {
     width: 14.11043%;
     *width: 14.0593%; }
-  .row-fluid .offset2, #dashboard .offset2, .fila .offset2, .template-atct_album_view #content-core .offset2 {
+  .row-fluid .offset2, #dashboard .offset2, .fila .offset2, .template-album_view #content-core .offset2 {
     margin-left: 20.2454%;
     *margin-left: 20.14315%; }
-  .row-fluid .offset2:first-child, #dashboard .offset2:first-child, .fila .offset2:first-child, .template-atct_album_view #content-core .offset2:first-child {
+  .row-fluid .offset2:first-child, #dashboard .offset2:first-child, .fila .offset2:first-child, .template-album_view #content-core .offset2:first-child {
     margin-left: 17.17791%;
     *margin-left: 17.07566%; }
-  .row-fluid .span1, #dashboard .span1, .fila .span1, .template-atct_album_view #content-core .span1 {
+  .row-fluid .span1, #dashboard .span1, .fila .span1, .template-album_view #content-core .span1 {
     width: 5.52147%;
     *width: 5.47035%; }
-  .row-fluid .offset1, #dashboard .offset1, .fila .offset1, .template-atct_album_view #content-core .offset1 {
+  .row-fluid .offset1, #dashboard .offset1, .fila .offset1, .template-album_view #content-core .offset1 {
     margin-left: 11.65644%;
     *margin-left: 11.55419%; }
-  .row-fluid .offset1:first-child, #dashboard .offset1:first-child, .fila .offset1:first-child, .template-atct_album_view #content-core .offset1:first-child {
+  .row-fluid .offset1:first-child, #dashboard .offset1:first-child, .fila .offset1:first-child, .template-album_view #content-core .offset1:first-child {
     margin-left: 8.58896%;
     *margin-left: 8.48671%; }
 
@@ -372,30 +372,30 @@ a:hover {
 .row-fluid [class*="span"].hide,
 #dashboard [class*="span"].hide,
 .fila [class*="span"].hide,
-.template-atct_album_view #content-core [class*="span"].hide,
+.template-album_view #content-core [class*="span"].hide,
 .row-fluid .hide.cella,
 #dashboard .hide.cella,
 .fila .hide.cella,
-.template-atct_album_view #content-core .hide.cella {
+.template-album_view #content-core .hide.cella {
   display: none; }
 
 [class*="span"].pull-right, [class*="span"].newsImageContainer, .newsImageContainer.cella, .pull-right.cella,
 .row-fluid [class*="span"].pull-right,
 #dashboard [class*="span"].pull-right,
 .fila [class*="span"].pull-right,
-.template-atct_album_view #content-core [class*="span"].pull-right,
+.template-album_view #content-core [class*="span"].pull-right,
 .row-fluid [class*="span"].newsImageContainer,
 #dashboard [class*="span"].newsImageContainer,
 .fila [class*="span"].newsImageContainer,
-.template-atct_album_view #content-core [class*="span"].newsImageContainer,
+.template-album_view #content-core [class*="span"].newsImageContainer,
 .row-fluid .newsImageContainer.cella,
 #dashboard .newsImageContainer.cella,
 .fila .newsImageContainer.cella,
-.template-atct_album_view #content-core .newsImageContainer.cella,
+.template-album_view #content-core .newsImageContainer.cella,
 .row-fluid .pull-right.cella,
 #dashboard .pull-right.cella,
 .fila .pull-right.cella,
-.template-atct_album_view #content-core .pull-right.cella {
+.template-album_view #content-core .pull-right.cella {
   float: right; }
 
 .container {
@@ -918,35 +918,35 @@ textarea.cella,
 .row-fluid input[class*="span"],
 #dashboard input[class*="span"],
 .fila input[class*="span"],
-.template-atct_album_view #content-core input[class*="span"],
+.template-album_view #content-core input[class*="span"],
 .row-fluid input.cella,
 #dashboard input.cella,
 .fila input.cella,
-.template-atct_album_view #content-core input.cella,
+.template-album_view #content-core input.cella,
 .row-fluid select[class*="span"],
 #dashboard select[class*="span"],
 .fila select[class*="span"],
-.template-atct_album_view #content-core select[class*="span"],
+.template-album_view #content-core select[class*="span"],
 .row-fluid select.cella,
 #dashboard select.cella,
 .fila select.cella,
-.template-atct_album_view #content-core select.cella,
+.template-album_view #content-core select.cella,
 .row-fluid textarea[class*="span"],
 #dashboard textarea[class*="span"],
 .fila textarea[class*="span"],
-.template-atct_album_view #content-core textarea[class*="span"],
+.template-album_view #content-core textarea[class*="span"],
 .row-fluid textarea.cella,
 #dashboard textarea.cella,
 .fila textarea.cella,
-.template-atct_album_view #content-core textarea.cella,
+.template-album_view #content-core textarea.cella,
 .row-fluid .uneditable-input[class*="span"],
 #dashboard .uneditable-input[class*="span"],
 .fila .uneditable-input[class*="span"],
-.template-atct_album_view #content-core .uneditable-input[class*="span"],
+.template-album_view #content-core .uneditable-input[class*="span"],
 .row-fluid .uneditable-input.cella,
 #dashboard .uneditable-input.cella,
 .fila .uneditable-input.cella,
-.template-atct_album_view #content-core .uneditable-input.cella {
+.template-album_view #content-core .uneditable-input.cella {
   float: none;
   margin-left: 0; }
 
@@ -960,51 +960,51 @@ textarea.cella,
 .row-fluid input[class*="span"],
 #dashboard input[class*="span"],
 .fila input[class*="span"],
-.template-atct_album_view #content-core input[class*="span"],
+.template-album_view #content-core input[class*="span"],
 .row-fluid input.cella,
 #dashboard input.cella,
 .fila input.cella,
-.template-atct_album_view #content-core input.cella,
+.template-album_view #content-core input.cella,
 .row-fluid select[class*="span"],
 #dashboard select[class*="span"],
 .fila select[class*="span"],
-.template-atct_album_view #content-core select[class*="span"],
+.template-album_view #content-core select[class*="span"],
 .row-fluid select.cella,
 #dashboard select.cella,
 .fila select.cella,
-.template-atct_album_view #content-core select.cella,
+.template-album_view #content-core select.cella,
 .row-fluid textarea[class*="span"],
 #dashboard textarea[class*="span"],
 .fila textarea[class*="span"],
-.template-atct_album_view #content-core textarea[class*="span"],
+.template-album_view #content-core textarea[class*="span"],
 .row-fluid textarea.cella,
 #dashboard textarea.cella,
 .fila textarea.cella,
-.template-atct_album_view #content-core textarea.cella,
+.template-album_view #content-core textarea.cella,
 .row-fluid .uneditable-input[class*="span"],
 #dashboard .uneditable-input[class*="span"],
 .fila .uneditable-input[class*="span"],
-.template-atct_album_view #content-core .uneditable-input[class*="span"],
+.template-album_view #content-core .uneditable-input[class*="span"],
 .row-fluid .uneditable-input.cella,
 #dashboard .uneditable-input.cella,
 .fila .uneditable-input.cella,
-.template-atct_album_view #content-core .uneditable-input.cella,
+.template-album_view #content-core .uneditable-input.cella,
 .row-fluid .input-prepend [class*="span"],
 #dashboard .input-prepend [class*="span"],
 .fila .input-prepend [class*="span"],
-.template-atct_album_view #content-core .input-prepend [class*="span"],
+.template-album_view #content-core .input-prepend [class*="span"],
 .row-fluid .input-prepend .cella,
 #dashboard .input-prepend .cella,
 .fila .input-prepend .cella,
-.template-atct_album_view #content-core .input-prepend .cella,
+.template-album_view #content-core .input-prepend .cella,
 .row-fluid .input-append [class*="span"],
 #dashboard .input-append [class*="span"],
 .fila .input-append [class*="span"],
-.template-atct_album_view #content-core .input-append [class*="span"],
+.template-album_view #content-core .input-append [class*="span"],
 .row-fluid .input-append .cella,
 #dashboard .input-append .cella,
 .fila .input-append .cella,
-.template-atct_album_view #content-core .input-append .cella {
+.template-album_view #content-core .input-append .cella {
   display: inline-block; }
 
 input,
@@ -2115,9 +2115,9 @@ legend + .control-group {
 .icon-navigation, .icon-workflow-transition-policy {
   background-position: -216px -192px; }
 
-.icon-content-view, .icon-folder_full_view,
-.icon-folder-folder_full_view,
-.icon-plone-contentmenu-display-folder_full_view {
+.icon-content-view, .icon-full_view,
+.icon-folder-full_view,
+.icon-plone-contentmenu-display-full_view {
   background-position: -265px -24px; }
 
 .icon-folder-folder_index_view,
@@ -4505,7 +4505,7 @@ button.pfg-draft-save .caret,
   .thumbnails:after {
     clear: both; }
 
-.row-fluid .thumbnails, #dashboard .thumbnails, .fila .thumbnails, .template-atct_album_view #content-core .thumbnails {
+.row-fluid .thumbnails, #dashboard .thumbnails, .fila .thumbnails, .template-album_view #content-core .thumbnails {
   margin-left: 0; }
 
 .thumbnails > li {
@@ -5206,7 +5206,7 @@ button.pfg-draft-save .badge,
   .container {
     width: auto; }
 
-  .row-fluid, #dashboard, .fila, .template-atct_album_view #content-core {
+  .row-fluid, #dashboard, .fila, .template-album_view #content-core {
     width: 100%; }
 
   .row, .thumbnails {
@@ -5216,7 +5216,7 @@ button.pfg-draft-save .badge,
     float: none;
     margin-left: 0; }
 
-  .span12, .row-fluid .span12, #dashboard .span12, .fila .span12, .template-atct_album_view #content-core .span12 {
+  .span12, .row-fluid .span12, #dashboard .span12, .fila .span12, .template-album_view #content-core .span12 {
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -5387,11 +5387,11 @@ button.pfg-draft-save .badge,
   .row-fluid [class*="span"],
   #dashboard [class*="span"],
   .fila [class*="span"],
-  .template-atct_album_view #content-core [class*="span"],
+  .template-album_view #content-core [class*="span"],
   .row-fluid .cella,
   #dashboard .cella,
   .fila .cella,
-  .template-atct_album_view #content-core .cella {
+  .template-album_view #content-core .cella {
     float: none;
     display: block;
     width: auto;

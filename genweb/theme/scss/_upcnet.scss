@@ -58,7 +58,7 @@
 .icon-delete {@extend .icon-remove;}
 
 .icon-folder_summary_view {@extend .icon-resume-view;}
-.icon-folder_full_view {@extend .icon-content-view;}
+.icon-full_view {@extend .icon-content-view;}
 .icon-folder_tabular_view {@extend .icon-table-view;}
 .icon-atct_album_view {@extend .icon-th;}
 .icon-folder_listing {@extend .icon-list-view;}
@@ -131,7 +131,7 @@
 .tileHeadline { @extend .xxl; @extend .liniaDalt;}
 .tileFooter:before { content:"";  @extend [class^="icon-"]; @extend .icon-plus-sign;}
 
-.template-atct_album_view #content-core {@extend .row-fluid;}
+.template-album_view #content-core {@extend .row-fluid;}
 .photoAlbumEntry {@extend .span3;}
 .photoAlbumEntry a {@extend .thumbnail;
     // & img {width:100%;}
