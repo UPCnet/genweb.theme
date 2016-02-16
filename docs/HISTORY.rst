@@ -1,11 +1,12 @@
 Changelog
 =========
 
-1.73 (unreleased)
+1.73 (2016-02-16)
 -----------------
 
-- Nothing changed yet.
-
+* new listing.pt [Alberto Duran]
+* css vista carpeta i nous pt [Alberto Duran]
+* modify news_events_listing to take day when the event start [Paco Gregori]
 
 1.72 (2016-02-02)
 -----------------
