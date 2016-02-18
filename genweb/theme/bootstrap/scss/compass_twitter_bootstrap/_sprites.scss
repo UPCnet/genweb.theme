@@ -59,8 +59,8 @@
 .icon-film               { background-position: -192px 0; }
 .icon-th-large           { background-position: -216px 0; }
 .icon-th ,
-.icon-plone-contentmenu-display-atct_album_view,
-.icon-folder-atct_album_view                { background-position: -240px 0; }
+.icon-plone-contentmenu-display-album_view,
+.icon-folder-album_view                { background-position: -240px 0; }
 .icon-th-list            { background-position: -264px 0; }
 .icon-ok                 { background-position: -288px 0; }
 .icon-remove, .icon-plone-contentmenu-actions-delete             { background-position: -312px 0; }
@@ -214,14 +214,14 @@
 .icon-copy, .icon-plone-contentmenu-actions-copy                    { background-position: -264px -169px; }
 .icon-rename, .icon-plone-contentmenu-actions-rename                  { background-position: -288px -169px; }
 .icon-resume-view,
-.icon-folder-folder_summary_view,
-.icon-plone-contentmenu-display-folder_summary_view             { background-position: -312px -169px; }
+.icon-folder-summary_view,
+.icon-plone-contentmenu-display-summary_view             { background-position: -312px -169px; }
 .icon-table-view,
-.icon-folder-folder_tabular_view,
-.icon-plone-contentmenu-display-folder_tabular_view             { background-position: -336px -169px; }
+.icon-folder-tabular_view,
+.icon-plone-contentmenu-display-tabular_view             { background-position: -336px -169px; }
 .icon-list-view,
-.icon-plone-contentmenu-display-folder_listing,
-.icon-folder-folder_listing               { background-position: -360px -169px; }
+.icon-plone-contentmenu-display-listing_view,
+.icon-folder-listing_view               { background-position: -360px -169px; }
 .icon-list-extended-view,
 .icon-plone-contentmenu-display-folder_extended,
 .icon-folder-folder_extended      { background-position: -384px -169px; }
@@ -242,7 +242,7 @@
 .icon-content-view,
 .icon-folder-full_view,
 .icon-plone-contentmenu-display-full_view  { background-position: -265px -24px; }
-.icon-folder-folder_index_view, 
+.icon-folder-folder_index_view,
 .icon-plone-contentmenu-display-folder_index_view { background-position: -240px -192px; }
 .icon-genweb                  { background-position: -264px -192px; }
 .icon-captcha, .icon-formcaptchafield                 { background-position: -288px -192px; }

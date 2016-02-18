@@ -255,118 +255,118 @@ a:hover {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
-    margin-left: 3.06748%;
-    *margin-left: 3.01636%; }
+    margin-left: 3.067%;
+    *margin-left: 3.016%; }
   .row-fluid [class*="span"]:first-child, #dashboard [class*="span"]:first-child, .fila [class*="span"]:first-child, .template-album_view #content-core [class*="span"]:first-child, .row-fluid .cella:first-child, #dashboard .cella:first-child, .fila .cella:first-child, .template-album_view #content-core .cella:first-child {
     margin-left: 0; }
   .row-fluid .span12, #dashboard .span12, .fila .span12, .template-album_view #content-core .span12 {
     width: 100%;
-    *width: 99.94888%; }
+    *width: 99.949%; }
   .row-fluid .offset12, #dashboard .offset12, .fila .offset12, .template-album_view #content-core .offset12 {
-    margin-left: 106.13497%;
-    *margin-left: 106.03272%; }
+    margin-left: 106.135%;
+    *margin-left: 106.033%; }
   .row-fluid .offset12:first-child, #dashboard .offset12:first-child, .fila .offset12:first-child, .template-album_view #content-core .offset12:first-child {
-    margin-left: 103.06748%;
-    *margin-left: 102.96524%; }
+    margin-left: 103.067%;
+    *margin-left: 102.965%; }
   .row-fluid .span11, #dashboard .span11, .fila .span11, .template-album_view #content-core .span11 {
-    width: 91.41104%;
-    *width: 91.35992%; }
+    width: 91.411%;
+    *width: 91.36%; }
   .row-fluid .offset11, #dashboard .offset11, .fila .offset11, .template-album_view #content-core .offset11 {
-    margin-left: 97.54601%;
-    *margin-left: 97.44376%; }
+    margin-left: 97.546%;
+    *margin-left: 97.444%; }
   .row-fluid .offset11:first-child, #dashboard .offset11:first-child, .fila .offset11:first-child, .template-album_view #content-core .offset11:first-child {
-    margin-left: 94.47853%;
-    *margin-left: 94.37628%; }
+    margin-left: 94.479%;
+    *margin-left: 94.376%; }
   .row-fluid .span10, #dashboard .span10, .fila .span10, .template-album_view #content-core .span10 {
-    width: 82.82209%;
-    *width: 82.77096%; }
+    width: 82.822%;
+    *width: 82.771%; }
   .row-fluid .offset10, #dashboard .offset10, .fila .offset10, .template-album_view #content-core .offset10 {
-    margin-left: 88.95706%;
-    *margin-left: 88.85481%; }
+    margin-left: 88.957%;
+    *margin-left: 88.855%; }
   .row-fluid .offset10:first-child, #dashboard .offset10:first-child, .fila .offset10:first-child, .template-album_view #content-core .offset10:first-child {
-    margin-left: 85.88957%;
-    *margin-left: 85.78732%; }
+    margin-left: 85.89%;
+    *margin-left: 85.787%; }
   .row-fluid .span9, #dashboard .span9, .fila .span9, .template-album_view #content-core .span9, .row-fluid .w3\3a 4, #dashboard .w3\3a 4, .fila .w3\3a 4, .template-album_view #content-core .w3\3a 4 {
-    width: 74.23313%;
+    width: 74.233%;
     *width: 74.182%; }
   .row-fluid .offset9, #dashboard .offset9, .fila .offset9, .template-album_view #content-core .offset9 {
-    margin-left: 80.3681%;
-    *margin-left: 80.26585%; }
+    margin-left: 80.368%;
+    *margin-left: 80.266%; }
   .row-fluid .offset9:first-child, #dashboard .offset9:first-child, .fila .offset9:first-child, .template-album_view #content-core .offset9:first-child {
-    margin-left: 77.30061%;
-    *margin-left: 77.19836%; }
+    margin-left: 77.301%;
+    *margin-left: 77.198%; }
   .row-fluid .span8, #dashboard .span8, .fila .span8, .template-album_view #content-core .span8 {
-    width: 65.64417%;
-    *width: 65.59305%; }
+    width: 65.644%;
+    *width: 65.593%; }
   .row-fluid .offset8, #dashboard .offset8, .fila .offset8, .template-album_view #content-core .offset8 {
-    margin-left: 71.77914%;
-    *margin-left: 71.67689%; }
+    margin-left: 71.779%;
+    *margin-left: 71.677%; }
   .row-fluid .offset8:first-child, #dashboard .offset8:first-child, .fila .offset8:first-child, .template-album_view #content-core .offset8:first-child {
-    margin-left: 68.71166%;
-    *margin-left: 68.60941%; }
+    margin-left: 68.712%;
+    *margin-left: 68.609%; }
   .row-fluid .span7, #dashboard .span7, .fila .span7, .template-album_view #content-core .span7 {
-    width: 57.05521%;
-    *width: 57.00409%; }
+    width: 57.055%;
+    *width: 57.004%; }
   .row-fluid .offset7, #dashboard .offset7, .fila .offset7, .template-album_view #content-core .offset7 {
-    margin-left: 63.19018%;
-    *margin-left: 63.08793%; }
+    margin-left: 63.19%;
+    *margin-left: 63.088%; }
   .row-fluid .offset7:first-child, #dashboard .offset7:first-child, .fila .offset7:first-child, .template-album_view #content-core .offset7:first-child {
-    margin-left: 60.1227%;
-    *margin-left: 60.02045%; }
+    margin-left: 60.123%;
+    *margin-left: 60.02%; }
   .row-fluid .span6, #dashboard .span6, .fila .span6, .template-album_view #content-core .span6, .row-fluid .w1\3a 2, #dashboard .w1\3a 2, .fila .w1\3a 2, .template-album_view #content-core .w1\3a 2, .row-fluid .w2\3a 4, #dashboard .w2\3a 4, .fila .w2\3a 4, .template-album_view #content-core .w2\3a 4 {
-    width: 48.46626%;
-    *width: 48.41513%; }
+    width: 48.466%;
+    *width: 48.415%; }
   .row-fluid .offset6, #dashboard .offset6, .fila .offset6, .template-album_view #content-core .offset6 {
-    margin-left: 54.60123%;
-    *margin-left: 54.49898%; }
+    margin-left: 54.601%;
+    *margin-left: 54.499%; }
   .row-fluid .offset6:first-child, #dashboard .offset6:first-child, .fila .offset6:first-child, .template-album_view #content-core .offset6:first-child {
-    margin-left: 51.53374%;
-    *margin-left: 51.43149%; }
+    margin-left: 51.534%;
+    *margin-left: 51.431%; }
   .row-fluid .span5, #dashboard .span5, .fila .span5, .template-album_view #content-core .span5 {
-    width: 39.8773%;
-    *width: 39.82618%; }
+    width: 39.877%;
+    *width: 39.826%; }
   .row-fluid .offset5, #dashboard .offset5, .fila .offset5, .template-album_view #content-core .offset5 {
-    margin-left: 46.01227%;
-    *margin-left: 45.91002%; }
+    margin-left: 46.012%;
+    *margin-left: 45.91%; }
   .row-fluid .offset5:first-child, #dashboard .offset5:first-child, .fila .offset5:first-child, .template-album_view #content-core .offset5:first-child {
-    margin-left: 42.94479%;
-    *margin-left: 42.84254%; }
+    margin-left: 42.945%;
+    *margin-left: 42.843%; }
   .row-fluid .span4, #dashboard .span4, .fila .span4, .template-album_view #content-core .span4, .row-fluid .w1\3a 3, #dashboard .w1\3a 3, .fila .w1\3a 3, .template-album_view #content-core .w1\3a 3 {
-    width: 31.28834%;
-    *width: 31.23722%; }
+    width: 31.288%;
+    *width: 31.237%; }
   .row-fluid .offset4, #dashboard .offset4, .fila .offset4, .template-album_view #content-core .offset4 {
-    margin-left: 37.42331%;
-    *margin-left: 37.32106%; }
+    margin-left: 37.423%;
+    *margin-left: 37.321%; }
   .row-fluid .offset4:first-child, #dashboard .offset4:first-child, .fila .offset4:first-child, .template-album_view #content-core .offset4:first-child {
-    margin-left: 34.35583%;
-    *margin-left: 34.25358%; }
+    margin-left: 34.356%;
+    *margin-left: 34.254%; }
   .row-fluid .span3, #dashboard .span3, .fila .span3, .template-album_view #content-core .span3, .row-fluid #dashboard-portlets1, #dashboard #dashboard-portlets1, .fila #dashboard-portlets1, .template-album_view #content-core #dashboard-portlets1, .row-fluid #dashboard-portlets2, #dashboard #dashboard-portlets2, .fila #dashboard-portlets2, .template-album_view #content-core #dashboard-portlets2, .row-fluid #dashboard-portlets3, #dashboard #dashboard-portlets3, .fila #dashboard-portlets3, .template-album_view #content-core #dashboard-portlets3, .row-fluid #dashboard-portlets4, #dashboard #dashboard-portlets4, .fila #dashboard-portlets4, .template-album_view #content-core #dashboard-portlets4, .row-fluid .w1\3a 4, #dashboard .w1\3a 4, .fila .w1\3a 4, .template-album_view #content-core .w1\3a 4, .row-fluid .photoAlbumEntry, #dashboard .photoAlbumEntry, .fila .photoAlbumEntry, .template-album_view #content-core .photoAlbumEntry {
-    width: 22.69939%;
-    *width: 22.64826%; }
+    width: 22.699%;
+    *width: 22.648%; }
   .row-fluid .offset3, #dashboard .offset3, .fila .offset3, .template-album_view #content-core .offset3 {
-    margin-left: 28.83436%;
-    *margin-left: 28.73211%; }
+    margin-left: 28.834%;
+    *margin-left: 28.732%; }
   .row-fluid .offset3:first-child, #dashboard .offset3:first-child, .fila .offset3:first-child, .template-album_view #content-core .offset3:first-child {
-    margin-left: 25.76687%;
-    *margin-left: 25.66462%; }
+    margin-left: 25.767%;
+    *margin-left: 25.665%; }
   .row-fluid .span2, #dashboard .span2, .fila .span2, .template-album_view #content-core .span2 {
-    width: 14.11043%;
-    *width: 14.0593%; }
+    width: 14.11%;
+    *width: 14.059%; }
   .row-fluid .offset2, #dashboard .offset2, .fila .offset2, .template-album_view #content-core .offset2 {
-    margin-left: 20.2454%;
-    *margin-left: 20.14315%; }
+    margin-left: 20.245%;
+    *margin-left: 20.143%; }
   .row-fluid .offset2:first-child, #dashboard .offset2:first-child, .fila .offset2:first-child, .template-album_view #content-core .offset2:first-child {
-    margin-left: 17.17791%;
-    *margin-left: 17.07566%; }
+    margin-left: 17.178%;
+    *margin-left: 17.076%; }
   .row-fluid .span1, #dashboard .span1, .fila .span1, .template-album_view #content-core .span1 {
-    width: 5.52147%;
-    *width: 5.47035%; }
+    width: 5.521%;
+    *width: 5.47%; }
   .row-fluid .offset1, #dashboard .offset1, .fila .offset1, .template-album_view #content-core .offset1 {
-    margin-left: 11.65644%;
-    *margin-left: 11.55419%; }
+    margin-left: 11.656%;
+    *margin-left: 11.554%; }
   .row-fluid .offset1:first-child, #dashboard .offset1:first-child, .fila .offset1:first-child, .template-album_view #content-core .offset1:first-child {
-    margin-left: 8.58896%;
-    *margin-left: 8.48671%; }
+    margin-left: 8.589%;
+    *margin-left: 8.487%; }
 
 [class*="span"].hide, .hide.cella,
 .row-fluid [class*="span"].hide,
@@ -1151,60 +1151,38 @@ input[type="checkbox"][readonly] {
   background-color: #fbf0cc;
   border-color: #735908; }
 
-.control-group.error > label,
-.control-group.error .help-block,
-.control-group.error .help-inline {
+.control-group.error > label, .control-group.error .help-block, .control-group.error .help-inline {
   color: #722015; }
-.control-group.error .checkbox,
-.control-group.error .radio,
-.control-group.error input,
-.control-group.error select,
-.control-group.error textarea {
+.control-group.error .checkbox, .control-group.error .radio, .control-group.error input, .control-group.error select, .control-group.error textarea {
   color: #722015;
   border-color: #722015;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .control-group.error .checkbox:focus,
-  .control-group.error .radio:focus,
-  .control-group.error input:focus,
-  .control-group.error select:focus,
-  .control-group.error textarea:focus {
+  .control-group.error .checkbox:focus, .control-group.error .radio:focus, .control-group.error input:focus, .control-group.error select:focus, .control-group.error textarea:focus {
     border-color: #47140d;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c83825;
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c83825;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c83825; }
-.control-group.error .input-prepend .add-on,
-.control-group.error .input-append .add-on {
+.control-group.error .input-prepend .add-on, .control-group.error .input-append .add-on {
   color: #722015;
   background-color: #fae6e4;
   border-color: #722015; }
 
-.control-group.success > label,
-.control-group.success .help-block,
-.control-group.success .help-inline {
+.control-group.success > label, .control-group.success .help-block, .control-group.success .help-inline {
   color: #456211; }
-.control-group.success .checkbox,
-.control-group.success .radio,
-.control-group.success input,
-.control-group.success select,
-.control-group.success textarea {
+.control-group.success .checkbox, .control-group.success .radio, .control-group.success input, .control-group.success select, .control-group.success textarea {
   color: #456211;
   border-color: #456211;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .control-group.success .checkbox:focus,
-  .control-group.success .radio:focus,
-  .control-group.success input:focus,
-  .control-group.success select:focus,
-  .control-group.success textarea:focus {
+  .control-group.success .checkbox:focus, .control-group.success .radio:focus, .control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus {
     border-color: #26370a;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #81b921;
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #81b921;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #81b921; }
-.control-group.success .input-prepend .add-on,
-.control-group.success .input-append .add-on {
+.control-group.success .input-prepend .add-on, .control-group.success .input-append .add-on {
   color: #456211;
   background-color: #e5f5ca;
   border-color: #456211; }
@@ -1314,9 +1292,13 @@ select:focus:required:invalid {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0; }
-  .input-append .active, .input-append .selected,
+  .input-append .active, .input-append .selected, .input-append .contentViews .selected, .contentViews .input-append .selected, .input-append .contentViews .selected:hover, .contentViews .input-append .selected:hover,
   .input-prepend .active,
-  .input-prepend .selected {
+  .input-prepend .selected,
+  .input-prepend .contentViews .selected,
+  .contentViews .input-prepend .selected,
+  .input-prepend .contentViews .selected:hover,
+  .contentViews .input-prepend .selected:hover {
     background-color: #bce673;
     border-color: #72a31d; }
 
@@ -1537,7 +1519,7 @@ legend + .control-group {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('++genweb++static/images/gh.png?1428934242');
+  background-image: url('++genweb++static/images/gh.png?1448880726');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px; }
@@ -1549,60 +1531,136 @@ legend + .control-group {
 .configlets > .active > a > [class^="icon-"],
 .formTabs > .active > a > [class^="icon-"],
 .nav > .selected > a > [class^="icon-"],
+.contentViews > .selected > a > [class^="icon-"],
 .configlets > .selected > a > [class^="icon-"],
 .formTabs > .selected > a > [class^="icon-"],
+.nav > .contentViews .selected > a > [class^="icon-"],
+.contentViews .nav > .selected > a > [class^="icon-"],
+.contentViews > .selected > a > [class^="icon-"],
+.configlets > .contentViews .selected > a > [class^="icon-"],
+.contentViews .configlets > .selected > a > [class^="icon-"],
+.formTabs > .contentViews .selected > a > [class^="icon-"],
+.contentViews .formTabs > .selected > a > [class^="icon-"],
+.nav > .contentViews .selected:hover > a > [class^="icon-"],
+.contentViews .nav > .selected:hover > a > [class^="icon-"],
+.contentViews > .selected:hover > a > [class^="icon-"],
+.configlets > .contentViews .selected:hover > a > [class^="icon-"],
+.contentViews .configlets > .selected:hover > a > [class^="icon-"],
+.formTabs > .contentViews .selected:hover > a > [class^="icon-"],
+.contentViews .formTabs > .selected:hover > a > [class^="icon-"],
 .nav > .active > a > #category.documentByLine:before,
 .contentViews > .active > a > #category.documentByLine:before,
 .configlets > .active > a > #category.documentByLine:before,
 .formTabs > .active > a > #category.documentByLine:before,
 .nav > .selected > a > #category.documentByLine:before,
+.contentViews > .selected > a > #category.documentByLine:before,
 .configlets > .selected > a > #category.documentByLine:before,
 .formTabs > .selected > a > #category.documentByLine:before,
+.nav > .contentViews .selected > a > #category.documentByLine:before,
+.contentViews .nav > .selected > a > #category.documentByLine:before,
+.contentViews > .selected > a > #category.documentByLine:before,
+.configlets > .contentViews .selected > a > #category.documentByLine:before,
+.contentViews .configlets > .selected > a > #category.documentByLine:before,
+.formTabs > .contentViews .selected > a > #category.documentByLine:before,
+.contentViews .formTabs > .selected > a > #category.documentByLine:before,
+.nav > .contentViews .selected:hover > a > #category.documentByLine:before,
+.contentViews .nav > .selected:hover > a > #category.documentByLine:before,
+.contentViews > .selected:hover > a > #category.documentByLine:before,
+.configlets > .contentViews .selected:hover > a > #category.documentByLine:before,
+.contentViews .configlets > .selected:hover > a > #category.documentByLine:before,
+.formTabs > .contentViews .selected:hover > a > #category.documentByLine:before,
+.contentViews .formTabs > .selected:hover > a > #category.documentByLine:before,
 .nav > .active > a > .tileFooter:before,
 .contentViews > .active > a > .tileFooter:before,
 .configlets > .active > a > .tileFooter:before,
 .formTabs > .active > a > .tileFooter:before,
 .nav > .selected > a > .tileFooter:before,
+.contentViews > .selected > a > .tileFooter:before,
 .configlets > .selected > a > .tileFooter:before,
 .formTabs > .selected > a > .tileFooter:before,
+.nav > .contentViews .selected > a > .tileFooter:before,
+.contentViews .nav > .selected > a > .tileFooter:before,
+.contentViews > .selected > a > .tileFooter:before,
+.configlets > .contentViews .selected > a > .tileFooter:before,
+.contentViews .configlets > .selected > a > .tileFooter:before,
+.formTabs > .contentViews .selected > a > .tileFooter:before,
+.contentViews .formTabs > .selected > a > .tileFooter:before,
+.nav > .contentViews .selected:hover > a > .tileFooter:before,
+.contentViews .nav > .selected:hover > a > .tileFooter:before,
+.contentViews > .selected:hover > a > .tileFooter:before,
+.configlets > .contentViews .selected:hover > a > .tileFooter:before,
+.contentViews .configlets > .selected:hover > a > .tileFooter:before,
+.formTabs > .contentViews .selected:hover > a > .tileFooter:before,
+.contentViews .formTabs > .selected:hover > a > .tileFooter:before,
 .nav > .active > a > [class*=" icon-"],
 .contentViews > .active > a > [class*=" icon-"],
 .configlets > .active > a > [class*=" icon-"],
 .formTabs > .active > a > [class*=" icon-"],
 .nav > .selected > a > [class*=" icon-"],
+.contentViews > .selected > a > [class*=" icon-"],
 .configlets > .selected > a > [class*=" icon-"],
 .formTabs > .selected > a > [class*=" icon-"],
+.nav > .contentViews .selected > a > [class*=" icon-"],
+.contentViews .nav > .selected > a > [class*=" icon-"],
+.contentViews > .selected > a > [class*=" icon-"],
+.configlets > .contentViews .selected > a > [class*=" icon-"],
+.contentViews .configlets > .selected > a > [class*=" icon-"],
+.formTabs > .contentViews .selected > a > [class*=" icon-"],
+.contentViews .formTabs > .selected > a > [class*=" icon-"],
+.nav > .contentViews .selected:hover > a > [class*=" icon-"],
+.contentViews .nav > .selected:hover > a > [class*=" icon-"],
+.contentViews > .selected:hover > a > [class*=" icon-"],
+.configlets > .contentViews .selected:hover > a > [class*=" icon-"],
+.contentViews .configlets > .selected:hover > a > [class*=" icon-"],
+.formTabs > .contentViews .selected:hover > a > [class*=" icon-"],
+.contentViews .formTabs > .selected:hover > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],
 .dropdown-menu > li > a:hover > #category.documentByLine:before,
 .dropdown-menu > li > a:hover > .tileFooter:before,
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .selected > a > [class^="icon-"],
+.dropdown-menu > .contentViews .selected > a > [class^="icon-"],
+.contentViews .dropdown-menu > .selected > a > [class^="icon-"],
+.dropdown-menu > .contentViews .selected:hover > a > [class^="icon-"],
+.contentViews .dropdown-menu > .selected:hover > a > [class^="icon-"],
 .dropdown-menu > .active > a > #category.documentByLine:before,
 .dropdown-menu > .selected > a > #category.documentByLine:before,
+.dropdown-menu > .contentViews .selected > a > #category.documentByLine:before,
+.contentViews .dropdown-menu > .selected > a > #category.documentByLine:before,
+.dropdown-menu > .contentViews .selected:hover > a > #category.documentByLine:before,
+.contentViews .dropdown-menu > .selected:hover > a > #category.documentByLine:before,
 .dropdown-menu > .active > a > .tileFooter:before,
 .dropdown-menu > .selected > a > .tileFooter:before,
+.dropdown-menu > .contentViews .selected > a > .tileFooter:before,
+.contentViews .dropdown-menu > .selected > a > .tileFooter:before,
+.dropdown-menu > .contentViews .selected:hover > a > .tileFooter:before,
+.contentViews .dropdown-menu > .selected:hover > a > .tileFooter:before,
 .dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-menu > .selected > a > [class*=" icon-"] {
-  background-image: url('++genweb++static/images/gh-w.png?1428934242'); }
+.dropdown-menu > .selected > a > [class*=" icon-"],
+.dropdown-menu > .contentViews .selected > a > [class*=" icon-"],
+.contentViews .dropdown-menu > .selected > a > [class*=" icon-"],
+.dropdown-menu > .contentViews .selected:hover > a > [class*=" icon-"],
+.contentViews .dropdown-menu > .selected:hover > a > [class*=" icon-"] {
+  background-image: url('++genweb++static/images/gh-w.png?1448880726'); }
 
 .icon-color {
-  background-image: url('++genweb++static/images/gh-c.png?1428934242'); }
+  background-image: url('++genweb++static/images/gh-c.png?1448880726'); }
 
 .icon-glass {
   background-position: 0      0; }
 
 .icon-music {
-  background-position: -24px  0; }
+  background-position: -24px 0; }
 
 .icon-search {
-  background-position: -48px  0; }
+  background-position: -48px 0; }
 
 .icon-envelope, .icon-formmaileradapter {
-  background-position: -72px  0; }
+  background-position: -72px 0; }
 
 .icon-heart {
-  background-position: -96px  0; }
+  background-position: -96px 0; }
 
 .icon-star,
 .icon-folderChangeDefaultPage {
@@ -1622,8 +1680,8 @@ legend + .control-group {
   background-position: -216px 0; }
 
 .icon-th, .icon-surveymatrix, .icon-atct_album_view,
-.icon-plone-contentmenu-display-atct_album_view,
-.icon-folder-atct_album_view {
+.icon-plone-contentmenu-display-album_view,
+.icon-folder-album_view {
   background-position: -240px 0; }
 
 .icon-th-list {
@@ -1654,19 +1712,19 @@ legend + .control-group {
   background-position: -456px 0; }
 
 .icon-home {
-  background-position: 0      -24px; }
+  background-position: 0 -24px; }
 
 .icon-page, .icon-document {
-  background-position: -24px  -24px; }
+  background-position: -24px -24px; }
 
 .icon-time, .icon-surveydatequestion, .icon-formdatefield {
-  background-position: -48px  -24px; }
+  background-position: -48px -24px; }
 
 .icon-road {
-  background-position: -72px  -24px; }
+  background-position: -72px -24px; }
 
 .icon-download-alt {
-  background-position: -96px  -24px; }
+  background-position: -96px -24px; }
 
 .icon-download {
   background-position: -120px -24px; }
@@ -1714,19 +1772,19 @@ legend + .control-group {
   background-position: -456px -24px; }
 
 .icon-tag, .icon-formlabelfield {
-  background-position: 0      -48px; }
+  background-position: 0 -48px; }
 
 .icon-tags, .icon-formrichlabelfield, #category.documentByLine:before {
-  background-position: -25px  -48px; }
+  background-position: -25px -48px; }
 
 .icon-book {
-  background-position: -48px  -48px; }
+  background-position: -48px -48px; }
 
 .icon-bookmark {
-  background-position: -72px  -48px; }
+  background-position: -72px -48px; }
 
 .icon-print {
-  background-position: -96px  -48px; }
+  background-position: -96px -48px; }
 
 .icon-camera {
   background-position: -120px -48px; }
@@ -1774,19 +1832,19 @@ legend + .control-group {
   background-position: -456px -48px; }
 
 .icon-pencil {
-  background-position: 0      -72px; }
+  background-position: 0 -72px; }
 
 .icon-map-marker {
-  background-position: -24px  -72px; }
+  background-position: -24px -72px; }
 
 .icon-adjust {
-  background-position: -48px  -72px; }
+  background-position: -48px -72px; }
 
 .icon-tint {
-  background-position: -72px  -72px; }
+  background-position: -72px -72px; }
 
 .icon-edit, .icon-formstringfield, .icon-formlinesfield, .icon-formintegerfield, .icon-formfixedpointfield {
-  background-position: -96px  -72px; }
+  background-position: -96px -72px; }
 
 .icon-share {
   background-position: -120px -72px; }
@@ -1834,19 +1892,19 @@ legend + .control-group {
   background-position: -456px -72px; }
 
 .icon-plus-sign, .tileFooter:before {
-  background-position: 0      -96px; }
+  background-position: 0 -96px; }
 
 .icon-minus-sign {
-  background-position: -24px  -96px; }
+  background-position: -24px -96px; }
 
 .icon-remove-sign {
-  background-position: -48px  -96px; }
+  background-position: -48px -96px; }
 
 .icon-ok-sign, .icon-plone-contentmenu-display-fg_base_view_p3 {
-  background-position: -72px  -96px; }
+  background-position: -72px -96px; }
 
 .icon-question-sign {
-  background-position: -96px  -96px; }
+  background-position: -96px -96px; }
 
 .icon-info-sign, .icon-policy, .icon-plone-contentmenu-display-pfg_draft_view {
   background-position: -120px -96px; }
@@ -1894,19 +1952,19 @@ legend + .control-group {
   background-position: -456px -96px; }
 
 .icon-exclamation-sign {
-  background-position: 0      -120px; }
+  background-position: 0 -120px; }
 
 .icon-gift {
-  background-position: -24px  -120px; }
+  background-position: -24px -120px; }
 
 .icon-leaf {
-  background-position: -48px  -120px; }
+  background-position: -48px -120px; }
 
 .icon-fire {
-  background-position: -72px  -120px; }
+  background-position: -72px -120px; }
 
 .icon-eye-open, .icon-workflow-transition-publish {
-  background-position: -96px  -120px; }
+  background-position: -96px -120px; }
 
 .icon-eye-close, .icon-workflow-transition-publishtointranet, .icon-workflow-transition-publicaalaintranet, .icon-workflow-transition-retracttointranet, .icon-workflow-transition-retiraalaintranet {
   background-position: -120px -120px; }
@@ -1956,19 +2014,19 @@ legend + .control-group {
   background-position: -456px -118px; }
 
 .icon-hdd, .icon-formsavedataadapter {
-  background-position: 0      -144px; }
+  background-position: 0 -144px; }
 
 .icon-bullhorn {
-  background-position: -24px  -144px; }
+  background-position: -24px -144px; }
 
 .icon-bell {
-  background-position: -48px  -144px; }
+  background-position: -48px -144px; }
 
 .icon-certificate {
-  background-position: -72px  -144px; }
+  background-position: -72px -144px; }
 
 .icon-thumbs-up, .icon-formthankspage {
-  background-position: -96px  -144px; }
+  background-position: -96px -144px; }
 
 .icon-thumbs-down {
   background-position: -120px -144px; }
@@ -2017,19 +2075,19 @@ legend + .control-group {
 
 /*afegits per a GW*/
 .icon-upc {
-  background-position: 0      -169px; }
+  background-position: 0 -169px; }
 
 .icon-news, .icon-news-item {
-  background-position: -23px  -169px; }
+  background-position: -23px -169px; }
 
 .icon-box, .icon-packet, .icon-packet {
-  background-position: -48px  -168px; }
+  background-position: -48px -168px; }
 
 .icon-link {
-  background-position: -72px  -169px; }
+  background-position: -72px -169px; }
 
 .icon-iframe, .icon-window {
-  background-position: -96px  -169px; }
+  background-position: -96px -169px; }
 
 .icon-desktop {
   background-position: -120px -169px; }
@@ -2056,18 +2114,18 @@ legend + .control-group {
   background-position: -288px -169px; }
 
 .icon-resume-view, .icon-folder_summary_view,
-.icon-folder-folder_summary_view,
-.icon-plone-contentmenu-display-folder_summary_view {
+.icon-folder-summary_view,
+.icon-plone-contentmenu-display-summary_view {
   background-position: -312px -169px; }
 
 .icon-table-view, .icon-folder_tabular_view,
-.icon-folder-folder_tabular_view,
-.icon-plone-contentmenu-display-folder_tabular_view {
+.icon-folder-tabular_view,
+.icon-plone-contentmenu-display-tabular_view {
   background-position: -336px -169px; }
 
 .icon-list-view, .icon-folder_listing,
-.icon-plone-contentmenu-display-folder_listing,
-.icon-folder-folder_listing {
+.icon-plone-contentmenu-display-listing_view,
+.icon-folder-listing_view {
   background-position: -360px -169px; }
 
 .icon-list-extended-view,
@@ -2085,19 +2143,19 @@ legend + .control-group {
   background-position: -456px -169px; }
 
 .icon-upload {
-  background-position: 0      -192px; }
+  background-position: 0 -192px; }
 
 .icon-rss {
-  background-position: -24px  -192px; }
+  background-position: -24px -192px; }
 
 .icon-poll, .icon-collective-polls-poll {
-  background-position: -48px  -192px; }
+  background-position: -48px -192px; }
 
 .icon-collection {
-  background-position: -72px  -192px; }
+  background-position: -72px -192px; }
 
 .icon-caching {
-  background-position: -96px  -192px; }
+  background-position: -96px -192px; }
 
 .icon-html, .icon-formcustomscriptadapter {
   background-position: -120px -192px; }
@@ -2152,26 +2210,26 @@ legend + .control-group {
   background-position: -456px -192px; }
 
 .large-icon {
-  background-image: url('++genweb++static/images/gh-150.png?1428934242');
+  background-image: url('++genweb++static/images/gh-150.png?1448880726');
   width: 21px;
   height: 21px;
   margin-top: -1px;
   margin-right: -5px; }
   .large-icon.icon-news, .large-icon.icon-news-item {
-    background-position: -37px  -252px; }
+    background-position: -37px -252px; }
   .large-icon.icon-link {
     background-position: -108px -252px; }
   .large-icon.icon-upc {
-    background-position: 0      -252px; }
+    background-position: 0 -252px; }
   .large-icon.icon-poll, .large-icon.icon-collective-polls-poll {
-    background-position: -73px  -288px; }
+    background-position: -73px -288px; }
   .large-icon.icon-calendar, .large-icon.icon-event {
     background-position: -287px -180px; }
   .large-icon.icon-user-news {
     background-position: -504px -252px; }
 
 .large-icon.icon-white {
-  background-image: url('++genweb++static/images/gh-150-w.png?1428934242'); }
+  background-image: url('++genweb++static/images/gh-150-w.png?1448880726'); }
 
 /*extends icones*/
 .dropup,
@@ -2258,9 +2316,13 @@ legend + .control-group {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078bb', endColorstr='#0067a1', GradientType=0); }
 
-.dropdown-menu .active > a, .dropdown-menu .selected > a,
+.dropdown-menu .active > a, .dropdown-menu .selected > a, .dropdown-menu .contentViews .selected > a, .contentViews .dropdown-menu .selected > a, .dropdown-menu .contentViews .selected:hover > a, .contentViews .dropdown-menu .selected:hover > a,
 .dropdown-menu .active > a:hover,
-.dropdown-menu .selected > a:hover {
+.dropdown-menu .selected > a:hover,
+.dropdown-menu .contentViews .selected > a:hover,
+.contentViews .dropdown-menu .selected > a:hover,
+.dropdown-menu .contentViews .selected:hover > a:hover,
+.contentViews .dropdown-menu .selected:hover > a:hover {
   color: white;
   text-decoration: none;
   outline: 0;
@@ -2406,12 +2468,12 @@ button.close {
   cursor: pointer;
   color: #333333;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   background-image: -moz-linear-gradient(top, white, #e6e6e6);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
   background-image: -webkit-linear-gradient(top, white, #e6e6e6);
   background-image: -o-linear-gradient(top, white, #e6e6e6);
-  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, white, #e6e6e6);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e3e3e3', GradientType=0);
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
@@ -2428,11 +2490,11 @@ button.close {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
-  .btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
+  .btn:hover, .customfile-hover .customfile-button, .customfile-focus .customfile-button, .standalone:hover, input[value^="Cancel"]:hover, [type="submit"]:hover, .context:hover, .searchButton:hover, button.pfg-draft-save:hover, .link-parent:hover, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn.disabled, .disabled.standalone, input.disabled[value^="Cancel"], .disabled[type="submit"], .disabled.context, .disabled.searchButton, button.disabled.pfg-draft-save, .disabled.link-parent, .btn[disabled], [disabled].standalone, input[disabled][value^="Cancel"], [disabled][type="submit"], [disabled].context, [disabled].searchButton, button[disabled].pfg-draft-save, [disabled].link-parent {
     color: #333333;
     background-color: #e6e6e6;
     *background-color: #d9d9d9; }
-  .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent {
+  .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active, .btn.active, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent {
     background-color: #cccccc \9; }
   .btn:first-child, .standalone:first-child, input[value^="Cancel"]:first-child, [type="submit"]:first-child, .context:first-child, .searchButton:first-child, button.pfg-draft-save:first-child, .link-parent:first-child {
     *margin-left: 0; }
@@ -2454,7 +2516,7 @@ button.close {
     outline: thin dotted #333;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
-  .btn.active, .active.standalone, .standalone.selected, input.active[value^="Cancel"], input[value^="Cancel"].selected, .active[type="submit"], [type="submit"].selected, .active.context, .context.selected, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
+  .btn.active, .active.standalone, .standalone.selected, .contentViews .standalone.selected, .contentViews .standalone.selected:hover, input.active[value^="Cancel"], input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected, .contentViews input[value^="Cancel"].selected:hover, .active[type="submit"], [type="submit"].selected, .contentViews [type="submit"].selected, .contentViews [type="submit"].selected:hover, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn.selected, .selected.searchButton, button.selected.pfg-draft-save, .selected.link-parent, .active.searchButton, .contentViews .searchButton.selected, .contentViews .searchButton.selected:hover, .contentViews .btn.selected, .contentViews button.selected.pfg-draft-save, .contentViews .selected.link-parent, .contentViews .btn.selected:hover, .contentViews .customfile-hover .selected.customfile-button, .customfile-hover .contentViews .selected.customfile-button, .contentViews .customfile-focus .selected.customfile-button, .customfile-focus .contentViews .selected.customfile-button, .contentViews button.selected.pfg-draft-save:hover, .contentViews .selected.link-parent:hover, button.active.pfg-draft-save, .active.link-parent, .btn:active, .standalone:active, input[value^="Cancel"]:active, [type="submit"]:active, .context:active, .searchButton:active, button.pfg-draft-save:active, .link-parent:active {
     background-color: #d9d9d9;
     background-color: #cccccc \9;
     background-image: none;
@@ -2564,21 +2626,35 @@ button.pfg-draft-save:active .tileFooter:before,
 .btn-block + .btn-block {
   margin-top: 5px; }
 
-.btn-primary.active, .active.context, .context.selected, .btn-primary.selected,
+.btn-primary.active, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn-primary.selected, .contentViews .btn-primary.selected, .contentViews .btn-primary.selected:hover,
 .btn-warning.active,
 .btn-warning.selected,
+.contentViews .btn-warning.selected,
+.contentViews .btn-warning.selected:hover,
 .btn-danger.active,
 .btn-danger.selected,
+.contentViews .btn-danger.selected,
+.contentViews .btn-danger.selected:hover,
 .btn-success.active,
 .btn-success.selected,
 button.selected.pfg-draft-save,
+.contentViews .btn-success.selected,
+.contentViews button.selected.pfg-draft-save,
+.contentViews .btn-success.selected:hover,
+.contentViews button.selected.pfg-draft-save:hover,
 button.active.pfg-draft-save,
 .btn-info.active,
 .btn-info.selected,
 .selected.link-parent,
+.contentViews .btn-info.selected,
+.contentViews .selected.link-parent,
+.contentViews .btn-info.selected:hover,
+.contentViews .selected.link-parent:hover,
 .active.link-parent,
 .btn-inverse.active,
-.btn-inverse.selected {
+.btn-inverse.selected,
+.contentViews .btn-inverse.selected,
+.contentViews .btn-inverse.selected:hover {
   color: rgba(255, 255, 255, 0.75); }
 
 .btn, .standalone, input[value^="Cancel"], [type="submit"], .context, .searchButton, button.pfg-draft-save, .link-parent {
@@ -2601,11 +2677,11 @@ button.active.pfg-draft-save,
   *background-color: #005a8d;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
+  .btn-primary:hover, .context:hover, .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn-primary.selected, .contentViews .btn-primary.selected, .contentViews .btn-primary.selected:hover, .btn-primary.disabled, .disabled.context, .btn-primary[disabled], [disabled].context {
     color: white;
     background-color: #005a8d;
     *background-color: #004a74; }
-  .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .btn-primary.selected {
+  .btn-primary:active, .context:active, .btn-primary.active, .active.context, .context.selected, .contentViews .context.selected, .contentViews .context.selected:hover, .btn-primary.selected, .contentViews .btn-primary.selected, .contentViews .btn-primary.selected:hover {
     background-color: #003a5a \9; }
 
 .btn-warning {
@@ -2624,11 +2700,11 @@ button.active.pfg-draft-save,
   *background-color: #c67605;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .btn-warning.disabled, .btn-warning[disabled] {
+  .btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected, .contentViews .btn-warning.selected:hover, .btn-warning.disabled, .btn-warning[disabled] {
     color: white;
     background-color: #c67605;
     *background-color: #ad6704; }
-  .btn-warning:active, .btn-warning.active, .btn-warning.selected {
+  .btn-warning:active, .btn-warning.active, .btn-warning.selected, .contentViews .btn-warning.selected, .contentViews .btn-warning.selected:hover {
     background-color: #945904 \9; }
 
 .btn-danger {
@@ -2647,11 +2723,11 @@ button.active.pfg-draft-save,
   *background-color: #a62e1f;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .btn-danger.disabled, .btn-danger[disabled] {
+  .btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected, .contentViews .btn-danger.selected:hover, .btn-danger.disabled, .btn-danger[disabled] {
     color: white;
     background-color: #a62e1f;
     *background-color: #91281b; }
-  .btn-danger:active, .btn-danger.active, .btn-danger.selected {
+  .btn-danger:active, .btn-danger.active, .btn-danger.selected, .contentViews .btn-danger.selected, .contentViews .btn-danger.selected:hover {
     background-color: #7b2217 \9; }
 
 .btn-success, button.pfg-draft-save {
@@ -2670,11 +2746,11 @@ button.active.pfg-draft-save,
   *background-color: #547815;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
+  .btn-success:hover, button.pfg-draft-save:hover, .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected, .contentViews button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save, .btn-success.disabled, button.disabled.pfg-draft-save, .btn-success[disabled], button[disabled].pfg-draft-save {
     color: white;
     background-color: #547815;
     *background-color: #456211; }
-  .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, button.active.pfg-draft-save {
+  .btn-success:active, button.pfg-draft-save:active, .btn-success.active, .btn-success.selected, button.selected.pfg-draft-save, .contentViews .btn-success.selected, .contentViews button.selected.pfg-draft-save, .contentViews .btn-success.selected:hover, .contentViews button.selected.pfg-draft-save:hover, button.active.pfg-draft-save {
     background-color: #354c0e \9; }
 
 .btn-info, .link-parent {
@@ -2693,11 +2769,11 @@ button.active.pfg-draft-save,
   *background-color: #26809a;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
+  .btn-info:hover, .link-parent:hover, .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected, .contentViews .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent, .btn-info.disabled, .disabled.link-parent, .btn-info[disabled], [disabled].link-parent {
     color: white;
     background-color: #26809a;
     *background-color: #216f86; }
-  .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .active.link-parent {
+  .btn-info:active, .link-parent:active, .btn-info.active, .btn-info.selected, .selected.link-parent, .contentViews .btn-info.selected, .contentViews .selected.link-parent, .contentViews .btn-info.selected:hover, .contentViews .selected.link-parent:hover, .active.link-parent {
     background-color: #1c5e71 \9; }
 
 .btn-inverse {
@@ -2716,16 +2792,20 @@ button.active.pfg-draft-save,
   *background-color: #222222;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-  .btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .btn-inverse.disabled, .btn-inverse[disabled] {
+  .btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected, .contentViews .btn-inverse.selected:hover, .btn-inverse.disabled, .btn-inverse[disabled] {
     color: white;
     background-color: #222222;
     *background-color: #151515; }
-  .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected {
+  .btn-inverse:active, .btn-inverse.active, .btn-inverse.selected, .contentViews .btn-inverse.selected, .contentViews .btn-inverse.selected:hover {
     background-color: #090909 \9; }
 
 button.btn, button.standalone, button[type="submit"], button.context, button.searchButton, button.pfg-draft-save, button.link-parent,
-input[type="submit"].btn,
-input[type="submit"] {
+input[type="submit"].standalone,
+input[type="submit"][value^="Cancel"],
+input[type="submit"],
+input[type="submit"].context,
+input[type="submit"].searchButton,
+input[type="submit"].link-parent {
   /*
   *padding-top: 3px;
   *padding-bottom: 3px;
@@ -2743,8 +2823,12 @@ input[type="submit"] {
   }
   */ }
   button.btn::-moz-focus-inner, button.standalone::-moz-focus-inner, button[type="submit"]::-moz-focus-inner, button.context::-moz-focus-inner, button.searchButton::-moz-focus-inner, button.pfg-draft-save::-moz-focus-inner, button.link-parent::-moz-focus-inner,
-  input[type="submit"].btn::-moz-focus-inner,
-  input[type="submit"]::-moz-focus-inner {
+  input[type="submit"].standalone::-moz-focus-inner,
+  input[type="submit"][value^="Cancel"]::-moz-focus-inner,
+  input[type="submit"]::-moz-focus-inner,
+  input[type="submit"].context::-moz-focus-inner,
+  input[type="submit"].searchButton::-moz-focus-inner,
+  input[type="submit"].link-parent::-moz-focus-inner {
     padding: 0;
     border: 0; }
 
@@ -2825,7 +2909,7 @@ input[type="submit"] {
 .btn-group > .dropdown-menu {
   font-size: 13px; }
 
-.btn-group > .btn-mini, .discussion .commentActions .btn-group > .destructive, .discussion .btn-group > .reply-to-comment-button {
+.btn-group > .btn-mini, .btn-group > .discussion .commentActions .destructive, .discussion .commentActions .btn-group > .destructive, .btn-group > .discussion .reply-to-comment-button, .discussion .btn-group > .reply-to-comment-button {
   font-size: 11px; }
 
 .btn-group > .btn-small, .btn-group > .link-parent {
@@ -2870,7 +2954,7 @@ input[type="submit"] {
   -moz-border-radius-bottomright: 6px;
   border-bottom-right-radius: 6px; }
 
-.btn-group > .btn:hover, .customfile-hover .btn-group > .customfile-button, .customfile-focus .btn-group > .customfile-button, .btn-group > .standalone:hover, .btn-group > input[value^="Cancel"]:hover, .btn-group > [type="submit"]:hover, .btn-group > .context:hover, .btn-group > .searchButton:hover, .btn-group > button.pfg-draft-save:hover, .btn-group > .link-parent:hover,
+.btn-group > .btn:hover, .btn-group > .customfile-hover .customfile-button, .customfile-hover .btn-group > .customfile-button, .btn-group > .customfile-focus .customfile-button, .customfile-focus .btn-group > .customfile-button, .btn-group > .standalone:hover, .btn-group > input[value^="Cancel"]:hover, .btn-group > [type="submit"]:hover, .btn-group > .context:hover, .btn-group > .searchButton:hover, .btn-group > button.pfg-draft-save:hover, .btn-group > .link-parent:hover,
 .btn-group > .btn:focus,
 .btn-group > .standalone:focus,
 .btn-group > input[value^="Cancel"]:focus,
@@ -2890,21 +2974,57 @@ input[type="submit"] {
 .btn-group > .btn.active,
 .btn-group > .active.standalone,
 .btn-group > .standalone.selected,
+.btn-group > .contentViews .standalone.selected,
+.contentViews .btn-group > .standalone.selected,
+.btn-group > .contentViews .standalone.selected:hover,
+.contentViews .btn-group > .standalone.selected:hover,
 .btn-group > input.active[value^="Cancel"],
 .btn-group > input[value^="Cancel"].selected,
+.btn-group > .contentViews input[value^="Cancel"].selected,
+.contentViews .btn-group > input[value^="Cancel"].selected,
+.btn-group > .contentViews input[value^="Cancel"].selected:hover,
+.contentViews .btn-group > input[value^="Cancel"].selected:hover,
 .btn-group > .active[type="submit"],
 .btn-group > [type="submit"].selected,
+.btn-group > .contentViews [type="submit"].selected,
+.contentViews .btn-group > [type="submit"].selected,
+.btn-group > .contentViews [type="submit"].selected:hover,
+.contentViews .btn-group > [type="submit"].selected:hover,
 .btn-group > .active.context,
 .btn-group > .context.selected,
+.btn-group > .contentViews .context.selected,
+.contentViews .btn-group > .context.selected,
+.btn-group > .contentViews .context.selected:hover,
+.contentViews .btn-group > .context.selected:hover,
 .btn-group > .btn.selected,
 .btn-group > .selected.searchButton,
 .btn-group > button.selected.pfg-draft-save,
 .btn-group > .selected.link-parent,
 .btn-group > .active.searchButton,
+.btn-group > .contentViews .searchButton.selected,
+.contentViews .btn-group > .searchButton.selected,
+.btn-group > .contentViews .searchButton.selected:hover,
+.contentViews .btn-group > .searchButton.selected:hover,
+.btn-group > .contentViews .btn.selected,
+.contentViews .btn-group > .btn.selected,
+.btn-group > .contentViews button.selected.pfg-draft-save,
+.contentViews .btn-group > button.selected.pfg-draft-save,
+.btn-group > .contentViews .selected.link-parent,
+.contentViews .btn-group > .selected.link-parent,
+.btn-group > .contentViews .btn.selected:hover,
+.contentViews .btn-group > .btn.selected:hover,
+.btn-group > .contentViews .customfile-hover .selected.customfile-button,
 .contentViews .customfile-hover .btn-group > .selected.customfile-button,
+.btn-group > .customfile-hover .contentViews .selected.customfile-button,
 .customfile-hover .contentViews .btn-group > .selected.customfile-button,
+.btn-group > .contentViews .customfile-focus .selected.customfile-button,
 .contentViews .customfile-focus .btn-group > .selected.customfile-button,
+.btn-group > .customfile-focus .contentViews .selected.customfile-button,
 .customfile-focus .contentViews .btn-group > .selected.customfile-button,
+.btn-group > .contentViews button.selected.pfg-draft-save:hover,
+.contentViews .btn-group > button.selected.pfg-draft-save:hover,
+.btn-group > .contentViews .selected.link-parent:hover,
+.contentViews .btn-group > .selected.link-parent:hover,
 .btn-group > button.active.pfg-draft-save,
 .btn-group > .active.link-parent {
   z-index: 2; }
@@ -3151,9 +3271,13 @@ button.pfg-draft-save .caret,
 .nav-list > li > a {
   padding: 3px 15px; }
 
-.nav-list > .active > a, .nav-list > .selected > a,
+.nav-list > .active > a, .nav-list > .selected > a, .nav-list > .contentViews .selected > a, .contentViews .nav-list > .selected > a, .nav-list > .contentViews .selected:hover > a, .contentViews .nav-list > .selected:hover > a,
 .nav-list > .active > a:hover,
 .nav-list > .selected > a:hover,
+.nav-list > .contentViews .selected > a:hover,
+.contentViews .nav-list > .selected > a:hover,
+.nav-list > .contentViews .selected:hover > a:hover,
+.contentViews .nav-list > .selected:hover > a:hover,
 .formTabs > li > a.selected,
 .formTabs > li > a.selected:hover {
   color: white;
@@ -3207,7 +3331,7 @@ button.pfg-draft-save .caret,
   -webkit-box-shadow: inset 0 -10px 12px -18px black;
   -moz-box-shadow: inset 0 -10px 12px -18px black;
   box-shadow: inset 0 -10px 12px -18px black; }
-  .nav-tabs.nav-stacked, .nav-stacked.contentViews, .configlets {
+  .nav-tabs.nav-stacked, .nav-stacked.contentViews, .contentViews.configlets, .configlets {
     -webkit-box-shadow: 0 10px 12px -18px black;
     -moz-box-shadow: 0 10px 12px -18px black;
     box-shadow: 0 10px 12px -18px black; }
@@ -3226,12 +3350,23 @@ button.pfg-draft-save .caret,
   .nav-tabs > li > a:hover, .contentViews > li > a:hover, .configlets > li > a:hover {
     border-color: #f2f2f2 #f2f2f2 #cccccc; }
 
-.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .configlets > .selected > a,
+.nav-tabs > .active > a, .contentViews > .active > a, .configlets > .active > a, .nav-tabs > .selected > a, .contentViews > .selected > a, .configlets > .selected > a, .nav-tabs > .contentViews .selected > a, .contentViews .nav-tabs > .selected > a, .contentViews > .selected > a, .configlets > .contentViews .selected > a, .contentViews .configlets > .selected > a, .nav-tabs > .contentViews .selected:hover > a, .contentViews .nav-tabs > .selected:hover > a, .contentViews > .selected:hover > a, .configlets > .contentViews .selected:hover > a, .contentViews .configlets > .selected:hover > a,
 .nav-tabs > .active > a:hover,
 .contentViews > .active > a:hover,
 .configlets > .active > a:hover,
 .nav-tabs > .selected > a:hover,
-.configlets > .selected > a:hover {
+.contentViews > .selected > a:hover,
+.configlets > .selected > a:hover,
+.nav-tabs > .contentViews .selected > a:hover,
+.contentViews .nav-tabs > .selected > a:hover,
+.contentViews > .selected > a:hover,
+.configlets > .contentViews .selected > a:hover,
+.contentViews .configlets > .selected > a:hover,
+.nav-tabs > .contentViews .selected:hover > a:hover,
+.contentViews .nav-tabs > .selected:hover > a:hover,
+.contentViews > .selected:hover > a:hover,
+.configlets > .contentViews .selected:hover > a:hover,
+.contentViews .configlets > .selected:hover > a:hover {
   color: #666666;
   background-color: white;
   background-color: white;
@@ -3239,7 +3374,7 @@ button.pfg-draft-save .caret,
   background-image: -webkit-linear-gradient(#f7f7f7, white 0.5, white);
   background-image: -moz-linear-gradient(top, #f7f7f7, white 50%, white);
   background-image: -o-linear-gradient(#f7f7f7, white 0.5, white);
-  background-image: linear-gradient(#f7f7f7, #ffffff 50%, #ffffff);
+  background-image: linear-gradient(#f7f7f7, white 0.5, white);
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#fcfcfc', GradientType=0);
   border: 1px solid #ccc;
@@ -3255,11 +3390,19 @@ button.pfg-draft-save .caret,
   -moz-border-radius: 5px;
   border-radius: 5px; }
 
-.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a,
+.nav-pills > .active > a, .formTabs > .active > a, .nav-pills > .selected > a, .formTabs > .selected > a, .nav-pills > .contentViews .selected > a, .contentViews .nav-pills > .selected > a, .formTabs > .contentViews .selected > a, .contentViews .formTabs > .selected > a, .nav-pills > .contentViews .selected:hover > a, .contentViews .nav-pills > .selected:hover > a, .formTabs > .contentViews .selected:hover > a, .contentViews .formTabs > .selected:hover > a,
 .nav-pills > .active > a:hover,
 .formTabs > .active > a:hover,
 .nav-pills > .selected > a:hover,
-.formTabs > .selected > a:hover {
+.formTabs > .selected > a:hover,
+.nav-pills > .contentViews .selected > a:hover,
+.contentViews .nav-pills > .selected > a:hover,
+.formTabs > .contentViews .selected > a:hover,
+.contentViews .formTabs > .selected > a:hover,
+.nav-pills > .contentViews .selected:hover > a:hover,
+.contentViews .nav-pills > .selected:hover > a:hover,
+.formTabs > .contentViews .selected:hover > a:hover,
+.contentViews .formTabs > .selected:hover > a:hover {
   color: white;
   background-color: #007bc0; }
 
@@ -3269,16 +3412,16 @@ button.pfg-draft-save .caret,
 .nav-stacked > li > a, .configlets > li > a {
   margin-right: 0; }
 
-.nav-tabs.nav-stacked, .nav-stacked.contentViews, .configlets {
+.nav-tabs.nav-stacked, .nav-stacked.contentViews, .contentViews.configlets, .configlets {
   border-bottom: 0; }
 
-.nav-tabs.nav-stacked > li > a, .nav-stacked.contentViews > li > a, .configlets > li > a {
+.nav-tabs.nav-stacked > li > a, .nav-stacked.contentViews > li > a, .contentViews.configlets > li > a, .configlets > li > a {
   border: 1px solid #ccc;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0; }
 
-.nav-tabs.nav-stacked > li:first-child > a, .nav-stacked.contentViews > li:first-child > a, .configlets > li:first-child > a {
+.nav-tabs.nav-stacked > li:first-child > a, .nav-stacked.contentViews > li:first-child > a, .contentViews.configlets > li:first-child > a, .configlets > li:first-child > a {
   -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
@@ -3286,7 +3429,7 @@ button.pfg-draft-save .caret,
   -moz-border-radius-topleft: 4px;
   border-top-left-radius: 4px; }
 
-.nav-tabs.nav-stacked > li:last-child > a, .nav-stacked.contentViews > li:last-child > a, .configlets > li:last-child > a {
+.nav-tabs.nav-stacked > li:last-child > a, .nav-stacked.contentViews > li:last-child > a, .contentViews.configlets > li:last-child > a, .configlets > li:last-child > a {
   -webkit-border-bottom-right-radius: 4px;
   -moz-border-radius-bottomright: 4px;
   border-bottom-right-radius: 4px;
@@ -3294,7 +3437,7 @@ button.pfg-draft-save .caret,
   -moz-border-radius-bottomleft: 4px;
   border-bottom-left-radius: 4px; }
 
-.nav-tabs.nav-stacked > li > a:hover, .nav-stacked.contentViews > li > a:hover, .configlets > li > a:hover {
+.nav-tabs.nav-stacked > li > a:hover, .nav-stacked.contentViews > li > a:hover, .contentViews.configlets > li > a:hover, .configlets > li > a:hover {
   border-color: #ccc;
   z-index: 2; }
 
@@ -3327,15 +3470,15 @@ button.pfg-draft-save .caret,
 .nav-tabs .dropdown-toggle .caret, .contentViews .dropdown-toggle .caret, .configlets .dropdown-toggle .caret {
   margin-top: 8px; }
 
-.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret {
+.nav .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .formTabs .active .dropdown-toggle .caret, .nav .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .formTabs .selected .dropdown-toggle .caret, .nav .contentViews .selected .dropdown-toggle .caret, .contentViews .nav .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret, .configlets .contentViews .selected .dropdown-toggle .caret, .contentViews .configlets .selected .dropdown-toggle .caret, .formTabs .contentViews .selected .dropdown-toggle .caret, .contentViews .formTabs .selected .dropdown-toggle .caret, .nav .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .nav .selected:hover .dropdown-toggle .caret, .contentViews .selected:hover .dropdown-toggle .caret, .configlets .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .configlets .selected:hover .dropdown-toggle .caret, .formTabs .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .formTabs .selected:hover .dropdown-toggle .caret {
   border-top-color: #333333;
   border-bottom-color: #333333; }
 
-.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret {
+.nav-tabs .active .dropdown-toggle .caret, .contentViews .active .dropdown-toggle .caret, .configlets .active .dropdown-toggle .caret, .nav-tabs .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret, .configlets .selected .dropdown-toggle .caret, .nav-tabs .contentViews .selected .dropdown-toggle .caret, .contentViews .nav-tabs .selected .dropdown-toggle .caret, .contentViews .selected .dropdown-toggle .caret, .configlets .contentViews .selected .dropdown-toggle .caret, .contentViews .configlets .selected .dropdown-toggle .caret, .nav-tabs .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .nav-tabs .selected:hover .dropdown-toggle .caret, .contentViews .selected:hover .dropdown-toggle .caret, .configlets .contentViews .selected:hover .dropdown-toggle .caret, .contentViews .configlets .selected:hover .dropdown-toggle .caret {
   border-top-color: #666666;
   border-bottom-color: #666666; }
 
-.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover {
+.nav > .dropdown.active > a:hover, .contentViews > .dropdown.active > a:hover, .configlets > .dropdown.active > a:hover, .formTabs > .dropdown.active > a:hover, .nav > .dropdown.selected > a:hover, .contentViews > .dropdown.selected > a:hover, .configlets > .dropdown.selected > a:hover, .formTabs > .dropdown.selected > a:hover, .nav > .contentViews .dropdown.selected > a:hover, .contentViews .nav > .dropdown.selected > a:hover, .contentViews > .dropdown.selected > a:hover, .configlets > .contentViews .dropdown.selected > a:hover, .contentViews .configlets > .dropdown.selected > a:hover, .formTabs > .contentViews .dropdown.selected > a:hover, .contentViews .formTabs > .dropdown.selected > a:hover, .nav > .contentViews .dropdown.selected:hover > a:hover, .contentViews .nav > .dropdown.selected:hover > a:hover, .contentViews > .dropdown.selected:hover > a:hover, .configlets > .contentViews .dropdown.selected:hover > a:hover, .contentViews .configlets > .dropdown.selected:hover > a:hover, .formTabs > .contentViews .dropdown.selected:hover > a:hover, .contentViews .formTabs > .dropdown.selected:hover > a:hover {
   cursor: pointer; }
 
 .nav-tabs .open .dropdown-toggle, .contentViews .open .dropdown-toggle, .configlets .open .dropdown-toggle,
@@ -3346,8 +3489,23 @@ button.pfg-draft-save .caret,
 .configlets > li.dropdown.open.active > a:hover,
 .formTabs > li.dropdown.open.active > a:hover,
 .nav > li.dropdown.open.selected > a:hover,
+.contentViews > li.dropdown.open.selected > a:hover,
 .configlets > li.dropdown.open.selected > a:hover,
-.formTabs > li.dropdown.open.selected > a:hover {
+.formTabs > li.dropdown.open.selected > a:hover,
+.nav > .contentViews li.dropdown.open.selected > a:hover,
+.contentViews .nav > li.dropdown.open.selected > a:hover,
+.contentViews > li.dropdown.open.selected > a:hover,
+.configlets > .contentViews li.dropdown.open.selected > a:hover,
+.contentViews .configlets > li.dropdown.open.selected > a:hover,
+.formTabs > .contentViews li.dropdown.open.selected > a:hover,
+.contentViews .formTabs > li.dropdown.open.selected > a:hover,
+.nav > .contentViews li.dropdown.open.selected:hover > a:hover,
+.contentViews .nav > li.dropdown.open.selected:hover > a:hover,
+.contentViews > li.dropdown.open.selected:hover > a:hover,
+.configlets > .contentViews li.dropdown.open.selected:hover > a:hover,
+.contentViews .configlets > li.dropdown.open.selected:hover > a:hover,
+.formTabs > .contentViews li.dropdown.open.selected:hover > a:hover,
+.contentViews .formTabs > li.dropdown.open.selected:hover > a:hover {
   color: white;
   background-color: #aaaaaa;
   border-color: #aaaaaa; }
@@ -3358,8 +3516,23 @@ button.pfg-draft-save .caret,
 .configlets li.dropdown.open.active .caret,
 .formTabs li.dropdown.open.active .caret,
 .nav li.dropdown.open.selected .caret,
+.contentViews li.dropdown.open.selected .caret,
 .configlets li.dropdown.open.selected .caret,
 .formTabs li.dropdown.open.selected .caret,
+.nav .contentViews li.dropdown.open.selected .caret,
+.contentViews .nav li.dropdown.open.selected .caret,
+.contentViews li.dropdown.open.selected .caret,
+.configlets .contentViews li.dropdown.open.selected .caret,
+.contentViews .configlets li.dropdown.open.selected .caret,
+.formTabs .contentViews li.dropdown.open.selected .caret,
+.contentViews .formTabs li.dropdown.open.selected .caret,
+.nav .contentViews li.dropdown.open.selected:hover .caret,
+.contentViews .nav li.dropdown.open.selected:hover .caret,
+.contentViews li.dropdown.open.selected:hover .caret,
+.configlets .contentViews li.dropdown.open.selected:hover .caret,
+.contentViews .configlets li.dropdown.open.selected:hover .caret,
+.formTabs .contentViews li.dropdown.open.selected:hover .caret,
+.contentViews .formTabs li.dropdown.open.selected:hover .caret,
 .nav li.dropdown.open a:hover .caret,
 .contentViews li.dropdown.open a:hover .caret,
 .configlets li.dropdown.open a:hover .caret,
@@ -3397,9 +3570,13 @@ button.pfg-draft-save .caret,
 .pill-content > .pill-pane {
   display: none; }
 
-.tab-content > .active, .tab-content > .selected,
+.tab-content > .active, .tab-content > .selected, .tab-content > .contentViews .selected, .contentViews .tab-content > .selected, .tab-content > .contentViews .selected:hover, .contentViews .tab-content > .selected:hover,
 .pill-content > .active,
-.pill-content > .selected {
+.pill-content > .selected,
+.pill-content > .contentViews .selected,
+.contentViews .pill-content > .selected,
+.pill-content > .contentViews .selected:hover,
+.contentViews .pill-content > .selected:hover {
   display: block; }
 
 .tabs-below > .nav-tabs, .tabs-below > .contentViews, .tabs-below > .configlets {
@@ -3417,12 +3594,23 @@ button.pfg-draft-save .caret,
     border-bottom-color: transparent;
     border-top-color: #ccc; }
 
-.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .configlets > .selected > a,
+.tabs-below > .nav-tabs > .active > a, .tabs-below > .contentViews > .active > a, .tabs-below > .configlets > .active > a, .tabs-below > .nav-tabs > .selected > a, .tabs-below > .contentViews > .selected > a, .tabs-below > .configlets > .selected > a, .tabs-below > .nav-tabs > .contentViews .selected > a, .contentViews .tabs-below > .nav-tabs > .selected > a, .tabs-below > .contentViews > .selected > a, .tabs-below > .configlets > .contentViews .selected > a, .contentViews .tabs-below > .configlets > .selected > a, .tabs-below > .nav-tabs > .contentViews .selected:hover > a, .contentViews .tabs-below > .nav-tabs > .selected:hover > a, .tabs-below > .contentViews > .selected:hover > a, .tabs-below > .configlets > .contentViews .selected:hover > a, .contentViews .tabs-below > .configlets > .selected:hover > a,
 .tabs-below > .nav-tabs > .active > a:hover,
 .tabs-below > .contentViews > .active > a:hover,
 .tabs-below > .configlets > .active > a:hover,
 .tabs-below > .nav-tabs > .selected > a:hover,
-.tabs-below > .configlets > .selected > a:hover {
+.tabs-below > .contentViews > .selected > a:hover,
+.tabs-below > .configlets > .selected > a:hover,
+.tabs-below > .nav-tabs > .contentViews .selected > a:hover,
+.contentViews .tabs-below > .nav-tabs > .selected > a:hover,
+.tabs-below > .contentViews > .selected > a:hover,
+.tabs-below > .configlets > .contentViews .selected > a:hover,
+.contentViews .tabs-below > .configlets > .selected > a:hover,
+.tabs-below > .nav-tabs > .contentViews .selected:hover > a:hover,
+.contentViews .tabs-below > .nav-tabs > .selected:hover > a:hover,
+.tabs-below > .contentViews > .selected:hover > a:hover,
+.tabs-below > .configlets > .contentViews .selected:hover > a:hover,
+.contentViews .tabs-below > .configlets > .selected:hover > a:hover {
   border-color: transparent #ccc #ccc #ccc; }
 
 .tabs-left > .nav-tabs > li, .tabs-left > .contentViews > li, .tabs-left > .configlets > li,
@@ -3453,12 +3641,23 @@ button.pfg-draft-save .caret,
 .tabs-left > .nav-tabs > li > a:hover, .tabs-left > .contentViews > li > a:hover, .tabs-left > .configlets > li > a:hover {
   border-color: #f2f2f2 #cccccc #f2f2f2 #f2f2f2; }
 
-.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .configlets .selected > a,
+.tabs-left > .nav-tabs .active > a, .tabs-left > .contentViews .active > a, .tabs-left > .configlets .active > a, .tabs-left > .nav-tabs .selected > a, .tabs-left > .contentViews .selected > a, .tabs-left > .configlets .selected > a, .tabs-left > .nav-tabs .contentViews .selected > a, .contentViews .tabs-left > .nav-tabs .selected > a, .tabs-left > .contentViews .selected > a, .tabs-left > .configlets .contentViews .selected > a, .contentViews .tabs-left > .configlets .selected > a, .tabs-left > .nav-tabs .contentViews .selected:hover > a, .contentViews .tabs-left > .nav-tabs .selected:hover > a, .tabs-left > .contentViews .selected:hover > a, .tabs-left > .configlets .contentViews .selected:hover > a, .contentViews .tabs-left > .configlets .selected:hover > a,
 .tabs-left > .nav-tabs .active > a:hover,
 .tabs-left > .contentViews .active > a:hover,
 .tabs-left > .configlets .active > a:hover,
 .tabs-left > .nav-tabs .selected > a:hover,
-.tabs-left > .configlets .selected > a:hover {
+.tabs-left > .contentViews .selected > a:hover,
+.tabs-left > .configlets .selected > a:hover,
+.tabs-left > .nav-tabs .contentViews .selected > a:hover,
+.contentViews .tabs-left > .nav-tabs .selected > a:hover,
+.tabs-left > .contentViews .selected > a:hover,
+.tabs-left > .configlets .contentViews .selected > a:hover,
+.contentViews .tabs-left > .configlets .selected > a:hover,
+.tabs-left > .nav-tabs .contentViews .selected:hover > a:hover,
+.contentViews .tabs-left > .nav-tabs .selected:hover > a:hover,
+.tabs-left > .contentViews .selected:hover > a:hover,
+.tabs-left > .configlets .contentViews .selected:hover > a:hover,
+.contentViews .tabs-left > .configlets .selected:hover > a:hover {
   border-color: #ccc transparent #ccc #ccc;
   *border-right-color: white; }
 
@@ -3476,12 +3675,23 @@ button.pfg-draft-save .caret,
 .tabs-right > .nav-tabs > li > a:hover, .tabs-right > .contentViews > li > a:hover, .tabs-right > .configlets > li > a:hover {
   border-color: #f2f2f2 #f2f2f2 #f2f2f2 #cccccc; }
 
-.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .configlets .selected > a,
+.tabs-right > .nav-tabs .active > a, .tabs-right > .contentViews .active > a, .tabs-right > .configlets .active > a, .tabs-right > .nav-tabs .selected > a, .tabs-right > .contentViews .selected > a, .tabs-right > .configlets .selected > a, .tabs-right > .nav-tabs .contentViews .selected > a, .contentViews .tabs-right > .nav-tabs .selected > a, .tabs-right > .contentViews .selected > a, .tabs-right > .configlets .contentViews .selected > a, .contentViews .tabs-right > .configlets .selected > a, .tabs-right > .nav-tabs .contentViews .selected:hover > a, .contentViews .tabs-right > .nav-tabs .selected:hover > a, .tabs-right > .contentViews .selected:hover > a, .tabs-right > .configlets .contentViews .selected:hover > a, .contentViews .tabs-right > .configlets .selected:hover > a,
 .tabs-right > .nav-tabs .active > a:hover,
 .tabs-right > .contentViews .active > a:hover,
 .tabs-right > .configlets .active > a:hover,
 .tabs-right > .nav-tabs .selected > a:hover,
-.tabs-right > .configlets .selected > a:hover {
+.tabs-right > .contentViews .selected > a:hover,
+.tabs-right > .configlets .selected > a:hover,
+.tabs-right > .nav-tabs .contentViews .selected > a:hover,
+.contentViews .tabs-right > .nav-tabs .selected > a:hover,
+.tabs-right > .contentViews .selected > a:hover,
+.tabs-right > .configlets .contentViews .selected > a:hover,
+.contentViews .tabs-right > .configlets .selected > a:hover,
+.tabs-right > .nav-tabs .contentViews .selected:hover > a:hover,
+.contentViews .tabs-right > .nav-tabs .selected:hover > a:hover,
+.tabs-right > .contentViews .selected:hover > a:hover,
+.tabs-right > .configlets .contentViews .selected:hover > a:hover,
+.contentViews .tabs-right > .configlets .selected:hover > a:hover {
   border-color: #ccc #ccc #ccc transparent;
   *border-left-color: white; }
 
@@ -3709,21 +3919,51 @@ button.pfg-draft-save .caret,
   -moz-box-shadow: inset 0 20px 20px -10px rgba(255, 255, 255, 0.75);
   box-shadow: inset 0 20px 20px -10px rgba(255, 255, 255, 0.75); }
 
-.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a,
+.navbar .nav > .active > a, .navbar .contentViews > .active > a, .navbar .configlets > .active > a, .navbar .formTabs > .active > a, .navbar .nav > .selected > a, .navbar .contentViews > .selected > a, .navbar .configlets > .selected > a, .navbar .formTabs > .selected > a, .navbar .nav > .contentViews .selected > a, .contentViews .navbar .nav > .selected > a, .navbar .contentViews > .selected > a, .navbar .configlets > .contentViews .selected > a, .contentViews .navbar .configlets > .selected > a, .navbar .formTabs > .contentViews .selected > a, .contentViews .navbar .formTabs > .selected > a, .navbar .nav > .contentViews .selected:hover > a, .contentViews .navbar .nav > .selected:hover > a, .navbar .contentViews > .selected:hover > a, .navbar .configlets > .contentViews .selected:hover > a, .contentViews .navbar .configlets > .selected:hover > a, .navbar .formTabs > .contentViews .selected:hover > a, .contentViews .navbar .formTabs > .selected:hover > a,
 .navbar .nav > .active > a:hover,
 .navbar .contentViews > .active > a:hover,
 .navbar .configlets > .active > a:hover,
 .navbar .formTabs > .active > a:hover,
 .navbar .nav > .selected > a:hover,
+.navbar .contentViews > .selected > a:hover,
 .navbar .configlets > .selected > a:hover,
 .navbar .formTabs > .selected > a:hover,
+.navbar .nav > .contentViews .selected > a:hover,
+.contentViews .navbar .nav > .selected > a:hover,
+.navbar .contentViews > .selected > a:hover,
+.navbar .configlets > .contentViews .selected > a:hover,
+.contentViews .navbar .configlets > .selected > a:hover,
+.navbar .formTabs > .contentViews .selected > a:hover,
+.contentViews .navbar .formTabs > .selected > a:hover,
+.navbar .nav > .contentViews .selected:hover > a:hover,
+.contentViews .navbar .nav > .selected:hover > a:hover,
+.navbar .contentViews > .selected:hover > a:hover,
+.navbar .configlets > .contentViews .selected:hover > a:hover,
+.contentViews .navbar .configlets > .selected:hover > a:hover,
+.navbar .formTabs > .contentViews .selected:hover > a:hover,
+.contentViews .navbar .formTabs > .selected:hover > a:hover,
 .navbar .nav > .active > a:focus,
 .navbar .contentViews > .active > a:focus,
 .navbar .configlets > .active > a:focus,
 .navbar .formTabs > .active > a:focus,
 .navbar .nav > .selected > a:focus,
+.navbar .contentViews > .selected > a:focus,
 .navbar .configlets > .selected > a:focus,
-.navbar .formTabs > .selected > a:focus {
+.navbar .formTabs > .selected > a:focus,
+.navbar .nav > .contentViews .selected > a:focus,
+.contentViews .navbar .nav > .selected > a:focus,
+.navbar .contentViews > .selected > a:focus,
+.navbar .configlets > .contentViews .selected > a:focus,
+.contentViews .navbar .configlets > .selected > a:focus,
+.navbar .formTabs > .contentViews .selected > a:focus,
+.contentViews .navbar .formTabs > .selected > a:focus,
+.navbar .nav > .contentViews .selected:hover > a:focus,
+.contentViews .navbar .nav > .selected:hover > a:focus,
+.navbar .contentViews > .selected:hover > a:focus,
+.navbar .configlets > .contentViews .selected:hover > a:focus,
+.contentViews .navbar .configlets > .selected:hover > a:focus,
+.navbar .formTabs > .contentViews .selected:hover > a:focus,
+.contentViews .navbar .formTabs > .selected:hover > a:focus {
   color: #222222;
   text-decoration: none;
   background-color: white;
@@ -3731,7 +3971,7 @@ button.pfg-draft-save .caret,
   -moz-box-shadow: inset 0 2px 4px 1px rgba(0, 0, 0, 0.15), inset 0 1px 2px 0px rgba(0, 0, 0, 0.25), inset 0 1px 0px white;
   box-shadow: inset 0 2px 4px 1px rgba(0, 0, 0, 0.15), inset 0 1px 2px 0px rgba(0, 0, 0, 0.25), inset 0 1px 0px white; }
 
-#portal-globalnav .active a.state-published, #portal-globalnav .selected a.state-published, #portal-globalnav .active a#workflow-transition-publish, #portal-globalnav .selected a#workflow-transition-publish {
+#portal-globalnav .active a.state-published, #portal-globalnav .selected a.state-published, #portal-globalnav .contentViews .selected a.state-published, .contentViews #portal-globalnav .selected a.state-published, #portal-globalnav .contentViews .selected:hover a.state-published, .contentViews #portal-globalnav .selected:hover a.state-published, #portal-globalnav .active a#workflow-transition-publish, #portal-globalnav .selected a#workflow-transition-publish, #portal-globalnav .contentViews .selected a#workflow-transition-publish, .contentViews #portal-globalnav .selected a#workflow-transition-publish, #portal-globalnav .contentViews .selected:hover a#workflow-transition-publish, .contentViews #portal-globalnav .selected:hover a#workflow-transition-publish {
   border-bottom-color: #004a74; }
 
 .navbar .btn-navbar {
@@ -3743,26 +3983,26 @@ button.pfg-draft-save .caret,
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #e1e1e1;
-  background-image: -moz-linear-gradient(top, #eaeaea, lightgrey);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eaeaea), to(lightgrey));
-  background-image: -webkit-linear-gradient(top, #eaeaea, lightgrey);
-  background-image: -o-linear-gradient(top, #eaeaea, lightgrey);
+  background-image: -moz-linear-gradient(top, #eaeaea, #d3d3d3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eaeaea), to(#d3d3d3));
+  background-image: -webkit-linear-gradient(top, #eaeaea, #d3d3d3);
+  background-image: -o-linear-gradient(top, #eaeaea, #d3d3d3);
   background-image: linear-gradient(to bottom, #eaeaea, #d3d3d3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#d0d0d0', GradientType=0);
-  border-color: lightgrey lightgrey #acacac;
+  border-color: #d3d3d3 #d3d3d3 #acacac;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: lightgrey;
+  *background-color: #d3d3d3;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075); }
-  .navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
+  .navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected, .contentViews .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected:hover, .contentViews .navbar .btn-navbar.selected:hover, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
     color: white;
-    background-color: lightgrey;
+    background-color: #d3d3d3;
     *background-color: #c6c6c6; }
-  .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected {
+  .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected, .contentViews .navbar .btn-navbar.selected, .navbar .contentViews .btn-navbar.selected:hover, .contentViews .navbar .btn-navbar.selected:hover {
     background-color: #b9b9b9 \9; }
 
 .navbar .btn-navbar .icon-bar {
@@ -3818,15 +4058,45 @@ button.pfg-draft-save .caret,
 .navbar .configlets li.dropdown.active > .dropdown-toggle,
 .navbar .formTabs li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.selected > .dropdown-toggle,
+.navbar .contentViews li.dropdown.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle,
+.navbar .nav .contentViews li.dropdown.selected > .dropdown-toggle,
+.contentViews .navbar .nav li.dropdown.selected > .dropdown-toggle,
+.navbar .contentViews li.dropdown.selected > .dropdown-toggle,
+.navbar .configlets .contentViews li.dropdown.selected > .dropdown-toggle,
+.contentViews .navbar .configlets li.dropdown.selected > .dropdown-toggle,
+.navbar .formTabs .contentViews li.dropdown.selected > .dropdown-toggle,
+.contentViews .navbar .formTabs li.dropdown.selected > .dropdown-toggle,
+.navbar .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.contentViews .navbar .nav li.dropdown.selected:hover > .dropdown-toggle,
+.navbar .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.navbar .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.contentViews .navbar .configlets li.dropdown.selected:hover > .dropdown-toggle,
+.navbar .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+.contentViews .navbar .formTabs li.dropdown.selected:hover > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle,
 .navbar .formTabs li.dropdown.open.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle,
+.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle,
-.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle {
+.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle,
+.navbar .nav .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.contentViews .navbar .nav li.dropdown.open.selected > .dropdown-toggle,
+.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.navbar .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.contentViews .navbar .configlets li.dropdown.open.selected > .dropdown-toggle,
+.navbar .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle,
+.contentViews .navbar .formTabs li.dropdown.open.selected > .dropdown-toggle,
+.navbar .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.contentViews .navbar .nav li.dropdown.open.selected:hover > .dropdown-toggle,
+.navbar .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.navbar .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.contentViews .navbar .configlets li.dropdown.open.selected:hover > .dropdown-toggle,
+.navbar .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+.contentViews .navbar .formTabs li.dropdown.open.selected:hover > .dropdown-toggle {
   background-color: white;
   color: #222222; }
 
@@ -3840,15 +4110,45 @@ button.pfg-draft-save .caret,
 .navbar .configlets li.dropdown.active > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.selected > .dropdown-toggle .caret,
+.navbar .contentViews li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.selected > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.selected > .dropdown-toggle .caret,
+.navbar .nav .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.contentViews .navbar .nav li.dropdown.selected > .dropdown-toggle .caret,
+.navbar .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.navbar .configlets .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.contentViews .navbar .configlets li.dropdown.selected > .dropdown-toggle .caret,
+.navbar .formTabs .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+.contentViews .navbar .formTabs li.dropdown.selected > .dropdown-toggle .caret,
+.navbar .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .nav li.dropdown.selected:hover > .dropdown-toggle .caret,
+.navbar .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.navbar .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .configlets li.dropdown.selected:hover > .dropdown-toggle .caret,
+.navbar .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .formTabs li.dropdown.selected:hover > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .formTabs li.dropdown.open.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
 .navbar .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret {
+.navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar .nav .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.contentViews .navbar .nav li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.contentViews .navbar .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+.contentViews .navbar .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
+.navbar .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .nav li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.navbar .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.navbar .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .configlets li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.navbar .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+.contentViews .navbar .formTabs li.dropdown.open.selected:hover > .dropdown-toggle .caret {
   border-top-color: #222222;
   border-bottom-color: #222222; }
 
@@ -3934,21 +4234,51 @@ button.pfg-draft-save .caret,
   .navbar-inverse .formTabs > li > a:hover {
     background-color: transparent;
     color: #aaaaaa; }
-  .navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a,
+  .navbar-inverse .nav .active > a, .navbar-inverse .contentViews .active > a, .navbar-inverse .configlets .active > a, .navbar-inverse .formTabs .active > a, .navbar-inverse .nav .selected > a, .navbar-inverse .contentViews .selected > a, .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .selected > a, .navbar-inverse .nav .contentViews .selected > a, .contentViews .navbar-inverse .nav .selected > a, .navbar-inverse .contentViews .selected > a, .navbar-inverse .configlets .contentViews .selected > a, .contentViews .navbar-inverse .configlets .selected > a, .navbar-inverse .formTabs .contentViews .selected > a, .contentViews .navbar-inverse .formTabs .selected > a, .navbar-inverse .nav .contentViews .selected:hover > a, .contentViews .navbar-inverse .nav .selected:hover > a, .navbar-inverse .contentViews .selected:hover > a, .navbar-inverse .configlets .contentViews .selected:hover > a, .contentViews .navbar-inverse .configlets .selected:hover > a, .navbar-inverse .formTabs .contentViews .selected:hover > a, .contentViews .navbar-inverse .formTabs .selected:hover > a,
   .navbar-inverse .nav .active > a:hover,
   .navbar-inverse .contentViews .active > a:hover,
   .navbar-inverse .configlets .active > a:hover,
   .navbar-inverse .formTabs .active > a:hover,
   .navbar-inverse .nav .selected > a:hover,
+  .navbar-inverse .contentViews .selected > a:hover,
   .navbar-inverse .configlets .selected > a:hover,
   .navbar-inverse .formTabs .selected > a:hover,
+  .navbar-inverse .nav .contentViews .selected > a:hover,
+  .contentViews .navbar-inverse .nav .selected > a:hover,
+  .navbar-inverse .contentViews .selected > a:hover,
+  .navbar-inverse .configlets .contentViews .selected > a:hover,
+  .contentViews .navbar-inverse .configlets .selected > a:hover,
+  .navbar-inverse .formTabs .contentViews .selected > a:hover,
+  .contentViews .navbar-inverse .formTabs .selected > a:hover,
+  .navbar-inverse .nav .contentViews .selected:hover > a:hover,
+  .contentViews .navbar-inverse .nav .selected:hover > a:hover,
+  .navbar-inverse .contentViews .selected:hover > a:hover,
+  .navbar-inverse .configlets .contentViews .selected:hover > a:hover,
+  .contentViews .navbar-inverse .configlets .selected:hover > a:hover,
+  .navbar-inverse .formTabs .contentViews .selected:hover > a:hover,
+  .contentViews .navbar-inverse .formTabs .selected:hover > a:hover,
   .navbar-inverse .nav .active > a:focus,
   .navbar-inverse .contentViews .active > a:focus,
   .navbar-inverse .configlets .active > a:focus,
   .navbar-inverse .formTabs .active > a:focus,
   .navbar-inverse .nav .selected > a:focus,
+  .navbar-inverse .contentViews .selected > a:focus,
   .navbar-inverse .configlets .selected > a:focus,
-  .navbar-inverse .formTabs .selected > a:focus {
+  .navbar-inverse .formTabs .selected > a:focus,
+  .navbar-inverse .nav .contentViews .selected > a:focus,
+  .contentViews .navbar-inverse .nav .selected > a:focus,
+  .navbar-inverse .contentViews .selected > a:focus,
+  .navbar-inverse .configlets .contentViews .selected > a:focus,
+  .contentViews .navbar-inverse .configlets .selected > a:focus,
+  .navbar-inverse .formTabs .contentViews .selected > a:focus,
+  .contentViews .navbar-inverse .formTabs .selected > a:focus,
+  .navbar-inverse .nav .contentViews .selected:hover > a:focus,
+  .contentViews .navbar-inverse .nav .selected:hover > a:focus,
+  .navbar-inverse .contentViews .selected:hover > a:focus,
+  .navbar-inverse .configlets .contentViews .selected:hover > a:focus,
+  .contentViews .navbar-inverse .configlets .selected:hover > a:focus,
+  .navbar-inverse .formTabs .contentViews .selected:hover > a:focus,
+  .contentViews .navbar-inverse .formTabs .selected:hover > a:focus {
     color: #aaaaaa;
     background-color: black; }
   .navbar-inverse .navbar-link {
@@ -3964,15 +4294,45 @@ button.pfg-draft-save .caret,
   .navbar-inverse .configlets li.dropdown.active > .dropdown-toggle,
   .navbar-inverse .formTabs li.dropdown.active > .dropdown-toggle,
   .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle,
+  .navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle,
   .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle,
   .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle,
+  .navbar-inverse .nav .contentViews li.dropdown.selected > .dropdown-toggle,
+  .contentViews .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle,
+  .navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle,
+  .navbar-inverse .configlets .contentViews li.dropdown.selected > .dropdown-toggle,
+  .contentViews .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle,
+  .navbar-inverse .formTabs .contentViews li.dropdown.selected > .dropdown-toggle,
+  .contentViews .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle,
+  .navbar-inverse .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+  .contentViews .navbar-inverse .nav li.dropdown.selected:hover > .dropdown-toggle,
+  .navbar-inverse .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+  .navbar-inverse .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+  .contentViews .navbar-inverse .configlets li.dropdown.selected:hover > .dropdown-toggle,
+  .navbar-inverse .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle,
+  .contentViews .navbar-inverse .formTabs li.dropdown.selected:hover > .dropdown-toggle,
   .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle,
   .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle,
+  .navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle,
   .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle,
-  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle {
+  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle,
+  .navbar-inverse .nav .contentViews li.dropdown.open.selected > .dropdown-toggle,
+  .contentViews .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle,
+  .navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle,
+  .navbar-inverse .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle,
+  .contentViews .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle,
+  .navbar-inverse .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle,
+  .contentViews .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle,
+  .navbar-inverse .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+  .contentViews .navbar-inverse .nav li.dropdown.open.selected:hover > .dropdown-toggle,
+  .navbar-inverse .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+  .navbar-inverse .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+  .contentViews .navbar-inverse .configlets li.dropdown.open.selected:hover > .dropdown-toggle,
+  .navbar-inverse .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle,
+  .contentViews .navbar-inverse .formTabs li.dropdown.open.selected:hover > .dropdown-toggle {
     background-color: black;
     color: #aaaaaa; }
   .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret, .navbar-inverse .contentViews li.dropdown > .dropdown-toggle .caret, .navbar-inverse .configlets li.dropdown > .dropdown-toggle .caret, .navbar-inverse .formTabs li.dropdown > .dropdown-toggle .caret {
@@ -3984,15 +4344,45 @@ button.pfg-draft-save .caret,
   .navbar-inverse .configlets li.dropdown.active > .dropdown-toggle .caret,
   .navbar-inverse .formTabs li.dropdown.active > .dropdown-toggle .caret,
   .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle .caret,
+  .navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle .caret,
   .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle .caret,
   .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle .caret,
+  .navbar-inverse .nav .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .nav li.dropdown.selected > .dropdown-toggle .caret,
+  .navbar-inverse .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+  .navbar-inverse .configlets .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .configlets li.dropdown.selected > .dropdown-toggle .caret,
+  .navbar-inverse .formTabs .contentViews li.dropdown.selected > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .formTabs li.dropdown.selected > .dropdown-toggle .caret,
+  .navbar-inverse .nav .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .nav li.dropdown.selected:hover > .dropdown-toggle .caret,
+  .navbar-inverse .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+  .navbar-inverse .configlets .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .configlets li.dropdown.selected:hover > .dropdown-toggle .caret,
+  .navbar-inverse .formTabs .contentViews li.dropdown.selected:hover > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .formTabs li.dropdown.selected:hover > .dropdown-toggle .caret,
   .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .contentViews li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .configlets li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .formTabs li.dropdown.open.active > .dropdown-toggle .caret,
   .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle .caret,
+  .navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
   .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
-  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret {
+  .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
+  .navbar-inverse .nav .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .nav li.dropdown.open.selected > .dropdown-toggle .caret,
+  .navbar-inverse .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+  .navbar-inverse .configlets .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .configlets li.dropdown.open.selected > .dropdown-toggle .caret,
+  .navbar-inverse .formTabs .contentViews li.dropdown.open.selected > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .formTabs li.dropdown.open.selected > .dropdown-toggle .caret,
+  .navbar-inverse .nav .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .nav li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+  .navbar-inverse .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+  .navbar-inverse .configlets .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .configlets li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+  .navbar-inverse .formTabs .contentViews li.dropdown.open.selected:hover > .dropdown-toggle .caret,
+  .contentViews .navbar-inverse .formTabs li.dropdown.open.selected:hover > .dropdown-toggle .caret {
     border-top-color: #aaaaaa;
     border-bottom-color: #aaaaaa; }
   .navbar-inverse .navbar-search .search-query {
@@ -4038,11 +4428,11 @@ button.pfg-draft-save .caret,
     *background-color: #040404;
     /* Darken IE7 buttons by default so they stand out more given they won't have borders */
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
-    .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
+    .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected, .contentViews .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected:hover, .contentViews .navbar-inverse .btn-navbar.selected:hover, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
       color: white;
       background-color: #040404;
       *background-color: black; }
-    .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected {
+    .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected, .contentViews .navbar-inverse .btn-navbar.selected, .navbar-inverse .contentViews .btn-navbar.selected:hover, .contentViews .navbar-inverse .btn-navbar.selected:hover {
       background-color: black \9; }
 
 .breadcrumb {
@@ -4062,7 +4452,7 @@ button.pfg-draft-save .caret,
     font-size: 61.5384615%;
     position: relative;
     top: -1px; }
-  .breadcrumb .active, .breadcrumb .selected, .breadcrumb .active a, .breadcrumb .selected a {
+  .breadcrumb .active, .breadcrumb .selected, .breadcrumb .contentViews .selected, .contentViews .breadcrumb .selected, .breadcrumb .contentViews .selected:hover, .contentViews .breadcrumb .selected:hover, .breadcrumb .active a, .breadcrumb .selected a, .breadcrumb .contentViews .selected a, .contentViews .breadcrumb .selected a, .breadcrumb .contentViews .selected:hover a, .contentViews .breadcrumb .selected:hover a {
     color: #666666;
     font-weight: bold; }
   .breadcrumb h2 {
@@ -4103,7 +4493,7 @@ button.pfg-draft-save .caret,
   padding: 0 14px;
   line-height: 34px;
   text-decoration: none;
-  text-shadow: 0 -1px #fff;
+  text-shadow: 0 -1px white;
   background-color: white;
   border: 1px solid #d9d9d9;
   border-bottom: 1px solid #b2b2b2;
@@ -4114,17 +4504,41 @@ button.pfg-draft-save .caret,
 .listingBar .active a,
 .pagination .selected a,
 .listingBar .selected a,
+.pagination .contentViews .selected a,
+.contentViews .pagination .selected a,
+.listingBar .contentViews .selected a,
+.contentViews .listingBar .selected a,
+.pagination .contentViews .selected:hover a,
+.contentViews .pagination .selected:hover a,
+.listingBar .contentViews .selected:hover a,
+.contentViews .listingBar .selected:hover a,
 .pagination .active span,
 .listingBar .active span,
 .pagination .selected span,
-.listingBar .selected span {
+.listingBar .selected span,
+.pagination .contentViews .selected span,
+.contentViews .pagination .selected span,
+.listingBar .contentViews .selected span,
+.contentViews .listingBar .selected span,
+.pagination .contentViews .selected:hover span,
+.contentViews .pagination .selected:hover span,
+.listingBar .contentViews .selected:hover span,
+.contentViews .listingBar .selected:hover span {
   background-color: #f2f2f2; }
 
-.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a,
+.pagination .active a, .listingBar .active a, .pagination .selected a, .listingBar .selected a, .pagination .contentViews .selected a, .contentViews .pagination .selected a, .listingBar .contentViews .selected a, .contentViews .listingBar .selected a, .pagination .contentViews .selected:hover a, .contentViews .pagination .selected:hover a, .listingBar .contentViews .selected:hover a, .contentViews .listingBar .selected:hover a,
 .pagination .active span,
 .listingBar .active span,
 .pagination .selected span,
-.listingBar .selected span {
+.listingBar .selected span,
+.pagination .contentViews .selected span,
+.contentViews .pagination .selected span,
+.listingBar .contentViews .selected span,
+.contentViews .listingBar .selected span,
+.pagination .contentViews .selected:hover span,
+.contentViews .pagination .selected:hover span,
+.listingBar .contentViews .selected:hover span,
+.contentViews .listingBar .selected:hover span {
   color: #666666;
   cursor: default; }
 
@@ -4341,7 +4755,7 @@ button.pfg-draft-save .caret,
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(black), to(#111111));
   background-image: -webkit-linear-gradient(top, black, #111111);
   background-image: -o-linear-gradient(top, black, #111111);
-  background-image: linear-gradient(to bottom, #000000, #111111);
+  background-image: linear-gradient(to bottom, black, #111111);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='black', endColorstr='#0e0e0e', GradientType=0);
   -webkit-border-radius: 3px;
@@ -4541,7 +4955,7 @@ a.thumbnail:hover, .photoAlbumEntry a:hover {
   margin-left: auto;
   margin-right: auto; }
 
-.thumbnail .caption, .thumb-img img .caption, .photoAlbumEntry a .caption, .photoAlbumEntry a .photoAlbumEntryTitle {
+.thumbnail .caption, .thumb-img img .caption, .photoAlbumEntry a .caption, .thumbnail .photoAlbumEntry a .photoAlbumEntryTitle, .photoAlbumEntry a .thumbnail .photoAlbumEntryTitle, .thumb-img img .photoAlbumEntry a .photoAlbumEntryTitle, .photoAlbumEntry a .thumb-img img .photoAlbumEntryTitle, .photoAlbumEntry a .photoAlbumEntryTitle {
   padding: 9px;
   color: #666666; }
 
@@ -4614,872 +5028,3 @@ a.label:hover, #listing-table tr td:nth-child(6) a.state-restricted-to-managers:
 
 .label-intranet[href], #listing-table tr td:nth-child(6) [href].state-intranet, #listing-table tr td:nth-child(6) [href]#workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) [href]#workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) [href]#workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) [href]#workflow-transition-retiraalaintranet, .badge-intranet[href] {
   background-color: #6d4189; }
-
-.btn .label, .standalone .label, input[value^="Cancel"] .label, [type="submit"] .label, .context .label, .searchButton .label, button.pfg-draft-save .label, .link-parent .label, .btn #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .btn .state-restricted-to-managers, .standalone #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .standalone .state-restricted-to-managers, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-restricted-to-managers, [type="submit"] #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) [type="submit"] .state-restricted-to-managers, .context #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .context .state-restricted-to-managers, .searchButton #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .searchButton .state-restricted-to-managers, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-restricted-to-managers, .link-parent #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .link-parent .state-restricted-to-managers, .btn #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .btn .state-visible, .standalone #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .standalone .state-visible, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-visible, [type="submit"] #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) [type="submit"] .state-visible, .context #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .context .state-visible, .searchButton #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .searchButton .state-visible, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-visible, .link-parent #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .link-parent .state-visible, .btn #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .btn .state-intranet, .standalone #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .standalone .state-intranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-intranet, [type="submit"] #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) [type="submit"] .state-intranet, .context #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .context .state-intranet, .searchButton #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .searchButton .state-intranet, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-intranet, .link-parent #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .link-parent .state-intranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-publishtointranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-publishtointranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-publishtointranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-publishtointranet, .context #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .context #workflow-transition-publishtointranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-publishtointranet, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-publishtointranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-publishtointranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-publicaalaintranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-publicaalaintranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-publicaalaintranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-publicaalaintranet, .context #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .context #workflow-transition-publicaalaintranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-publicaalaintranet, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-publicaalaintranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-publicaalaintranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-retracttointranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-retracttointranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-retracttointranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-retracttointranet, .context #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .context #workflow-transition-retracttointranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-retracttointranet, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-retracttointranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-retracttointranet, .btn #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .btn #workflow-transition-retiraalaintranet, .standalone #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .standalone #workflow-transition-retiraalaintranet, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-retiraalaintranet, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-retiraalaintranet, .context #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .context #workflow-transition-retiraalaintranet, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-retiraalaintranet, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-retiraalaintranet, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-retiraalaintranet, .btn #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .btn .state-private, .standalone #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .standalone .state-private, input[value^="Cancel"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) input[value^="Cancel"] .state-private, [type="submit"] #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) [type="submit"] .state-private, .context #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .context .state-private, .searchButton #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .searchButton .state-private, button.pfg-draft-save #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) button.pfg-draft-save .state-private, .link-parent #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .link-parent .state-private, .btn #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .btn #workflow-transition-hide, .standalone #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .standalone #workflow-transition-hide, input[value^="Cancel"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) input[value^="Cancel"] #workflow-transition-hide, [type="submit"] #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) [type="submit"] #workflow-transition-hide, .context #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .context #workflow-transition-hide, .searchButton #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .searchButton #workflow-transition-hide, button.pfg-draft-save #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) button.pfg-draft-save #workflow-transition-hide, .link-parent #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .link-parent #workflow-transition-hide,
-.btn .badge,
-.standalone .badge,
-input[value^="Cancel"] .badge,
-[type="submit"] .badge,
-.context .badge,
-.searchButton .badge,
-button.pfg-draft-save .badge,
-.link-parent .badge {
-  position: relative;
-  top: -1px; }
-
-.btn-mini .label, .discussion .commentActions .destructive .label, .discussion .reply-to-comment-button .label, .btn-mini #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .btn-mini .state-restricted-to-managers, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-restricted-to-managers, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-restricted-to-managers, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-restricted-to-managers, .btn-mini #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .btn-mini .state-visible, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-visible, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-visible, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-visible, .btn-mini #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .btn-mini .state-intranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-intranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-intranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-intranet, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-publishtointranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-publishtointranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-publishtointranet, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-publicaalaintranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-publicaalaintranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-publicaalaintranet, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-retracttointranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-retracttointranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-retracttointranet, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-retiraalaintranet, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-retiraalaintranet, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-retiraalaintranet, .btn-mini #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .btn-mini .state-private, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive .state-private, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) .state-private, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button .state-private, .btn-mini #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .btn-mini #workflow-transition-hide, .discussion .commentActions .destructive #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .discussion .commentActions .destructive #workflow-transition-hide, .discussion .reply-to-comment-button #listing-table tr td:nth-child(6) #workflow-transition-hide, #listing-table tr td:nth-child(6) .discussion .reply-to-comment-button #workflow-transition-hide,
-.btn-mini .badge,
-.discussion .commentActions .destructive .badge,
-.discussion .reply-to-comment-button .badge {
-  top: 0; }
-
-@-webkit-keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0; }
-
-  to {
-    background-position: 0 0; } }
-
-@-moz-keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0; }
-
-  to {
-    background-position: 0 0; } }
-
-@-ms-keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0; }
-
-  to {
-    background-position: 0 0; } }
-
-@-o-keyframes progress-bar-stripes {
-  from {
-    background-position: 0 0; }
-
-  to {
-    background-position: 40px 0; } }
-
-@keyframes progress-bar-stripes {
-  from {
-    background-position: 40px 0; }
-
-  to {
-    background-position: 0 0; } }
-
-.progress {
-  overflow: hidden;
-  height: 18px;
-  margin-bottom: 18px;
-  background-color: #f6f6f6;
-  background-image: -moz-linear-gradient(top, whitesmoke, #f9f9f9);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(whitesmoke), to(#f9f9f9));
-  background-image: -webkit-linear-gradient(top, whitesmoke, #f9f9f9);
-  background-image: -o-linear-gradient(top, whitesmoke, #f9f9f9);
-  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#f6f6f6', GradientType=0);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px; }
-
-.progress .bar {
-  width: 0%;
-  height: 100%;
-  color: white;
-  float: left;
-  font-size: 12px;
-  text-align: center;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #0e90d2;
-  background-image: -moz-linear-gradient(top, #149bdf, #0480be);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149bdf), to(#0480be));
-  background-image: -webkit-linear-gradient(top, #149bdf, #0480be);
-  background-image: -o-linear-gradient(top, #149bdf, #0480be);
-  background-image: linear-gradient(to bottom, #149bdf, #0480be);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1498da', endColorstr='#047db9', GradientType=0);
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: width 0.6s ease;
-  -moz-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
-  transition: width 0.6s ease;
-  -webkit-border-radius: 4px 0 0 4px;
-  -moz-border-radius: 4px 0 0 4px;
-  border-radius: 4px 0 0 4px; }
-
-.progress .bar + .bar {
-  -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15); }
-
-.progress-striped .bar {
-  background-color: #149bdf;
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  -webkit-background-size: 40px 40px;
-  -moz-background-size: 40px 40px;
-  -o-background-size: 40px 40px;
-  background-size: 40px 40px; }
-
-.progress.active .bar, .progress.selected .bar {
-  -webkit-animation: progress-bar-stripes 2s linear infinite;
-  -moz-animation: progress-bar-stripes 2s linear infinite;
-  -ms-animation: progress-bar-stripes 2s linear infinite;
-  -o-animation: progress-bar-stripes 2s linear infinite;
-  animation: progress-bar-stripes 2s linear infinite; }
-
-.progress-danger .bar, .progress .bar-danger {
-  background-color: #de514c;
-  background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#c43c35));
-  background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
-  background-image: -o-linear-gradient(top, #ee5f5b, #c43c35);
-  background-image: linear-gradient(to bottom, #ee5f5b, #c43c35);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee5a56', endColorstr='#c03b34', GradientType=0); }
-
-.progress-danger.progress-striped .bar, .progress-striped .bar-danger {
-  background-color: #ee5f5b;
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
-
-.progress-success .bar, .progress .bar-success {
-  background-color: #5db95d;
-  background-image: -moz-linear-gradient(top, #62c462, #57a957);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#57a957));
-  background-image: -webkit-linear-gradient(top, #62c462, #57a957);
-  background-image: -o-linear-gradient(top, #62c462, #57a957);
-  background-image: linear-gradient(to bottom, #62c462, #57a957);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5ec35e', endColorstr='#55a655', GradientType=0); }
-
-.progress-success.progress-striped .bar, .progress-striped .bar-success {
-  background-color: #62c462;
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
-
-.progress-info .bar, .progress .bar-info {
-  background-color: #4cb2d0;
-  background-image: -moz-linear-gradient(top, #5bc0de, #339bb9);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#339bb9));
-  background-image: -webkit-linear-gradient(top, #5bc0de, #339bb9);
-  background-image: -o-linear-gradient(top, #5bc0de, #339bb9);
-  background-image: linear-gradient(to bottom, #5bc0de, #339bb9);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#57bedd', endColorstr='#3298b5', GradientType=0); }
-
-.progress-info.progress-striped .bar, .progress-striped .bar-info {
-  background-color: #5bc0de;
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
-
-.progress-warning .bar, .progress .bar-warning {
-  background-color: #f9a834;
-  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-  background-image: -o-linear-gradient(top, #fbb450, #f89406);
-  background-image: linear-gradient(to bottom, #fbb450, #f89406);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb24b', endColorstr='#f39106', GradientType=0); }
-
-.progress-warning.progress-striped .bar, .progress-striped .bar-warning {
-  background-color: #fbb450;
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
-
-.accordion {
-  margin-bottom: 18px; }
-
-.accordion-group {
-  margin-bottom: 2px;
-  border: 1px solid #b2b2b2;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background: #fcfcfc; }
-
-.accordion-heading {
-  border-bottom: 0; }
-
-.accordion-heading .accordion-toggle {
-  display: block;
-  padding: 8px 15px; }
-
-.accordion-toggle {
-  cursor: pointer; }
-
-.accordion-body {
-  background: #fff;
-  -webkit-box-shadow: inset 0 1px 4px #dddddd;
-  -moz-box-shadow: inset 0 1px 4px #dddddd;
-  box-shadow: inset 0 1px 4px #dddddd; }
-
-.accordion-inner {
-  padding: 9px 15px;
-  border-top: 1px solid #b2b2b2; }
-
-.carousel {
-  position: relative;
-  margin-bottom: 36px;
-  line-height: 1; }
-
-.carousel-inner {
-  overflow: hidden;
-  position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #b2b2b2;
-  border-bottom: 1px solid #8c8c8c;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
-
-.carousel .item {
-  display: none;
-  position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
-  -moz-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left; }
-.carousel .item > img {
-  display: block;
-  line-height: 1; }
-.carousel .active > img, .carousel .selected > img {
-  -webkit-border-radius: 0 0 4px 4px;
-  -moz-border-radius: 0 0 4px 4px;
-  border-radius: 0 0 4px 4px; }
-.carousel .active, .carousel .selected,
-.carousel .next,
-.carousel .prev {
-  display: block; }
-.carousel .active, .carousel .selected {
-  left: 0; }
-.carousel .next,
-.carousel .prev {
-  position: absolute;
-  top: 0;
-  width: 100%; }
-.carousel .next {
-  left: 100%; }
-.carousel .prev {
-  left: -100%; }
-.carousel .next.left,
-.carousel .prev.right {
-  left: 0; }
-.carousel .active.left, .carousel .left.selected {
-  left: -100%; }
-.carousel .active.right, .carousel .right.selected {
-  left: 100%; }
-
-.carousel-control {
-  position: absolute;
-  top: 40%;
-  left: 15px;
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 30px;
-  color: #222222;
-  text-align: center;
-  background: white;
-  border: 3px solid #333333;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-  opacity: 0.5;
-  filter: alpha(opacity=50); }
-  .carousel-control.right {
-    left: auto;
-    right: 15px; }
-  .carousel-control:hover {
-    color: #222222;
-    text-decoration: none;
-    opacity: 0.9;
-    filter: alpha(opacity=90); }
-
-.carousel-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 15px;
-  background: white;
-  background: rgba(255, 255, 255, 0.9);
-  -webkit-border-radius: 0 0 4px 4px;
-  -moz-border-radius: 0 0 4px 4px;
-  border-radius: 0 0 4px 4px;
-  border-top: 1px solid #b2b2b2;
-  -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5) inset;
-  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5) inset; }
-
-.carousel-caption h4,
-.carousel-caption p {
-  color: #333333;
-  line-height: 18px; }
-
-.carousel-caption h4 {
-  margin: 0 0 5px; }
-
-.carousel-caption p {
-  margin-bottom: 0; }
-
-.carousel-indicators {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 5;
-  margin: 0;
-  list-style: none; }
-  .carousel-indicators li {
-    display: block;
-    float: left;
-    width: 10px;
-    height: 10px;
-    margin-left: 5px;
-    text-indent: -999px;
-    background-color: #ccc;
-    background-color: rgba(255, 255, 255, 0.25);
-    border-radius: 5px; }
-  .carousel-indicators .active, .carousel-indicators .selected {
-    background-color: #fff; }
-
-.hero-unit {
-  padding: 60px;
-  margin-bottom: 30px;
-  background-color: #f2f2f2;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px; }
-  .hero-unit h1 {
-    margin-bottom: 0;
-    font-size: 60px;
-    line-height: 1;
-    color: inherit;
-    letter-spacing: -1px; }
-  .hero-unit p {
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 27px;
-    color: inherit; }
-
-.pull-right, .newsImageContainer {
-  float: right; }
-
-.pull-left {
-  float: left; }
-
-.pull-top {
-  margin-top: -52px !important; }
-
-.hide {
-  display: none; }
-
-.goout {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px !important;
-  overflow: hidden;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px; }
-
-.show {
-  display: block; }
-
-.invisible {
-  visibility: hidden; }
-
-.affix {
-  position: fixed; }
-
-.clearfix, .visualClear, .portaltype-packet .estudis .caixa3 {
-  *zoom: 1; }
-  .clearfix:before, .visualClear:before, .portaltype-packet .estudis .caixa3:before, .clearfix:after, .visualClear:after, .portaltype-packet .estudis .caixa3:after {
-    display: table;
-    content: "";
-    line-height: 0; }
-  .clearfix:after, .visualClear:after, .portaltype-packet .estudis .caixa3:after {
-    clear: both; }
-
-.hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0; }
-
-.input-block-level {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.hidden {
-  display: none;
-  visibility: hidden; }
-
-.visible-phone {
-  display: none !important; }
-
-.visible-tablet {
-  display: none !important; }
-
-.visible-desktop {
-  display: inherit !important; }
-
-.hidden-desktop {
-  display: none !important; }
-
-@media only screen and (max-width: 979px) and (orientation: portrait), only screen and (max-width: 979px) and (orientation: landscape) {
-  .hidden-desktop {
-    display: inherit !important; }
-
-  .visible-desktop {
-    display: none !important; }
-
-  .visible-tablet {
-    display: inherit !important; }
-
-  .hidden-tablet {
-    display: none !important; } }
-@media only screen and (max-width: 639px) {
-  .hidden-desktop {
-    display: inherit !important; }
-
-  .visible-desktop {
-    display: none !important; }
-
-  .visible-phone {
-    display: inherit !important; }
-
-  .hidden-phone {
-    display: none !important; } }
-@media only screen and (max-width: 979px) and (orientation: portrait), only screen and (max-width: 979px) and (orientation: landscape) {
-  /*generals*/
-  body {
-    font-size: 14.5px !important;
-    padding: 0 !important; }
-
-  .container {
-    width: 100% !important; }
-
-  #portal-personaltools-wrapper .navbar-inner, #portal-header, #portal-globalnav, #portal-breadcrumbs, #content-area, #bandaLogos, #peu {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important; }
-
-  .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
-    padding: 0 5px !important;
-    min-height: 40px; }
-
-  nav#portal-personaltools-wrapper {
-    margin-top: 0px !important; }
-
-  .navbar .btn-navbar {
-    margin-right: 10px !important; }
-    .navbar .btn-navbar i {
-      background-image: url('++genweb++static/images/gh-w.png?1428934242'); }
-
-  .navbar-fixed-top {
-    margin-bottom: 0 !important; }
-
-  #portal-globalnav h2.brand {
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 18px; }
-
-  #eines {
-    margin: 0 0 9px !important;
-    text-align: right; }
-    #eines input {
-      width: 85%; }
-    #eines button {
-      width: 14%;
-      line-height: 20px;
-      min-width: 60px; }
-    #eines .input-append {
-      margin-left: 0 !important;
-      border: 0 !important; }
-    #eines a {
-      margin: 0 !important; }
-      #eines a:hover, #eines a:focus {
-        color: white !important;
-        background: #007bc0; }
-    #eines ul {
-      margin: 0; }
-    #eines li {
-      padding: 8px !important; }
-
-  #titol-menu-1 {
-    width: 75%; }
-    #titol-menu-1 a {
-      display: block;
-      text-decoration: none;
-      color: #666666; }
-
-  #portal-personaltools-wrapper ~ #portal-header {
-    margin-top: 40px !important; }
-
-  .header-image {
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%; }
-
-  #portal-column-one, #portal-column-content {
-    width: 100% !important;
-    margin-left: 0; }
-
-  #peu [class*="span"], #peu .cella {
-    float: none;
-    display: block;
-    width: auto;
-    margin-left: 0; }
-    #peu [class*="span"] .pull-right, #peu .cella .pull-right, #peu [class*="span"] .newsImageContainer, #peu .cella .newsImageContainer {
-      float: none;
-      margin: 0; }
-
-  #canvia-vista {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    margin-left: 0px !important;
-    margin-right: 0px !important; }
-
-  table {
-    width: 100%;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-    max-width: 100%; }
-
-  .navbar-fixed-top, .navbar-fixed-bottom {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0;
-    margin-left: 0; }
-
-  .container-fluid {
-    padding: 0; }
-
-  .dl-horizontal dt, .portaltype-packet .estudis dl.fitxa dt {
-    float: none;
-    clear: none;
-    width: auto;
-    text-align: left; }
-  .dl-horizontal dd, .portaltype-packet .estudis dl.fitxa dd {
-    margin-left: 0; }
-
-  .container {
-    width: auto; }
-
-  .row-fluid, #dashboard, .fila, .template-album_view #content-core {
-    width: 100%; }
-
-  .row, .thumbnails {
-    margin-left: 0; }
-
-  .thumbnails > li {
-    float: none;
-    margin-left: 0; }
-
-  .span12, .row-fluid .span12, #dashboard .span12, .fila .span12, .template-album_view #content-core .span12 {
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-
-  .input-large, .input-xlarge, .input-xxlarge, #archetypes-fieldname-title input, input[class*="span"], input.cella, select[class*="span"], select.cella, textarea[class*="span"], textarea.cella, .uneditable-input {
-    display: block;
-    width: 100%;
-    min-height: 30px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-
-  .input-prepend input, .input-append input, .input-prepend input[class*="span"], .input-prepend input.cella, .input-append input[class*="span"], .input-append input.cella {
-    display: inline-block;
-    width: auto; }
-
-  .modal, .pb-ajax {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    width: auto;
-    margin: 0; }
-    .modal.fade.in, .fade.in.pb-ajax {
-      top: 10px; }
-
-  .subnavbar .nav-list a:hover:after, .subnavbar .nav-list .active a:after, .subnavbar .nav-list .selected a:after {
-    background-position: -311.5px -117px !important; }
-
-  .unit-picture .img-polaroid, .unit-picture .template-personal-information [for="form.portrait"] ~ img, .template-personal-information .unit-picture [for="form.portrait"] ~ img, .unit-picture .newsImageContainer, .unit-picture .tileItem img, .tileItem .unit-picture img {
-    float: none;
-    clear: both; }
-
-  .contact table {
-    width: 100% !important; }
-
-  .recaptcha_only_if_privacy {
-    float: left !important;
-    text-align: left !important;
-    margin-left: 7px !important;
-    margin-bottom: 7px !important; }
-
-  #recaptcha_image {
-    width: 250px !important; }
-    #recaptcha_image img {
-      width: 250px !important; }
-
-  #recaptcha_input_area, #recaptcha_response_field {
-    width: 240px !important; }
-
-  .typeahead.dropdown-menu {
-    left: auto !important;
-    right: 10px !important; }
-    .typeahead.dropdown-menu li {
-      text-align: left !important; }
-
-  body:not(.mceContentBody) .nav-tabs, body:not(.mceContentBody) .contentViews, body:not(.mceContentBody) .configlets, body:not(.mceContentBody) .contentViews, body:not(.mceContentBody) .configlets, body:not(.mceContentBody) #edit-bar {
-    border-bottom: 0px !important;
-    box-shadow: 0 0px 0px 0px black inset !important; }
-  body:not(.mceContentBody) .nav-tabs > li > a, body:not(.mceContentBody) .contentViews > li > a, body:not(.mceContentBody) .configlets > li > a, body:not(.mceContentBody) .contentViews > li > a, body:not(.mceContentBody) .configlets > li > a {
-    border-radius: 4px; }
-  body:not(.mceContentBody) .nav-tabs > .active > a, body:not(.mceContentBody) .contentViews > .active > a, body:not(.mceContentBody) .configlets > .active > a, body:not(.mceContentBody) .nav-tabs > .selected > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .contentViews > .active > a, body:not(.mceContentBody) .configlets > .active > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .nav-tabs > .selected > a, body:not(.mceContentBody) .contentViews > .selected > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .configlets > .selected > a, body:not(.mceContentBody) .nav-tabs > .active > a:hover, body:not(.mceContentBody) .contentViews > .active > a:hover, body:not(.mceContentBody) .configlets > .active > a:hover, body:not(.mceContentBody) .nav-tabs > .selected > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover, body:not(.mceContentBody) .contentViews > .active > a:hover, body:not(.mceContentBody) .configlets > .active > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover, body:not(.mceContentBody) .nav-tabs > .selected > a:hover, body:not(.mceContentBody) .contentViews > .selected > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover, body:not(.mceContentBody) .configlets > .selected > a:hover {
-    border-color: #b2b2b2 !important; }
-
-  #s2id_cercaCapca {
-    float: left; }
-
-  #gwsearch input.tt-hint {
-    position: relative !important;
-    top: 39px !important; }
-
-  #formfield-form-widgets-nombre, #formfield-form-widgets-from_address {
-    float: none !important;
-    width: 97% !important;
-    /*aqui*/ }
-
-  #form-widgets-nombre {
-    width: 100% !important; }
-
-  #tab-pdf {
-    display: none; }
-
-  #tab-academic-information tr, #tab-academic-information th, #tab-academic-information td, #tab-admission tr, #tab-admission th, #tab-admission td {
-    display: block;
-    border-top: 0 !important;
-    border-bottom: 0 !important; }
-  #tab-academic-information th, #tab-admission th {
-    background: transparent !important; }
-
-  .unit-content .unit-picture, .studies {
-    display: none; } }
-@media only screen and (max-width: 639px) {
-  body {
-    font-size: 14.5px; }
-
-  #portal-personaltools-wrapper, .navbar-fixed-top, .navbar-fixed-bottom {
-    margin-left: 0px !important;
-    margin-right: 0px !important; }
-
-  #portal-personaltools-wrapper .navbar-inner, .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
-    padding: 0px !important; }
-
-  #portal-personaltools-wrapper ~ #portal-header {
-    margin-top: 0px !important; }
-
-  #portal-personaltools-wrapper .nav ul, #portal-personaltools-wrapper .contentViews ul, #portal-personaltools-wrapper .configlets ul, #portal-personaltools-wrapper .formTabs ul {
-    margin: 0 !important; }
-  #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
-    background-image: url('++genweb++static/images/gh-w.png?1428934242'); }
-  #portal-personaltools-wrapper .nav a:not(.btn):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):hover, #portal-personaltools-wrapper .configlets a:not(.btn):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):hover, #portal-personaltools-wrapper .nav a:not(.btn):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):focus, #portal-personaltools-wrapper .configlets a:not(.btn):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):focus {
-    background: black; }
-  #portal-personaltools-wrapper .nav a.btn, #portal-personaltools-wrapper .contentViews a.btn, #portal-personaltools-wrapper .configlets a.btn, #portal-personaltools-wrapper .formTabs a.btn, #portal-personaltools-wrapper .nav a.standalone, #portal-personaltools-wrapper .contentViews a.standalone, #portal-personaltools-wrapper .configlets a.standalone, #portal-personaltools-wrapper .formTabs a.standalone, #portal-personaltools-wrapper .nav a[type="submit"], #portal-personaltools-wrapper .contentViews a[type="submit"], #portal-personaltools-wrapper .configlets a[type="submit"], #portal-personaltools-wrapper .formTabs a[type="submit"], #portal-personaltools-wrapper .nav a.context, #portal-personaltools-wrapper .contentViews a.context, #portal-personaltools-wrapper .configlets a.context, #portal-personaltools-wrapper .formTabs a.context, #portal-personaltools-wrapper .nav a.searchButton, #portal-personaltools-wrapper .contentViews a.searchButton, #portal-personaltools-wrapper .configlets a.searchButton, #portal-personaltools-wrapper .formTabs a.searchButton, #portal-personaltools-wrapper .nav a.link-parent, #portal-personaltools-wrapper .contentViews a.link-parent, #portal-personaltools-wrapper .configlets a.link-parent, #portal-personaltools-wrapper .formTabs a.link-parent, #portal-personaltools-wrapper .nav a.btn:focus, #portal-personaltools-wrapper .contentViews a.btn:focus, #portal-personaltools-wrapper .configlets a.btn:focus, #portal-personaltools-wrapper .formTabs a.btn:focus, #portal-personaltools-wrapper .nav a.standalone:focus, #portal-personaltools-wrapper .contentViews a.standalone:focus, #portal-personaltools-wrapper .configlets a.standalone:focus, #portal-personaltools-wrapper .formTabs a.standalone:focus, #portal-personaltools-wrapper .nav a[type="submit"]:focus, #portal-personaltools-wrapper .contentViews a[type="submit"]:focus, #portal-personaltools-wrapper .configlets a[type="submit"]:focus, #portal-personaltools-wrapper .formTabs a[type="submit"]:focus, #portal-personaltools-wrapper .nav a.context:focus, #portal-personaltools-wrapper .contentViews a.context:focus, #portal-personaltools-wrapper .configlets a.context:focus, #portal-personaltools-wrapper .formTabs a.context:focus, #portal-personaltools-wrapper .nav a.searchButton:focus, #portal-personaltools-wrapper .contentViews a.searchButton:focus, #portal-personaltools-wrapper .configlets a.searchButton:focus, #portal-personaltools-wrapper .formTabs a.searchButton:focus, #portal-personaltools-wrapper .nav a.link-parent:focus, #portal-personaltools-wrapper .contentViews a.link-parent:focus, #portal-personaltools-wrapper .configlets a.link-parent:focus, #portal-personaltools-wrapper .formTabs a.link-parent:focus {
-    background-color: #BB3423; }
-
-  .titol-espai:before {
-    position: absolute;
-    border-top: 1px solid #ccc; }
-  .titol-espai h1 {
-    font-size: 138.461538%;
-    line-height: 24px;
-    margin-top: 5px !important; }
-    .titol-espai h1 a {
-      display: block; }
-
-  #portal-header {
-    padding-bottom: 10px;
-    background: #f7f7f7; }
-    #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
-      margin-top: 12px !important; }
-    #portal-header h1.pull-left {
-      margin-bottom: 7px !important; }
-      #portal-header h1.pull-left img {
-        margin-top: -3px;
-        height: 46px; }
-    #portal-header .container > div.clearfix, #portal-header .container > div.visualClear, #portal-header .portaltype-packet .estudis .container > div.caixa3, .portaltype-packet .estudis #portal-header .container > div.caixa3 {
-      margin: 0 !important; }
-    #portal-header .container {
-      border-bottom: 0 !important; }
-    #portal-header .btn-navbar.pull-right, #portal-header .btn-navbar.newsImageContainer {
-      margin-top: 13px;
-      margin-right: 0 !important;
-      padding: 7px 10px; }
-
-  #eines input {
-    width: 65%; }
-  #eines button {
-    width: 34%;
-    line-height: 20px; }
-  #eines a {
-    margin: 0 0 20px 0 !important; }
-
-  .header-image {
-    display: none; }
-
-  .header-image.l2-image {
-    height: 30px !important;
-    margin-left: 55px !important; }
-    .header-image.l2-image:before {
-      top: 25px;
-      width: 45px;
-      margin-left: -55px; }
-
-  #portal-breadcrumbs {
-    display: none; }
-
-  [class*="span"], .cella,
-  .row-fluid [class*="span"],
-  #dashboard [class*="span"],
-  .fila [class*="span"],
-  .template-album_view #content-core [class*="span"],
-  .row-fluid .cella,
-  #dashboard .cella,
-  .fila .cella,
-  .template-album_view #content-core .cella {
-    float: none;
-    display: block;
-    width: auto;
-    margin-left: 0; }
-
-  .llistatLogos {
-    margin: 1em auto !important; }
-
-  #peu {
-    font-size: 84.613846% !important; }
-    #peu .container {
-      padding-top: 5px; }
-
-  .img_blank {
-    margin-top: -1px; }
-
-  .nav-collapse {
-    -webkit-transform: translate3d(0, 0, 0); }
-
-  .page-header h1 small {
-    display: block;
-    line-height: 18px; }
-
-  input[type="checkbox"], input[type="radio"] {
-    border: 1px solid #ccc; }
-
-  .form-horizontal .control-group > label {
-    float: none;
-    width: auto;
-    padding-top: 0;
-    text-align: left; }
-
-  .form-horizontal .controls {
-    margin-left: 0; }
-
-  .form-horizontal .control-list {
-    padding-top: 0; }
-
-  .form-horizontal .form-actions {
-    padding-left: 10px;
-    padding-right: 10px; }
-
-  .modal, .pb-ajax {
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    max-width: 100%; }
-
-  .modal-header .close, .pb-ajax .documentFirstHeading .close, .pb-ajax > div > h2 .close {
-    padding: 10px;
-    margin: -10px; }
-
-  .carousel-caption {
-    position: static; }
-
-  .plaEstudis {
-    background-color: #F7F7F7; }
-    .plaEstudis thead {
-      display: block; }
-      .plaEstudis thead th {
-        font-size: 80%; }
-        .plaEstudis thead th.semester {
-          display: none; }
-        .plaEstudis thead th.plaEstudis_titolCredits {
-          min-width: 80px; }
-        .plaEstudis thead th.plaEstudis_titolAssignatures {
-          width: 100%; }
-    .plaEstudis tbody {
-      display: block;
-      clear: both; }
-      .plaEstudis tbody th {
-        display: block;
-        font-size: 80%; }
-    .plaEstudis tr {
-      display: block; }
-    .plaEstudis td {
-      background-color: #fff !important;
-      font-size: 80%; }
-      .plaEstudis td.subject {
-        width: 100%; }
-
-  .img-mask {
-    width: 90% !important;
-    margin-left: 5% !important;
-    margin-right: 5% !important; }
-
-  dl.event.summary.details {
-    float: none !important; } }
-@media only screen and (max-width: 639px) and (orientation: landscape) {
-  .modal-body, .pb-ajax #content-core, .pb-ajax .documentDescription, .pb-ajax #content-history {
-    max-height: 160px; } }
