@@ -15,8 +15,7 @@
                         <ul class="list-portlet">
                             <li tal:repeat="data batch">
                                 <a href="" tal:attributes="href data/getURL">
-                                    <img tal:condition="python:data.Type=='News Item'"
-                                         tal:condition="data/news_image_filename|nothing"
+                                    <img tal:condition="data/news_image_filename|nothing"
                                          tal:attributes="src string:${data/getURL}/@@images/image/tile"
                                          alt=""
                                          class="image-noticies" >  <!-- large, preview, mini, thumb, tile, icon -->
