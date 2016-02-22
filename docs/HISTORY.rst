@@ -1,11 +1,13 @@
 Changelog
 =========
 
-1.74 (unreleased)
+1.74 (2016-02-22)
 -----------------
 
-- Nothing changed yet.
-
+* Canvis vistas nous contentypes [Pilar Marinas]
+* remove duplicate condition [Alberto Duran]
+* Canvi icones noves vistes contentypes [Pilar Marinas]
+* Canvi icones noves vistes contentypes [Pilar Marinas]
 
 1.73 (2016-02-16)
 -----------------
