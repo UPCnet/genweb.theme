@@ -38,7 +38,7 @@
                         use_view_action site_properties/typesUseViewActionInListings|python:();
                         Batch python:modules['Products.CMFPlone'].Batch;
                         b_start python:request.get('b_start', 0);
-                        batch python:isinstance(folderContents, Batch) and folderContents or Batch(folderContents, limit_display or 100, int(b_start), orphan=1);
+                        batch view/batch;
                         isAnon context/@@plone_portal_state/anonymous;
                         normalizeString nocall: context/plone_utils/normalizeString;
                         toLocalizedTime nocall: context/@@plone/toLocalizedTime;
@@ -78,7 +78,7 @@
                         <a href="#"
                            tal:attributes="href python: item_type in use_view_action and item_url+'/view' or item_url;
                                            class string:$item_type_class $item_wf_state_class url"
-                           tal:content="item_title_or_id">
+                           tal:content="item_title">
                             Item Title
                         </a>
                     </span>
