@@ -1,5 +1,4 @@
 from plone import api
-from plone.memoize.instance import memoize
 from plone.portlets.interfaces import IPortletDataProvider
 from zope.formlib import form
 from zope.interface import implements
@@ -11,8 +10,6 @@ from plone.app.event.base import guess_date_from
 from plone.app.portlets.portlets import base
 
 from plone.app.portlets import PloneMessageFactory as _
-
-from genweb.core.utils import pref_lang
 
 from calendar import monthrange
 from datetime import timedelta

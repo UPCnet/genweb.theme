@@ -7,7 +7,6 @@ from datetime import date
 from datetime import timedelta
 from plone.app.contenttypes.interfaces import INewsItem
 from plone.app.event import messageFactory as _
-from plone.app.event.base import AnnotationAdapter
 from plone.app.event.base import RET_MODE_ACCESSORS
 from plone.app.event.base import RET_MODE_OBJECTS
 from plone.app.event.base import date_speller
@@ -21,20 +20,12 @@ from plone.app.event.ical.exporter import construct_icalendar
 from plone.app.layout.navigation.defaultpage import getDefaultPage
 from plone.app.querystring import queryparser
 from plone.memoize import view
-from plone.uuid.interfaces import IUUID
-from plone.z3cform.layout import wrap_form
-from z3c.form import button
-from z3c.form import field
-from z3c.form import form
-from zope import schema
-from zope.component import adapts
 from zope.component import getMultiAdapter
 from zope.contentprovider.interfaces import IContentProvider
-from zope.interface import Interface
-from zope.interface import implements
 
 try:
-    from plone.app.collection.interfaces import ICollection
+    # from plone.app.collection.interfaces import ICollection
+    from plone.app.contenttypes.behaviors.collection import ICollection
 except ImportError:
     ICollection = None
 try:

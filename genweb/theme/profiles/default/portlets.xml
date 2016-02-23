@@ -88,4 +88,9 @@
            title="UPCNews"
            i18n:attributes="title"/>
 
+  <portlet addview="genweb.portlets.news_events_listing"
+           title="Categories"
+           i18n:attributes="title"/>
+
+
 </portlets>
