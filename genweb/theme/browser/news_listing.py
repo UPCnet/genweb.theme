@@ -165,7 +165,7 @@ class NewsListing(BrowserView):
         #kw['b_size']  = self.b_size
 
         kw['sort_on'] = 'Date'
-        kw['sort_reverse'] = 'reverse'
+        kw['sort_order'] = 'reverse'
         cat = getToolByName(context, 'portal_catalog')
         result = cat(**kw)
 
