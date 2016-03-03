@@ -1,11 +1,12 @@
 Changelog
 =========
 
-1.75 (unreleased)
+1.75 (2016-03-03)
 -----------------
 
-- Nothing changed yet.
-
+* add external link when select open in a new window [Paco Gregori]
+* news order: last first [Alberto Duran]
+* show portlet noticies i esdeveniments [Alberto Duran]
 
 1.74 (2016-02-22)
 -----------------
