@@ -1,5 +1,7 @@
 
-<tal:personaltools condition="not: view/anonymous">
+<tal:personaltools condition="not: view/anonymous"
+     tal:define="portal_url context/@@plone_portal_state/portal_url;">
+
 <h1 class="goout" id="titol-eines-usuari"
     i18n:domain="genweb"
     i18n:translate="label_eines_usuari"> Eines d'usuari </h1>
@@ -169,9 +171,9 @@
                           <i tal:attributes="class notificacio/i-class"></i>
                           <tal:notificacio content="notificacio/text">Notificació</tal:notificacio>
                           <img class="img_blank"
-                               src="++genweb++static/images/blank_gris.png"
                                tal:condition="notificacio/target-blank"
-                               i18n:attributes="alt obrir_link_finestra_nova">
+                               i18n:attributes="alt obrir_link_finestra_nova;"
+                               tal:attributes="src string:${portal_url}/++genweb++static/images/blank_gris.png" />
                           <span class="badge badge-warning"
                                 tal:condition="notificacio/nou">nou</span>
                         </a>
@@ -186,4 +188,5 @@
     </div>
   </div>
 </nav>
+
 </tal:personaltools>
