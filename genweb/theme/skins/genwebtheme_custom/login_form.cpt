@@ -14,7 +14,8 @@
     <metal:block fill-slot="top_slot"
                  tal:define="dummy python:request.set('disable_border',1);
                              disable_column_one python:request.set('disable_plone.leftcolumn',1);
-                             disable_column_two python:request.set('disable_plone.rightcolumn',1);" />
+                             disable_column_two python:request.set('disable_plone.rightcolumn',1);
+                             portal_url context/@@plone_portal_state/portal_url;"/>
 </head>
 
 <body>
@@ -87,8 +88,9 @@
                              i18n:domain="genweb">
                              Single sign on log in
                   </tal:entra>
-                  <img class="img_blank" src="++genweb++static/images/blank_blau.png"
-                       i18n:attributes="alt obrir_link_finestra_nova">
+                  <img class="img_blank"
+                       i18n:attributes="alt obrir_link_finestra_nova"
+                       tal:attributes="src string:${portal_url}/++genweb++static/images/blank_blau.png">
                 </strong>
              </a>
             </div>
@@ -157,10 +159,10 @@
                        tal:define="error python:errors.get(ac_name, None);"
                        tal:attributes="class python:test(error, 'control-group error', 'control-group')">
                     <label class="control-label" for="inputEmail"
-                           i18n:domain="plonee"
+                           i18n:domain="plone"
                            i18n:translate="label_login_name">Username</label>
                     <div class="controls">
-                      <input type="text" id="inputEmail" 
+                      <input type="text" id="inputEmail"
                              i18n:attributes="placeholder label_user_name"
                              tal:attributes="name ac_name;
                                              value login_name;">
@@ -173,10 +175,10 @@
                        tal:define="error python:errors.get(ac_password, None);"
                        tal:attributes="class python:test(error, 'control-group error', 'control-group')">
                     <label class="control-label" for="inputPassword"
-                           i18n:domain="plonee"
+                           i18n:domain="plone"
                            i18n:translate="label_password">Password</label>
                     <div class="controls">
-                      <input type="password" id="inputPassword" 
+                      <input type="password" id="inputPassword"
                              i18n:attributes="placeholder label_password"
                              tal:attributes="name ac_password">
                       <span class="help-inline"
@@ -187,7 +189,7 @@
                   <div class="control-group margin0">
                     <div class="controls">
                       <button type="submit" name="submit" class="btn btn-primary"
-                              i18n:domain="plonee"
+                              i18n:domain="plone"
                               i18n:translate="label_log_in">Log in</button>
                       <h2 class="l"
                           i18n:translate="genweb-si_heu_oblidat_la_contrasenya_question">

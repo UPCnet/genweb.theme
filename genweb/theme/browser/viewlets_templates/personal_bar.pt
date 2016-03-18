@@ -27,17 +27,17 @@
                 <b aria-hidden="true" class="caret"></b>
               </a>
               <ul class="dropdown-menu" role="menu">
-                <li role="menuitem"><a tal:attributes="href string:${view/root_url}/dashboard">
+                <li role="menuitem"><a tal:attributes="href string:${portal_url}/dashboard">
                        <i class="icon-desktop"></i>
                        <tal:dashboard i18n:translate="genweb-escriptori">
                           Dashboard</tal:dashboard>
                 </a></li>
-                <li role="menuitem"><a tal:attributes="href string:${view/root_url}/@@personal-information">
+                <li role="menuitem"><a tal:attributes="href string:${portal_url}/@@personal-information">
                        <i class="icon-user"></i>
                        <tal:profile i18n:translate="genweb-perfil">
                           Profile</tal:profile>
                 </a></li>
-                <li role="menuitem"><a tal:attributes="href string:${view/root_url}/@@personal-preferences">
+                <li role="menuitem"><a tal:attributes="href string:${portal_url}/@@personal-preferences">
                        <i class="icon-cog"></i>
                        <tal:preferences i18n:translate="genweb-preferencies">
                           Preferències d'usuari</tal:preferences>
@@ -67,7 +67,7 @@
                 <tal:langs repeat="lang_info view/get_available_langs">
                   <li role="menuitem"
                       tal:condition="python:show_tools['show_'+lang_info['code']]">
-                    <a tal:attributes="href string:${view/root_url}/${lang_info/code}/folder_contents">
+                    <a tal:attributes="href string:${portal_url}/${lang_info/code}/folder_contents">
                       <tal:language content="lang_info/native">English</tal:language>
                       <tal:default_lang
                         i18n:translate="personalbar_default_language"
@@ -80,19 +80,19 @@
                 </li>
                 <li role="menuitem" tal:condition="show_tools/show_root_sharing">
                   <a i18n:translate="manage_site_permissions"
-                     tal:attributes="href string:${view/root_url}/sharing">
+                     tal:attributes="href string:${portal_url}/sharing">
                     Grant access
                   </a>
                 </li>
                 <li role="menuitem" tal:condition="show_tools/show_shared" tal:define="lang_pref view/pref_lang">
                   <a i18n:translate="shared_folder"
-                     tal:attributes="href string:${view/root_url}/${lang_pref}/shared">
+                     tal:attributes="href string:${portal_url}/${lang_pref}/shared">
                     Common files
                   </a>
                 </li>
                 <li role="menuitem" tal:condition="show_tools/show_advanced">
                   <a i18n:translate="templates_folder"
-                     tal:attributes="href string:${view/root_url}/plantilles">
+                     tal:attributes="href string:${portal_url}/plantilles">
                     Customize templates
                   </a>
                 </li>
@@ -108,29 +108,29 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li role="menuitem">
-                  <a tal:attributes="href string:${view/root_url}/@@overview-controlpanel">
+                  <a tal:attributes="href string:${portal_url}/@@overview-controlpanel">
                     <tal:managesite i18n:domain="plone" i18n:translate="Site Setup">
                       Site setup</tal:managesite>
                   </a>
                 </li>
                 <li role="menuitem">
-                  <a tal:attributes="href string:${view/root_url}/@@genweb-controlpanel">
+                  <a tal:attributes="href string:${portal_url}/@@genweb-controlpanel">
                     <tal:managesite i18n:translate="genWeb UPC settings" i18n:domain="plone">
                           Genweb UPC Settings</tal:managesite>
                     <img i18n:attributes="alt obrir_link_finestra_nova"
                         class="img_blank"
-                        src="++resource++cpgenweb.png">
+                        tal:attributes="src string:${portal_url}/++resource++cpgenweb.png" />
                   </a>
                 </li>
                 <li aria-hidden="true" class="divider"></li>
                 <li role="menuitem">
                   <a i18n:translate="genweb-accesarrel"
-                     tal:attributes="href string:${view/root_url}/folder_contents">
+                     tal:attributes="href string:${portal_url}/folder_contents">
                     Root folder
                   </a>
                 </li>
                 <li role="menuitem">
-                  <a tal:attributes="href string:${view/root_url}/${view/pref_lang}/@@manage-portlets">
+                  <a tal:attributes="href string:${portal_url}/${view/pref_lang}/@@manage-portlets">
                     <tal:managesite i18n:domain="plone" i18n:translate="manage_portlets_link">
                       Manage root portlets</tal:managesite>
                   </a>
