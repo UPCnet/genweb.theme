@@ -313,25 +313,25 @@ class gwFooter(viewletBase):
                 "rss": "rss-ca",
                 "about": "sobre-aquest-web",
                 "accessibility": "accessibilitat",
-                "disclaimer": "https://www.upc.edu/avis-legal"
+                "disclaimer": "//www.upc.edu/avis-legal"
             },
             "es": {
                 "rss": "rss-es",
                 "about": "sobre-esta-web",
                 "accessibility": "accesibilidad",
-                "disclaimer": "https://www.upc.edu/aviso-legal"
+                "disclaimer": "//www.upc.edu/aviso-legal"
             },
             "en": {
                 "rss": "rss-en",
                 "about": "about-this-web",
                 "accessibility": "accessibility",
-                "disclaimer": "https://www.upc.edu/disclaimer"
+                "disclaimer": "//www.upc.edu/disclaimer"
             },
             "zh": {
                 "rss": "rss-en",
                 "about": "about-this-web",
                 "accessibility": "accessibility",
-                "disclaimer": "https://www.upc.edu/disclaimer"
+                "disclaimer": "//www.upc.edu/disclaimer"
             },
         }
         return footer_links[idioma]
@@ -340,15 +340,15 @@ class gwFooter(viewletBase):
         lang = self.pref_lang()
 
         if lang == 'ca':
-            return 'https://www.upc.edu/avis-legal/politica-de-cookies'
+            return '//www.upc.edu/avis-legal/politica-de-cookies'
         if lang == 'es':
-            return 'https://www.upc.edu/aviso-legal/politica-de-cookies'
+            return '//www.upc.edu/aviso-legal/politica-de-cookies'
         if lang == 'en':
-            return 'https://www.upc.edu/disclaimer/cookies-policy'
+            return '//www.upc.edu/disclaimer/cookies-policy'
         if lang == 'zh':
-            return 'https://www.upc.edu/disclaimer/cookies-policy'
+            return '//www.upc.edu/disclaimer/cookies-policy'
         if lang == '':
-            return 'https://www.upc.edu/avis-legal/politica-de-cookies'
+            return '//www.upc.edu/avis-legal/politica-de-cookies'
 
     def checkIsAdmin(self):
         # Check if user has admin role to show the bottom information box

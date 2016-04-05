@@ -27,29 +27,26 @@
                        item_type_class python:'contenttype-' + normalizeString(item_type);
                        item_class python:is_current and item_class + ' navTreeCurrentItem' or item_class;">
 
-
         <div>
             <a tal:attributes="href python:use_remote_url and item_remote_url or item_url;
-                                       class string:$item_class${li_class}${li_extr_class}${li_folder_class} $item_type_class"
-                                       target="_blank"
-                                       tal:condition="python: item_type == 'Link' and item_finestra">
-                <span tal:content="node/Title">Selected Item Title</span>
+                               class string:$item_class${li_class}${li_extr_class}${li_folder_class} item_type_class"
+               target="_blank"
+               tal:condition="python: item_type == 'Link' and item_finestra">
+                <span tal:content="node/Title"> Link Title</span>
             </a>
 
             <a tal:attributes="href python:use_remote_url and item_remote_url or item_url;
-                                       class string:$item_class${li_class}${li_extr_class}${li_folder_class} $item_type_class"
-                                       tal:condition="python: item_type == 'Link' and not item_finestra">
-                <span tal:content="node/Title">Selected Item Title</span>
+                               class string:$item_class${li_class}${li_extr_class}${li_folder_class} $item_type_class"
+               tal:condition="python: item_type == 'Link' and not item_finestra">
+                <span tal:content="node/Title"> Link Title</span>
             </a>
-
 
             <a tal:attributes="href python:use_remote_url and item_remote_url or item_url;
-                                       class string:$item_class${li_class}${li_extr_class}${li_folder_class} $item_type_class"
-                                       tal:condition="python: item_type != 'Link'">
-                <span tal:content="node/Title">Selected Item Title</span>
+                               class string:$item_class${li_class}${li_extr_class}${li_folder_class} $item_type_class"
+               tal:condition="python: item_type != 'Link'">
+               <img tal:replace="structure item_icon/html_tag|item_icon" />
+               <span tal:content="node/Title"> Type Title</span>
             </a>
-
-
         </div>
 
         <tal:children condition="python: len(children) > 0">
