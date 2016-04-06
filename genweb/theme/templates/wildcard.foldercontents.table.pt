@@ -165,7 +165,6 @@
               </td>
               <td tal:define="sc item/state_class|nothing;
                               tc item/type_class|nothing;">
-                  <img tal:replace="structure  item/icon" />
                   <a href="#" tal:attributes="href  item/view_url|string:${view/base_url}/${id};
                                               title item/url_href_title|nothing;
                                               class string:${sc} ${tc};">
