@@ -1,11 +1,16 @@
 Changelog
 =========
 
-1.76 (unreleased)
+1.76 (2016-04-07)
 -----------------
 
-- Nothing changed yet.
-
+* removed icon from view [roberto.diaz]
+* changes icons needs css [roberto.diaz]
+* show fitxers compartits depenent del idioma [Alberto Duran]
+* treure personalitza plantilles [Alberto Duran]
+* veure al menu eines Fitxers Compartits i Plantilles amb rol editor a l'idioma [Alberto Duran]
+* solved domain strings in login modal and replaced view/root_url to portal_url [roberto.diaz]
+* added portal_url to ++ images [roberto.diaz]
 
 1.75 (2016-03-03)
 -----------------
