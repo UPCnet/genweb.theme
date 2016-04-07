@@ -44,7 +44,6 @@
             <a tal:attributes="href python:use_remote_url and item_remote_url or item_url;
                                class string:$item_class${li_class}${li_extr_class}${li_folder_class} $item_type_class"
                tal:condition="python: item_type != 'Link'">
-               <img tal:replace="structure item_icon/html_tag|item_icon" />
                <span tal:content="node/Title"> Type Title</span>
             </a>
         </div>
