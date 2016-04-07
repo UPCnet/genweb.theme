@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.77 (unreleased)
+1.77 (2016-04-07)
 -----------------
 
-- Nothing changed yet.
-
+* removed icon from nav [roberto.diaz]
 
 1.76 (2016-04-07)
 -----------------
