@@ -58,8 +58,7 @@ class Renderer(news_renderer):
 
     def all_news_link(self):
         pc = api.portal.get_tool('portal_catalog')
-        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__,
-                                       Language=pref_lang())
+        news_folder = pc.searchResults(object_provides=INewsFolder.__identifier__, Language=pref_lang())
 
         if news_folder:
             return '%s' % news_folder[0].getURL()
@@ -76,6 +75,16 @@ class Renderer(news_renderer):
         else:
             return ''
 
+    def get_current_path_news(self):
+        lang = pref_lang()
+        root_path = '/'.join(api.portal.get().getPhysicalPath())
+        if lang == 'ca':
+            return root_path+'/'+lang+'/noticies'
+        elif lang == 'es':
+            return root_path+'/'+lang+'/noticias'
+        elif lang == 'en':
+            return root_path+'/'+lang+'/news'
+
     @memoize
     def _data(self):
         context = aq_inner(self.context)
@@ -83,28 +92,25 @@ class Renderer(news_renderer):
         limit = self.data.count
         state = ['published', 'intranet']
         results = catalog(portal_type=('News Item', 'Link'),
-                       review_state=state,
-                       is_important=True,
-                       Language=pref_lang(),
-                       sort_on="getObjPositionInParent",
-                       sort_limit=limit)
+                          review_state=state,
+                          is_important=True,
+                          Language=pref_lang(),
+                          sort_on="getObjPositionInParent",
+                          sort_limit=limit,
+                          path=self.get_current_path_news())
         results = [a for a in results]
         important = len(results)
         if important < limit:
             results2 = catalog(portal_type=('News Item', 'Link'),
-                       review_state=state,
-                       is_important=False,
-                       Language=pref_lang(),
-                       sort_on=('Date'),
-                       sort_order='reverse')
-                       #, sort_limit=limit - important)
+                               review_state=state,
+                               is_important=False,
+                               Language=pref_lang(),
+                               sort_on=('Date'),
+                               sort_order='reverse',
+                               path=self.get_current_path_news())
             results3 = []
-            path_folder_news = self.all_news_link()
             for brain in results2:
-                brain_url = brain.getURL()
-                brain_type = brain.Type
-                if brain_type == 'Link' and brain_url.startswith(path_folder_news) or brain_type == 'News Item':
-                    results3.append(brain)
+                results3.append(brain)
                 if len(results3) == limit - important:
                     break
             return results + results3
