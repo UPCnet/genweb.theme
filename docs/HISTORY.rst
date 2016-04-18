@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.78 (unreleased)
+1.78 (2016-04-18)
 -----------------
 
-- Nothing changed yet.
-
+* fix bug on news portlet [Alberto Duran]
 
 1.77 (2016-04-07)
 -----------------
