@@ -25,7 +25,7 @@
   <p tal:define="portal_url portal_state/portal_url;
                  navigation_root_url portal_state/navigation_root_url;
                  url view/absolute_target_url;
-                 externalLink context/open_link_in_new_window">
+                 externalLink context/open_link_in_new_window | nothing">
     <span tal:condition="externalLink">
       <span i18n:translate="link_address">The link address is:</span>
       <a target="_blank" tal:attributes="href url" tal:content="context/remoteUrl">remote url</a>
