@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.79 (unreleased)
+1.79 (2016-04-21)
 -----------------
 
-- Nothing changed yet.
-
+* open_link_in_new_window [Pilar Marinas]
+* move genweb/theme/templates/Products.CMFPlone.skins.plone_templates.default_error_message.pt to genweb.upc [Paco Gregori]
 
 1.78 (2016-04-18)
 -----------------
