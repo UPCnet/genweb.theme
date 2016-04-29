@@ -1,5 +1,7 @@
+import datetime
+
 from plone import api
-from plone.app.event.base import localized_now
+from plone.app.event.base import localized_now, get_events
 from plone.memoize.instance import memoize
 from plone.memoize import ram
 from plone.memoize.compress import xhtml_compress
@@ -84,9 +86,35 @@ class Renderer(base.Renderer):
     def published_events(self):
         return self._data()
 
+    def published_events_expanded(self):
+        """
+        Return expanded ongoing events, i.e. taking into account their
+        occurrences in case they are recurrent events.
+        """
+        return get_events(
+            self.context,
+            ret_mode=2,
+            start=localized_now(),
+            expand=True,
+            sort='start',
+            limit=self.data.count)
+
+    def getUrl(self, event):
+        if hasattr(event, 'getObject'):
+            return event.getObject().absolute_url()
+        else:
+            return event.absolute_url()
+
     def getMonthAbbr(self, data):
         context = aq_inner(self.context)
-        month = DateTime.month(data)
+        if isinstance(data, DateTime):
+            month = DateTime.month(data)
+        elif isinstance(data, datetime.datetime):
+            month = data.month
+        else:
+            raise TypeError("Allowed types are: {0} and {1}".format(
+                DateTime.__name__, datetime.datetime.__name__))
+
         self._ts = getToolByName(context, 'translation_service')
         monthName = TAM(self._ts.month_msgid(month, format='a'),
                         default=self._ts.month_english(month, format='a'))
@@ -94,21 +122,36 @@ class Renderer(base.Renderer):
 
     def getMonth(self, data):
         context = aq_inner(self.context)
-        month = DateTime.month(data)
+        if isinstance(data, DateTime):
+            month = DateTime.month(data)
+        elif isinstance(data, datetime.datetime):
+            month = data.month
+        else:
+            raise TypeError("Allowed types are: {0} and {1}".format(
+                DateTime.__name__, datetime.datetime.__name__))
+
         self._ts = getToolByName(context, 'translation_service')
         monthName = PLMF(self._ts.month_msgid(month),
                          default=self._ts.month_english(month))
         return monthName
 
     def getDay(self, data):
-        day = str(DateTime.day(data))
-        return day
+        if isinstance(data, DateTime):
+            return str(DateTime.day(data))
+        elif isinstance(data, datetime.datetime):
+            return str(data.day)
+        else:
+            raise TypeError("Allowed types are: {0} and {1}".format(
+                DateTime.__name__, datetime.datetime.__name__))
 
     def sameDay(self, evento):
-        if DateTime.Date(evento.start) == DateTime.Date(evento.end):
-            return True
+        if isinstance(evento.start, DateTime):
+            return DateTime.Date(evento.start) == DateTime.Date(evento.end)
+        elif isinstance(evento.start, datetime.datetime):
+            return evento.start.date() == evento.end.date()
         else:
-            return False
+            raise TypeError("Allowed types are: {0} and {1}".format(
+                DateTime.__name__, datetime.datetime.__name__))
 
     def all_events_link(self):
         pc = api.portal.get_tool('portal_catalog')
