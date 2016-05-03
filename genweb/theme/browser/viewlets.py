@@ -97,58 +97,64 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
 
     def show_tools(self):
         portal = self.portal()
-        user_global_roles = api.user.get_roles()
-        user_local_roles_at_root = api.user.get_roles(obj=portal)
+        # debido a cache, try para que el usuario no vea el error while
+        # rendering personalbar. El tiquet puede ser: no veo la barra de
+        # usuario al hacer login
+        try:
+            user_global_roles = api.user.get_roles()
+            user_local_roles_at_root = api.user.get_roles(obj=portal)
 
-        # If user is Editor, WebMaster or Manager globally, inconditionally
-        # return True and stop bothering
-        if 'Editor' in user_global_roles or 'Manager' in user_global_roles or 'WebMaster' in user_global_roles:
-            roles = dict(show=True, show_root_sharing=True, show_advanced=True, show_en=True, show_ca=True, show_es=True, show_shared=True)
-            if ('Editor' in user_global_roles or 'WebMaster' in user_global_roles) and 'Manager' not in user_global_roles:
-                # Can't see the show_root_sharing link
-                roles['show_root_sharing'] = False
-            return roles
+            # If user is Editor, WebMaster or Manager globally, inconditionally
+            # return True and stop bothering
+            if 'Editor' in user_global_roles or 'Manager' in user_global_roles or 'WebMaster' in user_global_roles:
+                roles = dict(show=True, show_root_sharing=True, show_advanced=True, show_en=True, show_ca=True, show_es=True, show_shared=True)
+                if ('Editor' in user_global_roles or 'WebMaster' in user_global_roles) and 'Manager' not in user_global_roles:
+                    # Can't see the show_root_sharing link
+                    roles['show_root_sharing'] = False
+                return roles
 
-        if getattr(portal, 'ca', False):
-            user_roles_at_ca_root = api.user.get_roles(obj=portal['ca'])
-        else:
-            user_roles_at_ca_root = []
-        if getattr(portal, 'es', False):
-            user_roles_at_es_root = api.user.get_roles(obj=portal['es'])
-        else:
-            user_roles_at_es_root = []
-        if getattr(portal, 'en', False):
-            user_roles_at_en_root = api.user.get_roles(obj=portal['en'])
-        else:
-            user_roles_at_en_root = []
+            if getattr(portal, 'ca', False):
+                user_roles_at_ca_root = api.user.get_roles(obj=portal['ca'])
+            else:
+                user_roles_at_ca_root = []
+            if getattr(portal, 'es', False):
+                user_roles_at_es_root = api.user.get_roles(obj=portal['es'])
+            else:
+                user_roles_at_es_root = []
+            if getattr(portal, 'en', False):
+                user_roles_at_en_root = api.user.get_roles(obj=portal['en'])
+            else:
+                user_roles_at_en_root = []
 
-        menus_to_show = dict(show=False, show_root_sharing=False, show_advanced=False, show_en=False, show_ca=False, show_es=False, show_shared=False)
+            menus_to_show = dict(show=False, show_root_sharing=False, show_advanced=False, show_en=False, show_ca=False, show_es=False, show_shared=False)
 
-        if 'Editor' in user_local_roles_at_root:
-            menus_to_show['show'] = True
-            menus_to_show['show_en'] = True
-            menus_to_show['show_es'] = True
-            menus_to_show['show_ca'] = True
-            menus_to_show['show_shared'] = True
-            menus_to_show['show_advanced'] = True
-
-        if 'Editor' in user_roles_at_ca_root or 'Contributor' in user_roles_at_ca_root:
-            menus_to_show['show'] = True
-            menus_to_show['show_ca'] = True
-            if 'ca' in self.context.Language():
+            if 'Editor' in user_local_roles_at_root:
+                menus_to_show['show'] = True
+                menus_to_show['show_en'] = True
+                menus_to_show['show_es'] = True
+                menus_to_show['show_ca'] = True
                 menus_to_show['show_shared'] = True
+                menus_to_show['show_advanced'] = True
 
-        if 'Editor' in user_roles_at_es_root or 'Contributor' in user_roles_at_es_root:
-            menus_to_show['show'] = True
-            menus_to_show['show_es'] = True
-            if 'es' in self.context.Language():
-                menus_to_show['show_shared'] = True
+            if 'Editor' in user_roles_at_ca_root or 'Contributor' in user_roles_at_ca_root:
+                menus_to_show['show'] = True
+                menus_to_show['show_ca'] = True
+                if 'ca' in self.context.Language():
+                    menus_to_show['show_shared'] = True
 
-        if 'Editor' in user_roles_at_en_root or 'Contributor' in user_roles_at_en_root:
-            menus_to_show['show'] = True
-            menus_to_show['show_en'] = True
-            if 'en' in self.context.Language():
-                menus_to_show['show_shared'] = True
+            if 'Editor' in user_roles_at_es_root or 'Contributor' in user_roles_at_es_root:
+                menus_to_show['show'] = True
+                menus_to_show['show_es'] = True
+                if 'es' in self.context.Language():
+                    menus_to_show['show_shared'] = True
+
+            if 'Editor' in user_roles_at_en_root or 'Contributor' in user_roles_at_en_root:
+                menus_to_show['show'] = True
+                menus_to_show['show_en'] = True
+                if 'en' in self.context.Language():
+                    menus_to_show['show_shared'] = True
+        except:
+            menus_to_show = dict(show=False, show_root_sharing=False, show_advanced=False, show_en=False, show_ca=False, show_es=False, show_shared=False)
 
         return menus_to_show
 
