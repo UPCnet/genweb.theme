@@ -108,9 +108,6 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
             # return True and stop bothering
             if 'Editor' in user_global_roles or 'Manager' in user_global_roles or 'WebMaster' in user_global_roles:
                 roles = dict(show=True, show_root_sharing=True, show_advanced=True, show_en=True, show_ca=True, show_es=True, show_shared=True)
-                if ('Editor' in user_global_roles or 'WebMaster' in user_global_roles) and 'Manager' not in user_global_roles:
-                    # Can't see the show_root_sharing link
-                    roles['show_root_sharing'] = False
                 return roles
 
             if getattr(portal, 'ca', False):
