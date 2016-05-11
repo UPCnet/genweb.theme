@@ -17,7 +17,7 @@
                     </h3>
                     <tal:co tal:condition="python:obj.Type=='News Item'">
                         <tal:image tal:condition="obj/news_image_filename|nothing">
-                            <img tal:attributes="src string:${obj/getURL}/@@images/image" alt="" class="image-noticies">
+                            <img tal:attributes="src string:${obj/getURL}/@@images/image/preview" alt="" class="image-noticies">
                         </tal:image>
                     </tal:co>
                   <div class="content-noticies">
