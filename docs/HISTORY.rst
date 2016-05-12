@@ -1,11 +1,20 @@
 Changelog
 =========
 
-1.80 (unreleased)
+1.80 (2016-05-12)
 -----------------
 
-- Nothing changed yet.
-
+* add search from mobile menu [Alberto Duran]
+* Delete search from mobile menu [Corina Riba]
+* show Concedir permisos als editors, webmasters i managers [Alberto Duran]
+* scaled images to preview in portlet news with foto [Alberto Duran]
+* error while rendering personalbar [Alberto Duran]
+* Fix bug in event portlet when displaying dates [Santiago Cortes]
+*  [Santiago Cortes]
+* The dates displayed in the event porlet were wrong for items [Santiago Cortes]
+* representing occurrences of recurrent events. [Santiago Cortes]
+*  [Santiago Cortes]
+* See https://gn6.upc.edu/tiquets/control/tiquetDetallDadesGenerals?requirementId=658695 [Santiago Cortes]
 
 1.79 (2016-04-21)
 -----------------
