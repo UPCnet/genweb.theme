@@ -131,6 +131,9 @@
           <tal:block replace="structure provider:genweb.pamls" />
         </tal:genwebpamls>
         <li class="divider"> </li>
+            <li>
+                <tal:block replace="structure provider:genweb.search_manager" />
+            </li>
       </ul>
     </div>
 
