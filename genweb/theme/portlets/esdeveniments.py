@@ -91,19 +91,32 @@ class Renderer(base.Renderer):
         Return expanded ongoing events, i.e. taking into account their
         occurrences in case they are recurrent events.
         """
-        return get_events(
+        return [self.event_to_view_obj(event) for event in get_events(
             self.context,
             ret_mode=2,
             start=localized_now(),
             expand=True,
             sort='start',
-            limit=self.data.count)
+            limit=self.data.count)]
 
-    def getUrl(self, event):
-        if hasattr(event, 'getObject'):
-            return event.getObject().absolute_url()
-        else:
-            return event.absolute_url()
+    def event_to_view_obj(self, event):
+        toLocalizedTime = self.context.restrictedTraverse(
+            '@@plone').toLocalizedTime
+        return dict(
+            class_li='' if self.sameDay(event) else 'multidate',
+            class_a='' if self.sameDay(event) else 'multidate-before',
+            date_start=toLocalizedTime(event.start),
+            date_end=toLocalizedTime(event.end),
+            day_start=self.getDay(event.start),
+            day_end=self.getDay(event.end),
+            is_multidate=not self.sameDay(event),
+            month_start=self.getMonth(event.start),
+            month_start_abbr=self.getMonthAbbr(event.start),
+            month_end=self.getMonth(event.end),
+            month_end_abbr=self.getMonthAbbr(event.end),
+            title=event.Title,
+            url=event.absolute_url(),
+            )
 
     def getMonthAbbr(self, data):
         context = aq_inner(self.context)
