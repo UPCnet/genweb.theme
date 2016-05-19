@@ -1,5 +1,3 @@
-import datetime
-
 from plone import api
 from plone.app.event.base import localized_now, get_events
 from plone.memoize.instance import memoize
@@ -100,71 +98,34 @@ class Renderer(base.Renderer):
             limit=self.data.count)]
 
     def event_to_view_obj(self, event):
-        toLocalizedTime = self.context.restrictedTraverse(
-            '@@plone').toLocalizedTime
+        local_start = DateTime(event.start)
+        local_start_str = local_start.strftime('%d/%m/%Y')
+        local_end = DateTime(event.end)
+        local_end_str = local_end.strftime('%d/%m/%Y')
+        is_same_day = local_start_str == local_end_str
         return dict(
-            class_li='' if self.sameDay(event) else 'multidate',
-            class_a='' if self.sameDay(event) else 'multidate-before',
-            date_start=toLocalizedTime(event.start),
-            date_end=toLocalizedTime(event.end),
-            day_start=self.getDay(event.start),
-            day_end=self.getDay(event.end),
-            is_multidate=not self.sameDay(event),
-            month_start=self.getMonth(event.start),
-            month_start_abbr=self.getMonthAbbr(event.start),
-            month_end=self.getMonth(event.end),
-            month_end_abbr=self.getMonthAbbr(event.end),
+            class_li='' if is_same_day else 'multidate',
+            class_a='' if is_same_day else 'multidate-before',
+            date_start=local_start_str,
+            date_end=local_end_str,
+            day_start=int(local_start.strftime('%d')),
+            day_end=int(local_end.strftime('%d')),
+            is_multidate=not is_same_day,
+            month_start=self.get_month_name(local_start.strftime('%m')),
+            month_start_abbr=self.get_month_name(
+                local_start.strftime('%m'), month_format='a'),
+            month_end=self.get_month_name(local_end.strftime('%m')),
+            month_end_abbr=self.get_month_name(
+                local_end.strftime('%m'), month_format='a'),
             title=event.Title,
             url=event.absolute_url(),
             )
 
-    def getMonthAbbr(self, data):
+    def get_month_name(self, month, month_format=''):
         context = aq_inner(self.context)
-        if isinstance(data, DateTime):
-            month = DateTime.month(data)
-        elif isinstance(data, datetime.datetime):
-            month = data.month
-        else:
-            raise TypeError("Allowed types are: {0} and {1}".format(
-                DateTime.__name__, datetime.datetime.__name__))
-
         self._ts = getToolByName(context, 'translation_service')
-        monthName = TAM(self._ts.month_msgid(month, format='a'),
-                        default=self._ts.month_english(month, format='a'))
-        return monthName
-
-    def getMonth(self, data):
-        context = aq_inner(self.context)
-        if isinstance(data, DateTime):
-            month = DateTime.month(data)
-        elif isinstance(data, datetime.datetime):
-            month = data.month
-        else:
-            raise TypeError("Allowed types are: {0} and {1}".format(
-                DateTime.__name__, datetime.datetime.__name__))
-
-        self._ts = getToolByName(context, 'translation_service')
-        monthName = PLMF(self._ts.month_msgid(month),
-                         default=self._ts.month_english(month))
-        return monthName
-
-    def getDay(self, data):
-        if isinstance(data, DateTime):
-            return str(DateTime.day(data))
-        elif isinstance(data, datetime.datetime):
-            return str(data.day)
-        else:
-            raise TypeError("Allowed types are: {0} and {1}".format(
-                DateTime.__name__, datetime.datetime.__name__))
-
-    def sameDay(self, evento):
-        if isinstance(evento.start, DateTime):
-            return DateTime.Date(evento.start) == DateTime.Date(evento.end)
-        elif isinstance(evento.start, datetime.datetime):
-            return evento.start.date() == evento.end.date()
-        else:
-            raise TypeError("Allowed types are: {0} and {1}".format(
-                DateTime.__name__, datetime.datetime.__name__))
+        return PLMF(self._ts.month_msgid(int(month), format=month_format),
+                    default=self._ts.month_english(int(month)))
 
     def all_events_link(self):
         pc = api.portal.get_tool('portal_catalog')
