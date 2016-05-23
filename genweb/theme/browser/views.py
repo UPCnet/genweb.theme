@@ -7,7 +7,6 @@ from scss import Scss
 
 from zope.interface import Interface
 from zope.contentprovider import interfaces
-from zope.annotation.interfaces import IAnnotations
 from zope.component import getMultiAdapter, queryMultiAdapter, getUtility, queryUtility
 from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile as ZopeViewPageTemplateFile
 
@@ -17,17 +16,14 @@ from plone.portlets.interfaces import IPortletManager
 from plone.portlets.interfaces import IPortletManagerRenderer
 from plone.app.layout.globals.layout import LayoutPolicy
 from plone.i18n.normalizer.interfaces import IIDNormalizer
-from plone.formwidget.recaptcha.view import RecaptchaView, IRecaptchaInfo
-from plone.app.contenttypes.interfaces import IEvent
+from plone.formwidget.recaptcha.view import IRecaptchaInfo
 from plone.app.layout.navigation.interfaces import INavigationRoot
 
 from Products.CMFPlone import utils
 from Products.CMFPlone.utils import safe_unicode
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone import PloneMessageFactory as _
-from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.PythonScripts.standard import url_quote_plus
-from Products.statusmessages.interfaces import IStatusMessage
 # from Products.ATContentTypes.interfaces.event import IATEvent
 from Products.CMFPlone.browser.navtree import getNavigationRoot
 from Products.CMFPlone.browser.navigation import CatalogNavigationTabs
@@ -65,19 +61,22 @@ class GWConfig(grok.View):
 
 
 class HomePageBase(grok.View):
-    """ Base methods for ease the extension of the genweb homePage view. Just
-        define a new class inheriting from this one and redefine the basic
-        grokkers like:
 
-        class homePage(HomePageBase):
-            grok.implements(IHomePageView)
-            grok.context(IPloneSiteRoot)
-            grok.require('genweb.authenticated')
-            grok.layer(IUlearnTheme)
-
-        Overriding the one in this module (homePage) with a more specific
-        interface.
     """
+    Base methods for ease the extension of the genweb homePage view. Just
+    define a new class inheriting from this one and redefine the basic
+    grokkers like:
+
+    class homePage(HomePageBase):
+        grok.implements(IHomePageView)
+        grok.context(IPloneSiteRoot)
+        grok.require('genweb.authenticated')
+        grok.layer(IUlearnTheme)
+
+    Overriding the one in this module (homePage) with a more specific
+    interface.
+    """
+
     grok.baseclass()
 
     def update(self):
@@ -286,7 +285,7 @@ class TypeAheadSearch(grok.View):
                 queryElements.append(queryElement)
 
             if len(results) > limit:
-                #We have to add here an element to the JSON in case there is too many elements.
+                # We have to add here an element to the JSON in case there is too many elements.
                 searchquery = '/@@search?SearchableText=%s&path=%s' \
                     % (searchterms, params['path'])
                 too_many_results = {'class': 'with-separator', 'title': ts.translate(label_show_all, context=REQUEST), 'description': '', 'itemUrl': portal_url + searchquery, 'icon': ''}
@@ -346,8 +345,9 @@ class dynamicCSS(grok.View):
 
 class gwCatalogNavigationTabs(CatalogNavigationTabs):
     """ Customized navigation tabs generator to include review_state attribute
-        in results.
+    in results.
     """
+
     def topLevelTabs(self, actions=None, category='portal_tabs'):
         context = aq_inner(self.context)
 
@@ -616,17 +616,17 @@ class newsCollectionView(grok.View):
         catalog = getToolByName(context, 'portal_catalog')
         state = ['published', 'intranet']
         results = catalog(portal_type=('News Item'),
-                       review_state=state,
-                       is_important=True,
-                       Language=pref_lang(),
-                       sort_on="getObjPositionInParent")
+                          review_state=state,
+                          is_important=True,
+                          Language=pref_lang(),
+                          sort_on="getObjPositionInParent")
         results = [a for a in results]
         results2 = catalog(portal_type=('News Item', 'Link'),
-                   review_state=state,
-                   is_important=False,
-                   Language=pref_lang(),
-                   sort_on=('Date'),
-                   sort_order='reverse')
+                           review_state=state,
+                           is_important=False,
+                           Language=pref_lang(),
+                           sort_on=('Date'),
+                           sort_order='reverse')
         results3 = []
         path_folder_news = self.all_news_link()
         for brain in results2:
@@ -657,9 +657,9 @@ class newsCollectionView(grok.View):
         portal_catalog = getToolByName(self, 'portal_catalog')
 
         objects = portal_catalog.searchResults(portal_type='Collection',
-                                          review_state='published',
-                                          path={'query': path, 'depth': 1},
-                                          sort_on='getObjPositionInParent')
+                                               review_state='published',
+                                               path={'query': path, 'depth': 1},
+                                               sort_on='getObjPositionInParent')
         results = []
         for obj in objects:
             if not obj.exclude_from_nav:

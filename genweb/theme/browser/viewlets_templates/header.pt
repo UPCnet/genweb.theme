@@ -1,6 +1,7 @@
 <div class="container"
      i18n:domain="genweb"
-     tal:define="portal_url context/@@plone_portal_state/portal_url;">
+     tal:define="portal_url context/@@plone_portal_state/portal_url;
+                 custom_link viewlet/getCustomLink">
   <div class="clearfix">
     <h1 class="pull-left">
       <a href="http://www.upc.edu" target="_blank">
@@ -69,6 +70,16 @@
           <tal:block replace="structure provider:genweb.pamls" />
         </tal:genwebpamls>
         <li class="divider"> </li>
+        <li tal:condition="custom_link/enable">
+            <tal:block >
+                <a href="#"
+                   tal:attributes="href custom_link/url | nothing">
+                   <span tal:replace="custom_link/cl_title">CustomLink</span>
+                   <img tal:condition="custom_link/image"
+                     tal:attributes="src custom_link/image | nothing" />
+                </a>
+            </tal:block>
+        </li>
         <li>
           <tal:block replace="structure provider:genweb.search_manager" />
         </li>

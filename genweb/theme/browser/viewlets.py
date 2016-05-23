@@ -21,12 +21,11 @@ from Products.Five.browser.metaconfigure import ViewMixinForTemplates
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 
 from plone.app.layout.viewlets.common import PersonalBarViewlet, GlobalSectionsViewlet, PathBarViewlet
-from plone.app.layout.viewlets.common import SearchBoxViewlet, TitleViewlet, ManagePortletsFallbackViewlet
-from plone.app.layout.viewlets.interfaces import IHtmlHead, IPortalTop, IPortalHeader, IBelowContent
-from plone.app.layout.viewlets.interfaces import IPortalFooter, IAboveContentTitle, IBelowContentTitle
+from plone.app.layout.viewlets.common import SearchBoxViewlet, ManagePortletsFallbackViewlet
+from plone.app.layout.viewlets.interfaces import IPortalTop, IPortalHeader, IBelowContent
+from plone.app.layout.viewlets.interfaces import IPortalFooter
 from plone.app.layout.navigation.interfaces import INavigationRoot
 
-from genweb.core import _
 from genweb.core import HAS_CAS
 from genweb.core import HAS_PAM
 from genweb.core.interfaces import IHomePage
@@ -66,8 +65,7 @@ class viewletBase(grok.Viewlet):
         return genweb_config()
 
     def pref_lang(self):
-        """ Extracts the current language for the current user
-        """
+        """ Extracts the current language for the current user """
         lt = getToolByName(self.portal(), 'portal_languages')
         return lt.getPreferredLanguage()
 
@@ -253,6 +251,31 @@ class gwHeader(viewletBase):
     def is_pam_installed(self):
         return HAS_PAM
 
+    def getCustomLink(self):
+        """ Custom links """
+        lang = self.pref_lang()
+        custom_links = {
+            "ca": {
+                "cl_title": self.genweb_config().cl_title_ca,
+                "url": self.genweb_config().cl_url_ca,
+                "image": self.genweb_config().cl_img_ca,
+                "enable": self.genweb_config().cl_enable_ca,
+                },
+            "es": {
+                "cl_title": self.genweb_config().cl_title_es,
+                "url": self.genweb_config().cl_url_es,
+                "image": self.genweb_config().cl_img_es,
+                "enable": self.genweb_config().cl_enable_es,
+                },
+            "en": {
+                "cl_title": self.genweb_config().cl_title_en,
+                "url": self.genweb_config().cl_url_en,
+                "image": self.genweb_config().cl_img_en,
+                "enable": self.genweb_config().cl_enable_en,
+                },
+            }
+        return custom_links[lang]
+
 
 class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
     grok.name('genweb.globalsections')
@@ -317,26 +340,26 @@ class gwFooter(viewletBase):
                 "about": "sobre-aquest-web",
                 "accessibility": "accessibilitat",
                 "disclaimer": "//www.upc.edu/avis-legal"
-            },
+                },
             "es": {
                 "rss": "rss-es",
                 "about": "sobre-esta-web",
                 "accessibility": "accesibilidad",
                 "disclaimer": "//www.upc.edu/aviso-legal"
-            },
+                },
             "en": {
                 "rss": "rss-en",
                 "about": "about-this-web",
                 "accessibility": "accessibility",
                 "disclaimer": "//www.upc.edu/disclaimer"
-            },
+                },
             "zh": {
                 "rss": "rss-en",
                 "about": "about-this-web",
                 "accessibility": "accessibility",
                 "disclaimer": "//www.upc.edu/disclaimer"
-            },
-        }
+                },
+            }
         return footer_links[idioma]
 
     def idioma_cookies(self):
@@ -403,8 +426,7 @@ class gwSearchViewlet(SearchBoxViewlet, viewletBase):
 
 
 class gwManagePortletsFallbackViewletMixin(object):
-    """ The override for the manage_portlets_fallback viewlet for IPloneSiteRoot
-    """
+    """ The override for the manage_portlets_fallback viewlet for IPloneSiteRoot """
 
     render = ViewPageTemplateFile('viewlets_templates/manage_portlets_fallback.pt')
 
@@ -442,8 +464,7 @@ class gwManagePortletsFallbackViewletMixin(object):
 
 
 class gwManagePortletsFallbackViewletForPloneSiteRoot(gwManagePortletsFallbackViewletMixin, ManagePortletsFallbackViewlet, viewletBase):
-    """ The override for the manage_portlets_fallback viewlet for IPloneSiteRoot
-    """
+    """ The override for the manage_portlets_fallback viewlet for IPloneSiteRoot """
     grok.context(INavigationRoot)
     grok.name('plone.manage_portlets_fallback')
     grok.viewletmanager(IBelowContent)
@@ -451,8 +472,7 @@ class gwManagePortletsFallbackViewletForPloneSiteRoot(gwManagePortletsFallbackVi
 
 
 class gwManagePortletsFallbackViewletForIHomePage(gwManagePortletsFallbackViewletMixin, ManagePortletsFallbackViewlet, viewletBase):
-    """ The override for the manage_portlets_fallback viewlet for IHomePage
-    """
+    """ The override for the manage_portlets_fallback viewlet for IHomePage """
     grok.context(IHomePage)
     grok.name('plone.manage_portlets_fallback')
     grok.viewletmanager(IBelowContent)
