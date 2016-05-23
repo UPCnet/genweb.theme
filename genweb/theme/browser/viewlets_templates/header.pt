@@ -72,7 +72,7 @@
         <li class="divider"> </li>
         <li tal:condition="custom_link/enable">
             <tal:block >
-                <a href="#"
+                <a target="_blank" href="#"
                    tal:attributes="href custom_link/url | nothing">
                    <span tal:replace="custom_link/cl_title">CustomLink</span>
                    <img tal:condition="custom_link/image"
