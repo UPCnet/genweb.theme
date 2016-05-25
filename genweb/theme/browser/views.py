@@ -331,7 +331,7 @@ class dynamicCSS(grok.View):
 
         scss.config.LOAD_PATHS = [
             '{}/genweb/theme/bootstrap/scss/compass_twitter_bootstrap'.format(genwebthemeegg.location)
-        ]
+            ]
 
         css = Scss(scss_opts={
                    'compress': False,
@@ -395,11 +395,16 @@ class gwCatalogNavigationTabs(CatalogNavigationTabs):
         for item in rawresult:
             if not (item.getId in idsNotToList or item.exclude_from_nav):
                 id, item_url = get_link_url(item) or get_view_url(item)
+                if item.Type == 'Link':
+                    item_oinw = item.open_link_in_new_window
+                else:
+                    item_oinw = False
                 data = {'name': utils.pretty_title_or_id(context, item),
                         'id': item.getId,
                         'url': item_url,
                         'description': item.Description,
-                        'review_state': item.review_state}
+                        'review_state': item.review_state,
+                        'oinw': item_oinw}
                 result.append(data)
 
         return result

@@ -9,23 +9,23 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </a> 
-        
+        </a>
+
         <h2 id="titol-menu-1" class="hidden-desktop hidden-tablet brand">
           <a data-toggle="collapse" data-target="#menu-1" >Menú</a>
-        </h2> 
+        </h2>
 
         <div id='menu-1' class="nav-collapse nav-collapse-menu">
           <ul class="nav"
-              tal:define="selected_tab python:view.selected_portal_tab">
-             
+              tal:define="selected_tab python:view.selected_portal_tab;">
             <tal:tabs tal:repeat="tab portal_tabs">
-              <li tal:define="tid tab/id"
+              <li tal:define="tid tab/id;
+                              oinw tab/oinw"
                   tal:attributes="id string:portaltab-${tid};
                                   class python:selected_tab==tid and 'active' or 'plain'">
-                <a href=""
-                   tal:content="tab/name"
-                   tal:attributes="href tab/url;
+                <a tal:content="tab/name"
+                   tal:attributes="target python: oinw and '_blank' or nothing;
+                                   href tab/url;
                                    class string:state-${tab/review_state|nothing}">
                    Tab Name
                 </a>
