@@ -92,17 +92,20 @@
     <div class="nav-collapse nav-collapse-eines hidden-desktop"
          tal:define="dades context/@@genweb.utils/getDadesUnitat">
       <ul id="eines" class="nav nav-pills pull-right">
+      <li>
+          <tal:block replace="structure provider:genweb.search_manager" />
+      </li>
        <li tal:condition="custom_link/enable"
            tal:define="oinw custom_link/oinw">
-            <tal:block >
-                <img tal:condition="custom_link/image"
-                  tal:attributes="src custom_link/image | nothing" />
-                <a href="#"
-                   tal:attributes="href custom_link/url | nothing;
-                                   target python: oinw and '_blank' or nothing">
-                   <span tal:replace="custom_link/cl_title">CustomLink</span>
-                </a>
-            </tal:block>
+           <div id="custom-link">
+                   <img tal:condition="custom_link/image"
+                        tal:attributes="src custom_link/image | nothing" />
+                    <a href="#"
+                       tal:attributes="href custom_link/url | nothing;
+                                       target python: oinw and '_blank' or nothing"
+                       tal:content="custom_link/cl_title">CustomLink
+                    </a>
+         </div>
         </li>
         <li><a accesskey="4"
                i18n:domain="plone"
@@ -156,9 +159,9 @@
           <tal:block replace="structure provider:genweb.pamls" />
         </tal:genwebpamls>
         <li class="divider"> </li>
-            <li>
+            <!-- <li>
                 <tal:block replace="structure provider:genweb.search_manager" />
-            </li>
+            </li> -->
       </ul>
     </div>
 
