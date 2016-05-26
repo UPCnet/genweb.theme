@@ -20,15 +20,15 @@
       <ul id="eines" class="nav nav-pills pull-right">
            <li tal:condition="custom_link/enable"
                tal:define="oinw custom_link/oinw">
-               <div id="custom-link">
-                       <img tal:condition="custom_link/image"
-                            tal:attributes="src custom_link/image | nothing" />
-                        <a href="#"
-                           tal:attributes="href custom_link/url | nothing;
-                                           target python: oinw and '_blank' or nothing"
-                           tal:content="custom_link/cl_title">CustomLink
-                        </a>
-             </div>
+                    <a tal:condition="custom_link/image" href="#"
+                       tal:attributes="href custom_link/url | nothing">
+                       <img tal:attributes="src custom_link/image | nothing" />
+                    </a>
+                    <a tal:condition="custom_link/cl_title" href="#"
+                       tal:attributes="href custom_link/url | nothing;
+                                       target python: oinw and '_blank' or nothing"
+                       tal:content="custom_link/cl_title">CustomLink
+                    </a>
             </li>
             <li><a accesskey="4"
                    i18n:domain="plone"
