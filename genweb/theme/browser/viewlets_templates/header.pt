@@ -19,16 +19,15 @@
          tal:define="dades context/@@genweb.utils/getDadesUnitat">
       <ul id="eines" class="nav nav-pills pull-right">
            <li tal:condition="custom_link/enable"
-               tal:define="oinw custom_link/oinw">
-                    <a tal:condition="custom_link/image" href="#"
-                       tal:attributes="href custom_link/url | nothing">
-                       <img tal:attributes="src custom_link/image | nothing" />
-                    </a>
-                    <a tal:condition="custom_link/cl_title" href="#"
-                       tal:attributes="href custom_link/url | nothing;
-                                       target python: oinw and '_blank' or nothing"
-                       tal:content="custom_link/cl_title">CustomLink
-                    </a>
+               tal:define="oinw custom_link/oinw;
+                           cl_image custom_link/image">
+                <a href="#"
+                   tal:attributes="href custom_link/url | nothing;
+                                   target python: not cl_image and oinw and '_blank' or nothing">
+                    <img tal:condition="custom_link/image"
+                         tal:attributes="src custom_link/image | nothing" />
+                   <tal:content content="custom_link/cl_title">CustomLink</tal:content>
+                </a>
             </li>
             <li><a accesskey="4"
                    i18n:domain="plone"
