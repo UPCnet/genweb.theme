@@ -1,11 +1,35 @@
 Changelog
 =========
 
-1.81 (unreleased)
+1.81 (2016-06-02)
 -----------------
 
-- Nothing changed yet.
-
+* Custom link spaces [Corina Riba]
+* updated css for IE [roberto.diaz]
+* custom link: there is only one left alive [Corina Riba]
+* Add link to image in custom link [Corina Riba]
+* Search first in phone view [Corina Riba]
+* Link enable in menu [Corina Riba]
+* Phone and tablet view [Corina Riba]
+* Custon Link [Corina Riba]
+*  [Corina Riba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Corina Riba]
+* Custom Link: first, target automatic, first icon [Corina Riba]
+* remove patch errorwhilerendering... [Alberto Duran]
+* Open custom link in new window [Corina Riba]
+* Add Custom Link in Tools menu [Corina Riba]
+* compiled css oscar changes [Alberto Duran]
+* remove wrong style applied to li.list-highlighted on retina.scss [oscar.albareda]
+* Localize dates in esdeveniments portlet [Santiago Cortes]
+*  [Santiago Cortes]
+* Use the strftime method of the DateTime class to display the localized [Santiago Cortes]
+* version of the start & end dates of the events listed in the portlet [Santiago Cortes]
+* (previously the dates were displayed UTC-based). [Santiago Cortes]
+* updated grunt watch CSS [roberto.diaz]
+* Refactor event portlet to improve performance [Santiago Cortes]
+*  [Santiago Cortes]
+* All the python expressions have been removed from the TAL template [Santiago Cortes]
+* to speed up the rendering process. [Santiago Cortes]
 
 1.80 (2016-05-12)
 -----------------
