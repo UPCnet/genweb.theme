@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.82 (unreleased)
+1.82 (2016-06-02)
 -----------------
 
-- Nothing changed yet.
-
+* Update header.pt if exists link show custom_link (recustom link) :) [Roberto Diaz]
+* remove PPPP from css [roberto.diaz]
 
 1.81 (2016-06-02)
 -----------------
