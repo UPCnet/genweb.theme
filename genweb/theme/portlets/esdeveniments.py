@@ -95,7 +95,8 @@ class Renderer(base.Renderer):
             start=localized_now(),
             expand=True,
             sort='start',
-            limit=self.data.count)]
+            limit=self.data.count,
+            review_state=self.data.state)]
 
     def event_to_view_obj(self, event):
         local_start = DateTime(event.start)
