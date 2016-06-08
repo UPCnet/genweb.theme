@@ -100,9 +100,7 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
 
         # If user is Editor, WebMaster, Manager or Site Administrator globally,
         # inconditionally return True and stop bothering
-        if 'Editor' in user_global_roles or 'Manager' in user_global_roles or
-        'Site Administrator' in user_global_roles or 'WebMaster'
-        in user_global_roles:
+        if 'Editor' in user_global_roles or 'Manager' in user_global_roles or 'Site Administrator' in user_global_roles or 'WebMaster' in user_global_roles:
             roles = dict(show=True, show_root_sharing=True, show_advanced=True, show_en=True, show_ca=True, show_es=True, show_shared=True)
             return roles
 
