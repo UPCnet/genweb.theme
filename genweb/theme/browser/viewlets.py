@@ -98,9 +98,11 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         user_global_roles = api.user.get_roles()
         user_local_roles_at_root = api.user.get_roles(obj=portal)
 
-        # If user is Editor, WebMaster or Manager globally, inconditionally
-        # return True and stop bothering
-        if 'Editor' in user_global_roles or 'Manager' in user_global_roles or 'WebMaster' in user_global_roles:
+        # If user is Editor, WebMaster, Manager or Site Administrator globally,
+        # inconditionally return True and stop bothering
+        if 'Editor' in user_global_roles or 'Manager' in user_global_roles or
+        'Site Administrator' in user_global_roles or 'WebMaster'
+        in user_global_roles:
             roles = dict(show=True, show_root_sharing=True, show_advanced=True, show_en=True, show_ca=True, show_es=True, show_shared=True)
             return roles
 
@@ -125,6 +127,7 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
             menus_to_show['show_es'] = True
             menus_to_show['show_ca'] = True
             menus_to_show['show_shared'] = True
+            menus_to_show['show_root_sharing'] = True
             menus_to_show['show_advanced'] = True
 
         if 'Editor' in user_roles_at_ca_root or 'Contributor' in user_roles_at_ca_root:
