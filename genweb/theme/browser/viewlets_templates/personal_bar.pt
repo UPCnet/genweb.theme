@@ -96,6 +96,14 @@
                     Customize templates
                   </a>
                 </li>
+                    <li aria-hidden="true" class="divider">
+                </li>
+                <li role="menuitem">
+                  <a i18n:translate="undo_form"
+                     tal:attributes="href string:${portal_url}/undo_form">
+                    Undo
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="dropdown" role="menuitem" id="admin"
