@@ -77,6 +77,9 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
 
     index = ViewPageTemplateFile('viewlets_templates/personal_bar.pt')
 
+    def get_current_url(self):
+        return self.context.absolute_url()
+
     def default_site_lang(self):
         pl = api.portal.get_tool(name='portal_languages')
         return pl.getDefaultLanguage()

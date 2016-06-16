@@ -100,7 +100,7 @@
                 </li>
                 <li role="menuitem">
                   <a i18n:translate="undo_form"
-                     tal:attributes="href string:${portal_url}/undo_form">
+                     tal:attributes="href string:${view/get_current_url}/undo_form">
                     Undo
                   </a>
                 </li>
