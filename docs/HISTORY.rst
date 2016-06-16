@@ -1,11 +1,16 @@
 Changelog
 =========
 
-1.83 (unreleased)
+1.83 (2016-06-16)
 -----------------
 
-- Nothing changed yet.
-
+* Undo option added to menu [Alberto Duran]
+* permisos desplegable eines definitius per SCv2 [Alberto Duran]
+* permisos desplegable eines definitius per SC [Alberto Duran]
+* Fix review_state filtering of event portlet [Santiago Cortes]
+*  [Santiago Cortes]
+* So that the portlet filters events by review state according to the [Santiago Cortes]
+* state defined in the portlet properties. [Santiago Cortes]
 
 1.82 (2016-06-02)
 -----------------
