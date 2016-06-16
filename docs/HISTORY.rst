@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.84 (unreleased)
+1.84 (2016-06-16)
 -----------------
 
-- Nothing changed yet.
-
+* Undo form redirect to actual url context [Alberto Duran]
 
 1.83 (2016-06-16)
 -----------------
