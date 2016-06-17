@@ -18,9 +18,9 @@ from genweb.core.utils import pref_lang
 from zope.schema.vocabulary import SimpleVocabulary
 
 viewVocabulary = SimpleVocabulary.fromItems((
-    (u"Normal: imatge esquerra i text dreta", "id_normal"),
-    (u"Full: imatge a dalt i text a sota", "id_full"),
-    (u"Full a dos columnes: dues columnes amb imatge a dalt i text a sota", "id_full_2cols")))
+    (_(u"Normal: imatge esquerra i text dreta"), "id_normal"),
+    (_(u"Full: imatge a dalt i text a sota"), "id_full"),
+    (_(u"Full a dos columnes: dues columnes amb imatge a dalt i text a sota"), "id_full_2cols")))
 
 countVocabulary = SimpleVocabulary.fromValues(range(1, 8))
 
