@@ -15,12 +15,20 @@ from Products.CMFCore.utils import getToolByName
 from genweb.core.interfaces import INewsFolder
 from genweb.core.utils import pref_lang
 
-from zope.schema.vocabulary import SimpleVocabulary
+from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
-viewVocabulary = SimpleVocabulary.fromItems((
-    (_(u"Normal: imatge esquerra i text dreta"), "id_normal"),
-    (_(u"Full: imatge a dalt i text a sota"), "id_full"),
-    (_(u"Full a dos columnes: dues columnes amb imatge a dalt i text a sota"), "id_full_2cols")))
+"""
+ [
+ SimpleTerm(value=u'Bill', title=_(u'Bill')),
+     SimpleTerm(value=u'Bob', title=_(u'Bob')),
+     SimpleTerm(value=u'Jim', title=_(u'Jim'))]
+    )
+"""
+
+viewVocabulary = SimpleVocabulary([
+    SimpleTerm(value="id_normal", title=_(u'Normal view')),
+    SimpleTerm(value="id_full", title=_(u'Full view')),
+    SimpleTerm(value="id_full_2cols", title=_(u'Full2cols view'))])
 
 countVocabulary = SimpleVocabulary.fromValues(range(1, 8))
 
@@ -30,7 +38,7 @@ class IFullNewsPortlet(IPortletDataProvider):
     """
     view_type = schema.Choice(
         title=_(u'Tipus de vista'),
-        description=_(u'Escull com es mostraran les noticies.'),
+        description=_(u'Escull com es mostraran les noticies'),
         required=True,
         vocabulary=viewVocabulary,
         default='id_normal'
