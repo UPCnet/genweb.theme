@@ -1,14 +1,15 @@
 <tal:newsitems tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
                            plone_view context/@@plone;
                            news_items view/published_news_items;
-                           data view/mostraData"
+                           data view/mostraData;
+                           tipus view/tipus"
                tal:condition="news_items"
                i18n:domain="genweb">
 
-
     <div class="portlet portlet-noticies portlet-ampliat" role="complementary">
         <h2 i18n:translate="genweb-noticies">Notícies</h2>
-        <ul class="list-portlet">
+        <!-- NORMAL -->
+        <ul tal:condition="python:tipus=='id_normal'" class="list-portlet">
             <li class="clearfix" tal:repeat="obj news_items">
                     <h3>
                         <a href="" tal:attributes="href obj/getURL">
@@ -30,6 +31,87 @@
               </div>
             </li>
         </ul>
+        <!-- FULL -->
+        <ul tal:condition="python:tipus=='id_full'" class="list-portlet">
+            <li class="clearfix" tal:repeat="obj news_items">
+              <a href="" tal:attributes="href obj/getURL">
+                <div class='noticies-full'>
+                  <tal:co tal:condition="python:obj.Type=='News Item'">
+                      <tal:image tal:condition="obj/news_image_filename|nothing">
+                          <img tal:attributes="src string:${obj/getURL}/@@images/image/full" alt="" class="image-noticies-full">
+                      </tal:image>
+                  </tal:co>
+                </div> 
+                <h3>
+                  <tal:titol replace="obj/pretty_title_or_id">Titol</tal:titol>
+                </h3>
+              </a>
+              <div class="content-noticies">
+                <p>
+                    <tal:cos tal:content="python: view.abrevia(obj)">New description</tal:cos>
+                </p>
+                <tal:co condition="data">
+                    <time class="smaller" tal:content="python:toLocalizedTime(obj.EffectiveDate)">May 5</time>
+                </tal:co>
+              </div>
+            </li>
+        </ul>
+
+        <!-- FULL 2COLS -->
+        <div tal:condition="python:tipus=='id_full_2cols'" class="row-fluid">
+          <div class='span6 noticies-full-2cols' id='pair-news'>  
+            <div tal:repeat="obj view/published_news_items_pair" class='noticia-full-2cols'>
+              <a href="" tal:attributes="href obj/getURL">
+                <div class='noticies-full'>
+                  <tal:co tal:condition="python:obj.Type=='News Item'">
+                      <tal:image tal:condition="obj/news_image_filename|nothing">
+                          <img tal:attributes="src string:${obj/getURL}/@@images/image/preview" alt="" class="image-noticies-full">
+                      </tal:image>
+                  </tal:co>
+                </div> 
+                <h3>
+                  <tal:titol replace="obj/pretty_title_or_id">Titol</tal:titol>
+                </h3>
+              </a>
+              <div class="content-noticies">
+                <p>
+                    <tal:cos tal:content="python: view.abrevia(obj)">New description</tal:cos>
+                </p>
+                <tal:co condition="data">
+                    <time class="smaller" tal:content="python:toLocalizedTime(obj.EffectiveDate)">May 5</time>
+                </tal:co>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class='span6 noticies-full-2cols' id='odd-news'>  
+            <div tal:repeat="obj view/published_news_items_odd" class='noticia-full-2cols'>
+              <a href="" tal:attributes="href obj/getURL">
+                <div class='noticies-full'>
+                  <tal:co tal:condition="python:obj.Type=='News Item'">
+                      <tal:image tal:condition="obj/news_image_filename|nothing">
+                          <img tal:attributes="src string:${obj/getURL}/@@images/image/preview" alt="" class="image-noticies-full">
+                      </tal:image>
+                  </tal:co>
+                </div> 
+                <h3>
+                  <tal:titol replace="obj/pretty_title_or_id">Titol</tal:titol>
+                </h3>
+              </a>
+              <div class="content-noticies">
+                <p>
+                    <tal:cos tal:content="python: view.abrevia(obj)">New description</tal:cos>
+                </p>
+                <tal:co condition="data">
+                    <time class="smaller" tal:content="python:toLocalizedTime(obj.EffectiveDate)">May 5</time>
+                </tal:co>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
         <div class="portlet-footer">
             <a href=""
                tal:attributes="href view/rss_news_link">

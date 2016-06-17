@@ -15,33 +15,50 @@ from Products.CMFCore.utils import getToolByName
 from genweb.core.interfaces import INewsFolder
 from genweb.core.utils import pref_lang
 
+from zope.schema.vocabulary import SimpleVocabulary
+
+viewVocabulary = SimpleVocabulary.fromItems((
+    (u"Normal: imatge esquerra i text dreta", "id_normal"),
+    (u"Full: imatge a dalt i text a sota", "id_full"),
+    (u"Full a dos columnes: dues columnes amb imatge a dalt i text a sota", "id_full_2cols")))
+
+countVocabulary = SimpleVocabulary.fromValues(range(1, 8))
+
 
 class IFullNewsPortlet(IPortletDataProvider):
     """A portlet which can render a list of news.
     """
-    count = schema.Int(
-        title=_(u"Numero de noticies a mostrar"),
-        description=_(u"Maxim numero de noticies a mostrar (5 o 7)"),
+    view_type = schema.Choice(
+        title=_(u'Tipus de vista'),
+        description=_(u'Escull com es mostraran les noticies.'),
         required=True,
-        default=5,
-        min=5,
-        max=7
+        vocabulary=viewVocabulary,
+        default='id_normal'
+    )
+
+    count = schema.Choice(
+        title=_(u"Numero de noticies a mostrar"),
+        description=_(u"Maxim numero de noticies a mostrar (d'1 a 7)"),
+        required=True,
+        vocabulary=countVocabulary,
+        default=5
     )
 
     showdata = schema.Bool(
         title=_(u"Mostra data?"),
         description=_(u"Boolea que indica si s'ha de mostrar la data en les noticies"),
         required=True,
-        default=True,
+        default=True
     )
 
 
 class Assignment (base.Assignment):
     implements(IFullNewsPortlet)
 
-    def __init__(self, count=5, showdata=True):
+    def __init__(self, count=5, showdata=True, view_type='id_normal'):
         self.count = count
         self.showdata = showdata
+        self.view_type = view_type
 
     @property
     def title(self):
@@ -54,8 +71,17 @@ class Renderer(base.Renderer):
     def published_news_items(self):
         return self._data()
 
+    def published_news_items_odd(self):
+        return self._data()[1::2]
+
+    def published_news_items_pair(self):
+        return self._data()[0::2]
+
     def mostraData(self):
         return self.data.showdata
+
+    def tipus(self):
+        return self.data.view_type
 
     def all_news_link(self):
         pc = api.portal.get_tool('portal_catalog')
@@ -109,7 +135,6 @@ class Renderer(base.Renderer):
                        Language=pref_lang(),
                        sort_on=('Date'),
                        sort_order='reverse')
-                       #, sort_limit=limit - important)
             results3 = []
             path_folder_news = self.all_news_link()
             for brain in results2:
@@ -130,7 +155,7 @@ class AddForm(base.AddForm):
         description = _(u"Aquest portlet mostra noticies")
 
         def create(self, data):
-            return Assignment(count=data.get('count', 5), showdata=data.get('showdata', True))
+            return Assignment(count=data.get('count', 5), showdata=data.get('showdata', True), view_type=data.get('view_type', 'id_normal'))
 
 
 class EditForm(base.EditForm):
