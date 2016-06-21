@@ -17,13 +17,6 @@ from genweb.core.utils import pref_lang
 
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
-"""
- [
- SimpleTerm(value=u'Bill', title=_(u'Bill')),
-     SimpleTerm(value=u'Bob', title=_(u'Bob')),
-     SimpleTerm(value=u'Jim', title=_(u'Jim'))]
-    )
-"""
 
 viewVocabulary = SimpleVocabulary([
     SimpleTerm(value="id_normal", title=_(u'Normal view')),
@@ -89,6 +82,9 @@ class Renderer(base.Renderer):
         return self.data.showdata
 
     def tipus(self):
+        # backwards compatibility: if view_type not set, assign old view equivalent
+        if not hasattr(self.data, 'view_type'):
+            self.data.view_type = "id_normal"
         return self.data.view_type
 
     def all_news_link(self):
