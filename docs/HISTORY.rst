@@ -1,11 +1,14 @@
 Changelog
 =========
 
-1.85 (unreleased)
+1.85 (2016-06-29)
 -----------------
 
-- Nothing changed yet.
-
+* add backwards compatibility for new views in fullnews portlet [oscar.albareda]
+* translate new views vocabulary in fullnews portlet [oscar.albareda]
+* Oscar's styles [Corina Riba]
+* translate new views in fullnews portlet [oscar.albareda]
+* new views in fullnews portlet [oscar.albareda]
 
 1.84 (2016-06-16)
 -----------------
