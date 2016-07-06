@@ -141,7 +141,7 @@
                            i18n:domain="plone"
                            i18n:translate="label_login_name">Username</label>
                     <div class="controls">
-                      <input type="text" id="inputEmail" 
+                      <input type="text" id="inputEmail"
                              i18n:attributes="placeholder label_user_name"
                              tal:attributes="name ac_name;
                                              value login_name;">
@@ -157,7 +157,7 @@
                            i18n:domain="plone"
                            i18n:translate="label_password">Password</label>
                     <div class="controls">
-                      <input type="password" id="inputPassword" 
+                      <input type="password" id="inputPassword"
                              i18n:attributes="placeholder label_password"
                              tal:attributes="name ac_password">
                       <span class="help-inline"
