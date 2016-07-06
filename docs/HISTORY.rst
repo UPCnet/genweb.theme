@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.86 (unreleased)
+1.86 (2016-07-06)
 -----------------
 
-- Nothing changed yet.
-
+* contact https [Alberto Duran]
 
 1.85 (2016-06-29)
 -----------------
