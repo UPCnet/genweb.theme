@@ -85,7 +85,7 @@
     tal:attributes="class body_class;
                     dir python:isRTL and 'rtl' or 'ltr'">
 
-<tal:ancientBrowser tal:replace="structure string:&lt;!--[if lt IE 8]&gt;&lt;p class=chromeframe&gt;Your browser is &lt;em&gt;ancient!&lt;/em&gt; &lt;a href='http://browsehappy.com/'&gt;Upgrade to a different browser&lt;/a&gt; or &lt;a href='http://www.google.com/chromeframe/?redirect=true'&gt;install Google Chrome Frame&lt;/a&gt; to experience this site.&lt;/p&gt;&lt;![endif]--&gt;" />
+<tal:ancientBrowser tal:replace="structure string:&lt;!--[if lt IE 8]&gt;&lt;p class=chromeframe&gt;Your browser is &lt;em&gt;ancient!&lt;/em&gt; &lt;a href='http://browsehappy.com/'&gt;Upgrade to a different browser&lt;/a&gt; &lt;/p&gt;&lt;![endif]--&gt;" />
 
 <tal:portaltop
     i18n:domain="plone"
@@ -178,9 +178,9 @@
 
                 <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" tal:condition="not:ajax_load" />
 
-            </div> <!-- Fi span content -->
+            </div>
 
-            <!-- Ojo, a GW no tenim mai columna dreta de portlets! no? -->
+            <tal:comment replace="nothing"> <!-- Ojo, a GW no tenim mai columna dreta de portlets! no? --></tal:comment>
             <tal:comment replace="nothing">
               <tal:notajax tal:condition="not:ajax_load">
                   <div id="portal-column-two"
@@ -193,7 +193,7 @@
                   </div>
               </tal:notajax>
             </tal:comment>
-        </div> <!-- Fi row content -->
+        </div>
 
     </div>
 </section>

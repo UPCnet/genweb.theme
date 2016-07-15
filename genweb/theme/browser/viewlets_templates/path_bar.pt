@@ -6,9 +6,7 @@
                  is_rtl view/is_rtl">
  <div class="container">
   <h2 i18n:translate="you_are_here" id="titol-breadcrumb">You are here:</h2>
-  <ol class="breadcrumb" aria-labelledby="titol-breadcrumb">
-    <li>
-      <a i18n:translate="tabs_home"
+  <ol class="breadcrumb" aria-labelledby="titol-breadcrumb"><li><a i18n:translate="tabs_home"
          tal:attributes="href view/navigation_root_url">Home</a>
       <span tal:condition="breadcrumbs" class="divider" aria-hidden="true">▶</span>
     </li>
