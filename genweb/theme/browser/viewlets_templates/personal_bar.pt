@@ -147,15 +147,11 @@
             </li>
             <li role="menuitem">
               <a tal:replace="structure view/forgeResizerURLCall"></a>
-              <!-- <tal:help i18n:translate="genweb-vistes">Vistes</tal:help> -->
             </li>
           </ul>
           <h2 class="goout" id="titol-menu-eines-genweb"
               i18n:translate="label_menu_eines_genweb"> Menú d'eines Genweb UPC </h2>
           <ul class="nav pull-right" role="toolbar" aria-labelledby="titol-menu-eines-genweb">
-<!--             <li role="menuitem" class="visible-desktop visible-tablet" tal:condition="view/canManageSite">
-              <a href="javascript:();" rel="popover" data-placement="bottom" data-animation="true" data-trigger="hover" data-content="Idioma establert com a defecte al lloc web. Potser no és el mateix que hi ha publicat al web segons la configuració del panell de control del Genweb" data-original-title="Idioma per defecte"><span class="label label-important "><tal:co tal:content="view/default_site_lang"></tal:co></span></a>
-            </li> -->
             <li aria-hidden="true" class="divider-vertical hidden-phone"></li>
             <li role="menuitem" class="dropdown hidden-phone pull-right"
                 tal:define="notificacions view/getNotificacionsGW">
