@@ -7,7 +7,8 @@
     <h1 class="pull-left">
       <a href="http://www.upc.edu" target="_blank">
         <img tal:attributes="src string:${portal_url}/++genweb++static/images/logoUPC.png"
-             i18n:attributes="alt label_alt_logo; title label_title_logo" />
+             i18n:attributes="alt label_alt_logo; title label_title_logo"
+             width="207px" height="46px" />
       </a>
     </h1>
     <a id='eines-menu' class="btn btn-navbar pull-right hidden-desktop hidden-tablet"
@@ -56,7 +57,8 @@
                       <img class="img_blank"
                         i18n:domain="genweb"
                         i18n:attributes="alt obrir_link_finestra_nova;"
-                        tal:attributes="src string:${portal_url}/++genweb++static/images/blank_blau.png">
+                        tal:attributes="src string:${portal_url}/++genweb++static/images/blank_blau.png"
+                        width="10px" height="10px" />
                   </a>
                 </tal:block>
               </tal:codi>
@@ -68,7 +70,8 @@
                     <img class="img_blank"
                       i18n:domain="genweb"
                       i18n:attributes="alt obrir_link_finestra_nova;"
-                      tal:attributes="src string:${portal_url}/++genweb++static/images/blank_blau.png" />
+                      tal:attributes="src string:${portal_url}/++genweb++static/images/blank_blau.png"
+                      width="10px" height="10px" />
                 </a>
               </tal:block>
             </li>
@@ -133,7 +136,8 @@
                   <img class="img_blank"
                     i18n:domain="genweb"
                     i18n:attributes="alt obrir_link_finestra_nova;"
-                    tal:attributes="src string:${portal_url}/++genweb++static/images/blank_blau.png" />
+                    tal:attributes="src string:${portal_url}/++genweb++static/images/blank_blau.png"
+                    width="10px" height="10px" />
               </a>
             </tal:block>
           </tal:codi>
@@ -145,7 +149,8 @@
                 <img class="img_blank"
                   i18n:domain="genweb"
                   i18n:attributes="alt obrir_link_finestra_nova;"
-                  tal:attributes="src string:${portal_url}/++genweb++static/images/blank_blau.png" />
+                  tal:attributes="src string:${portal_url}/++genweb++static/images/blank_blau.png"
+                  width="10px" height="10px" />
             </a>
           </tal:block>
         </li>
