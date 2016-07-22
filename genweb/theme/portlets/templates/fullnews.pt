@@ -19,13 +19,13 @@
             </h3>
             <tal:co tal:define="item obj/getObject"
                     tal:condition="python:obj.Type=='News Item'">
-              <img tal:condition="obj/news_image_filename|nothing"
+              <img tal:condition="obj/news_image_filename|nothing" class="span6"
                    tal:attributes="src string:${obj/getURL}/@@images/image/mini;
                                    title item/image_caption;
                                    alt item/image_caption;"
                    class="image-noticies" />
             </tal:co>
-            <div class="content-noticies">
+            <div class="content-noticies" class="span6">
               <p tal:content="python: view.abrevia(obj)">New description</p>
               <tal:co condition="data">
                 <time class="smaller" tal:content="python:toLocalizedTime(obj.EffectiveDate)">May 5</time>
