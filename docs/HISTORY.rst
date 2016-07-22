@@ -1,11 +1,18 @@
 Changelog
 =========
 
-1.87 (unreleased)
+1.88 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+1.87 (2016-07-21)
+-----------------
+
+* added size to img, required by improvements webs... [root@peterpre]
+* removed commented code [root@peterpre]
+* changes rendiment [root@peterpre]
 
 1.86 (2016-07-06)
 -----------------
