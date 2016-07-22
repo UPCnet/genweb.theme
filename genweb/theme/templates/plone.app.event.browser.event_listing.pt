@@ -88,7 +88,7 @@
 
     <tal:items repeat="data batch">
 
-      <article itemscope itemtype="http://data-vocabulary.org/Event" class="vevent"
+      <article itemscope itemtype="http://schema.org/Event" class="vevent"
           tal:define="startf python:view.date_speller(data.start)">
 
         <ul class="hCalendar-hidden">
