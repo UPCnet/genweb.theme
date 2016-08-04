@@ -70,7 +70,6 @@ class Renderer(base.Renderer):
             self._date = date(year or now.year,
                               month or now.month,
                               day or now.day).isoformat()
-
         if self.mode is None:
             self.mode = self._date and 'day' or 'future'
 
@@ -213,11 +212,13 @@ class Renderer(base.Renderer):
             mode and date and '&' or '',
             date and 'date=%s' % date or ''
         ) or ''
-        return '%s/@@event_listing_ical%s' % (
-            self.context.absolute_url(),
-            qstr
-        )
-
+        # per a que el boto iCal del portlet quan estem dintre d'un esdeveniment
+        # mostri la url correcte
+        obj = self.context.unrestrictedTraverse(self.context.virtual_url_path())
+        if 'Event' in obj.Type():
+            return '%s/ics_view' % (self.context.absolute_url())
+        else:
+            return '%s/@@event_listing_ical%s' % (self.context.absolute_url(), qstr)
 
 class AddForm(base.AddForm):
     form_fields = form.Fields(INewsEventsListingPortlet)
