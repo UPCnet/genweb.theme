@@ -1,11 +1,16 @@
 Changelog
 =========
 
-1.88 (unreleased)
+1.88 (2016-09-06)
 -----------------
 
-- Nothing changed yet.
-
+* added tal:comments [roberto.diaz]
+* iCal del portlet quan estem dintre event mostri url correcte [Alberto Duran]
+* fixed tinymce bug: cant create links [Paco Gregori]
+* fixed span6 to resized img [Roberto Diaz]
+* REDO template a11y & improvements [Roberto Diaz]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Corina Riba]
+* Change url timetype [Corina Riba]
 
 1.87 (2016-07-21)
 -----------------
