@@ -37,14 +37,22 @@
           </a>
 
           <ul class="dropdown-menu pull-right actionMenuContent"
-              tal:condition="not:menuItem/extra/hideChildren | not:submenu | nothing">
+              tal:condition="not:menuItem/extra/hideChildren | not:submenu | nothing"
+              tal:define="allowed_display_menu python:menuItem['extra']['id'] == 'plone-contentmenu-display';
+                          is_document python:context.portal_type=='Document'">
                   <tal:comment replace="nothing"><!-- This is the added grey title on the display menu views --></tal:comment>
-                  <li class="nav-header"
-                      tal:condition="python:menuItem['extra']['id'] == 'plone-contentmenu-display'"
-                      i18n:translate="genweb_content_actions_vista_de_carpeta"
-                      i18n:domain="genweb">
-                        Folder views
-                  </li>
+                    <li class="nav-header"
+                        tal:condition="python:allowed_display_menu and not is_document"
+                        i18n:translate="genweb_content_actions_vista_de_carpeta"
+                        i18n:domain="genweb">
+                          Folder views
+                    </li>
+                    <li class="nav-header"
+                        tal:condition="python:allowed_display_menu and is_document"
+                        i18n:translate="genweb_content_actions_vista_de_document"
+                        i18n:domain="genweb">
+                          Document views
+                    </li>
                 <tal:block repeat="subMenuItem submenu">
                   <tal:comment replace="nothing"><!-- Shitty solution as the translation of this element is fixed pythonically to the i18n domain plone--></tal:comment>
                   <li class="nav-header actionSeparator"
