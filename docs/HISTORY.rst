@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.89 (unreleased)
+1.89 (2016-09-13)
 -----------------
 
-- Nothing changed yet.
-
+* add start event date and recurrence to RSS view [Alberto Duran]
+* Canvi literal Vista carpeta per vista document [Alberto Duran]
 
 1.88 (2016-09-06)
 -----------------
