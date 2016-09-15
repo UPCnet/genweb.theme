@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.90 (unreleased)
+1.90 (2016-09-15)
 -----------------
 
-- Nothing changed yet.
-
+* show rss everywhere [Alberto Duran]
 
 1.89 (2016-09-13)
 -----------------
