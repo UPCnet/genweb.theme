@@ -48,7 +48,7 @@
     <dc:date tal:content="item/published/HTML4|item/modified/HTML4">Published or last modified date if no published date</dc:date>
     <tal:block tal:condition="python:item.context.portal_type == 'Event'">
       <eventstartdate tal:content="item/context/start"/>
-      <eventrecurrence tal:condition="python: getattr(item.context, 'recurrence')" tal:content="item/context/recurrence"/>
+      <eventrecurrence tal:condition="python: getattr(item.context, 'recurrence', None)" tal:content="item/context/recurrence"/>
     </tal:block>
     <dc:type tal:content="item/context/portal_type">Type</dc:type>
   </item>
