@@ -1,11 +1,11 @@
 Changelog
 =========
 
-1.91 (unreleased)
+1.91 (2016-09-16)
 -----------------
 
-- Nothing changed yet.
-
+* show rss everywhere third round [Alberto Duran]
+* show rss everywhere second round [Alberto Duran]
 
 1.90 (2016-09-15)
 -----------------
