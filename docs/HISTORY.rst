@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.92 (unreleased)
+1.92 (2016-10-04)
 -----------------
 
-- Nothing changed yet.
-
+* pt traduccions PAM [Alberto Duran]
 
 1.91 (2016-09-16)
 -----------------
