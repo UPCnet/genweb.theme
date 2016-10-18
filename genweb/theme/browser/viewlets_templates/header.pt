@@ -175,9 +175,9 @@
 
   <div class="titol-espai clearfix">
     <h1>
-      <a href="#" accesskey="1"
+      <a href="#" accesskey="1" tal:condition="viewlet/get_title"
          tal:attributes="href string:${portal_url}/${viewlet/pref_lang}">
-          <span tal:content="structure viewlet/get_title">
+          <span tal:content="structure viewlet/get_title" >
             Servei de <b>Comunicació i Promoció</b>
           </span>
           <img alt="" class="logoPropi pull-right"
