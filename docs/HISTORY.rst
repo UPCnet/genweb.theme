@@ -1,11 +1,13 @@
 Changelog
 =========
 
-1.93 (unreleased)
+1.93 (2016-11-03)
 -----------------
 
-- Nothing changed yet.
-
+* added condition in header [Roberto Diaz]
+* removed duplicated entries [root muntanyeta]
+* removed js [roberto.diaz]
+* Update travis.cfg [Alberto Duran]
 
 1.92 (2016-10-04)
 -----------------
