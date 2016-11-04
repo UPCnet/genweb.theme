@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
  <javascript authenticated="False" bundle="jquery" cacheable="True"
-    compression="none" conditionalcomment="" cookable="True" enabled="True"
+    compression="none" conditionalcomment="" cookable="False" enabled="True"
     expression="" id="++resource++plone.app.jquery.js" inline="False"/>
- <javascript authenticated="False" bundle="default" cacheable="True"
+ <javascript authenticated="False" bundle="default" cacheable="False"
     compression="safe" conditionalcomment="" cookable="True" enabled="False"
     expression="" id="jquery-integration.js" inline="False"
     insert-after="++resource++plone.app.jquery.js"/>
@@ -16,7 +16,7 @@
     expression="" id="register_function.js" inline="False"
     insert-after="event-registration.js"/>
  <javascript authenticated="False" bundle="default" cacheable="True"
-    compression="safe" conditionalcomment="" cookable="True" enabled="True"
+    compression="safe" conditionalcomment="" cookable="False" enabled="True"
     expression="" id="plone_javascript_variables.js" inline="False"
     insert-after="register_function.js"/>
  <javascript authenticated="False" bundle="default" cacheable="True"
@@ -164,7 +164,7 @@
     inline="False"
     insert-after="++genwebupc++js/plone.formwidget.querystring.querywidget.js"/>
  <javascript authenticated="False" bundle="jqueryui" cacheable="True"
-    compression="safe" conditionalcomment="" cookable="True" enabled="True"
+    compression="safe" conditionalcomment="" cookable="False" enabled="True"
     expression="" id="collective.js.jqueryui.custom.min.js" inline="False"
     insert-after="++resource++plone.formwidget.querystring.querywidget.js"/>
  <javascript authenticated="False" bundle="default" cacheable="True"
