@@ -215,7 +215,7 @@ class Renderer(base.Renderer):
         # per a que el boto iCal del portlet quan estem dintre d'un esdeveniment
         # mostri la url correcte
         obj = self.context.unrestrictedTraverse(self.context.virtual_url_path())
-        if 'Event' in obj.Type():
+        if obj.Type() in ('Event', 'Collection'):
             return '%s/ics_view' % (self.context.absolute_url())
         else:
             return '%s/@@event_listing_ical%s' % (self.context.absolute_url(), qstr)
