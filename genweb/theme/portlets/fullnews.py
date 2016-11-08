@@ -23,7 +23,7 @@ viewVocabulary = SimpleVocabulary([
     SimpleTerm(value="id_full", title=_(u'Full view')),
     SimpleTerm(value="id_full_2cols", title=_(u'Full2cols view'))])
 
-countVocabulary = SimpleVocabulary.fromValues(range(1, 8))
+countVocabulary = SimpleVocabulary.fromValues(range(1, 15))
 
 
 class IFullNewsPortlet(IPortletDataProvider):
@@ -39,7 +39,7 @@ class IFullNewsPortlet(IPortletDataProvider):
 
     count = schema.Choice(
         title=_(u"Numero de noticies a mostrar"),
-        description=_(u"Maxim numero de noticies a mostrar (d'1 a 7)"),
+        description=_(u"Maxim numero de noticies a mostrar (d'1 a 14)"),
         required=True,
         vocabulary=countVocabulary,
         default=5
@@ -124,33 +124,33 @@ class Renderer(base.Renderer):
         catalog = getToolByName(context, 'portal_catalog')
         limit = self.data.count
         state = ['published', 'intranet']
-        results = catalog(portal_type=('News Item', 'Link'),
+        importants = catalog(portal_type=('News Item', 'Link'),
                        review_state=state,
                        is_important=True,
                        Language=pref_lang(),
                        sort_on="getObjPositionInParent",
                        sort_limit=limit)
-        results = [a for a in results]
-        important = len(results)
+        importants = [a for a in importants]
+        important = len(importants)
         if important < limit:
-            results2 = catalog(portal_type=('News Item', 'Link'),
+            normals = catalog(portal_type=('News Item', 'Link'),
                        review_state=state,
                        is_important=False,
                        Language=pref_lang(),
                        sort_on=('Date'),
                        sort_order='reverse')
-            results3 = []
+            normals_limit = []
             path_folder_news = self.all_news_link()
-            for brain in results2:
+            for brain in normals:
                 brain_url = brain.getURL()
                 brain_type = brain.Type
                 if brain_type == 'Link' and brain_url.startswith(path_folder_news) or brain_type == 'News Item':
-                    results3.append(brain)
-                if len(results3) == limit - important:
+                    normals_limit.append(brain)
+                if len(normals_limit) == limit - important:
                     break
-            return results + results3
+            return importants + normals_limit
         else:
-            return results
+            return importants
 
 
 class AddForm(base.AddForm):
