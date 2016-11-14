@@ -1,11 +1,12 @@
 Changelog
 =========
 
-1.94 (unreleased)
+1.94 (2016-11-14)
 -----------------
 
-- Nothing changed yet.
-
+* increase max number of news to 14 in fullnews portlet [oscar.albareda]
+* Set iCal URL to ics_view for Collections [Santi]
+* importació de js correcte per a nous gw [Alberto Duran]
 
 1.93 (2016-11-03)
 -----------------
