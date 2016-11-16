@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.95 (unreleased)
+1.95 (2016-11-16)
 -----------------
 
-- Nothing changed yet.
-
+* vista RSS hora correcta i portlet noticies amb foto busca sols a la carpeta noticies [Alberto Duran]
 
 1.94 (2016-11-14)
 -----------------
