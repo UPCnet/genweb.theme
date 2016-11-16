@@ -11,4 +11,12 @@
         layer="plone.app.event.interfaces.IBrowserLayer"
         />
 
+    <browser:page
+        for="Products.CMFPlone.interfaces.syndication.ISyndicatable"
+        class=".overrides.FeedViewCustom"
+        name="RSS"
+        permission="zope2.View"
+        template="templates/Products.CMFPlone.browser.syndication.templates.RSS.pt"
+        />
+
 </configure>

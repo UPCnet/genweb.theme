@@ -118,6 +118,16 @@ class Renderer(base.Renderer):
             desc_text = desc_new
         return desc_text
 
+    def get_current_path_news(self):
+        lang = pref_lang()
+        root_path = '/'.join(api.portal.get().getPhysicalPath())
+        if lang == 'ca':
+            return root_path+'/'+lang+'/noticies'
+        elif lang == 'es':
+            return root_path+'/'+lang+'/noticias'
+        elif lang == 'en':
+            return root_path+'/'+lang+'/news'
+
     @memoize
     def _data(self):
         context = aq_inner(self.context)
@@ -125,20 +135,22 @@ class Renderer(base.Renderer):
         limit = self.data.count
         state = ['published', 'intranet']
         importants = catalog(portal_type=('News Item', 'Link'),
-                       review_state=state,
-                       is_important=True,
-                       Language=pref_lang(),
-                       sort_on="getObjPositionInParent",
-                       sort_limit=limit)
+                             review_state=state,
+                             is_important=True,
+                             Language=pref_lang(),
+                             sort_on="getObjPositionInParent",
+                             sort_limit=limit,
+                             path=self.get_current_path_news())
         importants = [a for a in importants]
         important = len(importants)
         if important < limit:
             normals = catalog(portal_type=('News Item', 'Link'),
-                       review_state=state,
-                       is_important=False,
-                       Language=pref_lang(),
-                       sort_on=('Date'),
-                       sort_order='reverse')
+                              review_state=state,
+                              is_important=False,
+                              Language=pref_lang(),
+                              sort_on=('Date'),
+                              sort_order='reverse',
+                              path=self.get_current_path_news())
             normals_limit = []
             path_folder_news = self.all_news_link()
             for brain in normals:
