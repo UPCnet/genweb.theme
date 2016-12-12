@@ -41,7 +41,7 @@
               <div class='noticies-full'>
                 <tal:co tal:condition="python:obj.Type=='News Item'">
                   <img tal:condition="obj/news_image_filename|nothing" 
-                       tal:attributes="src string:${obj/getURL}/@@images/image/preview;
+                       tal:attributes="src string:${obj/getURL}/@@images/image/full;
                                        title item/image_caption;
                                        alt item/image_caption;"
                        class="image-noticies-full" />
@@ -66,7 +66,7 @@
                 <div class='noticies-full'>
                   <tal:co tal:condition="python:obj.Type=='News Item'">
                     <img tal:condition="obj/news_image_filename|nothing"
-                         tal:attributes="src string:${obj/getURL}/@@images/image/mini;
+                         tal:attributes="src string:${obj/getURL}/@@images/image/preview;
                                          title item/image_caption;
                                          alt item/image_caption;"
                          class="image-noticies-full" />
@@ -89,7 +89,7 @@
                 <div class='noticies-full'>
                   <tal:co tal:condition="python:obj.Type=='News Item'">
                     <img tal:condition="obj/news_image_filename|nothing"
-                         tal:attributes="src string:${obj/getURL}/@@images/image/mini;
+                         tal:attributes="src string:${obj/getURL}/@@images/image/preview;
                                          title item/image_caption;
                                          alt item/image_caption;"
                          class="image-noticies-full" />
