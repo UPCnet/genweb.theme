@@ -1,11 +1,10 @@
 Changelog
 =========
 
-1.96 (unreleased)
+1.96 (2016-12-15)
 -----------------
 
-- Nothing changed yet.
-
+* increase image sizes in fullnews portlet: full and 2cols [oscar.albareda]
 
 1.95 (2016-11-16)
 -----------------
