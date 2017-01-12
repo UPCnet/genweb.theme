@@ -168,8 +168,7 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
     def getNotificacionsGW(self):
         results = {}
         try:
-            r = requests.get('http://www.upc.edu/ws/genweb/EinesGWv2.php', timeout=10)
-
+            r = requests.get('http://www.upc.edu/content/index.php/ws/EinesGWv2', timeout=10)
             lang = self.pref_lang()
             if lang == 'ca':
                 notificacions = r.json().get('ca')
