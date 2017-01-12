@@ -155,36 +155,37 @@
             <li aria-hidden="true" class="divider-vertical hidden-phone"></li>
             <li role="menuitem" class="dropdown hidden-phone pull-right"
                 tal:define="notificacions view/getNotificacionsGW">
-              <a href="#" data-toggle="dropdown"
-                 tal:attributes="class string:dropdown-toggle userGenweb${notificacions/nou}">
-                  <span class="goout">Genweb UPC</span>
-                  <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <tal:notificacionsmenu repeat="notificacio notificacions/elements">
+                <tal:ws tal:condition='notificacions'>
+                  <a href="#" data-toggle="dropdown"
+                     tal:attributes="class string:dropdown-toggle userGenweb${notificacions/nou}">
+                      <span class="goout">Genweb UPC</span>
+                      <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu" role="menu">
+                    <tal:notificacionsmenu repeat="notificacio notificacions/elements">
 
-                  <li role="menuitem"
-                      tal:condition="notificacio/li-class"
-                      tal:attributes="class notificacio/li-class"
-                      tal:content="notificacio/text">
-                        Header de conjunt de notificacions
-                  </li>
-                  <li role="menuitem"
-                      tal:condition="not: notificacio/li-class">
-                        <a tal:attributes="href notificacio/url" target="_blank">
-                          <i tal:attributes="class notificacio/i-class"></i>
-                          <tal:notificacio content="notificacio/text">Notificació</tal:notificacio>
-                          <img class="img_blank"
-                               tal:condition="notificacio/target-blank"
-                               i18n:attributes="alt obrir_link_finestra_nova;"
-                               tal:attributes="src string:${portal_url}/++genweb++static/images/blank_gris.png" />
-                          <span class="badge badge-warning"
-                                tal:condition="notificacio/nou">nou</span>
-                        </a>
-                  </li>
-
-                </tal:notificacionsmenu>
-              </ul>
+                      <li role="menuitem"
+                          tal:condition="notificacio/li-class"
+                          tal:attributes="class notificacio/li-class"
+                          tal:content="notificacio/text">
+                            Header de conjunt de notificacions
+                      </li>
+                      <li role="menuitem"
+                          tal:condition="not: notificacio/li-class">
+                            <a tal:attributes="href notificacio/url" target="_blank">
+                              <i tal:attributes="class notificacio/i-class"></i>
+                              <tal:notificacio content="notificacio/text">Notificació</tal:notificacio>
+                              <img class="img_blank"
+                                   tal:condition="notificacio/target-blank"
+                                   i18n:attributes="alt obrir_link_finestra_nova;"
+                                   tal:attributes="src string:${portal_url}/++genweb++static/images/blank_gris.png" />
+                              <span class="badge badge-warning"
+                                    tal:condition="notificacio/nou">nou</span>
+                            </a>
+                      </li>
+                    </tal:notificacionsmenu>
+                  </ul>
+                </tal:ws>
             </li>
           </ul>
         </div>
