@@ -15,6 +15,9 @@
     <viewlet name="genweb.footer"/>
   </order>
 
+  <hidden manager="plone.portaltop" skinname="GenwebTheme">
+    <viewlet name="genweb.alumnipersonalbar"/>
+  </hidden>
   <hidden manager= "plone.portalheader" skinname="GenwebTheme">
     <viewlet name="plone.personal_bar"/>
     <viewlet name="plone.logo"/>
