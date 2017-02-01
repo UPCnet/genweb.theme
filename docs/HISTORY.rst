@@ -1,11 +1,13 @@
 Changelog
 =========
 
-1.97 (unreleased)
+1.97 (2017-02-01)
 -----------------
 
-- Nothing changed yet.
-
+* updated views for saved data ploneformgen [alberto.duran]
+* amagar personalbar alumni [Alberto Duran]
+* change ws url [oscar.albareda]
+* render personal bar if ws has errors [oscar.albareda]
 
 1.96 (2016-12-15)
 -----------------
