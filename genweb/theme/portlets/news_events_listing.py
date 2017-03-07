@@ -4,6 +4,7 @@ from zope.formlib import form
 from zope.interface import implements
 from zope import schema
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from Products.CMFCore.utils import getToolByName
 from plone.app.event.base import localized_now
 from plone.app.event.base import guess_date_from
 
@@ -214,7 +215,15 @@ class Renderer(base.Renderer):
         ) or ''
         # per a que el boto iCal del portlet quan estem dintre d'un esdeveniment
         # mostri la url correcte
-        obj = self.context.unrestrictedTraverse(self.context.virtual_url_path())
+        pc = getToolByName(self.context, 'portal_catalog')
+
+        vpath = self.context.virtual_url_path()
+        if re.search(r'(\d{4}-\d{2}-\d{2})', vpath.split('/')[-1]) is None:
+            results = pc.searchResults(path=vpath)
+        else:
+            results = pc.searchResults(path=vpath.rsplit('/', 1)[0])
+
+        obj = results[0].getObject()
         if obj.Type() in ('Event', 'Collection'):
             return '%s/ics_view' % (self.context.absolute_url())
         else:
