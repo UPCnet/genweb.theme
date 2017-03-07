@@ -7,7 +7,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFCore.utils import getToolByName
 from plone.app.event.base import localized_now
 from plone.app.event.base import guess_date_from
-
+import re
 from plone.app.portlets.portlets import base
 
 from plone.app.portlets import PloneMessageFactory as _
