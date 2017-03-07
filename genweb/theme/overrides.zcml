@@ -19,4 +19,11 @@
         template="templates/Products.CMFPlone.browser.syndication.templates.RSS.pt"
         />
 
+    <browser:page
+        for="Products.PloneFormGen.interfaces.form.IPloneFormGenForm"
+        class=".overrides.FormSaveDataAdapterCustom"
+        name="_addDataRow"
+        permission="zope2.View"
+        />
+
 </configure>
