@@ -1,11 +1,18 @@
 Changelog
 =========
 
-1.98 (unreleased)
+1.98 (2017-03-09)
 -----------------
 
-- Nothing changed yet.
-
+* codificacio dels valors d"un desplegable al PloneformGen [alberto.duran]
+* solve ical link on newseventlisting portlet on recurrent event [Iago López Fernández]
+* solve ical link on newseventlisting portlet on recurrent event [Iago López Fernández]
+* Override default 'Content-Type' header for RSS feeds [sandra.saornil]
+*  [sandra.saornil]
+* Products.PloneCMF syndication FeedView returns 'application/atom+xml' [sandra.saornil]
+* by default but browsers expect 'application/xml' instead. [sandra.saornil]
+*  [sandra.saornil]
+* Expanded FeedView override, FeedViewCustom to replace default header value [sandra.saornil]
 
 1.97 (2017-02-01)
 -----------------
