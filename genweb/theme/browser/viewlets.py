@@ -243,8 +243,7 @@ class gwHeader(viewletBase):
         return self.genweb_config().right_logo_enabled
 
     def get_right_logo_alt(self):
-        right_logo_alt = self.genweb_config().right_logo_alt
-        return right_logo_alt if right_logo_alt else ""
+        return self.genweb_config().right_logo_alt
 
     def is_pam_installed(self):
         return HAS_PAM
