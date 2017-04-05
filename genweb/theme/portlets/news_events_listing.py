@@ -213,12 +213,16 @@ class Renderer(base.Renderer):
             mode and date and '&' or '',
             date and 'date=%s' % date or '') or ''
 
-        obj = self.context.unrestrictedTraverse(self.context.virtual_url_path())
+        try:
+            obj = self.context.unrestrictedTraverse(self.context.virtual_url_path())
 
-        if obj.Type() in ('Event', 'Collection'):
+            if obj.Type() in ('Event', 'Collection'):
+                return '%s/ics_view' % (self.context.absolute_url())
+            else:
+                return '%s/@@event_listing_ical%s' % (self.context.absolute_url(), qstr)
+        except:
+            # esdeveniment recursiu
             return '%s/ics_view' % (self.context.absolute_url())
-        else:
-            return '%s/@@event_listing_ical%s' % (self.context.absolute_url(), qstr)
 
 
 class AddForm(base.AddForm):
