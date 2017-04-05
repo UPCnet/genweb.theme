@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.0 (unreleased)
+2.0 (2017-04-05)
 ----------------
 
-- Nothing changed yet.
-
+* portlet ical per esdeveniment recursiu [alberto.duran]
 
 1.99 (2017-04-05)
 -----------------
