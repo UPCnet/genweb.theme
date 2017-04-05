@@ -1,11 +1,15 @@
 Changelog
 =========
 
-1.99 (unreleased)
+1.99 (2017-04-05)
 -----------------
 
-- Nothing changed yet.
-
+* return to latest working version of portlet ical [alberto.duran]
+* Remove changes WCAG [Iago López Fernández]
+* WCAG: añadido alt vacio en el caso de no tenerlo [Iago López Fernández]
+* WCAG: añadido atributos id y name a la etiqueta <input> [Iago López Fernández]
+* WCAG: cambiado destino a http [Iago López Fernández]
+* WCAG: añadido atributo alt en etiqueta <img> [Iago López Fernández]
 
 1.98 (2017-03-09)
 -----------------
