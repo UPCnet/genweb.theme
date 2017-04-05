@@ -211,23 +211,15 @@ class Renderer(base.Renderer):
         qstr = (date or mode) and '?%s%s%s' % (
             mode and 'mode=%s' % mode,
             mode and date and '&' or '',
-            date and 'date=%s' % date or ''
-        ) or ''
-        # per a que el boto iCal del portlet quan estem dintre d'un esdeveniment
-        # mostri la url correcte
-        pc = getToolByName(self.context, 'portal_catalog')
+            date and 'date=%s' % date or '') or ''
 
-        vpath = self.context.virtual_url_path()
-        if re.search(r'(\d{4}-\d{2}-\d{2})', vpath.split('/')[-1]) is None:
-            results = pc.searchResults(path=vpath)
-        else:
-            results = pc.searchResults(path=vpath.rsplit('/', 1)[0])
+        obj = self.context.unrestrictedTraverse(self.context.virtual_url_path())
 
-        obj = results[0].getObject()
         if obj.Type() in ('Event', 'Collection'):
             return '%s/ics_view' % (self.context.absolute_url())
         else:
             return '%s/@@event_listing_ical%s' % (self.context.absolute_url(), qstr)
+
 
 class AddForm(base.AddForm):
     form_fields = form.Fields(INewsEventsListingPortlet)
