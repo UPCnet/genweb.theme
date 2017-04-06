@@ -75,4 +75,6 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <include file="patches.zcml" />
+
 </configure>
