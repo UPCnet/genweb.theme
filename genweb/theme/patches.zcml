@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
+    i18n_domain="ulearn.patches">
+
+    <include package="collective.monkeypatcher" />
+
+    <monkey:patch
+        description="Codificar resultados del adaptador"
+        class="Products.PloneFormGen.content.saveDataAdapter.FormSaveDataAdapter"
+        original="_addDataRow"
+        replacement=".patches._addDataRow"
+        />
+
+</configure>
