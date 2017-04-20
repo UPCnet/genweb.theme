@@ -1,11 +1,11 @@
 Changelog
 =========
 
-2.1 (unreleased)
+2.1 (2017-04-20)
 ----------------
 
-- Nothing changed yet.
-
+* add patches [Iago López Fernández]
+* Codificar resultados del adaptador [Iago López Fernández]
 
 2.0 (2017-04-05)
 ----------------
