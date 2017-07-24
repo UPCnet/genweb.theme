@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.2 (unreleased)
+2.2 (2017-07-24)
 ----------------
 
-- Nothing changed yet.
-
+* Add new fields to RSS [Corina Riba]
 
 2.1 (2017-04-20)
 ----------------
