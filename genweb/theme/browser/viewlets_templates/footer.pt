@@ -16,7 +16,7 @@
     <div class="row-fluid">
       <div class="span8">
         <p>
-          <a href="http://www.upc.edu" target="_blank">
+          <a href="https://www.upc.edu" target="_blank">
             <abbr rel="tooltip" data-placement="top" title="Universitat Politècnica de Catalunya · BarcelonaTech">UPC</abbr>
             <img class="img_blank"
                  tal:attributes="src string:${portal_url}/++genweb++static/images/blank_blau.png"
@@ -69,7 +69,9 @@
             <a rel="tooltip" data-placement="top"
                tal:attributes="href python:viewlet.get_go_to_top_link(template, view)"
                i18n:attributes="title inici_page;alt inici_page;">
- -            <img tal:attributes="src string:${portal_url}/++genweb++static/images/amunt.png" height="16px" width="16px">
+               <img tal:attributes="src string:${portal_url}/++genweb++static/images/amunt.png"
+                    height="16px"
+                    width="16px">
             </a>
           </li>
         </ul>

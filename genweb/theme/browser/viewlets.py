@@ -168,7 +168,7 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
     def getNotificacionsGW(self):
         results = {}
         try:
-            r = requests.get('http://www.upc.edu/content/index.php/ws/EinesGWv2', timeout=10)
+            r = requests.get('https://www.upc.edu/content/index.php/ws/EinesGWv2', timeout=10)
             lang = self.pref_lang()
             if lang == 'ca':
                 notificacions = r.json().get('ca')
@@ -334,47 +334,42 @@ class gwFooter(viewletBase):
     def getLinksPeu(self):
         """ links fixats per accessibilitat/rss/about """
         idioma = self.pref_lang()
-        footer_links = {
-            "ca": {
-                "rss": "rss-ca",
-                "about": "sobre-aquest-web",
-                "accessibility": "accessibilitat",
-                "disclaimer": "//www.upc.edu/avis-legal"
-                },
-            "es": {
-                "rss": "rss-es",
-                "about": "sobre-esta-web",
-                "accessibility": "accesibilidad",
-                "disclaimer": "//www.upc.edu/aviso-legal"
-                },
-            "en": {
-                "rss": "rss-en",
-                "about": "about-this-web",
-                "accessibility": "accessibility",
-                "disclaimer": "//www.upc.edu/disclaimer"
-                },
-            "zh": {
-                "rss": "rss-en",
-                "about": "about-this-web",
-                "accessibility": "accessibility",
-                "disclaimer": "//www.upc.edu/disclaimer"
-                },
-            }
+        footer_links = {"ca": {"rss": "rss-ca",
+                               "about": "sobre-aquest-web",
+                               "accessibility": "accessibilitat",
+                               "disclaimer": "https://www.upc.edu/ca/avis-legal"
+                               },
+                        "es": {"rss": "rss-es",
+                               "about": "sobre-esta-web",
+                               "accessibility": "accesibilidad",
+                               "disclaimer": "https://www.upc.edu/es/aviso-legal"
+                               },
+                        "en": {"rss": "rss-en",
+                               "about": "about-this-web",
+                               "accessibility": "accessibility",
+                               "disclaimer": "https://www.upc.edu/en/disclaimer"
+                               },
+                        "zh": {"rss": "rss-en",
+                               "about": "about-this-web",
+                               "accessibility": "accessibility",
+                               "disclaimer": "https://www.upc.edu/en/disclaimer"
+                               },
+                        }
         return footer_links[idioma]
 
     def idioma_cookies(self):
         lang = self.pref_lang()
 
         if lang == 'ca':
-            return '//www.upc.edu/avis-legal/politica-de-cookies'
+            return 'https://www.upc.edu/ca/avis-legal/politica-de-cookies'
         if lang == 'es':
-            return '//www.upc.edu/aviso-legal/politica-de-cookies'
+            return 'https://www.upc.edu/es/aviso-legal/politica-de-cookies'
         if lang == 'en':
-            return '//www.upc.edu/disclaimer/cookies-policy'
+            return 'https://www.upc.edu/en/disclaimer/cookies-policy'
         if lang == 'zh':
-            return '//www.upc.edu/disclaimer/cookies-policy'
+            return 'https://www.upc.edu/en/disclaimer/cookies-policy'
         if lang == '':
-            return '//www.upc.edu/avis-legal/politica-de-cookies'
+            return 'https://www.upc.edu/ca/avis-legal/politica-de-cookies'
 
     def checkIsAdmin(self):
         # Check if user has admin role to show the bottom information box

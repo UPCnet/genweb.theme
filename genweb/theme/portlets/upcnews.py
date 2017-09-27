@@ -34,44 +34,58 @@ class Renderer(base.Renderer):
     def dia_semana(self, dia):
         return self.utils.dia_semana(dia)
 
-    def getRSS(self):
-
+    def getUrlRSSPremsa(self):
+        url = ''
         idioma = utils.pref_lang()
 
-        if idioma == 'zh':  # Force RSS en angles a web en chino
-            idioma = 'en'
+        if idioma == 'en':
+            url = 'https://upc.edu/en/press-room/upc-today/RSS'
 
-        url = 'http://www.upc.edu/saladepremsa/actualitat-upc/RSS?set_language=' + idioma
+        elif idioma == 'ca':
+            url = 'https://upc.edu/ca/sala-de-premsa/actualitat-upc/RSS'
 
+        elif idioma == 'es':
+            url = 'https://upc.edu/es/sala-de-prensa/actualidad-upc/RSS'
+
+        else:
+            url = 'https://upc.edu/ca/sala-de-premsa/actualitat-upc/RSS'
+
+        return url
+
+    def getURLPremsa(self):
+        url = ''
+        idioma = utils.pref_lang()
+        if idioma == 'en':
+            url = 'https://upc.edu/en/press-room'
+
+        elif idioma == 'ca':
+            url = 'https://upc.edu/ca/sala-de-premsa'
+
+        elif idioma == 'es':
+            url = 'https://upc.edu/es/sala-de-prensa'
+
+        else:
+            url = 'https://upc.edu/ca/sala-de-premsa'
+
+        return url
+
+    def getRSS(self):
+
+        url = self.getUrlRSSPremsa()
         items = []
 
         d = feedparser.parse(url)
         for item in d['items']:
             try:
-                link = item.links[0]['href']
                 itemdict = {
                     'title': item.title,
-                    'url': link + '?set_language=' + idioma,
+                    'url': item.link,
                     'summary': item.get('description', ''),
                 }
             except AttributeError:
                 continue
             items.append(itemdict)
         return items[:5]
-
-    def getUrlRSSPremsa(self):
-        idioma = idioma = utils.pref_lang()
-        url_rss = 'http://www.upc.edu/saladepremsa/actualitat-upc/RSS?set_language=' + idioma
-        return url_rss
-
-    def getURLPremsa(self):
-        idioma = utils.pref_lang()
-
-        if idioma == 'zh':  # Force RSS en angles a web en chino
-            idioma = 'en'
-
-        url = 'http://www.upc.edu/saladepremsa/actualitat-upc?set_language=' + idioma
-        return url
 
 
 class AddForm(base.NullAddForm):

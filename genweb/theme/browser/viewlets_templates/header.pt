@@ -5,7 +5,7 @@
                  custom_link viewlet/getCustomLink">
   <div class="clearfix">
     <h1 class="pull-left">
-      <a href="http://www.upc.edu" target="_blank">
+      <a href="https://www.upc.edu" target="_blank">
         <img tal:attributes="src string:${portal_url}/++genweb++static/images/logoUPC.png"
              i18n:attributes="alt label_alt_logo; title label_title_logo"
              width="207px" height="46px" />
