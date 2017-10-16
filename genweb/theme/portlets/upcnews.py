@@ -85,7 +85,7 @@ class Renderer(base.Renderer):
             except AttributeError:
                 continue
             items.append(itemdict)
-        return items[:5]
+        return items[:6]
 
 
 class AddForm(base.NullAddForm):
