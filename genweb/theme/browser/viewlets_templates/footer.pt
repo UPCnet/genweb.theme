@@ -3,7 +3,8 @@
                     plone_view context/@@plone;
                     view nocall:view | nocall: plone_view;
                     dades context/@@genweb.utils/getDadesUnitat;
-                    cookies viewlet/idioma_cookies;"
+                    cookies viewlet/idioma_cookies;
+                    home_link viewlet/getHomeLink"
         i18n:domain="genweb">
 
   <div class="container">
@@ -16,7 +17,7 @@
     <div class="row-fluid">
       <div class="span8">
         <p>
-          <a href="https://www.upc.edu" target="_blank">
+          <a tal:attributes="href home_link" target="_blank">
             <abbr rel="tooltip" data-placement="top" title="Universitat Politècnica de Catalunya · BarcelonaTech">UPC</abbr>
             <img class="img_blank"
                  tal:attributes="src string:${portal_url}/++genweb++static/images/blank_blau.png"

@@ -2,10 +2,11 @@
      i18n:domain="genweb"
      tal:define="portal_url context/@@plone_portal_state/portal_url;
                  portal_https context/@@genweb.utils/portal_url_https;
-                 custom_link viewlet/getCustomLink">
+                 custom_link viewlet/getCustomLink;
+                 home_link viewlet/getHomeLink">
   <div class="clearfix">
     <h1 class="pull-left">
-      <a href="https://www.upc.edu" target="_blank">
+      <a tal:attributes="href home_link" target="_blank">
         <img tal:attributes="src string:${portal_url}/++genweb++static/images/logoUPC.png"
              i18n:attributes="alt label_alt_logo; title label_title_logo"
              width="207px" height="46px" />

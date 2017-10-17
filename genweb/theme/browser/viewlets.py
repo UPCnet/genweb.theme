@@ -39,7 +39,6 @@ from genweb.core.browser.viewlets import baseResourcesViewlet
 
 grok.context(Interface)
 
-
 class gwCSSViewlet(baseResourcesViewlet):
     """ This is the CSS viewlet for Genweb """
     grok.context(Interface)
@@ -276,6 +275,18 @@ class gwHeader(viewletBase):
             }
         return custom_links[lang]
 
+    def getHomeLink(self):
+        lang = self.pref_lang()
+        if lang == "ca":
+            home_link = 'https://www.upc.edu/ca'
+        elif lang == "es":
+            home_link = 'https://www.upc.edu/es'
+        elif lang == "en":
+            home_link = 'https://www.upc.edu/en'
+        else:
+            home_link = 'https://www.upc.edu/ca'
+        return home_link
+
 
 class gwGlobalSectionsViewlet(GlobalSectionsViewlet, viewletBase):
     grok.name('genweb.globalsections')
@@ -404,6 +415,19 @@ class gwFooter(viewletBase):
             data['Debug'] = ""
 
         return data
+
+    def getHomeLink(self):
+        lang = self.pref_lang()
+        if lang == "ca":
+            home_link = 'https://www.upc.edu/ca'
+        elif lang == "es":
+            home_link = 'https://www.upc.edu/es'
+        elif lang == "en":
+            home_link = 'https://www.upc.edu/en'
+        else:
+            home_link = 'https://www.upc.edu/ca'
+
+        return home_link
 
 
 class gwSearchViewletManager(grok.ViewletManager):
