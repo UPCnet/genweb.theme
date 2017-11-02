@@ -1,11 +1,15 @@
 Changelog
 =========
 
-2.3 (unreleased)
+2.3 (2017-11-02)
 ----------------
 
-- Nothing changed yet.
-
+* Internationalization link home UPC [Corina Riba]
+* Show 6 upcnews [Corina Riba]
+* Change homeupc protocol [Corina Riba]
+* updated css control panel with 98% [Roberto Diaz]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Corina Riba]
+* controlar si no hay imagen [Corina Riba]
 
 2.2 (2017-07-24)
 ----------------
