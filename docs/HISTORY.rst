@@ -6,8 +6,7 @@ Changelog
 
 - Nothing changed yet.
 
-
-2.3 (2017-11-02)
+2.3 (2017-11-21)
 ----------------
 
 * Internationalization link home UPC [Corina Riba]
