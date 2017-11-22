@@ -69,11 +69,11 @@
                             <ul style="margin-left: 0px; ">
                                 <li style="list-style: none; "><code style="font-size: 12px; ">1</code> — Home page</li>
                                 <li style="list-style: none; "><code style="font-size: 12px; ">2</code> — Skip to content</li>
-                                <li style="list-style: none; "><code style="font-size: 12px; ">3</code> — Site navigation tree</li>
-                                <li style="list-style: none; "><code style="font-size: 12px; ">4</code> — Site map</li>
-                                <li style="list-style: none; "><code style="font-size: 12px; ">5</code> — Advanced search</li>
-                                <li style="list-style: none; "><code style="font-size: 12px; ">6</code> — Contact information</li>
-                                <li style="list-style: none; "><code style="font-size: 12px; ">7</code> — Accessibility information</li>
+                                <li style="list-style: none; "><code style="font-size: 12px; ">3</code> — Site map</li>
+                                <li style="list-style: none; "><code style="font-size: 12px; ">4</code> — Search field focus</li>
+                                <li style="list-style: none; "><code style="font-size: 12px; ">5</code> — Site navigation tree</li>
+                                <li style="list-style: none; "><code style="font-size: 12px; ">9</code> — Contact information</li>
+                                <li style="list-style: none; "><code style="font-size: 12px; ">0</code> — Accessibility information</li>
                             </ul>
 
                             <br />
