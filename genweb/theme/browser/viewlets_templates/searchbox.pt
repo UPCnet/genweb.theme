@@ -1,11 +1,11 @@
 <div id="gwsearch" i18n:domain="plone" >
-  <input class="typeahead" type="text" placeholder="Search"
+  <input accesskey="4" class="typeahead" type="text" placeholder="Search"
          tal:attributes="data-typeahead-url string:${view/site_url}/${view/pref_lang}/gw_type_ahead_search;
                          data-search-url string:${view/site_url}/${view/pref_lang}/@@search;"
          i18n:attributes="placeholder text_search"/>
   </div>
 <p class="goout" tal:define="portal_url context/@@plone_portal_state/portal_url;">
-	<a accesskey="5" href="#"
+	<a href="#"
 		i18n:translate="submitGo"
 		i18n:domain="genweb"
 		tal:attributes="href string:${portal_url}/search">

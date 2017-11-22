@@ -59,11 +59,11 @@
 <ul style="margin-left: 0px; ">
   <li style="list-style: none; "><code style="font-size: 12px; ">1</code> — Página de inicio</li>
   <li style="list-style: none; "><code style="font-size: 12px; ">2</code> — Ir al contenido</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">3</code> — Ir a Árbol de navegación</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">4</code> — Mapa de la web</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">5</code> — Ir al buscador</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">6</code> — Información de contacto</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">7</code> — Accesibilidad</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">3</code> — Mapa del web</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">4</code> — Foco en el campo de búsqueda</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">5</code> — Árbol de navegación</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">9</code> — Información de contacto</li>
+  <li style="list-style: none; "><code style="font-size: 12px; ">0</code> — Consulta accesibilidad</li>
 </ul>
 
 <br />

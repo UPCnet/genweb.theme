@@ -53,7 +53,7 @@
         <ul class="pull-right sobreElWeb" role="menu"
             tal:define="link viewlet/getLinksPeu" >
           <li role="menuitem">
-            <a href="#" accesskey="7"
+            <a href="#" accesskey="0"
                tal:attributes="href string:${portal_url}/${link/accessibility}"
                i18n:translate="genweb-accessibility">
                 Accessibilitat
