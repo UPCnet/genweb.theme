@@ -4349,7 +4349,7 @@ button.pfg-draft-save .caret,
   border-radius: 6px 6px 0 0; }
   .modal-header .close, .pb-ajax .documentFirstHeading .close, .pb-ajax > div > h2 .close {
     margin-top: 1px; }
-  .modal-header h3, .pb-ajax .documentFirstHeading h3, .pb-ajax > div > h2 h3 {
+  .modal-header h2, .pb-ajax .documentFirstHeading h3, .pb-ajax > div > h2 h3 {
     margin: 0;
     line-height: 24px; }
 
@@ -8124,7 +8124,7 @@ NOTEBOOK
   .table-notebook tr:first-child td {
     border-top: 3px double #ffb68d !important; }
 
-/* 
+/*
 .table
 .table-striped
 .table-bordered
@@ -8142,7 +8142,7 @@ També ha de ser aplicable directament al td i a altres elements com les llistes
 */
 /*
 // MIDES SAMARRETA
-// ------------------------- 
+// -------------------------
 */
 h1, h2, h3 {
   color: #557C95;
