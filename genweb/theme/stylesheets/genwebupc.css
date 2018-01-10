@@ -4349,7 +4349,7 @@ button.pfg-draft-save .caret,
   border-radius: 6px 6px 0 0; }
   .modal-header .close, .pb-ajax .documentFirstHeading .close, .pb-ajax > div > h2 .close {
     margin-top: 1px; }
-  .modal-header h2, .pb-ajax .documentFirstHeading h3, .pb-ajax > div > h2 h3 {
+  .modal-header h3, .modal-header h2, .pb-ajax .documentFirstHeading h3, .pb-ajax > div > h2 h3 {
     margin: 0;
     line-height: 24px; }
 
