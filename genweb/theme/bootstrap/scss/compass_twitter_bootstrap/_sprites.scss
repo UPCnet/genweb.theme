@@ -63,7 +63,7 @@
 .icon-folder-album_view                { background-position: -240px 0; }
 .icon-th-list            { background-position: -264px 0; }
 .icon-ok                 { background-position: -288px 0; }
-.icon-remove, .icon-plone-contentmenu-actions-delete             { background-position: -312px 0; }
+.icon-remove, .icon-plone-contentmenu-actions-delete, .icon-_remove_translations           { background-position: -312px 0; }
 .icon-zoom-in            { background-position: -336px 0; }
 .icon-zoom-out           { background-position: -360px 0; }
 .icon-off                { background-position: -384px 0; }
@@ -113,7 +113,7 @@
 .icon-facetime-video     { background-position: -432px -48px; }
 .icon-picture            { background-position: -456px -48px; }
 
-.icon-pencil             { background-position: 0      -72px; }
+.icon-pencil, .icon-_edit_babel_edit, [class^="icon-babel_edit_"]             { background-position: 0      -72px; }
 .icon-map-marker         { background-position: -24px  -72px; }
 .icon-adjust             { background-position: -48px  -72px; }
 .icon-tint               { background-position: -72px  -72px; }
@@ -151,7 +151,7 @@
 .icon-share-alt          { background-position: -336px -96px; }
 .icon-resize-full        { background-position: -360px -96px; }
 .icon-resize-small       { background-position: -384px -96px; }
-.icon-plus               { background-position: -408px -96px; }
+.icon-plus, .icon-_add_translations               { background-position: -408px -96px; }
 .icon-minus              { background-position: -433px -96px; }
 .icon-asterisk           { background-position: -456px -96px; }
 
@@ -190,7 +190,7 @@
 .icon-circle-arrow-left       { background-position: -264px -144px; }
 .icon-circle-arrow-up         { background-position: -288px -144px; }
 .icon-circle-arrow-down       { background-position: -312px -144px; }
-.icon-globe                   { background-position: -336px -144px; }
+.icon-globe, .icon-_set_language                   { background-position: -336px -144px; }
 .icon-wrench                  { background-position: -360px -144px; }
 .icon-tasks                   { background-position: -384px -144px; }
 .icon-filter                  { background-position: -408px -144px; }
@@ -203,7 +203,7 @@
 .icon-upc                     { background-position: 0      -169px; }
 .icon-news                    { background-position: -23px  -169px; }
 .icon-box, .icon-packet       { background-position: -48px  -168px; }
-.icon-link                    { background-position: -72px  -169px; }
+.icon-link, .icon-_universal_link                    { background-position: -72px  -169px; }
 .icon-iframe                  { background-position: -96px  -169px; }
 .icon-desktop                 { background-position: -120px -169px; }
 .icon-logosfooter, .icon-logos_footer             { background-position: -144px -169px; }
@@ -253,7 +253,6 @@
 .icon-ppt                     { background-position: -408px -192px; }
 .icon-pdf                     { background-position: -432px -192px; }
 .icon-translate               { background-position: -456px -192px; }
-
 
 
 .large-icon {
