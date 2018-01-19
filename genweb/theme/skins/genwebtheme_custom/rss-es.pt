@@ -16,7 +16,7 @@
 
   <h1 class="documentFirstHeading">Información RSS</h1><br />
   <p><strong>RSS </strong>(sigla de <em>Really Simple Syndication</em>) es un canal de distribución de contenidos que se actualizan a menudo, como sitios de noticias, weblogs o podcasts, por medio del cual se puede compartir la información y utilizarla en otros sitios web o programas. Es en esencia una sindicación de contenidos.</p>
-  <p>La principal ventaja del sistema es la agilidad, puesto que ya no hay que descargar las imágenes y otros elementos del web, solo los titulares, y también se puede juntar el contenido de&nbsp; muchos sitios web en un solo espacio. Gracias a esta tecnología, los usuarios ya no deben preocuparse de comprobar si hay novedades que les interesen en un determinado espacio digital, sino que pueden recibir y organizar los nuevos titulares de un espacio digital en el momento mismo en que se publican. El web incorpora este servicio en todas las páginas donde aparece el icono RSS <i class="icon-color icon-rss"></i>.</p>
+  <p>La principal ventaja del sistema es la agilidad, puesto que ya no hay que descargar las imágenes y otros elementos del web, solo los titulares, y también se puede juntar el contenido de&nbsp; muchos sitios web en un solo espacio. Gracias a esta tecnología, los usuarios ya no deben preocuparse de comprobar si hay novedades que les interesen en un determinado espacio digital, sino que pueden recibir y organizar los nuevos titulares de un espacio digital en el momento mismo en que se publican. El web incorpora este servicio en todas las páginas donde aparece el icono RSS <span class="icon-color icon-rss"></span>.</p>
 
   <h2>RSS de la UPC</h2>
   <ul class="list list-links">

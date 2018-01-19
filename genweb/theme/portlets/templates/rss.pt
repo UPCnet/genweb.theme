@@ -13,7 +13,7 @@
     <tal:rss tal:condition="view/feedAvailable"
                 tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime"
                 tal:repeat="item view/items">
-        <li 
+        <li
             tal:define="oddrow repeat/item/odd"
             tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
 
@@ -22,7 +22,7 @@
             <time class="smaller"
                 tal:condition="exists:item/updated">
               <span tal:omit-tag="" tal:content="python:toLocalizedTime(item['updated'])">19.02.2007</span>
-            </time>            
+            </time>
         </li>
     </tal:rss>
     </ul>
@@ -30,9 +30,9 @@
         <a href="" class="portlet-footer"
            tal:condition="view/siteurl"
            tal:attributes="href view/siteurl">
-           <i class="icon-rss"></i>
+           <span class="icon-rss"></span>
            <span tal:omit-tag="" i18n:translate="box_morelink">More&hellip;</span>
-           
+
         </a>
     </div>
 </div>

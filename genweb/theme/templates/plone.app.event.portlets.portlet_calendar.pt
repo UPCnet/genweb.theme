@@ -18,7 +18,7 @@
            tal:attributes="href view/prev_query;
                            data-year prev_year;
                            data-month prev_month;"
-           i18n:attributes="title title_previous_month;"><i class="icon-chevron-left icon-color"></i></a>
+           i18n:attributes="title title_previous_month;"><span class="icon-chevron-left icon-color"></span></a>
 
         <span i18n:translate="" tal:omit-tag="">
             <span i18n:name="monthname" i18n:translate=""
@@ -38,7 +38,7 @@
            tal:attributes="href view/next_query;
                            data-year next_year;
                            data-month next_month;"
-           i18n:attributes="title title_next_month;"><i class="icon-chevron-right icon-color"></i></a>
+           i18n:attributes="title title_next_month;"><span class="icon-chevron-right icon-color"></span></a>
     </h2>
 
     <div class="pad">

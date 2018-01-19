@@ -111,7 +111,7 @@
         <tal:comment replace="nothing"> FOOTER </tal:comment>
         <div class="portlet-footer">
             <a tal:attributes="href view/rss_news_link">
-               <i class="icon-rss pull-left"></i>
+               <span class="icon-rss pull-left"></span>
             </a>
             <a tal:attributes="href view/all_news_link"
                i18n:domain="plone"

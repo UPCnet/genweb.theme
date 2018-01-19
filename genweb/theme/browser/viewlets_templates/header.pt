@@ -14,7 +14,7 @@
     </h1>
     <a id='eines-menu' class="btn btn-navbar pull-right hidden-desktop hidden-tablet"
        data-toggle="collapse" data-target=".nav-collapse-eines">
-      <i class="icon-wrench"></i>
+      <span class="icon-wrench"></span>
     </a>
 
     <tal:comment replace="nothing">  Menu para tamaño escritorio</tal:comment>

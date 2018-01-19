@@ -8545,7 +8545,7 @@ input[type="file"] {
   border-top: 1px solid #fff;
   position: relative;
   font-size: 92.3076923%; }
-  .portlet-footer i {
+  .portlet-footer i, .portlet-footer span {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
     opacity: 0.5;
     position: absolute;

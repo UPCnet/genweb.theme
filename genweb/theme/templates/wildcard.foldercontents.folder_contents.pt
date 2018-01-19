@@ -142,11 +142,11 @@
                       <input type="file" name="files[]" multiple>
                     </div>
                     <button type="submit" class="btn start">
-                        <i class="icon-upload"></i>
+                        <span class="icon-upload"></span>
                         <span i18n:translate="foldercontents_start_upload">Start upload</span>
                     </button>
                     <button type="reset" class="btn cancel">
-                        <i class="icon-ban-circle"></i>
+                        <span class="icon-ban-circle"></span>
                         <span i18n:translate="foldercontents_cancel_upload">Cancel upload</span>
                     </button>
                     <!-- <input type="checkbox" class="toggle"> -->
