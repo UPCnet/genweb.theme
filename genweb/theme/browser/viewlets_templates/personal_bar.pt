@@ -123,8 +123,7 @@
                 </li>
                 <li role="menuitem">
                   <a tal:attributes="href string:${portal_url}/@@genweb-controlpanel">
-                    <tal:managesite i18n:translate="genWeb UPC settings" i18n:domain="plone">
-                          Genweb UPC Settings</tal:managesite>
+                          Genweb UPC
                     <img i18n:attributes="alt obrir_link_finestra_nova"
                         class="img_blank"
                         tal:attributes="src string:${portal_url}/++resource++cpgenweb.png" />
