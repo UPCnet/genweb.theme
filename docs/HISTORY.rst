@@ -1,11 +1,28 @@
 Changelog
 =========
 
-2.4 (unreleased)
+2.4 (2018-03-07)
 ----------------
 
-- Nothing changed yet.
-
+* Merged two branches [Roberto Diaz]
+* Merge remote-tracking branch 'origin/develop' [Roberto Diaz]
+* Aplicar lenguaje actual de la página al actualizar mes del calendario [iago.lopez]
+* Arreglado traduccion del mensaje en la página de permisos insuficientes [iago.lopez]
+* changed literal [Roberto Diaz]
+* updated CDN [Roberto Diaz]
+* added tradueix icons [Roberto Diaz]
+* Eliminar untitled.html y template PlonePopoll [iago.lopez]
+* WCAG: Substituir etiquetas <i> y <b> utilizadas para iconos por <span> [iago.lopez]
+* WCAG: Modal login: scss [iago.lopez]
+* WCAG: Modal login: estilos [iago.lopez]
+* WCAG: Modal login: h3 a h2 [iago.lopez]
+* WCAG: Añadir atributos id y name al input del buscador [iago.lopez]
+* WCAG: quitar atributo title si esta vacio y añadir alt vacio en caso de no tener - Portlet fullnews [iago.lopez]
+* WCAG: añadido alt vacio en el caso de no tener texto alternativo - Logo derecho [iago.lopez]
+* WCAG: añadido atributo alt en etiqueta <img> del footer [iago.lopez]
+* Merge remote-tracking branch 'origin/develop' [iago.lopez]
+* Merge remote-tracking branch 'origin/accessibilitat' into develop [iago.lopez]
+* Resolve conflict in docs/HISTORY.rst [alberto.duran]
 2.3 (2017-11-21)
 ----------------
 
