@@ -69,10 +69,9 @@
           <li role="menuitem" class="amunt">
             <a rel="tooltip" data-placement="top"
                tal:attributes="href python:viewlet.get_go_to_top_link(template, view)"
-               i18n:attributes="title inici_page;alt inici_page;">
+               i18n:attributes="title inici_page;">
                <img tal:attributes="src string:${portal_url}/++genweb++static/images/amunt.png"
-                    height="16px"
-                    width="16px">
+                    i18n:attributes="alt inici_page;" height="16px" width="16px">
             </a>
           </li>
         </ul>

@@ -34,7 +34,7 @@
         <div class="input-append">
           <input class="searchInput" type="text" placeholder="Cerca"
                  i18n:attributes="placeholder search"  tal:attributes="data-name path">
-          <span class="add-on"><i class="fa fa-search"></i></span>
+          <span class="add-on"><span class="fa fa-search"></span></span>
         </div>
       </div>
 

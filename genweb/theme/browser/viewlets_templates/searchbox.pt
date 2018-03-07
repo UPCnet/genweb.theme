@@ -1,5 +1,6 @@
 <div id="gwsearch" i18n:domain="plone" >
-  <input accesskey="4" class="typeahead" type="text" placeholder="Search"
+  <input id="cercador" name="cercador" accesskey="4" class="typeahead"
+         type="text" placeholder="Search"
          tal:attributes="data-typeahead-url string:${view/site_url}/${view/pref_lang}/gw_type_ahead_search;
                          data-search-url string:${view/site_url}/${view/pref_lang}/@@search;"
          i18n:attributes="placeholder text_search"/>

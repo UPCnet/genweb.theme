@@ -11,7 +11,7 @@
     <div class="navbar-inner">
       <div class="container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse-edit">
-          <i class="icon-user icon-white"></i><span id='user-name'> <tal:username content="view/user_name"> Rafael Ojeda Rojas </tal:username></span>
+          <span class="icon-user icon-white"></span><span id='user-name'> <tal:username content="view/user_name"> Rafael Ojeda Rojas </tal:username></span>
         </a>
         <div class="nav-collapse nav-collapse-edit">
           <h2 class="goout" id="titol-eines-usuari"
@@ -24,21 +24,21 @@
                      alt=""
                      class="user" />
                 <span id='user-name'><tal:username content="view/user_name"> Rafael Ojeda Rojas </tal:username></span>
-                <b aria-hidden="true" class="caret"></b>
+                <span aria-hidden="true" class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li role="menuitem"><a tal:attributes="href string:${portal_url}/dashboard">
-                       <i class="icon-desktop"></i>
+                       <span class="icon-desktop"></span>
                        <tal:dashboard i18n:translate="genweb-escriptori">
                           Dashboard</tal:dashboard>
                 </a></li>
                 <li role="menuitem"><a tal:attributes="href string:${portal_url}/@@personal-information">
-                       <i class="icon-user"></i>
+                       <span class="icon-user"></span>
                        <tal:profile i18n:translate="genweb-perfil">
                           Profile</tal:profile>
                 </a></li>
                 <li role="menuitem"><a tal:attributes="href string:${portal_url}/@@personal-preferences">
-                       <i class="icon-cog"></i>
+                       <span class="icon-cog"></span>
                        <tal:preferences i18n:translate="genweb-preferencies">
                           Preferències d'usuari</tal:preferences>
                 </a></li>
@@ -47,7 +47,7 @@
                   <a tal:attributes="href string:${view/logout_link}"
                      i18n:attributes="title genweb-logout"
                      class="btn btn-danger" href="#" role="button">
-                    <i class="icon-off icon-white"></i>
+                    <span class="icon-off icon-white"></span>
                     <tal:logout i18n:translate="genweb-logout">
                           Logout</tal:logout>
                   </a>
@@ -60,7 +60,7 @@
                 <tal:rootFolder i18n:translate="genweb-eines">
                   Tools
                 </tal:rootFolder>
-                <b aria-hidden="true" class="caret"></b>
+                <span aria-hidden="true" class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li class="nav-header" i18n:translate="genweb-roots">Root folders</li>
@@ -112,7 +112,7 @@
                 <tal:settingsFolder i18n:translate="genweb-settings">
                   Configuració
                 </tal:settingsFolder>
-                <b aria-hidden="true" class="caret"></b>
+                <span aria-hidden="true" class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li role="menuitem">
@@ -158,7 +158,7 @@
                   <a href="#" data-toggle="dropdown"
                      tal:attributes="class string:dropdown-toggle userGenweb${notificacions/nou}">
                       <span class="goout">Genweb UPC</span>
-                      <b class="caret"></b>
+                      <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu" role="menu">
                     <tal:notificacionsmenu repeat="notificacio notificacions/elements">
@@ -172,7 +172,7 @@
                       <li role="menuitem"
                           tal:condition="not: notificacio/li-class">
                             <a tal:attributes="href notificacio/url" target="_blank">
-                              <i tal:attributes="class notificacio/i-class"></i>
+                              <span tal:attributes="class notificacio/i-class"></span>
                               <tal:notificacio content="notificacio/text">Notificació</tal:notificacio>
                               <img class="img_blank"
                                    tal:condition="notificacio/target-blank"

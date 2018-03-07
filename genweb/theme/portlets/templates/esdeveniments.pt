@@ -6,7 +6,7 @@
   <div class="portlet portlet-esdeveniments" i18n:domain="plone">
 
     <h2 i18n:domain="genweb" i18n:translate="genweb-agenda">Agenda
-      <i class="icon-calendar large-icon pull-right"></i>
+      <span class="icon-calendar large-icon pull-right"></span>
     </h2>
 
     <ul class="unstyled">

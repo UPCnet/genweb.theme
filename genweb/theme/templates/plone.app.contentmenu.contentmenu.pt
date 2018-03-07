@@ -32,8 +32,8 @@
                       State title
                   </span>
                 </span>
-                <b tal:omit-tag="not:menuItem/action"
-                   class="caret"></b>
+                <span tal:omit-tag="not:menuItem/action"
+                   class="caret"></span>
           </a>
 
           <ul class="dropdown-menu pull-right actionMenuContent"
@@ -71,9 +71,9 @@
                                        id subMenuItem/extra/id | nothing;
                                        class subMenuItem/extra/class | nothing"
                        i18n:attributes="title">
-                        <i class="icon-X"
+                        <span class="icon-X"
                           tal:attributes="class string:icon-${subMenuItem/extra/id}">
-                        </i>
+                        </span>
                         <tal:comment replace="nothing"><!-- Shitty solution as the translation of this element is fixed pythonically to the i18n domain plone--></tal:comment>
                         <span tal:condition="python:subMenuItem['extra']['id'] == 'contextSetDefaultPage'"
                               i18n:translate="label_choose_item">

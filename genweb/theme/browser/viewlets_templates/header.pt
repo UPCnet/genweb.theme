@@ -14,7 +14,7 @@
     </h1>
     <a id='eines-menu' class="btn btn-navbar pull-right hidden-desktop hidden-tablet"
        data-toggle="collapse" data-target=".nav-collapse-eines">
-      <i class="icon-wrench"></i>
+      <span class="icon-wrench"></span>
     </a>
 
     <tal:comment replace="nothing">  Menu para tamaño escritorio</tal:comment>
@@ -119,7 +119,7 @@
                tal:attributes="href string:${portal_url}/${viewlet/pref_lang}/sitemap">
                Site Map
              </a></li>
-        <li><a 
+        <li><a
                i18n:domain="plone"
                i18n:translate="Contact"
                tal:attributes="href string:${portal_url}/${viewlet/pref_lang}/contact">
@@ -197,7 +197,7 @@
      i18n:domain="genweb">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="loginModalLabel" i18n:translate="label_start_session">Inicia la sessió</h3>
+    <h2 id="loginModalLabel" i18n:translate="label_start_session">Inicia la sessió</h2>
   </div>
   <div class="modal-body">
     The popup login form

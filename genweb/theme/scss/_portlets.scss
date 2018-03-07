@@ -54,7 +54,7 @@
   border-top:1px solid $white;
   position:relative;
   font-size:92.3076923%;
-  & i {
+  & span {
     @include opacity(.5);
     position:absolute;
     left:10px;

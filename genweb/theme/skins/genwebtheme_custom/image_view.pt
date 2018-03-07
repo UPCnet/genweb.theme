@@ -33,12 +33,12 @@
                       tal:content="objectsize">
                     File size
                 </span>
-				
+
 	            <a href="" class="btn btn-link"
 	               tal:condition="webformatimage"
 	               tal:attributes="href string:${context_state/object_url}/$fullscreenview">
 	                <span class="visualNoPrint">
-                    <i class="icon-zoom-in"></i>
+                    <span class="icon-zoom-in"></span>
                     <span i18n:translate="">View</span>
                 	</span>
 	            </a>
@@ -46,7 +46,7 @@
 	            <a href="" class="btn btn-link"
 	               tal:attributes="href string:${context_state/object_url}/download">
 	                <span class="visualNoPrint">
-                    <i class="icon-download"></i>
+                    <span class="icon-download"></span>
                     <span i18n:translate="">Download</span>
                 	</span>
 	            </a>
@@ -63,5 +63,3 @@
 </body>
 
 </html>
-
-

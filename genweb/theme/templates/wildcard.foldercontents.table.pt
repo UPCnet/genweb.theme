@@ -69,28 +69,28 @@
               <span class="caret"></span></button>
             <ul class="dropdown-menu" tal:define="baseurl view/sort_base_url">
               <li><a href="#" tal:attributes="href string:${baseurl}">
-                <i tal:condition="python: not sort_on or sort_on == 'getObjPositionInParent'"
-                    class="icon-ok"></i>
+                <span tal:condition="python: not sort_on or sort_on == 'getObjPositionInParent'"
+                    class="icon-ok"></span>
                 <tal:select_order i18n:translate="foldercontents_folder_order">Folder Order</tal:select_order>
               </a></li>
               <li><a href="#" tal:attributes="href string:${baseurl}sortable_title">
-                <i tal:condition="python: sort_on == 'sortable_title'"
-                    class="icon-ok"></i>
+                <span tal:condition="python: sort_on == 'sortable_title'"
+                    class="icon-ok"></span>
                 <tal:select_order i18n:translate="foldercontents_title_order">Title</tal:select_order>
               </a></li>
               <li><a href="#" tal:attributes="href string:${baseurl}modified">
-                <i tal:condition="python: sort_on == 'modified'"
-                    class="icon-ok"></i>
+                <span tal:condition="python: sort_on == 'modified'"
+                    class="icon-ok"></span>
                 <tal:select_order i18n:translate="foldercontents_modification_order">Modification Date</tal:select_order>
               </a></li>
               <li><a href="#" tal:attributes="href string:${baseurl}created">
-                <i tal:condition="python: sort_on == 'created'"
-                    class="icon-ok"></i>
+                <span tal:condition="python: sort_on == 'created'"
+                    class="icon-ok"></span>
                   <tal:select_order i18n:translate="foldercontents_creation_order">Creation Date</tal:select_order>
               </a></li>
               <li><a href="#" tal:attributes="href string:${baseurl}effective">
-                <i tal:condition="python: sort_on == 'effective'"
-                    class="icon-ok"></i>
+                <span tal:condition="python: sort_on == 'effective'"
+                    class="icon-ok"></span>
                   <tal:select_order i18n:translate="foldercontents_effective_order">Effective Date</tal:select_order>
               </a></li>
               <li class="divider"></li>
@@ -198,7 +198,7 @@
               </td>
               <td tal:condition="not: is_collection">
                 <div class="btn-group pull-right">
-                  <button class="btn btn-mini dropdown-toggle" class="allowMultiSubmit"><i class="icon-cog"></i><span class="caret"></span></button>
+                  <button class="btn btn-mini dropdown-toggle" class="allowMultiSubmit"><span class="icon-cog"></span><span class="caret"></span></button>
                     <ul class="dropdown-menu pull-right">
                       <li><a class="move-top" href="#" i18n:translate="foldercontents_move_top">Move to top</a></li>
                       <li><a class="move-bottom" href="#" i18n:translate="foldercontents_move_bottom">Move to bottom</a></li>

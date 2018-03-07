@@ -21,7 +21,7 @@
         <div class="portlet-footer">
             <a href=""
                tal:attributes="href view/getUrlRSSPremsa">
-                <i class="icon-rss pull-left"></i>
+                <span class="icon-rss pull-left"></span>
             </a>
             <a href=""
                tal:attributes="href view/getURLPremsa"
