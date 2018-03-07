@@ -794,7 +794,7 @@ cite {
 .discreet,
 .discussion .documentByLine,
 .discussion .commentDate,
-.portaltype-packet .estudis .gris,
+.portaltype-packet .estudis *.gris,
 #category.documentByLine {
   color: #aaa;
 }
@@ -2166,7 +2166,7 @@ legend + .control-group {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('++genweb++static/images/gh.png?1501069778');
+  background-image: url('++genweb++static/images/gh.png?1498556650');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2219,11 +2219,11 @@ legend + .control-group {
 .dropdown-menu > .selected > a > .tileFooter:before,
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-menu > .selected > a > [class*=" icon-"] {
-  background-image: url('++genweb++static/images/gh-w.png?1501069778');
+  background-image: url('++genweb++static/images/gh-w.png?1498556650');
 }
 
 .icon-color {
-  background-image: url('++genweb++static/images/gh-c.png?1501069778');
+  background-image: url('++genweb++static/images/gh-c.png?1498556650');
 }
 
 .icon-glass {
@@ -2288,7 +2288,8 @@ legend + .control-group {
 
 .icon-remove,
 .icon-delete,
-.icon-plone-contentmenu-actions-delete {
+.icon-plone-contentmenu-actions-delete,
+.icon-_remove_translations {
   background-position: -312px 0;
 }
 
@@ -2494,7 +2495,9 @@ legend + .control-group {
   background-position: -456px -48px;
 }
 
-.icon-pencil {
+.icon-pencil,
+.icon-_edit_babel_edit,
+[class^="icon-babel_edit_"] {
   background-position: 0      -72px;
 }
 
@@ -2664,7 +2667,8 @@ legend + .control-group {
 }
 
 .icon-plus,
-.icon-more {
+.icon-more,
+.icon-_add_translations {
   background-position: -408px -96px;
 }
 
@@ -2826,7 +2830,8 @@ legend + .control-group {
   background-position: -312px -144px;
 }
 
-.icon-globe {
+.icon-globe,
+.icon-_set_language {
   background-position: -336px -144px;
 }
 
@@ -2871,7 +2876,8 @@ legend + .control-group {
   background-position: -48px  -168px;
 }
 
-.icon-link {
+.icon-link,
+.icon-_universal_link {
   background-position: -72px  -169px;
 }
 
@@ -3052,7 +3058,7 @@ legend + .control-group {
 }
 
 .large-icon {
-  background-image: url('++genweb++static/images/gh-150.png?1501069778');
+  background-image: url('++genweb++static/images/gh-150.png?1498556650');
   width: 21px;
   height: 21px;
   margin-top: -1px;
@@ -3087,7 +3093,7 @@ legend + .control-group {
 }
 
 .large-icon.icon-white {
-  background-image: url('++genweb++static/images/gh-150-w.png?1501069778');
+  background-image: url('++genweb++static/images/gh-150-w.png?1498556650');
 }
 
 /*extends icones*/
@@ -8165,7 +8171,7 @@ button.pfg-draft-save .badge,
   }
 
   .navbar .btn-navbar i {
-    background-image: url('++genweb++static/images/gh-w.png?1501069778');
+    background-image: url('++genweb++static/images/gh-w.png?1498556650');
   }
 
   .navbar-fixed-top {
@@ -8552,7 +8558,7 @@ button.pfg-draft-save .badge,
   #portal-personaltools-wrapper .contentViews i,
   #portal-personaltools-wrapper .configlets i,
   #portal-personaltools-wrapper .formTabs i {
-    background-image: url('++genweb++static/images/gh-w.png?1501069778');
+    background-image: url('++genweb++static/images/gh-w.png?1498556650');
   }
 
   #portal-personaltools-wrapper .nav a:not(.btn):not(.standalone):not(input[value^="Cancel"]):not([type="submit"]):not(.context):not(.searchButton):not(button.pfg-draft-save):not(.link-parent):hover,

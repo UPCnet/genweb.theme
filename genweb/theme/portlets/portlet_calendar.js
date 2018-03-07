@@ -9,7 +9,7 @@
         portlethash = portlethash.substring(15, portlethash.length);
         var comnunity = $('#box_community')
         var is_community = comnunity.length > 0
-        var base_url = portal_url + '/'
+        var base_url = portal_url + '/' + lang + '/'
         if (is_community)
             base_url = $('head base').attr('href')
 
