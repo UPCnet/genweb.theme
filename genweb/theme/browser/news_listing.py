@@ -65,8 +65,9 @@ class NewsListing(BrowserView):
         if self.mode is None:
             self.mode = self._date and 'day' or 'all'
 
-        self.uid = None  # Used to get all occurrences from a single event.
-                         # Overrides all other settings
+        self.uid = None
+        # Used to get all occurrences from a single event.
+        # Overrides all other settings
 
     @property
     def default_context(self):
@@ -121,8 +122,8 @@ class NewsListing(BrowserView):
             if self.searchable_text:
                 kw['SearchableText'] = self.searchable_text
 
-        #kw['b_start'] = self.b_start
-        #kw['b_size']  = self.b_size
+        # kw['b_start'] = self.b_start
+        # kw['b_size']  = self.b_size
 
         start, end = self._start_end
 
@@ -161,8 +162,8 @@ class NewsListing(BrowserView):
             if self.searchable_text:
                 kw['SearchableText'] = self.searchable_text
 
-        #kw['b_start'] = self.b_start
-        #kw['b_size']  = self.b_size
+        # kw['b_start'] = self.b_start
+        # kw['b_size']  = self.b_size
 
         kw['sort_on'] = 'Date'
         kw['sort_order'] = 'reverse'

@@ -39,6 +39,7 @@ from genweb.core.browser.viewlets import baseResourcesViewlet
 
 grok.context(Interface)
 
+
 class gwCSSViewlet(baseResourcesViewlet):
     """ This is the CSS viewlet for Genweb """
     grok.context(Interface)
@@ -258,22 +259,22 @@ class gwHeader(viewletBase):
                 "image": self.genweb_config().cl_img_ca,
                 "oinw": self.genweb_config().cl_open_new_window_ca,
                 "enable": self.genweb_config().cl_enable_ca,
-                },
+            },
             "es": {
                 "cl_title": self.genweb_config().cl_title_es,
                 "url": self.genweb_config().cl_url_es,
                 "image": self.genweb_config().cl_img_es,
                 "oinw": self.genweb_config().cl_open_new_window_es,
                 "enable": self.genweb_config().cl_enable_es,
-                },
+            },
             "en": {
                 "cl_title": self.genweb_config().cl_title_en,
                 "url": self.genweb_config().cl_url_en,
                 "image": self.genweb_config().cl_img_en,
                 "oinw": self.genweb_config().cl_open_new_window_en,
                 "enable": self.genweb_config().cl_enable_en,
-                },
-            }
+            },
+        }
         return custom_links[lang]
 
     def getHomeLink(self):

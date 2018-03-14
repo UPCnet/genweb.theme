@@ -1,17 +1,9 @@
 # -*- coding: utf-8 -*-
 from five import grok
 from zope.component import getMultiAdapter
-from zope.component import getSiteManager
-from zope.component import ComponentLookupError
-from zope.interface import providedBy
 from zope.interface import Interface
-from zope.i18n import translate
 from plone.memoize.view import memoize_contextless
 from Products.CMFCore.utils import getToolByName
-from Products.Five.browser import BrowserView
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from Products.statusmessages.interfaces import IStatusMessage
-
 from genweb.theme.browser.interfaces import IGenwebTheme
 
 

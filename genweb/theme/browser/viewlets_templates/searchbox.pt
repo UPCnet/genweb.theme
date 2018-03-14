@@ -4,7 +4,7 @@
          tal:attributes="data-typeahead-url string:${view/site_url}/${view/pref_lang}/gw_type_ahead_search;
                          data-search-url string:${view/site_url}/${view/pref_lang}/@@search;"
          i18n:attributes="placeholder text_search"/>
-  </div>
+</div>
 <p class="goout" tal:define="portal_url context/@@plone_portal_state/portal_url;">
 	<a href="#"
 		i18n:translate="submitGo"

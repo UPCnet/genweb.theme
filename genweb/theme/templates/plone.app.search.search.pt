@@ -279,7 +279,7 @@
                                           size="7"
                                           multiple="multiple"
                                           tal:define="contentSubjects context/Subject;">
-                                      
+
                                       <option value="#"
                                               tal:repeat="subject usedSubjects"
                                               tal:content="subject"
@@ -288,7 +288,7 @@
                                               i18n:translate=""
                                               >dummy
                                       </option>
-                                      
+
                                   </select>
                                  </div>
                                 </fieldset>
