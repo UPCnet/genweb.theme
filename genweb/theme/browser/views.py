@@ -16,7 +16,6 @@ from plone.portlets.interfaces import IPortletManager
 from plone.portlets.interfaces import IPortletManagerRenderer
 from plone.app.layout.globals.layout import LayoutPolicy
 from plone.i18n.normalizer.interfaces import IIDNormalizer
-from plone.formwidget.recaptcha.view import IRecaptchaInfo
 from plone.app.layout.navigation.interfaces import INavigationRoot
 
 from Products.CMFPlone import utils
@@ -28,9 +27,6 @@ from Products.CMFPlone.browser.navtree import getNavigationRoot
 from Products.CMFPlone.browser.navigation import CatalogNavigationTabs
 from Products.CMFPlone.browser.navigation import get_id, get_view_url
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-
-from recaptcha.client.captcha import displayhtml
-from collective.recaptcha.view import RecaptchaView as CollectiveRecaptchaView
 
 from genweb.core.interfaces import IHomePage
 from genweb.core.utils import genweb_config, pref_lang
