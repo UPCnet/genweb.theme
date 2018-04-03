@@ -4,6 +4,20 @@
          tal:attributes="data-typeahead-url string:${view/site_url}/${view/pref_lang}/gw_type_ahead_search;
                          data-search-url string:${view/site_url}/${view/pref_lang}/@@search;"
          i18n:attributes="placeholder text_search"/>
+         <div i18n:domain="plone" class="searchSection">
+            <input id="searchbox_currentfolder_only"
+                   class="noborder"
+                   type="checkbox"
+                   name="path"
+                   tal:attributes="value view/folder_path;
+                                   checked request/form/path|nothing"
+                   />
+            <label for="searchbox_currentfolder_only"
+                   i18n:translate="label_searchbox_currentfolder_only"
+                   style="cursor: pointer">
+                only in current section
+            </label>
+        </div>
 </div>
 <p class="goout" tal:define="portal_url context/@@plone_portal_state/portal_url;">
 	<a href="#"

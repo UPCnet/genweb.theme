@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import logging
 from five import grok
 from plone import api
 from Acquisition import aq_inner
@@ -187,12 +188,14 @@ class TypeAheadSearch(grok.View):
     grok.context(Interface)
     grok.layer(IGenwebTheme)
 
+    logger = logging.getLogger(__name__)
+
     def render(self):
         # We set the parameters sent in livesearch using the old way.
         q = self.request['q']
 
         limit = 10
-        path = None
+        path = self.request.get('path')
 
         ploneUtils = getToolByName(self.context, 'plone_utils')
         portal_url = getToolByName(self.context, 'portal_url')()
@@ -238,6 +241,8 @@ class TypeAheadSearch(grok.View):
             params['path'] = getNavigationRoot(self.context)
         else:
             params['path'] = path
+    
+        self.logger.debug("Searching '%s' on '%s'." % (q, params['path']))
 
         params["Language"] = pref_lang()
         # search limit+1 results to know if limit is exceeded
