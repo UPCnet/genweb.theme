@@ -1,11 +1,11 @@
 Changelog
 =========
 
-2.6 (unreleased)
+2.6 (2018-04-04)
 ----------------
 
-- Nothing changed yet.
-
+* removed recaptcha dependency [Roberto Diaz]
+* PEP8 and removed recaptcha old code [Roberto Diaz]
 
 2.5 (2018-03-13)
 ----------------
