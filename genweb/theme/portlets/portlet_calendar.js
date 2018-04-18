@@ -7,7 +7,7 @@
         var elem_data = elem.data();
         var portlethash = pw.attr('id');
         portlethash = portlethash.substring(15, portlethash.length);
-        var comnunity = $('#box_community')
+        var comnunity = $('#box_agenda')
         var is_community = comnunity.length > 0
         var base_url = portal_url + '/' + $('html').attr('lang') + '/'
         if (is_community)
