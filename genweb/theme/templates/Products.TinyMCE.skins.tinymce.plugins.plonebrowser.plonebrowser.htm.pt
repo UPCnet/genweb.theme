@@ -272,12 +272,12 @@
 
         <div id="common-link-fields" class="hide">
 
-            <div id="link-title" class="field">
+<!--             <div id="link-title" class="field">
                 <label for="title" i18n:domain="plone.tinymce" i18n:translate="">Link Title</label>
                 <div class="widget">
                     <input type="text" name="title" id="title" value="" size="40" />
                 </div>
-            </div>
+            </div> -->
 
             <div id="link-target" class="field">
                 <label id="targetlistlabel" for="targetlist" i18n:translate="plonebrowser_dlg_target"></label>
@@ -292,12 +292,12 @@
                 </div>
             </div>
 
-            <div id="link-style" class="field">
+<!--             <div id="link-style" class="field">
                 <label for="cssstyle" i18n:domain="plone.tinymce" i18n:translate="">CSS Style</label>
                 <div class="widget">
                     <input type="text" name="cssstyle" id="cssstyle" value="" size="40" />
                 </div>
-            </div>
+            </div> -->
 
         </div>
 
