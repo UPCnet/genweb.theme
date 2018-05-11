@@ -1,11 +1,12 @@
 Changelog
 =========
 
-2.8 (unreleased)
+2.8 (2018-05-11)
 ----------------
 
-- Nothing changed yet.
-
+* Revert "Added search in current path." [Francesc Gordillo Cortinez]
+*  [Francesc Gordillo Cortinez]
+* This reverts commit 7f54ec8ac43a0f3a612f7e9d2615eb0b77cdef90. [Francesc Gordillo Cortinez]
 
 2.7 (2018-05-04)
 ----------------
