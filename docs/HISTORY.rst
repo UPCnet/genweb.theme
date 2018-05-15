@@ -1,11 +1,19 @@
 Changelog
 =========
 
-2.7 (unreleased)
+2.8 (unreleased)
 ----------------
 
 - Nothing changed yet.
 
+
+2.7 (2018-05-04)
+----------------
+
+* Hide CSS and Link image options in Tiny editor [Corina Riba]
+* Compiled css. [Francesc Gordillo Cortinez]
+* Added search in current path. [Francesc Gordillo Cortinez]
+* Funcionamiento calendario en los comunidades [iago.lopez]
 
 2.6 (2018-04-04)
 ----------------
