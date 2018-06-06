@@ -43,9 +43,7 @@
 
     <div class="pad">
         <table class="ploneCalendar"
-               summary="Calendar"
-               i18n:domain="plone"
-               i18n:attributes="summary summary_calendar;">
+               i18n:domain="plone">
           <caption class="hiddenStructure"
               i18n:translate="" tal:content="string:month-${month}">monthname</caption>
           <thead>
