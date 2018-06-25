@@ -163,7 +163,7 @@
                            i18n:translate="label_login_name">Username</label>
                     <div class="controls">
                       <input type="text" id="inputEmail"
-                             i18n:attributes="placeholder label_user_name"
+                             i18n:attributes="placeholder label_user_name" autofocus
                              tal:attributes="name ac_name;
                                              value login_name;">
                       <span class="help-inline"
