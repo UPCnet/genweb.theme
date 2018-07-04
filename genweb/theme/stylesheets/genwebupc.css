@@ -1539,7 +1539,7 @@ legend + .control-group {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('++genweb++static/images/gh.png?1525240564');
+  background-image: url('++genweb++static/images/gh.png?1500891831');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px; }
@@ -1590,10 +1590,10 @@ legend + .control-group {
 .dropdown-menu > .selected > a > .tileFooter:before,
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-menu > .selected > a > [class*=" icon-"] {
-  background-image: url('++genweb++static/images/gh-w.png?1525240564'); }
+  background-image: url('++genweb++static/images/gh-w.png?1500891831'); }
 
 .icon-color {
-  background-image: url('++genweb++static/images/gh-c.png?1525240564'); }
+  background-image: url('++genweb++static/images/gh-c.png?1500891831'); }
 
 .icon-glass {
   background-position: 0      0; }
@@ -2158,7 +2158,7 @@ legend + .control-group {
   background-position: -456px -192px; }
 
 .large-icon {
-  background-image: url('++genweb++static/images/gh-150.png?1525240564');
+  background-image: url('++genweb++static/images/gh-150.png?1500891831');
   width: 21px;
   height: 21px;
   margin-top: -1px;
@@ -2177,7 +2177,7 @@ legend + .control-group {
     background-position: -504px -252px; }
 
 .large-icon.icon-white {
-  background-image: url('++genweb++static/images/gh-150-w.png?1525240564'); }
+  background-image: url('++genweb++static/images/gh-150-w.png?1500891831'); }
 
 /*extends icones*/
 .dropup,
@@ -5184,7 +5184,7 @@ button.pfg-draft-save .badge,
   .navbar .btn-navbar {
     margin-right: 10px !important; }
     .navbar .btn-navbar i {
-      background-image: url('++genweb++static/images/gh-w.png?1525240564'); }
+      background-image: url('++genweb++static/images/gh-w.png?1500891831'); }
 
   .navbar-fixed-top {
     margin-bottom: 0 !important; }
@@ -5398,7 +5398,7 @@ button.pfg-draft-save .badge,
   #portal-personaltools-wrapper .nav ul, #portal-personaltools-wrapper .contentViews ul, #portal-personaltools-wrapper .configlets ul, #portal-personaltools-wrapper .formTabs ul {
     margin: 0 !important; }
   #portal-personaltools-wrapper .nav i, #portal-personaltools-wrapper .contentViews i, #portal-personaltools-wrapper .configlets i, #portal-personaltools-wrapper .formTabs i {
-    background-image: url('++genweb++static/images/gh-w.png?1525240564'); }
+    background-image: url('++genweb++static/images/gh-w.png?1500891831'); }
   #portal-personaltools-wrapper .nav a:not(.btn):not(.standalone):not(input[value^="Cancel"]):not([type="submit"]):not(.context):not(.searchButton):not(button.pfg-draft-save):not(.link-parent):hover, #portal-personaltools-wrapper .contentViews a:not(.btn):not(.standalone):not(input[value^="Cancel"]):not([type="submit"]):not(.context):not(.searchButton):not(button.pfg-draft-save):not(.link-parent):hover, #portal-personaltools-wrapper .configlets a:not(.btn):not(.standalone):not(input[value^="Cancel"]):not([type="submit"]):not(.context):not(.searchButton):not(button.pfg-draft-save):not(.link-parent):hover, #portal-personaltools-wrapper .formTabs a:not(.btn):not(.standalone):not(input[value^="Cancel"]):not([type="submit"]):not(.context):not(.searchButton):not(button.pfg-draft-save):not(.link-parent):hover, #portal-personaltools-wrapper .nav a:not(.btn):not(.standalone):not(input[value^="Cancel"]):not([type="submit"]):not(.context):not(.searchButton):not(button.pfg-draft-save):not(.link-parent):focus, #portal-personaltools-wrapper .contentViews a:not(.btn):not(.standalone):not(input[value^="Cancel"]):not([type="submit"]):not(.context):not(.searchButton):not(button.pfg-draft-save):not(.link-parent):focus, #portal-personaltools-wrapper .configlets a:not(.btn):not(.standalone):not(input[value^="Cancel"]):not([type="submit"]):not(.context):not(.searchButton):not(button.pfg-draft-save):not(.link-parent):focus, #portal-personaltools-wrapper .formTabs a:not(.btn):not(.standalone):not(input[value^="Cancel"]):not([type="submit"]):not(.context):not(.searchButton):not(button.pfg-draft-save):not(.link-parent):focus {
     background: #000; }
   #portal-personaltools-wrapper .nav a.btn, #portal-personaltools-wrapper .contentViews a.btn, #portal-personaltools-wrapper .configlets a.btn, #portal-personaltools-wrapper .formTabs a.btn, #portal-personaltools-wrapper .nav a.standalone, #portal-personaltools-wrapper .contentViews a.standalone, #portal-personaltools-wrapper .configlets a.standalone, #portal-personaltools-wrapper .formTabs a.standalone, #portal-personaltools-wrapper .nav a[type="submit"], #portal-personaltools-wrapper .contentViews a[type="submit"], #portal-personaltools-wrapper .configlets a[type="submit"], #portal-personaltools-wrapper .formTabs a[type="submit"], #portal-personaltools-wrapper .nav a.context, #portal-personaltools-wrapper .contentViews a.context, #portal-personaltools-wrapper .configlets a.context, #portal-personaltools-wrapper .formTabs a.context, #portal-personaltools-wrapper .nav a.searchButton, #portal-personaltools-wrapper .contentViews a.searchButton, #portal-personaltools-wrapper .configlets a.searchButton, #portal-personaltools-wrapper .formTabs a.searchButton, #portal-personaltools-wrapper .nav a.link-parent, #portal-personaltools-wrapper .contentViews a.link-parent, #portal-personaltools-wrapper .configlets a.link-parent, #portal-personaltools-wrapper .formTabs a.link-parent, #portal-personaltools-wrapper .nav a.btn:focus, #portal-personaltools-wrapper .contentViews a.btn:focus, #portal-personaltools-wrapper .configlets a.btn:focus, #portal-personaltools-wrapper .formTabs a.btn:focus, #portal-personaltools-wrapper .nav a.standalone:focus, #portal-personaltools-wrapper .contentViews a.standalone:focus, #portal-personaltools-wrapper .configlets a.standalone:focus, #portal-personaltools-wrapper .formTabs a.standalone:focus, #portal-personaltools-wrapper .nav a[type="submit"]:focus, #portal-personaltools-wrapper .contentViews a[type="submit"]:focus, #portal-personaltools-wrapper .configlets a[type="submit"]:focus, #portal-personaltools-wrapper .formTabs a[type="submit"]:focus, #portal-personaltools-wrapper .nav a.context:focus, #portal-personaltools-wrapper .contentViews a.context:focus, #portal-personaltools-wrapper .configlets a.context:focus, #portal-personaltools-wrapper .formTabs a.context:focus, #portal-personaltools-wrapper .nav a.searchButton:focus, #portal-personaltools-wrapper .contentViews a.searchButton:focus, #portal-personaltools-wrapper .configlets a.searchButton:focus, #portal-personaltools-wrapper .formTabs a.searchButton:focus, #portal-personaltools-wrapper .nav a.link-parent:focus, #portal-personaltools-wrapper .contentViews a.link-parent:focus, #portal-personaltools-wrapper .configlets a.link-parent:focus, #portal-personaltools-wrapper .formTabs a.link-parent:focus {
@@ -6295,7 +6295,7 @@ button.pfg-draft-save .badge,
   background-color: #BD362F; }
 
 .userScreen, .userTablet, .userMobile, .userGenweb {
-  background: url('++genweb++static/images/sprite_usuari.png?1525240564') transparent no-repeat center top;
+  background: url('++genweb++static/images/sprite_usuari.png?1500891831') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em; }
 
@@ -6365,7 +6365,7 @@ button.pfg-draft-save .badge,
 
 /*ajusta imatges icos en menús per a hovers */
 .dropdown-menu a:hover [class^="icon-"], .dropdown-menu a:hover #category.documentByLine:before, .dropdown-menu a:hover .tileFooter:before, .dropdown-menu a:hover [class*=" icon-"] {
-  background-image: url('++genweb++static/images/gh-w.png?1525240564') !important; }
+  background-image: url('++genweb++static/images/gh-w.png?1500891831') !important; }
 
 #portal-header {
   border-bottom: 1px solid #d7d5d2;
@@ -6584,7 +6584,7 @@ button.pfg-draft-save .badge,
   #canvia-vista p {
     margin: 0 !important; }
   #canvia-vista a {
-    background: url('++genweb++static/images/vistabg.png?1525240564') #666;
+    background: url('++genweb++static/images/vistabg.png?1500891831') #666;
     text-align: center;
     -moz-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
@@ -6704,7 +6704,7 @@ button.pfg-draft-save .badge,
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
     right: 7px;
     top: 8px;
-    background-image: url('++genweb++static/images/gh-w.png?1525240564');
+    background-image: url('++genweb++static/images/gh-w.png?1500891831');
     background-position: -455px -71px;
     background-repeat: no-repeat;
     width: 17px;
@@ -6790,7 +6790,7 @@ button.pfg-draft-save .badge,
           font-size: 44px;
           line-height: 0 !important; }
       .subnavbar .nav-list .active ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after, .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after, .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
-        background-image: url('++genweb++static/images/gh.png?1525240564');
+        background-image: url('++genweb++static/images/gh.png?1500891831');
         background-repeat: no-repeat;
         content: " ";
         display: block;
@@ -6846,7 +6846,7 @@ button.pfg-draft-save .badge,
   background-color: #000; }
 
 html * .dropdown-menu a:hover .img_blank {
-  content: url('++genweb++static/images/blank_blanc.png?1525240564');
+  content: url('++genweb++static/images/blank_blanc.png?1500891831');
   width: 10px;
   height: 10px; }
 
@@ -6885,7 +6885,7 @@ html * .dropdown-menu a:hover .img_blank {
   font-weight: bold;
   position: relative; }
 #listing-table a[class^="contenttype-"]:before, #listing-table a[class*=" contenttype-"]:before, .template-tabular_view .listing a[class^="contenttype-"]:before, .template-tabular_view .listing a[class*=" contenttype-"]:before, .contenttreeWidget > .navTree a[class^="contenttype-"]:before, .contenttreeWidget > .navTree a[class*=" contenttype-"]:before {
-  background-image: url('++genweb++static/images/gh.png?1525240564');
+  background-image: url('++genweb++static/images/gh.png?1500891831');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -6945,7 +6945,7 @@ dt[class*="contenttype"] + dd {
   margin-left: 20px; }
 
 dt[class*="contenttype"]:before {
-  background-image: url('++genweb++static/images/gh.png?1525240564');
+  background-image: url('++genweb++static/images/gh.png?1500891831');
   background-repeat: no-repeat;
   display: block;
   width: 15px;
@@ -7517,7 +7517,7 @@ html[lang="es"] .box-example:after {
   position: relative; }
   .sheet:before, div.fitxa:before {
     content: "*";
-    content: url('++genweb++static/images/sheet.png?1525240564');
+    content: url('++genweb++static/images/sheet.png?1500891831');
     font-size: 300%;
     position: absolute;
     right: -19px;
@@ -7630,7 +7630,7 @@ ul {
     margin-top: -15px; }
 
 .list-links li:before, .portaltype-packet .estudis .llistatEnllacos li:before {
-  content: url('++genweb++static/images/arrow.png?1525240564');
+  content: url('++genweb++static/images/arrow.png?1500891831');
   margin-left: -15px;
   margin-top: -13px; }
 
@@ -7638,7 +7638,7 @@ ul {
   margin-left: -29px; }
 
 .list-highlighted li:before {
-  content: url('++genweb++static/images/arrow_hl.png?1525240564');
+  content: url('++genweb++static/images/arrow_hl.png?1500891831');
   margin-left: -22px;
   margin-top: -11px; }
 
@@ -8275,7 +8275,7 @@ hr.liniaDalt, hr.tileHeadline {
   display: block;
   width: 14px;
   height: 14px;
-  background: url('++genweb++static/images/gh.png?1525240564'); }
+  background: url('++genweb++static/images/gh.png?1500891831'); }
 
 .mayus {
   text-transform: uppercase; }
@@ -8305,7 +8305,7 @@ a {
   box-shadow: 0 1px 3px #666; }
 
 .pdf:after, .ppt:after, .xls:after, .doc:after, .down:after, .https:after, .vid:after, .img:after, .txt:after {
-  background: url('++genweb++static/images/gh-c.png?1525240564') no-repeat;
+  background: url('++genweb++static/images/gh-c.png?1500891831') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -8450,7 +8450,7 @@ input[type="file"] {
   font-style: normal;
   font-weight: bold; }
   .customfile-feedback-populated:before {
-    background: url('++genweb++static/images/gh-c.png?1525240564') no-repeat;
+    background: url('++genweb++static/images/gh-c.png?1500891831') no-repeat;
     width: 14px;
     height: 14px;
     display: inline-block;
@@ -8711,7 +8711,7 @@ h2.title-inverse {
   color: #fff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3); }
   h2.title-inverse i {
-    background-image: url('++genweb++static/images/gh-w.png?1525240564'); }
+    background-image: url('++genweb++static/images/gh-w.png?1500891831'); }
 
 .portletCalendar .ploneCalendar {
   text-align: center;
@@ -8923,7 +8923,7 @@ iframe {
       width: 14px;
       height: 14px;
       display: inline-block;
-      background: url('++genweb++static/images/gh.png?1525240564') -239px -143px no-repeat;
+      background: url('++genweb++static/images/gh.png?1500891831') -239px -143px no-repeat;
       margin-left: 5px; }
 #portal-sitemap ul {
   -webkit-column-count: 3;
@@ -9972,7 +9972,7 @@ html {
   #portal-header h1.pull-left {
     height: 46px;
     width: 207px;
-    background: url('++genweb++static/images/logoUPC@2x.png?1525240564') no-repeat;
+    background: url('++genweb++static/images/logoUPC@2x.png?1500891831') no-repeat;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     -webkit-background-size: 100%;
@@ -9990,16 +9990,16 @@ html {
     height: 10px; }
 
   .img_blank[src*="blank_blau"] {
-    content: url('++genweb++static/images/blank_blau@2x.png?1525240564'); }
+    content: url('++genweb++static/images/blank_blau@2x.png?1500891831'); }
 
   .img_blank[src*="blank_gris"] {
-    content: url('++genweb++static/images/blank_gris@2x.png?1525240564'); }
+    content: url('++genweb++static/images/blank_gris@2x.png?1500891831'); }
 
   .img_blank[src*="blank_blanc"] {
-    content: url('++genweb++static/images/blank_blanc@2x.png?1525240564'); }
+    content: url('++genweb++static/images/blank_blanc@2x.png?1500891831'); }
 
   .userScreen, .userTablet, .userMobile, .userGenweb {
-    background-image: url('++genweb++static/images/sprite_usuari@2x.png?1525240564');
+    background-image: url('++genweb++static/images/sprite_usuari@2x.png?1500891831');
     -moz-background-size: 20px 400px;
     -o-background-size: 20px 400px;
     -webkit-background-size: 20px 400px;
@@ -10366,7 +10366,7 @@ html.lt-ie8 .list-portlet li  {
   font-weight: bold;
   margin-bottom: 1em; }
   .link-parent:before {
-    background: url('++genweb++static/images/gh-w.png?1525240564') no-repeat -290px -95px;
+    background: url('++genweb++static/images/gh-w.png?1500891831') no-repeat -290px -95px;
     content: " ";
     display: inline-block;
     height: 14px;
@@ -11554,6 +11554,9 @@ li#portal-languageselector {
   margin-left: 50px; }
 
 .template-genweb-controlpanel input[type="text"] {
+  width: 98%; }
+
+.template-genweb-core-controlpanel input[type="text"] {
   width: 98%; }
 
 /*# sourceMappingURL=genwebupc.css.map */

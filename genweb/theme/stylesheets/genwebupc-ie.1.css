@@ -2166,7 +2166,7 @@ legend + .control-group {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url('++genweb++static/images/gh.png?1525240564');
+  background-image: url('++genweb++static/images/gh.png?1500891831');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2219,11 +2219,11 @@ legend + .control-group {
 .dropdown-menu > .selected > a > .tileFooter:before,
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-menu > .selected > a > [class*=" icon-"] {
-  background-image: url('++genweb++static/images/gh-w.png?1525240564');
+  background-image: url('++genweb++static/images/gh-w.png?1500891831');
 }
 
 .icon-color {
-  background-image: url('++genweb++static/images/gh-c.png?1525240564');
+  background-image: url('++genweb++static/images/gh-c.png?1500891831');
 }
 
 .icon-glass {
@@ -3058,7 +3058,7 @@ legend + .control-group {
 }
 
 .large-icon {
-  background-image: url('++genweb++static/images/gh-150.png?1525240564');
+  background-image: url('++genweb++static/images/gh-150.png?1500891831');
   width: 21px;
   height: 21px;
   margin-top: -1px;
@@ -3093,7 +3093,7 @@ legend + .control-group {
 }
 
 .large-icon.icon-white {
-  background-image: url('++genweb++static/images/gh-150-w.png?1525240564');
+  background-image: url('++genweb++static/images/gh-150-w.png?1500891831');
 }
 
 /*extends icones*/
@@ -8174,7 +8174,7 @@ button.pfg-draft-save .badge,
   }
 
   .navbar .btn-navbar i {
-    background-image: url('++genweb++static/images/gh-w.png?1525240564');
+    background-image: url('++genweb++static/images/gh-w.png?1500891831');
   }
 
   .navbar-fixed-top {
@@ -8561,7 +8561,7 @@ button.pfg-draft-save .badge,
   #portal-personaltools-wrapper .contentViews i,
   #portal-personaltools-wrapper .configlets i,
   #portal-personaltools-wrapper .formTabs i {
-    background-image: url('++genweb++static/images/gh-w.png?1525240564');
+    background-image: url('++genweb++static/images/gh-w.png?1500891831');
   }
 
   #portal-personaltools-wrapper .nav a:not(.btn):not(.standalone):not(input[value^="Cancel"]):not([type="submit"]):not(.context):not(.searchButton):not(button.pfg-draft-save):not(.link-parent):hover,
