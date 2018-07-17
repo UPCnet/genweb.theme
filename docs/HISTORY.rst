@@ -1,11 +1,13 @@
 Changelog
 =========
 
-2.9 (unreleased)
+2.9 (2018-07-17)
 ----------------
 
-- Nothing changed yet.
-
+* Afegir a la vista news listing la visualitzacio de enllaços i noticies [alberto.duran]
+* width fixed to 98% to fields in contropanel Genweb Core tab [Roberto Diaz]
+* added autofocus to user form [Roberto Diaz]
+* removed W3C summary entry [Roberto Diaz]
 
 2.8 (2018-05-11)
 ----------------
