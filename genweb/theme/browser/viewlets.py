@@ -348,22 +348,18 @@ class gwFooter(viewletBase):
         """ links fixats per accessibilitat/rss/about """
         idioma = self.pref_lang()
         footer_links = {"ca": {"rss": "rss-ca",
-                               "about": "sobre-aquest-web",
                                "accessibility": "accessibilitat",
                                "disclaimer": "https://www.upc.edu/ca/avis-legal"
                                },
                         "es": {"rss": "rss-es",
-                               "about": "sobre-esta-web",
                                "accessibility": "accesibilidad",
                                "disclaimer": "https://www.upc.edu/es/aviso-legal"
                                },
                         "en": {"rss": "rss-en",
-                               "about": "about-this-web",
                                "accessibility": "accessibility",
                                "disclaimer": "https://www.upc.edu/en/disclaimer"
                                },
                         "zh": {"rss": "rss-en",
-                               "about": "about-this-web",
                                "accessibility": "accessibility",
                                "disclaimer": "https://www.upc.edu/en/disclaimer"
                                },

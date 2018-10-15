@@ -6,6 +6,7 @@ from calendar import monthrange
 from datetime import date
 from datetime import timedelta
 from plone.app.contenttypes.interfaces import INewsItem
+from plone.app.contenttypes.interfaces import ILink
 from plone.app.event import messageFactory as _
 from plone.app.event.base import RET_MODE_ACCESSORS
 from plone.app.event.base import RET_MODE_OBJECTS
@@ -23,7 +24,7 @@ from plone.memoize import view
 from zope.component import getMultiAdapter
 from zope.contentprovider.interfaces import IContentProvider
 from genweb.core.utils import pref_lang
-from Acquisition import aq_inner
+
 
 try:
     # from plone.app.collection.interfaces import ICollection
@@ -149,16 +150,37 @@ class NewsListing(BrowserView):
 
     @view.memoize
     def _get_news(self):
-        context = aq_inner(self.context)
-        catalog = getToolByName(context, 'portal_catalog')
-        state = ['published', 'intranet']
-        results = catalog(portal_type=('News Item', 'Link'),
-                          review_state=state,
-                          Language=pref_lang(),
-                          sort_on="getObjPositionInParent",
-                          path=self.get_current_path_news())
-        results = [a for a in results]
-        return results
+        context = self.context
+        kw = {}
+        kw['object_provides'] = (INewsItem.__identifier__, ILink.__identifier__)
+        if self.uid:
+            # In this case, restrict search for single event
+            kw['UID'] = self.uid
+        else:
+            if self.path:
+                kw['path'] = self.path
+            else:
+                portal = api.portal.get()
+                lang = self.context.language
+                news_folder_name = dict(en='news', es='noticias', ca='noticies')
+                try:
+                    news_folder = portal[lang][news_folder_name[lang]]
+                except:
+                    news_folder = context
+                kw['path'] = '/'.join(news_folder.getPhysicalPath())
+
+            if self.tags:
+                kw['Subject'] = {'query': self.tags, 'operator': 'and'}
+
+            if self.searchable_text:
+                kw['SearchableText'] = self.searchable_text
+
+        kw['sort_on'] = 'Date'
+        kw['sort_order'] = 'reverse'
+        cat = getToolByName(context, 'portal_catalog')
+        result = cat(**kw)
+
+        return result
 
     def news(self, batch=True):
         res = []
