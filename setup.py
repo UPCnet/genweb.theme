@@ -38,6 +38,7 @@ setup(name='genweb.theme',
           'collective.recaptcha',
           'genweb.core',
           'genweb.controlpanel',
+          'Products.PloneFormGen',
           'pyScss',
       ],
       entry_points="""
