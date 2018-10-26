@@ -1,11 +1,18 @@
 Changelog
 =========
 
-2.10 (unreleased)
+2.11 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+2.10 (2018-10-25)
+-----------------
+
+* Delete about-this-web page [Corina Riba]
+* News Categories portlet does not filter solved [Corina Riba]
+* Close html tag [Corina Riba]
 
 2.9 (2018-07-17)
 ----------------
