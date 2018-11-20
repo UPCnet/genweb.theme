@@ -1,6 +1,6 @@
 .DS_Store
 *.py[co]
-
+package-lock.json
 # Packages
 *.egg
 *.egg-info
