@@ -1,11 +1,13 @@
 Changelog
 =========
 
-2.11 (unreleased)
+2.11 (2018-11-29)
 -----------------
 
-- Nothing changed yet.
-
+* ignore package-lock.json [alberto.duran]
+* Add deprecated icons to avoid pfg.draft errors [Corina Riba]
+* added Products.PloneFormGen to setup.py to bypass tests [Roberto Diaz]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Roberto Diaz]
 
 2.10 (2018-10-25)
 -----------------
