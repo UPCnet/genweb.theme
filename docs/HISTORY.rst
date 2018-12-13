@@ -1,11 +1,14 @@
 Changelog
 =========
 
-2.12 (unreleased)
+2.12 (2018-12-13)
 -----------------
 
-- Nothing changed yet.
-
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Corina Riba]
+* RSS icon in collection portlet footer [Corina Riba]
+* RSS icon in collection portlet footer [Corina Riba]
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [Corina Riba]
+* Fix RSS icon position in portlets [Corina Riba]
 
 2.11 (2018-11-29)
 -----------------
