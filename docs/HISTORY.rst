@@ -1,11 +1,12 @@
 Changelog
 =========
 
-2.13 (unreleased)
+2.13 (2019-02-14)
 -----------------
 
-- Nothing changed yet.
-
+* Add Concedir permisos [Corina Riba]
+* All icon_blank from the same source [Corina Riba]
+* Delete Root permissions option [Corina Riba]
 
 2.12 (2018-12-13)
 -----------------
