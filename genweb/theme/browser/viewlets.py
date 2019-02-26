@@ -119,6 +119,10 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
             user_roles_at_en_root = api.user.get_roles(obj=portal['en'])
         else:
             user_roles_at_en_root = []
+        if getattr(portal, 'plantilles', False):
+            user_roles_at_plantilles = api.user.get_roles(obj=portal['plantilles'])
+        else:
+            user_roles_at_plantilles = []
 
         menus_to_show = dict(show=False, show_root_sharing=False, show_advanced=False, show_en=False, show_ca=False, show_es=False, show_shared=False)
 
@@ -148,6 +152,9 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
             menus_to_show['show_en'] = True
             if 'en' in self.context.Language():
                 menus_to_show['show_shared'] = True
+
+        if 'Editor' in user_roles_at_en_root and 'Editor' in user_roles_at_es_root and 'Editor' in user_roles_at_ca_root and 'Editor' in user_roles_at_plantilles:
+            menus_to_show['show_advanced'] = True
 
         return menus_to_show
 
