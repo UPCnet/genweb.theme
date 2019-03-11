@@ -1,10 +1,10 @@
 <div id="gwsearch" i18n:domain="plone" >
-<label for="cercador" style="display: none;">cercador</label>
-  <input id="cercador" name="cercador" accesskey="4" class="typeahead"
-         type="text" placeholder="Search"
-         tal:attributes="data-typeahead-url string:${view/site_url}/${view/pref_lang}/gw_type_ahead_search;
-                         data-search-url string:${view/site_url}/${view/pref_lang}/@@search;"
-         i18n:attributes="placeholder text_search"/>
+	<label for="cercador" style="display: none;">cercador</label>
+	  <input name="cercador" accesskey="4" class="typeahead"
+	         type="text" placeholder="Search"
+	         tal:attributes="data-typeahead-url string:${view/site_url}/${view/pref_lang}/gw_type_ahead_search;
+	                         data-search-url string:${view/site_url}/${view/pref_lang}/@@search;"
+	         i18n:attributes="placeholder text_search"/>
 </div>
 <p class="goout" tal:define="portal_url context/@@plone_portal_state/portal_url;">
 	<a href="#"
