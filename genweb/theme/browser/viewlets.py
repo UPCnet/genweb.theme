@@ -133,21 +133,21 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         if 'Editor' in user_roles_at_ca_root or 'Contributor' in user_roles_at_ca_root:
             menus_to_show['show'] = True
             menus_to_show['show_ca'] = True
-            menus_to_show['show_advanced'] = True
+            #menus_to_show['show_advanced'] = True
             if 'ca' in self.context.Language():
                 menus_to_show['show_shared'] = True
 
         if 'Editor' in user_roles_at_es_root or 'Contributor' in user_roles_at_es_root:
             menus_to_show['show'] = True
             menus_to_show['show_es'] = True
-            menus_to_show['show_advanced'] = True
+            #menus_to_show['show_advanced'] = True
             if 'es' in self.context.Language():
                 menus_to_show['show_shared'] = True
 
         if 'Editor' in user_roles_at_en_root or 'Contributor' in user_roles_at_en_root:
             menus_to_show['show'] = True
             menus_to_show['show_en'] = True
-            menus_to_show['show_advanced'] = True
+            #menus_to_show['show_advanced'] = True
             if 'en' in self.context.Language():
                 menus_to_show['show_shared'] = True
 
