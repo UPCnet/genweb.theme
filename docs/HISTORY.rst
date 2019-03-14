@@ -1,11 +1,16 @@
 Changelog
 =========
 
-2.14 (unreleased)
+2.15 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+2.14 (2019-02-28)
+-----------------
+
+* Accessibility [Corina Riba]
 
 2.13 (2019-02-14)
 -----------------
