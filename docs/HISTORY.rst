@@ -1,11 +1,17 @@
 Changelog
 =========
 
-2.15 (unreleased)
+2.16 (unreleased)
 -----------------
 
 - Nothing changed yet.
 
+
+2.15 (2019-03-18)
+-----------------
+
+* Evitar Redraw y aplicar estilos al inicio [alberto.duran]
+* share button if you are editor from some lang, fix id duplicated [r.ventura]
 
 2.14 (2019-02-28)
 -----------------
