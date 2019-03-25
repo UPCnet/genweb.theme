@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.16 (unreleased)
+2.16 (2019-03-25)
 -----------------
 
-- Nothing changed yet.
-
+* Merge branch 'develop' of github.com:UPCnet/genweb.theme into develop [r.ventura]
 
 2.15 (2019-03-18)
 -----------------
