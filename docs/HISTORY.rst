@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.17 (unreleased)
+2.17 (2019-05-02)
 -----------------
 
-- Nothing changed yet.
-
+* Noticias - Pie de foto: Añadir max-width igual al width de la imagen [Iago López Fernández]
 
 2.16 (2019-03-25)
 -----------------
