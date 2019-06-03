@@ -21,7 +21,9 @@ from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 viewVocabulary = SimpleVocabulary([
     SimpleTerm(value="id_normal", title=_(u'Normal view')),
     SimpleTerm(value="id_full", title=_(u'Full view')),
-    SimpleTerm(value="id_full_2cols", title=_(u'Full2cols view'))])
+    SimpleTerm(value="id_full_2cols", title=_(u'Full2cols view')),
+    SimpleTerm(value="id_full_3cols", title=_(u'Full3cols view')),
+    SimpleTerm(value="id_full_4cols", title=_(u'Full4cols view'))])
 
 countVocabulary = SimpleVocabulary.fromValues(range(1, 15))
 
@@ -77,6 +79,23 @@ class Renderer(base.Renderer):
 
     def published_news_items_pair(self):
         return self._data()[0::2]
+
+    def published_news_items_group_by_x(self, num):
+        result = []
+        for count in range(num):
+            result.append([])
+
+        pos = 0
+        for new in self._data():
+            result[pos].append(new)
+            pos = 0 if pos == (num - 1) else pos + 1
+        return result
+
+    def published_news_items_group_by_three(self):
+        return self.published_news_items_group_by_x(3)
+
+    def published_news_items_group_by_four(self):
+        return self.published_news_items_group_by_x(4)
 
     def mostraData(self):
         return self.data.showdata

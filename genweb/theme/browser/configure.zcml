@@ -45,4 +45,11 @@
         layer=".interfaces.IGenwebTheme"
         />
 
+    <browser:page
+        name="macros-genweb"
+        for="*"
+        permission="zope.Public"
+        template="views_templates/macros.pt"
+        />
+
 </configure>

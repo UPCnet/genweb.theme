@@ -92,5 +92,8 @@
            title="Categories"
            i18n:attributes="title"/>
 
+  <portlet addview="genweb.portlets.grid_events"
+           title="GridEvents"
+           i18n:attributes="title"/>
 
 </portlets>

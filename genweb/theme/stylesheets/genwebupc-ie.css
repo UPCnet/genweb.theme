@@ -1368,7 +1368,7 @@
 .userTablet,
 .userMobile,
 .userGenweb {
-  background: url('++genweb++static/images/sprite_usuari.png?1500891831') transparent no-repeat center top;
+  background: url('++genweb++static/images/sprite_usuari.png?1542094607') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em;
 }
@@ -1469,7 +1469,7 @@
 .dropdown-menu a:hover #category.documentByLine:before,
 .dropdown-menu a:hover .tileFooter:before,
 .dropdown-menu a:hover [class*=" icon-"] {
-  background-image: url('++genweb++static/images/gh-w.png?1500891831') !important;
+  background-image: url('++genweb++static/images/gh-w.png?1542094607') !important;
 }
 
 #portal-header {
@@ -1783,7 +1783,7 @@
 }
 
 #canvia-vista a {
-  background: url('++genweb++static/images/vistabg.png?1500891831') #666;
+  background: url('++genweb++static/images/vistabg.png?1542094607') #666;
   text-align: center;
   -moz-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
@@ -1974,7 +1974,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   right: 7px;
   top: 8px;
-  background-image: url('++genweb++static/images/gh-w.png?1500891831');
+  background-image: url('++genweb++static/images/gh-w.png?1542094607');
   background-position: -455px -71px;
   background-repeat: no-repeat;
   width: 17px;
@@ -2182,7 +2182,7 @@
 .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after,
 .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after,
 .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
-  background-image: url('++genweb++static/images/gh.png?1500891831');
+  background-image: url('++genweb++static/images/gh.png?1542094607');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -2308,7 +2308,7 @@
 }
 
 html * .dropdown-menu a:hover .img_blank {
-  content: url('++genweb++static/images/blank_blanc.png?1500891831');
+  content: url('++genweb++static/images/blank_blanc.png?1542094607');
   width: 10px;
   height: 10px;
 }
@@ -2387,7 +2387,7 @@ html * .dropdown-menu a:hover .img_blank {
 .template-tabular_view .listing a[class*=" contenttype-"]:before,
 .contenttreeWidget > .navTree a[class^="contenttype-"]:before,
 .contenttreeWidget > .navTree a[class*=" contenttype-"]:before {
-  background-image: url('++genweb++static/images/gh.png?1500891831');
+  background-image: url('++genweb++static/images/gh.png?1542094607');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -2543,7 +2543,7 @@ dt[class*="contenttype"] + dd {
 }
 
 dt[class*="contenttype"]:before {
-  background-image: url('++genweb++static/images/gh.png?1500891831');
+  background-image: url('++genweb++static/images/gh.png?1542094607');
   background-repeat: no-repeat;
   display: block;
   width: 15px;
@@ -3299,7 +3299,7 @@ div.fitxa {
 .sheet:before,
 div.fitxa:before {
   content: "*";
-  content: url('++genweb++static/images/sheet.png?1500891831');
+  content: url('++genweb++static/images/sheet.png?1542094607');
   font-size: 300%;
   position: absolute;
   right: -19px;
@@ -3539,7 +3539,7 @@ ul.collage-content-menu li:first-child {
 
 .list-links li:before,
 .portaltype-packet .estudis .llistatEnllacos li:before {
-  content: url('++genweb++static/images/arrow.png?1500891831');
+  content: url('++genweb++static/images/arrow.png?1542094607');
   margin-left: -15px;
   margin-top: -13px;
 }
@@ -3550,7 +3550,7 @@ ul.collage-content-menu li:first-child {
 }
 
 .list-highlighted li:before {
-  content: url('++genweb++static/images/arrow_hl.png?1500891831');
+  content: url('++genweb++static/images/arrow_hl.png?1542094607');
   margin-left: -22px;
   margin-top: -11px;
 }
@@ -4319,7 +4319,7 @@ h3:first-child {
 
 *.xxl,
 legend,
-*.tileHeadline {
+.tileHeadline {
   font-size: 130.769231% !important;
   line-height: 18px;
 }
@@ -4340,8 +4340,8 @@ legend,
 }
 
 *.s,
-*.formHelp,
-.discussion *.commentDate {
+.formHelp,
+.discussion .commentDate {
   font-size: 92.3076923% !important;
   line-height: 18px;
 }
@@ -4363,7 +4363,7 @@ legend,
 }
 
 *.liniaBaix,
-*.documentFirstHeading {
+.documentFirstHeading {
   border-bottom: 1px solid #b2b2b2;
   -moz-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.1);
@@ -4373,7 +4373,7 @@ legend,
 }
 
 *.liniaDalt,
-*.tileHeadline {
+.tileHeadline {
   border-top: 1px solid #b2b2b2;
   -moz-box-shadow: 0 -6px 4px -4px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 -6px 4px -4px rgba(0, 0, 0, 0.1);
@@ -4466,7 +4466,7 @@ hr.tileHeadline {
   display: block;
   width: 14px;
   height: 14px;
-  background: url('++genweb++static/images/gh.png?1500891831');
+  background: url('++genweb++static/images/gh.png?1542094607');
 }
 
 .mayus {
@@ -4514,7 +4514,7 @@ a {
 .vid:after,
 .img:after,
 .txt:after {
-  background: url('++genweb++static/images/gh-c.png?1500891831') no-repeat;
+  background: url('++genweb++static/images/gh-c.png?1542094607') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -4704,7 +4704,7 @@ input[type="file"] {
 }
 
 .customfile-feedback-populated:before {
-  background: url('++genweb++static/images/gh-c.png?1500891831') no-repeat;
+  background: url('++genweb++static/images/gh-c.png?1542094607') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -5066,7 +5066,7 @@ h2.title-inverse {
 }
 
 h2.title-inverse i {
-  background-image: url('++genweb++static/images/gh-w.png?1500891831');
+  background-image: url('++genweb++static/images/gh-w.png?1542094607');
 }
 
 .portletCalendar .ploneCalendar {
@@ -5116,6 +5116,201 @@ h2.title-inverse i {
 .portletCalendar .ploneCalendar td.cal_prev_month,
 .portletCalendar .ploneCalendar td.cal_next_month {
   opacity: 0.4;
+}
+
+.titling-line-container {
+  position: relative;
+}
+
+.titling-line-container .titling-line {
+  font-size: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  padding: 6px 0;
+  margin-top: 0;
+}
+
+.titling-line-container .titling-line::after {
+  content: "";
+  position: absolute;
+  margin-left: 12px;
+  background: #d1d1d1;
+  height: 1px;
+  box-shadow: 1000px 0 0 -1000px #d1d1d1;
+  width: 100%;
+  top: 50%;
+}
+
+.titling-line-container .btn-mes {
+  top: .4rem;
+  position: absolute;
+  right: 0;
+  background: white;
+  z-index: 1;
+  padding: 6px 0 6px 6px;
+  margin-top: -2px;
+}
+
+ol.list-agenda {
+  margin-left: 0px;
+}
+
+.list-agenda.row {
+  margin-left: -1.15% !important;
+  margin-right: -1.15% !important;
+}
+
+.list-agenda.row [class*="span"],
+.list-agenda.row .cella {
+  margin-left: 1.15% !important;
+  margin-right: 1.15% !important;
+}
+
+.list-agenda.row .span4,
+.list-agenda.row .w1\3a 3 {
+  width: 31.03%;
+}
+
+.list-agenda.row .span6,
+.list-agenda.row .w1\3a 2,
+.list-agenda.row .w2\3a 4 {
+  width: 47.7%;
+}
+
+.list-agenda.row .card {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) !important;
+  height: 275px;
+  min-width: 150px;
+  position: relative;
+  display: block;
+  transition: all .25s ease-out;
+  overflow: hidden;
+}
+
+.list-agenda.row .card:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 5px 10px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+  text-decoration: none;
+  background-color: #F6F7F7;
+  transform: perspective(1px) scale(1.00775, 1.00775) translateZ(0px);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.list-agenda.row .card .event-time {
+  opacity: 0.9;
+  background-image: linear-gradient(89deg, #27b1ff 0%, #007bc0 100%);
+  width: 134px;
+  height: 134px;
+  border-radius: 50% !important;
+  position: absolute;
+  left: 18px;
+  display: table-cell;
+  text-align: center;
+  left: calc(50% - 67px);
+  top: calc(50% - 67px - 40px);
+}
+
+.list-agenda.row .card .event-time .event-time--wrap {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  display: block;
+}
+
+.list-agenda.row .card .event-days {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  display: block;
+  padding-bottom: 1px;
+  line-height: 1;
+}
+
+.list-agenda.row .card .event-days.event-days-connector {
+  font-size: 1rem !important;
+}
+
+.list-agenda.row .card .event-months {
+  font-weight: 300;
+  font-size: .875rem;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  padding-bottom: 1px;
+}
+
+.list-agenda.row .card .event-title {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #4a4a4a;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 979px) {
+  .list-agenda.row {
+    margin-left: -1.15% !important;
+    margin-right: -1.15% !important;
+  }
+
+  .list-agenda.row [class*="span"],
+  .list-agenda.row .cella {
+    margin-left: 1.15% !important;
+    margin-right: 1.15% !important;
+  }
+
+  .list-agenda.row .span6,
+  .list-agenda.row .w1\3a 2,
+  .list-agenda.row .w2\3a 4,
+  .list-agenda.row .span4,
+  .list-agenda.row .w1\3a 3,
+  .list-agenda.row .span3,
+  .list-agenda.row #dashboard-portlets1,
+  .list-agenda.row #dashboard-portlets2,
+  .list-agenda.row #dashboard-portlets3,
+  .list-agenda.row #dashboard-portlets4,
+  .list-agenda.row .w1\3a 4,
+  .list-agenda.row .photoAlbumEntry {
+    width: 47.5%;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .list-agenda.row {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+  }
+
+  .list-agenda.row [class*="span"],
+  .list-agenda.row .cella {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+  }
+
+  .list-agenda.row .span6,
+  .list-agenda.row .w1\3a 2,
+  .list-agenda.row .w2\3a 4,
+  .list-agenda.row .span4,
+  .list-agenda.row .w1\3a 3,
+  .list-agenda.row .span3,
+  .list-agenda.row #dashboard-portlets1,
+  .list-agenda.row #dashboard-portlets2,
+  .list-agenda.row #dashboard-portlets3,
+  .list-agenda.row #dashboard-portlets4,
+  .list-agenda.row .w1\3a 4,
+  .list-agenda.row .photoAlbumEntry {
+    width: 100% !important;
+  }
 }
 
 #portlet-prefs {
@@ -5209,24 +5404,24 @@ div.label,
 #listing-table tr td:nth-child(6) div.state-private,
 #listing-table tr td:nth-child(6) div#workflow-transition-hide,
 label *.label,
-label #listing-table tr td:nth-child(6) *.state-restricted-to-managers,
-#listing-table tr td:nth-child(6) label *.state-restricted-to-managers,
-label #listing-table tr td:nth-child(6) *.state-visible,
-#listing-table tr td:nth-child(6) label *.state-visible,
-label #listing-table tr td:nth-child(6) *.state-intranet,
-#listing-table tr td:nth-child(6) label *.state-intranet,
-label #listing-table tr td:nth-child(6) *#workflow-transition-publishtointranet,
-#listing-table tr td:nth-child(6) label *#workflow-transition-publishtointranet,
-label #listing-table tr td:nth-child(6) *#workflow-transition-publicaalaintranet,
-#listing-table tr td:nth-child(6) label *#workflow-transition-publicaalaintranet,
-label #listing-table tr td:nth-child(6) *#workflow-transition-retracttointranet,
-#listing-table tr td:nth-child(6) label *#workflow-transition-retracttointranet,
-label #listing-table tr td:nth-child(6) *#workflow-transition-retiraalaintranet,
-#listing-table tr td:nth-child(6) label *#workflow-transition-retiraalaintranet,
-label #listing-table tr td:nth-child(6) *.state-private,
-#listing-table tr td:nth-child(6) label *.state-private,
-label #listing-table tr td:nth-child(6) *#workflow-transition-hide,
-#listing-table tr td:nth-child(6) label *#workflow-transition-hide {
+label #listing-table tr td:nth-child(6) .state-restricted-to-managers,
+#listing-table tr td:nth-child(6) label .state-restricted-to-managers,
+label #listing-table tr td:nth-child(6) .state-visible,
+#listing-table tr td:nth-child(6) label .state-visible,
+label #listing-table tr td:nth-child(6) .state-intranet,
+#listing-table tr td:nth-child(6) label .state-intranet,
+label #listing-table tr td:nth-child(6) #workflow-transition-publishtointranet,
+#listing-table tr td:nth-child(6) label #workflow-transition-publishtointranet,
+label #listing-table tr td:nth-child(6) #workflow-transition-publicaalaintranet,
+#listing-table tr td:nth-child(6) label #workflow-transition-publicaalaintranet,
+label #listing-table tr td:nth-child(6) #workflow-transition-retracttointranet,
+#listing-table tr td:nth-child(6) label #workflow-transition-retracttointranet,
+label #listing-table tr td:nth-child(6) #workflow-transition-retiraalaintranet,
+#listing-table tr td:nth-child(6) label #workflow-transition-retiraalaintranet,
+label #listing-table tr td:nth-child(6) .state-private,
+#listing-table tr td:nth-child(6) label .state-private,
+label #listing-table tr td:nth-child(6) #workflow-transition-hide,
+#listing-table tr td:nth-child(6) label #workflow-transition-hide {
   background: #fff;
   text-shadow: none;
   font-size: 100%;
@@ -5384,7 +5579,7 @@ iframe {
   width: 14px;
   height: 14px;
   display: inline-block;
-  background: url('++genweb++static/images/gh.png?1500891831') -239px -143px no-repeat;
+  background: url('++genweb++static/images/gh.png?1542094607') -239px -143px no-repeat;
   margin-left: 5px;
 }
 
@@ -6910,7 +7105,7 @@ html {
   #portal-header h1.pull-left {
     height: 46px;
     width: 207px;
-    background: url('++genweb++static/images/logoUPC@2x.png?1500891831') no-repeat;
+    background: url('++genweb++static/images/logoUPC@2x.png?1542094607') no-repeat;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     -webkit-background-size: 100%;
@@ -6931,22 +7126,22 @@ html {
   }
 
   .img_blank[src*="blank_blau"] {
-    content: url('++genweb++static/images/blank_blau@2x.png?1500891831');
+    content: url('++genweb++static/images/blank_blau@2x.png?1542094607');
   }
 
   .img_blank[src*="blank_gris"] {
-    content: url('++genweb++static/images/blank_gris@2x.png?1500891831');
+    content: url('++genweb++static/images/blank_gris@2x.png?1542094607');
   }
 
   .img_blank[src*="blank_blanc"] {
-    content: url('++genweb++static/images/blank_blanc@2x.png?1500891831');
+    content: url('++genweb++static/images/blank_blanc@2x.png?1542094607');
   }
 
   .userScreen,
   .userTablet,
   .userMobile,
   .userGenweb {
-    background-image: url('++genweb++static/images/sprite_usuari@2x.png?1500891831');
+    background-image: url('++genweb++static/images/sprite_usuari@2x.png?1542094607');
     -moz-background-size: 20px 400px;
     -o-background-size: 20px 400px;
     -webkit-background-size: 20px 400px;
@@ -7457,7 +7652,7 @@ html.lt-ie8 .list-portlet li  {
 }
 
 .link-parent:before {
-  background: url('++genweb++static/images/gh-w.png?1500891831') no-repeat -290px -95px;
+  background: url('++genweb++static/images/gh-w.png?1542094607') no-repeat -290px -95px;
   content: " ";
   display: inline-block;
   height: 14px;

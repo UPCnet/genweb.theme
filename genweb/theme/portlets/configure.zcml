@@ -83,4 +83,13 @@
      editview=".news_events_listing.EditForm"
      />
 
+    <plone:portlet
+     name="genweb.portlets.grid_events"
+     interface=".grid_events.IGridEventsPortlet"
+     assignment=".grid_events.Assignment"
+     renderer=".grid_events.Renderer"
+     addview=".grid_events.AddForm"
+     editview=".grid_events.EditForm"
+     />
+
 </configure>

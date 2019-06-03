@@ -108,6 +108,60 @@
           </div>
         </div>
 
+        <tal:comment replace="nothing"> FULL 3COLS </tal:comment>
+        <div tal:condition="python:tipus=='id_full_3cols'" class="row-fluid">
+          <div tal:repeat="group view/published_news_items_group_by_three" class='span4 noticies-full-2cols'>
+            <div tal:repeat="obj group" class='noticia-full-2cols'>
+              <a tal:attributes="href obj/getURL" tal:define="item obj/getObject">
+                <div class='noticies-full'>
+                  <tal:co tal:condition="python:obj.Type=='News Item'">
+                    <img tal:condition="obj/news_image_filename|nothing"
+                         tal:attributes="src string:${obj/getURL}/@@images/image/preview;
+                                         title python: item.image_caption if item.image_caption else nothing;
+                                         alt python: item.image_caption if item.image_caption else '';"
+                         class="image-noticies-full" />
+                  </tal:co>
+                </div>
+                <h3 tal:content="obj/pretty_title_or_id">Titol</h3>
+              </a>
+              <div class="content-noticies">
+                <p tal:content="python: view.abrevia(obj)">New description</p>
+                <tal:co condition="data">
+                    <time class="smaller" tal:content="python:toLocalizedTime(obj.EffectiveDate)">May 5</time>
+                </tal:co>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <tal:comment replace="nothing"> FULL 4COLS </tal:comment>
+        <div tal:condition="python:tipus=='id_full_4cols'" class="row-fluid">
+          <div tal:repeat="group view/published_news_items_group_by_four" class='span3 noticies-full-2cols'>
+            <div tal:repeat="obj group" class='noticia-full-2cols'>
+              <a tal:attributes="href obj/getURL" tal:define="item obj/getObject">
+                <div class='noticies-full'>
+                  <tal:co tal:condition="python:obj.Type=='News Item'">
+                    <img tal:condition="obj/news_image_filename|nothing"
+                         tal:attributes="src string:${obj/getURL}/@@images/image/preview;
+                                         title python: item.image_caption if item.image_caption else nothing;
+                                         alt python: item.image_caption if item.image_caption else '';"
+                         class="image-noticies-full" />
+                  </tal:co>
+                </div>
+                <h3 tal:content="obj/pretty_title_or_id">Titol</h3>
+              </a>
+              <div class="content-noticies">
+                <p tal:content="python: view.abrevia(obj)">New description</p>
+                <tal:co condition="data">
+                    <time class="smaller" tal:content="python:toLocalizedTime(obj.EffectiveDate)">May 5</time>
+                </tal:co>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <tal:comment replace="nothing"> FOOTER </tal:comment>
         <div class="portlet-footer">
             <a tal:attributes="href view/rss_news_link">
