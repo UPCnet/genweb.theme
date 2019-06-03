@@ -4,7 +4,7 @@
       <h2 class="titling-line" i18n:translate="">
         Events
       </h2>
-      <a class="btn-mes" tal:attributes="href view/get_current_path_events"
+      <a class="btn-mes" tal:attributes="href view/all_events_link"
          i18n:translate="">
         Més esdeveniments
       </a>
