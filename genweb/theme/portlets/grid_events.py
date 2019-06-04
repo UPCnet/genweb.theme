@@ -1,22 +1,22 @@
-from Acquisition import aq_inner
-from plone import api
-from zope import schema
-from zope.formlib import form
-from zope.interface import implements
+from Products.CMFCore.utils import getToolByName
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
+from DateTime.DateTime import DateTime
+from plone import api
+from plone.app.event.base import get_events
+from plone.app.event.base import localized_now
 from plone.app.portlets.portlets import base
 from plone.memoize.instance import memoize
 from plone.portlets.interfaces import IPortletDataProvider
+from zope import schema
+from zope.formlib import form
+from zope.i18nmessageid import MessageFactory
+from zope.interface import implements
+from zope.schema.vocabulary import SimpleVocabulary
 
-from Products.CMFCore.utils import getToolByName
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from genweb.core import GenwebMessageFactory as _
-
 from genweb.core.interfaces import IEventFolder
 from genweb.core.utils import pref_lang
-
-from zope.i18nmessageid import MessageFactory
-from zope.schema.vocabulary import SimpleVocabulary
 
 countVocabulary = SimpleVocabulary.fromValues(range(1, 17))
 columnsVocabulary = SimpleVocabulary.fromValues(range(1, 5))
@@ -90,18 +90,14 @@ class Renderer(base.Renderer):
             return 'span3'
 
     def _data(self):
-        context = aq_inner(self.context)
-        catalog = getToolByName(context, 'portal_catalog')
-        limit = self.data.count
-        state = ['published', 'intranet']
-        events = catalog(portal_type=('Event'),
-                         review_state=state,
-                         Language=pref_lang(),
-                         sort_on=('Date'),
-                         sort_order='reverse',
-                         sort_limit=limit,
-                         path=self.get_current_path_events())
-        return events
+        return get_events(
+            self.context,
+            ret_mode=2,
+            start=localized_now(),
+            expand=True,
+            sort='start',
+            limit=self.data.count,
+            review_state=['published', 'intranet'])
 
     @memoize
     def get_events(self):
@@ -109,13 +105,13 @@ class Renderer(base.Renderer):
         ts = getToolByName(self.context, 'translation_service')
         results = self._data()
         for event in results:
-            info = {'url': event.getURL(),
-                    'firstday': event.start.day(),
-                    'firstmonth': PLMF(ts.month_msgid(event.start.month())),
-                    'abbrfirstmonth': PLMF(ts.month_msgid(event.start.month())),
-                    'lastday': event.end.day(),
-                    'lastmonth': PLMF(ts.month_msgid(event.end.month())),
-                    'abbrlastmonth': PLMF(ts.month_msgid(event.end.month())),
+            startDay = DateTime(event.start)
+            endDay = DateTime(event.end)
+            info = {'url': event.absolute_url(),
+                    'firstday': int(startDay.strftime('%d')),
+                    'firstmonth': PLMF(ts.month_msgid(int(startDay.strftime('%m')))),
+                    'lastday': int(endDay.strftime('%d')),
+                    'lastmonth': PLMF(ts.month_msgid(int(endDay.strftime('%m')))),
                     'title': event.Title
                     }
             events.append(info)

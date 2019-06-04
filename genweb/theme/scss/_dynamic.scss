@@ -63,7 +63,7 @@ h1, h2, h3 {color:$genwebTitles; }
 .sheet { border-right:20px solid lighten($genwebPrimary,35%); }
 
 // PORTLET Grid Events
-.list-agenda.row .card .event-time {
+.list-agenda ol.row .card .event-time {
     background-image: linear-gradient(89deg, lighten($genwebPrimary, 20%) 0%, $genwebPrimary 100%);
 }
 
