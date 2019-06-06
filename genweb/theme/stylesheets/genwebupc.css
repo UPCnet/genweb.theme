@@ -8811,10 +8811,7 @@ h2.title-inverse {
         display: block;
         padding-bottom: 1px; }
       .list-agenda ol.row .card .event-title {
-        font-size: 1.125rem;
-        font-weight: 400;
-        line-height: 1.1;
-        color: #4a4a4a;
+        color: #007BC0;
         height: 80px;
         background: rgba(255, 255, 255, 0.9);
         position: absolute;
