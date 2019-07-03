@@ -1,11 +1,13 @@
 Changelog
 =========
 
-2.18 (unreleased)
+2.18 (2019-07-03)
 -----------------
 
-- Nothing changed yet.
-
+* Estilos portlet Grid events [Iago López Fernández]
+* Mejoras portlet Grid events [Iago López Fernández]
+* Arreglar enlace portlet Grid events [Iago López Fernández]
+* Añadir nuevas opciones al portlet fullnews (3 y 4 columnas) + Añadir portlet Grid events [Iago López Fernández]
 
 2.17 (2019-05-02)
 -----------------
