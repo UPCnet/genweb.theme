@@ -1,32 +1,32 @@
 /*
 // MIDES SAMARRETA
-// ------------------------- 
+// -------------------------
 */
 h1, h2, h3 {color:$genwebTitles; margin-top:$baseLineHeight*3/2;}
 h1:first-child, h2:first-child, h3:first-child {margin-top:$baseLineHeight/2;}
 .popover-title {margin-top:0 !important;}
 
 *.xxxl 	{	font-size: 153.846154% !important; line-height: ($baseLineHeight / 2 * 3);}
-*.xxl 	{	font-size: 130.769231% !important; line-height: $baseLineHeight;} 
-*.xl 	{	font-size: 115.384615% !important; line-height: $baseLineHeight;} 
-*.l 	{	font-size: 107.692308% !important; line-height: $baseLineHeight;} 
-*.m 	{	font-size: 100% !important;		line-height: $baseLineHeight;} 
-*.s 	{	font-size: 92.3076923% !important; line-height: $baseLineHeight;} 
-*.xs 	{	font-size: 84.6153846% !important; line-height: $baseLineHeight;} 
-*.xxs 	{	font-size: 76.9230769% !important; line-height: $baseLineHeight;} 
+*.xxl 	{	font-size: 130.769231% !important; line-height: $baseLineHeight;}
+*.xl 	{	font-size: 115.384615% !important; line-height: $baseLineHeight;}
+*.l 	{	font-size: 107.692308% !important; line-height: $baseLineHeight;}
+*.m 	{	font-size: 100% !important;		line-height: $baseLineHeight;}
+*.s 	{	font-size: 92.3076923% !important; line-height: $baseLineHeight;}
+*.xs 	{	font-size: 84.6153846% !important; line-height: $baseLineHeight;}
+*.xxs 	{	font-size: 76.9230769% !important; line-height: $baseLineHeight;}
 *.xxxs 	{	font-size: 69.2307692% !important; line-height: $baseLineHeight;}
 
 *.liniaBaix {
 	border-bottom:1px solid $tableBorder;
 	@include box-shadow(0 6px 4px -4px rgba(0,0,0,.1));
 	margin:0 0 18px 0;
-    padding: 0 0 12px;	
+    padding: 0 0 12px;
 }
 *.liniaDalt {
 	border-top:1px solid $tableBorder;
 	@include box-shadow(0 -6px 4px -4px rgba(0,0,0,.1));
 	margin:18px 0 0 0;
-    padding: 12px 0 6px;	
+    padding: 12px 0 6px;
 }
 
 // LINKS
@@ -59,7 +59,7 @@ hr.liniaBaix {
 hr.liniaDalt {
     height: 0;
     border-bottom: 0;
-	@include box-shadow(0 -12px 24px -6px rgba(0,0,0,.1));    
+	@include box-shadow(0 -12px 24px -6px rgba(0,0,0,.1));
 }
 
 // PADDINGS I MARGINS
@@ -141,7 +141,7 @@ a { /*fa que les URL llargues es trenquin*/
 
 //prettify
   .com { color: $gray; } /*comentari*/
-  .lit { color: $purple; } 
+  .lit { color: $purple; }
   .pun, .opn, .clo { color: $blueDark; }
   .fun { color: $red; }
   .str, .atv { color: darken($orange, 5%); }
@@ -175,3 +175,15 @@ a { /*fa que les URL llargues es trenquin*/
     text-shadow:0 -1px 0 #111;
   }
   .prettyprint-inverse .pln { color: #ddd;}
+
+    // text correcte / incorrecte
+
+  ins, .ins {
+    color: #538300;
+    text-decoration: underline;
+  }
+
+  del, .del {
+    color: #c00;
+    text-decoration: line-through;
+  }

@@ -7141,6 +7141,33 @@ a.inverse, .inverse a, a .inverse {
 a.primary, .primary a, a .primary {
   color: #ff0; }
 
+.purple-background {
+  background-color: #e7dbee; }
+
+.pink-background {
+  background-color: #f4bfe1; }
+
+.orange-background {
+  background-color: #fdd49a; }
+
+.blueDark-background {
+  background-color: #9acbff; }
+
+.green-background {
+  background-color: #bce673; }
+
+.purpleDark-background {
+  background-color: #cfb9dd; }
+
+.gray-background {
+  background-color: #b3b3b3; }
+
+.grayLight-background {
+  background-color: #cccccc; }
+
+.grayLighter-background {
+  background-color: #e6e6e6; }
+
 /*FAQ*/
 .accordion.faq .accordion-heading a {
   position: relative; }
@@ -8145,7 +8172,7 @@ També ha de ser aplicable directament al td i a altres elements com les llistes
 */
 /*
 // MIDES SAMARRETA
-// ------------------------- 
+// -------------------------
 */
 h1, h2, h3 {
   color: #557C95;
@@ -8408,6 +8435,14 @@ ol.linenums li {
 
 .prettyprint-inverse .pln {
   color: #ddd; }
+
+ins, .ins {
+  color: #538300;
+  text-decoration: underline; }
+
+del, .del {
+  color: #c00;
+  text-decoration: line-through; }
 
 input[type="file"] {
   position: absolute;

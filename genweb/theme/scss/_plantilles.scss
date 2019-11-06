@@ -44,8 +44,32 @@ a.primary, .primary a, a .primary {
 	color:#ff0;
 }
 
+.purple-background {
+  background-color: #e7dbee; }
 
+.pink-background {
+  background-color: #f4bfe1; }
 
+.orange-background {
+  background-color: #fdd49a; }
+
+.blueDark-background {
+  background-color: #9acbff; }
+
+.green-background {
+  background-color: #bce673; }
+
+.purpleDark-background {
+  background-color: #cfb9dd; }
+
+.gray-background {
+  background-color: #b3b3b3; }
+
+.grayLight-background {
+  background-color: #cccccc; }
+
+.grayLighter-background {
+  background-color: #e6e6e6; }
 
 /*FAQ*/
 .accordion.faq .accordion-heading a  {
@@ -53,7 +77,7 @@ a.primary, .primary a, a .primary {
 	&:after {
 		content:"+";
 	  	//@include box-shadow(0 1px 1px $btnBorder);
-	  	@include border-radius(25px);  	
+	  	@include border-radius(25px);
 	  	background: $grayLight;
 	  	position:absolute;
 	  	font-weight:bold;
@@ -62,7 +86,7 @@ a.primary, .primary a, a .primary {
 	  	color: $white;
 	  	font-size:107.692308%;
 	  	padding:0 6px 2px;
-	  }	
+	  }
 	&:hover {
 		background:#f2f8fb;
 		&:after {background-color:$blue;}
@@ -76,17 +100,17 @@ a.primary, .primary a, a .primary {
 	@include content-columns(3,20px)
 }
 .content-columns-2 {
-	@include content-columns(2,20px)	
+	@include content-columns(2,20px)
 }
 
 
 // plantilla pestanyes amb ombra
 
 $beautytabcolor: #b2b2b2;
-.beautytab { 
-	width: 100%; 
+.beautytab {
+	width: 100%;
 
-	ul { 
+	ul {
 		display: flex;
       	display: -webkit-box;      // OLD - iOS 6-, Safari 3.1-6
   		display: -moz-box;         // OLD - Firefox 19- (buggy but mostly works)
@@ -100,26 +124,26 @@ $beautytabcolor: #b2b2b2;
 	li.formTab {
 		flex-grow: 1;
 		list-style: none;
-		text-align: center; 
+		text-align: center;
 		border-style: solid;
 		border-color: $beautytabcolor ;
 		-moz-border-top-colors: none;
 		-moz-border-right-colors: none;
 		-moz-border-bottom-colors: none;
 		-moz-border-left-colors: none;
-		padding: 0; 
+		padding: 0;
 		@include gradient-vertical(#fff, lighten($beautytabcolor,15%));
-		border-width:1px 1px 1px 0; 
+		border-width:1px 1px 1px 0;
 		text-decoration:none;
 		@include box-shadow(0 3px 6px rgba(0,0,0,0.1));
-		
+
 		&:hover {
 			@include gradient-vertical(#fff, $beautytabcolor);
 		}
 
 		&.active {
 			@include gradient-vertical(#fff, $beautytabcolor);
-			&:after { 
+			&:after {
 				content: "";
 				float: right;
 				position: relative;
@@ -134,9 +158,9 @@ $beautytabcolor: #b2b2b2;
 		}
 	}
 	a {
-		display:block; 
-		padding: 6px 4px 0px 4px; 
-		color:#4c4c4c; 	 
+		display:block;
+		padding: 6px 4px 0px 4px;
+		color:#4c4c4c;
 		text-shadow: 0 0 0.5em white;
 		&:hover {
 			text-decoration: none;
@@ -156,13 +180,13 @@ $beautytabcolor: #b2b2b2;
 }
 
 .beautytab-content {
-	border-style: solid; 
-	border-color: $beautytabcolor; 
-	border-width: 0 1px 1px 1px; 
+	border-style: solid;
+	border-color: $beautytabcolor;
+	border-width: 0 1px 1px 1px;
 	padding: 10px 5px;
 	@include border-bottom-right-radius(0.5em);
 	@include border-bottom-left-radius(0.5em);
-	} 
+	}
 
 // per a mòbils canviem pestanyes per botons
 @media only screen and (max-width: 360px) {
