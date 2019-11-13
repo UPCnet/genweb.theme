@@ -216,5 +216,12 @@ $beautytabcolor: #b2b2b2;
 	 }
 }
 
+// Tiny
+
+body.forceColors select#tpath option[disabled] {
+	color: #007ac1;
+	font-weight: 600;
+	text-transform: uppercase;
+}
 
 // fi plantilla pestanyes amb ombra

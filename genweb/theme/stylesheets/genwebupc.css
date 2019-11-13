@@ -7336,6 +7336,11 @@ a.primary, .primary a, a .primary {
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#afafaf', endColorstr='#afafaf', GradientType=0); }
       .beautytab li.formTab.active:after, .beautytab li.formTab.selected:after {
         border-width: 0; } }
+body.forceColors select#tpath option[disabled] {
+  color: #007ac1;
+  font-weight: 600;
+  text-transform: uppercase; }
+
 .lead, .lead-small, .destacatQuadres, .portaltype-packet .estudis .note, .lead-large, .sheet, div.fitxa, .destacatBandejat, .textDestacat {
   margin-bottom: 18px;
   font-size: 100%;
