@@ -8,6 +8,7 @@ from Acquisition import aq_inner
 from AccessControl import getSecurityManager
 from zope.interface import Interface
 from zope.component import getMultiAdapter
+from zope.component.hooks import getSite
 from zope.security import checkPermission
 
 from plone.memoize import ram
@@ -161,7 +162,8 @@ class gwPersonalBarViewlet(PersonalBarViewlet, viewletBase):
         return pm.getPersonalPortrait().absolute_url()
 
     def logout_link(self):
-        if HAS_CAS:
+        installed = packages_installed()
+        if 'upcnet.cas' in installed:
             return '{}/cas_logout'.format(self.root_url())
         else:
             return '{}/logout'.format(self.root_url())
@@ -496,3 +498,12 @@ class gwManagePortletsFallbackViewletForIHomePage(gwManagePortletsFallbackViewle
     grok.name('plone.manage_portlets_fallback')
     grok.viewletmanager(IBelowContent)
     grok.layer(IGenwebTheme)
+
+
+@ram.cache(lambda *args: time() // (60 * 60))
+def packages_installed():
+    portal = getSite()
+
+    qi_tool = getToolByName(portal, 'portal_quickinstaller')
+    installed = [p['id'] for p in qi_tool.listInstalledProducts()]
+    return installed
