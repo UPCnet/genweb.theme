@@ -1,0 +1,19 @@
+<section id="tagslist" tal:define="site_properties context/portal_properties/site_properties;
+                                   use_view_action site_properties/typesUseViewActionInListings|python:();
+                                   continguts view/get_contenttags_by_query">
+  <article class="tileItem visualIEFloatFix" tal:repeat="contingut continguts">
+    <tal:block tal:define="item_type contingut/portal_type;
+                           item_url contingut/getURL|contingut/absolute_url;">
+      <h2 class="tileHeadline">
+        <a tal:attributes="href python: item_url+'/view' if item_type in use_view_action else item_url;"
+           tal:content="contingut/Title">
+          Title
+        </a>
+      </h2>
+      <span class="documentByLine" tal:condition="contingut/Description" tal:content="contingut/Description">
+        Description
+      </span>
+      <div class="visualClear"></div>
+    </tal:block>
+  </article>
+</section>

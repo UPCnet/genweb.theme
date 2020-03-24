@@ -8,6 +8,7 @@ from scss import Scss
 from zope.interface import Interface
 from zope.contentprovider import interfaces
 from zope.component import getMultiAdapter, queryMultiAdapter, getUtility, queryUtility
+from zope.component.hooks import getSite
 from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile as ZopeViewPageTemplateFile
 
 from plone.batching import Batch
@@ -711,6 +712,142 @@ class SearchFilteredContentAjax(FilteredContentsSearchView):
     grok.name('search_filtered_content')
     grok.context(Interface)
     grok.template('filtered_contents_search_ajax')
+    grok.layer(IGenwebTheme)
+
+
+class FilteredContentsSearchPrettyView(grok.View):
+    """ Filtered content search view for every folder. """
+    grok.name('filtered_contents_search_pretty_view')
+    grok.context(Interface)
+    grok.require('genweb.member')
+    grok.template('filtered_contents_search_pretty')
+    grok.layer(IGenwebTheme)
+
+    def update(self):
+        self.query = self.request.form.get('q', '')
+        if self.request.form.get('t', ''):
+            self.tags = [v for v in self.request.form.get('t').split(',')]
+        else:
+            self.tags = []
+
+    def getTags(self):
+        portal = getSite()
+        pc = getToolByName(portal, "portal_catalog")
+        tags = []
+        results = pc.unrestrictedSearchResults(path={'query': '/'.join(self.context.getPhysicalPath()), 'depth': 1})
+        for recurs in results:
+            tags += list(set(recurs.Subject))
+
+        listTags = list(dict.fromkeys(tags))
+        listTags.sort()
+
+        return listTags
+
+    def get_batched_contenttags(self, query=None, batch=True, b_size=10, b_start=0):
+        pc = getToolByName(self.context, "portal_catalog")
+        path = self.context.getPhysicalPath()
+        path = "/".join(path)
+        r_results = pc.searchResults(path=path)
+        batch = Batch(r_results, b_size, b_start)
+        return batch
+
+    def get_contenttags_by_query(self):
+        pc = getToolByName(self.context, "portal_catalog")
+        path = self.context.getPhysicalPath()
+        path = "/".join(path)
+
+        def quotestring(s):
+            return '"%s"' % s
+
+        def quote_bad_chars(s):
+            bad_chars = ["(", ")"]
+            for char in bad_chars:
+                s = s.replace(char, quotestring(char))
+            return s
+
+        if not self.query and not self.tags:
+            return self.getContent()
+
+        if not self.query == '':
+            multispace = u'\u3000'.encode('utf-8')
+            for char in ('?', '-', '+', '*', multispace):
+                self.query = self.query.replace(char, ' ')
+
+            query = self.query.split()
+            query = " AND ".join(query)
+            query = quote_bad_chars(query) + '*'
+
+            if self.tags:
+                r_results = pc.searchResults(path=path,
+                                             SearchableText=query,
+                                             Subject={'query': self.tags, 'operator': 'and'},
+                                             sort_on='sortable_title',
+                                             sort_order='ascending')
+            else:
+                r_results = pc.searchResults(path=path,
+                                             SearchableText=query,
+                                             sort_on='sortable_title',
+                                             sort_order='ascending')
+
+            return r_results
+        else:
+            r_results = pc.searchResults(path=path,
+                                         Subject={'query': self.tags, 'operator': 'and'},
+                                         sort_on='sortable_title',
+                                         sort_order='ascending')
+
+            return r_results
+            # return self.get_batched_contenttags(query=None, batch=True, b_size=10, b_start=0)
+
+    def get_tags_by_query(self):
+        pc = getToolByName(self.context, "portal_catalog")
+
+        def quotestring(s):
+            return '"%s"' % s
+
+        def quote_bad_chars(s):
+            bad_chars = ["(", ")"]
+            for char in bad_chars:
+                s = s.replace(char, quotestring(char))
+            return s
+
+        if not self.query == '':
+            multispace = u'\u3000'.encode('utf-8')
+            for char in ('?', '-', '+', '*', multispace):
+                self.query = self.query.replace(char, ' ')
+
+            query = self.query.split()
+            query = " AND ".join(query)
+            query = quote_bad_chars(query)
+            path = self.context.absolute_url_path()
+
+            r_results = pc.searchResults(path=path,
+                                         Subject=query)
+
+            return r_results
+        else:
+            return self.get_batched_contenttags(query=None, batch=True, b_size=10, b_start=0)
+
+    def get_container_path(self):
+        return self.context.absolute_url()
+
+    def getContent(self):
+        portal = api.portal.get()
+        catalog = getToolByName(portal, 'portal_catalog')
+        path = self.context.getPhysicalPath()
+        path = "/".join(path)
+
+        items = catalog.searchResults(path={'query': path, 'depth': 1},
+                                      sort_on='getObjPositionInParent')
+
+        return items
+
+
+class SearchFilteredContentPrettyAjax(FilteredContentsSearchPrettyView):
+    """ Ajax helper for filtered content search view for every folder. """
+    grok.name('search_filtered_content_pretty')
+    grok.context(Interface)
+    grok.template('filtered_contents_search_pretty_ajax')
     grok.layer(IGenwebTheme)
 
 

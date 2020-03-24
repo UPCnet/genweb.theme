@@ -1,0 +1,100 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+<head>
+  <metal:block fill-slot="top_slot">
+    <tal:insert tal:replace="nothing"
+                tal:define="dummy python:request.set('enable_border', 1);
+                            disable_column_one python:request.set('disable_plone.rightcolumn',1);
+                            disable_column_two python:request.set('disable_plone.leftcolumn',1);" />
+  </metal:block>
+</head>
+
+<body>
+
+  <metal:main metal:fill-slot="content-core"
+              tal:define="b_start python:0;
+                         b_start request/b_start | b_start;
+                         continguts python: view.getContent();
+                         path python: view.get_container_path()">
+
+    <div id="librarysearchpretty" class="filtered_contents_search_pretty row-fluid">
+      <div class="span3">
+        <br>
+        <div class="caixessearch">
+          <div id="searchinputcontent">
+            <div class="input-append">
+              <input class="searchInputPretty" type="text" placeholder="Cerca"
+                     i18n:attributes="placeholder search"  tal:attributes="data-name path" />
+              <span class="add-on"><span class="fa fa-search"></span></span>
+            </div>
+          </div>
+
+          <h3 i18n:translate="label_tags">Tags</h3>
+          <div class="searchbytagcontainer">
+            <p tal:repeat="tag view/getTags">
+              <input type="checkbox" name="tag" tal:attributes="value tag;"  />
+              <span tal:content="tag"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="span9">
+        <section id="tagslist" tal:define="site_properties context/portal_properties/site_properties;
+                                           use_view_action site_properties/typesUseViewActionInListings|python:()">
+          <article class="tileItem visualIEFloatFix" tal:repeat="contingut continguts">
+            <tal:block tal:define="item_type contingut/portal_type;
+                                   item_url contingut/getURL|contingut/absolute_url;">
+              <h2 class="tileHeadline">
+                <a tal:attributes="href python: item_url+'/view' if item_type in use_view_action else item_url;"
+                   tal:content="contingut/Title">
+                  Title
+                </a>
+              </h2>
+              <span class="documentByLine" tal:condition="contingut/Description" tal:content="contingut/Description">
+                Description
+              </span>
+              <div class="visualClear"></div>
+            </tal:block>
+          </article>
+        </section>
+      </div>
+    </div>
+    <script type="text/javascript">
+      // Tags search
+      $('.searchbytagcontainer input[name="tag"]').on("change", function(e) {
+        var query = $('#searchinputcontent .searchInputPretty').val();
+        var path = $('#librarysearchpretty #searchinputcontent .searchInputPretty').data().name;
+        var tags = []
+        $('.searchbytagcontainer input[name="tag"]:checked').each(function(){
+          tags.push($(this).val());
+        });
+
+        $.get(path + '/search_filtered_content_pretty', { q: query, t: tags.join(',') }, function(data) {
+          $('#tagslist').html(data);
+        });
+      });
+
+      // Content search
+      $('#librarysearchpretty #searchinputcontent .searchInputPretty').on('keyup', function(event) {
+        var query = $(this).val();
+        var path = $(this).data().name;
+        var tags = []
+        $('.searchbytagcontainer input[name="tag"]:checked').each(function(){
+          tags.push($(this).val());
+        });
+
+        $.get(path + '/search_filtered_content_pretty', { q: query, t: tags.join(',') }, function(data) {
+          $('#tagslist').html(data);
+        });
+      });
+    </script>
+  </metal:main>
+</body>
+</html>
