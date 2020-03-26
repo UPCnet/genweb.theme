@@ -15,8 +15,10 @@ from plone.batching import Batch
 from plone.registry.interfaces import IRegistry
 from plone.portlets.interfaces import IPortletManager
 from plone.portlets.interfaces import IPortletManagerRenderer
-from plone.app.layout.globals.layout import LayoutPolicy
 from plone.i18n.normalizer.interfaces import IIDNormalizer
+from plone.app.contenttypes.interfaces import IDocument
+from plone.app.event.base import localized_now, get_events
+from plone.app.layout.globals.layout import LayoutPolicy
 from plone.app.layout.navigation.interfaces import INavigationRoot
 
 from Products.CMFPlone import utils
@@ -32,6 +34,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from genweb.core.interfaces import IHomePage
 from genweb.core.utils import genweb_config, pref_lang
 from genweb.core.interfaces import INewsFolder
+from genweb.core.interfaces import IEventFolder
 
 from genweb.theme.browser.interfaces import IGenwebTheme, IHomePageView
 
@@ -44,6 +47,9 @@ from plone.memoize import ram
 import pkg_resources
 import json
 import scss
+
+from zope.i18nmessageid import MessageFactory
+PLMF = MessageFactory('plonelocales')
 
 grok.templatedir("views_templates")
 
@@ -972,3 +978,78 @@ class CustomCSS(grok.View):
     def render(self):
         self.request.response.setHeader('Content-Type', 'text/css')
         return self.index()
+
+
+class PortletEventsView(grok.View):
+    grok.context(Interface)
+    grok.layer(IGenwebTheme)
+    grok.name('portlet_events_view')
+    grok.template('portlet_events_view')
+    grok.require('zope2.View')
+
+    def published_events(self):
+        return self._data()
+
+    def published_events_expanded(self):
+        """
+        Return expanded ongoing events, i.e. taking into account their
+        occurrences in case they are recurrent events.
+        """
+        return [self.event_to_view_obj(event) for event in get_events(
+            self.context,
+            ret_mode=2,
+            start=localized_now(),
+            expand=True,
+            sort='start',
+            limit=5 if 'limit' not in self.request.form else self.request.form['limit'],
+            review_state='published')]
+
+    def event_to_view_obj(self, event):
+        local_start = DateTime(event.start)
+        local_start_str = local_start.strftime('%d/%m/%Y')
+        local_end = DateTime(event.end)
+        local_end_str = local_end.strftime('%d/%m/%Y')
+        is_same_day = local_start_str == local_end_str
+        return dict(
+            class_li='' if is_same_day else 'multidate',
+            class_a='' if is_same_day else 'multidate-before',
+            date_start=local_start_str,
+            date_end=local_end_str,
+            day_start=int(local_start.strftime('%d')),
+            day_end=int(local_end.strftime('%d')),
+            is_multidate=not is_same_day,
+            month_start=self.get_month_name(local_start.strftime('%m')),
+            month_start_abbr=self.get_month_name(
+                local_start.strftime('%m'), month_format='a'),
+            month_end=self.get_month_name(local_end.strftime('%m')),
+            month_end_abbr=self.get_month_name(
+                local_end.strftime('%m'), month_format='a'),
+            title=event.Title,
+            url=event.absolute_url(),
+            )
+
+    def get_month_name(self, month, month_format=''):
+        context = aq_inner(self.context)
+        self._ts = getToolByName(context, 'translation_service')
+        return PLMF(self._ts.month_msgid(int(month), format=month_format),
+                    default=self._ts.month_english(int(month)))
+
+    def all_events_link(self):
+        pc = api.portal.get_tool('portal_catalog')
+        events_folder = pc.searchResults(object_provides=IEventFolder.__identifier__, Language=pref_lang())
+
+        if events_folder:
+            return '%s' % events_folder[0].getURL()
+        else:
+            return ''
+
+
+class GetDXDocumentTextStyle(grok.View):
+    grok.context(IDocument)
+    grok.layer(IGenwebTheme)
+    grok.name('genweb.get.dxdocument.text.style')
+    grok.template('genweb_get_dxdocument_text_style')
+    grok.require('zope2.View')
+
+    def textOutput(self):
+        return self.context.text.output

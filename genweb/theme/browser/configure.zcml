@@ -52,4 +52,11 @@
         template="views_templates/macros.pt"
         />
 
+    <browser:page
+        name="blank_template"
+        for="*"
+        permission="zope.Public"
+        template="views_templates/blank_template.pt"
+        />
+
 </configure>

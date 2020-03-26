@@ -1368,7 +1368,7 @@
 .userTablet,
 .userMobile,
 .userGenweb {
-  background: url('++genweb++static/images/sprite_usuari.png?1542094607') transparent no-repeat center top;
+  background: url('++genweb++static/images/sprite_usuari.png?1584353871') transparent no-repeat center top;
   height: 1.5em;
   width: 1.5em;
 }
@@ -1469,7 +1469,7 @@
 .dropdown-menu a:hover #category.documentByLine:before,
 .dropdown-menu a:hover .tileFooter:before,
 .dropdown-menu a:hover [class*=" icon-"] {
-  background-image: url('++genweb++static/images/gh-w.png?1542094607') !important;
+  background-image: url('++genweb++static/images/gh-w.png?1584353871') !important;
 }
 
 #portal-header {
@@ -1783,7 +1783,7 @@
 }
 
 #canvia-vista a {
-  background: url('++genweb++static/images/vistabg.png?1542094607') #666;
+  background: url('++genweb++static/images/vistabg.png?1584353871') #666;
   text-align: center;
   -moz-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
@@ -1974,7 +1974,7 @@
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   right: 7px;
   top: 8px;
-  background-image: url('++genweb++static/images/gh-w.png?1542094607');
+  background-image: url('++genweb++static/images/gh-w.png?1584353871');
   background-position: -455px -71px;
   background-repeat: no-repeat;
   width: 17px;
@@ -2182,7 +2182,7 @@
 .subnavbar .nav-list .selected ul a[class^="contenttype-"] span:after,
 .subnavbar .nav-list .active ul a[class*=" contenttype-"] span:after,
 .subnavbar .nav-list .selected ul a[class*=" contenttype-"] span:after {
-  background-image: url('++genweb++static/images/gh.png?1542094607');
+  background-image: url('++genweb++static/images/gh.png?1584353871');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -2308,7 +2308,7 @@
 }
 
 html * .dropdown-menu a:hover .img_blank {
-  content: url('++genweb++static/images/blank_blanc.png?1542094607');
+  content: url('++genweb++static/images/blank_blanc.png?1584353871');
   width: 10px;
   height: 10px;
 }
@@ -2387,7 +2387,7 @@ html * .dropdown-menu a:hover .img_blank {
 .template-tabular_view .listing a[class*=" contenttype-"]:before,
 .contenttreeWidget > .navTree a[class^="contenttype-"]:before,
 .contenttreeWidget > .navTree a[class*=" contenttype-"]:before {
-  background-image: url('++genweb++static/images/gh.png?1542094607');
+  background-image: url('++genweb++static/images/gh.png?1584353871');
   background-repeat: no-repeat;
   content: " ";
   display: block;
@@ -2543,7 +2543,7 @@ dt[class*="contenttype"] + dd {
 }
 
 dt[class*="contenttype"]:before {
-  background-image: url('++genweb++static/images/gh.png?1542094607');
+  background-image: url('++genweb++static/images/gh.png?1584353871');
   background-repeat: no-repeat;
   display: block;
   width: 15px;
@@ -3341,7 +3341,7 @@ div.fitxa {
 .sheet:before,
 div.fitxa:before {
   content: "*";
-  content: url('++genweb++static/images/sheet.png?1542094607');
+  content: url('++genweb++static/images/sheet.png?1584353871');
   font-size: 300%;
   position: absolute;
   right: -19px;
@@ -3581,7 +3581,7 @@ ul.collage-content-menu li:first-child {
 
 .list-links li:before,
 .portaltype-packet .estudis .llistatEnllacos li:before {
-  content: url('++genweb++static/images/arrow.png?1542094607');
+  content: url('++genweb++static/images/arrow.png?1584353871');
   margin-left: -15px;
   margin-top: -13px;
 }
@@ -3592,7 +3592,7 @@ ul.collage-content-menu li:first-child {
 }
 
 .list-highlighted li:before {
-  content: url('++genweb++static/images/arrow_hl.png?1542094607');
+  content: url('++genweb++static/images/arrow_hl.png?1584353871');
   margin-left: -22px;
   margin-top: -11px;
 }
@@ -4508,7 +4508,7 @@ hr.tileHeadline {
   display: block;
   width: 14px;
   height: 14px;
-  background: url('++genweb++static/images/gh.png?1542094607');
+  background: url('++genweb++static/images/gh.png?1584353871');
 }
 
 .mayus {
@@ -4556,7 +4556,7 @@ a {
 .vid:after,
 .img:after,
 .txt:after {
-  background: url('++genweb++static/images/gh-c.png?1542094607') no-repeat;
+  background: url('++genweb++static/images/gh-c.png?1584353871') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -4758,7 +4758,7 @@ input[type="file"] {
 }
 
 .customfile-feedback-populated:before {
-  background: url('++genweb++static/images/gh-c.png?1542094607') no-repeat;
+  background: url('++genweb++static/images/gh-c.png?1584353871') no-repeat;
   width: 14px;
   height: 14px;
   display: inline-block;
@@ -5120,7 +5120,7 @@ h2.title-inverse {
 }
 
 h2.title-inverse i {
-  background-image: url('++genweb++static/images/gh-w.png?1542094607');
+  background-image: url('++genweb++static/images/gh-w.png?1584353871');
 }
 
 .portletCalendar .ploneCalendar {
@@ -5611,7 +5611,7 @@ iframe {
   width: 14px;
   height: 14px;
   display: inline-block;
-  background: url('++genweb++static/images/gh.png?1542094607') -239px -143px no-repeat;
+  background: url('++genweb++static/images/gh.png?1584353871') -239px -143px no-repeat;
   margin-left: 5px;
 }
 
@@ -6718,6 +6718,18 @@ iframe#templatesrc {
   font-weight: normal !important;
 }
 
+body.template-filtered_contents_search_pretty_view .searchInputPretty {
+  width: 190px !important;
+}
+
+#container-blank-template {
+  padding: 15px;
+}
+
+#container-blank-template .portlet {
+  margin-bottom: 0px;
+}
+
 div.llistatIndex,
 div.llistat {
   padding-left: 0;
@@ -7137,7 +7149,7 @@ html {
   #portal-header h1.pull-left {
     height: 46px;
     width: 207px;
-    background: url('++genweb++static/images/logoUPC@2x.png?1542094607') no-repeat;
+    background: url('++genweb++static/images/logoUPC@2x.png?1584353871') no-repeat;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     -webkit-background-size: 100%;
@@ -7158,22 +7170,22 @@ html {
   }
 
   .img_blank[src*="blank_blau"] {
-    content: url('++genweb++static/images/blank_blau@2x.png?1542094607');
+    content: url('++genweb++static/images/blank_blau@2x.png?1584353871');
   }
 
   .img_blank[src*="blank_gris"] {
-    content: url('++genweb++static/images/blank_gris@2x.png?1542094607');
+    content: url('++genweb++static/images/blank_gris@2x.png?1584353871');
   }
 
   .img_blank[src*="blank_blanc"] {
-    content: url('++genweb++static/images/blank_blanc@2x.png?1542094607');
+    content: url('++genweb++static/images/blank_blanc@2x.png?1584353871');
   }
 
   .userScreen,
   .userTablet,
   .userMobile,
   .userGenweb {
-    background-image: url('++genweb++static/images/sprite_usuari@2x.png?1542094607');
+    background-image: url('++genweb++static/images/sprite_usuari@2x.png?1584353871');
     -moz-background-size: 20px 400px;
     -o-background-size: 20px 400px;
     -webkit-background-size: 20px 400px;
@@ -7684,7 +7696,7 @@ html.lt-ie8 .list-portlet li  {
 }
 
 .link-parent:before {
-  background: url('++genweb++static/images/gh-w.png?1542094607') no-repeat -290px -95px;
+  background: url('++genweb++static/images/gh-w.png?1584353871') no-repeat -290px -95px;
   content: " ";
   display: inline-block;
   height: 14px;
