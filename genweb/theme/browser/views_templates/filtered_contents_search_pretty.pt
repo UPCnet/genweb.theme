@@ -10,8 +10,7 @@
   <metal:block fill-slot="top_slot">
     <tal:insert tal:replace="nothing"
                 tal:define="dummy python:request.set('enable_border', 1);
-                            disable_column_one python:request.set('disable_plone.rightcolumn',1);
-                            disable_column_two python:request.set('disable_plone.leftcolumn',1);" />
+                            disable_column_one python:request.set('disable_plone.rightcolumn',1);" />
   </metal:block>
 </head>
 
@@ -31,7 +30,6 @@
             <div class="input-append">
               <input class="searchInputPretty" type="text" placeholder="Cerca"
                      i18n:attributes="placeholder search"  tal:attributes="data-name path" />
-              <span class="add-on"><span class="fa fa-search"></span></span>
             </div>
           </div>
 
