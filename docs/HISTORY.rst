@@ -1,11 +1,13 @@
 Changelog
 =========
 
-2.20 (unreleased)
+2.20 (2020-03-26)
 -----------------
 
-- Nothing changed yet.
-
+* Vistas /portlet_events_view y /genweb.get.dxdocument.text.style [Iago López Fernández]
+* Habilitar portlet izquierda vista filtro etiquetas [Iago López Fernández]
+* Nueva vista para las carpetas filtered_contents_search_pretty [Iago López Fernández]
+* Checkear si esta instalado upcnet.cas cuando se pide la url de logout [Iago López Fernández]
 
 2.19 (2019-11-14)
 -----------------
