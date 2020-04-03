@@ -24,7 +24,7 @@
 
     <div id="librarysearchpretty" class="filtered_contents_search_pretty row-fluid">
       <div class="span3">
-        <br>
+        <h2 i18n:domain="genweb" i18n:translate="label_filters">Filters</h2>
         <div class="caixessearch">
           <div id="searchinputcontent">
             <div class="input-append">
