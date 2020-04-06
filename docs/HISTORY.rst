@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.21 (unreleased)
+2.21 (2020-04-06)
 -----------------
 
-- Nothing changed yet.
-
+* Añadir titulo al lado de los filtros [Iago López Fernández]
 
 2.20 (2020-03-26)
 -----------------
