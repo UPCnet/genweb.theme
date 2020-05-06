@@ -50,7 +50,8 @@
             <tal:block tal:define="item_type contingut/portal_type;
                                    item_url contingut/getURL|contingut/absolute_url;">
               <h2 class="tileHeadline">
-                <a tal:attributes="href python: item_url+'/view' if item_type in use_view_action else item_url;"
+                <a class="summary url"
+                   tal:attributes="href python: item_url+'/view' if item_type in use_view_action else item_url;"
                    tal:content="contingut/Title">
                   Title
                 </a>
