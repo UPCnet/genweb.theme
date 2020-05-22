@@ -725,7 +725,6 @@ class FilteredContentsSearchPrettyView(grok.View):
     """ Filtered content search view for every folder. """
     grok.name('filtered_contents_search_pretty_view')
     grok.context(Interface)
-    grok.require('genweb.member')
     grok.template('filtered_contents_search_pretty')
     grok.layer(IGenwebTheme)
 
