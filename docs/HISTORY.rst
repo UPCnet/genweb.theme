@@ -1,11 +1,12 @@
 Changelog
 =========
 
-2.22 (unreleased)
+2.22 (2020-06-03)
 -----------------
 
-- Nothing changed yet.
-
+* Traduccion cookies pie [Iago López Fernández]
+* Quitar permiso vista filtered_contents_search_pretty [Iago López Fernández]
+* Añadir clases a la vista filtered_contents_search_pretty_view [Iago López Fernández]
 
 2.21 (2020-04-06)
 -----------------
