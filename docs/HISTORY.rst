@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.23 (unreleased)
+2.23 (2020-07-01)
 -----------------
 
-- Nothing changed yet.
-
+* Cambiar orden de los elementos en la vista filtered_contents_search_pretty_view [Iago López Fernández]
 
 2.22 (2020-06-03)
 -----------------
