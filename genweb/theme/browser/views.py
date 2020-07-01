@@ -786,20 +786,17 @@ class FilteredContentsSearchPrettyView(grok.View):
                 r_results = pc.searchResults(path=path,
                                              SearchableText=query,
                                              Subject={'query': self.tags, 'operator': 'and'},
-                                             sort_on='sortable_title',
-                                             sort_order='ascending')
+                                             sort_on='getObjPositionInParent')
             else:
                 r_results = pc.searchResults(path=path,
                                              SearchableText=query,
-                                             sort_on='sortable_title',
-                                             sort_order='ascending')
+                                             sort_on='getObjPositionInParent')
 
             return r_results
         else:
             r_results = pc.searchResults(path=path,
                                          Subject={'query': self.tags, 'operator': 'and'},
-                                         sort_on='sortable_title',
-                                         sort_order='ascending')
+                                         sort_on='getObjPositionInParent')
 
             return r_results
             # return self.get_batched_contenttags(query=None, batch=True, b_size=10, b_start=0)
