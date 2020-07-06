@@ -65,6 +65,7 @@
         </section>
       </div>
     </div>
+
     <script type="text/javascript">
       // Tags search
       $('.searchbytagcontainer input[name="tag"]').on("change", function(e) {
@@ -93,7 +94,12 @@
           $('#tagslist').html(data);
         });
       });
+
+      if($('body.template-filtered_contents_search_pretty_view.userrole-anonymous').length){
+        $('#edit-bar').remove();
+      }
     </script>
+
   </metal:main>
 </body>
 </html>
