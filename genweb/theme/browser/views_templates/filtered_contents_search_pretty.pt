@@ -67,11 +67,10 @@
     </div>
 
     <script type="text/javascript">
-      // Tags search
       $('.searchbytagcontainer input[name="tag"]').on("change", function(e) {
         var query = $('#searchinputcontent .searchInputPretty').val();
         var path = $('#librarysearchpretty #searchinputcontent .searchInputPretty').data().name;
-        var tags = []
+        var tags = [];
         $('.searchbytagcontainer input[name="tag"]:checked').each(function(){
           tags.push($(this).val());
         });
@@ -81,11 +80,10 @@
         });
       });
 
-      // Content search
       $('#librarysearchpretty #searchinputcontent .searchInputPretty').on('keyup', function(event) {
         var query = $(this).val();
         var path = $(this).data().name;
-        var tags = []
+        var tags = [];
         $('.searchbytagcontainer input[name="tag"]:checked').each(function(){
           tags.push($(this).val());
         });
