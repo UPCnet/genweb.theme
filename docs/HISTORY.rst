@@ -1,11 +1,11 @@
 Changelog
 =========
 
-2.24 (unreleased)
+2.24 (2020-07-27)
 -----------------
 
-- Nothing changed yet.
-
+* Quitar comentarios del javascript de la vista con filtros para que funcione en un contenido existente [Iago López Fernández]
+* Estilo vista filtered_contents_search_pretty [Iago López Fernández]
 
 2.23 (2020-07-01)
 -----------------
