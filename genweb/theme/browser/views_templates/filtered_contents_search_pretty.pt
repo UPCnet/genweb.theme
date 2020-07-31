@@ -51,10 +51,28 @@
                                    item_url contingut/getURL|contingut/absolute_url;">
               <h2 class="tileHeadline">
                 <a class="summary url"
+                   tal:condition="python:item_type != 'Link'"
                    tal:attributes="href python: item_url+'/view' if item_type in use_view_action else item_url;"
                    tal:content="contingut/Title">
                   Title
                 </a>
+
+                <tal:block tal:condition="python:item_type == 'Link'" tal:define="gwutils context/@@genweb.utils">
+                  <a class="summary url" target="_blink"
+                     tal:condition="python:gwutils.link_redirect_blink(contingut)"
+                     tal:attributes="href python: item_url+'/view' if item_type in use_view_action else item_url;">
+                    <span tal:content="contingut/Title">Item Title</span>
+                    <img class="img_blank" src="++genweb++static/images/blank_blau.png"
+                           i18n:domain="genweb"
+                           i18n:attributes="alt obrir_link_finestra_nova">
+                  </a>
+                  <a class="summary url"
+                     tal:condition="python:not gwutils.link_redirect_blink(contingut)"
+                     tal:attributes="href python: item_url+'/view' if item_type in use_view_action else item_url;"
+                     tal:content="contingut/Title">
+                    Title
+                  </a>
+                </tal:block>
               </h2>
               <span class="documentByLine" tal:condition="contingut/Description" tal:content="contingut/Description">
                 Description

@@ -956,6 +956,9 @@ class FolderIndexItem():
     def getTitle(self):
         return self.brain.Title
 
+    def isLink(self):
+        return self.brain.Type == "Link"
+
     def isFolder(self):
         return self.brain.Type == "Folder"
 
