@@ -17,14 +17,14 @@
 
                             <tal:block tal:condition="item/isLink"
                                        tal:define="gwutils context/@@genweb.utils">
-                                <a tal:condition="python:gwutils.link_redirect_blink(item.brain)"
-                                   tal:attributes="href item/getPath" target="_blink">
+                                <a tal:condition="python:gwutils.link_redirect_blank(item.brain)"
+                                   tal:attributes="href item/getPath" target="_blank">
                                     <span tal:content="item/getTitle">Item Title</span>
                                     <img class="img_blank" src="++genweb++static/images/blank_blau.png"
                                          i18n:domain="genweb"
                                          i18n:attributes="alt obrir_link_finestra_nova">
                                 </a>
-                                <a tal:condition="python:not gwutils.link_redirect_blink(item.brain)"
+                                <a tal:condition="python:not gwutils.link_redirect_blank(item.brain)"
                                    tal:attributes="href item/getPath" tal:content="item/getTitle">Item Title</a>
                             </tal:block>
                         </h3>
@@ -37,14 +37,14 @@
 
                                     <tal:block tal:condition="item2/isLink"
                                                tal:define="gwutils context/@@genweb.utils">
-                                        <a tal:condition="python:gwutils.link_redirect_blink(item2.brain)"
-                                           tal:attributes="href item2/getPath" target="_blink">
+                                        <a tal:condition="python:gwutils.link_redirect_blank(item2.brain)"
+                                           tal:attributes="href item2/getPath" target="_blank">
                                             <span tal:content="item2/getTitle">Item Title</span>
                                             <img class="img_blank" src="++genweb++static/images/blank_blau.png"
                                                  i18n:domain="genweb"
                                                  i18n:attributes="alt obrir_link_finestra_nova">
                                         </a>
-                                        <a tal:condition="python:not gwutils.link_redirect_blink(item2.brain)"
+                                        <a tal:condition="python:not gwutils.link_redirect_blank(item2.brain)"
                                            tal:attributes="href item2/getPath" tal:content="item2/getTitle">Item Title</a>
                                     </tal:block>
 
@@ -56,14 +56,14 @@
 
                                                 <tal:block tal:condition="item3/isLink"
                                                            tal:define="gwutils context/@@genweb.utils">
-                                                    <a tal:condition="python:gwutils.link_redirect_blink(item3.brain)"
-                                                       tal:attributes="href item3/getPath" target="_blink">
+                                                    <a tal:condition="python:gwutils.link_redirect_blank(item3.brain)"
+                                                       tal:attributes="href item3/getPath" target="_blank">
                                                         <span tal:content="item3/getTitle">Item Title</span>
                                                         <img class="img_blank" src="++genweb++static/images/blank_blau.png"
                                                              i18n:domain="genweb"
                                                              i18n:attributes="alt obrir_link_finestra_nova">
                                                     </a>
-                                                    <a tal:condition="python:not gwutils.link_redirect_blink(item3.brain)"
+                                                    <a tal:condition="python:not gwutils.link_redirect_blank(item3.brain)"
                                                        tal:attributes="href item3/getPath" tal:content="item3/getTitle">Item Title</a>
                                                 </tal:block>
                                             </li>
