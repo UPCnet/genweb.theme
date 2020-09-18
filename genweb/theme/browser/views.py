@@ -47,6 +47,7 @@ from plone.memoize import ram
 import pkg_resources
 import json
 import scss
+import unicodedata
 
 from zope.i18nmessageid import MessageFactory
 PLMF = MessageFactory('plonelocales')
@@ -496,8 +497,6 @@ class gwLayoutPolicy(LayoutPolicy):
         return body_class
 
 
-
-
 class newsCollectionView(grok.View):
     grok.context(IFolderish)
     grok.name('newscollection_view')
@@ -744,7 +743,7 @@ class FilteredContentsSearchPrettyView(grok.View):
             tags += list(set(recurs.Subject))
 
         listTags = list(dict.fromkeys(tags))
-        listTags.sort()
+        listTags.sort(key=lambda key: unicodedata.normalize('NFKD', key.decode('utf-8')).encode('ascii', errors='ignore'))
 
         return listTags
 
