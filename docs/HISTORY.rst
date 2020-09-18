@@ -1,11 +1,14 @@
 Changelog
 =========
 
-2.25 (unreleased)
+2.25 (2020-09-18)
 -----------------
 
-- Nothing changed yet.
-
+* Vista con filtros - ordenar etiquetas normalizando acentos [Iago López Fernández]
+* Fix _blink a _blank [Iago López Fernández]
+* Favicon [Iago López Fernández]
+* Fix require_login [Iago López Fernández]
+* Tratar enlaces con _blink en las vistas de las carpetas [Iago López Fernández]
 
 2.24 (2020-07-27)
 -----------------
