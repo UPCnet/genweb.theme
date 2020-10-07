@@ -1,0 +1,3 @@
+<div id="parent-fieldname-text" tal:condition="context/text">
+    <tal:block tal:content="structure context/text/output"></tal:block>
+</div>
