@@ -1,11 +1,11 @@
 Changelog
 =========
 
-2.26 (unreleased)
+2.26 (2020-10-09)
 -----------------
 
-- Nothing changed yet.
-
+* Noticias: Subir resolución imagen adjunta de mini a preview [Iago López Fernández]
+* Fix RSS: Añadir campo text dentro del tag <content:encoded> [Iago López Fernández]
 
 2.25 (2020-09-18)
 -----------------
