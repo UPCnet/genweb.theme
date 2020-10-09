@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.27 (unreleased)
+2.27 (2020-10-09)
 -----------------
 
-- Nothing changed yet.
-
+* Fix RSS: Añadir campo text dentro del tag <content:encoded> [Iago López Fernández]
 
 2.26 (2020-10-09)
 -----------------
