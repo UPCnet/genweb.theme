@@ -738,7 +738,7 @@ class FilteredContentsSearchPrettyView(grok.View):
         portal = getSite()
         pc = getToolByName(portal, "portal_catalog")
         tags = []
-        results = pc.unrestrictedSearchResults(path={'query': '/'.join(self.context.getPhysicalPath()), 'depth': 1})
+        results = pc.searchResults(path={'query': '/'.join(self.context.getPhysicalPath()), 'depth': 1})
         for recurs in results:
             tags += list(set(recurs.Subject))
 
