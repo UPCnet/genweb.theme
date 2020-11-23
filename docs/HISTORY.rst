@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.28 (unreleased)
+2.28 (2020-11-23)
 -----------------
 
-- Nothing changed yet.
-
+* Fix filtered_contents_search_pretty_view: No mostrar etiquetas de elementos que no puedes visualizar [Iago López Fernández]
 
 2.27 (2020-10-09)
 -----------------
