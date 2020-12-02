@@ -158,9 +158,8 @@ class Renderer(base.Renderer):
                              is_important=True,
                              Language=pref_lang(),
                              sort_on="getObjPositionInParent",
-                             sort_limit=limit,
                              path=self.get_current_path_news())
-        importants = [a for a in importants]
+        importants = [a for a in importants if not a.isExpired()]
         important = len(importants)
         if important < limit:
             normals = catalog(portal_type=('News Item', 'Link'),
@@ -173,12 +172,13 @@ class Renderer(base.Renderer):
             normals_limit = []
             path_folder_news = self.all_news_link()
             for brain in normals:
-                brain_url = brain.getURL()
-                brain_type = brain.Type
-                if brain_type == 'Link' and brain_url.startswith(path_folder_news) or brain_type == 'News Item':
-                    normals_limit.append(brain)
-                if len(normals_limit) == limit - important:
-                    break
+                if not brain.isExpired():
+                    brain_url = brain.getURL()
+                    brain_type = brain.Type
+                    if brain_type == 'Link' and brain_url.startswith(path_folder_news) or brain_type == 'News Item':
+                        normals_limit.append(brain)
+                    if len(normals_limit) == limit - important:
+                        break
             return importants + normals_limit
         else:
             return importants

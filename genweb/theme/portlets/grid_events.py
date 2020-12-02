@@ -96,7 +96,6 @@ class Renderer(base.Renderer):
             start=localized_now(),
             expand=True,
             sort='start',
-            limit=self.data.count,
             review_state=['published', 'intranet'])
 
     @memoize
@@ -105,16 +104,20 @@ class Renderer(base.Renderer):
         ts = getToolByName(self.context, 'translation_service')
         results = self._data()
         for event in results:
-            startDay = DateTime(event.start)
-            endDay = DateTime(event.end)
-            info = {'url': event.absolute_url(),
-                    'firstday': int(startDay.strftime('%d')),
-                    'firstmonth': PLMF(ts.month_msgid(int(startDay.strftime('%m')))),
-                    'lastday': int(endDay.strftime('%d')),
-                    'lastmonth': PLMF(ts.month_msgid(int(endDay.strftime('%m')))),
-                    'title': event.Title
-                    }
-            events.append(info)
+            if len(events) >= self.data.count:
+                break
+
+            if not event.isExpired():
+                startDay = DateTime(event.start)
+                endDay = DateTime(event.end)
+                info = {'url': event.absolute_url(),
+                        'firstday': int(startDay.strftime('%d')),
+                        'firstmonth': PLMF(ts.month_msgid(int(startDay.strftime('%m')))),
+                        'lastday': int(endDay.strftime('%d')),
+                        'lastmonth': PLMF(ts.month_msgid(int(endDay.strftime('%m')))),
+                        'title': event.Title
+                        }
+                events.append(info)
         return events
 
     def dateType(self, event):

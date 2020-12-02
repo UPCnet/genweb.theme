@@ -89,14 +89,21 @@ class Renderer(base.Renderer):
         Return expanded ongoing events, i.e. taking into account their
         occurrences in case they are recurrent events.
         """
-        return [self.event_to_view_obj(event) for event in get_events(
-            self.context,
-            ret_mode=2,
-            start=localized_now(),
-            expand=True,
-            sort='start',
-            limit=self.data.count,
-            review_state=self.data.state)]
+        results = []
+        for event in get_events(self.context,
+                                ret_mode=2,
+                                start=localized_now(),
+                                expand=True,
+                                sort='start',
+                                review_state=self.data.state):
+
+            if len(results) >= self.data.count:
+                break
+
+            if not event.isExpired():
+                results.append(self.event_to_view_obj(event))
+
+        return results
 
     def event_to_view_obj(self, event):
         local_start = DateTime(event.start)
@@ -119,8 +126,7 @@ class Renderer(base.Renderer):
             month_end_abbr=self.get_month_name(
                 local_end.strftime('%m'), month_format='a'),
             title=event.Title,
-            url=event.absolute_url(),
-            )
+            url=event.absolute_url())
 
     def get_month_name(self, month, month_format=''):
         context = aq_inner(self.context)
@@ -163,9 +169,17 @@ class Renderer(base.Renderer):
                           start={'query': [yesterday, tomorrow],
                                  'range': 'min:max'},
                           Language=pref_lang(),
-                          sort_on='start',
-                          sort_limit=limit)[:limit]
-        count = len(results)
+                          sort_on='start')
+
+        results_not_expired = []
+        for res in results:
+            if len(results_not_expired) >= limit:
+                break
+
+            if not res.isExpired():
+                results_not_expired.append(res)
+
+        count = len(results_not_expired)
         if count < limit:
             results2 = catalog(portal_type=('Event'),
                                review_state=state,
@@ -174,9 +188,17 @@ class Renderer(base.Renderer):
                                start={'query': yesterday,
                                       'range': 'max'},
                                Language=pref_lang(),
-                               sort_on='start',
-                               sort_limit=limit - count)[:limit - count]
-            count = len(results + results2)
+                               sort_on='start')
+
+            results2_not_expired = []
+            for res in results2:
+                if len(results2_not_expired) >= (limit - count):
+                    break
+
+                if not res.isExpired():
+                    results2_not_expired.append(res)
+
+            count = len(results_not_expired + results2_not_expired)
             if count < limit:
                 results3 = catalog(portal_type=('Event'),
                                    review_state=state,
@@ -186,13 +208,21 @@ class Renderer(base.Renderer):
                                    start={'query': tomorrow,
                                           'range': 'min'},
                                    Language=pref_lang(),
-                                   sort_on='start',
-                                   sort_limit=limit - count)[:limit - count]
-                return results + results2 + results3
+                                   sort_on='start')
+
+                results3_not_expired = []
+                for res in results3:
+                    if len(results3_not_expired) >= (limit - count):
+                        break
+
+                    if not res.isExpired():
+                        results3_not_expired.append(res)
+
+                return results_not_expired + results2_not_expired + results3_not_expired
             else:
-                return results + results2
+                return results_not_expired + results2_not_expired
         else:
-            return results
+            return results_not_expired
 
 
 class AddForm(base.AddForm):

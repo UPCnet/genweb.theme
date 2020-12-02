@@ -96,9 +96,9 @@ class Renderer(news_renderer):
                           is_important=True,
                           Language=pref_lang(),
                           sort_on="getObjPositionInParent",
-                          sort_limit=limit,
                           path=self.get_current_path_news())
-        results = [a for a in results]
+
+        results = [a for a in results if not a.isExpired()]
         important = len(results)
         if important < limit:
             results2 = catalog(portal_type=('News Item', 'Link'),
@@ -110,9 +110,10 @@ class Renderer(news_renderer):
                                path=self.get_current_path_news())
             results3 = []
             for brain in results2:
-                results3.append(brain)
-                if len(results3) == limit - important:
-                    break
+                if not brain.isExpired():
+                    results3.append(brain)
+                    if len(results3) == limit - important:
+                        break
             return results + results3
         else:
             return results
