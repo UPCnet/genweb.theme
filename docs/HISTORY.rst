@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.29 (unreleased)
+2.29 (2020-12-02)
 -----------------
 
-- Nothing changed yet.
-
+* No mostrar elementos caducados en los portlets de noticias y eventos [Iago López Fernández]
 
 2.28 (2020-11-23)
 -----------------
