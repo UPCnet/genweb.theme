@@ -153,13 +153,20 @@ class Renderer(base.Renderer):
         catalog = getToolByName(context, 'portal_catalog')
         limit = self.data.count
         state = ['published', 'intranet']
-        importants = catalog(portal_type=('News Item', 'Link'),
-                             review_state=state,
-                             is_important=True,
-                             Language=pref_lang(),
-                             sort_on="getObjPositionInParent",
-                             path=self.get_current_path_news())
-        importants = [a for a in importants if not a.isExpired()]
+        results = catalog(portal_type=('News Item', 'Link'),
+                          review_state=state,
+                          is_important=True,
+                          Language=pref_lang(),
+                          sort_on="getObjPositionInParent",
+                          path=self.get_current_path_news())
+
+        importants = []
+        for brain in results:
+            if not brain.isExpired():
+                importants.append(brain)
+                if len(importants) == limit:
+                    break
+
         important = len(importants)
         if important < limit:
             normals = catalog(portal_type=('News Item', 'Link'),
@@ -181,7 +188,7 @@ class Renderer(base.Renderer):
                         break
             return importants + normals_limit
         else:
-            return importants
+            return importants[:limit]
 
 
 class AddForm(base.AddForm):

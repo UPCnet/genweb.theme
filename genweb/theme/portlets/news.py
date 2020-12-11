@@ -91,14 +91,20 @@ class Renderer(news_renderer):
         catalog = getToolByName(context, 'portal_catalog')
         limit = self.data.count
         state = ['published', 'intranet']
-        results = catalog(portal_type=('News Item', 'Link'),
-                          review_state=state,
-                          is_important=True,
-                          Language=pref_lang(),
-                          sort_on="getObjPositionInParent",
-                          path=self.get_current_path_news())
+        allresults = catalog(portal_type=('News Item', 'Link'),
+                           review_state=state,
+                           is_important=True,
+                           Language=pref_lang(),
+                           sort_on="getObjPositionInParent",
+                           path=self.get_current_path_news())
 
-        results = [a for a in results if not a.isExpired()]
+        results = []
+        for brain in allresults:
+            if not brain.isExpired():
+                results.append(brain)
+                if len(results) == limit:
+                    break
+
         important = len(results)
         if important < limit:
             results2 = catalog(portal_type=('News Item', 'Link'),
