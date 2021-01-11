@@ -47,8 +47,20 @@
         <section id="tagslist" tal:define="site_properties context/portal_properties/site_properties;
                                            use_view_action site_properties/typesUseViewActionInListings|python:()">
           <article class="tileItem visualIEFloatFix" tal:repeat="contingut continguts">
+
             <tal:block tal:define="item_type contingut/portal_type;
-                                   item_url contingut/getURL|contingut/absolute_url;">
+                                   item_url contingut/getURL|contingut/absolute_url;
+                                   item_obj python:contingut.getObject();
+                                   item_has_image python:hasattr(item_obj, 'image');">
+
+              <div class="tileImage" tal:condition="item_has_image">
+                <a tal:attributes="href item_url">
+                  <img tal:define="scales item_obj/@@images;
+                                   scale python:scales.scale('image', 'thumb')"
+                      tal:replace="structure python:scale and scale.tag(css_class='tileImage') or None" />
+                </a>
+              </div>
+
               <h2 class="tileHeadline">
                 <a class="summary url"
                    tal:condition="python:item_type != 'Link'"
