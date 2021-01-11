@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.31 (unreleased)
+2.31 (2021-01-11)
 -----------------
 
-- Nothing changed yet.
-
+* Añadir imagenes a la vista de Vista con filtros [Iago López Fernández]
 
 2.30 (2020-12-11)
 -----------------
