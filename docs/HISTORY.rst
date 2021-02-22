@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.32 (unreleased)
+2.32 (2021-02-22)
 -----------------
 
-- Nothing changed yet.
-
+* ticket problems solved [avanger9]
 
 2.31 (2021-01-11)
 -----------------
