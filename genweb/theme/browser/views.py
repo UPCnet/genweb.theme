@@ -738,7 +738,8 @@ class FilteredContentsSearchPrettyView(grok.View):
         portal = getSite()
         pc = getToolByName(portal, "portal_catalog")
         tags = []
-        results = pc.searchResults(path={'query': '/'.join(self.context.getPhysicalPath()), 'depth': 1})
+        results = pc.searchResults(path={'query': '/'.join(self.context.getPhysicalPath()), 'depth': 1},
+                                   exclude_from_nav=False)
         for recurs in results:
             tags += list(set(recurs.Subject))
 
@@ -751,7 +752,8 @@ class FilteredContentsSearchPrettyView(grok.View):
         pc = getToolByName(self.context, "portal_catalog")
         path = self.context.getPhysicalPath()
         path = "/".join(path)
-        r_results = pc.searchResults(path=path)
+        r_results = pc.searchResults(path=path,
+                                     exclude_from_nav=False)
         batch = Batch(r_results, b_size, b_start)
         return batch
 
@@ -783,17 +785,20 @@ class FilteredContentsSearchPrettyView(grok.View):
 
             if self.tags:
                 r_results = pc.searchResults(path=path,
+                                             exclude_from_nav=False,
                                              SearchableText=query,
                                              Subject={'query': self.tags, 'operator': 'and'},
                                              sort_on='getObjPositionInParent')
             else:
                 r_results = pc.searchResults(path=path,
+                                             exclude_from_nav=False,
                                              SearchableText=query,
                                              sort_on='getObjPositionInParent')
 
             return r_results
         else:
             r_results = pc.searchResults(path=path,
+                                         exclude_from_nav=False,
                                          Subject={'query': self.tags, 'operator': 'and'},
                                          sort_on='getObjPositionInParent')
 
@@ -839,6 +844,7 @@ class FilteredContentsSearchPrettyView(grok.View):
         path = "/".join(path)
 
         items = catalog.searchResults(path={'query': path, 'depth': 1},
+                                      exclude_from_nav=False,
                                       sort_on='getObjPositionInParent')
 
         return items
