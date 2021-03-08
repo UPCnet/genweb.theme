@@ -1,11 +1,12 @@
 Changelog
 =========
 
-2.33 (unreleased)
+2.33 (2021-03-08)
 -----------------
 
-- Nothing changed yet.
-
+* Navbar desplegado en móviles [Iago López Fernández]
+* Mejora vista con filtros [Iago López Fernández]
+* Vista con filtros aplicar exclude_from_nav [Iago López Fernández]
 
 2.32 (2021-02-22)
 -----------------
