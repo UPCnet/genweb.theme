@@ -1,5 +1,5 @@
 <div id="gwsearch" i18n:domain="plone">
-	<label for="cercador" style="display: none;">cercador</label>
+	<label for="cercador" class="sr-only">cercador</label>
 	 <input name="cercador" id="cercador" accesskey="4" class="typeahead"
 	         type="search" placeholder="Search"
 	         tal:attributes="data-typeahead-url string:${view/site_url}/${view/pref_lang}/gw_type_ahead_search;
