@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.34 (unreleased)
+2.34 (2021-03-22)
 -----------------
 
-- Nothing changed yet.
-
+* WCAG 3.3.2 Buscador, añadir .sr-only al label [Iago López Fernández]
 
 2.33 (2021-03-08)
 -----------------
