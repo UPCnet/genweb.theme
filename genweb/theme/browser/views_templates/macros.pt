@@ -10,7 +10,7 @@
 
   <metal:block metal:define-macro="time">
     <tal:omit-tag tal:content="day">22</tal:omit-tag>
-    <span tal:content="month" class="sr-only event-months">novembre</span>
+    <span tal:content="month" class="event-months">novembre</span>
   </metal:block>
 
   <metal:block metal:define-macro="firstday">
