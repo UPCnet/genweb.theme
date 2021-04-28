@@ -1,0 +1,53 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<head>
+    <metal:noborder fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+</head>
+
+<body>
+<div metal:fill-slot="main" class="plain"
+     tal:define="portal_url context/@@plone_portal_state/portal_url">
+
+<h1>Política de cookies</h1>
+<br>
+
+<div id="parent-fieldname-text"><p>La <strong>Universitat Politècnica de Catalunya</strong> utiliza <em>cookies</em> propias y de terceros para mejorar la experiencia de navegación y con fines estadísticos. No recoge ni cede datos de carácter personal de los usuarios sin su conocimiento. La Universidad informa al visitante del uso que hace de las <em>cookies</em> y solicita su consentimiento.</p>
+<p>Las <em><strong>cookies</strong> </em>son archivos que se descargan en su navegador al acceder a determinados sitios web, en este caso el web de la Universitat Politècnica de Catalunya, y permiten, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de la persona e información de su dispositivo.</p>
+<p>Al visitar este sitio web, si no lo ha bloqueado en las opciones de su navegador, se instalarán los siguientes tipos de cookies:<br><br></p>
+<div class="well">
+<ul class="list list-highlighted">
+<li>
+<p><strong><em>Cookies</em> de preferencias</strong>: permiten recordar información para que su experiencia de navegación sea personalizada; por ejemplo, guardamos el idioma de navegación que elija.</p>
+</li>
+<li>
+<p><strong><em>Cookies</em> estadísticas</strong>: permiten analizar cómo interactúa con el sitio web. Las cookies de estadísticas de este sitio web utilizan un servicio de terceros: Google Analytics. Para consultar qué cookies descarga Google Analytics, puede acceder a su <a class="external-link" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es" target="_blank">documentación<img style="margin-left:5px;" class="link_blank" alt="(abrir en una ventana nueva)" src="https://genweb.upc.edu/++genweb++static/images/icon_blank.gif"></a>.</p>
+</li>
+<li>
+<p><strong><em>Cookies</em> de marketing</strong>: Estas cookies son gestionadas por servicios de terceros, como Twitter o YouTube, que las usan para ofrecer una mejor experiencia de uso de sus herramientas. Algunas de estas cookies pueden adaptar la publicidad que se ofrece en otros sitios web en función de sus hábitos de navegación.</p>
+</li>
+</ul>
+</div>
+<p>Todas estas cookies podrán mantenerse instaladas en su dispositivo durante un plazo máximo de dos años</p>
+<p>Tiene la posibilidad de <strong>restringir</strong>, <strong>bloquear y eliminar las cookies instaladas en su equipo</strong> mediante la configuración de las opciones del navegador instalado en su ordenador. Recuerde que, en caso de bloquear las <em>cookies</em>, es posible que determinados servicios o funcionalidades del web no funcionen correctamente. Le explicamos cómo hacerlo en los navegadores más populares:<br><br></p>
+<div class="box">
+<ul class="list list-links">
+<li><a class="external-link" href="https://support.google.com/chrome/answer/95647?hl=%22es%22" target="_blank"><img src="https://genweb.upc.edu/ca/img/cromo.png/@@images/1d52b385-115b-4f23-8e3c-3824a7b721fa.png" alt="cromo.png" class="image-inline" title="cromo.png">&nbsp;Chrome</a></li>
+<li><a class="external-link" href="http://support.apple.com/kb/HT1677?viewlocale=es_ES&amp;locale=es_ES" target="_blank"><img src="https://genweb.upc.edu/ca/img/safari.png/@@images/2704c104-c81f-4b27-9976-2aa1a19783d4.png" alt="safari.png" class="image-inline" title="safari.png">&nbsp;Safari para iOS</a></li>
+<li><a class="external-link" href="https://support.mozilla.org/es/kb/Borrar%20cookies" target="_blank"><img src="https://genweb.upc.edu/ca/img/firefox.png/@@images/7006f152-cb74-43b4-9c5e-13c2f364a639.png" alt="firefox.png" class="image-inline" title="firefox.png">&nbsp;Firefox (borrar <em>cookies</em>)</a></li>
+<li><a class="external-link" href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectlocale=es&amp;redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we" target="_blank"><img src="https://genweb.upc.edu/ca/img/firefox.png/@@images/7006f152-cb74-43b4-9c5e-13c2f364a639.png" alt="firefox.png" class="image-inline" title="firefox.png">&nbsp;Firefox (habilitar y deshabilitar <em>cookies</em>)</a></li>
+<li><a class="external-link" href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies#ie=" target="_blank"><img src="https://genweb.upc.edu/ca/img/explorador-de-internet.png/@@images/1fdc3074-f740-426b-97ea-8979ad67b072.png" alt="explorador-de-internet.png" class="image-inline" title="explorador-de-internet.png">&nbsp;Internet Explorer</a></li>
+<li><a class="external-link" href="https://help.opera.com/en/latest/web-preferences/#cookies" target="_blank"><img src="https://genweb.upc.edu/ca/img/opera.png/@@images/d0b96ca3-64aa-426a-abd2-4fe01642307f.png" alt="opera.png" class="image-inline" title="opera.png">&nbsp;Opera</a></li>
+</ul>
+</div>
+<p>&nbsp;</p></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<head>
+    <metal:noborder fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+</head>
+
+<body>
+<div metal:fill-slot="main" class="plain"
+     tal:define="portal_url context/@@plone_portal_state/portal_url">
+
+<h1>Política de cookies</h1>
+<br>
+
+<div id="parent-fieldname-text"><p>La<strong> Universitat Politècnica de Catalunya</strong> utilitza galetes pròpies i de tercers per millorar l’experiència de navegació i amb finalitats estadístiques. No recull ni cedeix dades de caràcter personal dels usuaris sense el seu coneixement. La Universitat informa el visitant de l’ús que fa de les galetes i li demana que confirmi que hi està d’acord.</p>
+<p>Les <strong>galetes</strong> són fitxers que es descarreguen al vostre navegador quan accediu a determinats llocs web, en aquest cas el web de la Universitat Politècnica de Catalunya, i permeten, entre altres coses, emmagatzemar i recuperar informació sobre els hàbits de navegació de la persona i informació del dispositiu que fa servir.</p>
+<p>Quan visiteu aquest lloc web, si no ho heu bloquejat a les opcions del navegador, se us instal·laran els tipus de galetes següents:<br><br></p>
+<div class="well">
+<ul class="list list-highlighted">
+<li><strong>Galetes de preferències</strong>: permeten recordar informació perquè la vostra experiència de navegació sigui personalitzada; per exemple, guardem l’idioma de navegació que escolliu.</li>
+<li><strong>Galetes estadístiques</strong>: permeten analitzar com interactueu amb el lloc web. Les galetes d’estadístiques d’aquest lloc web fan servir un servei de tercers: Google Analytics. Per consultar quines galetes descarrega Google Analytics, en podeu consultar la <a class="external-link" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es" target="_blank">documentació<img style="margin-left:5px;" class="link_blank" alt="(obriu en una finestra nova)" src="https://genweb.upc.edu/++genweb++static/images/icon_blank.gif"></a>.</li>
+<li><strong>Galetes de màrqueting</strong>: aquestes galetes són gestionades per serveis de tercers, com ara Twitter o YouTube, que les fan servir per oferir una experiència d’ús de les seves eines més bona. Algunes d’aquestes galetes poden adaptar la publicitat que s’ofereix en altres llocs web en funció dels vostres hàbits de navegació.</li>
+</ul>
+</div>
+<p>Totes aquestes galetes es poden mantenir instal·lades al dispositiu durant un termini màxim de dos anys.</p>
+<p>Teniu la possibilitat de <strong>restringir</strong>, <strong>bloquejar i eliminar les galetes instal·lades al vostre equip</strong> mitjançant la configuració de les opcions del navegador que tingueu instal·lat a l’ordinador. Recordeu que, si bloquegeu les galetes, és possible que determinats serveis o funcionalitats del web no funcionin correctament. Us expliquem com es fa amb els navegadors més populars:<br><br></p>
+<div class="box">
+<ul class="list list-links">
+<li><a class="external-link" href="https://support.google.com/chrome/answer/95647?hl=%22es%22" target="_blank"><img src="https://genweb.upc.edu/ca/img/cromo.png/@@images/1d52b385-115b-4f23-8e3c-3824a7b721fa.png" alt="cromo.png" class="image-inline" title="cromo.png">&nbsp;Chrome</a></li>
+<li><a class="external-link" href="http://support.apple.com/kb/HT1677?viewlocale=es_ES&amp;locale=es_ES" target="_blank"><img src="https://genweb.upc.edu/ca/img/safari.png/@@images/2704c104-c81f-4b27-9976-2aa1a19783d4.png" alt="safari.png" class="image-inline" title="safari.png">&nbsp;Safari per a iOS</a></li>
+<li><a class="external-link" href="https://support.mozilla.org/es/kb/Borrar%20cookies" target="_blank"><img src="https://genweb.upc.edu/ca/img/firefox.png/@@images/7006f152-cb74-43b4-9c5e-13c2f364a639.png" alt="firefox.png" class="image-inline" title="firefox.png">&nbsp;Firefox (esborrar galetes)</a></li>
+<li><a class="external-link" href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectlocale=es&amp;redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we" target="_blank"><img src="https://genweb.upc.edu/ca/img/firefox.png/@@images/7006f152-cb74-43b4-9c5e-13c2f364a639.png" alt="firefox.png" class="image-inline" title="firefox.png">&nbsp;Firefox (habilitar i deshabilitar galetes)</a></li>
+<li><a class="external-link" href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies#ie=" target="_blank"><img src="https://genweb.upc.edu/ca/img/explorador-de-internet.png/@@images/1fdc3074-f740-426b-97ea-8979ad67b072.png" alt="explorador-de-internet.png" class="image-inline" title="explorador-de-internet.png">&nbsp;Internet Explorer</a></li>
+<li><a class="external-link" href="https://help.opera.com/en/latest/web-preferences/#cookies" target="_blank"><img src="https://genweb.upc.edu/ca/img/opera.png/@@images/d0b96ca3-64aa-426a-abd2-4fe01642307f.png" alt="opera.png" class="image-inline" title="opera.png">&nbsp;Opera</a></li>
+</ul>
+</div>
+<p>&nbsp;</p></div>
+
+</div>
+</body>
+</html>
