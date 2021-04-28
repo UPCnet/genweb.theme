@@ -1,11 +1,11 @@
 Changelog
 =========
 
-2.35 (unreleased)
+2.35 (2021-04-28)
 -----------------
 
-- Nothing changed yet.
-
+* Política de cookies [Iago López Fernández]
+* Quitar class sr-only [Iago López Fernández]
 
 2.34 (2021-03-22)
 -----------------
