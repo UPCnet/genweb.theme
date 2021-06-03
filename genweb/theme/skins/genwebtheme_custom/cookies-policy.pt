@@ -12,8 +12,7 @@
 </head>
 
 <body>
-<div metal:fill-slot="main" class="plain"
-     tal:define="portal_url context/@@plone_portal_state/portal_url">
+<div metal:fill-slot="main" class="plain">
 
 <h1>Cookies policy</h1>
 <br>

@@ -354,22 +354,26 @@ class gwFooter(viewletBase):
         footer_links = {"ca": {"rss": "rss-ca",
                                "accessibility": "accessibilitat",
                                "disclaimer": "https://www.upc.edu/ca/avis-legal",
-                               "cookies": self.root_url() + '/politica-de-cookies'
+                               "cookies": self.root_url() + '/politica-de-cookies',
+                               "cookiebot": self.root_url() + '/bpolitica-de-cookies'
                                },
                         "es": {"rss": "rss-es",
                                "accessibility": "accesibilidad",
                                "disclaimer": "https://www.upc.edu/es/aviso-legal",
-                               "cookies": self.root_url() + '/politica-de-cookies-es'
+                               "cookies": self.root_url() + '/politica-de-cookies-es',
+                               "cookiebot": self.root_url() + '/bpolitica-de-cookies-es'
                                },
                         "en": {"rss": "rss-en",
                                "accessibility": "accessibility",
                                "disclaimer": "https://www.upc.edu/en/disclaimer",
-                               "cookies": self.root_url() + '/cookies-policy'
+                               "cookies": self.root_url() + '/cookies-policy',
+                               "cookiebot": self.root_url() + '/bcookies-policy'
                                },
                         "zh": {"rss": "rss-en",
                                "accessibility": "accessibility",
                                "disclaimer": "https://www.upc.edu/en/disclaimer",
-                               "cookies": self.root_url() + '/cookies-policy'
+                               "cookies": self.root_url() + '/cookies-policy',
+                               "cookiebot": self.root_url() + '/bcookies-policy'
                                },
                         }
         return footer_links[idioma]
