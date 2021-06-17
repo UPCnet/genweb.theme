@@ -232,9 +232,9 @@ class gwHeader(viewletBase):
 
     def getURLDirectori(self, codi):
         if codi:
-            return "http://directori.upc.edu/directori/dadesUE.jsp?id=%s" % codi
+            return "https://directori.upc.edu/directori/dadesUE.jsp?id=%s" % codi
         else:
-            return "http://directori.upc.edu"
+            return "https://directori.upc.edu"
 
     def get_title(self):
         title = getattr(self.genweb_config(), 'html_title_{}'.format(self.pref_lang()))
