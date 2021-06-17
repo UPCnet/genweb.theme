@@ -1,11 +1,11 @@
 Changelog
 =========
 
-2.36 (unreleased)
+2.36 (2021-06-17)
 -----------------
 
-- Nothing changed yet.
-
+* Cerrar comillas [Iago López Fernández]
+* http -> https [Iago López Fernández]
 
 2.35 (2021-04-28)
 -----------------
