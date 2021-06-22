@@ -17,7 +17,8 @@
 <h1>Cookies policy</h1>
 <br>
 
-<script id="CookieDeclaration" src="https://consent.cookiebot.com/2ece8c45-532a-4472-8408-bdd736aa5069/cd.js" type="text/javascript" async></script>
+<script id="CookieDeclaration" src="https://consent.cookiebot.com/2ece8c45-532a-4472-8408-bdd736aa5069/cd.js"
+        data-culture="en" type="text/javascript" async></script>
 
 </div>
 </body>
