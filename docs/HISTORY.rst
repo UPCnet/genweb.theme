@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.38 (unreleased)
+2.38 (2021-06-30)
 -----------------
 
-- Nothing changed yet.
-
+* http -> https [Iago López Fernández]
 
 2.37 (2021-06-30)
 -----------------
