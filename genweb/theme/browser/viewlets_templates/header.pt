@@ -64,7 +64,7 @@
                 </tal:block>
               </tal:codi>
               <tal:block tal:condition="python:not filtered">
-                <a href="http://directori.upc.edu" target="_blank"
+                <a href="https://directori.upc.edu" target="_blank"
                   i18n:domain="genweb"
                   i18n:translate="label_dir_upc">
                     Directori UPC
@@ -143,7 +143,7 @@
             </tal:block>
           </tal:codi>
           <tal:block tal:condition="python:not filtered">
-            <a href="http://directori.upc.edu" target="_blank"
+            <a href="https://directori.upc.edu" target="_blank"
               i18n:domain="genweb"
               i18n:translate="label_dir_upc">
                 Directori UPC
