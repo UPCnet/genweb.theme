@@ -8,13 +8,23 @@
         i18n:domain="genweb">
 
   <div class="container">
-    <div id="cookies">
-        <tal:msg i18n:translate="cookie_policy_this_site">
-        Aquest web utilitza cookies pròpies per oferir-li una millor experiència i servei. En continuar amb la navegació entenem que accepta la nostra
-        </tal:msg>
-        <a tal:attributes="href cookies" i18n:translate="cookie_policy" target="_blank">política de cookies</a>
-        <tal:msg i18n:translate="cookie_policy_this_site_2">.</tal:msg>
+
+    <div id="cookies-id" role="alert" style="display: none" tal:condition="viewlet/notViewPDF">
+      <div id="cookies-bodyContent">
+        <div id="cookies-bodyText">
+          <tal:msg i18n:translate="cookie_policy_this_site">
+            El lloc web de la Universitat Politècnica de Catalunya utilitza cookies pròpies i de tercers per millorar l’experiència de navegació i amb finalitats estadístiques. Per obtenir més informació sobre l'ús de les cookies podeu consultar la
+          </tal:msg>
+          <a tal:attributes="href cookies" i18n:translate="cookie_policy" target="_blank">Política de cookies</a>.
+        </div>
+      </div>
+      <ul id="cookies-buttons">
+        <button type="button" id="cookies-button1">
+          <tal:msg i18n:translate="cookie_policy_button1">Acceptar</tal:msg>
+        </button>
+      </ul>
     </div>
+
     <div class="row-fluid">
       <div class="span8">
         <p>

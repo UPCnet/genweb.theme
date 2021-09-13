@@ -435,6 +435,12 @@ class gwFooter(viewletBase):
 
         return home_link
 
+    def notViewPDF(self):
+        try:
+            return 'application/pdf' not in self.request.environ['HTTP_ACCEPT']
+        except:
+            return True
+
 
 class gwSearchViewletManager(grok.ViewletManager):
     grok.context(Interface)
