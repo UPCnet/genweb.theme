@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.39 (unreleased)
+2.39 (2021-09-21)
 -----------------
 
-- Nothing changed yet.
-
+* No mostrar en PDF (adobe) el banner de cookies [Iago López Fernández]
 
 2.38 (2021-06-30)
 -----------------
