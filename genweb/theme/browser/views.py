@@ -784,16 +784,20 @@ class FilteredContentsSearchPrettyView(grok.View):
             query = quote_bad_chars(query) + '*'
 
             if self.tags:
-                r_results = pc.searchResults(path=path,
-                                             exclude_from_nav=False,
-                                             SearchableText=query,
-                                             Subject={'query': self.tags, 'operator': 'and'},
-                                             sort_on='getObjPositionInParent')
+                tmp_results = pc.searchResults(path=path,
+                                               exclude_from_nav=False,
+                                               SearchableText=query,
+                                               Subject={'query': self.tags, 'operator': 'and'},
+                                               sort_on='getObjPositionInParent')
+
+                r_results = [item for item in tmp_results if all(unicodedata.normalize('NFKD', x.decode('utf-8')).encode('ascii', errors='ignore') in unicodedata.normalize('NFKD', item.Title.decode('utf-8') + " " + item.Description.decode('utf-8')).encode('ascii', errors='ignore').lower() for x in self.query.split())]
             else:
-                r_results = pc.searchResults(path=path,
-                                             exclude_from_nav=False,
-                                             SearchableText=query,
-                                             sort_on='getObjPositionInParent')
+                tmp_results = pc.searchResults(path=path,
+                                               exclude_from_nav=False,
+                                               SearchableText=query,
+                                               sort_on='getObjPositionInParent')
+
+                r_results = [item for item in tmp_results if all(unicodedata.normalize('NFKD', x.decode('utf-8')).encode('ascii', errors='ignore').lower() in unicodedata.normalize('NFKD', item.Title.decode('utf-8') + " " + item.Description.decode('utf-8')).encode('ascii', errors='ignore').lower() for x in self.query.split())]
 
             return r_results
         else:
