@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.40 (unreleased)
+2.40 (2022-01-11)
 -----------------
 
-- Nothing changed yet.
-
+* Vista con filtres: Busqueda solo por titulo, descripcion y etiquetas [ilopezsmx]
 
 2.39 (2021-09-21)
 -----------------
