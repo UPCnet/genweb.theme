@@ -752,7 +752,7 @@ class FilteredContentsSearchPrettyView(grok.View):
         pc = getToolByName(self.context, "portal_catalog")
         path = self.context.getPhysicalPath()
         path = "/".join(path)
-        r_results = pc.searchResults(path=path,
+        r_results = pc.searchResults(path={'query': path, 'depth': 1},
                                      exclude_from_nav=False)
         batch = Batch(r_results, b_size, b_start)
         return batch
@@ -784,24 +784,25 @@ class FilteredContentsSearchPrettyView(grok.View):
             query = quote_bad_chars(query) + '*'
 
             if self.tags:
-                tmp_results = pc.searchResults(path=path,
+                tmp_results = pc.searchResults(path={'query': path, 'depth': 1},
                                                exclude_from_nav=False,
                                                SearchableText=query,
                                                Subject={'query': self.tags, 'operator': 'and'},
                                                sort_on='getObjPositionInParent')
 
-                r_results = [item for item in tmp_results if all(unicodedata.normalize('NFKD', x.decode('utf-8')).encode('ascii', errors='ignore') in unicodedata.normalize('NFKD', item.Title.decode('utf-8') + " " + item.Description.decode('utf-8')).encode('ascii', errors='ignore').lower() for x in self.query.split())]
+                # BUSCAR PER ETIQUETES
+                r_results = [item for item in tmp_results if all(unicodedata.normalize('NFKD', x.decode('utf-8')).encode('ascii', errors='ignore') in unicodedata.normalize('NFKD', item.Title.decode('utf-8') + " " + item.Description.decode('utf-8')).encode('ascii', errors='ignore').lower() + " " + unicodedata.normalize('NFKD', ' '.join(item.Subject).decode('utf-8')).encode('ascii', errors='ignore').lower() for x in self.query.split())]
             else:
-                tmp_results = pc.searchResults(path=path,
+                tmp_results = pc.searchResults(path={'query': path, 'depth': 1},
                                                exclude_from_nav=False,
                                                SearchableText=query,
                                                sort_on='getObjPositionInParent')
 
-                r_results = [item for item in tmp_results if all(unicodedata.normalize('NFKD', x.decode('utf-8')).encode('ascii', errors='ignore').lower() in unicodedata.normalize('NFKD', item.Title.decode('utf-8') + " " + item.Description.decode('utf-8')).encode('ascii', errors='ignore').lower() for x in self.query.split())]
+                r_results = [item for item in tmp_results if all(unicodedata.normalize('NFKD', x.decode('utf-8')).encode('ascii', errors='ignore').lower() in unicodedata.normalize('NFKD', item.Title.decode('utf-8') + " " + item.Description.decode('utf-8')).encode('ascii', errors='ignore').lower() + " " + unicodedata.normalize('NFKD', ' '.join(item.Subject).decode('utf-8')).encode('ascii', errors='ignore').lower() for x in self.query.split())]
 
             return r_results
         else:
-            r_results = pc.searchResults(path=path,
+            r_results = pc.searchResults(path={'query': path, 'depth': 1},
                                          exclude_from_nav=False,
                                          Subject={'query': self.tags, 'operator': 'and'},
                                          sort_on='getObjPositionInParent')
