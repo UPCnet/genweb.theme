@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.41 (unreleased)
+2.41 (2022-02-01)
 -----------------
 
-- Nothing changed yet.
-
+* Vista con filtres: buscar a un solo nivel y busqueda de etiquetas por el campo de texto [ilopezsmx]
 
 2.40 (2022-01-11)
 -----------------
