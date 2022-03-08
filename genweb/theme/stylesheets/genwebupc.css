@@ -9841,6 +9841,7 @@ iframe#templatesrc {
 .template-album_view #content dt {
   font-weight: normal !important; }
 
+body.template-filtered_contents_search_complete_pretty_view .searchInputPretty,
 body.template-filtered_contents_search_pretty_view .searchInputPretty {
   width: 190px !important; }
 
@@ -10141,7 +10142,7 @@ html {
   #portal-header h1.pull-left {
     height: 46px;
     width: 207px;
-    background: url('++genweb++static/images/logoUPC@2x.png?1584353871') no-repeat;
+    background: url('++genweb++static/images/logoUPC@2x.png?1642158404') no-repeat;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     -webkit-background-size: 100%;
