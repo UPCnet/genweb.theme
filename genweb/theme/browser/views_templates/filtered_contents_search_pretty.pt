@@ -124,7 +124,7 @@
         reloadResultsFilter();
       });
 
-      if($('body.template-filtered_contents_search_pretty_view.userrole-anonymous').length){
+      if($('body.template-filtered_contents_search_pretty_view.userrole-anonymous').length || $('body.template-filtered_contents_search_complete_pretty_view.userrole-anonymous').length){
         $('#edit-bar').remove();
       }
     </script>

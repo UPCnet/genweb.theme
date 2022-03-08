@@ -855,6 +855,63 @@ class FilteredContentsSearchPrettyView(grok.View):
         return items
 
 
+class FilteredContentsSearchCompletePrettyView(FilteredContentsSearchPrettyView):
+    """ Filtered content search view for every folder. """
+    grok.name('filtered_contents_search_complete_pretty_view')
+    grok.context(Interface)
+    grok.template('filtered_contents_search_pretty')
+    grok.layer(IGenwebTheme)
+
+    def get_contenttags_by_query(self):
+        pc = getToolByName(self.context, "portal_catalog")
+        path = self.context.getPhysicalPath()
+        path = "/".join(path)
+
+        def quotestring(s):
+            return '"%s"' % s
+
+        def quote_bad_chars(s):
+            bad_chars = ["(", ")"]
+            for char in bad_chars:
+                s = s.replace(char, quotestring(char))
+            return s
+
+        if not self.query and not self.tags:
+            return self.getContent()
+
+        results = []
+        if not self.query == '':
+            multispace = u'\u3000'.encode('utf-8')
+            for char in ('?', '-', '+', '*', multispace):
+                self.query = self.query.replace(char, ' ')
+
+            query = self.query.split()
+            query = " AND ".join(query)
+            query = quote_bad_chars(query) + '*'
+
+
+            if self.tags:
+                results = pc.searchResults(path={'query': path, 'depth': 1},
+                                           exclude_from_nav=False,
+                                           SearchableText=query,
+                                           Subject={'query': self.tags, 'operator': 'and'},
+                                           sort_on='getObjPositionInParent')
+
+            else:
+                results = pc.searchResults(path={'query': path, 'depth': 1},
+                                           exclude_from_nav=False,
+                                           SearchableText=query,
+                                           sort_on='getObjPositionInParent')
+
+        else:
+            results = pc.searchResults(path={'query': path, 'depth': 1},
+                                       exclude_from_nav=False,
+                                       Subject={'query': self.tags, 'operator': 'and'},
+                                       sort_on='getObjPositionInParent')
+
+        return results
+
+
 class SearchFilteredContentPrettyAjax(FilteredContentsSearchPrettyView):
     """ Ajax helper for filtered content search view for every folder. """
     grok.name('search_filtered_content_pretty')
