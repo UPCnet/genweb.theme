@@ -1,11 +1,11 @@
 Changelog
 =========
 
-2.42 (unreleased)
+2.42 (2022-03-14)
 -----------------
 
-- Nothing changed yet.
-
+* Nueva vista filtered_contents_search_complete_pretty_view [Iago López]
+* Estilos filtered_contents_search_complete_pretty_view [ilopezsmx]
 
 2.41 (2022-02-01)
 -----------------
