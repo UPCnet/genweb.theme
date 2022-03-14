@@ -840,7 +840,7 @@ class FilteredContentsSearchPrettyView(grok.View):
             return self.get_batched_contenttags(query=None, batch=True, b_size=10, b_start=0)
 
     def get_container_path(self):
-        return self.context.absolute_url()
+        return self.context.absolute_url() + '/search_filtered_content_pretty'
 
     def getContent(self):
         portal = api.portal.get()
@@ -911,10 +911,21 @@ class FilteredContentsSearchCompletePrettyView(FilteredContentsSearchPrettyView)
 
         return results
 
+    def get_container_path(self):
+        return self.context.absolute_url() + '/search_complete_filtered_content_pretty'
+
 
 class SearchFilteredContentPrettyAjax(FilteredContentsSearchPrettyView):
     """ Ajax helper for filtered content search view for every folder. """
     grok.name('search_filtered_content_pretty')
+    grok.context(Interface)
+    grok.template('filtered_contents_search_pretty_ajax')
+    grok.layer(IGenwebTheme)
+
+
+class SearchCompleteFilteredContentPrettyAjax(FilteredContentsSearchCompletePrettyView):
+    """ Ajax helper for filtered content search view for every folder. """
+    grok.name('search_complete_filtered_content_pretty')
     grok.context(Interface)
     grok.template('filtered_contents_search_pretty_ajax')
     grok.layer(IGenwebTheme)

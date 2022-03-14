@@ -105,7 +105,7 @@
           tags.push($(this).val());
         });
 
-        $.get(path + '/search_filtered_content_pretty', { q: query, t: tags.join(',') }, function(data) {
+        $.get(path, { q: query, t: tags.join(',') }, function(data) {
           $('#tagslist').html(data);
         });
       }
