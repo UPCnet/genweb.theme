@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.43 (unreleased)
+2.43 (2022-03-14)
 -----------------
 
-- Nothing changed yet.
-
+* Fix FilteredContentsSearchCompletePrettyView [Iago López]
 
 2.42 (2022-03-14)
 -----------------
