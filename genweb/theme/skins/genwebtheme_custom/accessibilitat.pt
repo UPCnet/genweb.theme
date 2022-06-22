@@ -17,80 +17,74 @@
 
     <h1>Accessibilitat</h1>
     <br />
-<p>La <strong>Universitat Politècnica de Catalunya · BarcelonaTech (UPC)</strong> té entre els seus objectius posar a l'abast de la comunitat universitària i de la societat una web amb disseny accessible independentment de les possibles limitacions que poguessin condicionar l'accés al lloc web, ja siguin ocasionades per l'entorn, la connexió o de caràcter personal.</p><br />
-<p>Segons el Reial decret 1494/2007, de 12 de novembre , “La informació disponible a les pàgines d'Internet de les administracions públiques haurà de ser accessibles a les persones majors i persones amb discapacitat, amb un nivell mínim d'accessibilitat que compleixi les prioritats 1 i 2 de la Norma UNEIX 139803:2004.” (…) “Així mateix, serà obligatori allò expressat en aquest apartat per a les pàgines d'Internet i els seus continguts, dels centres públics educatius, de formació i universitaris, així com, dels centres privats sostinguts, total o parcialment, amb fons públics.”</p><br />
-<p>Aquest lloc web ha estat generat amb el <a href="https://genweb.upc.edu" target="_blank"><strong>Genweb UPC <img alt="(obriu en una finestra nova)" class="link_blank" src="++genweb++static/images/icon_blank.gif" /></strong></a>, una eina que permet la creació i gestió de webs segons el llibre d'estil institucional de la UPC.</p><br />
-<p>El <a href="https://genweb.upc.edu" target="_blank"><strong>Genweb UPC <img alt="(obriu en una finestra nova)" class="link_blank" src="++genweb++static/images/icon_blank.gif" /></strong></a> ha estat desenvolupat conjuntament pel Servei de Comunicació de la UPC i <a href="https://www.upcnet.es/" target="_blank">UPCnet <img alt="(obriu en una finestra nova)" class="link_blank" src="++genweb++static/images/icon_blank.gif" /></a> utilitzant com a base el sistema de gestió de continguts de programari lliure <a href="https://plone.org/" target="_blank">Plone <img alt="(obriu en una finestra nova)" class="link_blank" src="++genweb++static/images/icon_blank.gif" /></a>. S'ha dissenyat perquè sigui completament accessible i usable, funcionant d'acord amb les guies d'accessibilitat W3C de contingut web.</p>
-<h2>Pautes WAI</h2>
-<p><a href="https://www.w3.org/WAI/WCAG1AA-Conformance" target="_blank" title="(obriu en finestra nova)"><img alt="validat wai-aa wcag 1.0, (obriu en finestra nova)" class="align_left" src="++genweb++static/images/wcag-1.0-aa.png" /></a>Els continguts del web de la UPC han estat validats amb la certificació Doble-A, segons les recomanacions de la WAI (<span>Web Accessibility Iniciative</span>), grup de treball internacional que pertany al W3C (<span>World Wide Web Consortium</span>) , organisme que vetlla perquè cap col·lectiu pateixi discriminacions de cap mena que puguin ser causa de fractures socials en el món virtual.</p>
-<br /><br />
-<p><a href="https://jigsaw.w3.org/css-validator/" target="_blank" title="(obriu en finestra nova)"><img alt="validat css, (obriu en finestra nova)" class="align_left" src="++genweb++static/images/valid-css.png" /></a><a href="https://validator.w3.org/check?uri=referer" target="_blank" title="(obriu en finestra nova)"><img alt="validat xhtml 1.0, (obriu en finestra nova)" class="align_left" src="++genweb++static/images/valid-xhtml-1.0.png" /></a>En aquest sentit, les tècniques emprades al web de la UPC encaixen amb el que la WAI preconitza, tant per al marcat XHTML 1.0 com per al CSS.</p>
-<h2>Canvis de mides als principals navegadors</h2>
-
-<div class="blockquote icon_nav">
-
-<img alt="mozilla firefox" class="align_left" height="80" src="++genweb++static/images/ff-icon.png" width="80" />
-<h3>Mozilla Firefox</h3>
-<div>
-    <p>
-        <strong>Augmentar la mida del text</strong>: CTRL + Roda del ratolí endarrere, CTRL + + (tecla més) o Visualitza &gt; Mida de la pàgina &gt; Augmenta<br />
-        <strong>Reduir la mida del text</strong>: CTRL + Roda del ratolí endavant, CTRL + – (tecla menys) o Visualitza &gt; Mida de la pàgina &gt; Redueix<br />
-        <strong>Recuperar la vista original</strong>: CTRL + 0 (zero) o Visualitza &gt; Mida de la pàgina &gt; Restableix
-    </p>
+    <h2 style="outline-style: none;">Declaració d'accessibilitat</h2>
+    <p>La Universitat Politècnica de Catalunya s’ha compromès a fer accessible el seu lloc web de conformitat amb el <i class="glyphicon link-https"></i><a target="_blank" data-linktype="external" href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-12699" data-val="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-12699">Reial decret 1112/2018, de 7 de setembre, sobre accessibilitat dels llocs web i les aplicacions per a dispositius mòbils del sector públic</a> (en endavant, Reial decret 1112/2018, de 7 de setembre), pel qual es&nbsp;<span>transposa la&nbsp;</span><i class="glyphicon link-https"></i><a href="https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-82305">Directiva (UE) 2016/2102 del Parlament Europeu i del Consell, de 26 d'octubre de 2016</a>.</p>
+    <p>La present declaració aplica a aquest lloc web, subdomini del web institucional upc.edu.&nbsp;</p>
+    <h3>Situació de compliment</h3>
+    <p>Aquest lloc web és parcialment conforme amb el Reial decret 1112/2018, de 7 de setembre a causa de les excepcions i la manca de conformitat dels aspectes que s’indiquen a continuació.</p>
+    <h3>Contingut no accessible</h3>
+    <p>El contingut que es recull a continuació no és accessible pels següents motius:</p>
+    <p><strong>Manca de conformitat amb el Reial decret 1112/2018, de 7 de setembre:</strong></p>
+    <ol>
+        <li>Algunes imatges no estan etiquetades o tenen una alternativa textual genèrica [requisit número 9.1.1.1 de la norma UNE-EN 301.549: 2019 Contingut no textual]</li>
+        <li>Alguns vídeos gravats poden no contenir subtítols [requisit <span>número&nbsp;</span>9.1.2.2 de la norma UNE-EN 301.549: 2019 subtítols (gravats)]</li>
+        <li>Alguns vídeos pregravats en el lloc web no disposen d'àudio descripció o mitjans alternatius [requisits <span>número<span>&nbsp;</span></span> 9.1.2.5 i 9.1.2.3 de la norma UNE-EN 301.549: 2019 Àudio descripció o mitjans alternatius (gravat)]</li>
+        <li>En algunes pàgines la informació, estructura i relacions no estan determinades per programari o no tenen alternativa com a text. [Requisit nombre 9.1.3.1 de la UNE-EN 301.549: 2019 d'informació i relacions]</li>
+        <li>En algunes pàgines s'ha utilitzat el color com a únic mitjà visual per transmetre informació, indicar una acció, provocar una resposta o distingir un element visual [requisit <span>número</span>&nbsp;9.1.4.1 de la norma UNE-EN 301.549: 2019 usos del color]</li>
+        <li>En algunes pàgines hi pot haver atributs i identificadors duplicats [requisit <span>número</span>&nbsp;9.4.1.1 de la norma UNE-EN 301.549: 2019 processaments]</li>
+        <li>En algunes pàgines els components d'interfície d'usuari com a elements de formulari, enllaços i components generats per script no segueixen l'estructura recomanada per les pautes d'accessibilitat [requisit <span>número<span>&nbsp;</span></span> 9.4.1.2 de la norma UNE-EN 301.549: 2019 Nom, funció, valor]</li>
+        <li>En alguns formularis el camp d'entrada que recopila informació sobre l'usuari no té identificat el propòsit [requisit <span>número</span>&nbsp;9.1.3.5 de la norma UNE-EN 301.549: 2019 identificació del propòsit d'entrada]</li>
+        <li>En algunes pàgines la relació de contrast en text o imatges podria no ser d’almenys 4.5: 1 [requisit <span>número</span>&nbsp;9.1.4.3 de la norma UNE-EN 301.549: 2019 contrast mínim]</li>
+        <li>En algunes pàgines el contrast dels components d'interfície d'usuari i d'objectes gràfics podria no arribar al 3: 1 amb els colors adjacents [requisit <span>número</span>&nbsp;9.1.4.11 de la norma UNE-EN 301.549: 2019 contrast no textual]</li>
+        <li>De manera puntual podria existir algun error d'entrada en algun camp / formulari del qual no es notifiqués a l'usuari el suggeriment per solucionar-[requisit <span>número<span>&nbsp;</span></span> 9.3.3.3 de la norma UNE-EN 301.549: 2019 Consell davant errors]</li>
+        <li>En algunes pàgines els missatges d'estat podrien no estar determinats mitjançant programació a través de funcions o propietats [requisit <span>número<span>&nbsp;</span></span> 9.4.1.3 de la norma UNE-EN 301.549: 2019 missatges d'estat]</li>
+    </ol>
+    <p></p>
+    <p><strong>Carrega desproporcionada</strong></p>
+    <p>No aplicable</p>
+    <p><b>El contingut no entra dins de l’àmbit de la legislació aplicable</b></p>
+    <ol>
+        <li>Hi podria haver fitxers&nbsp;ofimàtics en PDF o altres formats publicats abans del 20 de setembre de 2018 que no compleixin íntegrament tots els requisits d'accessibilitat.</li>
+        <li>Hi pot haver continguts de tercers que no estiguin desenvolupats per aquesta universitat o&nbsp;dels quals no tingui el seu control, com, per exemple,&nbsp;fitxers ofimàtics.</li>
+    </ol>
+    <h3>Preparació de la present declaració d’accessibilitat</h3>
+    <p>Aquesta&nbsp;declaració es va preparar 20 de&nbsp;juliol&nbsp;de 2021.</p>
+    <p>Per preparar la declaració es va encarregar l'elaboració d'un informe d'accessibilitat a l'empresa Everycode S.L. el dia 27 de setembre de 2021.</p>
+    <p>Darrera revisió de la declaració:&nbsp;29 de&nbsp;setembre de 2021.</p>
+    <h3>Observacions i dades de contacte</h3>
+    <p>Es poden&nbsp;transmetre comunicacions sobre requisits d’accessibilitat (article 10.2.a del Reial decret 1112/2018, de 7 de setembre), a través del <a data-val="a9b6258d0ee449d8bb5cb4a5f8ed71f5" href="https://www.upc.edu/ca/contacte/contacte" data-linktype="internal">formulari de contacte</a>, com per exemple:</p>
+    <ul>
+        <li>Informar sobre qualsevol possible incompliment per part d’aquest lloc web.</li>
+        <li>Transmetre altres dificultats d’accés al contingut.</li>
+        <li>Formular qualsevol altra consulta o suggeriment de millora relativa a l’accessibilitat del lloc web.</li>
+    </ul>
+    <p>Les comunicacions seran rebudes i traslladades a la Unitat responsable d'accessibilitat (URA).</p>
+    <h3>Sol·licituds d’informació accessible i queixes</h3>
+    <p>Per fer sol·licituds d’informació accessible i formular queixes (article 12 del Reial decret 1112/2018)&nbsp;s'ha de presentar una<span><span>&nbsp;</span></span><i class="glyphicon link-https"></i><a target="_blank" data-linktype="external" href="https://seuelectronica.upc.edu/ca/Tramits/Instanciagenerica" data-val="https://seuelectronica.upc.edu/ca/Tramits/Instanciagenerica">instància genèrica&nbsp;al&nbsp;Registre General de la Universitat Politècnica de Catalunya</a><span>.<span>&nbsp;</span></span></p>
+    <p>Qualsevol persona física o jurídica pot formular queixes relatives al compliment dels requisits del Reial decret 1112/2018 i sol·licitar informació relativa a continguts que estiguin exclosos de l’àmbit d’aplicació d’aquesta normativa.</p>
+    <p>Les sol·licituds i queixes es registren conforme als requisits que estableix per la Llei 39/2015 d’1 d’octubre, del procediment administratiu comú de les administracions públiques.</p>
+    <h3>Procediment d’aplicació</h3>
+    <p>Si&nbsp;després de fer una sol·licitud d'informació accessible o una queixa, la sol·licitud es desestima, no s'està d'acord amb la decisió adoptada, o la resposta no compleix els requisits que preveu en l'article 12.5, la persona interessada pot iniciar una reclamació. Igualment pot iniciar una reclamació en el cas que hagi transcorregut un termini de vint dies hàbils sense haver obtingut resposta.</p>
+    <p>La reclamació es pot presentar a través d'una&nbsp;<i class="glyphicon link-https"></i><a target="_blank" data-linktype="external" href="https://seuelectronica.upc.edu/ca/Tramits/Instanciagenerica" data-val="https://seuelectronica.upc.edu/ca/Tramits/Instanciagenerica">instància genèrica&nbsp;al&nbsp;Registre General de la Universitat Politècnica de Catalunya</a>. La reclamació serà tractada pel Registre General i transmesa a la Unitat responsable d'accessibilitat (URA).</p>
+    <h3>Contingut opcional</h3>
+    <p>Les tecles d'accés són una eina de navegació que permet visitar aquest web utilitzant el teclat.<br>Més informació sobre les tecles d'accés:<span>&nbsp;</span><i class="glyphicon link-external"></i><a target="_blank" href="http://www.w3.org/TR/WCAG10-HTML-TECHS/#link-accesskey">Guies d'accessibilitat W3C</a>.</p>
+    <p>Tecles d'accés disponibles</p>
+    <ul class="list-highlighted">
+        <li>1- Ves al contingut</li>
+        <li>2- Pàgina d'inici</li>
+        <li>3-&nbsp;<span>Mapa del web</span></li>
+        <li>4-&nbsp;<span>Focus al camp de cerca</span></li>
+        <li>5-&nbsp;<span>Arbre de navegació</span></li>
+        <li>9-&nbsp;<span>Informació de contacte</span></li>
+        <li>0-&nbsp;<span>Consulta accessibilitat</span></li>
+    </ul>
+    <p>Per utilitzar les tecles d'accés cal prémer simultàniament:</p>
+    <ul>
+        <li>Chrome: ALT + tecla d'accés</li>
+        <li>Safari: ALT + tecla</li>
+        <li>Firefox: MAJ + ALT + tecla d'accés</li>
+        <li>Edge: ALT + tecla d'accés</li>
+    </ul>
 </div>
-<div class="visualClear"></div>
-
-<img alt="safari" class="align_left" height="80" src="++genweb++static/images/sf-icon.png" width="80" />
-<h3>Safari</h3>
-<p><strong>Augmentar la mida del text</strong>: Command (Mac) / CTRL (PC) + + (tecla més) o Ver &gt; Incrementar texto<br /><strong>Reduir la mida del text</strong>: Command (Mac) / CTRL (PC) + – (tecla menys) o Ver &gt; Disminuir texto<br /><strong>Recuperar la vista original</strong>: Command (Mac) / CTRL (PC) + 0 o Ver &gt; Tamaño normal del texto</p>
-<div class="visualClear"></div>
-
-
-<img alt="internet explorer" class="align_left" height="80" src="++genweb++static/images/ie-icon.png" width="80" />
-<h3>Internet Explorer</h3>
-<p><strong>Augmentar la mida del text</strong>: CTRL + Roda del ratolí endavant, CTRL + + (tecla més) o Visualitza &gt; Mida del text &gt; Gran, Molt gran<br /><strong>Reduir la mida del text</strong>: CTRL + Roda del ratolí endarrere, CTRL + – (tecla menys) o Visualitza &gt; Mida del text &gt; Petit, Molt petit<br /><strong>Recuperar la vista original</strong>: CTRL + 0 (zero, no amb el teclat numèric) o Visualitza &gt; Mida del text &gt; Mitjà</p>
-<div class="visualClear"></div>
-
-
-<img alt="opera" class="align_left" height="80" src="++genweb++static/images/op-icon.png" width="80" />
-<h3>Opera</h3>
-<p><strong>Augmentar la mida del text</strong>: CTRL + Roda del ratolí endavant o Visualitza &gt; Escala &gt; 120% i més<br /><strong>Reduir la mida del text</strong>: CTRL + Roda del ratolí endarrere o Visualitza &gt; Escala &gt; 80% i menys<br /><strong>Recuperar la vista original</strong>: Visualitza &gt; Escala &gt; 100%</p>
-<div class="visualClear"></div>
-
-
-<img alt="chrome" class="align_left" height="80" src="++genweb++static/images/ch-icon.png" width="80" />
-<h3>Chrome</h3>
-<p><strong>Augmentar la mida del text</strong>: CTRL + Roda del ratolí endavant, CTRL + + (tecla més) o Control de pàgina &gt; Zoom &gt; Més gran<br /><strong>Reduir la mida del text</strong>: CTRL + Roda del ratolí endarrere, CTRL + – (tecla menys) o Control de pàgina &gt; Zoom &gt; Més petit<br /><strong>Recuperar la vista original</strong>: CTRL + 0 (zero, no amb el teclat numèric) o Control de pàgina &gt; Zoom &gt; Normal</p>
-</div>
-
-
-
-
-
-
-<br /><br />
-
-
-<h2>Tecles d'accés</h2>
-<p>Les tecles d'accés són una eina de navegació que permet visitar aquest web utilitzant el teclat.<br />Més informació sobre les tecles d'accés: <a href="https://www.w3.org/TR/WCAG10-HTML-TECHS/#link-accesskey" target="_blank">Guies d'accessibilitat W3C <img alt="(obriu en finestra nova)" class="link_blank" src="++genweb++static/images/icon_blank.gif" /></a>.</p><br />
-<p>Aquest web utilitza una configuració que coincideix amb la majoria de recomanacions d'accessibilitat internacionals.</p>
-<h3>Tecles d'accés disponibles</h3>
-
-<ul style="margin-left: 0px; ">
-  <li style="list-style: none; "><code style="font-size: 12px; ">1</code> — Pàgina d'inici</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">2</code> — Vés al contingut</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">3</code> — Mapa del web</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">4</code> — Focus al camp de cerca</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">5</code> — Arbre de navegació</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">9</code> — Informació de contacte</li>
-  <li style="list-style: none; "><code style="font-size: 12px; ">0</code> — Consulta accessibilitat</li>
-</ul>
-
-<br />
-<p>Per utilizar les tecles d'accés cal prémer simultàniament MAJ + ALT + tecla d'accés.</p>
-<br />
-<h2>Contacte</h2>
-<p>Actualment, continuem treballant per mantenir i millorar l'accessibilitat de totes les pàgines del web. Si observeu alguna anomalia, relacionada amb l'accessibilitat, contacteu si us plau amb l'<a tal:attributes="href string:${portal_url}/ca/contact" href="">Administració del web</a>.</p>
-    </div>
 </body>
 </html>
