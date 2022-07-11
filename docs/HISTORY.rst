@@ -1,11 +1,10 @@
 Changelog
 =========
 
-2.44 (unreleased)
+2.44 (2022-07-11)
 -----------------
 
-- Nothing changed yet.
-
+* Cambiar las paginas de accesibilidad [Iago López]
 
 2.43 (2022-03-14)
 -----------------
